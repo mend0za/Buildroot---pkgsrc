@@ -1,0 +1,48 @@
+menu "PKGSRC Package Selection for the target"
+
+config BR2_PKGSRC
+	bool "pkgsrc"
+	default n
+	help
+	  The NetBSD Packages Collection (pkgsrc) is a framework for 
+	  building third-party software on NetBSD and other UNIX-like 
+	  systems, currently containing over 8000 packages. It is used
+	  to enable freely available software to be configured and built
+	  easily on supported platforms. 
+
+	  http://www.netbsd.org/docs/software/packages.html
+
+	  High experimental support.
+
+if BR2_PKGSRC
+
+choice
+	prompt "pkgsrc version"
+	default BR2_PKGSRC_VERSION_2011Q3
+	help 
+		Select the version of pkgsrc you wish to use.
+	
+	
+	config BR2_PKGSRC_VERSION_2011Q2
+		bool "2011Q2"
+	
+	config BR2_PKGSRC_VERSION_2011Q3
+		bool "2011Q3"
+	
+	config BR2_PKGSRC_VERSION_CURRENT
+		bool "current"
+
+endchoice
+
+
+config BR2_PKGSRC_VERSION
+	string
+	default "2011Q2"	if BR2_PKGSRC_VERSION_2011Q2
+	default "2011Q3"	if BR2_PKGSRC_VERSION_2011Q3
+
+
+
+endif
+
+
+endmenu
