@@ -16,8 +16,6 @@ config BR2_PKGSRC
 
 if BR2_PKGSRC
 source "pkgsrc/pkgsrc-categories.in"
-
-source "pkgsrc/pkgsrc-2011Q3.in"
 endif
 
 
