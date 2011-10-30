@@ -11,7 +11,7 @@ BEGIN {
 	sub( /bool /, "", name )
 	gsub( /"/, "", name )
 	
-	if ( name ~ /^[:space:]*$/ )
+	if ( name ~ /^[[:space:]]*$/ )
 		next
 	pkg_names[n] = name 
 	n++
