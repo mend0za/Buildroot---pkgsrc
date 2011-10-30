@@ -1,0 +1,1139 @@
+config BR2_PKGSRC_PACKAGE_CAD_ATLC
+	bool "atlc-4.6.0nb1"
+	help
+	  Calculates the impedance of arbitrary cross section transmission lines
+
+	  Atlc is a finite difference programme that is used to calculate the
+	  properties of a two-conductor electrical transmission line of
+	  arbitrary cross section. It is used whenever there are no analytical
+	  formula known, yet you still require an answer. It can calculate:
+	  
+	  The impedance Zo (in Ohms)
+	  The capacitance per unit length (pF/m)
+	  The inductance per unit length (nF/m)
+	  The velocity of propagation v (m/s)
+	  The velocity factor, v/c, which is dimensionless.
+	  
+	  A bitmap file (usually with the extension .bmp or .BMP) of the cross
+	  section of the transmission line is drawn in a graphics package such
+	  as The Gimp and then analyzed using Atlc.
+
+	  http://atlc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_BOOLEAN
+	bool "boolean-6.99nb7"
+	help
+	  
+
+	  The program is a viewer and editor for:
+	  -GDSII files, KEY files (own made extended GDSII in ascii format) and
+	  DAVID MANN files (flash format for mask plotting)
+	  
+	  Features:
+	  -It allows to draw primitives on a chosen layer, and to manipulate them.
+	  -stack oriented tools allows zooming while drawing new primitives and
+	  editing them. This also makes it possible to draw extremely accurate.
+	  -primitives on the layers or/can be transparent  colors and fill patterns
+	  can be set on a layer basis
+	  -drawing order of layers can be changed
+	  -a hiearchy of pictures, named structures, can be handled and manipulated
+	  -saving as a bitmap and other formats.
+	  -measuring distances
+	  -adding user defined properties to primitives
+	  
+	  
+	  -boolean OR AND EXOR A-B B-A
+	  -positive and negative process offset
+	  -circle recognition in polygon and polyline data.
+	  -move copy delete etc.
+	  -transformations (scaling , rotation , moving)
+	  -flatten the hiearchy of the drawing
+	  -drivers for CNC (laser and milling machinery)
+
+	  http://boolean.klaasholwerda.nl/bool.html
+
+config BR2_PKGSRC_PACKAGE_CAD_CASCADE
+	bool "cascade-1.4nb1"
+	help
+	  Simple tool to analyze noise and distortion of a RF system
+
+	  Cascade is a program for analyzing the noise and distortion
+	  performance of a cascade of elements in an electronic system. A
+	  typical application of cascade is the analysis of a receiver. A text
+	  description of the receiver block diagram consisting of things like
+	  amplifiers, mixers, and filters is entered into cascade. Each element
+	  is characterized by its gain and optionally noise figure, and third
+	  order intercept point. The program then analyzes the system and
+	  produces a report detailing the performance at each stage.
+	  
+	  A summary is produced which shows the relative contributions to the
+	  total system performance of each block.  This allows easy
+	  identification of what limits system performance.
+
+	  http://rfcascade.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_CGI_WCALC
+	bool "cgi-wcalc-1.0nb2"
+	help
+	  CGI Based Transmission Line Analysis/Synthesis Calculator
+
+	  This is the common gateway interface (CGI) frontend for the Wcalc
+	  transmission line analysis/synthesis calculator.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_COVERED
+	bool "covered-0.4.7"
+	help
+	  
+
+	  Covered is a Verilog code coverage analysis tool that can be useful
+	  for determining how well a diagnostic test suite is covering the
+	  design under test. Typically in the design verification work flow, a
+	  design verification engineer will develop a self-checking test suite
+	  to verify design elements/functions specified by a design's
+	  specification document. When the test suite contains all of the tests
+	  required by the design specification, the test writer may be asking
+	  him/herself, "How much logic in the design is actually being
+	  exercised?", "Does my test suite cover all of the logic under test?",
+	  and "Am I done writing tests for the logic?".  When the design
+	  verification gets to this point, it is often useful to get some
+	  metrics for determining logic coverage. This is where a code coverage
+	  utility, such as Covered, is very useful.
+	  
+	  Please note that this package is for a stable release version.
+	  There is a separate package (covered-current) which is made of
+	  development snapshots.
+
+	  http://covered.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_COVERED_CURRENT
+	bool "covered-current-20060904"
+	help
+	  
+
+	  Covered is a Verilog code coverage analysis tool that can be useful
+	  for determining how well a diagnostic test suite is covering the
+	  design under test. Typically in the design verification work flow, a
+	  design verification engineer will develop a self-checking test suite
+	  to verify design elements/functions specified by a design's
+	  specification document. When the test suite contains all of the tests
+	  required by the design specification, the test writer may be asking
+	  him/herself, "How much logic in the design is actually being
+	  exercised?", "Does my test suite cover all of the logic under test?",
+	  and "Am I done writing tests for the logic?".  When the design
+	  verification gets to this point, it is often useful to get some
+	  metrics for determining logic coverage. This is where a code coverage
+	  utility, such as Covered, is very useful.
+	  
+	  Please note that this package is a development snapshot and while it
+	  contains the latest and greatest features, it may be buggy as well.
+	  There is a separate package which is made of the stable releases.
+
+	  http://covered.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_FASTCAP
+	bool "fastcap-2.0.19920918nb2"
+	help
+	  Fast 3-D capacitance solver
+
+	  FastCap is a three-dimensional capacitance extraction program.
+	  
+	  FastCap computes self and mutual capacitances between ideal
+	  conductors of arbitrary shapes, orientations and sizes.
+	  The conductors can be embedded in a dielectric region composed
+	  of any number of constant-permittivity regions of any shape and
+	  size.
+	  
+	  The algorithm used in FastCap is an acceleration of the
+	  boundary-element technique for solving the integral equation
+	  associated with the multiple-conductor, multiple-dielectric
+	  capacitance extraction problem.  The linear system resulting
+	  from the boundary-element discretization is solved using a
+	  generalized conjugate residual algorithm with a fast multipole
+	  algorithm to efficiently compute the iterates.
+
+	  http://www.rle.mit.edu/cpg/research_codes.htm
+
+config BR2_PKGSRC_PACKAGE_CAD_FASTHENRY
+	bool "fasthenry-3.0.19961112"
+	help
+	  Three-dimensional inductance extraction program
+
+	  FastHenry is a three-dimensional inductance extraction program.
+	  FastHenry computes the frequency dependent self and mutual inductances
+	  and resistances between conductors of complex shape.  The algorithm
+	  used in FastHenry is an acceleration of the mesh formulation approach.
+	  The linear system resulting from the mesh formulation is solved using
+	  a generalized minimal residual algorithm with a fast multipole
+	  algorithm to efficiently compute the iterates.
+
+	  http://www.rle.mit.edu/cpg/research_codes.htm
+
+config BR2_PKGSRC_PACKAGE_CAD_FELT
+	bool "felt-3.05nb4"
+	help
+	  Free system for introductory level finite element analysis
+
+	  FElt is a free system for introductory level finite element
+	  analysis. It is primarily intended as a teaching tool for introductory
+	  type courses in finite elements - probably in the
+	  mechanical/structural/civil fields. In a command line environment,
+	  FElt uses an intuitive, straightforward input syntax to describe
+	  problems. It also includes a graphical user interface for workstations
+	  that allows the user to set-up, solve and post-process the problem in
+	  a single CAD-like environment.
+	  
+	  From the end-user point of view, FElt consists of six programs: felt,
+	  burlap, velvet, corduroy, patchwork, and yardstick. felt is the basic
+	  command-line application; burlap is an interactive Matlab-like
+	  environment for scripting your own elements and analyses; velvet is
+	  the primary GUI interface into the bulk of the functionality in FElt;
+	  corduroy is command-line program for automatic element generation;
+	  patchwork is a command-line application for file format conversion to
+	  and from the FElt syntax; and yardstick is a simple program for
+	  problem scaling and unit conversion.
+
+	  http://felt.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_FREEHDL
+	bool "freehdl-0.0.7"
+	help
+	  VHDL simulator
+
+	  VHDL simulator
+
+	  http://www.freehdl.seul.org/
+
+config BR2_PKGSRC_PACKAGE_CAD_GSMC
+	bool "gsmc-1.1nb10"
+	help
+	  Smith charting program
+
+	  gsmc is a GTK application that allow to do all the calculation
+	  usually done on a Smith Chart.  It permits to make calculation
+	  for network composed by resistor, capacitor, inductance, and
+	  transmission line (also as stub).  Network topology is
+	  limited to series, parallel and as trasmissive
+	  for trasmission line. No series connection are allowed in parallel
+	  branch, neither parallel connection in series branch.
+	  Trasmission line can be placed as quadrupole or as a parallel or
+	  series stub, either opened or shorted at the other end.
+	  
+	  Calculation procedure starts with setting the initial impedance to be
+	  matched, next network elements are added and tuned to obtain the
+	  desidered impedance value.
+	  
+	  The network so obtained can be saved in spice format for other analysis;
+	  current work can be saved for succesive retrieve.
+	  
+	  The initial (start) impedance is thought as "the load" so when
+	  adding a trasmission line placed as a quadrupole rotation is
+	  clockwise, going "toward generator"; generator is placed after the
+	  last network element, as can be seen from spice output.
+
+	  http://www.qsl.net/ik5nax/
+
+config BR2_PKGSRC_PACKAGE_CAD_DINOTRACE
+	bool "dinotrace-9.3c"
+	help
+	  Tool for viewing the output of digital simulators
+
+	  Dinotrace is a tool designed to aid in viewing Verilog Value Change
+	  Dump (.vcd), ASCII, Verilator, Tempest CCLI, COSMOS, Chango and Decsim
+	  Binary simulation traces.  It is optimized for rapid design debugging using
+	  X-Windows Mosaic.
+
+	  http://www.veripool.com/dinotrace/
+
+config BR2_PKGSRC_PACKAGE_CAD_GTK1_WCALC
+	bool "gtk1-wcalc-1.0nb2"
+	help
+	  GTK Based Transmission Line Analysis/Synthesis Calculator
+
+	  This is the gtk1 based frontend for the Wcalc transmission
+	  line analysis/synthesis calculator.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_EAGLE
+	bool "eagle-4.16r2"
+	help
+	  Easy to use printed circuit board editor
+
+	  The EAGLE Layout Editor is an easy to use, yet powerful tool for designing
+	  printed circuit boards (PCBs).  The name EAGLE is an acronym, which stands for
+	  Easily Applicable Graphical Layout Editor.
+	  
+	  The program consists of three main modules
+	  
+	  * Layout editor
+	  * Schematic editor
+	  * Autorouter
+	  
+	  which are embedded in a single user interface.  Therefore there is no need
+	  for converting netlists between schematics and layouts.
+
+	  http://www.cadsoft.de/
+
+config BR2_PKGSRC_PACKAGE_CAD_ELECTRIC
+	bool "electric-7.00nb3"
+	help
+	  Electrical CAD system
+
+	  Electric is a sophisticated electrical CAD system that can handle
+	  many forms of circuit design, including:
+	  Custom IC layout (ASICs), Schematic drawing, Hardware description
+	  language specifications, Electro-mechanical hybrid layout
+	  
+	  Electric has these CAD operations:
+	  Design rule checking (3 options), Electrical rule checking,
+	  Simulation and simulation interface (12 options), Generation (3 options),
+	  Compaction, Compensation, Routing (4 options), VHDL compilation,
+	  Silicon compilation, Network consistency checking (LVS),
+	  Logical Effort analysis, Project Management
+	  
+	  Electric handles these types of design:
+	  MOS (6 CMOS variations, 1 nMOS variation), Bipolar and BiCMOS,
+	  Schematics and printed circuits, Digital filters, Temporal logic, Artwork
+	  
+	  Electric handles these file formats:
+	  CIF I/O, GDS I/O, EDIF I/O, DXF I/O, SDF Input,
+	  SUE Input, VHDL I/O, Verilog Output, EAGLE, PADS, and ECAD Output,
+	  PostScript, HPGL, and QuickDraw output
+
+	  http://www.gnu.org/software/electric/electric.html
+
+config BR2_PKGSRC_PACKAGE_CAD_GTK2_WCALC
+	bool "gtk2-wcalc-1.0nb9"
+	help
+	  GTK2 Based Transmission Line Analysis/Synthesis Calculator
+
+	  This is the gtk2 based frontend for the Wcalc transmission
+	  line analysis/synthesis calculator.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_MPAC
+	bool "mpac-0.2.2nb2"
+	help
+	  Microstrip Patch Antenna Calculator
+
+	  Microstrip Patch Antenna Calculator.  MPAC analyzes various parameters
+	  including impedance and resonant frequency for a rectangular microstrip
+	  patch antenna.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_CAD_GTKWAVE
+	bool "gtkwave-3.3.22"
+	help
+	  Electronic waveform viewer
+
+	  GTKWave is a waveform viewer which supports waveform data in
+	  the following formats:
+	  
+	  (vcd) VCD/EVCD -- Verilog Value Change Description files
+	  (out) Synopsys Timemill/Powermill/Nanosim .out files
+	  (lxt) Tony Bybell's LXT format, which can be generated by Icarus Verilog
+
+	  http://gtkwave.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_MYHDL_GPLCVER
+	bool "MyHDL-gplcver-0.7"
+	help
+	  GPL Cver cosimulation support for py-MyHDL
+
+	  MyHDL is a Python package for using Python as a hardware
+	  description language. Popular hardware description languages, like
+	  Verilog and VHDL, are compiled languages. MyHDL with Python
+	  can be viewed as a "scripting language" counterpart of such
+	  languages. However, Python is more accurately described as a very
+	  high level language (VHLL). MyHDL users have access to the
+	  amazing power and elegance of Python for their modeling work.
+
+	  http://jandecaluwe.com/Tools/MyHDL/Overview.html
+
+config BR2_PKGSRC_PACKAGE_CAD_MYHDL_IVERILOG
+	bool "MyHDL-iverilog-0.7"
+	help
+	  Icarus Verilog cosimulation support for py-MyHDL
+
+	  MyHDL is a Python package for using Python as a hardware
+	  description language. Popular hardware description languages, like
+	  Verilog and VHDL, are compiled languages. MyHDL with Python
+	  can be viewed as a "scripting language" counterpart of such
+	  languages. However, Python is more accurately described as a very
+	  high level language (VHLL). MyHDL users have access to the
+	  amazing power and elegance of Python for their modeling work.
+
+	  http://jandecaluwe.com/Tools/MyHDL/Overview.html
+
+config BR2_PKGSRC_PACKAGE_CAD_GDSREADER
+	bool "gdsreader-0.3"
+	help
+	  GDS-II stream file to Postscript and HP/GL converter
+
+	  GDSreader - simple Calma (GDSii) parser/printer tool.
+	  
+	  This software has as target the printing/plotting/displaying of Calma (GDSii)
+	  files without using true layout editors. I had once to visualize an unknown
+	  Calma file and customizing LEdit or Magic (the two layout editors I had access
+	  to) was so difficult that I decided to write this program.
+	  
+	  Current status:
+	  - gdsreader is in an alpha stage and you should not expect too much from it;
+	  - the Calma files are almost completely parsed (had no layout example that
+	  makes use of BOX/NODE elements);
+	  - given a Calma structure name, a PostScript file and a HPGL/2 file are
+	  generated. The way each layer is handled is controlled by an ASCII
+	  configuration file. The properties that can be set are color, fill (only
+	  solid is supported), hatch (simple or cross, the angle and spacing are user
+	  customizable too).
+	  
+	  In order to produce an useful PostScript output, you need to write a
+	  configuration file (default is .layers.config). The one you'll find with the
+	  distribution is suitable for the Calma example test.gds (an actual Bandgap
+	  reference).
+
+	  http://home.netcom.com/~serbanp/
+
+config BR2_PKGSRC_PACKAGE_CAD_ADMS
+	bool "adms-2.2.5nb1"
+	help
+	  Compact device model code generator for SPICE
+
+	  adms is a code generator that converts electrical compact device models
+	  specified in high-level description language into ready-to-compile c code
+	  for the API of spice simulators. Based on transformations specified in
+	  xml language adms transforms Verilog-AMS code into other target languages.
+
+	  http://mot-adms.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_GWAVE
+	bool "gwave-20090213"
+	help
+	  Viewer for spice-like simulator output and other analog data
+
+	  Gwave is a viewer for spice-like simulator output and other analog data
+	  
+	  Gwave can read several file formats.  It attempts to guess file formats
+	  based on filename, and then tries all file formats until one succeeds.
+	  These file formats are known:
+	  
+	  CAzM transient output (*.[BNW])
+	  HSPICE binary and ascii formats (*.tr0, *.sw0, *.ac0)
+	  Spice2 and Spice3 "raw" output  (*.raw)
+	  An ascii format with whitespace-separated columns and column headings,
+	  such as that produced by ACS (Al's circuit simulator). (*.acs, *.asc, *.ascii)
+	  
+	  The "Export Postscript" and "Export PNM" options on the main File menu
+	  provide the rudiments of output for inclusion in other
+	  documentation.  They and simply write out files called gwave_out.ps and
+	  gwave_out.pnm into the current directory.  In the future, a dialog box
+	  will allow configuring the print and export output.
+
+	  http://gwave.sourceforge.net
+
+config BR2_PKGSRC_PACKAGE_CAD_NELMA
+	bool "nelma-3.2nb2"
+	help
+	  Circuit board capacitance extraction tool
+
+	  Nelma is a (command line) tool for numerically calculating various
+	  electrical properties of printed circuit boards or similar objects
+	  composed of conductors and dielectrics (however code is optimized for
+	  circuit board-like geometry).
+	  
+	  It is currently capable of calculating capacitances between objects -
+	  nets on a PCB. It returns a spice-compatible description of an
+	  equivalent circuit of stray capacitances that can be for example used
+	  for more accurate circuit simulation. Alternatively it can also
+	  produce field data that can be plotted for example with Gnuplot.
+	  
+	  Support for calculating resistances existed for a while but was later
+	  removed because it didn't receive much testing.
+	  
+	  Nelma is available under the GNU General Public License version 2.
+
+	  http://www.tablix.org/~avian/nelma/
+
+config BR2_PKGSRC_PACKAGE_CAD_NG_SPICE
+	bool "ng-spice-23"
+	help
+	  Next generation circuit simulation program
+
+	  NG-SPICE is the program being developed as the replacement for Berkeley
+	  SPICE.  Using the Berkeley code as a starting point, the NG-SPICE team
+	  is working on improving the build system, adding to the models, and
+	  improving the analysis capability.
+	  
+	  SPICE is a general-purpose circuit simulation program for nonlinear dc,
+	  nonlinear transient, and linear ac analyses. Circuits may contain resistors,
+	  capacitors, inductors, mutual inductors, independent voltage and current
+	  sources, four types of dependent sources, lossless and lossy transmission
+	  lines (two separate implementations), switches, uniform distributed RC
+	  lines, and the five most common semiconductor devices: diodes, BJTs, JFETs,
+	  MESFETs, and MOSFETs.
+	  
+	  NG-SPICE is part of the gEDA project.
+
+	  http://ngspice.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_LC
+	bool "lc-2.10nb2"
+	help
+	  
+
+	  LC is simulation tool for the analysis of the electromagnetic
+	  properties of electrical interconnects. The full three-dimensional
+	  circuit is modeled, so all interactions are automatically included in
+	  the solution. The model can be excited by numerous types of waveforms,
+	  and the transient response measured using common values such as
+	  voltage and current. Circuit parameters such as inductance,
+	  capacitance, and impedance can be derived from the transient response,
+	  and frequency-domain results such as S-parameters can also be
+	  calculated. Far field radiation patterns can be obtained.
+	  
+	  LC is primarily an electromagnetic simulation and uses the
+	  Finite-Difference Time-Domain (FD-TD) technique. FD-TD is a full wave
+	  explicit solution of Maxwell's equations in three dimensions. In FD-TD,
+	  the rectangular volume enclosing the model is discretized into a large
+	  number of small cells, which may be uniformly-sized, or may vary in size
+	  within the simulation space. The dielectric, permeable, lossy, and
+	  conducting material properties of each cell are incorporated into the
+	  field updates, which are performed iteratively in small time steps.
+	  
+	  An interface between the electromagnetic simulation and the circuit
+	  simulation program SPICE is available within LC. This allows the user
+	  to add arbitrary SPICE circuits, such as drivers and loads, into the
+	  interconnect model. The interconnect performance is calculated using
+	  FD-TD while the lumped-element circuits are evaluated by SPICE.
+
+	  http://lc.cray.com/
+
+config BR2_PKGSRC_PACKAGE_CAD_QCAD
+	bool "qcad-2.0.5.0nb4"
+	help
+	  2D CAD system
+
+	  QCad is an application for computer aided drafting in two dimensions. With QCad
+	  you can create technical drawings such as plans for buildings, interiors or
+	  mechanical parts. QCad drawing files are in DXF format (DXF 2004, R12),
+	  permitting interchange with a wide variety of CAD systems.  See also
+	  qcad-manual-(your language) and qcad-partlibrary to complete an installation.
+	  
+	  This package builds from the Community Edition sources, released under the
+	  GNU General Public License.  A commercially-licensed Professional Edition,
+	  which adds a scripting module and support, is available for several platforms;
+	  see the QCad home page.
+
+	  http://www.ribbonsoft.com/qcad.html
+
+config BR2_PKGSRC_PACKAGE_CAD_GEDA
+	bool "geda-1.6.2nb1"
+	help
+	  Toolset for automating electronic design
+
+	  geda is a suite of Electronic Design Automation (EDA) tools
+	  used to make electrical circuit design, simulation and prototyping/
+	  production easier/doable.  The suite includes the gschem schematic
+	  capture program, the gnetlist netlister, the gattrib attribute editor
+	  along with several other utility programs.
+
+	  http://www.gpleda.org/
+
+config BR2_PKGSRC_PACKAGE_CAD_NTESLA
+	bool "ntesla-1.7"
+	help
+	  Tesla coil design program
+
+	  Ntesla is a program to help design a Tesla Coil.  It provides a series
+	  of design screens where you fill in proposed specifications for the
+	  various components of the design.  It performs all the necessary
+	  calculations for resonant frequency, capacitor size, primary taps,
+	  etc, and helps you come up with a balanced, optimal design.  Some help
+	  text is built-in, and there is also a reference to the tesla archives
+	  on funet.
+	  
+	  Author:         sfalco@worldnet.att.net (Steven A. Falco)
+
+	  http://www.nic.funet.fi/pub/sci/electrical/tesla/
+
+config BR2_PKGSRC_PACKAGE_CAD_GERBV
+	bool "gerbv-2.5.0"
+	help
+	  Gerber file viewer
+
+	  Gerber Viewer (gerbv) is a viewer for RS-274-X (Gerber) files
+	  as well as NC (numerical control) drill files. Gerber files are
+	  generated from PCB CAD system and sent to PCB manufacturers as basis
+	  for the manufacturing process.
+
+	  http://gerbv.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_QCAD_MANUAL_CS
+	bool "qcad-manual-cs-2.0.4.0"
+	help
+	  Online manual for QCad 2D CAD package, Czech
+
+	  The Czech user's manual that can be used from Help -> Manual within QCad.
+
+	  http://www.ribbonsoft.com/qcad.html
+
+config BR2_PKGSRC_PACKAGE_CAD_LIBWCALC
+	bool "libwcalc-1.0nb2"
+	help
+	  Library for Transmission Line Analysis/Synthesis
+
+	  This is the library for wcalc which contains all of the numerical
+	  backend routines and models.
+	  
+	  Wcalc is a tool for the analysis and synthesis of transmission
+	  line structures and related components.  Wcalc provides the
+	  ability to analyze the electrical parameters of a particular
+	  structure based on the physical dimensions and material parameters.
+	  The synthesis portion calculates the required physical parameters
+	  to meet desired electrical specifications.  Wcalc includes several
+	  models and places an emphasis on accuracy.  Several frontends
+	  provide the user with several options for its use.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_GNETMAN
+	bool "gnetman-20050211nb1"
+	help
+	  Advanced Netlister and Netlist Manipulation Database for gEDA
+
+	  gnetman is a program which currently supports advanced SPICE
+	  netlisting from gschem (part of the gEDA tool suite). The
+	  primary use so far has been for complex IC design.  Supported
+	  features include multi-level hierarchy, instance arrays, and
+	  buses. If you're just doing flat designs for PC boards or
+	  smaller SPICE simulations, the usual path is to use the spice-sdb
+	  netlister for gnetlist instead.
+	  
+	  The long term goal of gnetman is far greater. Two projects under
+	  consideration include a schematic generator, and a technology
+	  mapping back-end for Icarus Verilog. Basically, gnetman is a
+	  netlist manipulation database well suited for low-level
+	  manipulation of netlists.
+
+	  http://www.viasic.com/opensource/
+
+config BR2_PKGSRC_PACKAGE_CAD_QCAD_MANUAL_DE
+	bool "qcad-manual-de-2.0.4.0"
+	help
+	  Online manual for QCad 2D CAD package, German
+
+	  The German user's manual that can be used from Help -> Manual within QCad.
+
+	  http://www.ribbonsoft.com/qcad.html
+
+config BR2_PKGSRC_PACKAGE_CAD_MAGIC
+	bool "magic-7.5.188nb2"
+	help
+	  Integrated circuit layout system
+
+	  Magic is an interactive system for creating and modifying VLSI circuit
+	  layouts.  With Magic, you use a color graphics display and a mouse or
+	  graphics tablet to design basic cells and to combine them
+	  hierarchically into large structures.  Magic is different from other
+	  layout editors you may have used.  The most important difference is
+	  that Magic is more than just a color painting tool: it understands
+	  quite a bit about the nature of circuits and uses this information to
+	  provide you with additional operations.  For example, Magic has
+	  built-in knowledge of layout rules; as you are editing, it
+	  continuously checks for rule violations.  Magic also knows about
+	  connectivity and transistors, and contains a built-in hierarchical
+	  circuit extractor.  Magic also has a plow operation that
+	  you can use to stretch or compact cells.  Lastly, Magic has routing
+	  tools that you can use to make the global interconnections in your
+	  circuits.
+	  
+	  Magic is based on the Mead-Conway style of design.  This means that it
+	  uses simplified design rules and circuit structures.  The
+	  simplifications make it easier for you to design circuits and permit
+	  Magic to provide powerful assistance that would not be possible
+	  otherwise.  However, they result in slightly less dense circuits than
+	  you could get with more complex rules and structures.  For example,
+	  Magic permits only Manhattan designs (those whose edges are vertical
+	  or horizontal).
+
+	  http://opencircuitdesign.com/magic/index.html
+
+config BR2_PKGSRC_PACKAGE_CAD_GNUCAP
+	bool "gnucap-20060708nb2"
+	help
+	  General purpose circuit simulator
+
+	  GnuCap is a general purpose circuit simulator.  GnuCap was
+	  formerly known as ACS.  GnuCap performs nonlinear
+	  dc and transient analyses, fourier analysis, and ac analysis
+	  linearized at an operating point.  It is fully interactive and
+	  command driven.  It can also be run in batch mode or as a server.
+	  The output is produced as it simulates.  Spice compatible models
+	  for the MOSFET (level 1-7) and diode are included in this
+	  release.
+	  
+	  Since it is fully interactive, it is possible to make changes and
+	  re-simulate quickly.  The interactive design makes it well suited
+	  to the typical iterative design process used it optimizing a circuit
+	  design.
+	  
+	  Unlike Spice, the engine is designed to do true mixed-mode
+	  simulation. Most of the code is in place for future support of
+	  event driven analog simulation, and true multi-rate simulation.
+	  
+	  If you are tired of Spice and want a second opinion, you want to
+	  play with the circuit and want a simulator that is interactive,
+	  you want to study the source code and want something easier to
+	  follow than Spice, or you are a researcher working on modeling
+	  and want automated model generation tools to make your job easier,
+	  try GnuCap.
+
+	  http://www.gnucap.org/
+
+config BR2_PKGSRC_PACKAGE_CAD_GPLCVER
+	bool "gplcver-2.12a"
+	help
+	  Verilog simulator
+
+	  Cver is a full 1995 IEEE P1364 standard Verilog simulator.  It also
+	  implements some of the 2001 P1364 standard features.  All three
+	  PLI interfaces (tf_, acc_, and vpi_) are implemented as defined
+	  in the IEEE 2001 P1364 LRM.
+
+	  http://www.pragmatic-c.com/gpl-cver/
+
+config BR2_PKGSRC_PACKAGE_CAD_QCAD_MANUAL_EN
+	bool "qcad-manual-en-2.0.4.0"
+	help
+	  Online manual for QCad 2D CAD package, English
+
+	  The English user's manual that can be used from Help -> Manual within QCad.
+
+	  http://www.ribbonsoft.com/qcad.html
+
+config BR2_PKGSRC_PACKAGE_CAD_MCALC
+	bool "mcalc-1.6"
+	help
+	  JavaScript based microstrip analysis/synthesis calculator
+
+	  Mcalc is a JavaScript based calculator for  accurate microstrip
+	  transmission line analysis and synthesis.
+	  
+	  The electrical parameters may be determined from specified physical
+	  parameters, or the physical parameters required to meet a given set of
+	  electrical parameters may be found.
+	  
+	  Much attention has been given to making mcalc the most accurate online
+	  based calculator short of a full electromagnetic simulation.
+
+	  http://mcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_OCT_WCALC
+	bool "oct-wcalc-1.0nb5"
+	help
+	  Octave Based Transmission Line Analysis/Synthesis Calculator
+
+	  This is the Octave frontend for the Wcalc transmission
+	  line analysis/synthesis calculator.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_SPICEPRM
+	bool "spiceprm-0.11"
+	help
+	  Spice preprocessor for parameterized subcircuits
+
+	  Spiceprm was written in the course of moving my engineering activities
+	  to the Linux operating system.  My previous MSDOS spice package
+	  permitted passing parameters to subcircuits.  The raw Berkely Spice
+	  doesn't.   Anyone used to this feature knows the frustration of trying
+	  to use a simulator without it.  This script is the result of my
+	  desperation.  It translates a circuit file containing parameterized
+	  subcircuits with math expressions into another circuit file meeting raw
+	  spice requirements.  You then run spice on the translated output file.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_CAD_QCAD_MANUAL_HU
+	bool "qcad-manual-hu-2.0.4.0"
+	help
+	  Online manual for QCad 2D CAD package, Hungarian
+
+	  The Hungarian user's manual that can be used from Help -> Manual within QCad.
+
+	  http://www.ribbonsoft.com/qcad.html
+
+config BR2_PKGSRC_PACKAGE_CAD_MEX_WCALC
+	bool "mex-wcalc-1.0nb2"
+	help
+	  Matlab Based Transmission Line Analysis/Synthesis Calculator
+
+	  This is the Matlab frontend for the Wcalc transmission
+	  line analysis/synthesis calculator.  You will need a working
+	  matlab installed on your system.  In addition, currently
+	  only a native (non-emulation) matlab is supported.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_STDIO_WCALC
+	bool "stdio-wcalc-1.0nb2"
+	help
+	  Stdio Based Transmission Line Analysis/Synthesis Calculator
+
+	  This is the stdio frontend for the Wcalc transmission
+	  line analysis/synthesis calculator.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_QCAD_PARTLIBRARY
+	bool "qcad-partlibrary-2.0.1.2nb1"
+	help
+	  About 4500 mech, elec, etc. parts for the QCad 2D CAD system
+
+	  A library of about 4500 drawings of mechanical, electrical, and other parts
+	  usable with the library browser in the QCad 2D CAD system.
+	  
+	  The current downloadable version of the QCad online manual does not document
+	  how to use the part library once it is installed.  I herewith reveal the secret:
+	  From the View menu, choose Views, and enable the library browser.
+
+	  http://www.ribbonsoft.com/qcad/
+
+config BR2_PKGSRC_PACKAGE_CAD_TKGATE
+	bool "tkgate-1.6inb4"
+	help
+	  Tcl/Tk based digital circuit editor and simulator
+
+	  TkGate is a digital circuit editor and simulator with a Tcl/Tk based
+	  interface. TkGate includes a large number of built-in devices
+	  including basic gates, memories, ttys and modules for hierarchical
+	  design. The simulator can be controlled either interactively or
+	  through a simulation script. Memory contents can be loaded from
+	  files, and a microcode/macrocode compiler (gmac) is included to create
+	  tkgate memory files from a high-level description. The simulator
+	  supports continous simulation, single step simulation (by clock or
+	  epoch) and breakpoints. Save files are in a Verilog-like format.
+	  
+	  TkGate also includes a number of tutorial and example circuits which
+	  can be loaded through the "Help" menu. The examples range from a
+	  simple gate-level 3-bit adder to a 16-bit CPU programmed to play the
+	  "Animals" game.
+	  
+	  TkGate has a multi-langauge interface with support for English,
+	  Japanese, French and Spanish.
+
+	  http://www.tkgate.org/
+
+config BR2_PKGSRC_PACKAGE_CAD_TNT_MMTL
+	bool "tnt-mmtl-1.2.2nb5"
+	help
+	  Multilayer Multiconductor Transmission Line 2-D and 2.5-D simulator
+
+	  TNT-MMTL, the Multilayer Multiconductor Transmission Line 2-D and 2.5-D
+	  electromagnetic modeling tool suite, generates transmission parameters
+	  and SPICE models from descriptions of electronics interconnect
+	  dimensions and materials properties.
+	  
+	  MMTL programs and supporting libraries and documentation have been
+	  under development at the Mayo Clinic since the mid-1980s. The programs
+	  were developed under government sponsored electronics research
+	  programs in the Special Purpose Processor Development Group
+	  (SPPDG). They have been employed extensively at Mayo and distributed
+	  to some government agencies and research collaborators. At the
+	  beginning of 2004, we decided to release the TNT graphical front-end
+	  and MMTL programs as free software under the GNU General Public
+	  License (GPL).  Technically, MMTL programs are in the class of 2-D and
+	  2.5-D "field solvers", which convert dimensions and materials
+	  properties into electronic design parameters. The MMTL suite consists
+	  of several programs, including lossy, loss-free, quasi-static, and
+	  full-wave simulators. Circuit parameters are computed by either the
+	  method of moments (MOM) or finite element methods (FEM). Basic
+	  per-unit-length parameters are generated by the simulator, and can be
+	  converted into HSPICE W-element models. MMTL is similar in many ways
+	  to commercial field solver products which typically cost thousands of
+	  dollars.
+
+	  http://mmtl.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_SCI_WCALC
+	bool "sci-wcalc-1.0nb3"
+	help
+	  Scilab Based Transmission Line Analysis/Synthesis Calculator
+
+	  This is the Scilab frontend for the Wcalc transmission
+	  line analysis/synthesis calculator.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_PCB
+	bool "pcb-20100929"
+	help
+	  Printed circuit board layout system
+
+	  pcb is a printed circuit board layout too.  It includes connectivity driven
+	  layout (rat lines), a layout versus netlist check, design rule checker as well
+	  as industry standard RS274-X (Gerber) photoplot export.
+
+	  http://pcb.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_WCALC_DOCS
+	bool "wcalc-docs-1.0nb2"
+	help
+	  Web Pages for the Wcalc Transmission Line Calculator
+
+	  This is the web site including documentation and F.A.Q. for the
+	  Wcalc transmission line analysis/synthesis calculator.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_TRANSCALC
+	bool "transcalc-0.14nb10"
+	help
+	  Transmission line analysis/synthesis
+
+	  Transcalc is an analysis and synthesis tool for calculating the
+	  electrical and physical properties of different kinds of RF and
+	  microwave transmission lines.
+	  
+	  Transcalc was somewhat inspired by the functionality of Agilent
+	  Technologies' commercial program linecalc. Transcalc aspires to be
+	  more functional in the long run and well-documented with appropriate
+	  references to formulas that are used. Transcalc is built using the
+	  GIMP toolkit (GTK) for its GUI interface.
+	  
+	  For each type of transmission line, using dialog boxes, you can enter
+	  values for the various parameters, and either calculate its electrical
+	  properties (analyze), or use the given electrical requirements to
+	  sythesize physical parameters of the required transmission line.
+	  
+	  Available transmission lines (this list will expand with subsequent
+	  releases):
+	  
+	  * microstrip
+	  * rectangular waveguide
+	  * coax
+	  * coupled microstrip
+
+	  http://transcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_SIMIAN
+	bool "simian-2.1"
+	help
+	  2-dimensional interconnect and transmission line simulator
+
+	  Surface Impedance Method for Interconnect Analysis.
+	  
+	  SIMIAN is a two dimensional frequency dependent series
+	  impedance extraction tool for inerconnects and transmission
+	  lines using conductors of rectangular or circular cross section.
+	  
+	  The use of the surface ribbon method (SRM) greatly enhances
+	  the speed of computation relative to the volume filament
+	  method (VFM).
+
+	  http://weewave.mer.utexas.edu/MED_files/MED_research/Intrcncts/SIMIAN_stuff/simian_links.html
+
+config BR2_PKGSRC_PACKAGE_CAD_XCHIPLOGO
+	bool "xchiplogo-19991222nb7"
+	help
+	  Program for generating pretty logos on VLSI chips
+
+	  Xchiplogo reads an ascii bitmap file, and converts it into a
+	  magic  or cif file. It is a handy program for creating logos
+	  of text or graphics for  putting  on  VLSI  chips.   At  the
+	  moment  it  accepts  the  B&W dithered format of XV as the
+	  input. It has got quite a few options for resizing and  get-
+	  ting rid of many design rule errors that can be found in the
+	  bitmap file. It has  a smoothing, before and after an  error
+	  correction  step. The error correction step is pretty simple
+	  ,don't expect miracles, but it works quite  fine  and  spe-
+	  cially for text gives a reasonable output.
+
+	  http://www.eleceng.adelaide.edu.au/Personal/moini/chiplogo.html
+
+config BR2_PKGSRC_PACKAGE_CAD_VERILOG
+	bool "verilog-0.9.4"
+	help
+	  
+
+	  Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a
+	  compiler, compiling source code writen in Verilog (IEEE-1364) into some target
+	  format. For batch simulation, the compiler can generate C++ code that is
+	  compiled and linked with a run time library (called "vvm") then executed as
+	  a command to run the simulation. For synthesis, the compiler generates
+	  netlists in the desired format.
+	  
+	  The compiler proper is intended to parse and elaborate design descriptions
+	  written to the IEEE standard IEEE Std 1364-1995. This is a fairly large and
+	  complex standard, so it will take some time for it to get there, but that's
+	  the goal. I'll be tracking the upcoming IEEE Std 1364-1999 revision as well,
+	  and some -1999 features will creep in.
+
+	  http://icarus.com/eda/verilog/index.html
+
+config BR2_PKGSRC_PACKAGE_CAD_SIMIAN_DOCS
+	bool "simian-docs-2.1"
+	help
+	  PDF manual for SIMIAN
+
+	  User's guide for SIMIAN (Surface Impedance Method for Interconnect
+	  Analysis).  The guide is in PDF format.
+
+	  http://weewave.mer.utexas.edu/MED_files/MED_research/Intrcncts/SIMIAN_stuff/simian_links.html
+
+config BR2_PKGSRC_PACKAGE_CAD_SPICE
+	bool "spice-3f5.1nb6"
+	help
+	  General-purpose circuit simulation program
+
+	  SPICE is a general-purpose circuit simulation program for nonlinear dc,
+	  nonlinear transient, and linear ac analyses. Circuits may contain resistors,
+	  capacitors, inductors, mutual inductors, independent voltage and current
+	  sources, four types of dependent sources, lossless and lossy transmission
+	  lines (two separate implementations), switches, uniform distributed RC
+	  lines, and the five most common semiconductor devices: diodes, BJTs, JFETs,
+	  MESFETs, and MOSFETs.
+	  
+	  From the SPICE3 Version3f3 User's Manual.
+	  This is availble as a postscript document from:
+	  ftp://ic.eecs.berkeley.edu/pub/Spice3/um.3f3.ps
+
+	  http://bwrc.eecs.berkeley.edu/Classes/IcBook/SPICE/
+
+config BR2_PKGSRC_PACKAGE_CAD_XCIRCUIT
+	bool "xcircuit-3.4.26"
+	help
+	  
+
+	  The program xcircuit is a generic drawing program tailored especially
+	  for making publication-quality renderings of circuit diagrams (hence
+	  the name).  The output is pure PostScript, and the graphical interface
+	  attempts to maintain as much consistency as possible between the X11
+	  window rendering and the final printer output.
+	  
+	  xcircuit is mouse, menu, and keyboard-driven, with the emphasis on
+	  single-character keyboard macros.
+
+	  http://opencircuitdesign.com/xcircuit/
+
+config BR2_PKGSRC_PACKAGE_CAD_VERILOG_CURRENT
+	bool "verilog-current-20090923"
+	help
+	  
+
+	  Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a
+	  compiler, compiling source code writen in Verilog (IEEE-1364) into some target
+	  format. For batch simulation, the compiler can generate C++ code that is
+	  compiled and linked with a run time library (called "vvm") then executed as
+	  a command to run the simulation. For synthesis, the compiler generates
+	  netlists in the desired format.
+	  
+	  The compiler proper is intended to parse and elaborate design descriptions
+	  written to the IEEE standard IEEE Std 1364-1995. This is a fairly large and
+	  complex standard, so it will take some time for it to get there, but that's
+	  the goal. I'll be tracking the upcoming IEEE Std 1364-1999 revision as well,
+	  and some -1999 features will creep in.
+	  
+	  Please note that this package is a development snapshot and while it contains
+	  the latest and greatest features, it may be buggy as well.  There is a separate
+	  verilog package which is made of the stable releases.
+
+	  http://icarus.com/eda/verilog/index.html
+
+config BR2_PKGSRC_PACKAGE_CAD_VIPEC
+	bool "ViPEC-3.2.0nb8"
+	help
+	  Network analyser for electrical networks
+
+	  VIPEC is an network analyser for electrical networks. It takes a
+	  texted based description of an electrical network, and performs a
+	  simulation of the circuit response in the frequency domain. Output is
+	  in the form of 2-port parameters, and can be plotted on in a grid and
+	  Smithchart format. VIPEC supports various lumped circuit elements, as
+	  well as elements like transmission lines and 2-port data files.
+
+	  http://vipec.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_WCALC
+	bool "wcalc-1.0nb3"
+	help
+	  Meta-pkg for the Wcalc Transmission Line Analysis/Synthesis Calculator
+
+	  Wcalc is a transmission line analysis and synthesis tool.  Several
+	  structures including air core solenoid inductors, coaxial cable,
+	  single and coupled microstrip, stripline, and metal-insulator-
+	  semiconductor microstrip are included.
+	  
+	  Wcalc can analyze the electrical parameters for a given physical
+	  description of the structure or synthesize the required dimensions
+	  to meet certain desired electrical characteristics.
+	  
+	  Wcalc provides several different frontends for accessing the numeric
+	  engine.  Currently, there is a GTK based standalone graphical
+	  user interface, a common gateway interface (CGI) for web access,
+	  Scilab, Octave, and Matlab interfaces for maximum flexibility within
+	  a scientific programming environment, and a standard input/output
+	  (stdio) interface which allows a simple interface to other 3rd
+	  party tools which can communicate via a pipe.
+	  
+	  The different frontends are installed as different packages for
+	  flexibility in deployment.
+
+	  http://wcalc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_CAD_DINOTRACE_MODE
+	bool "dinotrace-mode-9.3cnb1"
+	help
+	  Emacs major mode for dinotrace
+
+	  This is an emacs major mode for linking verilog code with simulation results
+	  and the Dinotrace waveform viewer.
+
+	  http://www.veripool.com/dinotrace/
+
+config BR2_PKGSRC_PACKAGE_CAD_PY_MYHDL
+	bool "py26-MyHDL-0.7"
+	help
+	  Hardware description in Python
+
+	  MyHDL is a Python package for using Python as a hardware
+	  description language. Popular hardware description languages, like
+	  Verilog and VHDL, are compiled languages. MyHDL with Python
+	  can be viewed as a "scripting language" counterpart of such
+	  languages. However, Python is more accurately described as a very
+	  high level language (VHLL). MyHDL users have access to the
+	  amazing power and elegance of Python for their modeling work.
+
+	  http://jandecaluwe.com/Tools/MyHDL/Overview.html
+
+config BR2_PKGSRC_PACKAGE_CAD_VERILOG_MODE
+	bool "verilog-mode-3.60nb2"
+	help
+	  Verilog mode for Emacs
+
+	  This is a major mode for editing Verilog HDL source code under GNU Emacs or
+	  XEmacs.
+
+	  http://www.verilog.com/verilog-mode.html
+
+config BR2_PKGSRC_PACKAGE_CAD_PY_SIMPY
+	bool "py26-simpy-2.1.0"
+	help
+	  Discrete event simulation framework
+
+	  SimPy is a process-based discrete-event simulation language based on
+	  standard Python and released under the GNU LGPL.
+	  
+	  It provides the modeller with components of a simulation model. These
+	  include processes, for active components like customers, messages, and
+	  vehicles, and resources, for passive components that form limited
+	  capacity congestion points like servers, checkout counters, and
+	  tunnels. It also provides monitor variables to aid in gathering
+	  statistics.
+
+	  http://simpy.sourceforge.net/
+

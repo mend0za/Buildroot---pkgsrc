@@ -1,0 +1,687 @@
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_EPSG_DOCS
+	bool "epsg-docs-200911nb1"
+	help
+	  EPSG geodetic parameters database documentation
+
+	  EPSG Geodetic Parameters
+	  
+	  The OGP Surveying and Positioning Committee, through its geodesy
+	  sub-committee, maintains and publishes a dataset of parameters for
+	  coordinate reference system and coordinate transformation description.
+	  The EPSG Geodetic Parameter Dataset has been included as reference
+	  data in UKOOA and SEG positioning data exchange formats, the GeoTIFF
+	  interchange format for georeferenced raster imagery, the IHS Energy
+	  Iris21, PPDM and POSC Epicentre data models.  The dataset is
+	  distributed in an MS Access relational database and SQL script files.
+	  
+	  This package includes the technical documentation for the EPSG database.
+
+	  http://www.epsg.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GAMA
+	bool "gama-1.11"
+	help
+	  
+
+	  GNU Gama is a project dedicated to adjustment of geodetic networks. It
+	  is intended for use with traditional geodetic surveyings which are
+	  still used and needed in special measurements (e.g., underground or
+	  high precision engineering measurements) where the Global Positioning
+	  System (GPS) cannot be used.
+	  
+	  Adjustment in local Cartesian coordinate systems is fully supported by
+	  a command-line program gama-local that adjusts geodetic (free)
+	  networks of observed distances, directions, angles, height
+	  differences, 3D vectors and observed coordinates (coordinates with
+	  given variance-covariance matrix). Adjustment in global coordinate
+	  systems is supported only partly as a gama-g3 program.
+
+	  http://www.gnu.org/s/gama/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GARMINTOOLS
+	bool "garmintools-0.10"
+	help
+	  Utilities for Garmin Forerunner 305 and similar GPS units
+
+	  This software provides Linux users with the ability to communicate with the
+	  Garmin Forerunner 305 via the USB interface. While this is the only Garmin
+	  unit that I own, I did implement all of the documented Garmin protocols as of
+	  Rev C (May 19, 2006) over the USB physical link. This means that if you have a
+	  Garmin with a USB connection to a PC, you ought to be able to use this
+	  software to communicate with it.
+	  
+	  If you're looking for a complete solution to all of your Linux Garmin GPS
+	  needs, this is not it. I own a Garmin Forerunner 305 and wrote this code
+	  specifically so I could download and save data from that particular GPS unit
+	  to my Linux machine. I tried gpsbabel, but found that it did not have command
+	  line options specific to the Forerunner run and lap data - all I could do was
+	  get the tracklog. That's how all of this got started. I also wanted a few
+	  other things, like the ability to convert a track log into a Google maps
+	  encoded polyline, and (eventually) the ability to generate PNG images of heart
+	  rate and elevation data.
+
+	  http://code.google.com/p/garmintools/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GARMIN_UTILS
+	bool "garmin-utils-2.5nb1"
+	help
+	  Utilities for Garmin GPS receivers
+
+	  garmin-utils is a set of utilities for transferring waypoints, routes,
+	  and tracks to and from Garmin GPS receivers.
+
+	  http://www.snafu.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_CM2GPX
+	bool "cm2gpx-1.0.4"
+	help
+	  CacheMate PDB-to-GPX file converter
+
+	  cm2gpx is used to convert Palms CacheMate backup or import PDB
+	  files to equivalent GPX files. Extensions specific to
+	  Geocaching.com and CacheMate are automatically used as needed.
+	  Filter options are available, to selectively convert waypoints.
+
+	  http://www.smittyware.com/download/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GDAL_LIB
+	bool "gdal-lib-1.8.0nb4"
+	help
+	  Translator library for raster geospatial data formats
+
+	  GDAL is a translator library for raster geospatial data formats that
+	  is released under an X/MIT style Open Source license. As a library, it
+	  presents a single abstract data model to the calling application for
+	  all supported formats.  The related OGR library (which lives within
+	  the GDAL source tree) provides a similar capability for simple
+	  features vector data. It includes roughly 60 format drivers. Current
+	  translators include:
+	  * GeoTIFF 		(read/write)
+	  * Erdas Imagine		(read/write)
+	  * ESRI .BIL 		(read)
+	  * .aux labelled raw	(read/write)
+	  * DTED 			(read)
+	  * SDTS DEM 		(read)
+	  * CEOS 			(read)
+	  * JPEG 			(read/write)
+	  * PNG 			(read/write)
+	  * Geosoft GXF		(read)
+	  * Arc/Info Binary Grid 	(read)
+	  A full list is available at http://www.gdal.org/formats_list.html.
+
+	  http://www.gdal.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GEOCLUE
+	bool "geoclue-0.12.0nb4"
+	help
+	  Geoinformation service API and base providers
+
+	  Geoclue is a modular geoinformation service built on top of the
+	  D-Bus messaging system. The goal of the Geoclue project is to make
+	  creating location-aware applications as simple as possible.
+
+	  http://www.freedesktop.org/wiki/Software/GeoClue
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GEOS
+	bool "geos-3.3.0"
+	help
+	  
+
+	  GEOS (Geometry Engine - Open Source) is a C++ port of the Java
+	  Topology Suite (JTS).  It contain the complete functionality of JTS in
+	  C++.  It includes all the OpenGIS "Simple Features for SQL" spatial
+	  predicate functions and spatial operators,and JTS topology functions
+	  like IsValid().
+
+	  http://geos.refractions.net/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_CMCONVERT
+	bool "cmconvert-1.9.5"
+	help
+	  CacheMate import file converter for GPS GPX files
+
+	  cmconvert is used to convert EasyGPS XML file formats (LOC and GPX)
+	  to a format that can be installed onto a Palm OS device and imported
+	  into CacheMate. Options are also available to list waypoints contained
+	  in an XML file, and selectively convert specified waypoints.
+
+	  http://www.smittyware.com/download/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GIPFEL
+	bool "gipfel-0.3.2nb4"
+	help
+	  Photogrammetry For Mountain Images
+
+	  gipfel helps to find the names of mountains or points of interest on a picture.
+	  It uses a database containing names and GPS data. With the given viewpoint (the
+	  point from which the picture was taken) and two known mountains on the picture,
+	  gipfel can compute all parameters needed to compute the positions of other
+	  mountains on the picture.
+	  
+	  gipfel can also be used to play around with the parameters manually. But be
+	  warned: It is pretty difficult to find the right parameters for a given picture
+	  manually.
+	  
+	  You can think of gipfel as a georeferencing software for arbitrary images (not
+	  only satelite images or maps).
+	  
+	  gipfel also has an image stitching mode, which allows to generate panorama
+	  images from multiple images that have been referenced with gipfel. The nice
+	  thing about the new image stitching is that it reuses the code that already
+	  existed for referencing images.
+
+	  http://www.ecademix.com/JohannesHofmann/gipfel.html
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GPSDRIVE
+	bool "gpsdrive-1.31nb16"
+	help
+	  GPS Navigation system
+
+	  GpsDrive is a car (bike, ship, plane) navigation system.  GpsDrive
+	  displays your position provided from your NMEA capable GPS receiver on a
+	  zoomable map, the map file is autoselected depending of the position and
+	  prefered scale.  Speech output is supported if the "festival" software
+	  is running.  The maps are autoselected for best resolution depending of
+	  your position and can be downloaded from Internet.  All Garmin GPS
+	  reveiver with a serial output should be usable, also other GPS receiver
+	  which supports NMEA protocol.  GpsDrive is written in C with use of the
+	  GTK+ graphic toolkit.
+
+	  http://www.gpsdrive.de/index.shtml
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GPSPOINT
+	bool "gpspoint-2.030521nb1"
+	help
+	  Program to download and upload waypoints to and from your GPS device
+
+	  This package provides a program and library to download and upload waypoints,
+	  routes, and tracks to and from your GPS device. Upload and download is
+	  possible via the GARMIN interface. Current position obtainable via the NMEA
+	  Interface, supported by most GPS devices.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_EMERILLON
+	bool "emerillon-0.1.2nb2"
+	help
+	  Map browser
+
+	  Map browser.
+
+	  http://projects.gnome.org/emerillon/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_EPSG
+	bool "epsg-7.4.1"
+	help
+	  EPSG geodetic parameters database
+
+	  EPSG Geodetic Parameters
+	  
+	  The Surveying and Positioning Committee of the International
+	  Association of Oil and Gas Producers (OGP), through its Geodesy
+	  Subcommittee, maintains and publishes a dataset of parameters for
+	  coordinate reference system and coordinate transformation description.
+	  The EPSG Geodetic Parameter Dataset has been included as reference
+	  data in UKOOA and SEG positioning data exchange formats, the GeoTIFF
+	  interchange format for georeferenced raster imagery, the IHS Energy
+	  Iris21, PPDM and POSC Epicentre data models.  The dataset is
+	  distributed in an MS Access relational database and SQL script files.
+	  
+	  This package includes the PostgreSQL and mySQL scripts for creating
+	  the EPSG database.
+
+	  http://www.epsg.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GPSUTILS
+	bool "gpsutils-0.4.0"
+	help
+	  Capture and convert data from a Garmin GPS receiver
+
+	  The gpsutils package covers some small applications to capture and convert
+	  data from a Garmin GPS receiver. These are based on a included more general
+	  GPS library (in C).
+
+	  http://wombat.ie/gps/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBCHAMPLAIN04
+	bool "libchamplain04-0.4.6nb5"
+	help
+	  Map widget
+
+	  libchamplain is a Clutter based widget to display rich, eye-candy and
+	  interactive maps.
+
+	  http://projects.gnome.org/libchamplain/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBCHAMPLAIN06
+	bool "libchamplain06-0.6.1nb5"
+	help
+	  Map widget
+
+	  libchamplain is a Clutter based widget to display rich, eye-candy and
+	  interactive maps.
+
+	  http://projects.gnome.org/libchamplain/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GPSBABEL
+	bool "gpsbabel-1.4.2"
+	help
+	  Utility to convert and fetch GPS related data
+
+	  GPSBabel converts waypoints, tracks, and routes from one
+	  format to another, whether that format is a common mapping
+	  format like Delorme, Streets and Trips, or even a serial
+	  or USB upload or download to a GPS receiver such as those
+	  from Garmin and Magellan.
+
+	  http://www.gpsbabel.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBCHAMPLAIN08
+	bool "libchamplain08-0.8.3nb1"
+	help
+	  Map widget
+
+	  libchamplain is a Clutter based widget to display rich, eye-candy and
+	  interactive maps.
+
+	  http://projects.gnome.org/libchamplain/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QLANDKARTEGT
+	bool "qlandkartegt-1.0.0nb3"
+	help
+	  GPS visualisation and mapping tool, supports Garmin devices
+
+	  QLandkarte GT is the ultimate outdoor aficionado's tool. It supports GPS maps
+	  in GeoTiff format as well as Garmin's img vector map format. Additional it is
+	  the PC side front end to QLandkarte M, a moving map application for mobile
+	  devices.
+	  
+	  Additionally it is a front end to the GDAL tools, to make georeferencing
+	  scanned maps feasible for the normal user. Compared to similar tools like
+	  QGis, it's target users are more on the consumer side than on the scientific
+	  one. QLandkarte GT might not let you select every possible feature of the
+	  GDAL tools, but it will simplify their use to the demands of most users.
+
+	  http://www.qlandkarte.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GPSD
+	bool "gpsd-2.96"
+	help
+	  GPS information daemon
+
+	  Gpsd is a user land daemon acting as a liason between a gps or
+	  Loran-C receiver and clients. The receiver is expected to generate
+	  position information as NMEA-0183 sentences, or Rockwell binary format,
+	  although that can be changed.
+	  
+	  Gpsd listens on port 2947 for clients requesting position, time,
+	  velocity or altitude information.
+	  
+	  Gpsd can take information from the gps and translate it into
+	  something easier to understand for clients.
+
+	  http://gpsd.berlios.de/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QLANDKARTEGT_GARMINDEV
+	bool "qlandkartegt-garmindev-0.3.4"
+	help
+	  Garmin device drivers for qlandkartegt
+
+	  Garmin device drivers for qlandkarte.
+
+	  http://www.qlandkarte.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBDRG
+	bool "libdrg-0.0.81nb2"
+	help
+	  Library for reading and merging DRG files.
+
+	  libdrg is a library for obtaining DRG data from multiple files at
+	  multiple resolutions.
+
+	  http://www.lexort.com/software/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QLANDKARTEM
+	bool "qlandkartem-0.2.0nb6"
+	help
+	  QLandkarteM is a moving map application for mobile devices
+
+	  QLandkarte M is a moving map application for mobile devices. As QLandkarte GT
+	  it will display mapsets of different resolutions and point to your current
+	  location. Additionally it will record your location data for further use by
+	  QLandkarte GT. It's user interface is optimized to the few buttons of a
+	  typical PDA.
+	  
+	  This is experimental pre-alpha software and not targeted towards end-users
+	  in this stage of developement! This package is provided as a convenience to 
+	  QLandkarte M developers only.
+	  
+	  Copy or hard-link the qlm executable to a user-writable directory as qlm
+	  wants to put its data files in the same directory as the executable, 
+	  otherwise it will dump core.
+
+	  http://www.qlandkarte.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_BASE
+	bool "xrmap-base-2.29nb1"
+	help
+	  Earth map viewer - base program
+
+	  Xrmap is an GPL'd user-friendly X program which can be used to generate
+	  accurate images of small or bigger portions of the Earth. The main data
+	  source is the CIA World Data Bank II.
+	  The CIA_WDB2 consists of vector descriptions of coastlines and islands,
+	  political boundaries, major and minor rivers, glaciers, lakes, canals,
+	  reefs, etc. The accuracy of the data is at best 1" of arc, approximately
+	  30 meters at the Equator -- in fact all recorded points are given by
+	  integer coordinates representing seconds of arc.
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_DATA
+	bool "xrmap-data-0nb1"
+	help
+	  Vector data for xrmap
+
+	  Vector data for xrmap (CIA World Database 2).
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_MAPSERVER
+	bool "mapserver-5.6.5nb4"
+	help
+	  Environment for building spatially enabled Internet apps
+
+	  MapServer is an OpenSource development environment for building spatially
+	  enabled Internet applications.  It now supports MapScript which allows popular
+	  scripting languages such as Perl, Python, Tk/Tcl, Guile and even Java to
+	  access the MapServer C API.  MapScript provides a rich environment for
+	  developing applications that integrate disparate data.
+
+	  http://mapserver.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_FACTBOOK_HTML
+	bool "xrmap-factbook_html-2002nb1"
+	help
+	  
+
+	  CIA factbook for xrmap (HTML).
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_FACTBOOK_TEXT
+	bool "xrmap-factbook_text-2006"
+	help
+	  CIA factbook for xrmap
+
+	  CIA factbook for xrmap.
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_FLAGS
+	bool "xrmap-flags-1.1nb1"
+	help
+	  National flags for xrmap
+
+	  National flags for xrmap.
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_MERKAARTOR
+	bool "merkaartor-0.17.2nb1"
+	help
+	  Merkaartor is an OpenStreetMap mapping program
+
+	  Merkaartor is an OpenStreetMap mapping program. Merkaartor focuses on
+	  providing a visually pleasing but performant editing environment for free
+	  geographical data.
+
+	  http://www.merkaartor.be/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_SHAPELIB
+	bool "shapelib-1.2.10nb1"
+	help
+	  
+
+	  The Shapefile C Library provides the ability to write simple C programs
+	  for reading, writing and updating (to a limited extent) ESRI
+	  Shapefiles, and the associated attribute file (.dbf). The Shapefile
+	  format is a working and interchange format promulgated by ESRI for
+	  simple vector data with attributes.
+
+	  http://shapelib.maptools.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_HYMNS
+	bool "xrmap-hymns-1.2nb1"
+	help
+	  
+
+	  National anthems (MIDI) for xrmap.
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_P5_GEO_DISTANCE
+	bool "p5-Geo-Distance-0.17"
+	help
+	  Calculate Distances and Closest Locations
+
+	  This perl library aims to provide as many tools to make it as simple
+	  as possible to calculate distances between geographic points, and
+	  anything that can be derived from that. Currently there is support
+	  for finding the closest locations within a specified distance, to
+	  find the closest number of points to a specified point, and to do
+	  basic point-to-point distance calculations.
+
+	  http://search.cpan.org/~bluefeet/Geo-Distance-0.11/Distance.pm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_PDFMAPS
+	bool "xrmap-pdfmaps-1.1nb1"
+	help
+	  PDF maps for xrmap
+
+	  PDF maps for xrmap.
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_TEX_PST_GEO
+	bool "tex-pst-geo-2.03"
+	help
+	  Geographical Projections
+
+	  pst-geo is a set of PSTricks related packages for various cartographic
+	  projections of the terrestrial sphere. The package pst-map2d provides
+	  conventional projections such as Mercator, Lambert, cylindrical, etc.
+	  The package pst-map3d treats representation in three dimensions of the
+	  terrestrial sphere. Packages pst-map2dII and pst-map3dII allow use of
+	  the CIA World DataBank II. Various parameters of the packages allow for
+	  choice of the level of the detail and the layouts possible (cities,
+	  borders, rivers etc). Substantial data files are provided, in an
+	  (internally) compressed format. Decompression happens on-the-fly as a
+	  document using the data is displayed, printed or converted to PDF
+	  format. A Perl script is provided for the user to do the decompression,
+	  if the need should arise.
+
+	  http://www.tug.org/texlive/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_TEX_PST_GEO_DOC
+	bool "tex-pst-geo-doc-2.03"
+	help
+	  Documentation for tex-pst-geo
+
+	  This is documentation for tex-pst-geo.
+
+	  http://www.tug.org/texlive/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_VIKING
+	bool "viking-1.2.1nb2"
+	help
+	  Viking manages GPS data, supports Open Street Map and geocaching
+
+	  Viking is a free/open source program to manage GPS data. You can import and
+	  plot tracks and waypoints, show Open Street Maps and/or Terraserver maps under
+	  it, download geocaches for an area on the map, make new tracks and waypoints,
+	  see real-time GPS position, etc.
+
+	  http://viking.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_VIS5D_
+	bool "vis5d+-1.2.1nb4"
+	help
+	  Volumetric Visualization program for scientific datasets
+
+	  Vis5D is a system for interactive visualization of large 5-D gridded data sets
+	  such as those produced by numerical weather models. One can make isosurfaces,
+	  contour line slices, colored slices, volume renderings, etc of data in a 3-D
+	  grid, then rotate and animate the images in real time. There is also a feature
+	  for wind trajectory tracing, a way to make text anotations for publications,
+	  support for interactive data analysis, etc. GRASS can import and export Vis5D
+	  raster data.
+
+	  http://vis5d.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_P5_GEO_COORDINATES_UTM
+	bool "p5-Geo-Coordinates-UTM-0.09nb1"
+	help
+	  Perl extension for Latitude Longitude conversions
+
+	  The Geo::Coordinates::UTM module will translate latitude / longitude
+	  coordinates to Universal Transverse Mercator(UTM) coordinates and vice
+	  versa.
+
+	  http://search.cpan.org/dist/Geo-Coordinates-UTM/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP
+	bool "xrmap-2.29nb1"
+	help
+	  Earth map viewer - complete
+
+	  Xrmap is an GPL'd user-friendly X program which can be used to generate
+	  accurate images of small or bigger portions of the Earth. The main data
+	  source is the CIA World Data Bank II.
+	  The CIA_WDB2 consists of vector descriptions of coastlines and islands,
+	  political boundaries, major and minor rivers, glaciers, lakes, canals,
+	  reefs, etc. The accuracy of the data is at best 1" of arc, approximately
+	  30 meters at the Equator -- in fact all recorded points are given by
+	  integer coordinates representing seconds of arc.
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_ANTHEMS
+	bool "xrmap-anthems-1.1nb1"
+	help
+	  
+
+	  Texts of national anthems for xrmap.
+
+	  http://frmas.free.fr/li_1.htm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_P5_GEOGRAPHY_COUNTRIES
+	bool "p5-Geography-Countries-2009041301nb2"
+	help
+	  Perl5 module for mapping country names and codes
+
+	  The Gegraphy::Countries module maps country names, and their 2-letter,
+	  3-letter and numerical codes, as defined by the ISO-3166 maintenance
+	  agency, and defined by the UNSD.
+
+	  http://search.cpan.org/dist/Geography-Countries/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_P5_GEO_MERCATOR
+	bool "p5-Geo-Mercator-1.01nb3"
+	help
+	  Perl5 module computing Mercator Projection into meters
+
+	  Computes Mercator Projection of input latitude/longitude coordinates
+	  (in degrees) into (x, y) coordinates (as distances in meters) from
+	  the meridian/equator. Also provides a method to convert back into
+	  latitude, longitude.
+
+	  http://search.cpan.org/dist/Geo-Mercator/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_P5_GEO_SHAPEFILE
+	bool "p5-Geo-ShapeFile-2.52nb2"
+	help
+	  Perl extension for handling ESRI GIS Shapefiles
+
+	  Geo::ShapeFile module reads ESRI ShapeFiles containing GIS mapping
+	  data, it has support for shp (shape), shx (shape index), and dbf
+	  (data base) formats.
+
+	  http://search.cpan.org/~jasonk/Geo-ShapeFile-2.52/lib/Geo/ShapeFile.pm
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_P5_GEO_WEATHER
+	bool "p5-Geo-Weather-1.41nb3"
+	help
+	  Perl5 weather retrieval module
+
+	  The Geo::Weather module retrieves the current weather from weather.com
+	  when given city and state or a US zip code. Geo::Weather relies on
+	  LWP::UserAgent to work.
+
+	  http://search.cpan.org/dist/Geo-Weather/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_PROJ
+	bool "proj-4.7.0"
+	help
+	  Cartographic projection software
+
+	  PROJ is a collection of programs and a library for performing
+	  cartographic projections. The programs are designed as a standard UNIX
+	  filters to be used with other programs in the generation of maps and
+	  charts, and as map digitizing applications.
+
+	  http://trac.osgeo.org/proj/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_PROJ_DOC
+	bool "proj-doc-1.1nb1"
+	help
+	  PDF documentation for the PROJ cartographic projection software
+
+	  PROJ is a collection of programs and a library for performing
+	  cartographic projections. The programs are designed as a standard UNIX
+	  filters to be used with other programs in the generation of maps and
+	  charts, and as map digitizing applications.
+	  
+	  This package contains the PDF documentation for PROJ.
+
+	  http://www.remotesensing.org/proj/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_PROJ_SWIG
+	bool "proj-swig-0.02nb3"
+	help
+	  Guile and python wrappers for proj
+
+	  This package provides guile and python wrappers for PROJ, a coordinate
+	  transformation library.
+
+	  http://acert.ir.bbn.com/downloads/acert-geospatial/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QGIS
+	bool "qgis-1.6.0nb4"
+	help
+	  
+
+	  Quantum GIS (QGIS) is a user friendly Open Source Geographic Information System
+	  (GIS) licensed under the GNU General Public License. QGIS is an official
+	  project of the Open Source Geospatial Foundation (OSGeo). It runs on Linux,
+	  Unix, Mac OSX, and Windows and supports numerous vector, raster, and database
+	  formats and functionalities.
+	  
+	  Quantum GIS provides a continously growing number of capabilities provided by
+	  core functions and plugins. You can visualize, manage, edit, analyse data, and
+	  compose printable maps. Get a first impression with some screenshots and a more
+	  detailed feature list.
+
+	  http://www.qgis.org/
+
+config BR2_PKGSRC_PACKAGE_GEOGRAPHY_PY_PROJ
+	bool "py26-proj-1.8.3"
+	help
+	  Python wrapper for proj
+
+	  This package provides a Pyrex wrapper to provide python interfaces to
+	  PROJ.4 (http://proj.maptools.org) functions for coordinate
+	  transformation.
+
+	  http://code.google.com/p/pyproj/
+

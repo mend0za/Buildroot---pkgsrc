@@ -1,0 +1,1018 @@
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_BOOTSTRAP_EXTRAS
+	bool "bootstrap-extra-files-20070702"
+	help
+	  
+
+	  This package provides extra files and scripts needed to bootstrap pkgsrc
+	  on this platform.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_BOOTSTRAP_MK_FILES
+	bool "bootstrap-mk-files-20090807nb2"
+	help
+	  *.mk files for the bootstrap bmake utility
+
+	  The bootstrap bmake(1) utility uses some customised .mk files in order
+	  to pre-define certain definitions and targets, which guide the build
+	  process.  This package provides those *.mk files for the bmake(1)
+	  utility.
+
+	  http://www.pkgsrc.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_CDPACK
+	bool "cdpack-1.9"
+	help
+	  Utility to create multi-cd/dvd binary package collections
+
+	  cdpack is a small utility for creating ISO 9660 images for
+	  a multi-CD/DVD binary package collection.  The utility creates
+	  ISO 9660 images for all the binary packages in a specified
+	  directory.
+	  
+	  A choice of two algorithms is available for how the packages
+	  are grouped.  The "no duplication" algorithm arranges the
+	  packages so any package on CD/DVD number `n' will have all of
+	  its dependencies on CD/DVD numbers 1 through `n'.
+	  
+	  The "no inter-CD/DVD depends" algorithm will place certain
+	  packages on more than one CD/DVD to ensure that each CD/DVD is
+	  self contained (all package dependencies are satisfied within
+	  the single CD/DVD).
+	  
+	  The cddist utility in this package is used for creating an archive
+	  set of distfiles.
+
+	  http://www.NetBSD.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_COMPAT_HEADERS
+	bool "compat_headers-0.2"
+	help
+	  compatibility headers
+
+	  This package attempts to resolve deficiencies in system headers by
+	  providing missing types, definitions and prototypes in shadow headers.
+	  
+	  When use of compat_headers has been enabled on a platform, this package will
+	  become a compile-time dependency for every package. It will provide customized
+	  header files that take preference over some system provided ones (that may
+	  not even exist). This happens transparently through use of buildlink3.
+	  
+	  To enable use of this package, set FIX_SYSTEM_HEADERS=yes in mk.conf.
+
+	  http://www.pkgsrc.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_CREATEBUILDLINK
+	bool "createbuildlink-3.16"
+	help
+	  Shell script to help creating buildlink3.mk files
+
+	  This package installs a shell script that will take a Makefile
+	  and a PLIST file of an existing package and create an initial
+	  buildlink3.mk file from it.  The script tries to interpret the
+	  contents of the include and lib subdirectories (if any) of the
+	  package and add the corresponding BUILDLINK files.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_DFDISK
+	bool "dfdisk-1.0"
+	help
+	  Fetch distfiles from multiple locations
+
+	  dfdisk is an utility that adds extra functionality to pkgsrc, allowing it
+	  to fetch distfiles from multiple locations.  It currently supports the
+	  following methods:
+	  
+	  CD-ROM   The program manages a CD database where every disk is matched to
+	  a series of distfiles.  Whenever a distfile is requested, the
+	  program will check if it is known by the database and ask the
+	  user to place the needed disk in the drive.
+	  
+	  Network  If a file is not found in the described database, the program
+	  fallbacks to the network, fetching the file from there (the usual
+	  method in pkgsrc).
+	  
+	  Support for more methods may be added in the future, like for DVD-ROM.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_DISTBB
+	bool "distbb-0.41.0"
+	help
+	  DISTributed Bulk Build tool for pkgsrc
+
+	  distbb - distributed bulk build tool for pkgsrc
+	  
+	  Key features:
+	  - several packages can be built at the same time on different
+	  machines or chroots
+	  - good design ;-)
+	  - flexibility
+	  - compactness
+	  - no limit on a number of "slave" machines and/or chroots
+	  - fault tolerance, e.g. failures of slave hosts is not a problem
+	  - nice logging
+
+	  http://mova.org/~cheusov/pub/distbb/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_GENRPM
+	bool "genrpm-1.1"
+	help
+	  Generate an RPM package from an installed pkgsrc package
+
+	  This package installs a script called genrpm, which is used to
+	  generate a Redhat Package Manager (RPM) package from an installed
+	  pkgsrc package.  It does this by generating a spec file, and using
+	  that to identify the components of the RPM and package them.
+	  
+	  If a pkgsrc tree is present on the system, a source RPM (or srpm)
+	  can also be generated. This will include the distfile, any pkgsrc
+	  patches, and the files used to accomplish the pkgsrc packaging.
+
+	  http://www.pkgsrc.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_GENSOLPKG
+	bool "gensolpkg-1.10nb2"
+	help
+	  Utility to generate a Solaris package
+
+	  This is a small utility to translate from NetBSD-derived pkgsrc
+	  packages into Solaris packages.  I wrote this as an aid to
+	  understanding Solaris packages, and to provide some Solaris packages
+	  which can be used in jumpstart, and manipulated with the Solaris
+	  package manipulation tools, but still have the benefit of the original
+	  package being maintained by a number of people who know what they're
+	  doing, and put a lot of time into keeping abreast of latest versions
+	  and bug fix releases.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PBULK_BASE
+	bool "pbulk-base-0.43"
+	help
+	  Core components of the modular bulk build framework
+
+	  pbulk is the modular bulk build framework for pkgsrc.
+	  
+	  This package contains the core components:
+	  
+	  - pbulk-scan, a program to scan the entire pkgsrc tree
+	  or a list of directories therein for packages and
+	  dependencies. Distributed operation using a master/client
+	  mode is supported.
+	  
+	  - pbulk-resolve, a program to resolve the dependencies
+	  from the output of pbulk-scan
+	  
+	  - pbulk-build, the build scheduler. Distributed builds via TCP
+	  are supported.
+	  
+	  This package does not contain the script logic to build actual packages.
+
+	  ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ALTERNATIVES
+	bool "pkg_alternatives-1.5"
+	help
+	  Generic wrappers for programs with similar interfaces
+
+	  pkg_alternatives is a tool to manage the alternatives system provided by
+	  The NetBSD Packages Collection, also known as pkgsrc.  It creates, configures
+	  and destroys generic wrappers used to run programs with similar interfaces.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_CHK
+	bool "pkg_chk-2.0nb1"
+	help
+	  Check installed package versions against pkgsrc
+
+	  pkg_chk verifies that the versions of installed packages matches those in
+	  pkgsrc, optionally adding missing or updating mismatched packages.
+	  
+	  It can verify all installed packages, or check against a set of packages
+	  based on the hostname, architecture, and other characteristics.
+
+	  ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_AUTOSWC
+	bool "autoswc-1.6"
+	help
+	  Generates system wide cache files for GNU autoconf
+
+	  autoswc is an utility that automatically generates system wide cache files
+	  for use with configure scripts created by GNU autoconf, and specially by
+	  those executed within pkgsrc.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_BINPATCH
+	bool "binpatch-1.0"
+	help
+	  Trivial binary patch applicator
+
+	  Apply small, arbitrary binary patches using an arcane command line
+	  syntax.
+
+	  ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGCLEAN
+	bool "pkgclean-20051116"
+	help
+	  Quickly clean up all work directories in pkgsrc
+
+	  pkgclean cleans up your pkgsrc by removing the work directories.
+	  It's a fast alternative for ``cd /usr/pkgsrc && make clean''.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_COMP
+	bool "pkg_comp-1.35"
+	help
+	  Build packages inside a chroot jail
+
+	  pkg_comp is a small utility designed to build packages inside a
+	  clean chroot tree.
+	  
+	  Some ideas about what to use it for (taken from manpage):
+	  * Build packages for other system versions. For example, build
+	  packages for NetBSD 1.5 while you are running NetBSD current.
+	  * Build packages using different options than your current system
+	  like changing the threading library, COPTS, placement of
+	  configuration files, etc.
+	  * Debug the build process of a package, checking if buildlinks
+	  work properly.
+	  * Avoid autoconf's side effects by keeping a separate chroot for
+	  each project, like one for GNOME2 and another one for KDE3.
+	  * Schedule builds of package sets for several different machines.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGDEP
+	bool "pkgdep-1.0"
+	help
+	  Script for displaying dependence information on software packages
+
+	  a script for displaying dependence information on software packages
+	  
+	  Usage: pkgdep [opts] package
+	  -I INDEX file path (default: /usr/pkgsrc/INDEX)
+	  -e match package by regular expression
+	  -r recursive
+	  -v output graph data for xvcg (graphics/vcg package)
+	  
+	  Examples:
+	  pkgdep -I /cvs/pkgsrc/INDEX x11/gtk2
+	  pkgdep -e jpeg
+	  pkgdep -v -e imlib2 |xvcg -
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGFIND
+	bool "pkgfind-20050804"
+	help
+	  Find packages by package name in pkgsrc
+
+	  pkgfind can find packages in pkgsrc.  It tries to find packages which
+	  matches a keyword in the package name.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGDEPGRAPH
+	bool "pkgdepgraph-2.8"
+	help
+	  Visual representation of installed NetBSD packages
+
+	  pkgdepgraph prints out a "dot" language specification of the
+	  inter-dependencies of your installed packages.  The "dot" language
+	  is interpreted by the graphviz package to make graphs.  There are
+	  several uses for such information.
+	  
+	  (1) A graphical representation of information is always good to
+	  look at.
+	  
+	  (2) The output itself can be sorted and filtered to provide a list
+	  of packages to delete in order that they can be rebuilt (to replace
+	  out-of-date components).
+	  
+	  (3) You can visually estimate the work involved in (or impact of)
+	  removing a given component in order to replace it.
+
+	  ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGDIFF
+	bool "pkgdiff-1.3"
+	help
+	  Tools to create, maintain, and send back patches for pkgsrc
+
+	  This package contains four tools to ease creating and maintaining
+	  patches for pkgsrc: mkpatches, patchdiff, pkgdiff, and pkgvi.
+	  
+	  pkgdiff compares two files (like diff) and produces an output file
+	  that can be used in pkgsrc.
+	  
+	  mkpatches automatically generates a set of patches, if the original
+	  versions of the files had been saved as filename.orig.
+	  
+	  patchdiff compares a previously existing set of patches with another
+	  one created by mkpatches, and outputs any changes.
+	  
+	  pkgvi makes backup copies if a file is changed, so pkgdiff can be run
+	  on it later, generating a patch for the changes made.
+
+	  ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_GNOME_PACKAGEKIT
+	bool "gnome-packagekit-0.4.0nb8"
+	help
+	  GNOME frontend for PackageKit
+
+	  PackageKit is a system designed to make installing and updating software on
+	  your computer easier. The primary design goal is to unify all the software
+	  graphical tools used in different distributions, and use some of the latest
+	  technology like PolicyKit to make the process suck less.
+	  
+	  The actual nuts-and-bolts distro tool (yum, apt, conary, etc) is used by
+	  PackageKit using compiled and scripted helpers. PackageKit isn't meant to
+	  replace these tools, instead providing a common set of abstractions that can
+	  be used by standard GUI and text mode package managers.
+	  
+	  PackageKit itself is a system activated daemon called packagekitd. Being
+	  system activated means that it's only being run when the user is using a text
+	  mode or graphical tool, and quits when it's no longer being used. This means
+	  we don't delay the boot sequence or session startup and don't consume memory
+	  when not being used.
+	  
+	  gnome-packagekit is the name of the collection of graphical tools for
+	  PackageKit to be used in the GNOME desktop.
+
+	  http://www.packagekit.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_DISTINST
+	bool "pkg_distinst-0.02"
+	help
+	  Remove any distfiles not belonging to an installed package
+
+	  This is a simple script that will synchronise the content of your ${DISTDIR}
+	  directory with currently installed packages.
+	  
+	  This script will delete any ${DISTFILE} in ${DISTDIR} that does not currently
+	  have an installed package as an owner.
+	  
+	  If you play with packages a fair bit and download some just to have a play with
+	  and delete the package later your ${DISTDIR} can end up with a lot of orphaned
+	  ${DISTFILES}.  While lintpkgsrc will help you remove outdated ${DISTFILES} it
+	  does not do any correlation with installed packages which is the gap this
+	  script aims to fill.
+	  
+	  With "lintpkgsrc -or && pkg_distinst --delete" you can and up with a fairly
+	  lean and current ${DISTDIR}.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_FILECHECK
+	bool "pkg_filecheck-0.4"
+	help
+	  Check for files not owned by any package
+
+	  pkg_filecheck compares the file system contents with the list of
+	  files recorded in the package database, and reports any files that
+	  are in the file system, but not in the database.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_LIBKVER
+	bool "libkver-0.6"
+	help
+	  
+
+	  This package provides a shared library and a replacement for
+	  sysctl(1) (when needed i.e. when the original one is statically linked)
+	  so that the real version numbers and strings of the running NetBSD
+	  kernel as returned by sysctl(3) and uname(3) are overridden by
+	  those the library is configured to report.
+	  
+	  This is useful for -among other things- building packages in
+	  sandboxed/chrooted environment for a different NetBSD release than the
+	  system hosting the sandbox/chroot.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGIN
+	bool "pkgin-0.4.3"
+	help
+	  Apt / yum like tool for managing pkgsrc binary packages
+
+	  pkgin is aimed at being an apt / yum like tool for managing
+	  pkgsrc binary packages. It relies on pkg_summary(5) for
+	  installation, removal and upgrade of packages and associated
+	  dependencies, using a remote repository.
+
+	  http://pkgin.net/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_LIBNBCOMPAT
+	bool "libnbcompat-20090610"
+	help
+	  Portable NetBSD compatibility library
+
+	  libnbcompat is a portable NetBSD compatibility library for use by
+	  the pkgsrc tools and other sources from NetBSD (and elsewhere).
+	  
+	  It is also helpful for providing definitions and functions missing from
+	  other Unix platforms.
+
+	  http://www.NetBSD.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ROLLING_REPLACE
+	bool "pkg_rolling-replace-0.24"
+	help
+	  Replace/upgrade packages in-place
+
+	  pkg_rolling-replace does 'make replace' on one package at a time,
+	  tsorting the packages being replaced according to their
+	  interdependencies, which avoids most duplicate rebuilds.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_LINTPKGSRC
+	bool "lintpkgsrc-4.82"
+	help
+	  Sanity checks on the complete pkgsrc tree
+
+	  lintpkgsrc checks various things on the complete pkgsrc tree.
+
+	  http://www.NetBSD.org/Documentation/pkgsrc/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGSE
+	bool "pkgse-0.3nb1"
+	help
+	  Fetch informations about a NetBSD package from pkgsrc.netbsd.se
+
+	  pkgse is a simple perl script that fetches informations about a
+	  NetBSD pkgsrc package from the pkgsrc.netbsd.se website.
+
+	  http://imil.net/wp/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_MTREE
+	bool "mtree-20081105"
+	help
+	  Utility for mapping and checking directory hierarchies
+
+	  The mtree utility compares the file hierarchy rooted in the current
+	  directory against a specification read from the standard input.
+	  Messages are written to the standard output for any files whose
+	  characteristics do not match the specification, or which are missing
+	  from either the file hierarchy or the specification. It can be used
+	  as a file integrity checker.
+
+	  http://www.NetBSD.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_NIH
+	bool "nih-0.9.1"
+	help
+	  Package manager for pkgsrc
+
+	  NIH Invented Here :-)
+	  This is a package manager for pkgsrc.
+	  
+	  Available commands:
+	  nih help            - Display help message
+	  nih refresh         - Download pkg_summary and SHA512 files
+	  nih install         - Install or update packages
+	  nih uninstall       - Uninstall packages
+	  nih verify          - Verify packages integrity
+	  nih status          - Show status of installed packages
+	  nih info            - Show information about packages
+	  nih meta            - Output available or installed meta packages
+	  nih search          - Powerful search in packages
+	  nih leaf            - Output or remove autoinstalled leaf packages
+	  nih list            - List packages
+	  nih mark            - Mark packages
+	  nih deps            - Show dependencies
+	  nih clean-cache     - Clean-up cache directory with binaries
+
+	  https://github.com/cheusov/pkgnih
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_SELECT
+	bool "pkg_select-20090308nb2"
+	help
+	  Curses based pkgsrc system browser / manager
+
+	  pkg_select will display a curses file browser for the pkg system. You can
+	  browse pkgsrc and gather various informations about packages, like avail-
+	  able version, installed version, comment and homepage. A simple paging
+	  system lets you read information files.  You can browse both installed
+	  and uninstalled packages, as well as dependencies list and perform vari-
+	  ous administrative tasks to them. A package finder system helps you to
+	  easily locate a package by its name.  pkg_select can handle either source
+	  or binary installations when pkgsrc is installed on the local system, or
+	  binary only when using the pkgsrc-over-ftp feature.
+	  
+	  If no pkgsrc is installed, pkg_select offers ability fo fetch it, either
+	  by FTP or CVS. It is also possible to update an existing pkgsrc via the
+	  interface.
+	  
+	  pkg_select user interface is quite self explainatory, every available
+	  shortcut is shown and annotated.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGSRC_TODO
+	bool "pkgsrc-todo-1.0"
+	help
+	  Tools for maintaing pkgsrc/doc/TODO
+
+	  This package contains two tools for maintaining pkgsrc/doc/TODO.
+	  
+	  add_todo adds lines for newly available updates for packages to
+	  the TODO file.
+	  
+	  obsolete_todo checks the contents of pkgsrc/doc/TODO against updates
+	  noted in the CHANGES-* files and removes entries for packages which
+	  were already updated to newer files.
+
+	  http://www.NetBSD.org/docs/pkgsrc/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_SUMMARY_UTILS
+	bool "pkg_summary-utils-0.56.1"
+	help
+	  
+
+	  A collection of utilities for manipulating pkg_summary(5) files.
+	  
+	  pkg_list_all_pkgs       - list (in PKGPATH form) all packages in pkgsrc tree
+	  pkg_src_summary         - create a full pkg_src_summary
+	  for given (in PKGPATH form) packages
+	  pkg_bin_summary         - creates a summary for binary or installed packages
+	  pkg_micro_src_summary   - create a micro pkg_src_summary
+	  for given (in PKGPATH form) packages
+	  pkg_cmp_summary         - compare two summary files, i.e. packages
+	  are compared by their versions
+	  pkg_grep_summary        - grep the summary using AWK expression
+	  pkg_digger              - very powerful package searcher
+	  pkg_digger_backend      - pkg_summary.txt backend for pkg_digger
+	  pkg_update_summary      - updates pkg_summary(5) by analysing the modification
+	  time of binary packages and pkg_summary(5) file
+	  pkg_update_src_summary  - efficiently updates pkg_src_summary for all
+	  packages in pkgsrc tree
+	  pkg_summary4view        - convert a summary file to human readable format
+	  pkg_refresh_summary     - output an information about latest/newest version
+	  of packages
+	  pkg_cleanup_distdir     - remove old unused distfiles
+	  pkg_uniq_summary        - filter out repeated package summaries
+	  pkg_summary2deps        - summary to dependency graph converter
+	  pkg_subgraph_deps       - analyses dependency graph given on input
+	  pkg_lint_summary        - sanity checks for summaries
+	  pkg_summary2leaves      - output leaf packages
+
+	  http://www.mova.org/~cheusov/pub/pkg_summary-utils/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGSURVEY
+	bool "pkgsurvey-0.0"
+	help
+	  Utility to collate pkg information, and mail to central census site
+
+	  pkgsurvey is a small utility to aid the pkgsrc people at pkgsrc.org
+	  
+	  Information of currently-installed packages is taken from the current
+	  machine, along with Operating System type, hardware architecture, and
+	  operating system release version information, and mailed to a central
+	  site.
+	  
+	  No information will be divulged to anyone - it is simply meant for use
+	  by the pkgsrc people, for finding the most popular packages.
+	  
+	  If the idea of divulging package or operating system version
+	  information is distasteful to you, or does not conform to your site's
+	  policy, then please feel free to delete pkgsurvey from your system:
+	  as root, type
+	  
+	  pkg_delete -v pkgsurvey
+	  
+	  Alistair G. Crooks
+	  Thu Feb  1 07:48:48 GMT 2001
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_TARUP
+	bool "pkg_tarup-1.9"
+	help
+	  
+
+	  Script to tar up an already installed package.
+	  
+	  Now my question is, how can we include this? I'd prefer to have it
+	  available from pkg_admin, but that is C, and the other is a script -
+	  rewrite in C?
+	  
+	  The Script has still a problem, as the MTREE file is removed after
+	  a pkg_add/make install. As leaving the MTREE file will lead to a
+	  ~10% increase in space needed for /var/db/pkg which I'm not sure
+	  we should do, esp. as the files are almost always the same again.
+	  (On my notebook with ~250 installed pkgs, the size increasement
+	  would be from 8.8MB to 10MB).
+	  
+	  Send your thoughts to me <hubertf@netbsd.org> !
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PORT2PKG
+	bool "port2pkg-1.11nb8"
+	help
+	  Convert from a FreeBSD port to a NetBSD package
+
+	  A converter from a FreeBSD port to a NetBSD package.
+	  
+	  port2pkg tries to convert FreeBSD ports to NetBSD packages.  port2pkg
+	  copies files from portsdir to pkgsrcdir (if it does not exist, the
+	  pkgsrcdir is created), and tries to adapt the Makefile, patches and
+	  some files to NetBSD format in pkgsrcdir.
+	  
+	  port2pkg /mnt/ports/<category>/foo /usr/pkgsrc/<category>/foo
+	  
+	  Before committing a package which has been transformed using this
+	  utility, please check the results manually.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_RCORDER
+	bool "rcorder-20031013"
+	help
+	  Print a dependency ordering of interdependent files
+
+	  rcorder is designed to print out a dependency ordering of a set of
+	  interdependent files. Typically it is used to find an execution
+	  sequence for a set of shell scripts in which certain files must be
+	  executed before others (such as rc.d startup and shutdown scripts).
+
+	  http://www.NetBSD.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_RC.SUBR
+	bool "rc.subr-20090118"
+	help
+	  Portable NetBSD rc.subr implementation for pkgsrc
+
+	  Portable implementation of the NetBSD rc.d subsystem.
+	  
+	  This package allows you to use rc.subr-style rc scripts (such as
+	  those included in pkgsrc) on other operating systems.
+
+	  http://www.NetBSD.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_REVBUMP
+	bool "revbump-2.1"
+	help
+	  
+
+	  Tools for bumping PKGREVISIONs and adapting BUILDLINK_ABI_DEPENDS
+	  versions to the latest version automatically.
+	  
+	  This tool is mostly intended for pkgsrc developers with commit
+	  access.
+
+	  http://www.pkgsrc.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_RPM2PKG
+	bool "rpm2pkg-3.2.2"
+	help
+	  Convert RPM archives to NetBSD packages
+
+	  "rpm2pkg" can be used to convert RedHat Package Manager archives used by
+	  many Linux distribution like e.g. Red Hat or SuSE into NetBSD packages.
+	  It will extract the RPM files and create a NetBSD package list on the fly.
+
+	  http://www.pkgsrc.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_INSTALL_INFO
+	bool "pkg_install-info-4.5nb3"
+	help
+	  Standalone GNU info file installation utility
+
+	  This package provides a standalone GNU install-info utility.  It
+	  used by pkgsrc on systems that do not provide a native install-info
+	  utility.
+	  
+	  An install-info tool and documentation is also available in the
+	  devel/gtexinfo package.
+
+	  http://www.gnu.org/software/texinfo/texinfo.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_SHLOCK
+	bool "shlock-20080529"
+	help
+	  Shell utility to perform dot-locking
+
+	  The shlock command can create or verify a lock file on behalf of a
+	  shell or other script program.  When it attempts to create a lock
+	  file, if one already exists, shlock verifies that it is or is not
+	  valid.  If valid, shlock will exit with a non-zero exit code.  If
+	  invalid, shlock will re- move the lock file, and create a new one.
+	  
+	  shlock uses the rename(2) system call to make the final target lock
+	  file, which is an atomic operation (i.e.  "dot locking", so named for
+	  this mech- anism's original use for locking system mailboxes).  It
+	  puts the process ID ("PID") from the command line into the requested
+	  lock file.
+	  
+	  shlock verifies that an extant lock file is still valid by using
+	  kill(2) with a zero signal to check for the existence of the process
+	  that holds the lock.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_P5_PKGSRC_DEWEY
+	bool "p5-pkgsrc-Dewey-1.1nb2"
+	help
+	  Perl module to compare pkgsrc Dewey numbers
+
+	  This Perl module provides functions to compare pkgsrc Dewey numbers.
+
+	  http://www.NetBSD.org/docs/pkgsrc/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_LEAVES
+	bool "pkg_leaves-1.2"
+	help
+	  Print leaf packages
+
+	  pkg_leaves is a small script to print a list of leaf packages aka
+	  packages not depended on.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_URL2PKG
+	bool "url2pkg-2.13"
+	help
+	  Tool to automate initial steps in building a package
+
+	  The url2pkg program creates a new pkgsrc package from only the URL of a
+	  distribution file. It is intended to help pkgsrc developers create new
+	  packages quickly and easily.
+
+	  http://www.NetBSD.org/docs/pkgsrc/creating.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGLINT
+	bool "pkglint-4.103"
+	help
+	  Verifier for NetBSD packages
+
+	  pkglint is for pkgsrc packages what lint(1) is for C files. It checks
+	  for various things that the used languages cannot detect, for example
+	  application-specific restrictions on certain variables.
+	  
+	  Before importing a new package or making changes to an existing package,
+	  pkglint should be run in the package's directory to check for common
+	  errors.
+
+	  http://www.NetBSD.org/docs/pkgsrc/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_NOTIFY
+	bool "pkg_notify-0.4.3"
+	help
+	  Notifies package maintainer when a new version is available
+
+	  pkg_notify notifies package maintainer when a new version of the
+	  software is available.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_VERIFYPC
+	bool "verifypc-1.5"
+	help
+	  Sanity check package dependencies according to pkg-config
+
+	  verifypc is a tool that sanity checks the dependencies of a package based on
+	  the results of a successful build, assuming the package uses pkg-config to
+	  detect dependencies.
+	  
+	  verifypc will warn you if the configuration script requests an uninstalled
+	  or unavailable package (not specified as a direct dependency) or if the
+	  requested package does not match the version specification in the packages'
+	  dependencies.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_REGRESS
+	bool "pkg_regress-0.2"
+	help
+	  Run pkgsrc infrastructure regression test suite
+
+	  pkg_regress runs the regression test suite for the pkgsrc infrastructure.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_X11_LINKS
+	bool "x11-links-0.68"
+	help
+	  Shadow tree of links to native X11 headers and libraries
+
+	  x11-links creates a shadow directory of symbolic links for X11 headers and
+	  libraries to ${X11BASE} under ${PREFIX}/share/x11-links.
+	  
+	  It is intended for use by buildlink code to cleanly separate out the true
+	  X11 code files from any installed X11 package code files.  The X11
+	  hierarchies supported are:
+	  
+	  XFree86-3.3.x
+	  XFree86-4.0.x
+	  XFree86-4.1.x
+	  XFree86-4.2.x
+	  XFree86-4.3.x
+	  Xorg-6.8.x
+	  Xorg-6.9
+
+	  http://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_XPKGWEDGE
+	bool "xpkgwedge-1.17"
+	help
+	  
+
+	  Xpkgwedge, not a "real" program in the traditional sense, is a hack that
+	  allows users to compile X11 pkgs from pkgsrc and install them outside of
+	  the X11 tree - even if they use imake - by using pkgxmkmf.
+	  
+	  Pkgxmkmf is a slightly modified xmkmf from the X11R6.3 release and supports
+	  finding config files in ${LOCALBASE}/lib/X11/config, if it exists, and in
+	  ${X11BASE}/lib/X11/config.  In all other respects, it is identical to xmkmf.
+	  Please refer to xmkmf(1) for more information.
+
+	  ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PACKAGEKIT
+	bool "packagekit-0.4.0nb11"
+	help
+	  System activated daemon for managing software updates
+
+	  PackageKit is a system designed to make installing and updating software on
+	  your computer easier. The primary design goal is to unify all the software
+	  graphical tools used in different distributions, and use some of the latest
+	  technology like PolicyKit to make the process suck less.
+	  
+	  The actual nuts-and-bolts distro tool (yum, apt, conary, etc) is used by
+	  PackageKit using compiled and scripted helpers. PackageKit isn't meant to
+	  replace these tools, instead providing a common set of abstractions that can
+	  be used by standard GUI and text mode package managers.
+	  
+	  PackageKit itself is a system activated daemon called packagekitd. Being
+	  system activated means that it's only being run when the user is using a text
+	  mode or graphical tool, and quits when it's no longer being used. This means
+	  we don't delay the boot sequence or session startup and don't consume memory
+	  when not being used.
+
+	  http://www.packagekit.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PBULK
+	bool "pbulk-0.48"
+	help
+	  Modular bulk build framework
+
+	  pbulk is the modular bulk build framework for pkgsrc.
+	  
+	  This package contains the front end bulk build and the script logic
+	  for full and limited bulk builds.
+
+	  ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_DIGEST
+	bool "digest-20080510"
+	help
+	  Message digest wrapper utility
+
+	  This utility is a wrapper for the
+	  
+	  + md5(3),
+	  + rmd160(3),
+	  + sha1(3),
+	  + sha256,
+	  + sha384
+	  + sha512
+	  + tiger
+	  + whirlpool
+	  
+	  message digest routines.
+
+	  http://www.NetBSD.org/docs/software/packages.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_OSABI
+	bool "osabi-Linux-3.0.0"
+	help
+	  Operating System version dummy-package
+
+	  This is a dummy-package which is made a dependence for packages which are
+	  tightly bound to a specific version of an operating system, e.g. LKMs or
+	  sysutils/lsof. Such binary packages are not backwards compatible with other
+	  versions of the OS.
+	  
+	  The version number of this package should be similar to the operating system
+	  version (`uname -r' output).
+
+	  http://www.pkgsrc.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_RDIGEST
+	bool "rdigest-20080510"
+	help
+	  Recursive message digest wrapper utility
+
+	  This utility is a wrapper for the md5(3), sha1(3), rmd160(3), and
+	  tiger hash routines.  It is remarkably similar to the digest package,
+	  except that it can recursively checksum directory trees.
+	  
+	  While a simple checksum on a tar file is usually satisfactory, once
+	  said archive has been extracted, it is virtually impossible to
+	  repackage the extracted tree in a form that can yield a repeatable
+	  checksum.  To be specific, changes in timestamps and ownership, and
+	  changes in file ordering within directories can affect the checksum of
+	  the archive, while not really impacting the actual code at all.
+	  
+	  The algorithm used to checksum a directory in this implementation
+	  is considers only the files' pathnames, the files' types (ie,
+	  directory vs.  file vs. symbolic link), and their contents (for
+	  the latter two).  It is described in greater detail in the man
+	  page.
+
+	  http://www.NetBSD.org/docs/software/packages.html
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_INSTALL
+	bool "pkg_install-20110805"
+	help
+	  Package management and administration tools for pkgsrc
+
+	  pkg_install contains the core package management and administration
+	  utilities for pkgsrc, a multi-platform source and binary package
+	  system developed and maintained by The NetBSD Project and volunteers
+	  from around the globe.
+	  
+	  The following tools are included:
+	  
+	  pkg_add		install and upgrade binary packages
+	  pkg_admin	perform various pkgsrc administrative tasks
+	  pkg_create	create software package distributions
+	  pkg_delete	delete installed packages
+	  pkg_info	display information about installed or binary packages
+	  pkg_view	manage package views
+	  linkfarm	manage symbolic links for package views
+	  
+	  For the following tools compatibility wrappers are included:
+	  
+	  audit-packages	audit installed packages for security vulnerabilities
+	  download-vulnerability-list	download the latest vulnerabilities list
+
+	  http://www.pkgsrc.org/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ONLINE_CLIENT
+	bool "pkg_online-client-0.12.1"
+	help
+	  Client/Server package searcher for pkgsrc (client tools)
+
+	  pkg_online - client/server package searcher for pkgsrc.
+	  
+	  Every separate field (PKGPATH, PKGNAME, COMMENT etc.) may be queried
+	  separately and multiple fields may be queried too. A lot of search
+	  strategies are available. Set of fields and search strategies may
+	  very depending on your server configuration. Search in multiple
+	  "repositories" is supported too, e.g. search in binary repository
+	  or in pkgsrc source tree.
+	  
+	  Communication protocol is a well known dictionary protocol described
+	  in RFC-2229. Server may run dictd or any other dictionary protocol
+	  server.  For dictd see http://www.dict.org and
+	  http://sourceforge.net/projects/dict
+	  
+	  pkg_online has minimal amount of things specific to pkgsrc and can
+	  easily be adapted to any other packageing systems.
+	  
+	  Of course it is based on pkg_summary-utils ;-)
+	  
+	  This package provides client tools of PKG_ONLINE.
+
+	  http://mova.org/~cheusov/pub/pkg_online/
+
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ONLINE_SERVER
+	bool "pkg_online-server-0.12.1"
+	help
+	  Client/Server package searcher for pkgsrc (server tools)
+
+	  pkg_online - client/server package searcher for pkgsrc.
+	  
+	  Every separate field (PKGPATH, PKGNAME, COMMENT etc.) may be queried
+	  separately and multiple fields may be queried too. A lot of search
+	  strategies are available. Set of fields and search strategies may
+	  very depending on your server configuration. Search in multiple
+	  "repositories" is supported too, e.g. search in binary repository
+	  or in pkgsrc source tree.
+	  
+	  Communication protocol is a well known dictionary protocol described
+	  in RFC-2229. Server may run dictd or any other dictionary protocol
+	  server.  For dictd see http://www.dict.org and
+	  http://sourceforge.net/projects/dict
+	  
+	  pkg_online has minimal amount of things specific to pkgsrc and can
+	  easily be adapted to any other packageing systems.
+	  
+	  Of course it is based on pkg_summary-utils ;-)
+	  
+	  This package provides tools for building PKG_ONLINE databases.
+
+	  http://mova.org/~cheusov/pub/pkg_online/
+

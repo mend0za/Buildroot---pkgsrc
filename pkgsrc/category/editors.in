@@ -1,0 +1,2312 @@
+config BR2_PKGSRC_PACKAGE_EDITORS_ABIWORD
+	bool "abiword-2.8.6nb3"
+	help
+	  Open Source cross-platform word processor
+
+	  AbiWord is an open-source, cross-platform WYSIWYG word processor.
+	  This version uses GTK+2.
+	  
+	  Features include:
+	  - Basic character formatting (bold, underline, italics, etc.)
+	  - Paragraph alignment
+	  - Spell-check
+	  - Import of Word97 and RTF documents
+	  - Export to RTF, Text, HTML, and LaTeX formats
+	  - Interactive rulers and tabs
+	  - Styles
+	  - Unlimited undo/redo
+	  - Multiple column control
+	  - Widow/orphan control
+	  - Find/Replace
+	  - Anti-aliased fonts
+	  - Images
+	  
+	  More import and export filters and graphics formats are available
+	  with the abiwords-plugins package.
+
+	  http://www.abisource.com/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_ABIWORD_PLUGINS
+	bool "abiword-plugins-2.8.6nb3"
+	help
+	  Plugins enhancing Abiword's capabilities
+
+	  These plugins will enhance your AbiWord-experience. Included are additional
+	  import/export filters for DocBook, HTML, KWord, Latex and MS-Write as well
+	  as plugins adding support for further graphic-formats (JPEG, GIF, BMP, WMF,
+	  etc.)
+
+	  http://www.abisource.com/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_BIEW
+	bool "biew-5.6.2nb1"
+	help
+	  Binary viewer/editor
+
+	  Biew stands for Binary vIEWer, and is just that with built-in editor
+	  for binary, hexadecimal and disassembler modes. The program also has
+	  text viewer with different Russia codepages support.
+
+	  http://biew.sourceforge.net/en/biew.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_BEAV
+	bool "beav-1.40.18"
+	help
+	  Binary Editor And Viewer, a full featured binary file editor
+
+	  BEAV (Binary Editor And Viewer), is a full featured binary file
+	  editor.	  Just about any operation that you could want to do to a binary
+	  file is possible with BEAV.   You can insert or delete in the middle of
+	  a file thereby changing its size.   You can edit multiple files in
+	  multiple windows and cut and paste between them.   You can display and
+	  edit data in hex, octal, decimal, binary, ascii, or ebcdic formats.   You
+	  can display data in byte, word, or long word formats in either Intel or
+	  Motorola byte ordering.   You can send the formatted display mode to a
+	  file or printer.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_BEAVER
+	bool "beaver-0.3.0.1nb6"
+	help
+	  Lightweight GTK+ text editor with syntax highlighting
+
+	  Beaver is an Early AdVanced EditoR, for Linux and other Unices
+	  (and even Windows); in other words, it's a text editor that is
+	  intended to be light-weight, but full of useful features for
+	  programming, from editing of web sites to C coding.
+	  
+	  It is based upon the GTK+ toolkit, supports many languages
+	  through config files and offers functions such as automatic
+	  indentation and completion or syntax highlighting.  In fact,
+	  it is 100% compatible with Ultraedit's wordfile.txt files,
+	  and has its own mini macro language.
+
+	  http://www.nongnu.org/beaver/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_BVI
+	bool "bvi-1.3.2nb1"
+	help
+	  Vi-like editor for binary files
+
+	  BVI - A vi-like editor for binary files.
+	  
+	  This editor for binary files was written by Gerhard Buergmann
+	  and is distributed under the GPL (GNU Public License).
+
+	  http://bvi.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_CE
+	bool "ce-4.6"
+	help
+	  Chet's Emacs: small, fast emacs-like editor , tty version
+
+	  This editor is derived most directly from Dave Conroy's original
+	  MicroEmacs (uEmacs) editor, version 30, and Dan Lawrence's MicroEmacs
+	  v3.6.  Some stuff from mg, version 2a, has also been used.
+	  
+	  This version of ce is intended for use in normal ttys.
+
+	  http://tiswww.case.edu/php/chet/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_CE_DOC
+	bool "ce-doc-4.6nb2"
+	help
+	  Chet's Emacs: small, fast emacs-like editor , documentation
+
+	  This editor is derived most directly from Dave Conroy's original
+	  MicroEmacs (uEmacs) editor, version 30, and Dan Lawrence's MicroEmacs
+	  v3.6.  Some stuff from mg, version 2a, has also been used.
+	  
+	  This package manages the documentation
+
+	  http://tiswww.case.edu/php/chet/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_ELVIS
+	bool "elvis-2.2.0nb7"
+	help
+	  vi clone with regex-search, hex-edit, HTML/LaTeX preview
+
+	  Elvis is a very powerful vi/ex clone providing a number of bells and
+	  whistles:
+	  
+	  * Syntax Highlighting
+	  * Multiple files in multiple windows
+	  * Browse modes for LaTeX, HTML and man pages
+	  * Networking support (HTTP and FTP)
+
+	  http://elvis.vi-editor.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_CE_X11
+	bool "ce-x11-4.6nb1"
+	help
+	  Chet's Emacs: small, fast emacs-like editor , X11 version
+
+	  This editor is derived most directly from Dave Conroy's original
+	  MicroEmacs (uEmacs) editor, version 30, and Dan Lawrence's MicroEmacs
+	  v3.6.  Some stuff from mg, version 2a, has also been used.
+	  
+	  This version of ce is intended for use with the X Window System.
+
+	  http://tiswww.case.edu/php/chet/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EX
+	bool "ex-20040103nb1"
+	help
+	  Berkeley vi 3.7
+
+	  The Traditional Vi
+	  Source Code for Modern Unix Systems
+	  
+	  The vi editor is one of the most common text editors on Unix. It
+	  was developed starting around 1976 by Bill Joy at UCB, who was
+	  tired of the ed editor. But since he used ed as a code base, access
+	  to the original sources has required a Unix Source Code License
+	  for more than twenty years. In January 2002, Caldera was so kind
+	  to remove usage restrictions to the Ancient Unix Code by a BSD-style
+	  license (see the announcement at Slashdot) and thus vi is now
+	  finally free.
+	  
+	  Compared to most of its many clones, the original vi is a rather
+	  small program (~120 KB code on i386) just with its extremely powerful
+	  editing interface, but lacking fancy features like multiple undo,
+	  multiple screens or syntax highlighting. In other words, it is a
+	  typical Unix program that does exactly what it should and nothing
+	  more. I intend to preserve this style in maintaining my port, except
+	  for changes to achieve POSIX.2 standards compliance, features in
+	  the SVr4 versions of vi, and, of course, bug fixes.
+
+	  http://ex-vi.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_CONGLOMERATE
+	bool "conglomerate-0.9.1nb17"
+	help
+	  XML editor for GNOME2
+
+	  Conglomerate is a project to create a complete structured information
+	  authoring, management, archival, revision control and transformation system.
+	  Conglomerate uses XML semantics and powerful graphical editing, coupled with
+	  a centralised storage model and a flexible transformation language to create
+	  an environment which is easy to use, produces high-quality structured output
+	  and lets the user target several output media with a single source document.
+
+	  http://www.conglomerate.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_FE
+	bool "fe-1.8nb1"
+	help
+	  Folding editor
+
+	  Fe is a small and easy to use folding editor.
+	  
+	  Fe allows to fold arbitrary text regions; it is not bound to syntactic
+	  units.  Unlike Origami, folds are not attributed with a trailing
+	  comment, instead you can put folds before or after any text in the
+	  line, as you like.
+	  
+	  Fe has no configuration or extension language and requires no setup.
+	  Its user interface is emacs-like and it has menues for the very most
+	  important functions to help beginners.  Further there is a reference
+	  card.  It offers:
+	  
+	  * Regions and Emacs-like kill ring
+	  * Incremental search
+	  * Keyboard macros
+	  * Editing binary files
+	  * Multiple windows and views
+	  * Compose function for Latin 1 characters
+	  
+	  In case you can't stand the emacs interface and want ultimate
+	  flexibility, fe can easily be modified, because it is structured as an
+	  editor library with a user interface frontend, all written in C.
+
+	  http://www.moria.de/~michael/fe/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS
+	bool "emacs-23.3a"
+	help
+	  
+
+	  GNU Emacs is an extensible, customizable editor textand more.  At its
+	  core is an interpreter for Emacs Lisp, a dialect of the Lisp
+	  programming language with extensions to support text editing.  The
+	  features of GNU Emacs include:
+	  
+	  - Content-sensitive editing modes, including syntax coloring, for a
+	  wide variety of file types including plain text, source code, and
+	  HTML.
+	  - Complete built-in documentation, including a tutorial for new users.
+	  - Support for many languages and their scripts, including all scripts,
+	  Russian, Greek, Japanese, Chinese, Korean, Thai, Vietnamese, Lao,
+	  Ethiopian, and some Indian scripts.
+	  - Highly customizable, using Emacs Lisp code or a graphical
+	  customization interface.
+	  - A large number of extensions that add other functionality, including
+	  a project planner, mail and news reader, debugger interface,
+	  calendar, and more.  Many of these extensions are distributed with
+	  GNU Emacs; others are available separately.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_COOLEDIT
+	bool "cooledit-3.17.17nb5"
+	help
+	  Full-featured text editor
+
+	  Cooledit is a full-featured text editor, for Unix computers that run
+	  the X Window System.  Cooledit was born from a need for a user
+	  friendly text editor that would rival editors of other operating
+	  systems in ease of use and convenience.  Lately Cooledit is also a
+	  powerful programmer's editor.  It is also small and fast, making it
+	  ideal for interface with applications that allow for, or require, an
+	  external editor.  See 'Features' in the man page for a more elaborate
+	  description of what Cooledit can do.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GATE
+	bool "gate-2.06"
+	help
+	  Lightweight text editor
+
+	  Gate is text-gatherer. A text-gatherer is like a text-editor, but much
+	  more lightweight and unobtrusive.
+	  If you have a program or shell script that asks people to enter a small
+	  chunk of text, a text-gatherer like Gate is a good way to do it. It
+	  doesn't clear the screen (annoying if there were just some instructions
+	  printed there). It doesn't require you to know a lot of obscure editing
+	  commands. It doesn't make excessive demands on the intelligence of your
+	  terminal emulation software.
+	  It does provide a number of features that make it easier for novice users
+	  to produce good text. It does word-wrap, prints a prompt on each new line,
+	  and allows backspacing from the currently line onto previous lines. It
+	  also provides features that a more experienced user can use. You can call
+	  up normal editor, or use some of gate's simple-minded editing
+	  commands. You can read in files, or save your text to a file. You can
+	  filter your text through something like the unix "fmt" command. It
+	  provides a nice spell-checking interface too.
+
+	  http://www.unixpapa.com/gate.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GCONF_EDITOR
+	bool "gconf-editor-2.32.0nb2"
+	help
+	  Editor for the GConf configuration system
+
+	  An editor for the GConf configuration system.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS20
+	bool "emacs-20.7nb14"
+	help
+	  
+
+	  GNU Emacs is a self-documenting, customizable, extensible real-time
+	  display editor.
+	  
+	  Users new to Emacs will be able to use basic features fairly rapidly
+	  by studying the tutorial and using the self-documentation features.
+	  Emacs also has an extensive interactive manual browser.  It is easily
+	  extensible since its editing commands are written in Lisp.
+	  
+	  GNU Emacs's many special packages handle mail reading (RMail) and
+	  sending (Mail), outline editing (Outline), compiling (Compile),
+	  running subshells within Emacs windows (Shell), running a Lisp
+	  read-eval-print loop (Lisp-Interaction-Mode), automated psychotherapy
+	  (Doctor :-) and many more.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_DASHER
+	bool "dasher-4.10.1nb8"
+	help
+	  Easy typing without using keyboard
+
+	  Dasher is an information-efficient text-entry interface, driven by natural
+	  continuous pointing gestures.  Dasher is a competitive text-entry system
+	  wherever a full-size keyboard cannot be used - for example:
+	  - on a palmtop computer
+	  - on a wearable computer
+	  - when operating a computer one-handed, by joystick, touchscreen, trackball,
+	  or mouse
+	  - when operating a computer with zero hands (i.e., by head-mouse or by
+	  eyetracker)
+
+	  http://www.inference.phy.cam.ac.uk/dasher/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EASYEDIT
+	bool "easyedit-1.4.6"
+	help
+	  Easy to use text editor with onscreen instructions
+
+	  easyedit is an easy to use text editor, intended to be usable with little
+	  or no instruction. It is often found on other systems as "ee".
+
+	  http://mahon.cwx.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_ED
+	bool "ed-1.1"
+	help
+	  GNU version of line-oriented text editor
+
+	  This is the GNU version of ed(1).
+	  
+	  ed is a line-oriented text editor.  It is used to create, display,
+	  modify and otherwise manipulate text files.
+	  
+	  This also includes a restricted ed, which can only edit files in the
+	  current directory and cannot execute shell commands.
+
+	  http://www.gnu.org/software/ed/ed.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GOBBY
+	bool "gobby-0.4.12nb1"
+	help
+	  Collaborative Editor
+
+	  Gobby is a free collaborative editor. This means that it provides you
+	  with the possibility to edit files simultaneously with other users over
+	  a network. It supports multiple documents in one session and a
+	  multi-user chat. The platforms on which you could use Gobby are so far
+	  Microsoft Windows, Linux, Mac OS X and other Unix-like ones. Developed
+	  with the Gtk+ toolkit it integrates nicely into the GNOME desktop
+	  environment if you want it to.
+
+	  http://gobby.0x539.de/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS21
+	bool "emacs-21.4anb21"
+	help
+	  
+
+	  GNU Emacs is a self-documenting, customizable, extensible real-time
+	  display editor.
+	  
+	  Users new to Emacs will be able to use basic features fairly rapidly
+	  by studying the tutorial and using the self-documentation features.
+	  Emacs also has an extensive interactive manual browser.  It is easily
+	  extensible since its editing commands are written in Lisp.
+	  
+	  GNU Emacs's many special packages handle mail reading (RMail) and
+	  sending (Mail), outline editing (Outline), compiling (Compile),
+	  running subshells within Emacs windows (Shell), running a Lisp
+	  read-eval-print loop (Lisp-Interaction-Mode), automated psychotherapy
+	  (Doctor :-) and many more.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GTRANSLATOR
+	bool "gtranslator-1.1.7nb12"
+	help
+	  Gettext po file editor for the GNOME2 desktop environment
+
+	  gtranslator is an enhanced gettext po file editor for the GNOME2
+	  desktop environment. It handles all forms of gettext po files like
+	  compiled gettext po files (gmo/mo files), compressed po files
+	  (po.gz/po.bz2 etc.) and features many comfortable everyday usage
+	  features like Find/Replace, Auto Translation, Message Translation
+	  Learning, Messages Table (for having an overview of the
+	  translations/messages in the po file), Easy navigation and editing
+	  of translation messages & comments of the translation where accurate.
+	  It has got really very much to offer therefore you should simply
+	  test it and be happy with it!
+
+	  http://gtranslator.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_HEME
+	bool "heme-0.4nb1"
+	help
+	  Fast and portable console hex editor
+
+	  Heme is a fast and portable console hex editor for unix systems.  It
+	  has undo support (number of undo operations is only limited by
+	  available memory), ability to fill a range of addresses with the
+	  specified byte, ability to search for a single byte or character
+	  string.
+	  
+	  Offsets can be given in hexadecimal, octal or decimal.  There are two
+	  editing modes: hex and ascii.  In hex mode you type hexadecimal digits
+	  and in ascii mode you type characters.  In the ascii mode cursor is
+	  automatically moved to the next byte after typing a character (this
+	  behaviour is configurable for hex mode).
+
+	  http://sourceforge.net/projects/heme/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_HEXEDIT
+	bool "hexedit-1.2.12"
+	help
+	  To view and edit files in hexadecimal or ASCII
+
+	  Hexedit	view and edit files in hexadecimal or in ASCII.
+	  hexedit shows a file both in ASCII and in hexadecimal.
+	  The file can be a device as the file is not whole read.
+	  You can modify the file and search through it.
+	  You have also copy&paste, and save to file functions.
+	  Modifications are shown in bold.
+
+	  http://merd.sourceforge.net/pixel/hexedit.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GEDIT
+	bool "gedit-2.30.4nb3"
+	help
+	  Lightweight GNOME2 text editor
+
+	  Gedit is a lightweight text editor for the GNOME desktop found in many
+	  distributions of Linux, BSD and other Unix systems.  Designed for the X
+	  Window System, it uses the GTK+ and GNOME libraries.  Complete GNOME
+	  integration is featured, with support for Drag and Drop (DnD) between GNU
+	  Midnight Commander (GMC) and GNOME Multiple Document Interface (GnomeMDI).
+	  Gedit is released under the GNU General Public License (GPL).
+	  
+	  Gedit is listed under the GNOME Productivity category, and supports most
+	  standard editing features, plus several not found in your average text
+	  editor (plugins being the most notable of these).
+
+	  http://www.gnome.org/projects/gedit/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS21_NOX11
+	bool "emacs-nox11-21.4anb13"
+	help
+	  
+
+	  GNU Emacs is a self-documenting, customizable, extensible real-time
+	  display editor.
+	  
+	  Users new to Emacs will be able to use basic features fairly rapidly
+	  by studying the tutorial and using the self-documentation features.
+	  Emacs also has an extensive interactive manual browser.  It is easily
+	  extensible since its editing commands are written in Lisp.
+	  
+	  GNU Emacs's many special packages handle mail reading (RMail) and
+	  sending (Mail), outline editing (Outline), compiling (Compile),
+	  running subshells within Emacs windows (Shell), running a Lisp
+	  read-eval-print loop (Lisp-Interaction-Mode), automated psychotherapy
+	  (Doctor :-) and many more.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GEDIT_PYTHON
+	bool "gedit-python-2.30.4nb3"
+	help
+	  Lightweight GNOME2 text editor
+
+	  Gedit is a lightweight text editor for the GNOME desktop found in many
+	  distributions of Linux, BSD and other Unix systems.  Designed for the X
+	  Window System, it uses the GTK+ and GNOME libraries.  Complete GNOME
+	  integration is featured, with support for Drag and Drop (DnD) between GNU
+	  Midnight Commander (GMC) and GNOME Multiple Document Interface (GnomeMDI).
+	  Gedit is released under the GNU General Public License (GPL).
+	  
+	  Gedit is listed under the GNOME Productivity category, and supports most
+	  standard editing features, plus several not found in your average text
+	  editor (plugins being the most notable of these).
+
+	  http://www.gnome.org/projects/gedit/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_HNB
+	bool "hnb-1.9.17nb2"
+	help
+	  Hierarchical data organizer
+
+	  hnb stands for Hierarchical NoteBook. It is a console (ncurses)
+	  program to organize many kinds of data in one place, including
+	  addresses, TODO lists, ideas, book reviews, brainstorming,
+	  speech outlines, etc. It stores data in XML format, and is
+	  capable of native export to ASCII and HTML.
+
+	  http://hnb.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS22
+	bool "emacs-22.3nb14"
+	help
+	  
+
+	  GNU Emacs is a self-documenting, customizable, extensible real-time
+	  display editor.
+	  
+	  Users new to Emacs will be able to use basic features fairly rapidly
+	  by studying the tutorial and using the self-documentation features.
+	  Emacs also has an extensive interactive manual browser.  It is easily
+	  extensible since its editing commands are written in Lisp.
+	  
+	  GNU Emacs's many special packages handle mail reading (RMail) and
+	  sending (Mail), outline editing (Outline), compiling (Compile),
+	  running subshells within Emacs windows (Shell), running a Lisp
+	  read-eval-print loop (Lisp-Interaction-Mode), automated psychotherapy
+	  (Doctor :-) and many more.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GHEX
+	bool "ghex-2.24.0nb9"
+	help
+	  Hex editor
+
+	  GHex is a binary editor.
+	  GHex allows the user to load data from any file, view and edit it in either
+	  hex or ascii. A must for anyone playing games that use non-ascii format for
+	  saving.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_KDISSERT
+	bool "kdissert-1.0.7nb8"
+	help
+	  Mindmapping-like tool to generate text templates
+
+	  Mindmapping-like tool to generate text templates.
+
+	  http://freehackers.org/~tnagy/kdissert/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_KILE
+	bool "kile-2.0.2nb9"
+	help
+	  LaTeX source editor - TeX shell - Gnuplot front end
+
+	  Kile is a LaTeX source editor, TeX shell and GnuPlot frontend. It simplifies
+	  the creation and modification of LaTeX source code documents as well as the
+	  use of LaTeX-related programs for users who want to retain control over their
+	  LaTeX documents.
+	  
+	  Features include:
+	  + syntax highlighting, help menus and spell checking;
+	  + integrated DVI, PS, PDF and HTML viewers;
+	  + wizards for generating LaTeX code (Quick document, Quick letter, tabular and
+	  array environments);
+	  + direct insertion of the principal LaTeX tags via the LaTeX, Math and Greek
+	  menus;
+	  + one-click insertion of 370 different mathematical symbols;
+	  + insertion of standard Bibtex entry types in the .bib file;
+	  + "inverse" and "forward" search with KDVI;
+	  + automatic launching of LaTeX-related programs via the Tools menu;
+	  + a "Messages / Log File" frame which provides process information and LaTeX
+	  compilation log files;
+	  + Next Latex Error and Previous Latex Error commands for browsing LaTeX errors;
+	  + clicking line numbers in the log file for jumping to the corresponding line
+	  in the editor;
+	  + a "structure view" with links for jumping directly to different parts of the
+	  document in the "Structure" frame;
+
+	  http://kile.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_LEAFPAD
+	bool "leafpad-0.8.17nb6"
+	help
+	  Simple and light text editor using GTK+
+
+	  Leafpad is a GTK+ based simple text editor and is ideal as a file viewer.
+	  The user interface is similar to "notepad", aims to be lighter than GEdit
+	  and KWrite, and to be as useful as them.
+	  
+	  Its features are:
+	  
+	  * Minimum requirements: for portability.
+	  * Minimal menu items: to make full use of features and to learn easily.
+	  * No toolbar: to maximize the text area.
+	  * Single document interface (SDI): to set out windows to view at a time.
+	  * Character coding auto detection: to open file quickly without multi-codeset
+	  problems.
+
+	  http://tarot.freeshell.org/leafpad/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GICE
+	bool "gice-0.6.2nb9"
+	help
+	  Powerful C text editor with advanced features
+
+	  gICE is a powerful C text editor, developed using the GTK 2.0 toolkit.
+	  It provides advanced features like: AutoIdentation, Colors, text
+	  AutoFormating, C program AutoCorrection (gICE can read the source code
+	  and find lexic mistakes) and more.
+
+	  http://gice.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MG
+	bool "mg-20090107"
+	help
+	  Small, fast, public domain EMACS style editor
+
+	  This is the portable version of the OpenBSD mg editor
+	  
+	  Mg (mg) is a Public Domain EMACS style editor.  It is "broadly"
+	  compatible with GNU Emacs, the latest creation of Richard M.
+	  Stallman, Chief GNUisance and inventor of Emacs.  GNU Emacs (and other
+	  portions of GNU as they are released) are essentially free, (there are
+	  handling charges for obtaining it) and so is Mg.  You may never have
+	  to learn another editor.  (But probably will, at least long enough to
+	  port Mg...)  Mg was formerly named MicroGnuEmacs, the name change was
+	  done at the request of Richard Stallman.
+	  
+	  Mg is not associated with the GNU project, and most of it does not
+	  have the copyright restrictions present in GNU Emacs.  (However, some
+	  of the system dependent modules and the regular expression module do
+	  have copyright notices.  Look at the source code for exact
+	  copyright restrictions.)  The Mg authors individually may or may not
+	  agree with the opinions expressed by Richard Stallman in "The GNU
+	  Manifesto".
+	  
+	  This program is intended to be a small, fast, and portable editor for
+	  people who can't (or don't want to) run real Emacs for one reason
+	  or another.  It is compatible with GNU because there shouldn't be
+	  any reason to learn more than one Emacs flavor.
+
+	  http://www.han.dds.nl/software/mg/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MG2A
+	bool "mg2a-1.11"
+	help
+	  Small, fast, public domain EMACS style editor
+
+	  Mg (mg) is a Public Domain EMACS style editor.  It is "broadly"
+	  compatible with GNU Emacs.  Mg was formerly named MicroGnuEmacs,
+	  but is not associated with the GNU project.
+	  
+	  This program is intended to be a small, fast, and portable editor for
+	  people who can't (or don't want to) run real Emacs.
+	  
+	  The NetBSD version has a few minor cosmetic changes, better locating
+	  of the startup file (mg.rc), journaling and original mirroring of
+	  files.
+	  
+	  A similarly small and fast MSDOS version will be available sometime at
+	  ftp://ftp.cdrom.com/pub/simtelnet/msdos/editor/mg2a_exe.zip, without
+	  my enhancements.  Hopefully , I'll have time to make a port of this
+	  enhanced version to MSDOS under djgpp (LFN support), and post it as:
+	  ftp://ftp.cdrom.com/pub/simtelnet/gnu/djgpp/v2apps/mg2a110b.zip.
+	  
+	  The responsibility for the use of this material resides entirely with
+	  you.  We make no warranty of any kind concerning this material, nor do
+	  we make any claim as to the suitability of mg2a for any application.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_JED
+	bool "jed-0.99.16nb2"
+	help
+	  Extensible folding editor with Emacs/WordStar/EDT emulations
+
+	  JED is a freely available text editor for Unix, VMS, MSDOS, OS/2, and
+	  MS Windows.
+	  
+	  Features include:
+	  * Color syntax highlighting on color terminals.
+	  * Folding support
+	  * Extensible in a language resembling C. Completely customizable.
+	  * Capable of read GNU info files from within JED's info browser
+	  * A variety of programming modes (with syntax highlighting) are
+	  available including C, C++, FORTRAN, TeX, HTML, SH, IDL, DCL, NROFF...
+
+	  http://www.jedsoft.org/jed/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_JOE
+	bool "joe-3.7nb2"
+	help
+	  Joe's own editor
+
+	  JOE is the professional freeware ASCII text screen editor for UNIX.
+	  It makes full use of the power and versatility of UNIX, but lacks the steep
+	  learning curve and basic nonsense you have to deal with in every other UNIX
+	  editor. JOE has the feel of most IBM PC text editors: The key-sequences are
+	  reminiscent of WordStar and Turbo-C.  JOE is much more powerful than those
+	  editors, however.  JOE has all of the features a UNIX user should expect:
+	  full use of termcap/terminfo, excellent screen update optimizations (JOE is
+	  fully useable at 2400 baud), simple installation, and all of the
+	  UNIX-integration features of VI.
+
+	  http://joe-editor.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_LEIM20
+	bool "leim-20.7nb6"
+	help
+	  Libraries of Emacs Input Methods
+
+	  Libraries of Emacs Input Methods.
+	  
+	  It includes the following emacs packages:
+	  
+	  CXTERM-DIC
+	  quail
+	  SKK-DIC
+	  skk
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_JOVE
+	bool "jove-4.16.0.70"
+	help
+	  Small emacs-style editor, but lacks the LISP engine
+
+	  JOVE ("Jonathan's Own Version of Emacs") is an emacs-like editor less all
+	  the overhead of the LISP engine.  But for projects that don't require all
+	  the chrome of EMACS, JOVE will get the job done.  It supports split
+	  screens, shell windows, process control, customizable comment formatting
+	  and other features.  No syntax highlighting, colorisation or any of the
+	  other chrome.
+	  
+	  There is an 'X' version of jove included but it only works with SunTools
+	  or OpenWindows.  Hopefully this will be expanded.  It is not compiled in
+	  by default.
+	  
+	  If you want something more like EMACS, use EMACS.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MINED
+	bool "mined-2000.15"
+	help
+	  Html-aware editor
+
+	  Mined is a text editor with
+	  Good interactive features
+	  an intuitive user interface
+	  command control and pull-down menus available
+	  control and function key or mouse control
+	  
+	  Many useful text editing capabilities
+	  extensive Unicode support, including double-width and combining
+	  characters, keyboard mapping and script highlighting
+	  many text editing features, e.g. paragraph wrapping, smart quotes,
+	  multi-line support in search and replacement patterns
+	  program editing features, HTML support and syntax highlighting,
+	  identifier search
+	  systematic text and file handling safety, avoiding loss of data
+	  
+	  "Small-footprint" operation and portability
+	  plain text mode (terminal) operation
+	  instant start-up
+	  cross-platform operation (Unix, DOS/Windows)
+
+	  http://towo.net/mined/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS_NOX11
+	bool "emacs-nox11-23.3a"
+	help
+	  
+
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MLVIEW
+	bool "mlview-0.9.0nb13"
+	help
+	  XML editor for the GNOME environment
+
+	  MlView is an XML editor for the GNOME environment.  Some of its features are:
+	  * Cut/copy/paste as child/paste as prev/paste as next/ of XML elements.
+	  * XML element/attributes search.
+	  * Multi docs edition.
+	  * Several editing views can be opened on the same document.
+	  * Drag and drop based copy/cut/past of XML elements.
+	  * Edition of XML elements and attributes can be made directly on the tree.
+	  * Namespace support.
+	  * On-demand validation.
+	  * Graphical error reporting.  Parse/validation time errors reported.
+	  graphically.  This feature is new so it may be buggy or not well polished...
+	  * When validation is switched on, MlView proposes an elements/attributes.
+	  completion feature.  When an element is added to the tree, MlView also
+	  adds the children elements required by the DTD for the document to be valid.
+	  * Validation can be switched off.  The XML document editon can then be done
+	  without any constraint.
+	  * A clean code.
+
+	  http://www.freespiders.org/projects/gmlview/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_NOTECASE
+	bool "notecase-1.8.8nb7"
+	help
+	  Hierarchical note manager
+
+	  NoteCase is a hierarchical note manager (aka. outliner). It helps you
+	  organize your everyday text notes into a single document, with
+	  individual notes placed in the tree-like structure (each note can have
+	  its sub-notes, ...).
+	  To ensure your privacy, encrypted document format is supported,
+	  along with standard unencrypted format.
+
+	  http://notecase.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_LPE
+	bool "lpe-1.2.6nb3"
+	help
+	  Small and efficient programmer's editor for UNIX systems
+
+	  LPE is a small, efficient programmer's editor for UNIX systems.  It has grown
+	  from the result of a single night of hacking into a very capable and very
+	  versatile editor that defines its own philosophy of text editing.  That
+	  philosophy is that awk and sed are the right tools for most advanced editing
+	  jobs, and a text editor should make simple operations easy and make text look
+	  good.
+
+	  http://cdsmith.twu.net/professional/opensource/lpe.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_LYX
+	bool "lyx-1.6.9nb2"
+	help
+	  Document processor and graphical frontend for LaTeX
+
+	  LyX is a wordprocessor frontend to LaTeX, which gives both the
+	  ease-of-use of a wordprocessor, and the flexibility and power of
+	  LaTeX.
+	  
+	  Quasi-WYSIWYG interface, many LaTeX styles and layouts automatically
+	  generated. Speeds up learning LaTeX and makes complicated layouts
+	  easy and intuitive. Features include spell-checking, international
+	  character support, WYSIWYG graphics, tables, and equations.
+	  
+	  This version of LyX uses the Qt toolkit for the graphical interface.
+
+	  http://www.lyx.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MULE
+	bool "mule-2.3nb7"
+	help
+	  
+
+	  From FAQ-Mule:
+	  
+	  Mule is a multi-lingual enhancement of GNU Emacs.  Mule Ver.1 was
+	  based on GNU Emacs Ver.18 and Mule Ver.2 is based on GNU Emacs
+	  Ver.19.  Mule Ver.1 will not be supported anymore.
+	  
+	  Mule has the following features:
+	  * It can handle not only ASCII characters (7 bit) and ISO Latin-1
+	  characters (8 bit), but also 16 bit characters like Japanese,
+	  Chinese, and Korean.  Furthermore Mule can have a mixture of
+	  languages in a single buffer.
+	  * You can set different coding systems for file input/output,
+	  keyboard input, and inter-process communication.
+	  * When not in the multi-lingual mode, it behaves almost exactly like GNU
+	  Emacs.
+
+	  http://www.m17n.org/mule/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_DEBUGGER
+	bool "p5-Padre-Plugin-Debugger-0.3nb2"
+	help
+	  Debug Perl code from Padre editor
+
+	  Padre::Plugin::Debugger allows to debug perl code from within Padre.
+
+	  http://search.cpan.org/dist/Padre-Plugin-Debugger/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_NANO
+	bool "nano-2.2.4nb1"
+	help
+	  
+
+	  GNU `nano' is a small and friendly text editor.  Besides basic text
+	  editing, `nano' offers many extra features like an interactive search
+	  and replace, goto line number, auto-indentation, feature toggles,
+	  internationalization support, and filename tab completion.
+	  
+	  The original goal for `nano' was a complete bug-for-bug compatible
+	  emulation of Pico, but consistency is now a slightly higher priority.
+	  
+	  Nano does not have the restrictive license problems of Pico.
+
+	  http://www.nano-editor.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_NTS
+	bool "nts-78"
+	help
+	  Simple GUI note taking application
+
+	  nts is an acronym for Note Taking Simplified. It provides a simple,
+	  intuitive format for using plain text files to store notes, a
+	  command line interface for viewing notes in a variety of convenient
+	  ways and a cross-platform, wx(python)-based GUI for creating and
+	  modifying notes as well as viewing them. Displayed items can be
+	  grouped by path or tag and can be filtered in various ways.
+
+	  http://www.duke.edu/~dgraham/NTS/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_NE
+	bool "ne-1.31"
+	help
+	  Re-write of Phoenix E.  A sensible light-weight editor
+
+	  NE is a text editor that is designed to run on a wide variety
+	  of machines, from large servers to personal workstations. Its
+	  main use is expected to be as an interactive screen editor.
+	  However, it can also function as a line-by-line editor, and it
+	  is programmable, so it can be run non-interactively as a text
+	  manipulation tool.
+	  
+	  NE is a re-implementation of a previous editor that was called
+	  E. It is to a large extent upwards compatible, though there
+	  are some features of E that are not provided in NE. On the
+	  other hand, there are some additional features of NE that are
+	  not part of E.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_NEDIT
+	bool "nedit-5.5nb3"
+	help
+	  Motif based standard GUI style text editor
+
+	  NEdit is a standard GUI (Graphical User Interface) style text editor for
+	  programs and plain-text files.  Users of Macintosh and MS Windows based text
+	  editors should find NEdit a familiar and comfortable environment.  NEdit
+	  provides all of the standard menu, dialog, editing, and mouse support, as
+	  well as all of the standard shortcuts to which the users of modern GUI based
+	  environments are accustomed.  For users of older style Unix editors, welcome
+	  to the world of mouse-based editing!
+
+	  http://www.nedit.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_NG
+	bool "ng-1.4.3nb1"
+	help
+	  Very light Emacs-clone with japanese support
+
+	  Ng is a very light weight Emacs clone editor, written in C.
+	  It doesn't have Lisp(that means very limited customization
+	  is available). Since you can invoke it very quickly
+	  (compared with real GNU Emacs), it is useful in dealing with
+	  changing small file a bit.
+	  
+	  Ng(Nihongo Micro Gnu Emacs) is a Mg(Micro Gnu Emacs)'s
+	  japanese port. Ng supports EUC, JIS and SJIS code.
+	  Ng also have (rather simple) C-mode.
+	  
+	  It is also very useful even if you don't need Japanese support.
+
+	  http://tt.sakura.ne.jp/~amura/ng/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_NVI
+	bool "nvi-1.81.6nb6"
+	help
+	  Berkeley nvi with additional features
+
+	  Nvi is an implementation of the ex/vi text editor originally distributed
+	  as part of the Fourth Berkeley Software Distribution (4BSD), by the
+	  University of California, Berkeley. The source code to nvi is freely
+	  available, and nvi may be freely redistributed.
+
+	  http://www.kotnet.org/~skimo/nvi/devel/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_NVI_M17N
+	bool "nvi-m17n-1.79.20040608"
+	help
+	  Clone of vi/ex, with multilingual patch
+
+	  This ports contains multilingualized nex/nvi.
+	  
+	  nex/nvi is a freely redistributable implementation of ex/vi text
+	  editors originally distributed as part of the Fourth Berkeley
+	  Software Distribution (4BSD), by the University of California,
+	  Berkeley.
+	  
+	  Multilingual patch enables you to use the following multilingual
+	  encoding methods, such as:
+	  none iso-8859-[1234789] latin1 latin2
+	  euc-jp-1978 euc-jp euc-jp-1983 euc-jp-1990 euc-cn euc-kr
+	  iso-2022-cn iso-2022-jp iso-2022-kr
+	  iso-2022-7-1 iso-2022-7-2 iso-2022-8-2
+	  sjis big5 hz euc-tw
+	  Multilingual support has been set up to use some of the above (guess from
+	  the name of the ports/packages) as default value.
+	  You can change encoding style on the fly, or by setting up ~/.exrc.
+	  With configurations, for Japanese encodings, you can also enjoy the
+	  embedded canna support.
+	  See /usr/local/share/vi/README.* for details of multilingual patch.
+	  
+	  original distribution site:
+	  ftp://ftp.cs.berkeley.edu/ucb/4bsd/nvi-1.79.tar.gz
+	  ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MANEDIT
+	bool "manedit-0.8.1nb1"
+	help
+	  
+
+	  The ManEdit UNIX Manual Page Editor is an editor specifically tailored
+	  for UNIX manual (man, manpage) pages. It has a preview viewer, it uses
+	  the manual page XML format for easy editing, and it comes with a tutorial
+	  and referance guide. It uses the GTK+ widget set and features syntax
+	  highlighting, a complete drag and drop system for easy viewing and
+	  editing, a crash recovery system, and sample manual page templates.
+
+	  http://wolfpack.twu.net/ManEdit/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MFLTECO
+	bool "mflteco-19920331"
+	help
+	  MFL clone of Tape Editor and COrrector
+
+	  Mark C. Henderson's port of Matt Fichtenbaums TECO for Ultrix.
+
+	  http://www.catb.org/~esr/retro/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_OBBY
+	bool "obby-0.4.7nb1"
+	help
+	  Library for distributed editing
+
+	  libobby is a library which provides synced document buffers. It supports
+	  multiple documents in one session and is portable to both Windows and
+	  Unix-like platforms.
+
+	  http://gobby.0x539.de/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_ECLIPTIC
+	bool "p5-Padre-Plugin-Ecliptic-0.19nb2"
+	help
+	  Padre plugin that provides Eclipse-like useful features
+
+	  This plugin provides Eclipse like "killer features" into Padre, like
+	  * Quick Assist
+	  * Quick Outline Access
+	  * Quick Module Access
+
+	  http://search.cpan.org/dist/Padre-Plugin-Ecliptic/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_SVN
+	bool "p5-Padre-Plugin-SVN-0.05nb1"
+	help
+	  Simple SVN interface for Padre
+
+	  Padre::Plugin::SVN provides a simple SVN interface for Padre.
+
+	  http://search.cpan.org/dist/Padre-Plugin-SVN/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_SIGIL
+	bool "Sigil-0.2.4nb4"
+	help
+	  
+
+	  Sigil is a multi-platform WYSIWYG ebook editor. It is designed to
+	  edit books in ePub format. Features:
+	  
+	  * Free and open source software under GPLv3
+	  * Multi-platform: runs on Windows, Linux and Mac
+	  * Full Unicode support: everything you see in Sigil is in UTF-16
+	  * Advanced automatic conversion of all imported documents to Unicode
+	  * Full EPUB spec support
+	  * WYSIWYG editing
+	  * Multiple Views: Book View, Code View and Split View
+	  * Metadata editor with full support for all possible metadata
+	  entries (more than 200) with full descriptions for each
+	  * Multi-level Table Of Contents editor
+	  * Book View fully supports the display of any XHTML document
+	  possible under the OPS spec
+	  * SVG support and basic XPGT support
+	  * Currently imports TXT, HTML and EPUB files
+	  * Currently exports EPUB and SGF (Sigil native format)
+	  * Embedded HTML Tidy; all imported documents are thoroughly
+	  cleaned; changing views cleans the document so no matter how
+	  much you screw up your code, it will fix it (usually )
+	  * An actually usable user interface
+
+	  http://code.google.com/p/sigil/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_ACME_PADRE_PLAYCODE
+	bool "p5-Acme-Padre-PlayCode-0.13nb2"
+	help
+	  Acme::PlayCode Plugin for Padre
+
+	  This is a simple Padre plugin to run Acme::PlayCode on either selected
+	  source code (if there is any selection) or the entire document.
+
+	  http://search.cpan.org/dist/Acme-Padre-PlayCode/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_ENCRYPT
+	bool "p5-Padre-Plugin-Encrypt-0.06nb2"
+	help
+	  Padre plugin to encrypt/decrypt file
+
+	  Padre::Plugin::Encrypt provides file encryption/decryption in Padre.
+
+	  http://search.cpan.org/dist/Padre-Plugin-Encrypt/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_VI
+	bool "p5-Padre-Plugin-Vi-0.23nb1"
+	help
+	  Padre plugin proving a vi keyboard
+
+	  Once installed and enabled the user is in full vi-emulation mode, which
+	  was partially implemented.
+
+	  http://search.cpan.org/dist/Padre-Plugin-Vi/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_SSAM
+	bool "ssam-1.9nb1"
+	help
+	  
+
+	  This is a stream editor, like sed(1), but using the command set from
+	  Rob Pike's sam editor.  Ssam uses the libutf routines, and is UTF-8
+	  aware.
+
+	  http://www.alistaircrooks.co.uk/software.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE
+	bool "p5-Padre-0.70nb4"
+	help
+	  Perl Application Development and Refactoring Environment
+
+	  Padre is a Perl IDE, an Integrated Development environment, or in other
+	  words a text editor that is simple to use for new Perl programmers but
+	  also supports large multi-lingual and multi-technology projects.
+	  
+	  Features
+	  * Customizable syntax highlighting of many languages
+	  * Syntax checking for Perl 5 and Perl 6
+	  * Refactoring tools for Perl 5 and Perl 6
+	  * Context sensitive help
+	  * Multi-platform: Microsoft Windows, Linux, Mac OS X
+	  * Special features for beginners
+	  * Extra features for advanced programmers
+	  * Written in Perl 5
+	  * ...
+
+	  http://search.cpan.org/dist/Padre/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TEA
+	bool "tea-16.0.5nb9"
+	help
+	  Powerful, easy-to-use text editor for Gtk2
+
+	  TEA is a powerful and simple-in-use GTK-based text editor that
+	  provides hundreds of functions.
+	  
+	  It has many features including syntax highlighting, string handling
+	  functions, open various formats, hotkeys, built-in file manager,
+	  localizations and encodings, built-in image viewer, and a lot more.
+
+	  http://tea-editor.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_GIT
+	bool "p5-Padre-Plugin-Git-0.03nb1"
+	help
+	  Simple Git interface for Padre
+
+	  Padre::Plugin::Git provides a simple Git interface for Padre.
+
+	  http://search.cpan.org/dist/Padre-Plugin-Git/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED
+	bool "ted-2.21nb2"
+	help
+	  X11 based WordPad-like word processor
+
+	  Ted is a text editor running under X Windows on Unix/Linux systems. Ted was
+	  developed as an operating system accessory like Wordpad on MS-Windows.
+	  Teds function is to be able to edit rich text documents on Unix/Linux in a
+	  wysiwyg way.
+	  
+	  Features
+	  --------
+	  * Wysiwyg rich text editing.
+	  * Ted uses Microsoft RTF as its native file format.
+	  * In line bitmap pictures.
+	  * Postscript printing.
+	  * Spelling checking in several Latin languages. (English, Dutch, German,
+	  Portuguese, French and Spanish.)
+	  * Directly mailing documents from Ted.
+	  * Cut/Copy/Paste, also with other applications.
+	  * Find/Replace.
+	  * Ruler: Paragraph indentation, Indentation of first line, Tabs. Copy/Paste
+	  Ruler.
+	  * Page breaks.
+	  * Tables: Insert Table, Row, Column. Changing the column width of tables
+	  with their ruler.
+	  * Symbols and accented characters are fully supported.
+	  * Hyperlinks.
+	  * Saving a document in HTML format.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_CS
+	bool "ted-cs-2.16nb1"
+	help
+	  Czech spelling dictionary for the Ted word processor
+
+	  Czech spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_DA
+	bool "ted-da-2.16nb1"
+	help
+	  Danish spelling dictionary for the Ted word processor
+
+	  Danish spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_DE
+	bool "ted-de-2.16nb1"
+	help
+	  German spelling dictionary for the Ted word processor
+
+	  German spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_EN_GB
+	bool "ted-en-gb-2.16nb1"
+	help
+	  UK English spelling dictionary for the Ted word processor
+
+	  UK English spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_EN_US
+	bool "ted-en-us-2.16nb1"
+	help
+	  US English spelling dictionary for the Ted word processor
+
+	  US English spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_XS
+	bool "p5-Padre-Plugin-XS-0.02nb1"
+	help
+	  
+
+	  This plugin is intended to extend Padre's support for editing XS and
+	  C-using-perlapi.
+	  
+	  Currently the plugin implements limited syntax highlighting and calltips
+	  using a configurable version of the perlapi.
+
+	  http://search.cpan.org/dist/Padre-Plugin-XS/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_ES
+	bool "ted-es-2.16nb1"
+	help
+	  Spanish spelling dictionary for the Ted word processor
+
+	  Spanish spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_FR
+	bool "ted-fr-2.16nb1"
+	help
+	  French spelling dictionary for the Ted word processor
+
+	  French spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_IT
+	bool "ted-it-2.16nb1"
+	help
+	  Italian spelling dictionary for the Ted word processor
+
+	  Italian spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_NL
+	bool "ted-nl-2.16nb1"
+	help
+	  Dutch spelling dictionary for the Ted word processor
+
+	  Dutch spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_AUTOFORMAT
+	bool "p5-Padre-Plugin-Autoformat-1.1.2nb2"
+	help
+	  Reformat text within Padre
+
+	  Padre::Plugin::Autoformat allows to reformat text within Padre using
+	  Text::Autoformat underneath.
+
+	  http://search.cpan.org/dist/Padre-Plugin-Autoformat/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_HG
+	bool "p5-Padre-Plugin-HG-0.14nb2"
+	help
+	  Mecurial interface for Padre
+
+	  Padre::Plugin::HG provides a mecurial interface for Padre.
+
+	  http://search.cpan.org/dist/Padre-Plugin-HG/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_NO
+	bool "ted-no-2.16nb1"
+	help
+	  Norwegian spelling dictionary for the Ted word processor
+
+	  Norwegian spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_PL
+	bool "ted-pl-2.16nb1"
+	help
+	  Polish spelling dictionary for the Ted word processor
+
+	  Polish spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_PT
+	bool "ted-pt-2.16nb1"
+	help
+	  Portuguese spelling dictionary for the Ted word processor
+
+	  Portuguese spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PPIX_EDITORTOOLS
+	bool "p5-PPIx-EditorTools-0.09nb2"
+	help
+	  Utility methods and base class for manipulating Perl via PPI
+
+	  Utility methods and base class for manipulating Perl via PPI.
+
+	  http://search.cpan.org/dist/PPIx-EditorTools/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_PICO
+	bool "pico-4.10nb2"
+	help
+	  
+
+	  Pico is a simple text editor with limited searching, block cut and
+	  paste, and spell checking features.
+	  
+	  The pico package provides libpico, the library used by the Pine
+	  email client for its display and text editing capabilities.
+	  
+	  This also includes pilot(1), which is a simple, console-based,
+	  display-oriented file system navigator.  Pilot provides basic file
+	  manipulation commands.
+
+	  http://www.washington.edu/pine/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TED_SV
+	bool "ted-sv-2.16nb1"
+	help
+	  Swedish spelling dictionary for the Ted word processor
+
+	  Swedish spelling dictionary for the Ted word processor.
+
+	  http://www.nllgg.nl/Ted/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_POEDIT
+	bool "poedit-1.4.6.1nb6"
+	help
+	  
+
+	  poEdit is a cross-platform gettext catalogs (.po files) editor.  It is built
+	  with wxWindows toolkit and can run on any platform supported by it (although
+	  it was tested only on Unix with GTK+ and Windows).  It aims to provide more
+	  convenient approach to editing catalogs than launching vi and editing the
+	  file by hand.
+	  
+	  Here is a brief features list:
+	  
+	  - User friendly way of editing entries. You can easily navigate in large
+	  catalogs, easily enter or modify entries (fuzzy flag is automatically
+	  removed if you change translation, you can copy original string to
+	  translation by pressing Alt-I)
+	  - Whitespaces highlighting
+	  - Fuzzy and untranslated records highlighting. Furthermore, untranslated
+	  and fuzzy translations are displayed at the top of the list
+	  - Automatic compilation of .mo files (optional)
+	  - Automatic headers update
+	  - References browser lets you see where in what context the string is used
+	  - You can use poEdit to scan source code for translatable strings
+	  - Integration with KDE and GNOME desktops
+
+	  http://www.poedit.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_CATALYST
+	bool "p5-Padre-Plugin-Catalyst-0.09nb1"
+	help
+	  Catalyst helper interface for Padre
+
+	  This package provides a Padre plugin to manage Catalyst development
+	  environment and some handy tools to speed up Catalyst development.
+
+	  http://search.cpan.org/dist/Padre-Plugin-Catalyst/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_KATE
+	bool "p5-Padre-Plugin-Kate-0.04nb1"
+	help
+	  Padre plugin using the Kate syntax highlighter
+
+	  This plugin provides an interface to the Syntax::Highligh::Engine::Kate
+	  which implements syntax highlighting rules taken from the Kate editor.
+	  
+	  Currently the plugin only implements Perl 5 and PHP highlighting.
+	  
+	  Once this plug-in is installed the user can switch the highlighting of
+	  all Perl 5 or PHP files to use this highlighter via the Preferences menu
+	  of Padre.
+
+	  http://search.cpan.org/dist/Padre-Plugin-Kate/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TEXMACS
+	bool "TeXmacs-1.0.6.15nb9"
+	help
+	  
+
+	  GNU TeXmacs is a free scientific text editor, which was both inspired
+	  by TeX and GNU Emacs. The editor allows you to write structured
+	  documents via a wysiwyg (what-you-see-is-what-you-get) and user
+	  friendly interface. New styles may be created by the user. The program
+	  implements high-quality typesetting algorithms and TeX fonts, which
+	  help you to produce professionally looking documents.
+	  
+	  The high typesetting quality still goes through for automatically
+	  generated formulas, which makes TeXmacs suitable as an interface for
+	  computer algebra systems. TeXmacs also supports the Guile/Scheme
+	  extension language, so that you may customize the interface and write
+	  your own extensions to the editor.
+	  
+	  TeXmacs currently runs on PC's and PPC's under Gnu/linux (a >200MHz
+	  processor and >32Mb of memory are recommended) and on sun computers.
+	  Converters exist for TeX/LaTeX and they are under development for
+	  Html/Mathml/Xml. In the future, TeXmacs is planned to evoluate towards
+	  a complete scientific office suite, with spreadsheet capacities, a
+	  technical drawing editor and a presentation mode.
+
+	  http://www.texmacs.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_QGOOGLETRANSLATOR
+	bool "qgoogletranslator-1.2.1nb1"
+	help
+	  Qt gui for google translate based on ajax api
+
+	  Qt gui for google translate based on ajax api
+
+	  http://code.google.com/p/qgt/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_DATAWALKER
+	bool "p5-Padre-Plugin-DataWalker-0.02nb2"
+	help
+	  Simple Perl data structure browser Padre
+
+	  This plugin uses the Wx::Perl::DataWalker module to provide facilities for
+	  interactively browsing Perl data structures.
+
+	  http://search.cpan.org/dist/Padre-Plugin-DataWalker/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_ROX_EDIT
+	bool "rox-edit-2.0nb3"
+	help
+	  Simple text editor for ROX
+
+	  ROX-Edit is an editor for the ROX environment.
+	  
+	  To start Edit, either click on its icon in a filer window or drag
+	  a file onto it.
+	  
+	  A window appears with a small tool bar and a text area showing the file.
+	  You can right-click on the window for a menu.
+
+	  http://rox.sourceforge.net/desktop/node/20
+
+config BR2_PKGSRC_PACKAGE_EDITORS_SAM
+	bool "sam-4.3nb3"
+	help
+	  Unix version of Rob Pike's editor for plan9
+
+	  This is an X11 version of Rob Pike's editor, sam.  Documentation describing
+	  its use and construction are provided in subdirectory doc.  The file doc/sam.1
+	  contains the manual page; doc/sam.tut.ms is a tutorial that can be
+	  formatted with troff -ms.  It substitutes Bold and Italics for the
+	  fonts named CW and CS; if your system has these fonts, remove the
+	  CW and CS macros at the beginning of the file. The files doc/sam.ps
+	  and doc/se.ps are postscript versions of published papers describing
+	  sam and structural regular expressions.  These papers reflect sam's
+	  capabilities at the time of publication several years ago; while the
+	  general description remains accurate, some functions may have changed
+	  or been removed.  Other files in the doc directory contain manual pages
+	  for the library packages used by sam.
+	  
+	  Sam is composed of two programs: sam itself, which does the command processing
+	  and file manipulation; and samterm, which controls the display and
+	  interacts with the user.  You can run sam on one machine and samterm on another
+	  connected via remote execution.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_SCITE
+	bool "scite-2.25nb2"
+	help
+	  Source code editor
+
+	  SciTE is a SCIntilla based Text Editor. Originally built to demonstrate
+	  Scintilla, it has grown to be a generally useful editor with facilities
+	  for building and running programs. It is best used for jobs with
+	  simple configurations.
+
+	  http://scintilla.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TEXMACS_DEVEL
+	bool "TeXmacs-1.0.7.12"
+	help
+	  
+
+	  GNU TeXmacs is a free scientific text editor, which was both inspired
+	  by TeX and GNU Emacs. The editor allows you to write structured
+	  documents via a wysiwyg (what-you-see-is-what-you-get) and user
+	  friendly interface. New styles may be created by the user. The program
+	  implements high-quality typesetting algorithms and TeX fonts, which
+	  help you to produce professionally looking documents.
+	  
+	  The high typesetting quality still goes through for automatically
+	  generated formulas, which makes TeXmacs suitable as an interface for
+	  computer algebra systems. TeXmacs also supports the Guile/Scheme
+	  extension language, so that you may customize the interface and write
+	  your own extensions to the editor.
+	  
+	  TeXmacs currently runs on PC's and PPC's under Gnu/linux (a >200MHz
+	  processor and >32Mb of memory are recommended) and on sun computers.
+	  Converters exist for TeX/LaTeX and they are under development for
+	  Html/Mathml/Xml. In the future, TeXmacs is planned to evoluate towards
+	  a complete scientific office suite, with spreadsheet capacities, a
+	  technical drawing editor and a presentation mode.
+
+	  http://www.texmacs.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_NOPASTE
+	bool "p5-Padre-Plugin-Nopaste-0.2.1nb2"
+	help
+	  Send code on a nopaste website from padre
+
+	  This plugin allows sending stuff from Padre to a nopaste website with
+	  Ctrl+Shift+V, allowing for easy code / whatever sharing without having
+	  to open a browser.
+
+	  http://search.cpan.org/dist/Padre-Plugin-Nopaste/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TEXMAKER
+	bool "texmaker-1.8nb7"
+	help
+	  LaTeX editor and front end
+
+	  Texmaker is a free LaTeX editor, that integrates many tools needed to develop
+	  documents with LaTeX, in just one application.  Texmaker runs on UNIX, MacOS X
+	  and Windows systems and is released under the GPL license.
+	  
+	  Features:
+	  * an unicode editor to write your LaTeX source files (syntax highlighting,
+	  undo-redo, search-replace, spell checker...)
+	  * the principal LaTex tags can be inserted directly with the "LaTeX" and "Math"
+	  menus
+	  * 370 mathematical symbols can be inserted in just one click
+	  * wizards to generate code ('Quick document', 'Quick letter', tabular, tabbing
+	  and array environments)
+	  * LaTeX-related programs can be launched via the "Tools" menu
+	  * the standard Bibtex entry types can be inserted in the ".bib" file with the
+	  "Bibliography" menu
+	  * a "structure view" of the document for easier navigation of a document (by
+	  clicking on an item in the "Structure" frame, you can jump directly to the
+	  corresponding part of your document
+	  * extensive LaTeX documentation
+	  * in the "Messages / Log File" frame, you can see information about processes
+	  and the logfile after a LaTeX compilation
+	  * the "Next Latex Error" and "Previous Latex Error" commands let you reach the
+	  LaTeX errors detected in the log file
+	  * by clicking on the number of a line in the log file, the cursor jumps to the
+	  corresponding line in the editor
+	  * an integrated LaTeX to html conversion tool
+
+	  http://www.xm1math.net/texmaker/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VIM_GTK2
+	bool "vim-gtk2-7.2.446nb4"
+	help
+	  
+
+	  Vim is an almost compatible version of the UNIX editor Vi.  Many new features
+	  have been added: multi level undo, syntax highlighting, command line history,
+	  on-line help, filename completion, block operations, etc.
+	  
+	  If you are building the package from source you may want to enable some
+	  features such as a perl or python interpreter which are not enabled by
+	  default.
+	  
+	  This version also contains a X11 GTK+ GUI. If you don't have X11,
+	  look at the `vim' package instead.
+
+	  http://www.vim.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TOMBOY
+	bool "tomboy-1.2.1nb6"
+	help
+	  Gnome desktop note application
+
+	  Tomboy is a desktop note-taking application for Linux and Unix. Simple
+	  and easy to use, but with potential to help you organize the ideas and
+	  information you deal with every day.
+
+	  http://www.gnome.org/projects/tomboy
+
+config BR2_PKGSRC_PACKAGE_EDITORS_UEMACS
+	bool "uemacs-4.0nb1"
+	help
+	  "emacs" key sequences compatible full screen editor
+
+	  MicroEMACS is a tool for creating and changing documents,
+	  programs, and other text files. It is both relatively easy for the
+	  novice to use, but also very powerful in the hands of an expert.
+	  MicroEMACS can be extensively customized for the needs of the individual
+	  user.
+	  
+	  MicroEMACS allows several files to be edited at the same time.
+	  The screen can be split into different windows and screens, and text may
+	  be moved freely from one window on any screen to the next. Depending on
+	  the type of file being edited, MicroEMACS can change how it behaves to
+	  make editing simple. Editing standard text files, program files and
+	  word processing documents are all possible at the same time.
+	  
+	  There are extensive capabilities to make word processing and
+	  editing easier. These include commands for string searching and
+	  replacing, paragraph reformatting and deleting, automatic word wrapping,
+	  word move and deletes, easy case controlling, and automatic word counts.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VIM_LANG
+	bool "vim-lang-7.2.446nb1"
+	help
+	  
+
+	  Vim is an almost compatible version of the UNIX editor Vi.  Many new features
+	  have been added: multi level undo, syntax highlighting, command line history,
+	  on-line help, filename completion, block operations, etc.
+	  
+	  This package is only a shared data-package for the `actual' vim packages.
+	  You also have to install one of vim, vim-xaw, or vim-gtk to get a working
+	  editor.
+
+	  http://www.vim.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VE
+	bool "ve-1.0"
+	help
+	  NTHU-CS Maple BBS 2.36 BBS-like editor
+
+	  NTHU-CS Maple BBS 2.36 BBS-like editor
+	  
+	  ve is a tiny editor. Besides normal functions, it has some
+	  great features for programmers --
+	  goto line (ESC-G)
+	  cut & paste cross files (Ctrl-G to see ve.hlp)
+	  block shift left/right (ESC-J/K, Ctrl-G to see ve.hlp)
+	  parenthesis matching (ESC-[)
+	  seaching (Ctrl-S, ESC-n, ESC-p)
+	  (matching start of line, case sensitive/in-sensitive, forward/backward)
+	  undo line (ESC - '-', or ESC-_   )
+	  undelete lines (ESC-u)
+	  ...
+	  emacs-like hot-key
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VIGOR
+	bool "vigor-0.016nb3"
+	help
+	  nvi with excessive online "help"
+
+	  Vigor is designed as a vi-compatible editor, with a little (*ahem*)
+	  extra something thrown in.  It was inspired by the January 8, 2000
+	  storyline in the User Friendly comic.  If you haven't seen it yet,
+	  check it out at http://www.userfriendly.org/ (and do so in a place you
+	  can freely laugh).
+
+	  http://vigor.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VILE
+	bool "vile-9.7nb3"
+	help
+	  VI Like Emacs.  a vi "workalike", with many additional features
+
+	  vile is a text editor which is extremely compatible with vi in terms of
+	  "finger feel". In addition, it has extended capabilities in many areas,
+	  notably:
+	  multi-file editing and viewing
+	  key rebinding (in addition to :map, :map!, and :abbr)
+	  mouse support (in an xterm, or when built as xvile)
+	  infinite undo
+	  many additional operator commands
+	  selection highlighting
+	  rectangular operations
+	  "next error" cursor positioning after compilation
+	  full function- and arrow-key support
+	  filename, command, internal mode and variable completion
+	  auxiliary utilities for man page and C program syntax highlighting
+	  built-in macro language
+	  portability to all UNIX platforms, VMS, DOS, Win32, OS/2
+
+	  http://invisible-island.net/vile/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VIM_MOTIF
+	bool "vim-motif-7.2.446nb1"
+	help
+	  
+
+	  Vim is an almost compatible version of the UNIX editor Vi.  Many new features
+	  have been added: multi level undo, syntax highlighting, command line history,
+	  on-line help, filename completion, block operations, etc.  There is also a
+	  Graphical User Interface (GUI) available.  See doc/vi_diff.txt.
+	  
+	  If you are building the package from source you may want to enable some
+	  features such as a perl or python interpreter which are not enabled by
+	  default.
+	  
+	  This version also contains a X11/Motif GUI.
+
+	  http://www.vim.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_PERLCRITIC
+	bool "p5-Padre-Plugin-PerlCritic-0.08nb1"
+	help
+	  Analyze perl files in Padre with Perl::Critic
+
+	  Padre::Plugin::PerlCritic is a simple plugin to run Perl::Critic on
+	  source code.
+
+	  http://search.cpan.org/dist/Padre-Plugin-PerlCritic/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VILEARN
+	bool "vilearn-1.0"
+	help
+	  Online vi tutorial, from basic to advanced
+
+	  vilearn is an online vi tutorial comprised of 5 tutorials for the vi-impaired.
+	  
+	  vilearn presets a menu for available tutorials for vi. There are
+	  five short tutorials, each a text file intended to be edited with
+	  vi.
+	  
+	  Each user edits their own copy of the tutorial, saved in the
+	  directory VILEARN, in the current directory.
+
+	  http://vilearn.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VIM_SHARE
+	bool "vim-share-7.2.446"
+	help
+	  
+
+	  Vim is an almost compatible version of the UNIX editor Vi.  Many new features
+	  have been added: multi level undo, syntax highlighting, command line history,
+	  on-line help, filename completion, block operations, etc.
+	  
+	  This package is only a shared data-package for the `actual' vim packages.
+	  You also have to install one of vim, vim-xaw, or vim-gtk to get a working
+	  editor.
+
+	  http://www.vim.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_PACKAGES
+	bool "xemacs-packages-1.16nb1"
+	help
+	  Common elisp packages for xemacs 21
+
+	  Starting with release 21, xemacs does not come with lisp packages
+	  any more. Instead, they are distributed separately from the main
+	  sources.
+	  
+	  This port attempts to provide a subset of the available packages that
+	  should be useful for most users.
+	  
+	  To install additional packages, use the "Manage Packages" menu
+	  in the "Options" menu of your xemacs' menubar.
+
+	  http://www.xemacs.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VIM
+	bool "vim-7.2.446nb1"
+	help
+	  
+
+	  Vim is an almost compatible version of the UNIX editor Vi.  Many new features
+	  have been added: multi level undo, syntax highlighting, command line history,
+	  on-line help, filename completion, block operations, etc. See doc/vi_diff.txt.
+	  
+	  If you are building the package from source you may want to enable some
+	  features such as a perl or python interpreter which are not enabled by
+	  default.
+	  
+	  This version does not contain a gui. If you want one, look at vim-xaw or
+	  vim-gtk.
+
+	  http://www.vim.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VIM_XAW
+	bool "vim-xaw-7.2.446nb1"
+	help
+	  
+
+	  Vim is an almost compatible version of the UNIX editor Vi.  Many new features
+	  have been added: multi level undo, syntax highlighting, command line history,
+	  on-line help, filename completion, block operations, etc.  There is also a
+	  Graphical User Interface (GUI) available.  See doc/vi_diff.txt.
+	  
+	  If you are building the package from source you may want to enable some
+	  features such as a perl or python interpreter which are not enabled by
+	  default.
+	  
+	  This version also contains a X11 Athena GUI. Use the variable XAW_TYPE
+	  to select between the `flat' and 3d widget set. If you don't have X11,
+	  look at the `vim' package instead.
+
+	  http://www.vim.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_VIM_GTK
+	bool "vim-gtk-7.2.446nb1"
+	help
+	  
+
+	  Vim is an almost compatible version of the UNIX editor Vi.  Many new features
+	  have been added: multi level undo, syntax highlighting, command line history,
+	  on-line help, filename completion, block operations, etc.
+	  
+	  If you are building the package from source you may want to enable some
+	  features such as a perl or python interpreter which are not enabled by
+	  default.
+	  
+	  This version also contains a X11 GTK+ GUI. If you don't have X11,
+	  look at the `vim' package instead.
+
+	  http://www.vim.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XJED
+	bool "xjed-0.99.16nb1"
+	help
+	  Extensible folding editor with Emacs/WordStar/EDT emulations, X11 version
+
+	  JED is a freely available text editor for Unix, VMS, MSDOS, OS/2, and
+	  MS Windows.
+	  
+	  Features include:
+	  * Color syntax highlighting on color terminals.
+	  * Folding support
+	  * Extensible in a language resembling C. Completely customizable.
+	  * Capable of read GNU info files from within JED's info browser
+	  * A variety of programming modes (with syntax highlighting) are
+	  available including C, C++, FORTRAN, TeX, HTML, SH, IDL, DCL, NROFF...
+
+	  http://www.jedsoft.org/jed/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_WILY
+	bool "wily-0.13.41nb1"
+	help
+	  Unix/X11 clone of the Plan9 acme editor/environment
+
+	  This software is a UTF-8 aware clone of the Plan9 editor and working
+	  environment Acme.  Most of the work is done by using mouse clicks, and
+	  by mouse "chording", where two buttons are pressed at the same time.
+	  A 3-button mouse is thus needed.
+
+	  http://www.cse.yorku.ca/~oz/wily/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XOURNAL
+	bool "xournal-0.4.5nb3"
+	help
+	  Take notes, sketch and annotate PDFs
+
+	  Xournal is an application for notetaking, sketching, keeping a
+	  journal using a stylus.  It is free software (GNU GPL) and runs on
+	  GTK+/Gnome platforms.  It is similar to Jarnal, Gournal, and NoteLab.
+	  
+	  Xournal allows to add annotations to PDF documents, including notes,
+	  multicolor highlighting and simple drawing, and can save those in
+	  another filename (distinguished by the suffix), to automatically
+	  load them back when opening the PDF document again.  It also
+	  remembers the previous page position.
+
+	  http://xournal.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XVILE
+	bool "xvile-9.7nb4"
+	help
+	  VI Like Emacs, X11 version -- a fully "X aware" vi work-alike
+
+	  XVile is the X11 version of vile. In addition to the capabilities
+	  listed below for the character-oriented version of vile, xvile offers
+	  scrollbars and more complete mouse integration.
+	  
+	  Vile is a text editor which is extremely compatible with vi in terms of
+	  "finger feel". In addition, it has extended capabilities in many areas,
+	  notably:
+	  
+	  multi-file editing and viewing
+	  key rebinding (in addition to :map, :map!, and :abbr)
+	  mouse support (in an xterm, or when built as xvile)
+	  infinite undo
+	  many additional operator commands
+	  selection highlighting
+	  rectangular operations
+	  "next error" cursor positioning after compilation
+	  full function- and arrow-key support
+	  filename, command, internal mode and variable completion
+	  auxiliary utilities for man page and C program syntax highlighting
+	  built-in macro language
+	  portability to all UNIX platforms, VMS, DOS, Win32, OS/2
+
+	  http://invisible-island.net/vile/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_PERLTIDY
+	bool "p5-Padre-Plugin-PerlTidy-0.10nb2"
+	help
+	  Format perl files in Padre using Perl::Tidy
+
+	  Padre::Plugin::PerlTidy is a simple plugin to run Perl::Tidy on source code.
+
+	  http://search.cpan.org/dist/Padre-Plugin-PerlTidy/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XWPE
+	bool "xwpe-1.5.29anb3"
+	help
+	  Programming environment for UNIX systems
+
+	  xwpe is a programming environment for UNIX systems writen by Fred Kruse.
+	  The user interface mimics the Borland C and Pascal family of products for
+	  MS-DOS. From within xwpe you can edit, compile, and debug programs.
+
+	  http://www.identicalsoftware.com/xwpe/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_YUDIT
+	bool "yudit-2.9.2"
+	help
+	  Unicode Text Editor
+
+	  Yudit stands for "Unicode editor" and is a nice text editor for the X-Window
+	  system that uses Unicode (ISO-10646). It supports representation schemes
+	  such as UTF-7, UTF-8, UTF-16 and older non-Unicode character sets like
+	  ISO 8959, KOI8, JIS, GB, BIG5, KSC, EUC, HZ.
+
+	  http://yudit.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XCORAL
+	bool "xcoral-3.2nb1"
+	help
+	  Multiwindow mouse-based text editor for X
+
+	  Xcoral is a multi-window mouse-based text editor for the X Window
+	  System. A built-in browser enables you to navigate through C
+	  functions, C++ classes, methods and files. A Small ANSI C Interpreter
+	  (Smac) is also built-in to dynamically extend the editor's
+	  possibilities (user functions, key bindings, modes etc). Xcoral
+	  provides variable width fonts, menus, scrollbars, buttons, search,
+	  regions, kill-buffers, macros and undo. An on-line manual box, with a
+	  table of contents and an index, helps you to use and customize the
+	  editor. Commands are accessible from menus or key bindings. Xcoral is
+	  a direct Xlib client and runs on color/bw X Display.
+	  
+	  The example .xcoralrc is in ${PREFIX}/lib/X11/xcoral/xcoralrc.fl; copy
+	  it to ~/.xcoralrc, and fire up xcoral.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EDITORS_ZILE
+	bool "zile-2.3.17"
+	help
+	  Emacs-like text editor
+
+	  Zile is another Emacs-clone.  Zile is a customizable, self-documenting
+	  real-time, open-source display editor.  Zile was written to be as similar
+	  as possible to Emacs; every Emacs user should feel at home with Zile.
+
+	  http://www.gnu.org/software/zile/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS
+	bool "xemacs-21.4.22nb3"
+	help
+	  XEmacs text editor version 21
+
+	  XEmacs is a self-documenting, customizable, extensible real-time
+	  display editor.
+	  
+	  Users new to XEmacs will be able to use basic features fairly rapidly
+	  by studying the tutorial and using the self-documentation features.
+	  XEmacs also has an extensive interactive manual browser.  It is easily
+	  extensible since its editing commands are written in Lisp.
+	  
+	  XEmacs's many special packages handle mail reading (RMail) and sending
+	  (Mail), outline editing (Outline), compiling (Compile), running
+	  subshells within Emacs windows (Shell), running a Lisp read-eval-print
+	  loop (Lisp-Interaction-Mode), automated psychotherapy (Doctor :-) and
+	  many more. There is a WWW browsing mode written fully in elisp
+	  that looks and behaves much like the netscape WWW browser.
+	  
+	  XEmacs has similar functionality to GNU Emacs. It uses a different
+	  display model, including support for Motif menu and scroll bars and the
+	  ability to run as a widget inside other applications. Many people say
+	  it looks nicer than GNU Emacs.
+
+	  http://www.xemacs.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_SPELLCHECK
+	bool "p5-Padre-Plugin-SpellCheck-1.1.2nb2"
+	help
+	  Check spelling in Padre
+
+	  This plugins allows one to checking her text spelling within Padre using
+	  F7 (standard spelling shortcut accross text processors). One can change the
+	  dictionary language used in the preferences window
+	  (menu Plugins / SpellCheck / Preferences).
+
+	  http://search.cpan.org/dist/Padre-Plugin-SpellCheck/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_CURRENT
+	bool "xemacs-21.5.27nb8"
+	help
+	  
+
+	  This is an unstable, *BETA* release of XEmacs.
+	  
+	  XEmacs is a self-documenting, customizable, extensible real-time
+	  display editor.
+	  
+	  Users new to XEmacs will be able to use basic features fairly rapidly
+	  by studying the tutorial and using the self-documentation features.
+	  XEmacs also has an extensive interactive manual browser.  It is easily
+	  extensible since its editing commands are written in Lisp.
+	  
+	  XEmacs's many special packages handle mail reading (RMail) and sending
+	  (Mail), outline editing (Outline), compiling (Compile), running
+	  subshells within Emacs windows (Shell), running a Lisp read-eval-print
+	  loop (Lisp-Interaction-Mode), automated psychotherapy (Doctor :-) and
+	  many more. There is a WWW browsing mode written fully in elisp
+	  that looks and behaves much like the netscape WWW browser.
+	  
+	  XEmacs has similar functionality to GNU Emacs. It uses a different
+	  display model, including support for Motif menu and scroll bars and the
+	  ability to run as a widget inside other applications. Many people say
+	  it looks nicer than GNU Emacs.
+
+	  http://www.xemacs.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_ELVIS_X11
+	bool "elvis-x11-2.2.0nb7"
+	help
+	  vi clone with regex-search, hex-edit, HTML/LaTeX preview (X11)
+
+
+	  http://elvis.vi-editor.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS22_NOX11
+	bool "emacs-nox11-22.3nb14"
+	help
+	  GNU editing macros (editor)
+
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_JAVASCRIPT_MODE
+	bool "javascript-mode-2.2.1"
+	help
+	  Javascript major mode for Emacs
+
+	  Emacs major mode for Javascript programming language.
+	  
+	  The main features of this JavaScript mode are syntactic highlighting
+	  (enabled with `font-lock-mode' or `global-font-lock-mode'), automatic
+	  indentation and filling of comments.
+
+	  http://www.brgeight.se/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GNUSERV
+	bool "gnuserv-3.12.7nb3"
+	help
+	  Improved version of emacsserver for GNU Emacs
+
+	  gnuserv allows you to attach to an already running Emacs.  This allows
+	  external programs to make use of Emacs' editing capabilities.  It is
+	  like GNU Emacs' emacsserver/server.el, but has many more features.
+	  
+	  This is the gnuserv part of XEmacs split out for use in GNU Emacs.  If
+	  you use XEmacs you do not need this package.
+
+	  http://meltin.net/hacks/emacs/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_JDE
+	bool "jde-2.3.2nb1"
+	help
+	  Full-featured Java editing mode for emacs
+
+	  The Java Development Environment for Emacs is a software package that
+	  interfaces Emacs to command-line Java development tools (for example,
+	  JavaSoft's JDK). JDEE features include:
+	  
+	  * JDEE menu with compile, run, debug, build, browse, project, and
+	  help commands
+	  * syntax coloring
+	  * auto indentation
+	  * compile error to source links
+	  * source-level debugging
+	  * source code browsing
+	  * make file support
+	  * automatic code generation
+	  * Java source interpreter (Pat Neimeyer's BeanShell)
+
+	  http://jdee.sunsite.dk/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_LEIM21
+	bool "leim-21.4nb1"
+	help
+	  Libraries of Emacs Input Methods (for emacs21)
+
+	  Libraries of Emacs Input Methods (for emacs21).
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS_PACKAGES
+	bool "emacs-packages-0.9"
+	help
+	  Meta-package for the GNU Emacs lisp packages
+
+	  This is our equivalent to XEmacs's ``sumo'' package - Emacs lisp
+	  package collection for FSF Emacs 20 / 21.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MULE_UCS
+	bool "Mule-UCS-0.84nb5"
+	help
+	  Another encoding conversion mechanism for Emacs
+
+	  Mule-UCS is an Emacs Lisp library providing flexible and complehensible
+	  encoding mechanism to Emacs. As the name suggests, it supports Unicode, which
+	  the original Emacs doesn't support.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MATLAB_MODE
+	bool "matlab-mode-2.3.1nb2"
+	help
+	  Matlab mode for Emacs
+
+	  This is a major mode for editing Matlab source code under GNU Emacs or
+	  XEmacs.
+
+	  http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId
+
+config BR2_PKGSRC_PACKAGE_EDITORS_SPEEDBAR
+	bool "speedbar-0.14rc4nb3"
+	help
+	  Directory and code browser for emacs
+
+	  Speedbar is an Emacs Lisp program which allows you to create a special
+	  skinny frame with a specialized directory listing in it. This listing
+	  will have both directories and filtered files in it. You can then load
+	  files into your emacs frame, or expand the files to display all the
+	  tags that are in them and jump to those tags. You can also expand
+	  multiple directories into your speedbar frame.
+	  
+	  In addition to file browsing, Speedbar supports:
+	  
+	  * multiple tagging methods for files (such as etags, imenu, and
+	  semantic)
+	  * multiple major display modes (such as buffer lists, project lists,
+	  and EIEIO class browsing,)
+	  * multiple minor display modes that appear when you view special
+	  files, such as Info pages, or read mail with RMAIL.
+
+	  http://cedet.sourceforge.net/speedbar.shtml
+
+config BR2_PKGSRC_PACKAGE_EDITORS_TAMAGO
+	bool "tamago-20020909nb3"
+	help
+	  CJK characters inputting system for emacs + leim
+
+	  tamago is a multilingual enhancement for emacs with leim.
+	  Additional Support For:
+	  JIS X 0208
+	  GB 2312
+	  CNS 11643
+	  KS C 5601
+	  
+	  and can switch the input method from leim.
+	  japanese-egg-wnn
+	  japanese-egg-sj3
+	  chinese-gb-egg-wnn-py
+	  chinese-gb-egg-wnn-zy
+	  chinese-gb-egg-wnn-qm
+	  chinese-gb-egg-wnn-wb
+	  chinese-cns-egg-wnn-py
+	  chinese-cns-egg-wnn-zy
+	  korean-egg-wnn
+	  You may need more Wnn or sj3 package/server.
+
+	  http://www.m17n.org/tamago/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_NOX11
+	bool "xemacs-nox11-21.4.22nb3"
+	help
+	  XEmacs text editor version 21
+
+
+	  http://www.xemacs.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_CURRENT_NOX11
+	bool "xemacs-nox11-21.5.27nb8"
+	help
+	  *BETA* XEmacs text editor version 21.5.27
+
+
+	  http://www.xemacs.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_ZIM
+	bool "py26-zim-0.52nb1"
+	help
+	  Zim brings the concept of a wiki to your desktop
+
+	  Zim aims to bring the concept of a wiki to your desktop. Every page
+	  is saved as a text file with wiki markup. Pages can contain links
+	  to other pages, and are saved automatically. Creating a new page
+	  is as easy as linking to a non-existing page. This tool is intended
+	  to keep track of TODO lists or to serve as a personal scratch book.
+	  But it will also serve you when writing longer and more complicated
+	  documents.
+
+	  http://zim-wiki.org/
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS_SNAPSHOT
+	bool "emacs-24.0.50.20110821"
+	help
+	  GNU editing macros (development version)
+
+	  GNU Emacs is an extensible, customizable editor textand more.  At its
+	  core is an interpreter for Emacs Lisp, a dialect of the Lisp
+	  programming language with extensions to support text editing.  The
+	  features of GNU Emacs include:
+	  
+	  - Content-sensitive editing modes, including syntax coloring, for a
+	  wide variety of file types including plain text, source code, and
+	  HTML.
+	  - Complete built-in documentation, including a tutorial for new users.
+	  - Support for many languages and their scripts, including all scripts,
+	  Russian, Greek, Japanese, Chinese, Korean, Thai, Vietnamese, Lao,
+	  Ethiopian, and some Indian scripts.
+	  - Highly customizable, using Emacs Lisp code or a graphical
+	  customization interface.
+	  - A large number of extensions that add other functionality, including
+	  a project planner, mail and news reader, debugger interface,
+	  calendar, and more.  Many of these extensions are distributed with
+	  GNU Emacs; others are available separately.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+config BR2_PKGSRC_PACKAGE_EDITORS_XFCE4_MOUSEPAD
+	bool "xfce4-mousepad-0.2.16nb5"
+	help
+	  Xfce text editor
+
+	  Mousepad is a text editor for Xfce based on Leafpad. The initial
+	  reason for Mousepad was to provide printing support, which would
+	  have been difficult for Leafpad for various reasons.
+
+	  http://www.xfce.org/
+

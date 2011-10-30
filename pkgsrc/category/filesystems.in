@@ -1,0 +1,474 @@
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FS_UTILS
+	bool "fs-utils-20091116nb1"
+	help
+	  Tools to access/modify a file system image through RUMP
+
+	  Tools to access and modify a file system image without having to
+	  mount it.
+	  
+	  Classic commands included (prefixed with fsu_):
+	  
+	  * cat, diff, du, find, ls
+	  * chflags, chmod, chown, mv, rm, rmdir
+	  * cp, ln, mkdir, mkfifo, mknod, touch
+	  
+	  New commands:
+	  
+	  * fsu_ecp (cp-like which allows the user to get/put files from/to the image)
+	  * fsu_exec (executes a local command like text editor on a file from the image)
+	  * fsu_write (writes its input in a file on the image)
+	  * fsu_console (a command console tool that uses previous commands and adds
+	  directory browsing)
+
+	  http://www.NetBSD.org/~stacktic/fs-utils.html
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE
+	bool "fuse-2.8.4nb1"
+	help
+	  Filesystem in Userspace
+
+	  With FUSE it is possible to implement a fully functional file system in a
+	  userspace program.  Features include:
+	  
+	  * Simple library API
+	  * Simple installation (no need to patch or recompile the kernel)
+	  * Secure implementation
+	  * Userspace - kernel interface is very efficient
+	  * Usable by non privileged users
+	  * Runs on Linux kernels 2.4.X and 2.6.X
+	  * Has proven very stable over time
+
+	  http://fuse.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_AFPFS_NG
+	bool "fuse-afpfs-ng-0.8.1nb3"
+	help
+	  FUSE filesystem for network mounting using AFP
+
+	  afpfs-ng is an Apple Filing Protocol client that will allow a Unix
+	  system to see files exported from a Mac OS system with AFP over TCP.
+
+	  http://sourceforge.net/projects/afpfs-ng
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_ARCHIVEMOUNT
+	bool "fuse-archivemount-0.5.3nb1"
+	help
+	  FUSE gateway to libarchive
+
+	  Gateway between FUSE and libarchive. Allows mounting of cpio, .tar.gz,
+	  .tar.bz2 archives.
+	  
+	  Reading and writing supported.
+	  Supports all formats libarchive supports.
+
+	  http://www.cybernoia.de/software/archivemount/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_BINDFS
+	bool "fuse-bindfs-1.8.4"
+	help
+	  Remounts file system subtrees in arbitrary locations
+
+	  bindfs is a FUSE filesystem for mounting a directory to another location,
+	  similar to 'mount --bind' in Linux or nullfs in BSD.  The permissions in
+	  the mountpoint can be altered through various rules.
+
+	  http://code.google.com/p/bindfs/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CDDFS
+	bool "fuse-cddfs-0.2"
+	help
+	  FUSE filesystem that uses libparanoia for audio CDs
+
+	  Cddfs is a file system for fuse that use libparanoia in order to
+	  mount your audio cd.
+
+	  http://castet.matthieu.free.fr/cddfs/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CHIRONFS
+	bool "fuse-chironfs-1.1.1nb1"
+	help
+	  Replicating file system
+
+	  ChironFS implements RAID1-like replication on the file system level.
+	  In case of a unit failure, other replicas on the mount will be
+	  used.
+
+	  http://code.google.com/p/chironfs/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CRYPTOFS
+	bool "fuse-cryptofs-0.6.0nb1"
+	help
+	  FUSE encrypted filesystem
+
+	  CryptoFS is a encrypted file system for File system in Userspace (FUSE).
+	  
+	  CryptoFS will use a normal directory to store files encrypted. The
+	  mount point will contain the decrypted files. Every file stored in
+	  this mount point will be written encrypted (data and filename) to the
+	  directory that was mounted. If you unmount the directory the encrypted
+	  data can only be access by mounting the directory with the correct key
+	  again.
+
+	  http://reboot.animeirc.de/cryptofs/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CURLFTPFS
+	bool "fuse-curlftpfs-0.9.1nb2"
+	help
+	  FUSE filesystem for acessing FTP hosts
+
+	  CurlFtpFS is a file system for accessing FTP hosts based on FUSE and libcurl.
+	  Features
+	  
+	  CurlFtpFS differentiates itself from other FTP file systems because it features:
+	  
+	  * SSLv3 and TLSv1 support
+	  * connecting through tunneling HTTP proxies
+	  * automatically reconnection if the server times out
+	  * transform absolute symlinks to point back into the ftp file system
+
+	  http://curlftpfs.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_SVNFS
+	bool "svnfs-0.4nb6"
+	help
+	  FUSE filesystem for accessing SVN repositories
+
+	  SvnFs is a filesystem written using FUSE for accessing Subversion
+	  repositories.  Please see <http://www.jmadden.eu> for search google
+	  for more information, as it comes with no documentation.
+
+	  http://www.jmadden.eu/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_DJMOUNT
+	bool "fuse-djmount-0.71nb1"
+	help
+	  FUSE filesystem for accessing Media Server content via UPnP
+
+	  djmount is a UPnP AV client.  It mounts the media content of
+	  compatible UPnP AV devices as a Unix filesystem.
+	  
+	  Djmount automatically discovers all UPnP AV Media Servers on the
+	  network, and makes the content available in a directory tree.  All
+	  shared files (e.g.  Audio or Video files) are directly visible and can
+	  be played using your favorite media player.
+
+	  http://djmount.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_UNIONFS
+	bool "fuse-unionfs-0.17"
+	help
+	  FUSE-based union filesystem
+
+	  The FUSE-based union file system allows several directories to be
+	  stacked under one mountpoint - this will produce the effect of
+	  having a number of directories merged under one mountpoint.
+	  
+	  This utility is implemented at the user level - to mount a series
+	  of roots, simply use:
+	  
+	  fuse-unionfs /dir1:/dir2:/dir3 /mnt
+
+	  http://podgorny.cz/unionfs-fuse/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_ENCFS
+	bool "fuse-encfs-1.2.0.2nb2"
+	help
+	  FUSE Encrypted Filesystem
+
+	  EncFS provides an encrypted filesystem in user-space. It runs without any
+	  special permissions and uses the FUSE library.
+	  
+	  As with most encrypted filesystems, Encfs is meant to provide security
+	  against off-line attacks; ie your notebook or backups fall into the wrong
+	  hands, etc.
+
+	  http://www.arg0.net/encfs
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_EXT2
+	bool "fuse-ext2-0.0.7nb1"
+	help
+	  FUSE file-system to mount ext2 and ext3 file system
+
+	  Fuse-ext2 is a multi OS FUSE module to mount ext2 and ext3 file system devices
+	  and/or images with read write support.
+
+	  http://alperakcan.org/projects/fuse-ext2/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GMAILFS
+	bool "fuse-gmailfs-0.7.2nb2"
+	help
+	  FUSE filesystem which uses Google mail for free space
+
+	  GmailFS is a virtual filesystem developed by Richard Jones which
+	  allows users to mount and use their Gmail email account's storage as a
+	  local disk drive.
+
+	  http://richard.jones.name/google-hacks/gmail-filesystem/gmail-filesystem.html
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GPHOTOFS
+	bool "fuse-gphotofs-0.4.0nb2"
+	help
+	  FUSE filesystem for accessing digital cameras
+
+	  GPhotoFS is a filesystem client based on libgphoto2 that exposes
+	  supported cameras as filesystems; while some cameras implement the
+	  USB Mass Storage class and already appear as filesystems (making
+	  this program redundant), many use the Picture Transfer Protocol (PTP)
+	  or some other custom protocol. But as long as the camera is supported
+	  by libgphoto2, it can be mounted as a filesystem using this program.
+
+	  http://gphoto.sourceforge.net/proj/gphotofs/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GSTFS
+	bool "fuse-gstfs-0.1nb1"
+	help
+	  
+
+	  GSTFS is a filesystem for on-demand transcoding of music files between
+	  different formats.  It utilizes the gstreamer library for conversion so any
+	  formats supported by gstreamer should also be supported by gstfs.  The
+	  filesystem's only requirement is that the gstreamer pipeline begin with a
+	  filesrc with the name "_source" and end with an fdsink with the name "_dest".
+	  The filesystem will automatically substitute the filename and fd number in
+	  these pipelines.
+
+	  http://bobcopeland.com/gstfs/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_HTTPFS
+	bool "fuse-httpfs-2.06.08.26"
+	help
+	  FUSE HTTP filesystem
+
+	  HTTPFS is a FUSE-based file system.
+	  You may think of it, as a downloader with the speed of light.
+
+	  http://httpfs.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WDFS
+	bool "fuse-wdfs-1.4.2nb4"
+	help
+	  FUSE-based webdav filesystem
+
+	  wdfs is a webdav filesystem with special features for accessing subversion
+	  repositories. it is based on fuse v2.5+ and neon v0.24.7+.
+	  
+	  features:
+	  - generic webdav filesystem
+	  - http redirect support
+	  - https support
+	  - file locking support (different modes)
+	  - access to all revisions of a webdav exported subversion repository
+	  - versioning filesystem for autoversioning enabled subversion repositories
+
+	  http://noedler.de/projekte/wdfs/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_LOGGEDFS
+	bool "fuse-loggedfs-0.4"
+	help
+	  FUSE file system which logs all operations
+
+	  Loggedfs is a filesystem which logs (via rlog and syslog) exactly what
+	  is happening on every vnode operation.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_LZOFS
+	bool "fuse-lzofs-20060306"
+	help
+	  Filesystem which allows you to use transparently compressed files
+
+	  LZOlayer File System is a file system which allows you to use transparently
+	  compressed files, just as they would be normal files.
+	  
+	  Both read and write operations are possible, along with other most common
+	  system calls. It consumes little memory in my opinion, because files are
+	  divided into blocks, which can be decompressed separately. In other words,
+	  if you (or an application) would like to read byte 4,500,000 in a file
+	  sized 5,000,000 bytes, it only decompresses a block which contain wanted
+	  data. Write operation is based on a packet gathering and after reaching its
+	  limit it 'syncs' the data. It allows it's user to write/modify files pretty
+	  fast, despite the fact it's block divided.
+	  
+	  LZOlayer File System was meant to support only LZO compression algorithm,
+	  because it has extremely low compression/decompression time. However,
+	  currently it supports LZO and ZLIB (but only one at the run-time!)
+	  compression algorithms.
+
+	  http://north.one.pl/~kazik/pub/LZOlayer/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_MP3FS
+	bool "fuse-mp3fs-0.13nb1"
+	help
+	  MP3 transcoding FUSE file system
+
+	  MP3FS is a read-only FUSE filesystem which transcodes audio formats
+	  (currently FLAC) to MP3 on the fly when opened and read. This was
+	  written to enable using a FLAC collection with software and/or
+	  hardware which only understands MP3.
+	  
+	  It is also a novel alternative to traditional MP3 encoder applications.
+	  Just use your favorite file browser to select the files you want
+	  encoded and copy them somewhere!
+
+	  http://mp3fs.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_NTFS_3G
+	bool "fuse-ntfs-3g-1.1120"
+	help
+	  NTFS driver for Linux/FreeBSD/NetBSD with read and write support
+
+	  The NTFS-3G driver is an open source, freely available NTFS driver
+	  for Linux with read and write support. It provides safe and fast
+	  handling of the Windows XP, Windows Server 2003, Windows 2000 and
+	  Windows Vista file systems. Most POSIX file system operations are
+	  supported, with the exception of full file ownership and access
+	  right support.
+
+	  http://www.ntfs-3g.org/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_OBEXFS
+	bool "fuse-obexfs-0.8"
+	help
+	  FUSE based filesystem using ObexFTP
+
+	  FUSE based filesystem using ObexFTP (currently beta).
+	  
+	  Actually ObexFS is just a thin layer wrapping a basic ObexFTP
+	  client into FUSE callbacks.
+
+	  http://www.openobex.org/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_POD
+	bool "fuse-pod-0.5.1nb6"
+	help
+	  FUSE-based filesystem for iPod
+
+	  FUSEPod is a userspace filesystem which mounts your iPod into a directory
+	  for easy browsing of your songs on your iPod.
+	  
+	  Features
+	  ========
+	  
+	  * Read and Write support
+	  * Viewing/Removing playlists
+	  * Configurable directory layout
+	  * Transparent copying of files onto iPod
+	  * Tracks have tags in extended attributes
+	  * Discovers where your iPod is mounted
+	  * Statistics file
+
+	  http://fusepod.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WIKIPEDIAFS
+	bool "fuse-wikipediafs-0.3nb3"
+	help
+	  FUSE filesystem for accessing the wikipedia
+
+	  WikipediaFS is a mountable virtual file system that allows to read and
+	  edit articles from Wikipedia (or any Mediawiki-based site) as if they
+	  were real files.
+	  
+	  It is thus possible to view and edit articles using your favourite
+	  text-editor.  Text-editors tend to be more convenient than a simple
+	  browser form when it comes to editing large texts and they generally
+	  include useful features such as Mediawiki syntax highlighting and
+	  spell checking.
+	  
+	  Advanced usage of WikipediaFS includes easy development of scripts and
+	  bots.  Programs simply have to deal with normal files because this is
+	  WikipediaFS which takes care of the HTTP layer.  For example, it would
+	  be possible to use WikipediaFS to perform a massive content migration
+	  from an existing site to a Mediawiki.
+	  
+	  Features
+	  
+	  * Reading and editing articles, including subpages.
+	  * User * configuration :  add your own Mediawiki.
+	  * Editing with your login
+	  * HTTPS, HTTP authentication, proxy.
+
+	  http://wikipediafs.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_GLUSTERFS
+	bool "glusterfs-3.2.3nb1"
+	help
+	  Cluster filesystem
+
+	  GlusterFS is a flexible, powerful, POSIX-compliant cluster filesystem
+	  that can scale to several petabytes.
+	  
+	  GlusterFS works over either TCP/IP or high-performance Infiniband
+	  RDMA interconnect.
+	  
+	  GlusterFS provides striping and on-the-fly synchronous replication
+	  of files. GlusterFS has a fully distributed design, with no single
+	  point of failure.
+	  
+	  Please visit http://www.gluster.org/glusterfs.php for more info.
+
+	  http://www.gluster.org/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PERFUSE
+	bool "perfuse-20110909"
+	help
+	  PUFFS Enabled Relay to FUSE
+
+	  $NetBSD: DESCR,v 1.2 2010/08/26 14:18:08 manu Exp $
+	  
+	  perfuse brings full FUSE support to NetBSD It has two components:
+	  - a daemon that creates a /dev/fuse socket and that performs PUFFS
+	  relay to FUSE.
+	  - a library and a header file to use in filesystems and libraries that
+	  open /dev/fuse, so that they are directed to the socket.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_TAHOE_LAFS
+	bool "tahoe-lafs-1.8.3nb1"
+	help
+	  Distributed fault-tolerant least-authority filesystem
+
+	  Tahoe-LAFS is a Free Software/Open Source decentralized data store.
+	  It distributes your filesystem across multiple servers, and even if
+	  some of the servers fail or are taken over by an attacker, the entire
+	  filesystem continues to work correctly and to preserve your privacy
+	  and security.
+
+	  http://tahoe-lafs.org/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_U9FS
+	bool "u9fs-2.0.3"
+	help
+	  Unix file server using the 9P protocol
+
+	  U9fs is a program that serves Unix files to Plan 9 machines using the
+	  9P protocol.  It is typically invoked on a Unix machine by inetd with
+	  its standard input and output connected to a network connection,
+	  typically TCP on an Ethernet.  It typically runs as user root and
+	  multiplexes access to multiple Plan 9 clients over the single wire.
+	  It assumes Plan 9 uids match Unix login names, and changes to the
+	  corresponding Unix effective uid when processing requests.  U9fs
+	  serves both 9P1 (the 9P protocol as used by the second and third
+	  editions of Plan 9) and 9P2000.
+
+	  http://plan9.bell-labs.com/
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PY_FUSE_BINDINGS
+	bool "py26-fuse-bindings-0.2pre1nb2"
+	help
+	  Python bindings for FUSE and refuse
+
+	  Python bindings for the FUSE and refuse interfaces.
+	  
+	  FUSE allows file sytsem operations to take place at user level, rather
+	  than in the kernel.  Refuse is a BSD-licensed re-implementation of
+	  fuse, running on top of the puffs functionality.  This package
+	  provides a python language interface to the FUSE interface.
+	  
+	  To achieve backwards compatibility with previous versions of the fuse
+	  bindings for python, set the environment variable
+	  
+	  FUSE_PYTHON_COMPAT=0.1
+
+	  http://bsd.cenkes.org/myports/
+

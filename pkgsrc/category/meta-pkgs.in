@@ -1,0 +1,571 @@
+config BR2_PKGSRC_PACKAGE_META_PKGS_DESKTOP_GNOME
+	bool "desktop-gnome-0.3"
+	help
+	  Software stack for the NetBSD Desktop Project
+
+	  Primary goal for the desktop project:
+	  
+	  Given a NetBSD CD and a reasonably modern x86 computer, make it
+	  possible to install a useful desktop system in under 15 minutes,
+	  responding to only a few prompts in the process.
+
+	  http://wiki.netbsd.se/Desktop_Project
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_FXTV_CAPTURE
+	bool "fxtv-capture-1.1nb1"
+	help
+	  
+
+	  Meta-package that includes all packages needed for capturing video
+	  with bktr(4).
+
+	  
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GIMP_DOCS
+	bool "gimp-docs-2.6.1"
+	help
+	  Documentation package for The GIMP image manipulation software
+
+	  Documentation package for The GIMP image manipulation software
+
+	  
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GSTREAMER0.10_PLUGINS
+	bool "gstreamer0.10-plugins-1.0nb2"
+	help
+	  
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  This package installs all of the [non-deprecated] GStreamer plugins
+	  provided by pkgsrc.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_C___GNOME_BINDINGS
+	bool "c++-gnome-bindings-2.26.2"
+	help
+	  Meta-package for C++ bindings for the GNOME desktop
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides the C++ bindings for the GNOME libraries.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_KDE3
+	bool "kde-3.5.10"
+	help
+	  "meta-package" for the KDE integrated X11 desktop
+
+	  KDE provides an integrated X11 based environment, much like CDE.
+	  
+	  This package does not contain anything by itself -- it is a
+	  "meta-package" that depends on other KDE packages.  Its sole purpose is
+	  to require dependencies so users can install this package only and
+	  have all the KDE stuff pulled in by the package dependency mechanism.
+
+	  http://www.kde.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_KDE4
+	bool "kde4-4.5.5"
+	help
+	  "meta-package" for the KDE4 integrated X11 desktop
+
+	  KDE provides an integrated X11 based environment.  This is for version 4.
+	  
+	  This package does not contain anything by itself -- it is a
+	  "meta-package" that depends on other KDE packages.  Its sole purpose is
+	  to require dependencies so users can install this package only and
+	  have all the KDE stuff pulled in by the package dependency mechanism.
+
+	  http://www.kde.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GNOME
+	bool "gnome-2.26.2nb3"
+	help
+	  Meta-package for the GNOME desktop
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides the main GNOME applications, defined by the
+	  project as the "GNOME desktop".
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_COMPIZ_FUSION
+	bool "compiz-fusion-0.6"
+	help
+	  Meta-package for compiz fusion
+
+	  Compiz is a compositing window manager that uses 3D graphics acceleration
+	  via OpenGL. It provides various new graphical effects and features on
+	  any desktop environment, including Gnome and KDE.
+	  
+	  This is a meta package for compiz fusion.
+
+	  http://www.compiz-fusion.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_MATCHBOX
+	bool "matchbox-0.9.5nb2"
+	help
+	  The Matchbox window manager environment
+
+	  The matchbox meta-package provides a number of components for
+	  a matchbox based environment. It provides the window manager,
+	  a window panel, a tool for managing the panel, some themes and
+	  icons and a desktop manager.
+	  
+	  This package does not contain anything by itself -- it is a
+	  "meta-package" that depends on other packages.  Its sole purpose is
+	  to require dependencies so users can install this package only and
+	  have all the other packages pulled in by the package dependency
+	  mechanism.
+
+	  http://projects.o-hand.com/matchbox/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_COURIER
+	bool "courier-0.65.0"
+	help
+	  Meta-package for the Courier mail server suite
+
+	  The Courier mail server suite is an integrated mail/groupware server
+	  based on open commodity protocols, such as ESMTP, IMAP, POP3, LDAP,
+	  SSL, and HTTP.  Courier provides ESMTP, IMAP, POP3, webmail, and
+	  mailing list services within a single, consistent, framework.  Individual
+	  components can be enabled or disabled at will and the configuration
+	  of the entire Courier software suite can be managed from a web-based
+	  administration interface.
+	  
+	  This is a meta package that pulls in dependencies for the various
+	  Courier mail services.
+
+	  http://www.courier-mta.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GNOME_ADMIN
+	bool "gnome-admin-2.26.1.99"
+	help
+	  Meta-package for administration applications of the GNOME desktop
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides the GNOME administration applications, defined
+	  by the project as the "GNOME admin".
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GNOME_DEVTOOLS
+	bool "gnome-devtools-2.26.1.99"
+	help
+	  Meta-package for utilities used for developing GNOME applications
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides tools developing application under GNOME.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_NETBSD_DOC
+	bool "netbsd-doc-1.2nb1"
+	help
+	  Meta-package including all packages to convert SGML->HTML
+
+	  Meta-package that includes all packages needed for the NetBSD
+	  Documentation project to convert SGML/DocBook to HTML.
+	  
+	  A separate web browser is strongly recommended.
+	  
+	  Set the SGML_CATALOG_FILES environment variable to a colon-separated list
+	  of catalog files. You can produce such a list with
+	  find /usr/pkg/share/sgml -name catalog | tr '\012' :
+
+	  
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG
+	bool "modular-xorg-1.0"
+	help
+	  Modular Xorg meta-package
+
+	  This is the modular Xorg meta-package for installing the various
+	  libs, drivers, fonts, and apps from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GNOME_MOBILE
+	bool "gnome-mobile-2.26.1.100"
+	help
+	  Meta-package for mobile support for the GNOME desktop
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides the GNOME mobile support, defined
+	  by the project as the "GNOME mobile".
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_NETBSD_DOC_PRINT
+	bool "netbsd-doc-print-1.3"
+	help
+	  Meta-package including all packages to convert SGML->PDF/PS
+
+	  Meta-package that includes all packages needed for the NetBSD
+	  Documentation project to convert SGML/DocBook to PDF/PS.
+	  
+	  Excluded from netbsd-doc into a separate package because it wants
+	  teTeX, which is rather large in size.
+	  
+	  Nevertheless you'll need external PostScript and PDF previewers,
+	  e.g. Acrobat Reader, xpdf, gv, etc.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GNOME_PLATFORM
+	bool "gnome-platform-2.32.1"
+	help
+	  Meta-package for core platform libraries of the GNOME desktop
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides the core GNOME libraries, defined by the project
+	  as the "GNOME platform", but nothing else.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_NETBSD_WWW
+	bool "netbsd-www-1.5"
+	help
+	  Packages required to build the NetBSD.org web site
+
+	  Meta-package that includes all packages needed for converting
+	  DocBook/XML to HTML, primarily used for the NetBSD web site.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_APPS
+	bool "modular-xorg-apps-1.5"
+	help
+	  Modular Xorg application meta-package
+
+	  This is the modular Xorg application meta-package for installing the
+	  various user programs from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GNURADIO
+	bool "gnuradio-3.3.0"
+	help
+	  "meta-package" for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+
+	  http://www.gnu.org/software/gnuradio/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_GNUSTEP
+	bool "gnustep-2.4.0"
+	help
+	  Meta-package for GNUstep
+
+	  GNUstep provides an Object-Oriented application development framework and
+	  tool set for use on a wide variety of computer platforms.  GNUstep is based
+	  on the original OpenStep specification provided by NeXT, Inc. (now Apple).
+	  GNUstep is becoming more and more stable every day and is used in a
+	  production environment by several companies.
+
+	  http://www.gnustep.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_DRIVERS
+	bool "modular-xorg-drivers-1.4"
+	help
+	  Modular Xorg driver meta-package
+
+	  This is the modular Xorg driver meta-package for installing the various
+	  input and video drivers from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_FONTS
+	bool "modular-xorg-fonts-1.1"
+	help
+	  Modular Xorg font meta-package
+
+	  This is the modular Xorg font meta-package for installing the various
+	  font packages from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_LIBS
+	bool "modular-xorg-libs-1.0nb2"
+	help
+	  Modular Xorg library meta-package
+
+	  This is the modular Xorg library meta-package for installing the
+	  various libraries from the modular Xorg project.
+	  
+	  For pkgsrc usage, you generally don't want to install this as all
+	  packages have explicit dependencies on the libraries they need.
+
+	  http://xorg.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_MONO_GNOME_BINDINGS
+	bool "mono-gnome-bindings-2.26.2"
+	help
+	  
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides the Mono (C#) bindings for the GNOME libraries.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_P5_GNOME_BINDINGS
+	bool "p5-gnome-bindings-2.30.2"
+	help
+	  Meta-package for Perl bindings for the GNOME desktop
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides the Perl bindings for the GNOME libraries.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_PKG_DEVELOPER
+	bool "pkg_developer-1.2"
+	help
+	  Meta-package for pkgsrc package development
+
+	  This meta package provides a collection of development utilities that are
+	  useful when working in pkgsrc packages.
+
+	  http://www.pkgsrc.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_PKGSRC_GUIDE_TOOLS
+	bool "pkgsrc-guide-tools-1.0nb1"
+	help
+	  Packages required to build the pkgsrc Guide
+
+	  Meta-package that includes all packages needed for converting
+	  the XML-based pkgsrc/doc/guide to published formats.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_PULSEAUDIO_TOOLS
+	bool "pulseaudio-tools-0.9"
+	help
+	  Management tools for PulseAudio
+
+	  PulseAudio is a sound server for POSIX and Win32 systems. A sound server is
+	  basically a proxy for your sound applications. It allows you to do advanced
+	  operations on your sound data as it passes between your application and your
+	  hardware. Things like transferring the audio to a different machine, changing
+	  the sample format or channel count and mixing several sounds into one are
+	  easily achieved using a sound server.
+	  
+	  This meta package provides the applications for managing PulseAudio.
+
+	  http://www.pulseaudio.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_WEB_SERVER
+	bool "web-server-1.1nb3"
+	help
+	  Provides some useful tools for a web server
+
+	  The web-server meta-package provides all the elements of a webserver,
+	  using other components of the NetBSD packages collection.
+	  
+	  This package does not contain anything by itself -- it is a
+	  "meta-package" that depends on other packages.  Its sole purpose is
+	  to require dependencies so users can install this package only and
+	  have all the other packages pulled in by the package dependency
+	  mechanism.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_WINDOWMAKER_DESKTOP
+	bool "windowmaker-desktop-1.2nb4"
+	help
+	  Provides a desktop based on the WindowMaker wm
+
+	  The windowmaker-desktop meta-package provides a number of components for
+	  a WindowMaker based environment. It basically provides the window
+	  manager, a configuration tool, some themes and icons and several dock
+	  applications.
+	  
+	  This package does not contain anything by itself -- it is a
+	  "meta-package" that depends on other packages.  Its sole purpose is
+	  to require dependencies so users can install this package only and
+	  have all the other packages pulled in by the package dependency
+	  mechanism.
+
+	  http://www.windowmaker.info/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_XFCE4
+	bool "xfce4-4.6.1nb9"
+	help
+	  Xfce
+
+	  Xfce is the next generation of the popular Xfce desktop.
+	  
+	  This package does not contain anything by itself -- it is a
+	  "meta-package" that depends on other Xfce packages. Its sole
+	  purpose is to require dependencies so users can install this
+	  package only and have all the Xfce stuff pulled in by the package
+	  dependency mechanism.
+	  
+	  This package installs Xfce without any extras.
+
+	  http://www.xfce.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_XFCE4_EXTRAS
+	bool "xfce4-extras-4.6.1nb12"
+	help
+	  Xfce extras
+
+	  This package installs Xfce and all available extras.
+
+	  http://www.xfce.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_BOOST
+	bool "boost-1.46.1"
+	help
+	  Free, peer-reviewed portable C++ source libraries
+
+	  Boost is a set of free, peer-reviewed, C++ libraries.  The emphasis is on
+	  portable libraries which work well with the ISO C++ Standard Library.
+	  
+	  This is a meta package that depends on all other components of Boost.
+
+	  http://www.boost.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_PY_GNOME_BINDINGS
+	bool "py26-gnome-bindings-2.26.2"
+	help
+	  Meta-package for Python bindings for the GNOME desktop
+
+	  GNOME is the GNU Network Object Model Environment.
+	  
+	  The GNOME project intends to build a complete, easy-to-use desktop
+	  environment for the user, and a powerful application framework for
+	  the software developer.
+	  
+	  This is a meta package for the second major version of the GNOME
+	  project.  It provides the Python bindings for the GNOME libraries.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_PHP53_EXTENSIONS
+	bool "php-extensions-5.3.8nb1"
+	help
+	  "meta-package" for the PHP 5.3 HTML-embedded scripting language
+
+	  PHP 5.3.x is HTML-embedded scripting language.
+	  
+	  This package does not contain anything by itself -- it is a
+	  "meta-package" that depends on other PHP packages.  Its sole purpose is
+	  to require dependencies so users can install this package only and
+	  have all the PHP stuff pulled in by the package dependency mechanism.
+
+	  http://www.php.net/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_PHP5_EXTENSIONS
+	bool "php-extensions-5.2.17nb2"
+	help
+	  "meta-package" for the PHP 5.2 HTML-embedded scripting language
+
+	  PHP 5.2.x is HTML-embedded scripting language.
+	  
+	  This package does not contain anything by itself -- it is a
+	  "meta-package" that depends on other PHP packages.  Its sole purpose is
+	  to require dependencies so users can install this package only and
+	  have all the PHP stuff pulled in by the package dependency mechanism.
+
+	  http://www.php.net/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_SUSE100
+	bool "suse-10.0nb4"
+	help
+	  SUSE-based Linux binary emulation environment
+
+	  The SUSE 10.0 meta-package provides a number of components for a
+	  SUSE-based Linux binary emulation environment.
+	  
+	  This package does not contain anything by itself -- it is a "meta-package"
+	  that depends on other packages.  Its sole purpose is to require
+	  dependencies so users can install this package only and have all the
+	  other packages pulled in automatically by the pkgsrc dependency
+	  mechanism.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_RUBY_GNOME2
+	bool "ruby19-gnome2-1.0.0"
+	help
+	  Set of Ruby language bindings for GNOME2
+
+	  Ruby-GNOME 2 is a set of Ruby language bindings for the various
+	  application development libraries included with the GNOME/GTK+
+	  environment.
+
+	  http://ruby-gnome2.sourceforge.jp/
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_SUSE113
+	bool "suse-11.3"
+	help
+	  SUSE-based Linux binary emulation environment
+
+	  The SUSE 11.3 meta-package provides a number of components for a
+	  SUSE-based Linux binary emulation environment.
+	  
+	  This package does not contain anything by itself -- it is a "meta-package"
+	  that depends on other packages.  Its sole purpose is to require
+	  dependencies so users can install this package only and have all the
+	  other packages pulled in automatically by the pkgsrc dependency
+	  mechanism.
+
+	  http://www.suse.com/
+

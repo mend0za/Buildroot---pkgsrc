@@ -1,0 +1,3016 @@
+config BR2_PKGSRC_PACKAGE_EMULATORS_ALIADOS
+	bool "aliados-0.1.1"
+	help
+	  CP/M 80 emulator
+
+	  Aliados is a CP/M 80 emulator that instead of emulate a machine and
+	  run some variant of CP/M on it, emulates only the microprocessor and
+	  captures all CP/M system calls to execute it natively.  Actually only
+	  emulates a small part of CP/M, but with that already can execute many
+	  programs, such as WordStar, Micrsoft Basic, Mallard Basic, Hi-Tech C,
+	  Turbo Pascal and many others.  Aliados does not need to create disk
+	  images, it reads and writes in the native filesystem all files that
+	  match the CP/M name conventions.
+
+	  http://www.arrakis.es/~ninsesabe/aliados/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_APPLYPPF
+	bool "applyppf-3.0"
+	help
+	  
+
+	  PPF (PlayStation Patch File) is a tool dedicated to all PlayStation
+	  coders and developers out there who are creating PAL/NTSC patches,
+	  trainer options and even cracks for your favourite console system.
+	  With the files in the PPF package you are in the position to make
+	  patchfiles similar to IPS on SuperNES.
+	  
+	  This package contains a tool to apply PPF patches.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_ARANYM
+	bool "aranym-0.9.10"
+	help
+	  Atari Running on Any Machine
+
+	  ARAnyM is an acronym: Atari Running on Any Machine. It is a virtual machine
+	  software for running the Atari ST/TT/Falcon operating systems (TOS, FreeMiNT,
+	  MagiC and others) and TOS/GEM applications on any kind of hardware - be it
+	  an IBM clone (read it as "PC" :-), an Apple, an Unix server, a graphics
+	  workstation or even a portable computer.
+
+	  http://aranym.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_ARCEM
+	bool "arcem-1.00nb2"
+	help
+	  Dave Gilbert's Acorn Archimedes emulator
+
+	  This package is Dave Gilbert's Acorn Archimedes emulator. Included
+	  is a Linux Boot ROM image and a Linux Hard Drive image.
+
+	  http://arcem.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_ARNOLD
+	bool "arnold-20020127nb6"
+	help
+	  Amstrad CPC, Amstrad CPC+ and KC Compact emulator
+
+	  Arnold is an Amstrad CPC, Amstrad CPC+ and KC Compact emulator.
+	  Arnold is accurate and emulates the Amstrad systems to the cycle
+	  level. It also emulates 99% of all demo effects.
+
+	  http://arnold.emuunlim.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_ATARI800
+	bool "atari800-2.1.0nb2"
+	help
+	  Atari 800, 800XL, 130XE and 5200 emulator
+
+	  Atari 8-bit machine emulator for multiple platforms.
+	  
+	  Major features:
+	  o Atari 400, 800, 600 XL, 800XL, 130XE, 5200 Games System.
+	  o 130XE compatible memory expansions: 320K, 576K, 1088K.
+	  o Optional 4K RAM between 0xc000 and 0xcfff in 400/800 mode.
+	  o Cycle-exact 6502 emulation, all unofficial instructions.
+	  o Cycle-exact NMI interrupts, scanline-based POKEY interrupts.
+	  o Scanline-based ANTIC emulation, all display modes, precise timing.
+	  o Player/Missile Graphics, exact priority control and collision detection.
+	  o Exact POKEY shift registers (sound and random number generator).
+	  o 8 disk drives, emulated at computer-to-drive communication
+	  and fast patched SIO levels.
+	  o ATR, XFD, DCM, ATR.GZ and XFD.GZ disk images.
+	  o Direct loading of Atari executable files.
+	  o 24 cartridge types, raw and CART format.
+	  o Cassette player, raw and CAS images.
+	  o Printer support.
+	  o Files can be stored directly on your host computer via the H: device.
+	  o Current emulation state can be saved in a state file.
+	  o Sound support (possibility to redirect it to WAV files).
+	  o Stereo (two POKEYs) emulation.
+	  o Joystick controller using numeric keypad and real joystick support.
+	  o Screen snapshots (normal and interlaced) to PCX files.
+
+	  http://atari800.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_BASILISKII
+	bool "BasiliskII-1.0.20060501nb2"
+	help
+	  Open Source 68k Macintosh emulator
+
+	  Basilisk II is an Open Source 68k Macintosh emulator. That is, it
+	  enables you to run 68k MacOS software on you computer, even if you
+	  are using a different operating system. However, you still need a
+	  copy of MacOS and a Macintosh ROM image to use Basilisk II.
+
+	  http://gwenole.beauchesne.info/projects/basilisk2/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_BLINKENSIM
+	bool "blinkensim-2.2nb11"
+	help
+	  Blinkenlights graphics simulator
+
+	  Blinkensim is a Blinkenlights simulator.  The first version used to speak
+	  to the network that we used in the real thing.  If you haven't seen the
+	  real thing, you missed something, but this simulator will probably make
+	  you understand the Blinkenhype.
+
+	  http://www.blinkenlights.de/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_BOCHS
+	bool "bochs-2.4.6nb1"
+	help
+	  IA32 and AMD64 PC emulator
+
+	  The program bochs is a highly portable open source x86 PC emulator
+	  written in C++, and runs on most popular platforms.  It includes
+	  emulation of the Intel x86 CPU, common IO devices, and a custom
+	  BIOS.  Currently, bochs can be compiled to emulate a 386, 486,
+	  Pentium, Pentium PRO or AMD64 CPU.
+	  
+	  Bochs is capable of running most operating systems inside the
+	  emulation including Linux, NetBSD, Windows 95, DOS, and Windows NT 4.
+
+	  http://bochs.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_CKMAME
+	bool "ckmame-0.11nb2"
+	help
+	  Check ROM sets for MAME
+
+	  This is ckmame, a program to check ROM sets for MAME, the Multiple
+	  Arcade Machine Emulator (http://mame.retrogames.com).  It tells you
+	  which ROM files are missing or have a wrong checksum, and can delete
+	  unknown and unused files from the ROM sets, and rename or move ROM
+	  files.
+
+	  http://www.nih.at/ckmame/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DEGA
+	bool "dega-1.07nb5"
+	help
+	  Sega Game Gear, Sega Mark III and Sega Master System emulator
+
+	  Dega is a Sega Master System, Sega Mark III and Sega Game Gear emulator.
+	  It uses the SDL library.
+
+	  http://www.finalburn.com/dega/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DGEN
+	bool "dgen-sdl-1.23nb5"
+	help
+	  Genesis/Megadrive emulator for Unix platforms
+
+	  This is DGen/SDL, a semi-fantastic emulator for Unix-esque operating systems
+	  supported by the Simple DirectMedia Layer (SDL) library. It produces a virtual
+	  environment in which Sega Genesis (MegaDrive outside the US) games may run
+	  with fairly accurate audio and video.
+
+	  http://www.pknet.com/~joe/dgen-sdl.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_FUSE_UTILS
+	bool "fuse-utils-1.0.0nb1"
+	help
+	  ZX Spectrum Emulator utilities
+
+	  Fuse is the Free Unix Spectrum Emulator.
+	  * Working 48K/128K/+2/+2A Speccy emulation, running at true Speccy speed on any
+	  computer you're likely to try it on.
+	  * Support for loading from .tzx files.
+	  * Sound (on system supporting the Open Sound System or BSD/Solaris).
+	  * Kempston joystick emulation.
+	  * Emulation of the various printer you could attach to the Spectrum.
+	  * Very basic support for RZX files.
+
+	  http://fuse-emulator.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GAMBATTE
+	bool "gambatte-0.4.1nb5"
+	help
+	  Game Boy Color emulator
+
+	  Gambatte is an accuracy-focused, open-source, cross-platform Game
+	  Boy / Game Boy Color emulator written in C++. It is based on hundreds
+	  of corner case hardware tests, as well as previous documentation
+	  and reverse engineering efforts.
+
+	  http://gambatte.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DOSBOX
+	bool "dosbox-0.74nb1"
+	help
+	  Multi-platform DOS emulator using SDL
+
+	  DOSBox is a DOS-emulator using SDL for easy portability to
+	  different platforms, DOSBox has already been ported to
+	  several different platforms, such as Windows, BeOS, Linux,
+	  Mac OS X...
+	  
+	  DOSBox emulates a 286/386 realmode CPU, Directory
+	  FileSystem/XMS/EMS, a SoundBlaster card for excellent sound
+	  compatibility with older games...
+	  
+	  You can "re-live" the good old days with the help of
+	  DOSBox, it can run plenty of the old classics that don't
+	  run on your new computer !
+
+	  http://dosbox.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GCUBE
+	bool "gcube-0.4nb4"
+	help
+	  
+
+	  Gcube is an open source Nintendo GameCube(TM) emulator beeing developed
+	  by monk with the main purpose of running at least one commercial game
+	  fully emulated.
+
+	  http://gcube.exemu.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GENERATOR
+	bool "generator-0.35nb5"
+	help
+	  Sega Mega drive genesis emulator
+
+	  Generator is an open source emulator designed to emulate the Sega
+	  Genesis / Mega Drive console, a popular games machine produced in the
+	  early 1990s.  It is a portable program written in C and has been
+	  ported to the Amiga, Macintosh, Windows and even pocket PCs such as
+	  the iPAQ and Cassiopeia.  Natively it compiles under unix for X
+	  Windows with either tcl/tk or gtk/SDL, for svgalib and even
+	  cross-compiles to DOS with djgpp/allegro.
+	  
+	  Generator uses its own custom 68000 processor emulation which is
+	  designed for dynamic recompilation, and uses techniques from this such
+	  as block-marking, flag calculation removal, operand pre-calculation,
+	  endian pre-conversion etc.  There are approximately 1600 C routines
+	  generated by the first stage of compilation to cope with the 67
+	  instruction families.  These routines are used as a 'backup' when
+	  dynamic recompilation isn't supported on your platform or the
+	  recompiler doesn't support a particular instruction.  The CPU engine
+	  is by all accounts very fast, whatever the mode.
+	  
+	  There is a 'test' recompiler written for the ARM processor, but it is
+	  no longer supported.  If someone with assembler knowledge wants to put
+	  the effort into writing a recompiling back-end for a processor (and it
+	  really is major effort), let me know - particularly if you know i386.
+
+	  http://www.squish.net/generator/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GENERATOR_CBIERE
+	bool "generator-cbiere-0.35r4nb1"
+	help
+	  
+
+	  This is a modified version of Generator by James Ponder based on
+	  version 0.35 and maintained by Christian Biere.
+	  
+	  Additional features
+	  
+	  * Support for BZIP2, GZIP and ZIP compressed ROMs i.e., no more
+	  manual decompression or wasted disk space. Yay!
+	  * Support for X11's XVideo hardware acceleration by SDL for
+	  faster and smoother graphics.
+	  * Fullscreen support with or without the classic color frame.
+	  * SDL audio support (in favour of OSS Audio) which means you can
+	  use ESound and others for sharing the sound device among other
+	  applications.
+	  * Optional mute playing i.e., if you don't have a soundcard or
+	  the soundcard is busy you can still play.
+	  * Support for 48kHz sample rate (needs driver support).
+	  * Automagic CPU usage reduction which is especially cool for
+	  notebooks. The unpatched Generator uses more or less as much CPU
+	  as it can get even if needs far less than 10% on any modern system.
+	  * Working support for Game Genie codes.
+
+	  http://squish.net/generator/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_CYGNE_SDL
+	bool "Cygne-SDL-0.1nb5"
+	help
+	  Bandai Wonderswan Color handheld emulator
+
+	  Originally Cygne was developed by Dox as a Bandai Wonderswan (Colour)
+	  emulator for Windows systems. From version 2.1 Dox decided to
+	  release the Windows sources to the public in GPL form which allows
+	  others to use the source and hack it :)
+	  
+	  Cygne/SDL is a Cygne port using the Simple Directmedia Layer (SDL)
+	  library.  Cygne/SDL is released as OpenSource under the GPL license.
+	  It uses code from the orignal Cygne (allthough a bit modified),
+	  code from the MAME NEC CPU core as well as portions from several
+	  SDLemu emulation projects. Anybody may hack the current sourcecode
+	  if they like or can make additional changes into it.
+
+	  http://icculus.org/Cygne-SDL/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DYNAGEN
+	bool "dynagen-0.11.0nb2"
+	help
+	  Network configuration generator for Dynamips
+
+	  Dynagen is a front-end for use with the Dynamips Cisco router emulator.
+	  It uses an INI-like configuration file to provision Dynamips emulator
+	  networks. It takes care of specifying the right port adapters, generating
+	  and matching up those pesky NIO descriptors, specifying bridges,
+	  frame-relay, ATM switches, etc. It also provides a management CLI for
+	  listing devices, suspending and reloading instances, determining and
+	  managing idle-pc values, performing packet captures, etc.
+
+	  http://dynagen.org/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DARCNES
+	bool "darcnes-20010401nb4"
+	help
+	  
+
+	  DarcNES is a multi-system emulator. Some of the systems it emulates
+	  are
+	  o Sega Master System, Sega Game Gear (with sound)
+	  o Nintende Entertainment System (with sound)
+	  o PC-Engine
+	  and in development is support for
+	  o Colecovision
+	  o Sega Megadrive, also known as Sega Genesis
+	  o Apple ][
+	  
+	  The keys are: 'A', 'S', '[', ']', arrows, and escape.
+	  
+	  By Nyef (Alastair Bridgewater).
+
+	  http://www.dridus.com/~nyef/darcnes/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GENS
+	bool "gens-2.12rc3nb15"
+	help
+	  Sega Genesis emulator with Sega CD support
+
+	  Gens is an emulator of Sega's 16 bit consoles: Genesis (a.k.a
+	  Megadrive) and Sega CD (a.k.a Mega CD).  For Sega CD, you will need
+	  BIOS ROM images.
+
+	  http://gens.consolemul.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DYNAMIPS
+	bool "dynamips-0.2.8rc2"
+	help
+	  Cisco 3600 and 7200 MIPS emulator
+
+	  Cisco 3600 and Cisco 7200 emulator. You'll need an
+	  IOS image in order to properly use this package.
+	  
+	  At this time, the emulator is able to boot a large
+	  number of Cisco IOS releases available for the 7200
+	  and 3600 platforms, including the latest 12.2S and 12.4T.
+	  
+	  The following devices are emulated in the current release (0.2.5):
+	  
+	  - MIPS64 CPU processor. The instruction set is not completely
+	  emulated now (FPU support is lacking, TLB support is not
+	  finished and other minor things), but it is sufficient for IOS ;
+	  - DRAM and Packet SRAM memory ;
+	  - Non-Volatile Memory (NVRAM) ;
+	  - Signetics SCN 2681 DUART (C7200 Console and AUX ports) ;
+	  - National Semiconductors NS16552 DUART (C3600 Console and AUX ports) ;
+	  - Dallas DS1620 Temperature Sensors and Voltage Sensors, allowing
+	  the C7200 Environmental Monitor to work properly ;
+	  - NMC93C46 Serial EEPROM ;
+	  - Bootflash of 8 Mb (Intel 28F016SA) ;
+	  - Galileo GT64010/GT64120 PCI controller, DEC 21x50 PCI bridges and so ;
+	  - PCMCIA ATA disk emulation (C7200 only at this time).
+
+	  http://www.ipflow.utc.fr/index.php/Cisco_7200_Simulator
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DARWIN_LIB
+	bool "darwin_lib-6.6.2nb2"
+	help
+	  
+
+	  These libraries are part of the Darwin compatibility option for
+	  NetBSD/powerpc and NetBSD/i386.
+	  
+	  The kernel options `EXEC_MACHO', `COMPAT_MACH' and `COMPAT_DARWIN'
+	  must be in your kernel config file for this to work.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DATLIB
+	bool "DatLib-2.21"
+	help
+	  Data file library for some emulation tools
+
+	  DatLib is a library for emulation data file formats.  It supports
+	  a variety of data file formats and handles the standard loading,
+	  cleansing, converting and saving operations that are required by
+	  tools such as DatUtil, MAMEDiff, ROMBuild, ROMInfo and ZipIdent.
+
+	  http://www.logiqx.com/Tools/DatLib/DatLib.php
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_DATUTIL
+	bool "DatUtil-2.32"
+	help
+	  Create and convert emulator rom checksum files
+
+	  DatUtil was created to aid in the creation of dat files for Rom
+	  Managers such as ClrMamePro and RomCenter (Roman Scherzer / Eric
+	  Bole-Feysot). It can convert between formats, extract individual
+	  games (and optionally their clones) and cleanse dats. It supports
+	  a variety of formats.
+
+	  http://www.logiqx.com/Tools/DatUtil/DatUtil.php
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_E_UAE
+	bool "e-uae-0.8.28nb9"
+	help
+	  Enhanced Ubiquitous Amiga Emulator
+
+	  This is a fork of UAE, the Ubiquitous Amiga Emulator, with an emulation core
+	  based on WinUAE. It attempts to bring many of the great features of WinUAE
+	  to non-Windows platforms. This version now finally has a name, E-UAE, since
+	  that's what everybody was calling it anyway. The 'E' can stand for anything
+	  you fancy. Experimental, extreme, exciting, egalitarian, eggplant...
+	  
+	  E-UAE is open-source software and is made available under the terms of the
+	  GPL. See the COPYING file included with the E-UAE archive for details.
+	  
+	  E-UAE is based on the work of dozens of contributors including Bernd Schmidt
+	  (the original author and maintainer of UAE), Bernie Meyer (the author of the
+	  x86 JIT compiler), Toni Wilen (the current maintainer of WinUAE), and many
+	  more.
+	  
+	  To make full use of E-UAE you will need access to an image of some version
+	  of the Amiga Kickstart ROM (although UAE does include a ROM emulation which
+	  may work with some old games). The Amiga Kickstart ROMs are copyrighted
+	  material and may not be freely distributed (so don't ask me for a copy). If
+	  you don't have an Amiga from which you can legally make a ROM image, a
+	  selection of ROM images are available for purchase online from Cloanto
+	  (publishers of the Amiga Forever distribution). See
+	  http://www.amigaforever.com/
+
+	  http://www.rcdrummond.net/uae/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_DEVEL
+	bool "gpsim-20050905nb11"
+	help
+	  PIC emulator with X interface
+
+	  PIC simulator that supports X, stimulii, and modules
+
+	  http://www.dattalo.com/gnupic/gpsim.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_FCEU
+	bool "fceu-0.98.13nb3"
+	help
+	  Portable NES and Famicom emulator
+
+	  FCE Ultra is an NTSC and PAL Famicom/NES emulator for various
+	  platforms. It is based upon Bero's original FCE source code. Current
+	  features include good PPU, CPU, pAPU, expansion chip, and joystick
+	  emulation. Also a feature unique to this emulator (at the current
+	  time) is authentic Game Genie emulation. Save states and snapshot
+	  features also have been implemented.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_OSCILLOSCOPE
+	bool "gpsim-oscilloscope-0.1.2nb9"
+	help
+	  Oscilloscope module for gpsim
+
+	  This is an oscilloscope module for gpsim. The module provide 8 probes, which
+	  you have to connect to nodes. For now the graphic interface doesn't
+	  update its display dynamically, it provides 2 input boxes in which have to
+	  enter the start and end cycles to draw.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_FMSX
+	bool "fmsx-3.5.1"
+	help
+	  
+
+	  fMSX is a portable emulator of MSX home computers written in C. You
+	  can always get the latest fMSX source code and support files from
+	  
+	  http://www.komkon.org/fms/fMSX/
+	  
+	  MSX is an old Z80-based family of home computers which appeared in
+	  1982 as an attempt to establish a single standard in home computing
+	  similar to VHS in video. They were popular in Asian (Korea, Japan) and
+	  South American (Brazil, Chile) countries as well as in Europe
+	  (Netherlands, France, Spain) and former Soviet Union, but they are
+	  virtually unknown in USA. Although MSX standard quietly died to year
+	  1988, the world got to see MSX2, MSX2+, and TurboR extensions of the
+	  standard.
+
+	  http://fms.komkon.org/fMSX/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_FREEBSD_LIB
+	bool "freebsd_lib-2.2.7nb3"
+	help
+	  Libraries necessary for FreeBSD compatibility, including XFree86
+
+	  These libraries are part of the FreeBSD compatibility options
+	  for NetBSD.
+	  
+	  The kernel option `COMPAT_FREEBSD' needs to be in your kernel config
+	  file for this to work as well.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_FUSE
+	bool "fuse-1.0.0.1nb1"
+	help
+	  ZX Spectrum Emulator
+
+	  Fuse is the Free Unix Spectrum Emulator.
+	  * Working 48K/128K/+2/+2A Speccy emulation, running at true Speccy speed on any
+	  computer you're likely to try it on.
+	  * Support for loading from .tzx files.
+	  * Sound (on system supporting the Open Sound System or BSD/Solaris).
+	  * Kempston joystick emulation.
+	  * Emulation of the various printer you could attach to the Spectrum.
+	  * Very basic support for RZX files.
+
+	  http://fuse-emulator.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_PTYUSART
+	bool "gpsim-ptyusart-0.3.2nb9"
+	help
+	  Pseudo-tty module for gpsim
+
+	  This is a serial module for gpsim, connecting the virtual Rx/Tx lines
+	  to a pseudo-tty (pty). You can then use your usual serial tools (cu, tip,
+	  minicom, etc ...) on this pty as you would do on a real serial port on
+	  your Unix workstation.
+	  Included is an example loopback program for a pic18f (that is, it will
+	  just echo back what you send it). tstloopback.c can be used along with
+	  cu or tip (or possibly minicom) to copy an arbitrary file though the
+	  serial port and the pic, which allows to check for data corruption
+	  (if you notice that 0x11 and 0x13 characters get lost, check for
+	  the XON/XOFF status of your pty :)
+	  
+	  This module has been developed for gpsim from CVS 20040816:
+	  http://www-asim.lip6.fr/~bouyer/pic/gpsim-20040826.tar.gz
+	  
+	  For now this has only been tested on NetBSD. It should work without
+	  much troubles on others BSDs. More work is needed for other unix-like
+	  operating systems (probably require a usart_external.cc per pty style).
+	  
+	  Please address comments, bug-fixes or updates to Manuel.Bouyer@lip6.fr
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GNS3
+	bool "gns3-0.7"
+	help
+	  Graphical network simulator
+
+	  GNS3 is a graphical network simulator that allows you to design complex
+	  network topologies. You may run simulations or configure devices ranging from
+	  simple workstations to powerful Cisco routers. It is based on Dynamips, an IOS
+	  emulator which allows users to run IOS binary images from Cisco Systems and
+	  Pemu, an PIX firewall emulator based on Qemu.
+
+	  http://gns3.org/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GXEMUL
+	bool "gxemul-0.6.0nb1"
+	help
+	  Framework for full-system computer architecture emulation
+
+	  GXemul is a framework for full-system computer architecture emulation.
+	  Several processor architectures and machine types have been implemented.
+	  It is working well enough to allow unmodified "guest" operating systems to
+	  run inside the emulator, as if they were running on real hardware.
+	  
+	  The emulator emulates (networks of) real machines. The machines may consist
+	  of ARM, MIPS, Motorola 88K, PowerPC, and SuperH processors, and various
+	  surrounding hardware components such as framebuffers, busses, interrupt
+	  controllers, ethernet controllers, disk controllers, and serial port
+	  controllers.
+	  
+	  GXemul, including the dynamic translation system, is implemented in portable
+	  C++, which means that the emulator will (at least in theory) run on
+	  practically any modern host architecture and unix-like operating system, for
+	  which a C++ compiler is available.
+	  
+	  The documentation lists the machines and specific guest operating systems
+	  that can be regarded as "working" in GXemul. The guest operating system
+	  that works best in GXemul is NetBSD/pmax.
+
+	  http://gxemul.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GNUBOY
+	bool "gnuboy-1.0.3nb2"
+	help
+	  Gameboy emulator
+
+	  gnuboy is a portable program for emulating the Nintendo GameBoy Color
+	  software platform.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GNUBOY_SDL
+	bool "gnuboy-sdl-1.0.3nb5"
+	help
+	  SDL port of Gameboy emulator
+
+	  Gnuboy is a portable program for emulating the Nintendo GameBoy Color
+	  software platform.  This is the SDL port, with joystick support.
+
+	  http://gnuboy.unix-fu.org/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM
+	bool "gpsim-0.21.11nb7"
+	help
+	  PIC emulator with X interface
+
+	  PIC simulator that supports X, stimulii, and modules
+
+	  http://www.dattalo.com/gnupic/gpsim.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_KENIGMA
+	bool "kenigma-1.2.1nb13"
+	help
+	  Replica of the German enigma code machine used in WW2
+
+	  KEnigma is a replica of the German enigma code machine used in WW2 written in
+	  ruby/kde. This is an exact copy of the real machine (You could encode a
+	  message on a real enigma and decode it using this.)
+
+	  http://www.kde-apps.org/content/show.php?content
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_MMIX
+	bool "mmix-20060918"
+	help
+	  Simulators for Knuth's MMIX RISC architecture
+
+	  Simulators for MMIX, a RISC machine designed by Professor Donald Knuth
+	  to replace MIX in the ultimate editions of his monumental opus
+	  ``The Art of Computer Programming''.
+	  
+	  The programs are described in
+	  
+	  MMIXware by Donald E. Knuth
+	  Lecture Notes in Computer Science 1750 (Springer Verlag, Heidelberg, 1999).
+
+	  http://www-cs-faculty.stanford.edu/~knuth/mmix.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_LIBSPECTRUM
+	bool "libspectrum-1.0.0nb1"
+	help
+	  ZX Spectrum emulator file format library
+
+	  libspectrum is a library designed to make the input and output of some
+	  ZX Spectrum emulator files slightly easier.  It is intended to be usable
+	  on Unix variants, Win32 and MacOSX.
+
+	  http://fuse-emulator.sourceforge.net/libspectrum.php
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NEOPOP_SDL
+	bool "NeoPop-SDL-0.2nb8"
+	help
+	  SNK NeoGeo Pocket emulator
+
+	  NeoPop-SDL is the SDL port of NeoPop, a portable NeoGeo Pocket
+	  emulator.  It supports black&white and color games, game state saving,
+	  screenshots (BMP and PNG), sound and music, double- and
+	  triple-size both in software and hardware scaling as well as
+	  full-screen-modes, joysticks and keyboard input, and reading from
+	  ZIP files.
+
+	  http://www.nih.at/NeoPop-SDL/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_LRMI
+	bool "lrmi-0.8nb1"
+	help
+	  Wrapper to the i386 vm86 mode
+
+	  LRMI is a library for calling real mode BIOS routines under Linux.
+
+	  http://sourceforge.net/projects/lrmi/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_M1
+	bool "m1-0.7.7"
+	help
+	  
+
+	  M1 is an arcade video and pinball game sound emulator by R. Belmont.
+	  The emulator is available for both Windows and Linux and features
+	  full stereo sound at sample rates up to 48000 Hz. Over 1000 games
+	  are supported.
+	  
+	  This package contains the Linux binary.
+
+	  http://www.emuhype.com/index.phtml?s
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_HANDY_SDL
+	bool "handy_sdl-0.5nb1"
+	help
+	  Atari Lynx emulator
+
+	  Handy/SDL is a freeware software emulator which emulates Atari's
+	  Lynx hand-held game device on your OS. Handy/SDL is based upon Keith
+	  "Dysfunction" Wilkin's free Handy emulator.
+
+	  http://sdlemu.ngemu.com/handysdl.php
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_MAKEPPF
+	bool "makeppf-3.0"
+	help
+	  
+
+	  PPF (PlayStation Patch File) is a tool dedicated to all PlayStation
+	  coders and developers out there who are creating PAL/NTSC patches,
+	  trainer options and even cracks for your favourite console system.
+	  With the files in the PPF package you are in the position to make
+	  patchfiles similar to IPS on SuperNES.
+	  
+	  This package contains a tool to create PPF patches.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_HATARI
+	bool "hatari-1.4.0nb1"
+	help
+	  Atari ST emulator
+
+	  Hatari is an Atari ST emulator for systems supported by the SDL library.
+	  
+	  Hatari is based on two main sources:
+	  - The WinSTon sourcecode written by Paul Bates
+	  (http://www.sourceforge.net/projects/winston/)
+	  - The UAE's CPU core (http://www.freiburg.linux.de/~uae/)
+	  
+	  You need a copy of an Atari ST TOS ROM to use this program. Then run
+	  the program as follows:	hatari --tos tos.image
+
+	  http://hatari.berlios.de/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NESTOPIA
+	bool "nestopia-1.40hnb6"
+	help
+	  Portable, very accurate NES emulator with UNIF support
+
+	  NEStopia is a portable Nintendo Entertainment System emulator
+	  written in C++ by Martin Freij and ported to Linux by R. Belmont.
+	  NEStopia strives for the most accurate emulation possible at the
+	  pixel-by-pixel and sample-by-sample level, and it has excellent
+	  mapper and UNIF board support as well. A few features:
+	  
+	  - Supports .nes and .unf/.unif format ROMs
+	  - Supports .fds discs
+	  - Supports .nsf music rips
+	  - All supported files can be extracted from zip or 7zip containers (an
+	  archive browser is not yet included - this assumes the common
+	  GoodSet case of one zip or 7zip per game)
+	  - Supports save states
+	  - Supports movie recordings
+	  - Supports the "rewinder" - if you make a bad jump and screw up your game,
+	  press Backspace and the game will run in reverse. Press \ to take over
+	  again and try to fix your mistake.
+	  - Friendly GUI configuration
+	  - Autodetection of PAL and NTSC format games
+	  - Supports drag and drop of compatible games and music rips from modern
+	  Linux file managers, including KDE's Konqueror and GNOME's Nautilus.
+
+	  http://rbelmont.mameworld.info/?page_id
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_HERCULES
+	bool "hercules-3.07nb1"
+	help
+	  S370 emulator
+
+	  Hercules is an open source software implementation of the mainframe
+	  System/370 and ESA/390 architectures, in addition to the new 64-bit
+	  z/Architecure.  Hercules runs under Linux, Windows 98, Windows NT,
+	  Windows 2000, and NetBSD.  Hercules was created by Roger Bowler and is
+	  maintained by Jay Maynard.  Jan Jaeger designed and implemented many
+	  of the advanced features of Hercules, including dynamic
+	  reconfiguration, integrated console, interpretive execution, and
+	  z/Architecture support.
+
+	  http://www.hercules-390.org/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_HERCULES_IMAGES
+	bool "hercules-images-20010222"
+	help
+	  Images to IPL the Hercules emulator
+
+	  The files contained in this package are used to IPL the Hercules
+	  emulator.
+	  
+	  Taken from the Hercules FAQ:
+	  
+	  3.  Alternatively, you can download the mftr33.tar.gz package which
+	  contains a minimal MFT system on a 3330 image, with some minimal
+	  documentation.  The configuration is that of a 370/145 with 2
+	  megabytes of main storage, running OS/MFT Release 21.0, with several
+	  volumes of pre-loaded DASD.  2 program partitions (P0 and P1) have
+	  been genned.  There is no working TOD clock, and no SMF.  Volume
+	  DLIB01 which is specified does not exist in the zipped file, but can
+	  be created using a plf file with the CDROM of OS/360.  DLIB01 can be
+	  commented-out from the config (cnf) file if desired.  The mftr33
+	  package also includes the IPL text and program for the standalone
+	  IBCDASD program as file "ibcdasdi.rdr" which can be used if desired.
+
+	  http://www.conmicro.cx/hercules/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_MAMEDIFF
+	bool "MAMEDiff-2.26"
+	help
+	  Compare MAME rom sets of different releases
+
+	  MAMEDiff makes it easy to identify ROM related changes in a new
+	  release of MAME (it can even find game additions that aren't
+	  mentioned in whatsnew.txt). It can spot game renames and will not
+	  regard them as one game deleted and another added. When ROMs or
+	  games are renamed (or if there is a change in the way that sets
+	  are merged), MAMEDiff will just tell you how to rebuild the affected
+	  sets (i.e. no downloading required). A must-have for any MAME
+	  fanatic! It also works for new releases of MESS, RAINE, Final Burn
+	  Alpha, Kawaks, etc.
+
+	  http://www.logiqx.com/Tools/MAMEDiff/MAMEDiff.php
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_IA64SIM
+	bool "ia64sim-0.5"
+	help
+	  
+
+	  IA64 ISA simulator, Alpha release, version 0.1
+	  ----------------------------------------------
+	  
+	  This source distribution is placed in the public domain by its author,
+	  Jason Papadopoulos. You may use it for any purpose, free of charge,
+	  without having to notify anyone. I disclaim any responsibility for any
+	  errors, inconsistencies, and inaccuracies with real-world hardware
+	  implementations of the IA64 instruction set. If you build a mission-
+	  critical system based only on this simulator and something goes wrong,
+	  it's your own damned fault.
+	  
+	  Optionally, please be nice and tell me if you find this source to be
+	  useful. Again optionally, if you add to the functionality present here
+	  please consider making those additions public too, so that others may
+	  benefit from your work.
+
+	  http://www.boo.net/~jasonp/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_KEGS
+	bool "kegs-0.91"
+	help
+	  Apple IIgs emulator for Mac OS X, Win32, Linux, and Unix/X11
+
+	  Kent's Emulated GS - an Apple IIgs emulator for Mac OS X, Win32,
+	  Linux, and Unix/X11.
+
+	  http://kegs.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_MEDNAFEN
+	bool "mednafen-0.8.13.3nb1"
+	help
+	  Portable multi-system emulator
+
+	  Mednafen is a portable, utilizing OpenGL and SDL, argument
+	  (command-line)-driven multi-system emulator with many advanced
+	  features. The Atari Lynx, GameBoy  (Color), GameBoy Advance, NES,
+	  PC Engine (TurboGrafx 16), SuperGrafx, Neo Geo Pocket  (Color),
+	  PC-FX, and WonderSwan  (Color) are emulated. Mednafen has the
+	  ability to remap hotkey functions and virtual system inputs to a
+	  keyboard, a joystick, or both simultaneously. Save states are
+	  supported, as is real-time game rewinding. Screen snapshots may be
+	  taken at the press of a button, and are saved in the popular PNG
+	  file format.
+	  
+	  Due to the threaded model of emulation used in Mednafen, and
+	  limitations of SDL, a joystick is preferred over a keyboard to play
+	  games, as the joystick will have slightly less latency, although
+	  the latency differences may not be perceptible to most people.
+
+	  http://mednafen.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_MINIVMAC
+	bool "minivmac-0.1.7nb2"
+	help
+	  Miniature Macintosh emulator
+
+	  Mini vMac is a minor spin off of the program vMac.  Its goal is to
+	  provide the simplest usable emulation of a Macintosh, instead of the
+	  fastest or most usable emulation.  It can serve as a programmers
+	  introduction to vMac, having only about one tenth as much source code.
+
+	  http://minivmac.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SNES9X_GTK
+	bool "snes9x-gtk-1.53.81"
+	help
+	  SNES emulator with GTK frontend
+
+	  snes9x is a portable, freeware Super Nintendo Entertainment System
+	  (SNES) emulator. It basically allows you to play most games designed
+	  for the SNES and Super Famicom Nintendo game systems on your PC or
+	  Workstation; which includes some real gems that were only ever
+	  released in Japan.
+	  
+	  This package contains a GTK port of snes9x.
+
+	  http://www.snes9x.com/phpbb2/viewtopic.php?p
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SPIM
+	bool "spim-8.0"
+	help
+	  MIPS R2000 Simulator
+
+	  MIPS R2000 Simulator -- "1/25th the performance at none of the cost"
+	  
+	  Spim/Xspim simulates MIPS R2000 assembly code, providing a gdb and xgdb
+	  like interface to the classical MIPS RISC CPU.  The virtual machine
+	  it provides can be either the one presented by the MIPS assembler or the
+	  one of the bare hardware.  The simulator can also be built to simulate the
+	  pipeline architecture of the MIPS machine (both the control and floating
+	  point pipelines).  When built for this, it also simulates and displays
+	  an instruction and data cache.
+	  
+	  This simulator is useful in CS and EE classes, including providing a
+	  target machine for compilers courses, lower division assembly language
+	  programming, microprocessor design courses, etc...
+
+	  http://spimsimulator.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_STELLA
+	bool "stella-3.4.1"
+	help
+	  Multi-platform Atari 2600 VCS emulator
+
+	  Stella is a freely distributed multi-platform Atari 2600 VCS emulator;
+	  originally developed for Linux by Bradford W. Mott. Stella allows you to
+	  enjoy all of your favorite 2600 games once again by emulating the 2600's
+	  hardware with software. Stella is written in C++, which allows it to be
+	  ported to other operating systems and architectures. Since its original
+	  release Stella has been ported to AcornOS, AmigaOS, DOS, FreeBSD, IRIX,
+	  Linux, MacOS, OpenStep, OS/2, Unix, and Windows.
+
+	  http://stella.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_QEMU
+	bool "qemu-0.15.0nb1"
+	help
+	  CPU emulator using dynamic translation
+
+	  QEMU is a FAST! processor emulator using dynamic translation to achieve
+	  good emulation speed, QEMU has two operating modes:
+	  
+	  * Full system emulation. In this mode, QEMU emulates a full system
+	  (for example a PC), including a processor and various peripherals.
+	  It can be used to launch different Operating Systems without rebooting
+	  the PC or to debug system code.
+	  * User mode emulation (Linux host only). In this mode, QEMU can launch
+	  Linux processes compiled for one CPU on another CPU. It can be used
+	  to launch the Wine Windows API emulator or to ease cross-compilation
+	  and cross-debugging.
+
+	  http://www.qemu.org/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_RAINE
+	bool "raine-0.43.3nb3"
+	help
+	  680x0 Arcade Emulator
+
+	  Raine is an emulator, it emulates some M68000 and M68020 arcade games and is
+	  mainly focused on Taito and Jaleco games hardware. It started as an experiment
+	  with the Rainbow Islands romset, dumped by Aracorn/Romlist. Raine can emulate
+	  many nice games now, including new additions from Cave and other companies.
+
+	  http://rainemu.swishparty.co.uk/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_ROMBUILD
+	bool "ROMBuild-2.9"
+	help
+	  Arcade ROM manipulation tool
+
+	  ROMBuild is a ROM manipulation tool that is capable of creating
+	  ROMs for the older arcade emus using MAME ones. An example of this
+	  is by splitting ROMs in two or joining two together but ROMBuild
+	  supports much more than this. It can can split, join, extract,
+	  fill, patch, pad, interleave etc but to you the user that doesn't
+	  really matter. The important thing is that MAME ROMs go in and ROMs
+	  for another emulator come out. :)
+	  
+	  When used in conjunction with the CMPro/ROMCenter dats that I have
+	  produced you can generate ROM sets for practically any emulator
+	  from MAME ROMs. In fact, the only ROMs you can't generate from MAME
+	  sets are where MAME doesn't support the game.
+
+	  http://www.logiqx.com/Tools/ROMBuild/ROMBuild.php
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_ROMINFO
+	bool "ROMInfo-2.7"
+	help
+	  Identify arcade ROM sets
+
+	  ROMInfo is for identifying arcade ROMs and checking if they are
+	  emulated yet.  It does this using the CMPro dats from the CAESAR
+	  database and should cover every arcade game emulated so far.
+
+	  http://www.logiqx.com/Tools/ROMInfo/ROMInfo.php
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SIMH
+	bool "simh-3.8.1nb1"
+	help
+	  Bob Supnik's historical computer simulator
+
+	  Bob Supnik's historical computer simulator, including:
+	  
+	  altair altairz80 eclipse gri h316 hp2100 i1401 i1620 ibm1130 id16 id32
+	  nova pdp1 pdp10 pdp11 pdp15 pdp4 pdp7 pdp8 pdp9 s3 sds vax
+	  
+	  See http://www.netbsd.org/ports/vax/emulator-howto.html on how to install
+	  NetBSD/vax on simh!
+
+	  http://simh.trailing-edge.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SIMULAVR
+	bool "simulavr-0.1.2.1nb3"
+	help
+	  Simulator for Atmel AVR microcontrollers
+
+	  The Simulavr program is a simulator for the Atmel AVR family of
+	  microcontrollers. Simulavr can be used either standalone or as a
+	  remote target for gdb. When used in gdbserver mode, the simulator
+	  is used as a backend so that gdb can be used as a source level
+	  debugger for AVR programs.
+	  
+	  Simulavr was written by Theodore A. Roth
+
+	  http://www.nongnu.org/simulavr/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SKI
+	bool "ski-1.3.2"
+	help
+	  The ia64 instruction set simulator
+
+	  The Hewlett-Packard IA-64 instruction set simulator
+	  
+	  To get the ski to run on NetBSD/i386, you need the following:
+	  
+	  procfs support in the kernel:
+	  http://www.netbsd.org/docs/guide/en/chap-linux.html#chap-linux-emulating-procfs
+	  mount /dev/pts:
+	  http://mail-index.netbsd.org/tech-kern/2004/11/08/0016.html
+	  
+	  Run the ski binary from within an xterm window.
+	  
+	  BUGS: the xserver version xski doesn't currently work.
+
+	  http://ski.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_OPENMSX
+	bool "openmsx-0.6.2nb5"
+	help
+	  MSX emulator that aims for perfection
+
+	  openMSX, the open source MSX emulator that tries to achieve near-perfect
+	  emulation by using a novel emulation model.
+	  
+	  Hardware emulated:
+	  
+	  o almost all MSX systems, except for some details.
+	  o Different CPU clock speeds, including those for the Panasonic
+	  MSX2+ machines.
+	  o Almost all known cartridge mapper types via autodetection or the
+	  included ROM database.
+	  o Many MSX storage (disk/SRAM) systems.
+	  o kanji JIS ROM 1 and 2.
+	  o Mouse and joystick (with option to use the keyboard as joystick).
+	  o rensha turbo auto fire support.
+	  
+	  And more!
+
+	  http://openmsx.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SKI_BIN
+	bool "ski-0.9.81.6"
+	help
+	  The Hewlett-Packard IA-64 instruction set simulator for Linux/x86
+
+	  The Hewlett-Packard IA-64 instruction set simulator for Linux/x86
+	  
+	  To get the ski to run on NetBSD/i386, you need the following:
+	  
+	  compat_linux support in the kernel:
+	  http://www.netbsd.org/docs/guide/en/chap-linux.html
+	  procfs support in the kernel:
+	  http://www.netbsd.org/docs/guide/en/chap-linux.html#chap-linux-emulating-procfs
+	  mount /dev/pts:
+	  http://mail-index.netbsd.org/tech-kern/2004/11/08/0016.html
+	  
+	  Tip: You can run the ski emulator with qemu usermode emulation on
+	  non-i386 platforms.
+	  
+	  Run the ski binary from within an xterm window.
+	  
+	  BUGS: the xserver version xski doesn't currently work.
+
+	  http://www.hpl.hp.com/research/linux/ski/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_OR1KSIM
+	bool "or1ksim-0.2.0rc2"
+	help
+	  OpenRISC emulator
+
+	  Or1ksim is a generic OpenRISC 1000 architecture simulator capable of
+	  emulating OpenRISC based computer systems.  Or1ksim provides several
+	  unique features:
+	  
+	  * Free, open source code
+	  * High level, fast, architecture simulation that allows early code
+	  analysis and system performance evaluation
+	  * All major models of OpenCores peripheral and system controller
+	  cores supported
+	  * Easy addition of new peripheral models
+	  * Remote debugging through a network socket with the GNU Debugger (GDB)
+	  * Support for different environments (memory configurations and
+	  sizes, OR1K processor model, configuration of peripheral
+	  devices)
+
+	  http://www.opencores.org/projects.cgi/web/or1k/architectural_simulator
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_OSF1_LIB
+	bool "osf1_lib-1.1nb4"
+	help
+	  DEC/Compaq OSF-1/Tru64 compatibility package for netscape
+
+	  DEC Tru64/OSF1 compatibility package based upon the Tru64/OSF1
+	  shared libraries provided by Compaq to support running Netscape on
+	  Linux/Alpha.
+	  
+	  This package supports running Tru64/OSF1 binaries that do not make use
+	  of MACH system calls.
+	  
+	  Note that this is not a complete set of Tru64/OSF1 shared libraries,
+	  but rather the minimal set required to run netscape.
+
+	  http://www.support.compaq.com/alpha-tools/software/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SMS_SDL
+	bool "sms_sdl-0.9.4a.7.1nb3"
+	help
+	  SMS Plus emulator port to SDL
+
+	  SMS Plus is Sega Master System and Game Gear emulator. Originally,
+	  it was written to run under DOS. Since Charles Mac Donald released
+	  his emulator under the GPL terms, this emulator has been ported to
+	  different platforms.
+
+	  http://membres.multimania.fr/cyxdown/smssdl/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SNES9X
+	bool "snes9x-1.43"
+	help
+	  
+
+	  Snes9x is a portable, freeware Super Nintendo Entertainment System (SNES)
+	  emulator. It basically allows you to play most games designed for the SNES
+	  and Super Famicom Nintendo game systems on your PC or Workstation; which
+	  includes some real gems that were only ever released in Japan.
+
+	  http://www.snes9x.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_P11
+	bool "p11-2.10i"
+	help
+	  PDP11 emulator
+
+	  P11 is a PDP11 emulator, which currently emulates the following
+	  configuration:
+	  
+	  - a KDJ11A processor (including fpp)
+	  - one or more RL-controllers (RLV12) with up to 4 RL02 each
+	  - one or more RHV?? controllers with up to 8 RP06 each
+	  - an RK11-controller with 22-bit addressing (hey ever saw one?)
+	  - a MRV12 option (boot-rom/maintenance and display register)
+	  - one or more KL11A controllers with up to 4 serial lines each
+	  - a standard printer interface
+	  - a read only TM11 tape
+	  - a DEQNA ethernet adapter
+	  - a toy clock
+	  
+	  On a 900MHz Athlon under FreeBSD 5.0 a 'make build; make installsrc'
+	  of 2.11BSD takes around 2:24 hours - this is several times faster than
+	  a real KDJ11A (if /usr is mounted async,noaccesstime).  Floating point
+	  speed is in the order of 10 times the original.
+	  
+	  P11 successfully runs RSX11M-PLUS, UN*X Version 5/6/7, 2.11BSD, RT-4
+	  and XXDP.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_PALMOSEMULATOR
+	bool "palmosemulator-3.5nb12"
+	help
+	  Palm OS Emulator
+
+	  Palm OS Emulator is an emulator for hardware capable of running the Palm OS
+	  operating system, with an X based interface.
+	  
+	  To use the emulator you must obtain a ROM image of the Palm OS operating
+	  system.  If you have a Palm OS device, you can extract the ROM image directly.
+	  
+	  Read "UsingPalmOSEmulator.pdf" for details of how to extract ROM images and
+	  how to use the emulator.  Run "pose" to start the emulator.
+
+	  http://www.palmos.com/dev/tools/emulator/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_PCEMU
+	bool "pcemu-1.01anb3"
+	help
+	  8086 PC emulator, by David Hedley
+
+	  PC Emulator for Unix and X Windows
+	  
+	  As the title suggests, this is a Unix/X windows program which is
+	  designed to emulate a standard 8086 based PC.
+	  
+	  The emulator runs at about 8-10MHz 80286 speed on a Sun SparcStation
+	  10/40 (without the -mviking flag) and at about 6MHz 8088 speed on a
+	  33MHz 80486 box running Linux.
+	  
+	  I have included a Postscript representation of my project report. It's
+	  a bit out of date now, but it's the closest thing I've got to
+	  documentation!  I'll do some kind of latex thing for the next
+	  release....
+	  
+	  The program rather hogs the cpu but unmapping the window (iconifying
+	  it) will put it to sleep.
+	  
+	  The author is:
+	  David Hedley, hedley@cs.bris.ac.uk
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_PEARPC
+	bool "pearpc-0.4nb1"
+	help
+	  PowerPC emulator
+
+	  PearPC is an architecture independent PowerPC platform emulator capable of
+	  running most PowerPC operating systems.
+
+	  http://pearpc.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_UCON64
+	bool "ucon64-2.0.0nb1"
+	help
+	  Emulator ROM and disk image converter and inspector
+
+	  uCON64 - THE tool for all your video game console concerns.
+	  
+	  - Support for 14+ different cartridge and disc-based video game console system
+	  - Support for ALL common patch file formats like: IPS *), APS, BSL, PPF and
+	  Game Genie
+	  *) with RLE compression
+	  - Support for 10+ different backup units to backup/restore ROM(s), disc(s) and
+	  SRAM(s) like: Flash Advance Linker, Flash 2 Advance, Doctor V64 (Junior),
+	  Super Wild Card, Game Doctor, Dexdrive, Super Magic Drive, Game Boy Xchanger
+	  Mad Catz Camera Link, Lynxit, MD-PRO, SMS-PRO, PCE-PRO, GG-PRO, Super Flash
+	  and your CD-writer.
+	  
+	  Including:
+	  *VERY* verbose ROM information for ALL systems, detection of bad dumps using
+	  internal checksums or DAT files, CRC32 calculation, ROM comparison,
+	  modification (strip, pad, etc...), SRAM conversion (emulator <-> backup
+	  unit), DiscJuggler and Nero image conversions, complete gzip and zip support
+	  for all file-related funtions, etc...
+
+	  http://ucon64.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_UIPS
+	bool "uips-1.0"
+	help
+	  IPS patcher with v2 support
+
+	  UIPS - Universal IPS create/apply utility
+	  
+	  UIPS is a command-line based utility for creating and applying IPS
+	  patches. Multiple source files and IPS v2 truncation are supported.
+
+	  http://www.neillcorlett.com/uips/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_XHOMER
+	bool "xhomer-9.16.06"
+	help
+	  DEC Pro 350/380 emulator
+
+	  Xhomer is a machine emulator for the Digital Equipment Corporation (DEC)
+	  Pro 350 computer, a PDP-11-based machine that was sold in the early
+	  to mid-'80's.  Xhomer is based on the PDP-11 CPU core from the SIMH simulator,
+	  and is written entirely in C.
+
+	  http://xhomer.isani.org/xhomer/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_VBA
+	bool "vba-1.7.2nb4"
+	help
+	  Gameboy advance emulator
+
+	  Visual Boy Advance is a Gameboy Advance emulator.
+
+	  http://vba.ngemu.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_XM7
+	bool "xm7-1010snb1"
+	help
+	  X11-based FM-7 emulator
+
+	  XM7 is the X11 based emulator of FM-7, which was the very
+	  popular personal computer in Japan at 8-bits age.  It has a
+	  built-in ROM BASIC, two M6809 microprocessors, and many other
+	  good features.  It was produced by FUJITSU LIMITED.
+	  
+	  You must own a real machine and make required ROM files from
+	  it to run FM-7 software on it.  But it'd be rather difficalt
+	  in these days.
+
+	  http://www.ipc-tokai.or.jp/~ytanaka/fm7/xm7.shtml
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_XTRS
+	bool "xtrs-4.9nb3"
+	help
+	  TRS-80 Model I/III/4 Emulator for Unix
+
+	  xtrs is a Radio Shack TRS-80 Model I/III/4/4P emulator for Unix
+	  and the X Window System.  It includes lower case, the real time
+	  clock, hi-res graphics, serial port, parallel printer, mouse,
+	  cassette, sound and music output (requires OSS), 5" and 8" floppy
+	  disk drives in single and double density, and even hard disk drives.
+	  The emulated floppy and hard disk file formats are compatible with
+	  the popular MSDOS-based emulators by Jeff Vavasour, Matthew Reed,
+	  and David Keil, and (if you choose a capable enough file format),
+	  all features of the original TRS-80 floppy disk controller are
+	  emulated.  Under Linux, physical floppy disk drives are also
+	  supported.  Physical cassettes can be read and written too. The
+	  user interface is a bit spartan, but it gets the job done.
+
+	  http://www.tim-mann.org/trs80/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_VICE
+	bool "vice-2.3nb1"
+	help
+	  Emulator for C64, C128, CBM-II, PET, VIC20, Plus4 and C16
+
+	  VICE is the one and only Versatile Commodore Emulator. It provides
+	  emulation of the Commodore 64, 128, VIC20, PET, Plus/4 and C16 8-bit
+	  computers within a single package. The emulators run as separate
+	  programs, but have the same user interface, share the same settings and
+	  support the same file formats.
+	  
+	  All the emulators provide an accurate 6502/6510 emulator, with
+	  emulation of all the opcodes (both documented and undocumented ones)
+	  and accurate timing. Unlike other emulators, VICE aims to be cycle
+	  accurate; it tries to emulate chip timings as precisely as possible
+	  and does so efficiently.
+	  
+	  Please do not expect the VIC20, C128 and PET emulators to be as good
+	  as the C64 one, as they are still under construction.
+	  
+	  The current version emulates the C64, the C128, the VIC20, the CBM-II
+	  line (B128, B256), Plus/4 and C16, and all the PET models.
+
+	  http://vice-emu.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_XYAME
+	bool "xyame-038nb1"
+	help
+	  
+
+	  YAME is a multi-system emulator which currently emulates the Gameboy,
+	  NES, and PC-Engine.
+	  
+	  This is a Japanese emulator. It has sound logging, frameskip, and
+	  realtime save/load. The man page is in Japanese though.
+	  
+	  This package contains the Linux binary of the program.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_YABAUSE
+	bool "yabause-0.9.10nb5"
+	help
+	  Sega Saturn system emulator
+
+	  Yabause is a Sega Saturn emulator. It is written in C using the SDL and
+	  OpenGL libraries with support for cdrom and iso files.
+
+	  http://yabause.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_VMIPS
+	bool "vmips-1.3.1"
+	help
+	  MIPS R3000 emulator
+
+	  vmips is a virtual machine simulator based around a MIPS R3000 RISC CPU
+	  core.
+
+	  http://vmips.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_Z26
+	bool "z26-2.13nb3"
+	help
+	  Atari 2600 Emulator
+
+	  A fast and stable emulator for the mighty Atari 2600 game console.
+	  Lots of features and options, even comes with a man page with gobs of
+	  detailed information to help you fine tune everything.  Try the
+	  various timing and video mode settings to get the maximum performance
+	  on your computer.
+
+	  http://www.whimsey.com/z26/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_ZIPIDENT
+	bool "ZIPIdent-2.8"
+	help
+	  Identify arcade ROM sets
+
+	  ZIPIdent has been created to assist in the management of unemulated
+	  or 'needed soon' ROM collections. Anyone who possesses such a
+	  collection (emu developers for example) may find it difficult to
+	  spot games that become emulated and then remove them from the
+	  unemulated collection. ZIPIdent will identify ZIPs that should not
+	  be classified unemulated and if desired will even move them out of
+	  the 'unemulated' collection and into a separate directory.
+	  
+	  It is quite similar to MAME's '-romident' function except for the
+	  fact that it processes entire ROM collections, not just an individual
+	  ZIP. ZIPIdent probably has some additional logic that '-romident'
+	  doesn't contain too (not checked).
+
+	  http://www.logiqx.com/Tools/ZIPIdent/ZIPIdent.php
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_ZSNES
+	bool "zsnes-1.51nb2"
+	help
+	  Super NES emulator
+
+	  Play Super Nintendo games on your Intel x86 or compatible PC.
+
+	  http://www.zsnes.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_WINE
+	bool "wine-1.2.3"
+	help
+	  Free implementation of Windows on Unix
+
+	  Wine is a program which allows running Microsoft Windows programs
+	  (including DOS, Windows 3.x and Win32 executables) on Unix.  It consists
+	  of a program loader which loads and executes an Microsoft Windows binary,
+	  and a library that implements Windows API calls using their Unix or X11
+	  equivalents.  The library may also be used for porting Win32 code into
+	  native Unix executables.
+
+	  http://www.winehq.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SWARM
+	bool "swarm-0.61"
+	help
+	  Software arm7M core emulator
+
+	  This is SWARM - SoftWare ARM.
+	  
+	  The initial stage in this process is implement a plain software model
+	  of the basic ARM.  There are, of course, already software models of
+	  the ARM available, so why do another one?  Well, this one will need to
+	  allow the instruction set to be modified at run time, and provide not
+	  just an execution environment, but also a way of monitoring things
+	  like cache hits.
+	  
+	  To this end a hierarchical model of an ARM CPU has been implemented in
+	  C++.  It currently supports:
+	  
+	  + Arm 6 based core.  Currently able to handle data processing
+	  instructions, word/byte load and stores, load/store multiple,
+	  branches, 32 bit multiplication, and SWIs.
+	  + Support for plugging in different caches - be they unified or
+	  separate I & D caches.  Currently only a direct mapped cache is
+	  implemented.
+	  + Compile for SWARM using ARM targeted gcc.
+
+	  http://www.cl.cam.ac.uk/~mwd24/phd/swarm.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_TME
+	bool "tme-0.8nb5"
+	help
+	  The Machine Emulator
+
+	  The Machine Emulator, or tme, is a program that provides a general-
+	  purpose framework for computer emulation. The first machine that tme
+	  could emulate was the Sun 2/120, one of the first widely available Sun
+	  workstations. Other emulations include the Sun 3/150 and SPARCstation 2.
+
+	  http://csail.mit.edu/~fredette/tme/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_WINE_DEVEL
+	bool "wine-1.3.26"
+	help
+	  Free implementation of Windows on Unix
+
+	  Wine is a program which allows running Microsoft Windows programs
+	  (including DOS, Windows 3.x and Win32 executables) on Unix.  It consists
+	  of a program loader which loads and executes an Microsoft Windows binary,
+	  and a library that implements Windows API calls using their Unix or X11
+	  equivalents.  The library may also be used for porting Win32 code into
+	  native Unix executables.
+
+	  http://www.winehq.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_TUXNES
+	bool "tuxnes-0.75nb2"
+	help
+	  NES emulator
+
+	  tuxnes is a NES emulator.
+	  
+	  Features:
+	  - open source
+	  - dynamic recompilation from 6502 opcodes -> x86 native opcodes
+	  - mappers: 0, 1, 2, 3, 4, 7, 9, 11, 32, 66, 99
+	  - experimental mappers: 15, 22, 23, and 71
+	  - gzip and zip file support
+	  - game saving
+	  - built-in disassembler
+	  - joystick support (2- & 4-button)
+	  - experimental sound support
+	  - capture screenshots in X pixmap (xpm) or portable pixmap (ppm) format
+	  - Game Genie code support
+	  - trainer support
+	  - alternate palette support
+
+	  http://tuxnes.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_TWIN
+	bool "twin-3.1.14nb4"
+	help
+	  Cross-platform implementation of the Win32 API
+
+	  Willows TWIN is a GNU software package for emulating the Microsoft
+	  Win32 API.  It consists of a library set and an emulator program.  The
+	  emulator program allows the execution of Windows binary applications
+	  on supported platforms; using the native Intel x86 processors, or
+	  through the built-in instruction set interpreter.  The native
+	  libraries allow programmers natively to build Win32 and MFC
+	  applications from source code.
+
+	  http://www.willows.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_X48
+	bool "x48-0.4.1nb1"
+	help
+	  HP48 emulator
+
+	  This emulator is capable of providing a faithful replication of the
+	  HP48. In order to do so, it requires a copy of the ROM software
+	  from YOUR calculator. In order to avoid breaking copyright laws,
+	  and upsetting HP, you MUST BE THE PROUD OWNER OF AN HP48 before
+	  running this program. Of course you can run this program without a
+	  copy of the ROM software in order to write trivial machine code
+	  programs but you will not be able to access any of the calculator
+	  functionality.
+
+	  http://home.earthlink.net/~rmmlgetz/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_UAE
+	bool "uae-0.8.25nb9"
+	help
+	  The UAE Amiga Emulator
+
+	  UAE allows you to run most of the available Amiga software. It is a software
+	  emulation, meaning that no extra or special hardware is needed to do this.
+	  The hardware of an Amiga is emulated accurately, so that Amiga software is
+	  tricked into thinking it is running on the real thing, with your computer's
+	  display, keyboard, harddisk and mouse taking the parts of their emulated
+	  counterparts.
+
+	  http://uae.coresystems.de/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_XBEEB
+	bool "xbeeb-0.4.1nb1"
+	help
+	  Acorn BBC Micro emulator with an X based interface
+
+	  Xbeeb is an Acorn BBC Micro emulator with an X based interface.
+	  
+	  The emulation is good enough to run many games.  Xbeeb includes a filesystem
+	  interface for native filesystem access.
+	  
+	  To run the emulator you must have ROM images from the original machines.
+
+	  http://www.cloud9.co.uk/james/BBCMicro/Xbeeb/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_XCOPILOT
+	bool "xcopilot-0.6.6nb1"
+	help
+	  PalmPilot emulator for X
+
+	  XCopilot is an emulator for the 3Com/USRobotics
+	  Pilot/PalmPilot/PalmIII that runs on Unix systems under X11.
+	  
+	  XCopilot is a Unix/X11 port of the copilot emulator, which was
+	  originally written for Windows95. Greg Hewgill wrote copilot.
+	  Ivan A. Curtis created XCopilot.
+
+	  http://xcopilot.cuspy.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT12
+	bool "compat12-1.2.1nb1"
+	help
+	  Shared libraries for NetBSD 1.2 compatibility
+
+	  This package supplies the user files needed to run dynamically linked
+	  executables compiled under NetBSD 1.1 through 1.2.
+
+	  http://www.NetBSD.org/releases/formal-1.2/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT13
+	bool "compat13-1.3.3nb3"
+	help
+	  Shared libraries for NetBSD 1.3 compatibility
+
+	  This package supplies the user files needed to run dynamically linked
+	  executables compiled under NetBSD 1.3.
+
+	  http://www.NetBSD.org/releases/formal-1.3/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT30_EXTRAS
+	bool "compat30-extras-3.1"
+	help
+	  Additional shared libraries for NetBSD 3.0 compatibility
+
+	  This package supplies the extra user files needed to run dynamically
+	  linked executables compiled under NetBSD 3.0, including user files
+	  that might be found in NetBSD versions beyond 3.0 that are missing
+	  from the pkgsrc/emulators/compat30 package.
+
+	  http://www.NetBSD.org/releases/formal-3.0/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT14
+	bool "compat14-1.4.3nb2"
+	help
+	  Shared libraries for NetBSD 1.4 compatibility
+
+	  This package supplies the user files needed to run dynamically linked
+	  executables compiled under NetBSD 1.4.
+
+	  http://www.NetBSD.org/releases/formal-1.4/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT40
+	bool "compat40-4.0"
+	help
+	  Shared libraries for NetBSD 4.0 compatibility
+
+	  This package supplies the user files needed to run dynamically linked
+	  executables compiled under NetBSD 4.0.
+
+	  http://www.NetBSD.org/releases/formal-4/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT40_EXTRAS
+	bool "compat40-extras-4.0"
+	help
+	  Additional shared libraries for NetBSD 4.0 compatibility
+
+	  This package supplies the extra user files needed to run dynamically
+	  linked executables compiled under NetBSD 4.0, including user files
+	  that might be found in NetBSD versions beyond 4.0 that are missing
+	  from the pkgsrc/emulators/compat40 package.
+
+	  http://www.NetBSD.org/releases/formal-4/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT15
+	bool "compat15-1.5.3"
+	help
+	  Shared libraries for NetBSD 1.5 compatibility
+
+	  This package supplies the user files needed to run dynamically linked
+	  executables compiled under NetBSD 1.5.
+
+	  http://www.NetBSD.org/releases/formal-1.5/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_CYGWIN_ESOUND
+	bool "cygwin_esound-0.2.35.1nb1"
+	help
+	  Enlightened sound daemon (daemon only) for Cygwin/Interix
+
+	  This is the Enlightened Sound Daemon (EsounD) for Cygwin, providing the
+	  ability for Interix applications to output sound via the libesd client
+	  side library (audio/esound).
+
+	  http://www.xfce.org/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_CYGWIN_LIB
+	bool "cygwin_lib-1.5.13.1"
+	help
+	  Basic Cygwin library and executables for emulation
+
+	  This is a package, mainly for Interix, that provides basic Cygwin
+	  functionality for emulation purposes.  This allows some Cygwin binaries to
+	  provide gatewaying services to Interix processes where "native" Interix
+	  services are unavailable.
+
+	  http://www.cygwin.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT15_EXTRAS
+	bool "compat15-extras-1.5.3nb1"
+	help
+	  Additional shared libraries for NetBSD 1.5 compatibility
+
+	  This package supplies the extra user files needed to run dynamically
+	  linked executables compiled under NetBSD 1.5, including user files
+	  that might be found in NetBSD versions beyond 1.5 that are missing
+	  from the pkgsrc/emulators/compat15 package.
+
+	  http://www.NetBSD.org/releases/formal-1.5/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT16
+	bool "compat16-1.6.2"
+	help
+	  Shared libraries for NetBSD 1.6 compatibility
+
+	  This package supplies the user files needed to run dynamically linked
+	  executables compiled under NetBSD 1.6.
+
+	  http://www.NetBSD.org/releases/formal-1.6/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT16_EXTRAS
+	bool "compat16-extras-1.6.2"
+	help
+	  Additional shared libraries for NetBSD 1.6 compatibility
+
+	  This package supplies the extra user files needed to run dynamically
+	  linked executables compiled under NetBSD 1.6, including user files
+	  that might be found in NetBSD versions beyond 1.6 that are missing
+	  from the pkgsrc/emulators/compat16 package.
+
+	  http://www.NetBSD.org/releases/formal-1.6/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT20
+	bool "compat20-2.1"
+	help
+	  Shared libraries for NetBSD 2.0 compatibility
+
+	  This package supplies the user files needed to run dynamically linked
+	  executables compiled under NetBSD 2.0.
+
+	  http://www.NetBSD.org/releases/formal-2.0/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT20_EXTRAS
+	bool "compat20-extras-2.1"
+	help
+	  Additional shared libraries for NetBSD 2.0 compatibility
+
+	  This package supplies the extra user files needed to run dynamically
+	  linked executables compiled under NetBSD 2.0, including user files
+	  that might be found in NetBSD versions beyond 2.0 that are missing
+	  from the pkgsrc/emulators/compat20 package.
+
+	  http://www.NetBSD.org/releases/formal-2.0/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT30
+	bool "compat30-3.1"
+	help
+	  Shared libraries for NetBSD 3.0 compatibility
+
+	  This package supplies the user files needed to run dynamically linked
+	  executables compiled under NetBSD 3.0.
+
+	  http://www.NetBSD.org/releases/formal-3.0/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT15
+	bool "netbsd32_compat15-1.5.3"
+	help
+	  Shared libraries for NetBSD 32-bit 1.5 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-1.5/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT30_EXTRAS
+	bool "netbsd32_compat30-extras-3.1"
+	help
+	  Additional shared libraries for NetBSD 32-bit 3.0 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-3.0/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT15_EXTRAS
+	bool "netbsd32_compat15-extras-1.5.3nb1"
+	help
+	  Additional shared libraries for NetBSD 32-bit 1.5 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-1.5/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT40
+	bool "netbsd32_compat40-4.0"
+	help
+	  Shared libraries for NetBSD 32-bit 4.0 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-4/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT16
+	bool "netbsd32_compat16-1.6.2"
+	help
+	  Shared libraries for NetBSD 32-bit 1.6 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-1.6/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_ALSA
+	bool "suse32_alsa-10.0"
+	help
+	  Linux 32-bit compatibility package for ALSA
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT16_EXTRAS
+	bool "netbsd32_compat16-extras-1.6.2"
+	help
+	  Additional shared libraries for NetBSD 32-bit 1.6 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-1.6/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT40_EXTRAS
+	bool "netbsd32_compat40-extras-4.0"
+	help
+	  Additional shared libraries for NetBSD 32-bit 4.0 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-4/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_ASPELL
+	bool "suse32_aspell-10.0nb2"
+	help
+	  Linux 32-bit compatibility package for aspell
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT20
+	bool "netbsd32_compat20-2.1"
+	help
+	  Shared libraries for NetBSD 32-bit 2.0 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-2.0/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_BASE
+	bool "suse32_base-10.0nb5"
+	help
+	  Linux 32-bit compatibility package
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_COMPAT
+	bool "suse32_compat-10.0nb3"
+	help
+	  Linux 32-bit compatibility package with old shared libraries
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT20_EXTRAS
+	bool "netbsd32_compat20-extras-2.1"
+	help
+	  Additional shared libraries for NetBSD 32-bit 2.0 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-2.0/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT30
+	bool "netbsd32_compat30-3.1"
+	help
+	  Shared libraries for NetBSD 32-bit 3.0 compatibility
+
+
+	  http://www.NetBSD.org/releases/formal-3.0/index.html
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GDK_PIXBUF
+	bool "suse32_gdk-pixbuf-10.0nb3"
+	help
+	  Linux 32-bit compatibility package for gdk-pixbuf
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_EXPAT
+	bool "suse32_expat-10.0nb2"
+	help
+	  Linux 32-bit compatibility package for expat
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GLX
+	bool "suse32_glx-10.0nb4"
+	help
+	  Linux 32-bit compatibility package for OpenGL/Mesa
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_FONTCONFIG
+	bool "suse32_fontconfig-10.0nb7"
+	help
+	  Linux 32-bit compatibility package for fontconfig
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBXML2
+	bool "suse32_libxml2-10.0nb2"
+	help
+	  Linux 32-bit compatibility package for libxml2
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_FREETYPE2
+	bool "suse32_freetype2-10.0nb5"
+	help
+	  Linux 32-bit compatibility package for freetype-2.x
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_ASPELL
+	bool "suse_aspell-10.0nb2"
+	help
+	  Linux compatibility package for aspell
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require aspell shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GTK
+	bool "suse32_gtk-10.0nb2"
+	help
+	  Linux 32-bit compatibility package for GTK+-1.x
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_MAME
+	bool "mame-0.143"
+	help
+	  Multiple Arcade Machine Emulator
+
+	  MAME stands for Multiple Arcade Machine Emulator. When used in
+	  conjunction with images of the original arcade game's ROM and disk
+	  data, MAME attempts to reproduce that game as faithfully as possible
+	  on a more modern general-purpose computer. MAME can currently
+	  emulate several thousand different classic arcade video games from
+	  the late 1970s through the modern era.
+	  
+	  ROMs are needed to play the games. Some are freely available on the
+	  MAME homepage.
+
+	  http://www.mamedev.org/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LOCALE
+	bool "suse32_locale-10.0nb2"
+	help
+	  Linux 32-bit compatibility package with locale files
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_BASE
+	bool "suse_base-10.0nb5"
+	help
+	  Linux compatibility package
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  don't require X11 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GTK2
+	bool "suse32_gtk2-10.0nb4"
+	help
+	  Linux 32-bit compatibility package for GTK+-2.x
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_KRB5
+	bool "suse_krb5-10.0"
+	help
+	  Linux compatibility package for kerberos libraries
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require kerberos shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_OPENMOTIF
+	bool "suse32_openmotif-10.0nb2"
+	help
+	  Linux 32-bit compatibility package for OpenMotif
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_COMPAT
+	bool "suse_compat-10.0nb3"
+	help
+	  Linux compatibility package with old shared libraries
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package contains some old shared libraries required by older
+	  Linux binaries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBCUPS
+	bool "suse_libcups-10.0nb4"
+	help
+	  Linux compatibility package for CUPS
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require CUPS shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_KRB5
+	bool "suse32_krb5-10.0"
+	help
+	  Linux 32-bit compatibility package for kerberos libraries
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_OPENSSL
+	bool "suse32_openssl-10.0nb5"
+	help
+	  Linux 32-bit compatibility package for OpenSSL
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_MESS
+	bool "mess-0.143"
+	help
+	  Multi Emulator Super System
+
+	  MESS is a source-available project which documents the hardware
+	  for a wide variety of (mostly vintage) computers, video game
+	  consoles, and calculators through software emulation, as MAME does
+	  for arcade games. As a nice side effect to this documentation, MESS
+	  allows software and games for these hardware platforms to be run
+	  on modern PCs.
+
+	  http://www.mamedev.org/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_EXPAT
+	bool "suse_expat-10.0nb2"
+	help
+	  Linux compatibility package for expat
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require expat shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBJPEG
+	bool "suse_libjpeg-10.0nb2"
+	help
+	  Linux compatibility package for JPEG
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require JPEG shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBCUPS
+	bool "suse32_libcups-10.0nb4"
+	help
+	  Linux 32-bit compatibility package for CUPS
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_QT3
+	bool "suse32_qt3-10.0"
+	help
+	  Linux 32-bit compatibility package for QT3
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_FONTCONFIG
+	bool "suse_fontconfig-10.0nb7"
+	help
+	  Linux compatibility package for fontconfig
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require fontconfig shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBPNG
+	bool "suse_libpng-10.0nb4"
+	help
+	  Linux compatibility package for PNG
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require PNG shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBJPEG
+	bool "suse32_libjpeg-10.0nb2"
+	help
+	  Linux 32-bit compatibility package for JPEG
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_RESMGR
+	bool "suse32_resmgr-10.0nb1"
+	help
+	  Linux 32-bit compatibility package for resmgr
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_FREETYPE2
+	bool "suse_freetype2-10.0nb5"
+	help
+	  Linux compatibility package for freetype-2.x
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require freetype2 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBSIGC__2
+	bool "suse_libsigc++2-10.0"
+	help
+	  Linux compatibility package for libsigc++2
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require libsigc++2 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBPNG
+	bool "suse32_libpng-10.0nb4"
+	help
+	  Linux 32-bit compatibility package for PNG
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_SLANG
+	bool "suse32_slang-10.0nb3"
+	help
+	  Linux 32-bit compatibility package for S-Lang
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GDK_PIXBUF
+	bool "suse_gdk-pixbuf-10.0nb3"
+	help
+	  Linux compatibility package for gdk-pixbuf
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require gdk-pixbuf shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBSIGC__2
+	bool "suse32_libsigc++2-10.0"
+	help
+	  Linux 32-bit compatibility package for libsigc++2
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBTIFF
+	bool "suse_libtiff-10.0nb4"
+	help
+	  Linux compatibility package for TIFF
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require TIFF shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBTIFF
+	bool "suse32_libtiff-10.0nb4"
+	help
+	  Linux 32-bit compatibility package for TIFF
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_VMWARE
+	bool "suse32_vmware-10.0nb2"
+	help
+	  Linux 32-bit compatibility package to help run VMware
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBXML2
+	bool "suse_libxml2-10.0nb2"
+	help
+	  Linux compatibility package for libxml2
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require libxml2 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GLX
+	bool "suse_glx-10.0nb4"
+	help
+	  Linux compatibility package for OpenGL/Mesa
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require OpenGL/Mesa shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_X11
+	bool "suse32_x11-10.0nb4"
+	help
+	  Linux 32-bit compatibility package for X11
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_ALSA
+	bool "suse_alsa-10.0"
+	help
+	  Linux compatibility package for ALSA
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require alsa shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GTK
+	bool "suse_gtk-10.0nb2"
+	help
+	  Linux compatibility package for GTK+-1.x
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require GTK+-1.x shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GTK2
+	bool "suse_gtk2-10.0nb4"
+	help
+	  Linux compatibility package for GTK+-2.x
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require GTK+-2.x shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LOCALE
+	bool "suse_locale-10.0nb2"
+	help
+	  Linux compatibility package with locale files
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package contains the glibc2 locale files.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_QT3
+	bool "suse_qt3-10.0"
+	help
+	  Linux compatibility package for QT3
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require QT3 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_OPENMOTIF
+	bool "suse_openmotif-10.0nb2"
+	help
+	  Linux compatibility package for OpenMotif
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require OpenMotif shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_OPENSSL
+	bool "suse_openssl-10.0nb5"
+	help
+	  Linux compatibility package for OpenSSL
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require OpenSSL shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_FONTCONFIG
+	bool "suse32_fontconfig-11.3nb1"
+	help
+	  Linux 32-bit compatibility package for fontconfig
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBSIGC__2
+	bool "suse32_libsigc++2-11.3"
+	help
+	  Linux 32-bit compatibility package for libsigc++2
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_RESMGR
+	bool "suse_resmgr-10.0nb1"
+	help
+	  Linux compatibility package for resmgr
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require resmgr shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_FREETYPE2
+	bool "suse32_freetype2-11.3nb3"
+	help
+	  Linux 32-bit compatibility package for freetype-2.x
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBTIFF
+	bool "suse32_libtiff-11.3nb2"
+	help
+	  Linux 32-bit compatibility package for TIFF
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_ALSA
+	bool "suse_alsa-11.3nb3"
+	help
+	  Linux compatibility package for ALSA
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require alsa shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_SLANG
+	bool "suse_slang-10.0nb3"
+	help
+	  Linux compatibility package for S-Lang
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require S-Lang shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_GLX
+	bool "suse32_glx-11.3"
+	help
+	  Linux 32-bit compatibility package for OpenGL/Mesa
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBXML2
+	bool "suse32_libxml2-11.3nb3"
+	help
+	  Linux 32-bit compatibility package for libxml2
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_ASPELL
+	bool "suse_aspell-11.3"
+	help
+	  Linux compatibility package for aspell
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require aspell shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_GTK2
+	bool "suse32_gtk2-11.3nb5"
+	help
+	  Linux 32-bit compatibility package for GTK+-2.x
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_VMWARE
+	bool "suse_vmware-10.0nb2"
+	help
+	  Linux compatibility package to help run VMware
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package is a helper package for running VMware.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LOCALE
+	bool "suse32_locale-11.3"
+	help
+	  Linux 32-bit compatibility package with locale files
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_BASE
+	bool "suse_base-11.3nb5"
+	help
+	  Linux compatibility package
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  don't require X11 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_KRB5
+	bool "suse32_krb5-11.3nb3"
+	help
+	  Linux 32-bit compatibility package for kerberos libraries
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_X11
+	bool "suse_x11-10.0nb4"
+	help
+	  Linux compatibility package for X11
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require X11 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_OPENMOTIF
+	bool "suse32_openmotif-11.3"
+	help
+	  Linux 32-bit compatibility package for OpenMotif
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_COMPAT
+	bool "suse_compat-11.3"
+	help
+	  Linux compatibility package with old shared libraries
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package contains some old shared libraries required by older
+	  Linux binaries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBCUPS
+	bool "suse32_libcups-11.3nb1"
+	help
+	  Linux 32-bit compatibility package for CUPS
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_ALSA
+	bool "suse32_alsa-11.3nb3"
+	help
+	  Linux 32-bit compatibility package for ALSA
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_OPENSSL
+	bool "suse32_openssl-11.3nb4"
+	help
+	  Linux 32-bit compatibility package for OpenSSL
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_EXPAT
+	bool "suse_expat-11.3"
+	help
+	  Linux compatibility package for expat
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require expat shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBCURL
+	bool "suse32_libcurl-11.3"
+	help
+	  Linux 32-bit compatibility package for libcurl
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_QT4
+	bool "suse32_qt4-11.3"
+	help
+	  Linux 32-bit compatibility package for QT4
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_FONTCONFIG
+	bool "suse_fontconfig-11.3nb1"
+	help
+	  Linux compatibility package for fontconfig
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require fontconfig shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_ASPELL
+	bool "suse32_aspell-11.3"
+	help
+	  Linux 32-bit compatibility package for aspell
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBDRM
+	bool "suse32_libdrm-11.3"
+	help
+	  Linux 32-bit compatibility package for libdrm
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_SLANG
+	bool "suse32_slang-11.3"
+	help
+	  Linux 32-bit compatibility package for S-Lang
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_FREETYPE2
+	bool "suse_freetype2-11.3nb3"
+	help
+	  Linux compatibility package for freetype-2.x
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require freetype2 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_BASE
+	bool "suse32_base-11.3nb5"
+	help
+	  Linux 32-bit compatibility package
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBJPEG
+	bool "suse32_libjpeg-11.3"
+	help
+	  Linux 32-bit compatibility package for JPEG
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBPNG
+	bool "suse32_libpng-11.3nb2"
+	help
+	  Linux 32-bit compatibility package for PNG
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_VMWARE
+	bool "suse32_vmware-11.3"
+	help
+	  Linux 32-bit compatibility package to help run VMware
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_X11
+	bool "suse32_x11-11.3"
+	help
+	  Linux 32-bit compatibility package for X11
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_COMPAT
+	bool "suse32_compat-11.3"
+	help
+	  Linux 32-bit compatibility package with old shared libraries
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_EXPAT
+	bool "suse32_expat-11.3"
+	help
+	  Linux 32-bit compatibility package for expat
+
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_GLX
+	bool "suse_glx-11.3"
+	help
+	  Linux compatibility package for OpenGL/Mesa
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require OpenGL/Mesa shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_GTK2
+	bool "suse_gtk2-11.3nb5"
+	help
+	  Linux compatibility package for GTK+-2.x
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require GTK+-2.x shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBCUPS
+	bool "suse_libcups-11.3nb1"
+	help
+	  Linux compatibility package for CUPS
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require CUPS shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_KRB5
+	bool "suse_krb5-11.3nb3"
+	help
+	  Linux compatibility package for kerberos libraries
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require kerberos shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_OPENSSL
+	bool "suse_openssl-11.3nb4"
+	help
+	  Linux compatibility package for OpenSSL
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require OpenSSL shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBCURL
+	bool "suse_libcurl-11.3"
+	help
+	  Linux compatibility package for libcurl
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require cURL shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_QT4
+	bool "suse_qt4-11.3"
+	help
+	  Linux compatibility package for QT4
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require QT3 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBDRM
+	bool "suse_libdrm-11.3"
+	help
+	  Linux compatibility package for libdrm
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require libdrm (for X acceleration).
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_SLANG
+	bool "suse_slang-11.3"
+	help
+	  Linux compatibility package for S-Lang
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require S-Lang shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBJPEG
+	bool "suse_libjpeg-11.3"
+	help
+	  Linux compatibility package for JPEG
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require JPEG shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_VMWARE
+	bool "suse_vmware-11.3"
+	help
+	  Linux compatibility package to help run VMware
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package is a helper package for running VMware.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBPNG
+	bool "suse_libpng-11.3nb2"
+	help
+	  Linux compatibility package for PNG
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require PNG shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_X11
+	bool "suse_x11-11.3"
+	help
+	  Linux compatibility package for X11
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require X11 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBTIFF
+	bool "suse_libtiff-11.3nb2"
+	help
+	  Linux compatibility package for TIFF
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require TIFF shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBSIGC__2
+	bool "suse_libsigc++2-11.3"
+	help
+	  Linux compatibility package for libsigc++2
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require libsigc++2 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBXML2
+	bool "suse_libxml2-11.3nb3"
+	help
+	  Linux compatibility package for libxml2
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require libxml2 shared libraries.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LOCALE
+	bool "suse_locale-11.3"
+	help
+	  Linux compatibility package with locale files
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package contains the glibc2 locale files.
+
+	  http://www.suse.com/
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_OPENMOTIF
+	bool "suse_openmotif-11.3"
+	help
+	  Linux compatibility package for OpenMotif
+
+	  Linux compatibility package based on the SuSE Linux distribution.
+	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux.
+	  
+	  This package supports running ELF binaries linked with glibc2 that
+	  require OpenMotif shared libraries.
+
+	  http://www.suse.com/
+

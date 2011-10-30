@@ -1,0 +1,2467 @@
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ALEVT
+	bool "alevt-1.6.1nb2"
+	help
+	  Teletext decoder and browser for Brooktree 848 compatible TV cards
+
+	  AleVT is a teletext/videotext decoder and browser for the bttv driver
+	  (/dev/vbi) and X11.  It features multiple windows, a page cache,
+	  regexp searching, built-in manual, and more.  There's also a program
+	  to get the time from teletext and one to capture teletext pages from
+	  scripts.
+
+	  http://www.goron.de/~froese/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_AVIDEMUX
+	bool "avidemux-2.5.4nb3"
+	help
+	  Graphical video editing program
+
+	  Avidemux is a graphical tool to edit video.  It can open several file
+	  formats, and various audio and video codecs.  Video can be edited,
+	  cut, appended, filtered (resize/crop/denoise), and re-encoded. Output
+	  file formats include Avi, MPEG1/2, MPEG2PS, OGM, and raw stripped audio
+	  or video.
+
+	  http://fixounet.free.fr/avidemux/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_BSDAV
+	bool "bsdav-1.4"
+	help
+	  BSD Audio/Video library and tools
+
+	  The bsdav package contains programs for reading and writing audio
+	  and video.  The programs use BSD-native devices.  Naturally, the
+	  source code is BSD-licensed as well.  These programs depend on
+	  the libbsdav library for both accessing audio(4) and bktr(4) devices.
+	  (Hopefully, more documentation will be written soon on how to use
+	  the functions libbsdav contains!)
+	  
+	  While one of the goals of the bsdav project is simplicity, another
+	  goal is to make A/V processing on BSD systems easily accessible.
+	  Moreover, to ease the storage and synchronization of both audio
+	  and video streams, bsdav has it's own, very simple, A/V container
+	  format.
+	  
+	  Hopefully the bsdav programs are clear and correct enough such that
+	  they help others understand how to use audio(4) and bktr(4).
+
+	  http://jakemsr.trancell.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_CCXSTREAM
+	bool "ccxstream-1.0.15"
+	help
+	  Program for streaming multimedia content to XMBC over XBMSP protocol
+
+	  Program for streaming multimedia content to XBox Media Center over XBMSP
+	  protocol.
+
+	  http://www.xbmc.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_CFOURCC
+	bool "cfourcc-0.1.2"
+	help
+	  Command-line tool for changing AVI FourCC codes
+
+	  The Linux FourCC Changer is a simple command line utility for working with
+	  Microsoft AVI files. Features:
+	  
+	  - Identifies the codec used in AVI files (*.avi)
+	  - Allow the user to change the FourCC description code (like fourcc-changer
+	  in Windows).
+
+	  http://sarovar.org/projects/gfourcc
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_CLUTTER08_GST
+	bool "clutter08-gst-0.8.0nb5"
+	help
+	  Clutter GStreamer integration
+
+	  Clutter-GStreamer (clutter-gst) is an integration library for using GStreamer
+	  with Clutter.
+	  
+	  Clutter is an open source software library for creating fast, visually
+	  rich and animated graphical user interfaces. It uses OpenGL for drawing
+	  primitives and has multiple backends, allowing its usage on different
+	  platforms.
+	  
+	  GStreamer is a streaming media framework, based on graphs of filters
+	  which operate on media data.  Applications using this library can do
+	  anything from real-time sound processing to playing videos, and just
+	  about anything else media-related.  Its plugin-based architecture means
+	  that new data types or processing capabilities can be added simply by
+	  installing new plug-ins.
+
+	  http://www.clutter-project.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_CLUTTER_GST
+	bool "clutter-gst-1.2.0nb3"
+	help
+	  Clutter GStreamer integration
+
+	  Clutter-GStreamer (clutter-gst) is an integration library for using GStreamer
+	  with Clutter.
+	  
+	  Clutter is an open source software library for creating fast, visually
+	  rich and animated graphical user interfaces. It uses OpenGL for drawing
+	  primitives and has multiple backends, allowing its usage on different
+	  platforms.
+	  
+	  GStreamer is a streaming media framework, based on graphs of filters
+	  which operate on media data.  Applications using this library can do
+	  anything from real-time sound processing to playing videos, and just
+	  about anything else media-related.  Its plugin-based architecture means
+	  that new data types or processing capabilities can be added simply by
+	  installing new plug-ins.
+
+	  http://www.clutter-project.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DIRAC
+	bool "dirac-1.0.2nb1"
+	help
+	  Open-source video codec designed at the BBC
+
+	  Dirac is a video codec, under development by BBC R&D, and initially
+	  released in March 2003.
+	  
+	  Dirac is a general-purpose video codec aimed at resolutions from QCIF
+	  (180x144) to HDTV (1920x1080) progressive or interlaced. It uses wavelets,
+	  motion compensation and arithmetic coding and aims to be competitive with
+	  other state of the art codecs.
+
+	  http://dirac.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVB_APPS
+	bool "dvb-apps-20110713nb1"
+	help
+	  
+
+	  Digital Video Broadcasting (DVB) utilities for the initial setup, testing,
+	  and operation of a DVB device
+
+	  http://linuxtv.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DIVXPLAYER
+	bool "divxplayer-0.2.0nb4"
+	help
+	  
+
+	  The DivX(TM) Player for Linux from DivX.com is built from the same
+	  codebase as the Windows version. It performs exactly like its Windows
+	  cousin in all respects, and can even use the same skin files. Behold
+	  the wonders of cross-platform development.
+
+	  http://www.divx.com/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DUMPMPEG
+	bool "dumpmpeg-0.6nb8"
+	help
+	  Splits an MPEG stream into single images
+
+	  dumpmpeg is a program that allows you to dump video frames from MPEG
+	  movie files. It uses the SDL MPEG Player Library to accomplish this and
+	  thus requires an open X-Window.  Since it uses the SMPEG library, it
+	  can dump frames from format it supports, which currently is MPEG-1 video
+	  files.
+
+	  http://sourceforge.net/projects/dumpmpeg
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDAUTHOR
+	bool "dvdauthor-0.7.0"
+	help
+	  Tools to assist DVD authoring
+
+	  A simple set of tools to help you author a DVD. The idea is to be able to
+	  create menus, buttons, chapters, etc, but for now you can just take an MPEG
+	  stream (as created by mplex -f 8 from mjpegtools 1.6.0) and write it to DVD.
+
+	  http://dvdauthor.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDBACKUP
+	bool "dvdbackup-0.4.1"
+	help
+	  DVD backup utility
+
+	  DVDBACKUP enables users to create backups from DVDs they own.
+	  It requires the libdvdread library and is hence capable of reading encrypted
+	  DVDs on systems that have the libdvdcss library installed.
+
+	  http://dvdbackup.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FUPPES
+	bool "fuppes-0.640nb8"
+	help
+	  Free UPnP Entertainment Service
+
+	  FUPPES is a free, multiplatform UPnP A/V Media Server.
+	  
+	  FUPPES supports a wide range of UPnP MediaRenderers (see website for
+	  details) as well as on-the-fly transcoding of various audio, video and image
+	  formats. It also includes basic DLNA support.
+
+	  http://fuppes.ulrich-voelkel.de/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FXTV
+	bool "fxtv-1.03nb18"
+	help
+	  TV display application for Brooktree 848 compatible TV cards
+
+	  To use this application, you need a video capture/tuner card
+	  that's based on the Brooktree 848 capture chip, such as one of the
+	  Hauppauge Wincast/TV or Win/TV cards, the STV TV PCI card, or the
+	  Intel Smart Video Recorder III.
+
+	  http://people.freebsd.org/~rhh/fxtv/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ACIDRIP
+	bool "acidrip-0.14nb7"
+	help
+	  Gtk2::Perl application for ripping and encoding DVDs
+
+	  AcidRip is a Gtk2::Perl application for ripping and encoding DVD's. It
+	  neatly wraps MPlayer and MEncoder, which I think is pretty handy, seeing
+	  as MPlayer is by far the best bit of video playing kit around for *nix.
+	  As well as creating a simple Graphical Interface for those scared of
+	  getting down and dirty with MEncoders command line interface, It also
+	  automates the process in a number of ways:
+	  
+	  * Parses DVD into contents tree
+	  * Finds longest title
+	  * Calculate video bitrate for given filesize
+	  * Finds black bands and crops them
+	  * Gives suggestions for improved performance
+	  * Other stuff!
+
+	  http://untrepid.com/acidrip/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GECKO_MEDIAPLAYER
+	bool "gecko-mediaplayer-1.0.4nb1"
+	help
+	  Multimedia browser plugin for Gecko based browsers
+
+	  Gecko Media Player is a browser plugin that uses GNOME MPlayer to play media in
+	  a browser.  It should work with all browsers on Unix-ish systems (Linux, BSD,
+	  Solaris) and use the NS4 API (Mozilla, Firefox, Opera, etc.).  Gecko Media
+	  Player is in heavy development, but I wanted to get some code drops out there
+	  so that people can start using and testing it.
+
+	  http://code.google.com/p/gecko-mediaplayer/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GGRAB
+	bool "ggrab-0.22a"
+	help
+	  Server for recording video streams from dream dvb-receivers
+
+	  Server for recording video streams from dream multimedia set-top
+	  boxes to hard disk.
+
+	  http://www.menzebach.de/ggrab/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ADOBE_FLASH_PLUGIN
+	bool "adobe-flash-plugin-10.0.0.525"
+	help
+	  Adobe Flash Player Browser plugin
+
+	  Netscape plugin for Adobe Flash player.  This package contains
+	  a plugin that enables Netscape to render the Flash format.
+	  
+	  The nspluginwrapper option (enabled by default) permits the use of
+	  the the Linux x86 flash player in Firefox browsers on other x86
+	  systems.
+	  
+	  Systems tested with nspluginwrapper:
+	  - NetBSD 5.0			- works
+	  - firefox 3.0.x			- works
+
+	  http://www.adobe.com/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ADOBE_FLASH_PLUGIN10.1
+	bool "adobe-flash-plugin-10.3.183.7nb1"
+	help
+	  Adobe Flash Player Browser plugin
+
+	  Netscape plugin for Adobe Flash player.  This package contains
+	  a plugin that enables web browsers to render the Flash format.
+	  
+	  The nspluginwrapper option (enabled by default) permits the use of
+	  the the Linux x86 flash player in Firefox browsers on other x86
+	  systems.
+	  
+	  This package requires emul.linux.kern.osrelease = 2.6.18 or later.
+	  This means this package won't work on NetBSD 5.x or older systems!
+
+	  http://www.adobe.com/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMEDIASERVER
+	bool "gmediaserver-0.13.0nb2"
+	help
+	  UPnP compatible media server for the GNU system
+
+	  GMediaServer is a UPnP compatible media server for the GNU system. It is part of
+	  the GNU project.
+	  
+	  GMediaServer serves audio and video files to certain network connected media
+	  players. Most hardware media players only play music and/or video--they don't
+	  provide the media themselves. Those media files have to come from a device on
+	  the network. GMediaServer is a server for such UPnP compatible media players,
+	  including:
+	  
+	  * NETGEAR Wireless Digital Music Player (MP101)
+	  * Linksys(R) Wireless-B Music System (WMLS11B)
+	  * Linksys(R) Wireless-B Media Link for Music (WML11B)
+	  * Philips Streamium SL300i
+	  * Philips Streamium RC9800i
+	  * Omnifi DMS1
+	  * SMC EZ Stream 11Mbps Wireless Audio Adaptor (SMCWAA-B)
+	  * D-Link DSM-520 Wireless HD Media Player
+	  * Roku SoundBridge Network Music Player M1000
+	  * Terratec NOXON 2 audio
+	  
+	  Other UPnP media players (including software based) may work as well--see the
+	  manual for a more complete list.
+
+	  http://www.gnu.org/software/gmediaserver/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDRIP
+	bool "dvdrip-0.98.11nb2"
+	help
+	  Graphical frontend for DVD ripping
+
+	  dvd::rip is a full featured DVD copy program written in Perl. It
+	  provides an easy to use but feature-rich Gtk+ GUI to control almost
+	  all aspects of the ripping and transcoding process. It uses the widely
+	  known video processing swissknife transcode and many other Open Source
+	  tools. dvd::rip itself is licensed under GPL / Perl Artistic License.
+	  
+	  "And note: it's spelled dvd::rip, and nothing else."
+
+	  http://www.exit1.org/dvdrip/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMENCODER
+	bool "gmencoder-0.1.0nb32"
+	help
+	  GNOME2 frontend to mencoder
+
+	  Gmencoder is a GNOME2 frontend to mplayer/mencoder.  It supports much of the
+	  output codecs, as well as postprocesing, cropping, scaling, subtitles ripping,
+	  and one, two or three passes for encoding.
+
+	  http://gmencoder.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVD_SLIDESHOW
+	bool "dvd-slideshow-0.7.5nb9"
+	help
+	  Script that creates a slideshow-style DVD with some simple menus
+
+	  Script that creates a slideshow-style dvd with some simple menus
+	  
+	  Author:	Scott Dylewski <scott @ dylewski . com>
+	  WWW:	http://dvd-slideshow.sourceforge.net/
+
+	  http://dvd-slideshow.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNOME_MEDIA
+	bool "gnome-media-2.28.5nb8"
+	help
+	  Set of audio/multimedia applications for GNOME2
+
+	  This package contains gnome-media, a set of audio/multimedia tools
+	  for GNOME2.
+	  
+	  From the GNOME home page:
+	  
+	  GNOME stands for GNU Network Object Model Environment.  The GNOME
+	  project intends to build a complete, user-friendly desktop based
+	  entirely on free software.  GNOME is part of the GNU project, and
+	  GNOME is part of the OpenSource(tm) movement.  The desktop will
+	  consist of small utilities and larger applications which share a
+	  consistent look and feel.  GNOME uses GTK+ as the GUI toolkit for
+	  all GNOME-compliant applications.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDSTYLER
+	bool "DVDStyler-1.8.2.1nb1"
+	help
+	  Crossplatform DVD Authoring System
+
+	  DVDStyler is a crossplatform DVD Authoring System.
+	  
+	  The main DVDStyler features are:
+	  
+	  * you can drag and drop MPEG files directly
+	  * you can import image file for background
+	  * you can create NTSC/PAL menus
+	  * you can place text and images anywhere on the menu screen
+	  * you can change font/color
+	  * you can put basic text buttons, change font/color and background color
+	  * you can copy and paste any menu object
+	  * you can set chapters for each movie
+	  * you can change post command for each movie
+
+	  http://www.dvdstyler.de/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNOME_MPLAYER
+	bool "gnome-mplayer-1.0.4nb1"
+	help
+	  GNOME Frontend for MPlayer
+
+	  GNOME MPlayer is a GTK GUI for MPlayer based on the Gnome HIG.  However, the
+	  code is not dependent on any Gnome library
+
+	  http://code.google.com/p/gnome-mplayer/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GOGGLES
+	bool "goggles-0.9.1nb5"
+	help
+	  Easy to use frontend for Ogle DVD Player
+
+	  Goggles DVD Player is a frontend for the Ogle DVD player. Besides the
+	  usual features like having a play button etc., Goggles tries to
+	  provide features not often found in other DVD players. Since Ogle
+	  in itself is only a DVD player, it has some neat capabilities that
+	  "general" media players cannot provide. Goggles extends these
+	  capabilities with a very user-friendly interface.
+	  
+	  Goggles' attractive and responsive user interface is written using
+	  the FOX Toolkit.
+
+	  http://www.fifthplanet.net/goggles.html
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GOPCHOP
+	bool "gopchop-1.1.8nb6"
+	help
+	  MPEG2 GOP-accurate editor
+
+	  This tool is used for people wanting to take sections out of MPEG2-PS
+	  files without re-encoding the resulting frames.  The idea is to
+	  write specific "Group of Pictures" (GOP) sections to a new MPEG2-PS
+	  file.  These GOPs will decode correctly (in theory), and the gaps
+	  won't be noticed.  I wrote this tool to edit commercials out of
+	  MPEG2 files produced by my KFir MPEG2 capture card.  Using this
+	  tool for anything else is really beyond the scope of its design.
+
+	  http://outflux.net/unix/software/GOPchop/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDVIEW
+	bool "dvdview-1.2.2nb8"
+	help
+	  Software only MPEG-1/2 video decoder
+
+	  DVDview is a software only MPEG-1/2 video decoder. A special feature of the
+	  decoder is its ability to superimpose additional information to the video
+	  sequence like motion vectors or quantizer scales. It runs on any UNIX system.
+
+	  http://rachmaninoff.informatik.uni-mannheim.de/dvdview/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GPAC
+	bool "gpac-0.4.5nb9"
+	help
+	  Open source multimedia framework
+
+	  GPAC features encoders and multiplexers, publishing and content distribution
+	  tools for MP4 and 3GPP or 3GPP2 files and many tools for scene descriptions
+	  (BIFS/VRML/X3D converters, SWF/BIFS, SVG/BIFS, etc...). MP4Box provides all
+	  these tools in a single command-line application.
+
+	  http://gpac.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST123
+	bool "gst123-0.2.1"
+	help
+	  The gst123 is designed to be a more flexible command line player
+
+	  The program gst123 is designed to be a more flexible command line
+	  player in the spirit of ogg123 and mpg123, based on gstreamer. It
+	  plays all file formats gstreamer understands, so if you have a
+	  music collection which contains different file formats, like flac,
+	  ogg and mp3, you can use gst123 to play all your music and video
+	  files.
+	  
+	  It is implemented in C++ and licensed under the GNU LGPL version 2.
+
+	  http://space.twc.de/~stefan/gst123.php
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FARSIGHT2
+	bool "farsight2-0.0.26nb2"
+	help
+	  Audio/video communications framework
+
+	  The Farsight project is an effort to create a framework to deal
+	  with all known audio/video conferencing protocols. On one side it
+	  offers a generic API that makes it possible to write plugins for
+	  different streaming protocols, on the other side it offers an API
+	  for clients to use those plugins.
+	  
+	  The main target clients for Farsight are Instant Messaging
+	  applications. These applications should be able to use Farsight
+	  for all their Audio/Video conferencing needs without having to
+	  worry about any of the lower level streaming and NAT traversal
+	  issues.
+	  
+	  Farsight forms an integral part of the Telepathy framework. It is
+	  used by Empathy through the Telepathy-Farsight library. It can also
+	  be easily used on embedded platforms by using Stream-Engine. The
+	  Telepathy-Farsight library binds it to the Connection Managers via
+	  D-Bus and the Telepathy Media Stream Spec and is used for all their
+	  streaming requirements.
+
+	  http://farsight.freedesktop.org/wiki/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNASH
+	bool "gnash-0.8.9nb2"
+	help
+	  GPL SWF player
+
+	  Gnash is a player for animated "movies" in the Macromedia Shockwave Flash
+	  (.swf) format.  It can be run as a graphical application, as a Web browser
+	  plugin, or as a library used by other programs.  It is not yet complete;
+	  it does not correctly handle every .swf file.
+	  
+	  Many of the Flash movies that I come across play fine in Gnash.  Many
+	  others do not.  In particular, Flash movies that are used for browser
+	  navigation may still have a few issues with some URLs left. Most
+	  Flash based navigation of a web site should work.
+	  
+	  Gnash supports the majority of Flash opcodes up to SWF version 7, and
+	  a wide sampling of ActionScript classes for SWF version 7. All the core
+	  ones are implemented, and many of the newer ones work, but may be missing
+	  some of their methods. All unimplemented opcodes and ActionScript classes
+	  and methods print a warning when using -v with gnash or gprocessor. Using
+	  gprocessor -v is a quick way to see why a movie isn't playing correctly.
+
+	  http://www.gnashdev.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFMPEG
+	bool "ffmpeg-20110907.0.7.4"
+	help
+	  Decoding, encoding and streaming software
+
+	  FFmpeg is the first complete and free Internet Live Audio and Video
+	  Broadcasting solution. FFMpeg aims at being the command line tool to
+	  handle audio and video. It is a "three-in-one" solution.
+	  
+	  FFmpeg includes a soft VCR capable of encoding in many different
+	  formats simultaneously, a streaming server for Netcasting multimedia
+	  and is available under the GNU General Public License.
+	  
+	  FFmpeg generates streaming files, in many popular formats
+	  simultaneously, faster than any other solution.
+
+	  http://ffmpeg.mplayerhq.hu/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFMPEGTHUMBNAILER
+	bool "ffmpegthumbnailer-2.0.6"
+	help
+	  Lightweight video thumbnailer that can be used by file managers
+
+	  This video thumbnailer can be used by file managers to create thumbnails for
+	  your video files. The thumbnailer uses ffmpeg to decode frames from the video
+	  files, so supported videoformats depend on the configuration flags of ffmpeg.
+	  
+	  This thumbnailer was designed to be as fast and lightweight as possible. The
+	  only dependencies are ffmpeg, libpng and libjpeg.
+
+	  http://code.google.com/p/ffmpegthumbnailer/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_FFMPEG
+	bool "gst-ffmpeg-0.10.12"
+	help
+	  ffmpeg plugin for gstreamer
+
+	  This module contains a GStreamer plugin for FFmpeg.
+
+	  http://gstreamer.freedesktop.org/src/gst-ffmpeg/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_GNONLIN
+	bool "gst-gnonlin-0.10.17nb1"
+	help
+	  Non-linear editing components for gstreamer
+
+	  Gnonlin is a library built on top of GStreamer (http://gstreamer.net)
+	  which provides support for writing non-linear audio and video editing
+	  applications. It introduces the concept of a timeline.
+
+	  http://gstreamer.freedesktop.org/modules/gnonlin.html
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDENLIVE
+	bool "kdenlive-0.7.8nb3"
+	help
+	  KDE video editor
+
+	  Kdenlive is a free open-source video editor which supports DV,
+	  AVCHD and HDV editing. Kdenlive relies on several other open source
+	  projects, such as FFmpeg, the MLT video framework and Frei0r effects.
+
+	  http://www.kdenlive.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KMPLAYER
+	bool "kmplayer-0.11.2cnb3"
+	help
+	  KDE frontend to mplayer
+
+	  KMPlayer is a KDE gui frontend to mplayer.  It runs as a standalone application
+	  as well as being a KPart, making it possible to embed in konqueror or in KHTML.
+	  As a standalone application it can:
+	  * Play movies from file/url.
+	  * Play DVD.
+	  * Play VCD.
+	  * Play from a pipe.
+	  * Play from a TV device.
+	  * Keep movie sizes ratio.
+	  * Control arts volume.
+	  * Resize/fullscreen support.
+	  * Optional show mplayer output before and after a movie plays.
+	  * Configurable pattern matching.
+	  * Position slider.
+	  * Recording using mencoder.
+	  * Proxy settings from konqueror are used to set http_proxy environment
+	  variable.
+	  * DCOP KMediaPlayer interface support.
+
+	  http://kmplayer.kde.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KMPLAYER_KDE3
+	bool "kmplayer-0.10.0cnb8"
+	help
+	  KDE frontend to mplayer
+
+	  KMPlayer is a KDE gui frontend to mplayer.  It runs as a standalone application
+	  as well as being a KPart, making it possible to embed in konqueror or in KHTML.
+	  As a standalone application it can:
+	  * Play movies from file/url.
+	  * Play DVD.
+	  * Play VCD.
+	  * Play from a pipe.
+	  * Play from a TV device.
+	  * Keep movie sizes ratio.
+	  * Control arts volume.
+	  * Resize/fullscreen support.
+	  * Optional show mplayer output before and after a movie plays.
+	  * Configurable pattern matching.
+	  * Position slider.
+	  * Recording using mencoder.
+	  * Proxy settings from konqueror are used to set http_proxy environment
+	  variable.
+	  * DCOP KMediaPlayer interface support.
+
+	  http://kmplayer.kde.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GSTREAMER0.10
+	bool "gstreamer0.10-0.10.35"
+	help
+	  Open source multimedia framework
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  GStreamer is released under the LGPL.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBASS
+	bool "libass-0.9.12"
+	help
+	  Portable subtitle renderer for the ASS/SSA subtitle format
+
+	  libass is a portable subtitle renderer for the ASS/SSA (Advanced
+	  Substation Alpha/Substation Alpha) subtitle format. It is mostly
+	  compatible with VSFilter.
+
+	  http://code.google.com/p/libass/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBASSETML
+	bool "libassetml-1.2.1nb2"
+	help
+	  Library for sharing image and audio files between projects
+
+	  AssetML defines an XML file for multimedia metadata, such as name,
+	  description, categories, and file type.  Applications using the
+	  libassetml library can query these XML files to share and reuse
+	  content like image and audio files. This package also provides the
+	  assetml-query tool for browsing the AssetML database.
+
+	  http://www.ofset.org/assetml/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GTRANSCODE
+	bool "gtranscode-0.3nb2"
+	help
+	  GTK+ GUI front-end for transcode
+
+	  gtranscode is a GTK+ GUI (graphical use interface) front-end for transcode in
+	  order to make this powerful tool easier to use.  transcode is a powerful video
+	  and audio processing tool that can read in just about any format of video
+	  and/or audio and convert to just as many different formats.  In addition to
+	  transcode's extremely flexible modular concept for reading/writing different
+	  formats and codecs, it can apply filters, do re-sampling, resizing, cropping,
+	  and more.  The cost from all this comes in the form of over 100 command line
+	  options which gtranscode aims to simplify.
+
+	  http://fuzzymonkey.net/software/gtranscode/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDV
+	bool "libdv-1.0.0nb1"
+	help
+	  DV video codec library
+
+	  The Quasar DV codec (libdv) is a software codec for DV video, the encoding
+	  format used by most digital camcorders, typically those that support
+	  the IEEE 1394 (a.k.a. FireWire or i.Link) interface. libdv was developed
+	  according to the official standards for DV video: IEC 61834 and SMPTE
+	  314M.
+
+	  http://libdv.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVBPSI
+	bool "libdvbpsi-0.2.1"
+	help
+	  PSI decoder and generator library for MPEG2 and DVB streams
+
+	  libdvbpsi is a simple library designed for decoding and generation of MPEG TS
+	  and DVB PSI tables.
+	  
+	  Current features
+	  
+	  Program Association Table (PAT), decoder and generator.
+	  Program Map Table (PMT), decoder and generator.
+	  All MPEG 2 descriptors, decoders and generators.
+	  
+	  The libdvbpsi is part of the VideoLAN project, a full MPEG2
+	  client/server solution. The libdvbpsi can also be used with extra
+	  programs that need DVB and PSI decoders and generators.
+	  
+	  The VideoLAN team decided to write the libdvbpsi to make the VideoLAN
+	  Client and the VideoLAN Server capable of demultiplexing a satellite
+	  DVB stream. The library aims at making it easy to decode PSI tables
+	  (such as PAT, PMT etc.) present in a TS/DVB stream.
+
+	  http://www.videolan.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GXINE
+	bool "gxine-0.5.905nb6"
+	help
+	  Gtk-based media player
+
+	  Gxine is a gtk2 multimedia player that uses xine-lib to decode
+	  multimedia streams.
+
+	  http://www.xine-project.org/home
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDCSS
+	bool "libdvdcss-1.2.10"
+	help
+	  Simple library designed for accessing DVDs
+
+	  libdvdcss is a simple library designed for accessing DVDs like a block device
+	  without having to bother about the decryption.
+	  
+	  This library is used by libdvdread via dlopen().
+
+	  
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_HANDBRAKE
+	bool "handbrake-0.9.3nb7"
+	help
+	  Multiplatform, multithreaded video transcoder
+
+	  HandBrake is an open-source, GPL-licensed, multiplatform, multithreaded video
+	  transcoder, available for MacOS X, NetBSD, Linux and Windows.
+	  
+	  Supported sources:
+	  * Any DVD-like source: VIDEO_TS folder, DVD image or real DVD
+	  (unencrypted--protection methods including CSS are not supported internally
+	  and must be handled externally with third-party software and libraries),
+	  and some .VOB and .TS files
+	  * Most any multimedia file it can get libavformat to read and libavcodec to
+	  decode.
+	  
+	  Outputs:
+	  * File format: MP4, MKV, AVI or OGM
+	  * Video: MPEG-4, H.264, or Theora (1 or 2 passes or constant quantizer/rate
+	  encoding)
+	  * Audio: AAC, MP3, Vorbis or AC-3 pass-through (supports encoding of several
+	  audio tracks)
+	  
+	  Misc features:
+	  * Chapter selection
+	  * Basic subtitle support (burned into the picture)
+	  * Integrated bitrate calculator
+	  * Picture deinterlacing, cropping and scaling
+	  * Grayscale encoding
+
+	  http://handbrake.fr/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDNAV
+	bool "libdvdnav-4.1.3"
+	help
+	  Library to navigate DVDs
+
+	  libdvdnav is a library that allows easy use of sophisticated DVD navigation
+	  features such as DVD menus, multiangle playback and even interactive DVD
+	  games.  All this functionality is provided through a simple API which
+	  provides the DVD playback as a single logical stream of blocks, intermitted
+	  by special dvdnav events to report certain conditions.  The main usage of
+	  libdvdnav is a loop regularly calling a function to get the next block,
+	  surrounded by additional calls to tell the library of user interaction.
+	  The whole DVD virtual machine and internal playback states are completely
+	  encapsulated.
+
+	  http://www.mplayerhq.hu/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDPLAY
+	bool "libdvdplay-1.0.1nb3"
+	help
+	  Simple API library designed for DVD navigation
+
+	  libdvdplay is an attempt to make a library from ogle dvd navigation code so
+	  that a simple API provides access to both DVD Video data and DVD information to
+	  a reader application.
+	  
+	  libdvdplay is a layer over libdvdread. As a consequence it provides read, seek
+	  for DVD media. But it also provides the client application with a set of access
+	  functions needed to create an interface for the DVD reader (audio, subtitles,
+	  titles ...).
+
+	  http://www.videolan.org/developers/libdvdplay.html
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDREAD
+	bool "libdvdread-4.1.3nb1"
+	help
+	  DVD access library
+
+	  libdvdread is a library that provides an interface to make life
+	  for programs that access DVDs a little easier.
+
+	  http://www.mplayerhq.hu/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_HWDECODE_DEMOS
+	bool "hwdecode-demos-0.9.4"
+	help
+	  Standalone programs showing off various HW acceleration APIs
+
+	  hwdecode-demos consists of simple test programs to address various HW
+	  video decoding APIs: Crystal HD, VA-API, VDPAU and XvBA.
+
+	  http://www.splitted-desktop.com/~gbeauchesne/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDV_TOOLS
+	bool "libdv-tools-1.0.0nb1"
+	help
+	  
+
+	  The Quasar DV codec (libdv) is a software codec for DV video, the encoding
+	  format used by most digital camcorders, typically those that support
+	  the IEEE 1394 (a.k.a. FireWire or i.Link) interface. libdv was developed
+	  according to the official standards for DV video: IEC 61834 and SMPTE
+	  314M.
+	  
+	  This package provides playdv for displaying DV-encoded video data,
+	  dubdv for inserting audio into a digital video stream, encodedv for
+	  encoding a series of images to a digital video stream, and dvconnect
+	  for capturing and sending raw DV streams using the Linux IEEE 1394
+	  video1394 device.
+
+	  http://libdv.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KAFFEINE
+	bool "kaffeine-0.8.3nb15"
+	help
+	  Full featured Multimedia-Player for KDE
+
+	  kaffeine is a xine-based multimedia player for KDE.
+	  
+	  * Full Drag and Drop support
+	  * Import Noatun-playlists as well as M3U, ASX and PLS-Files
+	  * Editable Playlist
+	  * Export Playlist to HTML or PDF (KDE-Print)
+	  * Edit Xine-Options via GUI
+	  * Support for saving screenshots as PNG, BMP or XBM
+	  * The ability to prevent the screensaver from activating OSD Titles
+
+	  http://kaffeine.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASH
+	bool "libflash-0.4.10nb8"
+	help
+	  
+
+	  Libflash is a GPL Flash(tm) library built around a core graphic renderer
+	  that is capable of playing Flash(tm) movies.
+
+	  http://gplflash.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASHSUPPORT
+	bool "libflashsupport-1.1"
+	help
+	  Additional Interface Support for Linux Flash Player
+
+	  This is an shared library built from source provided by Adobe which
+	  enables the use of OSS audio in the multimedia/ns-flash package
+	  
+	  Non Linux platforms will probably also need www/nspluginwrapper
+
+	  http://labs.adobe.com/wiki/index.php/Flash_Player:Additional_Interface_Support_for_Linux
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASHSUPPORT_PULSE
+	bool "libflashsupport-pulse-20081219"
+	help
+	  PulseAudio support for Adobe Flash
+
+	  This is a shared library built from source provided by Adobe and
+	  modified by the PulseAudio project which enables the use of
+	  the PulseAudio sound server in the multimedia/ns-flash and
+	  multimedia/adobe-flash-plugin packages.
+	  
+	  Non Linux platforms will probably also need www/nspluginwrapper
+
+	  http://www.pulseaudio.org/wiki/FlashPlayer9Solution
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMATROSKA
+	bool "libmatroska-1.1.0"
+	help
+	  Extensible open standard Audio/Video container format
+
+	  Matroska aims to become THE Standard of Multimedia Container Formats.
+	  It was derived from a project called MCF, but differentiates from it
+	  significantly.  It is based on EBML (Extensible Binary Meta Language),
+	  a binary derivative of XML.
+	  
+	  Matroska is designed with the future in mind. It incorporates features
+	  you would expect from a modern container format, like:
+	  
+	  - Streamable over internet (HTTP and RTP)
+	  - Fast seeking in the file
+	  - High error recovery
+	  - Menus (like DVDs have)
+	  - Chapter entries
+	  - Selectable subtitle streams
+	  - Selectable audio streams
+	  - Modularly extendable
+
+	  http://www.matroska.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMP4V2
+	bool "libmp4v2-1.6.1nb1"
+	help
+	  libmp4v2 from mpeg4ip
+
+	  The MPEG4IP project provides a standards-based system for encoding,
+	  streaming, and playing encoded audio, video and text. To achieve
+	  this we've integrated a number of existing open source packages,
+	  and created some original code to fill in the gaps.
+	  
+	  Please note this project is intended for developers who are interested
+	  in standards based audio and video, and Internet streaming. It is
+	  not intended for end-users.
+
+	  http://mpeg4ip.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDEMULTIMEDIA3
+	bool "kdemultimedia-3.5.10nb12"
+	help
+	  Multimedia tools for the KDE integrated X11 desktop
+
+	  The kdemultimedia module of KDE provides various sound and movie
+	  format players:
+	  
+	  * noatun: a multimedia player for sound and movies, very extensible due to
+	  its plugin interface
+	  * aktion: a player specialized on movies, needs xanim
+	  * kaboodle: light media player
+	  * kmid: a standalone and embeddable midi player, includes a karaoke-mode
+	  * kmidi: midi player, can use sound patch files and create a WAV file
+	  * kmix: the audio mixer as a standalone program and Kicker applet
+	  * koncd: frontend for different cd burn programs
+	  * kscd: a CD player with an interface to the internet CDDB database
+	  
+	  The following are libraries and plugins that are building the core
+	  infrastructure of above applications:
+	  
+	  * arts: a versatily multimedia system the consists of various little
+	  building blocks that you (or an application) can combine in
+	  almost arbitrary ways to create sound and video processing pipes
+	  * kfile-plugins: provide meta information about sound files
+	  * mpeglib: a library for MPEG 1 (layer I, II and III) encoded files
+	  * mpeglib_artsplug: wrapped mpeglib to make it Arts-aware
+	  * mpg123_artsplugin: a trimmed down mpg123 made Arts-compatible
+	  * oggvorbis_artsplugin: support for ogg-vorbis (not included) in Arts
+
+	  http://www.kde.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMPEG2
+	bool "libmpeg2-0.5.1"
+	help
+	  Library for decoding mpeg-2 and mpeg-1 video streams
+
+	  libmpeg2 is a free library for decoding mpeg-2 and mpeg-1 video
+	  streams acclaimed to be the fastest around.
+
+	  http://libmpeg2.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMPEG3
+	bool "libmpeg3-1.8"
+	help
+	  MPEG decoding library
+
+	  Libmpeg3 decodes
+	  MPEG-1 Layer II Audio
+	  MPEG-1 Layer III Audio
+	  MPEG-2 Layer III Audio
+	  MPEG-1 program streams
+	  MPEG-2 program streams
+	  MPEG-2 transport streams
+	  AC3 Audio
+	  MPEG-2 Video
+	  MPEG-1 Video
+	  IFO files
+	  VOB files
+
+	  http://heroines.sourceforge.net/libmpeg3.php3
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBNMS
+	bool "libnms-0.6.0"
+	help
+	  Open Media Streaming Client Library
+
+	  libnms lets you add multimedia streaming playback in your applications in a
+	  quick and straightforward way. This software, derived from the experience
+	  matured with NeMeSi is fully compliant with IETF's standards for real-time
+	  streaming of multimedia contents over Internet. libnms implements RTSP -
+	  Real-Time Streaming Protocol (RFC2326) and RTP/RTCP - Real-Time Transport
+	  Protocol/RTP Control Protocol (RFC3550) supporting the RTP Profile for Audio
+	  and Video Conferences with Minimal Control (RFC3551).
+	  
+	  Currently libnms is relatively stable API wise and the most enlighting
+	  documentation are the example code and the partially doxygenized headers.
+
+	  http://streaming.polito.it/client/library/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDEMULTIMEDIA4
+	bool "kdemultimedia4-4.5.5nb4"
+	help
+	  Multimedia tools for the KDE integrated X11 desktop
+
+	  The kdemultimedia module of KDE provides various sound and movie
+	  format players:
+	  
+	  * dragonplayer: Video Player is a very simple Phonon-based media player.
+	  * kmix: the audio mixer as a standalone program and Kicker applet
+	  * kscd: A CD player with an interface to the internet CDDB database
+	  
+	  The following are libraries and plugins that are building the core
+	  infrastructure of above applications:
+	  
+	  * strigi-analyzer: provide meta information about sound files
+	  * libkcddb: a library for retrieving and sending cddb information
+
+	  http://www.kde.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBOGG
+	bool "libogg-1.2.1nb1"
+	help
+	  Ogg project codecs library
+
+	  Provides static and shared Ogg libraries and documentation.
+	  Ogg is a public domain, patent-free bitstream format.
+	  Ogg project codecs use the Ogg bitstream format to arrange the raw,
+	  compressed bitstream into a more robust, useful form.  For example,
+	  the Ogg bitstream makes seeking, time stamping and error recovery
+	  possible, as well as mixing several separate, concurrent media
+	  streams into a single physical bitstream.
+
+	  http://www.xiph.org/ogg/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBTHEORA
+	bool "libtheora-1.1.1nb2"
+	help
+	  Video codec for Ogg multimedia streaming
+
+	  Theora is Xiph.Org's first publicly released video codec, intended for
+	  use within the Ogg's project's Ogg multimedia streaming system.  Theora
+	  is derived directly from On2's VP3 codec; currently the two are nearly
+	  identical, varying only in encapsulating decoder tables in the bitstream
+	  headers, but Theora will make use of this extra freedom in the future to
+	  improve over what is possible with VP3.
+	  
+	  For the API documentation, install the libtheora-docs package.
+
+	  http://www.theora.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MING
+	bool "ming-0.4.3nb3"
+	help
+	  SWF output library
+
+	  Ming is a Flash (SWF) output library.  It can be used from PHP, Perl,
+	  Ruby, Python, C, C++, Java, and probably more on the way.
+
+	  http://www.libming.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBVA
+	bool "libva-1.0.6nb1"
+	help
+	  Video Acceleration API
+
+	  VAAPI (Video Acceleration API) enables hardware accelerated video
+	  decode/encode at various entry-points (VLD, IDCT, Motion Compensation etc.)
+	  for the prevailing coding standards today (MPEG-2, MPEG-4 ASP/H.263, MPEG-4
+	  AVC/H.264, and VC-1/VMW3).
+
+	  http://www.freedesktop.org/wiki/Software/vaapi
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBVDPAU
+	bool "libvdpau-0.4.1"
+	help
+	  Video Decode and Presentation API for Unix
+
+	  The Video Decode and Presentation API for Unix (VDPAU) provides a complete
+	  solution for decoding, post-processing, compositing, and displaying
+	  compressed or uncompressed video streams. These video streams may be
+	  combined (composited) with bitmap content, to implement OSDs and other
+	  application user interfaces.
+	  
+	  This VDPAU API allows video programs to offload portions of the video
+	  decoding process and video post-processing to the GPU video-hardware.
+
+	  http://http.download.nvidia.com/XFree86/vdpau/doxygen/html/index.html
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBVPX
+	bool "libvpx-0.9.7"
+	help
+	  On2 VP8 library from Google
+
+	  The VP8 Codec SDK.
+
+	  http://code.google.com/p/webm/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LSDVD
+	bool "lsdvd-0.16nb5"
+	help
+	  Application displaying the contents of DVDs
+
+	  lsdvd is an application that reads the contents of a DVD and prints them
+	  to your terminal.
+	  
+	  lsdvd will tell you the following:
+	  * The name of the disc
+	  * The number of tracks
+	  * The length, format, and aspect of each track
+	  * The format, language, number of channels, contents, etc. of each audio
+	  track
+	  * The language and contents of each subtitle
+	  * The longest track
+
+	  http://sourceforge.net/projects/lsdvd/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MJPEGTOOLS
+	bool "mjpegtools-1.9.0nb6"
+	help
+	  Programs for compressing video streams
+
+	  Programs for MJPEG recording and playback and simple cut-and-paste
+	  editing and MPEG compression of audio and video.
+
+	  http://mjpeg.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MEDIAINFO
+	bool "mediainfo-0.7.9"
+	help
+	  Utility to supply technical information about audio and video files
+
+	  MediaInfo supplies technical and tag information about a video or audio file.
+	  
+	  What information can I get from MediaInfo?
+	  - General: title, author, director, album, track number, date, duration...
+	  - Video: codec, aspect, fps, bitrate...
+	  - Audio: codec, sample rate, channels, language, bitrate...
+	  - Text: language of subtitle
+	  - Chapters: number of chapters, list of chapters
+	  What format (container) does MediaInfo support?
+	  - Video: MKV, OGM, AVI, DivX, WMV, QuickTime, Real, MPEG-1, MPEG-2, MPEG-4,
+	  DVD (VOB)... (Codecs: DivX, XviD, MSMPEG4, ASP, H.264, AVC...)
+	  - Audio: OGG, MP3, WAV, RA, AC3, DTS, AAC, M4A, AU, AIFF...
+	  - Subtitles: SRT, SSA, ASS, SAMI...
+	  What can I do with it?
+	  - Read many video and audio file formats
+	  - Different methods of viewing information (text, sheet, tree, HTML...)
+	  - You can customise these views
+	  - Exporting information as text, CSV, HTML...
+	  - Internationalisation: Any language display on any version of your
+	  operating system
+	  - Localisation capability (but volunteers needed)
+
+	  http://mediainfo.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MKVTOOLNIX
+	bool "mkvtoolnix-4.6.0nb2"
+	help
+	  Set of tools to create, alter and inspect Matroska files
+
+	  MKVtoolnix is a set of tools to create, alter and inspect Matroska files.
+	  
+	  With these tools one can get information about (mkvinfo) Matroska files,
+	  extract tracks/data from (mkvextract) Matroska files and create (mkvmerge)
+	  Matroska files from other media files.
+
+	  http://www.bunkus.org/videotools/mkvtoolnix/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MEDIATOMB
+	bool "mediatomb-0.12.1nb5"
+	help
+	  UPnP MediaServer with a web user interface
+
+	  MediaTomb is an open source (GPL) UPnP MediaServer with a nice web
+	  user interface, it allows you to stream your digital media through
+	  your home network and listen to/watch it on a variety of UPnP
+	  compatible devices.
+	  
+	  MediaTomb implements the UPnP MediaServer V 1.0 specification that can
+	  be found on http://www.upnp.org/.  The current implementation focuses
+	  on parts that are required by the specification, however we look into
+	  extending the functionality to cover the optional parts of the spec as
+	  well.
+	  
+	  MediaTomb should work with any UPnP compliant MediaRenderer, please
+	  tell the authors if you experience difficulties with particular
+	  models, also take a look at the Supported Devices list for more
+	  information.
+
+	  http://mediatomb.cc/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MKVTOOLNIX_OLD
+	bool "mkvtoolnix-2.9.8nb8"
+	help
+	  Matroska tools, old version for build with g++-4.1
+
+	  MKVtoolnix is a set of tools to create, alter and inspect Matroska files.
+	  
+	  With these tools one can get information about (mkvinfo) Matroska files,
+	  extract tracks/data from (mkvextract) Matroska files and create (mkvmerge)
+	  Matroska files from other media files.
+	  
+	  This is a mature version known to compile correctly with g++-4.1.
+
+	  http://www.bunkus.org/videotools/mkvtoolnix/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MLT
+	bool "mlt-0.5.10nb3"
+	help
+	  Open source multimedia framework
+
+	  MLT is an open source multimedia framework, designed and developed
+	  for television broadcasting. It provides a toolkit for broadcasters,
+	  video editors, media players, transcoders, web streamers and many
+	  more types of applications. The functionality of the system is
+	  provided via an assortment of ready to use tools, XML authoring
+	  components, and an extensible plug-in based API.
+
+	  http://www.mltframework.org/twiki/bin/view/MLT/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPEG4IP
+	bool "mpeg4ip-1.5.0.1"
+	help
+	  Tools for streaming video and audio
+
+	  The MPEG4IP project provides a standards-based system for encoding,
+	  streaming, and playing encoded audio, video and text. To achieve
+	  this we've integrated a number of existing open source packages,
+	  and created some original code to fill in the gaps.
+	  
+	  Please note this project is intended for developers who are interested
+	  in standards based audio and video, and Internet streaming. It is
+	  not intended for end-users.
+
+	  http://mpeg4ip.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPEG_ENCODE
+	bool "mpeg_encode-1.5bnb6"
+	help
+	  The Parallel Berkeley MPEG Encoder
+
+	  The primary focus of MPEG encoding algorithms is 1) To create fast
+	  and efficient motion vector search techniques and 2) To find "good"
+	  encoding parameters that provide a balance of encoding speed,
+	  compression and quality.
+	  
+	  The Berkeley encoder accelerates the process by parallelizing in
+	  the temporal direction. The overall organization of the encoder is
+	  shown in Figure 2. The Master server is the overall coordinator.
+	  It allocates groups of frames to the Slave servers for encoding.
+	  The sharing of the files is achieved best, if the directories
+	  containing the video files are NFS mounted and accessible uniformly
+	  to all processors (alternatively they can be sent out though sockets
+	  by the Master). The various activities are managed by inter process
+	  communication through sockets.
+
+	  http://bmrc.berkeley.edu/frame/research/mpeg/mpeg_encode.html
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPEG_LIB
+	bool "mpeg-1.3.1nb1"
+	help
+	  Library for decoding MPEG movies
+
+	  The MPEG Library is a collection of C routines to decode MPEG movies
+	  and dither them in a variety of colour schemes.  Most of the code in
+	  the library comes directly from the Berkely MPEG player, an
+	  X11-specific implementation that works fine, but suffers from minimal
+	  documentation and a lack of modularity.  A front end to the Berkeley
+	  decoding engine was developed by Greg Ward at the Montreal
+	  Neurological Institute in May/June 1994 to facilitate the development
+	  of an MPEG player specifically for Silicon Graphics workstations; the
+	  decoding engine together with the MNI front end constitute the MPEG
+	  Library.
+
+	  http://www.gerg.ca/software/mpeglib/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPEG_PLAY
+	bool "mpeg_play-2.4patchednb2"
+	help
+	  Program to play mpeg movies on X displays
+
+	  This is mpeg_play, which will let you view mpeg movies on X window
+	  displays.
+
+	  http://bmrc.berkeley.edu/research/mpeg/mpeg_play.html
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPLAYER_PLUGIN
+	bool "mplayer-plugin-3.55nb7"
+	help
+	  Mplayer plug-in for Gecko-based browsers
+
+	  Plugin for Gecko based browsers that uses mplayer to play videos from
+	  websites.
+
+	  http://mplayerplug-in.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PHONON
+	bool "phonon-4.4.2nb3"
+	help
+	  Multimedia API for KDE and QT
+
+	  Phonon is the Multimedia API for KDE and QT.
+	  
+	  In Phonon there are three main concepts: MediaObjects, Paths and Outputs.
+	  The MediaObjects control the playback/capture and provide the media data.
+	  MediaObjects can be connected to Outputs using Path objects which also
+	  allow the insertion of Effect objects between MediaObject and Output.
+
+	  http://phonon.kde.org
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OGLE
+	bool "ogle-0.9.2nb6"
+	help
+	  DVD player with menus
+
+	  Ogle is a open source DVD player that supports DVD menus and navigation.
+	  You should be able to play DVDs directly from the device, a mounted fs, an
+	  image file or a copy on your harddrive.  There are keyboard commands for
+	  navigation in both player modes.
+
+	  http://www.dtek.chalmers.se/groups/dvd/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PITIVI
+	bool "pitivi-0.13.4nb5"
+	help
+	  Video editor
+
+	  Nonlinear video editor.
+
+	  http://www.pitivi.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OGLE_GUI
+	bool "ogle_gui-0.9.2nb14"
+	help
+	  GUI for the Ogle DVD player
+
+	  ogle_gui is the gtk based frontend for the ogle DVD player.
+
+	  http://www.dtek.chalmers.se/groups/dvd/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OGMTOOLS
+	bool "ogmtools-1.5nb1"
+	help
+	  Ogg Media files manipulation tools
+
+	  ogmtools are a set of utilities for Ogg Media files (OGM) manipulation,
+	  written by Moritz Bunkuns.
+	  
+	  Ogg is a container format that can contains much more than a simple
+	  Vorbis sound stream: notably, you can have a video stream, subtitles,
+	  etc.
+	  
+	  ogmtools are not meant to encode or decode anything, but will be used
+	  complementary to mplayer/mencoder or any other media encoding utility.
+	  ogmmerge will produce an OGM file from separated components, like an
+	  audio track and a video track, and ogmdemux will have the inverse
+	  behaviour.  ogmsplit will cut a file into several parts, and ogminfo
+	  will print information about the file.  The last tool, dvdxchap is
+	  used in combination with ogmmerge to add some special comments into
+	  the resulting OGM file to provide chaptering with the player that
+	  support it (the OggDS Windows filter takes advantage of that).
+
+	  http://www.bunkus.org/videotools/ogmtools/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OPENQUICKTIME
+	bool "openquicktime-1.0nb8"
+	help
+	  
+
+	  OpenQuicktime aims to be a portable library for handling Apple's
+	  QuickTime(TM) popular media files on Unix-like environments.  Its aim is
+	  to provide encoding, authoring and editing support as well as video
+	  playback.
+	  
+	  This library is based on an enhanced version of the Quicktime 4 Linux
+	  library.  It features decoding and encoding QuickTime files, support for
+	  standard audio and video codecs (including MP3 audio) and a plug-in support
+	  so that non-open source codecs can be used with OpenQuicktime.
+	  
+	  OpenQuicktime could be used by any Unix players or encoders wanting to
+	  support the Quicktime format.  OpenQuicktime is still young but is already
+	  used by some applications.  The most promising application using
+	  OpenQuicktime is GStreamer.
+
+	  http://www.openquicktime.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PSPVC
+	bool "pspvc-0.3nb8"
+	help
+	  PSP video converter
+
+	  PSPVC is an FFMPEG front-end to convert video files for the PSP. It allows
+	  you to queue severals conversions with different parameters for each.
+	  
+	  Formats:
+	  
+	  * MPEG4/SP (all firmware)
+	  * H264/AVC (firmware 2.0+)
+	  * H264/AVC 480x272 (firmware 3.03-OE-B+) 
+
+	  http://pspvc.sf.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_P5_GSTREAMER
+	bool "p5-GStreamer-0.16"
+	help
+	  Perl interface to the GStreamer library
+
+	  This module allows you to use the GStreamer library from Perl.
+
+	  http://search.cpan.org/dist/GStreamer/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_P5_XMLTV
+	bool "p5-xmltv-0.5.56nb3"
+	help
+	  Set of utilities to manage your TV viewing
+
+	  XMLTV is a set of utilities to manage your TV viewing. They work
+	  with TV listings stored in the XMLTV format, which is based on XML.
+	  The idea is to separate out the backend (getting the listings) from
+	  the frontend (displaying them for the user), and to implement useful
+	  operations like picking out your favourite programmes as filters
+	  that read and write XML documents.
+
+	  http://xmltv.org/wiki/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_REALPLAYER_CODECS
+	bool "realplayer-codecs-8.20050115nb1"
+	help
+	  RealPlayer 8 shared libraries, primarily for use with MPlayer
+
+	  RealPlayer8 Codecs for use by MPlayer, without having to install RealPlayer8
+	  itself.  This contains several Real codecs (all the ones MPlayer supports.)
+	  
+	  This package supports i386, powerpc and alpha platforms.
+
+	  http://www.mplayerhq.hu/MPlayer/releases/codecs/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_REGIONSET
+	bool "regionset-0.1"
+	help
+	  Read and modify DVD drive region code
+
+	  regionset allows for DVD drives to have their firmware region
+	  setting read and changed, provided the limited number of
+	  permitted user changes has not been exhausted.
+
+	  http://linvdr.org/download/regionset/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_REPLEX
+	bool "replex-0.1.6.8"
+	help
+	  Remultiplexes transport streams from a DVB source
+
+	  Replex was created to remultiplex transport stream (TS) data taken from
+	  a DVB source. The result is supposed to be a program stream (PS) that
+	  can be used to burn a DVD (with dvdauthor). Replex can also remultiplex
+	  other PSs and AVIs with MPEG2 content.
+
+	  http://www.metzlerbros.org/dvb/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_WIN32_CODECS
+	bool "win32-codecs-071007"
+	help
+	  Huge compilation of Win32 binary codecs
+
+	  A huge compilation of Win32 codecs:
+	  
+	  Video:
+	  - Win32 VfW DLLs:
+	  Indeo Video 3.2 and 4.1, Microsoft MPEG-4 v1 & v2 beta, Microsoft
+	  MPEG-4 v3 (also known as DivX ;-)), Cinepak Video, ATI VCR-2, I263
+	  - Win32 DirectShow filters, decompression-only support:
+	  Microsoft MPEG-4 v3 (this decoder is slower than VfW one, but
+	  offers wider range of picture control features), Windows Media
+	  Video 7, Indeo Video 5.0, Motion JPEG (using Morgan Multimedia
+	  shareware codec)
+	  - Open-source plugins:
+	  Motion JPEG (using libjpeg, very slow)
+	  
+	  Audio:
+	  - Win32 ACM DLLs, decompression-only support:
+	  Windows Media Audio (also known as DivX ;-) Audio), MS ADPCM
+	  Intel Music Codec
+	  - Open-source plugins, decompression-only support:
+	  PCM, AC3, IMA ADPCM, MPEG Layer-1,2,3 (compression into MP3 is
+	  also supported), MSN Audio, GSM 6.1 Audio
+	  - Win32 DirectShow filters, untested decompression-only support:
+	  Voxware Metasound, ACELP.net
+
+	  http://www.mplayerhq.hu/MPlayer/releases/codecs/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_NAUTILUS
+	bool "totem-nautilus-2.32.0nb3"
+	help
+	  
+
+	  Totem is simple movie player for the GNOME desktop based on GStreamer and
+	  Xine.  It features a playlist, a full-screen mode, seek and volume controls,
+	  as well as a pretty complete keyboard navigation.
+	  
+	  This package contains a nautilus extension which adds a "properties"
+	  tab for media file information.
+
+	  http://www.gnome.org/projects/totem/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_X264_DEVEL
+	bool "x264-devel-20110707"
+	help
+	  GPL licensed H.264 encoder
+
+	  Development version of x264, a high quality H.264 codec.
+
+	  http://www.videolan.org/developers/x264.html
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_PL_PARSER
+	bool "totem-pl-parser-2.32.5nb1"
+	help
+	  totem playlist parser
+
+	  totem-pl-parser is a simple GObject-based library to parse a host of
+	  playlist formats, as well as save those.
+
+	  http://www.gnome.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XANIM
+	bool "xanim-2.92.0nb2"
+	help
+	  Play a variety of simple animation formats and show pictures
+
+	  XAnim  is a program that can display animations of various
+	  formats on systems running X11.  XAnim currently  supports
+	  the following animation types:
+	  
+	  +  FLI animations.
+	  +  FLC animations.
+	  +  IFF  animations.
+	  +  GIF87a and GIF89a files.
+	  +  GIF89a animation extension support.
+	  +  a  kludgy  text file listing gifs and what order
+	  to show them in.
+	  +  DL animations. Formats 1, 2 and partial 3.
+	  +  Amiga   MovieSetter  animations(For  those  Eric
+	  Schwartz fans).
+	  +  Utah Raster Toolkit RLE images and anims.
+	  +  AVI animations.
+	  +  MPEG  animations.
+	  +  WAV audio files may have their  sound  added  to
+	  any  animation  type  that  doesn't already have
+	  audio, by specifying the  .wav  file  after  the
+	  animation  file  on  the command line. Currently
+	  only the PCM audio codec is supported.
+	  +  any combination of the above on the same command
+	  line.
+
+	  http://xanim.polter.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TRANSCODE
+	bool "transcode-1.1.5nb7"
+	help
+	  Command line video-stream processing tool
+
+	  transcode is a command line video-stream processing tool.
+	  It supports elementary video and audio frame transformations.
+	  Some example modules are included to enable import of MPEG-1/2,
+	  Digital Video, and other formats.  It also includes export
+	  modules for writing to AVI files with DivX, OpenDivX, XviD,
+	  Digital Video or other codecs.  Direct DVD transcoding is also
+	  supported.  A set of tools is available to extract and decode
+	  the sources into raw video/audio streams for import and to
+	  enable post-processing of AVI files.
+
+	  http://tcforge.berlios.de/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XAWTV
+	bool "xawtv-3.95nb6"
+	help
+	  TV application for Brooktree 848 compatible cards
+
+	  xawtv is a set of utilities to manage the video4linux interface (and BSD's
+	  bktr driver too).  The main component of the suite is xawtv itself, which
+	  is a X11 application to watch the TV.
+	  
+	  The package includes the following main utilities:
+	  * xawtv: a nice X11 application for watching TV.
+	  * v4lctl: a command line tool to set video4linux parameters.
+	  * streamer: a command line tool for capturing still images and AVI videos
+	  (with sound).
+	  * radio: a simple, curses-based radio app.
+	  * webcam: captures images and uploads them with FTP to a Web-Server in an
+	  endless loop.
+
+	  http://linux.bytesex.org/xawtv/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TSTOOLS
+	bool "tstools-1.11"
+	help
+	  Cross-platform command line tools for working with MPEG data
+
+	  tstools is a set of cross-platform command line tools for working with MPEG
+	  data.
+	  
+	  The emphasis is on relatively simple tools which concentrate on MPEG (H.264 and
+	  H.262) data packaged according to H.222 (i.e., TS or PS), with a particular
+	  interest in checking for conformance.
+	  
+	  Transport Stream (TS) is typically used for distribution of cable and satellite
+	  data. Program Stream (PS) is typically used to store data on DVDs.
+	  
+	  The tools are focused on:
+	  
+	  * Quick reporting of useful data (tsinfo, stream_type)
+	  * Giving a quick overview of the entities in the stream (esdots, psdots)
+	  * Reporting on TS packets (tsreport) or ES units/frames/fields (esreport)
+	  * Simple manipulation of stream data (es2ts, esfilter, esreverse, esmerge,
+	  ts2es)
+	  * Streaming of data, possibly with introduced errors (tsplay)
+
+	  http://tstools.berlios.de/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TVTIME
+	bool "tvtime-1.0.2nb4"
+	help
+	  High quality television application
+
+	  tvtime is a high quality television application for use with video capture
+	  cards. tvtime processes the input from a capture card and displays it on a
+	  computer monitor or projector.
+
+	  http://tvtime.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XFMEDIA
+	bool "xfmedia-0.9.2nb6"
+	help
+	  Xfce media player based on xine
+
+	  Xfmedia is a simple, easy-to-use media player based on the xine
+	  engine.  The GTK+ and Xfce4 GUI focuses on playing and managing audio
+	  files, but, being based on xine, supports video as well.
+
+	  http://spuriousinterrupt.org/projects/xfmedia/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_LIB
+	bool "xine-lib-1.1.19nb7"
+	help
+	  Multimedia player library
+
+	  Xine is a free multimedia player library for playing back CDs, DVDs,
+	  and VCDs.  It also decodes multimedia files like AVI, MOV, WMV, and MP3
+	  from local disk drives, and displays multimedia streamed over the
+	  Internet.  It interprets many of the most common multimedia formats
+	  available -- and some of the most uncommon formats, too.
+
+	  http://xinehq.de/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_USHARE
+	bool "ushare-1.1anb1"
+	help
+	  UPnP AV Mediaserver
+
+	  uShare is a UPnP (TM) A/V Media Server. It implements the server component that
+	  provides UPnP media devices with information on available multimedia files.
+	  uShare uses the built-in http server of libupnp to stream the files to clients.
+	  
+	  GeeXboX uShare is able to provide access to both images, videos, music or
+	  playlists files (see below for a complete file format support list). It does not
+	  act as an UPnP Media Adaptor and thus, can't transcode streams to fit the client
+	  requirements.
+	  
+	  uShare is written in C for the GeeXboX project. It is designed to provide access
+	  to multimedia contents to GeeXboX but can of course be used by any other UPnP
+	  client device. It should compile and run on any modern POSIX compatible system
+	  such as Linux.
+	  
+	  uShare is free software - it is licensed under the terms of the GNU General
+	  Public License (GPL).
+
+	  http://ushare.geexbox.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_UI
+	bool "xine-ui-0.99.6nb3"
+	help
+	  Skinned xlib-based xine GUI
+
+	  This is the official, xlib-based xine frontend.  Xine is a free
+	  multimedia player.  It plays back CDs, DVDs, and VCDs.  It also decodes
+	  multimedia files like AVI, MOV, WMV, and MP3 from local disk drives, and
+	  displays multimedia streamed over the Internet.  It interprets many of the
+	  most common multimedia formats available -- and some of the most uncommon
+	  formats, too.
+
+	  http://www.xine-project.org/home
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC
+	bool "vlc-1.1.11nb1"
+	help
+	  VLC media player and streaming server
+
+	  VideoLAN is a project of French students from the Ecole Centrale Paris
+	  and developers from all over the world. Its main goals is MPEG streaming
+	  on a network, but it also features a standalone multimedia player. The
+	  VideoLAN Server can stream video read from a hard disk, a DVD player,
+	  a satellite card or an MPEG 2 compression card, and unicast or multicast
+	  it on a network. The VideoLAN Client can read the stream from the network
+	  and display it. It can also be used to display video read locally on
+	  the computer : DVDs, VCDs, MPEG and DivX files and from a satellite
+	  card. It is multi-plaform : Linux, Windows, Mac OS X, BeOS, BSD, Solaris,
+	  QNX, iPaq... The VideoLAN Client and Server now have a full IPv6 support.
+
+	  http://www.videolan.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XVID4CONF
+	bool "xvid4conf-1.12nb10"
+	help
+	  XviD Configuration Panel
+
+	  This tool creates XviD configuration files. The generated configuration
+	  file is meant to be read by transcode's xvid4 export module. This module
+	  (and the configuration file) is intended to be used with XviD 1.0
+	  (dev-api-4).
+
+	  
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XVIDCORE
+	bool "xvidcore-1.3.2"
+	help
+	  ISO MPEG-4 compliant video codec
+
+	  XviD is an ISO MPEG-4 compliant video codec library.  It's no product,
+	  it's an open source project which is developed and maintained by lots of
+	  people from all over the world.
+
+	  http://www.xvid.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC08
+	bool "vlc08-0.8.6inb12"
+	help
+	  VideoLAN Client
+
+	  VideoLAN is a project of French students from the Ecole Centrale Paris
+	  and developers from all over the world. Its main goals is MPEG streaming
+	  on a network, but it also features a standalone multimedia player. The
+	  VideoLAN Server can stream video read from a hard disk, a DVD player,
+	  a satellite card or an MPEG 2 compression card, and unicast or multicast
+	  it on a network. The VideoLAN Client can read the stream from the network
+	  and display it. It can also be used to display video read locally on
+	  the computer : DVDs, VCDs, MPEG and DivX files and from a satellite
+	  card. It is multi-plaform : Linux, Windows, Mac OS X, BeOS, BSD, Solaris,
+	  QNX, iPaq... The VideoLAN Client and Server now have a full IPv6 support.
+
+	  http://www.videolan.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC10
+	bool "vlc-1.0.6nb10"
+	help
+	  VLC media player and streaming server
+
+	  VideoLAN is a project of French students from the Ecole Centrale Paris
+	  and developers from all over the world. Its main goals is MPEG streaming
+	  on a network, but it also features a standalone multimedia player. The
+	  VideoLAN Server can stream video read from a hard disk, a DVD player,
+	  a satellite card or an MPEG 2 compression card, and unicast or multicast
+	  it on a network. The VideoLAN Client can read the stream from the network
+	  and display it. It can also be used to display video read locally on
+	  the computer : DVDs, VCDs, MPEG and DivX files and from a satellite
+	  card. It is multi-plaform : Linux, Windows, Mac OS X, BeOS, BSD, Solaris,
+	  QNX, iPaq... The VideoLAN Client and Server now have a full IPv6 support.
+
+	  http://www.videolan.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLS
+	bool "vls-0.5.6nb3"
+	help
+	  VideoLAN Server
+
+	  VLS is part of the VideoLAN project, a full client/server video over IP
+	  solution. The VideoLAN Server aims at broadcasting MPEG (1/2/4, PS/TS)
+	  video streams over any IP network.
+
+	  http://www.videolan.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SMPEG
+	bool "smpeg-0.4.4nb15"
+	help
+	  SDL MPEG Player Library
+
+	  SMPEG is based on UC Berkeley's mpeg_play software MPEG decoder
+	  and SPLAY, an MPEG audio decoder created by Woo-jae Jung.  The
+	  current version is capable of playing back MPEG video and sound on
+	  Pentium II based systems.
+
+	  http://www.lokigames.com/development/smpeg.php3
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SUBTITLEEDITOR
+	bool "subtitleeditor-0.30.0nb6"
+	help
+	  GTK+2 tool to edit movie subtitles
+
+	  Subtitle Editor is a GTK+2 tool to edit subtitles. It can be used
+	  for new subtitles or as a tool to transform, edit, correct and
+	  refine existing subtitle. This program also shows sound waves,
+	  which makes it easier to synchronise subtitles to voices.
+	  
+	  Subtitle Editor is free software released under the GNU General
+	  Public License (GPL).
+
+	  http://home.gna.org/subtitleeditor/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC
+	bool "swfdec-0.8.4nb9"
+	help
+	  
+
+	  Swfdec is a decoder/renderer for Macromedia Flash animations. The
+	  decoding and rendering engine is provided in a library that can be
+	  used by other applications.
+	  
+	  Swfdec is intended to be used as a replacement for the default
+	  Flash player.  While it is not yet a 100% complete replacement, a
+	  big focus is on stability and security. So it is deemed to be
+	  suitable for use in production applications.
+	  
+	  The library however is still in heavy development. Because of that,
+	  the Programming interface will change between major versions. No
+	  guarantees are made about the API. However, during stable release
+	  cycles, the API and ABI are guaranteed to stay stable.
+	  
+	  An additional library named swfdec-gtk is provided for easy
+	  integration of Swfdec into Gtk applications. This library is what
+	  developers most likely want to target their applications at.
+
+	  http://swfdec.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC_GNOME
+	bool "swfdec-gnome-2.28.0nb7"
+	help
+	  Gnome flash player and thumbnailer using swfdec
+
+	  Swfdec is a decoder/renderer for Macromedia Flash animations.  The
+	  decoding and rendering engine is provided in a library that can be
+	  used by other applications.
+	  
+	  This package contains programs to integrate Flash functionality
+	  into the GNOME desktop.  Its main application is swfdec-player, a
+	  stand-alone viewer for Flash files.  It also contains swfdec-thumbnailer,
+	  a program that provides screenshots for files to display in the
+	  Nautilus file manager
+
+	  http://swfdec.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC_MOZILLA
+	bool "swfdec-mozilla-0.8.2nb9"
+	help
+	  Mozilla plugin for swfdec
+
+	  Swfdec is a decoder/renderer for Macromedia Flash animations.  The
+	  decoding and rendering engine is provided in a library that can be
+	  used by other applications.
+	  
+	  This package contains a Mozilla plugin that uses the Swfdec library
+	  for playing SWF files in a browser capable of loading NS-Plugins.
+
+	  http://swfdec.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM
+	bool "totem-2.32.0nb4"
+	help
+	  
+
+	  Totem is simple movie player for the GNOME desktop based on GStreamer and
+	  Xine.  It features a playlist, a full-screen mode, seek and volume controls,
+	  as well as a pretty complete keyboard navigation.
+	  
+	  This package is built using the GStreamer backend.
+
+	  http://www.gnome.org/projects/totem/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_BROWSER_PLUGIN
+	bool "totem-browser-plugin-2.32.0nb9"
+	help
+	  
+
+	  Totem is simple movie player for the GNOME desktop based on GStreamer and
+	  Xine.  It features a playlist, a full-screen mode, seek and volume controls,
+	  as well as a pretty complete keyboard navigation.
+	  
+	  This package contains a mozilla plugin for playing back media from a
+	  web page.
+
+	  http://www.gnome.org/projects/totem/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FLASHPLAYER
+	bool "flashplayer-0.4.10nb6"
+	help
+	  Standalone open source Flash(tm) player
+
+	  Swfplayer is a standalone open source Flash(tm) player using libflash.
+	  You can use it to quickly play movies without starting Netscape.  It can
+	  also play movies in the root window (suitable for xscreensaver).
+
+	  http://gplflash.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_BAD
+	bool "gst-plugins0.10-bad-0.10.22"
+	help
+	  Open source multimedia framework - bad plugins
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  GStreamer is released under the LGPL.
+	  
+	  This package is part of the ugly GStreamer plugins; that is, those that
+	  might pose some legal problems.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFPLAY
+	bool "ffplay-0.7.4"
+	help
+	  Simple SDL frontend for ffmpeg
+
+	  The ffplay package provides the very simple, interactive media
+	  player for FFmpeg.  It uses the SDL toolkit.
+
+	  http://ffmpeg.mplayerhq.hu/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_BASE
+	bool "gst-plugins0.10-base-0.10.35"
+	help
+	  Open source multimedia framework - base plugins
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  GStreamer is released under the LGPL.
+	  
+	  This package is part of the 'base' plugins for GStreamer.  It provides a
+	  set of must-have plugins.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_DVDREAD
+	bool "gst-plugins0.10-dvdread-0.10.18"
+	help
+	  Open source multimedia framework - dvdread plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple mp3 playback to complex
+	  audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  This package provides the dvdread plugin for GStreamer, which allows reading
+	  of DVD disks.  You'll probably want to install the dvdnav plugin (from the
+	  gst-plugins0.10-dvdnav package), too.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_GOOD
+	bool "gst-plugins0.10-good-0.10.30"
+	help
+	  Open source multimedia framework - good plugins
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  GStreamer is released under the LGPL.
+	  
+	  This package is part of the good GStreamer plugins; that is, those that are
+	  considered to be stable and correctly coded.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_X264
+	bool "gst-plugins0.10-x264-0.10.18"
+	help
+	  Open source multimedia framework - x264 plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple mp3 playback to complex
+	  audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  This package provides the x264 plugin for GStreamer, making it able to
+	  encode videos using the H.264 video codec.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_XVID
+	bool "gst-plugins0.10-xvid-0.10.22"
+	help
+	  Open source multimedia framework - xvid plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple mp3 playback to complex
+	  audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  This package provides the xvid plugin for GStreamer, making it able to
+	  reproduce videos encoded using the XviD video codec.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_HAL
+	bool "gst-plugins0.10-hal-0.10.30"
+	help
+	  Open source multimedia framework - hal plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  GStreamer is released under the LGPL.
+	  
+	  This package is part of the 'good' plugins for GStreamer.  It provides a
+	  plugin to access devices via HAL.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_MPEG2DEC
+	bool "gst-plugins0.10-mpeg2dec-0.10.18"
+	help
+	  Open source multimedia framework - mpeg2dec plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple mp3 playback to complex
+	  audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  This package provides the mpeg2dec plugin for GStreamer, an MPEG 1 and MPEG 2
+	  video decoder.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_OGG
+	bool "gst-plugins0.10-ogg-0.10.35"
+	help
+	  Open source multimedia framework - ogg plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple mp3 playback to complex
+	  audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  This package provides the ogg plugin for GStreamer, which lets it handle
+	  OGG media containers.  You'll probably want to install gst-plugins0.10-vorbis
+	  and gst-plugins0.10-theora too, which provide its respective audio and video
+	  codecs.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_RESINDVD
+	bool "gst-plugins0.10-resindvd-0.10.22"
+	help
+	  Open source multimedia framework - resindvd plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple mp3 playback to complex
+	  audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  This package provides the resindvd plugin for GStreamer, which allows playback
+	  of DVD disks.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_THEORA
+	bool "gst-plugins0.10-theora-0.10.35"
+	help
+	  Open source multimedia framework - theora plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple mp3 playback to complex
+	  audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  This package provides the theora plugin for GStreamer, the OGG's free video
+	  codec.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_UGLY
+	bool "gst-plugins0.10-ugly-0.10.18"
+	help
+	  Open source multimedia framework - ugly plugins
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  GStreamer is released under the LGPL.
+	  
+	  This package is part of the ugly GStreamer plugins; that is, those that
+	  might pose some legal problems.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBTHEORA_DOCS
+	bool "libtheora-docs-1.1.1"
+	help
+	  Video codec for Ogg multimedia streaming (API documentation)
+
+	  Theora is Xiph.Org's first publicly released video codec, intended for
+	  use within the Ogg's project's Ogg multimedia streaming system.  Theora
+	  is derived directly from On2's VP3 codec; currently the two are nearly
+	  identical, varying only in encapsulating decoder tables in the bitstream
+	  headers, but Theora will make use of this extra freedom in the future to
+	  improve over what is possible with VP3.
+	  
+	  This package contains the API documentation for libtheora.
+
+	  http://www.theora.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_V4L2
+	bool "gst-plugins0.10-v4l2-0.10.30nb1"
+	help
+	  Open source multimedia framework - v4l2 plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  GStreamer is released under the LGPL.
+	  
+	  This package is part of the 'good' plugins for GStreamer.  It provides a
+	  plugin to access v4l2.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMPLAYER
+	bool "gmplayer-1.0rc20100913nb7"
+	help
+	  Fast, cross-platform movie player with GTK2+ interface
+
+	  MPlayer is a movie player for LINUX (runs on many other Unices,
+	  and non-x86 CPUs). It plays most MPEG, VOB, AVI, VIVO, ASF/WMV,
+	  QT/MOV, FLI, RM, NuppelVideo, yuv4mpeg, FILM, RoQ files, supported
+	  by many native, XAnim, and Win32 DLL codecs. You can watch VideoCD,
+	  SVCD, DVD, 3ivx, and even DivX movies too. The another big feature
+	  of mplayer is the wide range of supported output drivers. It works
+	  with X11, Xv, DGA, OpenGL, SVGAlib, fbdev, AAlib, DirectFB, but you
+	  can use GGI and SDL (and this way all their drivers) and some
+	  lowlevel card-specific drivers (for  Matrox, 3Dfx and Radeon) too!
+	  Most of them supports software or hardware scaling, so you can enjoy
+	  movies in fullscreen. And what about the nice big antialiased shaded
+	  subtitles (10  supported  types!!!) with european/ISO 8859-1,2
+	  (hungarian, english, czech, etc), cyrillic, korean fonts, and OSD...
+
+	  http://www.mplayerhq.hu/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_VP8
+	bool "gst-plugins0.10-vp8-0.10.22"
+	help
+	  Open source multimedia framework - vp8 plugin
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple mp3 playback to complex
+	  audio (mixing) and video (non-linear editing) processing.
+	  
+	  Applications can take advantage of advances in codec and filter technology
+	  transparently.  Developers can add new codecs and filters by writing a
+	  simple plugin with a clean, generic interface.
+	  
+	  This package provides the vp8 plugin for GStreamer, making it able to
+	  reproduce videos encoded using the vp8 (webm) video codec.
+
+	  http://www.gstreamer.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MENCODER
+	bool "mencoder-1.0rc20100913nb3"
+	help
+	  Simple movie encoder for MPlayer-playable movies
+
+	  mencoder (MPlayer's Movie Encoder) is a simple movie encoder, designed to
+	  encode MPlayer-playable movies (AVI/ASF/OGG/DVD/VCD/VOB/MPG/MOV/VIV/FLI/
+	  RM/NUV/NET) to other MPlayer-playable formats. It encodes to DivX4 (1,
+	  2 or 3 passes), XviD, codecs of libavcodec, PCM/MP3/VBRMP3 audio. It also
+	  has stream copying abilities, a powerful plugin system (crop, expand,
+	  flip, postprocess, rotate, scale, rgb/yuv conversion) and more.
+
+	  http://www.mplayerhq.hu/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MKV2MP4
+	bool "py26-mkv2mp4-0.0alpha11nb1"
+	help
+	  Remux mkv files to mp4 files compatible with standalone players
+
+	  mkv2mp4 is a commandline utility, written in Python, which allows conversion
+	  of video files in the Matroska container (*.mkv file extension) containing
+	  H.264 video to be converted into a format which the Xbox 360 can play.
+	  
+	  It differs from other similar tools in that no video transcoding is
+	  performed; the video is passed through untouched and just the audio is
+	  transcoded if necessary.  This means that the conversion is much faster
+	  (the whole process being quicker than realtime on reasonably modern
+	  machines), and more importantly that there is no degradation in video quality
+	  (which makes it very suitable for HD video).
+
+	  http://code.google.com/p/mkv2mp4
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPLAYER_SHARE
+	bool "mplayer-share-1.0rc20100913nb3"
+	help
+	  Documentation used by mplayer and gmplayer
+
+	  MPlayer is a movie player for LINUX (runs on many other Unices,
+	  and non-x86 CPUs). It plays most MPEG, VOB, AVI, VIVO, ASF/WMV,
+	  QT/MOV, FLI, RM, NuppelVideo, yuv4mpeg, FILM, RoQ files, supported
+	  by many native, XAnim, and Win32 DLL codecs. You can watch VideoCD,
+	  SVCD, DVD, 3ivx, and even DivX movies too. The another big feature
+	  of mplayer is the wide range of supported output drivers. It works
+	  with X11, Xv, DGA, OpenGL, SVGAlib, fbdev, AAlib, DirectFB, but
+	  you can use GGI and SDL (and this way all their drivers) and some
+	  lowlevel card-specific drivers (for Matrox, 3Dfx, and Radeon) too!
+	  Most of them support software or hardware scaling, so you can
+	  enjoy movies in fullscreen. It also sports nice big antialiased
+	  shaded subtitles (10 supported types) with european/ISO 8859-1,
+	  2 (hungarian, english, czech, etc), cyrillic, korean fonts, and
+	  OSD.
+
+	  http://www.mplayerhq.hu/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PHP_MING
+	bool "php5-ming-5.2.17nb1"
+	help
+	  PHP extension for Ming library
+
+	  PHP extension for ming library; see multimedia/ming for details.
+
+	  http://www.php.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_NS_FLASH
+	bool "ns-flash-9.0.289"
+	help
+	  MacroMedia Flash Player Netscape plugin
+
+	  Netscape plugin for MacroMedia Flash player.  This package contains
+	  a plugin that enables Netscape to render the Flash format.
+	  
+	  The nspluginwrapper option (enabled by default) permits the use of
+	  the the Linux x86 flash player in Firefox browsers on other x86
+	  systems.
+	  
+	  Systems tested with nspluginwrapper:
+	  - NetBSD 3.1, 4.0, 4.99.x		- works
+	  - firefox 2.0.0.x, 3.0.x		- works
+	  - seamonkey 1.1.x			- works
+	  
+	  A newer version of this plugin is in multimedia/adobe-flash-plugin.
+
+	  http://www.flash.com/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PY_GSTREAMER0.10
+	bool "py26-gstreamer0.10-0.10.21nb1"
+	help
+	  Python bindings for gstreamer0.10
+
+	  GStreamer is a library that allows the construction of graphs of
+	  media-handling components, ranging from simple Ogg/Vorbis playback to
+	  complex audio (mixing) and video (non-linear editing) processing.
+	  
+	  This package contains python bindings for the GStreamer library.
+
+	  http://gstreamer.freedesktop.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPLAYER
+	bool "mplayer-1.0rc20100913nb7"
+	help
+	  Fast, cross-platform movie player
+
+	  MPlayer is a movie player for LINUX (runs on many other Unices,
+	  and non-x86 CPUs). It plays most MPEG, VOB, AVI, VIVO, ASF/WMV,
+	  QT/MOV, FLI, RM, NuppelVideo, yuv4mpeg, FILM, RoQ files, supported
+	  by many native, XAnim, and Win32 DLL codecs. You can watch VideoCD,
+	  SVCD, DVD, 3ivx, and even DivX movies too. The another big feature
+	  of mplayer is the wide range of supported output drivers. It works
+	  with X11, Xv, DGA, OpenGL, SVGAlib, fbdev, AAlib, DirectFB, but
+	  you can use GGI and SDL (and this way all their drivers) and some
+	  lowlevel card-specific drivers (for Matrox, 3Dfx, and Radeon) too!
+	  Most of them support software or hardware scaling, so you can
+	  enjoy movies in fullscreen. It also sports nice big antialiased
+	  shaded subtitles (10 supported types) with european/ISO 8859-1,
+	  2 (hungarian, english, czech, etc), cyrillic, korean fonts, and
+	  OSD.
+
+	  http://www.mplayerhq.hu/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PY_MING
+	bool "py26-ming-0.4.3nb3"
+	help
+	  Python bindings for Ming library
+
+	  Python bindings for ming library; see multimedia/ming for details.
+
+	  http://ming.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_V4L
+	bool "xine-v4l-1.1.19nb1"
+	help
+	  The v4l input plugin for xine-lib
+
+	  Xine is a free multimedia player library for playing back CDs, DVDs,
+	  and VCDs.  It also decodes multimedia files like AVI, MOV, WMV, and MP3
+	  from local disk drives, and displays multimedia streamed over the
+	  Internet.  It interprets many of the most common multimedia formats
+	  available -- and some of the most uncommon formats, too.
+	  
+	  This package provides the v4l input plugin for xine-lib.
+
+	  http://xinehq.de/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_V4L2
+	bool "xine-v4l2-1.1.19nb1"
+	help
+	  The v4l2 input plugin for xine-lib
+
+	  Xine is a free multimedia player library for playing back CDs, DVDs,
+	  and VCDs.  It also decodes multimedia files like AVI, MOV, WMV, and MP3
+	  from local disk drives, and displays multimedia streamed over the
+	  Internet.  It interprets many of the most common multimedia formats
+	  available -- and some of the most uncommon formats, too.
+	  
+	  This package provides the v4l2 input plugin for xine-lib.
+
+	  http://xinehq.de/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PY_CLUTTER_GST
+	bool "py26-clutter-gst-1.0.0nb6"
+	help
+	  Python modules for Clutter-Gstreamer
+
+	  This archive provides Python bindings for the Clutter-GStreamer integration
+	  library.
+
+	  http://www.clutter-project.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_GNOME2_GSTREAMER
+	bool "ruby19-gnome2-gstreamer-1.0.0"
+	help
+	  Ruby binding of GStreamer 0.10.x or later
+
+	  Ruby-GNOME 2 is a set of Ruby language bindings for the various
+	  application development libraries included with the GNOME/GTK+
+	  environment.
+	  
+	  Ruby/GStreamer is a Ruby binding for GStreamer.
+
+	  http://ruby-gnome2.sourceforge.jp/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_MING
+	bool "ruby19-ming-0.2.1nb4"
+	help
+	  Ruby extension to drive the Ming SWF library
+
+	  Ming/Ruby is an extension library which wraps Ming, a C library for
+	  generating SWF format movie (a.k.a. "Macromedia Flash").
+
+	  http://mingruby.rubyforge.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XFCE4_MPC_PLUGIN
+	bool "xfce4-mpc-plugin-0.3.2nb6"
+	help
+	  Xfce Music Player Client plugin
+
+	  MPC plugin for Xfce.
+
+	  http://www.xfce.org/
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_CLUTTER_GST
+	bool "ruby19-clutter-gst-0.8.0nb9"
+	help
+	  Ruby binding for Clutter GStreamer library
+
+	  This is a binding for the Clutter GStreamer library for use from Ruby.
+
+	  http://rubyforge.org/projects/rbclutter/
+

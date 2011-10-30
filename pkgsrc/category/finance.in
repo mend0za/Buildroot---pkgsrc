@@ -1,0 +1,268 @@
+config BR2_PKGSRC_PACKAGE_FINANCE_GNUCASH
+	bool "gnucash-2.4.7nb1"
+	help
+	  Personal or business finance management program
+
+	  GnuCash is a personal finance manager. A check-book like register
+	  GUI allows you to enter and track bank accounts, stocks, income
+	  and even currency trades. A full set of reports allow you to see
+	  the state of your finances. The interface is designed to be simple
+	  and easy to use, but is backed with double-entry accounting principles
+	  to ensure balanced books.  Features include:
+	  - An easy-to-use interface.
+	  - Scheduled Transactions
+	  - Mortgage & Loan Repayment Druid
+	  - Small Business Accounting Features
+	  - OFX and Quicken File Import and HBCI Support
+	  - Reconcile window with running reconciled and cleared balances
+	  - Stock/Mutual Fund Portfolios
+	  - Get Stock & Mutual Fund quotes from various web sites, update
+	  portfolio automatically (more funds being added regularly).
+	  - Reports
+	  - Multiple Currencies & Currency Trading
+	  - New Multi-Currency Transaction Handling
+	  - Chart of Accounts
+	  - Split Transactions
+	  - Double Entry
+	  - Income/Expense Account Types (Categories)
+	  - General Ledger
+	  - International date handling, many different translations.
+
+	  http://www.gnucash.org/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_GNUCASH_DOCS
+	bool "gnucash-docs-2.2.0"
+	help
+	  Documentation for GnuCash - personal double-entry accounting program
+
+	  This is the docs module for GnuCash. The docs can be accessed
+	  with the GnuCash help browser and if you are running a GNOME2
+	  desktop be accessible from Yelp (the GNOME2 help browser).
+
+	  http://www.gnucash.org/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_KMYMONEY2
+	bool "kmymoney2-1.0.5nb1"
+	help
+	  Personal finance manager for KDE
+
+	  KMyMoney intends to be the best Personal Finance Manager for free
+	  users, full stop.
+	  
+	  The ultimate objectives of KMyMoney are:
+	  
+	  * Accuracy. Using time tested double entry accounting principles
+	  KMyMoney can help ensure that your finances are kept in correct
+	  order.
+	  * Ease of use. KMyMoney strives to be the easiest open source
+	  personal finance manager to use, especially for the non-technical
+	  user.
+	  * Familiar Features. KMyMoney intends to provide all important
+	  features found in the commercially-available, personal finance
+	  managers. The current release is closer than ever to that goal
+	  and more improvements are already planned or being tested.
+
+	  http://kmymoney2.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_LIBOFX
+	bool "libofx-0.9.1nb1"
+	help
+	  
+
+	  This is the LibOFX library. It is a parser and an API designed to
+	  allow applications to very easily support OFX command responses,
+	  usually provided by financial institutions for statement downloads.
+	  To my knowledge, it is the first working OpenSource implementation
+	  of the OFX (Open Financial eXchange) specification on the client
+	  side.
+
+	  http://libofx.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_P5_ALGORITHM_LUHN
+	bool "p5-Algorithm-LUHN-1.00nb2"
+	help
+	  Calculate the Modulus 10 Double Add Double checksum
+
+	  This module calculates the Modulus 10 Double Add Double checksum,
+	  also known as the LUHN Formula. This algorithm is used to verify
+	  credit card numbers and Standard & Poor's security identifiers such
+	  as CUSIP's and CSIN's.
+	  
+	  You can find plenty of information about the algorithm by searching
+	  the web for "modulus 10 double add double".
+
+	  http://search.cpan.org/perldoc?Algorithm::LUHN
+
+config BR2_PKGSRC_PACKAGE_FINANCE_P5_DATA_CURRENCY
+	bool "p5-Data-Currency-0.04002nb3"
+	help
+	  Container class for currency conversion/formatting
+
+	  The Data::Currency module provides basic currency formatting and
+	  conversion:
+	  
+	  my $price = 1.23;
+	  my $currency = Data::Currency->new($price);
+	  
+	  print $currency->convert('CAD')->as_string;
+	  
+	  Each Data::Currency object will stringify to the original value
+	  except in string context, where it stringifies to the format
+	  specified in format.
+
+	  http://search.cpan.org/perldoc?Data::Currency
+
+config BR2_PKGSRC_PACKAGE_FINANCE_TCLTICKER
+	bool "tclticker-1.1nb1"
+	help
+	  Stock-quote ticker tape application
+
+	  TCLTicker is a simple stock tickertape, using HTTP requests to fetch
+	  quotes.  It includes 'mailquote', which can email quotes.  TclTicker
+	  uses a plug-in architecture for quote services.  Currently, quote
+	  service modules are written for Yahoo (one for U.S.  markets, another
+	  for Euro markets) and Quote.com.  User configuration includes tuning
+	  the ticker scroll rate and data refresh dates, fonts, http proxy, smtp
+	  host, rounding, always on top, and ticker symbol lists.
+
+	  
+
+config BR2_PKGSRC_PACKAGE_FINANCE_TEX_EURO
+	bool "tex-euro-1.1"
+	help
+	  Provide Euro values for national currency amounts
+
+	  Converts arbitrary national currency amounts using the Euro as base
+	  unit, and typesets monetary amounts in almost any desired way. Write,
+	  e.g., \ATS{17.6} to get something like '17,60 oS (1,28 Euro)'
+	  automatically. Conversion rates for the initial Euro-zone countries are
+	  already built-in. Further rates can be added easily. The package uses
+	  the fp package to do its sums.
+
+	  http://www.tug.org/texlive/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_TEX_EURO_DOC
+	bool "tex-euro-doc-1.1"
+	help
+	  Documentation for tex-euro
+
+	  This is documentation for tex-euro.
+
+	  http://www.tug.org/texlive/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_XFINANS
+	bool "xfinans-5.9nb3"
+	help
+	  Xfinans is a useful financial tracking, and account balancing tool
+
+	  Xfinans allows you to set up multiple accounts and categories of
+	  transactions.  It is ideal for keeping watch over checking, savings and
+	  401k type accounts.  It's also good for keeping tabs on your credit card
+	  balances.  It has graphing functions built in that allow it to generate
+	  graphs with gnuplot.
+
+	  http://www.io.com/~acroyear/xfinans/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_XINVEST
+	bool "xinvest-2.6.9nb2"
+	help
+	  Personal finance tracking and performance tool
+
+	  Xinvest is a personal finance tracking and performance tool for UNIX
+	  systems using the X Window System. Xinvest requires Motif 1.2 or later and
+	  XPM.
+
+	  http://xinvest.sunsite.dk/xinvest.html
+
+config BR2_PKGSRC_PACKAGE_FINANCE_XQUOTE
+	bool "xquote-2.6.10nb2"
+	help
+	  WWW ticker symbol quote retrieval program
+
+	  Xquote is a WWW ticker symbol quote retrieval program for UNIX systems
+	  using the X Window System. Xquote requires Motif 1.2 or later and XPM.
+	  
+	  Xquote retrieves quotes from a number of net sources. It takes a ticker
+	  symbol (stock, mutual fund, currency) and displays info in a table or
+	  ticker tape. The table data displayed is selectable, and includes price,
+	  date, change, volume, yield, 52 week high/low, day high/low, P/E,
+	  dividend, full name, basically whatever can be reliably retrieved from
+	  multiple sources.
+
+	  http://xinvest.sunsite.dk/xquote.html
+
+config BR2_PKGSRC_PACKAGE_FINANCE_P5_FINANCE_CURRENCY_CONVERT_WEBSERVICEX
+	bool "p5-Finance-Currency-Convert-WebserviceX-0.07001nb2"
+	help
+	  Lightweight currency conversion using WebserviceX.NET
+
+	  This is a lightweight module to do currency conversion using the
+	  Currency Converter web service at http://www.webservicex.net/.
+	  
+	  The motivation for this module was many fold. First,
+	  Finance::Currency::Convert with Finance::Quote was a little too
+	  bulky for my needs, esp the need to download or maintain conversion
+	  tables. Finance::Currency::Convert::Yahoo seemed to be based on
+	  screen scraping. Way to fragile for my taste.
+	  Finance::Currency::Convert::XE has usage restrictions from XE.com.
+	  [No offense intended to any of the authors above]
+
+	  http://search.cpan.org/perldoc?Finance::Currency::Convert::WebserviceX
+
+config BR2_PKGSRC_PACKAGE_FINANCE_GKRELLM_STOCK
+	bool "gkrellm-stock-0.5.1nb15"
+	help
+	  GKrellM2 stock ticker plugin
+
+	  GKrellStock is a plugin for GKrellM that displays given stock
+	  tickers (current point and net change).
+	  
+	  Uses perl script to get Quote information from given source
+	  (US, European, Australian, Canadian and Asian Markets).
+
+	  http://gkrellstock.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_P5_FINANCE_QUOTE
+	bool "p5-Finance-Quote-1.17nb3"
+	help
+	  Perl module to get stock quotes from Yahoo
+
+	  Finance::Quote provides access to time-delayed stockquotes from a
+	  number of sources.  After you've installed the pacakage, try
+	  'perldoc Finance::Quote' for full information.  Alternatively,
+	  you can 'perldoc lib/Finance/Quote.pm' before the install.
+
+	  http://finance-quote.sourceforge.net/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_P5_LOCALE_CURRENCY_FORMAT
+	bool "p5-Locale-Currency-Format-1.30"
+	help
+	  Perl functions for formatting monetary values
+
+	  Locale::Currency::Format is a light-weight Perl module that enables
+	  Perl code to display monetary values in the formats recognized
+	  internationally and/or locally.
+
+	  http://search.cpan.org/dist/Locale-Currency-Format/
+
+config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_BRAINTREE
+	bool "ruby19-braintree-2.11.0"
+	help
+	  Braintree Gateway Ruby Client Library
+
+	  Ruby library for integrating with the Braintree Gateway.
+
+	  http://www.braintreepaymentsolutions.com/gateway
+
+config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_ACTIVEMERCHANT
+	bool "ruby19-activemerchant-1.17.0"
+	help
+	  Ruby library for credit card processing
+
+	  Active Merchant is a Ruby library for dealing with credit cards,
+	  payment processors and shipping.  It has a simple and unified API to
+	  access dozens of different payment gateways with very different internal
+	  APIs.
+
+	  http://activemerchant.org/
+
