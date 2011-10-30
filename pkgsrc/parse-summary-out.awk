@@ -36,7 +36,7 @@ $1 ~ /HOMEPAGE/ {
 $1 ~ /^ *$/ {
 	CATEGORY_IN=sprintf( "%s/%s.in", CATEGORY_DIR, CATEGORY ) 
 	CMD=sprintf("sed 's/^[\t ]*/	  /g' <%s/%s/DESCR >>%s", PKG_SRC_PATH, PKGPATH, CATEGORY_IN )
-	printf "config %s\n", BR2_NAME >>CATEGORY_IN
+	printf "\nconfig %s\n", BR2_NAME >>CATEGORY_IN
 	printf "	bool \"%s\"\n", PKGNAME >>CATEGORY_IN
 	printf "	help\n" >>CATEGORY_IN
 	printf "	  %s\n\n", COMMENT >>CATEGORY_IN

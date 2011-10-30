@@ -12,49 +12,6 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_ARKA
 
 	  http://www.bioinformatics.org/genpak/
 
-config BR2_PKGSRC_PACKAGE_BIOLOGY_FLUCTUATE
-	bool "fluctuate-1.4"
-	help
-	  Estimation of population growth rate
-
-	  FLUCTUATE fits the model which has a single population which has been
-	  growing (or shrinking) according to an exponential growth law. It
-	  estimates 4Nu and g, where N is the effective population size, u is
-	  the neutral mutation rate per site, and g is the growth rate of the
-	  population.
-
-	  http://evolution.genetics.washington.edu/lamarc/fluctuate.html
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_PDBALIGN
-	bool "pdbalign-20030812"
-	help
-	  Prediction of Protein Secondary Structure and Active Sites
-
-	  Given a GCG multiple sequence alignment file (a GCG MSF file), which a
-	  includes a sequence of known structure, the program pdbalign maps the
-	  sequence variability onto the known structure. The central premise is
-	  of course, that for a closely related family of proteins (sequence ID
-	  > 40%) the 3-D structures will not be significantly different.pdbdist
-	  calculates the distance from each atom in the pdb file to each atom in
-	  the ligand and records the minimum in the temperature field for that
-	  atom record.distalign reads the output from pdbdist and also the
-	  original GCG MSF file and produces an MSF file annotated with a
-	  measure of sequence variability and the distance of the residue at
-	  that position (of the sequence of known structure) from the ligand.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_GENESPLICER
-	bool "genesplicer-20030403"
-	help
-	  Computational Method for Splice Site Prediction
-
-	  GeneSplicer is a  fast, flexible system for detecting splice sites in the
-	  genomic DNA of various eukaryotes. The system has been trained and tested
-	  successfully on Plasmodium falciparum (malaria), Arabidopsis thaliana, human,
-	  Drosophila, and rice.
-
-	  ftp://ftp.tigr.org/pub/software/GeneSplicer/
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_AZARA
 	bool "azara-2.7nb2"
@@ -65,143 +22,6 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_AZARA
 
 	  http://www.ccpn.ac.uk/azara/
 
-config BR2_PKGSRC_PACKAGE_BIOLOGY_GLIMMER
-	bool "glimmer-2.13"
-	help
-	  System for finding genes in microbial DNA
-
-	  Glimmer (Gene Locator and Interpolated Markov Modeler) is a system for finding
-	  genes in microbial DNA, especially the genomes of bacteria and archaea.
-	  Glimmer uses interpolated Markov models (IMMs) to identify the coding regions
-	  and  distinguish them from noncoding DNA. The IMM approach uses a combination
-	  of Markov models from 1st through 8th-order, weighting each model according to
-	  its predictive power.
-
-	  ftp://ftp.tigr.org/pub/software/Glimmer/
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_PHYLIP
-	bool "phylip-3.69"
-	help
-	  Phylogeny Inference Package
-
-	  PHYLIP, the Phylogeny Inference Package, is a package of programs for
-	  inferring phylogenies (evolutionary trees).
-
-	  http://evolution.genetics.washington.edu/phylip.html
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_PROFIT
-	bool "profit-2.2"
-	help
-	  Performs least squares fits of two protein structures
-
-	  ProFit (pronounced Pro-Fit, not profit!) is designed to be the ultimate
-	  program for performing least squares fits of two protein structures. It
-	  performs a very simple and basic function, but allows as much flexibility as
-	  possible in performing this procedure. Thus one can specify subsets of atoms
-	  to be considered, specify zones to be fitted by number, sequence, or by
-	  sequence alignment.
-
-	  http://acrmwww.biochem.ucl.ac.uk/programs/profit/index.html
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_GP
-	bool "gp-0.26"
-	help
-	  Manipulate DNA/RNA sequence in a Unix fashion
-
-	  GP is a set of small utilities written in ANSI C to manipulate
-	  DNA sequences in a Unix fashion, fit for combining within shell
-	  and cgi scripts.
-
-	  http://www.bioinformatics.org/genpak/
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_GROMACS
-	bool "gromacs-4.5.4"
-	help
-	  Molecular dynamics package
-
-	  GROMACS is a versatile package to perform molecular dynamics,
-	  i.e. simulate the Newtonian equations of motion for systems with
-	  hundreds to millions of particles.
-	  
-	  It is primarily designed for biochemical molecules like proteins,
-	  lipids and nucleic acids that have a lot of complicated bonded
-	  interactions, but since GROMACS is extremely fast at calculating
-	  the nonbonded interactions (that usually dominate simulations)
-	  many groups are also using it for research on non-biological
-	  systems, e.g. polymers.
-
-	  http://www.gromacs.org/
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_HMMER
-	bool "hmmer-2.3.2"
-	help
-	  Implementation of profile HMM software for protein sequence analysis
-
-	  HMMER is an implementation of profile HMM methods for sensitive database
-	  searches using multiple sequence alignments as queries. HMMER takes
-	  multiple sequence alignment as input and builds statistical model
-	  called "Hidden Markov Model" which can be used as a query into a
-	  sequence database to find and/or align additional homologues of the
-	  sequence family.
-
-	  http://hmmer.janelia.org/
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_LUCY
-	bool "lucy-1.20"
-	help
-	  Sequence Cleanup Program
-
-	  A Sequence Cleanup Program.  Lucy is a utility that prepares raw DNA
-	  sequence fragments for sequence assembly,possibly using the TIGR
-	  Assembler.  The cleanup process includes quality assessment,
-	  confidence reassurance, vector trimming and vector removal.  The
-	  primary advantage of Lucy over other similar utilities is that it is a
-	  fully integrated, stand alone program.
-
-	  http://lucy.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_MOPAC
-	bool "mopac-7.0nb1"
-	help
-	  Molecular energy calculation program
-
-	  MOPAC is a general-purpose semi-empirical molecular orbital package for the
-	  study of chemical structures and reactions. The semi-empirical Hamiltonians
-	  MNDO, MINDO/3, AM1, and PM3 are used in the electronic part of the
-	  calculation to obtain molecular orbitals, the heat of formation and its
-	  derivative with respect to molecular geometry. Using these results MOPAC
-	  calculates the vibrational spectra, thermodynamic quantities, isotopic
-	  substitution effects and force constants for molecules, radicals, ions, and
-	  polymers.  For studying chemical reactions, a transition state location
-	  routine and two transition state optimizing routines are available.
-
-	  http://server.ccl.net/cca/software/LINUX/mopac7/index.shtml
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_MUMMER
-	bool "mummer-3.20"
-	help
-	  System for aligning whole genome sequences
-
-	  Mummer is a system for aligning whole genome sequences. Using an efficient
-	  data structure called a suffix tree, the system is able rapidly to align
-	  sequences containing millions of nucleotides whether in complete or draft
-	  form. MUMmer can also align incomplete genomes; it handles the 100s or 1000s
-	  of contigs from a shotgun sequencing project with ease, and will align them to
-	  another set of contigs or a genome using the NUCmer program included with the
-	  system.
-
-	  http://mummer.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_NUT
-	bool "nut-15.8"
-	help
-	  Record what you eat and analyze your meals
-
-	  Nut allows you to record what you eat and analyze your meals for nutrient
-	  composition.  The database included is the USDA Nutrient Database for
-	  Standard Reference, Release 20.
-
-	  http://nut.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_BIOPERL
 	bool "bioperl-0.7.0nb5"
@@ -222,6 +42,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_BIOPERL
 
 	  http://bioperl.org/
 
+
 config BR2_PKGSRC_PACKAGE_BIOLOGY_CHEMTOOL
 	bool "chemtool-1.6.12nb1"
 	help
@@ -237,6 +58,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_CHEMTOOL
 
 	  http://ruby.chemie.uni-freiburg.de/~martin/chemtool/
 
+
 config BR2_PKGSRC_PACKAGE_BIOLOGY_CLUSTALW
 	bool "clustalw-1.83"
 	help
@@ -250,6 +72,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_CLUSTALW
 
 	  http://bips.u-strasbg.fr/fr/Documentation/ClustalW/
 
+
 config BR2_PKGSRC_PACKAGE_BIOLOGY_COALESCE
 	bool "coalesce-1.5.0.2"
 	help
@@ -260,6 +83,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_COALESCE
 	  mutation rate per site.
 
 	  http://evolution.genetics.washington.edu/lamarc/coalesce.html
+
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_FASTDNAML
 	bool "fastDNAml-1.2.2"
@@ -277,51 +101,201 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_FASTDNAML
 
 	  http://geta.life.uiuc.edu/~gary/programs/fastDNAml.html
 
-config BR2_PKGSRC_PACKAGE_BIOLOGY_RASMOL
-	bool "rasmol-2.7.3nb2"
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_FLUCTUATE
+	bool "fluctuate-1.4"
 	help
-	  Molecular Graphics Visualisation Tool
+	  Estimation of population growth rate
 
-	  RasMol is a molecular graphics program intended for the visualisation of
-	  proteins, nucleic acids and small molecules. The program is aimed at
-	  display, teaching and generation of publication quality images. The program
-	  has been developed at the University of Edinburgh's Biocomputing Research
-	  Unit and the Biomolecular Structures Group at Glaxo Research and
-	  Development, Greenford, UK.
+	  FLUCTUATE fits the model which has a single population which has been
+	  growing (or shrinking) according to an exponential growth law. It
+	  estimates 4Nu and g, where N is the effective population size, u is
+	  the neutral mutation rate per site, and g is the growth rate of the
+	  population.
 
-	  http://www.bernstein-plus-sons.com/software/rasmol/
+	  http://evolution.genetics.washington.edu/lamarc/fluctuate.html
 
-config BR2_PKGSRC_PACKAGE_BIOLOGY_SEWER
-	bool "sewer-2.6nb1"
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_GENESPLICER
+	bool "genesplicer-20030403"
 	help
-	  SEquence Analysis using WEb Resources
+	  Computational Method for Splice Site Prediction
 
-	  SeWeR is SEquence Analysis using WEb Resources. It has web based Sequence
-	  Analysis. SeWeR is an integrated portal to common web-based services in
-	  bioinformatics.
+	  GeneSplicer is a  fast, flexible system for detecting splice sites in the
+	  genomic DNA of various eukaryotes. The system has been trained and tested
+	  successfully on Plasmodium falciparum (malaria), Arabidopsis thaliana, human,
+	  Drosophila, and rice.
 
-	  http://iubio.bio.indiana.edu/webapps/SeWeR/
+	  ftp://ftp.tigr.org/pub/software/GeneSplicer/
 
-config BR2_PKGSRC_PACKAGE_BIOLOGY_STRIDE
-	bool "stride-20030804"
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_GLIMMER
+	bool "glimmer-2.13"
 	help
-	  Protein secondary structure assignment from atomic coordinates
+	  System for finding genes in microbial DNA
 
-	  Knowledge-based protein secondary structure assignment from atomic
-	  coordinates.
+	  Glimmer (Gene Locator and Interpolated Markov Modeler) is a system for finding
+	  genes in microbial DNA, especially the genomes of bacteria and archaea.
+	  Glimmer uses interpolated Markov models (IMMs) to identify the coding regions
+	  and  distinguish them from noncoding DNA. The IMM approach uses a combination
+	  of Markov models from 1st through 8th-order, weighting each model according to
+	  its predictive power.
 
-	  http://wolf.bi.umist.ac.uk/unix/stride.html
+	  ftp://ftp.tigr.org/pub/software/Glimmer/
 
-config BR2_PKGSRC_PACKAGE_BIOLOGY_XYLEM
-	bool "xylem-1.8.7"
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_GP
+	bool "gp-0.26"
 	help
-	  Tools for manipulation of genetic databases
+	  Manipulate DNA/RNA sequence in a Unix fashion
 
-	  XYLEM is a package of tools designed to exploit the Unix environment to enable
-	  the user to identify, extract and manipulate data from major databases such as
-	  GenBank, EMBL and PIR.
+	  GP is a set of small utilities written in ANSI C to manipulate
+	  DNA sequences in a Unix fashion, fit for combining within shell
+	  and cgi scripts.
 
-	  http://home.cc.umanitoba.ca/~psgendb/XYLEM.html
+	  http://www.bioinformatics.org/genpak/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_GROMACS
+	bool "gromacs-4.5.4"
+	help
+	  Molecular dynamics package
+
+	  GROMACS is a versatile package to perform molecular dynamics,
+	  i.e. simulate the Newtonian equations of motion for systems with
+	  hundreds to millions of particles.
+	  
+	  It is primarily designed for biochemical molecules like proteins,
+	  lipids and nucleic acids that have a lot of complicated bonded
+	  interactions, but since GROMACS is extremely fast at calculating
+	  the nonbonded interactions (that usually dominate simulations)
+	  many groups are also using it for research on non-biological
+	  systems, e.g. polymers.
+
+	  http://www.gromacs.org/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_HMMER
+	bool "hmmer-2.3.2"
+	help
+	  Implementation of profile HMM software for protein sequence analysis
+
+	  HMMER is an implementation of profile HMM methods for sensitive database
+	  searches using multiple sequence alignments as queries. HMMER takes
+	  multiple sequence alignment as input and builds statistical model
+	  called "Hidden Markov Model" which can be used as a query into a
+	  sequence database to find and/or align additional homologues of the
+	  sequence family.
+
+	  http://hmmer.janelia.org/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_LUCY
+	bool "lucy-1.20"
+	help
+	  Sequence Cleanup Program
+
+	  A Sequence Cleanup Program.  Lucy is a utility that prepares raw DNA
+	  sequence fragments for sequence assembly,possibly using the TIGR
+	  Assembler.  The cleanup process includes quality assessment,
+	  confidence reassurance, vector trimming and vector removal.  The
+	  primary advantage of Lucy over other similar utilities is that it is a
+	  fully integrated, stand alone program.
+
+	  http://lucy.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_MOPAC
+	bool "mopac-7.0nb1"
+	help
+	  Molecular energy calculation program
+
+	  MOPAC is a general-purpose semi-empirical molecular orbital package for the
+	  study of chemical structures and reactions. The semi-empirical Hamiltonians
+	  MNDO, MINDO/3, AM1, and PM3 are used in the electronic part of the
+	  calculation to obtain molecular orbitals, the heat of formation and its
+	  derivative with respect to molecular geometry. Using these results MOPAC
+	  calculates the vibrational spectra, thermodynamic quantities, isotopic
+	  substitution effects and force constants for molecules, radicals, ions, and
+	  polymers.  For studying chemical reactions, a transition state location
+	  routine and two transition state optimizing routines are available.
+
+	  http://server.ccl.net/cca/software/LINUX/mopac7/index.shtml
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_MUMMER
+	bool "mummer-3.20"
+	help
+	  System for aligning whole genome sequences
+
+	  Mummer is a system for aligning whole genome sequences. Using an efficient
+	  data structure called a suffix tree, the system is able rapidly to align
+	  sequences containing millions of nucleotides whether in complete or draft
+	  form. MUMmer can also align incomplete genomes; it handles the 100s or 1000s
+	  of contigs from a shotgun sequencing project with ease, and will align them to
+	  another set of contigs or a genome using the NUCmer program included with the
+	  system.
+
+	  http://mummer.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_NUT
+	bool "nut-15.8"
+	help
+	  Record what you eat and analyze your meals
+
+	  Nut allows you to record what you eat and analyze your meals for nutrient
+	  composition.  The database included is the USDA Nutrient Database for
+	  Standard Reference, Release 20.
+
+	  http://nut.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_PDBALIGN
+	bool "pdbalign-20030812"
+	help
+	  Prediction of Protein Secondary Structure and Active Sites
+
+	  Given a GCG multiple sequence alignment file (a GCG MSF file), which a
+	  includes a sequence of known structure, the program pdbalign maps the
+	  sequence variability onto the known structure. The central premise is
+	  of course, that for a closely related family of proteins (sequence ID
+	  > 40%) the 3-D structures will not be significantly different.pdbdist
+	  calculates the distance from each atom in the pdb file to each atom in
+	  the ligand and records the minimum in the temperature field for that
+	  atom record.distalign reads the output from pdbdist and also the
+	  original GCG MSF file and produces an MSF file annotated with a
+	  measure of sequence variability and the distance of the residue at
+	  that position (of the sequence of known structure) from the ligand.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_PHYLIP
+	bool "phylip-3.69"
+	help
+	  Phylogeny Inference Package
+
+	  PHYLIP, the Phylogeny Inference Package, is a package of programs for
+	  inferring phylogenies (evolutionary trees).
+
+	  http://evolution.genetics.washington.edu/phylip.html
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_PROFIT
+	bool "profit-2.2"
+	help
+	  Performs least squares fits of two protein structures
+
+	  ProFit (pronounced Pro-Fit, not profit!) is designed to be the ultimate
+	  program for performing least squares fits of two protein structures. It
+	  performs a very simple and basic function, but allows as much flexibility as
+	  possible in performing this procedure. Thus one can specify subsets of atoms
+	  to be considered, specify zones to be fitted by number, sequence, or by
+	  sequence alignment.
+
+	  http://acrmwww.biochem.ucl.ac.uk/programs/profit/index.html
+
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_PUZZLE
 	bool "puzzle-5.2"
@@ -351,6 +325,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_PUZZLE
 
 	  http://www.tree-puzzle.de/
 
+
 config BR2_PKGSRC_PACKAGE_BIOLOGY_PY_MOL
 	bool "py25-mol-0.98nb6"
 	help
@@ -362,4 +337,55 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_PY_MOL
 	  movies.
 
 	  http://pymol.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_RASMOL
+	bool "rasmol-2.7.3nb2"
+	help
+	  Molecular Graphics Visualisation Tool
+
+	  RasMol is a molecular graphics program intended for the visualisation of
+	  proteins, nucleic acids and small molecules. The program is aimed at
+	  display, teaching and generation of publication quality images. The program
+	  has been developed at the University of Edinburgh's Biocomputing Research
+	  Unit and the Biomolecular Structures Group at Glaxo Research and
+	  Development, Greenford, UK.
+
+	  http://www.bernstein-plus-sons.com/software/rasmol/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_SEWER
+	bool "sewer-2.6nb1"
+	help
+	  SEquence Analysis using WEb Resources
+
+	  SeWeR is SEquence Analysis using WEb Resources. It has web based Sequence
+	  Analysis. SeWeR is an integrated portal to common web-based services in
+	  bioinformatics.
+
+	  http://iubio.bio.indiana.edu/webapps/SeWeR/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_STRIDE
+	bool "stride-20030804"
+	help
+	  Protein secondary structure assignment from atomic coordinates
+
+	  Knowledge-based protein secondary structure assignment from atomic
+	  coordinates.
+
+	  http://wolf.bi.umist.ac.uk/unix/stride.html
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_XYLEM
+	bool "xylem-1.8.7"
+	help
+	  Tools for manipulation of genetic databases
+
+	  XYLEM is a package of tools designed to exploit the Unix environment to enable
+	  the user to identify, extract and manipulate data from major databases such as
+	  GenBank, EMBL and PIR.
+
+	  http://home.cc.umanitoba.ca/~psgendb/XYLEM.html
+
 

@@ -1,3 +1,17 @@
+config BR2_PKGSRC_PACKAGE_FINANCE_GKRELLM_STOCK
+	bool "gkrellm-stock-0.5.1nb15"
+	help
+	  GKrellM2 stock ticker plugin
+
+	  GKrellStock is a plugin for GKrellM that displays given stock
+	  tickers (current point and net change).
+	  
+	  Uses perl script to get Quote information from given source
+	  (US, European, Australian, Canadian and Asian Markets).
+
+	  http://gkrellstock.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_FINANCE_GNUCASH
 	bool "gnucash-2.4.7nb1"
 	help
@@ -30,6 +44,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_GNUCASH
 
 	  http://www.gnucash.org/
 
+
 config BR2_PKGSRC_PACKAGE_FINANCE_GNUCASH_DOCS
 	bool "gnucash-docs-2.2.0"
 	help
@@ -40,6 +55,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_GNUCASH_DOCS
 	  desktop be accessible from Yelp (the GNOME2 help browser).
 
 	  http://www.gnucash.org/
+
 
 config BR2_PKGSRC_PACKAGE_FINANCE_KMYMONEY2
 	bool "kmymoney2-1.0.5nb1"
@@ -64,6 +80,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_KMYMONEY2
 
 	  http://kmymoney2.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_FINANCE_LIBOFX
 	bool "libofx-0.9.1nb1"
 	help
@@ -77,6 +94,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_LIBOFX
 	  side.
 
 	  http://libofx.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_FINANCE_P5_ALGORITHM_LUHN
 	bool "p5-Algorithm-LUHN-1.00nb2"
@@ -92,6 +110,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_P5_ALGORITHM_LUHN
 	  the web for "modulus 10 double add double".
 
 	  http://search.cpan.org/perldoc?Algorithm::LUHN
+
 
 config BR2_PKGSRC_PACKAGE_FINANCE_P5_DATA_CURRENCY
 	bool "p5-Data-Currency-0.04002nb3"
@@ -112,84 +131,6 @@ config BR2_PKGSRC_PACKAGE_FINANCE_P5_DATA_CURRENCY
 
 	  http://search.cpan.org/perldoc?Data::Currency
 
-config BR2_PKGSRC_PACKAGE_FINANCE_TCLTICKER
-	bool "tclticker-1.1nb1"
-	help
-	  Stock-quote ticker tape application
-
-	  TCLTicker is a simple stock tickertape, using HTTP requests to fetch
-	  quotes.  It includes 'mailquote', which can email quotes.  TclTicker
-	  uses a plug-in architecture for quote services.  Currently, quote
-	  service modules are written for Yahoo (one for U.S.  markets, another
-	  for Euro markets) and Quote.com.  User configuration includes tuning
-	  the ticker scroll rate and data refresh dates, fonts, http proxy, smtp
-	  host, rounding, always on top, and ticker symbol lists.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_FINANCE_TEX_EURO
-	bool "tex-euro-1.1"
-	help
-	  Provide Euro values for national currency amounts
-
-	  Converts arbitrary national currency amounts using the Euro as base
-	  unit, and typesets monetary amounts in almost any desired way. Write,
-	  e.g., \ATS{17.6} to get something like '17,60 oS (1,28 Euro)'
-	  automatically. Conversion rates for the initial Euro-zone countries are
-	  already built-in. Further rates can be added easily. The package uses
-	  the fp package to do its sums.
-
-	  http://www.tug.org/texlive/
-
-config BR2_PKGSRC_PACKAGE_FINANCE_TEX_EURO_DOC
-	bool "tex-euro-doc-1.1"
-	help
-	  Documentation for tex-euro
-
-	  This is documentation for tex-euro.
-
-	  http://www.tug.org/texlive/
-
-config BR2_PKGSRC_PACKAGE_FINANCE_XFINANS
-	bool "xfinans-5.9nb3"
-	help
-	  Xfinans is a useful financial tracking, and account balancing tool
-
-	  Xfinans allows you to set up multiple accounts and categories of
-	  transactions.  It is ideal for keeping watch over checking, savings and
-	  401k type accounts.  It's also good for keeping tabs on your credit card
-	  balances.  It has graphing functions built in that allow it to generate
-	  graphs with gnuplot.
-
-	  http://www.io.com/~acroyear/xfinans/
-
-config BR2_PKGSRC_PACKAGE_FINANCE_XINVEST
-	bool "xinvest-2.6.9nb2"
-	help
-	  Personal finance tracking and performance tool
-
-	  Xinvest is a personal finance tracking and performance tool for UNIX
-	  systems using the X Window System. Xinvest requires Motif 1.2 or later and
-	  XPM.
-
-	  http://xinvest.sunsite.dk/xinvest.html
-
-config BR2_PKGSRC_PACKAGE_FINANCE_XQUOTE
-	bool "xquote-2.6.10nb2"
-	help
-	  WWW ticker symbol quote retrieval program
-
-	  Xquote is a WWW ticker symbol quote retrieval program for UNIX systems
-	  using the X Window System. Xquote requires Motif 1.2 or later and XPM.
-	  
-	  Xquote retrieves quotes from a number of net sources. It takes a ticker
-	  symbol (stock, mutual fund, currency) and displays info in a table or
-	  ticker tape. The table data displayed is selectable, and includes price,
-	  date, change, volume, yield, 52 week high/low, day high/low, P/E,
-	  dividend, full name, basically whatever can be reliably retrieved from
-	  multiple sources.
-
-	  http://xinvest.sunsite.dk/xquote.html
 
 config BR2_PKGSRC_PACKAGE_FINANCE_P5_FINANCE_CURRENCY_CONVERT_WEBSERVICEX
 	bool "p5-Finance-Currency-Convert-WebserviceX-0.07001nb2"
@@ -209,18 +150,6 @@ config BR2_PKGSRC_PACKAGE_FINANCE_P5_FINANCE_CURRENCY_CONVERT_WEBSERVICEX
 
 	  http://search.cpan.org/perldoc?Finance::Currency::Convert::WebserviceX
 
-config BR2_PKGSRC_PACKAGE_FINANCE_GKRELLM_STOCK
-	bool "gkrellm-stock-0.5.1nb15"
-	help
-	  GKrellM2 stock ticker plugin
-
-	  GKrellStock is a plugin for GKrellM that displays given stock
-	  tickers (current point and net change).
-	  
-	  Uses perl script to get Quote information from given source
-	  (US, European, Australian, Canadian and Asian Markets).
-
-	  http://gkrellstock.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_FINANCE_P5_FINANCE_QUOTE
 	bool "p5-Finance-Quote-1.17nb3"
@@ -234,6 +163,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_P5_FINANCE_QUOTE
 
 	  http://finance-quote.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_FINANCE_P5_LOCALE_CURRENCY_FORMAT
 	bool "p5-Locale-Currency-Format-1.30"
 	help
@@ -245,14 +175,6 @@ config BR2_PKGSRC_PACKAGE_FINANCE_P5_LOCALE_CURRENCY_FORMAT
 
 	  http://search.cpan.org/dist/Locale-Currency-Format/
 
-config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_BRAINTREE
-	bool "ruby19-braintree-2.11.0"
-	help
-	  Braintree Gateway Ruby Client Library
-
-	  Ruby library for integrating with the Braintree Gateway.
-
-	  http://www.braintreepaymentsolutions.com/gateway
 
 config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_ACTIVEMERCHANT
 	bool "ruby19-activemerchant-1.17.0"
@@ -265,4 +187,100 @@ config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_ACTIVEMERCHANT
 	  APIs.
 
 	  http://activemerchant.org/
+
+
+config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_BRAINTREE
+	bool "ruby19-braintree-2.11.0"
+	help
+	  Braintree Gateway Ruby Client Library
+
+	  Ruby library for integrating with the Braintree Gateway.
+
+	  http://www.braintreepaymentsolutions.com/gateway
+
+
+config BR2_PKGSRC_PACKAGE_FINANCE_TCLTICKER
+	bool "tclticker-1.1nb1"
+	help
+	  Stock-quote ticker tape application
+
+	  TCLTicker is a simple stock tickertape, using HTTP requests to fetch
+	  quotes.  It includes 'mailquote', which can email quotes.  TclTicker
+	  uses a plug-in architecture for quote services.  Currently, quote
+	  service modules are written for Yahoo (one for U.S.  markets, another
+	  for Euro markets) and Quote.com.  User configuration includes tuning
+	  the ticker scroll rate and data refresh dates, fonts, http proxy, smtp
+	  host, rounding, always on top, and ticker symbol lists.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FINANCE_TEX_EURO
+	bool "tex-euro-1.1"
+	help
+	  Provide Euro values for national currency amounts
+
+	  Converts arbitrary national currency amounts using the Euro as base
+	  unit, and typesets monetary amounts in almost any desired way. Write,
+	  e.g., \ATS{17.6} to get something like '17,60 oS (1,28 Euro)'
+	  automatically. Conversion rates for the initial Euro-zone countries are
+	  already built-in. Further rates can be added easily. The package uses
+	  the fp package to do its sums.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FINANCE_TEX_EURO_DOC
+	bool "tex-euro-doc-1.1"
+	help
+	  Documentation for tex-euro
+
+	  This is documentation for tex-euro.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FINANCE_XFINANS
+	bool "xfinans-5.9nb3"
+	help
+	  Xfinans is a useful financial tracking, and account balancing tool
+
+	  Xfinans allows you to set up multiple accounts and categories of
+	  transactions.  It is ideal for keeping watch over checking, savings and
+	  401k type accounts.  It's also good for keeping tabs on your credit card
+	  balances.  It has graphing functions built in that allow it to generate
+	  graphs with gnuplot.
+
+	  http://www.io.com/~acroyear/xfinans/
+
+
+config BR2_PKGSRC_PACKAGE_FINANCE_XINVEST
+	bool "xinvest-2.6.9nb2"
+	help
+	  Personal finance tracking and performance tool
+
+	  Xinvest is a personal finance tracking and performance tool for UNIX
+	  systems using the X Window System. Xinvest requires Motif 1.2 or later and
+	  XPM.
+
+	  http://xinvest.sunsite.dk/xinvest.html
+
+
+config BR2_PKGSRC_PACKAGE_FINANCE_XQUOTE
+	bool "xquote-2.6.10nb2"
+	help
+	  WWW ticker symbol quote retrieval program
+
+	  Xquote is a WWW ticker symbol quote retrieval program for UNIX systems
+	  using the X Window System. Xquote requires Motif 1.2 or later and XPM.
+	  
+	  Xquote retrieves quotes from a number of net sources. It takes a ticker
+	  symbol (stock, mutual fund, currency) and displays info in a table or
+	  ticker tape. The table data displayed is selectable, and includes price,
+	  date, change, volume, yield, 52 week high/low, day high/low, P/E,
+	  dividend, full name, basically whatever can be reliably retrieved from
+	  multiple sources.
+
+	  http://xinvest.sunsite.dk/xquote.html
+
 

@@ -1,3 +1,69 @@
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA
+	bool "Canna-3.6pl4nb2"
+	help
+	  Kana-Kanji conversion system (meta-package)
+
+	  Canna is a Japanese input method server/client.  Canna supports
+	  Emacs/Mule (Multi-lingual extension Emacs), kinput2 X11 input methods,
+	  cannum front end, and some others.
+
+	  http://canna.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_CANUUM
+	bool "Canna-canuum-3.6pl4nb3"
+	help
+	  
+
+	  Canuum is a Japanese input frontend program from Wnn tty frontend uum.
+
+	  http://canna.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_DICT
+	bool "Canna-dict-3.6pl4nb2"
+	help
+	  
+
+	  Dictionary part of Canna Japanese input method.
+
+	  http://canna.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_LIB
+	bool "Canna-lib-3.6pl4nb2"
+	help
+	  
+
+	  Library part of Canna Japanese input method.
+
+	  http://canna.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_SERVER
+	bool "Canna-server-3.6pl4nb4"
+	help
+	  
+
+	  Server part of Canna Japanese input method.
+
+	  http://canna.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CHINPUT
+	bool "Chinput-3.0nb3"
+	help
+	  Chinese input server
+
+	  Chinput is a Chinese input server. It supports XIM(X Input Method)
+	  Protocol and its own protocol for Chinese platform. XIM is the
+	  standard input protocol for DBCS input in X11. All the clients can
+	  use it if they support XIM.  Chinput now use the input engine(IME)
+	  from Unicon, and it can support both GB and Big5 charset.
+
+	  http://www.opencjk.org/~yumj/project-chinput.html
+
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_ANTHY
 	bool "anthy-9100h"
 	help
@@ -6,6 +72,39 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_ANTHY
 	  Anthy is a free and secure Japanese input method.
 
 	  http://anthy.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_ANTHY_ELISP
+	bool "anthy-elisp-9100hnb4"
+	help
+	  Emacs lisp files for inputmethod/anthy
+
+	  Emacs lisp files for inputmethod/anthy.
+
+	  http://anthy.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_DBSKKD_CDB
+	bool "dbskkd-cdb-2.00nb1"
+	help
+	  SKK dictionary server based on cdb
+
+	  dbskkd-cdb is a dictionary server for SKK Japanese Input Method
+	  system. For building the executable file, TinyCDB is required.
+
+	  http://github.com/jj1bdx/dbskkd-cdb
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_FCITX
+	bool "fcitx-3.1.1nb2"
+	help
+	  Free Chinese Input Toy of X
+
+	  fctix is a collection of Simplified Chinese input methods based on XIM (X Input
+	  Method), including WuBi, PinYin and QuWei.
+
+	  http://www.fcitx.org/main/
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_GCIN
 	bool "gcin-1.1.7nb3"
@@ -17,6 +116,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_GCIN
 
 	  http://www.csie.nctu.edu.tw/~cp76/gcin/
 
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_GTK_IM_LIBTHAI
 	bool "gtk-im-libthai-0.1.5nb5"
 	help
@@ -26,24 +126,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_GTK_IM_LIBTHAI
 
 	  http://linux.thai.net/projects/gtk-im-libthai
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_M17N
-	bool "ibus-m17n-1.3.3"
-	help
-	  M17N engine for IBus platform
-
-	  M17N engine for IBus input platform. It allows input of many languages using
-	  the input table maps from m17n-db.
-
-	  http://code.google.com/p/ibus/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_CANUUM
-	bool "Canna-canuum-3.6pl4nb3"
-	help
-	  
-
-	  Canuum is a Japanese input frontend program from Wnn tty frontend uum.
-
-	  http://canna.sourceforge.jp/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS
 	bool "ibus-1.3.9nb2"
@@ -56,14 +138,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS
 
 	  http://code.google.com/p/ibus/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_PINYIN
-	bool "ibus-pinyin-1.3.11nb2"
-	help
-	  Chinese Pinyin and Bopomofo engines for IBus input platform
-
-	  The Chinese Pinyin and Bopomof input methods for IBus platform.
-
-	  http://code.google.com/p/ibus/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_ANTHY
 	bool "ibus-anthy-1.2.6"
@@ -75,24 +149,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_ANTHY
 
 	  http://code.google.com/p/ibus/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_QT
-	bool "ibus-qt-1.3.1nb6"
-	help
-	  Qt IBus library and Qt input method plugin
-
-	  ibus-qt
-	  It includes ibus qt library and ibus qt input method plugin.
-
-	  http://code.googlecode.com/p/ibus/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_SKK
-	bool "ibus-skk-1.3.7"
-	help
-	  Japanese SKK input engine for IBus
-
-	  A Japanese Simple Kana Kanji Input Method Engine for ibus.
-
-	  http://github.com/ueno/ibus-skk/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_ARRAY
 	bool "ibus-array-0.0.2nb1"
@@ -104,34 +160,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_ARRAY
 
 	  http://code.google.com/p/ibus-array/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_T9
-	bool "ibus-t9-2.1.0.20100601nb5"
-	help
-	  IBus T9 Input Method
-
-	  ibus-t9 is an input method engine for Chinese, base on ibus.
-	  This package provide one input method:
-	  * t9: t9 input method.
-
-	  http://code.google.com/p/ibus-t9/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE
-	bool "ibus-table-1.3.0.20100621nb1"
-	help
-	  The Table engine for IBus platform
-
-	  The package contains general Table engine for IBus platform.
-
-	  http://code.google.com/p/ibus/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_DICT
-	bool "Canna-dict-3.6pl4nb2"
-	help
-	  
-
-	  Dictionary part of Canna Japanese input method.
-
-	  http://canna.sourceforge.jp/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_CHEWING
 	bool "ibus-chewing-1.3.9.2nb2"
@@ -147,36 +175,114 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_CHEWING
 
 	  http://code.google.com/p/ibus/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_LIB
-	bool "Canna-lib-3.6pl4nb2"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_EL
+	bool "ibus-el-0.2.1"
 	help
-	  
+	  IBus client for GNU Emacs
 
-	  Library part of Canna Japanese input method.
+	  ibus.el is a IBus client for GNU Emacs.  This program allows users on-the-spot
+	  style input with IBus.  The input statuses are individually kept for each
+	  buffer, and prefix-keys such as C-x and C-c can be used even if IBus is active.
+	  So you can input various languages fast and comfortably by using it.
 
-	  http://canna.sourceforge.jp/
+	  http://www11.atwiki.jp/s-irie/pages/21.html
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_SERVER
-	bool "Canna-server-3.6pl4nb4"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_HANDWRITE
+	bool "ibus-handwrite-2.1.4nb1"
 	help
-	  
+	  Handwrite recognizer for ibus
 
-	  Server part of Canna Japanese input method.
+	  ibus-handwrite is a handwrite recgnizer for IBus.
 
-	  http://canna.sourceforge.jp/
+	  http://code.google.com/p/ibus-handwrite/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CHINPUT
-	bool "Chinput-3.0nb3"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_HANGUL
+	bool "ibus-hangul-1.3.1nb1"
 	help
-	  Chinese input server
+	  Hangul engine for IBus input platform
 
-	  Chinput is a Chinese input server. It supports XIM(X Input Method)
-	  Protocol and its own protocol for Chinese platform. XIM is the
-	  standard input protocol for DBCS input in X11. All the clients can
-	  use it if they support XIM.  Chinput now use the input engine(IME)
-	  from Unicon, and it can support both GB and Big5 charset.
+	  The Hangul engine for IBus platform. It provides Korean input method from
+	  libhangul.
 
-	  http://www.opencjk.org/~yumj/project-chinput.html
+	  http://code.googlecode.com/p/ibus/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_INPUT_PAD
+	bool "ibus-input-pad-0.1.4nb2"
+	help
+	  Input Pad for IBus
+
+	  The input pad engine for IBus platform.
+
+	  http://code.google.com/p/input-pad/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_M17N
+	bool "ibus-m17n-1.3.3"
+	help
+	  M17N engine for IBus platform
+
+	  M17N engine for IBus input platform. It allows input of many languages using
+	  the input table maps from m17n-db.
+
+	  http://code.google.com/p/ibus/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_PINYIN
+	bool "ibus-pinyin-1.3.11nb2"
+	help
+	  Chinese Pinyin and Bopomofo engines for IBus input platform
+
+	  The Chinese Pinyin and Bopomof input methods for IBus platform.
+
+	  http://code.google.com/p/ibus/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_QT
+	bool "ibus-qt-1.3.1nb6"
+	help
+	  Qt IBus library and Qt input method plugin
+
+	  ibus-qt
+	  It includes ibus qt library and ibus qt input method plugin.
+
+	  http://code.googlecode.com/p/ibus/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_SKK
+	bool "ibus-skk-1.3.7"
+	help
+	  Japanese SKK input engine for IBus
+
+	  A Japanese Simple Kana Kanji Input Method Engine for ibus.
+
+	  http://github.com/ueno/ibus-skk/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_T9
+	bool "ibus-t9-2.1.0.20100601nb5"
+	help
+	  IBus T9 Input Method
+
+	  ibus-t9 is an input method engine for Chinese, base on ibus.
+	  This package provide one input method:
+	  * t9: t9 input method.
+
+	  http://code.google.com/p/ibus-t9/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE
+	bool "ibus-table-1.3.0.20100621nb1"
+	help
+	  The Table engine for IBus platform
+
+	  The package contains general Table engine for IBus platform.
+
+	  http://code.google.com/p/ibus/
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE_CHINESE
 	bool "ibus-table-chinese-1.3.4"
@@ -188,102 +294,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE_CHINESE
 
 	  http://code.google.com/p/ibus/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_DBSKKD_CDB
-	bool "dbskkd-cdb-2.00nb1"
-	help
-	  SKK dictionary server based on cdb
-
-	  dbskkd-cdb is a dictionary server for SKK Japanese Input Method
-	  system. For building the executable file, TinyCDB is required.
-
-	  http://github.com/jj1bdx/dbskkd-cdb
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_FCITX
-	bool "fcitx-3.1.1nb2"
-	help
-	  Free Chinese Input Toy of X
-
-	  fctix is a collection of Simplified Chinese input methods based on XIM (X Input
-	  Method), including WuBi, PinYin and QuWei.
-
-	  http://www.fcitx.org/main/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_HANDWRITE
-	bool "ibus-handwrite-2.1.4nb1"
-	help
-	  Handwrite recognizer for ibus
-
-	  ibus-handwrite is a handwrite recgnizer for IBus.
-
-	  http://code.google.com/p/ibus-handwrite/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KINPUT2
-	bool "kinput2-3.1nb2"
-	help
-	  Input server of Japanese text
-
-	  Kinput2 is an input server for X11 applications that want Japanese
-	  text input.
-	  
-	  A client that wants kana-kanji conversion service for Japanese text
-	  sends a request to kinput2.  Kinput2 receives the request, does
-	  kana-kanji conversion, and sends the converted text back to the
-	  client.
-	  
-	  The port supports Wnn4.  Egg key binding is available,
-	  if you run
-	  
-	  kinput2 -ccdef ccdef.kinput2.egg
-
-	  
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBCHEWING
-	bool "libchewing-0.3.2"
-	help
-	  The intelligent phonetic input method library
-
-	  This is an intelligent Chinese phonetic input method library, which abstracts
-	  the behavior of popular Taiwanese/Chinese intelligent phonetic input method
-	  usage into several APIs ready for integration.  The known examples are
-	  xcin-chewing, scim-chewing, iiimf-le-chewing, etc.
-
-	  http://chewing.csie.net/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBCHEWING02
-	bool "libchewing-0.2.7"
-	help
-	  The intelligent phonetic input method library
-
-	  libchewing is derived from Chewing input method, a xcin module focusing on
-	  intelligent phonetic processing by lckung and kpchen.
-
-	  http://chewing.csie.net/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBHANGUL
-	bool "libhangul-0.0.12nb1"
-	help
-	  Library used by Korean input methods
-
-	  libhangul is a library to handle Korean, used by several Korean input
-	  methods.
-
-	  http://kldp.net/projects/hangul/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBTABE
-	bool "libtabe-0.2.6nb2"
-	help
-	  Library for Chinese language processing
-
-	  After its pioneering work on Chinese i18n/l10n issues, TaBE Project extends its
-	  goal to more general Chinese language processing issues on computer systems.
-	  
-	  libtabe, the latest work made available by the Project, is a library which
-	  provides useful Chinese functions/routines that deal with many fundamental
-	  elements such as pronunciation(BoPoMoFo), character frequency, word
-	  identification, word frequency. It also comes with a free word database
-	  consists of more than 130,000 words.
-
-	  http://libtabe.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE_OTHERS
 	bool "ibus-table-others-1.3.0.20100528"
@@ -307,6 +317,225 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE_OTHERS
 
 	  http://code.google.com/p/ibus/
 
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TEGAKI
+	bool "ibus-tegaki-0.3.1"
+	help
+	  Tegaki integration in ibus
+
+	  Tegaki project integration in IBus.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_UNIKEY
+	bool "ibus-unikey-0.5.1nb3"
+	help
+	  Vietnamese Input Method Engine for IBUS using Unikey IME
+
+	  Ibus-unikey is a IM Engine for IBus.
+	  Use for type Vietnamese.
+
+	  http://code.google.com/p/ibus-unikey/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IIIMECF
+	bool "iiimecf-0.6nb1"
+	help
+	  Emacs Lisp library for IIIM Protocol
+
+	  IIIMECF conforms IIIM Protocol Specification defined by Sun Microsystems,
+	  and consists of a library to create IIIM awared applications and a simple
+	  input method library controlled by IIIM server(s).
+
+	  http://canna.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IM_JA
+	bool "im-ja-1.5nb7"
+	help
+	  Japanese input module for GTK2 and XIM server
+
+	  im-ja is a Japanese input module for GTK2 and also has a XIM server.
+	  Currently supports hiragana, katakana, half-width katakana, zenkaku, canna, wnn,
+	  anthy, skk and kanji character recognition inputs.
+	  Conversion hotkeys, status window, preedit text colors, etc. can be customized
+	  through a GUI. An optional applet is also included for the gnome-panel which
+	  can be used to display and change the input method.
+
+	  http://im-ja.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IMHANGUL
+	bool "imhangul-0.9.14nb2"
+	help
+	  GTK+-2.0 Hangul Input Module
+
+	  Imhangul is a Hangul input module for GTK+ 2. This supports Korean
+	  Hangul input with several types of keyboards widely used in Korea.
+
+	  http://imhangul.kldp.net/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IMHANGUL_STATUS_APPLET
+	bool "imhangul_status_applet-0.3nb23"
+	help
+	  GNOME2 applet to show imhangul status
+
+	  GNOME2 applet for imhangul.  It displays the status of imhangul, a
+	  Hangul input module for GTK+-2.
+
+	  http://imhangul.kldp.net/\
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_INPUT_PAD
+	bool "input-pad-1.0.0nb2"
+	help
+	  On-screen Input Pad to Send Characters with Mouse
+
+	  The input pad is a tool to send a character on button to text applications.
+
+	  http://code.google.com/p/input-pad/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_JA_FREEWNN_LIB
+	bool "ja-FreeWnn-lib-1.11alpha22"
+	help
+	  
+
+	  FreeWnn Open Source version of Wnn.
+	  This distribution contains Wnn Japanese/Chinese/Korean
+	  Input System.  Wnn is a network-extensible Kana-to-Kanji conversion system
+	  and was jointly developed and released by the Software Research Group
+	  of Kyoto University Research Institute for Mathematical Science, OMRON
+	  Corporation and Astec, Inc.
+
+	  http://freewnn.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_JA_FREEWNN_SERVER
+	bool "ja-FreeWnn-server-1.11alpha22"
+	help
+	  
+
+	  FreeWnn 1.x - Japanese Kana Kanji Conversion Server
+	  
+	  This distribution contains Version 1.x of Wnn Japanese/Chinese/Korean
+	  Input System.  Wnn is a network-extensible Kana-to-Kanji conversion system
+	  and was jointly developed and released by the Software Research Group
+	  of Kyoto University Research Institute for Mathematical Science, OMRON
+	  Corporation and Astec, Inc.
+
+	  http://freewnn.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KASUMI
+	bool "kasumi-2.5nb5"
+	help
+	  Dictionary management tool for anthy
+
+	  Kasumi is a dictionary management tool for anthy kana-kanji conversion system.
+
+	  http://kasumi.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KIMERA
+	bool "kimera-2.11nb5"
+	help
+	  Kanji Input MEthod for RAgamuffins
+
+	  Kimera is an input method (XIM) for the X Window System utilizing
+	  the Qt4 toolkit that provides Japanese language input support. It
+	  provides Kanji conversion via Canna or Anthy, as well as supporting
+	  the ability to assign input styles. We are also considering a
+	  simple key assign selection method like the one used in Windows.
+
+	  http://kimera.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KIMERA_TOMOE_GTK
+	bool "kimera-tomoe-gtk-0.5nb5"
+	help
+	  Kimera helper program for Tomoe
+
+	  kimera-tomoe-gtk is an Kimera helper program for Tomoe.
+
+	  http://kimera.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KINPUT2
+	bool "kinput2-3.1nb2"
+	help
+	  Input server of Japanese text
+
+	  Kinput2 is an input server for X11 applications that want Japanese
+	  text input.
+	  
+	  A client that wants kana-kanji conversion service for Japanese text
+	  sends a request to kinput2.  Kinput2 receives the request, does
+	  kana-kanji conversion, and sends the converted text back to the
+	  client.
+	  
+	  The port supports Wnn4.  Egg key binding is available,
+	  if you run
+	  
+	  kinput2 -ccdef ccdef.kinput2.egg
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBCHEWING02
+	bool "libchewing-0.2.7"
+	help
+	  The intelligent phonetic input method library
+
+	  libchewing is derived from Chewing input method, a xcin module focusing on
+	  intelligent phonetic processing by lckung and kpchen.
+
+	  http://chewing.csie.net/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBCHEWING
+	bool "libchewing-0.3.2"
+	help
+	  The intelligent phonetic input method library
+
+	  This is an intelligent Chinese phonetic input method library, which abstracts
+	  the behavior of popular Taiwanese/Chinese intelligent phonetic input method
+	  usage into several APIs ready for integration.  The known examples are
+	  xcin-chewing, scim-chewing, iiimf-le-chewing, etc.
+
+	  http://chewing.csie.net/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBHANGUL
+	bool "libhangul-0.0.12nb1"
+	help
+	  Library used by Korean input methods
+
+	  libhangul is a library to handle Korean, used by several Korean input
+	  methods.
+
+	  http://kldp.net/projects/hangul/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBTABE
+	bool "libtabe-0.2.6nb2"
+	help
+	  Library for Chinese language processing
+
+	  After its pioneering work on Chinese i18n/l10n issues, TaBE Project extends its
+	  goal to more general Chinese language processing issues on computer systems.
+	  
+	  libtabe, the latest work made available by the Project, is a library which
+	  provides useful Chinese functions/routines that deal with many fundamental
+	  elements such as pronunciation(BoPoMoFo), character frequency, word
+	  identification, word frequency. It also comes with a free word database
+	  consists of more than 130,000 words.
+
+	  http://libtabe.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_M17N_IM_CONFIG
 	bool "m17n-im-config-0.9.0nb7"
 	help
@@ -319,24 +548,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_M17N_IM_CONFIG
 
 	  http://www.m17n.org/common/im-config/index.html
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_HANGUL
-	bool "ibus-hangul-1.3.1nb1"
-	help
-	  Hangul engine for IBus input platform
-
-	  The Hangul engine for IBus platform. It provides Korean input method from
-	  libhangul.
-
-	  http://code.googlecode.com/p/ibus/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_INPUT_PAD
-	bool "ibus-input-pad-0.1.4nb2"
-	help
-	  Input Pad for IBus
-
-	  The input pad engine for IBus platform.
-
-	  http://code.google.com/p/input-pad/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_MULTISKKSERV
 	bool "multiskkserv-20100128"
@@ -351,6 +562,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_MULTISKKSERV
 
 	  http://github.com/sina-ht/multiskkserv/
 
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_NABI
 	bool "nabi-0.99.3nb6"
 	help
@@ -362,6 +574,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_NABI
 	  one.
 
 	  http://nabi.kldp.net/
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_NOVEL_PINYIN
 	bool "novel-pinyin-0.2.5nb7"
@@ -378,39 +591,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_NOVEL_PINYIN
 
 	  http://novel-pinyin.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IMHANGUL
-	bool "imhangul-0.9.14nb2"
-	help
-	  GTK+-2.0 Hangul Input Module
-
-	  Imhangul is a Hangul input module for GTK+ 2. This supports Korean
-	  Hangul input with several types of keyboards widely used in Korea.
-
-	  http://imhangul.kldp.net/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IMHANGUL_STATUS_APPLET
-	bool "imhangul_status_applet-0.3nb23"
-	help
-	  GNOME2 applet to show imhangul status
-
-	  GNOME2 applet for imhangul.  It displays the status of imhangul, a
-	  Hangul input module for GTK+-2.
-
-	  http://imhangul.kldp.net/\
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IM_JA
-	bool "im-ja-1.5nb7"
-	help
-	  Japanese input module for GTK2 and XIM server
-
-	  im-ja is a Japanese input module for GTK2 and also has a XIM server.
-	  Currently supports hiragana, katakana, half-width katakana, zenkaku, canna, wnn,
-	  anthy, skk and kanji character recognition inputs.
-	  Conversion hotkeys, status window, preedit text colors, etc. can be customized
-	  through a GUI. An optional applet is also included for the gnome-panel which
-	  can be used to display and change the input method.
-
-	  http://im-ja.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_P5_ZINNIA
 	bool "p5-zinnia-0.06nb2"
@@ -424,14 +604,156 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_P5_ZINNIA
 
 	  http://zinnia.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_INPUT_PAD
-	bool "input-pad-1.0.0nb2"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME_EL
+	bool "prime-el-1.5.1.3nb1"
 	help
-	  On-screen Input Pad to Send Characters with Mouse
+	  PRIME client for emacsen
+
+	  PRIME is Japanese PRedictive Input  Method Editor.
+	  PRIME predicts the user's input using knowledge of natural languages and the
+	  user's previous input to reduce the difficulty of typing.  For example, when the
+	  user types "ap", intending "application", PRIME might suggest "apple",
+	  "application", and "appointment."  The user then easily selects "application."
+	  
+	  Currently, PRIME only supports Japanese.
+	  
+	  This package contains an emacs client of PRIME.
+
+	  http://taiyaki.org/prime/emacs/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PY_INPUT_PAD
+	bool "py26-input-pad-1.0.0nb2"
+	help
+	  Python wrapper for Input Pad
 
 	  The input pad is a tool to send a character on button to text applications.
+	  This package provides python wrapper for input pad.
 
 	  http://code.google.com/p/input-pad/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PY_ZINNIA
+	bool "py26-zinnia-0.06"
+	help
+	  Zinnia python module
+
+	  Zinnia is a simple, customizable and portable online hand recognition system
+	  based on Support Vector Machines.
+	  
+	  This package is python module for Zinnia.
+
+	  http://zinnia.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME
+	bool "ruby19-prime-1.0.0.1"
+	help
+	  Japanese PRedictive Input Method Editor
+
+	  PRIME is Japanese PRedictive Input Method Editor.
+	  
+	  PRIME predicts user's input words using the knowledge of natural language and
+	  the history of user's operations, and reduces the cost of typing by the user.
+	  For example, if a user wants to input "application" and types "ap" as the
+	  beginning characters of the word, PRIME might predict some candidate words like
+	  "apple", "application", "appointment", etc...  And then the user can input
+	  "application" easily by selecting the word from the candidate words by PRIME.
+
+	  http://taiyaki.org/prime/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME_DICT
+	bool "ruby19-prime-dict-1.0.0"
+	help
+	  Japanese PRedictive Input Method Editor (dictionary)
+
+	  PRIME is Japanese PRedictive Input Method Editor.
+	  PRIME predicts the user's input using knowledge of natural languages and the
+	  user's previous input to reduce the difficulty of typing.  For example, when the
+	  user types "ap", intending "application", PRIME might suggest "apple",
+	  "application", and "appointment."  The user then easily selects "application."
+	  
+	  Currently, PRIME only supports Japanese.
+	  
+	  This package provides dictionary files for prime.
+
+	  http://taiyaki.org/prime/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_RUBY_ZINNIA
+	bool "ruby19-zinnia-0.06nb1"
+	help
+	  Zinnia ruby module
+
+	  Zinnia is a simple, customizable and portable online hand recognition system
+	  based on Support Vector Machines.
+	  
+	  This package is ruby module for Zinnia.
+
+	  http://zinnia.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM
+	bool "scim-1.4.9nb5"
+	help
+	  Smart Common Input Method
+
+	  Currently the SCIM project has a wide range of input methods (some may need
+	  other libraries), covering more than 30 languages, including
+	  (Simplified/Traditional) Chinese, Japanese, Korean and many European languages.
+	  What's more, Composing/Dead key support is one of the built-in features.
+	  In addition, several projects have been established to design IMEngines for
+	  SCIM and others supply their own SCIM plugins.
+
+	  http://www.scim-im.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_ANTHY
+	bool "scim-anthy-1.2.7nb6"
+	help
+	  SCIM IMEngine module for anthy
+
+	  scim-anthy is a SCIM IMEngine module for anthy.
+	  
+	  SCIM is Smart Common Input Method platform, it provides user friendly/full
+	  featured user interface and development platform to make input method
+	  developer's life easier.
+	  
+	  Anthy is a system for Japanese input method.
+	  It converts Hiragana text to Kana Kanji mixed text.
+	  
+	  scim-anthy provides some usefull user interfaces for Anthy using SCIM.
+
+	  http://scim-imengine.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_ARRAY
+	bool "scim-array-1.0.1nb5"
+	help
+	  Array 30 Input Method Engine for SCIM
+
+	  This input method engine is developed to support the Array 30 input method in
+	  SCIM framework.  SCIM Array 30 Input Method Engine provides with all the
+	  functions of Array 30, including 1st and 2nd level short codes, special codes,
+	  and symbol input.
+
+	  http://scimarray.openfoundry.org/index_en.html
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_BRIDGE
+	bool "scim-bridge-0.4.16nb6"
+	help
+	  C wrapper library for SCIM
+
+	  Scim-bridge is wrapper library for SCIM, written in C. It is firstly written to
+	  solve problems occured by the ABI transition of GNU libstdc++ between 3.* branch
+	  and 4.* branch. That's not the problem in the most of cases because you usually
+	  used the same compiler for SCIM and GUI apps.
+
+	  http://www.scim-im.org/projects/scim_bridge
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CANNA
 	bool "scim-canna-1.0.1nb5"
@@ -442,6 +764,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CANNA
 
 	  http://scim-imengine.sourceforge.jp/
 
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CCINPUT
 	bool "scim-ccinput-0.3.1nb5"
 	help
@@ -451,19 +774,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CCINPUT
 
 	  http://www.scim-im.org/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_JA_FREEWNN_LIB
-	bool "ja-FreeWnn-lib-1.11alpha22"
-	help
-	  
-
-	  FreeWnn Open Source version of Wnn.
-	  This distribution contains Wnn Japanese/Chinese/Korean
-	  Input System.  Wnn is a network-extensible Kana-to-Kanji conversion system
-	  and was jointly developed and released by the Software Research Group
-	  of Kyoto University Research Institute for Mathematical Science, OMRON
-	  Corporation and Astec, Inc.
-
-	  http://freewnn.sourceforge.jp/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CHEWING
 	bool "scim-chewing-0.3.3nb5"
@@ -474,6 +784,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CHEWING
 
 	  http://chewing.csie.net/
 
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_FCITX
 	bool "scim-fcitx-3.1.1nb5"
 	help
@@ -483,24 +794,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_FCITX
 
 	  http://www.scim-im.org/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TEGAKI
-	bool "ibus-tegaki-0.3.1"
-	help
-	  Tegaki integration in ibus
-
-	  Tegaki project integration in IBus.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_UNIKEY
-	bool "ibus-unikey-0.5.1nb3"
-	help
-	  Vietnamese Input Method Engine for IBUS using Unikey IME
-
-	  Ibus-unikey is a IM Engine for IBus.
-	  Use for type Vietnamese.
-
-	  http://code.google.com/p/ibus-unikey/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_HANGUL
 	bool "scim-hangul-0.3.2nb5"
@@ -524,20 +817,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_HANGUL
 
 	  http://www.scim-im.org/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_JA_FREEWNN_SERVER
-	bool "ja-FreeWnn-server-1.11alpha22"
-	help
-	  
-
-	  FreeWnn 1.x - Japanese Kana Kanji Conversion Server
-	  
-	  This distribution contains Version 1.x of Wnn Japanese/Chinese/Korean
-	  Input System.  Wnn is a network-extensible Kana-to-Kanji conversion system
-	  and was jointly developed and released by the Software Research Group
-	  of Kyoto University Research Institute for Mathematical Science, OMRON
-	  Corporation and Astec, Inc.
-
-	  http://freewnn.sourceforge.jp/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_INPUT_PAD
 	bool "scim-input-pad-0.1.3"
@@ -548,23 +827,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_INPUT_PAD
 
 	  http://www.scim-im.org/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_SINHALA
-	bool "scim-sinhala-0.1.0nb5"
-	help
-	  SCIM IMEngine module for Sinhala
-
-	  scim-sinhala is an SCIM IMEngine module for Sinhala.
-
-	  http://scim-imengine.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KASUMI
-	bool "kasumi-2.5nb5"
-	help
-	  Dictionary management tool for anthy
-
-	  Kasumi is a dictionary management tool for anthy kana-kanji conversion system.
-
-	  http://kasumi.sourceforge.jp/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_M17N
 	bool "scim-m17n-0.2.3nb6"
@@ -575,27 +837,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_M17N
 
 	  http://www.scim-im.org/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_SKK
-	bool "scim-skk-0.5.2nb5"
-	help
-	  SCIM IMEngine module for skk
-
-	  scim-skk is an SCIM IMEngine module for skk.
-
-	  http://scim-imengine.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KIMERA
-	bool "kimera-2.11nb5"
-	help
-	  Kanji Input MEthod for RAgamuffins
-
-	  Kimera is an input method (XIM) for the X Window System utilizing
-	  the Qt4 toolkit that provides Japanese language input support. It
-	  provides Kanji conversion via Canna or Anthy, as well as supporting
-	  the ability to assign input styles. We are also considering a
-	  simple key assign selection method like the one used in Windows.
-
-	  http://kimera.sourceforge.jp/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PINYIN
 	bool "scim-pinyin-0.5.91nb5"
@@ -606,14 +847,46 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PINYIN
 
 	  http://www.scim-im.org/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KIMERA_TOMOE_GTK
-	bool "kimera-tomoe-gtk-0.5nb5"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PRIME
+	bool "scim-prime-1.0.1nb5"
 	help
-	  Kimera helper program for Tomoe
+	  SCIM IMEngine module for PRIME
 
-	  kimera-tomoe-gtk is an Kimera helper program for Tomoe.
+	  scim-prime is a SCIM IMEngine module for PRIME.
 
-	  http://kimera.sourceforge.jp/
+	  http://scim-imengine.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PYTHON
+	bool "scim-python-0.1.13rc1nb5"
+	help
+	  Python wrapper for Smart Common Input Method platform
+
+	  Python wrapper for Smart Common Input Method platform.
+
+	  http://code.google.com/p/scim-python/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_SINHALA
+	bool "scim-sinhala-0.1.0nb5"
+	help
+	  SCIM IMEngine module for Sinhala
+
+	  scim-sinhala is an SCIM IMEngine module for Sinhala.
+
+	  http://scim-imengine.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_SKK
+	bool "scim-skk-0.5.2nb5"
+	help
+	  SCIM IMEngine module for skk
+
+	  scim-skk is an SCIM IMEngine module for skk.
+
+	  http://scim-imengine.sourceforge.jp/
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TABLES
 	bool "scim-tables-0.5.10"
@@ -628,14 +901,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TABLES
 
 	  http://www.scim-im.org/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PRIME
-	bool "scim-prime-1.0.1nb5"
-	help
-	  SCIM IMEngine module for PRIME
-
-	  scim-prime is a SCIM IMEngine module for PRIME.
-
-	  http://scim-imengine.sourceforge.jp/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TABLES_VIETNAMESE_EXT
 	bool "scim-tables-vietnamese-ext-0.5.6pl17"
@@ -648,50 +913,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TABLES_VIETNAMESE_EXT
 
 	  http://code.google.com/p/scim-tables-vietnamese-ext/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PYTHON
-	bool "scim-python-0.1.13rc1nb5"
-	help
-	  Python wrapper for Smart Common Input Method platform
-
-	  Python wrapper for Smart Common Input Method platform.
-
-	  http://code.google.com/p/scim-python/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKFEP
-	bool "skkfep-0.86cnb1"
-	help
-	  Terminal based SKK-like Kana-to-Kanji FrontEnd Processor
-
-	  skkfep is a SKK-like Kana-to-Kanji FrontEnd Processor.  It works
-	  on terminals and realizes SKK-like conversion without emacs.
-	  
-	  Features:
-	  - realize SKK-like Kana/Kanji user interface on terminals,
-	  - shares private and common dictionaries with SKK,
-	  - word registration is not currently supported.
-
-	  http://ei5nazha.yz.yamagata-u.ac.jp/~aito/aito-soft.html
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKINPUT
-	bool "skkinput-2.06.4"
-	help
-	  X11 frontend for SKK
-
-	  skkinput is an X11 frontend of SKK (Simple Kana to Kanji conversion).
-	  It behaves as a kana-kanji conversion server of kinput, kinput2, and Ximp
-	  protocols and X11R6 X Input Method.  It makes use of skkserv to access
-	  the common dictionary.
-
-	  http://skkinput2.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKK_JISYO
-	bool "skk-jisyo-200708"
-	help
-	  Dictionary collection for SKK
-
-	  A basic set of Kana-Kanji conversion dictionary developed by SKK project.
-
-	  http://openlab.ring.gr.jp/skk/wiki/wiki.cgi?page
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TEGAKI
 	bool "scim-tegaki-0.1"
@@ -702,15 +923,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TEGAKI
 
 	  http://www.tegaki.org/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKK_JISYO_CDB
-	bool "skk-jisyo-cdb-201102"
-	help
-	  Dictionary collection for SKK
-
-	  A basic set of Kana-Kanji conversion dictionary developed by SKK project.
-	  This package is cdb format dictionary for dbskkd-cdb and so on.
-
-	  http://openlab.ring.gr.jp/skk/wiki/wiki.cgi?page
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_THAI
 	bool "scim-thai-0.1.1nb5"
@@ -735,6 +947,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_THAI
 
 	  http://linux.thai.net/projects/scim-thai
 
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TOMOE
 	bool "scim-tomoe-0.6.0nb7"
 	help
@@ -744,17 +957,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TOMOE
 
 	  http://tomoe.sourceforge.jp/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKSERV
-	bool "skkserv-3.9.4nb7"
-	help
-	  Dictionary server for Simple Kana-Kanji conversion programs
-
-	  skkserv is a dictionary server for SKK (Simple Kana to
-	  Kanji conversion) programs, including skk.el (Emacs Lisp),
-	  skkfep (tty-based frontend), and skkinput (X11 frontend),
-	  uim-skk, scim-skk.
-
-	  http://skk.kuis.kyoto-u.ac.jp/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_UIM
 	bool "scim-uim-0.2.0nb6"
@@ -764,6 +966,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_UIM
 	  scim-uim is an SCIM IMEngine module for uim.
 
 	  http://www.scim-im.org/
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_UNIKEY
 	bool "scim-unikey-0.3.1nb5"
@@ -775,6 +978,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_UNIKEY
 	  (a mod version of ukengine)
 
 	  http://code.google.com/p/scim-unikey/
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3
 	bool "sj3-2.0.1.23p1"
@@ -788,381 +992,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3
 
 	  http://code.google.com/p/sj3/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_JAPANESE
-	bool "tegaki-zinnia-japanese-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Zinna engine, Japanese (all).
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_JAPANESE_JOYO
-	bool "tegaki-zinnia-japanese-joyo-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Zinna engine, Japanese (joyo).
-	  Commonly used kanji only.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_JAPANESE_KYOIKU
-	bool "tegaki-zinnia-japanese-kyoiku-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Zinna engine, Japanese (kyoiku).
-	  Primary school level kanji only.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_JAPANESE_LIGHT
-	bool "tegaki-zinnia-japanese-light-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Zinna engine, Japanese (light).
-	  Smaller and faster but less accurate.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_SIMPLIFIED_CHINESE
-	bool "tegaki-zinnia-simplified-chinese-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Zinna engine, Simplified Chinese (all).
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_SIMPLIFIED_CHINESE_LIGHT
-	bool "tegaki-zinnia-simplified-chinese-light-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Zinna engine, Simplified Chinese (light).
-	  Smaller and faster but less accurate.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_TRADITIONAL_CHINESE
-	bool "tegaki-zinnia-traditional-chinese-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Zinna engine, Traditional Chinese (all).
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKTOOLS
-	bool "skktools-1.3.1nb1"
-	help
-	  SKK dictionary manipulation tools
-
-	  Small collection of commands to maintain SKK dictionaries.
-
-	  http://openlab.ring.gr.jp/skk/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_PYGTK
-	bool "tegaki-pygtk-0.3.1nb1"
-	help
-	  Base user interface library for the Tegaki project
-
-	  Base user interface library for the Tegaki project.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_TRADITIONAL_CHINESE_LIGHT
-	bool "tegaki-zinnia-traditional-chinese-light-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Zinna engine, Traditional Chinese (light).
-	  Smaller and faster but less accurate.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TOMOE
-	bool "tomoe-0.6.0nb2"
-	help
-	  Handwriting recognition engine
-
-	  Tomoe is originally a handwriting character recognition engine.
-	  
-	  Current Tomoe does not only provide handwriting recognition engine but also
-	  provide other character searching API such as searching by readings, stroke
-	  counts, radicals, valiations and so on.
-
-	  http://tomoe.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TOMOE_GTK
-	bool "tomoe-gtk-0.6.0nb9"
-	help
-	  GUI library for tomoe's GTK+ GUI parts
-
-	  tomoe-gtk is a GUI library for tomoe that online handwriting recognition engine.
-	  It offers GTK+ GUI parts and is useful for making another applications using
-	  tomoe.
-
-	  http://tomoe.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM
-	bool "uim-1.7.0nb2"
-	help
-	  Multilingual input method library
-
-	  Uim is a lightweight and full featured multilingual input method library
-	  and is simple, secure and flexible.
-	  
-	  Supported languages:
-	  Japanese, Chinese(PinYin), Korean, Vietnamese
-
-	  http://code.google.com/p/uim/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_PYTHON
-	bool "tegaki-python-0.3.1"
-	help
-	  Base Python library for the Tegaki project
-
-	  Base Python library for the Tegaki project.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM_TOMOE_GTK
-	bool "uim-tomoe-gtk-0.6.0nb8"
-	help
-	  UIM helper program for Tomoe
-
-	  uim-tomoe-gtk is an UIM helper program for Tomoe.
-	  
-	  Tomoe is a handwriting recognizer which currently supports Japanese.
-
-	  http://tomoe.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UNICON_IM
-	bool "unicon-im-1.2nb5"
-	help
-	  Libraries and modules of Unicon
-
-	  The Unicon project intend to implement display/input CJK
-	  (Chinese/Japanese/Korean) characters under the Framebuffer under
-	  Linux.
-	  
-	  This package will install the libraries and modules for Chinput.
-
-	  http://www.opencjk.org/~yumj/project-chinput.html
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_XCIN
-	bool "xcin-2.5.3rc2nb10"
-	help
-	  Chinese XIM server
-
-	  XCIN is an XIM (X Input Method) server which is widely used in Taiwan to
-	  perform Chinese input under X Window system. It is originally developed
-	  by Edward Der-Hua Liu (Oct. 1994) and many other programmers in early
-	  days; while now it is supported by the XCIN Project.
-
-	  http://xcin.linux.org.tw/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_ZINNIA
-	bool "zinnia-0.06"
-	help
-	  Online hand writing recognition system with machine learning
-
-	  Zinnia is a simple, customizable and portable online hand recognition system
-	  based on Support Vector Machines.  Zinnia simply receives user pen strokes as a
-	  sequence of coordinate data and outputs n-best characters sorted by SVM
-	  confidence.  To keep portability, Zinnia doesn't have any rendering
-	  functionality.  In addition to recognition, Zinnia provides training module that
-	  allows us to create any hand-written recognition systems with low-cost.
-
-	  http://zinnia.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_ZINNIA_TOMOE
-	bool "zinnia-tomoe-0.6.0.20080911"
-	help
-	  Zinna recognition models traned with Tomoe data
-
-	  Zinnia is a simple, customizable and portable online hand recognition system
-	  based on Support Vector Machines.
-	  
-	  This package contains Zonna recognition models trained with Tomoe data.
-
-	  http://zinnia.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_RECOGNIZE
-	bool "tegaki-recognize-0.3.1.2"
-	help
-	  Tegaki project integration in the desktop
-
-	  Tegaki project integration in the desktop.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM
-	bool "scim-1.4.9nb5"
-	help
-	  Smart Common Input Method
-
-	  Currently the SCIM project has a wide range of input methods (some may need
-	  other libraries), covering more than 30 languages, including
-	  (Simplified/Traditional) Chinese, Japanese, Korean and many European languages.
-	  What's more, Composing/Dead key support is one of the built-in features.
-	  In addition, several projects have been established to design IMEngines for
-	  SCIM and others supply their own SCIM plugins.
-
-	  http://www.scim-im.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_ANTHY
-	bool "scim-anthy-1.2.7nb6"
-	help
-	  SCIM IMEngine module for anthy
-
-	  scim-anthy is a SCIM IMEngine module for anthy.
-	  
-	  SCIM is Smart Common Input Method platform, it provides user friendly/full
-	  featured user interface and development platform to make input method
-	  developer's life easier.
-	  
-	  Anthy is a system for Japanese input method.
-	  It converts Hiragana text to Kana Kanji mixed text.
-	  
-	  scim-anthy provides some usefull user interfaces for Anthy using SCIM.
-
-	  http://scim-imengine.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_ARRAY
-	bool "scim-array-1.0.1nb5"
-	help
-	  Array 30 Input Method Engine for SCIM
-
-	  This input method engine is developed to support the Array 30 input method in
-	  SCIM framework.  SCIM Array 30 Input Method Engine provides with all the
-	  functions of Array 30, including 1st and 2nd level short codes, special codes,
-	  and symbol input.
-
-	  http://scimarray.openfoundry.org/index_en.html
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_BRIDGE
-	bool "scim-bridge-0.4.16nb6"
-	help
-	  C wrapper library for SCIM
-
-	  Scim-bridge is wrapper library for SCIM, written in C. It is firstly written to
-	  solve problems occured by the ABI transition of GNU libstdc++ between 3.* branch
-	  and 4.* branch. That's not the problem in the most of cases because you usually
-	  used the same compiler for SCIM and GUI apps.
-
-	  http://www.scim-im.org/projects/scim_bridge
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_TOOLS
-	bool "tegaki-tools-0.3.1"
-	help
-	  Set of command-line tools for Tegaki
-
-	  A set of command-line tools for Tegaki.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_TRAIN
-	bool "tegaki-train-0.3.1"
-	help
-	  Train Tegaki with your own handwriting
-
-	  Train Tegaki with your own handwriting.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU
-	bool "tegaki-wagomu-0.3.1nb1"
-	help
-	  Simple handwriting recognition engine based on DTW
-
-	  Simple handwriting recognition engine based on DTW.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU_JAPANESE
-	bool "tegaki-wagomu-japanese-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Wagomu engine, Japanese (all).
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU_JAPANESE_JOYO
-	bool "tegaki-wagomu-japanese-joyo-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Wagomu engine, Japanese (joyo).
-	  Commonly used kanji only.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU_JAPANESE_KYOIKU
-	bool "tegaki-wagomu-japanese-kyoiku-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Wagomu engine, Japanese (kyoiku).
-	  Primary school level kanji only.
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU_SIMPLIFIED_CHINESE
-	bool "tegaki-wagomu-simplified-chinese-0.3"
-	help
-	  
-
-	  Tegaki project handwriting models for Wagomu engine, Chinese-Simplified (all).
-
-	  http://www.tegaki.org/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_ANTHY_ELISP
-	bool "anthy-elisp-9100hnb4"
-	help
-	  Emacs lisp files for inputmethod/anthy
-
-	  Emacs lisp files for inputmethod/anthy.
-
-	  http://anthy.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA
-	bool "Canna-3.6pl4nb2"
-	help
-	  Kana-Kanji conversion system (meta-package)
-
-	  Canna is a Japanese input method server/client.  Canna supports
-	  Emacs/Mule (Multi-lingual extension Emacs), kinput2 X11 input methods,
-	  cannum front end, and some others.
-
-	  http://canna.sourceforge.jp/
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_EL
-	bool "ibus-el-0.2.1"
-	help
-	  IBus client for GNU Emacs
-
-	  ibus.el is a IBus client for GNU Emacs.  This program allows users on-the-spot
-	  style input with IBus.  The input statuses are individually kept for each
-	  buffer, and prefix-keys such as C-x and C-c can be used even if IBus is active.
-	  So you can input various languages fast and comfortably by using it.
-
-	  http://www11.atwiki.jp/s-irie/pages/21.html
-
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IIIMECF
-	bool "iiimecf-0.6nb1"
-	help
-	  Emacs Lisp library for IIIM Protocol
-
-	  IIIMECF conforms IIIM Protocol Specification defined by Sun Microsystems,
-	  and consists of a library to create IIIM awared applications and a simple
-	  input method library controlled by IIIM server(s).
-
-	  http://www11.atwiki.jp/s-irie/pages/21.html
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3_CLIENT
 	bool "sj3-client-2.0.1.23p1"
@@ -1175,6 +1004,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3_CLIENT
 
 	  http://code.google.com/p/sj3/
 
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3_SERVER
 	bool "sj3-server-2.0.1.23p1"
 	help
@@ -1186,21 +1016,6 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3_SERVER
 
 	  http://code.google.com/p/sj3/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME
-	bool "ruby19-prime-1.0.0.1"
-	help
-	  Japanese PRedictive Input Method Editor
-
-	  PRIME is Japanese PRedictive Input Method Editor.
-	  
-	  PRIME predicts user's input words using the knowledge of natural language and
-	  the history of user's operations, and reduces the cost of typing by the user.
-	  For example, if a user wants to input "application" and types "ap" as the
-	  beginning characters of the word, PRIME might predict some candidate words like
-	  "apple", "application", "appointment", etc...  And then the user can input
-	  "application" easily by selecting the word from the candidate words by PRIME.
-
-	  http://taiyaki.org/prime/
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKK
 	bool "skk-14.2"
@@ -1219,39 +1034,79 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKK
 
 	  http://openlab.ring.gr.jp/skk/index.html
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME_DICT
-	bool "ruby19-prime-dict-1.0.0"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKK_JISYO
+	bool "skk-jisyo-200708"
 	help
-	  Japanese PRedictive Input Method Editor (dictionary)
+	  Dictionary collection for SKK
 
-	  PRIME is Japanese PRedictive Input Method Editor.
-	  PRIME predicts the user's input using knowledge of natural languages and the
-	  user's previous input to reduce the difficulty of typing.  For example, when the
-	  user types "ap", intending "application", PRIME might suggest "apple",
-	  "application", and "appointment."  The user then easily selects "application."
-	  
-	  Currently, PRIME only supports Japanese.
-	  
-	  This package provides dictionary files for prime.
+	  A basic set of Kana-Kanji conversion dictionary developed by SKK project.
 
-	  http://taiyaki.org/prime/
+	  http://openlab.ring.gr.jp/skk/wiki/wiki.cgi?page
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME_EL
-	bool "prime-el-1.5.1.3nb1"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKK_JISYO_CDB
+	bool "skk-jisyo-cdb-201102"
 	help
-	  PRIME client for emacsen
+	  Dictionary collection for SKK
 
-	  PRIME is Japanese PRedictive Input  Method Editor.
-	  PRIME predicts the user's input using knowledge of natural languages and the
-	  user's previous input to reduce the difficulty of typing.  For example, when the
-	  user types "ap", intending "application", PRIME might suggest "apple",
-	  "application", and "appointment."  The user then easily selects "application."
-	  
-	  Currently, PRIME only supports Japanese.
-	  
-	  This package contains an emacs client of PRIME.
+	  A basic set of Kana-Kanji conversion dictionary developed by SKK project.
+	  This package is cdb format dictionary for dbskkd-cdb and so on.
 
-	  http://taiyaki.org/prime/emacs/
+	  http://openlab.ring.gr.jp/skk/wiki/wiki.cgi?page
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKFEP
+	bool "skkfep-0.86cnb1"
+	help
+	  Terminal based SKK-like Kana-to-Kanji FrontEnd Processor
+
+	  skkfep is a SKK-like Kana-to-Kanji FrontEnd Processor.  It works
+	  on terminals and realizes SKK-like conversion without emacs.
+	  
+	  Features:
+	  - realize SKK-like Kana/Kanji user interface on terminals,
+	  - shares private and common dictionaries with SKK,
+	  - word registration is not currently supported.
+
+	  http://ei5nazha.yz.yamagata-u.ac.jp/~aito/aito-soft.html
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKINPUT
+	bool "skkinput-2.06.4"
+	help
+	  X11 frontend for SKK
+
+	  skkinput is an X11 frontend of SKK (Simple Kana to Kanji conversion).
+	  It behaves as a kana-kanji conversion server of kinput, kinput2, and Ximp
+	  protocols and X11R6 X Input Method.  It makes use of skkserv to access
+	  the common dictionary.
+
+	  http://skkinput2.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKSERV
+	bool "skkserv-3.9.4nb7"
+	help
+	  Dictionary server for Simple Kana-Kanji conversion programs
+
+	  skkserv is a dictionary server for SKK (Simple Kana to
+	  Kanji conversion) programs, including skk.el (Emacs Lisp),
+	  skkfep (tty-based frontend), and skkinput (X11 frontend),
+	  uim-skk, scim-skk.
+
+	  http://skk.kuis.kyoto-u.ac.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKTOOLS
+	bool "skktools-1.3.1nb1"
+	help
+	  SKK dictionary manipulation tools
+
+	  Small collection of commands to maintain SKK dictionaries.
+
+	  http://openlab.ring.gr.jp/skk/
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TC
 	bool "tc-2.3.1nb3"
@@ -1269,17 +1124,233 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TC
 
 	  http://openlab.ring.gr.jp/tcode/tc2/index.html
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PY_ZINNIA
-	bool "py26-zinnia-0.06"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_PYGTK
+	bool "tegaki-pygtk-0.3.1nb1"
 	help
-	  Zinnia python module
+	  Base user interface library for the Tegaki project
 
-	  Zinnia is a simple, customizable and portable online hand recognition system
-	  based on Support Vector Machines.
+	  Base user interface library for the Tegaki project.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_PYTHON
+	bool "tegaki-python-0.3.1"
+	help
+	  Base Python library for the Tegaki project
+
+	  Base Python library for the Tegaki project.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_RECOGNIZE
+	bool "tegaki-recognize-0.3.1.2"
+	help
+	  Tegaki project integration in the desktop
+
+	  Tegaki project integration in the desktop.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_TOOLS
+	bool "tegaki-tools-0.3.1"
+	help
+	  Set of command-line tools for Tegaki
+
+	  A set of command-line tools for Tegaki.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_TRAIN
+	bool "tegaki-train-0.3.1"
+	help
+	  Train Tegaki with your own handwriting
+
+	  Train Tegaki with your own handwriting.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU
+	bool "tegaki-wagomu-0.3.1nb1"
+	help
+	  Simple handwriting recognition engine based on DTW
+
+	  Simple handwriting recognition engine based on DTW.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU_JAPANESE
+	bool "tegaki-wagomu-japanese-0.3"
+	help
 	  
-	  This package is python module for Zinnia.
 
-	  http://zinnia.sourceforge.net/
+	  Tegaki project handwriting models for Wagomu engine, Japanese (all).
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU_JAPANESE_JOYO
+	bool "tegaki-wagomu-japanese-joyo-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Wagomu engine, Japanese (joyo).
+	  Commonly used kanji only.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU_JAPANESE_KYOIKU
+	bool "tegaki-wagomu-japanese-kyoiku-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Wagomu engine, Japanese (kyoiku).
+	  Primary school level kanji only.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU_SIMPLIFIED_CHINESE
+	bool "tegaki-wagomu-simplified-chinese-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Wagomu engine, Chinese-Simplified (all).
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_JAPANESE
+	bool "tegaki-zinnia-japanese-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Zinna engine, Japanese (all).
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_JAPANESE_JOYO
+	bool "tegaki-zinnia-japanese-joyo-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Zinna engine, Japanese (joyo).
+	  Commonly used kanji only.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_JAPANESE_KYOIKU
+	bool "tegaki-zinnia-japanese-kyoiku-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Zinna engine, Japanese (kyoiku).
+	  Primary school level kanji only.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_JAPANESE_LIGHT
+	bool "tegaki-zinnia-japanese-light-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Zinna engine, Japanese (light).
+	  Smaller and faster but less accurate.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_SIMPLIFIED_CHINESE
+	bool "tegaki-zinnia-simplified-chinese-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Zinna engine, Simplified Chinese (all).
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_SIMPLIFIED_CHINESE_LIGHT
+	bool "tegaki-zinnia-simplified-chinese-light-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Zinna engine, Simplified Chinese (light).
+	  Smaller and faster but less accurate.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_TRADITIONAL_CHINESE
+	bool "tegaki-zinnia-traditional-chinese-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Zinna engine, Traditional Chinese (all).
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_TRADITIONAL_CHINESE_LIGHT
+	bool "tegaki-zinnia-traditional-chinese-light-0.3"
+	help
+	  
+
+	  Tegaki project handwriting models for Zinna engine, Traditional Chinese (light).
+	  Smaller and faster but less accurate.
+
+	  http://www.tegaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TOMOE
+	bool "tomoe-0.6.0nb2"
+	help
+	  Handwriting recognition engine
+
+	  Tomoe is originally a handwriting character recognition engine.
+	  
+	  Current Tomoe does not only provide handwriting recognition engine but also
+	  provide other character searching API such as searching by readings, stroke
+	  counts, radicals, valiations and so on.
+
+	  http://tomoe.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TOMOE_GTK
+	bool "tomoe-gtk-0.6.0nb9"
+	help
+	  GUI library for tomoe's GTK+ GUI parts
+
+	  tomoe-gtk is a GUI library for tomoe that online handwriting recognition engine.
+	  It offers GTK+ GUI parts and is useful for making another applications using
+	  tomoe.
+
+	  http://tomoe.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM
+	bool "uim-1.7.0nb2"
+	help
+	  Multilingual input method library
+
+	  Uim is a lightweight and full featured multilingual input method library
+	  and is simple, secure and flexible.
+	  
+	  Supported languages:
+	  Japanese, Chinese(PinYin), Korean, Vietnamese
+
+	  http://code.google.com/p/uim/
+
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM_ELISP
 	bool "uim-elisp-1.7.0"
@@ -1290,25 +1361,71 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM_ELISP
 
 	  http://code.google.com/p/uim/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_RUBY_ZINNIA
-	bool "ruby19-zinnia-0.06nb1"
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM_TOMOE_GTK
+	bool "uim-tomoe-gtk-0.6.0nb8"
 	help
-	  Zinnia ruby module
+	  UIM helper program for Tomoe
+
+	  uim-tomoe-gtk is an UIM helper program for Tomoe.
+	  
+	  Tomoe is a handwriting recognizer which currently supports Japanese.
+
+	  http://tomoe.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UNICON_IM
+	bool "unicon-im-1.2nb5"
+	help
+	  Libraries and modules of Unicon
+
+	  The Unicon project intend to implement display/input CJK
+	  (Chinese/Japanese/Korean) characters under the Framebuffer under
+	  Linux.
+	  
+	  This package will install the libraries and modules for Chinput.
+
+	  http://www.opencjk.org/~yumj/project-chinput.html
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_XCIN
+	bool "xcin-2.5.3rc2nb10"
+	help
+	  Chinese XIM server
+
+	  XCIN is an XIM (X Input Method) server which is widely used in Taiwan to
+	  perform Chinese input under X Window system. It is originally developed
+	  by Edward Der-Hua Liu (Oct. 1994) and many other programmers in early
+	  days; while now it is supported by the XCIN Project.
+
+	  http://xcin.linux.org.tw/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_ZINNIA
+	bool "zinnia-0.06"
+	help
+	  Online hand writing recognition system with machine learning
+
+	  Zinnia is a simple, customizable and portable online hand recognition system
+	  based on Support Vector Machines.  Zinnia simply receives user pen strokes as a
+	  sequence of coordinate data and outputs n-best characters sorted by SVM
+	  confidence.  To keep portability, Zinnia doesn't have any rendering
+	  functionality.  In addition to recognition, Zinnia provides training module that
+	  allows us to create any hand-written recognition systems with low-cost.
+
+	  http://zinnia.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_ZINNIA_TOMOE
+	bool "zinnia-tomoe-0.6.0.20080911"
+	help
+	  Zinna recognition models traned with Tomoe data
 
 	  Zinnia is a simple, customizable and portable online hand recognition system
 	  based on Support Vector Machines.
 	  
-	  This package is ruby module for Zinnia.
+	  This package contains Zonna recognition models trained with Tomoe data.
 
 	  http://zinnia.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PY_INPUT_PAD
-	bool "py26-input-pad-1.0.0nb2"
-	help
-	  Python wrapper for Input Pad
-
-	  The input pad is a tool to send a character on button to text applications.
-	  This package provides python wrapper for input pad.
-
-	  http://code.google.com/p/input-pad/
 

@@ -17,6 +17,7 @@ config BR2_PKGSRC_PACKAGE_HAM_7PLUS
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_HAM_CWTEXT
 	bool "cwtext-0.96"
 	help
@@ -29,6 +30,7 @@ config BR2_PKGSRC_PACKAGE_HAM_CWTEXT
 
 	  http://cwtext.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_HAM_DPBOX
 	bool "dpbox-6.00.00nb3"
 	help
@@ -39,6 +41,7 @@ config BR2_PKGSRC_PACKAGE_HAM_DPBOX
 	  a maximum of 32767*32767 messages.
 
 	  http://home.snafu.de/wahlm/dl8hbs/dpbox.html
+
 
 config BR2_PKGSRC_PACKAGE_HAM_FLDIGI
 	bool "fldigi-3.03nb5"
@@ -61,6 +64,7 @@ config BR2_PKGSRC_PACKAGE_HAM_FLDIGI
 
 	  http://www.w1hkj.com/Fldigi.html
 
+
 config BR2_PKGSRC_PACKAGE_HAM_FL_LOGBOOK
 	bool "fl_logbook-1.21nb2"
 	help
@@ -70,6 +74,7 @@ config BR2_PKGSRC_PACKAGE_HAM_FL_LOGBOOK
 	  Light Toolkit.
 
 	  http://www.w1hkj.com/
+
 
 config BR2_PKGSRC_PACKAGE_HAM_GMFSK
 	bool "gmfsk-0.6nb22"
@@ -91,6 +96,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GMFSK
 
 	  http://gmfsk.connect.fi/
 
+
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_JACK
 	bool "gnuradio-audio-jack-3.3.0"
 	help
@@ -105,6 +111,105 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_JACK
 	  This module contains support for JACK, a low latency audio server.
 
 	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_OSS
+	bool "gnuradio-audio-oss-3.3.0"
+	help
+	  Open Sound System support for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module provides Open Sound System (OSS) support for GNU Radio.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_PORTAUDIO
+	bool "gnuradio-audio-portaudio-3.3.0"
+	help
+	  GNU Radio module adding support for portaudio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module provides portaudio support for GNU Radio
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE
+	bool "gnuradio-core-3.3.0"
+	help
+	  Runtime system and DSP blocks for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module provides the main library containing the underlying runtime
+	  system and most of the hardware independent signal processing blocks.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE_DOCS
+	bool "gnuradio-core-docs-3.3.0nb5"
+	help
+	  GNU Radio core module documentation
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This package contains the documentation for the GNU Radio core module.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_EXAMPLES
+	bool "gnuradio-examples-3.3.0nb3"
+	help
+	  Examples for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains example code that may be used to exercise GNU Radio or
+	  as a starting point for a new project.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_GSM
+	bool "gnuradio-gsm-3.3.0"
+	help
+	  GNU Radio GSM 06.10 13kbit/sec voice encoder/decoder
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This package contains the GNU Radio GSM 06.10 13kbit/sec voice encoder/decoder.
+
+	  http://www.gnu.org/software/gnuradio/
+
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_HOWTO
 	bool "gnuradio-howto-3.3.0nb1"
@@ -122,29 +227,6 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_HOWTO
 
 	  http://www.gnu.org/software/gnuradio/
 
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_OSS
-	bool "gnuradio-audio-oss-3.3.0"
-	help
-	  Open Sound System support for GNU Radio
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This module provides Open Sound System (OSS) support for GNU Radio.
-
-	  http://www.gnu.org/software/gnuradio/
-
-config BR2_PKGSRC_PACKAGE_HAM_LOCATOR
-	bool "locator-0.1"
-	help
-	  Longitudes, latitudes to HAM locator converter
-
-	  locator converts HAM locators in longitudes and latitudes and vica versa
-
-	  http://www.stauss.purespace.de/
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_RADIO_ASTRONOMY
 	bool "gnuradio-radio-astronomy-3.3.0nb3"
@@ -161,10 +243,11 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_RADIO_ASTRONOMY
 
 	  http://www.gnu.org/software/gnuradio/
 
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_PORTAUDIO
-	bool "gnuradio-audio-portaudio-3.3.0"
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_TRELLIS
+	bool "gnuradio-trellis-3.3.0nb1"
 	help
-	  GNU Radio module adding support for portaudio
+	  Trellis-based encoding and decoding algorithms for GNU Radio
 
 	  GNU Radio is a collection of software that when combined with minimal hardware,
 	  allows the construction of radios where the actual waveforms transmitted and
@@ -172,9 +255,135 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_PORTAUDIO
 	  modulation schemes used in today's high performance wireless devices into
 	  software problems.
 	  
-	  This module provides portaudio support for GNU Radio
+	  This module contains trellis-based encoding and decoding algorithms for
+	  GNU Radio.
 
 	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_USRP
+	bool "gnuradio-usrp-3.3.0"
+	help
+	  USRP bindings for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module provides support for the GNU Radio specific part of the
+	  Universal Software Radio Peripheral (USPR) hardware. It is the glue that
+	  ties up the USRP library into GNU Radio.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_VIDEO_SDL
+	bool "gnuradio-video-sdl-3.3.0"
+	help
+	  SDL bindings for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains SDL bindings for GNU Radio.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_WXGUI
+	bool "gnuradio-wxgui-3.3.0nb3"
+	help
+	  GUI framework for GNU Radio based on wxPython
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains the graphical user interface framework based on wxPython.
+	  It includes blocks for displaying realtime FFT and oscilloscope.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GPREDICT
+	bool "gpredict-0.8.0nb7"
+	help
+	  Gnome satellite tracking program
+
+	  Gpredict is a satellite tracking program for Unix-like operating systems.
+	  Whilst still in its infancy it already sports some very useful features:
+	  
+	  * Realtime satellite tracking
+	  - using a world map displaying its footprints
+	  - using a list showing current position and elevation
+	  - AOS/LOS Time
+	  - detailed satellite orbit data
+	  - display of track plot
+	  * Realtime antenna tracking control
+	  * Control over radio equipment control by means of hamlib library
+
+	  http://groundstation.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GRIG
+	bool "grig-0.7.2nb6"
+	help
+	  Graphical user interface to the Hamlib libraries
+
+	  Gnome Rig is a graphical interface to the Ham Radio Control Libraries
+	  written using the Gtk+ and Gnome widgets.
+
+	  http://groundstation.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_HAMLIB
+	bool "hamlib-1.2.12"
+	help
+	  API for digital communications equipment
+
+	  The Ham Radio Control Library, Hamlib for short, provides a standardized
+	  API layer enabling access and control to a wide variety of digital
+	  communications equipment.
+
+	  http://hamlib.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_LINPSK
+	bool "linpsk-0.8.1nb7"
+	help
+	  PSK31 terminal program using QT3
+
+	  LinPSK is a PSK31 program based on WinPSK 1.0
+	  
+	  Main features are:
+	  
+	  * support for BPSK, QPSK, MFSK16 and RTTY
+	  * simultaneuos decoding of up to four channels.
+	  * mixed digital signal reception
+	  * trigger channels on receiving a predefined ASCII string patterns
+	  * log each channel to a file
+	  * support for user defined macros
+	  * scalable display of signal as frequency spectrum or waterfall
+
+	  http://linpsk.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_LOCATOR
+	bool "locator-0.1"
+	help
+	  Longitudes, latitudes to HAM locator converter
+
+	  locator converts HAM locators in longitudes and latitudes and vica versa
+
+	  http://www.stauss.purespace.de/
+
 
 config BR2_PKGSRC_PACKAGE_HAM_TFKISS
 	bool "tfkiss-1.2.4nb1"
@@ -200,6 +409,7 @@ config BR2_PKGSRC_PACKAGE_HAM_TFKISS
 
 	  http://www.bfl.at/mayer/ham/
 
+
 config BR2_PKGSRC_PACKAGE_HAM_TLF
 	bool "tlf-0.9.30"
 	help
@@ -210,21 +420,6 @@ config BR2_PKGSRC_PACKAGE_HAM_TLF
 
 	  http://home.iae.nl/users/reinc/TLF-0.2.html
 
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_TRELLIS
-	bool "gnuradio-trellis-3.3.0nb1"
-	help
-	  Trellis-based encoding and decoding algorithms for GNU Radio
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This module contains trellis-based encoding and decoding algorithms for
-	  GNU Radio.
-
-	  http://www.gnu.org/software/gnuradio/
 
 config BR2_PKGSRC_PACKAGE_HAM_TNT
 	bool "tnt-1.9.2nb1"
@@ -255,22 +450,6 @@ config BR2_PKGSRC_PACKAGE_HAM_TNT
 
 	  http://wspse.de/WSPse/Packet.php3
 
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_USRP
-	bool "gnuradio-usrp-3.3.0"
-	help
-	  USRP bindings for GNU Radio
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This module provides support for the GNU Radio specific part of the
-	  Universal Software Radio Peripheral (USPR) hardware. It is the glue that
-	  ties up the USRP library into GNU Radio.
-
-	  http://www.gnu.org/software/gnuradio/
 
 config BR2_PKGSRC_PACKAGE_HAM_USRP
 	bool "usrp-3.3.0"
@@ -289,20 +468,6 @@ config BR2_PKGSRC_PACKAGE_HAM_USRP
 
 	  http://www.gnu.org/software/gnuradio/
 
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_VIDEO_SDL
-	bool "gnuradio-video-sdl-3.3.0"
-	help
-	  SDL bindings for GNU Radio
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This module contains SDL bindings for GNU Radio.
-
-	  http://www.gnu.org/software/gnuradio/
 
 config BR2_PKGSRC_PACKAGE_HAM_USRP_DOCS
 	bool "usrp-docs-3.3.0"
@@ -319,6 +484,7 @@ config BR2_PKGSRC_PACKAGE_HAM_USRP_DOCS
 
 	  http://www.gnu.org/software/gnuradio/
 
+
 config BR2_PKGSRC_PACKAGE_HAM_WWL
 	bool "wwl-1.2"
 	help
@@ -328,40 +494,6 @@ config BR2_PKGSRC_PACKAGE_HAM_WWL
 
 	  
 
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_WXGUI
-	bool "gnuradio-wxgui-3.3.0nb3"
-	help
-	  GUI framework for GNU Radio based on wxPython
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This module contains the graphical user interface framework based on wxPython.
-	  It includes blocks for displaying realtime FFT and oscilloscope.
-
-	  http://www.gnu.org/software/gnuradio/
-
-config BR2_PKGSRC_PACKAGE_HAM_GPREDICT
-	bool "gpredict-0.8.0nb7"
-	help
-	  Gnome satellite tracking program
-
-	  Gpredict is a satellite tracking program for Unix-like operating systems.
-	  Whilst still in its infancy it already sports some very useful features:
-	  
-	  * Realtime satellite tracking
-	  - using a world map displaying its footprints
-	  - using a list showing current position and elevation
-	  - AOS/LOS Time
-	  - detailed satellite orbit data
-	  - display of track plot
-	  * Realtime antenna tracking control
-	  * Control over radio equipment control by means of hamlib library
-
-	  http://groundstation.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_HAM_XDX
 	bool "xdx-2.4.2nb7"
@@ -378,15 +510,6 @@ config BR2_PKGSRC_PACKAGE_HAM_XDX
 
 	  http://www.qsl.net/pg4i/linux/xdx.html
 
-config BR2_PKGSRC_PACKAGE_HAM_GRIG
-	bool "grig-0.7.2nb6"
-	help
-	  Graphical user interface to the Hamlib libraries
-
-	  Gnome Rig is a graphical interface to the Ham Radio Control Libraries
-	  written using the Gtk+ and Gnome widgets.
-
-	  http://groundstation.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_HAM_XLOG
 	bool "xlog-2.0.4nb2"
@@ -397,6 +520,7 @@ config BR2_PKGSRC_PACKAGE_HAM_XLOG
 	  editest.
 
 	  http://www.nongnu.org/xlog/
+
 
 config BR2_PKGSRC_PACKAGE_HAM_YAESU
 	bool "yaesu-0.13"
@@ -409,95 +533,4 @@ config BR2_PKGSRC_PACKAGE_HAM_YAESU
 
 	  
 
-config BR2_PKGSRC_PACKAGE_HAM_HAMLIB
-	bool "hamlib-1.2.12"
-	help
-	  API for digital communications equipment
-
-	  The Ham Radio Control Library, Hamlib for short, provides a standardized
-	  API layer enabling access and control to a wide variety of digital
-	  communications equipment.
-
-	  http://hamlib.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_HAM_LINPSK
-	bool "linpsk-0.8.1nb7"
-	help
-	  PSK31 terminal program using QT3
-
-	  LinPSK is a PSK31 program based on WinPSK 1.0
-	  
-	  Main features are:
-	  
-	  * support for BPSK, QPSK, MFSK16 and RTTY
-	  * simultaneuos decoding of up to four channels.
-	  * mixed digital signal reception
-	  * trigger channels on receiving a predefined ASCII string patterns
-	  * log each channel to a file
-	  * support for user defined macros
-	  * scalable display of signal as frequency spectrum or waterfall
-
-	  http://linpsk.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE
-	bool "gnuradio-core-3.3.0"
-	help
-	  Runtime system and DSP blocks for GNU Radio
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This module provides the main library containing the underlying runtime
-	  system and most of the hardware independent signal processing blocks.
-
-	  http://www.gnu.org/software/gnuradio/
-
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE_DOCS
-	bool "gnuradio-core-docs-3.3.0nb5"
-	help
-	  GNU Radio core module documentation
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This package contains the documentation for the GNU Radio core module.
-
-	  http://www.gnu.org/software/gnuradio/
-
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_GSM
-	bool "gnuradio-gsm-3.3.0"
-	help
-	  GNU Radio GSM 06.10 13kbit/sec voice encoder/decoder
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This package contains the GNU Radio GSM 06.10 13kbit/sec voice encoder/decoder.
-
-	  http://www.gnu.org/software/gnuradio/
-
-config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_EXAMPLES
-	bool "gnuradio-examples-3.3.0nb3"
-	help
-	  Examples for GNU Radio
-
-	  GNU Radio is a collection of software that when combined with minimal hardware,
-	  allows the construction of radios where the actual waveforms transmitted and
-	  received are defined by software. What this means is that it turns the digital
-	  modulation schemes used in today's high performance wireless devices into
-	  software problems.
-	  
-	  This module contains example code that may be used to exercise GNU Radio or
-	  as a starting point for a new project.
-
-	  http://www.gnu.org/software/gnuradio/
 

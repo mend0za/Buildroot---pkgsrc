@@ -21,15 +21,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_9E
 
 	  http://www.eecs.harvard.edu/~wkj/Software/9e/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LCAB
-	bool "lcab-1.0b12"
-	help
-	  
-
-	  LCAB is a small program that creates a MS Cabinet (.CAB) file from
-	  a set of input files.
-
-	  http://ohnopub.net/~ohnobinki/lcab
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ADVANCECOMP
 	bool "advancecomp-1.15"
@@ -50,23 +41,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ADVANCECOMP
 
 	  http://advancemame.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_BZIP2
-	bool "bzip2-1.0.6"
-	help
-	  Block-sorting file compressor
-
-	  This is bzip2, a block-sorting file compressor.
-	  
-	  From the README:
-	  
-	  To the best of my knowledge, bzip2 does not use any patented
-	  algorithms.  However, I do not have the resources available to
-	  carry out a full patent search.  Therefore I cannot give any
-	  guarantee of the above statement.
-	  
-	  Julian Seward <jseward@acm.org>
-
-	  http://www.bzip.org/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_AFIO
 	bool "afio-2.5nb1"
@@ -81,40 +55,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_AFIO
 
 	  http://freshmeat.net/projects/afio/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LHA
-	bool "lha-114.9nb4"
-	help
-	  
-
-	  LHa for UNIX version 1.14c Mar. 7 1996 by Tsugio Okamoto
-	  
-	  This unofficial version of lha is based on Version 1.00.  This
-	  version supports extraction & archiving using -lh5- as well as
-	  extraction using -lh6- algorithm.
-	  
-	  All the bug reports on this version should be directed to Tsuguo
-	  Okamoto <GBA02146@NIFTYSERVE.OR.JP>.
-	  
-	  
-	  If this software is included in medium that may be obtained by
-	  users without network connectivity, please notify Tsuguo Okamoto in
-	  advance.  Redistribution over networks is not restricted.
-
-	  http://www2m.biglobe.ne.jp/~dolphin/lha/lha-unix.htm
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR
-	bool "gtar-1.26"
-	help
-	  
-
-	  GNU tar, is a full-featured tar command that can access remote
-	  and local magnetic tapes, tar files (ustar, POSIX, and V7), and
-	  even compressed or gzipped versions of these.
-	  
-	  This package provides easy installation of both the actual GNU
-	  tape archiver and its associated info documentation.
-
-	  http://www.gnu.org/software/tar/tar.html
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ARC
 	bool "arc-5.21o"
@@ -130,66 +70,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ARC
 
 	  http://sourceforge.net/projects/arc/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_CABEXTRACT
-	bool "cabextract-1.4"
-	help
-	  
-
-	  cabextract is a program that un-archives files in the Microsoft
-	  cabinet file format (.cab) or any binary file which contains an
-	  embedded cabinet file (frequently found in .exe files).
-	  
-	  cabextract will extract all files from all cabinet files specified on
-	  the command line
-	  
-	  To extract a multi-part cabinet consisting of several files, only give
-	  the first file as an argument to cabextract as it will automatically
-	  look for the remaining files.
-
-	  http://www.cabextract.org.uk/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBARCHIVE
-	bool "libarchive-2.8.4"
-	help
-	  Library to read/create different archive formats
-
-	  Libarchive is a programming library that can create and read several
-	  different streaming archive formats, including most popular tar variants
-	  and several cpio formats. It can also write shar archives and read
-	  ISO9660 CDROM images.
-
-	  http://code.google.com/p/libarchive/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBCOMPREX
-	bool "libcomprex-0.3.3nb5"
-	help
-	  
-
-	  The libcomprex library transparently handles automatic compression and
-	  decompression of files. The API is similar to C's built-in file access
-	  functions, which provides a smooth transition to libcomprex.
-	  libcomprex can also open uncompressed files, making it a good
-	  replacement for the native file access functions.
-	  
-	  libcomprex is part of the GNUpdate project.
-	  
-	  libcomprex is currently in development (so should not be used in
-	  stable products).
-
-	  http://www.gnupdate.org/components/libcomprex/index.xml
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR_BASE
-	bool "gtar-base-1.26"
-	help
-	  The GNU tape archiver with remote magnetic tape support
-
-	  GNU tar, originally shipped as NetBSD's "tar" up to version 1.3, is a
-	  full-featured tar command that can access remote and local magnetic tapes,
-	  tar files (ustar, POSIX, and V7), and even compressed or gzipped versions
-	  of these.  Note that as of the current version of GNU tar (1.12), gtar
-	  does not create "correct" ustar archives.
-
-	  http://www.gnu.org/software/tar/tar.html
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ARCHANGEL
 	bool "archangel-20050730nb1"
@@ -213,34 +93,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ARCHANGEL
 
 	  http://www.alistaircrooks.co.uk/software.html
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBLZO
-	bool "liblzo-1.08nb1"
-	help
-	  
-
-	  LZO is a portable lossless data compression library written in ANSI
-	  C.  It offers pretty fast compression and *very* fast decompression.
-	  Decompression requires no memory.  In addition, there are slower
-	  compression levels achieving a quite competitive compression ratio
-	  while still decompressing at this very high speed.
-	  
-	  This package contains the older v1 release of the library.
-	  See pkgsrc/archivers/lzo for the current version.
-
-	  http://www.oberhumer.com/opensource/lzo/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR_INFO
-	bool "gtar-info-1.26"
-	help
-	  Info format documentation for the GNU tape archiver
-
-	  GNU tar, is a full-featured tar command that can access remote
-	  and local magnetic tapes, tar files (ustar, POSIX, and V7), and
-	  even compressed or gzipped versions of these.
-	  
-	  This package provides info pages for the GNU tape archiver.
-
-	  http://www.gnu.org/software/tar/tar.html
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ARJ
 	bool "arj-3.10.22"
@@ -260,33 +112,103 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ARJ
 
 	  http://arj.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBZIP
-	bool "libzip-0.10"
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_BICOM
+	bool "bicom-1.01nb2"
 	help
-	  C library to manipulate zip archives
+	  Data compressor in the PPM family
 
-	  libzip is a C library for reading, creating, and modifying zip
-	  archives. Files can be added from data buffers, files, or compressed
-	  data copied directly from other zip archives. Changes made without
-	  closing the archive can be reverted. The API is documented by man
-	  pages.
+	  Bicom is a data compressor in the PPM family. It is freely available and
+	  open source.  Compression with bicom is completely bijective -- any file
+	  is a possible bicom output that can be decompressed, and then
+	  recompressed back to its original form.  Of course, any file is also a
+	  possible bicom input that can be compressed, and then decompressed back
+	  to its original form.
 
-	  http://www.nih.at/libzip/
+	  http://www3.sympatico.ca/mt0000/bicom/bicom.html
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_GZIP
-	bool "gzip-1.3.12nb3"
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_BSDTAR
+	bool "bsdtar-2.8.4"
 	help
-	  Compress or expand files
+	  Fast multi-format tape archiver
 
-	  GZIP (GNU zip) is a popular data compression program written by Jean-Loup
-	  Gailly <gzip@gnu.org> for the GNU project.
+	  The libarchive library contains routines for creating, reading from, and
+	  writing to different streaming archive formats, e.g. most popular tar
+	  and cpio formats. Additionally, libarchive supports writing to shar archives
+	  and reading from ISO-9660 (CD-ROM) images.
 	  
-	  This program was developed as a replacement for compress because of the UNISYS
-	  and IBM patents covering the LZW algorithm used by compress.  These patents
-	  made it impossible for us to use compress, and we needed a replacement.  The
-	  superior compression ratio of GZIP is just a bonus.
+	  This package contains bsdtar, a high-efficiency libarchive front-end which
+	  is [almost] wholly compatible with the ubiquitous GNU tar.  It supports
+	  advanced features many other implementations do not.
+	  
+	  For your convenience, the installed bsdtar binary will not be linked
+	  to any pkgsrc-provided libraries.
 
-	  http://www.gnu.org/software/gzip/gzip.html
+	  http://code.google.com/p/libarchive/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_BUNZIP
+	bool "bunzip-0.21"
+	help
+	  Decompressor for bzip .bz files
+
+	  Please use bzip2, which is the successor of this older bzip version.
+	  This port stays for compatibility reasons.  A discussion of the
+	  advantages of bzip2 over bzip 0.21 is given on the homepage.
+	  
+	  In short: bzip2 is faster, more reliable and *patent free*
+	  
+	  This program may or may not infringe certain US patents pertaining
+	  to arithmetic coding and to the block-sorting transformation itself.
+	  Opinions differ as to the precise legal status of some of the
+	  algorithms used.  Nevertheless, you should be aware that commercial
+	  use of this program could render you liable to unfriendly legal
+	  action.
+	  
+	  [This package contains a DECOMPRESS-ONLY version, bunzip, which
+	  provides less legal problems than the full bzip program.]
+
+	  http://www.muraroa.demon.co.uk/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_BZIP2
+	bool "bzip2-1.0.6"
+	help
+	  Block-sorting file compressor
+
+	  This is bzip2, a block-sorting file compressor.
+	  
+	  From the README:
+	  
+	  To the best of my knowledge, bzip2 does not use any patented
+	  algorithms.  However, I do not have the resources available to
+	  carry out a full patent search.  Therefore I cannot give any
+	  guarantee of the above statement.
+	  
+	  Julian Seward <jseward@acm.org>
+
+	  http://www.bzip.org/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_CABEXTRACT
+	bool "cabextract-1.4"
+	help
+	  
+
+	  cabextract is a program that un-archives files in the Microsoft
+	  cabinet file format (.cab) or any binary file which contains an
+	  embedded cabinet file (frequently found in .exe files).
+	  
+	  cabextract will extract all files from all cabinet files specified on
+	  the command line
+	  
+	  To extract a multi-part cabinet consisting of several files, only give
+	  the first file as an argument to cabextract as it will automatically
+	  look for the remaining files.
+
+	  http://www.cabextract.org.uk/
+
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_DACT
 	bool "dact-0.8.41"
@@ -299,33 +221,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_DACT
 
 	  http://www.rkeene.org/devel/dact/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZIP
-	bool "lzip-1.7"
-	help
-	  Lossless data compressor based on the LZMA algorithm
-
-	  Lzip is a lossless data compressor based on the LZMA algorithm, with
-	  very safe integrity checking and a user interface similar to the one of
-	  gzip or bzip2. Lzip decompresses almost as fast as gzip and compresses
-	  better than bzip2, which makes it well suited for software distribution
-	  and data archiving.
-
-	  http://www.nongnu.org/lzip/lzip.html
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_GZRECOVER
-	bool "gzrecover-0.5"
-	help
-	  GZip Recovery Toolkit
-
-	  So you thought you had your files backed up onto that jaz cartridge -
-	  until it came time to restore. Then you found out that you had bad
-	  sectors and you've lost almost everything because gzip craps out 10%
-	  of the way through your archive. The gzip Recovery Toolkit has a program
-	  - gzrecover - that attempts to skip over bad data in a gzip archive and
-	  to GNU tar that enables that program to skip over bad data and extract
-	  whatever files might be there.
-
-	  http://www.urbanophile.com/arenn/hacking/gzrt/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_DAR
 	bool "dar-2.4.1"
@@ -348,14 +243,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_DAR
 
 	  http://dar.linux.free.fr/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZMA
-	bool "lzma-4.65"
-	help
-	  LZMA compression utility from 7zip
-
-	  7zip LZMA SDK utility
-
-	  http://www.7-zip.org/sdk.html
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_FASTJAR
 	bool "fastjar-0.93nb3"
@@ -379,62 +266,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_FASTJAR
 
 	  http://fastjar.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZMALIB
-	bool "lzmalib-0.0.1"
-	help
-	  Thin wrapper library of LZMA
-
-	  This package includes a thin wrapper library of LZMA SDK written
-	  by Igor Pavlov.
-
-	  http://tokyocabinet.sourceforge.net/misc/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZO
-	bool "lzo-2.06"
-	help
-	  Portable lossless data compression library
-
-	  LZO is a portable lossless data compression library written in ANSI
-	  C.  It offers pretty fast compression and very fast decompression.
-	  Decompression requires no memory.
-	  
-	  In addition there are slower compression levels achieving a quite
-	  competitive compression ratio while still decompressing at this
-	  very high speed.
-	  
-	  The LZO algorithms and implementations are copyrighted OpenSource
-	  distributed under the GNU General Public License.
-
-	  http://www.oberhumer.com/opensource/lzo/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_BICOM
-	bool "bicom-1.01nb2"
-	help
-	  Data compressor in the PPM family
-
-	  Bicom is a data compressor in the PPM family. It is freely available and
-	  open source.  Compression with bicom is completely bijective -- any file
-	  is a possible bicom output that can be decompressed, and then
-	  recompressed back to its original form.  Of course, any file is also a
-	  possible bicom input that can be compressed, and then decompressed back
-	  to its original form.
-
-	  http://www3.sympatico.ca/mt0000/bicom/bicom.html
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZOP
-	bool "lzop-1.03"
-	help
-	  Fast file compressor similar to gzip, using the LZO library
-
-	  lzop is a file compressor which is very similar to gzip.  It uses the LZO
-	  library for compression services and its main advantages over gzip are much
-	  higher compression and decompression speed (at the cost of some compression
-	  ratio).
-	  
-	  lzop is distributed under the terms of the GNU General Public License
-	  (GPL).
-
-	  http://www.lzop.org/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_FCRACKZIP
 	bool "fcrackzip-1.0nb1"
@@ -447,31 +278,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_FCRACKZIP
 
 	  http://home.schmorp.de/marc/fcrackzip.html
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_MACUTIL
-	bool "macutil-2.0b3"
-	help
-	  Create & extract Mac archive files
-
-	  macutil is a package that contains a number of utilities that deal with
-	  older Macintosh files (binhex and AppleDouble) on a Unix system.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_MAKESELF
-	bool "makeself-2.1.4"
-	help
-	  Neat script to make self-extracting archives
-
-	  makeself.sh is a small shell script that generates a self-extractable
-	  tar.gz archive from a directory. The resulting file appears as a shell
-	  script (many of those have a .run suffix), and can be launched as is.
-	  The archive will then uncompress itself to a temporary directory and an
-	  optional arbitrary command will be executed (for example an installation
-	  script). This is pretty similar to archives generated with WinZip
-	  Self-Extractor in the Windows world. Makeself archives also include
-	  checksums for integrity self-validation (CRC and/or MD5 checksums).
-
-	  http://www.megastep.org/makeself/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_FILE_ROLLER
 	bool "file-roller-2.32.2"
@@ -490,20 +296,142 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_FILE_ROLLER
 
 	  http://fileroller.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_MOUSETAR
-	bool "mousetar-20021217"
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_FREEZE
+	bool "freeze-2.5nb2"
 	help
-	  der Mouse's version of tar program
+	  FREEZE / MELT compression program - often used in QNX
 
-	  I've written a tar that owes nothing to anything else.  It's in the
-	  public domain and hence is free for NetBSD to steal, anything from
-	  lifting it verbatim to swiping ideas from.
+	  FREEZE / MELT COMPRESSION PROGRAM
 	  
-	  It doesn't currently have anything like --fast-read; that hadn't
-	  occurred to me.  Now that it's been pointed out, I'll be adding it; I
-	  think it's a valuable addition, whether or not NetBSD wants my tar.
+	  This version is tested under SunOS 4.1.2, Xenix 2.3.2, MS-DOS.
+	  
+	  The format of frozen (2.X) file is incompatible with that of frozen (1.0),
+	  but if this package is compiled with -DCOMPAT switch, you will able to
+	  unpack frozen (1.0) files, if you have them.
+	  
+	  --------- CALGARY COMPRESSION CORPUS RESULTS --------
+	  
+	  41127  bib.F		19924  paper1.F
+	  340447  book1.F	32439  paper2.F
+	  229188  book2.F	54993  pic.F
+	  68610  geo.F		14180  progc.F
+	  155157  news.F		17136  progl.F
+	  10551  obj1.F		11771  progp.F
+	  86216  obj2.F 	22903  trans.F
+	  
+	  Average bits/byte on the standard set (except paper3-6) =
+	  1104642 * 8 / 3141622 = 2.813
 
 	  
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_GCPIO
+	bool "gcpio-2.6nb8"
+	help
+	  
+
+	  GNU cpio is a full-featured cpio command that can access remote and
+	  local magnetic tapes, and both tar and cpio format archives in files or
+	  on tapes.
+	  
+	  This package does not include the mt (control magnetic tape drive
+	  operation) or rmt commands.
+
+	  http://www.gnu.org/software/cpio/cpio.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_GSHARUTILS
+	bool "gsharutils-4.2.1nb11"
+	help
+	  Allow packing and unpacking of shell archives
+
+	  This is the set of GNU shar utilities.
+	  
+	  `shar' makes so-called shell archives out of many files, preparing
+	  them for transmission by electronic mail services.  `unshar' helps
+	  unpacking shell archives after reception.  The core of both programs
+	  is initially derived from public domain.  Some modules and other
+	  code sections are freely borrowed from other GNU distributions,
+	  bringing `shar' under the terms of the GNU General Public License.
+
+	  http://www.gnu.org/software/sharutils/sharutils.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR
+	bool "gtar-1.26"
+	help
+	  
+
+	  GNU tar, is a full-featured tar command that can access remote
+	  and local magnetic tapes, tar files (ustar, POSIX, and V7), and
+	  even compressed or gzipped versions of these.
+	  
+	  This package provides easy installation of both the actual GNU
+	  tape archiver and its associated info documentation.
+
+	  http://www.gnu.org/software/tar/tar.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR_BASE
+	bool "gtar-base-1.26"
+	help
+	  The GNU tape archiver with remote magnetic tape support
+
+	  GNU tar, originally shipped as NetBSD's "tar" up to version 1.3, is a
+	  full-featured tar command that can access remote and local magnetic tapes,
+	  tar files (ustar, POSIX, and V7), and even compressed or gzipped versions
+	  of these.  Note that as of the current version of GNU tar (1.12), gtar
+	  does not create "correct" ustar archives.
+
+	  http://www.gnu.org/software/tar/tar.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR_INFO
+	bool "gtar-info-1.26"
+	help
+	  Info format documentation for the GNU tape archiver
+
+	  GNU tar, is a full-featured tar command that can access remote
+	  and local magnetic tapes, tar files (ustar, POSIX, and V7), and
+	  even compressed or gzipped versions of these.
+	  
+	  This package provides info pages for the GNU tape archiver.
+
+	  http://www.gnu.org/software/tar/tar.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_GZIP
+	bool "gzip-1.3.12nb3"
+	help
+	  Compress or expand files
+
+	  GZIP (GNU zip) is a popular data compression program written by Jean-Loup
+	  Gailly <gzip@gnu.org> for the GNU project.
+	  
+	  This program was developed as a replacement for compress because of the UNISYS
+	  and IBM patents covering the LZW algorithm used by compress.  These patents
+	  made it impossible for us to use compress, and we needed a replacement.  The
+	  superior compression ratio of GZIP is just a bonus.
+
+	  http://www.gnu.org/software/gzip/gzip.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_GZRECOVER
+	bool "gzrecover-0.5"
+	help
+	  GZip Recovery Toolkit
+
+	  So you thought you had your files backed up onto that jaz cartridge -
+	  until it came time to restore. Then you found out that you had bad
+	  sectors and you've lost almost everything because gzip craps out 10%
+	  of the way through your archive. The gzip Recovery Toolkit has a program
+	  - gzrecover - that attempts to skip over bad data in a gzip archive and
+	  to GNU tar that enables that program to skip over bad data and extract
+	  whatever files might be there.
+
+	  http://www.urbanophile.com/arenn/hacking/gzrt/
+
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_HA
 	bool "ha-0.999bnb1"
@@ -535,47 +463,270 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_HA
 
 	  
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_BSDTAR
-	bool "bsdtar-2.8.4"
-	help
-	  Fast multi-format tape archiver
 
-	  The libarchive library contains routines for creating, reading from, and
-	  writing to different streaming archive formats, e.g. most popular tar
-	  and cpio formats. Additionally, libarchive supports writing to shar archives
-	  and reading from ISO-9660 (CD-ROM) images.
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_HEIRLOOM_TAR
+	bool "heirloom-tar-070715"
+	help
 	  
-	  This package contains bsdtar, a high-efficiency libarchive front-end which
-	  is [almost] wholly compatible with the ubiquitous GNU tar.  It supports
-	  advanced features many other implementations do not.
+
+	  This package provides tsort utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_HPACK
+	bool "hpack-0.79nb2"
+	help
+	  Multi-System Archiver with open keys PGP-based security
+
+	  The hpack Multi-System Archiver is an archiver that was written to
+	  allow the transfer of archived data to different systems.  In the
+	  past archivers have traditionally been available for single systems
+	  only, for example PKZIP and LHARC for the IBM PC, Larc for the
+	  Amiga, StuffIt and Compactor for the Macintosh, and tar and compress
+	  for UNIX systems (while these archivers are available on other
+	  systems, their use is not widespread). Open-keys security included.
+
 	  
-	  For your convenience, the installed bsdtar binary will not be linked
-	  to any pkgsrc-provided libraries.
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_JAMJAR
+	bool "jamjar-0.7.1"
+	help
+	  Acunia version of the jar archiver
+
+	  The ACUNIA jar archive creation tool.
+
+	  http://wonka.acunia.com/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LBRATE
+	bool "lbrate-1.1nb1"
+	help
+	  Extract/decompress CP/M LBR archives
+
+	  lbrate extracts/decompresses files from the CP/M LBR format. (It can also list
+	  and test such archives.) It does this in an `unzip'-like manner, mostly hiding
+	  the details of individually compressed and renamed files, and transparently
+	  dealing with the required decompression/renaming.
+	  
+	  lbrate is apparently the only non-CP/M program to fully support
+	  decompressing files from all three CP/M compression schemes (Q, Z, Y). With
+	  this in mind, it can decompress such files directly, treating them as if they
+	  were single-entry LBRs.
+
+	  http://rus.members.beeb.net/lbrate.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LCAB
+	bool "lcab-1.0b12"
+	help
+	  
+
+	  LCAB is a small program that creates a MS Cabinet (.CAB) file from
+	  a set of input files.
+
+	  http://ohnopub.net/~ohnobinki/lcab
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LHA
+	bool "lha-114.9nb4"
+	help
+	  
+
+	  LHa for UNIX version 1.14c Mar. 7 1996 by Tsugio Okamoto
+	  
+	  This unofficial version of lha is based on Version 1.00.  This
+	  version supports extraction & archiving using -lh5- as well as
+	  extraction using -lh6- algorithm.
+	  
+	  All the bug reports on this version should be directed to Tsuguo
+	  Okamoto <GBA02146@NIFTYSERVE.OR.JP>.
+	  
+	  
+	  If this software is included in medium that may be obtained by
+	  users without network connectivity, please notify Tsuguo Okamoto in
+	  advance.  Redistribution over networks is not restricted.
+
+	  http://www2m.biglobe.ne.jp/~dolphin/lha/lha-unix.htm
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBARCHIVE
+	bool "libarchive-2.8.4"
+	help
+	  Library to read/create different archive formats
+
+	  Libarchive is a programming library that can create and read several
+	  different streaming archive formats, including most popular tar variants
+	  and several cpio formats. It can also write shar archives and read
+	  ISO9660 CDROM images.
 
 	  http://code.google.com/p/libarchive/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_BUNZIP
-	bool "bunzip-0.21"
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBCOMPREX
+	bool "libcomprex-0.3.3nb5"
 	help
-	  Decompressor for bzip .bz files
+	  
 
-	  Please use bzip2, which is the successor of this older bzip version.
-	  This port stays for compatibility reasons.  A discussion of the
-	  advantages of bzip2 over bzip 0.21 is given on the homepage.
+	  The libcomprex library transparently handles automatic compression and
+	  decompression of files. The API is similar to C's built-in file access
+	  functions, which provides a smooth transition to libcomprex.
+	  libcomprex can also open uncompressed files, making it a good
+	  replacement for the native file access functions.
 	  
-	  In short: bzip2 is faster, more reliable and *patent free*
+	  libcomprex is part of the GNUpdate project.
 	  
-	  This program may or may not infringe certain US patents pertaining
-	  to arithmetic coding and to the block-sorting transformation itself.
-	  Opinions differ as to the precise legal status of some of the
-	  algorithms used.  Nevertheless, you should be aware that commercial
-	  use of this program could render you liable to unfriendly legal
-	  action.
-	  
-	  [This package contains a DECOMPRESS-ONLY version, bunzip, which
-	  provides less legal problems than the full bzip program.]
+	  libcomprex is currently in development (so should not be used in
+	  stable products).
 
-	  http://www.muraroa.demon.co.uk/
+	  http://www.gnupdate.org/components/libcomprex/index.xml
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBLZO
+	bool "liblzo-1.08nb1"
+	help
+	  
+
+	  LZO is a portable lossless data compression library written in ANSI
+	  C.  It offers pretty fast compression and *very* fast decompression.
+	  Decompression requires no memory.  In addition, there are slower
+	  compression levels achieving a quite competitive compression ratio
+	  while still decompressing at this very high speed.
+	  
+	  This package contains the older v1 release of the library.
+	  See pkgsrc/archivers/lzo for the current version.
+
+	  http://www.oberhumer.com/opensource/lzo/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBZIP
+	bool "libzip-0.10"
+	help
+	  C library to manipulate zip archives
+
+	  libzip is a C library for reading, creating, and modifying zip
+	  archives. Files can be added from data buffers, files, or compressed
+	  data copied directly from other zip archives. Changes made without
+	  closing the archive can be reverted. The API is documented by man
+	  pages.
+
+	  http://www.nih.at/libzip/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZIP
+	bool "lzip-1.7"
+	help
+	  Lossless data compressor based on the LZMA algorithm
+
+	  Lzip is a lossless data compressor based on the LZMA algorithm, with
+	  very safe integrity checking and a user interface similar to the one of
+	  gzip or bzip2. Lzip decompresses almost as fast as gzip and compresses
+	  better than bzip2, which makes it well suited for software distribution
+	  and data archiving.
+
+	  http://www.nongnu.org/lzip/lzip.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZMA
+	bool "lzma-4.65"
+	help
+	  LZMA compression utility from 7zip
+
+	  7zip LZMA SDK utility
+
+	  http://www.7-zip.org/sdk.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZMALIB
+	bool "lzmalib-0.0.1"
+	help
+	  Thin wrapper library of LZMA
+
+	  This package includes a thin wrapper library of LZMA SDK written
+	  by Igor Pavlov.
+
+	  http://tokyocabinet.sourceforge.net/misc/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZO
+	bool "lzo-2.06"
+	help
+	  Portable lossless data compression library
+
+	  LZO is a portable lossless data compression library written in ANSI
+	  C.  It offers pretty fast compression and very fast decompression.
+	  Decompression requires no memory.
+	  
+	  In addition there are slower compression levels achieving a quite
+	  competitive compression ratio while still decompressing at this
+	  very high speed.
+	  
+	  The LZO algorithms and implementations are copyrighted OpenSource
+	  distributed under the GNU General Public License.
+
+	  http://www.oberhumer.com/opensource/lzo/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZOP
+	bool "lzop-1.03"
+	help
+	  Fast file compressor similar to gzip, using the LZO library
+
+	  lzop is a file compressor which is very similar to gzip.  It uses the LZO
+	  library for compression services and its main advantages over gzip are much
+	  higher compression and decompression speed (at the cost of some compression
+	  ratio).
+	  
+	  lzop is distributed under the terms of the GNU General Public License
+	  (GPL).
+
+	  http://www.lzop.org/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_MACUTIL
+	bool "macutil-2.0b3"
+	help
+	  Create & extract Mac archive files
+
+	  macutil is a package that contains a number of utilities that deal with
+	  older Macintosh files (binhex and AppleDouble) on a Unix system.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_MAKESELF
+	bool "makeself-2.1.4"
+	help
+	  Neat script to make self-extracting archives
+
+	  makeself.sh is a small shell script that generates a self-extractable
+	  tar.gz archive from a directory. The resulting file appears as a shell
+	  script (many of those have a .run suffix), and can be launched as is.
+	  The archive will then uncompress itself to a temporary directory and an
+	  optional arbitrary command will be executed (for example an installation
+	  script). This is pretty similar to archives generated with WinZip
+	  Self-Extractor in the Windows world. Makeself archives also include
+	  checksums for integrity self-validation (CRC and/or MD5 checksums).
+
+	  http://www.megastep.org/makeself/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_MOUSETAR
+	bool "mousetar-20021217"
+	help
+	  der Mouse's version of tar program
+
+	  I've written a tar that owes nothing to anything else.  It's in the
+	  public domain and hence is free for NetBSD to steal, anything from
+	  lifting it verbatim to swiping ideas from.
+	  
+	  It doesn't currently have anything like --fast-read; that hadn't
+	  occurred to me.  Now that it's been pointed out, I'll be adding it; I
+	  think it's a valuable addition, whether or not NetBSD wants my tar.
+
+	  
+
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_MSCOMPRESS
 	bool "mscompress-0.3"
@@ -596,33 +747,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_MSCOMPRESS
 
 	  ftp://ftp.penguin.cz/pub/users/mhi/mscompress/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_FREEZE
-	bool "freeze-2.5nb2"
-	help
-	  FREEZE / MELT compression program - often used in QNX
-
-	  FREEZE / MELT COMPRESSION PROGRAM
-	  
-	  This version is tested under SunOS 4.1.2, Xenix 2.3.2, MS-DOS.
-	  
-	  The format of frozen (2.X) file is incompatible with that of frozen (1.0),
-	  but if this package is compiled with -DCOMPAT switch, you will able to
-	  unpack frozen (1.0) files, if you have them.
-	  
-	  --------- CALGARY COMPRESSION CORPUS RESULTS --------
-	  
-	  41127  bib.F		19924  paper1.F
-	  340447  book1.F	32439  paper2.F
-	  229188  book2.F	54993  pic.F
-	  68610  geo.F		14180  progc.F
-	  155157  news.F		17136  progl.F
-	  10551  obj1.F		11771  progp.F
-	  86216  obj2.F 	22903  trans.F
-	  
-	  Average bits/byte on the standard set (except paper3-6) =
-	  1104642 * 8 / 3141622 = 2.813
-
-	  
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_NOMARCH
 	bool "nomarch-1.4"
@@ -634,28 +758,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_NOMARCH
 
 	  http://rus.members.beeb.net/nomarch.html
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_HEIRLOOM_TAR
-	bool "heirloom-tar-070715"
-	help
-	  
-
-	  This package provides tsort utility.
-
-	  http://heirloom.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_GCPIO
-	bool "gcpio-2.6nb8"
-	help
-	  
-
-	  GNU cpio is a full-featured cpio command that can access remote and
-	  local magnetic tapes, and both tar and cpio format archives in files or
-	  on tapes.
-	  
-	  This package does not include the mt (control magnetic tape drive
-	  operation) or rmt commands.
-
-	  http://www.gnu.org/software/cpio/cpio.html
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_NULIB2
 	bool "nulib2-2.0.3"
@@ -671,62 +773,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_NULIB2
 
 	  http://www.nulib.com/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_GSHARUTILS
-	bool "gsharutils-4.2.1nb11"
-	help
-	  Allow packing and unpacking of shell archives
-
-	  This is the set of GNU shar utilities.
-	  
-	  `shar' makes so-called shell archives out of many files, preparing
-	  them for transmission by electronic mail services.  `unshar' helps
-	  unpacking shell archives after reception.  The core of both programs
-	  is initially derived from public domain.  Some modules and other
-	  code sections are freely borrowed from other GNU distributions,
-	  bringing `shar' under the terms of the GNU General Public License.
-
-	  http://www.gnu.org/software/sharutils/sharutils.html
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_HPACK
-	bool "hpack-0.79nb2"
-	help
-	  Multi-System Archiver with open keys PGP-based security
-
-	  The hpack Multi-System Archiver is an archiver that was written to
-	  allow the transfer of archived data to different systems.  In the
-	  past archivers have traditionally been available for single systems
-	  only, for example PKZIP and LHARC for the IBM PC, Larc for the
-	  Amiga, StuffIt and Compactor for the Macintosh, and tar and compress
-	  for UNIX systems (while these archivers are available on other
-	  systems, their use is not widespread). Open-keys security included.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_JAMJAR
-	bool "jamjar-0.7.1"
-	help
-	  Acunia version of the jar archiver
-
-	  The ACUNIA jar archive creation tool.
-
-	  http://wonka.acunia.com/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LBRATE
-	bool "lbrate-1.1nb1"
-	help
-	  Extract/decompress CP/M LBR archives
-
-	  lbrate extracts/decompresses files from the CP/M LBR format. (It can also list
-	  and test such archives.) It does this in an `unzip'-like manner, mostly hiding
-	  the details of individually compressed and renamed files, and transparently
-	  dealing with the required decompression/renaming.
-	  
-	  lbrate is apparently the only non-CP/M program to fully support
-	  decompressing files from all three CP/M compression schemes (Q, Z, Y). With
-	  this in mind, it can decompress such files directly, treating them as if they
-	  were single-entry LBRs.
-
-	  http://rus.members.beeb.net/lbrate.html
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_OCAML_ZIP
 	bool "ocaml-zip-1.03"
@@ -739,6 +785,298 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_OCAML_ZIP
 
 	  http://cristal.inria.fr/~xleroy/software.html
 
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_ANY
+	bool "p5-Archive-Any-0.0932nb2"
+	help
+	  Perl5 module with single interface to deal with archives
+
+	  This module is a single interface for manipulating different archive
+	  formats. Tarballs, zip files, etc.
+
+	  http://search.cpan.org/dist/Archive-Any/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_TAR
+	bool "p5-Archive-Tar-1.76"
+	help
+	  Perl5 module interface to manipulate tar files
+
+	  Perl module for creation and manipulation of tar files.
+	  
+	  This module uses no C-coded parts in itself, but it will try to use
+	  the Compress::Zlib module to read and write gzipped tarfiles.
+	  Archive::Tar will still work without Zlib, it will just complain a
+	  little bit (and, of course, not be able to use compression). The
+	  complaining will be removed when the module leaves the alpha stage,
+	  and can be trivially removed by commenting out the offending print
+	  near the top of Tar.pm.
+
+	  http://search.cpan.org/dist/Archive-Tar/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_ZIP
+	bool "p5-Archive-Zip-1.30nb2"
+	help
+	  Perl5 module interface to manipulate zip files
+
+	  The Archive::Zip module allows a Perl program to create, manipulate,
+	  read, and write Zip archive files.
+
+	  http://search.cpan.org/dist/Archive-Zip/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_COMPRESS_BZIP2
+	bool "p5-Compress-Bzip2-2.09nb3"
+	help
+	  Perl5 interface to bzip2 compression library
+
+	  Bzip2 bindings for Perl5. That means you can access the
+	  Bzip2 library from your Perl scripts there by compressing ordinary
+	  Perl strings.
+
+	  http://search.cpan.org/dist/Compress-Bzip2/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_COMPRESS_LZMA_SIMPLE
+	bool "p5-Compress-LZMA-Simple-0.2nb3"
+	help
+	  Perl interface of lzmalib
+
+	  This module is a Perl interface of "lzmalib", which is a tiny wrapper
+	  of the LZMA SDK.
+
+	  http://search.cpan.org/dist/Compress-LZMA-Simple/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_P7ZIP
+	bool "p7zip-9.20.1"
+	help
+	  File archiver with high compression
+
+	  p7zip is a port of the Windows program 7za.exe.
+	  
+	  7za.exe is a file archiver with the highest compression ratio.
+
+	  http://p7zip.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PAR2
+	bool "par2-0.4nb1"
+	help
+	  Create or use PAR2 parity volumes
+
+	  par2cmdline is a PAR 2.0 compatible file verification and repair tool.
+	  
+	  See http://parchive.sourceforge.net for details of PAR 2.0 specification
+	  and discussion of all things PAR.
+	  
+	  WHAT EXACTLY IS PAR2CMDLINE?
+	  
+	  par2cmdline is a program for creating and using PAR2 files to detect
+	  damage in data files and repair them if necessary. It can be used with
+	  any kind of file.
+
+	  http://parchive.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PAX
+	bool "pax-20080110"
+	help
+	  POSIX standard archiver with many extensions
+
+	  NetBSD pax is the POSIX standard archiver with many extensions.
+	  
+	  pax will read, write, and list the members of an archive file, and will
+	  copy directory hierarchies.
+	  
+	  pax operation is independent of the specific archive format, and supports
+	  a wide variety of different archive formats.
+
+	  http://www.NetBSD.org/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PBZIP2
+	bool "pbzip2-1.1.5"
+	help
+	  Parallel implementation of the bzip2 block-sorting file compressor
+
+	  The pbzip2 program is a parallel version of bzip2 for use on shared
+	  memory machines.  It provides near-linear speedup when used on true
+	  multi-processor machines and 5-10% speedup on Hyperthreaded machines.
+	  The output is fully compatible with the regular bzip2 data so any
+	  files created with pbzip2 can be uncompressed by bzip2 and vice-versa.
+
+	  http://compression.ca/pbzip2/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PDBAR
+	bool "pdbar-0.5.1"
+	help
+	  Palm database archiver
+
+	  The Palm database archiver (pdbar) creates and manipulates PalmOS
+	  database (.pdb) and resource (.prc) files.  Pdbar is designed to be a
+	  Swiss army knife for managing these files.  It's a command line tool,
+	  and not for the faint of heart, but it's very handy and replaces a
+	  bunch of little utilities that you might otherwise use.
+
+	  http://www.djw.org/product/palm/par/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_BZ2
+	bool "php53-bz2-5.3.8"
+	help
+	  PHP extension for bzip2 compression
+
+	  PHP is a programming language designed to be embedded into web pages.
+	  This module provides bzip2 compression support.
+
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_ZIP
+	bool "php53-zip-5.3.8nb2"
+	help
+	  PHP extension for ZIP archive handling
+
+	  PHP is a programming language designed to be embedded into web pages.
+	  This PECL module provides ZIP archive handling support.
+
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_ZLIB
+	bool "php53-zlib-5.3.8"
+	help
+	  PHP extension for zlib compression
+
+	  PHP is a programming language designed to be embedded into web pages.
+	  This module provides zlib compression support.
+
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PIGZ
+	bool "pigz-2.1.6"
+	help
+	  Parallel implementation of gzip
+
+	  pigz, which stands for Parallel Implementation of GZip, is a fully
+	  functional replacement for gzip that exploits multiple processors
+	  and multiple cores to the hilt when compressing data.
+
+	  http://zlib.net/pigz/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PPMD
+	bool "ppmd-9.1"
+	help
+	  PPM file compressor
+
+	  PPMd is a file compressor written mainly for embedding in user programs, and
+	  it is not intended for direct use.  This program is an effort to make speed
+	  and performance improvements on the abstract PPM model [1-6] without tuning
+	  it to particular data types.
+
+	  http://compression.ru/ds/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_PPUNPACK
+	bool "ppunpack-1.0"
+	help
+	  Decompresses Amiga PowerPacker files
+
+	  THIS SOURCE-CODE CAN BE USED FOR NON COMMERCIAL PURPOSES ONLY,
+	  IN PPDECRUNCH OR TRACKER.
+	  
+	  PLEASE CONTACT Nico Francois (nico.francois@scala.com) FOR ANY
+	  OTHER USES.
+	  
+	  ppunpack only unpacks PowerPacker data files. It is only intended
+	  as an help for people who have to process Amiga-related files
+	  on other machines, and don't want to download PowerPacked files to
+	  an Amiga, uncompress the file, and upload it to the other machine.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_RAR
+	bool "rar-2.02nb1"
+	help
+	  
+
+	  RAR is a powerful tool allowing you to manage and control archive
+	  files.
+	  
+	  RAR features include:
+	  
+	  *  Highly sophisticated, original compression algorithm
+	  *  Special compression algorithms optimized for text, audio,
+	  graphics data, 32 and 64-bit Intel executables
+	  *  Better compression than similar tools, using 'solid' archiving
+	  *  Authenticity verification (registered version only)
+	  *  Self-extracting archives and volumes (SFX)
+	  *  Ability to recover physically damaged archives
+	  *  Locking, password, file order list, file security & more ...
+
+	  http://www.rarsoft.com/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_ROX_ARCHIVE
+	bool "rox-archive-2.0nb3"
+	help
+	  Simple archiver
+
+	  This is a simple ROX application for creating compressed tar files
+	  and for extracting various kinds of archive.
+
+	  http://rox.sourceforge.net/desktop/node/74
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_ARCHIVE_TAR_MINITAR
+	bool "ruby19-archive-tar-minitar-0.5.2nb2"
+	help
+	  Pure Ruby library for handling POSIX tar archives
+
+	  Archive::Tar::Minitar is a pure-Ruby library and command-line utility
+	  that provides the ability to deal with POSIX tar(1) archive files.
+
+	  http://rubyforge.org/projects/ruwiki/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_BZ2
+	bool "ruby19-bz2-0.2.2nb1"
+	help
+	  Ruby interface to the library libbzip2
+
+	  This is an interface to the library libbzip2 for Ruby.
+
+	  http://rubyforge.org/projects/bz2/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_LIBARCHIVE
+	bool "ruby19-libarchive-0.1.1nb1"
+	help
+	  Ruby bindings for Libarchive
+
+	  Libarchive is a programming library that can create and read several
+	  different streaming archive formats, including most popular tar
+	  variants, several cpio formats, and both BSD and GNU ar variants.
+
+	  http://libarchive.rubyforge.org
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_ZIP
+	bool "ruby19-zip-0.9.4nb1"
+	help
+	  Ruby module for reading and writing zip files
+
+	  rubyzip is a ruby module for reading and writing zip files.
+
+	  http://rubyzip.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RZIP
 	bool "rzip-2.1"
 	help
@@ -750,6 +1088,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_RZIP
 	  ratios than other programs.
 
 	  http://rzip.samba.org/
+
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_SAPCAR
 	bool "sapcar-7.00"
@@ -764,6 +1103,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_SAPCAR
 
 	  http://www.sap.com/
 
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_SARAB
 	bool "sarab-0.2.4"
 	help
@@ -775,6 +1115,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_SARAB
 
 	  http://sarab.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_SQUSQ
 	bool "squsq-3.3"
 	help
@@ -785,26 +1126,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_SQUSQ
 
 	  
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_ZIP
-	bool "p5-Archive-Zip-1.30nb2"
-	help
-	  Perl5 module interface to manipulate zip files
-
-	  The Archive::Zip module allows a Perl program to create, manipulate,
-	  read, and write Zip archive files.
-
-	  http://search.cpan.org/dist/Archive-Zip/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PIGZ
-	bool "pigz-2.1.6"
-	help
-	  Parallel implementation of gzip
-
-	  pigz, which stands for Parallel Implementation of GZip, is a fully
-	  functional replacement for gzip that exploits multiple processors
-	  and multiple cores to the hilt when compressing data.
-
-	  http://zlib.net/pigz/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_STAR
 	bool "star-1.4.3nb4"
@@ -825,17 +1146,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_STAR
 
 	  http://cdrecord.berlios.de/old/private/star.html
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PPMD
-	bool "ppmd-9.1"
-	help
-	  PPM file compressor
-
-	  PPMd is a file compressor written mainly for embedding in user programs, and
-	  it is not intended for direct use.  This program is an effort to make speed
-	  and performance improvements on the abstract PPM model [1-6] without tuning
-	  it to particular data types.
-
-	  http://compression.ru/ds/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_SZIP
 	bool "szip-2.1nb1"
@@ -848,23 +1158,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_SZIP
 
 	  http://www.hdfgroup.org/doc_resource/SZIP/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PPUNPACK
-	bool "ppunpack-1.0"
-	help
-	  Decompresses Amiga PowerPacker files
-
-	  THIS SOURCE-CODE CAN BE USED FOR NON COMMERCIAL PURPOSES ONLY,
-	  IN PPDECRUNCH OR TRACKER.
-	  
-	  PLEASE CONTACT Nico Francois (nico.francois@scala.com) FOR ANY
-	  OTHER USES.
-	  
-	  ppunpack only unpacks PowerPacker data files. It is only intended
-	  as an help for people who have to process Amiga-related files
-	  on other machines, and don't want to download PowerPacked files to
-	  an Amiga, uncompress the file, and upload it to the other machine.
-
-	  
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_TORRENTZIP
 	bool "torrentzip-0.2"
@@ -877,15 +1170,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_TORRENTZIP
 
 	  http://www.sourceforge.net/trrntzip/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_ANY
-	bool "p5-Archive-Any-0.0932nb2"
-	help
-	  Perl5 module with single interface to deal with archives
-
-	  This module is a single interface for manipulating different archive
-	  formats. Tarballs, zip files, etc.
-
-	  http://search.cpan.org/dist/Archive-Any/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNACE
 	bool "unace-1.2.2nb2"
@@ -896,6 +1180,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNACE
 	  integrity, and extract files from them.
 
 	  http://www.winace.com/
+
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNACE_BIN
 	bool "unace-bin-2.50"
@@ -909,6 +1194,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNACE_BIN
 
 	  http://www.winace.com/
 
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNALZ
 	bool "unalz-0.61"
 	help
@@ -921,6 +1207,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNALZ
 	  support password-protected archives and CRC checking.
 
 	  http://www.kipple.pe.kr/win/unalz/
+
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNARJ
 	bool "unarj-2.65nb1"
@@ -950,6 +1237,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNARJ
 
 	  http://www.arjsoftware.com/
 
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNDMS
 	bool "undms-1.3"
 	help
@@ -962,6 +1250,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNDMS
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNLZX
 	bool "unlzx-1.1"
 	help
@@ -972,26 +1261,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNLZX
 
 	  
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_RAR
-	bool "rar-2.02nb1"
-	help
-	  
-
-	  RAR is a powerful tool allowing you to manage and control archive
-	  files.
-	  
-	  RAR features include:
-	  
-	  *  Highly sophisticated, original compression algorithm
-	  *  Special compression algorithms optimized for text, audio,
-	  graphics data, 32 and 64-bit Intel executables
-	  *  Better compression than similar tools, using 'solid' archiving
-	  *  Authenticity verification (registered version only)
-	  *  Self-extracting archives and volumes (SFX)
-	  *  Ability to recover physically damaged archives
-	  *  Locking, password, file order list, file security & more ...
-
-	  http://www.rarsoft.com/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNRAR
 	bool "unrar-4.0.7"
@@ -1009,33 +1278,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNRAR
 
 	  http://www.rarlab.com/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_COMPRESS_BZIP2
-	bool "p5-Compress-Bzip2-2.09nb3"
-	help
-	  Perl5 interface to bzip2 compression library
-
-	  Bzip2 bindings for Perl5. That means you can access the
-	  Bzip2 library from your Perl scripts there by compressing ordinary
-	  Perl strings.
-
-	  http://search.cpan.org/dist/Compress-Bzip2/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_TAR
-	bool "p5-Archive-Tar-1.76"
-	help
-	  Perl5 module interface to manipulate tar files
-
-	  Perl module for creation and manipulation of tar files.
-	  
-	  This module uses no C-coded parts in itself, but it will try to use
-	  the Compress::Zlib module to read and write gzipped tarfiles.
-	  Archive::Tar will still work without Zlib, it will just complain a
-	  little bit (and, of course, not be able to use compression). The
-	  complaining will be removed when the module leaves the alpha stage,
-	  and can be trivially removed by commenting out the offending print
-	  near the top of Tar.pm.
-
-	  http://search.cpan.org/dist/Archive-Tar/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNSHIELD
 	bool "unshield-0.5.1"
@@ -1045,6 +1287,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNSHIELD
 	  Extract file from the InstallShield variant of windows .CAB files.
 
 	  http://sourceforge.net/projects/synce/
+
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNZIP
 	bool "unzip-6.0"
@@ -1076,6 +1319,57 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNZIP
 
 	  http://www.info-zip.org/pub/infozip/UnZip.html
 
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNZOO
+	bool "unzoo-4.4"
+	help
+	  Extract zoo archives
+
+	  unzoo is a public domain zoo archive extractor.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_UPX
+	bool "upx-1.25nb1"
+	help
+	  Ultimate packer for executables
+
+	  UPX is a free, portable, extendable, high-performance executable packer for
+	  several different executable formats. It achieves an excellent compression
+	  ratio and offers very fast decompression. Your executables suffer no memory
+	  overhead or other drawbacks because of in-place decompression.
+
+	  http://upx.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_XBIN
+	bool "xbin-2.3"
+	help
+	  Convert mailable BinHex format into binary
+
+	  Xbin converts a file created by BinHex (usually named with one of the
+	  extensions ".hex", ".hcx", or ".hqx") into three host-system files
+	  suitable for downloading to a Macintosh via macput.
+	  
+	  This program was designed for use with the 1.1 Release version of
+	  MacTerminal, but includes a compatibility option for the old -0.15X
+	  Almost-Alpha version.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_XMILL
+	bool "xmill-0.9.1nb3"
+	help
+	  Specialized compressor for XML
+
+	  XMill is a special-purpose compressor for XML data that typically achieves
+	  twice the compression rate over existing compressors, such as gzip.
+
+	  http://www.cs.washington.edu/homes/suciu/XMILL/
+
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_XPK
 	bool "xpk-0.1.4nb1"
 	help
@@ -1094,14 +1388,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_XPK
 
 	  http://www.jormas.com/~vesuri/xpk/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNZOO
-	bool "unzoo-4.4"
-	help
-	  Extract zoo archives
-
-	  unzoo is a public domain zoo archive extractor.
-
-	  
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_XZ
 	bool "xz-5.0.3"
@@ -1133,17 +1419,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_XZ
 
 	  http://tukaani.org/xz/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_UPX
-	bool "upx-1.25nb1"
-	help
-	  Ultimate packer for executables
-
-	  UPX is a free, portable, extendable, high-performance executable packer for
-	  several different executable formats. It achieves an excellent compression
-	  ratio and offers very fast decompression. Your executables suffer no memory
-	  overhead or other drawbacks because of in-place decompression.
-
-	  http://upx.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZIP
 	bool "zip-3.0nb2"
@@ -1156,6 +1431,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZIP
 	  you got zip.
 
 	  http://www.info-zip.org/pub/infozip/Zip.html
+
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZOO
 	bool "zoo-2.10.1nb4"
@@ -1172,30 +1448,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZOO
 
 	  
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_XBIN
-	bool "xbin-2.3"
-	help
-	  Convert mailable BinHex format into binary
-
-	  Xbin converts a file created by BinHex (usually named with one of the
-	  extensions ".hex", ".hcx", or ".hqx") into three host-system files
-	  suitable for downloading to a Macintosh via macput.
-	  
-	  This program was designed for use with the 1.1 Release version of
-	  MacTerminal, but includes a compatibility option for the old -0.15X
-	  Almost-Alpha version.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_XMILL
-	bool "xmill-0.9.1nb3"
-	help
-	  Specialized compressor for XML
-
-	  XMill is a special-purpose compressor for XML data that typically achieves
-	  twice the compression rate over existing compressors, such as gzip.
-
-	  http://www.cs.washington.edu/homes/suciu/XMILL/
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZZIPLIB
 	bool "zziplib-0.13.59"
@@ -1211,162 +1463,4 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZZIPLIB
 
 	  http://zziplib.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_COMPRESS_LZMA_SIMPLE
-	bool "p5-Compress-LZMA-Simple-0.2nb3"
-	help
-	  Perl interface of lzmalib
-
-	  This module is a Perl interface of "lzmalib", which is a tiny wrapper
-	  of the LZMA SDK.
-
-	  http://search.cpan.org/dist/Compress-LZMA-Simple/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_P7ZIP
-	bool "p7zip-9.20.1"
-	help
-	  File archiver with high compression
-
-	  p7zip is a port of the Windows program 7za.exe.
-	  
-	  7za.exe is a file archiver with the highest compression ratio.
-
-	  http://p7zip.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PAR2
-	bool "par2-0.4nb1"
-	help
-	  Create or use PAR2 parity volumes
-
-	  par2cmdline is a PAR 2.0 compatible file verification and repair tool.
-	  
-	  See http://parchive.sourceforge.net for details of PAR 2.0 specification
-	  and discussion of all things PAR.
-	  
-	  WHAT EXACTLY IS PAR2CMDLINE?
-	  
-	  par2cmdline is a program for creating and using PAR2 files to detect
-	  damage in data files and repair them if necessary. It can be used with
-	  any kind of file.
-
-	  http://parchive.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PAX
-	bool "pax-20080110"
-	help
-	  POSIX standard archiver with many extensions
-
-	  NetBSD pax is the POSIX standard archiver with many extensions.
-	  
-	  pax will read, write, and list the members of an archive file, and will
-	  copy directory hierarchies.
-	  
-	  pax operation is independent of the specific archive format, and supports
-	  a wide variety of different archive formats.
-
-	  http://www.NetBSD.org/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_ROX_ARCHIVE
-	bool "rox-archive-2.0nb3"
-	help
-	  Simple archiver
-
-	  This is a simple ROX application for creating compressed tar files
-	  and for extracting various kinds of archive.
-
-	  http://rox.sourceforge.net/desktop/node/74
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PBZIP2
-	bool "pbzip2-1.1.5"
-	help
-	  Parallel implementation of the bzip2 block-sorting file compressor
-
-	  The pbzip2 program is a parallel version of bzip2 for use on shared
-	  memory machines.  It provides near-linear speedup when used on true
-	  multi-processor machines and 5-10% speedup on Hyperthreaded machines.
-	  The output is fully compatible with the regular bzip2 data so any
-	  files created with pbzip2 can be uncompressed by bzip2 and vice-versa.
-
-	  http://compression.ca/pbzip2/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PDBAR
-	bool "pdbar-0.5.1"
-	help
-	  Palm database archiver
-
-	  The Palm database archiver (pdbar) creates and manipulates PalmOS
-	  database (.pdb) and resource (.prc) files.  Pdbar is designed to be a
-	  Swiss army knife for managing these files.  It's a command line tool,
-	  and not for the faint of heart, but it's very handy and replaces a
-	  bunch of little utilities that you might otherwise use.
-
-	  http://www.djw.org/product/palm/par/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_BZ2
-	bool "php53-bz2-5.3.8"
-	help
-	  PHP extension for bzip2 compression
-
-	  PHP is a programming language designed to be embedded into web pages.
-	  This module provides bzip2 compression support.
-
-	  http://www.php.net/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_ZLIB
-	bool "php53-zlib-5.3.8"
-	help
-	  PHP extension for zlib compression
-
-	  PHP is a programming language designed to be embedded into web pages.
-	  This module provides zlib compression support.
-
-	  http://www.php.net/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_ZIP
-	bool "php53-zip-5.3.8nb2"
-	help
-	  PHP extension for ZIP archive handling
-
-	  PHP is a programming language designed to be embedded into web pages.
-	  This PECL module provides ZIP archive handling support.
-
-	  http://www.php.net/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_ARCHIVE_TAR_MINITAR
-	bool "ruby19-archive-tar-minitar-0.5.2nb2"
-	help
-	  Pure Ruby library for handling POSIX tar archives
-
-	  Archive::Tar::Minitar is a pure-Ruby library and command-line utility
-	  that provides the ability to deal with POSIX tar(1) archive files.
-
-	  http://rubyforge.org/projects/ruwiki/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_BZ2
-	bool "ruby19-bz2-0.2.2nb1"
-	help
-	  Ruby interface to the library libbzip2
-
-	  This is an interface to the library libbzip2 for Ruby.
-
-	  http://rubyforge.org/projects/bz2/
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_LIBARCHIVE
-	bool "ruby19-libarchive-0.1.1nb1"
-	help
-	  Ruby bindings for Libarchive
-
-	  Libarchive is a programming library that can create and read several
-	  different streaming archive formats, including most popular tar
-	  variants, several cpio formats, and both BSD and GNU ar variants.
-
-	  http://libarchive.rubyforge.org
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_ZIP
-	bool "ruby19-zip-0.9.4nb1"
-	help
-	  Ruby module for reading and writing zip files
-
-	  rubyzip is a ruby module for reading and writing zip files.
-
-	  http://rubyzip.sourceforge.net/
 

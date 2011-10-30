@@ -1,38 +1,3 @@
-config BR2_PKGSRC_PACKAGE_WM_AEWM__
-	bool "aewm++-1.0.24nb1"
-	help
-	  Fork of the popular minimal window manager aewm
-
-	  The aewm++ window manager is a fork of the popular minimal window manager aewm
-	  for the X Windows System.  What makes it different is its codebase, feature
-	  set and focus.  The name was created by using the first two letters in the
-	  word aesthetic, the wm is for window manager and the ++ is for its C++ code.
-
-	  http://sapphire.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_WM_AFTERSTEP
-	bool "afterstep-2.1.2nb15"
-	help
-	  Window manager based on the look and feel of the NeXTStep interface
-
-	  AfterStep is a window manager for the Unix X Window System.  Based on the
-	  look and feel of the NeXTStep interface, it provides end users with a
-	  consistent, clean, and elegant desktop.
-	  
-	  Some of the distinguishing features of AfterStep compared to other window
-	  managers are its low usage of resources, stability and configurability.
-
-	  http://www.afterstep.org/
-
-config BR2_PKGSRC_PACKAGE_WM_AMATERUS
-	bool "amaterus-0.34.1nb6"
-	help
-	  GTK+ window manager
-
-	  a GTK+ window manager
-
-	  http://www.taiyaki.org/
-
 config BR2_PKGSRC_PACKAGE_WM_3DDESKTOP
 	bool "3ddesktop-0.2.9nb5"
 	help
@@ -50,6 +15,7 @@ config BR2_PKGSRC_PACKAGE_WM_3DDESKTOP
 	  and get the full effect!
 
 	  http://desk3d.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_WM_9WM
 	bool "9wm-1.1nb2"
@@ -79,6 +45,145 @@ config BR2_PKGSRC_PACKAGE_WM_9WM
 
 	  http://dhog.g7.org/dhog/9wm.html
 
+
+config BR2_PKGSRC_PACKAGE_WM_AEWM__
+	bool "aewm++-1.0.24nb1"
+	help
+	  Fork of the popular minimal window manager aewm
+
+	  The aewm++ window manager is a fork of the popular minimal window manager aewm
+	  for the X Windows System.  What makes it different is its codebase, feature
+	  set and focus.  The name was created by using the first two letters in the
+	  word aesthetic, the wm is for window manager and the ++ is for its C++ code.
+
+	  http://sapphire.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_WM_AFTERSTEP
+	bool "afterstep-2.1.2nb15"
+	help
+	  Window manager based on the look and feel of the NeXTStep interface
+
+	  AfterStep is a window manager for the Unix X Window System.  Based on the
+	  look and feel of the NeXTStep interface, it provides end users with a
+	  consistent, clean, and elegant desktop.
+	  
+	  Some of the distinguishing features of AfterStep compared to other window
+	  managers are its low usage of resources, stability and configurability.
+
+	  http://www.afterstep.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_AMATERUS
+	bool "amaterus-0.34.1nb6"
+	help
+	  GTK+ window manager
+
+	  a GTK+ window manager
+
+	  http://www.taiyaki.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_AMIWM
+	bool "amiwm-0.20p48nb3"
+	help
+	  X window manager with Amiga look and feel
+
+	  amiwm is an X window manager that tries to make your display look and feel
+	  like an Amiga Workbench screen. It is fully functional and can do all the
+	  usual window manager stuff, like moving and resizing windows.
+	  
+	  The purpose of amiwm is to make life more pleasant for Amiga-freaks who
+	  has/wants to use UNIX workstations once in a while. It can also be used
+	  on the Amiga with the AmiWin X server, although this part needs some more
+	  work.
+
+	  http://www.lysator.liu.se/~marcus/amiwm.html
+
+
+config BR2_PKGSRC_PACKAGE_WM_AWESOME
+	bool "awesome-2.3.6nb7"
+	help
+	  Tiling window manager based on dwm
+
+	  awesome is a tiling window manager initialy based on a dwm code
+	  rewriting.  It's extremely fast, small, dynamic and awesome.
+	  
+	  Windows can be managed in several layouts: tiled, maximized, dwindle,
+	  spiral, floating. Each layout can be applied on the fly, optimizing
+	  the environment for the application in use and the task performed.
+	  
+	  Managing windows in tiled mode assures that no space will be wasted
+	  on your screen. No gaps, no overlap. Other layouts can be used for
+	  different purpose.
+	  
+	  If you do not want to use the tiling management, you can use the
+	  floating layout wich will let you organize your windows as you
+	  wish, like any other window manager.
+
+	  http://awesome.naquadah.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_BBKEYS
+	bool "bbkeys-0.8.6nb1"
+	help
+	  General X Window keygrabber
+
+	  Provide keyboard shortcuts for X11R6, specifically intended for use with the
+	  Blackbox window manager but usable with any.
+	  
+	  Can bind actions such as executing commands, altering the states of windows,
+	  switching workspaces, etc. to arbitrary keys.
+
+	  http://bbkeys.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_WM_BBKEYS09
+	bool "bbkeys09-0.9.0"
+	help
+	  General X Window keygrabber
+
+	  Provide keyboard shortcuts for X11R6, specifically intended for use with the
+	  Blackbox window manager but usable with any.
+	  
+	  Can bind actions such as executing commands, altering the states of windows,
+	  switching workspaces, etc. to arbitrary keys.
+
+	  http://bbkeys.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_WM_BBPAGER
+	bool "bbpager-0.3.1nb2"
+	help
+	  Pager for the blackbox window manager
+
+	  Pager for Blackbox window manager.
+
+	  http://bbtools.windsofstorm.net/available.phtml
+
+
+config BR2_PKGSRC_PACKAGE_WM_BBPAGER04
+	bool "bbpager04-0.4.1.1"
+	help
+	  Pager for the blackbox window manager
+
+	  Pager for Blackbox window manager.
+
+	  http://bbtools.windsofstorm.net/available.phtml
+
+
+config BR2_PKGSRC_PACKAGE_WM_BBRUN
+	bool "bbrun-1.3nb5"
+	help
+	  Run utility for BlackBox
+
+	  BBrun is a run utility for BlackBox which can be run in the slit
+	  or in withdrawn mode so that it can be bound to a keystroke from bbkeys.
+	  It also features a history list of the most recent commands.
+
+	  http://www.dwave.net/~jking/bbrun/
+
+
 config BR2_PKGSRC_PACKAGE_WM_BLACKBOX
 	bool "blackbox-0.65.0nb7"
 	help
@@ -90,6 +195,152 @@ config BR2_PKGSRC_PACKAGE_WM_BLACKBOX
 	  near complete ICCCM compliance, and support for multple desktop environments.
 
 	  http://blackboxwm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_WM_BLACKBOX70
+	bool "blackbox70-0.70.1nb1"
+	help
+	  Small and fast X11R6 window manager
+
+	  Blackbox is yet another addition to the list of window managers For X11R6.
+	  Blackbox is built with C++, sharing no common code with any other window
+	  manager.  It is designed to be small and fast, with a built in graphics class,
+	  near complete ICCCM compliance, and support for multple desktop environments.
+
+	  http://blackboxwm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_WM_BMPANEL2
+	bool "bmpanel2-2.1pre1"
+	help
+	  TODO: Short description of the package
+
+	  Nice NETWM-compatible panel for X11. Features:
+	  
+	  * Look'n'feel customization via themes.
+	  * A bunch of widgets: desktop switcher, taskbar, launchbar, systray,
+	  clock, decor, empty.
+	  * Pseudo-transparency support.
+	  * Written in C with speed and clarity in mind.
+	  * Small number of dependencies, briefly: glib2, cairo, pango,
+	  libX11.
+	  * Small memory footprint (about 2-4 megabytes).
+	  * Small executable (80 kilobytes at the moment).
+
+	  http://code.google.com/p/bmpanel2/
+
+
+config BR2_PKGSRC_PACKAGE_WM_BSETROOT
+	bool "bsetroot-0.1nb7"
+	help
+	  Tools to set the root windows background
+
+	  This package includes two tools, bsetbg and bsetroot, used by the Blackbox
+	  windowmanager to set the root window's properties.  Blackbox shares code
+	  with the Openbox and Hackedbox window managers, which also utilize these
+	  tools, allowing these window managers to share some themes as well.
+
+	  http://blackboxwm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_WM_CCSM
+	bool "ccsm-0.8.4nb1"
+	help
+	  CompizConfig Settings Manager
+
+	  Compiz is a compositing window manager that uses 3D graphics acceleration
+	  via OpenGL. It provides various new graphical effects and features on
+	  any desktop environment, including Gnome and KDE.
+	  
+	  This package contains the CompizConfig Settings Manager UI for configuring
+	  compiz plugins.
+
+	  http://compiz.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_COMPIZ
+	bool "compiz-0.8.4nb11"
+	help
+	  Compositing window manager
+
+	  Compiz is a compositing window manager that uses 3D graphics acceleration
+	  via OpenGL. It provides various new graphical effects and features on
+	  any desktop environment, including Gnome and KDE.
+
+	  http://compiz.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_COMPIZ_FUSION_PLUGINS_EXTRA
+	bool "compiz-fusion-plugins-extra-0.8.4nb6"
+	help
+	  Compositing window manager - extra plugins
+
+	  Compiz is a compositing window manager that uses 3D graphics acceleration
+	  via OpenGL. It provides various new graphical effects and features on
+	  any desktop environment, including Gnome and KDE.
+	  
+	  This package contains the 'extra' set of plugins for compiz.
+
+	  http://compiz.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_COMPIZ_FUSION_PLUGINS_MAIN
+	bool "compiz-fusion-plugins-main-0.8.4nb6"
+	help
+	  Compositing window manager - main plugins
+
+	  Compiz is a compositing window manager that uses 3D graphics acceleration
+	  via OpenGL. It provides various new graphical effects and features on
+	  any desktop environment, including Gnome and KDE.
+	  
+	  This package contains a base set of plugins for compiz.
+
+	  http://compiz.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_CTWM
+	bool "ctwm-3.8anb5"
+	help
+	  Window manager with support for multiple virtual screens and Gnome 1.x
+
+	  CTWM is an extension to twm, that support multiple virtual screens,
+	  and a lot of other goodies.
+	  
+	  You can use and manage up to 32 virtual screens called workspaces.
+	  You swap from one workspace to another by clicking on a button in an
+	  optional panel of buttons (the workspace manager) or by invoking a function.
+	  
+	  You can custom each workspace by choosing different colors, names
+	  and pixmaps for the buttons and background root windows.
+	  
+	  Main features are:
+	  - Optional 3D window titles and border (ala Motif).
+	  - Shaped, colored icons.
+	  - Multiple icons for clients based on the icon name.
+	  - Windows can belong to several workspaces.
+	  - A map of your workspaces to move quickly windows between
+	  different workspaces.
+	  - Animations: icons, root backgrounds and buttons can be animated.
+	  - Pinnable and sticky menus.
+	  - etc...
+
+	  http://ctwm.free.lp.se/
+
+
+config BR2_PKGSRC_PACKAGE_WM_CWM
+	bool "cwm-3nb2"
+	help
+	  Window manager for X11 initially inspired by evilwm
+
+	  cwm is a window manager for X11.  It was originally inspired by evilwm,
+	  but was rewritten from scratch due to limitations in the evilwm codebase.
+	  The from-scratch rewrite borrowed some code from 9wm.  cwm contains many
+	  new features which all concentrate on the efficiency and transparency of
+	  window management.  cwm also aims to maintain the most simplest and
+	  pleasant aesthetic.
+
+	  http://monkey.org/~marius/cwm/
+
 
 config BR2_PKGSRC_PACKAGE_WM_DWM
 	bool "dwm-5.9"
@@ -118,43 +369,6 @@ config BR2_PKGSRC_PACKAGE_WM_DWM
 
 	  http://dwm.suckless.org/
 
-config BR2_PKGSRC_PACKAGE_WM_AMIWM
-	bool "amiwm-0.20p48nb3"
-	help
-	  X window manager with Amiga look and feel
-
-	  amiwm is an X window manager that tries to make your display look and feel
-	  like an Amiga Workbench screen. It is fully functional and can do all the
-	  usual window manager stuff, like moving and resizing windows.
-	  
-	  The purpose of amiwm is to make life more pleasant for Amiga-freaks who
-	  has/wants to use UNIX workstations once in a while. It can also be used
-	  on the Amiga with the AmiWin X server, although this part needs some more
-	  work.
-
-	  http://www.lysator.liu.se/~marcus/amiwm.html
-
-config BR2_PKGSRC_PACKAGE_WM_AWESOME
-	bool "awesome-2.3.6nb7"
-	help
-	  Tiling window manager based on dwm
-
-	  awesome is a tiling window manager initialy based on a dwm code
-	  rewriting.  It's extremely fast, small, dynamic and awesome.
-	  
-	  Windows can be managed in several layouts: tiled, maximized, dwindle,
-	  spiral, floating. Each layout can be applied on the fly, optimizing
-	  the environment for the application in use and the task performed.
-	  
-	  Managing windows in tiled mode assures that no space will be wasted
-	  on your screen. No gaps, no overlap. Other layouts can be used for
-	  different purpose.
-	  
-	  If you do not want to use the tiling management, you can use the
-	  floating layout wich will let you organize your windows as you
-	  wish, like any other window manager.
-
-	  http://awesome.naquadah.org/
 
 config BR2_PKGSRC_PACKAGE_WM_E16MENUEDIT2
 	bool "e16menuedit2-0.0.3nb8"
@@ -168,43 +382,6 @@ config BR2_PKGSRC_PACKAGE_WM_E16MENUEDIT2
 
 	  http://www.enlightenment.org/
 
-config BR2_PKGSRC_PACKAGE_WM_BLACKBOX70
-	bool "blackbox70-0.70.1nb1"
-	help
-	  Small and fast X11R6 window manager
-
-	  Blackbox is yet another addition to the list of window managers For X11R6.
-	  Blackbox is built with C++, sharing no common code with any other window
-	  manager.  It is designed to be small and fast, with a built in graphics class,
-	  near complete ICCCM compliance, and support for multple desktop environments.
-
-	  http://blackboxwm.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_WM_BBKEYS
-	bool "bbkeys-0.8.6nb1"
-	help
-	  General X Window keygrabber
-
-	  Provide keyboard shortcuts for X11R6, specifically intended for use with the
-	  Blackbox window manager but usable with any.
-	  
-	  Can bind actions such as executing commands, altering the states of windows,
-	  switching workspaces, etc. to arbitrary keys.
-
-	  http://bbkeys.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_WM_BBKEYS09
-	bool "bbkeys09-0.9.0"
-	help
-	  General X Window keygrabber
-
-	  Provide keyboard shortcuts for X11R6, specifically intended for use with the
-	  Blackbox window manager but usable with any.
-	  
-	  Can bind actions such as executing commands, altering the states of windows,
-	  switching workspaces, etc. to arbitrary keys.
-
-	  http://bbkeys.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_WM_ECHINUS
 	bool "echinus-0.4.3"
@@ -225,34 +402,6 @@ config BR2_PKGSRC_PACKAGE_WM_ECHINUS
 
 	  http://www.plhk.ru/echinus
 
-config BR2_PKGSRC_PACKAGE_WM_BBPAGER
-	bool "bbpager-0.3.1nb2"
-	help
-	  Pager for the blackbox window manager
-
-	  Pager for Blackbox window manager.
-
-	  http://bbtools.windsofstorm.net/available.phtml
-
-config BR2_PKGSRC_PACKAGE_WM_BBPAGER04
-	bool "bbpager04-0.4.1.1"
-	help
-	  Pager for the blackbox window manager
-
-	  Pager for Blackbox window manager.
-
-	  http://bbtools.windsofstorm.net/available.phtml
-
-config BR2_PKGSRC_PACKAGE_WM_BBRUN
-	bool "bbrun-1.3nb5"
-	help
-	  Run utility for BlackBox
-
-	  BBrun is a run utility for BlackBox which can be run in the slit
-	  or in withdrawn mode so that it can be bound to a keystroke from bbkeys.
-	  It also features a history list of the most recent commands.
-
-	  http://www.dwave.net/~jking/bbrun/
 
 config BR2_PKGSRC_PACKAGE_WM_ENLIGHTENMENT
 	bool "enlightenment-0.16.8.8nb6"
@@ -270,6 +419,7 @@ config BR2_PKGSRC_PACKAGE_WM_ENLIGHTENMENT
 
 	  http://enlightenment.org/
 
+
 config BR2_PKGSRC_PACKAGE_WM_ETHEMES
 	bool "ethemes-0.1nb3"
 	help
@@ -284,6 +434,7 @@ config BR2_PKGSRC_PACKAGE_WM_ETHEMES
 	  friends,  fellow users and/or the whole net in general. :)
 
 	  http://e.themes.org/
+
 
 config BR2_PKGSRC_PACKAGE_WM_EVILWM
 	bool "evilwm-1.0.1"
@@ -303,6 +454,7 @@ config BR2_PKGSRC_PACKAGE_WM_EVILWM
 
 	  http://www.6809.org.uk/evilwm/
 
+
 config BR2_PKGSRC_PACKAGE_WM_FLUXBOX
 	bool "fluxbox-1.1.1nb6"
 	help
@@ -316,43 +468,6 @@ config BR2_PKGSRC_PACKAGE_WM_FLUXBOX
 
 	  http://fluxbox.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_WM_BMPANEL2
-	bool "bmpanel2-2.1pre1"
-	help
-	  TODO: Short description of the package
-
-	  Nice NETWM-compatible panel for X11. Features:
-	  
-	  * Look'n'feel customization via themes.
-	  * A bunch of widgets: desktop switcher, taskbar, launchbar, systray,
-	  clock, decor, empty.
-	  * Pseudo-transparency support.
-	  * Written in C with speed and clarity in mind.
-	  * Small number of dependencies, briefly: glib2, cairo, pango,
-	  libX11.
-	  * Small memory footprint (about 2-4 megabytes).
-	  * Small executable (80 kilobytes at the moment).
-
-	  http://code.google.com/p/bmpanel2/
-
-config BR2_PKGSRC_PACKAGE_WM_FVWM
-	bool "fvwm-2.4.20nb4"
-	help
-	  Newer version of X11 Virtual window manager
-
-	  Fvwm is a very famous window manager for X, which provides a
-	  virtual/multiple disjoint desktop, a 3-D look for windows decorations,
-	  shaped/color icons. It gives a very good emulation of mwm. A nice
-	  button-bar can be used to provide convenient access to frequently used
-	  functions or programs.
-	  
-	  This package uses fvwm-users-jp-kits also, to add internationalized
-	  feature (based on X itself) to fvwm and its modules.
-	  
-	  With this package, you may use fonts of your own language, display
-	  characters in everywhere in fvwm, and have fun ;-)
-
-	  http://www.fvwm.org/
 
 config BR2_PKGSRC_PACKAGE_WM_FLUXCONF
 	bool "fluxconf-0.9.9nb7"
@@ -369,6 +484,7 @@ config BR2_PKGSRC_PACKAGE_WM_FLUXCONF
 	  o Keys configuration
 
 	  http://devaux.fabien.free.fr/flux/
+
 
 config BR2_PKGSRC_PACKAGE_WM_FLUXTER
 	bool "fluxter-0.1.0"
@@ -397,6 +513,7 @@ config BR2_PKGSRC_PACKAGE_WM_FLUXTER
 
 	  http://benedict.isomedia.com/homes/stevencooper/projects/fluxter.html
 
+
 config BR2_PKGSRC_PACKAGE_WM_FLWM
 	bool "flwm-1.02nb2"
 	help
@@ -422,6 +539,60 @@ config BR2_PKGSRC_PACKAGE_WM_FLWM
 
 	  http://flwm.sourceforge.net/
 
+
+config BR2_PKGSRC_PACKAGE_WM_FVWM
+	bool "fvwm-2.4.20nb4"
+	help
+	  Newer version of X11 Virtual window manager
+
+	  Fvwm is a very famous window manager for X, which provides a
+	  virtual/multiple disjoint desktop, a 3-D look for windows decorations,
+	  shaped/color icons. It gives a very good emulation of mwm. A nice
+	  button-bar can be used to provide convenient access to frequently used
+	  functions or programs.
+	  
+	  This package uses fvwm-users-jp-kits also, to add internationalized
+	  feature (based on X itself) to fvwm and its modules.
+	  
+	  With this package, you may use fonts of your own language, display
+	  characters in everywhere in fvwm, and have fun ;-)
+
+	  http://www.fvwm.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_FVWM_DEVEL
+	bool "fvwm-2.5.31nb1"
+	help
+	  Development version of X11 Virtual window manager
+
+	  Fvwm is a very famous window manager for X, which provides a
+	  virtual/multiple disjoint desktop, a 3-D look for windows decorations,
+	  shaped/color icons. It gives a very good emulation of mwm. A nice
+	  button-bar can be used to provide convenient access to frequently used
+	  functions or programs.
+	  
+	  This package is based on the unstable 2.5.x series of fvwm.  Do not
+	  use it unless comfortable running beta software.
+
+	  http://www.fvwm.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_FVWM_THEMES
+	bool "fvwm-themes-0.6.2nb8"
+	help
+	  Configuration framework for fvwm2 with samples
+
+	  fvwm2-themes gives to a novice fvwm2 user a complete fvwm2 configuration with
+	  precreated themes. The user doesn't need to know any fvwm2 syntax to start
+	  using a reasonably powerful and themeable fvwm2 setup. All he needs is to
+	  install the latest fvwm2, the latest fvwm2-themes and start fvwm-themes-start.
+	  On the other hand, fvwm2-themes gives to a more experience user an ability to
+	  create his own personal parts (so called personal theme) to use with other
+	  theme components or even to create a completely new theme.
+
+	  http://fvwm-themes.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_WM_FVWM1
 	bool "fvwm1-1.24rnb1"
 	help
@@ -443,129 +614,6 @@ config BR2_PKGSRC_PACKAGE_WM_FVWM1
 
 	  http://www.fvwm.org/
 
-config BR2_PKGSRC_PACKAGE_WM_OBPAGER
-	bool "obpager-1.8nb1"
-	help
-	  Lightweight pager applet for OpenBox
-
-	  OBPager is a lightweight pager applet or dockapp. It requires a netwm
-	  compatible window manager such as OpenBox. OBPager shows windows in active
-	  virtual desktops and allows the user to switch desktops by clicking on the
-	  pager dockapp.
-
-	  http://obpager.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_WM_JWM
-	bool "jwm-2.0.1nb4"
-	help
-	  Lightweight window manager with virtual desktops
-
-	  JWM is a light-weight window manager for the X11 Window System.
-	  It provides a menu, taskbar, key binding, system notification tray,
-	  pager, a dock, and simple customizations.  JWM is written in C and
-	  uses only Xlib and the shape extension, libXpm and (optionally)
-	  libpng. It can support some MWM, GNOME, and WM Spec hints.
-
-	  http://www.joewing.net/programs/jwm/
-
-config BR2_PKGSRC_PACKAGE_WM_LARSWM
-	bool "larswm-7.5.3nb1"
-	help
-	  9wm-like window manager
-
-	  larswm is a hack for 9wm, adding automatic window tiling, virtual desktops and
-	  many other features designed to make it a very efficient user environment.
-
-	  http://home.earthlink.net/~lab1701/larswm/
-
-config BR2_PKGSRC_PACKAGE_WM_FVWM_DEVEL
-	bool "fvwm-2.5.31nb1"
-	help
-	  Development version of X11 Virtual window manager
-
-	  Fvwm is a very famous window manager for X, which provides a
-	  virtual/multiple disjoint desktop, a 3-D look for windows decorations,
-	  shaped/color icons. It gives a very good emulation of mwm. A nice
-	  button-bar can be used to provide convenient access to frequently used
-	  functions or programs.
-	  
-	  This package is based on the unstable 2.5.x series of fvwm.  Do not
-	  use it unless comfortable running beta software.
-
-	  http://www.fvwm.org/
-
-config BR2_PKGSRC_PACKAGE_WM_LWM
-	bool "lwm-1.2.1nb1"
-	help
-	  Lightweight Window Manager
-
-	  lwm is a window manager for X that tries to keep out of your face. There
-	  are no icons, no button bars, no icon docks, no root menus, no nothing:
-	  if you want all that, then other programs can provide it. There's no
-	  configurability either: if you want that, you want a different window
-	  manager; one that helps your operating system in its evil conquest of
-	  your disc space and its annexation of your physical memory.
-
-	  http://www.jfc.org.uk/software/lwm.html
-
-config BR2_PKGSRC_PACKAGE_WM_OLVWM
-	bool "olvwm-4.4nb4"
-	help
-	  Open Look Virtual Window Manager
-
-	  What Is OLVWM:
-	  ------------
-	  Olvwm (OPEN LOOK virtual window manager) is an ICCCM compliant window manager
-	  supplied for use with the XView toolkit.  It is derived from olwm, the
-	  OPEN LOOK window manager supplied with the XView release.  This version of
-	  olvwm is based on version 3 of the XView release.
-
-	  http://home.nyc.rr.com/twopks/olvwm/
-
-config BR2_PKGSRC_PACKAGE_WM_BSETROOT
-	bool "bsetroot-0.1nb7"
-	help
-	  Tools to set the root windows background
-
-	  This package includes two tools, bsetbg and bsetroot, used by the Blackbox
-	  windowmanager to set the root window's properties.  Blackbox shares code
-	  with the Openbox and Hackedbox window managers, which also utilize these
-	  tools, allowing these window managers to share some themes as well.
-
-	  http://blackboxwm.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_WM_FVWM_THEMES
-	bool "fvwm-themes-0.6.2nb8"
-	help
-	  Configuration framework for fvwm2 with samples
-
-	  fvwm2-themes gives to a novice fvwm2 user a complete fvwm2 configuration with
-	  precreated themes. The user doesn't need to know any fvwm2 syntax to start
-	  using a reasonably powerful and themeable fvwm2 setup. All he needs is to
-	  install the latest fvwm2, the latest fvwm2-themes and start fvwm-themes-start.
-	  On the other hand, fvwm2-themes gives to a more experience user an ability to
-	  create his own personal parts (so called personal theme) to use with other
-	  theme components or even to create a completely new theme.
-
-	  http://fvwm-themes.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_WM_MATCHBOX_WM
-	bool "matchbox-wm-1.1nb2"
-	help
-	  Window manager designed for computers with small displays
-
-	  Matchbox is a GPL'd X11 window manager designed for computers with little
-	  screen real estate, limited input devices and low CPU/storage resources.
-	  Touchscreen PDAs, phones, set top boxes and even watches fit well into this
-	  category.  Children or people with disabilities may also find matchbox useful
-	  on desktop machines, due to the way it simplifies window operation.
-	  
-	  Matchbox is small, fast, flexible, dependent only on xlib and very usable.
-	  
-	  The Distribution also include various themes and utility programs, including
-	  a dock (or tray) and various simple dock apps useful for PDAs.
-
-	  http://projects.o-hand.com/matchbox/
 
 config BR2_PKGSRC_PACKAGE_WM_GOLEM
 	bool "golem-0.0.5nb4"
@@ -591,39 +639,150 @@ config BR2_PKGSRC_PACKAGE_WM_GOLEM
 
 	  http://golem.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_WM_OPENBOX
-	bool "openbox-3.5.0"
+
+config BR2_PKGSRC_PACKAGE_WM_ICECC
+	bool "icecc-2.9nb11"
 	help
-	  Standards compliant, light-weight, and extensible window manager
+	  IceWM Control Centre
 
-	  Openbox is a standards compliant, fast, light-weight, extensible window
-	  manager.
+	  The IceWM Control Center allows you to run various tools for
+	  configuring IceWM's options.
 	  
-	  Openbox works with your applications, and makes your desktop easier to
-	  manage.  This is because the approach to its development was the opposite
-	  of what seems to be the general case for window managers.  Openbox was
-	  written first to comply with standards and to work properly.  Only when
-	  that was in place did the team turn to the visual interface.
+	  It contains menu/toolbar editor, winoptions editor, keys editor,
+	  themes switcher and some other tools. It supports themes, so you can add
+	  new (or replace existing) tools and images.
 
-	  http://openbox.org/
+	  http://icecc.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_WM_OROBOROX
-	bool "oroborox-0.9.8nb9"
+
+config BR2_PKGSRC_PACKAGE_WM_ICEWM
+	bool "icewm-1.2.35nb1"
 	help
-	  The lightweight Window Manager for the ROX Desktop
+	  Small, fast and light-weight window manager
 
-	  OroboROX is a lightweight Window Manager for the ROX Desktop.
+	  IceWM provides a small, fast and familiar window manager for the X11 window
+	  system.  Compatibility with the mwm window manager is desired and will be
+	  implemented where appropriate.
 	  
-	  Features and Requirements
+	  IceWM is designed to emulate the look of Motif, OS/2 Warp 4, OS/2 Warp 3 and
+	  Windows 95.  It also tries to combine the feel of these systems whenever it
+	  is compatible.  Others might added in the future in the core distribution,
+	  though many themes are available through the network.
 	  
-	  * Uses Fontconfig, freetype2
-	  * Nice and easy configuration interface
-	  * Basic EWMH compliance
-	  * Fully themable
-	  * Configurable behaviour
-	  * Small memory footprint
+	  Generally, it tries to make all functions available both by keyboard and by
+	  mouse (this is not currently possible when using mouse focus).
+	  
+	  This package provides IceWM linked against the Xpm library for graphics
+	  support, which means that only Xpm files are supported as images.
 
-	  http://roxos.sunsite.dk/dev-contrib/guido/
+	  http://www.icewm.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_ICEWM_IMLIB
+	bool "icewm-imlib-1.2.35nb7"
+	help
+	  
+
+	  IceWM provides a small, fast and familiar window manager for the X11 window
+	  system.  Compatibility with the mwm window manager is desired and will be
+	  implemented where appropriate.
+	  
+	  IceWM is designed to emulate the look of Motif, OS/2 Warp 4, OS/2 Warp 3 and
+	  Windows 95.  It also tries to combine the feel of these systems whenever it
+	  is compatible.  Others might added in the future in the core distribution,
+	  though many themes are available through the network.
+	  
+	  Generally, it tries to make all functions available both by keyboard and by
+	  mouse (this is not currently possible when using mouse focus).
+	  
+	  This package provides IceWM linked against the Imlib library for graphics
+	  support, which means that it supports all image formats supported by this
+	  library (like PNG, JPEG, GIF and TIFF).
+
+	  http://www.icewm.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_ICEWMCONF
+	bool "icewmconf-2.1.0nb2"
+	help
+	  Graphical configuration tool for IceWM
+
+	  IceWMConf is a graphical configuration tool for setting and/or changing
+	  your options and settings for IceWM.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_WM_ION
+	bool "ion-20040729nb8"
+	help
+	  Keyboard friendly tiling window manager
+
+	  Ion is a window manager dividing the screen into frames rather than having
+	  overlapping windows, much like the windows in Emacs.  Navigation between
+	  clients can be done solely using the keyboard without need for a mouse.
+
+	  http://modeemi.fi/~tuomov/ion/
+
+
+config BR2_PKGSRC_PACKAGE_WM_JWM
+	bool "jwm-2.0.1nb4"
+	help
+	  Lightweight window manager with virtual desktops
+
+	  JWM is a light-weight window manager for the X11 Window System.
+	  It provides a menu, taskbar, key binding, system notification tray,
+	  pager, a dock, and simple customizations.  JWM is written in C and
+	  uses only Xlib and the shape extension, libXpm and (optionally)
+	  libpng. It can support some MWM, GNOME, and WM Spec hints.
+
+	  http://www.joewing.net/programs/jwm/
+
+
+config BR2_PKGSRC_PACKAGE_WM_LARSWM
+	bool "larswm-7.5.3nb1"
+	help
+	  9wm-like window manager
+
+	  larswm is a hack for 9wm, adding automatic window tiling, virtual desktops and
+	  many other features designed to make it a very efficient user environment.
+
+	  http://home.earthlink.net/~lab1701/larswm/
+
+
+config BR2_PKGSRC_PACKAGE_WM_LWM
+	bool "lwm-1.2.1nb1"
+	help
+	  Lightweight Window Manager
+
+	  lwm is a window manager for X that tries to keep out of your face. There
+	  are no icons, no button bars, no icon docks, no root menus, no nothing:
+	  if you want all that, then other programs can provide it. There's no
+	  configurability either: if you want that, you want a different window
+	  manager; one that helps your operating system in its evil conquest of
+	  your disc space and its annexation of your physical memory.
+
+	  http://www.jfc.org.uk/software/lwm.html
+
+
+config BR2_PKGSRC_PACKAGE_WM_MATCHBOX_WM
+	bool "matchbox-wm-1.1nb2"
+	help
+	  Window manager designed for computers with small displays
+
+	  Matchbox is a GPL'd X11 window manager designed for computers with little
+	  screen real estate, limited input devices and low CPU/storage resources.
+	  Touchscreen PDAs, phones, set top boxes and even watches fit well into this
+	  category.  Children or people with disabilities may also find matchbox useful
+	  on desktop machines, due to the way it simplifies window operation.
+	  
+	  Matchbox is small, fast, flexible, dependent only on xlib and very usable.
+	  
+	  The Distribution also include various themes and utility programs, including
+	  a dock (or tray) and various simple dock apps useful for PDAs.
+
+	  http://projects.o-hand.com/matchbox/
+
 
 config BR2_PKGSRC_PACKAGE_WM_METACITY
 	bool "metacity-2.34.1"
@@ -649,59 +808,6 @@ config BR2_PKGSRC_PACKAGE_WM_METACITY
 
 	  http://www.gnome.org/softwaremap/projects/Metacity/
 
-config BR2_PKGSRC_PACKAGE_WM_PEKWM
-	bool "pekwm-0.1.13"
-	help
-	  Window manager based on aewm++
-
-	  A window manager based on aewm++. Here is a compact list of changes
-	  between the original aewm++-1.1.16 and pekwm:
-	  * Better structured and formatted code.
-	  * Possibility to group windows in a single frame.
-	  * Configurable keygrabber.
-	  * Configurable rootmenu.
-	  * Configuration file.
-	  * Xinerama support.
-	  * Smart window placement.
-	  * Basic pixmap theming, with configurable buttons.
-	  * UTF-8 font support
-
-	  http://www.pekwm.org/
-
-config BR2_PKGSRC_PACKAGE_WM_ICECC
-	bool "icecc-2.9nb11"
-	help
-	  IceWM Control Centre
-
-	  The IceWM Control Center allows you to run various tools for
-	  configuring IceWM's options.
-	  
-	  It contains menu/toolbar editor, winoptions editor, keys editor,
-	  themes switcher and some other tools. It supports themes, so you can add
-	  new (or replace existing) tools and images.
-
-	  http://icecc.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_WM_PIEWM
-	bool "piewm-1.04"
-	help
-	  Minimalist window manager based on tvtwm with pie menus
-
-	  Although the computer screen is two-dimensional, today most users of
-	  windowing environments control their systems with a one-dimensional
-	  list of choices -- the standard pull-down or drop-down menus such as
-	  those found on Microsoft Windows, Presentation Manager, or the
-	  Macintosh.
-	  
-	  An alternative user-interface technique is "pie" menus -
-	  two-dimensional, circular, and in many ways easier to use and faster
-	  than conventional linear menus.  Pie menus also work well with
-	  alternative pointing devices such as those found in stylus or
-	  pen-based systems.
-	  
-	  piewm is a virtual window manager based on tvtwm, which uses pie menus.
-
-	  http://www.crynwr.com/piewm/
 
 config BR2_PKGSRC_PACKAGE_WM_METISSE
 	bool "metisse-0.4.1nb8"
@@ -721,41 +827,6 @@ config BR2_PKGSRC_PACKAGE_WM_METISSE
 
 	  http://insitu.lri.fr/metisse/
 
-config BR2_PKGSRC_PACKAGE_WM_CCSM
-	bool "ccsm-0.8.4nb1"
-	help
-	  CompizConfig Settings Manager
-
-	  Compiz is a compositing window manager that uses 3D graphics acceleration
-	  via OpenGL. It provides various new graphical effects and features on
-	  any desktop environment, including Gnome and KDE.
-	  
-	  This package contains the CompizConfig Settings Manager UI for configuring
-	  compiz plugins.
-
-	  http://compiz.org/
-
-config BR2_PKGSRC_PACKAGE_WM_ICEWM
-	bool "icewm-1.2.35nb1"
-	help
-	  Small, fast and light-weight window manager
-
-	  IceWM provides a small, fast and familiar window manager for the X11 window
-	  system.  Compatibility with the mwm window manager is desired and will be
-	  implemented where appropriate.
-	  
-	  IceWM is designed to emulate the look of Motif, OS/2 Warp 4, OS/2 Warp 3 and
-	  Windows 95.  It also tries to combine the feel of these systems whenever it
-	  is compatible.  Others might added in the future in the core distribution,
-	  though many themes are available through the network.
-	  
-	  Generally, it tries to make all functions available both by keyboard and by
-	  mouse (this is not currently possible when using mouse focus).
-	  
-	  This package provides IceWM linked against the Xpm library for graphics
-	  support, which means that only Xpm files are supported as images.
-
-	  http://www.icewm.org/
 
 config BR2_PKGSRC_PACKAGE_WM_MLVWM
 	bool "mlvwm-0.9.1nb1"
@@ -766,6 +837,7 @@ config BR2_PKGSRC_PACKAGE_WM_MLVWM
 	  X11 designed to look and feel like the Macintosh 8 environment.
 
 	  http://www2u.biglobe.ne.jp/~y-miyata/mlvwm.html
+
 
 config BR2_PKGSRC_PACKAGE_WM_MUSCA
 	bool "musca-0.9.24nb1"
@@ -813,15 +885,6 @@ config BR2_PKGSRC_PACKAGE_WM_MUSCA
 
 	  http://aerosuidae.net/musca/Musca_Window_Manager
 
-config BR2_PKGSRC_PACKAGE_WM_ICEWMCONF
-	bool "icewmconf-2.1.0nb2"
-	help
-	  Graphical configuration tool for IceWM
-
-	  IceWMConf is a graphical configuration tool for setting and/or changing
-	  your options and settings for IceWM.
-
-	  
 
 config BR2_PKGSRC_PACKAGE_WM_NOVAWM
 	bool "novawm-0.8nb2"
@@ -838,16 +901,6 @@ config BR2_PKGSRC_PACKAGE_WM_NOVAWM
 
 	  http://novawm.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_WM_COMPIZ
-	bool "compiz-0.8.4nb11"
-	help
-	  Compositing window manager
-
-	  Compiz is a compositing window manager that uses 3D graphics acceleration
-	  via OpenGL. It provides various new graphical effects and features on
-	  any desktop environment, including Gnome and KDE.
-
-	  http://compiz.org/
 
 config BR2_PKGSRC_PACKAGE_WM_OBCONF
 	bool "obconf-2.0.3nb8"
@@ -860,28 +913,132 @@ config BR2_PKGSRC_PACKAGE_WM_OBCONF
 
 	  http://openbox.org/wiki/ObConf:About
 
-config BR2_PKGSRC_PACKAGE_WM_ICEWM_IMLIB
-	bool "icewm-imlib-1.2.35nb7"
+
+config BR2_PKGSRC_PACKAGE_WM_OBPAGER
+	bool "obpager-1.8nb1"
 	help
-	  
+	  Lightweight pager applet for OpenBox
 
-	  IceWM provides a small, fast and familiar window manager for the X11 window
-	  system.  Compatibility with the mwm window manager is desired and will be
-	  implemented where appropriate.
-	  
-	  IceWM is designed to emulate the look of Motif, OS/2 Warp 4, OS/2 Warp 3 and
-	  Windows 95.  It also tries to combine the feel of these systems whenever it
-	  is compatible.  Others might added in the future in the core distribution,
-	  though many themes are available through the network.
-	  
-	  Generally, it tries to make all functions available both by keyboard and by
-	  mouse (this is not currently possible when using mouse focus).
-	  
-	  This package provides IceWM linked against the Imlib library for graphics
-	  support, which means that it supports all image formats supported by this
-	  library (like PNG, JPEG, GIF and TIFF).
+	  OBPager is a lightweight pager applet or dockapp. It requires a netwm
+	  compatible window manager such as OpenBox. OBPager shows windows in active
+	  virtual desktops and allows the user to switch desktops by clicking on the
+	  pager dockapp.
 
-	  http://www.icewm.org/
+	  http://obpager.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_WM_OLVWM
+	bool "olvwm-4.4nb4"
+	help
+	  Open Look Virtual Window Manager
+
+	  What Is OLVWM:
+	  ------------
+	  Olvwm (OPEN LOOK virtual window manager) is an ICCCM compliant window manager
+	  supplied for use with the XView toolkit.  It is derived from olwm, the
+	  OPEN LOOK window manager supplied with the XView release.  This version of
+	  olvwm is based on version 3 of the XView release.
+
+	  http://home.nyc.rr.com/twopks/olvwm/
+
+
+config BR2_PKGSRC_PACKAGE_WM_OPENBOX
+	bool "openbox-3.5.0"
+	help
+	  Standards compliant, light-weight, and extensible window manager
+
+	  Openbox is a standards compliant, fast, light-weight, extensible window
+	  manager.
+	  
+	  Openbox works with your applications, and makes your desktop easier to
+	  manage.  This is because the approach to its development was the opposite
+	  of what seems to be the general case for window managers.  Openbox was
+	  written first to comply with standards and to work properly.  Only when
+	  that was in place did the team turn to the visual interface.
+
+	  http://openbox.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_OROBOROX
+	bool "oroborox-0.9.8nb9"
+	help
+	  The lightweight Window Manager for the ROX Desktop
+
+	  OroboROX is a lightweight Window Manager for the ROX Desktop.
+	  
+	  Features and Requirements
+	  
+	  * Uses Fontconfig, freetype2
+	  * Nice and easy configuration interface
+	  * Basic EWMH compliance
+	  * Fully themable
+	  * Configurable behaviour
+	  * Small memory footprint
+
+	  http://roxos.sunsite.dk/dev-contrib/guido/
+
+
+config BR2_PKGSRC_PACKAGE_WM_OROBORUS
+	bool "oroborus-2.0.12nb1"
+	help
+	  Small and simple window manager for X
+
+	  Oroborus is a small and simple window manager for X which has the following
+	  features:
+	  
+	  o Themeable appearance
+	  o Virtual desktops
+	  o Full keyboard control
+	  o Works with GNOME
+	  
+	  Oroborus doesn't provide any kind of dock, toolbar, program launcher,
+	  background changer or root menu as these functions can be provided by
+	  separate applications.
+
+	  http://www.oroborus.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_PEKWM
+	bool "pekwm-0.1.13"
+	help
+	  Window manager based on aewm++
+
+	  A window manager based on aewm++. Here is a compact list of changes
+	  between the original aewm++-1.1.16 and pekwm:
+	  * Better structured and formatted code.
+	  * Possibility to group windows in a single frame.
+	  * Configurable keygrabber.
+	  * Configurable rootmenu.
+	  * Configuration file.
+	  * Xinerama support.
+	  * Smart window placement.
+	  * Basic pixmap theming, with configurable buttons.
+	  * UTF-8 font support
+
+	  http://www.pekwm.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_PIEWM
+	bool "piewm-1.04"
+	help
+	  Minimalist window manager based on tvtwm with pie menus
+
+	  Although the computer screen is two-dimensional, today most users of
+	  windowing environments control their systems with a one-dimensional
+	  list of choices -- the standard pull-down or drop-down menus such as
+	  those found on Microsoft Windows, Presentation Manager, or the
+	  Macintosh.
+	  
+	  An alternative user-interface technique is "pie" menus -
+	  two-dimensional, circular, and in many ways easier to use and faster
+	  than conventional linear menus.  Pie menus also work well with
+	  alternative pointing devices such as those found in stylus or
+	  pen-based systems.
+	  
+	  piewm is a virtual window manager based on tvtwm, which uses pie menus.
+
+	  http://www.crynwr.com/piewm/
+
 
 config BR2_PKGSRC_PACKAGE_WM_PWM
 	bool "pwm-1.0.20060517nb1"
@@ -906,29 +1063,53 @@ config BR2_PKGSRC_PACKAGE_WM_PWM
 
 	  http://modeemi.fi/~tuomov/ion/pwm.html
 
-config BR2_PKGSRC_PACKAGE_WM_ION
-	bool "ion-20040729nb8"
+
+config BR2_PKGSRC_PACKAGE_WM_PY_TYLE
+	bool "py26-tyle-0.7.5"
 	help
-	  Keyboard friendly tiling window manager
+	  Manual tiling manager
 
-	  Ion is a window manager dividing the screen into frames rather than having
-	  overlapping windows, much like the windows in Emacs.  Navigation between
-	  clients can be done solely using the keyboard without need for a mouse.
-
-	  http://modeemi.fi/~tuomov/ion/
-
-config BR2_PKGSRC_PACKAGE_WM_COMPIZ_FUSION_PLUGINS_EXTRA
-	bool "compiz-fusion-plugins-extra-0.8.4nb6"
-	help
-	  Compositing window manager - extra plugins
-
-	  Compiz is a compositing window manager that uses 3D graphics acceleration
-	  via OpenGL. It provides various new graphical effects and features on
-	  any desktop environment, including Gnome and KDE.
+	  PyTyle is a manual tiling manager that can slide into any EWMH
+	  compliant window manager, inspired by XMonad. It will allow you to
+	  enable/disable tiling on a per screen per workspace basis, and
+	  continually tile your windows.
 	  
-	  This package contains the 'extra' set of plugins for compiz.
+	  Features include:
+	  * Built in multi-monitor support (using Xinerama)
+	  * Continuous tiling behavior similar to that of XMonad.
+	  * Manual tiling on a per screen per workspace basis. Have tiling
+	  on one screen/workspace and not the other.
+	  * Comes pre-packaged with a variety of tiling layouts ready for
+	  use. Also, PyTyle's object oriented design makes it incredibly easy
+	  to add or customize your own tiling layouts.
+	  * Some configuration options include:
+	  * Adding margins on a per-screen basis (to force PyTyle to ignore
+	  docks/panels).
+	  * Tell PyTyle to ignore certain windows from tiling.
+	  * Configure defaults layouts on a per screen per workspace basis.
+	  * Completely customize all of PyTyle's key bindings.
+	  * Dynamically reload configuration file.
 
-	  http://compiz.org/
+	  http://pytyle.com/wiki/Main_Page
+
+
+config BR2_PKGSRC_PACKAGE_WM_RATPOISON
+	bool "ratpoison-1.4.5"
+	help
+	  Simple window manager with no fat library dependencies
+
+	  Ratpoison is a simple Window Manager with no fat library
+	  dependencies, no fancy graphics, no window decorations,
+	  and no flashy hubris. It is largely modelled after GNU
+	  Screen which has done wonders in virtual terminal market.
+	  
+	  All interaction with the window manager is done through
+	  keystrokes. ratpoison has a prefix map to minimize the
+	  key clobbering that cripples EMACS and other quality
+	  pieces of software.
+
+	  http://www.nongnu.org/ratpoison/
+
 
 config BR2_PKGSRC_PACKAGE_WM_SAWFISH
 	bool "sawfish-1.7.1nb2"
@@ -955,34 +1136,6 @@ config BR2_PKGSRC_PACKAGE_WM_SAWFISH
 
 	  http://sawfish.wikia.com/
 
-config BR2_PKGSRC_PACKAGE_WM_RATPOISON
-	bool "ratpoison-1.4.5"
-	help
-	  Simple window manager with no fat library dependencies
-
-	  Ratpoison is a simple Window Manager with no fat library
-	  dependencies, no fancy graphics, no window decorations,
-	  and no flashy hubris. It is largely modelled after GNU
-	  Screen which has done wonders in virtual terminal market.
-	  
-	  All interaction with the window manager is done through
-	  keystrokes. ratpoison has a prefix map to minimize the
-	  key clobbering that cripples EMACS and other quality
-	  pieces of software.
-
-	  http://www.nongnu.org/ratpoison/
-
-config BR2_PKGSRC_PACKAGE_WM_WAMPAGER
-	bool "wampager-0.9.1nb2"
-	help
-	  Virtual pager dockapp for the Waimea Window Manager
-
-	  Waimea mini pager is a simple virtual desktop pager dockapp for the Waimea
-	  Window Manager. Although it supports simple desktop navigation, its main
-	  purpose is to give the user a feel for where the virtual desktop viewport is
-	  currently positioned.
-
-	  http://waimea.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_WM_SCROTWM
 	bool "scrotwm-0.9.22"
@@ -1016,32 +1169,6 @@ config BR2_PKGSRC_PACKAGE_WM_SCROTWM
 
 	  http://www.scrotwm.org/
 
-config BR2_PKGSRC_PACKAGE_WM_WBAR
-	bool "wbar-2.2.2"
-	help
-	  Simple and highly customizable quick-launch tool
-
-	  Just a simple and highly customizable quick-launch tool.
-	  
-	  Features
-	  * It's coded in C++
-	  * It uses Imlib2 to do the image processing
-	  * It rides just on top of Xlib, no other toolkits.
-
-	  http://code.google.com/p/wbar/
-
-config BR2_PKGSRC_PACKAGE_WM_COMPIZ_FUSION_PLUGINS_MAIN
-	bool "compiz-fusion-plugins-main-0.8.4nb6"
-	help
-	  Compositing window manager - main plugins
-
-	  Compiz is a compositing window manager that uses 3D graphics acceleration
-	  via OpenGL. It provides various new graphical effects and features on
-	  any desktop environment, including Gnome and KDE.
-	  
-	  This package contains a base set of plugins for compiz.
-
-	  http://compiz.org/
 
 config BR2_PKGSRC_PACKAGE_WM_SELECTWM
 	bool "selectwm-0.4.1nb11"
@@ -1068,59 +1195,6 @@ config BR2_PKGSRC_PACKAGE_WM_SELECTWM
 
 	  http://ordiluc.net/selectwm/
 
-config BR2_PKGSRC_PACKAGE_WM_CTWM
-	bool "ctwm-3.8anb5"
-	help
-	  Window manager with support for multiple virtual screens and Gnome 1.x
-
-	  CTWM is an extension to twm, that support multiple virtual screens,
-	  and a lot of other goodies.
-	  
-	  You can use and manage up to 32 virtual screens called workspaces.
-	  You swap from one workspace to another by clicking on a button in an
-	  optional panel of buttons (the workspace manager) or by invoking a function.
-	  
-	  You can custom each workspace by choosing different colors, names
-	  and pixmaps for the buttons and background root windows.
-	  
-	  Main features are:
-	  - Optional 3D window titles and border (ala Motif).
-	  - Shaped, colored icons.
-	  - Multiple icons for clients based on the icon name.
-	  - Windows can belong to several workspaces.
-	  - A map of your workspaces to move quickly windows between
-	  different workspaces.
-	  - Animations: icons, root backgrounds and buttons can be animated.
-	  - Pinnable and sticky menus.
-	  - etc...
-
-	  http://ctwm.free.lp.se/
-
-config BR2_PKGSRC_PACKAGE_WM_CWM
-	bool "cwm-3nb2"
-	help
-	  Window manager for X11 initially inspired by evilwm
-
-	  cwm is a window manager for X11.  It was originally inspired by evilwm,
-	  but was rewritten from scratch due to limitations in the evilwm codebase.
-	  The from-scratch rewrite borrowed some code from 9wm.  cwm contains many
-	  new features which all concentrate on the efficiency and transparency of
-	  window management.  cwm also aims to maintain the most simplest and
-	  pleasant aesthetic.
-
-	  http://monkey.org/~marius/cwm/
-
-config BR2_PKGSRC_PACKAGE_WM_WEEWM
-	bool "weewm-0.0.2nb2"
-	help
-	  Fast and ultra light windowmanager with total keyboard control
-
-	  WeeWM (Wee Enhanced Environment) is a fast and light window manager
-	  for XFree86.  Everything can be done with a keyboard.  It is
-	  customizable, and has dock management, smart window placement, virtual
-	  desktops, and more.
-
-	  http://weewm.flashtux.org/
 
 config BR2_PKGSRC_PACKAGE_WM_SKIPPY
 	bool "skippy-0.5.0nb9"
@@ -1141,21 +1215,6 @@ config BR2_PKGSRC_PACKAGE_WM_SKIPPY
 
 	  http://thegraveyard.org/skippy.php
 
-config BR2_PKGSRC_PACKAGE_WM_WMII
-	bool "wmii-3.6nb4"
-	help
-	  Modular and keyboard-friendly window manager
-
-	  wmii (window manager improved 2) is a dynamic window manager for X11.
-	  It supports classic and dynamic window management with extended
-	  keyboard, mouse, and filesystem based remote control. It replaces the
-	  workspace paradigm with a new tagging approach.
-	  
-	  Its minimalist philosophy attempts to not exceed 10.000 lines of code
-	  (including all shipped utilities and libraries), to enforce simplicity
-	  and clarity.
-
-	  http://wmii.suckless.org/
 
 config BR2_PKGSRC_PACKAGE_WM_TVTWM
 	bool "tvtwm-11nb3"
@@ -1189,6 +1248,7 @@ config BR2_PKGSRC_PACKAGE_WM_TVTWM
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_WM_TWM
 	bool "twm-1.0.4"
 	help
@@ -1201,20 +1261,6 @@ config BR2_PKGSRC_PACKAGE_WM_TWM
 
 	  http://xorg.freedesktop.org/
 
-config BR2_PKGSRC_PACKAGE_WM_WMTHEMES
-	bool "wmthemes-0.80.0nb2"
-	help
-	  Themes for the window manager WindowMaker
-
-	  Themes for the window manager WindowMaker.
-	  
-	  What exactly are themes?
-	  ----------------------------------
-	  Themes are a great aspect of WindowMaker allowing a user to simply save the
-	  entire 'look' of their desktop in a Archive to distribute freely among
-	  friends,  fellow users and/or the whole net in general. :)
-
-	  http://wm.themes.org/
 
 config BR2_PKGSRC_PACKAGE_WM_UWM
 	bool "uwm-19881027nb2"
@@ -1234,22 +1280,6 @@ config BR2_PKGSRC_PACKAGE_WM_UWM
 
 	  
 
-config BR2_PKGSRC_PACKAGE_WM_WINDOWLAB
-	bool "windowlab-1.33nb2"
-	help
-	  Small and simple window manager
-
-	  WindowLab is a small and simple window manager of novel design, based on aewm.
-	  
-	  It's click-to-focus, shares its window depth policy with the Amiga, and has
-	  a window resizing/reshaping method similar to that of 8/5 from Plan 9.
-	  WindowLab maintains the illusion of direct manipulation by constraining the
-	  mouse pointer when appropriate, ie when a window cannot be dragged any further
-	  in one direction.  The pointer is also constrained vertically (effectively
-	  making the target menu items infinitely tall according to Fitts's law) when
-	  it's in the menubar to reduce pointing time.
-
-	  http://nickgravgaard.com/windowlab/
 
 config BR2_PKGSRC_PACKAGE_WM_VTWM
 	bool "vtwm-5.4.7nb3"
@@ -1264,31 +1294,6 @@ config BR2_PKGSRC_PACKAGE_WM_VTWM
 
 	  http://www.vtwm.org/downloads/
 
-config BR2_PKGSRC_PACKAGE_WM_WMX
-	bool "wmx-6.0nb3"
-	help
-	  Another X11 window manager based on wm2
-
-	  wmx is another window manager for X.  It is based on wm2 and provides
-	  a similarly unusual style of window decoration; but in place of wm2's
-	  minimal functionality, it offers many of the features of more
-	  conventional managers in the most simplistic implementations
-	  imaginable.  wmx is, however, still barely configurable except by
-	  editing the source and recompiling the code.
-
-	  http://www.all-day-breakfast.com/wmx/
-
-config BR2_PKGSRC_PACKAGE_WM_WINDOWMAKER
-	bool "windowmaker-0.92.0nb16"
-	help
-	  
-
-	  Window Maker is a window manager designed to emulate the look
-	  and feel of part of the NEXTSTEP(tm) GUI. It's supposed to be fast,
-	  relatively small, feature rich and easy to configure, with
-	  a simple and elegant appearance borrowed from NEXTSTEP(tm).
-
-	  http://www.windowmaker.info/
 
 config BR2_PKGSRC_PACKAGE_WM_W9WM
 	bool "w9wm-0.4.2nb1"
@@ -1320,6 +1325,7 @@ config BR2_PKGSRC_PACKAGE_WM_W9WM
 
 	  http://www.grassouille.org/code/w9wm.en.html
 
+
 config BR2_PKGSRC_PACKAGE_WM_WAIMEA
 	bool "waimea-0.4.0nb17"
 	help
@@ -1334,6 +1340,79 @@ config BR2_PKGSRC_PACKAGE_WM_WAIMEA
 	  behave as almost any other window manager.
 
 	  http://sourceforge.net/projects/waimea/
+
+
+config BR2_PKGSRC_PACKAGE_WM_WAMPAGER
+	bool "wampager-0.9.1nb2"
+	help
+	  Virtual pager dockapp for the Waimea Window Manager
+
+	  Waimea mini pager is a simple virtual desktop pager dockapp for the Waimea
+	  Window Manager. Although it supports simple desktop navigation, its main
+	  purpose is to give the user a feel for where the virtual desktop viewport is
+	  currently positioned.
+
+	  http://waimea.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_WM_WBAR
+	bool "wbar-2.2.2"
+	help
+	  Simple and highly customizable quick-launch tool
+
+	  Just a simple and highly customizable quick-launch tool.
+	  
+	  Features
+	  * It's coded in C++
+	  * It uses Imlib2 to do the image processing
+	  * It rides just on top of Xlib, no other toolkits.
+
+	  http://code.google.com/p/wbar/
+
+
+config BR2_PKGSRC_PACKAGE_WM_WEEWM
+	bool "weewm-0.0.2nb2"
+	help
+	  Fast and ultra light windowmanager with total keyboard control
+
+	  WeeWM (Wee Enhanced Environment) is a fast and light window manager
+	  for XFree86.  Everything can be done with a keyboard.  It is
+	  customizable, and has dock management, smart window placement, virtual
+	  desktops, and more.
+
+	  http://weewm.flashtux.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_WINDOWLAB
+	bool "windowlab-1.33nb2"
+	help
+	  Small and simple window manager
+
+	  WindowLab is a small and simple window manager of novel design, based on aewm.
+	  
+	  It's click-to-focus, shares its window depth policy with the Amiga, and has
+	  a window resizing/reshaping method similar to that of 8/5 from Plan 9.
+	  WindowLab maintains the illusion of direct manipulation by constraining the
+	  mouse pointer when appropriate, ie when a window cannot be dragged any further
+	  in one direction.  The pointer is also constrained vertically (effectively
+	  making the target menu items infinitely tall according to Fitts's law) when
+	  it's in the menubar to reduce pointing time.
+
+	  http://nickgravgaard.com/windowlab/
+
+
+config BR2_PKGSRC_PACKAGE_WM_WINDOWMAKER
+	bool "windowmaker-0.92.0nb16"
+	help
+	  
+
+	  Window Maker is a window manager designed to emulate the look
+	  and feel of part of the NEXTSTEP(tm) GUI. It's supposed to be fast,
+	  relatively small, feature rich and easy to configure, with
+	  a simple and elegant appearance borrowed from NEXTSTEP(tm).
+
+	  http://www.windowmaker.info/
+
 
 config BR2_PKGSRC_PACKAGE_WM_WM2
 	bool "wm2-4.0nb1"
@@ -1363,21 +1442,6 @@ config BR2_PKGSRC_PACKAGE_WM_WM2
 
 	  http://www.all-day-breakfast.com/wm2/
 
-config BR2_PKGSRC_PACKAGE_WM_WMX_GNOME
-	bool "wmx-gnome-6.0nb2"
-	help
-	  Another X11 window manager based on wm2, with GNOME compliance
-
-	  wmx is another window manager for X.  It is based on wm2 and provides
-	  a similarly unusual style of window decoration; but in place of wm2's
-	  minimal functionality, it offers many of the features of more
-	  conventional managers in the most simplistic implementations
-	  imaginable.  wmx is, however, still barely configurable except by
-	  editing the source and recompiling the code.
-	  
-	  This package is built with GNOME compliance.
-
-	  http://www.all-day-breakfast.com/wmx/
 
 config BR2_PKGSRC_PACKAGE_WM_WMAKERCONF
 	bool "wmakerconf-2.11nb16"
@@ -1397,6 +1461,7 @@ config BR2_PKGSRC_PACKAGE_WM_WMAKERCONF
 	  button to get the current file from the wmakerconf site.
 
 	  http://starplot.org/wmakerconf/
+
 
 config BR2_PKGSRC_PACKAGE_WM_WMCTRL
 	bool "wmctrl-1.07nb1"
@@ -1418,6 +1483,7 @@ config BR2_PKGSRC_PACKAGE_WM_WMCTRL
 
 	  http://sweb.cz/tripie/utils/wmctrl/
 
+
 config BR2_PKGSRC_PACKAGE_WM_WMEXTRA
 	bool "wmextra-0.1nb3"
 	help
@@ -1427,6 +1493,7 @@ config BR2_PKGSRC_PACKAGE_WM_WMEXTRA
 	  only contains some icons and a few themes.
 
 	  http://www.windowmaker.info/
+
 
 config BR2_PKGSRC_PACKAGE_WM_WMI
 	bool "wmi-10nb2"
@@ -1449,6 +1516,72 @@ config BR2_PKGSRC_PACKAGE_WM_WMI
 
 	  http://www.suckless.org/wiki/wmii/download
 
+
+config BR2_PKGSRC_PACKAGE_WM_WMII
+	bool "wmii-3.6nb4"
+	help
+	  Modular and keyboard-friendly window manager
+
+	  wmii (window manager improved 2) is a dynamic window manager for X11.
+	  It supports classic and dynamic window management with extended
+	  keyboard, mouse, and filesystem based remote control. It replaces the
+	  workspace paradigm with a new tagging approach.
+	  
+	  Its minimalist philosophy attempts to not exceed 10.000 lines of code
+	  (including all shipped utilities and libraries), to enforce simplicity
+	  and clarity.
+
+	  http://wmii.suckless.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_WMTHEMES
+	bool "wmthemes-0.80.0nb2"
+	help
+	  Themes for the window manager WindowMaker
+
+	  Themes for the window manager WindowMaker.
+	  
+	  What exactly are themes?
+	  ----------------------------------
+	  Themes are a great aspect of WindowMaker allowing a user to simply save the
+	  entire 'look' of their desktop in a Archive to distribute freely among
+	  friends,  fellow users and/or the whole net in general. :)
+
+	  http://wm.themes.org/
+
+
+config BR2_PKGSRC_PACKAGE_WM_WMX
+	bool "wmx-6.0nb3"
+	help
+	  Another X11 window manager based on wm2
+
+	  wmx is another window manager for X.  It is based on wm2 and provides
+	  a similarly unusual style of window decoration; but in place of wm2's
+	  minimal functionality, it offers many of the features of more
+	  conventional managers in the most simplistic implementations
+	  imaginable.  wmx is, however, still barely configurable except by
+	  editing the source and recompiling the code.
+
+	  http://www.all-day-breakfast.com/wmx/
+
+
+config BR2_PKGSRC_PACKAGE_WM_WMX_GNOME
+	bool "wmx-gnome-6.0nb2"
+	help
+	  Another X11 window manager based on wm2, with GNOME compliance
+
+	  wmx is another window manager for X.  It is based on wm2 and provides
+	  a similarly unusual style of window decoration; but in place of wm2's
+	  minimal functionality, it offers many of the features of more
+	  conventional managers in the most simplistic implementations
+	  imaginable.  wmx is, however, still barely configurable except by
+	  editing the source and recompiling the code.
+	  
+	  This package is built with GNOME compliance.
+
+	  http://www.all-day-breakfast.com/wmx/
+
+
 config BR2_PKGSRC_PACKAGE_WM_XFCE4_WM
 	bool "xfce4-wm-4.6.1nb5"
 	help
@@ -1458,52 +1591,6 @@ config BR2_PKGSRC_PACKAGE_WM_XFCE4_WM
 
 	  http://www.xfce.org/
 
-config BR2_PKGSRC_PACKAGE_WM_OROBORUS
-	bool "oroborus-2.0.12nb1"
-	help
-	  Small and simple window manager for X
-
-	  Oroborus is a small and simple window manager for X which has the following
-	  features:
-	  
-	  o Themeable appearance
-	  o Virtual desktops
-	  o Full keyboard control
-	  o Works with GNOME
-	  
-	  Oroborus doesn't provide any kind of dock, toolbar, program launcher,
-	  background changer or root menu as these functions can be provided by
-	  separate applications.
-
-	  http://www.oroborus.org/
-
-config BR2_PKGSRC_PACKAGE_WM_PY_TYLE
-	bool "py26-tyle-0.7.5"
-	help
-	  Manual tiling manager
-
-	  PyTyle is a manual tiling manager that can slide into any EWMH
-	  compliant window manager, inspired by XMonad. It will allow you to
-	  enable/disable tiling on a per screen per workspace basis, and
-	  continually tile your windows.
-	  
-	  Features include:
-	  * Built in multi-monitor support (using Xinerama)
-	  * Continuous tiling behavior similar to that of XMonad.
-	  * Manual tiling on a per screen per workspace basis. Have tiling
-	  on one screen/workspace and not the other.
-	  * Comes pre-packaged with a variety of tiling layouts ready for
-	  use. Also, PyTyle's object oriented design makes it incredibly easy
-	  to add or customize your own tiling layouts.
-	  * Some configuration options include:
-	  * Adding margins on a per-screen basis (to force PyTyle to ignore
-	  docks/panels).
-	  * Tell PyTyle to ignore certain windows from tiling.
-	  * Configure defaults layouts on a per screen per workspace basis.
-	  * Completely customize all of PyTyle's key bindings.
-	  * Dynamically reload configuration file.
-
-	  http://pytyle.com/wiki/Main_Page
 
 config BR2_PKGSRC_PACKAGE_WM_XFCE4_WM_THEMES
 	bool "xfce4-wm-themes-4.6.0nb4"
@@ -1513,4 +1600,5 @@ config BR2_PKGSRC_PACKAGE_WM_XFCE4_WM_THEMES
 	  Additional window manager themes for Xfce.
 
 	  http://www.xfce.org/
+
 

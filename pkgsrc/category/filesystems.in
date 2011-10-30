@@ -22,6 +22,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FS_UTILS
 
 	  http://www.NetBSD.org/~stacktic/fs-utils.html
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE
 	bool "fuse-2.8.4nb1"
 	help
@@ -40,6 +41,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE
 
 	  http://fuse.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_AFPFS_NG
 	bool "fuse-afpfs-ng-0.8.1nb3"
 	help
@@ -49,6 +51,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_AFPFS_NG
 	  system to see files exported from a Mac OS system with AFP over TCP.
 
 	  http://sourceforge.net/projects/afpfs-ng
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_ARCHIVEMOUNT
 	bool "fuse-archivemount-0.5.3nb1"
@@ -63,6 +66,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_ARCHIVEMOUNT
 
 	  http://www.cybernoia.de/software/archivemount/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_BINDFS
 	bool "fuse-bindfs-1.8.4"
 	help
@@ -74,6 +78,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_BINDFS
 
 	  http://code.google.com/p/bindfs/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CDDFS
 	bool "fuse-cddfs-0.2"
 	help
@@ -83,6 +88,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CDDFS
 	  mount your audio cd.
 
 	  http://castet.matthieu.free.fr/cddfs/
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CHIRONFS
 	bool "fuse-chironfs-1.1.1nb1"
@@ -94,6 +100,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CHIRONFS
 	  used.
 
 	  http://code.google.com/p/chironfs/
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CRYPTOFS
 	bool "fuse-cryptofs-0.6.0nb1"
@@ -110,6 +117,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CRYPTOFS
 	  again.
 
 	  http://reboot.animeirc.de/cryptofs/
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CURLFTPFS
 	bool "fuse-curlftpfs-0.9.1nb2"
@@ -128,16 +136,6 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CURLFTPFS
 
 	  http://curlftpfs.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_SVNFS
-	bool "svnfs-0.4nb6"
-	help
-	  FUSE filesystem for accessing SVN repositories
-
-	  SvnFs is a filesystem written using FUSE for accessing Subversion
-	  repositories.  Please see <http://www.jmadden.eu> for search google
-	  for more information, as it comes with no documentation.
-
-	  http://www.jmadden.eu/
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_DJMOUNT
 	bool "fuse-djmount-0.71nb1"
@@ -154,21 +152,6 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_DJMOUNT
 
 	  http://djmount.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_UNIONFS
-	bool "fuse-unionfs-0.17"
-	help
-	  FUSE-based union filesystem
-
-	  The FUSE-based union file system allows several directories to be
-	  stacked under one mountpoint - this will produce the effect of
-	  having a number of directories merged under one mountpoint.
-	  
-	  This utility is implemented at the user level - to mount a series
-	  of roots, simply use:
-	  
-	  fuse-unionfs /dir1:/dir2:/dir3 /mnt
-
-	  http://podgorny.cz/unionfs-fuse/
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_ENCFS
 	bool "fuse-encfs-1.2.0.2nb2"
@@ -184,6 +167,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_ENCFS
 
 	  http://www.arg0.net/encfs
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_EXT2
 	bool "fuse-ext2-0.0.7nb1"
 	help
@@ -193,6 +177,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_EXT2
 	  and/or images with read write support.
 
 	  http://alperakcan.org/projects/fuse-ext2/
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GMAILFS
 	bool "fuse-gmailfs-0.7.2nb2"
@@ -204,6 +189,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GMAILFS
 	  local disk drive.
 
 	  http://richard.jones.name/google-hacks/gmail-filesystem/gmail-filesystem.html
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GPHOTOFS
 	bool "fuse-gphotofs-0.4.0nb2"
@@ -218,6 +204,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GPHOTOFS
 	  by libgphoto2, it can be mounted as a filesystem using this program.
 
 	  http://gphoto.sourceforge.net/proj/gphotofs/
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GSTFS
 	bool "fuse-gstfs-0.1nb1"
@@ -234,6 +221,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GSTFS
 
 	  http://bobcopeland.com/gstfs/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_HTTPFS
 	bool "fuse-httpfs-2.06.08.26"
 	help
@@ -244,23 +232,6 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_HTTPFS
 
 	  http://httpfs.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WDFS
-	bool "fuse-wdfs-1.4.2nb4"
-	help
-	  FUSE-based webdav filesystem
-
-	  wdfs is a webdav filesystem with special features for accessing subversion
-	  repositories. it is based on fuse v2.5+ and neon v0.24.7+.
-	  
-	  features:
-	  - generic webdav filesystem
-	  - http redirect support
-	  - https support
-	  - file locking support (different modes)
-	  - access to all revisions of a webdav exported subversion repository
-	  - versioning filesystem for autoversioning enabled subversion repositories
-
-	  http://noedler.de/projekte/wdfs/
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_LOGGEDFS
 	bool "fuse-loggedfs-0.4"
@@ -271,6 +242,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_LOGGEDFS
 	  is happening on every vnode operation.
 
 	  
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_LZOFS
 	bool "fuse-lzofs-20060306"
@@ -296,6 +268,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_LZOFS
 
 	  http://north.one.pl/~kazik/pub/LZOlayer/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_MP3FS
 	bool "fuse-mp3fs-0.13nb1"
 	help
@@ -312,6 +285,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_MP3FS
 
 	  http://mp3fs.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_NTFS_3G
 	bool "fuse-ntfs-3g-1.1120"
 	help
@@ -326,6 +300,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_NTFS_3G
 
 	  http://www.ntfs-3g.org/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_OBEXFS
 	bool "fuse-obexfs-0.8"
 	help
@@ -337,6 +312,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_OBEXFS
 	  client into FUSE callbacks.
 
 	  http://www.openobex.org/
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_POD
 	bool "fuse-pod-0.5.1nb6"
@@ -358,6 +334,43 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_POD
 	  * Statistics file
 
 	  http://fusepod.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_UNIONFS
+	bool "fuse-unionfs-0.17"
+	help
+	  FUSE-based union filesystem
+
+	  The FUSE-based union file system allows several directories to be
+	  stacked under one mountpoint - this will produce the effect of
+	  having a number of directories merged under one mountpoint.
+	  
+	  This utility is implemented at the user level - to mount a series
+	  of roots, simply use:
+	  
+	  fuse-unionfs /dir1:/dir2:/dir3 /mnt
+
+	  http://podgorny.cz/unionfs-fuse/
+
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WDFS
+	bool "fuse-wdfs-1.4.2nb4"
+	help
+	  FUSE-based webdav filesystem
+
+	  wdfs is a webdav filesystem with special features for accessing subversion
+	  repositories. it is based on fuse v2.5+ and neon v0.24.7+.
+	  
+	  features:
+	  - generic webdav filesystem
+	  - http redirect support
+	  - https support
+	  - file locking support (different modes)
+	  - access to all revisions of a webdav exported subversion repository
+	  - versioning filesystem for autoversioning enabled subversion repositories
+
+	  http://noedler.de/projekte/wdfs/
+
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WIKIPEDIAFS
 	bool "fuse-wikipediafs-0.3nb3"
@@ -389,6 +402,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WIKIPEDIAFS
 
 	  http://wikipediafs.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_GLUSTERFS
 	bool "glusterfs-3.2.3nb1"
 	help
@@ -408,6 +422,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_GLUSTERFS
 
 	  http://www.gluster.org/
 
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PERFUSE
 	bool "perfuse-20110909"
 	help
@@ -423,35 +438,6 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PERFUSE
 
 	  
 
-config BR2_PKGSRC_PACKAGE_FILESYSTEMS_TAHOE_LAFS
-	bool "tahoe-lafs-1.8.3nb1"
-	help
-	  Distributed fault-tolerant least-authority filesystem
-
-	  Tahoe-LAFS is a Free Software/Open Source decentralized data store.
-	  It distributes your filesystem across multiple servers, and even if
-	  some of the servers fail or are taken over by an attacker, the entire
-	  filesystem continues to work correctly and to preserve your privacy
-	  and security.
-
-	  http://tahoe-lafs.org/
-
-config BR2_PKGSRC_PACKAGE_FILESYSTEMS_U9FS
-	bool "u9fs-2.0.3"
-	help
-	  Unix file server using the 9P protocol
-
-	  U9fs is a program that serves Unix files to Plan 9 machines using the
-	  9P protocol.  It is typically invoked on a Unix machine by inetd with
-	  its standard input and output connected to a network connection,
-	  typically TCP on an Ethernet.  It typically runs as user root and
-	  multiplexes access to multiple Plan 9 clients over the single wire.
-	  It assumes Plan 9 uids match Unix login names, and changes to the
-	  corresponding Unix effective uid when processing requests.  U9fs
-	  serves both 9P1 (the 9P protocol as used by the second and third
-	  editions of Plan 9) and 9P2000.
-
-	  http://plan9.bell-labs.com/
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PY_FUSE_BINDINGS
 	bool "py26-fuse-bindings-0.2pre1nb2"
@@ -471,4 +457,49 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PY_FUSE_BINDINGS
 	  FUSE_PYTHON_COMPAT=0.1
 
 	  http://bsd.cenkes.org/myports/
+
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_SVNFS
+	bool "svnfs-0.4nb6"
+	help
+	  FUSE filesystem for accessing SVN repositories
+
+	  SvnFs is a filesystem written using FUSE for accessing Subversion
+	  repositories.  Please see <http://www.jmadden.eu> for search google
+	  for more information, as it comes with no documentation.
+
+	  http://www.jmadden.eu/
+
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_TAHOE_LAFS
+	bool "tahoe-lafs-1.8.3nb1"
+	help
+	  Distributed fault-tolerant least-authority filesystem
+
+	  Tahoe-LAFS is a Free Software/Open Source decentralized data store.
+	  It distributes your filesystem across multiple servers, and even if
+	  some of the servers fail or are taken over by an attacker, the entire
+	  filesystem continues to work correctly and to preserve your privacy
+	  and security.
+
+	  http://tahoe-lafs.org/
+
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_U9FS
+	bool "u9fs-2.0.3"
+	help
+	  Unix file server using the 9P protocol
+
+	  U9fs is a program that serves Unix files to Plan 9 machines using the
+	  9P protocol.  It is typically invoked on a Unix machine by inetd with
+	  its standard input and output connected to a network connection,
+	  typically TCP on an Ethernet.  It typically runs as user root and
+	  multiplexes access to multiple Plan 9 clients over the single wire.
+	  It assumes Plan 9 uids match Unix login names, and changes to the
+	  corresponding Unix effective uid when processing requests.  U9fs
+	  serves both 9P1 (the 9P protocol as used by the second and third
+	  editions of Plan 9) and 9P2000.
+
+	  http://plan9.bell-labs.com/
+
 

@@ -1,3 +1,85 @@
+config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK
+	bool "asterisk-1.2.37nb3"
+	help
+	  The Asterisk Software PBX
+
+	  Asterisk is a complete PBX in software.  It provides
+	  all of the features you would expect from a PBX and more. Asterisk
+	  does voice over IP in three protocols, and can interoperate with
+	  almost all standards-based telephony equipment using relatively
+	  inexpensive hardware.
+	  
+	  Asterisk provides Voicemail services with Directory, Call Conferencing,
+	  Interactive Voice Response, Call Queuing. It has support for
+	  three-way calling, caller ID services, ADSI, SIP and H.323 (as both
+	  client and gateway).
+
+	  http://www.asterisk.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK16
+	bool "asterisk-1.6.2.19nb1"
+	help
+	  The Asterisk Software PBX
+
+	  Asterisk is a complete PBX in software.  It provides all of the
+	  features you would expect from a PBX and more. Asterisk does voice
+	  over IP in three protocols, and can interoperate with almost all
+	  standards-based telephony equipment using relatively inexpensive
+	  hardware.
+	  
+	  Asterisk provides Voicemail services with Directory, Call Conferencing,
+	  Interactive Voice Response, Call Queuing. It has support for
+	  three-way calling, caller ID services, ADSI, SIP and H.323 (as both
+	  client and gateway).
+	  
+	  NOTE:  This version does not work with the zaptel drivers.  It
+	  requires the newer DAHDI drivers which are still being ported.
+	  So, there is no hardware support available at this moment.
+
+	  http://www.asterisk.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK18
+	bool "asterisk-1.8.5.0nb1"
+	help
+	  The Asterisk Software PBX
+
+	  Asterisk is a complete PBX in software.  It provides all of the
+	  features you would expect from a PBX and more. Asterisk does voice
+	  over IP in three protocols, and can interoperate with almost all
+	  standards-based telephony equipment using relatively inexpensive
+	  hardware.
+	  
+	  Asterisk provides Voicemail services with Directory, Call Conferencing,
+	  Interactive Voice Response, Call Queuing. It has support for
+	  three-way calling, caller ID services, ADSI, SIP and H.323 (as both
+	  client and gateway).
+	  
+	  NOTE:  This version does not work with the zaptel drivers.  It
+	  requires the newer DAHDI drivers which are still being ported.
+	  So, there is no hardware support available at this moment.
+	  
+	  Asterisk 1.8 is a long term support version (i.e. it will be
+	  supported for four years with an additional year of security only
+	  fixes).  See:
+	  
+	  https://wiki.asterisk.org/wiki/display/AST/Asterisk+Versions
+
+	  http://www.asterisk.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_DE_X9MEDIA
+	bool "asterisk-sounds-de-x9media-20060714nb1"
+	help
+	  German voice prompt files for asterisk
+
+	  Free german voice prompt files for asterisk, courtesy x9media ip
+	  communication.
+
+	  http://www.x9media.com/
+
+
 config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_EXTRA
 	bool "asterisk-sounds-extra-1.2.1"
 	help
@@ -6,6 +88,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_EXTRA
 	  Additional sound files for asterisk.
 
 	  http://www.asterisk.org/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_NATIVE
 	bool "asterisk-sounds-native-20060209"
@@ -18,6 +101,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_NATIVE
 	  peer.
 
 	  http://www.astlinux.org/index.php
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_BINKD
 	bool "binkd-0.9.8nb2"
@@ -34,6 +118,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_BINKD
 
 	  http://homepage.corbina.net/~maloff/binkd/
 
+
 config BR2_PKGSRC_PACKAGE_COMMS_BIRDA
 	bool "birda-1.3"
 	help
@@ -49,6 +134,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_BIRDA
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_COMMS_BTHFP
 	bool "bthfp-0.1"
 	help
@@ -60,6 +146,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_BTHFP
 	  to and from your system audio as appropriate.
 
 	  
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_CONSERVER
 	bool "conserver-7.2.7nb3"
@@ -85,28 +172,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_CONSERVER
 
 	  http://www.conserver.com/
 
-config BR2_PKGSRC_PACKAGE_COMMS_ESTIC
-	bool "estic-1.61nb2"
-	help
-	  German language configuration tool for ISTEC 1003/1008 ISDN systems
-
-	  This is a configuration tool for ISTEC 1003/1008 ISDN systems. Because
-	  the program and the documentation are only available in German the rest
-	  of this description is written in German language.
-	  
-	  ESTIC ist ein Konfigurationsprogramm fuer die ISTEC ISDN-Anlagen der
-	  Firma Emmerich. Neben der Konfiguration der Anlage kann ESTIC ein
-	  Logfile ueber die ausgehenden Gespraeche zusammen mit Nummer/Zeitpunkt/
-	  Dauer/Kosten fuehren. Weiterhin ist als zusaetzliches "Schmankerl" fuer
-	  ISDN4Linux Benutzer ein ISDN4Linux Monitor integriert.
-	  
-	  ESTIC basiert auf meiner portablen Klassenbibliothek SPUNK, deshalb
-	  sind Versionen fuer DOS, OS/2, Windows 95/NT, Linux, FreeBSD und diverse
-	  andere Unixe verfuegbar. Fuer die Unix-Versionen ist es sinnvoll,
-	  bestimmte Environment-Variablen zu setzen (siehe weiter unten,
-	  "Betrieb unter den verschiedenen Plattformen").
-
-	  http://www.von-bassewitz.de/uz/estic/estic.html
 
 config BR2_PKGSRC_PACKAGE_COMMS_CONSERVER8
 	bool "conserver8-8.1.18"
@@ -132,24 +197,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_CONSERVER8
 
 	  http://www.conserver.com/
 
-config BR2_PKGSRC_PACKAGE_COMMS_FIDOGATE
-	bool "fidogate-4.4.10nb3"
-	help
-	  
-
-	  FIDOGATE is a Fido-Internet gateway and a Fido tosser.  It is placed under
-	  the GNU General Public License, see COPYING for details.
-	  
-	  The gateway converts between the worlds of Fido NetMail/EchoMail (or FTNs,
-	  Fido Technology Networks in general) and the UNIX mail/news system.
-	  FIDOGATE will convert Fido mail packets to RFC822/1036-style messages and
-	  vice versa.
-	  
-	  FIDOGATE also includes a complete FIDO mail processor (NetMail/EchoMail
-	  scanner and tosser), an FTN-FTN gateway (NetMail only), a file processor
-	  (TIC file areas) and an Areafix/Filefix.
-
-	  http://www.fidogate.org/
 
 config BR2_PKGSRC_PACKAGE_COMMS_DL_EZKIT
 	bool "dl-ezkit-0.8.1"
@@ -160,22 +207,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_DL_EZKIT
 
 	  http://www.ww.tu-freiberg.de/~pberg/download/
 
-config BR2_PKGSRC_PACKAGE_COMMS_GAMMU
-	bool "gammu-1.26.1nb2"
-	help
-	  Command line utility and library to work with mobile phones
-
-	  Gammu is a command line utility and library to work with mobile phones
-	  from many vendors. Support for different models differs, but basic
-	  functions should work with majority of them. The program can work with
-	  contacts, messages (SMS, EMS and MMS), calendar, todos, file system,
-	  integrated radio, camera, etc. It also supports a daemon mode to send
-	  and receive SMS messages.
-	  
-	  Gammu includes Python bindings, which allows easy scripting of
-	  desired functionality using core functions.
-
-	  http://wammu.eu/gammu/
 
 config BR2_PKGSRC_PACKAGE_COMMS_EFAX
 	bool "efax-0.9nb2"
@@ -205,6 +236,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_EFAX
 
 	  http://www.cce.com/efax/
 
+
 config BR2_PKGSRC_PACKAGE_COMMS_EFAX_GTK
 	bool "efax-gtk-3.2.3nb5"
 	help
@@ -222,6 +254,69 @@ config BR2_PKGSRC_PACKAGE_COMMS_EFAX_GTK
 
 	  http://efax-gtk.sourceforge.net/
 
+
+config BR2_PKGSRC_PACKAGE_COMMS_ESTIC
+	bool "estic-1.61nb2"
+	help
+	  German language configuration tool for ISTEC 1003/1008 ISDN systems
+
+	  This is a configuration tool for ISTEC 1003/1008 ISDN systems. Because
+	  the program and the documentation are only available in German the rest
+	  of this description is written in German language.
+	  
+	  ESTIC ist ein Konfigurationsprogramm fuer die ISTEC ISDN-Anlagen der
+	  Firma Emmerich. Neben der Konfiguration der Anlage kann ESTIC ein
+	  Logfile ueber die ausgehenden Gespraeche zusammen mit Nummer/Zeitpunkt/
+	  Dauer/Kosten fuehren. Weiterhin ist als zusaetzliches "Schmankerl" fuer
+	  ISDN4Linux Benutzer ein ISDN4Linux Monitor integriert.
+	  
+	  ESTIC basiert auf meiner portablen Klassenbibliothek SPUNK, deshalb
+	  sind Versionen fuer DOS, OS/2, Windows 95/NT, Linux, FreeBSD und diverse
+	  andere Unixe verfuegbar. Fuer die Unix-Versionen ist es sinnvoll,
+	  bestimmte Environment-Variablen zu setzen (siehe weiter unten,
+	  "Betrieb unter den verschiedenen Plattformen").
+
+	  http://www.von-bassewitz.de/uz/estic/estic.html
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_FIDOGATE
+	bool "fidogate-4.4.10nb3"
+	help
+	  
+
+	  FIDOGATE is a Fido-Internet gateway and a Fido tosser.  It is placed under
+	  the GNU General Public License, see COPYING for details.
+	  
+	  The gateway converts between the worlds of Fido NetMail/EchoMail (or FTNs,
+	  Fido Technology Networks in general) and the UNIX mail/news system.
+	  FIDOGATE will convert Fido mail packets to RFC822/1036-style messages and
+	  vice versa.
+	  
+	  FIDOGATE also includes a complete FIDO mail processor (NetMail/EchoMail
+	  scanner and tosser), an FTN-FTN gateway (NetMail only), a file processor
+	  (TIC file areas) and an Areafix/Filefix.
+
+	  http://www.fidogate.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_GAMMU
+	bool "gammu-1.26.1nb2"
+	help
+	  Command line utility and library to work with mobile phones
+
+	  Gammu is a command line utility and library to work with mobile phones
+	  from many vendors. Support for different models differs, but basic
+	  functions should work with majority of them. The program can work with
+	  contacts, messages (SMS, EMS and MMS), calendar, todos, file system,
+	  integrated radio, camera, etc. It also supports a daemon mode to send
+	  and receive SMS messages.
+	  
+	  Gammu includes Python bindings, which allows easy scripting of
+	  desired functionality using core functions.
+
+	  http://wammu.eu/gammu/
+
+
 config BR2_PKGSRC_PACKAGE_COMMS_GKERMIT
 	bool "gkermit-1.00nb1"
 	help
@@ -233,6 +328,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_GKERMIT
 	  G-Kermit is distributed under the GNU General Public License.
 
 	  http://www.columbia.edu/kermit/gkermit.html
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_GNOME_PILOT
 	bool "gnome-pilot-2.0.17nb10"
@@ -248,208 +344,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_GNOME_PILOT
 
 	  http://www.gnome.org/
 
-config BR2_PKGSRC_PACKAGE_COMMS_KERMIT
-	bool "kermit-9.0.302"
-	help
-	  Network and serial communication, file transfer, and scripting utility
-
-	  KERMIT file transfer/terminal emulation utility
-	  ------------------------------------------------------
-	  
-	  This is a release of C-Kermit file transfer protocol utility.
-	  This version supports transfer of un-escaped control characters for
-	  very fast file transfers with high reliability.
-
-	  http://www.columbia.edu/kermit/
-
-config BR2_PKGSRC_PACKAGE_COMMS_KYOPON
-	bool "kyopon-0.5"
-	help
-	  tool to manipulate data of Kyocera PHS handset
-
-	  kyopon(1) is a simple command-line tool to manipulate data of
-	  Kyocera PHS handset
-	  
-	  This tool uses ukyopon(4) device driver.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_COMMS_LIBMAL
-	bool "libmal-0.44nb1"
-	help
-	  MAL convenience library
-
-	  libmal is simply a convenience library of the object files contained in Tom
-	  Whittaker's malsync distribution, along with a few wrapper functions.
-
-	  http://jasonday.home.att.net/code/libmal/
-
-config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC
-	bool "libopensync-0.22nb3"
-	help
-	  Platform independent synchronization framework
-
-	  OpenSync is a synchronization framework that is platform and distribution
-	  independent. It consists of a powerful sync-engine and several plugins
-	  that can be used to connect to devices.
-	  
-	  OpenSync is very flexible and capable of synchronizing any type of data,
-	  including contacts, calendar, tasks, notes and files.
-
-	  http://www.opensync.org/
-
-config BR2_PKGSRC_PACKAGE_COMMS_MALSYNC
-	bool "malsync-2.2.0nb1"
-	help
-	  Utility to synchronize Palm Pilots to the AvantGo.com service
-
-	  MalSync is a bare bones utility to enable people who have Palm OS
-	  devices to sync to Mobile Application Link (MAL) compliant servers.
-	  AvantGo (www.avantgo.com) and Puma Technologies (www.pumatech.com)
-	  are the first two companies committing to producing servers which
-	  speak this protocol.  This utility will allow a user to sync with
-	  multiple servers, simultaneously or separately.  The AvantGo.com
-	  service (www.avantgo.com) is the first such server.
-
-	  http://www.tomw.org/malsync/
-
-config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_EVOLUTION2
-	bool "libopensync-plugin-evolution2-0.22nb5"
-	help
-	  Platform independent synchronization framework, evo plugin
-
-	  OpenSync is a synchronization framework that is platform and distribution
-	  independent. It consists of a powerful sync-engine and several plugins
-	  that can be used to connect to devices.
-	  
-	  OpenSync is very flexible and capable of synchronizing any type of data,
-	  including contacts, calendar, tasks, notes and files.
-	  
-	  This plugin synchronizes with the evolution database.
-
-	  http://www.opensync.org/
-
-config BR2_PKGSRC_PACKAGE_COMMS_MGETTY_SENDFAX
-	bool "mgetty-1.1.37"
-	help
-	  Handle external logins, send and receive faxes
-
-	  Mgetty is a ``smart'' getty replacement, designed to be used with Hayes
-	  compatible data and data/fax modems.
-	  
-	  Mgetty knows about modem initialization, manual modem answering (so your
-	  modem doesn't answer if the machine isn't ready), UUCP locking (so you can
-	  use the same device for dial-in and dial-out).
-	  
-	  Mgetty provides very extensive logging facilities.
-	  
-	  Sendfax sends the named g3 fax files to the fax machine at "phone number".
-	  The g3 files can be created with pbmtog3(1) or GNU's GhostScript with the
-	  "digifax" driver.
-	  
-	  http://www.webforum.de/mgetty-faq.html
-
-	  http://mgetty.greenie.net/
-
-config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_FILE
-	bool "libopensync-plugin-file-0.22nb2"
-	help
-	  Platform independent synchronization framework, backup to file
-
-	  OpenSync is a synchronization framework that is platform and distribution
-	  independent. It consists of a powerful sync-engine and several plugins
-	  that can be used to connect to devices.
-	  
-	  OpenSync is very flexible and capable of synchronizing any type of data,
-	  including contacts, calendar, tasks, notes and files.
-	  
-	  This plugin synchronizes files on the local filesystem.
-
-	  http://www.opensync.org/
-
-config BR2_PKGSRC_PACKAGE_COMMS_MINICOM
-	bool "minicom-2.5"
-	help
-	  MS-DOS Telix serial communication program "workalike"
-
-	  Minicom is a serial communication program.  It is a un*x clone of the
-	  well-known MS-DOS Telix program.  It has ANSI color, dialing directory,
-	  dial-a-list, script language, file up/download support, screen capture,
-	  scroll-back, etc.
-	  
-	  The author is Miquel van Smoorenburg (miquels@cistron.nl -or-
-	  miquels@drinkel.ow.org).  Note, minicom is covered by the GNU GPL.
-
-	  http://alioth.debian.org/projects/minicom/
-
-config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_KDEPIM
-	bool "libopensync-plugin-kdepim-0.22nb10"
-	help
-	  Platform independent synchronization framework, kdepim plugin
-
-	  OpenSync is a synchronization framework that is platform and distribution
-	  independent. It consists of a powerful sync-engine and several plugins
-	  that can be used to connect to devices.
-	  
-	  OpenSync is very flexible and capable of synchronizing any type of data,
-	  including contacts, calendar, tasks, notes and files.
-	  
-	  This plugin synchronizes with the KDE 3.5 Desktop.
-
-	  http://www.opensync.org/
-
-config BR2_PKGSRC_PACKAGE_COMMS_MODEMD
-	bool "modemd-19970221nb1"
-	help
-	  Replacement getty for dialup ttys and a modem server
-
-	  The modemd package includes a replacement getty called modemd
-	  that is designed to handle modems and offer many features not
-	  present in standard gettys, and a modem daemon, mpoold, that
-	  allows processes to share local and remote modems in pools.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_SYNCML
-	bool "libopensync-plugin-syncml-0.22nb2"
-	help
-	  Platform independent synchronization framework, SyncML plugin
-
-	  OpenSync is a synchronization framework that is platform and distribution
-	  independent. It consists of a powerful sync-engine and several plugins
-	  that can be used to connect to devices.
-	  
-	  OpenSync is very flexible and capable of synchronizing any type of data,
-	  including contacts, calendar, tasks, notes and files.
-	  
-	  This plugin synchronizes with devices supporting the SyncML protocol,
-	  e.g. Nokia cell phones.
-
-	  http://www.opensync.org/download/releases/0.22/
-
-config BR2_PKGSRC_PACKAGE_COMMS_LIBSYNCML
-	bool "libsyncml-0.4.5nb1"
-	help
-	  C library implementation of the SyncML protocol
-
-	  Libsyncml is a implementation of the SyncML protocol, used e.g. on
-	  Nokia cell phones.
-
-	  http://libsyncml.opensync.org/
-
-config BR2_PKGSRC_PACKAGE_COMMS_LRZSZ
-	bool "lrzsz-0.12.20nb1"
-	help
-	  
-
-	  This program uses error correcting protocols to send/receive
-	  files over a dial-in serial port from a variety of programs
-	  running under PC-DOS, CP/M, Unix, and other operating systems.
-	  
-	  lrzsz is derived from the last unrestricted verison of Chuck Forsberg's
-	  rzsz package.  lrzsz is covered under the GNU copyleft.
-
-	  http://www.ohse.de/uwe/software/lrzsz.html
 
 config BR2_PKGSRC_PACKAGE_COMMS_GSCMXX
 	bool "gscmxx-0.4.1nb8"
@@ -460,6 +354,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_GSCMXX
 	  mobile phone from your X11 desktop.
 
 	  http://gscmxx.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_GSMLIB
 	bool "gsmlib-1.10nb3"
@@ -474,21 +369,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_GSMLIB
 
 	  http://www.pxh.de/fs/gsmlib/
 
-config BR2_PKGSRC_PACKAGE_COMMS_MSYNCTOOL
-	bool "msynctool-0.22nb2"
-	help
-	  Command line tool for opensync framework
-
-	  This is a command line tool for the opensync framework.
-	  
-	  OpenSync is a synchronization framework that is platform and distribution
-	  independent. It consists of a powerful sync-engine and several plugins
-	  that can be used to connect to devices.
-	  
-	  OpenSync is very flexible and capable of synchronizing any type of data,
-	  including contacts, calendar, tasks, notes and files.
-
-	  http://www.opensync.org/
 
 config BR2_PKGSRC_PACKAGE_COMMS_HYLAFAX
 	bool "hylafax-4.2.5nb5"
@@ -513,6 +393,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_HYLAFAX
 	  http://www.vix.com/hylafax/
 
 	  http://www.hylafax.org/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_JPILOT
 	bool "jpilot-1.6.0nb9"
@@ -562,6 +443,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_JPILOT
 
 	  http://www.jpilot.org/
 
+
 config BR2_PKGSRC_PACKAGE_COMMS_JPILOT_SYNCMAL
 	bool "jpilot-syncmal-0.80nb7"
 	help
@@ -572,23 +454,240 @@ config BR2_PKGSRC_PACKAGE_COMMS_JPILOT_SYNCMAL
 
 	  http://www.jlogday.com/code/syncmal/index.html
 
-config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK
-	bool "asterisk-1.2.37nb3"
+
+config BR2_PKGSRC_PACKAGE_COMMS_KERMIT
+	bool "kermit-9.0.302"
 	help
-	  The Asterisk Software PBX
+	  Network and serial communication, file transfer, and scripting utility
 
-	  Asterisk is a complete PBX in software.  It provides
-	  all of the features you would expect from a PBX and more. Asterisk
-	  does voice over IP in three protocols, and can interoperate with
-	  almost all standards-based telephony equipment using relatively
-	  inexpensive hardware.
+	  KERMIT file transfer/terminal emulation utility
+	  ------------------------------------------------------
 	  
-	  Asterisk provides Voicemail services with Directory, Call Conferencing,
-	  Interactive Voice Response, Call Queuing. It has support for
-	  three-way calling, caller ID services, ADSI, SIP and H.323 (as both
-	  client and gateway).
+	  This is a release of C-Kermit file transfer protocol utility.
+	  This version supports transfer of un-escaped control characters for
+	  very fast file transfers with high reliability.
 
-	  http://www.asterisk.org/
+	  http://www.columbia.edu/kermit/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_KYOPON
+	bool "kyopon-0.5"
+	help
+	  tool to manipulate data of Kyocera PHS handset
+
+	  kyopon(1) is a simple command-line tool to manipulate data of
+	  Kyocera PHS handset
+	  
+	  This tool uses ukyopon(4) device driver.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_LIBMAL
+	bool "libmal-0.44nb1"
+	help
+	  MAL convenience library
+
+	  libmal is simply a convenience library of the object files contained in Tom
+	  Whittaker's malsync distribution, along with a few wrapper functions.
+
+	  http://jasonday.home.att.net/code/libmal/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC
+	bool "libopensync-0.22nb3"
+	help
+	  Platform independent synchronization framework
+
+	  OpenSync is a synchronization framework that is platform and distribution
+	  independent. It consists of a powerful sync-engine and several plugins
+	  that can be used to connect to devices.
+	  
+	  OpenSync is very flexible and capable of synchronizing any type of data,
+	  including contacts, calendar, tasks, notes and files.
+
+	  http://www.opensync.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_EVOLUTION2
+	bool "libopensync-plugin-evolution2-0.22nb5"
+	help
+	  Platform independent synchronization framework, evo plugin
+
+	  OpenSync is a synchronization framework that is platform and distribution
+	  independent. It consists of a powerful sync-engine and several plugins
+	  that can be used to connect to devices.
+	  
+	  OpenSync is very flexible and capable of synchronizing any type of data,
+	  including contacts, calendar, tasks, notes and files.
+	  
+	  This plugin synchronizes with the evolution database.
+
+	  http://www.opensync.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_FILE
+	bool "libopensync-plugin-file-0.22nb2"
+	help
+	  Platform independent synchronization framework, backup to file
+
+	  OpenSync is a synchronization framework that is platform and distribution
+	  independent. It consists of a powerful sync-engine and several plugins
+	  that can be used to connect to devices.
+	  
+	  OpenSync is very flexible and capable of synchronizing any type of data,
+	  including contacts, calendar, tasks, notes and files.
+	  
+	  This plugin synchronizes files on the local filesystem.
+
+	  http://www.opensync.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_KDEPIM
+	bool "libopensync-plugin-kdepim-0.22nb10"
+	help
+	  Platform independent synchronization framework, kdepim plugin
+
+	  OpenSync is a synchronization framework that is platform and distribution
+	  independent. It consists of a powerful sync-engine and several plugins
+	  that can be used to connect to devices.
+	  
+	  OpenSync is very flexible and capable of synchronizing any type of data,
+	  including contacts, calendar, tasks, notes and files.
+	  
+	  This plugin synchronizes with the KDE 3.5 Desktop.
+
+	  http://www.opensync.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_SYNCML
+	bool "libopensync-plugin-syncml-0.22nb2"
+	help
+	  Platform independent synchronization framework, SyncML plugin
+
+	  OpenSync is a synchronization framework that is platform and distribution
+	  independent. It consists of a powerful sync-engine and several plugins
+	  that can be used to connect to devices.
+	  
+	  OpenSync is very flexible and capable of synchronizing any type of data,
+	  including contacts, calendar, tasks, notes and files.
+	  
+	  This plugin synchronizes with devices supporting the SyncML protocol,
+	  e.g. Nokia cell phones.
+
+	  http://www.opensync.org/download/releases/0.22/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_LIBSYNCML
+	bool "libsyncml-0.4.5nb1"
+	help
+	  C library implementation of the SyncML protocol
+
+	  Libsyncml is a implementation of the SyncML protocol, used e.g. on
+	  Nokia cell phones.
+
+	  http://libsyncml.opensync.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_LRZSZ
+	bool "lrzsz-0.12.20nb1"
+	help
+	  
+
+	  This program uses error correcting protocols to send/receive
+	  files over a dial-in serial port from a variety of programs
+	  running under PC-DOS, CP/M, Unix, and other operating systems.
+	  
+	  lrzsz is derived from the last unrestricted verison of Chuck Forsberg's
+	  rzsz package.  lrzsz is covered under the GNU copyleft.
+
+	  http://www.ohse.de/uwe/software/lrzsz.html
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_MALSYNC
+	bool "malsync-2.2.0nb1"
+	help
+	  Utility to synchronize Palm Pilots to the AvantGo.com service
+
+	  MalSync is a bare bones utility to enable people who have Palm OS
+	  devices to sync to Mobile Application Link (MAL) compliant servers.
+	  AvantGo (www.avantgo.com) and Puma Technologies (www.pumatech.com)
+	  are the first two companies committing to producing servers which
+	  speak this protocol.  This utility will allow a user to sync with
+	  multiple servers, simultaneously or separately.  The AvantGo.com
+	  service (www.avantgo.com) is the first such server.
+
+	  http://www.tomw.org/malsync/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_MGETTY_SENDFAX
+	bool "mgetty-1.1.37"
+	help
+	  Handle external logins, send and receive faxes
+
+	  Mgetty is a ``smart'' getty replacement, designed to be used with Hayes
+	  compatible data and data/fax modems.
+	  
+	  Mgetty knows about modem initialization, manual modem answering (so your
+	  modem doesn't answer if the machine isn't ready), UUCP locking (so you can
+	  use the same device for dial-in and dial-out).
+	  
+	  Mgetty provides very extensive logging facilities.
+	  
+	  Sendfax sends the named g3 fax files to the fax machine at "phone number".
+	  The g3 files can be created with pbmtog3(1) or GNU's GhostScript with the
+	  "digifax" driver.
+	  
+	  http://www.webforum.de/mgetty-faq.html
+
+	  http://mgetty.greenie.net/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_MINICOM
+	bool "minicom-2.5"
+	help
+	  MS-DOS Telix serial communication program "workalike"
+
+	  Minicom is a serial communication program.  It is a un*x clone of the
+	  well-known MS-DOS Telix program.  It has ANSI color, dialing directory,
+	  dial-a-list, script language, file up/download support, screen capture,
+	  scroll-back, etc.
+	  
+	  The author is Miquel van Smoorenburg (miquels@cistron.nl -or-
+	  miquels@drinkel.ow.org).  Note, minicom is covered by the GNU GPL.
+
+	  http://alioth.debian.org/projects/minicom/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_MODEMD
+	bool "modemd-19970221nb1"
+	help
+	  Replacement getty for dialup ttys and a modem server
+
+	  The modemd package includes a replacement getty called modemd
+	  that is designed to handle modems and offer many features not
+	  present in standard gettys, and a modem daemon, mpoold, that
+	  allows processes to share local and remote modems in pools.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_MSYNCTOOL
+	bool "msynctool-0.22nb2"
+	help
+	  Command line tool for opensync framework
+
+	  This is a command line tool for the opensync framework.
+	  
+	  OpenSync is a synchronization framework that is platform and distribution
+	  independent. It consists of a powerful sync-engine and several plugins
+	  that can be used to connect to devices.
+	  
+	  OpenSync is very flexible and capable of synchronizing any type of data,
+	  including contacts, calendar, tasks, notes and files.
+
+	  http://www.opensync.org/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_MULTISYNC_GUI
 	bool "multisync-gui-0.91.0nb8"
@@ -598,6 +697,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_MULTISYNC_GUI
 	  GUI for libopensync
 
 	  http://www.opensync.org/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_OBEXAPP
 	bool "obexapp-1.4.15"
@@ -610,19 +710,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_OBEXAPP
 
 	  http://people.freebsd.org/~emax/obexapp/
 
-config BR2_PKGSRC_PACKAGE_COMMS_PLP
-	bool "plp-1.8nb2"
-	help
-	  Tools to talk to the PSION organiser
-
-	  PSION link
-	  
-	  This distribution is for transferring files between a PSION organiser and
-	  a Unix machine, via a serial cable. The code has been used successfully on
-	  a PC running linux and a PSION 5, but it ought to work with other flavours
-	  of unix and the PSION series 3 machines also.
-
-	  http://web.archive.org/web/20031214215022/http://www.proudman51.freeserve.co.uk/psion/
 
 config BR2_PKGSRC_PACKAGE_COMMS_OBEXFTP
 	bool "obexftp-0.20nb2"
@@ -639,19 +726,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_OBEXFTP
 
 	  http://openobex.triq.net/
 
-config BR2_PKGSRC_PACKAGE_COMMS_OPENOBEX
-	bool "openobex-1.5"
-	help
-	  
-
-	  The overall goal of the OpenOBEX project is to make an open source
-	  implementation of the Object Exchange (OBEX) protocol.  OBEX is a session
-	  protocol and can best be described as a binary HTTP protocol.  OBEX is
-	  optimised for ad-hoc wireless links and can be used to exchange all kind
-	  of objects like files, pictures, calendar entries (vCal) and business
-	  cards (vCard).
-
-	  http://www.openobex.org/
 
 config BR2_PKGSRC_PACKAGE_COMMS_OP_PANEL
 	bool "op_panel-0.29nb3"
@@ -689,21 +763,21 @@ config BR2_PKGSRC_PACKAGE_COMMS_OP_PANEL
 
 	  http://www.asternic.org/
 
-config BR2_PKGSRC_PACKAGE_COMMS_SYNCE_SERIAL
-	bool "synce-serial-0.9.1"
+
+config BR2_PKGSRC_PACKAGE_COMMS_OPENOBEX
+	bool "openobex-1.5"
 	help
-	  Wrappers for pppd to initiate communications with WinCE devices
-
-	  Synce-serial is part of the SynCE project.
 	  
-	  This module contains helper scripts for setting up a serial connection
-	  for use with SynCE. They are basically wrappers around pppd:
-	  
-	  synce-serial-config  - Use this to select serial port and IP adresses
-	  synce-serial-start   - Use this to start connection
-	  synce-serial-abort   - Use this to abort a connection
 
-	  http://synce.sourceforge.net/
+	  The overall goal of the OpenOBEX project is to make an open source
+	  implementation of the Object Exchange (OBEX) protocol.  OBEX is a session
+	  protocol and can best be described as a binary HTTP protocol.  OBEX is
+	  optimised for ad-hoc wireless links and can be used to exchange all kind
+	  of objects like files, pictures, calendar entries (vCal) and business
+	  cards (vCard).
+
+	  http://www.openobex.org/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_P5_ASTERISK
 	bool "p5-Asterisk-1.01nb2"
@@ -714,128 +788,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_P5_ASTERISK
 
 	  http://asterisk.gnuinter.net/
 
-config BR2_PKGSRC_PACKAGE_COMMS_TKHYLAFAX
-	bool "tkhylafax-3.1nb4"
-	help
-	  Tcl/tk interface to Sam Leffler's fax package
-
-	  tkhylafax is a tcl/tk interface to Sam Leffler's HYLAFAX package
-	  
-	  features:
-	  o Batching fax destinations
-	  o Built-in fax number database
-	  o Fast cover sheet generation
-	  o Cover sheet preview
-	  o Cover sheet ONLY transmission option
-	  o Directory browser
-	  o Fax job dequeuing made easier
-	  o Fax job scheduling made easier
-	  o Highly configurable
-
-	  http://www.elgro.demon.co.uk/resources.html
-
-config BR2_PKGSRC_PACKAGE_COMMS_TN3270
-	bool "tn3270-0.20100116"
-	help
-	  Utilities for connecting to IBM VM/CMS systems
-
-	  tn3270 permits a full-screen, full-duplex connection from a UNIX machine
-	  to an IBM (or compatible) machine.  tn3270 gives the appearance of being
-	  logged in to the remote machine from an IBM 3270 terminal.  Of course,
-	  you must have an account on the machine to which you connect in order to
-	  log in.  tn3270 looks to the user in many respects like the Yale ASCII
-	  Terminal Communication System II.  tn3270 is actually a modification of
-	  the ARPANET TELNET user interface (see telnet(1)) which will, in certain
-	  circumstances, interpret and generate raw 3270 control streams.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_COMMS_XISP
-	bool "xisp-2.7p4nb1"
-	help
-	  User-friendly X11 interface to pppd/chat
-
-	  The xisp package implements a user-friendly interface to pppd/chat
-	  and provides maximum feedback from the dial-in and login phases on a
-	  browser screen, as well as a manual login terminal window. It also
-	  provides greater versatility in interrupting a call in progress and in
-	  general enhances the user's feeling of "what's going on", especially
-	  if she/he is not all that well acquainted with the intricacies of
-	  system log files.
-
-	  http://xisp.hellug.gr/
-
-config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK16
-	bool "asterisk-1.6.2.19nb1"
-	help
-	  The Asterisk Software PBX
-
-	  Asterisk is a complete PBX in software.  It provides all of the
-	  features you would expect from a PBX and more. Asterisk does voice
-	  over IP in three protocols, and can interoperate with almost all
-	  standards-based telephony equipment using relatively inexpensive
-	  hardware.
-	  
-	  Asterisk provides Voicemail services with Directory, Call Conferencing,
-	  Interactive Voice Response, Call Queuing. It has support for
-	  three-way calling, caller ID services, ADSI, SIP and H.323 (as both
-	  client and gateway).
-	  
-	  NOTE:  This version does not work with the zaptel drivers.  It
-	  requires the newer DAHDI drivers which are still being ported.
-	  So, there is no hardware support available at this moment.
-
-	  http://www.asterisk.org/
-
-config BR2_PKGSRC_PACKAGE_COMMS_XTEL
-	bool "xtel-3.3.0nb11"
-	help
-	  
-
-	  XTEL can emulate a Minitel 1B, 2, TVR and Iminitel on a X display. It is
-	  networked, that is, a server drives the MODEM connected to Teletel services,
-	  and clients talk with the server via TCP/IP. Local usage is also possible,
-	  client and server runs on the same machine.
-
-	  http://pficheux.free.fr/xtel/
-
-config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK18
-	bool "asterisk-1.8.5.0nb1"
-	help
-	  The Asterisk Software PBX
-
-	  Asterisk is a complete PBX in software.  It provides all of the
-	  features you would expect from a PBX and more. Asterisk does voice
-	  over IP in three protocols, and can interoperate with almost all
-	  standards-based telephony equipment using relatively inexpensive
-	  hardware.
-	  
-	  Asterisk provides Voicemail services with Directory, Call Conferencing,
-	  Interactive Voice Response, Call Queuing. It has support for
-	  three-way calling, caller ID services, ADSI, SIP and H.323 (as both
-	  client and gateway).
-	  
-	  NOTE:  This version does not work with the zaptel drivers.  It
-	  requires the newer DAHDI drivers which are still being ported.
-	  So, there is no hardware support available at this moment.
-	  
-	  Asterisk 1.8 is a long term support version (i.e. it will be
-	  supported for four years with an additional year of security only
-	  fixes).  See:
-	  
-	  https://wiki.asterisk.org/wiki/display/AST/Asterisk+Versions
-
-	  http://www.asterisk.org/
-
-config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_DE_X9MEDIA
-	bool "asterisk-sounds-de-x9media-20060714nb1"
-	help
-	  German voice prompt files for asterisk
-
-	  Free german voice prompt files for asterisk, courtesy x9media ip
-	  communication.
-
-	  http://www.x9media.com/
 
 config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_GSM
 	bool "p5-Device-Gsm-1.58"
@@ -849,6 +801,142 @@ config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_GSM
 	  be fairly usable.
 
 	  http://search.cpan.org/dist/Device-Gsm/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_MODEM
+	bool "p5-Device-Modem-1.54"
+	help
+	  Perl module to talk to modem devices connected via serial port
+
+	  Device::Modem class implements basic AT (Hayes) compliant device
+	  abstraction. It is meant to be inherited by sub classes (as Device::Gsm),
+	  which are based on serial connections.
+
+	  http://search.cpan.org/dist/Device-Modem/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_SERIALPORT
+	bool "p5-Device-SerialPort-1.04nb3"
+	help
+	  POSIX-based Perl module to control your serial port
+
+	  This is a POSIX-based version of the Win32::Serialport module ported by
+	  Joe Doss for the MisterHouse Home Automation Package from Version 0.08
+	  of the Win32 module. He replaced calls to the Win32 API with similar
+	  functions implemented using POSIX calls. While most of the testing has
+	  occurred on linux, the package should work on other POSIX-compliant
+	  Operating Systems.
+
+	  http://members.aol.com/Bbirthisel/alpha.html
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_XBEE_API
+	bool "p5-Device-XBee-API-0.4"
+	help
+	  Object-oriented Perl interface to Digi XBee module API mode
+
+	  Device::XBee::API is a module designed to encapsulate the Digi XBee API in
+	  object-oriented Perl.  This module expects to communicate with an XBee
+	  module using the API firmware via a serial (or serial over USB) device.
+
+	  http://search.cpan.org/perldoc?Device::XBee::API
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_P5_SMS_SEND
+	bool "p5-SMS-Send-0.05nb1"
+	help
+	  Driver-based API for sending SMS messages
+
+	  SMS::Send is intended to provide a driver-based single API for sending SMS and
+	  MMS messages. The intent is to provide a single API against which to write the
+	  code to send an SMS message.
+	  
+	  At the same time, the intent is to remove the limits of some of the previous
+	  attempts at this sort of API, like "must be free internet-based SMS services".
+	  
+	  SMS::Send drivers are installed seperately, and might use the web, email or
+	  physical SMS hardware. It could be a free or paid. The details shouldn't matter.
+	  
+	  You should not have to care how it is actually sent, only that it has been sent
+	  (although some drivers may not be able to provide certainty).
+
+	  http://search.cpan.org/dist/SMS-Send/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_P5_PILOT_LINK
+	bool "p5-pilot-link-0.12.5nb4"
+	help
+	  Perl bindings for pilot-link
+
+	  Experimental piece of code to interface Perl 5 to the pilot-link library.
+
+	  http://www.pilot-link.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_PILOT_LINK
+	bool "pilot-link-0.12.5nb3"
+	help
+	  Tools to talk to the 3Com Pilot PDA
+
+	  Tools for talking to the pilot PDA.
+	  
+	  These tools allow for downloading of new records as well as backups
+	  and restores of the contents of the system's memory.
+
+	  http://www.pilot-link.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_PILOT_LINK_LIBS
+	bool "pilot-link-libs-0.12.5"
+	help
+	  Libraries for talking to the 3Com Pilot PDA
+
+	  Libraries for talking to the pilot PDA.
+
+	  http://www.pilot-link.org/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_PILOTMGR
+	bool "pilotmgr-1.109"
+	help
+	  Synchronize databases on any 3Com Palm device
+
+	  PilotManager is a tool that allows you to synchronize databases on any
+	  3Com Palm device (PalmPilot, PalmIII, PalmIIIx, PalmV, more?) with
+	  applications on your Unix platform. It is a full Hotsync daemon that is user
+	  extensible. Developers can write their own conduits to synchronize Pilot
+	  databases with the desktop application of their choice!
+
+	  http://pilotmanager.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_PLP
+	bool "plp-1.8nb2"
+	help
+	  Tools to talk to the PSION organiser
+
+	  PSION link
+	  
+	  This distribution is for transferring files between a PSION organiser and
+	  a Unix machine, via a serial cable. The code has been used successfully on
+	  a PC running linux and a PSION 5, but it ought to work with other flavours
+	  of unix and the PSION series 3 machines also.
+
+	  http://web.archive.org/web/20031214215022/http://www.proudman51.freeserve.co.uk/psion/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_PY_GAMMU
+	bool "py26-gammu-1.26.1"
+	help
+	  Python bindings for gammu
+
+	  Python bindings for Gammu library.  The bindings currently do not
+	  support all Gammu features, but the range of covered functions is
+	  increasing.  If you need something specific, feel free to use the
+	  bug tracking system for feature requests.
+
+	  http://wammu.eu/gammu/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_QPAGE
 	bool "qpage-3.3"
@@ -869,30 +957,18 @@ config BR2_PKGSRC_PACKAGE_COMMS_QPAGE
 
 	  http://www.qpage.org/
 
-config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_MODEM
-	bool "p5-Device-Modem-1.54"
+
+config BR2_PKGSRC_PACKAGE_COMMS_RUBY_TERMIOS
+	bool "ruby19-termios-0.9.6nb1"
 	help
-	  Perl module to talk to modem devices connected via serial port
+	  Ruby extension to termios library
 
-	  Device::Modem class implements basic AT (Hayes) compliant device
-	  abstraction. It is meant to be inherited by sub classes (as Device::Gsm),
-	  which are based on serial connections.
+	  Termios module is simple wrapper of termios(3).  It can be included into
+	  IO-family classes and can extend IO-family objects.  In addition, the methods
+	  can use as module function.
 
-	  http://search.cpan.org/dist/Device-Modem/
+	  http://arika.org/ruby/termios
 
-config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_SERIALPORT
-	bool "p5-Device-SerialPort-1.04nb3"
-	help
-	  POSIX-based Perl module to control your serial port
-
-	  This is a POSIX-based version of the Win32::Serialport module ported by
-	  Joe Doss for the MisterHouse Home Automation Package from Version 0.08
-	  of the Win32 module. He replaced calls to the Win32 API with similar
-	  functions implemented using POSIX calls. While most of the testing has
-	  occurred on linux, the package should work on other POSIX-compliant
-	  Operating Systems.
-
-	  http://members.aol.com/Bbirthisel/alpha.html
 
 config BR2_PKGSRC_PACKAGE_COMMS_SCMXX
 	bool "scmxx-0.9.0nb1"
@@ -905,6 +981,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_SCMXX
 	  S25, C35i, S35i, M35i, C45, S45, ME45 and SL45 models.
 
 	  http://www.hendrik-sattler.de/scmxx/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_SNOOPER
 	bool "snooper-19991202nb1"
@@ -931,6 +1008,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_SNOOPER
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_COMMS_SPANDSP
 	bool "spandsp-0.0.6pre18"
 	help
@@ -947,6 +1025,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_SPANDSP
 	  property issues.
 
 	  http://www.soft-switch.org/downloads/spandsp/
+
 
 config BR2_PKGSRC_PACKAGE_COMMS_SYNCE_LIBRAPI2
 	bool "synce-librapi2-0.9.1nb1"
@@ -965,6 +1044,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_SYNCE_LIBRAPI2
 
 	  http://synce.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_COMMS_SYNCE_LIBSYNCE
 	bool "synce-libsynce-0.9.1"
 	help
@@ -980,6 +1060,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_SYNCE_LIBSYNCE
 
 	  http://synce.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_COMMS_SYNCE_RRA
 	bool "synce-rra-0.9.1nb2"
 	help
@@ -992,100 +1073,88 @@ config BR2_PKGSRC_PACKAGE_COMMS_SYNCE_RRA
 
 	  http://synce.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_XBEE_API
-	bool "p5-Device-XBee-API-0.4"
+
+config BR2_PKGSRC_PACKAGE_COMMS_SYNCE_SERIAL
+	bool "synce-serial-0.9.1"
 	help
-	  Object-oriented Perl interface to Digi XBee module API mode
+	  Wrappers for pppd to initiate communications with WinCE devices
 
-	  Device::XBee::API is a module designed to encapsulate the Digi XBee API in
-	  object-oriented Perl.  This module expects to communicate with an XBee
-	  module using the API firmware via a serial (or serial over USB) device.
-
-	  http://search.cpan.org/perldoc?Device::XBee::API
-
-config BR2_PKGSRC_PACKAGE_COMMS_P5_PILOT_LINK
-	bool "p5-pilot-link-0.12.5nb4"
-	help
-	  Perl bindings for pilot-link
-
-	  Experimental piece of code to interface Perl 5 to the pilot-link library.
-
-	  http://www.pilot-link.org/
-
-config BR2_PKGSRC_PACKAGE_COMMS_P5_SMS_SEND
-	bool "p5-SMS-Send-0.05nb1"
-	help
-	  Driver-based API for sending SMS messages
-
-	  SMS::Send is intended to provide a driver-based single API for sending SMS and
-	  MMS messages. The intent is to provide a single API against which to write the
-	  code to send an SMS message.
+	  Synce-serial is part of the SynCE project.
 	  
-	  At the same time, the intent is to remove the limits of some of the previous
-	  attempts at this sort of API, like "must be free internet-based SMS services".
+	  This module contains helper scripts for setting up a serial connection
+	  for use with SynCE. They are basically wrappers around pppd:
 	  
-	  SMS::Send drivers are installed seperately, and might use the web, email or
-	  physical SMS hardware. It could be a free or paid. The details shouldn't matter.
+	  synce-serial-config  - Use this to select serial port and IP adresses
+	  synce-serial-start   - Use this to start connection
+	  synce-serial-abort   - Use this to abort a connection
+
+	  http://synce.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_COMMS_TKHYLAFAX
+	bool "tkhylafax-3.1nb4"
+	help
+	  Tcl/tk interface to Sam Leffler's fax package
+
+	  tkhylafax is a tcl/tk interface to Sam Leffler's HYLAFAX package
 	  
-	  You should not have to care how it is actually sent, only that it has been sent
-	  (although some drivers may not be able to provide certainty).
+	  features:
+	  o Batching fax destinations
+	  o Built-in fax number database
+	  o Fast cover sheet generation
+	  o Cover sheet preview
+	  o Cover sheet ONLY transmission option
+	  o Directory browser
+	  o Fax job dequeuing made easier
+	  o Fax job scheduling made easier
+	  o Highly configurable
 
-	  http://search.cpan.org/dist/SMS-Send/
+	  http://www.elgro.demon.co.uk/resources.html
 
-config BR2_PKGSRC_PACKAGE_COMMS_PILOT_LINK
-	bool "pilot-link-0.12.5nb3"
+
+config BR2_PKGSRC_PACKAGE_COMMS_TN3270
+	bool "tn3270-0.20100116"
 	help
-	  Tools to talk to the 3Com Pilot PDA
+	  Utilities for connecting to IBM VM/CMS systems
 
-	  Tools for talking to the pilot PDA.
+	  tn3270 permits a full-screen, full-duplex connection from a UNIX machine
+	  to an IBM (or compatible) machine.  tn3270 gives the appearance of being
+	  logged in to the remote machine from an IBM 3270 terminal.  Of course,
+	  you must have an account on the machine to which you connect in order to
+	  log in.  tn3270 looks to the user in many respects like the Yale ASCII
+	  Terminal Communication System II.  tn3270 is actually a modification of
+	  the ARPANET TELNET user interface (see telnet(1)) which will, in certain
+	  circumstances, interpret and generate raw 3270 control streams.
+
 	  
-	  These tools allow for downloading of new records as well as backups
-	  and restores of the contents of the system's memory.
 
-	  http://www.pilot-link.org/
 
-config BR2_PKGSRC_PACKAGE_COMMS_PILOT_LINK_LIBS
-	bool "pilot-link-libs-0.12.5"
+config BR2_PKGSRC_PACKAGE_COMMS_XISP
+	bool "xisp-2.7p4nb1"
 	help
-	  Libraries for talking to the 3Com Pilot PDA
+	  User-friendly X11 interface to pppd/chat
 
-	  Libraries for talking to the pilot PDA.
+	  The xisp package implements a user-friendly interface to pppd/chat
+	  and provides maximum feedback from the dial-in and login phases on a
+	  browser screen, as well as a manual login terminal window. It also
+	  provides greater versatility in interrupting a call in progress and in
+	  general enhances the user's feeling of "what's going on", especially
+	  if she/he is not all that well acquainted with the intricacies of
+	  system log files.
 
-	  http://www.pilot-link.org/
+	  http://xisp.hellug.gr/
 
-config BR2_PKGSRC_PACKAGE_COMMS_PILOTMGR
-	bool "pilotmgr-1.109"
+
+config BR2_PKGSRC_PACKAGE_COMMS_XTEL
+	bool "xtel-3.3.0nb11"
 	help
-	  Synchronize databases on any 3Com Palm device
+	  
 
-	  PilotManager is a tool that allows you to synchronize databases on any
-	  3Com Palm device (PalmPilot, PalmIII, PalmIIIx, PalmV, more?) with
-	  applications on your Unix platform. It is a full Hotsync daemon that is user
-	  extensible. Developers can write their own conduits to synchronize Pilot
-	  databases with the desktop application of their choice!
+	  XTEL can emulate a Minitel 1B, 2, TVR and Iminitel on a X display. It is
+	  networked, that is, a server drives the MODEM connected to Teletel services,
+	  and clients talk with the server via TCP/IP. Local usage is also possible,
+	  client and server runs on the same machine.
 
-	  http://pilotmanager.sourceforge.net/
+	  http://pficheux.free.fr/xtel/
 
-config BR2_PKGSRC_PACKAGE_COMMS_PY_GAMMU
-	bool "py26-gammu-1.26.1"
-	help
-	  Python bindings for gammu
-
-	  Python bindings for Gammu library.  The bindings currently do not
-	  support all Gammu features, but the range of covered functions is
-	  increasing.  If you need something specific, feel free to use the
-	  bug tracking system for feature requests.
-
-	  http://wammu.eu/gammu/
-
-config BR2_PKGSRC_PACKAGE_COMMS_RUBY_TERMIOS
-	bool "ruby19-termios-0.9.6nb1"
-	help
-	  Ruby extension to termios library
-
-	  Termios module is simple wrapper of termios(3).  It can be included into
-	  IO-family classes and can extend IO-family objects.  In addition, the methods
-	  can use as module function.
-
-	  http://arika.org/ruby/termios
 

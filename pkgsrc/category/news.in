@@ -8,21 +8,6 @@ config BR2_PKGSRC_PACKAGE_NEWS_KNEWS
 
 	  
 
-config BR2_PKGSRC_PACKAGE_NEWS_LEAFNODE
-	bool "leafnode-1.11.7"
-	help
-	  
-
-	  Leafnode is a USENET software package designed for small sites, with a
-	  few tens of readers and only a slow link to the net.
-	  
-	  Only groups that someone has been reading in the past week are fetched
-	  from the upstream NNTP server.  When someone stops reading a group,
-	  fetchnews will stop reading that group a week later (this is the default
-	  which can be configured), and when someone starts reading a group, fetchnews
-	  will grab all the articles it can in that group the next time it runs.
-
-	  http://leafnode.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_NEWS_CG
 	bool "cg-0.4"
@@ -41,6 +26,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_CG
 
 	  http://ftp.giga.or.at/pub/nih/cg/
 
+
 config BR2_PKGSRC_PACKAGE_NEWS_CLEANSCORE
 	bool "cleanscore-0.9.8.1nb2"
 	help
@@ -53,6 +39,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_CLEANSCORE
 
 	  http://slrn.sourceforge.net/cleanscore/
 
+
 config BR2_PKGSRC_PACKAGE_NEWS_HEIRLOOM_NEWS
 	bool "heirloom-news-070715"
 	help
@@ -61,6 +48,58 @@ config BR2_PKGSRC_PACKAGE_NEWS_HEIRLOOM_NEWS
 	  This package provides 'news' utility.
 
 	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_HELLANZB
+	bool "hellanzb-0.14.1087nb2"
+	help
+	  Command line nntp file grabber
+
+	  Hellanzb is a Python application designed for UNIX-like environments that
+	  retrieves nzb files and fully processes them; the goal is getting
+	  files from USENET as convenient and painless as possible. All that's
+	  required is moving an nzb file to the queue directory. The rest, i.e.
+	  fetching, par-checking, un-raring, etc. is handled by hellanzb.
+
+	  http://www.hellanzb.com/trac
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_INN
+	bool "inn-2.5.2nb4"
+	help
+	  
+
+	  This is the public release of InterNet News (INN). This work is
+	  sponsored by the Internet Software Consortium.
+	  
+	  InterNetNews is a complete Usenet system.  The cornerstone of the
+	  package is innd, an NNTP server that multiplexes all I/O. Newsreading
+	  is handled by a separate server, nnrpd, that is spawned for each
+	  client.  Both innd and nnrpd have some slight variances from the
+	  NNTP protocol.
+	  
+	  You can set the environment variable INN_SPOOL to whatever you like
+	  to change the default spool directory when building this pkg.
+
+	  http://www.isc.org/software/inn/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_LEAFNODE
+	bool "leafnode-1.11.7"
+	help
+	  
+
+	  Leafnode is a USENET software package designed for small sites, with a
+	  few tens of readers and only a slow link to the net.
+	  
+	  Only groups that someone has been reading in the past week are fetched
+	  from the upstream NNTP server.  When someone stops reading a group,
+	  fetchnews will stop reading that group a week later (this is the default
+	  which can be configured), and when someone starts reading a group, fetchnews
+	  will grab all the articles it can in that group the next time it runs.
+
+	  http://leafnode.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_NEWS_LOTTANZB
 	bool "lottanzb-0.4.0nb9"
@@ -75,6 +114,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_LOTTANZB
 
 	  http://www.lottanzb.org/
 
+
 config BR2_PKGSRC_PACKAGE_NEWS_NEWSFETCH
 	bool "newsfetch-1.3nb2"
 	help
@@ -86,6 +126,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_NEWSFETCH
 	  forward or deliver them.
 
 	  http://www.systhread.net/coding
+
 
 config BR2_PKGSRC_PACKAGE_NEWS_NEWSX
 	bool "newsx-1.6nb3"
@@ -108,17 +149,6 @@ config BR2_PKGSRC_PACKAGE_NEWS_NEWSX
 
 	  http://www.kvaleberg.com/newsx.html
 
-config BR2_PKGSRC_PACKAGE_NEWS_SLRN
-	bool "slrn-0.9.9p1nb4"
-	help
-	  Highly customizable threaded newsreader
-
-	  Slrn is a terminal based newsreader by John E. Davis <davis@space.mit.edu>.
-	  It supports threads and is highly customizable through S-Lang functions.
-	  
-	  In this package, there is only support for NNTP, not for local spool.
-
-	  http://slrn.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_NEWS_NGET
 	bool "nget-0.27.1nb2"
@@ -152,26 +182,6 @@ config BR2_PKGSRC_PACKAGE_NEWS_NGET
 
 	  http://nget.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_NEWS_SUCK
-	bool "suck-4.3.2nb5"
-	help
-	  Feed a local news server without a dedicated newsfeed
-
-	  The primary use for suck is to feed a local INN or CNEWS server, without
-	  the remote NNTP feeding you articles.  It is designed for a small, partial
-	  news feed.  It is NOT designed to feed 10,000 groups and 3 Gigs of articles
-	  a day.
-	  
-	  This package contains software for copying news from an NNTP server to your
-	  local machine, and copying replies back up to an NNTP server.
-	  
-	  The suck/rpost combination allows you to run your own INN/CNEWS site,
-	  controlling where you get your news, and where you post outgoing articles.
-	  Suck/rpost use only standard NNTP commands that are used by your favorite
-	  news reader (tin, xvnews, strn) such as POST and ARTICLE.  If you can use tin
-	  or xvnews against a NNTP site, than you can use Suck/Rpost.
-
-	  http://home.comcast.net/~bobyetman/
 
 config BR2_PKGSRC_PACKAGE_NEWS_NN
 	bool "nn-6.7.3"
@@ -182,27 +192,6 @@ config BR2_PKGSRC_PACKAGE_NEWS_NN
 
 	  http://www.nndev.org/
 
-config BR2_PKGSRC_PACKAGE_NEWS_TIN
-	bool "tin-1.9.4nb3"
-	help
-	  
-
-	  TIN:  Easy to use threaded newsreader with NOV/NNTP support.
-
-	  http://www.tin.org/
-
-config BR2_PKGSRC_PACKAGE_NEWS_HELLANZB
-	bool "hellanzb-0.14.1087nb2"
-	help
-	  Command line nntp file grabber
-
-	  Hellanzb is a Python application designed for UNIX-like environments that
-	  retrieves nzb files and fully processes them; the goal is getting
-	  files from USENET as convenient and painless as possible. All that's
-	  required is moving an nzb file to the queue directory. The rest, i.e.
-	  fetching, par-checking, un-raring, etc. is handled by hellanzb.
-
-	  http://www.hellanzb.com/trac
 
 config BR2_PKGSRC_PACKAGE_NEWS_NNTPCACHE
 	bool "nntpcache-3.0.2nb1"
@@ -230,6 +219,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_NNTPCACHE
 
 	  http://iq.org/~proff/nntpcache.org/
 
+
 config BR2_PKGSRC_PACKAGE_NEWS_NNTPCLNT
 	bool "nntpclnt-1.6.1nb6"
 	help
@@ -241,6 +231,69 @@ config BR2_PKGSRC_PACKAGE_NEWS_NNTPCLNT
 	  throughout a system.
 
 	  
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_PAN
+	bool "pan-0.135"
+	help
+	  Newsreader for GTK2
+
+	  Pan is a Newsreader for Gnome whose goal is to be easy to use and
+	  functional enough for beginners and advanced users alike.  It has the
+	  basic features of threading, reading, filtering, posting, and offline
+	  reading, and also has a number of features for power users and
+	  alt.binaries fans.
+	  
+	  It's the only Unix newsreader to get a perfect score on the Good
+	  Net-Keeping Seal of Approval evalutions.
+
+	  http://pan.rebelbase.com/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_SLRN
+	bool "slrn-0.9.9p1nb4"
+	help
+	  Highly customizable threaded newsreader
+
+	  Slrn is a terminal based newsreader by John E. Davis <davis@space.mit.edu>.
+	  It supports threads and is highly customizable through S-Lang functions.
+	  
+	  In this package, there is only support for NNTP, not for local spool.
+
+	  http://slrn.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_SUCK
+	bool "suck-4.3.2nb5"
+	help
+	  Feed a local news server without a dedicated newsfeed
+
+	  The primary use for suck is to feed a local INN or CNEWS server, without
+	  the remote NNTP feeding you articles.  It is designed for a small, partial
+	  news feed.  It is NOT designed to feed 10,000 groups and 3 Gigs of articles
+	  a day.
+	  
+	  This package contains software for copying news from an NNTP server to your
+	  local machine, and copying replies back up to an NNTP server.
+	  
+	  The suck/rpost combination allows you to run your own INN/CNEWS site,
+	  controlling where you get your news, and where you post outgoing articles.
+	  Suck/rpost use only standard NNTP commands that are used by your favorite
+	  news reader (tin, xvnews, strn) such as POST and ARTICLE.  If you can use tin
+	  or xvnews against a NNTP site, than you can use Suck/Rpost.
+
+	  http://home.comcast.net/~bobyetman/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_TIN
+	bool "tin-1.9.4nb3"
+	help
+	  
+
+	  TIN:  Easy to use threaded newsreader with NOV/NNTP support.
+
+	  http://www.tin.org/
+
 
 config BR2_PKGSRC_PACKAGE_NEWS_TRN
 	bool "trn-4.76nb3"
@@ -268,21 +321,6 @@ config BR2_PKGSRC_PACKAGE_NEWS_TRN
 
 	  http://trn.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_NEWS_PAN
-	bool "pan-0.135"
-	help
-	  Newsreader for GTK2
-
-	  Pan is a Newsreader for Gnome whose goal is to be easy to use and
-	  functional enough for beginners and advanced users alike.  It has the
-	  basic features of threading, reading, filtering, posting, and offline
-	  reading, and also has a number of features for power users and
-	  alt.binaries fans.
-	  
-	  It's the only Unix newsreader to get a perfect score on the Good
-	  Net-Keeping Seal of Approval evalutions.
-
-	  http://pan.rebelbase.com/
 
 config BR2_PKGSRC_PACKAGE_NEWS_XRN
 	bool "xrn-9.01nb3"
@@ -307,22 +345,4 @@ config BR2_PKGSRC_PACKAGE_NEWS_XRN
 
 	  http://www.mit.edu/people/jik/software/xrn.html
 
-config BR2_PKGSRC_PACKAGE_NEWS_INN
-	bool "inn-2.5.2nb4"
-	help
-	  
-
-	  This is the public release of InterNet News (INN). This work is
-	  sponsored by the Internet Software Consortium.
-	  
-	  InterNetNews is a complete Usenet system.  The cornerstone of the
-	  package is innd, an NNTP server that multiplexes all I/O. Newsreading
-	  is handled by a separate server, nnrpd, that is spawned for each
-	  client.  Both innd and nnrpd have some slight variances from the
-	  NNTP protocol.
-	  
-	  You can set the environment variable INN_SPOOL to whatever you like
-	  to change the default spool directory when building this pkg.
-
-	  http://www.isc.org/software/inn/
 

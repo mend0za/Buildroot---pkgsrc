@@ -9,6 +9,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_ATASM
 
 	  http://sourceforge.net/projects/atasm/
 
+
 config BR2_PKGSRC_PACKAGE_CROSS_AVR_BINUTILS
 	bool "avr-binutils-2.19.1"
 	help
@@ -18,6 +19,21 @@ config BR2_PKGSRC_PACKAGE_CROSS_AVR_BINUTILS
 	  Prerequisite for avr-gcc in a cross-compilation environment.
 
 	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVR_GCC
+	bool "avr-gcc-4.4.1nb3"
+	help
+	  GNU gcc-4.4 for Atmel AVR 8-bit RISC microcontrollers
+
+	  gcc-3.0 configured as cross-compiler for Atmel AVR 8-bit RISC
+	  microcontrollers.
+	  
+	  This package includes a basic C++ compiler, although this currently
+	  is only of limited use (without a libstdc++), and is little tested.
+
+	  
+
 
 config BR2_PKGSRC_PACKAGE_CROSS_AVR_GDB
 	bool "avr-gdb-5.3nb2"
@@ -32,31 +48,6 @@ config BR2_PKGSRC_PACKAGE_CROSS_AVR_GDB
 
 	  
 
-config BR2_PKGSRC_PACKAGE_CROSS_AVRDUDE
-	bool "avrdude-5.10nb1"
-	help
-	  Downloader/uploader for Atmel AVR 8-bit RISC microcontrollers
-
-	  AVRDUDE - AVR Downloader/UploaDEr - is a program for updating the
-	  flash, eeprom, and fuse bit memories of Atmel AVR microcontrollers.
-	  Avrdude supports a wide variety of chip programmers (including the
-	  widely used STK500) that attach to the serial port, and, if supported
-	  by the underlying OS, to the parallel port.
-
-	  http://www.bsdhome.com/avrdude/
-
-config BR2_PKGSRC_PACKAGE_CROSS_AVR_GCC
-	bool "avr-gcc-4.4.1nb3"
-	help
-	  GNU gcc-4.4 for Atmel AVR 8-bit RISC microcontrollers
-
-	  gcc-3.0 configured as cross-compiler for Atmel AVR 8-bit RISC
-	  microcontrollers.
-	  
-	  This package includes a basic C++ compiler, although this currently
-	  is only of limited use (without a libstdc++), and is little tested.
-
-	  
 
 config BR2_PKGSRC_PACKAGE_CROSS_AVR_LIBC
 	bool "avr-libc-1.6.7nb1"
@@ -83,6 +74,21 @@ config BR2_PKGSRC_PACKAGE_CROSS_AVR_LIBC
 
 	  http://savannah.nongnu.org/projects/avr-libc
 
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVRDUDE
+	bool "avrdude-5.10nb1"
+	help
+	  Downloader/uploader for Atmel AVR 8-bit RISC microcontrollers
+
+	  AVRDUDE - AVR Downloader/UploaDEr - is a program for updating the
+	  flash, eeprom, and fuse bit memories of Atmel AVR microcontrollers.
+	  Avrdude supports a wide variety of chip programmers (including the
+	  widely used STK500) that attach to the serial port, and, if supported
+	  by the underlying OS, to the parallel port.
+
+	  http://www.bsdhome.com/avrdude/
+
+
 config BR2_PKGSRC_PACKAGE_CROSS_BFD_CRUNCHIDE
 	bool "bfd-crunchide-1.2"
 	help
@@ -97,15 +103,6 @@ config BR2_PKGSRC_PACKAGE_CROSS_BFD_CRUNCHIDE
 
 	  
 
-config BR2_PKGSRC_PACKAGE_CROSS_UISP
-	bool "uisp-20040311"
-	help
-	  AVR microcontroller hardware in-system programmer
-
-	  Uisp is a tool for AVR microcontrollers which can interface to
-	  many hardware in-system programmers.
-
-	  http://savannah.nongnu.org/projects/uisp
 
 config BR2_PKGSRC_PACKAGE_CROSS_BFD_MDSETIMAGE
 	bool "bfd-mdsetimage-1.15.1nb1"
@@ -121,16 +118,6 @@ config BR2_PKGSRC_PACKAGE_CROSS_BFD_MDSETIMAGE
 
 	  
 
-config BR2_PKGSRC_PACKAGE_CROSS_BINUTILS
-	bool "cross-binutils-2.17.0.0nb1"
-	help
-	  Unified GNU binutils for cross build environments
-
-	  The cross-binutils pkg is used only by the other `cross' pkgs.  The
-	  binutils provides various binary manipulation utilities as well as the GNU
-	  linker.  (The assembler is bundled with each individual cross pkg.)
-
-	  http://www.gnu.org/
 
 config BR2_PKGSRC_PACKAGE_CROSS_CC65
 	bool "cc65-2.12.0"
@@ -143,28 +130,18 @@ config BR2_PKGSRC_PACKAGE_CROSS_CC65
 
 	  http://www.cc65.org/
 
-config BR2_PKGSRC_PACKAGE_CROSS_DASM
-	bool "dasm-2.12nb1"
+
+config BR2_PKGSRC_PACKAGE_CROSS_BINUTILS
+	bool "cross-binutils-2.17.0.0nb1"
 	help
-	  Multi-CPU cross-assembler for 6502, 6803 and 68HC11
+	  Unified GNU binutils for cross build environments
 
-	  DASM is a highly evolved cross-assembler for 6502, 6803 and 68HC11
-	  processors.  It is very popular for hacking/cross-developing on old
-	  6502-based video game systems from Atari, Nintendo, etc.  DASM
-	  processes output from the Distella Atari ROM disassembler without
-	  modification.
+	  The cross-binutils pkg is used only by the other `cross' pkgs.  The
+	  binutils provides various binary manipulation utilities as well as the GNU
+	  linker.  (The assembler is bundled with each individual cross pkg.)
 
-	  http://members.cox.net/rcolbert/dasm.htm
+	  http://www.gnu.org/
 
-config BR2_PKGSRC_PACKAGE_CROSS_DFU_PROGRAMMER
-	bool "dfu-programmer-0.5.4"
-	help
-	  Programmer for Atmel USB DFU Bootloader
-
-	  dfu-programmer is a Device Firmware Update based USB programmer for
-	  Atmel chips with a USB bootloader.
-
-	  http://dfu-programmer.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_BINUTILS
 	bool "cross-h8300-hms-binutils-2.12.1nb1"
@@ -175,6 +152,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_BINUTILS
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_GCC
 	bool "cross-h8300-hms-gcc-3.1nb5"
 	help
@@ -183,6 +161,17 @@ config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_GCC
 	  gcc for hitachi h8300-hms cross-compile environment
 
 	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_I386_CYGWIN32
+	bool "cross-i386-cygwin32-1.0.0.0nb3"
+	help
+	  Cross-compile environment for Cywin32/i386
+
+	  This cross-compile environment for PE/COFF Cygwin32/i386.
+
+	  http://www.NetBSD.org/
+
 
 config BR2_PKGSRC_PACKAGE_CROSS_I386_LINUX
 	bool "cross-i386-linux-2.0.7.1nb2"
@@ -193,6 +182,26 @@ config BR2_PKGSRC_PACKAGE_CROSS_I386_LINUX
 	  (such as RedHat 5.x).
 
 	  http://egcs.cygnus.com/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_I386_MSDOSDJGPP
+	bool "cross-i386-msdosdjgpp-2.02.0nb2"
+	help
+	  Cross-compile environment for MS-DOS on 386 and higher
+
+	  This cross-compile environment is for MS-DOS on the 386 and higher
+	  processors, with some kind of DPMI 0.9 or later layer.  The produced
+	  binaries will run on MS-DOS with a DPMI driver (one of which can be
+	  obtained from the DJGPP distribution site), Windows 3.1 with Win32s,
+	  Windows 95, and Windows NT.
+	  
+	  Additional includes and libraries put into $CROSSBASE/i386-msdosdjgpp/ can
+	  provide other services.  Available are pdcurses, winsock drivers
+	  (<sys/socket.h> based on Winsock), and more.  Look at the DJGPP web-site,
+	  http://www.delorie.com/djgpp/, for more information.
+
+	  http://www.delorie.com/djgpp/
+
 
 config BR2_PKGSRC_PACKAGE_CROSS_I386_NETBSDPE
 	bool "cross-i386-netbsdpe-3.3.6"
@@ -212,6 +221,32 @@ config BR2_PKGSRC_PACKAGE_CROSS_I386_NETBSDPE
 	  The compiler is capable of anonymous unions/structs.
 
 	  http://chiharu.hauN.org/peace/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_DASM
+	bool "dasm-2.12nb1"
+	help
+	  Multi-CPU cross-assembler for 6502, 6803 and 68HC11
+
+	  DASM is a highly evolved cross-assembler for 6502, 6803 and 68HC11
+	  processors.  It is very popular for hacking/cross-developing on old
+	  6502-based video game systems from Atari, Nintendo, etc.  DASM
+	  processes output from the Distella Atari ROM disassembler without
+	  modification.
+
+	  http://members.cox.net/rcolbert/dasm.htm
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_DFU_PROGRAMMER
+	bool "dfu-programmer-0.5.4"
+	help
+	  Programmer for Atmel USB DFU Bootloader
+
+	  dfu-programmer is a Device Firmware Update based USB programmer for
+	  Atmel chips with a USB bootloader.
+
+	  http://dfu-programmer.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_CROSS_ICDPROG
 	bool "icdprog-0.3nb1"
@@ -238,6 +273,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_ICDPROG
 
 	  http://icdprog.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_CROSS_MINGW
 	bool "mingw-3.3.1"
 	help
@@ -250,6 +286,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_MINGW
 
 	  http://mingw.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_CROSS_MINGW_BINUTILS
 	bool "mingw-binutils-2.18nb1"
 	help
@@ -260,6 +297,20 @@ config BR2_PKGSRC_PACKAGE_CROSS_MINGW_BINUTILS
 	  Windows environment.
 
 	  http://mingw.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_MINGW_GCC
+	bool "mingw-gcc-3.4.5"
+	help
+	  GNU C Compiler for win32 cross-development
+
+	  MinGW: A collection of freely available and freely distributable Windows
+	  specific header files and import libraries combined with GNU toolsets that
+	  allow one to produce native Windows programs that do not rely on any
+	  3rd-party DLLs.
+
+	  http://mingw.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_CROSS_MINGW_RUNTIME_BIN
 	bool "mingw-runtime-bin-3.14"
@@ -273,6 +324,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_MINGW_RUNTIME_BIN
 
 	  http://mingw.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_CROSS_MINGW_W32API_BIN
 	bool "mingw-w32api-bin-3.11"
 	help
@@ -285,42 +337,15 @@ config BR2_PKGSRC_PACKAGE_CROSS_MINGW_W32API_BIN
 
 	  http://mingw.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_CROSS_I386_CYGWIN32
-	bool "cross-i386-cygwin32-1.0.0.0nb3"
+
+config BR2_PKGSRC_PACKAGE_CROSS_UISP
+	bool "uisp-20040311"
 	help
-	  Cross-compile environment for Cywin32/i386
+	  AVR microcontroller hardware in-system programmer
 
-	  This cross-compile environment for PE/COFF Cygwin32/i386.
+	  Uisp is a tool for AVR microcontrollers which can interface to
+	  many hardware in-system programmers.
 
-	  http://www.NetBSD.org/
+	  http://savannah.nongnu.org/projects/uisp
 
-config BR2_PKGSRC_PACKAGE_CROSS_I386_MSDOSDJGPP
-	bool "cross-i386-msdosdjgpp-2.02.0nb2"
-	help
-	  Cross-compile environment for MS-DOS on 386 and higher
-
-	  This cross-compile environment is for MS-DOS on the 386 and higher
-	  processors, with some kind of DPMI 0.9 or later layer.  The produced
-	  binaries will run on MS-DOS with a DPMI driver (one of which can be
-	  obtained from the DJGPP distribution site), Windows 3.1 with Win32s,
-	  Windows 95, and Windows NT.
-	  
-	  Additional includes and libraries put into $CROSSBASE/i386-msdosdjgpp/ can
-	  provide other services.  Available are pdcurses, winsock drivers
-	  (<sys/socket.h> based on Winsock), and more.  Look at the DJGPP web-site,
-	  http://www.delorie.com/djgpp/, for more information.
-
-	  http://www.delorie.com/djgpp/
-
-config BR2_PKGSRC_PACKAGE_CROSS_MINGW_GCC
-	bool "mingw-gcc-3.4.5"
-	help
-	  GNU C Compiler for win32 cross-development
-
-	  MinGW: A collection of freely available and freely distributable Windows
-	  specific header files and import libraries combined with GNU toolsets that
-	  allow one to produce native Windows programs that do not rely on any
-	  3rd-party DLLs.
-
-	  http://mingw.sourceforge.net/
 

@@ -36,4 +36,10 @@ export PSS_SLAVES=+4
 pkg_micro_src_summary -f PKGPATH,PKGNAME,COMMENT,HOMEPAGE <$PKG_LIST | \
 	awk -v PKG_SRC_PATH="$PKG_SRC_PATH" -F= -f parse-summary-out.awk
 
+for i in category/*.in 
+do 
+	./sort-category.awk <$i >$i.new
+	mv $i.new $i
+done
+
 rm -f $PKG_LIST

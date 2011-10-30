@@ -1,3 +1,122 @@
+config BR2_PKGSRC_PACKAGE_CHAT_AIM
+	bool "aim-1.5.286nb1"
+	help
+	  
+
+	  This is AOL's (R) ubiquitious Instant Messenger (SM), a chat-type
+	  client that enables you to converse with any AOL or AIM user. You'll
+	  need a web browser to complete the free registration, or you can
+	  use your existing screen name from AOL, Netscape, CompuServe 2000,
+	  AOL Hometown, or AOL.com's Personal Finance Center.
+
+	  http://www.aim.com/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_AMSN
+	bool "amsn-0.98.3nb3"
+	help
+	  Alvaro\'s MSN messenger client
+
+	  Alvaro's Messenger, or Another MSN messenger clone is a modified and
+	  multilanguage version of Compu's Messenger (CCMSN). It's a Tcl/Tk script
+	  as was CCMSN and Tcl/Tk must be installed to run it. This means it is
+	  multiplatform and can run on any OS having Tcl/Tk installed (Linux, Windows,
+	  Macintosh).
+	  
+	  It's a clone of the original MSN Messenger, having the same look and feel.
+	  Some of it features are:
+	  
+	  * Sound for Events
+	  * Look and Feel similar to original MSN Messenger
+	  * Multilanguage (Around 40 languages currently supported)
+	  * Running multiple instances of AMSN at once for multiple logins
+	  * File Transfers
+	  * Group Support
+	  * Normal and Animated Emoticons with sounds
+	  * Chat History
+
+	  http://www.amsn-project.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_ANOPE
+	bool "anope-1.7.21"
+	help
+	  Set of Services for IRC networks
+
+	  Anope is a set of Services for IRC networks that allows users to
+	  manage their nicks and channels in a secure and efficient way, and
+	  administrators to manage their network with powerful tools.
+
+	  http://www.anope.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_ATHEME
+	bool "atheme-3.0.4nb1"
+	help
+	  Flexible IRC services system with proven scalability
+
+	  atheme-services is a set of Services for IRC networks that allows users to
+	  manage their channels in a secure and efficient way and allows operators to
+	  manage various things about their networks. Unlike it's predecessor, Shrike,
+	  services has a completely reworked form of channel management that feels
+	  somewhat like eggdrop and is somewhat more useful.
+	  
+	  Services currently works with many irc daemons. More details are
+	  available in the config file.
+
+	  http://www.atheme.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_BITCHBOT
+	bool "bitchbot-1.0.2"
+	help
+	  Bitchbot is a perl-based IRC bot
+
+	  Bitchbot is a GPL'ed perl-based IRC bot coded mainly for #gloom on
+	  irc.edgeirc.net.  The bot has a wide variety of useful and useless
+	  features, to name a few:
+	  
+	  * factoids (bits of information about things)
+	  * Game server query support for all popular FPS titles
+	  (using qstat, www.qstat.org)
+	  * Message system for leaving short notes for people who are offline.
+	  * Configurable access list to allow users to manipulate certain features.
+	  * Channel operator commands
+	  (limited use; bitchbot wasn't designed to be a chanbot)
+	  * Last seen nickname to find out when a user was last on the channel.
+	  * Vote and poll on user defined topics.
+	  * Channel statistics (if your server can handle the horrible memory leaks)
+	  * Support for the cyborgizer and techifier toys from www.brunching.com.
+	  * A ton of other stuff you'll find from looking at the command reference.
+
+	  http://www.r1ch.net/projects/bitchbot/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_BITCHX
+	bool "bitchx-1.1nb4"
+	help
+	  IRC client based on ircII
+
+	  BitchX is an IRC (Internet Relay Chat) client by Colten Edwards aka
+	  panasync@efnet, it is based on its predecessors ircII and EPIC.
+
+	  http://www.bitchx.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_BITLBEE
+	bool "bitlbee-3.0.3nb1"
+	help
+	  IRC to other chat networks gateway
+
+	  bitlbee is an IRC gateway to other chat networks.  It provides an IRC server
+	  where users connect to and have access to all their contacts in ICQ, MSN,
+	  Jabber or even IRC itself.  Protocols are implemented using Gaim's code.
+	  Multiple users are supported too, where each one has its own set of accounts
+	  and contacts.
+
+	  http://www.bitlbee.org/
+
+
 config BR2_PKGSRC_PACKAGE_CHAT_BLACKENED
 	bool "blackened-1.7.1"
 	help
@@ -28,6 +147,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_BLACKENED
 
 	  http://www.blackened.com/blackened/
 
+
 config BR2_PKGSRC_PACKAGE_CHAT_BNC
 	bool "bnc-2.9.4nb2"
 	help
@@ -53,6 +173,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_BNC
 
 	  http://www.gotbnc.com/
 
+
 config BR2_PKGSRC_PACKAGE_CHAT_BSFLITE
 	bool "bsflite-0.85"
 	help
@@ -65,6 +186,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_BSFLITE
 	  do all of the work without needlessly sifting through windows.
 
 	  http://bsflite.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_CENTERICQ
 	bool "centericq-4.21.0nb8"
@@ -82,43 +204,109 @@ config BR2_PKGSRC_PACKAGE_CHAT_CENTERICQ
 
 	  http://thekonst.net/eng/software/centericq/info.html
 
-config BR2_PKGSRC_PACKAGE_CHAT_AIM
-	bool "aim-1.5.286nb1"
+
+config BR2_PKGSRC_PACKAGE_CHAT_CENTERIM
+	bool "centerim-4.22.9nb5"
+	help
+	  Instant Messenger interface supporting many protocols
+
+	  Text mode menu- and window-driven IM interface that supports the
+	  ICQ2000, Yahoo!, AIM, IRC, MSN, Gadu-Gadu and Jabber protocols. It
+	  allows you to send, receive, and forward messages, URLs, SMSes
+	  (both through the ICQ server and e-mail gateways supported by
+	  Mirabilis), contacts, and email express messages. It also lets you
+	  set your own and fetch others' away messages, and define external
+	  handlers for incoming events. Apart from IM it supports LiveJournal
+	  management and receiving RSS feeds.  This is a fork of CenterICQ.
+
+	  http://www.centerim.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_CGIIRC
+	bool "cgiirc-0.5.10"
+	help
+	  Access IRC from a web browser
+
+	  CGI:IRC is a Perl/CGI program that lets you access IRC from a web browser, it
+	  is designed to be flexible and has many uses such as an IRC gateway for an IRC
+	  network, a chat-room for a website or to access IRC when stuck behind a
+	  restrictive firewall.
+
+	  http://cgiirc.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_CLIMM
+	bool "climm-0.7.1nb1"
+	help
+	  Text-mode ICQ client
+
+	  climm is a very portable text-mode ICQ clone (formerly known as micq).
+	  
+	  Originally written by Matthew D. Smith, a great part of climm
+	  has been rewritten by Ruediger Kuhlmann, in particular the support
+	  for the new version 8 of the OSCAR protocol that became necessary,
+	  the internationalization, the file transfer and some restructuring
+	  of the code.
+
+	  http://www.climm.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_CTRLPROXY
+	bool "ctrlproxy-3.0.8nb1"
+	help
+	  Detachable internet relay chat proxy server
+
+	  CtrlProxy runs on a computer with a 24/7 internet connection and allows you
+	  to transparently connect to IRC from anywhere on the world to your nick. It
+	  connects to one or more IRC servers and then allows you to connect to it
+	  with any number of clients, providing access to these servers. This is very
+	  useful if you don't want to leave IRC but still want to be able to use it
+	  from home, school or work.
+
+	  http://www.ctrlproxy.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_DCCSERVER
+	bool "dccserver-0.4"
+	help
+	  Standalone replacement for the mIRC /dccserver command
+
+	  dccserver is a standalone program aiming to provide the functions
+	  of mIRC's /dccserver command.
+	  
+	  Currently, Chat and Send (including resume) modes are supported.
+	  Fserve and Get mode are not yet supported.
+	  
+	  All connections are accepted; some simple checks on allowed file
+	  names are done.  For more details, please look in the man pages.
+
+	  http://www.nih.at/dccserver/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_DIRCPROXY
+	bool "dircproxy-1.2.0beta2nb1"
 	help
 	  
 
-	  This is AOL's (R) ubiquitious Instant Messenger (SM), a chat-type
-	  client that enables you to converse with any AOL or AIM user. You'll
-	  need a web browser to complete the free registration, or you can
-	  use your existing screen name from AOL, Netscape, CompuServe 2000,
-	  AOL Hometown, or AOL.com's Personal Finance Center.
-
-	  http://www.aim.com/
-
-config BR2_PKGSRC_PACKAGE_CHAT_AMSN
-	bool "amsn-0.98.3nb3"
-	help
-	  Alvaro\'s MSN messenger client
-
-	  Alvaro's Messenger, or Another MSN messenger clone is a modified and
-	  multilanguage version of Compu's Messenger (CCMSN). It's a Tcl/Tk script
-	  as was CCMSN and Tcl/Tk must be installed to run it. This means it is
-	  multiplatform and can run on any OS having Tcl/Tk installed (Linux, Windows,
-	  Macintosh).
+	  dircproxy is an IRC proxy server ("bouncer") designed for people
+	  who use IRC from lots of different workstations or clients, but wish
+	  to remain connected and see what they missed while they were away.
+	  You connect to IRC through dircproxy, and it keeps you connected to
+	  the server, even after you detach your client from it.  While you're
+	  detached, it logs channel and private messages as well as important
+	  events, and when you re-attach it'll let you know what you missed.
 	  
-	  It's a clone of the original MSN Messenger, having the same look and feel.
-	  Some of it features are:
+	  This can be used to give you roughly the same functionality as
+	  using ircII and screen together, except you can use whatever IRC
+	  client you like, including X ones!
 	  
-	  * Sound for Events
-	  * Look and Feel similar to original MSN Messenger
-	  * Multilanguage (Around 40 languages currently supported)
-	  * Running multiple instances of AMSN at once for multiple logins
-	  * File Transfers
-	  * Group Support
-	  * Normal and Animated Emoticons with sounds
-	  * Chat History
+	  * THIS IS AN UNSTABLE DEVELOPMENT RELEASE OF DIRCPROXY.  IT HAS HIGHER
+	  * THEN USUAL RISK OF DESTROYING YOUR SYSTEM.
+	  *
+	  * FOR A STABLE RELEASE USE THE LATEST 1.0.x
 
-	  http://www.amsn-project.net/
+	  http://code.google.com/p/dircproxy/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_EGGDROP
 	bool "eggdrop-1.6.19nb1"
@@ -138,6 +326,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_EGGDROP
 	  something very much like IRC, in fact.
 
 	  http://www.eggheads.org/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_EJABBERD
 	bool "ejabberd-2.1.8"
@@ -169,16 +358,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_EJABBERD
 
 	  http://www.ejabberd.im/
 
-config BR2_PKGSRC_PACKAGE_CHAT_ANOPE
-	bool "anope-1.7.21"
-	help
-	  Set of Services for IRC networks
-
-	  Anope is a set of Services for IRC networks that allows users to
-	  manage their nicks and channels in a secure and efficient way, and
-	  administrators to manage their network with powerful tools.
-
-	  http://www.anope.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_EKG
 	bool "ekg-1.7nb5"
@@ -191,17 +370,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_EKG
 
 	  http://ekg.chmurka.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_GALE
-	bool "gale-0.99fnb5"
-	help
-	  Secure instant messaging system
-
-	  Gale is an open-source messaging system. It provides private messaging and
-	  public chat, uses strong end-to-end cryptography for security, and supports
-	  a distributed server network with a range of clients (both console and GUI)
-	  available. Gale is currently in early alpha testing.
-
-	  http://gale.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_EMECH
 	bool "emech-3.0.2"
@@ -215,261 +383,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_EMECH
 
 	  http://www.energymech.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_ATHEME
-	bool "atheme-3.0.4nb1"
-	help
-	  Flexible IRC services system with proven scalability
-
-	  atheme-services is a set of Services for IRC networks that allows users to
-	  manage their channels in a secure and efficient way and allows operators to
-	  manage various things about their networks. Unlike it's predecessor, Shrike,
-	  services has a completely reworked form of channel management that feels
-	  somewhat like eggdrop and is somewhat more useful.
-	  
-	  Services currently works with many irc daemons. More details are
-	  available in the config file.
-
-	  http://www.atheme.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_CENTERIM
-	bool "centerim-4.22.9nb5"
-	help
-	  Instant Messenger interface supporting many protocols
-
-	  Text mode menu- and window-driven IM interface that supports the
-	  ICQ2000, Yahoo!, AIM, IRC, MSN, Gadu-Gadu and Jabber protocols. It
-	  allows you to send, receive, and forward messages, URLs, SMSes
-	  (both through the ICQ server and e-mail gateways supported by
-	  Mirabilis), contacts, and email express messages. It also lets you
-	  set your own and fetch others' away messages, and define external
-	  handlers for incoming events. Apart from IM it supports LiveJournal
-	  management and receiving RSS feeds.  This is a fork of CenterICQ.
-
-	  http://www.centerim.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_CGIIRC
-	bool "cgiirc-0.5.10"
-	help
-	  Access IRC from a web browser
-
-	  CGI:IRC is a Perl/CGI program that lets you access IRC from a web browser, it
-	  is designed to be flexible and has many uses such as an IRC gateway for an IRC
-	  network, a chat-room for a website or to access IRC when stuck behind a
-	  restrictive firewall.
-
-	  http://cgiirc.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_GG2
-	bool "gg2-2.3.0nb11"
-	help
-	  Instant messenger software for Poland; Jabber plugin included
-
-	  GNU Gadu is an instant messanger application, designed to work with IM
-	  protocols popular in Poland (but not only). This is a plugin based
-	  application, even GUI (which uses GTK+) is a plugin. Currently we support:
-	  Gadu-Gadu, Tlen.pl, Jabber.
-
-	  http://ggadu.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_CHAT_BITCHBOT
-	bool "bitchbot-1.0.2"
-	help
-	  Bitchbot is a perl-based IRC bot
-
-	  Bitchbot is a GPL'ed perl-based IRC bot coded mainly for #gloom on
-	  irc.edgeirc.net.  The bot has a wide variety of useful and useless
-	  features, to name a few:
-	  
-	  * factoids (bits of information about things)
-	  * Game server query support for all popular FPS titles
-	  (using qstat, www.qstat.org)
-	  * Message system for leaving short notes for people who are offline.
-	  * Configurable access list to allow users to manipulate certain features.
-	  * Channel operator commands
-	  (limited use; bitchbot wasn't designed to be a chanbot)
-	  * Last seen nickname to find out when a user was last on the channel.
-	  * Vote and poll on user defined topics.
-	  * Channel statistics (if your server can handle the horrible memory leaks)
-	  * Support for the cyborgizer and techifier toys from www.brunching.com.
-	  * A ton of other stuff you'll find from looking at the command reference.
-
-	  http://www.r1ch.net/projects/bitchbot/
-
-config BR2_PKGSRC_PACKAGE_CHAT_CLIMM
-	bool "climm-0.7.1nb1"
-	help
-	  Text-mode ICQ client
-
-	  climm is a very portable text-mode ICQ clone (formerly known as micq).
-	  
-	  Originally written by Matthew D. Smith, a great part of climm
-	  has been rewritten by Ruediger Kuhlmann, in particular the support
-	  for the new version 8 of the OSCAR protocol that became necessary,
-	  the internationalization, the file transfer and some restructuring
-	  of the code.
-
-	  http://www.climm.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_CTRLPROXY
-	bool "ctrlproxy-3.0.8nb1"
-	help
-	  Detachable internet relay chat proxy server
-
-	  CtrlProxy runs on a computer with a 24/7 internet connection and allows you
-	  to transparently connect to IRC from anywhere on the world to your nick. It
-	  connects to one or more IRC servers and then allows you to connect to it
-	  with any number of clients, providing access to these servers. This is very
-	  useful if you don't want to leave IRC but still want to be able to use it
-	  from home, school or work.
-
-	  http://www.ctrlproxy.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_BITCHX
-	bool "bitchx-1.1nb4"
-	help
-	  IRC client based on ircII
-
-	  BitchX is an IRC (Internet Relay Chat) client by Colten Edwards aka
-	  panasync@efnet, it is based on its predecessors ircII and EPIC.
-
-	  http://www.bitchx.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_GLOOX
-	bool "gloox-1.0nb1"
-	help
-	  Jabber/XMPP client library
-
-	  gloox is a rock-solid, full-featured Jabber/XMPP client library,
-	  written in C++. It makes writing spec-compliant clients easy and
-	  allows for hassle-free integration of Jabber/XMPP functionality
-	  into existing applications.
-
-	  http://camaya.net/gloox/
-
-config BR2_PKGSRC_PACKAGE_CHAT_BITLBEE
-	bool "bitlbee-3.0.3nb1"
-	help
-	  IRC to other chat networks gateway
-
-	  bitlbee is an IRC gateway to other chat networks.  It provides an IRC server
-	  where users connect to and have access to all their contacts in ICQ, MSN,
-	  Jabber or even IRC itself.  Protocols are implemented using Gaim's code.
-	  Multiple users are supported too, where each one has its own set of accounts
-	  and contacts.
-
-	  http://www.bitlbee.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_GNOMEICU
-	bool "gnomeicu-0.99.12nb16"
-	help
-	  GNOME ICQ client
-
-	  GnomeICU is one of the most popular UN*X-based ICQ programs in the world.
-	  Internet chatting has quickly become one of the most popular uses of the
-	  Internet - second only to Email.  Instant messaging allows users to
-	  communicate in real time with friends, family members, and coworkers in
-	  an efficient, unobtrusive manner.  GnomeICU has support for all of the
-	  following ICQ features:
-	  
-	  * Server-side list storage.
-	  * Basic messaging.
-	  * File transfer (temporarily broken due to protocol change).
-	  * Contact history.
-	  * Visible/Invisible/Ignore lists.
-	  * Ability to interface ICU from the command line.
-	  * Icon themes.
-	  * Many more.
-
-	  http://gnomeicu.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_CHAT_DCCSERVER
-	bool "dccserver-0.4"
-	help
-	  Standalone replacement for the mIRC /dccserver command
-
-	  dccserver is a standalone program aiming to provide the functions
-	  of mIRC's /dccserver command.
-	  
-	  Currently, Chat and Send (including resume) modes are supported.
-	  Fserve and Get mode are not yet supported.
-	  
-	  All connections are accepted; some simple checks on allowed file
-	  names are done.  For more details, please look in the man pages.
-
-	  http://www.nih.at/dccserver/
-
-config BR2_PKGSRC_PACKAGE_CHAT_ICBIRC
-	bool "icbirc-1.8nb1"
-	help
-	  Proxy IRC client and ICB server
-
-	  icbirc is a proxy that allows users to connect an IRC client to an ICB server.
-	  The proxy accepts client connections, connects to the server, and for-
-	  wards data between those two connections.
-	  
-	  Commands from the IRC client are translated to ICB commands and forwarded
-	  to the ICB server. Messages from the ICB server are translated to IRC
-	  messages and forwarded to the IRC client.
-
-	  http://www.benzedrine.cx/icbirc.html
-
-config BR2_PKGSRC_PACKAGE_CHAT_DIRCPROXY
-	bool "dircproxy-1.2.0beta2nb1"
-	help
-	  
-
-	  dircproxy is an IRC proxy server ("bouncer") designed for people
-	  who use IRC from lots of different workstations or clients, but wish
-	  to remain connected and see what they missed while they were away.
-	  You connect to IRC through dircproxy, and it keeps you connected to
-	  the server, even after you detach your client from it.  While you're
-	  detached, it logs channel and private messages as well as important
-	  events, and when you re-attach it'll let you know what you missed.
-	  
-	  This can be used to give you roughly the same functionality as
-	  using ircII and screen together, except you can use whatever IRC
-	  client you like, including X ones!
-	  
-	  * THIS IS AN UNSTABLE DEVELOPMENT RELEASE OF DIRCPROXY.  IT HAS HIGHER
-	  * THEN USUAL RISK OF DESTROYING YOUR SYSTEM.
-	  *
-	  * FOR A STABLE RELEASE USE THE LATEST 1.0.x
-
-	  http://code.google.com/p/dircproxy/
-
-config BR2_PKGSRC_PACKAGE_CHAT_ICQLIB
-	bool "icqlib-1.0.0nb3"
-	help
-	  Implementation of the icq protocol
-
-	  icqlib is the most feature complete, open source, library implementation of
-	  Mirabilis' ICQ protocol available on the Internet. icqlib currently supports
-	  approximately 90% of the ICQ UDP v5 protocol and 80% of the ICQ TCP v2
-	  protocol, including new UIN registration, chat, and file transfer.
-
-	  http://kicq.sourceforge.net/icqlib.shtml
-
-config BR2_PKGSRC_PACKAGE_CHAT_GOOFEY
-	bool "goofey-3.15"
-	help
-	  Text-based client for goofey, a flexible short message system
-
-	  Goofey is a program which provides many services by communicating
-	  with a central server Pluto. Services provided by goofey include
-	  remote user location, message sending, fortune provision, jargon
-	  file lookup and a timetable service.
-	  
-	  Goofey is the preferred mode of communciation of many people, as
-	  it combines the immediacy of talk(1) and the asynchronous nature of
-	  mail(1). That is, you will know if messages sent with goofey have
-	  been received by the recipient almost immediately. Goofey also
-	  provides facilities for users to supply finger type information, an
-	  'away' message for when you are away, a 'quiet' message for when
-	  you are busy or away from the terminal. In fact, just about everything
-	  that people have been able to put up a good case for is included in
-	  the server.
-
-	  http://www.csse.monash.edu.au/~tym/goofey.html
 
 config BR2_PKGSRC_PACKAGE_CHAT_EMPATHY
 	bool "empathy-2.34.0nb4"
@@ -501,29 +414,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_EMPATHY
 
 	  http://live.gnome.org/Empathy
 
-config BR2_PKGSRC_PACKAGE_CHAT_IROFFER
-	bool "iroffer-1.3.11"
-	help
-	  
-
-	  iroffer is a fileserver for IRC (commonly referred to as a DCC bot). It uses
-	  the DCC feature of IRC to send files to other users. iroffer will connect to
-	  an IRC server and let people request files from it. iroffer is not a script,
-	  it is a standalone executable written in C.  Written by PMG <pmg@iroffer.org>.
-
-	  http://iroffer.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_GOSSIP
-	bool "gossip-0.10.2nb15"
-	help
-	  GTK2 Jabber Instant Messaging client
-
-	  Gossip is a modern client for the Jabber Instant Messaging system.
-	  It aims at making Instant Messaging with Jabber as easy as possible,
-	  while giving users of the GNOME desktop a user-friendly way of keeping
-	  in touch with their friends.
-
-	  http://gossip.imendio.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_EPIC4
 	bool "epic4-2.2nb2"
@@ -537,6 +427,169 @@ config BR2_PKGSRC_PACKAGE_CHAT_EPIC4
 	  make EPIC the best ircII client available.
 
 	  http://www.epicsol.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_EPIC4_DOC
+	bool "epic4-doc-1.0.20050315"
+	help
+	  Additional documentation for epic4 package
+
+	  This package installs additional documentation for pkgsrc/chat/epic4 package,
+	  the one available under the following URL:
+	  ftp://ftp.epicsol.org/pub/epic/EPIC4-BETA/epic4pre2-help.tar.gz
+
+	  http://www.epicsol.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_FINCH
+	bool "finch-2.10.0"
+	help
+	  Multi-protocol Instant Messaging client console frontend
+
+	  Finch is a command line instant messaging program for Windows, Linux,
+	  BSD, and other Unixes. You can talk to your friends using AIM, ICQ,
+	  Jabber/XMPP, MSN Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell
+	  GroupWise Messenger, QQ, Lotus Sametime, SILC, SIMPLE, and Zephyr.
+
+	  http://www.pidgin.im/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_FISG
+	bool "fisg-0.2.0nb1"
+	help
+	  Fast IRC statistics generator
+
+	  FISG is an IRC statistics generator that is meant to be, well, fast.  It
+	  handles large log files much more efficiently than PISG, and doesn't require
+	  perl.
+
+	  http://www.tnsp.org/fisg.php
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_GAJIM
+	bool "gajim-0.14.1nb3"
+	help
+	  Jabber client written in PyGTK
+
+	  Gajim is a Jabber client written in PyGTK. The goal of Gajim's developers
+	  is to provide a full featured and easy to use xmpp client for the GTK+
+	  users. Gajim does not require GNOME to run, eventhough it exists with it
+	  nicely. Gajim is released under the GNU General Public License
+	  
+	  FEATURES:
+	  * Tabbed chat windows
+	  * Group chat support (with MUC protocol)
+	  * Emoticons, Avatars, File transfer, URL grabber, Bookmarks
+	  * Systray icon, Speller
+	  * TLS and GPG support (with SSL legacy support)
+	  * Transport Registration support
+	  * Service Discovery including Nodes
+	  * Wikipedia, dictionary and search engine lookup
+	  * Multiple accounts support
+	  * DBus Capabilities
+	  * XML Console
+
+	  http://www.gajim.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_GALE
+	bool "gale-0.99fnb5"
+	help
+	  Secure instant messaging system
+
+	  Gale is an open-source messaging system. It provides private messaging and
+	  public chat, uses strong end-to-end cryptography for security, and supports
+	  a distributed server network with a range of clients (both console and GUI)
+	  available. Gale is currently in early alpha testing.
+
+	  http://gale.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_GG2
+	bool "gg2-2.3.0nb11"
+	help
+	  Instant messenger software for Poland; Jabber plugin included
+
+	  GNU Gadu is an instant messanger application, designed to work with IM
+	  protocols popular in Poland (but not only). This is a plugin based
+	  application, even GUI (which uses GTK+) is a plugin. Currently we support:
+	  Gadu-Gadu, Tlen.pl, Jabber.
+
+	  http://ggadu.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_GLOOX
+	bool "gloox-1.0nb1"
+	help
+	  Jabber/XMPP client library
+
+	  gloox is a rock-solid, full-featured Jabber/XMPP client library,
+	  written in C++. It makes writing spec-compliant clients easy and
+	  allows for hassle-free integration of Jabber/XMPP functionality
+	  into existing applications.
+
+	  http://camaya.net/gloox/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_GNOMEICU
+	bool "gnomeicu-0.99.12nb16"
+	help
+	  GNOME ICQ client
+
+	  GnomeICU is one of the most popular UN*X-based ICQ programs in the world.
+	  Internet chatting has quickly become one of the most popular uses of the
+	  Internet - second only to Email.  Instant messaging allows users to
+	  communicate in real time with friends, family members, and coworkers in
+	  an efficient, unobtrusive manner.  GnomeICU has support for all of the
+	  following ICQ features:
+	  
+	  * Server-side list storage.
+	  * Basic messaging.
+	  * File transfer (temporarily broken due to protocol change).
+	  * Contact history.
+	  * Visible/Invisible/Ignore lists.
+	  * Ability to interface ICU from the command line.
+	  * Icon themes.
+	  * Many more.
+
+	  http://gnomeicu.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_GOOFEY
+	bool "goofey-3.15"
+	help
+	  Text-based client for goofey, a flexible short message system
+
+	  Goofey is a program which provides many services by communicating
+	  with a central server Pluto. Services provided by goofey include
+	  remote user location, message sending, fortune provision, jargon
+	  file lookup and a timetable service.
+	  
+	  Goofey is the preferred mode of communciation of many people, as
+	  it combines the immediacy of talk(1) and the asynchronous nature of
+	  mail(1). That is, you will know if messages sent with goofey have
+	  been received by the recipient almost immediately. Goofey also
+	  provides facilities for users to supply finger type information, an
+	  'away' message for when you are away, a 'quiet' message for when
+	  you are busy or away from the terminal. In fact, just about everything
+	  that people have been able to put up a good case for is included in
+	  the server.
+
+	  http://www.csse.monash.edu.au/~tym/goofey.html
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_GOSSIP
+	bool "gossip-0.10.2nb15"
+	help
+	  GTK2 Jabber Instant Messaging client
+
+	  Gossip is a modern client for the Jabber Instant Messaging system.
+	  It aims at making Instant Messaging with Jabber as easy as possible,
+	  while giving users of the GNOME desktop a user-friendly way of keeping
+	  in touch with their friends.
+
+	  http://gossip.imendio.org/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_GTMESS
 	bool "gtmess-0.91nb4"
@@ -558,16 +611,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_GTMESS
 
 	  http://gtmess.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_EPIC4_DOC
-	bool "epic4-doc-1.0.20050315"
-	help
-	  Additional documentation for epic4 package
-
-	  This package installs additional documentation for pkgsrc/chat/epic4 package,
-	  the one available under the following URL:
-	  ftp://ftp.epicsol.org/pub/epic/EPIC4-BETA/epic4pre2-help.tar.gz
-
-	  http://www.epicsol.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_I2CB
 	bool "i2cb-6.0_ALPHAnb5"
@@ -582,20 +625,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_I2CB
 
 	  http://www.draga.com/~jwise/i2cb/
 
-config BR2_PKGSRC_PACKAGE_CHAT_IIP
-	bool "iip-1.1.0"
-	help
-	  The Invisible IRC Project
-
-	  The Invisible IRC Project (IIP) was originally created so that people
-	  interested in facilitating privacy and free speech could work to
-	  these ends in an equally secure and anonymous environment. It has now
-	  become a haven for anyone seeking anonymous, encrypted Internet Relay
-	  Chat. The project's inspiration arose primarily from a shared
-	  interest in the Freenet Project and a desire to provide the real-time
-	  communications capabilities that Freenet could not.
-
-	  http://www.invisiblenet.net/iip/
 
 config BR2_PKGSRC_PACKAGE_CHAT_I2CBD
 	bool "i2cbd-2.0_BETA5nb3"
@@ -625,6 +654,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_I2CBD
 
 	  http://www.draga.com/~jwise/i2cb/
 
+
 config BR2_PKGSRC_PACKAGE_CHAT_ICB
 	bool "icb-5.0.9pl1nb6"
 	help
@@ -635,17 +665,160 @@ config BR2_PKGSRC_PACKAGE_CHAT_ICB
 
 	  http://www.icb.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_FINCH
-	bool "finch-2.10.0"
+
+config BR2_PKGSRC_PACKAGE_CHAT_ICBIRC
+	bool "icbirc-1.8nb1"
 	help
-	  Multi-protocol Instant Messaging client console frontend
+	  Proxy IRC client and ICB server
 
-	  Finch is a command line instant messaging program for Windows, Linux,
-	  BSD, and other Unixes. You can talk to your friends using AIM, ICQ,
-	  Jabber/XMPP, MSN Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell
-	  GroupWise Messenger, QQ, Lotus Sametime, SILC, SIMPLE, and Zephyr.
+	  icbirc is a proxy that allows users to connect an IRC client to an ICB server.
+	  The proxy accepts client connections, connects to the server, and for-
+	  wards data between those two connections.
+	  
+	  Commands from the IRC client are translated to ICB commands and forwarded
+	  to the ICB server. Messages from the ICB server are translated to IRC
+	  messages and forwarded to the IRC client.
 
-	  http://www.pidgin.im/
+	  http://www.benzedrine.cx/icbirc.html
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_ICQLIB
+	bool "icqlib-1.0.0nb3"
+	help
+	  Implementation of the icq protocol
+
+	  icqlib is the most feature complete, open source, library implementation of
+	  Mirabilis' ICQ protocol available on the Internet. icqlib currently supports
+	  approximately 90% of the ICQ UDP v5 protocol and 80% of the ICQ TCP v2
+	  protocol, including new UIN registration, chat, and file transfer.
+
+	  http://kicq.sourceforge.net/icqlib.shtml
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IIP
+	bool "iip-1.1.0"
+	help
+	  The Invisible IRC Project
+
+	  The Invisible IRC Project (IIP) was originally created so that people
+	  interested in facilitating privacy and free speech could work to
+	  these ends in an equally secure and anonymous environment. It has now
+	  become a haven for anyone seeking anonymous, encrypted Internet Relay
+	  Chat. The project's inspiration arose primarily from a shared
+	  interest in the Freenet Project and a desire to provide the real-time
+	  communications capabilities that Freenet could not.
+
+	  http://www.invisiblenet.net/iip/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_INSPIRCD
+	bool "inspircd-1.1.23nb2"
+	help
+	  Modular C++ IRC Daemon
+
+	  InspIRCd is a modular C++ IRC Daemon for Linux, BSD and Windows systems
+	  created to provide a stable, modern, lightweight ircd (irc server) from
+	  scratch and provide a vast number of features in a modularised form using
+	  an advanced module API. By keeping the functionality of the main core to a
+	  minimum we hope to increase the stability and speed of our project and make
+	  it customisable to the needs of many users.
+
+	  http://www.inspircd.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_INSPIRCD12
+	bool "inspircd-1.2.0nb3"
+	help
+	  Modular C++ IRC Daemon
+
+	  InspIRCd is a modular C++ IRC Daemon for Linux, BSD and Windows systems
+	  created to provide a stable, modern, lightweight ircd (irc server) from
+	  scratch and provide a vast number of features in a modularised form using
+	  an advanced module API. By keeping the functionality of the main core to a
+	  minimum we hope to increase the stability and speed of our project and make
+	  it customisable to the needs of many users.
+
+	  http://www.inspircd.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IRCII
+	bool "ircII-20110228nb1"
+	help
+	  The 'Internet Relay Chat' and 'Internet Citizens Band' Client
+
+	  The ircII program is a full screen, termcap based interface to Internet Relay
+	  Chat. It gives full access to all of the normal IRC functions, plus a variety
+	  of additional options.  It also has support for ICB -- Internet Citizens Band.
+
+	  http://www.eterna.com.au/ircii/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IRCD_HYBRID
+	bool "ircd-hybrid-7.2.3nb3"
+	help
+	  IRC server with many options
+
+	  IRC (Internet Relay Chat) provides a way of communicating in real time with
+	  people. Generally, the user runs a client program to a server running a
+	  IRC server software. Hybrid ircd is such a server.
+
+	  http://www.ircd-hybrid.com/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IRCHAT_PJ
+	bool "irchat-pj-2.4.24.22nb3"
+	help
+	  Emacs lisp interface to Internet Relay Chat
+
+	  irchat is the IRC client based on Emacs lisp.
+	  
+	  irchat-PJ Project modify the irchat client.
+	  - Support Emacs-20
+	  - Some bugfix for DreamCastIRC client
+
+	  http://gouketsu.net/irchat-pj/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IRCSERVICES
+	bool "ircservices-5.0.64"
+	help
+	  Services for IRC networks
+
+	  IRC Services is a system of services to be used with Internet Relay Chat
+	  networks.  Services provides for definitive nickname and channel ownership,
+	  as well as the ability to send messages to offline users, and gives IRC
+	  operators considerably more control over the network.
+
+	  http://www.ircservices.za.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IRCU
+	bool "ircu-2.10.12.12nb1"
+	help
+	  Internet Relay Chat server customized for Undernet
+
+	  ircu is the Undernet's modified version of the original ircd.
+	  
+	  The original ircd is in general no longer maintained, and the various IRC
+	  networks have customized ircd to suit their needs.
+	  
+	  You can find more information about Undernet at http://www.undernet.org/
+
+	  http://coder-com.undernet.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IROFFER
+	bool "iroffer-1.3.11"
+	help
+	  
+
+	  iroffer is a fileserver for IRC (commonly referred to as a DCC bot). It uses
+	  the DCC feature of IRC to send files to other users. iroffer will connect to
+	  an IRC server and let people request files from it. iroffer is not a script,
+	  it is a standalone executable written in C.  Written by PMG <pmg@iroffer.org>.
+
+	  http://iroffer.org/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_IRSSI
 	bool "irssi-0.8.15nb2"
@@ -659,6 +832,142 @@ config BR2_PKGSRC_PACKAGE_CHAT_IRSSI
 	  protocols like ICQ could be created some day too.
 
 	  http://www.irssi.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IRSSI_ICB
+	bool "irssi-icb-0.14nb19"
+	help
+	  Irssi plugin to access ICB networks
+
+	  irssi-icb is an Irssi plugin that allows access to ICB (Internet
+	  Citizen's Band) networks. The ICB protocol is almost dead now
+	  (superseded by IRC), but there are still some networks around that
+	  use it.
+
+	  http://www.irssi.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_JABBERD
+	bool "jabberd-1.4.2nb9"
+	help
+	  Instant messaging server
+
+	  Jabber is an open XML protocol for real-time exchange of messages and
+	  presence notification between any two points on the Internet.  The first
+	  application of Jabber technology is an asynchronous, extensible instant
+	  messaging platform, and an IM network that offers functionality similar
+	  to legacy IM systems such as AIM, ICQ, MSN, and Yahoo.
+
+	  http://jabberstudio.org/projects/jabberd
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_JABBERD2
+	bool "jabberd-2.2.14nb1"
+	help
+	  
+
+	  Jabber is an open XML protocol for real-time exchange of messages and
+	  presence notification between any two points on the Internet.  The first
+	  application of Jabber technology is an asynchronous, extensible instant
+	  messaging platform, and an IM network that offers functionality similar
+	  to legacy IM systems such as AIM, ICQ, MSN, and Yahoo.
+	  
+	  This is a complete redesign/reimplementation of the original jabberd.
+
+	  http://jabberd2.xiaoka.com/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_KADU
+	bool "kadu-0.5.0nb7"
+	help
+	  
+
+	  Chat client for Gadu-Gadu network (Poland), featuring:
+	  * support for Gadu-Gadu protocol v6
+	  * encrypted transmission using OpenSSL
+	  * sending SMS to Polish GSM networks
+	  * file transfer (DCC)
+	  * conference
+	  * animated emoticons
+	  * more...
+
+	  http://www.kadu.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_KMESS
+	bool "kmess-1.4.3nb13"
+	help
+	  MSN Messenger Client for KDE3
+
+	  kmess is a MSN Messenger client for the KDE3 desktop environment.
+	  It supports advanced protocol features and resembles a lot the
+	  original client appearance.
+
+	  http://www.kmess.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_KONVERSATION_KDE3
+	bool "konversation-1.1nb9"
+	help
+	  KDE IRC Client
+
+	  Konversation is a graphical Internet Relay Chat client (IRC).
+	  
+	  Features
+	  
+	  * Standard IRC features
+	  * SSL server support
+	  * Bookmarking support
+	  * Easy to use graphical user interface
+	  * Multiple servers and channels in one single window
+	  * DCC file transfer
+	  * Multiple identities for different servers
+	  * Text decorations and colors
+	  * OnScreen Display for notifications
+	  * Automatic UTF-8 detection
+	  * Per channel encoding support
+	  * Theme support for nick icons
+	  * Highly configurable
+
+	  http://konversation.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_KONVERSATION
+	bool "konversation-1.3.1nb3"
+	help
+	  KDE IRC Client
+
+	  Konversation is a graphical Internet Relay Chat client (IRC).
+	  
+	  Features
+	  
+	  * Standard IRC features
+	  * SSL server support
+	  * Bookmarking support
+	  * Easy to use graphical user interface
+	  * Multiple servers and channels in one single window
+	  * DCC file transfer
+	  * Multiple identities for different servers
+	  * Text decorations and colors
+	  * OnScreen Display for notifications
+	  * Automatic UTF-8 detection
+	  * Per channel encoding support
+	  * Theme support for nick icons
+	  * Highly configurable
+
+	  http://konversation.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_LIBFOLKS
+	bool "libfolks-0.4.2nb1"
+	help
+	  Library to manage contacts
+
+	  libfolks is a library that aggregates people from multiple sources (eg,
+	  Telepathy connection managers) to create metacontacts.
+
+	  http://telepathy.freedesktop.org/wiki/Folks
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBIRC
 	bool "libirc-0.2nb2"
@@ -675,16 +984,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBIRC
 
 	  
 
-config BR2_PKGSRC_PACKAGE_CHAT_FISG
-	bool "fisg-0.2.0nb1"
-	help
-	  Fast IRC statistics generator
-
-	  FISG is an IRC statistics generator that is meant to be, well, fast.  It
-	  handles large log files much more efficiently than PISG, and doesn't require
-	  perl.
-
-	  http://www.tnsp.org/fisg.php
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBMSN
 	bool "libmsn-4.1"
@@ -698,17 +997,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBMSN
 
 	  http://sourceforge.net/projects/libmsn
 
-config BR2_PKGSRC_PACKAGE_CHAT_IRSSI_ICB
-	bool "irssi-icb-0.14nb19"
-	help
-	  Irssi plugin to access ICB networks
-
-	  irssi-icb is an Irssi plugin that allows access to ICB (Internet
-	  Citizen's Band) networks. The ICB protocol is almost dead now
-	  (superseded by IRC), but there are still some networks around that
-	  use it.
-
-	  http://www.irssi.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBOTR
 	bool "libotr-3.2.0nb1"
@@ -737,18 +1025,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBOTR
 
 	  http://www.cypherpunks.ca/otr/
 
-config BR2_PKGSRC_PACKAGE_CHAT_JABBERD
-	bool "jabberd-1.4.2nb9"
-	help
-	  Instant messaging server
-
-	  Jabber is an open XML protocol for real-time exchange of messages and
-	  presence notification between any two points on the Internet.  The first
-	  application of Jabber technology is an asynchronous, extensible instant
-	  messaging platform, and an IM network that offers functionality similar
-	  to legacy IM systems such as AIM, ICQ, MSN, and Yahoo.
-
-	  http://jabberstudio.org/projects/jabberd
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBPURPLE
 	bool "libpurple-2.10.0"
@@ -765,119 +1041,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBPURPLE
 
 	  http://www.pidgin.im/
 
-config BR2_PKGSRC_PACKAGE_CHAT_JABBERD2
-	bool "jabberd-2.2.14nb1"
-	help
-	  
-
-	  Jabber is an open XML protocol for real-time exchange of messages and
-	  presence notification between any two points on the Internet.  The first
-	  application of Jabber technology is an asynchronous, extensible instant
-	  messaging platform, and an IM network that offers functionality similar
-	  to legacy IM systems such as AIM, ICQ, MSN, and Yahoo.
-	  
-	  This is a complete redesign/reimplementation of the original jabberd.
-
-	  http://jabberd2.xiaoka.com/
-
-config BR2_PKGSRC_PACKAGE_CHAT_GAJIM
-	bool "gajim-0.14.1nb3"
-	help
-	  Jabber client written in PyGTK
-
-	  Gajim is a Jabber client written in PyGTK. The goal of Gajim's developers
-	  is to provide a full featured and easy to use xmpp client for the GTK+
-	  users. Gajim does not require GNOME to run, eventhough it exists with it
-	  nicely. Gajim is released under the GNU General Public License
-	  
-	  FEATURES:
-	  * Tabbed chat windows
-	  * Group chat support (with MUC protocol)
-	  * Emoticons, Avatars, File transfer, URL grabber, Bookmarks
-	  * Systray icon, Speller
-	  * TLS and GPG support (with SSL legacy support)
-	  * Transport Registration support
-	  * Service Discovery including Nodes
-	  * Wikipedia, dictionary and search engine lookup
-	  * Multiple accounts support
-	  * DBus Capabilities
-	  * XML Console
-
-	  http://www.gajim.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_INSPIRCD
-	bool "inspircd-1.1.23nb2"
-	help
-	  Modular C++ IRC Daemon
-
-	  InspIRCd is a modular C++ IRC Daemon for Linux, BSD and Windows systems
-	  created to provide a stable, modern, lightweight ircd (irc server) from
-	  scratch and provide a vast number of features in a modularised form using
-	  an advanced module API. By keeping the functionality of the main core to a
-	  minimum we hope to increase the stability and speed of our project and make
-	  it customisable to the needs of many users.
-
-	  http://www.inspircd.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_MEANWHILE
-	bool "meanwhile-1.0.2nb1"
-	help
-	  Lotus SameTime compatible chat protocol
-
-	  The Meanwhile Project is an open implementation of the Lotus Sametime
-	  Community Client protocol.
-	  
-	  The heart of the Meanwhile Project is the Meanwhile library, providing the
-	  basic Lotus Sametime session functionality along with the core services;
-	  Presence Awareness, Instant Messaging, Multi-user Conferencing, Preferences
-	  Storage, Identity Resolution, and File Transfer. This extensible client
-	  interface allows additional services to be added to a session at runtime,
-	  allowing for simple integration of future service handlers such as the
-	  user directory and whiteboard and screen-sharing.
-	  
-	  The library can be used by IM clients such as pidgin to chat with
-	  Sametime users.
-
-	  http://meanwhile.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_CHAT_KADU
-	bool "kadu-0.5.0nb7"
-	help
-	  
-
-	  Chat client for Gadu-Gadu network (Poland), featuring:
-	  * support for Gadu-Gadu protocol v6
-	  * encrypted transmission using OpenSSL
-	  * sending SMS to Polish GSM networks
-	  * file transfer (DCC)
-	  * conference
-	  * animated emoticons
-	  * more...
-
-	  http://www.kadu.net/
-
-config BR2_PKGSRC_PACKAGE_CHAT_MSN_PECAN
-	bool "msn-pecan-0.0.18nb8"
-	help
-	  Alternate MSN protocol plugin for libpurple
-
-	  msn-pecan is a fork of the MSN plug-in from Pidgin. Compared to Pidgin's
-	  official MSN plug-in:
-	  
-	  * Faster log-in
-	  * Fewer connection issues
-	  * Fewer crashes
-	  * Experimental direct connection support (fast file transfers)
-	  * Server-side storage for display names (private alias)
-	  * Support for handwritten messages (read-only)
-	  
-	  Other features:
-	  
-	  * Support for personal status messages
-	  * Support for offline messaging (read-only)
-	  * Send custom emoticons (Pidgin >= 2.5)
-
-	  http://msn-pecan.googlecode.com/files/
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBTELEPATHY
 	bool "libtelepathy-0.3.3nb3"
@@ -902,16 +1065,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBTELEPATHY
 
 	  http://telepathy.freedesktop.org/wiki/
 
-config BR2_PKGSRC_PACKAGE_CHAT_KMESS
-	bool "kmess-1.4.3nb13"
-	help
-	  MSN Messenger Client for KDE3
-
-	  kmess is a MSN Messenger client for the KDE3 desktop environment.
-	  It supports advanced protocol features and resembles a lot the
-	  original client appearance.
-
-	  http://www.kmess.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBTLEN
 	bool "libtlen-20041113"
@@ -921,6 +1074,70 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBTLEN
 	  Libtlen is a client library to access tlen.pl IM/chat system.
 
 	  http://libtlen.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_LICQ_CORE
+	bool "licq-core-1.3.5nb1"
+	help
+	  ICQ client with plugin support
+
+	  Licq is a multi-threaded ICQ clone written mostly in C++. It uses
+	  an extensive plugin system to manage many different functions. The
+	  main gui is written using the Qt widget set. Licq is distributed
+	  under GPL with some special QPL exceptions for Qt.
+	  
+	  Several GUI plugins for console, Qt etc. are available as separate
+	  packages.
+
+	  http://www.licq.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_LICQ_GUI_CONSOLE
+	bool "licq-gui-console-1.3.5"
+	help
+	  Curses GUI for licq
+
+	  Licq Console Plugin
+	  
+	  This is a console ui plugin for the Licq ICQ client.  It is considered beta
+	  at this point and does not have all the features that the qt-gui supports,
+	  however does offer a number of really cool text-mode things.  Multiple windows,
+	  contact list pane, log window...
+	  
+	  Running is simply a matter of running licq with the "-p console" switch.
+	  Remember that Licq will save the plugin being run so after running
+	  "licq -p console" once, it will always run with this plugin.  Hence when
+	  you want to go back to the gui, use "licq -p qt-gui" the first time at least.
+
+	  http://www.licq.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_LICQ_GUI_QT
+	bool "licq-gui-qt-1.3.5nb5"
+	help
+	  Qt GUI for licq
+
+	  START:
+	  licq -p qt-gui
+	  
+	  Remember that Licq will save the plugin being run so after running
+	  "licq -p qt-gui" once, it will always run with this plugin.  Hence
+	  when you want to go back to the console version, use "licq -p
+	  console" the first time at least.
+	  
+	  Using licq is very straight-forward.  To access any of the options, just
+	  right click on a user and select the relevant command, or double click on
+	  the user.  A window will open containing a tab dialog with all the
+	  possible things to do.  In this way you can read a new message, check user
+	  info, and send a message all from the same window at the same time.
+	  One key feature of licq is the network status window, which can be viewed
+	  by selecting "Show Network Window" under the "System" menu.  This screen
+	  will show you exactly what is occuring at the protocol level.
+	  The menu option "<your alias>" will allow you to view your own settings
+	  and to check system messages.
+
+	  http://www.licq.org/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_LOUDMOUTH
 	bool "loudmouth-1.4.3nb3"
@@ -932,6 +1149,53 @@ config BR2_PKGSRC_PACKAGE_CHAT_LOUDMOUTH
 	  extensible to let you do anything the Jabber protocol allows.
 
 	  http://www.loudmouth-project.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_MEANWHILE
+	bool "meanwhile-1.0.2nb1"
+	help
+	  Lotus SameTime compatible chat protocol
+
+	  The Meanwhile Project is an open implementation of the Lotus Sametime
+	  Community Client protocol.
+	  
+	  The heart of the Meanwhile Project is the Meanwhile library, providing the
+	  basic Lotus Sametime session functionality along with the core services;
+	  Presence Awareness, Instant Messaging, Multi-user Conferencing, Preferences
+	  Storage, Identity Resolution, and File Transfer. This extensible client
+	  interface allows additional services to be added to a session at runtime,
+	  allowing for simple integration of future service handlers such as the
+	  user directory and whiteboard and screen-sharing.
+	  
+	  The library can be used by IM clients such as pidgin to chat with
+	  Sametime users.
+
+	  http://meanwhile.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_MSN_PECAN
+	bool "msn-pecan-0.0.18nb8"
+	help
+	  Alternate MSN protocol plugin for libpurple
+
+	  msn-pecan is a fork of the MSN plug-in from Pidgin. Compared to Pidgin's
+	  official MSN plug-in:
+	  
+	  * Faster log-in
+	  * Fewer connection issues
+	  * Fewer crashes
+	  * Experimental direct connection support (fast file transfers)
+	  * Server-side storage for display names (private alias)
+	  * Support for handwritten messages (read-only)
+	  
+	  Other features:
+	  
+	  * Support for personal status messages
+	  * Support for offline messaging (read-only)
+	  * Send custom emoticons (Pidgin >= 2.5)
+
+	  http://msn-pecan.googlecode.com/files/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_MSNRE
 	bool "msnre-0.91nb4"
@@ -948,19 +1212,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_MSNRE
 
 	  http://msnre.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_INSPIRCD12
-	bool "inspircd-1.2.0nb3"
-	help
-	  Modular C++ IRC Daemon
-
-	  InspIRCd is a modular C++ IRC Daemon for Linux, BSD and Windows systems
-	  created to provide a stable, modern, lightweight ircd (irc server) from
-	  scratch and provide a vast number of features in a modularised form using
-	  an advanced module API. By keeping the functionality of the main core to a
-	  minimum we hope to increase the stability and speed of our project and make
-	  it customisable to the needs of many users.
-
-	  http://www.inspircd.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_MU_CONFERENCE
 	bool "mu-conference-0.8nb1"
@@ -972,44 +1223,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_MU_CONFERENCE
 
 	  http://jabber.terrapin.com/JCR/
 
-config BR2_PKGSRC_PACKAGE_CHAT_KONVERSATION
-	bool "konversation-1.3.1nb3"
-	help
-	  KDE IRC Client
-
-	  Konversation is a graphical Internet Relay Chat client (IRC).
-	  
-	  Features
-	  
-	  * Standard IRC features
-	  * SSL server support
-	  * Bookmarking support
-	  * Easy to use graphical user interface
-	  * Multiple servers and channels in one single window
-	  * DCC file transfer
-	  * Multiple identities for different servers
-	  * Text decorations and colors
-	  * OnScreen Display for notifications
-	  * Automatic UTF-8 detection
-	  * Per channel encoding support
-	  * Theme support for nick icons
-	  * Highly configurable
-
-	  http://konversation.kde.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_ICQ2000
-	bool "p5-Net-ICQ2000-0.2.1nb5"
-	help
-	  Perl5 modules for the ICQv7 protocol realisation
-
-	  This module is designed to give perl scripts access to the ICQ
-	  network and the functions provided by it, like SMS
-	  
-	  Functions included :  Connect(), Disconnect(), Set_Login_Details(),
-	  Set_Server_And_Port(), Execute_Once(), Send_Command(), Add_Hook(),
-	  Hook_All(), Check_Incoming(), Deal_With_FLAPs(), Send_Outgoing().
-
-	  http://gonzo.kiev.ua/projects/vicq.old/
 
 config BR2_PKGSRC_PACKAGE_CHAT_NAIM
 	bool "naim-0.11.8.3.1"
@@ -1025,51 +1238,21 @@ config BR2_PKGSRC_PACKAGE_CHAT_NAIM
 
 	  http://naim.n.ml.org/about
 
-config BR2_PKGSRC_PACKAGE_CHAT_IRCD_HYBRID
-	bool "ircd-hybrid-7.2.3nb3"
+
+config BR2_PKGSRC_PACKAGE_CHAT_NAVI2CH
+	bool "navi2ch-1.8.4"
 	help
-	  IRC server with many options
+	  2ch BBS browser for Emacs
 
-	  IRC (Internet Relay Chat) provides a way of communicating in real time with
-	  people. Generally, the user runs a client program to a server running a
-	  IRC server software. Hybrid ircd is such a server.
-
-	  http://www.ircd-hybrid.com/
-
-config BR2_PKGSRC_PACKAGE_CHAT_KONVERSATION_KDE3
-	bool "konversation-1.1nb9"
-	help
-	  KDE IRC Client
-
-	  Konversation is a graphical Internet Relay Chat client (IRC).
+	  Navi2ch is a viewer program dedicated to chatting in 2ch.net - the biggest,
+	  most famous, influential BBS in Japan.
 	  
-	  Features
-	  
-	  * Standard IRC features
-	  * SSL server support
-	  * Bookmarking support
-	  * Easy to use graphical user interface
-	  * Multiple servers and channels in one single window
-	  * DCC file transfer
-	  * Multiple identities for different servers
-	  * Text decorations and colors
-	  * OnScreen Display for notifications
-	  * Automatic UTF-8 detection
-	  * Per channel encoding support
-	  * Theme support for nick icons
-	  * Highly configurable
+	  Although this software is really well-written, it's worth noting that most
+	  opinions/informations found in 2ch.net are next to senseless.  Thus, Good
+	  NetBSD users are really encouraged not to devote themselves to 2ch! :-)
 
-	  http://konversation.kde.org/
+	  http://navi2ch.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_LIBFOLKS
-	bool "libfolks-0.4.2nb1"
-	help
-	  Library to manage contacts
-
-	  libfolks is a library that aggregates people from multiple sources (eg,
-	  Telepathy connection managers) to create metacontacts.
-
-	  http://telepathy.freedesktop.org/wiki/Folks
 
 config BR2_PKGSRC_PACKAGE_CHAT_NINJA
 	bool "ninja-1.5.8.1nb2"
@@ -1085,51 +1268,58 @@ config BR2_PKGSRC_PACKAGE_CHAT_NINJA
 
 	  ftp://qoop.org/ninja/
 
-config BR2_PKGSRC_PACKAGE_CHAT_IRCII
-	bool "ircII-20110228nb1"
+
+config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_AIM
+	bool "p5-Net-AIM-1.22nb5"
 	help
-	  The 'Internet Relay Chat' and 'Internet Citizens Band' Client
+	  Implementation of the AOL Instant Messenger TOC protocol
 
-	  The ircII program is a full screen, termcap based interface to Internet Relay
-	  Chat. It gives full access to all of the normal IRC functions, plus a variety
-	  of additional options.  It also has support for ICB -- Internet Citizens Band.
+	  This module is an implementation of the AOL Instant Messenger TOC
+	  protocol.  I've written and rewritten almost all the code.  It
+	  works fairly and is pretty reliable. The intent for this version
+	  was to make an easily usable module for creating AIM bots.
 
-	  http://www.eterna.com.au/ircii/
+	  http://www.aryeh.net/netaim.php
 
-config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_SAMETIME
-	bool "pidgin-sametime-2.10.0"
+
+config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_AOLIM
+	bool "p5-Net-AOLIM-1.61nb3"
 	help
-	  Lotus Sametime plugin for the Pidgin instant messenger
-
-	  This is a Lotus Sametime protocol plugin for the Pidgin instant messenger.
-
-	  http://www.pidgin.im/
-
-config BR2_PKGSRC_PACKAGE_CHAT_IRCSERVICES
-	bool "ircservices-5.0.64"
-	help
-	  Services for IRC networks
-
-	  IRC Services is a system of services to be used with Internet Relay Chat
-	  networks.  Services provides for definitive nickname and channel ownership,
-	  as well as the ability to send messages to offline users, and gives IRC
-	  operators considerably more control over the network.
-
-	  http://www.ircservices.za.net/
-
-config BR2_PKGSRC_PACKAGE_CHAT_IRCU
-	bool "ircu-2.10.12.12nb1"
-	help
-	  Internet Relay Chat server customized for Undernet
-
-	  ircu is the Undernet's modified version of the original ircd.
 	  
-	  The original ircd is in general no longer maintained, and the various IRC
-	  networks have customized ircd to suit their needs.
-	  
-	  You can find more information about Undernet at http://www.undernet.org/
 
-	  http://coder-com.undernet.org/
+	  Object-Oriented interface to the AOL Instant Messenger TOC client protocol.
+
+	  http://www.phonon.net/pub/Net-AOLIM/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_GOOFEY
+	bool "p5-Net-Goofey-1.5nb5"
+	help
+	  Perl module for communicating with a Goofey server
+
+	  This is a really simple module for communicating with a Goofey server.
+	  
+	  Goofey is a bit like IRC and a bit like ICQ and a bit like email, it's
+	  used mostly at Monash University.  See the Goofey web page at:
+	  http://www.cs.monash.edu.au/~tym/goofey.html
+
+	  http://notdoneliving.net/code/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_ICQ2000
+	bool "p5-Net-ICQ2000-0.2.1nb5"
+	help
+	  Perl5 modules for the ICQv7 protocol realisation
+
+	  This module is designed to give perl scripts access to the ICQ
+	  network and the functions provided by it, like SMS
+	  
+	  Functions included :  Connect(), Disconnect(), Set_Login_Details(),
+	  Set_Server_And_Port(), Execute_Once(), Send_Command(), Add_Hook(),
+	  Hook_All(), Check_Incoming(), Deal_With_FLAPs(), Send_Outgoing().
+
+	  http://gonzo.kiev.ua/projects/vicq.old/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_JABBER
 	bool "p5-Net-Jabber-2.0nb3"
@@ -1143,6 +1333,132 @@ config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_JABBER
 
 	  http://search.cpan.org/~reatmon/Net-Jabber-2.0/
 
+
+config BR2_PKGSRC_PACKAGE_CHAT_P5_POE_COMPONENT_IRC
+	bool "p5-POE-Component-IRC-6.40nb1"
+	help
+	  Fully event-driven IRC client module
+
+	  POE::Component::IRC is a POE component (who'd have guessed?) which acts as an
+	  easily controllable IRC client for your other POE components and sessions.
+	  You create an IRC component and tell it what events your session cares about
+	  and where to connect to, and it sends back interesting IRC events when they
+	  happen. You make the client do things by sending it events.
+
+	  http://search.cpan.org/dist/POE-Component-IRC/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_P5_POE_FILTER_IRCD
+	bool "p5-POE-Filter-IRCD-2.42nb2"
+	help
+	  POE-based parser for the IRC protocol
+
+	  POE::Filter::IRCD provides a convenient way of parsing and creating IRC
+	  protocol lines.
+
+	  http://search.cpan.org/dist/POE-Filter-IRCD/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN
+	bool "pidgin-2.10.0"
+	help
+	  Multi-protocol Instant Messaging client GTK frontend
+
+	  Pidgin is an instant messaging program for Windows, Linux, BSD, and other
+	  Unixes. You can talk to your friends using AIM, ICQ, Jabber/XMPP, MSN
+	  Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger,
+	  QQ, Lotus Sametime, SILC, SIMPLE, and Zephyr.
+
+	  http://www.pidgin.im/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_FACEBOOKCHAT
+	bool "pidgin-facebookchat-1.27nb10"
+	help
+	  Plugin for pidgin to support Facebook IM
+
+	  This is a Facebook chat plugin for Pidgin and libpurple messengers.
+	  It connects to the new Facebook Chat IM service without the need
+	  for an API key.
+	  
+	  Currently the plugin can log into the Facebook servers, grab the
+	  buddy list, and send/receive messages.
+
+	  http://code.google.com/p/pidgin-facebookchat/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_ICB
+	bool "pidgin-icb-20070505nb12"
+	help
+	  ICB protocol plugin for the Pidgin instant messenger
+
+	  This is an ICB protocol plugin for the Pidgin instant messenger.
+
+	  http://nic.com.pl/~alek/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_LATEX
+	bool "pidgin-latex-1.2.1nb11"
+	help
+	  Plugin for pidgin to render LaTeX as images
+
+	  A plugin for Pidgin which translates LaTeX code into images in your
+	  IM conversation.
+
+	  http://sourceforge.net/projects/pidgin-latex/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_LIBNOTIFY
+	bool "pidgin-libnotify-0.14nb9"
+	help
+	  Pidgin plugin that adds popup support
+
+	  This plugin adds a libnotify interface to pidgin, enabling popups much like
+	  guifications. It has some configuration options, to show popups when a buddy
+	  signs on, on new messages and on new conversations only.
+	  
+	  Don't forget to enable the plugin in Tools->Plugins.
+
+	  http://gaim-libnotify.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_OTR
+	bool "pidgin-otr-3.2.0nb11"
+	help
+	  
+
+	  This is the OTR plugin for Pidgin.
+	  
+	  Off-the-Record (OTR) Messaging allows you to have private
+	  conversations over instant messaging by providing:
+	  
+	  Encryption
+	  No one else can read your instant messages.
+	  Authentication
+	  You are assured the correspondent is who you think it is.
+	  Deniability
+	  The messages you send do not have digital signatures that are
+	  checkable by a third party. Anyone can forge messages after a
+	  conversation to make them look like they came from you. However,
+	  during a conversation, your correspondent is assured the messages
+	  he sees are authentic and unmodified.
+	  Perfect forward secrecy
+	  If you lose control of your private keys, no previous conversation
+	  is compromised.
+
+	  http://www.cypherpunks.ca/otr/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_SAMETIME
+	bool "pidgin-sametime-2.10.0"
+	help
+	  Lotus Sametime plugin for the Pidgin instant messenger
+
+	  This is a Lotus Sametime protocol plugin for the Pidgin instant messenger.
+
+	  http://www.pidgin.im/
+
+
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_SILC
 	bool "pidgin-silc-2.10.0"
 	help
@@ -1152,15 +1468,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_SILC
 
 	  http://www.pidgin.im/
 
-config BR2_PKGSRC_PACKAGE_CHAT_SCROLLZ
-	bool "scrollz-1.9.5"
-	help
-	  Advanced IRC client based on ircII client
-
-	  ScrollZ is an advanced IRC client based on ircII client. It was
-	  developed on Linux, but can be compiled on variety of Unix platforms.
-
-	  http://www.scrollz.com/
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIRCBOT
 	bool "pircbot-0.9.11nb2"
@@ -1178,48 +1485,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIRCBOT
 
 	  http://www.jibble.org/pircbot.php
 
-config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_AIM
-	bool "p5-Net-AIM-1.22nb5"
-	help
-	  Implementation of the AOL Instant Messenger TOC protocol
-
-	  This module is an implementation of the AOL Instant Messenger TOC
-	  protocol.  I've written and rewritten almost all the code.  It
-	  works fairly and is pretty reliable. The intent for this version
-	  was to make an easily usable module for creating AIM bots.
-
-	  http://www.aryeh.net/netaim.php
-
-config BR2_PKGSRC_PACKAGE_CHAT_SILC_CLIENT
-	bool "silc-client-1.1.8nb2"
-	help
-	  
-
-	  SILC (Secure Internet Live Conferencing) is a protocol which provides
-	  secure conferencing services in the Internet over insecure channel.
-	  
-	  SILC superficially resembles IRC, although they are very different
-	  internally. SILC is much more than just about `encrypting the traffic'.
-	  That is easy enough to do with IRC and SSL hybrids, but even then the
-	  entire network cannot be secured, only part of it.
-	  
-	  SILC provides security services, such as sending private messages entirely
-	  secure; noone can see the message except you and the real receiver of the
-	  message. SILC also provides same functionality for channels; noone except
-	  those clients joined to the channel may see the messages destined to the
-	  channel. Communication between client and server is also secured with
-	  session keys and all commands, authentication data (such as passwords etc.)
-	  and other traffic is entirely secured. The entire network, and all parts of
-	  it, is secured.
-	  
-	  SILC has secure key exchange protocol that is used to create the session keys
-	  for each connection. SILC also provides strong authentication based on either
-	  passwords or public key authentication. All authentication data is always
-	  encrypted in the SILC network. Each connection has their own session keys,
-	  all channels have channel specific keys, and all private messages can be
-	  secured with private message specific keys.
-
-	  http://www.silcnet.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_PROSODY
 	bool "prosody-0.8.2nb1"
@@ -1233,118 +1498,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_PROSODY
 
 	  http://prosody.im/
 
-config BR2_PKGSRC_PACKAGE_CHAT_SILC_CLIENT_ICB
-	bool "silc-client-icb-0.14nb14"
-	help
-	  silc-client plugin to access ICB networks
-
-	  silc-client-icb is a silc-client plugin that allows access to ICB (Internet
-	  Citizen's Band) networks.  The ICB protocol is almost dead now (superseded
-	  by IRC), but there are still some networks around that use it.
-
-	  http://www.silcnet.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_P5_POE_COMPONENT_IRC
-	bool "p5-POE-Component-IRC-6.40nb1"
-	help
-	  Fully event-driven IRC client module
-
-	  POE::Component::IRC is a POE component (who'd have guessed?) which acts as an
-	  easily controllable IRC client for your other POE components and sessions.
-	  You create an IRC component and tell it what events your session cares about
-	  and where to connect to, and it sends back interesting IRC events when they
-	  happen. You make the client do things by sending it events.
-
-	  http://search.cpan.org/dist/POE-Component-IRC/
-
-config BR2_PKGSRC_PACKAGE_CHAT_SILC_SERVER
-	bool "silc-server-1.1.18"
-	help
-	  
-
-	  SILC (Secure Internet Live Conferencing) is a protocol which provides
-	  secure conferencing services in the Internet over insecure channel.
-	  
-	  SILC superficially resembles IRC, although they are very different
-	  internally. SILC is much more than just about `encrypting the traffic'.
-	  That is easy enough to do with IRC and SSL hybrids, but even then the
-	  entire network cannot be secured, only part of it.
-	  
-	  SILC provides security services, such as sending private messages entirely
-	  secure; noone can see the message except you and the real receiver of the
-	  message. SILC also provides same functionality for channels; noone except
-	  those clients joined to the channel may see the messages destined to the
-	  channel. Communication between client and server is also secured with
-	  session keys and all commands, authentication data (such as passwords etc.)
-	  and other traffic is entirely secured. The entire network, and all parts of
-	  it, is secured.
-	  
-	  SILC has secure key exchange protocol that is used to create the session keys
-	  for each connection. SILC also provides strong authentication based on either
-	  passwords or public key authentication. All authentication data is always
-	  encrypted in the SILC network. Each connection has their own session keys,
-	  all channels have channel specific keys, and all private messages can be
-	  secured with private message specific keys.
-
-	  http://www.silcnet.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_SIRC
-	bool "sirc-2.211nb2"
-	help
-	  IRC client written and programmable in perl
-
-	  This is a simple (well, not so simple anymore *grin*) irc client,
-	  written in perl and C.
-	  
-	  It's divided in two parts, a dumb-mode (meaning, no full screen
-	  interface) client, dsirc, that can be used stand-alone, programmed in
-	  perl, and a separate split-screen front end in C, called ssfe.
-	  
-	  The main point of running this client is that you can get a reasonable
-	  ircII-like interface on an account with a properly installed perl
-	  interpreter, with the perl client taking about 55k (and it's usable on
-	  its own if you don't have access to a C compiler) and with the
-	  interface, once compiled, taking just another 30 or 40k. The two
-	  together, while lacking the huge complexity of ircII, make a very usable
-	  client. And if you know perl, you'll find you can do quite complicated
-	  and interesting things with sirc too :)
-	  
-	  See /usr/pkg/lib/sirc/README for more usage instructions, and see
-	  /usr/pkg/lib/sirc/PROGRAMMING for information on how to extend sirc.
-	  Some example scripts can be found in /usr/pkg/lib/sirc/scripts.
-
-	  http://www.iagora.com/~espel/sirc/sirc.html
-
-config BR2_PKGSRC_PACKAGE_CHAT_SMIRK
-	bool "smirk-20080111nb1"
-	help
-	  Revival of the curses-based Rhapsody IRC client
-
-	  Smirk is a text console IRC client for UNIX-like operating systems.
-	  It is small, fast, portable, and easy to use.  Smirk sports a
-	  unique, intuitive menu-driven user interface.
-	  
-	  Smirk is a fork of the seemingly abandoned Rhapsody project.
-	  
-	  Available Features:
-	  
-	  * Multi server support.
-	  * Clean, easy to use menu driven user interface.
-	  * Favorite server, channel and user lists.
-	  * Ignore lists.
-	  * Configurable interface color themes.
-	  * Large file (over 2GB) support.
-	  * SOCKS proxy compatibility.
-	  
-	  Supported Protocols:
-	  
-	  * IRC (obviously)
-	  * DCC chat
-	  * DCC file transfers
-	  * CTCP
-	  * SOCKS4 and SOCKS5
-
-	  http://smirk.googlecode.com/
 
 config BR2_PKGSRC_PACKAGE_CHAT_PSI
 	bool "psi-0.14nb2"
@@ -1378,63 +1531,20 @@ config BR2_PKGSRC_PACKAGE_CHAT_PSI
 
 	  http://psi-im.org/
 
-config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_AOLIM
-	bool "p5-Net-AOLIM-1.61nb3"
+
+config BR2_PKGSRC_PACKAGE_CHAT_PY_XMPPPY
+	bool "py26-xmpppy-0.5.0rc1nb2"
 	help
+	  XMPP (Jabber) library for Python
+
 	  
-
-	  Object-Oriented interface to the AOL Instant Messenger TOC client protocol.
-
-	  http://www.phonon.net/pub/Net-AOLIM/
-
-config BR2_PKGSRC_PACKAGE_CHAT_P5_POE_FILTER_IRCD
-	bool "p5-POE-Filter-IRCD-2.42nb2"
-	help
-	  POE-based parser for the IRC protocol
-
-	  POE::Filter::IRCD provides a convenient way of parsing and creating IRC
-	  protocol lines.
-
-	  http://search.cpan.org/dist/POE-Filter-IRCD/
-
-config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_GOOFEY
-	bool "p5-Net-Goofey-1.5nb5"
-	help
-	  Perl module for communicating with a Goofey server
-
-	  This is a really simple module for communicating with a Goofey server.
+	  XMPPPY is an implementation of the XMPP (Jabber) protocols in
+	  Python.
 	  
-	  Goofey is a bit like IRC and a bit like ICQ and a bit like email, it's
-	  used mostly at Monash University.  See the Goofey web page at:
-	  http://www.cs.monash.edu.au/~tym/goofey.html
+	  It is similar to JABBERPY, but as a currently maintained project.
 
-	  http://notdoneliving.net/code/
+	  http://xmpppy.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN
-	bool "pidgin-2.10.0"
-	help
-	  Multi-protocol Instant Messaging client GTK frontend
-
-	  Pidgin is an instant messaging program for Windows, Linux, BSD, and other
-	  Unixes. You can talk to your friends using AIM, ICQ, Jabber/XMPP, MSN
-	  Messenger, Yahoo!, Bonjour, Gadu-Gadu, IRC, Novell GroupWise Messenger,
-	  QQ, Lotus Sametime, SILC, SIMPLE, and Zephyr.
-
-	  http://www.pidgin.im/
-
-config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_FACEBOOKCHAT
-	bool "pidgin-facebookchat-1.27nb10"
-	help
-	  Plugin for pidgin to support Facebook IM
-
-	  This is a Facebook chat plugin for Pidgin and libpurple messengers.
-	  It connects to the new Facebook Chat IM service without the need
-	  for an API key.
-	  
-	  Currently the plugin can log into the Facebook servers, grab the
-	  buddy list, and send/receive messages.
-
-	  http://code.google.com/p/pidgin-facebookchat/
 
 config BR2_PKGSRC_PACKAGE_CHAT_QUIRC
 	bool "quirc-0.9.84nb3"
@@ -1449,128 +1559,23 @@ config BR2_PKGSRC_PACKAGE_CHAT_QUIRC
 
 	  http://quirc.org/
 
-config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_ICB
-	bool "pidgin-icb-20070505nb12"
+
+config BR2_PKGSRC_PACKAGE_CHAT_RIECE
+	bool "riece-5.0.0nb1"
 	help
-	  ICB protocol plugin for the Pidgin instant messenger
+	  IRC client for Emacs
 
-	  This is an ICB protocol plugin for the Pidgin instant messenger.
-
-	  http://nic.com.pl/~alek/
-
-config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_LATEX
-	bool "pidgin-latex-1.2.1nb11"
-	help
-	  Plugin for pidgin to render LaTeX as images
-
-	  A plugin for Pidgin which translates LaTeX code into images in your
-	  IM conversation.
-
-	  http://sourceforge.net/projects/pidgin-latex/
-
-config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_LIBNOTIFY
-	bool "pidgin-libnotify-0.14nb9"
-	help
-	  Pidgin plugin that adds popup support
-
-	  This plugin adds a libnotify interface to pidgin, enabling popups much like
-	  guifications. It has some configuration options, to show popups when a buddy
-	  signs on, on new messages and on new conversations only.
+	  Riece is a redesign of the Liece IRC client.
 	  
-	  Don't forget to enable the plugin in Tools->Plugins.
-
-	  http://gaim-libnotify.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_OTR
-	bool "pidgin-otr-3.2.0nb11"
-	help
+	  Riece has many advanced features:
 	  
+	  + Can connect to multiple servers per session
+	  + Provide more sophisticated API
+	  + Reduced code size (total amount of code is about 5k lines)
+	  + 100% APEL free
 
-	  This is the OTR plugin for Pidgin.
-	  
-	  Off-the-Record (OTR) Messaging allows you to have private
-	  conversations over instant messaging by providing:
-	  
-	  Encryption
-	  No one else can read your instant messages.
-	  Authentication
-	  You are assured the correspondent is who you think it is.
-	  Deniability
-	  The messages you send do not have digital signatures that are
-	  checkable by a third party. Anyone can forge messages after a
-	  conversation to make them look like they came from you. However,
-	  during a conversation, your correspondent is assured the messages
-	  he sees are authentic and unmodified.
-	  Perfect forward secrecy
-	  If you lose control of your private keys, no previous conversation
-	  is compromised.
+	  http://www.nongnu.org/riece/
 
-	  http://www.cypherpunks.ca/otr/
-
-config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_IDLE
-	bool "telepathy-idle-0.1.8nb1"
-	help
-	  Full-featured IRC connection manager for Telepathy
-
-	  A full-featured IRC connection manager for Telepathy.
-
-	  http://telepathy.freedesktop.org/wiki/Components
-
-config BR2_PKGSRC_PACKAGE_CHAT_SPECTRUM
-	bool "spectrum-1.4.7nb3"
-	help
-	  XMPP transport/gateway based on libpurple
-
-	  spectrum is a XMPP transport using libpurple as a basis.
-	  
-	  It provides transports/gateways to a large number of libpurple supported
-	  IM systems, including AOL, Facebook, ICQ, IRC, Yahoo and MSN.
-
-	  http://spectrum.im/
-
-config BR2_PKGSRC_PACKAGE_CHAT_TZC
-	bool "tzc-2.6.15nb3"
-	help
-	  Back-end program for zephyr-mode
-
-	  Backend program for CMU zephyr-mode
-
-	  http://www.cs.cmu.edu/People/dkindred/zephyr/zephyr.html
-
-config BR2_PKGSRC_PACKAGE_CHAT_UNREALIRCD
-	bool "unrealircd-3.2.8.1nb1"
-	help
-	  Advanced IRC server with IPv6 and SSL support
-
-	  UnrealIRCd is an IRC server based on the branch of IRCu called Dreamforge,
-	  formerly used by the DALnet IRC Network. Since development started on it
-	  (around May 1999) many new features has been added, modified, and many bugs
-	  fixed. Unreal runs both on *nix platforms, Amiga & Windows 95/98/2k/NT.
-	  Some features to mention: Channel Halfops, No-color channel mode,
-	  Strip-colors channel mode, channelmode +q & +a - protect modes, Oper and
-	  Admin only channels, exception bans, Nokicks mode (channel and user), Flood
-	  limiter, Channel links, Host cloaking, Net* Tech and Co-Admin modes, Whois
-	  notifies, Foreign connects monitor, Oper suspend, G:Lines, T:Lines, channel
-	  restriction (people can only go to these channels if enabled), Trojan/DCC
-	  Deny, RPING/RPONG, Sethost family, Token in server<->server etc.
-	  FDlists/High Traffic Mode, SOCKS check on connect, Speeded up server
-	  synchs, limited WebTV Client support, /vhost, and many dreamforge
-	  optimations. UnrealIRCd is aimed to be an advanced, not an easy IRCd.
-	  
-	  Also includes SSL and IPv6 support.
-
-	  http://www.unrealircd.com/
-
-config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_LOGGER
-	bool "telepathy-logger-0.2.7nb3"
-	help
-	  telepathy logger module
-
-	  tp-logger is a headless Observer client that logs information received by the
-	  Telepathy framework. It features pluggable backends to log different sorts of
-	  messages, in different formats.
-
-	  http://telepathy.freedesktop.org/wiki/Logger
 
 config BR2_PKGSRC_PACKAGE_CHAT_ROXIRC
 	bool "roxirc-1.8nb1"
@@ -1598,6 +1603,177 @@ config BR2_PKGSRC_PACKAGE_CHAT_ROXIRC
 
 	  http://roxirc.lighter.net/
 
+
+config BR2_PKGSRC_PACKAGE_CHAT_RUBY_NET_IRC
+	bool "ruby19-net-irc-0.0.9"
+	help
+	  Ruby IRC library
+
+	  Ruby library for implementing IRC server and client
+
+	  http://lowreal.rubyforge.org/net-irc/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_SCROLLZ
+	bool "scrollz-1.9.5"
+	help
+	  Advanced IRC client based on ircII client
+
+	  ScrollZ is an advanced IRC client based on ircII client. It was
+	  developed on Linux, but can be compiled on variety of Unix platforms.
+
+	  http://www.scrollz.com/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_SILC_CLIENT
+	bool "silc-client-1.1.8nb2"
+	help
+	  
+
+	  SILC (Secure Internet Live Conferencing) is a protocol which provides
+	  secure conferencing services in the Internet over insecure channel.
+	  
+	  SILC superficially resembles IRC, although they are very different
+	  internally. SILC is much more than just about `encrypting the traffic'.
+	  That is easy enough to do with IRC and SSL hybrids, but even then the
+	  entire network cannot be secured, only part of it.
+	  
+	  SILC provides security services, such as sending private messages entirely
+	  secure; noone can see the message except you and the real receiver of the
+	  message. SILC also provides same functionality for channels; noone except
+	  those clients joined to the channel may see the messages destined to the
+	  channel. Communication between client and server is also secured with
+	  session keys and all commands, authentication data (such as passwords etc.)
+	  and other traffic is entirely secured. The entire network, and all parts of
+	  it, is secured.
+	  
+	  SILC has secure key exchange protocol that is used to create the session keys
+	  for each connection. SILC also provides strong authentication based on either
+	  passwords or public key authentication. All authentication data is always
+	  encrypted in the SILC network. Each connection has their own session keys,
+	  all channels have channel specific keys, and all private messages can be
+	  secured with private message specific keys.
+
+	  http://www.silcnet.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_SILC_CLIENT_ICB
+	bool "silc-client-icb-0.14nb14"
+	help
+	  silc-client plugin to access ICB networks
+
+	  silc-client-icb is a silc-client plugin that allows access to ICB (Internet
+	  Citizen's Band) networks.  The ICB protocol is almost dead now (superseded
+	  by IRC), but there are still some networks around that use it.
+
+	  http://www.silcnet.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_SILC_SERVER
+	bool "silc-server-1.1.18"
+	help
+	  
+
+	  SILC (Secure Internet Live Conferencing) is a protocol which provides
+	  secure conferencing services in the Internet over insecure channel.
+	  
+	  SILC superficially resembles IRC, although they are very different
+	  internally. SILC is much more than just about `encrypting the traffic'.
+	  That is easy enough to do with IRC and SSL hybrids, but even then the
+	  entire network cannot be secured, only part of it.
+	  
+	  SILC provides security services, such as sending private messages entirely
+	  secure; noone can see the message except you and the real receiver of the
+	  message. SILC also provides same functionality for channels; noone except
+	  those clients joined to the channel may see the messages destined to the
+	  channel. Communication between client and server is also secured with
+	  session keys and all commands, authentication data (such as passwords etc.)
+	  and other traffic is entirely secured. The entire network, and all parts of
+	  it, is secured.
+	  
+	  SILC has secure key exchange protocol that is used to create the session keys
+	  for each connection. SILC also provides strong authentication based on either
+	  passwords or public key authentication. All authentication data is always
+	  encrypted in the SILC network. Each connection has their own session keys,
+	  all channels have channel specific keys, and all private messages can be
+	  secured with private message specific keys.
+
+	  http://www.silcnet.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_SIRC
+	bool "sirc-2.211nb2"
+	help
+	  IRC client written and programmable in perl
+
+	  This is a simple (well, not so simple anymore *grin*) irc client,
+	  written in perl and C.
+	  
+	  It's divided in two parts, a dumb-mode (meaning, no full screen
+	  interface) client, dsirc, that can be used stand-alone, programmed in
+	  perl, and a separate split-screen front end in C, called ssfe.
+	  
+	  The main point of running this client is that you can get a reasonable
+	  ircII-like interface on an account with a properly installed perl
+	  interpreter, with the perl client taking about 55k (and it's usable on
+	  its own if you don't have access to a C compiler) and with the
+	  interface, once compiled, taking just another 30 or 40k. The two
+	  together, while lacking the huge complexity of ircII, make a very usable
+	  client. And if you know perl, you'll find you can do quite complicated
+	  and interesting things with sirc too :)
+	  
+	  See /usr/pkg/lib/sirc/README for more usage instructions, and see
+	  /usr/pkg/lib/sirc/PROGRAMMING for information on how to extend sirc.
+	  Some example scripts can be found in /usr/pkg/lib/sirc/scripts.
+
+	  http://www.iagora.com/~espel/sirc/sirc.html
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_SMIRK
+	bool "smirk-20080111nb1"
+	help
+	  Revival of the curses-based Rhapsody IRC client
+
+	  Smirk is a text console IRC client for UNIX-like operating systems.
+	  It is small, fast, portable, and easy to use.  Smirk sports a
+	  unique, intuitive menu-driven user interface.
+	  
+	  Smirk is a fork of the seemingly abandoned Rhapsody project.
+	  
+	  Available Features:
+	  
+	  * Multi server support.
+	  * Clean, easy to use menu driven user interface.
+	  * Favorite server, channel and user lists.
+	  * Ignore lists.
+	  * Configurable interface color themes.
+	  * Large file (over 2GB) support.
+	  * SOCKS proxy compatibility.
+	  
+	  Supported Protocols:
+	  
+	  * IRC (obviously)
+	  * DCC chat
+	  * DCC file transfers
+	  * CTCP
+	  * SOCKS4 and SOCKS5
+
+	  http://smirk.googlecode.com/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_SPECTRUM
+	bool "spectrum-1.4.7nb3"
+	help
+	  XMPP transport/gateway based on libpurple
+
+	  spectrum is a XMPP transport using libpurple as a basis.
+	  
+	  It provides transports/gateways to a large number of libpurple supported
+	  IM systems, including AOL, Facebook, ICQ, IRC, Yahoo and MSN.
+
+	  http://spectrum.im/
+
+
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_FARSIGHT
 	bool "telepathy-farsight-0.0.16nb2"
 	help
@@ -1609,16 +1785,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_FARSIGHT
 
 	  http://telepathy.freedesktop.org/doc/telepathy-farsight/
 
-config BR2_PKGSRC_PACKAGE_CHAT_VICQ
-	bool "vicq-0.4.1nb6"
-	help
-	  Simple icq client written in perl
-
-	  vICQ is simple ICQ client written in perl with look & feel of micq
-	  and works fine with v7 protocol of ICQ. It is based on Net::ICQ2000
-	  module written by Robin Fisher.
-
-	  http://gonzo.kiev.ua/projects/vicq.old/
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_GABBLE
 	bool "telepathy-gabble-0.11.10nb2"
@@ -1629,6 +1795,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_GABBLE
 	  chats and voice/video calls.
 
 	  http://telepathy.freedesktop.org/wiki/Components
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_GLIB
 	bool "telepathy-glib-0.14.3nb1"
@@ -1643,6 +1810,29 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_GLIB
 	  interface for applications.
 
 	  http://telepathy.freedesktop.org/wiki/Telepathy%20GLib
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_IDLE
+	bool "telepathy-idle-0.1.8nb1"
+	help
+	  Full-featured IRC connection manager for Telepathy
+
+	  A full-featured IRC connection manager for Telepathy.
+
+	  http://telepathy.freedesktop.org/wiki/Components
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_LOGGER
+	bool "telepathy-logger-0.2.7nb3"
+	help
+	  telepathy logger module
+
+	  tp-logger is a headless Observer client that logs information received by the
+	  Telepathy framework. It features pluggable backends to log different sorts of
+	  messages, in different formats.
+
+	  http://telepathy.freedesktop.org/wiki/Logger
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_MISSION_CONTROL
 	bool "telepathy-mission-control-4.67nb8"
@@ -1668,6 +1858,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_MISSION_CONTROL
 
 	  http://mission-control.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_MISSION_CONTROL5
 	bool "telepathy-mission-control5-5.7.9nb1"
 	help
@@ -1692,29 +1883,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_MISSION_CONTROL5
 
 	  http://mission-control.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_WEECHAT
-	bool "weechat-0.3.4nb1"
-	help
-	  Lightweight and user friendly curses based IRC client
-
-	  WeeChat (Wee Enhanced Environment for Chat) is a fast and light IRC
-	  client. Everything can be done with a keyboard, and it is customizable
-	  and extensible with scripts.
-
-	  http://www.weechat.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_XARIC
-	bool "xaric-0.12.1nb2"
-	help
-	  IRC client similar to BitchX and ircII
-
-	  Xaric is a UNIX irc client similer to BitchX or ircII. I would impress you
-	  with a list of features, but since it has no impressive features (and lacks
-	  a few important ones) that probably is not a good idea. The whole reason for
-	  Xaric was to remove all of the bogus, broken crap and silly features from
-	  BitchX and have a nice colorful client.
-
-	  http://rexfeany.com/software/xaric/
 
 config BR2_PKGSRC_PACKAGE_CHAT_TIK
 	bool "tik-0.90nb2"
@@ -1726,15 +1894,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_TIK
 
 	  http://tik.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_YSM
-	bool "ysm-2.8.1nb1"
-	help
-	  The 'You Sick Me' terminal based ICQ client
-
-	  YSM is an ICQ v7 protocol compatible terminal based ICQ client.
-	  YSM stands for 'You Sick Me'.
-
-	  http://ysmv7.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_CHAT_TIRC
 	bool "tirc-1.2nb3"
@@ -1746,6 +1905,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TIRC
 	  many more.
 
 	  
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_TKABBER
 	bool "tkabber-0.11.1"
@@ -1759,6 +1919,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TKABBER
 
 	  http://tkabber.jabber.ru/en/
 
+
 config BR2_PKGSRC_PACKAGE_CHAT_TKICB
 	bool "tkicb-2.1.4nb3"
 	help
@@ -1768,15 +1929,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_TKICB
 
 	  http://www.icb.net/
 
-config BR2_PKGSRC_PACKAGE_CHAT_XCHAT
-	bool "xchat-2.8.8nb2"
-	help
-	  
-
-	  XChat is a graphical IRC client that runs on UNIX-like systems.
-	  It uses the GTK 2 library as its graphics toolkit.
-
-	  http://xchat.org/
 
 config BR2_PKGSRC_PACKAGE_CHAT_TKIRC
 	bool "tkirc-1.202nb1"
@@ -1793,6 +1945,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TKIRC
 
 	  http://web.archive.org/web/20051221091126/http://netsplit.de/tkirc1/
 
+
 config BR2_PKGSRC_PACKAGE_CHAT_TKIRC2
 	bool "tkirc2-2.46nb2"
 	help
@@ -1808,6 +1961,91 @@ config BR2_PKGSRC_PACKAGE_CHAT_TKIRC2
 
 	  http://netsplit.de/tkirc2/
 
+
+config BR2_PKGSRC_PACKAGE_CHAT_TZC
+	bool "tzc-2.6.15nb3"
+	help
+	  Back-end program for zephyr-mode
+
+	  Backend program for CMU zephyr-mode
+
+	  http://www.cs.cmu.edu/People/dkindred/zephyr/zephyr.html
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_UNREALIRCD
+	bool "unrealircd-3.2.8.1nb1"
+	help
+	  Advanced IRC server with IPv6 and SSL support
+
+	  UnrealIRCd is an IRC server based on the branch of IRCu called Dreamforge,
+	  formerly used by the DALnet IRC Network. Since development started on it
+	  (around May 1999) many new features has been added, modified, and many bugs
+	  fixed. Unreal runs both on *nix platforms, Amiga & Windows 95/98/2k/NT.
+	  Some features to mention: Channel Halfops, No-color channel mode,
+	  Strip-colors channel mode, channelmode +q & +a - protect modes, Oper and
+	  Admin only channels, exception bans, Nokicks mode (channel and user), Flood
+	  limiter, Channel links, Host cloaking, Net* Tech and Co-Admin modes, Whois
+	  notifies, Foreign connects monitor, Oper suspend, G:Lines, T:Lines, channel
+	  restriction (people can only go to these channels if enabled), Trojan/DCC
+	  Deny, RPING/RPONG, Sethost family, Token in server<->server etc.
+	  FDlists/High Traffic Mode, SOCKS check on connect, Speeded up server
+	  synchs, limited WebTV Client support, /vhost, and many dreamforge
+	  optimations. UnrealIRCd is aimed to be an advanced, not an easy IRCd.
+	  
+	  Also includes SSL and IPv6 support.
+
+	  http://www.unrealircd.com/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_VICQ
+	bool "vicq-0.4.1nb6"
+	help
+	  Simple icq client written in perl
+
+	  vICQ is simple ICQ client written in perl with look & feel of micq
+	  and works fine with v7 protocol of ICQ. It is based on Net::ICQ2000
+	  module written by Robin Fisher.
+
+	  http://gonzo.kiev.ua/projects/vicq.old/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_WEECHAT
+	bool "weechat-0.3.4nb1"
+	help
+	  Lightweight and user friendly curses based IRC client
+
+	  WeeChat (Wee Enhanced Environment for Chat) is a fast and light IRC
+	  client. Everything can be done with a keyboard, and it is customizable
+	  and extensible with scripts.
+
+	  http://www.weechat.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_XARIC
+	bool "xaric-0.12.1nb2"
+	help
+	  IRC client similar to BitchX and ircII
+
+	  Xaric is a UNIX irc client similer to BitchX or ircII. I would impress you
+	  with a list of features, but since it has no impressive features (and lacks
+	  a few important ones) that probably is not a good idea. The whole reason for
+	  Xaric was to remove all of the bogus, broken crap and silly features from
+	  BitchX and have a nice colorful client.
+
+	  http://rexfeany.com/software/xaric/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_XCHAT
+	bool "xchat-2.8.8nb2"
+	help
+	  
+
+	  XChat is a graphical IRC client that runs on UNIX-like systems.
+	  It uses the GTK 2 library as its graphics toolkit.
+
+	  http://xchat.org/
+
+
 config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_PERL
 	bool "xchat-perl-2.8.8nb2"
 	help
@@ -1818,6 +2056,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_PERL
 
 	  http://xchat.org/
 
+
 config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_PYTHON
 	bool "xchat-python-2.8.8nb1"
 	help
@@ -1827,6 +2066,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_PYTHON
 	  This is a Python scripting plugin for XChat.
 
 	  http://xchat.org/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_SYSTRAY_INTEGRATION
 	bool "xchat-systray-integration-2.4.5nb10"
@@ -1839,6 +2079,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_SYSTRAY_INTEGRATION
 
 	  http://www.patriziobassi.it/blight/index.php?act
 
+
 config BR2_PKGSRC_PACKAGE_CHAT_YMESSENGER
 	bool "ymessenger-1.0.4"
 	help
@@ -1849,6 +2090,40 @@ config BR2_PKGSRC_PACKAGE_CHAT_YMESSENGER
 	  they're sent.
 
 	  http://messenger.yahoo.com/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_YSM
+	bool "ysm-2.8.1nb1"
+	help
+	  The 'You Sick Me' terminal based ICQ client
+
+	  YSM is an ICQ v7 protocol compatible terminal based ICQ client.
+	  YSM stands for 'You Sick Me'.
+
+	  http://ysmv7.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_ZENICB
+	bool "zenicb-19981202nb4"
+	help
+	  ICB client for Emacs
+
+	  ZenICB is an ICB client for Emacs.  It allows the user to waste
+	  unspeakable amounts of time.
+
+	  http://www.nongnu.org/riece/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_ZENIRC
+	bool "zenirc-2.112nb2"
+	help
+	  IRC client for Emacs
+
+	  ZenIRC is an IRC client for Emacs.  It allows the user to waste
+	  unspeakable amounts of time.
+
+	  http://www.splode.com/~friedman/software/emacs-lisp/zenirc/
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_ZEPHYR
 	bool "zephyr-20010518nb7"
@@ -1863,6 +2138,18 @@ config BR2_PKGSRC_PACKAGE_CHAT_ZEPHYR
 	  (transient X windows) or as text on a terminal.
 
 	  http://web.mit.edu/olh/Zephyr/index.html
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_ZEPHYR_MODE
+	bool "zephyr-mode-2.5.20nb3"
+	help
+	  CMU Emacs-based Zephyr client
+
+	  CMU zephyr-mode; a zephyr client which runs inside emacs.
+	  Very extensible and tweakable; poorly documented.
+
+	  http://www.cs.cmu.edu/People/dkindred/zephyr/zephyr.html
+
 
 config BR2_PKGSRC_PACKAGE_CHAT_ZIRCON
 	bool "zircon-1.18.245nb1"
@@ -1885,158 +2172,4 @@ config BR2_PKGSRC_PACKAGE_CHAT_ZIRCON
 
 	  http://catless.ncl.ac.uk/Programs/Zircon/
 
-config BR2_PKGSRC_PACKAGE_CHAT_LICQ_CORE
-	bool "licq-core-1.3.5nb1"
-	help
-	  ICQ client with plugin support
-
-	  Licq is a multi-threaded ICQ clone written mostly in C++. It uses
-	  an extensive plugin system to manage many different functions. The
-	  main gui is written using the Qt widget set. Licq is distributed
-	  under GPL with some special QPL exceptions for Qt.
-	  
-	  Several GUI plugins for console, Qt etc. are available as separate
-	  packages.
-
-	  http://www.licq.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_LICQ_GUI_CONSOLE
-	bool "licq-gui-console-1.3.5"
-	help
-	  Curses GUI for licq
-
-	  Licq Console Plugin
-	  
-	  This is a console ui plugin for the Licq ICQ client.  It is considered beta
-	  at this point and does not have all the features that the qt-gui supports,
-	  however does offer a number of really cool text-mode things.  Multiple windows,
-	  contact list pane, log window...
-	  
-	  Running is simply a matter of running licq with the "-p console" switch.
-	  Remember that Licq will save the plugin being run so after running
-	  "licq -p console" once, it will always run with this plugin.  Hence when
-	  you want to go back to the gui, use "licq -p qt-gui" the first time at least.
-
-	  http://www.licq.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_NAVI2CH
-	bool "navi2ch-1.8.4"
-	help
-	  2ch BBS browser for Emacs
-
-	  Navi2ch is a viewer program dedicated to chatting in 2ch.net - the biggest,
-	  most famous, influential BBS in Japan.
-	  
-	  Although this software is really well-written, it's worth noting that most
-	  opinions/informations found in 2ch.net are next to senseless.  Thus, Good
-	  NetBSD users are really encouraged not to devote themselves to 2ch! :-)
-
-	  http://navi2ch.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_CHAT_IRCHAT_PJ
-	bool "irchat-pj-2.4.24.22nb3"
-	help
-	  Emacs lisp interface to Internet Relay Chat
-
-	  irchat is the IRC client based on Emacs lisp.
-	  
-	  irchat-PJ Project modify the irchat client.
-	  - Support Emacs-20
-	  - Some bugfix for DreamCastIRC client
-
-	  http://gouketsu.net/irchat-pj/
-
-config BR2_PKGSRC_PACKAGE_CHAT_PY_XMPPPY
-	bool "py26-xmpppy-0.5.0rc1nb2"
-	help
-	  XMPP (Jabber) library for Python
-
-	  
-	  XMPPPY is an implementation of the XMPP (Jabber) protocols in
-	  Python.
-	  
-	  It is similar to JABBERPY, but as a currently maintained project.
-
-	  http://xmpppy.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_CHAT_RIECE
-	bool "riece-5.0.0nb1"
-	help
-	  IRC client for Emacs
-
-	  Riece is a redesign of the Liece IRC client.
-	  
-	  Riece has many advanced features:
-	  
-	  + Can connect to multiple servers per session
-	  + Provide more sophisticated API
-	  + Reduced code size (total amount of code is about 5k lines)
-	  + 100% APEL free
-
-	  http://www.nongnu.org/riece/
-
-config BR2_PKGSRC_PACKAGE_CHAT_RUBY_NET_IRC
-	bool "ruby19-net-irc-0.0.9"
-	help
-	  Ruby IRC library
-
-	  Ruby library for implementing IRC server and client
-
-	  http://lowreal.rubyforge.org/net-irc/
-
-config BR2_PKGSRC_PACKAGE_CHAT_LICQ_GUI_QT
-	bool "licq-gui-qt-1.3.5nb5"
-	help
-	  Qt GUI for licq
-
-	  START:
-	  licq -p qt-gui
-	  
-	  Remember that Licq will save the plugin being run so after running
-	  "licq -p qt-gui" once, it will always run with this plugin.  Hence
-	  when you want to go back to the console version, use "licq -p
-	  console" the first time at least.
-	  
-	  Using licq is very straight-forward.  To access any of the options, just
-	  right click on a user and select the relevant command, or double click on
-	  the user.  A window will open containing a tab dialog with all the
-	  possible things to do.  In this way you can read a new message, check user
-	  info, and send a message all from the same window at the same time.
-	  One key feature of licq is the network status window, which can be viewed
-	  by selecting "Show Network Window" under the "System" menu.  This screen
-	  will show you exactly what is occuring at the protocol level.
-	  The menu option "<your alias>" will allow you to view your own settings
-	  and to check system messages.
-
-	  http://www.licq.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_ZENICB
-	bool "zenicb-19981202nb4"
-	help
-	  ICB client for Emacs
-
-	  ZenICB is an ICB client for Emacs.  It allows the user to waste
-	  unspeakable amounts of time.
-
-	  http://www.licq.org/
-
-config BR2_PKGSRC_PACKAGE_CHAT_ZENIRC
-	bool "zenirc-2.112nb2"
-	help
-	  IRC client for Emacs
-
-	  ZenIRC is an IRC client for Emacs.  It allows the user to waste
-	  unspeakable amounts of time.
-
-	  http://www.splode.com/~friedman/software/emacs-lisp/zenirc/
-
-config BR2_PKGSRC_PACKAGE_CHAT_ZEPHYR_MODE
-	bool "zephyr-mode-2.5.20nb3"
-	help
-	  CMU Emacs-based Zephyr client
-
-	  CMU zephyr-mode; a zephyr client which runs inside emacs.
-	  Very extensible and tweakable; poorly documented.
-
-	  http://www.cs.cmu.edu/People/dkindred/zephyr/zephyr.html
 

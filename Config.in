@@ -369,8 +369,6 @@ source "toolchain/Config.in"
 
 source "target/generic/Config.in"
 
-source "pkgsrc/Config.in"
-
 source "package/Config.in"
 
 source "package/Config.in.host"
@@ -380,3 +378,5 @@ source "fs/Config.in"
 source "boot/Config.in"
 
 source "linux/Config.in"
+
+source "pkgsrc/Config.in"

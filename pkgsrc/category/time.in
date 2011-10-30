@@ -13,6 +13,7 @@ config BR2_PKGSRC_PACKAGE_TIME_ANACRON
 
 	  http://anacron.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_TIME_ASCLOCK
 	bool "asclock-1.0nb1"
 	help
@@ -24,6 +25,7 @@ config BR2_PKGSRC_PACKAGE_TIME_ASCLOCK
 	  shape extension to X-Windows.
 
 	  
+
 
 config BR2_PKGSRC_PACKAGE_TIME_ASCLOCK_GTK
 	bool "asclock-gtk-2.1.10nb5"
@@ -38,6 +40,7 @@ config BR2_PKGSRC_PACKAGE_TIME_ASCLOCK_GTK
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_TIME_ASCLOCK_XLIB
 	bool "asclock-xlib-2.0b11nb1"
 	help
@@ -50,6 +53,7 @@ config BR2_PKGSRC_PACKAGE_TIME_ASCLOCK_XLIB
 	  This version of asclock is an Xlib application.
 
 	  
+
 
 config BR2_PKGSRC_PACKAGE_TIME_BBDATE
 	bool "bbdate-0.2.4nb1"
@@ -64,6 +68,7 @@ config BR2_PKGSRC_PACKAGE_TIME_BBDATE
 
 	  http://bbtools.sourceforge.net/download.php?file
 
+
 config BR2_PKGSRC_PACKAGE_TIME_CAIRO_CLOCK
 	bool "cairo-clock-0.3.3nb11"
 	help
@@ -75,6 +80,7 @@ config BR2_PKGSRC_PACKAGE_TIME_CAIRO_CLOCK
 	  to produce a time display with pretty pixels.
 
 	  http://macslow.thepimp.net/?page_id
+
 
 config BR2_PKGSRC_PACKAGE_TIME_CAL
 	bool "cal-3.5nb1"
@@ -122,6 +128,7 @@ config BR2_PKGSRC_PACKAGE_TIME_CAL
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_TIME_CARDBOARD_SCHEDULE
 	bool "cardboard-schedule-1.13nb1"
 	help
@@ -140,6 +147,7 @@ config BR2_PKGSRC_PACKAGE_TIME_CARDBOARD_SCHEDULE
 
 	  http://cardboard.nu/docs/software.html
 
+
 config BR2_PKGSRC_PACKAGE_TIME_CATCLOCK
 	bool "catclock-0.0nb5"
 	help
@@ -155,6 +163,7 @@ config BR2_PKGSRC_PACKAGE_TIME_CATCLOCK
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_TIME_DCLOCK
 	bool "dclock-4nb1"
 	help
@@ -164,6 +173,7 @@ config BR2_PKGSRC_PACKAGE_TIME_DCLOCK
 	  that, it's a pretty bare-bones clock.
 
 	  
+
 
 config BR2_PKGSRC_PACKAGE_TIME_DEVTODO
 	bool "devtodo-0.1.20nb3"
@@ -182,6 +192,7 @@ config BR2_PKGSRC_PACKAGE_TIME_DEVTODO
 
 	  http://swapoff.org/DevTodo
 
+
 config BR2_PKGSRC_PACKAGE_TIME_EMICLOCK
 	bool "emiclock-2.0.2nb5"
 	help
@@ -191,54 +202,6 @@ config BR2_PKGSRC_PACKAGE_TIME_EMICLOCK
 
 	  
 
-config BR2_PKGSRC_PACKAGE_TIME_GNOTIME
-	bool "gnotime-2.3.0nb12"
-	help
-	  Time tracker for GNOME2
-
-	  The Gnome Time Tracker is a to-do list/diary/journal desktop utility
-	  tool that can track the amount of time spent on projects, and,
-	  among other things, generate reports and invoices based on that
-	  time. It's being used it to keep shopping lists, organize ideas,
-	  track bug reports, keep a diary of activities, do some blogging,
-	  provide weekly status reports to management, and even as a consultant
-	  billing system.
-
-	  http://gttr.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_TIME_GNUTIME
-	bool "gnutime-1.7"
-	help
-	  Report user, system, and real time used by a process
-
-	  The time utility executes and measures the CPU, time, and memory
-	  resources used, such as pagefaults, swaps, memory, and user, system,
-	  and real time used by a process.
-	  
-	  GNU time can format the output in arbitrary ways by using a
-	  printf-style format string to include various resource measurements.
-
-	  http://directory.fsf.org/GNU/time.html
-
-config BR2_PKGSRC_PACKAGE_TIME_GNYACLOCK
-	bool "gnyaclock-20001218nb2"
-	help
-	  Accessory with Bezier curve
-
-	  gnyaclock is an accessory with Bezier curve.  Its curve has something to do
-	  with the present time.
-
-	  http://www.is.titech.ac.jp/~sadayosi/lab/h-takasi/h.html
-
-config BR2_PKGSRC_PACKAGE_TIME_GRDC
-	bool "grdc-20031019"
-	help
-	  Grand digital clock from FreeBSD-current games
-
-	  This is a GRand Digital Clock (GRDC) from the set of FreeBSD-current
-	  games, patched to support old curses implementation.
-
-	  http://www.FreeBSD.org/
 
 config BR2_PKGSRC_PACKAGE_TIME_ETM
 	bool "etm-877"
@@ -268,6 +231,7 @@ config BR2_PKGSRC_PACKAGE_TIME_ETM
 
 	  http://www.duke.edu/~dgraham/ETM/
 
+
 config BR2_PKGSRC_PACKAGE_TIME_EVOLUTION_WEBCAL
 	bool "evolution-webcal-2.32.0nb3"
 	help
@@ -278,6 +242,7 @@ config BR2_PKGSRC_PACKAGE_TIME_EVOLUTION_WEBCAL
 	  calendar simply by clicking on a 'webcal:' URL.
 
 	  http://www.novell.com/products/desktop/features/evolution.html
+
 
 config BR2_PKGSRC_PACKAGE_TIME_GCAL
 	bool "gcal-3.6nb1"
@@ -297,15 +262,6 @@ config BR2_PKGSRC_PACKAGE_TIME_GCAL
 
 	  http://www.gnu.org/software/gcal/
 
-config BR2_PKGSRC_PACKAGE_TIME_GTODO
-	bool "gtodo-0.14nb20"
-	help
-	  To-do list manager for the GNOME desktop
-
-	  Gtodo is a to-do list manager written for use with the GNOME desktop.
-	  It tries to follow the HIG and GNOME policies as well as possible.
-
-	  http://www.sarine.nl/gnome-task-list-manager
 
 config BR2_PKGSRC_PACKAGE_TIME_GCHORE
 	bool "gchore-1.0nb9"
@@ -317,6 +273,106 @@ config BR2_PKGSRC_PACKAGE_TIME_GCHORE
 	  repeating tasks, such as taking out the garbage on mondays.
 
 	  http://gchore.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_GDESKCAL
+	bool "gdeskcal-0.57.1nb11"
+	help
+	  Desktop calendar
+
+	  gDeskCal is a cute little eye-candy calendar for your desktop. It features
+	  transparency with smooth alpha-blending and its appearance can be changed
+	  completely by using skins. It can also read and display your Evolution
+	  appointments, if available.
+
+	  http://www.pycage.de/\
+
+
+config BR2_PKGSRC_PACKAGE_TIME_GLCLOCK
+	bool "glclock-6.0b6.0nb3"
+	help
+	  OpenGL-based pocket watch
+
+	  OpenGL pocket watch by Masaki Kawase.
+	  The look is a matter of taste, but it's a good graphics benchmark in any case.
+
+	  http://www.daionet.gr.jp/~masa/glclock/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_GLOBE
+	bool "globe-19940326nb1"
+	help
+	  Display the currently-lighted face of Earth in ASCII
+
+	  globe, yet another cute Jef Poskanzer hack, displays the currently-lighted
+	  face of Earth in ASCII. This is a twin of phoon by the same author.
+
+	  http://www.acme.com/software/globe/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_GNOTIME
+	bool "gnotime-2.3.0nb12"
+	help
+	  Time tracker for GNOME2
+
+	  The Gnome Time Tracker is a to-do list/diary/journal desktop utility
+	  tool that can track the amount of time spent on projects, and,
+	  among other things, generate reports and invoices based on that
+	  time. It's being used it to keep shopping lists, organize ideas,
+	  track bug reports, keep a diary of activities, do some blogging,
+	  provide weekly status reports to management, and even as a consultant
+	  billing system.
+
+	  http://gttr.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_GNUTIME
+	bool "gnutime-1.7"
+	help
+	  Report user, system, and real time used by a process
+
+	  The time utility executes and measures the CPU, time, and memory
+	  resources used, such as pagefaults, swaps, memory, and user, system,
+	  and real time used by a process.
+	  
+	  GNU time can format the output in arbitrary ways by using a
+	  printf-style format string to include various resource measurements.
+
+	  http://directory.fsf.org/GNU/time.html
+
+
+config BR2_PKGSRC_PACKAGE_TIME_GNYACLOCK
+	bool "gnyaclock-20001218nb2"
+	help
+	  Accessory with Bezier curve
+
+	  gnyaclock is an accessory with Bezier curve.  Its curve has something to do
+	  with the present time.
+
+	  http://www.is.titech.ac.jp/~sadayosi/lab/h-takasi/h.html
+
+
+config BR2_PKGSRC_PACKAGE_TIME_GRDC
+	bool "grdc-20031019"
+	help
+	  Grand digital clock from FreeBSD-current games
+
+	  This is a GRand Digital Clock (GRDC) from the set of FreeBSD-current
+	  games, patched to support old curses implementation.
+
+	  http://www.FreeBSD.org/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_GTODO
+	bool "gtodo-0.14nb20"
+	help
+	  To-do list manager for the GNOME desktop
+
+	  Gtodo is a to-do list manager written for use with the GNOME desktop.
+	  It tries to follow the HIG and GNOME policies as well as possible.
+
+	  http://www.sarine.nl/gnome-task-list-manager
+
 
 config BR2_PKGSRC_PACKAGE_TIME_GTODO_APPLET
 	bool "gtodo-applet-0.1nb25"
@@ -331,37 +387,62 @@ config BR2_PKGSRC_PACKAGE_TIME_GTODO_APPLET
 
 	  http://qballcow.nl/index.php?s
 
-config BR2_PKGSRC_PACKAGE_TIME_GDESKCAL
-	bool "gdeskcal-0.57.1nb11"
+
+config BR2_PKGSRC_PACKAGE_TIME_HAMSTER_APPLET
+	bool "hamster-applet-2.28.1nb7"
 	help
-	  Desktop calendar
+	  Time tracking applet for GNOME
 
-	  gDeskCal is a cute little eye-candy calendar for your desktop. It features
-	  transparency with smooth alpha-blending and its appearance can be changed
-	  completely by using skins. It can also read and display your Evolution
-	  appointments, if available.
+	  This applet allows you to keep track on where are you spending your
+	  time.
 
-	  http://www.pycage.de/\
+	  http://projecthamster.wordpress.com/
 
-config BR2_PKGSRC_PACKAGE_TIME_GLCLOCK
-	bool "glclock-6.0b6.0nb3"
+
+config BR2_PKGSRC_PACKAGE_TIME_HEBCAL
+	bool "hebcal-3.7"
 	help
-	  OpenGL-based pocket watch
+	  Perpetual Hebrew calendar
 
-	  OpenGL pocket watch by Masaki Kawase.
-	  The look is a matter of taste, but it's a good graphics benchmark in any case.
+	  Hebcal is a program which prints out the days in the Jewish calendar
+	  for a given gregorian year.  Hebcal is fairly flexible in terms of which
+	  events in the Jewish calendar it displays.  Each of the following can
+	  be individualy turned on or off:
+	  
+	  The Hebrew date
+	  Jewish Holdiays (including Yom Ha'atzmaut and Yom HaShoah etc.)
+	  The weekly Sedrah
+	  The day of the week
+	  The days of the Omer
 
-	  http://www.daionet.gr.jp/~masa/glclock/
+	  http://hebcal.sourceforge.net/
 
-config BR2_PKGSRC_PACKAGE_TIME_GLOBE
-	bool "globe-19940326nb1"
+
+config BR2_PKGSRC_PACKAGE_TIME_HEIRLOOM_DATE
+	bool "heirloom-date-070715"
 	help
-	  Display the currently-lighted face of Earth in ASCII
+	  
 
-	  globe, yet another cute Jef Poskanzer hack, displays the currently-lighted
-	  face of Earth in ASCII. This is a twin of phoon by the same author.
+	  This package provides 'date' utility.
 
-	  http://www.acme.com/software/globe/
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_ICAL
+	bool "ical-2.3.1nb3"
+	help
+	  Calendar application
+
+	  Ical is a Tk-based calendar program for X11 with the following features:
+	  * Calendar items can be created, edited and deleted easily.
+	  * Items can be made to repeat in various ways.
+	  * Ical will post reminders for upcoming appointments.
+	  * Ical can print and list item occurrences.
+	  * An ical calendar can include other calendars.
+	  * Ical calendars can be shared by different users.
+
+	  http://www.annexia.org/freeware/ical
+
 
 config BR2_PKGSRC_PACKAGE_TIME_ICAL2REM
 	bool "ical2rem-0.5.2"
@@ -374,15 +455,6 @@ config BR2_PKGSRC_PACKAGE_TIME_ICAL2REM
 
 	  http://jalcorn.net/
 
-config BR2_PKGSRC_PACKAGE_TIME_HAMSTER_APPLET
-	bool "hamster-applet-2.28.1nb7"
-	help
-	  Time tracking applet for GNOME
-
-	  This applet allows you to keep track on where are you spending your
-	  time.
-
-	  http://projecthamster.wordpress.com/
 
 config BR2_PKGSRC_PACKAGE_TIME_JDAY
 	bool "jday-1.3"
@@ -403,6 +475,7 @@ config BR2_PKGSRC_PACKAGE_TIME_JDAY
 
 	  http://jday.sourceforge.net/
 
+
 config BR2_PKGSRC_PACKAGE_TIME_KRONOLITH
 	bool "kronolith-2.3nb1"
 	help
@@ -415,6 +488,7 @@ config BR2_PKGSRC_PACKAGE_TIME_KRONOLITH
 
 	  http://www.horde.org/kronolith/
 
+
 config BR2_PKGSRC_PACKAGE_TIME_LEAPSUNPACK
 	bool "leapsunpack-0.05"
 	help
@@ -426,6 +500,7 @@ config BR2_PKGSRC_PACKAGE_TIME_LEAPSUNPACK
 
 	  http://su.bze.ro/software/
 
+
 config BR2_PKGSRC_PACKAGE_TIME_LIBICAL
 	bool "libical-0.44"
 	help
@@ -434,6 +509,7 @@ config BR2_PKGSRC_PACKAGE_TIME_LIBICAL
 	  LIBICAL -- an implementation of iCalendar protocols and data formats
 
 	  http://freeassociation.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_TIME_LMCLOCK
 	bool "lmclock-1.2nb1"
@@ -449,33 +525,6 @@ config BR2_PKGSRC_PACKAGE_TIME_LMCLOCK
 
 	  http://pantransit.reptiles.org/prog/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATA_ICAL
-	bool "p5-Data-ICal-0.16nb2"
-	help
-	  
-
-	  Data::ICal is a straightforward generator for iCalendar (RFC 2445) files, such
-	  as those used in Apple's iCal.
-
-	  http://search.cpan.org/dist/Data-ICal
-
-config BR2_PKGSRC_PACKAGE_TIME_HEBCAL
-	bool "hebcal-3.7"
-	help
-	  Perpetual Hebrew calendar
-
-	  Hebcal is a program which prints out the days in the Jewish calendar
-	  for a given gregorian year.  Hebcal is fairly flexible in terms of which
-	  events in the Jewish calendar it displays.  Each of the following can
-	  be individualy turned on or off:
-	  
-	  The Hebrew date
-	  Jewish Holdiays (including Yom Ha'atzmaut and Yom HaShoah etc.)
-	  The weekly Sedrah
-	  The day of the week
-	  The days of the Omer
-
-	  http://hebcal.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_TIME_LOGTIME
 	bool "logtime-1.2"
@@ -490,29 +539,6 @@ config BR2_PKGSRC_PACKAGE_TIME_LOGTIME
 
 	  
 
-config BR2_PKGSRC_PACKAGE_TIME_HEIRLOOM_DATE
-	bool "heirloom-date-070715"
-	help
-	  
-
-	  This package provides 'date' utility.
-
-	  http://heirloom.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_TIME_ICAL
-	bool "ical-2.3.1nb3"
-	help
-	  Calendar application
-
-	  Ical is a Tk-based calendar program for X11 with the following features:
-	  * Calendar items can be created, edited and deleted easily.
-	  * Items can be made to repeat in various ways.
-	  * Ical will post reminders for upcoming appointments.
-	  * Ical can print and list item occurrences.
-	  * An ical calendar can include other calendars.
-	  * Ical calendars can be shared by different users.
-
-	  http://www.annexia.org/freeware/ical
 
 config BR2_PKGSRC_PACKAGE_TIME_OCAML_CALENDAR
 	bool "ocaml-calendar-2.0.4"
@@ -523,14 +549,6 @@ config BR2_PKGSRC_PACKAGE_TIME_OCAML_CALENDAR
 
 	  http://www.lri.fr/~signoles/prog.en.html/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATA_ICAL_DATETIME
-	bool "p5-Data-ICal-DateTime-0.7nb3"
-	help
-	  Convenience methods for using Data::ICal with DateTime
-
-	  Convenience methods for using Data::ICal with DateTime.
-
-	  http://search.cpan.org/dist/Data-ICal-DateTime
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_CALENDAR_SIMPLE
 	bool "p5-Calendar-Simple-1.21nb2"
@@ -541,14 +559,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_CALENDAR_SIMPLE
 
 	  http://search.cpan.org/dist/Calendar-Simple/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_EVENT_RECURRENCE
-	bool "p5-DateTime-Event-Recurrence-0.16nb3"
-	help
-	  DateTime::Set extension to create basic recurrence sets
-
-	  This module aims to support basic recurrences, such as 'daily'.
-
-	  http://search.cpan.org/dist/DateTime-Event-Recurrence
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_CONVERT_NLS_DATE_FORMAT
 	bool "p5-Convert-NLS_DATE_FORMAT-0.02nb1"
@@ -560,6 +570,28 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_CONVERT_NLS_DATE_FORMAT
 
 	  http://search.cpan.org/dist/Convert-NLS_DATE_FORMAT/
 
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATA_ICAL
+	bool "p5-Data-ICal-0.16nb2"
+	help
+	  
+
+	  Data::ICal is a straightforward generator for iCalendar (RFC 2445) files, such
+	  as those used in Apple's iCal.
+
+	  http://search.cpan.org/dist/Data-ICal
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATA_ICAL_DATETIME
+	bool "p5-Data-ICal-DateTime-0.7nb3"
+	help
+	  Convenience methods for using Data::ICal with DateTime
+
+	  Convenience methods for using Data::ICal with DateTime.
+
+	  http://search.cpan.org/dist/Data-ICal-DateTime
+
+
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATE_ICAL
 	bool "p5-Date-ICal-2.678"
 	help
@@ -570,23 +602,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATE_ICAL
 
 	  http://search.cpan.org/dist/Date-ICal/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_BUILDER
-	bool "p5-DateTime-Format-Builder-0.8000nb2"
-	help
-	  Create DateTime parser classes and objects
-
-	  DateTime::Format::Builder creates DateTime parsers. Many string
-	  formats of dates and times are simple and just require a basic
-	  regular expression to extract the relevant information. Builder
-	  provides a simple way to do this without writing reams of structural
-	  code.
-	  
-	  Builder provides a number of methods, most of which you'll never
-	  need, or at least rarely need. They're provided more for exposing
-	  of the module's innards to any subclasses, or for when you need to
-	  do something slightly beyond what I expected.
-
-	  http://search.cpan.org/~drolsky/DateTime-Format-Builder/
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATE_LEAPYEAR
 	bool "p5-Date-Leapyear-1.72nb1"
@@ -598,29 +613,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATE_LEAPYEAR
 
 	  http://search.cpan.org/dist/Date-Leapyear/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_MYSQL
-	bool "p5-DateTime-Format-MySQL-0.04nb4"
-	help
-	  Parse and format MySQL dates and times
-
-	  This module understands the formats used by MySQL for its DATE,
-	  DATETIME, TIME, and TIMESTAMP data types. It can be used to parse
-	  these formats in order to create DateTime objects, and it can take
-	  a DateTime object and produce a string representing it in the MySQL
-	  format.
-
-	  http://search.cpan.org/dist/DateTime-Format-MySQL/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_DATEMANIP
-	bool "p5-DateTime-Format-DateManip-0.04nb2"
-	help
-	  Convert Date::Manip dates and durations to/from DateTimes
-
-	  DateTime::Format::DateManip is a class that knows how to convert
-	  between Date::Manip dates and durations and DateTime and
-	  DateTime::Duration objects. Recurrences are note yet supported.
-
-	  http://search.cpan.org/perldoc?DateTime::Format::DateManip
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME
 	bool "p5-DateTime-0.6600nb1"
@@ -640,16 +632,109 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME
 
 	  http://datetime.perl.org/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_NATURAL
-	bool "p5-DateTime-Format-Natural-0.89nb2"
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_CALENDAR_DISCORDIAN
+	bool "p5-DateTime-Calendar-Discordian-0.9.6nb3"
 	help
-	  Create machine readable date/time with natural parsing logic
+	  Perl extension for the Discordian Calendar
 
-	  DateTime::Format::Natural takes a string with a human readable
-	  date/time and creates a machine readable one by applying natural
-	  parsing logic.
+	  This is a module that implements the Discordian calendar made popular
+	  in the "Illuminatus!" trilogy by Robert Shea and Robert Anton Wilson and
+	  by the Church of the SubGenius.  It follows the DateTime API.
 
-	  http://search.cpan.org/dist/DateTime-Format-Natural/
+	  http://search.cpan.org/dist/DateTime-Calendar-Discordian
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_CALENDAR_MAYAN
+	bool "p5-DateTime-Calendar-Mayan-0.06.01nb2"
+	help
+	  The Mayan Long Count, Haab, and Tzolkin calendars
+
+	  An implementation of the Mayan Long Count, Haab, and Tzolkin calendars as
+	  defined in "Calendrical Calculations The Millennium Edition".
+
+	  http://search.cpan.org/dist/DateTime-Calendar-Mayan/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_EVENT_CRON
+	bool "p5-DateTime-Event-Cron-0.08nb1"
+	help
+	  DateTime extension to handle crontab entries
+
+	  The DateTime::Event::Cron module generates DateTime and DateTime::Set objects
+	  based on crontab-style entries.  The crontab formats are the extended V7
+	  standard as described in crontab(5) on linux systems and as noted in the
+	  documentation for Set::Crontab.
+	  
+	  Note that the module is still alpha status.  Methods provided are likely to
+	  change in the future.
+
+	  http://search.cpan.org/dist/DateTime-Event-Cron/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_EVENT_ICAL
+	bool "p5-DateTime-Event-ICal-0.10nb2"
+	help
+	  DateTime extension for computing rfc2445 recurrences
+
+	  This module aims to support rfc2445 style recurrences, such as
+	  'last friday of march'.
+
+	  http://search.cpan.org/dist/DateTime-Event-ICal
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_EVENT_RANDOM
+	bool "p5-DateTime-Event-Random-0.03nb2"
+	help
+	  DateTime extension for creating random datetimes
+
+	  This module provides convenience methods that let you easily create
+	  DateTime::Set, DateTime, or DateTime::Duration objects with random
+	  values.
+
+	  http://search.cpan.org/dist/DateTime-Event-Random/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_EVENT_RECURRENCE
+	bool "p5-DateTime-Event-Recurrence-0.16nb3"
+	help
+	  DateTime::Set extension to create basic recurrence sets
+
+	  This module aims to support basic recurrences, such as 'daily'.
+
+	  http://search.cpan.org/dist/DateTime-Event-Recurrence
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_BUILDER
+	bool "p5-DateTime-Format-Builder-0.8000nb2"
+	help
+	  Create DateTime parser classes and objects
+
+	  DateTime::Format::Builder creates DateTime parsers. Many string
+	  formats of dates and times are simple and just require a basic
+	  regular expression to extract the relevant information. Builder
+	  provides a simple way to do this without writing reams of structural
+	  code.
+	  
+	  Builder provides a number of methods, most of which you'll never
+	  need, or at least rarely need. They're provided more for exposing
+	  of the module's innards to any subclasses, or for when you need to
+	  do something slightly beyond what I expected.
+
+	  http://search.cpan.org/~drolsky/DateTime-Format-Builder/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_DATEMANIP
+	bool "p5-DateTime-Format-DateManip-0.04nb2"
+	help
+	  Convert Date::Manip dates and durations to/from DateTimes
+
+	  DateTime::Format::DateManip is a class that knows how to convert
+	  between Date::Manip dates and durations and DateTime and
+	  DateTime::Duration objects. Recurrences are note yet supported.
+
+	  http://search.cpan.org/perldoc?DateTime::Format::DateManip
+
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_DATEPARSE
 	bool "p5-DateTime-Format-DateParse-0.05nb2"
@@ -662,16 +747,106 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_DATEPARSE
 
 	  http://search.cpan.org/perldoc?DateTime::Format::DateParse
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_CALENDAR_DISCORDIAN
-	bool "p5-DateTime-Calendar-Discordian-0.9.6nb3"
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_EPOCH
+	bool "p5-DateTime-Format-Epoch-0.13nb1"
 	help
-	  Perl extension for the Discordian Calendar
+	  Convert DateTimes to/from epoch seconds
 
-	  This is a module that implements the Discordian calendar made popular
-	  in the "Illuminatus!" trilogy by Robert Shea and Robert Anton Wilson and
-	  by the Church of the SubGenius.  It follows the DateTime API.
+	  The DateTime::Fromat::Epoch modules provide to/from epoch seconds for the
+	  DateTime.pm class.
 
-	  http://search.cpan.org/dist/DateTime-Calendar-Discordian
+	  http://datetime.perl.org/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_FLEXIBLE
+	bool "p5-DateTime-Format-Flexible-0.16nb1"
+	help
+	  Flexibly parse strings and turn them into DateTime objects
+
+	  If you have ever had to use a program that made you type in the
+	  date a certain way and thought "Why can't the computer just figure
+	  out what date I wanted?", this module is for you.
+	  
+	  DateTime::Format::Flexible attempts to take any string you give it
+	  and parse it into a DateTime object.
+	  
+	  The test file tests 2500+ variations of date/time strings. If you
+	  can think of any that I do not cover, please let me know.
+
+	  http://search.cpan.org/dist/DateTime-Format-Flexible/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_HTTP
+	bool "p5-DateTime-Format-HTTP-0.39nb2"
+	help
+	  Deal with date formats used by HTTP
+
+	  This module provides functions that deal the date formats used by
+	  the HTTP protocol (and then some more).
+
+	  http://search.cpan.org/dist/DateTime-Format-HTTP/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_ICAL
+	bool "p5-DateTime-Format-ICal-0.09nb3"
+	help
+	  Parse and format iCal datetime and duration strings
+
+	  This module handles formatting and parsing of iCal format datetimes
+	  and durations, per RFC 2445.
+
+	  http://search.cpan.org/dist/DateTime-Format-ICal/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_ISO8601
+	bool "p5-DateTime-Format-ISO8601-0.0700nb2"
+	help
+	  Parses ISO8601 formats
+
+	  Parses almost all ISO8601 date and time formats. ISO8601 time-intervals
+	  will be supported in a later release.
+
+	  http://search.cpan.org/~jhoblitt/DateTime-Format-ISO8601/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_MAIL
+	bool "p5-DateTime-Format-Mail-0.3001nb3"
+	help
+	  Convert between DateTime and RFC2822/822 formats
+
+	  RFC2822 introduces a slightly different format of date than that used by
+	  RFC822. The main correction is that the format is more limited, and thus easier
+	  to parse.
+
+	  http://search.cpan.org/dist/DateTime-Format-Mail/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_MYSQL
+	bool "p5-DateTime-Format-MySQL-0.04nb4"
+	help
+	  Parse and format MySQL dates and times
+
+	  This module understands the formats used by MySQL for its DATE,
+	  DATETIME, TIME, and TIMESTAMP data types. It can be used to parse
+	  these formats in order to create DateTime objects, and it can take
+	  a DateTime object and produce a string representing it in the MySQL
+	  format.
+
+	  http://search.cpan.org/dist/DateTime-Format-MySQL/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_NATURAL
+	bool "p5-DateTime-Format-Natural-0.89nb2"
+	help
+	  Create machine readable date/time with natural parsing logic
+
+	  DateTime::Format::Natural takes a string with a human readable
+	  date/time and creates a machine readable one by applying natural
+	  parsing logic.
+
+	  http://search.cpan.org/dist/DateTime-Format-Natural/
+
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_ORACLE
 	bool "p5-DateTime-Format-Oracle-0.05nb1"
@@ -697,25 +872,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_ORACLE
 
 	  http://search.cpan.org/dist/DateTime-Format-Oracle/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_EPOCH
-	bool "p5-DateTime-Format-Epoch-0.13nb1"
-	help
-	  Convert DateTimes to/from epoch seconds
-
-	  The DateTime::Fromat::Epoch modules provide to/from epoch seconds for the
-	  DateTime.pm class.
-
-	  http://datetime.perl.org/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_CALENDAR_MAYAN
-	bool "p5-DateTime-Calendar-Mayan-0.06.01nb2"
-	help
-	  The Mayan Long Count, Haab, and Tzolkin calendars
-
-	  An implementation of the Mayan Long Count, Haab, and Tzolkin calendars as
-	  defined in "Calendrical Calculations The Millennium Edition".
-
-	  http://search.cpan.org/dist/DateTime-Calendar-Mayan/
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_PG
 	bool "p5-DateTime-Format-Pg-0.16005nb2"
@@ -731,37 +887,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_PG
 
 	  http://search.cpan.org/dist/DateTime-Format-Pg/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_FLEXIBLE
-	bool "p5-DateTime-Format-Flexible-0.16nb1"
-	help
-	  Flexibly parse strings and turn them into DateTime objects
-
-	  If you have ever had to use a program that made you type in the
-	  date a certain way and thought "Why can't the computer just figure
-	  out what date I wanted?", this module is for you.
-	  
-	  DateTime::Format::Flexible attempts to take any string you give it
-	  and parse it into a DateTime object.
-	  
-	  The test file tests 2500+ variations of date/time strings. If you
-	  can think of any that I do not cover, please let me know.
-
-	  http://search.cpan.org/dist/DateTime-Format-Flexible/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_EVENT_CRON
-	bool "p5-DateTime-Event-Cron-0.08nb1"
-	help
-	  DateTime extension to handle crontab entries
-
-	  The DateTime::Event::Cron module generates DateTime and DateTime::Set objects
-	  based on crontab-style entries.  The crontab formats are the extended V7
-	  standard as described in crontab(5) on linux systems and as noted in the
-	  documentation for Set::Crontab.
-	  
-	  Note that the module is still alpha status.  Methods provided are likely to
-	  change in the future.
-
-	  http://search.cpan.org/dist/DateTime-Event-Cron/
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_SQLITE
 	bool "p5-DateTime-Format-SQLite-0.11nb2"
@@ -775,25 +900,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_SQLITE
 
 	  http://search.cpan.org/dist/DateTime-Format-SQLite/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_HTTP
-	bool "p5-DateTime-Format-HTTP-0.39nb2"
-	help
-	  Deal with date formats used by HTTP
-
-	  This module provides functions that deal the date formats used by
-	  the HTTP protocol (and then some more).
-
-	  http://search.cpan.org/dist/DateTime-Format-HTTP/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_EVENT_ICAL
-	bool "p5-DateTime-Event-ICal-0.10nb2"
-	help
-	  DateTime extension for computing rfc2445 recurrences
-
-	  This module aims to support rfc2445 style recurrences, such as
-	  'last friday of march'.
-
-	  http://search.cpan.org/dist/DateTime-Event-ICal
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_STRPTIME
 	bool "p5-DateTime-Format-Strptime-1.4000nb2"
@@ -807,26 +913,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_STRPTIME
 
 	  http://search.cpan.org/~rickm/DateTime-Format-Strptime/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_ICAL
-	bool "p5-DateTime-Format-ICal-0.09nb3"
-	help
-	  Parse and format iCal datetime and duration strings
-
-	  This module handles formatting and parsing of iCal format datetimes
-	  and durations, per RFC 2445.
-
-	  http://search.cpan.org/dist/DateTime-Format-ICal/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_EVENT_RANDOM
-	bool "p5-DateTime-Event-Random-0.03nb2"
-	help
-	  DateTime extension for creating random datetimes
-
-	  This module provides convenience methods that let you easily create
-	  DateTime::Set, DateTime, or DateTime::Duration objects with random
-	  values.
-
-	  http://search.cpan.org/dist/DateTime-Event-Random/
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_W3CDTF
 	bool "p5-DateTime-Format-W3CDTF-0.05nb2"
@@ -842,35 +928,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_W3CDTF
 
 	  http://search.cpan.org/dist/DateTime-Format-W3CDTF/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_ISO8601
-	bool "p5-DateTime-Format-ISO8601-0.0700nb2"
-	help
-	  Parses ISO8601 formats
-
-	  Parses almost all ISO8601 date and time formats. ISO8601 time-intervals
-	  will be supported in a later release.
-
-	  http://search.cpan.org/~jhoblitt/DateTime-Format-ISO8601/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_TIMEZONE
-	bool "p5-DateTime-TimeZone-1.21nb1"
-	help
-	  Perl module to handle time zone manipulation
-
-	  The DateTime::TimeZone modules provide a Perl interface to the Olson
-	  time zone database.  Rather than using the database directly, we parse
-	  the database files and turn them into a set of modules, one for each
-	  time zone defined.  This allows for various optimizations in doing
-	  time zone calculations.  This conversion is done with the script in
-	  tools/parse_olson.
-	  
-	  The Olson time zone database is the best available source for world
-	  wide time zone information.  It is available from
-	  ftp://elsie.nci.nih.gov/pub/.  A good starting point for information
-	  on the database, and time zones in general, is
-	  http://www.twinsun.com/tz/tz-link.htm.
-
-	  http://search.cpan.org/dist/DateTime-TimeZone/
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_LOCALE
 	bool "p5-DateTime-Locale-0.45nb2"
@@ -882,31 +939,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_LOCALE
 
 	  http://search.cpan.org/dist/DateTime-Locale/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_MAIL
-	bool "p5-DateTime-Format-Mail-0.3001nb3"
-	help
-	  Convert between DateTime and RFC2822/822 formats
-
-	  RFC2822 introduces a slightly different format of date than that used by
-	  RFC822. The main correction is that the format is more limited, and thus easier
-	  to parse.
-
-	  http://search.cpan.org/dist/DateTime-Format-Mail/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_TIMEZONE_HPUX
-	bool "p5-DateTime-TimeZone-HPUX-1.04nb2"
-	help
-	  Handles timezones defined at the operating system level on HP-UX
-
-	  This distribution implement detection of the local timezone as defined at
-	  the operating system level, either in $ENV{TZ} or in /etc/TIMEZONE.
-	  
-	  HP-UX has its own system for defining timezones. See tztab(4). This is
-	  incompatible with the now common set of timezones known as the Olson DB
-	  that is used by DateTime::TimeZone. This module fixes this hole by
-	  providing the map between the two systems.
-
-	  http://search.cpan.org/dist/DateTime-TimeZone-HPUX/
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_PRECISE
 	bool "p5-DateTime-Precise-1.05nb3"
@@ -939,15 +971,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_PRECISE
 
 	  http://search.cpan.org/dist/DateTime-Precise/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_SCHEDULE_CRON_EVENTS
-	bool "p5-Schedule-Cron-Events-1.8nb4"
-	help
-	  Perl module to find when crontab events will occur
-
-	  Schedule::Cron::Events takes a crontab-style line and finds out
-	  when events will occur.
-
-	  
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_SET
 	bool "p5-DateTime-Set-0.28nb2"
@@ -971,6 +994,44 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_SET
 
 	  http://search.cpan.org/dist/DateTime-Set/
 
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_TIMEZONE
+	bool "p5-DateTime-TimeZone-1.21nb1"
+	help
+	  Perl module to handle time zone manipulation
+
+	  The DateTime::TimeZone modules provide a Perl interface to the Olson
+	  time zone database.  Rather than using the database directly, we parse
+	  the database files and turn them into a set of modules, one for each
+	  time zone defined.  This allows for various optimizations in doing
+	  time zone calculations.  This conversion is done with the script in
+	  tools/parse_olson.
+	  
+	  The Olson time zone database is the best available source for world
+	  wide time zone information.  It is available from
+	  ftp://elsie.nci.nih.gov/pub/.  A good starting point for information
+	  on the database, and time zones in general, is
+	  http://www.twinsun.com/tz/tz-link.htm.
+
+	  http://search.cpan.org/dist/DateTime-TimeZone/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_TIMEZONE_HPUX
+	bool "p5-DateTime-TimeZone-HPUX-1.04nb2"
+	help
+	  Handles timezones defined at the operating system level on HP-UX
+
+	  This distribution implement detection of the local timezone as defined at
+	  the operating system level, either in $ENV{TZ} or in /etc/TIMEZONE.
+	  
+	  HP-UX has its own system for defining timezones. See tztab(4). This is
+	  incompatible with the now common set of timezones known as the Olson DB
+	  that is used by DateTime::TimeZone. This module fixes this hole by
+	  providing the map between the two systems.
+
+	  http://search.cpan.org/dist/DateTime-TimeZone-HPUX/
+
+
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIMEX_EASY
 	bool "p5-DateTimeX-Easy-0.089nb1"
 	help
@@ -983,14 +1044,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIMEX_EASY
 
 	  http://search.cpan.org/perldoc?DateTimeX::Easy
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_TEMPLATE_PLUGIN_DATETIME
-	bool "p5-Template-Plugin-DateTime-0.06.001nb2"
-	help
-	  A Template Plugin To Use DateTime Objects
-
-	  A Template Plugin To Use DateTime Objects.
-
-	  http://search.cpan.org/dist/Template-Plugin-DateTime/
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_MOOSEX_TYPES_DATETIME
 	bool "p5-MooseX-Types-DateTime-0.05nb3"
@@ -1002,16 +1055,107 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_MOOSEX_TYPES_DATETIME
 
 	  http://search.cpan.org/perldoc?MooseX::Types::DateTime
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_HIRES
-	bool "p5-Time-HiRes-1.9721nb2"
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_MOOSEX_TYPES_DATETIME_BUTMAINTAINED
+	bool "p5-MooseX-Types-DateTime-ButMaintained-0.11nb2"
 	help
-	  Perl5 module for high resolution time, sleep, and alarm
+	  DateTime related constraints and coercions for Moose
 
-	  Implement usleep, ualarm, setitimer/getitimer and gettimeofday for Perl,
-	  as well as wrappers to implement time, sleep, and alarm that know about
-	  non-integral seconds.
+	  This module packages several Moose::Util::TypeConstraints with coercions,
+	  designed to work with the DateTime suite of objects.
 
-	  http://search.cpan.org/dist/Time-HiRes/
+	  http://search.cpan.org/dist/MooseX-Types-DateTime-ButMaintained/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_MOOSEX_TYPES_DATETIMEX
+	bool "p5-MooseX-Types-DateTimeX-0.10nb1"
+	help
+	  Extensions to MooseX::Types::DateTime::ButMaintained
+
+	  This module builds on MooseX::Types::DateTime to add additional custom
+	  types and coercions. Since it builds on an existing type, all coercions
+	  and constraints are inherited.
+	  
+	  The package name is left as is for legacy reasons: this module is really a
+	  Type with coercions for DateTimeX::Easy. DateTimeX is just a namespace
+	  for non-core or less-official DateTime modules.
+
+	  http://search.cpan.org/dist/MooseX-Types-DateTimeX/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_NET_GOOGLE_CALENDAR
+	bool "p5-Net-Google-Calendar-1.0nb1"
+	help
+	  Perl module for accessing Google calendars
+
+	  This package provides a simple OOP-ish API to Google calendars.
+
+	  http://search.cpan.org/dist/Net-Google-Calendar/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_OLSON_ABBREVIATIONS
+	bool "p5-Olson-Abbreviations-0.02nb3"
+	help
+	  Perl extension for globally unique timezones abbreviation handling
+
+	  This module should help with converting commonly used and often ambigious
+	  olson abbreviations into TZ offset notation.
+
+	  http://search.cpan.org/dist/Olson-Abbreviations/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_ROSE_DATETIME
+	bool "p5-Rose-DateTime-0.534nb1"
+	help
+	  DateTime helper functions and objects for Rose
+
+	  The Rose::DateTime::* modules provide a few convenience functions
+	  and objects for use with DateTime dates.
+	  
+	  Rose::DateTime::Util contains a simple date parser and a slightly
+	  customized date formatter.
+	  
+	  Rose::DateTime::Parser encapsulates a date parser with an associated
+	  default time zone.
+	  
+	  This module (Rose::DateTime) exists mostly to provide a version
+	  number for CPAN. See the individual modules for some actual
+	  documentation.
+
+	  http://search.cpan.org/dist/Rose-DateTime/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_SCHEDULE_AT
+	bool "p5-Schedule-At-1.11nb1"
+	help
+	  OS independent interface to the Unix 'at' command
+
+	  This modules provides an OS independent interface to 'at', the Unix command
+	  that allows you to execute commands at a specified time.
+
+	  http://search.cpan.org/dist/Schedule-At/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_SCHEDULE_CRON_EVENTS
+	bool "p5-Schedule-Cron-Events-1.8nb4"
+	help
+	  Perl module to find when crontab events will occur
+
+	  Schedule::Cron::Events takes a crontab-style line and finds out
+	  when events will occur.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TEMPLATE_PLUGIN_DATETIME
+	bool "p5-Template-Plugin-DateTime-0.06.001nb2"
+	help
+	  A Template Plugin To Use DateTime Objects
+
+	  A Template Plugin To Use DateTime Objects.
+
+	  http://search.cpan.org/dist/Template-Plugin-DateTime/
+
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_TEST_MOCKTIME
 	bool "p5-Test-MockTime-0.12nb2"
@@ -1026,30 +1170,6 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_TEST_MOCKTIME
 
 	  http://search.cpan.org/perldoc?Test::MockTime
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_INTERVAL
-	bool "p5-Time-Interval-1.22nb3"
-	help
-	  Converts time intervals of days, hours, minutes, and seconds
-
-	  Time::Interval
-	  ==============
-	  
-	  This package installs the Time::Interval perl module.
-	  Time::Interval's primary purpose is to take a given number
-	  of seconds and return the number of days, hours, minutes,
-	  and seconds are represented.
-
-	  http://search.cpan.org/CPAN/authors/id/A/AH/AHICOX/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_MOOSEX_TYPES_DATETIME_BUTMAINTAINED
-	bool "p5-MooseX-Types-DateTime-ButMaintained-0.11nb2"
-	help
-	  DateTime related constraints and coercions for Moose
-
-	  This module packages several Moose::Util::TypeConstraints with coercions,
-	  designed to work with the DateTime suite of objects.
-
-	  http://search.cpan.org/dist/MooseX-Types-DateTime-ButMaintained/
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_CLOCK
 	bool "p5-Time-Clock-1.02nb2"
@@ -1069,6 +1189,255 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_CLOCK
 	  format.
 
 	  http://search.cpan.org/dist/Time-Clock/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_DURATION
+	bool "p5-Time-Duration-1.06nb3"
+	help
+	  Perl5 module for rounded or exact English expression of durations
+
+	  The Time::Duration perl module provides functions for expressing
+	  durations in rounded (such as "1 year and 21 days") or exact English
+	  terms.
+
+	  http://search.cpan.org/~avif/Time-Duration-1.04/Duration.pm
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_DURATION_PARSE
+	bool "p5-Time-Duration-Parse-0.06nb3"
+	help
+	  Perl5 module to parse string that represents time duration
+
+	  Time::Duration::Parse is a Perl 5 module to parse human readable
+	  duration strings like 2 minutes and 3 seconds to seconds.  It does
+	  the opposite of duration_exact function in Time::Duration.
+
+	  http://search.cpan.org/dist/Time-Duration-Parse/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_ELAPSED
+	bool "p5-Time-Elapsed-0.29nb2"
+	help
+	  Displays the elapsed time as a human readable string
+
+	  This module transforms the elapsed seconds into a human readable
+	  string. It can be used for (for example) rendering uptime values
+	  into a human readable form. The resulting string will be an
+	  approximation.
+
+	  http://search.cpan.org/dist/Time-Elapsed/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_FORMAT
+	bool "p5-Time-Format-1.11nb2"
+	help
+	  Easy-to-use date/time formatting
+
+	  Time::Format provides a very easy way to format dates and times.  The
+	  formatting functions are tied to hash variables, so they can be used
+	  inside strings as well as in ordinary expressions.  The formatting
+	  codes used are meant to be easy to remember, use, and read.  They
+	  follow a simple, consistent pattern.  If I've done my job right, once
+	  you learn the codes, you should never have to refer to the
+	  documentation again.  A quick-reference page is included, just in
+	  case.  ;-)
+	  
+	  Time::Format can also format DateTime objects, and strings created
+	  with Date::Manip.
+	  
+	  Also provided is a tied-hash interface to POSIX::strftime and
+	  Date::Manip::UnixDate.
+	  
+	  If the I18N::Langinfo module is available, Time::Format provides
+	  weekday and month names in a language appropriate for your locale.
+
+	  http://search.cpan.org/dist/Time-Format/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_FORMAT_XS
+	bool "p5-Time-Format_XS-1.03nb2"
+	help
+	  Companion module for Time::Format, to speed up time formatting
+
+	  Time::Format_XS, provides a huge performance improvement for the main
+	  formatting function in Time::Format. This is the time_format function,
+	  usually accessed via the %time hash.
+
+	  http://search.cpan.org/dist/Time-Format_XS/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_HIRES
+	bool "p5-Time-HiRes-1.9721nb2"
+	help
+	  Perl5 module for high resolution time, sleep, and alarm
+
+	  Implement usleep, ualarm, setitimer/getitimer and gettimeofday for Perl,
+	  as well as wrappers to implement time, sleep, and alarm that know about
+	  non-integral seconds.
+
+	  http://search.cpan.org/dist/Time-HiRes/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_INTERVAL
+	bool "p5-Time-Interval-1.22nb3"
+	help
+	  Converts time intervals of days, hours, minutes, and seconds
+
+	  Time::Interval
+	  ==============
+	  
+	  This package installs the Time::Interval perl module.
+	  Time::Interval's primary purpose is to take a given number
+	  of seconds and return the number of days, hours, minutes,
+	  and seconds are represented.
+
+	  http://search.cpan.org/CPAN/authors/id/A/AH/AHICOX/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_LOCAL
+	bool "p5-Time-Local-1.19.1nb2"
+	help
+	  Efficiently compute time from local and GMT time
+
+	  These routines are the inverse of built-in perl functions localtime()
+	  and gmtime().  They accept a date as a six-element array, and return
+	  the corresponding time(2) value in seconds since the system epoch
+	  (Midnight, January 1, 1970 UTC on Unix, for example).  This value can
+	  be positive or negative, though POSIX only requires support for
+	  positive values, so dates before the system's epoch may not work on
+	  all operating systems.
+
+	  http://search.cpan.org/dist/Time-Local/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_PERIOD
+	bool "p5-Time-Period-1.20nb5"
+	help
+	  Perl5 module to deal with time periods
+
+	  Period.pm is a Perl module to deal with time periods.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_PIECE
+	bool "p5-Time-Piece-1.20nb2"
+	help
+	  Time::Piece - Object Oriented time objects
+
+	  This module replaces the standard localtime and gmtime functions with
+	  implementations that return objects.  It does so in a backwards
+	  compatible manner, so that using localtime/gmtime in the way
+	  documented in perlfunc will still return what you expect.
+
+	  http://search.cpan.org/dist/Time-Piece/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_PROGRESS
+	bool "p5-Time-Progress-1.7nb1"
+	help
+	  Elapsed and estimated finish time reporting
+
+	  This module provides a class and methods to facilitate elapsed and estimated
+	  finish time reporting.
+
+	  http://search.cpan.org/dist/Time-Progress/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_TAI64
+	bool "p5-Time-TAI64-2.11nb3"
+	help
+	  Convert TAI64 strings into standard unix timestamps
+
+	  This Module makes available to the user functions to convert TAI64 strings
+	  to unix timestamps suitable to make time calculations.
+
+	  http://search.cpan.org/dist/Time-TAI64/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_WARP
+	bool "p5-Time-Warp-0.5nb3"
+	help
+	  Perl 5 module to control the flow of time
+
+	  The Perl 5 module Time::Warp offers developers control over the
+	  measurement of time.
+
+	  http://search.cpan.org/dist/Time-Warp/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_MODULES
+	bool "p5-Time-modules-2011.0517nb1"
+	help
+	  Miscellaneous date parsing and formatting
+
+	  This package contains the following perl5 modules:
+	  
+	  Time::CTime.pm
+	  ctime, strftime, and asctime
+	  Time::JulianDay.pm
+	  Julian Day conversions
+	  Time::ParseDate.pm
+	  Reverses strftime and also understands relative times
+	  Time::Timezone.pm
+	  Time::DaysInMonth.pm
+
+	  http://search.cpan.org/dist/Time-modules/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_P5_TIMEDATE
+	bool "p5-TimeDate-1.20nb2"
+	help
+	  Perl5 TimeDate distribution
+
+	  This is the perl5 TimeDate distribution. It requires perl version
+	  5.003 or later
+	  
+	  This distribution replaces the earlier GetDate distribution, which was
+	  only a date parser.  The date parser contained in this distribution is
+	  far superior to the yacc based parser, and a *lot* faster.
+	  
+	  The parser contained here will only parse absolute dates, if you want a
+	  date parser that can parse relative dates then take a look at the Time
+	  modules by David Muir on CPAN.
+	  
+	  Please report any bugs/suggestions to <Graham.Barr@pobox.com>
+	  
+	  Copyright 1996-1998 Graham Barr. All rights reserved.
+	  
+	  This library is free software; you can redistribute it and/or modify
+	  it under the same terms as Perl itself.
+
+	  http://search.cpan.org/dist/TimeDate/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_PCAL
+	bool "pcal-4.7nb2"
+	help
+	  PostScript calendar program
+
+	  "Pcal" Version 4.7
+	  
+	  This is a new release of "Pcal", the PostScript calendar program.  The major
+	  new features are the "-H" flag for generating output in HTML table form,
+	  expansion of "%y" in the "include" filename into the last two digits of
+	  every applicable year in "year all" mode, and the addition of build-time
+	  support for A4 size paper.
+
+	  http://pcal.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_PCLOCK
+	bool "pclock-0.13.1nb2"
+	help
+	  Simple analog clock designed for Window Maker
+
+	  pclock is a simple analog clock program designed to run under Window Maker
+	  window manager (also runs fine on any other window manager which supports
+	  dock apps, such as PWM).  Any 64x64 pixmap may be used as a background.
+
+	  http://www.chasen.org/~taku/software/yamcha/
+
 
 config BR2_PKGSRC_PACKAGE_TIME_PHOON
 	bool "phoon-19950401"
@@ -1090,20 +1459,34 @@ config BR2_PKGSRC_PACKAGE_TIME_PHOON
 
 	  http://www.acme.com/software/phoon/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_MOOSEX_TYPES_DATETIMEX
-	bool "p5-MooseX-Types-DateTimeX-0.10nb1"
+
+config BR2_PKGSRC_PACKAGE_TIME_PHP_CALENDAR
+	bool "php53-calendar-5.3.8"
 	help
-	  Extensions to MooseX::Types::DateTime::ButMaintained
+	  PHP extension for calendar conversion support
 
-	  This module builds on MooseX::Types::DateTime to add additional custom
-	  types and coercions. Since it builds on an existing type, all coercions
-	  and constraints are inherited.
-	  
-	  The package name is left as is for legacy reasons: this module is really a
-	  Type with coercions for DateTimeX::Easy. DateTimeX is just a namespace
-	  for non-core or less-official DateTime modules.
+	  PHP is a programming language designed to be embedded into web pages.
+	  This module provides support for calendar date conversions.
 
-	  http://search.cpan.org/dist/MooseX-Types-DateTimeX/
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_PEAR_DATE
+	bool "php53-pear-Date-1.4.7"
+	help
+	  PHP Date and Time Zone Classes
+
+	  Generic PHP classes for representation and manipulation of
+	  dates, times and time zones without the need of timestamps,
+	  which is a huge limitation for php programs. Includes time zone data,
+	  time zone conversions and many date/time conversions.
+	  It does not rely on 32-bit system date stamps, so
+	  you can display calendars and compare dates that date
+	  pre 1970 and post 2038. This package also provides a class
+	  to convert date strings between Gregorian and Human calendar formats.
+
+	  http://pear.php.net/package/Date
+
 
 config BR2_PKGSRC_PACKAGE_TIME_PLAN
 	bool "plan-1.9"
@@ -1137,30 +1520,6 @@ config BR2_PKGSRC_PACKAGE_TIME_PLAN
 
 	  http://me.in-berlin.de/~bitrot/plan.html
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIMEDATE
-	bool "p5-TimeDate-1.20nb2"
-	help
-	  Perl5 TimeDate distribution
-
-	  This is the perl5 TimeDate distribution. It requires perl version
-	  5.003 or later
-	  
-	  This distribution replaces the earlier GetDate distribution, which was
-	  only a date parser.  The date parser contained in this distribution is
-	  far superior to the yacc based parser, and a *lot* faster.
-	  
-	  The parser contained here will only parse absolute dates, if you want a
-	  date parser that can parse relative dates then take a look at the Time
-	  modules by David Muir on CPAN.
-	  
-	  Please report any bugs/suggestions to <Graham.Barr@pobox.com>
-	  
-	  Copyright 1996-1998 Graham Barr. All rights reserved.
-	  
-	  This library is free software; you can redistribute it and/or modify
-	  it under the same terms as Perl itself.
-
-	  http://search.cpan.org/dist/TimeDate/
 
 config BR2_PKGSRC_PACKAGE_TIME_PLANNER
 	bool "planner-0.14.4nb11"
@@ -1183,6 +1542,7 @@ config BR2_PKGSRC_PACKAGE_TIME_PLANNER
 
 	  http://live.gnome.org/Planner
 
+
 config BR2_PKGSRC_PACKAGE_TIME_POLCLOCK
 	bool "polclock-1.11nb2"
 	help
@@ -1193,6 +1553,7 @@ config BR2_PKGSRC_PACKAGE_TIME_POLCLOCK
 	  Best viewed on a truecolor display.
 
 	  http://www.daionet.gr.jp/~masa/glclock/
+
 
 config BR2_PKGSRC_PACKAGE_TIME_PROJCLOCK
 	bool "projclock-0.7nb2"
@@ -1205,43 +1566,6 @@ config BR2_PKGSRC_PACKAGE_TIME_PROJCLOCK
 
 	  http://members.optushome.com.au/starters/pclock/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_MODULES
-	bool "p5-Time-modules-2011.0517nb1"
-	help
-	  Miscellaneous date parsing and formatting
-
-	  This package contains the following perl5 modules:
-	  
-	  Time::CTime.pm
-	  ctime, strftime, and asctime
-	  Time::JulianDay.pm
-	  Julian Day conversions
-	  Time::ParseDate.pm
-	  Reverses strftime and also understands relative times
-	  Time::Timezone.pm
-	  Time::DaysInMonth.pm
-
-	  http://search.cpan.org/dist/Time-modules/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_NET_GOOGLE_CALENDAR
-	bool "p5-Net-Google-Calendar-1.0nb1"
-	help
-	  Perl module for accessing Google calendars
-
-	  This package provides a simple OOP-ish API to Google calendars.
-
-	  http://search.cpan.org/dist/Net-Google-Calendar/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_DURATION
-	bool "p5-Time-Duration-1.06nb3"
-	help
-	  Perl5 module for rounded or exact English expression of durations
-
-	  The Time::Duration perl module provides functions for expressing
-	  durations in rounded (such as "1 year and 21 days") or exact English
-	  terms.
-
-	  http://search.cpan.org/~avif/Time-Duration-1.04/Duration.pm
 
 config BR2_PKGSRC_PACKAGE_TIME_PTIMETRACKER
 	bool "ptimetracker-1.7.3nb7"
@@ -1257,145 +1581,103 @@ config BR2_PKGSRC_PACKAGE_TIME_PTIMETRACKER
 
 	  http://www.eggtart.plus.com/ptt/
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_PERIOD
-	bool "p5-Time-Period-1.20nb5"
+
+config BR2_PKGSRC_PACKAGE_TIME_PY_DATEUTIL
+	bool "py26-dateutil-1.5"
 	help
-	  Perl5 module to deal with time periods
+	  Extensions to the standard datetime module
 
-	  Period.pm is a Perl module to deal with time periods.
-
+	  The dateutil module provides powerful extensions to the standard datetime
+	  module, available in Python 2.3+.
 	  
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_OLSON_ABBREVIATIONS
-	bool "p5-Olson-Abbreviations-0.02nb3"
-	help
-	  Perl extension for globally unique timezones abbreviation handling
-
-	  This module should help with converting commonly used and often ambigious
-	  olson abbreviations into TZ offset notation.
-
-	  http://search.cpan.org/dist/Olson-Abbreviations/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_DURATION_PARSE
-	bool "p5-Time-Duration-Parse-0.06nb3"
-	help
-	  Perl5 module to parse string that represents time duration
-
-	  Time::Duration::Parse is a Perl 5 module to parse human readable
-	  duration strings like 2 minutes and 3 seconds to seconds.  It does
-	  the opposite of duration_exact function in Time::Duration.
-
-	  http://search.cpan.org/dist/Time-Duration-Parse/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_PIECE
-	bool "p5-Time-Piece-1.20nb2"
-	help
-	  Time::Piece - Object Oriented time objects
-
-	  This module replaces the standard localtime and gmtime functions with
-	  implementations that return objects.  It does so in a backwards
-	  compatible manner, so that using localtime/gmtime in the way
-	  documented in perlfunc will still return what you expect.
-
-	  http://search.cpan.org/dist/Time-Piece/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_ROSE_DATETIME
-	bool "p5-Rose-DateTime-0.534nb1"
-	help
-	  DateTime helper functions and objects for Rose
-
-	  The Rose::DateTime::* modules provide a few convenience functions
-	  and objects for use with DateTime dates.
+	  Features
 	  
-	  Rose::DateTime::Util contains a simple date parser and a slightly
-	  customized date formatter.
-	  
-	  Rose::DateTime::Parser encapsulates a date parser with an associated
-	  default time zone.
-	  
-	  This module (Rose::DateTime) exists mostly to provide a version
-	  number for CPAN. See the individual modules for some actual
-	  documentation.
+	  * Computing of relative deltas (next month, next year, next monday, last week
+	  of month, etc);
+	  * Computing of relative deltas between two given date and/or datetime objects;
+	  * Computing of dates based on very flexible recurrence rules, using a superset
+	  of the iCalendar specification. Parsing of RFC strings is supported as well.
+	  * Generic parsing of dates in almost any string format;
+	  * Timezone (tzinfo) implementations for tzfile(5) format files
+	  (/etc/localtime, /usr/share/zoneinfo, etc), TZ environment string (in all
+	  known formats), iCalendar format files, given ranges (with help from
+	  relative deltas), local machine timezone, fixed offset timezone, and UTC
+	  timezone.
+	  * Computing of Easter Sunday dates for any given year, using Western, Orthodox
+	  or Julian algorithms;
+	  * More than 400 test cases.
 
-	  http://search.cpan.org/dist/Rose-DateTime/
+	  http://labix.org/python-dateutil
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_ELAPSED
-	bool "p5-Time-Elapsed-0.29nb2"
+
+config BR2_PKGSRC_PACKAGE_TIME_PY_ICALENDAR
+	bool "py26-icalendar-2.1"
 	help
-	  Displays the elapsed time as a human readable string
+	  Python parser/generator for iCalendar files, as per RFC2445
 
-	  This module transforms the elapsed seconds into a human readable
-	  string. It can be used for (for example) rendering uptime values
-	  into a human readable form. The resulting string will be an
-	  approximation.
-
-	  http://search.cpan.org/dist/Time-Elapsed/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_PROGRESS
-	bool "p5-Time-Progress-1.7nb1"
-	help
-	  Elapsed and estimated finish time reporting
-
-	  This module provides a class and methods to facilitate elapsed and estimated
-	  finish time reporting.
-
-	  http://search.cpan.org/dist/Time-Progress/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_SCHEDULE_AT
-	bool "p5-Schedule-At-1.11nb1"
-	help
-	  OS independent interface to the Unix 'at' command
-
-	  This modules provides an OS independent interface to 'at', the Unix command
-	  that allows you to execute commands at a specified time.
-
-	  http://search.cpan.org/dist/Schedule-At/
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_FORMAT
-	bool "p5-Time-Format-1.11nb2"
-	help
-	  Easy-to-use date/time formatting
-
-	  Time::Format provides a very easy way to format dates and times.  The
-	  formatting functions are tied to hash variables, so they can be used
-	  inside strings as well as in ordinary expressions.  The formatting
-	  codes used are meant to be easy to remember, use, and read.  They
-	  follow a simple, consistent pattern.  If I've done my job right, once
-	  you learn the codes, you should never have to refer to the
-	  documentation again.  A quick-reference page is included, just in
-	  case.  ;-)
+	  The iCalendar package is a parser/generator of iCalendar files for
+	  use with Python. It follows the RFC 2445 (iCalendar) specification
 	  
-	  Time::Format can also format DateTime objects, and strings created
-	  with Date::Manip.
+	  The package can both generate and parse iCalendar files, and can
+	  easily be used as is.
 	  
-	  Also provided is a tied-hash interface to POSIX::strftime and
-	  Date::Manip::UnixDate.
-	  
-	  If the I18N::Langinfo module is available, Time::Format provides
-	  weekday and month names in a language appropriate for your locale.
+	  The aim is to make a package that is fully compliant to RFC 2445,
+	  well designed, simple to use and well documented.
 
-	  http://search.cpan.org/dist/Time-Format/
+	  http://codespeak.net/icalendar/
 
-config BR2_PKGSRC_PACKAGE_TIME_SAYTIME
-	bool "saytime-19951111"
+
+config BR2_PKGSRC_PACKAGE_TIME_PY_MXDATETIME
+	bool "py26-mxDateTime-3.1.3"
 	help
-	  Talking clock
+	  Python extension that provides types and conversions for dates
 
-	  Jef Poskanzer's talking clock.
-
-	  http://www.acme.com/software/saytime/
-
-config BR2_PKGSRC_PACKAGE_TIME_SUNCLOCK
-	bool "sunclock-1.5nb2"
-	help
-	  Show which portion of the Earth's surface is illuminated by the Sun
-
-	  This program is a clock that shows which portion of the Earth's surface is
-	  illuminated by the Sun.  It is designed to be usually iconic, but can be
-	  opened for a larger display with the time updated every second and both the
-	  local timezone and UTC displayed.
-
+	  A C extension package for python that provides new datatypes for
+	  handling dates and times together with a rich set of conversion and
+	  parsing routines.
 	  
+	  These types were created to provide a consistent way of transferring
+	  date and time data between Python and databases. Apart from handling
+	  date before the Unix epoch (1.1.1970) they also correctly work with
+	  dates beyond the Unix time limit (currently with Unix time value being
+	  encoded using 32bit integers, the limit is reached in 2038) and thus
+	  is Year 2000 and Year 2038 safe.
+
+	  http://www.egenix.com/files/python/mxDateTime.html
+
+
+config BR2_PKGSRC_PACKAGE_TIME_PY_PARSEDATETIME
+	bool "py26-parsedatetime-0.8.7"
+	help
+	  Python module for parsing human-readable date/time text
+
+	  A collection of routines to input, parse and manipulate date and times.
+	  The text can either be 'normal' date values or it can be human readable.
+
+	  http://code-bear.com/code/parsedatetime/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_PY_PYTZ
+	bool "py26-pytz-2010k"
+	help
+	  World timezone definitions, modern and historical
+
+	  pytz brings the Olson tz database into Python. This library allows accurate
+	  and cross platform timezone calculations using Python 2.3 or higher. It also
+	  solves the issue of ambiguous times at the end of daylight savings, which you
+	  can read more about in the Python Library Reference (datetime.tzinfo).
+	  
+	  Amost all (over 540) of the Olson timezones are supported [*].
+	  
+	  Note that if you perform date arithmetic on local times that cross DST
+	  boundaries, the results may be in an incorrect timezone (ie. subtract 1
+	  minute from 2002-10-27 1:00 EST and you get 2002-10-27 0:59 EST instead of
+	  the correct 2002-10-27 1:59 EDT). This cannot be resolved without modifying
+	  the Python datetime implementation. However, these tzinfo classes provide a
+	  normalize() method which allows you to correct these values.
+
+	  http://pytz.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_TIME_RCLOCK
 	bool "rclock-2.7.10"
@@ -1411,35 +1693,6 @@ config BR2_PKGSRC_PACKAGE_TIME_RCLOCK
 
 	  
 
-config BR2_PKGSRC_PACKAGE_TIME_SWISSWATCH
-	bool "swisswatch-0.06nb2"
-	help
-	  Swiss railway clock emulation, and a fancy default appearance
-
-	  Swisswatch is a fancy Swiss railway clock emulator.
-	  
-	  This program support color display, you must add belong lines to ~/.Xdefaults.
-	  
-	  #if COLOR
-	  swisswatch*customization:                 -color
-	  #endif
-	  
-	  and exec `xrdb $HOME/.Xdefaults'.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_TIME_TDL
-	bool "tdl-1.5.2nb1"
-	help
-	  Todo list manager with tons of features
-
-	  tdl is a to-do list manager. You can use it for keeping track of
-	  tasks you have to do, check them off as they get done, organise them
-	  into a project hierarchy, and generate reports of what you've
-	  completed over a period of time. It's often used for tracking
-	  programming tasks, but has also found various other uses.
-
-	  http://www.rpcurnow.force9.co.uk/tdl/
 
 config BR2_PKGSRC_PACKAGE_TIME_REM2ICS
 	bool "rem2ics-0.93nb2"
@@ -1451,103 +1704,19 @@ config BR2_PKGSRC_PACKAGE_TIME_REM2ICS
 
 	  https://launchpad.net/rem2ics/
 
-config BR2_PKGSRC_PACKAGE_TIME_TITRAX
-	bool "titrax-1.98nb5"
+
+config BR2_PKGSRC_PACKAGE_TIME_REMIND
+	bool "remind-3.1.9"
 	help
-	  Little X11 tool to track project times
+	  Calendar/alarm program with interpreted input language
 
-	  TimeTracker is an Athena Widget-based program to keep track of time.
-	  It puts up a list of projects, and the number of minutes worked on each.
-	  You click on the project you want to work on, and it starts counting on that.
-	  At the end of the day, it saves the collected data in a file, and you can
-	  use a script to process the data. "sumtitra" is one possible such script.
+	  REMIND is a calendar/alarm program that lets you specify reminders
+	  and alarms with a versatile interpreted input language.  REMIND
+	  also produces PostScript calendars, and can handle both the
+	  common and Hebrew calendars.
 
-	  http://www.alvestrand.no/titrax/TimeTracker.html
+	  http://www.roaringpenguin.com/products/remind
 
-config BR2_PKGSRC_PACKAGE_TIME_VIXIE_CRON
-	bool "vixie-cron-4.1nb1"
-	help
-	  Execute and maintain scheduled commands
-
-	  Vixie Cron is a popular implementation of cron for running scheduled
-	  commands for the system and regular users.
-	  
-	  This is a version of 'cron' that is known to run on most systems.  It is
-	  functionally based on the SysV cron, which means that each user can have
-	  their own crontab file (all crontab files are stored in a read-protected
-	  directory).
-	  
-	  A message is logged each time a command is executed; also, the files
-	  "allow" and "deny" can be used to control access to the "crontab" command
-	  (which installs crontabs).
-
-	  
-
-config BR2_PKGSRC_PACKAGE_TIME_WMCALCLOCK
-	bool "wmCalClock-1.25nb2"
-	help
-	  Another WindowMaker calendar/clock dockapp
-
-	  wmCalClock is a simple Calendar Clock that uses anti-aliased characters and
-	  drop shadows.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_TIME_WMCLOCKMON
-	bool "wmclockmon-0.8.1nb2"
-	help
-	  Windowmaker dockapp for time/date
-
-	  A stylish windowmaker dockapp which displays date and time in your
-	  locale in varying formats, including Internet time.  Contains alarm,
-	  calendar and configuration utilities.  Works under {black,flux}box
-	  too.  Similar in style to wmmemmon and wmcpuload.
-
-	  http://tnemeth.free.fr/projets/dockapps.html
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_TAI64
-	bool "p5-Time-TAI64-2.11nb3"
-	help
-	  Convert TAI64 strings into standard unix timestamps
-
-	  This Module makes available to the user functions to convert TAI64 strings
-	  to unix timestamps suitable to make time calculations.
-
-	  http://search.cpan.org/dist/Time-TAI64/
-
-config BR2_PKGSRC_PACKAGE_TIME_WMFISHTIME
-	bool "wmfishtime-1.24nb2"
-	help
-	  Dockable clock application with clock, date and fish
-
-	  Well, this is just your standard time dockapp. Top part has the clock face,
-	  bottom part has day of the week, followed by day, followed by month. Yellow
-	  hand counts seconds, green hand counts minutes, red hand counts hours. Few
-	  seconds after startup there are at least 32 bubbles floating up behind the
-	  clock face.  There are 4 fishes randomly swimming back and forth. If you move
-	  your mouse inside the dockapp window, the fish will get scared and run away.
-
-	  http://www.ne.jp/asahi/linux/timecop/
-
-config BR2_PKGSRC_PACKAGE_TIME_WMMOONCLOCK
-	bool "wmMoonClock-1.27nb1"
-	help
-	  Shows lunar ephemeris to fairly high accuracy
-
-	  Shows lunar ephemeris to fairly high accuracy.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_FORMAT_XS
-	bool "p5-Time-Format_XS-1.03nb2"
-	help
-	  Companion module for Time::Format, to speed up time formatting
-
-	  Time::Format_XS, provides a huge performance improvement for the main
-	  formatting function in Time::Format. This is the time_format function,
-	  usually accessed via the %time hash.
-
-	  http://search.cpan.org/dist/Time-Format_XS/
 
 config BR2_PKGSRC_PACKAGE_TIME_RSIBREAK
 	bool "rsibreak-0.10nb6"
@@ -1569,6 +1738,180 @@ config BR2_PKGSRC_PACKAGE_TIME_RSIBREAK
 
 	  http://www.rsibreak.org/
 
+
+config BR2_PKGSRC_PACKAGE_TIME_RSIBREAK_KDE3
+	bool "rsibreak-0.8.0nb10"
+	help
+	  RSI management tool
+
+	  Repetitive Strain Injury is an illness which can occur as a result of
+	  working with a mouse and keyboard. This utility can be used to remind
+	  you to take a break now and then. It will show you a random picture
+	  from a collection you can configure yourself for a configurable
+	  duration at a configurable interval.
+	  
+	  You can use these breaks to do some stretch exercises for example, or
+	  as a reminder to walk away from the computer for a while.
+	  
+	  RSIBreak will sit in your system tray and when it is time for a break
+	  it will show you the picture full screen. All timings can be set by
+	  clicking with the right mouse button on the icon in the system tray.
+
+	  http://www.rsibreak.org/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_RUBY_TZINFO
+	bool "ruby19-tzinfo-0.3.29"
+	help
+	  Daylight-savings-aware timezone library
+
+	  TZInfo is a Ruby library that uses the standard tz (Olson) database to
+	  provide daylight savings aware transformations between times in
+	  different time zones.  The tz database is compiled into Ruby modules
+	  which are packaged in the release.  No external zoneinfo files are
+	  required at runtime.
+
+	  http://tzinfo.rubyforge.org/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_SAYTIME
+	bool "saytime-19951111"
+	help
+	  Talking clock
+
+	  Jef Poskanzer's talking clock.
+
+	  http://www.acme.com/software/saytime/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_SUNCLOCK
+	bool "sunclock-1.5nb2"
+	help
+	  Show which portion of the Earth's surface is illuminated by the Sun
+
+	  This program is a clock that shows which portion of the Earth's surface is
+	  illuminated by the Sun.  It is designed to be usually iconic, but can be
+	  opened for a larger display with the time updated every second and both the
+	  local timezone and UTC displayed.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_SWISSWATCH
+	bool "swisswatch-0.06nb2"
+	help
+	  Swiss railway clock emulation, and a fancy default appearance
+
+	  Swisswatch is a fancy Swiss railway clock emulator.
+	  
+	  This program support color display, you must add belong lines to ~/.Xdefaults.
+	  
+	  #if COLOR
+	  swisswatch*customization:                 -color
+	  #endif
+	  
+	  and exec `xrdb $HOME/.Xdefaults'.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_TDL
+	bool "tdl-1.5.2nb1"
+	help
+	  Todo list manager with tons of features
+
+	  tdl is a to-do list manager. You can use it for keeping track of
+	  tasks you have to do, check them off as they get done, organise them
+	  into a project hierarchy, and generate reports of what you've
+	  completed over a period of time. It's often used for tracking
+	  programming tasks, but has also found various other uses.
+
+	  http://www.rpcurnow.force9.co.uk/tdl/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_TITRAX
+	bool "titrax-1.98nb5"
+	help
+	  Little X11 tool to track project times
+
+	  TimeTracker is an Athena Widget-based program to keep track of time.
+	  It puts up a list of projects, and the number of minutes worked on each.
+	  You click on the project you want to work on, and it starts counting on that.
+	  At the end of the day, it saves the collected data in a file, and you can
+	  use a script to process the data. "sumtitra" is one possible such script.
+
+	  http://www.alvestrand.no/titrax/TimeTracker.html
+
+
+config BR2_PKGSRC_PACKAGE_TIME_VIXIE_CRON
+	bool "vixie-cron-4.1nb1"
+	help
+	  Execute and maintain scheduled commands
+
+	  Vixie Cron is a popular implementation of cron for running scheduled
+	  commands for the system and regular users.
+	  
+	  This is a version of 'cron' that is known to run on most systems.  It is
+	  functionally based on the SysV cron, which means that each user can have
+	  their own crontab file (all crontab files are stored in a read-protected
+	  directory).
+	  
+	  A message is logged each time a command is executed; also, the files
+	  "allow" and "deny" can be used to control access to the "crontab" command
+	  (which installs crontabs).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_WMCALCLOCK
+	bool "wmCalClock-1.25nb2"
+	help
+	  Another WindowMaker calendar/clock dockapp
+
+	  wmCalClock is a simple Calendar Clock that uses anti-aliased characters and
+	  drop shadows.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_WMMOONCLOCK
+	bool "wmMoonClock-1.27nb1"
+	help
+	  Shows lunar ephemeris to fairly high accuracy
+
+	  Shows lunar ephemeris to fairly high accuracy.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_WMCLOCKMON
+	bool "wmclockmon-0.8.1nb2"
+	help
+	  Windowmaker dockapp for time/date
+
+	  A stylish windowmaker dockapp which displays date and time in your
+	  locale in varying formats, including Internet time.  Contains alarm,
+	  calendar and configuration utilities.  Works under {black,flux}box
+	  too.  Similar in style to wmmemmon and wmcpuload.
+
+	  http://tnemeth.free.fr/projets/dockapps.html
+
+
+config BR2_PKGSRC_PACKAGE_TIME_WMFISHTIME
+	bool "wmfishtime-1.24nb2"
+	help
+	  Dockable clock application with clock, date and fish
+
+	  Well, this is just your standard time dockapp. Top part has the clock face,
+	  bottom part has day of the week, followed by day, followed by month. Yellow
+	  hand counts seconds, green hand counts minutes, red hand counts hours. Few
+	  seconds after startup there are at least 32 bubbles floating up behind the
+	  clock face.  There are 4 fishes randomly swimming back and forth. If you move
+	  your mouse inside the dockapp window, the fish will get scared and run away.
+
+	  http://www.ne.jp/asahi/linux/timecop/
+
+
 config BR2_PKGSRC_PACKAGE_TIME_WMTIME
 	bool "wmtime-1.0b2nb1"
 	help
@@ -1579,17 +1922,6 @@ config BR2_PKGSRC_PACKAGE_TIME_WMTIME
 
 	  
 
-config BR2_PKGSRC_PACKAGE_TIME_XFCE4_ORAGE
-	bool "xfce4-orage-4.6.1nb6"
-	help
-	  Xfce time managing application
-
-	  Time-managing application for the Xfce desktop environment.
-	  
-	  Orage 4.3 uses new ical interface instead of old dbh to store and
-	  utilize calender appointments.
-
-	  http://www.xfce.org/
 
 config BR2_PKGSRC_PACKAGE_TIME_WMZCALOCK
 	bool "wmzcalock-0.1"
@@ -1601,41 +1933,6 @@ config BR2_PKGSRC_PACKAGE_TIME_WMZCALOCK
 
 	  http://zapatopi.net/zapatoware/wmzcalock.html
 
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_WARP
-	bool "p5-Time-Warp-0.5nb3"
-	help
-	  Perl 5 module to control the flow of time
-
-	  The Perl 5 module Time::Warp offers developers control over the
-	  measurement of time.
-
-	  http://search.cpan.org/dist/Time-Warp/
-
-config BR2_PKGSRC_PACKAGE_TIME_PCAL
-	bool "pcal-4.7nb2"
-	help
-	  PostScript calendar program
-
-	  "Pcal" Version 4.7
-	  
-	  This is a new release of "Pcal", the PostScript calendar program.  The major
-	  new features are the "-H" flag for generating output in HTML table form,
-	  expansion of "%y" in the "include" filename into the last two digits of
-	  every applicable year in "year all" mode, and the addition of build-time
-	  support for A4 size paper.
-
-	  http://pcal.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_TIME_XONCLOCK
-	bool "xonclock-0.0.9.4"
-	help
-	  Analog clock
-
-	  xonclock is X on-screen analog clock displayer with assignable skins.
-	  Originally the program was written to work under the Window Maker 0.91.0
-	  windows manager.
-
-	  http://xonclock.sourceforge.net/
 
 config BR2_PKGSRC_PACKAGE_TIME_WXREMIND
 	bool "wxRemind-0.6.18nb3"
@@ -1656,6 +1953,183 @@ config BR2_PKGSRC_PACKAGE_TIME_WXREMIND
 	  calendar of the selected month suitable for printing.
 
 	  http://www.duke.edu/~dgraham/wxRemind/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_WYRD
+	bool "wyrd-1.4.1nb1"
+	help
+	  Text-based front-end to Remind
+
+	  Wyrd is a text-based front-end to Remind, a sophisticated calendar
+	  and alarm program. Remind's power lies in its programmability, and
+	  Wyrd does not hide this capability behind flashy GUI dialogs.
+	  Rather, Wyrd is designed to make you more efficient at editing your
+	  reminder files directly. It also offers a scrollable timetable
+	  suitable for visualizing your schedule at a glance.
+	  
+	  Unlike most of the calendar applications available today, Wyrd is
+	  designed to be both lightweight and fast. Startup time is negligible,
+	  UI navigation is instantaneous, and the wyrd process typically
+	  consumes less than 2MB of resident memory.
+
+	  http://www.eecs.umich.edu/~pelzlpj/wyrd/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XALARM
+	bool "xalarm-3.06nb1"
+	help
+	  X11 interactive alarm clock
+
+	  xalarm is an interactive alarm clock analogous to a combination of leave(1)
+	  and calendar(1), only much more powerful.
+	  
+	  Also supplied is xmemo, a front end to xalarm. Two front end to xmemo,
+	  xfortune and xyow, are also provided if respectively fortune and yow are
+	  available.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XBEATS
+	bool "xbeats-0.4nb1"
+	help
+	  Beats clock dockable in both Window Maker and AfterStep
+
+	  A beats clock dockable in both Window Maker and AfterStep. It can
+	  also run in its own window.
+
+	  http://iznogood.bohemians.org/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XCAL
+	bool "xcal-4.1nb3"
+	help
+	  Calendar with alarms and a notebook for X11
+
+	  Xcal is an interactive calendar program with alarms and a notebook.
+	  
+	  Pscal is an program that generates calendars in PostScript.
+	  
+	  Xcal_cal is a program that takes you calendar entries and makes a file
+	  for the standard UNIX calendar program to send you mail.
+	  
+	  Xcalev is a program that is used to pre-load your calendar with all
+	  those birthdays that you are prone to forget.
+	  
+	  Xcalpr is a program that prints calendar files out to a terminal. Nice
+	  if you have no X screen. This also can be used to generate a file for
+	  the UNIX calendar program.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XCHRONO
+	bool "xchrono-19900813nb2"
+	help
+	  Multi-timezone X11-based clock
+
+	  Xchrono is a multi-timezone, multi-face clock program for X Windows.
+	  Several cities have been compiled into xchrono, and can be invoked with
+	  command-line arguments, xchrono -help gives:
+	  
+	  Usage: xchrono [-analog] [-bw <pixels>] [-digital]
+	  [-fg <color>] [-bg <color>] [-hd <color>]
+	  [-hl <color>] [-bd <color>]
+	  [-fn <font_name>] [-help] [-padding <pixels>]
+	  [-rv] [-update <seconds>] [-display displayname]
+	  [-geometry geom]
+	  [-width clockWidth] [-height clockHeight] [-local localName]
+	  [-boston] [-newyork] [-chicago] [-denver] [-la]
+	  [-hawaii] [-tokyo] [-sydney] [-london]
+	  [-paris] [-frankfurt] [-rio]
+	  
+	  OK, OK, Hawaii isn't a city, but you get the point. The timezones used
+	  are taken from tztab in the SYSV case, and from /usr/lib/zoneinfo
+	  otherwise, and as such may or may not be correct (the TZ variable
+	  definitions or the city->timezone mappings).
+	  
+	  The -local <localName> option causes a clock labeled with <localName>
+	  using the value of TZ at startup as its timezone.  In addition, a GMT
+	  clock always appears.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XDALICLOCK
+	bool "xdaliclock-2.30"
+	help
+	  Animated digital clock
+
+	  XDaliClock is a digital clock for the X Window System; when a digit changes,
+	  it ``melts'' into its new shape.
+	  
+	  It can display in 12 or 24 hour modes, and displays the date when a mouse
+	  button is held down.  It has two large fonts built into it, but it can
+	  animate most other fonts that contain all of the digits.  It can also do some
+	  funky psychedelic colormap cycling, and can use overlay planes or the `shape'
+	  extension so that the window is transparent.
+
+	  http://www.jwz.org/xdaliclock/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XDKCAL
+	bool "xdkcal-0.9dnb1"
+	help
+	  X Desktop Calendar
+
+	  X Desktop Calendar (xdkcal) is a calendar for the X Window System: it simply
+	  draws a calendar on your desktop.  You can customize its fontset, its color
+	  and/or its drawing style.  This application is completely internationalized,
+	  so that it reads the locale database and draws locale specific strings, such
+	  as the name of months or weeks.
+
+	  http://www.shiratori.riec.tohoku.ac.jp/~jir/linux/products/xdkcal/index-e.html
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XFCE4_DATETIME_PLUGIN
+	bool "xfce4-datetime-plugin-0.6.1nb5"
+	help
+	  Xfce calendar plugin
+
+	  Calendar plugin for Xfce.
+
+	  http://www.xfce.org/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XFCE4_ORAGE
+	bool "xfce4-orage-4.6.1nb6"
+	help
+	  Xfce time managing application
+
+	  Time-managing application for the Xfce desktop environment.
+	  
+	  Orage 4.3 uses new ical interface instead of old dbh to store and
+	  utilize calender appointments.
+
+	  http://www.xfce.org/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XFCE4_TIMER_PLUGIN
+	bool "xfce4-timer-plugin-0.5.1nb6"
+	help
+	  Xfce4 timer plugin
+
+	  Timer plugin for xfce4 panel.
+
+	  http://www.xfce.org/
+
+
+config BR2_PKGSRC_PACKAGE_TIME_XONCLOCK
+	bool "xonclock-0.0.9.4"
+	help
+	  Analog clock
+
+	  xonclock is X on-screen analog clock displayer with assignable skins.
+	  Originally the program was written to work under the Window Maker 0.91.0
+	  windows manager.
+
+	  http://xonclock.sourceforge.net/
+
 
 config BR2_PKGSRC_PACKAGE_TIME_XTIDE
 	bool "xtide-2.8.3nb4"
@@ -1689,6 +2163,7 @@ config BR2_PKGSRC_PACKAGE_TIME_XTIDE
 
 	  http://www.flaterco.com/
 
+
 config BR2_PKGSRC_PACKAGE_TIME_XTIMER
 	bool "xtimer-0.8089nb3"
 	help
@@ -1700,24 +2175,6 @@ config BR2_PKGSRC_PACKAGE_TIME_XTIMER
 
 	  http://www.bsddiary.net/xtimer/
 
-config BR2_PKGSRC_PACKAGE_TIME_WYRD
-	bool "wyrd-1.4.1nb1"
-	help
-	  Text-based front-end to Remind
-
-	  Wyrd is a text-based front-end to Remind, a sophisticated calendar
-	  and alarm program. Remind's power lies in its programmability, and
-	  Wyrd does not hide this capability behind flashy GUI dialogs.
-	  Rather, Wyrd is designed to make you more efficient at editing your
-	  reminder files directly. It also offers a scrollable timetable
-	  suitable for visualizing your schedule at a glance.
-	  
-	  Unlike most of the calendar applications available today, Wyrd is
-	  designed to be both lightweight and fast. Startup time is negligible,
-	  UI navigation is instantaneous, and the wyrd process typically
-	  consumes less than 2MB of resident memory.
-
-	  http://www.eecs.umich.edu/~pelzlpj/wyrd/
 
 config BR2_PKGSRC_PACKAGE_TIME_XTU
 	bool "xtu-1.2nb1"
@@ -1728,19 +2185,6 @@ config BR2_PKGSRC_PACKAGE_TIME_XTU
 
 	  http://core.de/~coto/projects/xtu/
 
-config BR2_PKGSRC_PACKAGE_TIME_XALARM
-	bool "xalarm-3.06nb1"
-	help
-	  X11 interactive alarm clock
-
-	  xalarm is an interactive alarm clock analogous to a combination of leave(1)
-	  and calendar(1), only much more powerful.
-	  
-	  Also supplied is xmemo, a front end to xalarm. Two front end to xmemo,
-	  xfortune and xyow, are also provided if respectively fortune and yow are
-	  available.
-
-	  
 
 config BR2_PKGSRC_PACKAGE_TIME_ZONETAB
 	bool "zonetab-0"
@@ -1752,301 +2196,4 @@ config BR2_PKGSRC_PACKAGE_TIME_ZONETAB
 
 	  
 
-config BR2_PKGSRC_PACKAGE_TIME_XBEATS
-	bool "xbeats-0.4nb1"
-	help
-	  Beats clock dockable in both Window Maker and AfterStep
-
-	  A beats clock dockable in both Window Maker and AfterStep. It can
-	  also run in its own window.
-
-	  http://iznogood.bohemians.org/
-
-config BR2_PKGSRC_PACKAGE_TIME_RSIBREAK_KDE3
-	bool "rsibreak-0.8.0nb10"
-	help
-	  RSI management tool
-
-	  Repetitive Strain Injury is an illness which can occur as a result of
-	  working with a mouse and keyboard. This utility can be used to remind
-	  you to take a break now and then. It will show you a random picture
-	  from a collection you can configure yourself for a configurable
-	  duration at a configurable interval.
-	  
-	  You can use these breaks to do some stretch exercises for example, or
-	  as a reminder to walk away from the computer for a while.
-	  
-	  RSIBreak will sit in your system tray and when it is time for a break
-	  it will show you the picture full screen. All timings can be set by
-	  clicking with the right mouse button on the icon in the system tray.
-
-	  http://www.rsibreak.org/
-
-config BR2_PKGSRC_PACKAGE_TIME_XCAL
-	bool "xcal-4.1nb3"
-	help
-	  Calendar with alarms and a notebook for X11
-
-	  Xcal is an interactive calendar program with alarms and a notebook.
-	  
-	  Pscal is an program that generates calendars in PostScript.
-	  
-	  Xcal_cal is a program that takes you calendar entries and makes a file
-	  for the standard UNIX calendar program to send you mail.
-	  
-	  Xcalev is a program that is used to pre-load your calendar with all
-	  those birthdays that you are prone to forget.
-	  
-	  Xcalpr is a program that prints calendar files out to a terminal. Nice
-	  if you have no X screen. This also can be used to generate a file for
-	  the UNIX calendar program.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_TIME_XCHRONO
-	bool "xchrono-19900813nb2"
-	help
-	  Multi-timezone X11-based clock
-
-	  Xchrono is a multi-timezone, multi-face clock program for X Windows.
-	  Several cities have been compiled into xchrono, and can be invoked with
-	  command-line arguments, xchrono -help gives:
-	  
-	  Usage: xchrono [-analog] [-bw <pixels>] [-digital]
-	  [-fg <color>] [-bg <color>] [-hd <color>]
-	  [-hl <color>] [-bd <color>]
-	  [-fn <font_name>] [-help] [-padding <pixels>]
-	  [-rv] [-update <seconds>] [-display displayname]
-	  [-geometry geom]
-	  [-width clockWidth] [-height clockHeight] [-local localName]
-	  [-boston] [-newyork] [-chicago] [-denver] [-la]
-	  [-hawaii] [-tokyo] [-sydney] [-london]
-	  [-paris] [-frankfurt] [-rio]
-	  
-	  OK, OK, Hawaii isn't a city, but you get the point. The timezones used
-	  are taken from tztab in the SYSV case, and from /usr/lib/zoneinfo
-	  otherwise, and as such may or may not be correct (the TZ variable
-	  definitions or the city->timezone mappings).
-	  
-	  The -local <localName> option causes a clock labeled with <localName>
-	  using the value of TZ at startup as its timezone.  In addition, a GMT
-	  clock always appears.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_TIME_XDALICLOCK
-	bool "xdaliclock-2.30"
-	help
-	  Animated digital clock
-
-	  XDaliClock is a digital clock for the X Window System; when a digit changes,
-	  it ``melts'' into its new shape.
-	  
-	  It can display in 12 or 24 hour modes, and displays the date when a mouse
-	  button is held down.  It has two large fonts built into it, but it can
-	  animate most other fonts that contain all of the digits.  It can also do some
-	  funky psychedelic colormap cycling, and can use overlay planes or the `shape'
-	  extension so that the window is transparent.
-
-	  http://www.jwz.org/xdaliclock/
-
-config BR2_PKGSRC_PACKAGE_TIME_XDKCAL
-	bool "xdkcal-0.9dnb1"
-	help
-	  X Desktop Calendar
-
-	  X Desktop Calendar (xdkcal) is a calendar for the X Window System: it simply
-	  draws a calendar on your desktop.  You can customize its fontset, its color
-	  and/or its drawing style.  This application is completely internationalized,
-	  so that it reads the locale database and draws locale specific strings, such
-	  as the name of months or weeks.
-
-	  http://www.shiratori.riec.tohoku.ac.jp/~jir/linux/products/xdkcal/index-e.html
-
-config BR2_PKGSRC_PACKAGE_TIME_PCLOCK
-	bool "pclock-0.13.1nb2"
-	help
-	  Simple analog clock designed for Window Maker
-
-	  pclock is a simple analog clock program designed to run under Window Maker
-	  window manager (also runs fine on any other window manager which supports
-	  dock apps, such as PWM).  Any 64x64 pixmap may be used as a background.
-
-	  http://www.chasen.org/~taku/software/yamcha/
-
-config BR2_PKGSRC_PACKAGE_TIME_PEAR_DATE
-	bool "php53-pear-Date-1.4.7"
-	help
-	  PHP Date and Time Zone Classes
-
-	  Generic PHP classes for representation and manipulation of
-	  dates, times and time zones without the need of timestamps,
-	  which is a huge limitation for php programs. Includes time zone data,
-	  time zone conversions and many date/time conversions.
-	  It does not rely on 32-bit system date stamps, so
-	  you can display calendars and compare dates that date
-	  pre 1970 and post 2038. This package also provides a class
-	  to convert date strings between Gregorian and Human calendar formats.
-
-	  http://pear.php.net/package/Date
-
-config BR2_PKGSRC_PACKAGE_TIME_PHP_CALENDAR
-	bool "php53-calendar-5.3.8"
-	help
-	  PHP extension for calendar conversion support
-
-	  PHP is a programming language designed to be embedded into web pages.
-	  This module provides support for calendar date conversions.
-
-	  http://www.php.net/
-
-config BR2_PKGSRC_PACKAGE_TIME_PY_DATEUTIL
-	bool "py26-dateutil-1.5"
-	help
-	  Extensions to the standard datetime module
-
-	  The dateutil module provides powerful extensions to the standard datetime
-	  module, available in Python 2.3+.
-	  
-	  Features
-	  
-	  * Computing of relative deltas (next month, next year, next monday, last week
-	  of month, etc);
-	  * Computing of relative deltas between two given date and/or datetime objects;
-	  * Computing of dates based on very flexible recurrence rules, using a superset
-	  of the iCalendar specification. Parsing of RFC strings is supported as well.
-	  * Generic parsing of dates in almost any string format;
-	  * Timezone (tzinfo) implementations for tzfile(5) format files
-	  (/etc/localtime, /usr/share/zoneinfo, etc), TZ environment string (in all
-	  known formats), iCalendar format files, given ranges (with help from
-	  relative deltas), local machine timezone, fixed offset timezone, and UTC
-	  timezone.
-	  * Computing of Easter Sunday dates for any given year, using Western, Orthodox
-	  or Julian algorithms;
-	  * More than 400 test cases.
-
-	  http://labix.org/python-dateutil
-
-config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_LOCAL
-	bool "p5-Time-Local-1.19.1nb2"
-	help
-	  Efficiently compute time from local and GMT time
-
-	  These routines are the inverse of built-in perl functions localtime()
-	  and gmtime().  They accept a date as a six-element array, and return
-	  the corresponding time(2) value in seconds since the system epoch
-	  (Midnight, January 1, 1970 UTC on Unix, for example).  This value can
-	  be positive or negative, though POSIX only requires support for
-	  positive values, so dates before the system's epoch may not work on
-	  all operating systems.
-
-	  http://search.cpan.org/dist/Time-Local/
-
-config BR2_PKGSRC_PACKAGE_TIME_PY_ICALENDAR
-	bool "py26-icalendar-2.1"
-	help
-	  Python parser/generator for iCalendar files, as per RFC2445
-
-	  The iCalendar package is a parser/generator of iCalendar files for
-	  use with Python. It follows the RFC 2445 (iCalendar) specification
-	  
-	  The package can both generate and parse iCalendar files, and can
-	  easily be used as is.
-	  
-	  The aim is to make a package that is fully compliant to RFC 2445,
-	  well designed, simple to use and well documented.
-
-	  http://codespeak.net/icalendar/
-
-config BR2_PKGSRC_PACKAGE_TIME_PY_MXDATETIME
-	bool "py26-mxDateTime-3.1.3"
-	help
-	  Python extension that provides types and conversions for dates
-
-	  A C extension package for python that provides new datatypes for
-	  handling dates and times together with a rich set of conversion and
-	  parsing routines.
-	  
-	  These types were created to provide a consistent way of transferring
-	  date and time data between Python and databases. Apart from handling
-	  date before the Unix epoch (1.1.1970) they also correctly work with
-	  dates beyond the Unix time limit (currently with Unix time value being
-	  encoded using 32bit integers, the limit is reached in 2038) and thus
-	  is Year 2000 and Year 2038 safe.
-
-	  http://www.egenix.com/files/python/mxDateTime.html
-
-config BR2_PKGSRC_PACKAGE_TIME_PY_PARSEDATETIME
-	bool "py26-parsedatetime-0.8.7"
-	help
-	  Python module for parsing human-readable date/time text
-
-	  A collection of routines to input, parse and manipulate date and times.
-	  The text can either be 'normal' date values or it can be human readable.
-
-	  http://code-bear.com/code/parsedatetime/
-
-config BR2_PKGSRC_PACKAGE_TIME_PY_PYTZ
-	bool "py26-pytz-2010k"
-	help
-	  World timezone definitions, modern and historical
-
-	  pytz brings the Olson tz database into Python. This library allows accurate
-	  and cross platform timezone calculations using Python 2.3 or higher. It also
-	  solves the issue of ambiguous times at the end of daylight savings, which you
-	  can read more about in the Python Library Reference (datetime.tzinfo).
-	  
-	  Amost all (over 540) of the Olson timezones are supported [*].
-	  
-	  Note that if you perform date arithmetic on local times that cross DST
-	  boundaries, the results may be in an incorrect timezone (ie. subtract 1
-	  minute from 2002-10-27 1:00 EST and you get 2002-10-27 0:59 EST instead of
-	  the correct 2002-10-27 1:59 EDT). This cannot be resolved without modifying
-	  the Python datetime implementation. However, these tzinfo classes provide a
-	  normalize() method which allows you to correct these values.
-
-	  http://pytz.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_TIME_REMIND
-	bool "remind-3.1.9"
-	help
-	  Calendar/alarm program with interpreted input language
-
-	  REMIND is a calendar/alarm program that lets you specify reminders
-	  and alarms with a versatile interpreted input language.  REMIND
-	  also produces PostScript calendars, and can handle both the
-	  common and Hebrew calendars.
-
-	  http://www.roaringpenguin.com/products/remind
-
-config BR2_PKGSRC_PACKAGE_TIME_RUBY_TZINFO
-	bool "ruby19-tzinfo-0.3.29"
-	help
-	  Daylight-savings-aware timezone library
-
-	  TZInfo is a Ruby library that uses the standard tz (Olson) database to
-	  provide daylight savings aware transformations between times in
-	  different time zones.  The tz database is compiled into Ruby modules
-	  which are packaged in the release.  No external zoneinfo files are
-	  required at runtime.
-
-	  http://tzinfo.rubyforge.org/
-
-config BR2_PKGSRC_PACKAGE_TIME_XFCE4_DATETIME_PLUGIN
-	bool "xfce4-datetime-plugin-0.6.1nb5"
-	help
-	  Xfce calendar plugin
-
-	  Calendar plugin for Xfce.
-
-	  http://www.xfce.org/
-
-config BR2_PKGSRC_PACKAGE_TIME_XFCE4_TIMER_PLUGIN
-	bool "xfce4-timer-plugin-0.5.1nb6"
-	help
-	  Xfce4 timer plugin
-
-	  Timer plugin for xfce4 panel.
-
-	  http://www.xfce.org/
 

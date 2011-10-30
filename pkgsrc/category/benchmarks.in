@@ -12,36 +12,6 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_BENCHFFT
 
 	  http://www.fftw.org/benchfft/
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_FIB
-	bool "fib-980203"
-	help
-	  Mathematical benchmark
-
-	  This benchmark times how long it takes your computer to compute the
-	  fourtieth Fibonacci Number.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_FLOPS
-	bool "flops-2.0"
-	help
-	  Floating point benchmark to give your MFLOPS rating
-
-	  Flops.c is a 'c' program which attempts to estimate your systems
-	  floating-point 'MFLOPS' rating for the FADD, FSUB, FMUL, and FDIV
-	  operations based on specific 'instruction mixes' (discussed below).
-	  The program provides an estimate of PEAK MFLOPS performance by making
-	  maximal use of register variables with minimal interaction with main
-	  memory. The execution loops are all small so that they will fit in
-	  any cache. Flops.c can be used along with Linpack and the Livermore
-	  kernels (which exercise memory much more extensively) to gain further
-	  insight into the limits of system performance. The flops.c execution
-	  modules include various percent weightings of FDIV's (from 0% to 25%
-	  FDIV's) so that the range of performance can be obtained when using
-	  FDIV's. FDIV's, being computationally more intensive than FADD's or
-	  FMUL's, can impact performance considerably on some systems.
-
-	  http://performance.netlib.org/performance/html/flops.html
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_BLOGBENCH
 	bool "blogbench-1.0nb1"
@@ -57,15 +27,32 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_BLOGBENCH
 
 	  http://blogbench.pureftpd.org/
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_PIPEBENCH
-	bool "pipebench-0.40"
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_BONNIE__
+	bool "bonnie++-1.03enb1"
 	help
-	  Measures the speed of a pipe
+	  Enhanced performance Test of Filesystem I/O
 
-	  Measures the speed of a pipe, by sitting in the middle passing the
-	  data along to the next process.
+	  Bonnie++ is a benchmark suite that is aimed at performing a number
+	  of simple tests of hard drive and file system performance. Then
+	  you can decide which test is important and decide how to compare
+	  different systems after running it. There are no plans to ever have
+	  it produce a single number, because the author thinks that a single
+	  number can be useful when comparing such things. The main program
+	  tests database type access to a single file (or a set of files if
+	  you wish to test more than 1G of storage), and it tests creation,
+	  reading, and deleting of small files which can simulate the usage
+	  of programs such as Squid, INN, or Maildir format email. The ZCAV
+	  program which the author initially released as a separate package
+	  tests the performance of different zones of a hard drive. It does
+	  not write any data (so you can use it on full file systems). It
+	  can show why comparing the speed of Windows at the start of a hard
+	  drive to Linux at the end of the hard drive (typical dual-boot
+	  scenario) isn't a valid comparison. Bonnie++ was based on the code
+	  for Bonnie by Tim Bray.
 
-	  http://www.habets.pp.se/synscan/programs.php?prog
+	  http://www.coker.com.au/bonnie++/
+
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_BONNIE
 	bool "bonnie-2.06nb2"
@@ -100,161 +87,6 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_BONNIE
 
 	  http://www.textuality.com/bonnie/index.html
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_POSTAL
-	bool "postal-0.62nb5"
-	help
-	  Tool for benchmarking SMTP/POP servers
-
-	  Postal is a SMTP benchmark.
-	  
-	  Postal-list will list all the possible expansions for an account name (used
-	  for creating a list of accounts to create on your test server).
-	  
-	  Rabid is the mad Biff, it is a POP benchmark.
-
-	  http://www.coker.com.au/postal/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_LINPACK_BENCH
-	bool "linpack-bench-940225"
-	help
-	  Collection of benchmarks for floating point
-
-	  Translated to C by Bonnie Toy 5/88
-	  
-	  LINPACK is a collection of Fortran subroutines that analyze and solve
-	  linear equations and linear least-squares problems. The package solves
-	  linear systems whose matrices are general, banded, symmetric indefinite,
-	  symmetric positive definite, triangular, and tridiagonal square. In
-	  addition, the package computes the QR and singular value decompositions of
-	  rectangular matrices and applies them to least-squares problems. LINPACK
-	  uses column-oriented algorithms to increase efficiency by preserving
-	  locality of reference.
-	  
-	  LINPACK was designed for supercomputers in use in the 1970s and early
-	  1980s. LINPACK has been largely superceded by LAPACK, which has been
-	  designed to run efficiently on shared-memory, vector supercomputers.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_FORKBOMB
-	bool "forkbomb-1.4"
-	help
-	  
-
-	  Classic Unix fork() bomber. Includes CPU hanger, memory allocator,
-	  memory toucher and zombie dance team. You can test how will your
-	  computer behave under heavy CPU, process, memory load.
-	  
-	  Forkbomb is also useful as realloc() benchmark.
-
-	  http://home.tiscali.cz:8080/~cz210552/forkbomb.html
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_LMBENCH
-	bool "lmbench-2.11anb3"
-	help
-	  Complete benchmark that gives a large amount of information
-
-	  lmbench is a micro-benchmark suite designed to focus attention
-	  on the basic building blocks of many common system  applications,
-	  such  as  databases,  simulations, software development, and
-	  networking.  In almost all  cases,  the  individual  tests  are
-	  the result  of  analysis and isolation of a customer's actual
-	  performance problem.  These tools can be, and currently  are,
-	  used  to compare  different system implementations from different
-	  vendors.  The tools have been and continue to be used by processor
-	  designers.  In  several  cases,  the  benchmarks  have  uncovered
-	  previously unknown  bugs  and design flaws.  lmbench  includes an
-	  extensible database of results from systems current as of late 1995.
-
-	  http://lmbench.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_POSTMARK
-	bool "postmark-1.5"
-	help
-	  NetApps file system benchmark
-
-	  PostMark is the benchmark used in the NetApp Technical Report TR3022,
-	  "PostMark: A New File System Benchmark".  The paper fully explains how
-	  to use this tool.
-	  
-	  From the paper's Abstract:
-	  Existing file system benchmarks are deficient in portraying
-	  performance in the ephemeral small-file regime used by Internet
-	  software, especially:
-	  * electronic mail
-	  * netnews
-	  * web-based commerce
-	  
-	  PostMark is a new benchmark to measure performance for this class of
-	  application.
-
-	  http://www.netapp.com/tech_library/3022.html
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_BONNIE__
-	bool "bonnie++-1.03enb1"
-	help
-	  Enhanced performance Test of Filesystem I/O
-
-	  Bonnie++ is a benchmark suite that is aimed at performing a number
-	  of simple tests of hard drive and file system performance. Then
-	  you can decide which test is important and decide how to compare
-	  different systems after running it. There are no plans to ever have
-	  it produce a single number, because the author thinks that a single
-	  number can be useful when comparing such things. The main program
-	  tests database type access to a single file (or a set of files if
-	  you wish to test more than 1G of storage), and it tests creation,
-	  reading, and deleting of small files which can simulate the usage
-	  of programs such as Squid, INN, or Maildir format email. The ZCAV
-	  program which the author initially released as a separate package
-	  tests the performance of different zones of a hard drive. It does
-	  not write any data (so you can use it on full file systems). It
-	  can show why comparing the speed of Windows at the start of a hard
-	  drive to Linux at the end of the hard drive (typical dual-boot
-	  scenario) isn't a valid comparison. Bonnie++ was based on the code
-	  for Bonnie by Tim Bray.
-
-	  http://www.coker.com.au/bonnie++/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_HBENCH
-	bool "hbench-1.1nb1"
-	help
-	  Suite of portable benchmarks to measure the OS and the hardware
-
-	  HBench-OS is a suite of portable benchmarks designed to measure the
-	  performance of primitive functionality provided by an operating
-	  system/hardware platform. HBench-OS was designed primarily as a
-	  research tool for the systems research and OS development communities,
-	  and thus its major design goal is to provide a flexible system for
-	  reproducible, accurate, and statistically-sound performance analysis
-	  and evaluation. These characteristics make it ideal for both
-	  performance research as well as more traditional consumer-oriented
-	  performance measurement and analysis.
-
-	  http://www.eecs.harvard.edu/vino/perf/hbench/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_RANDREAD
-	bool "randread-0.2"
-	help
-	  Program to help benchmark random disk read performance
-
-	  Randread is a simple program to help benchmark random disk read
-	  performance.
-
-	  http://randread.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_NBENCH
-	bool "nbench-2.2.2"
-	help
-	  Benchmark tool for CPU, FPU and memory
-
-	  This benchmark utility is used to determine how the processor,
-	  its caches and coprocessors influence overall system performance.
-	  Its measurements can indicate problems with the processor subsystem
-	  and (since the processor is a major influence on overall system
-	  system performance) give us an idea of how well a given system will
-	  perform.
-
-	  http://www.tux.org/~mayer/linux/
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_BYTEBENCH
 	bool "bytebench-4.1.0nb3"
@@ -269,87 +101,6 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_BYTEBENCH
 
 	  
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_HEAPSORT
-	bool "heapsort-1.0"
-	help
-	  Benchmark program for variable sized arrays
-
-	  Based on the Heap Sort code in 'Numerical Recipes in C' by William H.
-	  Press, Brian P. Flannery, Saul A. Teukolsky, and William T. Vetterling,
-	  Cambridge University Press, 1990, ISBN 0-521-35465-X.
-	  
-	  The MIPS rating is based upon the program run time (runtime) for one
-	  iteration and a gcc 2.1 unoptimized (gcc -DUNIX) assembly dump count of
-	  instructions per iteration for a i486 machine (assuming 80386 code).  This
-	  is the reference used.
-	  
-	  The maximum amount of memory allocated is based on the 'imax' variable in
-	  main(). Memory size = (2000*sizeof(long))*2^imax. imax is currently set to
-	  8, but this value may be increased or decreased depending upon your system
-	  memory limits. For standard Intel PC CPU machines a value of imax = 3 must
-	  be used else your system may crash or hang up despite code in the program
-	  to prevent this.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_SKAMPI
-	bool "skampi-5.0.4.355"
-	help
-	  
-
-	  The SKaMPI-Benchmark is a suite of tests designed to measure the performance
-	  of MPI. MPI (Message Passing Interface) is a machine independent standard to
-	  provide an efficient interface to message passing libraries of different
-	  parallel machines. The goal of SKaMPI is to create a database to illustrate
-	  the performance of these different MPI implementations. This database should
-	  allow to:
-	  1. Decide how to implement portable and efficient MPI programs.
-	  2. Predict the performance of MPI programs.
-	  3. Describe supercomputers in terms of MPI.
-
-	  http://liinwww.ira.uka.de/~skampi/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_NETIO
-	bool "netio-1.26"
-	help
-	  Network benchmark for OS/2 2.x, Windows NT/2000 and Unix
-
-	  This is a network benchmark for OS/2 2.x, Windows NT/2000 and Unix.
-	  It measures the net throughput of a network via NetBIOS and/or TCP/IP
-	  protocols (Unix and DOS only support TCP/IP) using various different
-	  packet sizes.
-	  
-	  One instance has to run on one machine as a server process, another
-	  instance is used on another machine to perform the benchmark. When
-	  executed without arguments, the program will explain its usage.
-
-	  http://www.ars.de/ars/ars.nsf/docs/netio
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_HINT
-	bool "hint.serial-98.06.12"
-	help
-	  Scalable benchmark for testing CPU and memory performance
-
-	  HINT (Hierarchical INTegration) is a computer benchmarking tool
-	  developed at the Scalable Computing Laboratory of the Ames Laboratory,
-	  a US Department of Energy laboratory.  Unlike traditional benchmarks,
-	  HINT neither fixes the size of the problem nor the calculation time.
-	  Instead, it uses a rigorously defined measure called QUIPS (QUality
-	  Improvements Per Second).
-	  
-	  The output of HINT is data which can be plotted (the gnuplot graphics
-	  package is useful for plotting HINT output).  The plot shows the speed
-	  of the computation as the size of the problem increases.  The HINT
-	  graph shows the peak processor speed and the effects of different
-	  levels of cache and memory on processing speed.  See
-	  http://www.scl.ameslab.gov/Projects/HINT/ for more information and
-	  an on-line database of HINT results.
-	  
-	  HINT also outputs a single number which is the integral of the HINT
-	  curve.  This number, called NetQUIPS, can be used for general
-	  comparison between machines.
-
-	  http://hint.byu.edu/
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_DBENCH
 	bool "dbench-3.04"
@@ -381,6 +132,7 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_DBENCH
 
 	  http://samba.org/ftp/tridge/dbench/README
 
+
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_DHRYSTONE
 	bool "dhrystone-2.1"
 	help
@@ -395,6 +147,249 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_DHRYSTONE
 	  1 million iterations.
 
 	  
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_FIB
+	bool "fib-980203"
+	help
+	  Mathematical benchmark
+
+	  This benchmark times how long it takes your computer to compute the
+	  fourtieth Fibonacci Number.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_FLOPS
+	bool "flops-2.0"
+	help
+	  Floating point benchmark to give your MFLOPS rating
+
+	  Flops.c is a 'c' program which attempts to estimate your systems
+	  floating-point 'MFLOPS' rating for the FADD, FSUB, FMUL, and FDIV
+	  operations based on specific 'instruction mixes' (discussed below).
+	  The program provides an estimate of PEAK MFLOPS performance by making
+	  maximal use of register variables with minimal interaction with main
+	  memory. The execution loops are all small so that they will fit in
+	  any cache. Flops.c can be used along with Linpack and the Livermore
+	  kernels (which exercise memory much more extensively) to gain further
+	  insight into the limits of system performance. The flops.c execution
+	  modules include various percent weightings of FDIV's (from 0% to 25%
+	  FDIV's) so that the range of performance can be obtained when using
+	  FDIV's. FDIV's, being computationally more intensive than FADD's or
+	  FMUL's, can impact performance considerably on some systems.
+
+	  http://performance.netlib.org/performance/html/flops.html
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_FORKBOMB
+	bool "forkbomb-1.4"
+	help
+	  
+
+	  Classic Unix fork() bomber. Includes CPU hanger, memory allocator,
+	  memory toucher and zombie dance team. You can test how will your
+	  computer behave under heavy CPU, process, memory load.
+	  
+	  Forkbomb is also useful as realloc() benchmark.
+
+	  http://home.tiscali.cz:8080/~cz210552/forkbomb.html
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_HBENCH
+	bool "hbench-1.1nb1"
+	help
+	  Suite of portable benchmarks to measure the OS and the hardware
+
+	  HBench-OS is a suite of portable benchmarks designed to measure the
+	  performance of primitive functionality provided by an operating
+	  system/hardware platform. HBench-OS was designed primarily as a
+	  research tool for the systems research and OS development communities,
+	  and thus its major design goal is to provide a flexible system for
+	  reproducible, accurate, and statistically-sound performance analysis
+	  and evaluation. These characteristics make it ideal for both
+	  performance research as well as more traditional consumer-oriented
+	  performance measurement and analysis.
+
+	  http://www.eecs.harvard.edu/vino/perf/hbench/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_HEAPSORT
+	bool "heapsort-1.0"
+	help
+	  Benchmark program for variable sized arrays
+
+	  Based on the Heap Sort code in 'Numerical Recipes in C' by William H.
+	  Press, Brian P. Flannery, Saul A. Teukolsky, and William T. Vetterling,
+	  Cambridge University Press, 1990, ISBN 0-521-35465-X.
+	  
+	  The MIPS rating is based upon the program run time (runtime) for one
+	  iteration and a gcc 2.1 unoptimized (gcc -DUNIX) assembly dump count of
+	  instructions per iteration for a i486 machine (assuming 80386 code).  This
+	  is the reference used.
+	  
+	  The maximum amount of memory allocated is based on the 'imax' variable in
+	  main(). Memory size = (2000*sizeof(long))*2^imax. imax is currently set to
+	  8, but this value may be increased or decreased depending upon your system
+	  memory limits. For standard Intel PC CPU machines a value of imax = 3 must
+	  be used else your system may crash or hang up despite code in the program
+	  to prevent this.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_HINT
+	bool "hint.serial-98.06.12"
+	help
+	  Scalable benchmark for testing CPU and memory performance
+
+	  HINT (Hierarchical INTegration) is a computer benchmarking tool
+	  developed at the Scalable Computing Laboratory of the Ames Laboratory,
+	  a US Department of Energy laboratory.  Unlike traditional benchmarks,
+	  HINT neither fixes the size of the problem nor the calculation time.
+	  Instead, it uses a rigorously defined measure called QUIPS (QUality
+	  Improvements Per Second).
+	  
+	  The output of HINT is data which can be plotted (the gnuplot graphics
+	  package is useful for plotting HINT output).  The plot shows the speed
+	  of the computation as the size of the problem increases.  The HINT
+	  graph shows the peak processor speed and the effects of different
+	  levels of cache and memory on processing speed.  See
+	  http://www.scl.ameslab.gov/Projects/HINT/ for more information and
+	  an on-line database of HINT results.
+	  
+	  HINT also outputs a single number which is the integral of the HINT
+	  curve.  This number, called NetQUIPS, can be used for general
+	  comparison between machines.
+
+	  http://hint.byu.edu/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_HTTPERF
+	bool "httperf-0.8nb1"
+	help
+	  Popular web server benchmarking program
+
+	  httperf is a popular web server benchmarking program that supports
+	  the HTTP/1.1 protocol
+	  
+	  It was written by David Mosberger at Hewlett-Packard.
+
+	  http://www.hpl.hp.com/research/linux/httperf/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_IOZONE
+	bool "iozone-3.308"
+	help
+	  Benchmark for file read and write speed
+
+	  This test writes a X MEGABYTE sequential file in Y byte chunks, then
+	  rewinds it  and reads it back.  [The size of the file should be
+	  big enough to factor out the effect of any disk cache.]
+
+	  http://www.iozone.org/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_KTTCP
+	bool "kttcp-20020711nb2"
+	help
+	  Kernel network throughput benchmark
+
+	  Userland portion of the "kttcp" kernel network throughput
+	  testing tool.  Uses the /dev/kttcp pseudo-device on NetBSD
+	  systems.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_LIBMICRO
+	bool "libmicro-0.4.0"
+	help
+	  Set of utilities to benchmark productivity of system calls
+
+	  LibMicro is a portable set of microbenchmarks that many Solaris engineers
+	  used during Solaris 10 development to measure the performance of various
+	  system and library calls. LibMicro was developed by Bart Smaalders and
+	  Phil Harman as part of their "If Linux is faster it's a Solaris bug
+	  performance" campaign.
+
+	  http://hub.opensolaris.org/bin/view/Project+libmicro/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_LINPACK_BENCH
+	bool "linpack-bench-940225"
+	help
+	  Collection of benchmarks for floating point
+
+	  Translated to C by Bonnie Toy 5/88
+	  
+	  LINPACK is a collection of Fortran subroutines that analyze and solve
+	  linear equations and linear least-squares problems. The package solves
+	  linear systems whose matrices are general, banded, symmetric indefinite,
+	  symmetric positive definite, triangular, and tridiagonal square. In
+	  addition, the package computes the QR and singular value decompositions of
+	  rectangular matrices and applies them to least-squares problems. LINPACK
+	  uses column-oriented algorithms to increase efficiency by preserving
+	  locality of reference.
+	  
+	  LINPACK was designed for supercomputers in use in the 1970s and early
+	  1980s. LINPACK has been largely superceded by LAPACK, which has been
+	  designed to run efficiently on shared-memory, vector supercomputers.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_LMBENCH
+	bool "lmbench-2.11anb3"
+	help
+	  Complete benchmark that gives a large amount of information
+
+	  lmbench is a micro-benchmark suite designed to focus attention
+	  on the basic building blocks of many common system  applications,
+	  such  as  databases,  simulations, software development, and
+	  networking.  In almost all  cases,  the  individual  tests  are
+	  the result  of  analysis and isolation of a customer's actual
+	  performance problem.  These tools can be, and currently  are,
+	  used  to compare  different system implementations from different
+	  vendors.  The tools have been and continue to be used by processor
+	  designers.  In  several  cases,  the  benchmarks  have  uncovered
+	  previously unknown  bugs  and design flaws.  lmbench  includes an
+	  extensible database of results from systems current as of late 1995.
+
+	  http://lmbench.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_NBENCH
+	bool "nbench-2.2.2"
+	help
+	  Benchmark tool for CPU, FPU and memory
+
+	  This benchmark utility is used to determine how the processor,
+	  its caches and coprocessors influence overall system performance.
+	  Its measurements can indicate problems with the processor subsystem
+	  and (since the processor is a major influence on overall system
+	  system performance) give us an idea of how well a given system will
+	  perform.
+
+	  http://www.tux.org/~mayer/linux/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_NETIO
+	bool "netio-1.26"
+	help
+	  Network benchmark for OS/2 2.x, Windows NT/2000 and Unix
+
+	  This is a network benchmark for OS/2 2.x, Windows NT/2000 and Unix.
+	  It measures the net throughput of a network via NetBIOS and/or TCP/IP
+	  protocols (Unix and DOS only support TCP/IP) using various different
+	  packet sizes.
+	  
+	  One instance has to run on one machine as a server process, another
+	  instance is used on another machine to perform the benchmark. When
+	  executed without arguments, the program will explain its usage.
+
+	  http://www.ars.de/ars/ars.nsf/docs/netio
+
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_NETPERF
 	bool "netperf-2.4.5"
@@ -427,15 +422,6 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_NETPERF
 
 	  http://www.netperf.org/
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_SUPER_PI
-	bool "super_pi-20030927"
-	help
-	  
-
-	  SuperPI is a quick reference benchmark test often used when
-	  overclocking or comparing different hardware configurations.
-
-	  ftp://pi.super-computing.org/Linux/
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_NETPIPE
 	bool "netpipe-3.7.1"
@@ -449,59 +435,6 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_NETPIPE
 
 	  http://www.scl.ameslab.gov/netpipe/
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_SYSBENCH
-	bool "sysbench-0.4.12nb1"
-	help
-	  Modular, cross-platform and multi-threaded benchmark tool
-
-	  SysBench is a modular, cross-platform and multi-threaded benchmark
-	  tool for evaluating OS parameters that are important for a system
-	  running a database under intensive load.
-	  
-	  The idea of this benchmark suite is to quickly get an impression about
-	  system performance without setting up complex database benchmarks or
-	  even without installing a database at all.
-	  
-	  Current features allow to test the following system parameters:
-	  
-	  * file I/O performance
-	  * scheduler performance
-	  * memory allocation and transfer speed
-	  * POSIX threads implementation performance
-	  * database server performance (OLTP benchmark)
-
-	  http://sysbench.sourceforge.net/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_HTTPERF
-	bool "httperf-0.8nb1"
-	help
-	  Popular web server benchmarking program
-
-	  httperf is a popular web server benchmarking program that supports
-	  the HTTP/1.1 protocol
-	  
-	  It was written by David Mosberger at Hewlett-Packard.
-
-	  http://www.hpl.hp.com/research/linux/httperf/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_WHETSTONE
-	bool "whetstone-1.2"
-	help
-	  Benchmark for processors that gives you a MIPS rating
-
-	  Converted by Rich Painter, Painter Engineering, Inc. based on the
-	  www.netlib.org benchmark/whetstoned version obtained 16 March 1998.
-	  
-	  A novel approach was used here to keep the look and feel of the
-	  FORTRAN version.  Altering the FORTRAN-based array indices,
-	  starting at element 1, to start at element 0 for C, would require
-	  numerous changes, including decrementing the variable indices by 1.
-	  Instead, the array E1[] was declared 1 element larger in C.  This
-	  allows the FORTRAN index range to function without any literal or
-	  variable indices changes.  The array element E1[0] is simply never
-	  used and does not alter the benchmark results.
-
-	  
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_NETTEST
 	bool "nettest-92.11.09"
@@ -518,51 +451,6 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_NETTEST
 
 	  
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_THRULAY
-	bool "thrulay-0.8"
-	help
-	  TCP and UDP network capacity tester
-
-	  thrulay is used to measure the capacity of a network by sending a bulk
-	  TCP stream over it.
-	  
-	  Like other tools (such as iperf, netperf, nettest, nuttcp, ttcp, etc.),
-	  thrulay can report TCP throughput periodically so that TCP performance
-	  plots can be produced. Unlike other tools, thrulay not only reports goodput,
-	  but round-trip delay time as well. The output of thrulay is easy to parse
-	  by machine (in fact, it's ready to be used as a data file for gnuplot).
-	  
-	  Starting from version 0.5, thrulay supports UDP tests. Unique feature of
-	  thrulay is that it can send a Poisson stream of very precisely positioned
-	  packets; the TSC register is used for timing rather than very coarse
-	  (20ms on most systems) system sleep functionality.
-
-	  http://shlang.com/thrulay/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_XENGINE
-	bool "xengine-1.0.1nb4"
-	help
-	  Reciprocating engine for X
-
-	  `xengine' is a reciprocating engine for X. This program used as
-	  benchmark for X.
-	  
-	  See README and man page for details.
-	  
-	  Original xengine written by shutoh@cbx.emi.yamaha.co.jp.
-
-	  
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_IOZONE
-	bool "iozone-3.308"
-	help
-	  Benchmark for file read and write speed
-
-	  This test writes a X MEGABYTE sequential file in Y byte chunks, then
-	  rewinds it  and reads it back.  [The size of the file should be
-	  big enough to factor out the effect of any disk cache.]
-
-	  http://www.iozone.org/
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_NSIEVE
 	bool "nsieve-1.2b"
@@ -581,45 +469,6 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_NSIEVE
 
 	  
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_TTCP
-	bool "ttcp-1.12nb2"
-	help
-	  TCP testing and performance measuring tool
-
-	  Ttcp (test TCP) times the transmission and reception of data  between two
-	  systems  using  the UDP or TCP protocols.  It differs from common ``blast''
-	  tests, which  tend  to  measure  the remote inetd as much as the network
-	  performance, and which usually do not allow measurements at the remote end
-	  of a UDP transmission.
-
-	  http://www.ccci.com/tools/ttcp/
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_UBENCH
-	bool "ubench-0.32nb1"
-	help
-	  The Unix Benchmark utility
-
-	  The Unix Benchmark Utility "ubench" provides a single mesure of
-	  performance for machines running various flavors of Unix operating
-	  systems.
-
-	  http://www.phystech.com/download/ubench.html
-
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_ZELIBM
-	bool "zelibm-0nb8"
-	help
-	  Visual Math Library Quality Check
-
-	  A little program I wrote can be used to analyze the quality of the math
-	  library implementation. It simply computes the real result with a high
-	  precision and determines from this the error of the value the libm
-	  implementation produced. Very easy.
-	  To make the time waiting for the result a bit more interesting the program
-	  displays the error graphically in an updated window. Once the program is
-	  done it writes the plot in a GIF file which then can be used for later
-	  reference.
-
-	  http://people.redhat.com/drepper/libm/
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_NTTCP
 	bool "nttcp-1.47nb1"
@@ -644,6 +493,7 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_NTTCP
 
 	  
 
+
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_PARANOIA
 	bool "paranoia-960101"
 	help
@@ -657,27 +507,217 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_PARANOIA
 
 	  
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_KTTCP
-	bool "kttcp-20020711nb2"
-	help
-	  Kernel network throughput benchmark
 
-	  Userland portion of the "kttcp" kernel network throughput
-	  testing tool.  Uses the /dev/kttcp pseudo-device on NetBSD
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_PIPEBENCH
+	bool "pipebench-0.40"
+	help
+	  Measures the speed of a pipe
+
+	  Measures the speed of a pipe, by sitting in the middle passing the
+	  data along to the next process.
+
+	  http://www.habets.pp.se/synscan/programs.php?prog
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_POSTAL
+	bool "postal-0.62nb5"
+	help
+	  Tool for benchmarking SMTP/POP servers
+
+	  Postal is a SMTP benchmark.
+	  
+	  Postal-list will list all the possible expansions for an account name (used
+	  for creating a list of accounts to create on your test server).
+	  
+	  Rabid is the mad Biff, it is a POP benchmark.
+
+	  http://www.coker.com.au/postal/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_POSTMARK
+	bool "postmark-1.5"
+	help
+	  NetApps file system benchmark
+
+	  PostMark is the benchmark used in the NetApp Technical Report TR3022,
+	  "PostMark: A New File System Benchmark".  The paper fully explains how
+	  to use this tool.
+	  
+	  From the paper's Abstract:
+	  Existing file system benchmarks are deficient in portraying
+	  performance in the ephemeral small-file regime used by Internet
+	  software, especially:
+	  * electronic mail
+	  * netnews
+	  * web-based commerce
+	  
+	  PostMark is a new benchmark to measure performance for this class of
+	  application.
+
+	  http://www.netapp.com/tech_library/3022.html
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_RANDREAD
+	bool "randread-0.2"
+	help
+	  Program to help benchmark random disk read performance
+
+	  Randread is a simple program to help benchmark random disk read
+	  performance.
+
+	  http://randread.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_SKAMPI
+	bool "skampi-5.0.4.355"
+	help
+	  
+
+	  The SKaMPI-Benchmark is a suite of tests designed to measure the performance
+	  of MPI. MPI (Message Passing Interface) is a machine independent standard to
+	  provide an efficient interface to message passing libraries of different
+	  parallel machines. The goal of SKaMPI is to create a database to illustrate
+	  the performance of these different MPI implementations. This database should
+	  allow to:
+	  1. Decide how to implement portable and efficient MPI programs.
+	  2. Predict the performance of MPI programs.
+	  3. Describe supercomputers in terms of MPI.
+
+	  http://liinwww.ira.uka.de/~skampi/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_SUPER_PI
+	bool "super_pi-20030927"
+	help
+	  
+
+	  SuperPI is a quick reference benchmark test often used when
+	  overclocking or comparing different hardware configurations.
+
+	  ftp://pi.super-computing.org/Linux/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_SYSBENCH
+	bool "sysbench-0.4.12nb1"
+	help
+	  Modular, cross-platform and multi-threaded benchmark tool
+
+	  SysBench is a modular, cross-platform and multi-threaded benchmark
+	  tool for evaluating OS parameters that are important for a system
+	  running a database under intensive load.
+	  
+	  The idea of this benchmark suite is to quickly get an impression about
+	  system performance without setting up complex database benchmarks or
+	  even without installing a database at all.
+	  
+	  Current features allow to test the following system parameters:
+	  
+	  * file I/O performance
+	  * scheduler performance
+	  * memory allocation and transfer speed
+	  * POSIX threads implementation performance
+	  * database server performance (OLTP benchmark)
+
+	  http://sysbench.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_THRULAY
+	bool "thrulay-0.8"
+	help
+	  TCP and UDP network capacity tester
+
+	  thrulay is used to measure the capacity of a network by sending a bulk
+	  TCP stream over it.
+	  
+	  Like other tools (such as iperf, netperf, nettest, nuttcp, ttcp, etc.),
+	  thrulay can report TCP throughput periodically so that TCP performance
+	  plots can be produced. Unlike other tools, thrulay not only reports goodput,
+	  but round-trip delay time as well. The output of thrulay is easy to parse
+	  by machine (in fact, it's ready to be used as a data file for gnuplot).
+	  
+	  Starting from version 0.5, thrulay supports UDP tests. Unique feature of
+	  thrulay is that it can send a Poisson stream of very precisely positioned
+	  packets; the TSC register is used for timing rather than very coarse
+	  (20ms on most systems) system sleep functionality.
+
+	  http://shlang.com/thrulay/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_TTCP
+	bool "ttcp-1.12nb2"
+	help
+	  TCP testing and performance measuring tool
+
+	  Ttcp (test TCP) times the transmission and reception of data  between two
+	  systems  using  the UDP or TCP protocols.  It differs from common ``blast''
+	  tests, which  tend  to  measure  the remote inetd as much as the network
+	  performance, and which usually do not allow measurements at the remote end
+	  of a UDP transmission.
+
+	  http://www.ccci.com/tools/ttcp/
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_UBENCH
+	bool "ubench-0.32nb1"
+	help
+	  The Unix Benchmark utility
+
+	  The Unix Benchmark Utility "ubench" provides a single mesure of
+	  performance for machines running various flavors of Unix operating
 	  systems.
+
+	  http://www.phystech.com/download/ubench.html
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_WHETSTONE
+	bool "whetstone-1.2"
+	help
+	  Benchmark for processors that gives you a MIPS rating
+
+	  Converted by Rich Painter, Painter Engineering, Inc. based on the
+	  www.netlib.org benchmark/whetstoned version obtained 16 March 1998.
+	  
+	  A novel approach was used here to keep the look and feel of the
+	  FORTRAN version.  Altering the FORTRAN-based array indices,
+	  starting at element 1, to start at element 0 for C, would require
+	  numerous changes, including decrementing the variable indices by 1.
+	  Instead, the array E1[] was declared 1 element larger in C.  This
+	  allows the FORTRAN index range to function without any literal or
+	  variable indices changes.  The array element E1[0] is simply never
+	  used and does not alter the benchmark results.
 
 	  
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_LIBMICRO
-	bool "libmicro-0.4.0"
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_XENGINE
+	bool "xengine-1.0.1nb4"
 	help
-	  Set of utilities to benchmark productivity of system calls
+	  Reciprocating engine for X
 
-	  LibMicro is a portable set of microbenchmarks that many Solaris engineers
-	  used during Solaris 10 development to measure the performance of various
-	  system and library calls. LibMicro was developed by Bart Smaalders and
-	  Phil Harman as part of their "If Linux is faster it's a Solaris bug
-	  performance" campaign.
+	  `xengine' is a reciprocating engine for X. This program used as
+	  benchmark for X.
+	  
+	  See README and man page for details.
+	  
+	  Original xengine written by shutoh@cbx.emi.yamaha.co.jp.
 
-	  http://hub.opensolaris.org/bin/view/Project+libmicro/
+	  
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_ZELIBM
+	bool "zelibm-0nb8"
+	help
+	  Visual Math Library Quality Check
+
+	  A little program I wrote can be used to analyze the quality of the math
+	  library implementation. It simply computes the real result with a high
+	  precision and determines from this the error of the value the libm
+	  implementation produced. Very easy.
+	  To make the time waiting for the result a bit more interesting the program
+	  displays the error graphically in an updated window. Once the program is
+	  done it writes the plot in a GIF file which then can be used for later
+	  reference.
+
+	  http://people.redhat.com/drepper/libm/
+
 
