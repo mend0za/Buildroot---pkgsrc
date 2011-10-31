@@ -1,0 +1,20 @@
+#
+# NetBSD package collection (pkgsrc)
+#
+
+ifeq ($(BR2_PKGSRC),y)
+
+PKGSRC_VERSION = $(BR2_PKGSRC_VERSION)
+PKGSRC_SITE = ftp://ftp.NetBSD.org/pub/pkgsrc/pkgsrc-$(PKGSRC_VERSION)
+PKGSRC_SOURCE = pkgsrc-$(PKGSRC_VERSION).tar.gz
+
+PKGSRC_HOST_PREREQ = $(BASE_TARGETS) host-flex host-bison
+
+host-pkgsrc: $(PKGSRC_HOST_PREREQ)
+	echo @^
+
+target-pkgsrc: $(PKGSRC_TARGET_PREREQ)
+
+#BASE_TARGETS += host-pkgsrc
+
+endif # BR2_PKGSRC
