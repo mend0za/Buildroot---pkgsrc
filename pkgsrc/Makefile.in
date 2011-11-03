@@ -1,20 +1,51 @@
+#####################################
 #
 # NetBSD package collection (pkgsrc)
 #
+#####################################
 
 ifeq ($(BR2_PKGSRC),y)
 
 PKGSRC_VERSION = $(BR2_PKGSRC_VERSION)
 PKGSRC_SITE = ftp://ftp.NetBSD.org/pub/pkgsrc/pkgsrc-$(PKGSRC_VERSION)
 PKGSRC_SOURCE = pkgsrc-$(PKGSRC_VERSION).tar.gz
+PKGSRC_INSTALL_STAGING = yes
 
-PKGSRC_HOST_PREREQ = $(BASE_TARGETS) host-flex host-bison
+PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison
 
-host-pkgsrc: $(PKGSRC_HOST_PREREQ)
-	echo @^
+PKGSRC_CAT := $(ZCAT)
+PKGSRC_SOURCE_DIR := $(BUILD_DIR)/pkgsrc-$(PKGSRC_VERSION)
+PKGSRC_HOST_DIR := $(STAGING_DIR)/pkgsrc-$(PKGSRC_VERSION)
+PKGSRC_DEST_DIR := $(TARGET_DIR)/usr/pkg
+PKGSRC_SH = /bin/bash
 
-target-pkgsrc: $(PKGSRC_TARGET_PREREQ)
+PKGSRC_BMAKE_OPTS := PKGSRC_HOST_DIR="$(PKGSRC_HOST_DIR)" \
+		    GNU_TARGET_NAME="$(REAL_GNU_TARGET_NAME)" \
+		    PKGSRC_DEST_DIR="$(PKGSRC_DEST_DIR)" \
+		    HOST_DIR="$(HOST_DIR)" \
+		    DL_DIR="$(TOPDIR)/dl" \
+		    ARCH="$(BR2_ARCH)" \
+		    PKG_VERBOSE=1 \
+		    CC="$(TARGET_CC)" \
+		    CFLAGS="$(TARGET_CFLAGS)" \
+		    LDFLAGS="$(TARGET_LDFLAGS)"
+#		    PKG_DEBUG_LEVEL=2 
+	
+define PKGSRC_BUILD_CMDS
+	( cd $(PKGSRC_SOURCE_DIR)/bootstrap ; \
+		export SH="$(PKGSRC_SH)" PATH="$(&HOST_DIR)/usr/bin:$(PATH)"; \
+		export CC="gcc"; \
+		./bootstrap \
+			--unprivileged \
+			--prefix=$(PKGSRC_HOST_DIR) \
+	)
 
-#BASE_TARGETS += host-pkgsrc
+endef
 
+define PKGSRC_INSTALL_STAGING_CMDS
+	$(INSTALL) -D -m 0644 $(TOPDIR)/pkgsrc/mk.conf.tmpl $(PKGSRC_HOST_DIR)/etc/mk.conf
+endef
+
+$(eval $(call GENTARGETS))
+$(eval $(call GENTARGETS,host))
 endif # BR2_PKGSRC
