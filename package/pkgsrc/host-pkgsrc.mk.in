@@ -8,10 +8,14 @@ PKGSRC_SITE = ftp://ftp.NetBSD.org/pub/pkgsrc/pkgsrc-$(PKGSRC_VERSION)
 PKGSRC_SOURCE = pkgsrc-$(PKGSRC_VERSION).tar.gz
 PKGSRC_INSTALL_STAGING = yes
 
-PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison
+PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses
 
 PKGSRC_SH = /bin/bash
 
+PKGSRC_BMAKE_HOST_OPTS := \
+	USE_DESTDIR=no \
+	USE_CROSS_COMPILE=no \
+	CC=$(HOSTCC_NOCCACHE)
 
 # TODO use HOSTCC with CCACHE (now broken on devel/bmake build)
 define HOST_PKGSRC_BUILD_CMDS
@@ -26,7 +30,10 @@ define HOST_PKGSRC_BUILD_CMDS
 endef
 
 define PKGSRC_INSTALL_MK_CONF
-	$(INSTALL) -D -m 0644 $(TOPDIR)/pkgsrc/mk.conf.tmpl $(PKGSRC_HOST_DIR)/etc/mk.conf
+	$(INSTALL) -D -m 0644 $(TOPDIR)/package/pkgsrc/mk.conf.tmpl $(PKGSRC_HOST_DIR)/etc/mk.conf
+	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
+		$(PKGSRC_DEST_DIR)/usr/include/stddef.h
+	$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/net/tnftp $(PKGSRC_BMAKE_HOST_OPTS)  
 endef
 
 define PKGSRC_SET_CROSS_COMPILE_ROOT
@@ -39,6 +46,7 @@ HOST_PKGSRC_POST_BUILD_HOOKS += PKGSRC_INSTALL_MK_CONF PKGSRC_SET_CROSS_COMPILE_
 define HOST_PKGSRC_CLEAN_CMDS
 	rm -rf $(PKGSRC_SOURCE_DIR)/bootstrap/work
 	rm -rf $(PKGSRC_HOST_DIR)/
+	rm -rf $(PKGSRC_DEST_DIR)/
 endef
 
 $(eval $(call GENTARGETS,host))

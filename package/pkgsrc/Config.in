@@ -1,4 +1,4 @@
-menu "PKGSRC Package Selection for the target"
+menu "The NetBSD Packages Collection (pkgsrc)"
 
 config BR2_PKGSRC_VERSION
 	string
@@ -19,7 +19,7 @@ config BR2_PKGSRC
 
 
 if BR2_PKGSRC
-source "pkgsrc/pkgsrc-categories.in"
+source "package/pkgsrc/pkgsrc-categories.in"
 endif
 
 

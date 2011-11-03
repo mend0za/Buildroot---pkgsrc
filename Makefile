@@ -329,8 +329,6 @@ include boot/common.mk
 include target/Makefile.in
 include linux/linux.mk
 
-include pkgsrc/Makefile.in
-
 TARGETS+=target-finalize
 
 ifeq ($(BR2_ENABLE_LOCALE_PURGE),y)
