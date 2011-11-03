@@ -7,51 +7,11 @@
 ifeq ($(BR2_PKGSRC),y)
 
 PKGSRC_VERSION = $(BR2_PKGSRC_VERSION)
-PKGSRC_SITE = ftp://ftp.NetBSD.org/pub/pkgsrc/pkgsrc-$(PKGSRC_VERSION)
-PKGSRC_SOURCE = pkgsrc-$(PKGSRC_VERSION).tar.gz
-PKGSRC_INSTALL_STAGING = yes
-
-PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison
-
 PKGSRC_SOURCE_DIR := $(BUILD_DIR)/pkgsrc-$(PKGSRC_VERSION)
 PKGSRC_HOST_DIR := $(HOST_DIR)/pkgsrc-$(PKGSRC_VERSION)
 PKGSRC_DEST_DIR := $(TARGET_DIR)/usr/pkg
-PKGSRC_SH = /bin/bash
 
-PKGSRC_BMAKE_OPTS := PKGSRC_HOST_DIR="$(PKGSRC_HOST_DIR)" \
-		    GNU_TARGET_NAME="$(REAL_GNU_TARGET_NAME)" \
-		    PKGSRC_DEST_DIR="$(PKGSRC_DEST_DIR)" \
-		    HOST_DIR="$(HOST_DIR)" \
-		    DL_DIR="$(TOPDIR)/dl" \
-		    ARCH="$(BR2_ARCH)" \
-		    PKG_VERBOSE=1 \
-		    CC="$(TARGET_CC)" \
-		    CFLAGS="$(TARGET_CFLAGS)" \
-		    LDFLAGS="$(TARGET_LDFLAGS)"
-#		    PKG_DEBUG_LEVEL=2 
+include pkgsrc/host-pkgsrc.mk
+include pkgsrc/packages.mk
 
-# TODO use HOSTCC with CCACHE (now broken on devel/bmake build)
-define HOST_PKGSRC_BUILD_CMDS
-	( cd $(PKGSRC_SOURCE_DIR)/bootstrap ; \
-		export SH="$(PKGSRC_SH)" PATH="$(&HOST_DIR)/usr/bin:$(PATH)"; \
-		export CC="$(HOSTCC_NOCCACHE)"; \
-		./bootstrap \
-			--unprivileged \
-			--prefix=$(PKGSRC_HOST_DIR) \
-	)
-
-endef
-
-define PKGSRC_INSTALL_MK_CONF
-	$(INSTALL) -D -m 0644 $(TOPDIR)/pkgsrc/mk.conf.tmpl $(PKGSRC_HOST_DIR)/etc/mk.conf
-endef
-
-HOST_PKGSRC_POST_BUILD_HOOKS += PKGSRC_INSTALL_MK_CONF
-
-define HOST_PKGSRC_CLEAN_CMDS
-	rm -rf $(PKGSRC_SOURCE_DIR)/bootstrap/work
-	rm -rf $(PKGSRC_HOST_DIR)/
-endef
-
-$(eval $(call GENTARGETS,host))
 endif # BR2_PKGSRC
