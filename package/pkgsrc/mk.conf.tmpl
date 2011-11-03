@@ -4,11 +4,11 @@
 .ifdef BSD_PKG_MK	# begin pkgsrc settings
 
 
-UNPRIVILEGED=		yes
-PKG_DBDIR=		$(PKGSRC_HOST_DIR)/var/db/pkg
-LOCALBASE=		$(PKGSRC_HOST_DIR)
-VARBASE=		$(PKGSRC_HOST_DIR)/var
-PKG_TOOLS_BIN=		$(PKGSRC_HOST_DIR)/sbin
+UNPRIVILEGED		= yes
+PKG_DBDIR		= $(PKGSRC_HOST_DIR)/var/db/pkg
+LOCALBASE		= $(PKGSRC_HOST_DIR)
+VARBASE			= $(PKGSRC_HOST_DIR)/var
+PKG_TOOLS_BIN		= $(PKGSRC_HOST_DIR)/sbin
 PKGMANDIR=		man
 
 TOOLS_PLATFORM.sh?=		/bin/bash
@@ -17,17 +17,19 @@ TOOLS_PLATFORM.sh?=		/bin/bash
 # cross-compilation section
 USE_CROSS_COMPILE=      yes
 
-USE_DESTDIR=            yes
-DEPENDS_TARGET=         package-install
+#DEPENDS_TARGET=         package-install
 
-#MACHINE_ARCH=           $(TARGET_CROSS)
-TARGET_ARCH=		$(ARCH)
-MACHINE_PLATFORM=	BuildRoot-$(ARCH)
-MACHINE_GNU_PLATFORM=	$(GNU_TARGET_NAME)
-CROSS_DESTDIR=          $(PKGSRC_DEST_DIR)
-TOOLDIR=                $(PKGSRC_HOST_DIR)/usr/bin 
+#MACHINE_ARCH		= $(TARGET_CROSS)
+TARGET_ARCH		= $(ARCH)
+MACHINE_PLATFORM	= BuildRoot-$(ARCH)
+MACHINE_GNU_PLATFORM	= $(GNU_TARGET_NAME)
 
-DISTDIR=		$(DL_DIR)
+USE_DESTDIR		= yes
+CROSS_DESTDIR		= $(PKGSRC_DEST_DIR)
+TOOLDIR			= $(PKGSRC_HOST_DIR)/usr/bin 
+
+DISTDIR			= $(DL_DIR)
+WRKOBJDIR		= $(BUILD_DIR)
 
 PKGSRC_COMPILER=        gcc
 USE_PKGSRC_GCC=         no
