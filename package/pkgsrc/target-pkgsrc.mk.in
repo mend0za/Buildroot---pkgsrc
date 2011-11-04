@@ -3,6 +3,11 @@
 # Target packages build support
 # 
 
+PKGSRC_TARGET_WORK_DIR := $(BUILD_DIR)/target-pkgsrc-workdir
+PKGSRC_DEST_DIR := $(TARGET_DIR)
+PKGSRC_TARGET_REAL_PATH := $(PKGSRC_DEST_DIR)/$(BR2_PKGSRC_TARGET_PREFIX)
+PKGSRC_TARGET_DB_DIR := $(PKGSRC_TARGET_REAL_PATH)/var/db/pkg 
+
 PKGSRC_BMAKE := fakeroot bmake
 PKGSRC_BMAKE_TARGET_OPTS := \
 			USE_CROSS_COMPILE=yes \
@@ -15,11 +20,16 @@ PKGSRC_BMAKE_TARGET_OPTS := \
 			AR="$(TARGET_AR)" \
 			RANLIB="$(TARGET_RANLIB)" \
 			STRIP="$(TARGET_STRIP)" \
-			WRKOBJDIR="$(PKGSRC_WORK_DIR)" \
-			PREFIX="/" \
+			WRKOBJDIR="$(PKGSRC_TARGET_WORK_DIR)" \
+			PREFIX="$(BR2_PKGSRC_TARGET_PREFIX)" \
 			USE_PKGSRC_GCC=no \
 			USE_NATIVE_GCC=yes \
 			INSTALL_UNSTRIPPED=yes \
+			TOOLS_DIGEST=$(PKGSRC_HOST_DIR)/bin/digest \
+			LIBTOOL=$(PKGSRC_TARGET_REAL_PATH)/bin/libtool  \
+#			LDFLAGS="-Wl,-rpath -Wl,/usr/lib -Wl,-rpath-link -Wl,${STAGING_DIR}/usr/lib -L${STAGING_DIR}/lib -L${STAGING_DIR}/usr/lib" \
+#			LIBTOOL_FLAGS="--tag=CC" \
+#			PKG_DBDIR="$(PKGSRC_TARGET_DB_DIR)" \
 #			PKG_VERBOSE=1 \
 #			PKG_DEBUG_LEVEL=2 
 
@@ -38,9 +48,13 @@ PKGSRC_BMAKE_TARGET_OPTS := \
 
 # preliminary depend for host tools
 #$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/net/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install; 
-#$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/digest $(PKGSRC_BMAKE_HOST_OPTS) install; 
+#$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install; 
 
 PKGSRC_TEST_TARGET="lang/ruby"
+
+pkgsrc-prepare:
+	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/devel/libtool $(PKGSRC_BMAKE_HOST_OPTS) install; \
 
 pkgsrc-test: 
 	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
@@ -51,3 +65,6 @@ pkgsrc-test:
 		-C $(PKGSRC_SOURCE_DIR)/$(PKGSRC_TEST_TARGET) install clean \
 		)
 
+pkgsrc-clean:
+	rm -rf $(TARGET_DIR)/$(BR2_PKGSRC_TARGET_PREFIX)/
+	rm -rf $(PKGSRC_TARGET_WORK_DIR)/

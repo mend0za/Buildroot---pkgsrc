@@ -19,7 +19,16 @@ config BR2_PKGSRC
 
 
 if BR2_PKGSRC
+
+config BR2_PKGSRC_TARGET_PREFIX
+	string ""
+	default "/usr/pkg"
+	help
+		NetBSD packages install prefix
+
+
 source "package/pkgsrc/pkgsrc-categories.in"
+
 endif
 
 
