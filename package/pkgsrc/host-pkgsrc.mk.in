@@ -11,8 +11,8 @@ PKGSRC_INSTALL_STAGING = yes
 
 PKGSRC_HOST_WORK_DIR := $(BUILD_DIR)/host-pkgsrc-workdir
 
-PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses host-fakeroot host-libtool
-PKGSRC_PLATFORM_TOOLS = pkgtools/digest net/tnftp
+PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses host-fakeroot 
+PKGSRC_PLATFORM_TOOLS = pkgtools/digest net/tnftp archivers/pax
 
 PKGSRC_SH = /bin/bash
 
