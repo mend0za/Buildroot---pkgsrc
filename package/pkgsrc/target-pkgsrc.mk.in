@@ -3,10 +3,10 @@
 # Target packages build support
 # 
 
-PKGSRC_TARGET_WORK_DIR := $(BUILD_DIR)/target-pkgsrc-workdir
+PKGSRC_TARGET_WORK_DIR := $(BUILD_DIR)/pkgsrc-workdir/target
 PKGSRC_DEST_DIR := $(TARGET_DIR)
 PKGSRC_TARGET_REAL_PATH := $(PKGSRC_DEST_DIR)/$(BR2_PKGSRC_TARGET_PREFIX)
-PKGSRC_TARGET_DB_DIR := $(PKGSRC_TARGET_REAL_PATH)/var/db/pkg 
+PKGSRC_TARGET_DB_DIR := $(BR2_PKGSRC_TARGET_PREFIX)/var/db
 
 PKGSRC_BMAKE := fakeroot bmake
 PKGSRC_BMAKE_TARGET_OPTS := \
@@ -14,28 +14,31 @@ PKGSRC_BMAKE_TARGET_OPTS := \
 			TARGET_ARCH="$(ARCH)" \
 			MACHINE_PLATFORM="BuildRoot-$(ARCH)" \
 			MACHINE_GNU_PLATFORM="$(GNU_TARGET_NAME)" \
-			USE_DESTDIR=yes \
-			CROSS_DESTDIR="$(PKGSRC_DEST_DIR)" \
 			CC="$(TARGET_CC)" \
 			AR="$(TARGET_AR)" \
 			RANLIB="$(TARGET_RANLIB)" \
 			STRIP="$(TARGET_STRIP)" \
 			CFLAGS="$(TARGET_CFLAGS)" \
 			LDFLAGS="$(TARGET_LDFLAGS)" \
+			USE_DESTDIR=yes \
+			CROSS_DESTDIR="$(PKGSRC_DEST_DIR)" \
 			WRKOBJDIR="$(PKGSRC_TARGET_WORK_DIR)" \
 			PREFIX="$(BR2_PKGSRC_TARGET_PREFIX)" \
 			USE_PKGSRC_GCC=no \
 			USE_NATIVE_GCC=yes \
+			PKGSRC_COMPILER="$(PKGSRC_COMPILER)" \
 			INSTALL_UNSTRIPPED=yes \
 			TOOLS_DIGEST=$(PKGSRC_HOST_DIR)/bin/digest \
 			TOOLS_PAX=$(PKGSRC_HOST_DIR)/bin/pax \
+			TOOLS_FTP=$(PKGSRC_HOST_DIR)/bin/ftp \
 			LIBTOOL=$(PKGSRC_TARGET_REAL_PATH)/bin/libtool  \
+			PKG_DBDIR="$(PKGSRC_TARGET_DB_DIR)" \
 			PKG_VERBOSE=1 \
 
 #			PKG_DEBUG_LEVEL=2 \
 #			LDFLAGS="-Wl,-rpath -Wl,/usr/lib -Wl,-rpath-link -Wl,${STAGING_DIR}/usr/lib -L${STAGING_DIR}/lib -L${STAGING_DIR}/usr/lib" \
 #			LIBTOOL_FLAGS="--tag=CC" \
-#			PKG_DBDIR="$(PKGSRC_TARGET_DB_DIR)" \
+#			TOOLS_PAX=$(PKGSRC_HOST_DIR)/bin/pax \
 
 #GNU_TARGET_NAME="$(REAL_GNU_TARGET_NAME)" \
 #			DL_DIR="$(TOPDIR)/dl" \
@@ -54,22 +57,43 @@ PKGSRC_BMAKE_TARGET_OPTS := \
 #$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/net/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install; 
 #$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install; 
 
+
+PKGSRC_BMAKE_HOST_OPTS := \
+	CC="$(HOSTCC_NOCCACHE)" 
+
+#CFLAGS="$(HOSTCFLAGS)" 
+#USE_DESTDIR=no \
+#USE_CROSS_COMPILE=no \
+
 #PKGSRC_TEST_TARGET="lang/ruby"
 PKGSRC_TEST_TARGET="shells/mksh"
 
+# experimental temporary rule: quick hack to add missing stuff
 pkgsrc-prepare:
 	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/archivers/pax $(PKGSRC_BMAKE_HOST_OPTS) install; \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/digest $(PKGSRC_BMAKE_HOST_OPTS) install; \
+	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/net/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install; \
+	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/pkg_summary-utils $(PKGSRC_BMAKE_HOST_OPTS) install; \
+	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/parallel/paexec $(PKGSRC_BMAKE_HOST_OPTS) install; \
 
 pkgsrc-test: 
-	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
-		$(PKGSRC_DEST_DIR)/usr/include/stddef.h
-	# build test package
+	# build BOOTSTRAP_DEPENDS and BUILD_DEPENDS for host
+	( export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
+		BOOTSTRAP_DEPENDS=`pkg_src_summary -b -f BOOTSTRAP_DEPENDS,BUILD_DEPENDS $(PKGSRC_TEST_TARGET)|sed  's/BUILD_DEPENDS=//g; s#[^ ]*:\.\./\.\./##g'`; \
+		for dep_pkg in $$BOOTSTRAP_DEPENDS; do \
+			$(PKGSRC_BMAKE) $(PKGSRC_BMAKE_HOST_OPTS) \
+			-C $(PKGSRC_SOURCE_DIR)/$$dep_pkg install; \
+		done; exit 0 )
+
+	# build package
 	( export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
 		$(PKGSRC_BMAKE) $(PKGSRC_BMAKE_TARGET_OPTS) \
-		-C $(PKGSRC_SOURCE_DIR)/$(PKGSRC_TEST_TARGET) install clean \
+		-C $(PKGSRC_SOURCE_DIR)/$(PKGSRC_TEST_TARGET) install \
 		)
 
 pkgsrc-clean:
-	rm -rf $(TARGET_DIR)/$(BR2_PKGSRC_TARGET_PREFIX)/
+	rm -rf $(PKGSRC_TARGET_REAL_PATH)/
 	rm -rf $(PKGSRC_TARGET_WORK_DIR)/

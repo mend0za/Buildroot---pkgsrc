@@ -9,17 +9,15 @@ PKGSRC_SOURCE = pkgsrc-$(PKGSRC_VERSION).tar.gz
 PKGSRC_INSTALL_STAGING = yes
 
 
-PKGSRC_HOST_WORK_DIR := $(BUILD_DIR)/host-pkgsrc-workdir
+PKGSRC_HOST_WORK_DIR := $(BUILD_DIR)/pkgsrc-workdir/host
 
 PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses host-fakeroot 
-PKGSRC_PLATFORM_TOOLS = pkgtools/digest net/tnftp archivers/pax
+
+PKGSRC_PLATFORM_TOOLS=pkgtools/digest net/tnftp pkgtools/pkg_summary-utils parallel/paexec
+#devel/mk-configure parallel/paexec 
+#pkgtools/digest net/tnftp archivers/pax
 
 PKGSRC_SH = /bin/bash
-
-PKGSRC_BMAKE_HOST_OPTS := \
-	USE_DESTDIR=no \
-	USE_CROSS_COMPILE=no \
-	CC=$(HOSTCC_NOCCACHE) 
 
 
 # TODO use HOSTCC with CCACHE (now broken on devel/bmake build)
@@ -27,13 +25,11 @@ define HOST_PKGSRC_BUILD_CMDS
 	( cd $(PKGSRC_SOURCE_DIR)/bootstrap ; \
 		export SH="$(PKGSRC_SH)" PATH="$(HOST_DIR)/usr/bin:$(PATH)"; \
 		export CC="$(HOSTCC_NOCCACHE)"; \
+		export CFLAGS="$(HOSTCFLAGS)"; \
 		fakeroot ./bootstrap \
 			--workdir="$(PKGSRC_HOST_WORK_DIR)" \
 			--prefix="$(PKGSRC_HOST_DIR)" \
 	)
-	# --pkgdbdir="$(PKGSRC_HOST_DIR)/var/db-pkg" 
-	# --full 
-
 endef
 
 define PKGSRC_INSTALL_MK_CONF
@@ -41,19 +37,22 @@ define PKGSRC_INSTALL_MK_CONF
 endef
 
 define PKGSRC_SET_CROSS_COMPILE_ROOT
-	for pkg in $(PKGSRC_PLATFORM_TOOLS); \
-		do \
+	( \
 		export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/$$pkg $(PKGSRC_BMAKE_HOST_OPTS) install; \
-		done
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/digest $(PKGSRC_BMAKE_HOST_OPTS) install ; \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/net/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install ; \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/pkg_summary-utils $(PKGSRC_BMAKE_HOST_OPTS) install ; \
+	)
+	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
+		$(PKGSRC_DEST_DIR)/usr/include/stddef.h
 endef
 
-HOST_PKGSRC_POST_BUILD_HOOKS += PKGSRC_INSTALL_MK_CONF PKGSRC_SET_CROSS_COMPILE_ROOT
+#HOST_PKGSRC_POST_BUILD_HOOKS += PKGSRC_INSTALL_MK_CONF PKGSRC_SET_CROSS_COMPILE_ROOT
 
 define HOST_PKGSRC_CLEAN_CMDS
-	#rm -rf $(PKGSRC_SOURCE_DIR)/
 	rm -rf $(PKGSRC_HOST_WORK_DIR)/
 	rm -rf $(PKGSRC_HOST_DIR)/
+	#rm -rf $(PKGSRC_SOURCE_DIR)/
 endef
 
 $(eval $(call GENTARGETS,host))
