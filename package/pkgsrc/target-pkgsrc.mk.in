@@ -3,46 +3,50 @@
 # Target packages build support
 # 
 
-PKGSRC_TARGET_WORK_DIR := $(BUILD_DIR)/pkgsrc-workdir/target
+PKGSRC_TARGET_WORK_DIR :=$(BUILD_DIR)/pkgsrc-workdir/target
 PKGSRC_DEST_DIR := $(TARGET_DIR)
 PKGSRC_TARGET_REAL_PATH := $(PKGSRC_DEST_DIR)/$(BR2_PKGSRC_TARGET_PREFIX)
 PKGSRC_TARGET_DB_DIR := $(BR2_PKGSRC_TARGET_PREFIX)/var/db
+PKGSRC_TARGET_PKG_DIR :=$(PKGSRC_TARGET_WORK_DIR)/packages
+
+PKGSRC_LOCAL=$(TOPDIR)/package/pkgsrc/bmake.local.in
 
 PKGSRC_BMAKE := fakeroot bmake
+
+PKGSRC_BMAKE_HOST_OPTS := \
+	CC="$(HOSTCC_NOCCACHE)" \
+	WRKOBJDIR="$(PKGSRC_HOST_WORK_DIR)" \
+	PACKAGES="$(PKGSRC_HOST_PKG_DIR)" 
+
+
 PKGSRC_BMAKE_TARGET_OPTS := \
 			USE_CROSS_COMPILE=yes \
 			TARGET_ARCH="$(ARCH)" \
 			MACHINE_PLATFORM="BuildRoot-$(ARCH)" \
 			MACHINE_GNU_PLATFORM="$(GNU_TARGET_NAME)" \
-			CC="$(TARGET_CC)" \
+			CC="$(TARGET_CC_NOCCACHE)" \
 			AR="$(TARGET_AR)" \
 			RANLIB="$(TARGET_RANLIB)" \
 			STRIP="$(TARGET_STRIP)" \
-			CFLAGS="$(TARGET_CFLAGS)" \
-			LDFLAGS="$(TARGET_LDFLAGS)" \
 			USE_DESTDIR=yes \
 			CROSS_DESTDIR="$(PKGSRC_DEST_DIR)" \
 			WRKOBJDIR="$(PKGSRC_TARGET_WORK_DIR)" \
+			PKG_DBDIR="$(PKGSRC_TARGET_DB_DIR)" \
 			PREFIX=$(BR2_PKGSRC_TARGET_PREFIX) \
 			INSTALL_UNSTRIPPED=yes \
-			USE_NATIVE_GCC=yes \
 			TOOLS_DIGEST=$(PKGSRC_HOST_DIR)/bin/digest \
 			TOOLS_PAX=$(PKGSRC_HOST_DIR)/bin/pax \
 			TOOLS_FTP=$(PKGSRC_HOST_DIR)/bin/ftp \
 			LIBTOOL=$(PKGSRC_TARGET_REAL_PATH)/bin/libtool  \
-			PKG_DBDIR="$(PKGSRC_TARGET_DB_DIR)" \
-			PKGSRC_COMPILER="$(PKGSRC_COMPILER)" \
-			CCACHE_BASE="$(HOST_DIR)/usr" \
-			PKG_VERBOSE=1 \
+			PACKAGES="$(PKGSRC_TARGET_PKG_DIR)" \
+			PKG_VERBOSE=2 \
+			PKG_DEBUG_LEVEL=0 
 
-#			PKG_DEBUG_LEVEL=2 \
-#			LDFLAGS="-Wl,-rpath -Wl,/usr/lib -Wl,-rpath-link -Wl,${STAGING_DIR}/usr/lib -L${STAGING_DIR}/lib -L${STAGING_DIR}/usr/lib" \
 #			LIBTOOL_FLAGS="--tag=CC" \
-#			TOOLS_PAX=$(PKGSRC_HOST_DIR)/bin/pax \
-#			USE_PKGSRC_GCC=no \
 #			USE_NATIVE_GCC=yes \
-
-#GNU_TARGET_NAME="$(REAL_GNU_TARGET_NAME)" \
+#			USE_PKGSRC_GCC=no \
+#			CCACHE_BASE="$(HOST_DIR)/usr" \
+#			GNU_TARGET_NAME="$(REAL_GNU_TARGET_NAME)" \
 #			DL_DIR="$(TOPDIR)/dl" \
 #			ARCH="$(BR2_ARCH)" \
 #			PKG_VERBOSE=1 \
@@ -54,6 +58,7 @@ PKGSRC_BMAKE_TARGET_OPTS := \
 #			PKGSRC_HOST_DIR="$(PKGSRC_HOST_DIR)" \
 #			PKGSRC_DEST_DIR="$(PKGSRC_DEST_DIR)" \
 #			PKG_DEBUG_LEVEL=2 
+#			WRKOBJDIR="$(PKGSRC_TARGET_WORK_DIR)/obj" \
 
 # preliminary depend for host tools
 #$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/net/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install; 
@@ -61,14 +66,16 @@ PKGSRC_BMAKE_TARGET_OPTS := \
 
 
 PKGSRC_BMAKE_HOST_OPTS := \
-	CC="$(HOSTCC_NOCCACHE)" 
+	CC="$(HOSTCC_NOCCACHE)" \
+	WRKOBJDIR="$(PKGSRC_HOST_WORK_DIR)" \
+
 
 #CFLAGS="$(HOSTCFLAGS)" 
 #USE_DESTDIR=no \
 #USE_CROSS_COMPILE=no \
 
 #PKGSRC_TEST_TARGET="lang/ruby"
-PKGSRC_TEST_TARGET="shells/mksh"
+PKGSRC_TEST_TARGET=shells/mksh
 
 # experimental temporary rule: quick hack to add missing stuff
 pkgsrc-prepare:
@@ -80,10 +87,10 @@ pkgsrc-prepare:
 		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/pkg_summary-utils $(PKGSRC_BMAKE_HOST_OPTS) install; \
 	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
 		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/parallel/paexec $(PKGSRC_BMAKE_HOST_OPTS) install; \
-	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
-		$(PKGSRC_DEST_DIR)/usr/include/stddef.h
 
 pkgsrc-test: 
+	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
+		$(PKGSRC_DEST_DIR)/usr/include/stddef.h
 	# build BOOTSTRAP_DEPENDS and BUILD_DEPENDS for host
 	( \
 		export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
@@ -95,11 +102,17 @@ pkgsrc-test:
 		done; exit 0 )
 
 	# build package
-	( export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
-		$(PKGSRC_BMAKE) $(PKGSRC_BMAKE_TARGET_OPTS) \
-		-C $(PKGSRC_SOURCE_DIR)/$(PKGSRC_TEST_TARGET) install \
+	( \
+		export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
+		export CFLAGS="$(TARGET_CFLAGS)"; \
+		export LDFLAGS="$(TARGET_LDFLAGS)"; \
+		cd $(PKGSRC_SOURCE_DIR)/$(PKGSRC_TEST_TARGET) ; \
+		$(PKGSRC_BMAKE) $(PKGSRC_BMAKE_TARGET_OPTS) -f ./Makefile -f $(PKGSRC_LOCAL) install \
 		)
 
+pkgsrc-check:
+	echo '#include <fts.h>' | $(TARGET_CPP) -I$(PKGSRC_TARGET_WORK_DIR)/archivers/pax/work/libnbcompat/nbcompat -D_FILE_OFFSET_BITS=64 > /dev/null && echo ok 
+
 pkgsrc-clean:
-	rm -rf $(PKGSRC_TARGET_REAL_PATH)/
-	rm -rf $(PKGSRC_TARGET_WORK_DIR)/
+	rm -rf "$(PKGSRC_TARGET_REAL_PATH)"
+	rm -rf "$(PKGSRC_TARGET_WORK_DIR)"

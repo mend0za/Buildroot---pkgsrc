@@ -10,6 +10,7 @@ PKGSRC_INSTALL_STAGING = yes
 
 
 PKGSRC_HOST_WORK_DIR := $(BUILD_DIR)/pkgsrc-workdir/host
+PKGSRC_HOST_PKG_DIR := $(PKGSRC_HOST_WORK_DIR)/packages  
 
 PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses host-fakeroot 
 
@@ -52,7 +53,7 @@ HOST_PKGSRC_POST_BUILD_HOOKS += PKGSRC_INSTALL_MK_CONF PKGSRC_SET_CROSS_COMPILE_
 define HOST_PKGSRC_CLEAN_CMDS
 	rm -rf $(PKGSRC_HOST_WORK_DIR)/
 	rm -rf $(PKGSRC_HOST_DIR)/
-	#rm -rf $(PKGSRC_SOURCE_DIR)/
+	rm -rf $(PKGSRC_SOURCE_DIR)/
 endef
 
 $(eval $(call GENTARGETS,host))
