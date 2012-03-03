@@ -1,7 +1,7 @@
-diff --git a/net/tnftp/files/src/Makefile.in b/net/tnftp/files/src/Makefile.in
+diff --git a/pkgsrc/net/tnftp/files/src/Makefile.in b/pkgsrc/net/tnftp/files/src/Makefile.in
 index 6ea18fb..99d2f95 100644
---- a/net/tnftp/files/src/Makefile.in
-+++ b/net/tnftp/files/src/Makefile.in
+--- a/pkgsrc/net/tnftp/files/src/Makefile.in
++++ b/pkgsrc/net/tnftp/files/src/Makefile.in
 @@ -20,6 +20,7 @@ CFLAGS	= @CFLAGS@
  CPPFLAGS= -I${srcdir} -I${srcdir}/.. -I. -I.. @INCLUDES@ @CPPFLAGS@
  LIBS	= @LIBS@

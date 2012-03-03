@@ -7,7 +7,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_MULE_UCS
 	  encoding mechanism to Emacs. As the name suggests, it supports Unicode, which
 	  the original Emacs doesn't support.
 
-	  http://www.gnu.org/software/emacs/emacs.html
+	  http://rubyforge.org/projects/codeforpeople/
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_SIGIL
@@ -513,7 +513,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EMACS_PACKAGES
 	  This is our equivalent to XEmacs's ``sumo'' package - Emacs lisp
 	  package collection for FSF Emacs 20 / 21.
 
-	  http://meltin.net/hacks/emacs/
+	  http://validatable.rubyforge.org/
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EX

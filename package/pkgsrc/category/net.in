@@ -23,9 +23,9 @@ config BR2_PKGSRC_PACKAGE_NET_6TUNNEL
 	help
 	  v4/v6 protocol translation
 
-	  6tunnel can translate between protocol versions on the same host,
-	  thus offering a way to setup v4/v6 and v6/v4 proxy services.
-	  It can bind to any of your IPv4 (default) or IPv6 addresses.
+	  6tunnel allows you to use services provided by IPv6 hosts with IPv4-only
+	  applications and vice-versa. I t can bind to any of your IPv4 (default)
+	  or IPv6 addresses and forward all data to a IPv4 or IPv6 (default) host.
 
 	  
 
@@ -8151,9 +8151,13 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_AMQP
 	help
 	  AMQP client implementation in Ruby/EventMachine
 
-	  AMQP client implementation in Ruby/EventMachine.
-	  This library was tested primarily with RabbitMQ, although it should
-	  be compatible with any server implementing the AMQP 0-8 spec.
+	  Ruby amqp gem is a widely used, feature-rich, well-maintained asynchronous
+	  AMQP 0.9.1 client with batteries included.
+	  
+	  This library works with Ruby 1.8.7 (*except for p249*, see the FAQ), Ruby
+	  1.9.2, Ruby 1.9.3, [JRuby](http://jruby.org), [Rubinius](http://rubini.us) as
+	  well as [REE](http://www.rubyenterpriseedition.com), and is licensed under the
+	  [Ruby License](http://www.ruby-lang.org/en/LICENSE.txt)
 
 	  http://github.com/tmm1/amqp
 
@@ -8179,7 +8183,7 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_ICMP
 	  
 	  Note that it requires root permission to handle any ICMP packets.
 
-	  http://dnsruby.rubyforge.org/
+	  http://snmplib.rubyforge.org/
 
 
 config BR2_PKGSRC_PACKAGE_NET_MIKUTTER
@@ -8524,9 +8528,6 @@ config BR2_PKGSRC_PACKAGE_NET_SKYPE
 	help
 	  P2P VoIP software
 
-	  Skype is a free program that uses the latest P2P technology to bring
-	  affordable and high-quality voice communications to people all over
-	  the world.
 
 	  http://www.skype.com/
 

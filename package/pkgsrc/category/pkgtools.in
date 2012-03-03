@@ -313,7 +313,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_NIH
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_OSABI
-	bool "osabi-Linux-3.0.0"
+	bool "osabi-Linux-3.2.0"
 	help
 	  Operating System version dummy-package
 

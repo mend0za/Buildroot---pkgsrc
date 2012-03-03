@@ -348,7 +348,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IIIMECF
 	  and consists of a library to create IIIM awared applications and a simple
 	  input method library controlled by IIIM server(s).
 
-	  http://canna.sourceforge.jp/
+	  http://ruby-opengl.rubyforge.org/
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IM_JA

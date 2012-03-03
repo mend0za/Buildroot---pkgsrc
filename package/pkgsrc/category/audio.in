@@ -43,21 +43,6 @@ config BR2_PKGSRC_PACKAGE_AUDIO_WMMP
 	  http://musicpd.org/WMmp.shtml
 
 
-config BR2_PKGSRC_PACKAGE_AUDIO_AKODE_PLUGINS_FFMPEG
-	bool "akode-plugins-ffmpeg-2.0.2nb1"
-	help
-	  FFMPEG decoder plugin for akode framework
-
-	  aKode is a simple audio decoding framework that provides a uniform interface
-	  to decode the most common audio formats. It also has a direct playback option
-	  for a number of audio outputs.
-	  
-	  This package provides the ffmpeg plugin for aKode which allows decoding many
-	  audio formats using ffmpeg library.
-
-	  http://carewolf.com/akode/
-
-
 config BR2_PKGSRC_PACKAGE_AUDIO_ABCDE
 	bool "abcde-2.3.99.7nb1"
 	help
@@ -121,6 +106,21 @@ config BR2_PKGSRC_PACKAGE_AUDIO_AKODE_PLUGINS_ALSA
 	  
 	  This package provides the alsa plugin for aKode which allows playback through
 	  ALSA sound system used commonly on Linux.
+
+	  http://carewolf.com/akode/
+
+
+config BR2_PKGSRC_PACKAGE_AUDIO_AKODE_PLUGINS_FFMPEG
+	bool "akode-plugins-ffmpeg-2.0.2nb1"
+	help
+	  FFMPEG decoder plugin for akode framework
+
+	  aKode is a simple audio decoding framework that provides a uniform interface
+	  to decode the most common audio formats. It also has a direct playback option
+	  for a number of audio outputs.
+	  
+	  This package provides the ffmpeg plugin for aKode which allows decoding many
+	  audio formats using ffmpeg library.
 
 	  http://carewolf.com/akode/
 
@@ -732,12 +732,6 @@ config BR2_PKGSRC_PACKAGE_AUDIO_CDD
 	help
 	  Program for reading CD audio from SCSI/ATAPI CD-ROM drives
 
-	  CDD is as the name implies, an attempt at a DD utility for CD's of all
-	  flavors.  CDD will do its best to copy CD audio data, CD-ROM data in both
-	  raw and "cooked" forms to a directory of the users choice.
-	  
-	  CDD doesn't support every CD-ROM drive, though it supports many common
-	  ones, including those that support the new MMC command set.
 
 	  
 
@@ -5909,13 +5903,6 @@ config BR2_PKGSRC_PACKAGE_AUDIO_TOSHA
 	help
 	  Read CD digital audio data through the SCSI bus
 
-	  "tosha"  reads one or more CD-DA (digital audio) tracks or absolute
-	  sectors and writes them into a single or multiple files, or to the
-	  standard output.
-	  
-	  The digital audio data is read through the SCSI bus; thus tosha
-	  does NOT work with IDE/ATAPI CD-ROM drives nor with proprietary
-	  interfaces.
 
 	  
 

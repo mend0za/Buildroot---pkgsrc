@@ -1,10 +1,11 @@
 #!/bin/sh
 
-# Copyleft by Vlad 'mend0za' Shakhov, 2011
+# Copyleft by Vlad 'mend0za' Shakhov, 2011-2012
 
 KCONFIG_OUT=pkgsrc-categories.in
-PKG_SRC_PATH=/home/works/buildroot/pkgsrc-2011Q3
+PKG_SRC_PATH=/home/works/buildroot/pkgsrc-2011Q4
 CATEGORY_DIR=category
+export PATH="$PATH:/home/works/buildroot/pkg/bin"
 
 export LC_ALL=C
 
@@ -25,7 +26,7 @@ do
 	COMMENT=`awk -F'=' '/COMMENT/{print $2}' $PKG_SRC_PATH/$CATEGORY/Makefile|sed 's/^\t\+//g'`
 	IN_FILE="$CATEGORY_DIR/$CATEGORY.in"
 	echo "menu \"$COMMENT\"" >>$KCONFIG_OUT
-	echo "source pkgsrc/$IN_FILE" >>$KCONFIG_OUT
+	echo "source package/pkgsrc/$IN_FILE" >>$KCONFIG_OUT
 	echo "endmenu" >>$KCONFIG_OUT
 	echo >>$KCONFIG_OUT
 

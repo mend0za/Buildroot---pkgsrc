@@ -2,7 +2,7 @@ menu "The NetBSD Packages Collection (pkgsrc)"
 
 config BR2_PKGSRC_VERSION
 	string
-	default "2011Q3"
+	default "2011Q4"
 
 config BR2_PKGSRC
 	bool "The NetBSD Packages Collection (pkgsrc)"
@@ -15,7 +15,7 @@ config BR2_PKGSRC
 	  easily on supported platforms. 
 
 	  http://www.netbsd.org/docs/software/packages.html
-	  Currently for 2011Q3 version.
+	  Currently for 2011Q4 version.
 
 
 if BR2_PKGSRC

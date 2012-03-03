@@ -5434,7 +5434,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_RUBY_TCPWRAP
 
 	  ruby-tcpwrap -- TCP wrappers library for Ruby.
 
-	  http://ruby-hmac.rubyforge.org/
+	  http://rubyforge.org/projects/net-ssh/
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_RUBY_TWITTER_OAUTH

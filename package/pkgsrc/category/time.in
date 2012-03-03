@@ -1436,7 +1436,7 @@ config BR2_PKGSRC_PACKAGE_TIME_PCLOCK
 	  window manager (also runs fine on any other window manager which supports
 	  dock apps, such as PWM).  Any 64x64 pixmap may be used as a background.
 
-	  http://www.chasen.org/~taku/software/yamcha/
+	  http://pear.php.net/package/Date
 
 
 config BR2_PKGSRC_PACKAGE_TIME_PHOON

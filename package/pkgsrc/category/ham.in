@@ -43,6 +43,17 @@ config BR2_PKGSRC_PACKAGE_HAM_DPBOX
 	  http://home.snafu.de/wahlm/dl8hbs/dpbox.html
 
 
+config BR2_PKGSRC_PACKAGE_HAM_FL_LOGBOOK
+	bool "fl_logbook-1.21nb2"
+	help
+	  FLTK-based amateur radio log book
+
+	  FlLogbook is a amateur radio operator log book written using the Fast
+	  Light Toolkit.
+
+	  http://www.w1hkj.com/
+
+
 config BR2_PKGSRC_PACKAGE_HAM_FLDIGI
 	bool "fldigi-3.03nb5"
 	help
@@ -63,17 +74,6 @@ config BR2_PKGSRC_PACKAGE_HAM_FLDIGI
 	  * Freq. Analysis, receive only
 
 	  http://www.w1hkj.com/Fldigi.html
-
-
-config BR2_PKGSRC_PACKAGE_HAM_FL_LOGBOOK
-	bool "fl_logbook-1.21nb2"
-	help
-	  FLTK-based amateur radio log book
-
-	  FlLogbook is a amateur radio operator log book written using the Fast
-	  Light Toolkit.
-
-	  http://www.w1hkj.com/
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GMFSK

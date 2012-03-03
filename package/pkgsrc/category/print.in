@@ -4251,12 +4251,23 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_GLOSSARIES
 	help
 	  Macros for creation of glossaries
 
-	  The glossaries package supports acronyms and multiple glossaries.
-	  New entries are defined to have a name and description (and optionally
-	  an associated symbol).  Plural forms can also be specified.  New
-	  glossary styles can be defined, and preambles and postambles can be
-	  specified.  There is provision for loading a database of terms: only
-	  terms used in the text will be added to the relevant glossary.
+	  The glossaries package supports acronyms and multiple glossaries, and
+	  has provision for operation in several languages (using the facilities
+	  of either babel or polyglossia). New entries are defined to have a name
+	  and description (and optionally an associated symbol). Support for
+	  multiple languages is offered, and plural forms of terms may be
+	  specified. An additional package, glossaries-accsupp, can make use of
+	  the accsupp package mechanisms for accessibility support for PDF files
+	  containing glossaries. The user may define new glossary styles, and
+	  preambles and postambles can be specified. There is provision for
+	  loading a database of terms, but only terms used in the text will be
+	  added to the relevant glossary. The package uses an indexing program to
+	  provide the actual glossary; either makeindex or xindy may serve this
+	  purpose, and a Perl script is provided to serve as interface. The
+	  package distribution also provides the mfirstuc package, for changing
+	  the first letter of a word to upper case. The package supersedes the
+	  author's glossary package (which is now obsolete), and a conversion tool
+	  is provided.
 
 	  http://www.ctan.org/tex-archive/help/Catalogue/entries/glossaries.html
 
@@ -7613,8 +7624,11 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_UCS
 	help
 	  LaTeX UTF-8 support
 
-	  This package contains support for using UTF-8 as input encoding in
-	  LaTeX documents.
+	  This bundle provides the ucs package, and utf8x.def, together with a
+	  large number of support files. The utf8x.def definition file for use
+	  with inputenc covers a wider range of Unicode characters than does
+	  utf8.def in the LaTeX distribution. The ucs package provides facilities
+	  for efficient use of large sets of Unicode characters.
 
 	  http://www.unruh.de/DniQ/latex/unicode/
 
@@ -7861,9 +7875,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_WRAPFIG
 
 	  Allows figures or tables to have text wrapped around them. Does not work
 	  in combination with list environments, but can be used in a parbox or
-	  minipage, and in twocolumn format. Supports the float package. Note that
-	  most of the package documentation is contained in the package file
-	  itself (after the \endinput command at the end of the package proper).
+	  minipage, and in twocolumn format. Supports the float package.
 
 	  http://www.tug.org/texlive/
 
@@ -8101,7 +8113,6 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEXLIVE_PDFTOOLS
 	help
 	  PDF-related utilities in TeX Live
 
-	  This package provides PDF-related utilites included in TeX Live.
 
 	  http://www.tug.org/texlive/
 

@@ -23,20 +23,6 @@ config BR2_PKGSRC_PACKAGE_WWW_SPEEDYCGI
 	  http://daemoninc.com/SpeedyCGI/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_ANALOG
-	bool "analog-6.0nb2"
-	help
-	  Extremely fast program for analysing WWW logfiles
-
-	  This program analyses logfiles in both the common log format and NCSA
-	  old format from WWW servers. It is designed to be fast on long
-	  logfiles and to produce attractive statistics.
-	  
-	  It was written by Stephen Turner (sret1@cam.ac.uk).
-
-	  http://www.analog.cx/
-
-
 config BR2_PKGSRC_PACKAGE_WWW_ADZAP
 	bool "adzap-20080508"
 	help
@@ -86,6 +72,20 @@ config BR2_PKGSRC_PACKAGE_WWW_AMAYA
 	  Amaya supports XHTML, MathML, SVG, and RDF.
 
 	  http://www.w3.org/Amaya/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_ANALOG
+	bool "analog-6.0nb2"
+	help
+	  Extremely fast program for analysing WWW logfiles
+
+	  This program analyses logfiles in both the common log format and NCSA
+	  old format from WWW servers. It is designed to be fast on long
+	  logfiles and to produce attractive statistics.
+	  
+	  It was written by Stephen Turner (sret1@cam.ac.uk).
+
+	  http://www.analog.cx/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_EMBPERL
@@ -1877,7 +1877,6 @@ config BR2_PKGSRC_PACKAGE_WWW_DRUPAL6_TRANSLATIONS
 	help
 	  Langate translation files for drupal 6.x
 
-	  This pacakge is collection of translation files for drupal 6.x.
 
 	  http://drupal.org/project/Translations
 
@@ -2219,8 +2218,6 @@ config BR2_PKGSRC_PACKAGE_WWW_HTDIG_DEVEL
 	help
 	  WWW indexing and searching system
 
-	  The ht://Dig system is a complete world wide web indexing and searching
-	  system for a small domain or intranet.
 
 	  http://htdig.sourceforge.net/
 
@@ -3130,7 +3127,7 @@ config BR2_PKGSRC_PACKAGE_WWW_OPERA_ACROREAD7
 
 	  This package provides the Adobe Acrobat Reader 7 plugin for the Opera package.
 
-	  http://www.merbivore.com/
+	  http://github.com/fauna/mongrel
 
 
 config BR2_PKGSRC_PACKAGE_WWW_OPERA_PLUGINS
@@ -4304,8 +4301,6 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION
 	  every request made by the same client.
 	  
 	  This plugin links the two pieces together.
-	  
-	  WWW: http://search.cpan.org/dist/Catalyst-Plugin-Session/
 
 	  http://search.cpan.org/dist/Catalyst-Plugin-Session/
 
@@ -8148,7 +8143,6 @@ config BR2_PKGSRC_PACKAGE_WWW_ERUBIS
 	help
 	  Fast, secure, and extensible implementation of eRuby
 
-	  Erubis is a fast, secure, and very extensible implementation of eRuby.
 
 	  http://www.kuwata-lab.com/erubis/
 
@@ -8170,12 +8164,6 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_GNOME2_GTKMOZEMBED
 	help
 	  Ruby binding of gtkmozembed
 
-	  Ruby-GNOME 2 is a set of Ruby language bindings for the various
-	  application development libraries included with the GNOME/GTK+
-	  environment.
-	  
-	  Ruby/GtkMozEmbeded is a Ruby binding of GtkMozEmbeded a widget embedding a
-	  Mozilla Gecko renderer.
 
 	  http://ruby-gnome2.sourceforge.jp/
 
@@ -9153,19 +9141,6 @@ config BR2_PKGSRC_PACKAGE_WWW_SKIPSTONE
 	help
 	  Light and fast Gecko-based browser
 
-	  SkipStone is a Gtk+ Web Browser that embeds Mozilla's rendering component
-	  Gecko. It aims to be light and fast with few dependencies.
-	  
-	  SkipStone provides a nice and simple configurable interface, bookmarks and all
-	  of the other mandantory browsing features.
-	  
-	  Downloading is handled by SkipDownload by default, a Gtk+ frontend to the
-	  famous web downloading utility wget. However, if you prefer to use other
-	  download utilities / managers, this option is configurable.
-	  
-	  Mail and external url handlers are also handled by external applications which
-	  can be configured to the users choice, leaving SkipStone to do what it does
-	  best - browsing.
 
 	  http://www.muhri.net/skipstone/
 
@@ -9557,10 +9532,6 @@ config BR2_PKGSRC_PACKAGE_WWW_TYPO3
 	help
 	  The typo3 content management system
 
-	  TYPO3 is a free Open Source content management system for enterprise
-	  purposes on the web and in intranets. It offers full flexibility and
-	  extendability while featuring an accomplished set of ready-made
-	  interfaces, functions and modules.
 
 	  http://typo3.com/
 
@@ -9570,43 +9541,6 @@ config BR2_PKGSRC_PACKAGE_WWW_TYPOLIGHT28
 	help
 	  Powerful web content management system (CMS)
 
-	  TYPOlight is an open source content management system (CMS) for people who
-	  want a professional internet presence that is easy to maintain.
-	  The state-of-the-art structure of the system offers a high security standard
-	  and allows you to develop search engine friendly websites that are also
-	  accessible for people with disabilities.  Furthermore, the system can be
-	  expanded flexibly and inexpensively.  Easy management of user rights, the
-	  Live Update Service, the modern CSS framework and many already integrated
-	  modules (news, calendar, forms, etc.) have quickly made TYPOlight one of the
-	  most popular open source content management systems on the market.
-	  
-	  TYPOlight has an intuitive user interface that uses Ajax and Web 2.0
-	  technologies for optimal usability.  Multiple back end languages and themes,
-	  a powerful permission system, versioning and undo management, advanced search
-	  and sorting options or the Live Update Service are just a few of many
-	  features that make TYPOlight stand out from other CMS.  The TYPOlight front
-	  end is 100% template based and generates accessible XHTML strict output that
-	  meets the W3C/WAI requirements.  Search engine friendly URLs, GZip support, a
-	  PDF export function, multi-language support and many more allow you to build
-	  contemporary websites without being a programmer.
-	  
-	  * Advanced editing features
-	  * Powerful site structure
-	  * Fine-grained permission system
-	  * Flexible form generator
-	  * Full-text search engine
-	  * Built-in CSS framework
-	  * Built-in file manager
-	  * Built-in news/blog module
-	  * Built-in calendar module
-	  * Built-in newsletter module
-	  * Wide choice of additional modules
-	  * Accessible front and back end
-	  * Easy live update
-	  * Ajax and PHP 5
-	  
-	  Note: Live update feature would work with typolight-liveupdate PKG_OPTION
-	  enabled, but it might be conflict with regular pkgsrc maintainous.
 
 	  http://www.contao.org/
 
@@ -9616,7 +9550,6 @@ config BR2_PKGSRC_PACKAGE_WWW_TYPOLIGHT28_EXAMPLE
 	help
 	  Sample site data for TYPOlight
 
-	  This is example site data of TYPOlight webCMS.
 
 	  http://www.contao.org/
 
@@ -9626,7 +9559,6 @@ config BR2_PKGSRC_PACKAGE_WWW_TYPOLIGHT28_TRANSLATIONS
 	help
 	  Language files for TYPOlight CMS
 
-	  Language translation files for TYPOlight webCMS version 2.8.x.
 
 	  http://www.contao.org/download.html
 

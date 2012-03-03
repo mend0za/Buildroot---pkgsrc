@@ -19,4 +19,6 @@ endif
 include package/pkgsrc/host-pkgsrc.mk.in
 include package/pkgsrc/target-pkgsrc.mk.in
 
+HOST_SOURCE += host-pkgsrc-source
+
 endif # BR2_PKGSRC

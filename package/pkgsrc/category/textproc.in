@@ -8197,7 +8197,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XHTMLDIFF
 	  changes between them as output.
 	  
 
-	  http://xslide.sourceforge.net/
+	  http://taiyaki.org/suikyo/elisp/index.html
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_XMLPARSER
@@ -9179,7 +9179,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XMLTOMAN
 	  xmltoman and xmlmantohtml are two very simple scripts for converting xml
 	  to groff or html.
 
-	  http://github.com/rsl/stringex
+	  http://taiyaki.org/suikyo/elisp/index.html
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_XMLTOOLING

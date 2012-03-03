@@ -1,14 +1,3 @@
-config BR2_PKGSRC_PACKAGE_NEWS_KNEWS
-	bool "knews-1.0nb16"
-	help
-	  X11 newsreader with support for threading and MIME
-
-	  Knews is a threaded newsreader with an X Window interface that
-	  uses NNTP to get news. It displays the threads in a graphical tree.
-
-	  
-
-
 config BR2_PKGSRC_PACKAGE_NEWS_CG
 	bool "cg-0.4"
 	help
@@ -82,6 +71,17 @@ config BR2_PKGSRC_PACKAGE_NEWS_INN
 	  to change the default spool directory when building this pkg.
 
 	  http://www.isc.org/software/inn/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_KNEWS
+	bool "knews-1.0nb16"
+	help
+	  X11 newsreader with support for threading and MIME
+
+	  Knews is a threaded newsreader with an X Window interface that
+	  uses NNTP to get news. It displays the threads in a graphical tree.
+
+	  
 
 
 config BR2_PKGSRC_PACKAGE_NEWS_LEAFNODE

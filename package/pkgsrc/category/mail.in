@@ -71,26 +71,6 @@ config BR2_PKGSRC_PACKAGE_MAIL_YOSUCKER
 	  http://yosucker.sourceforge.net/
 
 
-config BR2_PKGSRC_PACKAGE_MAIL_AUTORESPOND
-	bool "autorespond-2.0.5"
-	help
-	  Simple autoresponder add-on package for qmail
-
-	  This is a simple autoresponder for qmail.
-	  
-	  Mail is sent to help@my-company.com. An automatically generated response
-	  is sent back to the user with an address of "help@my-company.com".  You
-	  can set the envelope sender to an empty string.  However, some programs
-	  will parse the message for the "From:"  field and send an autoresponse
-	  back to it.  It is received at your autoresponder, and you now have a mail
-	  loop.
-	  
-	  This autoresponder also catches some other simple situations such as mail
-	  from a mailer-daemon, empty envelope sender, bulk precedence headers, etc.
-
-	  http://www.inter7.com/devel/
-
-
 config BR2_PKGSRC_PACKAGE_MAIL_AKONADI
 	bool "akonadi-1.4.0nb5"
 	help
@@ -184,6 +164,26 @@ config BR2_PKGSRC_PACKAGE_MAIL_ARCHIVEMAIL
 	  with gzip, or optionally just delete old email.
 
 	  http://archivemail.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MAIL_AUTORESPOND
+	bool "autorespond-2.0.5"
+	help
+	  Simple autoresponder add-on package for qmail
+
+	  This is a simple autoresponder for qmail.
+	  
+	  Mail is sent to help@my-company.com. An automatically generated response
+	  is sent back to the user with an address of "help@my-company.com".  You
+	  can set the envelope sender to an empty string.  However, some programs
+	  will parse the message for the "From:"  field and send an autoresponse
+	  back to it.  It is received at your autoresponder, and you now have a mail
+	  loop.
+	  
+	  This autoresponder also catches some other simple situations such as mail
+	  from a mailer-daemon, empty envelope sender, bulk precedence headers, etc.
+
+	  http://www.inter7.com/devel/
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_AVENGER
@@ -4592,7 +4592,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_RMAIL_MIME
 	  RMAIL-MIME is a module to provide MIME features to RMAIL.  RMAIL is an Emacs
 	  subsystem for reading and disposing of mail that you receive.
 
-	  http://pear.php.net/package/Mail_Mime
+	  http://pear.php.net/package/Auth_SASL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_ROUNDCUBE

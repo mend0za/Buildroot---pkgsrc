@@ -2937,7 +2937,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ELIB
 	  - minibuffer handling functions missing in standard emacs
 	  - routines for handling lists of so called cookies in a buffer.
 
-	  http://www.mulle-kybernetik.com/software/EDFrameworks/
+	  http://sourceforge.net/projects/ilisp/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_EMACS_ILISP
@@ -2970,7 +2970,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_EMACS20_ELIB
 	  This package uses emacs from the version 20 series.  In order to use
 	  it with any other version, install devel/elib.
 
-	  http://sourceforge.net/projects/ilisp/
+	  http://www.mulle-kybernetik.com/software/EDFrameworks/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_EPYDOC
@@ -4281,28 +4281,13 @@ config BR2_PKGSRC_PACKAGE_DEVEL_HDF5
 	help
 	  
 
-	  HDF5 is a completely new Hierarchical Data Format product consisting
-	  of a data format specification and a supporting library
-	  implementation. HDF5 is designed to address some of the limitations of
-	  the older HDF product and to address current and anticipated
-	  requirements of modern systems and applications.
-	  
-	  Why HDF5? The development of HDF5 is motivated by a
-	  number of limitations in the older HDF format and library.
-	  
-	  HDF5 includes the following improvements over HDF4
-	  
-	  * A new file format designed to address some of the deficiencies of
-	  HDF4.x, particularly the need to store larger files and more
-	  objects per file.
-	  
-	  * A simpler, more comprehensive data model that includes only two
-	  basic structures: a multidimensional array of record structures,
-	  and a grouping structure.
-	  
-	  * A simpler, better-engineered library and API, with improved
-	  support for parallel I/O, threads, and other requirements imposed
-	  by modern systems and applications.
+	  HDF5 is a data model, library, and file format for storing and
+	  managing data. It supports an unlimited variety of datatypes, and
+	  is designed for flexible and efficient I/O and for high volume and
+	  complex data. HDF5 is portable and is extensible, allowing applications
+	  to evolve in their use of HDF5. The HDF5 Technology suite includes
+	  tools and applications for managing, manipulating, viewing, and
+	  analyzing data in the HDF5 format.
 
 	  http://www.hdfgroup.org/HDF5/
 
@@ -6220,16 +6205,6 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBSCSI
 	help
 	  FreeBSD SCSI user library
 
-	  This library is meant for userland access to SCSI devices.  The
-	  library is part of the FreeBSD distribution but works for
-	  NetBSD as well.
-	  
-	  The functions of the library use the SCIOCCOMMAND ioctl(2) of
-	  the NetBSD SCSI subsystem to provide user level access to SCSI
-	  commands.  The programmer must know the SCSI CDB (Command
-	  Descriptor Block) to perform the desired command.  These
-	  functions assist in building up the CDB, submitting it to the
-	  SCSI subsystem, and decoding the result.
 
 	  
 
@@ -6758,16 +6733,13 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LMDBG
 	help
 	  Lightweight Modular malloc Debugger
 
-	  LMDBG is a collection of small tools for collecting and analyzing logs
-	  of malloc/realloc/memalign/free etc. function calls. Unlike many
-	  others, LMDBG does not provide any way to detect overruns of the
-	  boundaries of malloc() memory allocations, as this is not the
-	  goal. Like most other malloc debuggers, LMDBG allows detecting memory
-	  leaks. Unlike some others LMDBG generates full stacktraces and
-	  separates the logging process from analysis, thus allowing you to
-	  analyze application on a per-module basis. Simple but powerful tools
+	  LMDBG is a collection of small tools for collecting and analyzing logs of
+	  malloc/realloc/memalign/free etc.  function calls.  LMDBG generates full
+	  stacktraces and separates the logging process from analysis, thus allowing
+	  you to analyze application on a per-module basis.  Simple but powerful tools
 	  for analisis are also provided.
 	  
+	  lmdbg        - Meta tool, all in one.
 	  lmdbg-run    - Creates malloc/realloc/free/memalign/... logs
 	  lmdbg-sym    - Converts addresses to 'file.c:NUM func_name'
 	  lmdbg-leak   - Checks for memory leaks
@@ -10239,9 +10211,6 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_CHECKLIB
 	help
 	  Perl extension to check that a library is available
 
-	  This module provides a way of checking whether a particular library and
-	  its headers are available, by attempting to compile a simple program and
-	  link against it.
 
 	  http://search.cpan.org/dist/Devel-CheckLib/
 
@@ -17184,7 +17153,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_VCP
 	  allows you to copy and translate files and their histories between
 	  revision storage systems.
 
-	  http://pychecker.sourceforge.net/
+	  http://www.opencm.org/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_VCP_DEST_SVK
@@ -17592,7 +17561,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PARENT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PERL_HEADERS
-	bool "p5-perl-headers-3.0.0nb6"
+	bool "p5-perl-headers-3.2.0nb6"
 	help
 	  Perl header files
 
@@ -18815,7 +18784,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_KQUEUE
 	  File pykqueue.txt (part of the module distribution) describes
 	  the Python module API, which mirrors the system interface to most extend.
 
-	  http://www.python.org/doc/current/lib/module-curses.html
+	  http://pychecker.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_LOGILAB_ASTNG
@@ -19092,7 +19061,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_SYSCTL
 
 	  A python module to provide an API to NetBSD's sysctl(3)
 
-	  http://launchpad.net/subvertpy
+	  http://lacusveris.com/PythonTidy/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_TESTTOOLS
@@ -20305,7 +20274,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_METAID
 	  metaprogramming easier.  For the lore of metaprogramming see Seeing
 	  Metaclasses Clearly and Chapter Six of Why's (Poignant) Guide to Ruby.
 
-	  http://rubyforge.org/projects/rbtree/
+	  http://www.yotabanana.com/hiki/ruby-gettext.html
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_MKRF
@@ -21148,7 +21117,9 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SCMGIT
 	help
 	  GIT version control suite meta-package
 
-	  Meta-pkg for the GIT distributed version control suite.
+	  This package is a meta package, collecting the components normally
+	  expected to be installed for the GIT distributed version control
+	  suite (the tool itself, and the man pages).
 
 	  
 
@@ -21167,6 +21138,10 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SCMGIT_BASE
 	  to e.g. GNU Arch or Monotone (or, in the commercial world, BitKeeper). Every
 	  GIT working directory is a full-fledged repository with full revision tracking
 	  capabilities, not dependent on network access to a central server.
+	  
+	  This package contains only the program itself, and not the man pages.
+	  It also optionally contains a TK-based repository browser and python
+	  bindings.
 
 	  http://git.or.cz/
 
@@ -21401,7 +21376,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SML_MODE
 	  syntax highlighting and automatic indentation and comes with sml-proc
 	  which allows interaction with an inferior SML interactive loop.
 
-	  http://github.com/jugyo/termcolor
+	  http://blog.evanweaver.com/files/doc/fauna/simple_uuid/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SNAPPY
