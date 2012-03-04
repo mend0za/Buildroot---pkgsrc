@@ -30,7 +30,7 @@ config BR2_PKGSRC_PACKAGE_PARALLEL_DQS
 
 
 config BR2_PKGSRC_PACKAGE_PARALLEL_GANGLIA_MONITOR_CORE
-	bool "ganglia-monitor-core-3.1.2nb6"
+	bool "ganglia-monitor-core-3.1.2nb8"
 	help
 	  Ganglia cluster monitor, monitoring daemon
 
@@ -83,7 +83,7 @@ config BR2_PKGSRC_PACKAGE_PARALLEL_MPI_CH
 
 
 config BR2_PKGSRC_PACKAGE_PARALLEL_OPENMPI
-	bool "openmpi-1.5.4"
+	bool "openmpi-1.5.4nb1"
 	help
 	  Open source MPI-2 implementation
 
@@ -190,7 +190,7 @@ config BR2_PKGSRC_PACKAGE_PARALLEL_PVM3
 
 
 config BR2_PKGSRC_PACKAGE_PARALLEL_SGE
-	bool "sge-6.2.2.1nb4"
+	bool "sge-6.2.2.1nb5"
 	help
 	  Sun Grid Engine distributed resource management system
 

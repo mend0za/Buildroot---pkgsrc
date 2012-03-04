@@ -101,6 +101,24 @@ config BR2_PKGSRC_PACKAGE_LANG_A60
 	  
 
 
+config BR2_PKGSRC_PACKAGE_LANG_ALGOL68G
+	bool "algol68g-2.3.1nb1"
+	help
+	  Algol 68genie compiler
+
+	  The development of Algol played an important role in establishing
+	  computer science as an academic discipline. The Algol 68 Genie
+	  project preserves Algol 68 out of educational as well as
+	  scientific-historical interest, by making available Algol 68 Genie;
+	  a recent, well-featured implementation written from scratch. Algol
+	  68 Genie is a practically full implementation of the language
+	  defined by the Revised Report. The implementation is a hybrid
+	  compiler-interpreter; units with considerable interpreter-overhead
+	  can optionally be compiled.
+
+	  http://jmvdveer.home.xs4all.nl/algol.html
+
+
 config BR2_PKGSRC_PACKAGE_LANG_AWKA
 	bool "awka-0.7.5nb2"
 	help
@@ -156,8 +174,25 @@ config BR2_PKGSRC_PACKAGE_LANG_BACI
 	  http://www.mines.edu/fs_home/tcamp/baci/
 
 
+config BR2_PKGSRC_PACKAGE_LANG_BASIC256
+	bool "basic256-0.9.6.66nb1"
+	help
+	  BASIC language with traditional control structures
+
+	  BASIC-256 is an easy to use version of BASIC designed to teach
+	  anybody (especially middle and high-school students) the basics of
+	  computer programming. It uses traditional control structures like
+	  gosub, for/next, and goto, which helps kids easily see how program
+	  flow-control works. It has a built-in graphics mode which lets them
+	  draw pictures on screen in minutes, and a set of detailed,
+	  easy-to-follow tutorials that introduce programming concepts through
+	  fun exercises.
+
+	  http://www.basic256.org/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_BOOMERANG
-	bool "boomerang-0.2"
+	bool "boomerang-0.2nb1"
 	help
 	  Bidirectional programming language for ad-hoc, textual data
 
@@ -221,7 +256,7 @@ config BR2_PKGSRC_PACKAGE_LANG_BWBASIC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CAML_LIGHT
-	bool "caml-light-0.74nb1"
+	bool "caml-light-0.74nb2"
 	help
 	  Another implementation of Caml
 
@@ -248,7 +283,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CAML_LIGHT
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CAMLP5
-	bool "camlp5-5.15"
+	bool "camlp5-5.15nb1"
 	help
 	  Camlp5 is a preprocessor-pretty-printer of ocaml
 
@@ -350,7 +385,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CINT
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CLANG
-	bool "clang-2.9nb1"
+	bool "clang-3.0"
 	help
 	  Low Level Virtual Machine compiler infrastructure
 
@@ -392,7 +427,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH_GUI
-	bool "classpath-gui-0.93nb8"
+	bool "classpath-gui-0.93nb9"
 	help
 	  
 
@@ -404,7 +439,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH_GUI
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CLISP
-	bool "clisp-2.49nb5"
+	bool "clisp-2.49nb6"
 	help
 	  CLISP, a Common Lisp implementation
 
@@ -427,7 +462,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CLISP
 
 
 config BR2_PKGSRC_PACKAGE_LANG_COQ
-	bool "coq-8.3pl1nb1"
+	bool "coq-8.3pl1nb3"
 	help
 	  Theorem prover which extracts programs from proofs
 
@@ -602,7 +637,7 @@ config BR2_PKGSRC_PACKAGE_LANG_ELK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_EMBRYO
-	bool "embryo-0.9.9.063"
+	bool "embryo-1.1.0"
 	help
 	  Embeddable Scripting Language
 
@@ -930,7 +965,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC44
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GCC45
-	bool "gcc45-4.5.3"
+	bool "gcc45-4.5.3nb1"
 	help
 	  GNU Compiler Collection 4.5
 
@@ -943,7 +978,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC45
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GCC46
-	bool "gcc46-4.6.1nb1"
+	bool "gcc46-4.6.2"
 	help
 	  GNU Compiler Collection 4.6
 
@@ -990,7 +1025,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GHC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GNAT_AUX
-	bool "gnat-aux-20110627"
+	bool "gnat-aux-20110627nb2"
 	help
 	  GNAT Ada compiler based on GCC 4.6
 
@@ -1163,7 +1198,7 @@ config BR2_PKGSRC_PACKAGE_LANG_ICC11
 
 	  Intel C++ Compiler for Linux.
 
-	  http://www.intel.com/cd/software/products/asmo-na/eng/compilers/277618.htm
+	  http://software.intel.com/en-us/articles/non-commercial-software-development/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_ICON
@@ -1442,7 +1477,7 @@ config BR2_PKGSRC_PACKAGE_LANG_KAFFE_ESOUND
 
 
 config BR2_PKGSRC_PACKAGE_LANG_KAFFE_X11
-	bool "kaffe-x11-1.1.7nb12"
+	bool "kaffe-x11-1.1.7nb13"
 	help
 	  
 
@@ -1575,7 +1610,7 @@ config BR2_PKGSRC_PACKAGE_LANG_LUA
 
 
 config BR2_PKGSRC_PACKAGE_LANG_LUSH
-	bool "lush-1.2.1"
+	bool "lush-1.2.1nb1"
 	help
 	  Lisp interpreter/compiler with a seamless interface to C
 
@@ -1618,7 +1653,7 @@ config BR2_PKGSRC_PACKAGE_LANG_MAWK
 	  Mike Brennan's awk clone.
 	  It's fast (faster than gawk), and relatively small.
 
-	  
+	  http://www.invisible-island.net/mawk/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_MERCURY
@@ -1683,7 +1718,7 @@ config BR2_PKGSRC_PACKAGE_LANG_MIT_SCHEME_BIN
 
 
 config BR2_PKGSRC_PACKAGE_LANG_MONO
-	bool "mono-2.10.2nb3"
+	bool "mono-2.10.6"
 	help
 	  Open source implementation of the .NET Development Framework
 
@@ -1715,7 +1750,7 @@ config BR2_PKGSRC_PACKAGE_LANG_MONO_BASIC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_MOSCOW_ML
-	bool "moscow_ml-2.01"
+	bool "moscow_ml-2.01nb1"
 	help
 	  Moscow ML, a version of Standard ML
 
@@ -1776,6 +1811,22 @@ config BR2_PKGSRC_PACKAGE_LANG_NAWK
 	  http://cm.bell-labs.com/who/bwk/
 
 
+config BR2_PKGSRC_PACKAGE_LANG_NEWLISP
+	bool "newlisp-10.3.3"
+	help
+	  Lisp-like, general-purpose scripting language
+
+	  newLISP is a Lisp-like, general-purpose scripting language. It is
+	  especially well-suited for applications in AI, web search, natural
+	  language processing, and machine learning. Because of its small
+	  resource requirements, newLISP is also excellent for embedded
+	  systems applications. Most of the functions you will ever need are
+	  already built in. This includes networking functions, support for
+	  distributed and parallel processing, and Bayesian statistics.
+
+	  http://www.newlisp.org/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_NHC98
 	bool "nhc98-1.18nb2"
 	help
@@ -1816,7 +1867,7 @@ config BR2_PKGSRC_PACKAGE_LANG_OBJC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_OCAML
-	bool "ocaml-3.12.0nb3"
+	bool "ocaml-3.12.0nb5"
 	help
 	  The latest implementation of the Caml dialect of ML
 
@@ -1834,7 +1885,7 @@ config BR2_PKGSRC_PACKAGE_LANG_OCAML
 
 
 config BR2_PKGSRC_PACKAGE_LANG_OCAMLDUCE
-	bool "ocamlduce-3.11.1.0"
+	bool "ocamlduce-3.11.1.0nb1"
 	help
 	  Library to integrate XML features into OCaml
 
@@ -1895,7 +1946,7 @@ config BR2_PKGSRC_PACKAGE_LANG_OPENCOBOL
 
 
 config BR2_PKGSRC_PACKAGE_LANG_OPENJDK7
-	bool "openjdk7-1.7.0.147.20110811"
+	bool "openjdk7-1.7.0.147.20110811nb1"
 	help
 	  Open-source implementation of the Java Platform, Standard Edition
 
@@ -1954,7 +2005,7 @@ config BR2_PKGSRC_PACKAGE_LANG_OSSP_JS
 
 
 config BR2_PKGSRC_PACKAGE_LANG_P2C
-	bool "p2c-1.20"
+	bool "p2c-1.20nb1"
 	help
 	  
 
@@ -1966,8 +2017,23 @@ config BR2_PKGSRC_PACKAGE_LANG_P2C
 	  
 
 
+config BR2_PKGSRC_PACKAGE_LANG_P5_SWITCH
+	bool "p5-Switch-2.16"
+	help
+	  Switch statement for Perl
+
+	  Switch.pm provides the syntax and semantics for an explicit case mechanism for
+	  Perl.  The syntax is minimal, introducing only the keywords C<switch> and
+	  C<case> and conforming to the general pattern of existing Perl control
+	  structures.  The semantics are particularly rich, allowing any one (or more) of
+	  early 30 forms of matching to be used when comparing a switch value with its
+	  various cases.
+
+	  http://search.cpan.org/dist/Switch/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_PARROT
-	bool "parrot-3.7.0"
+	bool "parrot-3.8.0nb1"
 	help
 	  Virtual machine made to run Perl 6 and other languages
 
@@ -2037,7 +2103,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PCC_CURRENT
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PERL5
-	bool "perl-5.14.2"
+	bool "perl-5.14.2nb3"
 	help
 	  Practical Extraction and Report Language
 
@@ -2055,7 +2121,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PERL5
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PFE
-	bool "pfe-0.33.71nb1"
+	bool "pfe-0.33.71nb2"
 	help
 	  Portable FORTH Environment
 
@@ -2103,7 +2169,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PHP5
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PHP53
-	bool "php-5.3.8"
+	bool "php-5.3.8nb2"
 	help
 	  PHP Hypertext Preprocessor version 5
 
@@ -2117,7 +2183,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PHP53
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PHP5_PERL
-	bool "php5-perl-5.2.17.1.0.0nb2"
+	bool "php5-perl-1.0.0nb2"
 	help
 	  PHP extension embedding Perl in PHP
 
@@ -2128,7 +2194,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PHP5_PERL
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PEAR
-	bool "php53-pear-1.9.4"
+	bool "php53-pear-1.9.4nb1"
 	help
 	  PEAR Base System for PHP
 
@@ -2146,7 +2212,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PEAR
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PICT
-	bool "pict-4.1"
+	bool "pict-4.1nb1"
 	help
 	  Concurrent language based on Milner's pi calculus
 
@@ -2195,7 +2261,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PNETC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PNETLIB
-	bool "pnetlib-0.8.0"
+	bool "pnetlib-0.8.0nb1"
 	help
 	  DotGNU Portable .NET C SHARP class libraries
 
@@ -2258,7 +2324,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PY25_HTML_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PY_BASICPROPERTY
-	bool "py26-basicproperty-0.6.3anb2"
+	bool "py26-basicproperty-0.6.3anb3"
 	help
 	  Python RDBMS wrapper for various databases
 
@@ -2296,7 +2362,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PY26_HTML_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PY_PSYCO
-	bool "py26-psyco-1.6"
+	bool "py26-psyco-1.6nb1"
 	help
 	  Python JIT and execution accelerator
 
@@ -2463,7 +2529,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PYTHON31
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RACKET
-	bool "racket-5.1.3"
+	bool "racket-5.2"
 	help
 	  Scheme-based dialect of Lisp
 
@@ -2483,7 +2549,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RACKET
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RACKET_TEXTUAL
-	bool "racket-textual-5.1.3"
+	bool "racket-textual-5.2"
 	help
 	  Scheme-based dialect of Lisp
 
@@ -2576,7 +2642,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY_DOC_STDLIB
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RUBY18
-	bool "ruby18-1.8.7.352"
+	bool "ruby18-1.8.7.357nb1"
 	help
 	  Ruby programming language 1.8.7 meta package
 
@@ -2591,7 +2657,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY18
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RUBY18_BASE
-	bool "ruby18-base-1.8.7.352"
+	bool "ruby18-base-1.8.7.357"
 	help
 	  Ruby 1.8 based release minimum package
 
@@ -2619,7 +2685,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY18_BASE
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RUBY19
-	bool "ruby19-1.9.2pl290"
+	bool "ruby19-1.9.2pl290nb2"
 	help
 	  Ruby programming language 1.9.2 meta package
 
@@ -2634,9 +2700,9 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY19
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RUBY19_BASE
-	bool "ruby19-base-1.9.2pl290nb2"
+	bool "ruby19-base-1.9.2pl290nb5"
 	help
-	  Ruby 1.9 based release minimum package
+	  Ruby  1.9.2 release minimum package
 
 	  Ruby is the interpreted scripting language for quick and
 	  easy object-oriented programming.  It has many features to
@@ -2661,8 +2727,51 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY19_BASE
 	  http://www.ruby-lang.org/en/
 
 
+config BR2_PKGSRC_PACKAGE_LANG_RUBY193
+	bool "ruby193-1.9.3p0"
+	help
+	  Ruby programming language 1.9.3 meta package
+
+	  This a meta package including Ruby 1.9.3 full release.
+	  
+	  It includes ruby193-base, ruby193-gdbm, ruby193-curses, ruby193-fiddle,
+	  ruby193-readline and ruby193-tk package.
+	  
+	  No package should depend on this package directly.
+
+	  http://www.ruby-lang.org/en/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY193_BASE
+	bool "ruby193-base-1.9.3p0nb2"
+	help
+	  Ruby 1.9.3 release minimum base package
+
+	  Ruby is the interpreted scripting language for quick and
+	  easy object-oriented programming.  It has many features to
+	  process text files and to do system management tasks (as in
+	  Perl).  It is simple, straight-forward, and extensible.
+	  
+	  Features of Ruby are shown below.
+	  
+	  + Simple Syntax
+	  + *Normal* Object-Oriented features (ex. class, method calls)
+	  + *Advanced* Object-Oriented features (ex. Mix-in, Singleton-method)
+	  + Operator Overloading
+	  + Exception Handling
+	  + Iterators and Closures
+	  + Garbage Collection
+	  + Dynamic Loading of Object files (on some architecture)
+	  + Highly Portable (works on many UNIX machines, and on DOS,
+	  Windows, Mac, BeOS etc.)
+	  
+	  This package is Ruby 1.9.3 release minimum base package.
+
+	  http://www.ruby-lang.org/en/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_RUNAWK
-	bool "runawk-1.3.1nb1"
+	bool "runawk-1.4.0"
 	help
 	  AWK wrapper that provides support for modules
 
@@ -2710,7 +2819,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SABLEVM_CLASSPATH
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SABLEVM_CLASSPATH_GUI
-	bool "sablevm-classpath-gui-1.13nb8"
+	bool "sablevm-classpath-gui-1.13nb9"
 	help
 	  
 
@@ -2752,7 +2861,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SATHER
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SBCL
-	bool "sbcl-1.0.51"
+	bool "sbcl-1.0.54"
 	help
 	  SBCL, a Common Lisp implementation
 
@@ -2780,7 +2889,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SCALA
 config BR2_PKGSRC_PACKAGE_LANG_SCHEME48
 	bool "scheme48-1.8"
 	help
-	  The Scheme Underground's implementation of R5RS
+	  The Scheme Underground implementation of R5RS
 
 	  Scheme 48 is an implementation of the Scheme programming language as
 	  described in the Revised^4 Report on the Algorithmic Language Scheme.
@@ -2890,7 +2999,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SIOD
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SMALLTALK
-	bool "smalltalk-3.2.4nb1"
+	bool "smalltalk-3.2.4nb2"
 	help
 	  GNU Smalltalk: A smalltalk-80 implementation
 
@@ -2949,7 +3058,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SNOBOL
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SPIDERMONKEY
-	bool "spidermonkey-1.8.0rc1nb1"
+	bool "spidermonkey-1.8.0rc1nb2"
 	help
 	  Standalone JavaScript implementation in C
 
@@ -3017,7 +3126,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SQUEAK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SQUEAK_VM
-	bool "squeak-vm-3.11.3.2135nb5"
+	bool "squeak-vm-3.11.3.2135nb6"
 	help
 	  Full Smalltalk 80 with portability to UN*X, Mac, and Windows
 
@@ -3099,11 +3208,11 @@ config BR2_PKGSRC_PACKAGE_LANG_STALIN
 	  
 	  Stalin is now released under the GNU Public License, version 2.
 
-	  http://www.neci.nj.nec.com/homepages/qobi/software.html
+	  http://cobweb.ecn.purdue.edu/~qobi/software.html
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SUN_JDK6
-	bool "sun-jdk6-6.0.27"
+	bool "sun-jdk6-6.0.29"
 	help
 	  
 
@@ -3113,7 +3222,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SUN_JDK6
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SUN_JRE6
-	bool "sun-jre6-6.0.27"
+	bool "sun-jre6-6.0.29nb1"
 	help
 	  
 
@@ -3160,7 +3269,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SWI_PROLOG_LITE
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SWI_PROLOG_PACKAGES
-	bool "swi-prolog-packages-5.11.18"
+	bool "swi-prolog-packages-5.11.18nb2"
 	help
 	  Packages for SWI Prolog
 

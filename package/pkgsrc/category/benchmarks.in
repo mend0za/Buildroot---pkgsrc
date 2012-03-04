@@ -28,32 +28,6 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_BLOGBENCH
 	  http://blogbench.pureftpd.org/
 
 
-config BR2_PKGSRC_PACKAGE_BENCHMARKS_BONNIE__
-	bool "bonnie++-1.03enb1"
-	help
-	  Enhanced performance Test of Filesystem I/O
-
-	  Bonnie++ is a benchmark suite that is aimed at performing a number
-	  of simple tests of hard drive and file system performance. Then
-	  you can decide which test is important and decide how to compare
-	  different systems after running it. There are no plans to ever have
-	  it produce a single number, because the author thinks that a single
-	  number can be useful when comparing such things. The main program
-	  tests database type access to a single file (or a set of files if
-	  you wish to test more than 1G of storage), and it tests creation,
-	  reading, and deleting of small files which can simulate the usage
-	  of programs such as Squid, INN, or Maildir format email. The ZCAV
-	  program which the author initially released as a separate package
-	  tests the performance of different zones of a hard drive. It does
-	  not write any data (so you can use it on full file systems). It
-	  can show why comparing the speed of Windows at the start of a hard
-	  drive to Linux at the end of the hard drive (typical dual-boot
-	  scenario) isn't a valid comparison. Bonnie++ was based on the code
-	  for Bonnie by Tim Bray.
-
-	  http://www.coker.com.au/bonnie++/
-
-
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_BONNIE
 	bool "bonnie-2.06nb2"
 	help
@@ -86,6 +60,32 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_BONNIE
 	  will thus always come out higher than the specified value for a drive.
 
 	  http://www.textuality.com/bonnie/index.html
+
+
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_BONNIE__
+	bool "bonnie++-1.03enb1"
+	help
+	  Enhanced performance Test of Filesystem I/O
+
+	  Bonnie++ is a benchmark suite that is aimed at performing a number
+	  of simple tests of hard drive and file system performance. Then
+	  you can decide which test is important and decide how to compare
+	  different systems after running it. There are no plans to ever have
+	  it produce a single number, because the author thinks that a single
+	  number can be useful when comparing such things. The main program
+	  tests database type access to a single file (or a set of files if
+	  you wish to test more than 1G of storage), and it tests creation,
+	  reading, and deleting of small files which can simulate the usage
+	  of programs such as Squid, INN, or Maildir format email. The ZCAV
+	  program which the author initially released as a separate package
+	  tests the performance of different zones of a hard drive. It does
+	  not write any data (so you can use it on full file systems). It
+	  can show why comparing the speed of Windows at the start of a hard
+	  drive to Linux at the end of the hard drive (typical dual-boot
+	  scenario) isn't a valid comparison. Bonnie++ was based on the code
+	  for Bonnie by Tim Bray.
+
+	  http://www.coker.com.au/bonnie++/
 
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_BYTEBENCH
@@ -279,7 +279,7 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_HTTPERF
 
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_IOZONE
-	bool "iozone-3.308"
+	bool "iozone-3.397"
 	help
 	  Benchmark for file read and write speed
 
@@ -508,6 +508,19 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_PARANOIA
 	  
 
 
+config BR2_PKGSRC_PACKAGE_BENCHMARKS_PHORONIX_TEST_SUITE
+	bool "phoronix-test-suite-3.4.0"
+	help
+	  Phoronix Benchmarking Suite
+
+	  The Phoronix Test Suite is the most comprehensive testing and benchmarking
+	  platform available for the *nix operating system. This software is designed
+	  to effectively carry out both qualitative and quantitative benchmarks in a
+	  clean, reproducible, and easy-to-use manner.
+
+	  http://www.phoronix-test-suite.com/
+
+
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_PIPEBENCH
 	bool "pipebench-0.40"
 	help
@@ -520,7 +533,7 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_PIPEBENCH
 
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_POSTAL
-	bool "postal-0.62nb5"
+	bool "postal-0.70"
 	help
 	  Tool for benchmarking SMTP/POP servers
 
@@ -705,7 +718,7 @@ config BR2_PKGSRC_PACKAGE_BENCHMARKS_XENGINE
 
 
 config BR2_PKGSRC_PACKAGE_BENCHMARKS_ZELIBM
-	bool "zelibm-0nb8"
+	bool "zelibm-0nb9"
 	help
 	  Visual Math Library Quality Check
 

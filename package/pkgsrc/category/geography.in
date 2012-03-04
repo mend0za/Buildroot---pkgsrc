@@ -12,7 +12,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_CM2GPX
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_CMCONVERT
-	bool "cmconvert-1.9.5"
+	bool "cmconvert-1.9.5nb1"
 	help
 	  CacheMate import file converter for GPS GPX files
 
@@ -25,7 +25,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_CMCONVERT
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_EMERILLON
-	bool "emerillon-0.1.2nb2"
+	bool "emerillon-0.1.2nb3"
 	help
 	  Map browser
 
@@ -79,7 +79,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_EPSG_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GAMA
-	bool "gama-1.11"
+	bool "gama-1.11nb1"
 	help
 	  
 
@@ -164,7 +164,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GDAL_LIB
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GEOCLUE
-	bool "geoclue-0.12.0nb4"
+	bool "geoclue-0.12.0nb5"
 	help
 	  Geoinformation service API and base providers
 
@@ -190,7 +190,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GEOS
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GIPFEL
-	bool "gipfel-0.3.2nb4"
+	bool "gipfel-0.3.2nb5"
 	help
 	  Photogrammetry For Mountain Images
 
@@ -292,7 +292,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_GPSUTILS
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBCHAMPLAIN04
-	bool "libchamplain04-0.4.6nb5"
+	bool "libchamplain04-0.4.6nb6"
 	help
 	  Map widget
 
@@ -303,7 +303,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBCHAMPLAIN04
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBCHAMPLAIN06
-	bool "libchamplain06-0.6.1nb5"
+	bool "libchamplain06-0.6.1nb6"
 	help
 	  Map widget
 
@@ -314,7 +314,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBCHAMPLAIN06
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBCHAMPLAIN08
-	bool "libchamplain08-0.8.3nb1"
+	bool "libchamplain08-0.8.3nb2"
 	help
 	  Map widget
 
@@ -336,7 +336,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_LIBDRG
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_MAPSERVER
-	bool "mapserver-5.6.5nb4"
+	bool "mapserver-5.6.5nb5"
 	help
 	  Environment for building spatially enabled Internet apps
 
@@ -350,7 +350,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_MAPSERVER
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_MERKAARTOR
-	bool "merkaartor-0.17.2nb1"
+	bool "merkaartor-0.17.2nb3"
 	help
 	  Merkaartor is an OpenStreetMap mapping program
 
@@ -489,7 +489,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_PY_PROJ
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QGIS
-	bool "qgis-1.6.0nb4"
+	bool "qgis-1.6.0nb5"
 	help
 	  
 
@@ -508,7 +508,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QGIS
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QLANDKARTEGT
-	bool "qlandkartegt-1.0.0nb3"
+	bool "qlandkartegt-1.0.0nb4"
 	help
 	  GPS visualisation and mapping tool, supports Garmin devices
 
@@ -537,7 +537,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QLANDKARTEGT_GARMINDEV
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_QLANDKARTEM
-	bool "qlandkartem-0.2.0nb6"
+	bool "qlandkartem-0.2.0nb7"
 	help
 	  QLandkarteM is a moving map application for mobile devices
 
@@ -604,7 +604,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_TEX_PST_GEO_DOC
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_VIKING
-	bool "viking-1.2.1nb2"
+	bool "viking-1.2.2nb1"
 	help
 	  Viking manages GPS data, supports Open Street Map and geocaching
 
@@ -633,7 +633,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_VIS5D_
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP
-	bool "xrmap-2.29nb1"
+	bool "xrmap-2.29nb2"
 	help
 	  Earth map viewer - complete
 
@@ -660,7 +660,7 @@ config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_ANTHEMS
 
 
 config BR2_PKGSRC_PACKAGE_GEOGRAPHY_XRMAP_BASE
-	bool "xrmap-base-2.29nb1"
+	bool "xrmap-base-2.29nb2"
 	help
 	  Earth map viewer - base program
 

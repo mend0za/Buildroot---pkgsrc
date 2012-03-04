@@ -31,7 +31,7 @@ config BR2_PKGSRC_PACKAGE_CAD_MYHDL_IVERILOG
 
 
 config BR2_PKGSRC_PACKAGE_CAD_VIPEC
-	bool "ViPEC-3.2.0nb8"
+	bool "ViPEC-3.2.0nb9"
 	help
 	  Network analyser for electrical networks
 
@@ -82,7 +82,7 @@ config BR2_PKGSRC_PACKAGE_CAD_ATLC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_BOOLEAN
-	bool "boolean-6.99nb7"
+	bool "boolean-6.99nb9"
 	help
 	  
 
@@ -199,7 +199,7 @@ config BR2_PKGSRC_PACKAGE_CAD_COVERED_CURRENT
 
 
 config BR2_PKGSRC_PACKAGE_CAD_DINOTRACE
-	bool "dinotrace-9.3c"
+	bool "dinotrace-9.3cnb1"
 	help
 	  Tool for viewing the output of digital simulators
 
@@ -244,7 +244,7 @@ config BR2_PKGSRC_PACKAGE_CAD_EAGLE
 
 
 config BR2_PKGSRC_PACKAGE_CAD_ELECTRIC
-	bool "electric-7.00nb3"
+	bool "electric-7.00nb4"
 	help
 	  Electrical CAD system
 
@@ -380,7 +380,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GDSREADER
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GEDA
-	bool "geda-1.6.2nb1"
+	bool "geda-1.6.2nb2"
 	help
 	  Toolset for automating electronic design
 
@@ -394,7 +394,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GEDA
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GERBV
-	bool "gerbv-2.5.0"
+	bool "gerbv-2.5.0nb1"
 	help
 	  Gerber file viewer
 
@@ -475,7 +475,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GPLCVER
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GSMC
-	bool "gsmc-1.1nb10"
+	bool "gsmc-1.1nb11"
 	help
 	  Smith charting program
 
@@ -516,7 +516,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GTK1_WCALC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GTK2_WCALC
-	bool "gtk2-wcalc-1.0nb9"
+	bool "gtk2-wcalc-1.0nb10"
 	help
 	  GTK2 Based Transmission Line Analysis/Synthesis Calculator
 
@@ -527,7 +527,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GTK2_WCALC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GTKWAVE
-	bool "gtkwave-3.3.22"
+	bool "gtkwave-3.3.28"
 	help
 	  Electronic waveform viewer
 
@@ -542,7 +542,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GTKWAVE
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GWAVE
-	bool "gwave-20090213"
+	bool "gwave-20090213nb1"
 	help
 	  Viewer for spice-like simulator output and other analog data
 
@@ -773,7 +773,7 @@ config BR2_PKGSRC_PACKAGE_CAD_OCT_WCALC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_PCB
-	bool "pcb-20100929"
+	bool "pcb-20110918"
 	help
 	  Printed circuit board layout system
 
@@ -781,7 +781,7 @@ config BR2_PKGSRC_PACKAGE_CAD_PCB
 	  layout (rat lines), a layout versus netlist check, design rule checker as well
 	  as industry standard RS274-X (Gerber) photoplot export.
 
-	  http://pcb.sourceforge.net/
+	  http://pcb.gpleda.org/
 
 
 config BR2_PKGSRC_PACKAGE_CAD_PY_MYHDL
@@ -819,7 +819,7 @@ config BR2_PKGSRC_PACKAGE_CAD_PY_SIMPY
 
 
 config BR2_PKGSRC_PACKAGE_CAD_QCAD
-	bool "qcad-2.0.5.0nb4"
+	bool "qcad-2.0.5.0nb5"
 	help
 	  2D CAD system
 
@@ -1039,7 +1039,7 @@ config BR2_PKGSRC_PACKAGE_CAD_TNT_MMTL
 
 
 config BR2_PKGSRC_PACKAGE_CAD_TRANSCALC
-	bool "transcalc-0.14nb10"
+	bool "transcalc-0.14nb11"
 	help
 	  Transmission line analysis/synthesis
 

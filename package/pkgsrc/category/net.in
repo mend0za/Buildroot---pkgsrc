@@ -19,7 +19,7 @@ config BR2_PKGSRC_PACKAGE_NET_3PROXY
 
 
 config BR2_PKGSRC_PACKAGE_NET_6TUNNEL
-	bool "6tunnel-0.09"
+	bool "6tunnel-0.11rc2"
 	help
 	  v4/v6 protocol translation
 
@@ -27,11 +27,11 @@ config BR2_PKGSRC_PACKAGE_NET_6TUNNEL
 	  applications and vice-versa. I t can bind to any of your IPv4 (default)
 	  or IPv6 addresses and forward all data to a IPv4 or IPv6 (default) host.
 
-	  
+	  http://toxygen.net/6tunnel/
 
 
 config BR2_PKGSRC_PACKAGE_NET_BITTORNADO
-	bool "BitTornado-0.3.18nb3"
+	bool "BitTornado-0.3.18nb4"
 	help
 	  Experimental bittorrent client
 
@@ -41,7 +41,7 @@ config BR2_PKGSRC_PACKAGE_NET_BITTORNADO
 
 
 config BR2_PKGSRC_PACKAGE_NET_BITTORNADO_GUI
-	bool "BitTornado-gui-0.3.18nb9"
+	bool "BitTornado-gui-0.3.18nb10"
 	help
 	  
 
@@ -186,7 +186,7 @@ config BR2_PKGSRC_PACKAGE_NET_SDL_NET
 
 
 config BR2_PKGSRC_PACKAGE_NET_TRANSMISSION
-	bool "Transmission-2.33"
+	bool "Transmission-2.42nb1"
 	help
 	  Free, lightweight BitTorrent client
 
@@ -326,7 +326,7 @@ config BR2_PKGSRC_PACKAGE_NET_AIRPORTMODEMUTILITY
 
 
 config BR2_PKGSRC_PACKAGE_NET_AMULE
-	bool "amule-2.2.6nb5"
+	bool "amule-2.2.6nb6"
 	help
 	  Another Emule P2P client
 
@@ -380,7 +380,7 @@ config BR2_PKGSRC_PACKAGE_NET_ARGUS
 
 
 config BR2_PKGSRC_PACKAGE_NET_ARIA2
-	bool "aria2-1.12.1"
+	bool "aria2-1.13.0"
 	help
 	  Multi-threaded, multi-protocol, flexible download accelerator
 
@@ -472,7 +472,7 @@ config BR2_PKGSRC_PACKAGE_NET_AUTONET
 
 
 config BR2_PKGSRC_PACKAGE_NET_AVAHI
-	bool "avahi-0.6.30nb1"
+	bool "avahi-0.6.30nb2"
 	help
 	  Facilitate service discovery on a local network
 
@@ -560,7 +560,7 @@ config BR2_PKGSRC_PACKAGE_NET_BFTPD
 
 
 config BR2_PKGSRC_PACKAGE_NET_BIND96
-	bool "bind-9.6.3.1.ESV.5"
+	bool "bind-9.6.3.1.ESV.5pl1"
 	help
 	  Version 9 of the Berkeley Internet Name Daemon, implementation of DNS
 
@@ -582,7 +582,7 @@ config BR2_PKGSRC_PACKAGE_NET_BIND96
 
 
 config BR2_PKGSRC_PACKAGE_NET_BIND97
-	bool "bind-9.7.4"
+	bool "bind-9.7.4pl1"
 	help
 	  Version 9 of the Berkeley Internet Name Daemon, implementation of DNS
 
@@ -604,7 +604,7 @@ config BR2_PKGSRC_PACKAGE_NET_BIND97
 
 
 config BR2_PKGSRC_PACKAGE_NET_BIND98
-	bool "bind-9.8.1"
+	bool "bind-9.8.1pl1"
 	help
 	  Version 9 of the Berkeley Internet Name Daemon, implementation of DNS
 
@@ -637,7 +637,7 @@ config BR2_PKGSRC_PACKAGE_NET_BING
 
 
 config BR2_PKGSRC_PACKAGE_NET_BITTORRENT
-	bool "bittorrent-4.4.0nb4"
+	bool "bittorrent-4.4.0nb5"
 	help
 	  File sharing tool
 
@@ -760,7 +760,7 @@ config BR2_PKGSRC_PACKAGE_NET_BSDDIP
 
 
 config BR2_PKGSRC_PACKAGE_NET_BTGET
-	bool "btget-1.05nb4"
+	bool "btget-1.05nb5"
 	help
 	  Fast bittorrent client and library written in C
 
@@ -791,7 +791,7 @@ config BR2_PKGSRC_PACKAGE_NET_BTPD
 
 
 config BR2_PKGSRC_PACKAGE_NET_BUG_BUDDY
-	bool "bug-buddy-2.26.0nb9"
+	bool "bug-buddy-2.26.0nb10"
 	help
 	  Graphical GNOME2 bug reporting tool
 
@@ -800,6 +800,25 @@ config BR2_PKGSRC_PACKAGE_NET_BUG_BUDDY
 	  gnome_segv).
 
 	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_NET_CACTI
+	bool "cacti-0.8.7i"
+	help
+	  Frontend to rrdtool for monitoring systems and services
+
+	  Cacti is a complete frontend to rrdtool, it stores all of the necessary
+	  information to create graphs and populates them with data in a MySQL
+	  database. The frontend is completely PHP driven. Along with being able
+	  to maintain Graphs, Data Sources, and Round Robin Archives in a
+	  database, cacti handles the data gathering also. There is also SNMP
+	  support for those used to creating traffic graphs with MRTG.
+	  
+	  The Plugin Architecture for Cacti was designed to be both simple in nature
+	  and robust enough to allow freedom to do almost anything in Cacti.  The
+	  Plugin Architecture for Cacti is integrated into this package.
+
+	  http://www.cacti.net/
 
 
 config BR2_PKGSRC_PACKAGE_NET_CDPD
@@ -948,7 +967,7 @@ config BR2_PKGSRC_PACKAGE_NET_CLISP_RAWSOCK
 
 
 config BR2_PKGSRC_PACKAGE_NET_CLIVE
-	bool "clive-2.3.1.1nb1"
+	bool "clive-2.3.1.1nb3"
 	help
 	  Command line video extraction tool for user-uploaded video hosts
 
@@ -1119,7 +1138,7 @@ config BR2_PKGSRC_PACKAGE_NET_DARKSTAT
 
 
 config BR2_PKGSRC_PACKAGE_NET_DC_GUI2
-	bool "dc_gui2-0.80nb7"
+	bool "dc_gui2-0.80nb8"
 	help
 	  Graphical user interface for DCTC
 
@@ -1144,7 +1163,7 @@ config BR2_PKGSRC_PACKAGE_NET_DC_GUI2
 
 
 config BR2_PKGSRC_PACKAGE_NET_DCSHARP
-	bool "dcsharp-0.11.1nb15"
+	bool "dcsharp-0.11.1nb16"
 	help
 	  File sharing client for the Direct Connect protocol
 
@@ -1262,7 +1281,7 @@ config BR2_PKGSRC_PACKAGE_NET_DHCPCD_DBUS
 
 
 config BR2_PKGSRC_PACKAGE_NET_DHCPCD_GTK
-	bool "dhcpcd-gtk-0.5.2"
+	bool "dhcpcd-gtk-0.5.2nb1"
 	help
 	  GTK+ systray monitor for dhcpcd
 
@@ -1388,6 +1407,31 @@ config BR2_PKGSRC_PACKAGE_NET_DLINT
 	  with up-to-date information.
 
 	  http://www.domtools.com/
+
+
+config BR2_PKGSRC_PACKAGE_NET_DNSCAP
+	bool "dnscap-134"
+	help
+	  Network capture utility designed specifically for DNS traffic
+
+	  dnscap is a network capture utility designed specifically for DNS
+	  traffic.  It produces binary data in pcap(3) format.  This utility is
+	  similar to tcpdump(1), but has a number of features tailored to DNS
+	  transactions and protocol options.
+	  
+	  OARC likes to use dnscap for DITL data collections.  Some of its
+	  features include:
+	  
+	  + Understands both IPv4 and IPv6
+	  + Captures UDP, TCP, and IP fragments.
+	  + Collect only queries, responses, or both (-s option)
+	  + Collect for only certain source/destination addresses (-a -z -A -Z
+	  options)
+	  + Periodically creates new pcap files (-t option)
+	  + Spawns an upload script after closing a pcap file (-k option)
+	  + Will start and stop collecting at specific times (-B -E options)
+
+	  https://www.dns-oarc.net/tools/dnscap
 
 
 config BR2_PKGSRC_PACKAGE_NET_DNSDOCTOR
@@ -1580,7 +1624,7 @@ config BR2_PKGSRC_PACKAGE_NET_ECHOPING
 
 
 config BR2_PKGSRC_PACKAGE_NET_ED2K_GTK_GUI
-	bool "ed2k-gtk-gui-0.6.3nb10"
+	bool "ed2k-gtk-gui-0.6.3nb11"
 	help
 	  GUI for the eDonkey2000 and Overnet
 
@@ -1613,7 +1657,7 @@ config BR2_PKGSRC_PACKAGE_NET_EDONKEY2K
 
 
 config BR2_PKGSRC_PACKAGE_NET_EKIGA
-	bool "ekiga-3.2.6nb11"
+	bool "ekiga-3.2.6nb12"
 	help
 	  VoIP and video conferencing application for GNOME
 
@@ -1662,7 +1706,7 @@ config BR2_PKGSRC_PACKAGE_NET_ETHER2DNS
 
 
 config BR2_PKGSRC_PACKAGE_NET_ETHERAPE
-	bool "etherape-0.9.12nb1"
+	bool "etherape-0.9.12nb2"
 	help
 	  Graphical network monitor
 
@@ -1677,7 +1721,7 @@ config BR2_PKGSRC_PACKAGE_NET_ETHERAPE
 
 
 config BR2_PKGSRC_PACKAGE_NET_ETTERCAP
-	bool "ettercap-0.6.bnb10"
+	bool "ettercap-0.6.bnb11"
 	help
 	  Multipurpose sniffer/interceptor/logger for switched LAN
 
@@ -1768,7 +1812,7 @@ config BR2_PKGSRC_PACKAGE_NET_FETCH
 
 
 config BR2_PKGSRC_PACKAGE_NET_FILEZILLA
-	bool "filezilla-3.5.0nb1"
+	bool "filezilla-3.5.0nb3"
 	help
 	  FTP, FTPS and SFTP client with intuitive GUI
 
@@ -2074,7 +2118,7 @@ config BR2_PKGSRC_PACKAGE_NET_FTPPROXY
 
 
 config BR2_PKGSRC_PACKAGE_NET_GATED
-	bool "gated-3.5.11nb3"
+	bool "gated-3.5.11nb4"
 	help
 	  Routing protocol daemon
 
@@ -2177,7 +2221,7 @@ config BR2_PKGSRC_PACKAGE_NET_GINI
 
 
 config BR2_PKGSRC_PACKAGE_NET_GKRELLM_MULTIPING
-	bool "gkrellm-multiping-2.0.8nb13"
+	bool "gkrellm-multiping-2.0.8nb14"
 	help
 	  Pings several machines and prints out stats
 
@@ -2189,7 +2233,7 @@ config BR2_PKGSRC_PACKAGE_NET_GKRELLM_MULTIPING
 
 
 config BR2_PKGSRC_PACKAGE_NET_GKRELLM_SNMP
-	bool "gkrellm-snmp-0.21nb13"
+	bool "gkrellm-snmp-0.21nb14"
 	help
 	  GKrellM plugin to display values collected from a SNMP agent
 
@@ -2200,7 +2244,7 @@ config BR2_PKGSRC_PACKAGE_NET_GKRELLM_SNMP
 
 
 config BR2_PKGSRC_PACKAGE_NET_GKRELLM_WIRELESS
-	bool "gkrellm-wireless-2.0.3nb13"
+	bool "gkrellm-wireless-2.0.3nb14"
 	help
 	  Wavelan signal strength monitor for gkrellm
 
@@ -2276,7 +2320,7 @@ config BR2_PKGSRC_PACKAGE_NET_GNETCAT
 
 
 config BR2_PKGSRC_PACKAGE_NET_GNOME_NETSTATUS
-	bool "gnome-netstatus-2.26.0nb9"
+	bool "gnome-netstatus-2.26.0nb10"
 	help
 	  Network status applet for the GNOME panel
 
@@ -2287,7 +2331,7 @@ config BR2_PKGSRC_PACKAGE_NET_GNOME_NETSTATUS
 
 
 config BR2_PKGSRC_PACKAGE_NET_GNOME_NETTOOL
-	bool "gnome-nettool-2.26.2nb6"
+	bool "gnome-nettool-2.26.2nb7"
 	help
 	  GNOME interface for various network tools
 
@@ -2300,7 +2344,7 @@ config BR2_PKGSRC_PACKAGE_NET_GNOME_NETTOOL
 
 
 config BR2_PKGSRC_PACKAGE_NET_GNOME_VFS_SMB
-	bool "gnome-vfs-smb-2.24.4nb4"
+	bool "gnome-vfs-smb-2.24.4nb5"
 	help
 	  GNOME Virtual File System (v2) - smb plugin
 
@@ -2338,7 +2382,7 @@ config BR2_PKGSRC_PACKAGE_NET_GOFISH
 
 
 config BR2_PKGSRC_PACKAGE_NET_GOPHER
-	bool "gopher-3.0.11nb1"
+	bool "gopher-3.0.11nb2"
 	help
 	  Distributed document delivery client
 
@@ -2372,7 +2416,7 @@ config BR2_PKGSRC_PACKAGE_NET_GSNMP
 
 
 config BR2_PKGSRC_PACKAGE_NET_GSSDP
-	bool "gssdp-0.7.2nb6"
+	bool "gssdp-0.7.2nb7"
 	help
 	  Simple Service Discovery Protocol library and device sniffer
 
@@ -2456,7 +2500,7 @@ config BR2_PKGSRC_PACKAGE_NET_GT_ITM
 
 
 config BR2_PKGSRC_PACKAGE_NET_GTK_GNUTELLA
-	bool "gtk-gnutella-0.96.6nb6"
+	bool "gtk-gnutella-0.96.6nb7"
 	help
 	  GTK-based gnutella client
 
@@ -2480,7 +2524,7 @@ config BR2_PKGSRC_PACKAGE_NET_GTK_GNUTELLA
 
 
 config BR2_PKGSRC_PACKAGE_NET_GTK_VNC
-	bool "gtk-vnc-0.3.10nb6"
+	bool "gtk-vnc-0.3.10nb7"
 	help
 	  VNC viewer widget for GTK
 
@@ -2503,7 +2547,7 @@ config BR2_PKGSRC_PACKAGE_NET_GTK_WICONTROL
 
 
 config BR2_PKGSRC_PACKAGE_NET_GUPNP
-	bool "gupnp-0.13.3nb3"
+	bool "gupnp-0.13.3nb4"
 	help
 	  Framework for UPnP devices
 
@@ -2536,13 +2580,28 @@ config BR2_PKGSRC_PACKAGE_NET_GUPNP_IGD
 
 
 config BR2_PKGSRC_PACKAGE_NET_GUPNP_TOOLS
-	bool "gupnp-tools-0.8nb6"
+	bool "gupnp-tools-0.8nb7"
 	help
 	  Framework for UPnP devices
 
 	  GUPnP Tools are free replacements of Intel UPnP tools that use GUPnP.
 
 	  http://www.gupnp.org/
+
+
+config BR2_PKGSRC_PACKAGE_NET_HAPROXY
+	bool "haproxy-1.4.18"
+	help
+	  Reliable, high performance TCP/HTTP load balancer
+
+	  HAProxy is a free, very fast and reliable solution offering high
+	  availability, load balancing, and proxying for TCP and HTTP-based
+	  applications. It is particularly suited for web sites crawling under
+	  very high loads while needing persistence or Layer7 processing.
+	  Supporting tens of thousands of connections is clearly realistic with
+	  todays hardware.
+
+	  http://haproxy.1wt.eu/
 
 
 config BR2_PKGSRC_PACKAGE_NET_HESIOD
@@ -2702,7 +2761,7 @@ config BR2_PKGSRC_PACKAGE_NET_HTTPTUNNEL
 
 
 config BR2_PKGSRC_PACKAGE_NET_ICSI_FINGER
-	bool "icsi-finger-1.0.27nb4"
+	bool "icsi-finger-1.0.29"
 	help
 	  Distributed finger service
 
@@ -2727,7 +2786,7 @@ config BR2_PKGSRC_PACKAGE_NET_IFTOP
 
 
 config BR2_PKGSRC_PACKAGE_NET_INADYN
-	bool "inadyn-1.96.2"
+	bool "inadyn-1.96.2nb1"
 	help
 	  Dynamic DNS client
 
@@ -2888,7 +2947,7 @@ config BR2_PKGSRC_PACKAGE_NET_IRRTOOLSET5
 
 
 config BR2_PKGSRC_PACKAGE_NET_ISC_DHCLIENT4
-	bool "isc-dhclient-4.2.2"
+	bool "isc-dhclient-4.2.3p1"
 	help
 	  ISC Dynamic Host Configuration Protocol (DHCP) Client
 
@@ -2918,7 +2977,7 @@ config BR2_PKGSRC_PACKAGE_NET_ISC_DHCLIENT4
 
 
 config BR2_PKGSRC_PACKAGE_NET_ISC_DHCP4
-	bool "isc-dhcp-4.2.2"
+	bool "isc-dhcp-4.2.3p1"
 	help
 	  ISC Dynamic Host Configuration Protocol (DHCP) Base
 
@@ -2948,7 +3007,7 @@ config BR2_PKGSRC_PACKAGE_NET_ISC_DHCP4
 
 
 config BR2_PKGSRC_PACKAGE_NET_ISC_DHCPD4
-	bool "isc-dhcpd-4.2.2"
+	bool "isc-dhcpd-4.2.3p1"
 	help
 	  ISC Dynamic Host Configuration Protocol (DHCP) Server
 
@@ -2978,7 +3037,7 @@ config BR2_PKGSRC_PACKAGE_NET_ISC_DHCPD4
 
 
 config BR2_PKGSRC_PACKAGE_NET_ISC_DHCRELAY4
-	bool "isc-dhcrelay-4.2.2"
+	bool "isc-dhcrelay-4.2.3p1"
 	help
 	  ISC Dynamic Host Configuration Protocol (DHCP) Relay
 
@@ -3077,7 +3136,7 @@ config BR2_PKGSRC_PACKAGE_NET_ISPMAN
 
 
 config BR2_PKGSRC_PACKAGE_NET_ISTGT
-	bool "istgt-20110907"
+	bool "istgt-20111008"
 	help
 	  Configurable iSCSI target
 
@@ -3104,7 +3163,7 @@ config BR2_PKGSRC_PACKAGE_NET_JFTPGW
 
 
 config BR2_PKGSRC_PACKAGE_NET_JIGDO
-	bool "jigdo-0.7.3nb9"
+	bool "jigdo-0.7.3nb10"
 	help
 	  Tool to ease downloading of large files from the Internet
 
@@ -3147,7 +3206,7 @@ config BR2_PKGSRC_PACKAGE_NET_JWHOIS
 
 
 config BR2_PKGSRC_PACKAGE_NET_KDENETWORK3
-	bool "kdenetwork-3.5.10nb12"
+	bool "kdenetwork-3.5.10nb13"
 	help
 	  Network modules for the KDE integrated X11 desktop
 
@@ -3174,7 +3233,7 @@ config BR2_PKGSRC_PACKAGE_NET_KDENETWORK3
 
 
 config BR2_PKGSRC_PACKAGE_NET_KDENETWORK4
-	bool "kdenetwork4-4.5.5nb4"
+	bool "kdenetwork4-4.5.5nb6"
 	help
 	  Network modules for the KDE integrated X11 desktop
 
@@ -3195,7 +3254,7 @@ config BR2_PKGSRC_PACKAGE_NET_KDENETWORK4
 
 
 config BR2_PKGSRC_PACKAGE_NET_KFTPGRABBER
-	bool "kftpgrabber-0.8.1nb11"
+	bool "kftpgrabber-0.8.1nb12"
 	help
 	  Graphical FTP client for KDE
 
@@ -3232,7 +3291,7 @@ config BR2_PKGSRC_PACKAGE_NET_KFTPGRABBER
 
 
 config BR2_PKGSRC_PACKAGE_NET_KIAX
-	bool "kiax-0.8.51nb4"
+	bool "kiax-0.8.51nb5"
 	help
 	  Open internet telephony system
 
@@ -3250,7 +3309,7 @@ config BR2_PKGSRC_PACKAGE_NET_KIAX
 
 
 config BR2_PKGSRC_PACKAGE_NET_KISMET
-	bool "kismet-2008.05.01nb8"
+	bool "kismet-2008.05.01nb11"
 	help
 	  802.11 wireless network detector, sniffer and IDS
 
@@ -3266,7 +3325,7 @@ config BR2_PKGSRC_PACKAGE_NET_KISMET
 
 
 config BR2_PKGSRC_PACKAGE_NET_KMLDONKEY_KDE3
-	bool "kmldonkey-0.11nb6"
+	bool "kmldonkey-0.11nb7"
 	help
 	  KDE3 Frontend for MLDonkey
 
@@ -3277,7 +3336,7 @@ config BR2_PKGSRC_PACKAGE_NET_KMLDONKEY_KDE3
 
 
 config BR2_PKGSRC_PACKAGE_NET_KMLDONKEY
-	bool "kmldonkey-2.0.2.4.4.0nb6"
+	bool "kmldonkey-2.0.2.4.4.0nb7"
 	help
 	  KDE4 interface for mldonkey
 
@@ -3310,7 +3369,7 @@ config BR2_PKGSRC_PACKAGE_NET_KNOCK
 
 
 config BR2_PKGSRC_PACKAGE_NET_KPHONE
-	bool "kphone-4.2nb10"
+	bool "kphone-4.2nb11"
 	help
 	  
 
@@ -3326,7 +3385,7 @@ config BR2_PKGSRC_PACKAGE_NET_KPHONE
 
 
 config BR2_PKGSRC_PACKAGE_NET_KTORRENT_KDE3
-	bool "ktorrent-2.2.8nb9"
+	bool "ktorrent-2.2.8nb10"
 	help
 	  Graphical BitTorrent client for KDE
 
@@ -3358,7 +3417,7 @@ config BR2_PKGSRC_PACKAGE_NET_KTORRENT_KDE3
 
 
 config BR2_PKGSRC_PACKAGE_NET_KTORRENT
-	bool "ktorrent-3.3nb11"
+	bool "ktorrent-3.3nb13"
 	help
 	  Graphical BitTorrent client for KDE4
 
@@ -3436,7 +3495,7 @@ config BR2_PKGSRC_PACKAGE_NET_LATD
 
 
 config BR2_PKGSRC_PACKAGE_NET_LDNS
-	bool "ldns-1.6.10nb1"
+	bool "ldns-1.6.11nb1"
 	help
 	  Library for simplified DNS programming
 
@@ -3464,7 +3523,7 @@ config BR2_PKGSRC_PACKAGE_NET_LFT
 
 
 config BR2_PKGSRC_PACKAGE_NET_LFTP
-	bool "lftp-4.3.1"
+	bool "lftp-4.3.3"
 	help
 	  Powerful command line file transfer client
 
@@ -3508,7 +3567,7 @@ config BR2_PKGSRC_PACKAGE_NET_LIBIDL
 
 
 config BR2_PKGSRC_PACKAGE_NET_LIBVNCSERVER
-	bool "libVNCServer-0.9.8nb1"
+	bool "libVNCServer-0.9.8.2"
 	help
 	  Easy API to write one's own vnc server
 
@@ -3601,7 +3660,7 @@ config BR2_PKGSRC_PACKAGE_NET_LIBCARES
 
 
 config BR2_PKGSRC_PACKAGE_NET_LIBDLNA
-	bool "libdlna-0.2.3"
+	bool "libdlna-0.2.3nb1"
 	help
 	  Reference DLNA open-source implementation
 
@@ -3625,7 +3684,7 @@ config BR2_PKGSRC_PACKAGE_NET_LIBDLNA
 
 
 config BR2_PKGSRC_PACKAGE_NET_LIBDMAPSHARING
-	bool "libdmapsharing-2.1.9nb3"
+	bool "libdmapsharing-2.1.9nb4"
 	help
 	  Implementation of the DMAP family of protocols
 
@@ -3790,6 +3849,38 @@ config BR2_PKGSRC_PACKAGE_NET_LIBPCAP
 	  http://www.tcpdump.org/
 
 
+config BR2_PKGSRC_PACKAGE_NET_LIBQUVI
+	bool "libquvi-0.4.0nb1"
+	help
+	  Library for quvi
+
+	  The quvi is a command line tool for parsing video download links. It
+	  supports Youtube and other similar video websites.  libquvi is a
+	  library for parsing video download links with C API. It is written in
+	  C and intended to be a cross-platform library.
+	  You can see the list of supported sites from 'quvi --support'.
+	  
+	  This package provides library for quvi.
+
+	  http://quvi.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_NET_LIBQUVI_SCRIPTS
+	bool "libquvi-scripts-0.4.2"
+	help
+	  Scripts for libquvi
+
+	  The quvi is a command line tool for parsing video download links. It
+	  supports Youtube and other similar video websites.  libquvi is a
+	  library for parsing video download links with C API. It is written in
+	  C and intended to be a cross-platform library.
+	  You can see the list of supported sites from 'quvi --support'.
+	  
+	  This package contains lua scripts for libquvi.
+
+	  http://quvi.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_NET_LIBRADIUS
 	bool "libradius-20040827nb2"
 	help
@@ -3920,7 +4011,7 @@ config BR2_PKGSRC_PACKAGE_NET_LINC
 
 
 config BR2_PKGSRC_PACKAGE_NET_LLNLXDIR
-	bool "llnlxdir-2.1.2nb3"
+	bool "llnlxdir-2.1.2nb4"
 	help
 	  Advanced graphical FTP client
 
@@ -3937,7 +4028,7 @@ config BR2_PKGSRC_PACKAGE_NET_LLNLXDIR
 
 
 config BR2_PKGSRC_PACKAGE_NET_LLNLXFTP
-	bool "llnlxftp-2.1nb3"
+	bool "llnlxftp-2.1nb4"
 	help
 	  Motif FTP client
 
@@ -3951,7 +4042,7 @@ config BR2_PKGSRC_PACKAGE_NET_LLNLXFTP
 
 
 config BR2_PKGSRC_PACKAGE_NET_LOGJAM
-	bool "logjam-4.5.3nb17"
+	bool "logjam-4.5.3nb18"
 	help
 	  GTK client for LiveJournal.com
 
@@ -3965,7 +4056,7 @@ config BR2_PKGSRC_PACKAGE_NET_LOGJAM
 
 
 config BR2_PKGSRC_PACKAGE_NET_LOPSTER
-	bool "lopster-1.2.2nb3"
+	bool "lopster-1.2.2nb4"
 	help
 	  Yet another Gtk+ Napster clone
 
@@ -4071,7 +4162,7 @@ config BR2_PKGSRC_PACKAGE_NET_MARADNS
 
 
 config BR2_PKGSRC_PACKAGE_NET_MBROWSE
-	bool "mbrowse-0.4.3"
+	bool "mbrowse-0.4.3nb1"
 	help
 	  Graphical SNMP MIB browser
 
@@ -4198,7 +4289,7 @@ config BR2_PKGSRC_PACKAGE_NET_MIRROR
 
 
 config BR2_PKGSRC_PACKAGE_NET_MLDONKEY
-	bool "mldonkey-3.1.0"
+	bool "mldonkey-3.1.0nb3"
 	help
 	  Free peer-to-peer client with eDonkey support and more
 
@@ -4216,7 +4307,7 @@ config BR2_PKGSRC_PACKAGE_NET_MLDONKEY
 
 
 config BR2_PKGSRC_PACKAGE_NET_MLDONKEY_GUI
-	bool "mldonkey-gui-3.1.0"
+	bool "mldonkey-gui-3.1.0nb2"
 	help
 	  
 
@@ -4270,7 +4361,7 @@ config BR2_PKGSRC_PACKAGE_NET_MONOTORRENT
 
 
 config BR2_PKGSRC_PACKAGE_NET_MONSOON
-	bool "monsoon-0.20nb10"
+	bool "monsoon-0.20nb11"
 	help
 	  Open source GTK+ bittorrent client
 
@@ -4358,7 +4449,7 @@ config BR2_PKGSRC_PACKAGE_NET_MRT
 
 
 config BR2_PKGSRC_PACKAGE_NET_MRTG
-	bool "mrtg-2.17.2"
+	bool "mrtg-2.17.2nb1"
 	help
 	  The Multi-Router Traffic Grapher
 
@@ -4403,7 +4494,7 @@ config BR2_PKGSRC_PACKAGE_NET_MTFTPD
 
 
 config BR2_PKGSRC_PACKAGE_NET_MTR
-	bool "mtr-0.80nb4"
+	bool "mtr-0.82"
 	help
 	  Traceroute and ping in a single graphical network diagnostic tool
 
@@ -4480,7 +4571,7 @@ config BR2_PKGSRC_PACKAGE_NET_MYDNS_PGSQL
 
 
 config BR2_PKGSRC_PACKAGE_NET_NAGIOS_BASE
-	bool "nagios-base-3.3.1nb1"
+	bool "nagios-base-3.3.1nb2"
 	help
 	  Network monitor
 
@@ -4615,7 +4706,7 @@ config BR2_PKGSRC_PACKAGE_NET_NAGIOS_PLUGINS
 
 
 config BR2_PKGSRC_PACKAGE_NET_NAGSTAMON
-	bool "nagstamon-0.9.2nb6"
+	bool "nagstamon-0.9.2nb7"
 	help
 	  Nagios status monitor which takes place in systray or on desktop
 
@@ -4738,7 +4829,7 @@ config BR2_PKGSRC_PACKAGE_NET_NEMESIS
 
 
 config BR2_PKGSRC_PACKAGE_NET_NET_SNMP
-	bool "net-snmp-5.6.1.1nb1"
+	bool "net-snmp-5.6.1.1nb2"
 	help
 	  Extensible SNMP implementation
 
@@ -4771,7 +4862,7 @@ config BR2_PKGSRC_PACKAGE_NET_NET6
 
 
 config BR2_PKGSRC_PACKAGE_NET_NETATALK
-	bool "netatalk-2.2.1"
+	bool "netatalk-2.2.1nb1"
 	help
 	  Netatalk appletalk file and print services
 
@@ -4786,7 +4877,7 @@ config BR2_PKGSRC_PACKAGE_NET_NETATALK
 
 
 config BR2_PKGSRC_PACKAGE_NET_NETBSD_ISCSI_INITIATOR
-	bool "netbsd-iscsi-initiator-20110222"
+	bool "netbsd-iscsi-initiator-20111006"
 	help
 	  NetBSD's iSCSI initiator (per iSCSI RFC 3720)
 
@@ -4803,7 +4894,7 @@ config BR2_PKGSRC_PACKAGE_NET_NETBSD_ISCSI_INITIATOR
 
 
 config BR2_PKGSRC_PACKAGE_NET_NETBSD_ISCSI_TARGET
-	bool "netbsd-iscsi-target-20110222"
+	bool "netbsd-iscsi-target-20111006"
 	help
 	  NetBSD's iSCSI target (per iSCSI RFC 3720)
 
@@ -4922,7 +5013,7 @@ config BR2_PKGSRC_PACKAGE_NET_NETPIPES
 
 
 config BR2_PKGSRC_PACKAGE_NET_NFDUMP
-	bool "nfdump-1.5.7nb4"
+	bool "nfdump-1.5.7nb5"
 	help
 	  Tools to collect and process netflow data
 
@@ -4957,7 +5048,7 @@ config BR2_PKGSRC_PACKAGE_NET_NGREP
 
 
 config BR2_PKGSRC_PACKAGE_NET_NICOTINE
-	bool "nicotine-1.0.8nb13"
+	bool "nicotine-1.0.8nb14"
 	help
 	  Client for soulseek, a peer-to-peer network for music
 
@@ -5033,7 +5124,7 @@ config BR2_PKGSRC_PACKAGE_NET_NLOAD
 
 
 config BR2_PKGSRC_PACKAGE_NET_NMAP
-	bool "nmap-5.51nb2"
+	bool "nmap-5.51.5"
 	help
 	  Network/port scanner with OS detection
 
@@ -5151,7 +5242,7 @@ config BR2_PKGSRC_PACKAGE_NET_NSTX
 
 
 config BR2_PKGSRC_PACKAGE_NET_NTOP
-	bool "ntop-4.0.3nb4"
+	bool "ntop-4.1.0nb1"
 	help
 	  
 
@@ -5175,7 +5266,7 @@ config BR2_PKGSRC_PACKAGE_NET_NTOP
 
 
 config BR2_PKGSRC_PACKAGE_NET_NTP4
-	bool "ntp-4.2.4p8nb1"
+	bool "ntp-4.2.4p8nb2"
 	help
 	  Network Time Protocol Version 4
 
@@ -5188,7 +5279,7 @@ config BR2_PKGSRC_PACKAGE_NET_NTP4
 
 
 config BR2_PKGSRC_PACKAGE_NET_OCAMLNET
-	bool "ocamlnet-1.1.2"
+	bool "ocamlnet-1.1.2nb1"
 	help
 	  
 
@@ -5216,7 +5307,7 @@ config BR2_PKGSRC_PACKAGE_NET_OCAMLNET
 
 
 config BR2_PKGSRC_PACKAGE_NET_OCSINVENTORY_AGENT
-	bool "ocsinventory-agent-1.1.2.1nb2"
+	bool "ocsinventory-agent-1.1.2.1nb3"
 	help
 	  Keep track of the computers configuration and software
 
@@ -5430,7 +5521,7 @@ config BR2_PKGSRC_PACKAGE_NET_OPENVPN
 
 
 config BR2_PKGSRC_PACKAGE_NET_OPENVPN_ACCT_WTMPX
-	bool "openvpn-acct-wtmpx-20091110"
+	bool "openvpn-acct-wtmpx-20091110nb1"
 	help
 	  Log OpenVPN logins and logouts to wtmpx
 
@@ -5510,7 +5601,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_CISCO_ABBREV
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_DNS_ZONEPARSE
-	bool "p5-DNS-ZoneParse-1.00nb2"
+	bool "p5-DNS-ZoneParse-1.10"
 	help
 	  Perl5 module for parsing DNS zone files
 
@@ -5521,7 +5612,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_DNS_ZONEPARSE
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_DATA_STREAM_BULK
-	bool "p5-Data-Stream-Bulk-0.07nb3"
+	bool "p5-Data-Stream-Bulk-0.08"
 	help
 	  N at a time iteration API for data transfers
 
@@ -5690,7 +5781,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_AMAZON
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_AMAZON_S3
-	bool "p5-Net-Amazon-S3-0.50nb3"
+	bool "p5-Net-Amazon-S3-0.54"
 	help
 	  Framework for accessing amazon.com via SOAP and XML/HTTP
 
@@ -5717,7 +5808,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_BIND
 	  This module provides an interface to various files related to the bind
 	  DNS daemon.
 
-	  
+	  http://search.cpan.org/dist/Net-Bind
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_BONJOUR
@@ -5742,7 +5833,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_BONJOUR
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_CIDR_LITE
-	bool "p5-Net-CIDR-Lite-0.20nb3"
+	bool "p5-Net-CIDR-Lite-0.21"
 	help
 	  Perl extension for merging IPv4/v6 CIDR addresses
 
@@ -5856,7 +5947,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_DNSSERVER
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_DAEMON
-	bool "p5-Net-Daemon-0.43nb3"
+	bool "p5-Net-Daemon-0.48"
 	help
 	  Perl5 module for writing networking daemons
 
@@ -5899,7 +5990,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_FTPSSL
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_GITHUB
-	bool "p5-Net-GitHub-0.22nb2"
+	bool "p5-Net-GitHub-0.30"
 	help
 	  Perl 5 interface for github.com
 
@@ -6049,7 +6140,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_INTERFACE
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_JIFTY
-	bool "p5-Net-Jifty-0.12nb3"
+	bool "p5-Net-Jifty-0.14"
 	help
 	  Interface to online Jifty applications
 
@@ -6089,7 +6180,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_LIBIDN
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_LIBDNET
-	bool "p5-Net-Libdnet-0.92nb2"
+	bool "p5-Net-Libdnet-0.96"
 	help
 	  Perl interface to libdnet
 
@@ -6099,7 +6190,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_LIBDNET
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_MAC
-	bool "p5-Net-MAC-1.6nb2"
+	bool "p5-Net-MAC-2.103622"
 	help
 	  Perl 5 module for representing and manipulating MAC addresses
 
@@ -6327,7 +6418,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_TELNET
 	  patterns to appear in the input stream, such as the prompt from a
 	  shell.
 
-	  
+	  http://search.cpan.org/dist/Net-Telnet
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_TELNET_CISCO
@@ -6356,7 +6447,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_TRAC
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_TWITTER
-	bool "p5-Net-Twitter-3.13008nb1"
+	bool "p5-Net-Twitter-3.18001"
 	help
 	  Perl interface to the Twitter API
 
@@ -6419,7 +6510,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_XWHOIS
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NET_Z3950_ZOOM
-	bool "p5-Net-Z3950-ZOOM-1.25nb9"
+	bool "p5-Net-Z3950-ZOOM-1.28"
 	help
 	  Perl extension for talking to Z39.50 servers
 
@@ -6455,7 +6546,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NET_EBAY
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NETADDR_IP
-	bool "p5-NetAddr-IP-4.038nb1"
+	bool "p5-NetAddr-IP-4.058"
 	help
 	  Perl5 module for managing IP addresses
 
@@ -6471,7 +6562,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NETADDR_IP
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NETPACKET
-	bool "p5-NetPacket-0.43.1nb1"
+	bool "p5-NetPacket-1.3.0"
 	help
 	  Modules to assemble/disassemble network packets
 
@@ -6484,7 +6575,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_NETPACKET
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_NMAP_PARSER
-	bool "p5-Nmap-Parser-1.20nb2"
+	bool "p5-Nmap-Parser-1.210"
 	help
 	  Parse nmap scan data with perl
 
@@ -6549,7 +6640,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_RADIUS
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_RPC_XML
-	bool "p5-RPC-XML-0.73nb1"
+	bool "p5-RPC-XML-0.76"
 	help
 	  XML-RPC client and server library for Perl
 
@@ -6586,7 +6677,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_RADIUSPERL
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_SNMP_INFO
-	bool "p5-SNMP-Info-2.04nb1"
+	bool "p5-SNMP-Info-2.06"
 	help
 	  Perl5 object oriented interface to SNMP informations
 
@@ -6642,7 +6733,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_SNMP_SESSION
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_SOAP_LITE
-	bool "p5-SOAP-Lite-0.712nb2"
+	bool "p5-SOAP-Lite-0.714"
 	help
 	  Perl5 module providing a lightweight interface to SOAP
 
@@ -6652,6 +6743,16 @@ config BR2_PKGSRC_PACKAGE_NET_P5_SOAP_LITE
 	  and server side.
 
 	  http://www.soaplite.com/
+
+
+config BR2_PKGSRC_PACKAGE_NET_P5_SOAP_TRANSPORT_TCP
+	bool "p5-SOAP-Transport-TCP-0.715"
+	help
+	  TCP transport layer for SOAP::Lite
+
+	  This package adds TCP transport support to SOAP::Lite.
+
+	  http://search.cpan.org/dist/SOAP-Transport-TCP
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_SOCKET6
@@ -6670,7 +6771,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_SOCKET6
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_TEST_DNS
-	bool "p5-Test-DNS-0.08nb2"
+	bool "p5-Test-DNS-0.13"
 	help
 	  Perl 5 module to test DNS queries and zone configuration
 
@@ -6682,7 +6783,7 @@ config BR2_PKGSRC_PACKAGE_NET_P5_TEST_DNS
 
 
 config BR2_PKGSRC_PACKAGE_NET_P5_TEST_TCP
-	bool "p5-Test-TCP-1.06nb1"
+	bool "p5-Test-TCP-1.13"
 	help
 	  Perl 5 module to test TCP program
 
@@ -6691,8 +6792,19 @@ config BR2_PKGSRC_PACKAGE_NET_P5_TEST_TCP
 	  http://search.cpan.org/dist/Test-TCP/
 
 
+config BR2_PKGSRC_PACKAGE_NET_P5_UMPH_PROMPT
+	bool "p5-Umph-Prompt-0.1.0"
+	help
+	  Youtube feeds parsing module for umph
+
+	  Umph::Prompt is an interactive prompt module for umph and similar
+	  programs.
+
+	  http://code.google.com/p/umph/
+
+
 config BR2_PKGSRC_PACKAGE_NET_P5_WEBSERVICE_GOOGLE_READER
-	bool "p5-WebService-Google-Reader-0.12nb2"
+	bool "p5-WebService-Google-Reader-0.20"
 	help
 	  Perl 5 module providing an interface to Google Reader
 
@@ -6744,6 +6856,28 @@ config BR2_PKGSRC_PACKAGE_NET_P5_EBAY_API
 	  http://search.cpan.org/perldoc?eBay::API
 
 
+config BR2_PKGSRC_PACKAGE_NET_P5_GCAP
+	bool "p5-gcap-0.1.1"
+	help
+	  Command line tool for retrieving Youtube closed captions
+
+	  gcap is a command line tool for retrieving Youtube closed captions.
+	  The retrieved closed captions are saved in Subrip (srt) file format.
+
+	  http://code.google.com/p/gcap/
+
+
+config BR2_PKGSRC_PACKAGE_NET_P5_GRAKE
+	bool "p5-grake-0.1.0"
+	help
+	  Tool for scanning webpages for Youtube video links
+
+	  grake is a command line tool for scanning webpages for Youtube
+	  links.
+
+	  http://code.google.com/p/grake/
+
+
 config BR2_PKGSRC_PACKAGE_NET_P5_ISPMAN
 	bool "p5-ispman-0.5nb7"
 	help
@@ -6754,6 +6888,19 @@ config BR2_PKGSRC_PACKAGE_NET_P5_ISPMAN
 	  and configuration scripts.
 
 	  http://www.ispman.org/
+
+
+config BR2_PKGSRC_PACKAGE_NET_P5_UMPH
+	bool "p5-umph-0.2.0"
+	help
+	  Command line tool for parsing video links from Youtube feeds
+
+	  umph is a command line tool for parsing video links from Youtube
+	  feeds, such as playlists, favorites and uploads. The parsed video
+	  links are printed to the standard output each separated with a
+	  newline.
+
+	  http://code.google.com/p/umph/
 
 
 config BR2_PKGSRC_PACKAGE_NET_PACKIT
@@ -7105,7 +7252,7 @@ config BR2_PKGSRC_PACKAGE_NET_PIM6SD
 config BR2_PKGSRC_PACKAGE_NET_PLOAD
 	bool "pload-0.9.5nb2"
 	help
-	  PPP monitor for X11, monitoring totals and current in/out rates
+	  Network interface monitor for X11, monitoring totals and in/out rates
 
 	  Pload is a program to monitor ppp network device statistics. It
 	  graphs information using Athena stripchart widgets.
@@ -7325,7 +7472,7 @@ config BR2_PKGSRC_PACKAGE_NET_PPTP
 
 
 config BR2_PKGSRC_PACKAGE_NET_PROFTPD
-	bool "proftpd-1.3.3enb1"
+	bool "proftpd-1.3.3gnb1"
 	help
 	  FTP server with Apache like configuration
 
@@ -7453,7 +7600,7 @@ config BR2_PKGSRC_PACKAGE_NET_PXE
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_TWISTED_DOCS
-	bool "py-twisted-docs-10.1.0"
+	bool "py-twisted-docs-11.0.0"
 	help
 	  
 
@@ -7463,7 +7610,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_TWISTED_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_GEOIP
-	bool "py26-GeoIP-1.2.4"
+	bool "py26-GeoIP-1.2.7"
 	help
 	  GeoIP support for Python
 
@@ -7474,7 +7621,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_GEOIP
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_IP
-	bool "py26-IP-0.70"
+	bool "py26-IP-0.75"
 	help
 	  Python module to handle IPv4 and IPv6 address
 
@@ -7483,7 +7630,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_IP
 	  IP class allows a comfortable parsing and handling for most notations
 	  in use for IPv4 and IPv6 Addresses and Networks.
 
-	  http://software.inl.fr/trac/trac.cgi/wiki/IPy
+	  https://github.com/haypo/python-ipy/
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_ORBIT
@@ -7503,7 +7650,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_ORBIT
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_SOAPPY
-	bool "py26-SOAPpy-0.11.6"
+	bool "py26-SOAPpy-0.11.6nb1"
 	help
 	  SOAP implementation
 
@@ -7514,7 +7661,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_SOAPPY
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_ZSI
-	bool "py26-ZSI-2.0"
+	bool "py26-ZSI-2.0nb1"
 	help
 	  SOAP implementation
 
@@ -7534,7 +7681,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_ZSI
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_ADNS
-	bool "py26-adns-python-1.2.1"
+	bool "py26-adns-python-1.2.1nb1"
 	help
 	  Python interface to the GNU asynchronous DNS resolver library
 
@@ -7566,7 +7713,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_BOTO
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_DNS
-	bool "py26-dns-1.9.4"
+	bool "py26-dns-1.9.4nb1"
 	help
 	  Python DNS toolkit
 
@@ -7615,7 +7762,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_FOOLSCAP
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_GOOGLE
-	bool "py26-google-0.6nb4"
+	bool "py26-google-0.6nb5"
 	help
 	  Call the Google web API from Python
 
@@ -7640,7 +7787,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_KENOSIS
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_LIBDNET
-	bool "py26-libdnet-1.12"
+	bool "py26-libdnet-1.12nb1"
 	help
 	  Python wrapper for libdnet
 
@@ -7657,7 +7804,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_LIBDNET
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_LIBPCAP
-	bool "py26-libpcap-0.6.2"
+	bool "py26-libpcap-0.6.2nb1"
 	help
 	  Python wrapper for libpcap
 
@@ -7716,7 +7863,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_PCAP
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_METAR
-	bool "py26-pymetar-0.16"
+	bool "py26-pymetar-0.18"
 	help
 	  Downloads weather reports
 
@@ -7751,7 +7898,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_SOAPLIB
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_SPREADMODULE
-	bool "py26-spreadmodule-1.4nb2"
+	bool "py26-spreadmodule-1.4nb3"
 	help
 	  Python bindings for the Spread messaging service
 
@@ -7789,7 +7936,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_SUDS
 
 
 config BR2_PKGSRC_PACKAGE_NET_PY_TWISTED
-	bool "py26-twisted-10.1.0"
+	bool "py26-twisted-11.0.0"
 	help
 	  Framework for writing networked applications
 
@@ -7806,7 +7953,7 @@ config BR2_PKGSRC_PACKAGE_NET_PY_TWISTED
 
 
 config BR2_PKGSRC_PACKAGE_NET_PYGOPHERD
-	bool "pygopherd-2.0.16nb1"
+	bool "pygopherd-2.0.16nb2"
 	help
 	  Gopher server
 
@@ -7837,7 +7984,7 @@ config BR2_PKGSRC_PACKAGE_NET_QADSL
 
 
 config BR2_PKGSRC_PACKAGE_NET_QUAGGA
-	bool "quagga-0.99.17"
+	bool "quagga-0.99.20"
 	help
 	  Free multithreaded routing daemon software
 
@@ -7874,9 +8021,9 @@ config BR2_PKGSRC_PACKAGE_NET_QUERYPERF
 
 
 config BR2_PKGSRC_PACKAGE_NET_QUVI
-	bool "quvi-0.2.19"
+	bool "quvi-0.4.1"
 	help
-	  Command line tool and library for parsing video links
+	  Command line tool for parsing video links
 
 	  The quvi is a command line tool for parsing video download links. It
 	  supports Youtube and other similar video websites.  libquvi is a
@@ -7902,7 +8049,7 @@ config BR2_PKGSRC_PACKAGE_NET_RA_RTSP_PROXY
 
 
 config BR2_PKGSRC_PACKAGE_NET_RABBITMQ
-	bool "rabbitmq-2.6.1"
+	bool "rabbitmq-2.7.1"
 	help
 	  Implementation of AMQP that provides robust messaging for applications
 
@@ -8088,7 +8235,7 @@ config BR2_PKGSRC_PACKAGE_NET_RP_PPPOE
 
 
 config BR2_PKGSRC_PACKAGE_NET_RSYNC
-	bool "rsync-3.0.8"
+	bool "rsync-3.0.9"
 	help
 	  Network file distribution/synchronisation utility
 
@@ -8111,7 +8258,7 @@ config BR2_PKGSRC_PACKAGE_NET_RSYNC
 
 
 config BR2_PKGSRC_PACKAGE_NET_RTMPDUMP
-	bool "rtmpdump-2.3"
+	bool "rtmpdump-2.4"
 	help
 	  Tools for handling RTMP stream
 
@@ -8135,7 +8282,7 @@ config BR2_PKGSRC_PACKAGE_NET_RTORRENT
 
 
 config BR2_PKGSRC_PACKAGE_NET_RUBY_ADDRESSABLE
-	bool "ruby19-addressable-2.2.6"
+	bool "ruby19-addressable-2.2.6nb1"
 	help
 	  Replacement for the URI Implementation of standard librrary
 
@@ -8146,8 +8293,35 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_ADDRESSABLE
 	  http://addressable.rubyforge.org/
 
 
+config BR2_PKGSRC_PACKAGE_NET_RUBY_AMQ_CLIENT
+	bool "ruby19-amq-client-0.8.7"
+	help
+	  Fully-featured, low-level AMQP 0.9.1 client
+
+	  amq-client is a fully-featured, low-level AMQP 0.9.1 client that runs on Ruby
+	  1.8.7, 1.9.2, REE, Rubinius and JRuby.
+	  It's sweet spot is in serving as foundation for higher-level, more opinionated
+	  AMQP libraries.
+	  It can be used directly by applications code when performance and access to
+	  advanced AMQP protocol features is more important that API convenience.
+
+	  http://github.com/ruby-amqp/amq-client
+
+
+config BR2_PKGSRC_PACKAGE_NET_RUBY_AMQ_PROTOCOL
+	bool "ruby19-amq-protocol-0.8.4"
+	help
+	  AMQP 0.9.1 encoder & decoder
+
+	  amq-protocol is an AMQP 0.9.1 serialization library for Ruby. It is not an
+	  AMQP client: amq-protocol only handles serialization and deserialization.
+	  If you want to write your own AMQP client, this gem can help you with that.
+
+	  http://github.com/ruby-amqp/amq-protocol
+
+
 config BR2_PKGSRC_PACKAGE_NET_RUBY_AMQP
-	bool "ruby19-amqp-0.8.0"
+	bool "ruby19-amqp-0.8.4"
 	help
 	  AMQP client implementation in Ruby/EventMachine
 
@@ -8159,11 +8333,11 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_AMQP
 	  well as [REE](http://www.rubyenterpriseedition.com), and is licensed under the
 	  [Ruby License](http://www.ruby-lang.org/en/LICENSE.txt)
 
-	  http://github.com/tmm1/amqp
+	  http://github.com/ruby-amqp/amqp
 
 
 config BR2_PKGSRC_PACKAGE_NET_RUBY_DNSRUBY
-	bool "ruby19-dnsruby-1.52"
+	bool "ruby19-dnsruby-1.53"
 	help
 	  Ruby DNS client library
 
@@ -8183,11 +8357,11 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_ICMP
 	  
 	  Note that it requires root permission to handle any ICMP packets.
 
-	  http://snmplib.rubyforge.org/
+	  http://github.com/ruby-amqp/amq-protocol
 
 
 config BR2_PKGSRC_PACKAGE_NET_MIKUTTER
-	bool "ruby19-mikutter-0.0.3.522"
+	bool "ruby19-mikutter-0.0.4.622"
 	help
 	  Simply, powerfully, and moefully twitter client
 
@@ -8219,7 +8393,7 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_NET_LDAP
 
 
 config BR2_PKGSRC_PACKAGE_NET_RUBY_NET_PING
-	bool "ruby19-net-ping-1.5.1"
+	bool "ruby19-net-ping-1.5.2"
 	help
 	  Ping interface for Ruby
 
@@ -8244,7 +8418,7 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_NETADDR
 
 
 config BR2_PKGSRC_PACKAGE_NET_RUBY_RUBYTTER
-	bool "ruby19-rubytter-1.4.2"
+	bool "ruby19-rubytter-1.4.2nb1"
 	help
 	  Simple twitter library
 
@@ -8254,7 +8428,7 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_RUBYTTER
 
 
 config BR2_PKGSRC_PACKAGE_NET_RUBY_SNMP
-	bool "ruby19-snmp-1.0.3"
+	bool "ruby19-snmp-1.1.0"
 	help
 	  SNMP library in pure Ruby
 
@@ -8265,8 +8439,21 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_SNMP
 	  http://snmplib.rubyforge.org/
 
 
+config BR2_PKGSRC_PACKAGE_NET_RUBY_SOAP4R
+	bool "ruby19-soap4r-2.0.3"
+	help
+	  Implementation of SOAP 1.1 for Ruby
+
+	  == soap4r-spox
+	  
+	  This is a modified version of the soap4r library to work on Ruby versions
+	  >= 1.9. The official version can be found {here}[http://dev.ctor.org/soap4r].
+
+	  https://github.com/noeticpenguin/soap4r-noeticpenguin
+
+
 config BR2_PKGSRC_PACKAGE_NET_RUBY_TWEETSTREAM
-	bool "ruby19-tweetstream-1.0.4"
+	bool "ruby19-tweetstream-1.0.5nb1"
 	help
 	  RubyGem to access the Twitter Stream API
 
@@ -8288,17 +8475,11 @@ config BR2_PKGSRC_PACKAGE_NET_RUBY_TWITTER_STREAM
 	  http://github.com/voloko/twitter-stream
 
 
-config BR2_PKGSRC_PACKAGE_NET_SAMBA
+config BR2_PKGSRC_PACKAGE_NET_SAMBA30
 	bool "samba-3.0.37nb7"
 	help
 	  SMB/CIFS protocol server suite
 
-	  Samba provides file and print services for Microsoft Windows clients.
-	  These services may be hosted off any TCP/IP-enabled platform.  The
-	  Samba project includes not only an impressive feature set in file and
-	  print serving capabilities, but has been extended to include client
-	  functionality, utilities to ease migration to Samba, tools to aid
-	  interoperability with Microsoft Windows, and administration tools.
 
 	  http://www.samba.org/
 
@@ -8313,10 +8494,25 @@ config BR2_PKGSRC_PACKAGE_NET_SAMBA33
 
 
 config BR2_PKGSRC_PACKAGE_NET_SAMBA35
-	bool "samba-3.5.11"
+	bool "samba-3.5.12"
 	help
 	  SMB/CIFS protocol server suite
 
+
+	  http://www.samba.org/
+
+
+config BR2_PKGSRC_PACKAGE_NET_SAMBA
+	bool "samba-3.6.1"
+	help
+	  SMB/CIFS protocol server suite
+
+	  Samba provides file and print services for Microsoft Windows clients.
+	  These services may be hosted off any TCP/IP-enabled platform.  The
+	  Samba project includes not only an impressive feature set in file and
+	  print serving capabilities, but has been extended to include client
+	  functionality, utilities to ease migration to Samba, tools to aid
+	  interoperability with Microsoft Windows, and administration tools.
 
 	  http://www.samba.org/
 
@@ -8340,7 +8536,7 @@ config BR2_PKGSRC_PACKAGE_NET_SCAMPER
 
 
 config BR2_PKGSRC_PACKAGE_NET_SCAPY
-	bool "scapy-2.1.1"
+	bool "scapy-2.1.1nb1"
 	help
 	  Interactive packet manipulation program
 
@@ -8523,11 +8719,31 @@ config BR2_PKGSRC_PACKAGE_NET_SITESCOOPER
 	  http://sitescooper.cx/
 
 
-config BR2_PKGSRC_PACKAGE_NET_SKYPE
-	bool "skype-1.4.0.118nb1"
+config BR2_PKGSRC_PACKAGE_NET_SKYPE1
+	bool "skype-1.4.0.118nb2"
 	help
 	  P2P VoIP software
 
+	  Skype is a free program that uses P2P technology to bring affordable
+	  and high-quality voice communications to people all over the world.
+	  
+	  This is a very old version of Skype which may be useful for older systems
+	  (or systems which emulate older versions of Linux)
+
+	  http://www.skype.com/
+
+
+config BR2_PKGSRC_PACKAGE_NET_SKYPE21
+	bool "skype-2.1.0.81"
+	help
+	  P2P VoIP software
+
+	  Skype is a free program that uses P2P technology to bring affordable
+	  and high-quality voice communications to people all over the world.
+	  
+	  This package is specifically for Skype 2.1.x, as from 2.2.x Skype started
+	  to use the inotify(7) system call which is not available on some other
+	  systems' Linux emulations.
 
 	  http://www.skype.com/
 
@@ -8930,6 +9146,21 @@ config BR2_PKGSRC_PACKAGE_NET_SYSMON
 	  http://www.sysmon.org/
 
 
+config BR2_PKGSRC_PACKAGE_NET_TACACS_SHRUBBERY
+	bool "tacacs+-4.0.4.20"
+	help
+	  Cisco AAA protocol (tacacs+) daemon (Shrubbery Networks version)
+
+	  Tacacs+ (or tac_plus) is a freely distributable daemon from Cisco Systems.
+	  It is used in conjunction with Cisco routers for authorization, authentication,
+	  and accounting services.  Tac_plus is configured via a single configuration
+	  file.
+	  This particular version is derived from the original Cisco sources and is
+	  maintained by Shrubbery Networks, Inc.
+
+	  http://www.shrubbery.net/tac_plus/
+
+
 config BR2_PKGSRC_PACKAGE_NET_TACACS
 	bool "tacacs-4.0.4a"
 	help
@@ -9149,7 +9380,7 @@ config BR2_PKGSRC_PACKAGE_NET_TCPTRACE
 
 
 config BR2_PKGSRC_PACKAGE_NET_TCPTRACEROUTE
-	bool "tcptraceroute-1.4nb3"
+	bool "tcptraceroute-1.4nb4"
 	help
 	  Traceroute implementation using TCP packets
 
@@ -9206,7 +9437,7 @@ config BR2_PKGSRC_PACKAGE_NET_TEAMSPEAK_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_NET_TINYFUGUE
-	bool "tf-4.0s1nb7"
+	bool "tf-4.0s1nb9"
 	help
 	  Popular programmable MUD client, with macro support and more
 
@@ -9352,7 +9583,7 @@ config BR2_PKGSRC_PACKAGE_NET_TNFTPD
 
 
 config BR2_PKGSRC_PACKAGE_NET_TOR
-	bool "tor-0.2.2.32"
+	bool "tor-0.2.2.35"
 	help
 	  Anonymizing overlay network for TCP
 
@@ -9485,7 +9716,7 @@ config BR2_PKGSRC_PACKAGE_NET_TRICKLE
 
 
 config BR2_PKGSRC_PACKAGE_NET_TSCLIENT
-	bool "tsclient-0.132nb31"
+	bool "tsclient-0.132nb32"
 	help
 	  GNOME2 Frontend for rdesktop
 
@@ -9570,7 +9801,7 @@ config BR2_PKGSRC_PACKAGE_NET_TTT
 
 
 config BR2_PKGSRC_PACKAGE_NET_TWITUX
-	bool "twitux-0.69nb7"
+	bool "twitux-0.69nb8"
 	help
 	  GTK+ Twitter client
 
@@ -9583,7 +9814,7 @@ config BR2_PKGSRC_PACKAGE_NET_TWITUX
 
 
 config BR2_PKGSRC_PACKAGE_NET_UCARP
-	bool "ucarp-1.1nb2"
+	bool "ucarp-1.5.2"
 	help
 	  
 
@@ -9674,7 +9905,7 @@ config BR2_PKGSRC_PACKAGE_NET_UDPTUNNEL
 
 
 config BR2_PKGSRC_PACKAGE_NET_UNBOUND
-	bool "unbound-1.4.13"
+	bool "unbound-1.4.14"
 	help
 	  DNS resolver and recursive server
 
@@ -9700,7 +9931,7 @@ config BR2_PKGSRC_PACKAGE_NET_UNFS3
 
 
 config BR2_PKGSRC_PACKAGE_NET_UNISON2.32
-	bool "unison-2.32.52nb5"
+	bool "unison-2.32.52nb7"
 	help
 	  
 
@@ -9716,7 +9947,7 @@ config BR2_PKGSRC_PACKAGE_NET_UNISON2.32
 
 
 config BR2_PKGSRC_PACKAGE_NET_UNISON
-	bool "unison-2.40.63"
+	bool "unison-2.40.63nb2"
 	help
 	  File-synchronization tool
 
@@ -9760,7 +9991,7 @@ config BR2_PKGSRC_PACKAGE_NET_UPCLIENT
 
 
 config BR2_PKGSRC_PACKAGE_NET_URLGFE
-	bool "urlgfe-1.0.1nb8"
+	bool "urlgfe-1.0.1nb9"
 	help
 	  Download manager for X
 
@@ -9844,7 +10075,7 @@ config BR2_PKGSRC_PACKAGE_NET_VDE
 
 
 config BR2_PKGSRC_PACKAGE_NET_VINAGRE
-	bool "vinagre-2.30.3nb5"
+	bool "vinagre-2.30.3nb6"
 	help
 	  VNC client for GNOME
 
@@ -9854,7 +10085,7 @@ config BR2_PKGSRC_PACKAGE_NET_VINAGRE
 
 
 config BR2_PKGSRC_PACKAGE_NET_VINO
-	bool "vino-2.28.3nb2"
+	bool "vino-2.28.3nb3"
 	help
 	  VNC server for GNOME
 
@@ -9907,7 +10138,7 @@ config BR2_PKGSRC_PACKAGE_NET_VNCVIEWER
 
 
 config BR2_PKGSRC_PACKAGE_NET_VNSTAT
-	bool "vnstat-1.9nb3"
+	bool "vnstat-1.9nb4"
 	help
 	  Small network traffic monitor
 
@@ -10036,7 +10267,7 @@ config BR2_PKGSRC_PACKAGE_NET_WASTE
 
 
 config BR2_PKGSRC_PACKAGE_NET_WGET
-	bool "wget-1.12nb2"
+	bool "wget-1.13.4nb2"
 	help
 	  Retrieve files from the 'net via HTTP and FTP
 
@@ -10168,7 +10399,7 @@ config BR2_PKGSRC_PACKAGE_NET_WIMON
 
 
 config BR2_PKGSRC_PACKAGE_NET_WIRESHARK
-	bool "wireshark-1.6.2"
+	bool "wireshark-1.6.4nb1"
 	help
 	  Network protocol analyzer
 
@@ -10220,7 +10451,7 @@ config BR2_PKGSRC_PACKAGE_NET_WISTUMBLER2
 
 
 config BR2_PKGSRC_PACKAGE_NET_WISTUMBLER2_GTK
-	bool "wistumbler2-gtk-2.0pre10nb9"
+	bool "wistumbler2-gtk-2.0pre10nb10"
 	help
 	  Fork of original WaveLAN/IEEE network stumbler
 
@@ -10329,7 +10560,7 @@ config BR2_PKGSRC_PACKAGE_NET_WOL
 
 
 config BR2_PKGSRC_PACKAGE_NET_WPA_GUI
-	bool "wpa_gui-0.7.3"
+	bool "wpa_gui-0.7.3nb1"
 	help
 	  
 
@@ -10408,7 +10639,7 @@ config BR2_PKGSRC_PACKAGE_NET_X2VNC
 
 
 config BR2_PKGSRC_PACKAGE_NET_XFCE4_WAVELAN_PLUGIN
-	bool "xfce4-wavelan-plugin-0.5.4nb6"
+	bool "xfce4-wavelan-plugin-0.5.4nb7"
 	help
 	  Xfce WLAN plugin
 
@@ -10433,7 +10664,7 @@ config BR2_PKGSRC_PACKAGE_NET_XIPDUMP
 
 
 config BR2_PKGSRC_PACKAGE_NET_XMFTP
-	bool "xmftp-1.0.4nb3"
+	bool "xmftp-1.0.4nb4"
 	help
 	  X/Motif FTP client
 
@@ -10459,7 +10690,7 @@ config BR2_PKGSRC_PACKAGE_NET_XMFTP
 
 
 config BR2_PKGSRC_PACKAGE_NET_XNAP
-	bool "xnap-2.0nb1"
+	bool "xnap-2.0nb2"
 	help
 	  Java filesharing client with support for OpenNap
 
@@ -10522,7 +10753,7 @@ config BR2_PKGSRC_PACKAGE_NET_XTRACEROUTE
 
 
 config BR2_PKGSRC_PACKAGE_NET_XYMON
-	bool "xymon-4.3.2nb1"
+	bool "xymon-4.3.5nb3"
 	help
 	  Network services monitor a la Big Brother
 
@@ -10541,7 +10772,7 @@ config BR2_PKGSRC_PACKAGE_NET_XYMON
 
 
 config BR2_PKGSRC_PACKAGE_NET_XYMONCLIENT
-	bool "xymonclient-4.3.2nb1"
+	bool "xymonclient-4.3.5nb1"
 	help
 	  Network services monitor a la Big Brother
 
@@ -10582,7 +10813,7 @@ config BR2_PKGSRC_PACKAGE_NET_YALE_TFTPD
 
 
 config BR2_PKGSRC_PACKAGE_NET_YAZ
-	bool "yaz-4.1.6nb2"
+	bool "yaz-4.1.6nb3"
 	help
 	  C/C++ toolkit for the development of Z39.50v3/SRW clients and servers
 
@@ -10613,7 +10844,7 @@ config BR2_PKGSRC_PACKAGE_NET_YAZ
 
 
 config BR2_PKGSRC_PACKAGE_NET_YOUTUBE_DL
-	bool "youtube-dl-20110804"
+	bool "youtube-dl-20111019"
 	help
 	  Download videos from youtube.com
 
@@ -10653,7 +10884,7 @@ config BR2_PKGSRC_PACKAGE_NET_YWHO
 
 
 config BR2_PKGSRC_PACKAGE_NET_ZEROMQ
-	bool "zeromq-2.1.7"
+	bool "zeromq-2.1.10"
 	help
 	  The ZeroMQ messaging library
 

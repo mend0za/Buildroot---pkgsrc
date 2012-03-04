@@ -33,7 +33,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_BOOTSTRAP_EXTRAS
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_BOOTSTRAP_MK_FILES
-	bool "bootstrap-mk-files-20090807nb2"
+	bool "bootstrap-mk-files-20111205"
 	help
 	  *.mk files for the bootstrap bmake utility
 
@@ -127,7 +127,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_DFDISK
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_DIGEST
-	bool "digest-20080510"
+	bool "digest-20111104"
 	help
 	  Message digest wrapper utility
 
@@ -148,7 +148,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_DIGEST
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_DISTBB
-	bool "distbb-0.41.0"
+	bool "distbb-0.41.2"
 	help
 	  DISTributed Bulk Build tool for pkgsrc
 
@@ -202,7 +202,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_GENSOLPKG
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_GNOME_PACKAGEKIT
-	bool "gnome-packagekit-0.4.0nb8"
+	bool "gnome-packagekit-0.4.0nb9"
 	help
 	  GNOME frontend for PackageKit
 
@@ -247,7 +247,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_LIBKVER
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_LIBNBCOMPAT
-	bool "libnbcompat-20090610"
+	bool "libnbcompat-20111228"
 	help
 	  Portable NetBSD compatibility library
 
@@ -286,7 +286,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_MTREE
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_NIH
-	bool "nih-0.9.1"
+	bool "nih-0.10.0nb2"
 	help
 	  Package manager for pkgsrc
 
@@ -339,7 +339,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_P5_PKGSRC_DEWEY
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PACKAGEKIT
-	bool "packagekit-0.4.0nb11"
+	bool "packagekit-0.4.0nb12"
 	help
 	  System activated daemon for managing software updates
 
@@ -376,7 +376,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PBULK
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PBULK_BASE
-	bool "pbulk-base-0.43"
+	bool "pbulk-base-0.44"
 	help
 	  Core components of the modular bulk build framework
 
@@ -550,7 +550,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_NOTIFY
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ONLINE_CLIENT
-	bool "pkg_online-client-0.12.1"
+	bool "pkg_online-client-0.12.1nb1"
 	help
 	  Client/Server package searcher for pkgsrc (client tools)
 
@@ -655,7 +655,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_SELECT
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_SUMMARY_UTILS
-	bool "pkg_summary-utils-0.56.1"
+	bool "pkg_summary-utils-0.56.4"
 	help
 	  
 
@@ -791,7 +791,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGDIFF
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGFIND
-	bool "pkgfind-20050804"
+	bool "pkgfind-20111022"
 	help
 	  Find packages by package name in pkgsrc
 
@@ -802,7 +802,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGFIND
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGIN
-	bool "pkgin-0.4.3"
+	bool "pkgin-0.5.2.1nb1"
 	help
 	  Apt / yum like tool for managing pkgsrc binary packages
 
@@ -815,7 +815,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGIN
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGLINT
-	bool "pkglint-4.103"
+	bool "pkglint-4.106"
 	help
 	  Verifier for NetBSD packages
 
@@ -842,7 +842,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGSE
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGSRC_TODO
-	bool "pkgsrc-todo-1.0"
+	bool "pkgsrc-todo-1.1"
 	help
 	  Tools for maintaing pkgsrc/doc/TODO
 
@@ -887,7 +887,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGSURVEY
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PORT2PKG
-	bool "port2pkg-1.11nb8"
+	bool "port2pkg-1.12"
 	help
 	  Convert from a FreeBSD port to a NetBSD package
 
@@ -933,7 +933,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_RCORDER
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_RDIGEST
-	bool "rdigest-20080510"
+	bool "rdigest-20111104"
 	help
 	  Recursive message digest wrapper utility
 
@@ -1007,6 +1007,33 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_SHLOCK
 	  
 
 
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_TINDERBOX_DRAGONFLY
+	bool "tinderbox-dragonfly-3.4.1nb2"
+	help
+	  
+
+	  Tinderbox is a package building system for FreeBSD that has been modified
+	  for use on pkgsrc on DragonFly BSD.  Joe Marcus Clarke is the author.
+	  
+	  One can define multiple jails (base system versions) and multiple portstrees
+	  (portstree = pkgsrc tree).  The combination of jail and portstree is called
+	  a build.  A Tinderbox jail is not what is understood as a jail in *BSD, it
+	  is in fact a given world in a chroot.  Tinderbox supports automatic tracking
+	  of dependencies and only rebuilds packages that changed since last run.
+	  Tinderbox has support for email notification of failed builds.
+	  
+	  Tinderbox is designed to easily provide package sets of needed ports for
+	  specific platforms and architectures.  Tinderbox is an excellent tool for
+	  testing new packages and package upgrades, especially for testing
+	  dependencies and packing lists.  It is also useful for testing packages on
+	  previous releases of *BSD since it's possible to run a previous release
+	  world inside a jail on a current release host.
+	  
+	  Tinderbox/pkgsrc site: http://github.com/jrmarino/pkgsrc-tinderbox
+
+	  http://tinderbox/marcuscom.com
+
+
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_URL2PKG
 	bool "url2pkg-2.13"
 	help
@@ -1020,7 +1047,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_URL2PKG
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_VERIFYPC
-	bool "verifypc-1.5"
+	bool "verifypc-1.6"
 	help
 	  Sanity check package dependencies according to pkg-config
 

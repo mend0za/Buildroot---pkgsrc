@@ -1,3 +1,14 @@
+config BR2_PKGSRC_PACKAGE_NEWS_KNEWS
+	bool "knews-1.0nb16"
+	help
+	  X11 newsreader with support for threading and MIME
+
+	  Knews is a threaded newsreader with an X Window interface that
+	  uses NNTP to get news. It displays the threads in a graphical tree.
+
+	  
+
+
 config BR2_PKGSRC_PACKAGE_NEWS_CG
 	bool "cg-0.4"
 	help
@@ -73,17 +84,6 @@ config BR2_PKGSRC_PACKAGE_NEWS_INN
 	  http://www.isc.org/software/inn/
 
 
-config BR2_PKGSRC_PACKAGE_NEWS_KNEWS
-	bool "knews-1.0nb16"
-	help
-	  X11 newsreader with support for threading and MIME
-
-	  Knews is a threaded newsreader with an X Window interface that
-	  uses NNTP to get news. It displays the threads in a graphical tree.
-
-	  
-
-
 config BR2_PKGSRC_PACKAGE_NEWS_LEAFNODE
 	bool "leafnode-1.11.7"
 	help
@@ -102,7 +102,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_LEAFNODE
 
 
 config BR2_PKGSRC_PACKAGE_NEWS_LOTTANZB
-	bool "lottanzb-0.4.0nb9"
+	bool "lottanzb-0.4.0nb11"
 	help
 	  GNOME front-end for HellaNZB
 
@@ -234,7 +234,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_NNTPCLNT
 
 
 config BR2_PKGSRC_PACKAGE_NEWS_PAN
-	bool "pan-0.135"
+	bool "pan-0.135nb1"
 	help
 	  Newsreader for GTK2
 
@@ -264,7 +264,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_SLRN
 
 
 config BR2_PKGSRC_PACKAGE_NEWS_SUCK
-	bool "suck-4.3.2nb5"
+	bool "suck-4.3.2nb6"
 	help
 	  Feed a local news server without a dedicated newsfeed
 
@@ -286,7 +286,7 @@ config BR2_PKGSRC_PACKAGE_NEWS_SUCK
 
 
 config BR2_PKGSRC_PACKAGE_NEWS_TIN
-	bool "tin-1.9.4nb3"
+	bool "tin-2.0.0"
 	help
 	  
 

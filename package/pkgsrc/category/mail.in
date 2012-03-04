@@ -72,7 +72,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_YOSUCKER
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_AKONADI
-	bool "akonadi-1.4.0nb5"
+	bool "akonadi-1.4.0nb7"
 	help
 	  The KDE PIM Storage Service
 
@@ -88,7 +88,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_AKONADI
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_ALPINE
-	bool "alpine-2.00nb5"
+	bool "alpine-2.00nb6"
 	help
 	  Program for Internet News and E-mail
 
@@ -121,7 +121,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_AMAVIS_PERL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_AMAVISD_NEW
-	bool "amavisd-new-2.6.4"
+	bool "amavisd-new-2.7.0"
 	help
 	  Daemonized interface between MTA and content checkers
 
@@ -205,7 +205,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_AVENGER
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_BALSA
-	bool "balsa-2.4.8nb7"
+	bool "balsa-2.4.8nb8"
 	help
 	  GNOME2 EMail client
 
@@ -315,7 +315,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAMSMTP
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL
-	bool "claws-mail-3.7.10"
+	bool "claws-mail-3.7.10nb1"
 	help
 	  X based e-mail and netnews client
 
@@ -346,7 +346,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_ARCHIVE
-	bool "claws-mail-archive-0.6.10"
+	bool "claws-mail-archive-0.6.10nb2"
 	help
 	  Adds archiving to Claws-Mail
 
@@ -373,7 +373,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_ARCHIVE
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_ATTREMOVER
-	bool "claws-mail-att_remover-1.0.12nb8"
+	bool "claws-mail-att_remover-1.0.12nb9"
 	help
 	  Permanently deletes attachments from mail
 
@@ -384,7 +384,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_ATTREMOVER
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_ATTACHWARNER
-	bool "claws-mail-attachwarner-0.2.22"
+	bool "claws-mail-attachwarner-0.2.22nb1"
 	help
 	  Warns if a message mentions an attachment without attaching files
 
@@ -419,7 +419,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_BOGOFILTER
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_CACHESAVER
-	bool "claws-mail-cachesaver-0.10.9nb9"
+	bool "claws-mail-cachesaver-0.10.9nb10"
 	help
 	  Saves Claws-Mail metadata every 60 seconds
 
@@ -430,7 +430,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_CACHESAVER
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_DILLO_VIEWER
-	bool "claws-mail-dillo-viewer-3.7.10"
+	bool "claws-mail-dillo-viewer-3.7.10nb1"
 	help
 	  Plugin to use the Dillo web browser for html rendering
 
@@ -447,7 +447,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_DILLO_VIEWER
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_FETCHINFO
-	bool "claws-mail-fetchinfo-plugin-0.4.24nb9"
+	bool "claws-mail-fetchinfo-plugin-0.4.24nb10"
 	help
 	  Inserts headers containing some download information
 
@@ -458,7 +458,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_FETCHINFO
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_GTKHTML
-	bool "claws-mail-gtkhtml2_viewer-0.31"
+	bool "claws-mail-gtkhtml2_viewer-0.31nb2"
 	help
 	  Renders HTML mail using the gtkhtml2 rendering widget
 
@@ -475,7 +475,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_GTKHTML
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_MAILMBOX
-	bool "claws-mail-mailmbox-1.14.5nb4"
+	bool "claws-mail-mailmbox-1.14.5nb5"
 	help
 	  Handles mailboxes in mbox format
 
@@ -485,7 +485,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_MAILMBOX
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_NEWMAIL
-	bool "claws-mail-newmail-0.0.15nb11"
+	bool "claws-mail-newmail-0.0.15nb12"
 	help
 	  Write log file info on arriving email
 
@@ -496,7 +496,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_NEWMAIL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_NOTIFICATION
-	bool "claws-mail-notification-0.28"
+	bool "claws-mail-notification-0.28nb1"
 	help
 	  Provides various ways to notify the user of new and unread email
 
@@ -539,7 +539,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_PGPCORE
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_PGPINLINE
-	bool "claws-mail-pgpinline-3.7.10"
+	bool "claws-mail-pgpinline-3.7.10nb1"
 	help
 	  Handles PGP/Inline signed and/or encrypted mails
 
@@ -550,7 +550,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_PGPINLINE
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_PGPMIME
-	bool "claws-mail-pgpmime-3.7.10"
+	bool "claws-mail-pgpmime-3.7.10nb1"
 	help
 	  Handles PGP/MIME signed and/or encrypted mails
 
@@ -561,7 +561,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_PGPMIME
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_RSSYL
-	bool "claws-mail-rssyl-0.31"
+	bool "claws-mail-rssyl-0.31nb1"
 	help
 	  Read RSS 1.0, 2.0 and Atom feeds in Claws-Mail
 
@@ -584,7 +584,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_RSSYL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_SMIME
-	bool "claws-mail-smime-3.7.10"
+	bool "claws-mail-smime-3.7.10nb1"
 	help
 	  This plugin handles S/MIME signed and/or encrypted mails
 
@@ -595,7 +595,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_SMIME
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_SPAMREPORT
-	bool "claws-mail-spam_report-0.3.14"
+	bool "claws-mail-spam_report-0.3.14nb1"
 	help
 	  Report spam to various places
 
@@ -635,7 +635,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_SPAMASSASSIN
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_SYNCE
-	bool "claws-mail-synce_plugin-0.7.5nb11"
+	bool "claws-mail-synce_plugin-0.7.5nb12"
 	help
 	  Synchronize addressbook of a Windows CE with Claws Mail
 
@@ -647,7 +647,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_SYNCE
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_TNEF
-	bool "claws-mail-tnef-0.3.11"
+	bool "claws-mail-tnef-0.3.11nb1"
 	help
 	  Handles TNEF attachments from Outlook
 
@@ -674,7 +674,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_TRAYICON
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CLAWS_MAIL_VCALENDAR
-	bool "claws-mail-vcalendar-2.0.11"
+	bool "claws-mail-vcalendar-2.0.11nb1"
 	help
 	  Enable vCalendar message handling
 
@@ -837,7 +837,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CUCIPOP
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CUE
-	bool "cue-20090209nb1"
+	bool "cue-20100426"
 	help
 	  Mh-e like mail user agent
 
@@ -874,7 +874,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CYRUS_IMAPD
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CYRUS_IMAPD23
-	bool "cyrus-imapd-2.3.17"
+	bool "cyrus-imapd-2.3.18"
 	help
 	  Cyrus IMAP server
 
@@ -890,7 +890,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_CYRUS_IMAPD23
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_CYRUS_IMAPD24
-	bool "cyrus-imapd-2.4.11"
+	bool "cyrus-imapd-2.4.13"
 	help
 	  Cyrus IMAP server
 
@@ -1020,7 +1020,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_DISTRIBUTE
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_DK_MILTER
-	bool "dk-milter-0.3.0nb4"
+	bool "dk-milter-0.3.0nb5"
 	help
 	  Open source implementation of DomainKeys for sendmail
 
@@ -1067,7 +1067,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_DOT_FORWARD
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_DOVECOT
-	bool "dovecot-1.2.17nb2"
+	bool "dovecot-1.2.17nb3"
 	help
 	  Secure IMAP and POP3 server
 
@@ -1079,7 +1079,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_DOVECOT
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_DOVECOT2
-	bool "dovecot-2.0.15"
+	bool "dovecot-2.0.16"
 	help
 	  Secure IMAP and POP3 server
 
@@ -1092,7 +1092,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_DOVECOT2
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_DOVECOT2_PIGEONHOLE
-	bool "dovecot-pigeonhole-0.2.4"
+	bool "dovecot-pigeonhole-0.2.5"
 	help
 	  Support for the Sieve language and the ManageSieve protocol
 
@@ -1295,7 +1295,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_ETPAN
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_EVOLUTION
-	bool "evolution-2.32.3nb1"
+	bool "evolution-2.32.3nb2"
 	help
 	  GNOME mailer, calendar, contact manager, and communications tool
 
@@ -1313,7 +1313,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_EVOLUTION
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_EVOLUTION_DATA_SERVER
-	bool "evolution-data-server-2.32.3nb1"
+	bool "evolution-data-server-2.32.3nb2"
 	help
 	  Evolution data server
 
@@ -1324,7 +1324,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_EVOLUTION_DATA_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_EVOLUTION_EXCHANGE
-	bool "evolution-exchange-2.32.2nb2"
+	bool "evolution-exchange-2.32.2nb3"
 	help
 	  Support for Microsoft Exchange 2000 and 2003 in Evolution
 
@@ -1363,7 +1363,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_EXIM3
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_EXIM
-	bool "exim-4.76nb2"
+	bool "exim-4.77"
 	help
 	  The Exim mail transfer agent, a replacement for sendmail
 
@@ -1390,7 +1390,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_EXIM
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_EXIM_HTML
-	bool "exim-html-4.76"
+	bool "exim-html-4.77"
 	help
 	  HTML documentation for the Exim mail transfer agent
 
@@ -1689,7 +1689,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_FROMTO
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_GETMAIL
-	bool "getmail-4.22.1"
+	bool "getmail-4.24.0"
 	help
 	  Secure, flexible, reliable, easy-to-use fetchmail replacement
 
@@ -2077,7 +2077,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_JCHKMAIL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_KBIFF
-	bool "kbiff-3.9nb7"
+	bool "kbiff-3.9nb8"
 	help
 	  Mail notification utility for KDE
 
@@ -2223,7 +2223,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_LIBYTNEF
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MAIL_NOTIFICATION
-	bool "mail-notification-5.4nb8"
+	bool "mail-notification-5.4nb9"
 	help
 	  Status icon that provides new mail notifications
 
@@ -2300,7 +2300,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_MAILCRYPT
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MAILDROP
-	bool "maildrop-2.5.2"
+	bool "maildrop-2.5.4"
 	help
 	  Courier mail delivery agent with filtering abilities
 
@@ -2359,7 +2359,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_MAILHOPS
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MAILMAN
-	bool "mailman-2.1.14.1nb1"
+	bool "mailman-2.1.14.1nb2"
 	help
 	  The GNU Mailing List Manager
 
@@ -2460,7 +2460,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_MAIRIX
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MAJORDOMO
-	bool "majordomo-1.94.5nb13"
+	bool "majordomo-1.94.5nb15"
 	help
 	  The Majordomo mailing list manager
 
@@ -2551,7 +2551,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_METAMAIL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MEW
-	bool "mew-6.3nb3"
+	bool "mew-6.4"
 	help
 	  Messaging in the Emacs World
 
@@ -2568,7 +2568,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_MEW
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MHONARC
-	bool "mhonarc-2.6.18"
+	bool "mhonarc-2.6.18nb1"
 	help
 	  Mailbox to HTML converter, suitable for list archives
 
@@ -2610,7 +2610,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_MILTER_GREYLIST
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MILTER_MANAGER
-	bool "milter-manager-1.8.0nb1"
+	bool "milter-manager-1.8.2"
 	help
 	  Milter to use milters effectively
 
@@ -2709,7 +2709,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_MPOP
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MSMTP
-	bool "msmtp-1.4.24"
+	bool "msmtp-1.4.27"
 	help
 	  SMTP plugin for MUAs
 
@@ -2772,7 +2772,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_MUTT
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_MUTT_DEVEL
-	bool "mutt-1.5.21nb2"
+	bool "mutt-1.5.21nb3"
 	help
 	  Text-based MIME mail client with PGP & S/MIME support
 
@@ -2791,7 +2791,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_MUTT_DEVEL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_NETBIFF
-	bool "netbiff-0.9.18nb8"
+	bool "netbiff-0.9.18nb9"
 	help
 	  Xbiff-like mail notification, handles multiple mailboxes
 
@@ -2850,7 +2850,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_NEWSPIPE
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_NMH
-	bool "nmh-1.3"
+	bool "nmh-1.3nb3"
 	help
 	  Cleaned up MH mailer suite
 
@@ -2906,7 +2906,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_OFFLINEIMAP
 	  does not have IMAP support, has poor IMAP support, or does not provide
 	  disconnected operation.
 
-	  http://software.complete.org/software/projects/show/offlineimap
+	  http://offlineimap.org/
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_OPENDKIM
@@ -2981,7 +2981,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_CATALYST_VIEW_EMAIL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_EMAIL_ABSTRACT
-	bool "p5-Email-Abstract-3.003nb1"
+	bool "p5-Email-Abstract-3.004"
 	help
 	  Perl5 module for writing representation-independent mail handling code
 
@@ -3099,7 +3099,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_EMAIL_LOCALDELIVERY
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_EMAIL_MIME
-	bool "p5-Email-MIME-1.906nb1"
+	bool "p5-Email-MIME-1.910"
 	help
 	  Perl module for easy MIME message parsing
 
@@ -3196,7 +3196,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_EMAIL_SEND
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_EMAIL_SENDER
-	bool "p5-Email-Sender-0.102370nb1"
+	bool "p5-Email-Sender-0.110001"
 	help
 	  Email::Sender - a library for sending email
 
@@ -3254,7 +3254,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_EMAIL_STUFF
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_EMAIL_VALID
-	bool "p5-Email-Valid-0.184nb1"
+	bool "p5-Email-Valid-0.185"
 	help
 	  Perl5 module for testing validity of an email address
 
@@ -3339,7 +3339,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_IMAP_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_MIME_CHARSET
-	bool "p5-MIME-Charset-1.008nb2"
+	bool "p5-MIME-Charset-1.009.1"
 	help
 	  Perl5 module containing charset Informations for MIME
 
@@ -3350,7 +3350,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_MIME_CHARSET
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_MIME_ENCWORDS
-	bool "p5-MIME-EncWords-1.012nb1"
+	bool "p5-MIME-EncWords-1.012.4"
 	help
 	  
 
@@ -3403,7 +3403,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_MIME_TYPES
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_MIME_TOOLS
-	bool "p5-MIME-tools-5.502"
+	bool "p5-MIME-tools-5.502nb1"
 	help
 	  Perl5 modules for encoding and decoding MIME messages
 
@@ -3487,7 +3487,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_MAIL_EZMLM
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_MAIL_IMAPCLIENT
-	bool "p5-Mail-IMAPClient-3.23nb2"
+	bool "p5-Mail-IMAPClient-3.30"
 	help
 	  Perl5 module for talking to RFC-2060 IMAP servers
 
@@ -3515,7 +3515,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_P5_MAIL_IMAPCLIENT
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_P5_MAIL_LISTDETECTOR
-	bool "p5-Mail-ListDetector-1.01nb3"
+	bool "p5-Mail-ListDetector-1.04"
 	help
 	  Perl5 module to detect messages from a mailing lists
 
@@ -4124,7 +4124,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_POPPY
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_POSTFIX
-	bool "postfix-2.8.5"
+	bool "postfix-2.8.7"
 	help
 	  Postfix SMTP server and tools
 
@@ -4542,7 +4542,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_RBLCHECK
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_RE_ALPINE
-	bool "re-alpine-2.01nb1"
+	bool "re-alpine-2.01nb2"
 	help
 	  Console-based mail and news client
 
@@ -4592,7 +4592,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_RMAIL_MIME
 	  RMAIL-MIME is a module to provide MIME features to RMAIL.  RMAIL is an Emacs
 	  subsystem for reading and disposing of mail that you receive.
 
-	  http://pear.php.net/package/Auth_SASL
+	  http://www.vergenet.net/linux/perdition/
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_ROUNDCUBE
@@ -4621,6 +4621,18 @@ config BR2_PKGSRC_PACKAGE_MAIL_RSS2EMAIL
 	  http://www.allthingsrss.com/rss2email/
 
 
+config BR2_PKGSRC_PACKAGE_MAIL_QUICKML
+	bool "ruby18-quickml-0.7nb1"
+	help
+	  Easy-to-use mailing list system
+
+	  Quickml server provides very-easy-to-use mailing list service.
+	  It was too open in this age, some limitation is provided in
+	  this package. The original code is written by Satoru Takabayashi.
+
+	  http://0xcc.net/quickml/
+
+
 config BR2_PKGSRC_PACKAGE_MAIL_RUBY_ACTIONMAILER
 	bool "ruby19-actionmailer-2.3.14"
 	help
@@ -4638,7 +4650,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_RUBY_ACTIONMAILER
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_RUBY_ACTIONMAILER3
-	bool "ruby19-actionmailer-3.0.10"
+	bool "ruby19-actionmailer-3.0.11"
 	help
 	  Email composition, delivery, and receiving framework
 
@@ -4658,8 +4670,58 @@ config BR2_PKGSRC_PACKAGE_MAIL_RUBY_ACTIONMAILER3
 	  http://www.rubyonrails.org/
 
 
-config BR2_PKGSRC_PACKAGE_MAIL_RUBY_MAIL
+config BR2_PKGSRC_PACKAGE_MAIL_RUBY_ACTIONMAILER31
+	bool "ruby19-actionmailer-3.1.3"
+	help
+	  Email composition, delivery, and receiving framework
+
+	  Action Mailer is a framework for designing email-service layers. These layers
+	  are used to consolidate code for sending out forgotten passwords, welcome
+	  wishes on signup, invoices for billing, and any other use case that requires
+	  a written notification to either a person or another system.
+	  
+	  Action Mailer is in essence a wrapper around Action Controller and the
+	  Mail gem.  It provides a way to make emails using templates in the same
+	  way that Action Controller renders views using templates.
+	  
+	  Additionally, an Action Mailer class can be used to process incoming email,
+	  such as allowing a weblog to accept new posts from an email (which could even
+	  have been sent from a phone).
+
+	  http://www.rubyonrails.org/
+
+
+config BR2_PKGSRC_PACKAGE_MAIL_RUBY_MAIL22
 	bool "ruby19-mail-2.2.19"
+	help
+	  Mail provides a nice Ruby DSL for making, sending and reading emails
+
+	  Mail is an internet library for Ruby that is designed to handle emails
+	  generation, parsing and sending in a simple, rubyesque manner.
+	  
+	  The purpose of this library is to provide a single point of access to handle
+	  all email functions, including sending and receiving emails.  All network
+	  type actions are done through proxy methods to Net::SMTP, Net::POP3 etc.
+	  
+	  Built from my experience with TMail, it is designed to be a pure ruby
+	  implementation that makes generating, sending and parsing emails a no
+	  brainer.
+	  
+	  It is also designed form the ground up to work with Ruby 1.9.  This is because
+	  Ruby 1.9 handles text encodings much more magically than Ruby 1.8.x and so
+	  these features have been taken full advantage of in this library allowing
+	  Mail to handle a lot more messages more cleanly than TMail.  Mail does run on
+	  Ruby 1.8.x... it's just not as fun to code.
+	  
+	  Finally, Mail has been designed with a very simple object oriented system
+	  that really opens up the email messages you are parsing, if you know what
+	  you are doing, you can fiddle with every last bit of your email directly.
+
+	  http://github.com/mikel/mail
+
+
+config BR2_PKGSRC_PACKAGE_MAIL_RUBY_MAIL
+	bool "ruby19-mail-2.3.0"
 	help
 	  Mail provides a nice Ruby DSL for making, sending and reading emails
 
@@ -4699,7 +4761,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_RUBY_MAILFACTORY
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_RUBY_MIME_TYPES
-	bool "ruby19-mime-types-1.16"
+	bool "ruby19-mime-types-1.17.2"
 	help
 	  Definition of MIME types for Ruby
 
@@ -4710,20 +4772,8 @@ config BR2_PKGSRC_PACKAGE_MAIL_RUBY_MIME_TYPES
 	  http://mime-types.rubyforge.org/
 
 
-config BR2_PKGSRC_PACKAGE_MAIL_QUICKML
-	bool "ruby19-quickml-0.7nb1"
-	help
-	  Easy-to-use mailing list system
-
-	  Quickml server provides very-easy-to-use mailing list service.
-	  It was too open in this age, some limitation is provided in
-	  this package. The original code is written by Satoru Takabayashi.
-
-	  http://0xcc.net/quickml/
-
-
 config BR2_PKGSRC_PACKAGE_MAIL_RUBY_TMAIL
-	bool "ruby19-tmail-1.2.7.1nb1"
+	bool "ruby19-tmail-1.2.7.1nb2"
 	help
 	  Mail manipulating library for Ruby including MIME multipart support
 
@@ -4994,7 +5044,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_SPAMD
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_SPAMDYKE
-	bool "spamdyke-4.2.0"
+	bool "spamdyke-4.2.1"
 	help
 	  Monitors and intercept incoming SMTP connections to qmail
 
@@ -5132,7 +5182,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_SSMTP
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_SYLPHEED
-	bool "sylpheed-3.1.2"
+	bool "sylpheed-3.1.2nb1"
 	help
 	  Gtk based e-mail and netnews client
 
@@ -5220,7 +5270,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_TEAPOP
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_THUNDERBIRD
-	bool "thunderbird-6.0.1"
+	bool "thunderbird-8.0nb1"
 	help
 	  Organize, secure and customize your mail
 
@@ -5232,7 +5282,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_THUNDERBIRD
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_THUNDERBIRD_L10N
-	bool "thunderbird-l10n-6.0"
+	bool "thunderbird-l10n-8.0"
 	help
 	  Language packs for mail/thunderbird
 
@@ -5323,7 +5373,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_TURBA
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_UP_IMAPPROXY
-	bool "up-imapproxy-1.2.5nb2"
+	bool "up-imapproxy-1.2.5nb3"
 	help
 	  Connection caching IMAP proxy server
 
@@ -5381,7 +5431,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_WL
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_WL_SNAPSHOT
-	bool "wl-2.15.6.20090322nb1"
+	bool "wl-2.15.9.20110420"
 	help
 	  Mail/news management system with IMAP4rev1 support for Emacs
 
@@ -5393,7 +5443,7 @@ config BR2_PKGSRC_PACKAGE_MAIL_WL_SNAPSHOT
 
 
 config BR2_PKGSRC_PACKAGE_MAIL_WMBIFF
-	bool "wmbiff-0.4.26nb12"
+	bool "wmbiff-0.4.26nb13"
 	help
 	  xbuffy like "mail-checker" for WindowMaker
 

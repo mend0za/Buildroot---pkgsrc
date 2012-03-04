@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_DEVEL_ARX
-	bool "ArX-2.2.4nb15"
+	bool "ArX-2.2.4nb16"
 	help
 	  Distributed revision control system
 
@@ -71,7 +71,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GCONF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GCONF_UI
-	bool "GConf-ui-2.32.3"
+	bool "GConf-ui-2.32.3nb1"
 	help
 	  Configuration database system used by GNOME
 
@@ -253,7 +253,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RENAISSANCE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SDL
-	bool "SDL-1.2.14nb3"
+	bool "SDL-1.2.14nb6"
 	help
 	  Simple DirectMedia Layer, a cross-platform multimedia library
 
@@ -286,7 +286,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SDL_INTRO_KO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SDL_PANGO
-	bool "SDL_Pango-0.1.2nb4"
+	bool "SDL_Pango-0.1.2nb5"
 	help
 	  Connects the text rendering engine of GNOME 2.x. with SDL
 
@@ -315,7 +315,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SDL_GFX
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SDL_TTF
-	bool "SDL_ttf-2.0.10"
+	bool "SDL_ttf-2.0.10nb1"
 	help
 	  Use TrueType fonts in your SDL applications
 
@@ -343,8 +343,22 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SDLMM
 	  http://sdlmm.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_SOPE
+	bool "SOPE-2.0.0b3"
+	help
+	  Framework for writing clever web servers driven by objects
+
+	  SOPE stands for "SKYRiX Object Publishing Environment" and is a
+	  framework for mapping dynamic objects into the HTTP infrastructure,
+	  that is, the web. A lot of ideas in SOPE are actually inspired by
+	  ZOPE (the Z Object Publishing Environment), but the implementation
+	  and details are quite different.
+
+	  http://sope.opengroupware.org/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_ACCERCISER
-	bool "accerciser-1.6.1nb8"
+	bool "accerciser-1.6.1nb9"
 	help
 	  Interactive Python accessibility explorer for the GNOME desktop
 
@@ -493,7 +507,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ALLEGRO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_ANJUTA
-	bool "anjuta-2.24.2nb15"
+	bool "anjuta-2.24.2nb16"
 	help
 	  Gnome based IDE for C and C++
 
@@ -607,7 +621,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_APR0
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_APR
-	bool "apr-1.4.5"
+	bool "apr-1.4.5nb3"
 	help
 	  Apache Portable Runtime
 
@@ -619,7 +633,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_APR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_APR_UTIL
-	bool "apr-util-1.3.12nb1"
+	bool "apr-util-1.3.12nb2"
 	help
 	  Apache Portable Runtime utilities
 
@@ -752,7 +766,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ASTYLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_AT_SPI
-	bool "at-spi-1.32.0nb2"
+	bool "at-spi-1.32.0nb3"
 	help
 	  Assistive Technology Service Provider Interface
 
@@ -816,7 +830,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ATKMM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_AUTOCONF
-	bool "autoconf-2.68"
+	bool "autoconf-2.68nb1"
 	help
 	  Generates automatic source code configuration scripts
 
@@ -908,7 +922,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_AUTOMAKE14
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_AUTOMOC4
-	bool "automoc4-0.9.88nb7"
+	bool "automoc4-0.9.88nb8"
 	help
 	  Automatic moc for Qt 4 packages
 
@@ -1055,7 +1069,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BLAME
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BLIB
-	bool "blib-1.0.2nb12"
+	bool "blib-1.0.2nb13"
 	help
 	  Blinkenlights library
 
@@ -1083,7 +1097,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BMAKE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BOA_CONSTRUCTOR
-	bool "boa-constructor-0.6.1nb7"
+	bool "boa-constructor-0.6.1nb8"
 	help
 	  Python IDE
 
@@ -1128,7 +1142,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BOEHM_GC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_BUILD
-	bool "boost-build-1.46.1"
+	bool "boost-build-1.47.0"
 	help
 	  Free, peer-reviewed portable C++ source libraries (Boost.Build framework)
 
@@ -1142,7 +1156,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_BUILD
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_DOCS
-	bool "boost-docs-1.46.1"
+	bool "boost-docs-1.47.0"
 	help
 	  Free, peer-reviewed portable C++ source libraries (documentation)
 
@@ -1155,7 +1169,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_HEADERS
-	bool "boost-headers-1.46.1nb1"
+	bool "boost-headers-1.47.0nb1"
 	help
 	  Free, peer-reviewed portable C++ source libraries (build-time headers)
 
@@ -1170,7 +1184,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_HEADERS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_JAM
-	bool "boost-jam-1.46.1"
+	bool "boost-jam-1.47.0"
 	help
 	  Free, peer-reviewed portable C++ source libraries (Boost.Jam utility)
 
@@ -1184,7 +1198,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_JAM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_LIBS
-	bool "boost-libs-1.46.1"
+	bool "boost-libs-1.47.0"
 	help
 	  Free, peer-reviewed portable C++ source libraries (binary libraries)
 
@@ -1199,7 +1213,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_LIBS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_PYTHON
-	bool "boost-python-1.46.1"
+	bool "boost-python-1.47.0"
 	help
 	  Free, peer-reviewed portable C++ source libraries (Boost.Python binary library)
 
@@ -1213,7 +1227,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BOOST_PYTHON
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BOUML
-	bool "bouml-4.16.4nb3"
+	bool "bouml-4.22.2"
 	help
 	  UML modeling tool, generates C++, JAVA, and IDL
 
@@ -1335,7 +1349,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BYACC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BZR
-	bool "bzr-2.1.1"
+	bool "bzr-2.4.2"
 	help
 	  Bazaar open source distributed version control system
 
@@ -1360,7 +1374,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BZR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BZR_EXPLORER
-	bool "bzr-explorer-0.9.0nb1"
+	bool "bzr-explorer-1.2.1nb1"
 	help
 	  GUI frontend to bzr
 
@@ -1373,7 +1387,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BZR_EXPLORER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BZR_GTK
-	bool "bzr-gtk-0.98.0"
+	bool "bzr-gtk-0.100.0"
 	help
 	  Various GTK+ frontends to Bazaar commands
 
@@ -1386,7 +1400,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BZR_GTK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BZR_SVN
-	bool "bzr-svn-1.0.2"
+	bool "bzr-svn-1.1.1"
 	help
 	  Foreign Subversion repository support for Bazaar
 
@@ -1399,7 +1413,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_BZR_SVN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_BZRTOOLS
-	bool "bzrtools-2.1.0"
+	bool "bzrtools-2.4.1"
 	help
 	  Collection of plugins for Bazaar
 
@@ -1457,7 +1471,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CBROWSER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CCACHE
-	bool "ccache-3.1.4"
+	bool "ccache-3.1.4nb1"
 	help
 	  Cache for C/C++ compilers
 
@@ -1498,7 +1512,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CDK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CFITSIO
-	bool "cfitsio-3.280"
+	bool "cfitsio-3.290"
 	help
 	  
 
@@ -1663,7 +1677,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CLISP_ZLIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CMAKE
-	bool "cmake-2.8.5nb1"
+	bool "cmake-2.8.6nb1"
 	help
 	  Cross platform make
 
@@ -1686,6 +1700,17 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CMAKE
 	  changed by the user prior to the generation of the native build files.
 
 	  http://www.cmake.org/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_CMAKE_FEDORA
+	bool "cmake-fedora-0.8.1"
+	help
+	  Set of cmake modules for fedora developers
+
+	  cmake-fedora consists a set of cmake modules that provideds helper macros and
+	  targets for linux, especially fedora developers.
+
+	  https://fedorahosted.org/cmake-fedora/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CMAKE_MODE
@@ -1729,7 +1754,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CMPH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_COCCINELLE
-	bool "coccinelle-0.2.3"
+	bool "coccinelle-0.2.5nb1"
 	help
 	  Tool for writing and applying semantic patches
 
@@ -1747,7 +1772,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_COCCINELLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_COCONUT
-	bool "coconut-0.3.0nb22"
+	bool "coconut-0.3.0nb23"
 	help
 	  Objective-C library for Unix-like systems
 
@@ -1818,7 +1843,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_COMPIZ_BCOP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_COMPIZCONFIG_BACKEND_GCONF
-	bool "compizconfig-backend-gconf-0.8.4nb5"
+	bool "compizconfig-backend-gconf-0.8.4nb6"
 	help
 	  
 
@@ -1867,7 +1892,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_COOK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CPPCHECK
-	bool "cppcheck-1.48"
+	bool "cppcheck-1.48nb1"
 	help
 	  Tool for static C/C++ code analysis
 
@@ -2017,7 +2042,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CUT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CUTTER
-	bool "cutter-1.1.8"
+	bool "cutter-1.2.0"
 	help
 	  Unit Testing Framework for C and C++
 
@@ -2119,7 +2144,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CVSCLONE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CVSD
-	bool "cvsd-1.0.16"
+	bool "cvsd-1.0.22"
 	help
 	  Run CVS pserver in a chroot-ed environment
 
@@ -2157,7 +2182,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CVSDIFF2PATCH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CVSGRAPH
-	bool "cvsgraph-1.6.1nb4"
+	bool "cvsgraph-1.6.1nb5"
 	help
 	  Graphically represents CVS/RCS branches and file revisions
 
@@ -2271,7 +2296,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_CVSYNC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_CXREF
-	bool "cxref-1.6b"
+	bool "cxref-1.6d"
 	help
 	  C Cross Referencing & Documenting tool
 
@@ -2301,7 +2326,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_DARCS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_DARTS
-	bool "darts-0.32"
+	bool "darts-0.32nb1"
 	help
 	  C++ template library that implements Double-Array
 
@@ -2333,7 +2358,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_DCONF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_DCONF_EDITOR
-	bool "dconf-editor-0.5.1nb1"
+	bool "dconf-editor-0.5.1nb2"
 	help
 	  Backend for gsettings
 
@@ -2345,7 +2370,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_DCONF_EDITOR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_DDD
-	bool "ddd-3.3.12"
+	bool "ddd-3.3.12nb1"
 	help
 	  Data Display Debugger -- graphical front-end for GDB/DBX/XDB
 
@@ -2437,7 +2462,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_DEVIL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_DEVHELP
-	bool "devhelp-2.32.0nb5"
+	bool "devhelp-2.32.0nb6"
 	help
 	  Documentation viewer based on GNOME2
 
@@ -2504,7 +2529,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_DIA2CODE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_DIFFUSE
-	bool "diffuse-0.4.5"
+	bool "diffuse-0.4.6"
 	help
 	  Graphical tool for merging and comparing text files
 
@@ -2579,7 +2604,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_DISTCC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_DISTCCMON_GNOME
-	bool "distcc-gnome-3.1nb9"
+	bool "distcc-gnome-3.1nb10"
 	help
 	  Graphical monitor for distcc, the distributed C/C++ compiler
 
@@ -2600,7 +2625,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_DISTCCMON_GNOME
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_DISTCCMON_GTK
-	bool "distcc-gtk-3.1nb6"
+	bool "distcc-gtk-3.1nb7"
 	help
 	  Graphical monitor for distcc, the distributed C/C++ compiler
 
@@ -2737,7 +2762,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_DOTCONF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_DOXYGEN
-	bool "doxygen-1.6.3nb4"
+	bool "doxygen-1.6.3nb7"
 	help
 	  Documentation system for C++, Java, IDL and C
 
@@ -2819,6 +2844,20 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ECLIPSE
 	  http://www.eclipse.org/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_ECORE
+	bool "ecore-1.1.0"
+	help
+	  Event Abstraction and Modular Convenience Library
+
+	  Ecore is the core event abstraction layer and X abstraction layer
+	  that makes doing selections, Xdnd, general X stuff, and event loops,
+	  timeouts and idle handlers fast, optimized, and convenient.
+	  It's a separate library so anyone can make use of the work put into Ecore
+	  to make this job easy for applications.
+
+	  http://enlightenment.org/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_EDCOMMON
 	bool "edcommon-32nb6"
 	help
@@ -2841,7 +2880,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_EDCOMMON
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_EET
-	bool "eet-1.2.3nb2"
+	bool "eet-1.5.0nb1"
 	help
 	  Library for speedy storage, retrieval, and compression
 
@@ -2869,7 +2908,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_EET
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_EINA
-	bool "eina-0.9.9.063"
+	bool "eina-1.1.0"
 	help
 	  Data types library
 
@@ -2921,6 +2960,25 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ELFSH
 	  http://elfsh.segfault.net/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_ELFTOOLCHAIN
+	bool "elftoolchain-0.5.1nb1"
+	help
+	  
+
+	  A BSD-licensed implementation of compilation tools (nm, ar, as, ld,
+	  etc.) for the ELF object format.
+	  
+	  This release contains BSD-licensed implementations of the "libdwarf"
+	  and "libelf" libraries, and of the "addr2line", "ar", "brandelf",
+	  "c++filt", "elfcopy", "elfdump", "findtextrel", "mcs", "nm", "ranlib",
+	  "readelf", "size", "strings" and "strip" program development
+	  utilities. The release also contains API and utility reference
+	  documentation (300+ manual entries in all), and contains test suites
+	  for some of these released utilities and libraries.
+
+	  http://elftoolchain.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_ELIB
 	bool "elib-1.0nb6"
 	help
@@ -2970,7 +3028,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_EMACS20_ELIB
 	  This package uses emacs from the version 20 series.  In order to use
 	  it with any other version, install devel/elib.
 
-	  http://www.mulle-kybernetik.com/software/EDFrameworks/
+	  http://sourceforge.net/projects/ilisp/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_EPYDOC
@@ -2988,7 +3046,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_EPYDOC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_EQUEUE
-	bool "equeue-2.1.3"
+	bool "equeue-2.1.3nb1"
 	help
 	  
 
@@ -3013,7 +3071,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ERIC3
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_ERIC4
-	bool "eric4-4.4.15"
+	bool "eric4-4.4.15nb1"
 	help
 	  Python - IDE
 
@@ -3041,7 +3099,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ERROR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_ETHOS
-	bool "ethos-0.2.2nb4"
+	bool "ethos-0.2.2nb5"
 	help
 	  Plugin interface library
 
@@ -3094,7 +3152,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_EXCTAGS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_EXEMPI
-	bool "exempi-2.1.1"
+	bool "exempi-2.1.1nb2"
 	help
 	  XMP library
 
@@ -3359,7 +3417,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_FOSSIL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_FRAMA_C
-	bool "frama-c-20090901nb7"
+	bool "frama-c-20111001"
 	help
 	  Extensible platform dedicated to source-code analysis of C software
 
@@ -3372,7 +3430,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_FRAMA_C
 	  Thanks to this approach, Frama-C provides sophisticated tools, such as a slicer
 	  and dependency analysis.
 
-	  http://frama-c.cea.fr/
+	  http://frama-c.com/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_FROMCVS
@@ -3409,7 +3467,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_FTNCHEK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_G_WRAP
-	bool "g-wrap-1.9.12nb4"
+	bool "g-wrap-1.9.14"
 	help
 	  Tool for generating guile wrappers for C code
 
@@ -3435,7 +3493,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_G_WRAP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GCONFMM
-	bool "gconfmm-2.28.2nb2"
+	bool "gconfmm-2.28.2nb3"
 	help
 	  C++ bindings for gconf
 
@@ -3458,7 +3516,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GCVS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GDB
-	bool "gdb-5.3nb6"
+	bool "gdb-5.3nb7"
 	help
 	  Symbolic debugger for multiple language frontends
 
@@ -3506,7 +3564,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GDBADA
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GDL
-	bool "gdl-2.26.2nb8"
+	bool "gdl-2.26.2nb9"
 	help
 	  Gnome Devtool Libraries
 
@@ -3527,7 +3585,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GDL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GEANY
-	bool "geany-0.20"
+	bool "geany-0.20nb1"
 	help
 	  
 
@@ -3575,7 +3633,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GENTLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GETTEXT
-	bool "gettext-0.18.1.1"
+	bool "gettext-0.18.1.1nb1"
 	help
 	  Tools for providing messages in different languages
 
@@ -3612,7 +3670,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GETTEXT_LIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GETTEXT_M4
-	bool "gettext-m4-0.18.1.1"
+	bool "gettext-m4-0.18.1.1nb1"
 	help
 	  Autoconf/automake m4 files for GNU NLS library
 
@@ -3624,7 +3682,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GETTEXT_M4
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GETTEXT_TOOLS
-	bool "gettext-tools-0.18.1.1nb2"
+	bool "gettext-tools-0.18.1.1nb3"
 	help
 	  Tools for providing messages in different languages
 
@@ -3654,7 +3712,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GFLIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GIBLIB
-	bool "giblib-1.2.4nb9"
+	bool "giblib-1.2.4nb10"
 	help
 	  Programming utility library
 
@@ -3679,8 +3737,35 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GINDENT
 	  http://www.gnu.org/software/indent/indent.html
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_GITOLITE
+	bool "gitolite-2.2"
+	help
+	  Gitolite allows you to host Git repositories easily and securely
+
+	  Gitolite is an SSH-based gatekeeper providing access control for
+	  a server that hosts many git repositories. Without gitolite, each
+	  developer needing to push to one of the repositories hosted would
+	  need a user account on that server; gitolite lets you do that just
+	  using SSH public keys tied to a single, common, user that hosts
+	  all the repositories.
+	  
+	  Gitolite can restrict who can read (clone/fetch) from or write
+	  (push) to a repository, and who can push to what branch or tag -
+	  an important issue in corporate environments. Other features include:
+	  
+	  * access control by branch-name or by modified file/directory;
+	  * per-developer "personal namespace" prefixes;
+	  * simple but powerful configuration file syntax (with validation);
+	  * config files (and authority for maintaining them) can be split;
+	  * easy integration with gitweb;
+	  * comprehensive logging;
+	  * easy migration from gitosis.
+
+	  https://github.com/sitaramc/gitolite/wiki
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_GLADE
-	bool "glade-2.12.2nb7"
+	bool "glade-2.12.2nb8"
 	help
 	  User interface builder for the GTK2+ toolkit
 
@@ -3693,7 +3778,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GLADE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GLADE3
-	bool "glade3-3.4.5nb8"
+	bool "glade3-3.4.5nb9"
 	help
 	  User interface builder for the GTK2+ toolkit
 
@@ -3724,7 +3809,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GLIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GLIB2
-	bool "glib2-2.28.8"
+	bool "glib2-2.28.8nb3"
 	help
 	  Some useful routines for C programming (glib2)
 
@@ -3773,7 +3858,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GLOBAL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GMAKE
-	bool "gmake-3.82nb2"
+	bool "gmake-3.82nb3"
 	help
 	  GNU version of 'make' utility
 
@@ -3810,7 +3895,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GMOCK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GMP
-	bool "gmp-5.0.2"
+	bool "gmp-5.0.2nb1"
 	help
 	  Library for arbitrary precision arithmetic
 
@@ -3832,7 +3917,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GMP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GNATPYTHON
-	bool "gnatpython-20101207"
+	bool "gnatpython-20110912"
 	help
 	  Python package used in Ada testsuites
 
@@ -3844,7 +3929,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GNATPYTHON
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GNOME_BUILD
-	bool "gnome-build-2.24.1nb9"
+	bool "gnome-build-2.24.1nb10"
 	help
 	  GNOME build tools
 
@@ -4027,7 +4112,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GPRBUILD_AUX
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GPS
-	bool "gps-5.0.0nb2"
+	bool "gps-5.0.1nb1"
 	help
 	  GNAT Programming Studio - IDE for Ada and many other languages
 
@@ -4079,7 +4164,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GSOAP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GST_PLUGINS0.10_PANGO
-	bool "gst-plugins0.10-pango-0.10.35"
+	bool "gst-plugins0.10-pango-0.10.35nb1"
 	help
 	  Open source multimedia framework - pango plugin
 
@@ -4141,7 +4226,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_GUILE_FCGI
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_GUILE_GNOME
-	bool "guile-gnome-platform-2.16.1nb11"
+	bool "guile-gnome-platform-2.16.1nb12"
 	help
 	  Library to access gobject/glib/gtk and gnome from guile
 
@@ -4277,7 +4362,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_HDF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_HDF5
-	bool "hdf5-1.6.10nb1"
+	bool "hdf5-1.8.7"
 	help
 	  
 
@@ -4288,6 +4373,24 @@ config BR2_PKGSRC_PACKAGE_DEVEL_HDF5
 	  to evolve in their use of HDF5. The HDF5 Technology suite includes
 	  tools and applications for managing, manipulating, viewing, and
 	  analyzing data in the HDF5 format.
+
+	  http://www.hdfgroup.org/HDF5/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_HDF5_C__
+	bool "hdf5-c++-1.8.7"
+	help
+	  
+
+	  HDF5 is a data model, library, and file format for storing and
+	  managing data. It supports an unlimited variety of datatypes, and
+	  is designed for flexible and efficient I/O and for high volume and
+	  complex data. HDF5 is portable and is extensible, allowing applications
+	  to evolve in their use of HDF5. The HDF5 Technology suite includes
+	  tools and applications for managing, manipulating, viewing, and
+	  analyzing data in the HDF5 format.
+	  
+	  This package provides C++ wrappers for the HDF5 C library.
 
 	  http://www.hdfgroup.org/HDF5/
 
@@ -4547,7 +4650,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_JAM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_JAVA_SUBVERSION
-	bool "java-subversion-1.6.17nb1"
+	bool "java-subversion-1.6.17nb3"
 	help
 	  Java bindings for Subversion
 
@@ -4595,6 +4698,35 @@ config BR2_PKGSRC_PACKAGE_DEVEL_JAVADEPS
 	  http://www.vet.com.au/java/javadeps/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_JENKINS
+	bool "jenkins-1.424.1"
+	help
+	  
+
+	  Jenkins is an award-winning application that monitors executions
+	  of repeated jobs, such as building a software project or jobs run
+	  by cron. Among those things, current Jenkins focuses on the following
+	  two jobs:
+	  
+	  1. Building/testing software projects continuously, just like
+	  CruiseControl or DamageControl. In a nutshell, Jenkins provides an
+	  easy-to-use so-called continuous integration system, making it
+	  easier for developers to integrate changes to the project, and
+	  making it easier for users to obtain a fresh build. The automated,
+	  continuous build increases the productivity.
+	  
+	  2. Monitoring executions of externally-run jobs, such as cron jobs
+	  and procmail jobs, even those that are run on a remote machine.
+	  For example, with cron, all you receive is regular e-mails that
+	  capture the output, and it is up to you to look at them diligently
+	  and notice when it broke. Jenkins keeps those outputs and makes it
+	  easy for you to notice when something is wrong.
+	  
+	  This is Long-Term Support Release.
+
+	  http://jenkins-ci.org/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_JFLEX
 	bool "jflex-1.4.1"
 	help
@@ -4631,7 +4763,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_JS2_MODE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_KDBG
-	bool "kdbg-2.2.2nb1"
+	bool "kdbg-2.2.2nb2"
 	help
 	  Graphical User Interface around gdb using KDE
 
@@ -4664,7 +4796,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_KDBG
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_KDESDK3
-	bool "kdesdk-3.5.10nb16"
+	bool "kdesdk-3.5.10nb19"
 	help
 	  Support applications and tools used by KDE developers
 
@@ -4676,7 +4808,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_KDESDK3
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_KDESDK4
-	bool "kdesdk4-4.5.5nb4"
+	bool "kdesdk4-4.5.5nb8"
 	help
 	  Support applications and tools used by KDE developers
 
@@ -4721,7 +4853,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_KDEVELOP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_KDEVELOP_BASE
-	bool "kdevelop-base-3.5.5nb12"
+	bool "kdevelop-base-3.5.5nb16"
 	help
 	  Base modules for IDE for Unix/X11/KDE
 
@@ -4738,7 +4870,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_KDEVELOP_BASE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_KDEVELOP4
-	bool "kdevelop4-4.1.1nb2"
+	bool "kdevelop4-4.1.1nb5"
 	help
 	  Integrated Development Environment for Unix/X11/KDE
 
@@ -4755,7 +4887,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_KDEVELOP4
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_KDEVPLATFORM
-	bool "kdevplatform-1.1.1nb2"
+	bool "kdevplatform-1.1.1nb5"
 	help
 	  KDE development platform, used by KDevelop 4
 
@@ -4765,7 +4897,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_KDEVPLATFORM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_KDIFF3
-	bool "kdiff3-0.9.91nb10"
+	bool "kdiff3-0.9.91nb11"
 	help
 	  File and directory diff and merge tool
 
@@ -4793,7 +4925,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_KO_PO_CHECK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_KSCOPE
-	bool "kscope-1.6.0nb10"
+	bool "kscope-1.6.0nb11"
 	help
 	  KDE frontend for cscope
 
@@ -4908,6 +5040,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LEMON
 	  http://www.hwaci.com/sw/lemon/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_LETTUCE
+	bool "lettuce-0.1.33"
+	help
+	  Behaviour-driven development test tool
+
+	  Lettuce is a simple behaviour-driven development (BDD) tool based
+	  on Cucumber. The features of the system (to be tested) are defined
+	  in a natural language with scenarios describing the features. Steps
+	  are written in python.
+
+	  http://lettuce.it/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBFOUNDATION
 	bool "libFoundation-1.1.7.168nb1"
 	help
@@ -4997,7 +5142,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBARGPARSE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBAST
-	bool "libast-0.7nb4"
+	bool "libast-0.7nb5"
 	help
 	  The Library of Assorted Spiffy Things
 
@@ -5012,7 +5157,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBAST
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBATOMIC_OPS
-	bool "libatomic_ops-20081024nb3"
+	bool "libatomic_ops-20110807"
 	help
 	  Multi-platform library of atomic operations by Hans Boehm
 
@@ -5099,7 +5244,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBBONOBO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBBONOBOUI
-	bool "libbonoboui-2.24.4nb4"
+	bool "libbonoboui-2.24.4nb5"
 	help
 	  
 
@@ -5133,7 +5278,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBCFG_
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBCOMPIZCONFIG
-	bool "libcompizconfig-0.8.4nb5"
+	bool "libcompizconfig-0.8.4nb6"
 	help
 	  Configuration backend for compiz
 
@@ -5209,7 +5354,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBDAEMON
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBDATRIE
-	bool "libdatrie-0.2.4"
+	bool "libdatrie-0.2.5"
 	help
 	  Implementation of Double-Array Trie
 
@@ -5225,7 +5370,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBDATRIE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBDBUSMENU_QT
-	bool "libdbusmenu-qt-0.8.2"
+	bool "libdbusmenu-qt-0.8.2nb1"
 	help
 	  dbusmenu library for Qt
 
@@ -5270,7 +5415,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBDOCKAPP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBEBML
-	bool "libebml-1.2.0"
+	bool "libebml-1.2.2"
 	help
 	  Extensible Binary Meta Language support library
 
@@ -5338,7 +5483,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBEV
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBEVENT
-	bool "libevent-2.0.10nb1"
+	bool "libevent-2.0.14"
 	help
 	  Asynchronous event notification library
 
@@ -5357,11 +5502,11 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBEVENT
 	  provide this new functionality without having to redesign the server
 	  applications.
 
-	  http://monkey.org/~provos/libevent/
+	  http://libevent.org/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBEXTRACTOR
-	bool "libextractor-0.5.20cnb8"
+	bool "libextractor-0.5.20cnb9"
 	help
 	  Metadata extractor for various file data types
 
@@ -5448,7 +5593,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBFIRM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBFTDI
-	bool "libftdi-0.18"
+	bool "libftdi-0.19"
 	help
 	  userland driver library for FTDI USB chips
 
@@ -5464,7 +5609,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBFTDI
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGAIL_GNOME
-	bool "libgail-gnome-1.20.1nb9"
+	bool "libgail-gnome-1.20.1nb10"
 	help
 	  GNOME Accessibility Implementation Library
 
@@ -5494,7 +5639,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGCROOTS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGEE
-	bool "libgee-0.6.1nb1"
+	bool "libgee-0.6.3"
 	help
 	  Library providing GObject-based interfaces and classes
 
@@ -5532,7 +5677,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGETOPT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGLADE
-	bool "libglade-2.6.4nb6"
+	bool "libglade-2.6.4nb7"
 	help
 	  Runtime interpreter for GLADE GUI files
 
@@ -5550,7 +5695,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGLADE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGLADEMM
-	bool "libglademm-2.6.7nb6"
+	bool "libglademm-2.6.7nb7"
 	help
 	  C++ bindings for libglade
 
@@ -5563,7 +5708,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGLADEMM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGNOME
-	bool "libgnome-2.32.1nb2"
+	bool "libgnome-2.32.1nb3"
 	help
 	  
 
@@ -5583,7 +5728,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGNOME
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGNOMEMM
-	bool "libgnomemm-2.30.0nb2"
+	bool "libgnomemm-2.30.0nb3"
 	help
 	  C++ bindings for libgnome
 
@@ -5596,7 +5741,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGNOMEMM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGNOMEUI
-	bool "libgnomeui-2.24.5nb2"
+	bool "libgnomeui-2.24.5nb3"
 	help
 	  Core GNOME2 graphical libraries
 
@@ -5610,7 +5755,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGNOMEUI
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGNOMEUIMM
-	bool "libgnomeuimm-2.28.0nb8"
+	bool "libgnomeuimm-2.28.0nb9"
 	help
 	  C++ bindings for libgnomeui
 
@@ -5623,7 +5768,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGNOMEUIMM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGPHOTO2
-	bool "libgphoto2-2.4.7nb4"
+	bool "libgphoto2-2.4.11"
 	help
 	  Digital camera access library
 
@@ -5654,7 +5799,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGSF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGSF_GNOME
-	bool "libgsf-gnome-1.14.21nb1"
+	bool "libgsf-gnome-1.14.21nb2"
 	help
 	  
 
@@ -5668,7 +5813,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBGSF_GNOME
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBGWEATHER
-	bool "libgweather-2.30.3nb4"
+	bool "libgweather-2.30.3nb5"
 	help
 	  Weather information access library
 
@@ -5719,7 +5864,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBIBERTY
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBIDN
-	bool "libidn-1.22"
+	bool "libidn-1.23"
 	help
 	  Internationalized Domain Names command line tool
 
@@ -5810,7 +5955,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBLTDL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBMAA
-	bool "libmaa-1.3.0"
+	bool "libmaa-1.3.1"
 	help
 	  General purpose data structures and functions
 
@@ -5828,7 +5973,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBMAA
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBMATCHBOX
-	bool "libmatchbox-1.9nb2"
+	bool "libmatchbox-1.9nb3"
 	help
 	  Library for matchbox window manager for computers with small displays
 
@@ -5872,6 +6017,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBMEMCACHE
 	  alleviating database load.
 
 	  http://people.freebsd.org/~seanc/libmemcache/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_LIBMEMCACHED
+	bool "libmemcached-0.53"
+	help
+	  C/C++ client library and tools for the memcached server
+
+	  libMemcached is an open source C/C++ client library and tools for
+	  the memcached server (http://danga.com/memcached). It has been
+	  designed to be light on memory usage, thread safe, and provide full
+	  access to server side methods.
+
+	  http://libmemcached.org
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBMEMMGR
@@ -6004,7 +6162,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBNET11
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBNJB
-	bool "libnjb-2.2.6"
+	bool "libnjb-2.2.6nb2"
 	help
 	  Communicating with some Creative and Dell audio players
 
@@ -6079,7 +6237,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBOOP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBOSIP
-	bool "libosip2-3.5.0"
+	bool "libosip2-3.6.0"
 	help
 	  Implementation of SIP
 
@@ -6109,6 +6267,39 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBOWFAT
 	  Reimplementation of libdjb under the GNU GPL.
 
 	  http://www.fefe.de/libowfat/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_LIBPGM
+	bool "libpgm-5.1.118"
+	help
+	  PGM reliable multicast library implementing RFC 3208
+
+	  OpenPGM is an open source implementation of the Pragmatic General
+	  Multicast (PGM) specification in RFC 3208 available at www.ietf.org.
+	  PGM is a reliable and scalable multicast protocol that enables
+	  receivers to detect loss, request retransmission of lost data, or
+	  notify an application of unrecoverable loss.  PGM is a
+	  receiver-reliable protocol, which means the receiver is responsible
+	  for ensuring all data is received, absolving the sender of reception
+	  responsibility.  PGM runs over a best effort datagram service,
+	  currently OpenPGM uses IP multicast but could be implemented above
+	  switched fabrics such as InfiniBand.
+	  
+	  PGM is appropriate for applications that require duplicate-free
+	  multicast data delivery from multiple sources to multiple receivers.
+	  PGM does not support acknowledged delivery, nor does it guarantee
+	  ordering of packets from multiple senders.
+	  
+	  PGM is primarly used on internal networks to help integrate disparate
+	  systems through a common communication platform.  A lack of IPv4
+	  multicast-enabled infrastructure leads to limited capability for
+	  internet applications, IPv6 promotes multicast to be a part of the
+	  core functionality of IP but may still be disabled on core routers.
+	  Support of Source-Specific Multicast (SSM) allows for improved WAN
+	  deployment by allowing end-point router filtering of unwanted source
+	  traffic.
+
+	  http://code.google.com/p/openpgm/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBPORTLIB
@@ -6200,17 +6391,8 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBRXSPENCER
 	  http://arglist.com/regex/
 
 
-config BR2_PKGSRC_PACKAGE_DEVEL_LIBSCSI
-	bool "libscsi-1.6nb1"
-	help
-	  FreeBSD SCSI user library
-
-
-	  
-
-
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBSEXY
-	bool "libsexy-0.1.11nb6"
+	bool "libsexy-0.1.11nb7"
 	help
 	  Collection of GTK+ widgets that beautify standard widgets
 
@@ -6222,7 +6404,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBSEXY
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBSEXYMM
-	bool "libsexymm-0.1.9nb7"
+	bool "libsexymm-0.1.9nb8"
 	help
 	  C++ bindings for libsexy
 
@@ -6315,7 +6497,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBSLANG
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBSLANG2
-	bool "libslang2-2.2.2nb2"
+	bool "libslang2-2.2.4"
 	help
 	  Routines for rapid alpha-numeric terminal applications development
 
@@ -6496,7 +6678,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBTECLA
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBTHAI
-	bool "libthai-0.1.15"
+	bool "libthai-0.1.16"
 	help
 	  Thai language support routines
 
@@ -6509,7 +6691,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBTHAI
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBTHRIFT
-	bool "libthrift-0.7.0"
+	bool "libthrift-0.7.0nb1"
 	help
 	  Cross-language data serialization library
 
@@ -6625,7 +6807,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBUXRE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBVIEW
-	bool "libview-0.6.4nb5"
+	bool "libview-0.6.4nb6"
 	help
 	  GTK+ widget collection
 
@@ -6668,7 +6850,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LIBWHISKER2
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LIBWNCK
-	bool "libwnck-2.30.6nb2"
+	bool "libwnck-2.30.6nb3"
 	help
 	  Library to write pagers and tasklists
 
@@ -6729,7 +6911,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LINCVS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LMDBG
-	bool "lmdbg-0.16.0nb2"
+	bool "lmdbg-0.17.0"
 	help
 	  Lightweight Modular malloc Debugger
 
@@ -6789,7 +6971,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LOG4CPLUS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_LOG4CXX
-	bool "log4cxx-0.10.0"
+	bool "log4cxx-0.10.0nb1"
 	help
 	  Logging framework for C++
 
@@ -6966,7 +7148,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_LWP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_M17N_LIB
-	bool "m17n-lib-1.6.2nb2"
+	bool "m17n-lib-1.6.2nb3"
 	help
 	  Multilingualization library
 
@@ -7080,7 +7262,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MATIO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MDDS
-	bool "mdds-0.5.3"
+	bool "mdds-0.5.3nb1"
 	help
 	  Collection of multi-dimensional data structure and indexing algorithms
 
@@ -7122,7 +7304,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MELL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MEMCACHED
-	bool "memcached-1.4.5"
+	bool "memcached-1.4.7"
 	help
 	  High-performance distributed memory object caching system
 
@@ -7134,7 +7316,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MEMCACHED
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MENHIR
-	bool "menhir-20080912nb1"
+	bool "menhir-20080912nb2"
 	help
 	  
 
@@ -7146,7 +7328,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MENHIR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MERCURIAL
-	bool "mercurial-1.9.2"
+	bool "mercurial-2.0.1"
 	help
 	  Fast, lightweight source control management system
 
@@ -7207,7 +7389,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MICO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MK_CONFIGURE
-	bool "mk-configure-0.21.1"
+	bool "mk-configure-0.21.2"
 	help
 	  Lightweight but powerful replacement for GNU autotools
 
@@ -7251,7 +7433,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MONO_ADDINS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MONO_TOOLS
-	bool "mono-tools-2.10nb2"
+	bool "mono-tools-2.10nb3"
 	help
 	  Tools for use with the Mono runtime
 
@@ -7262,7 +7444,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MONO_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MONODEVELOP
-	bool "monodevelop-2.4.2nb3"
+	bool "monodevelop-2.4.2nb4"
 	help
 	  IDE for C\
 
@@ -7273,7 +7455,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MONODEVELOP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MONODEVELOP_DATABASE
-	bool "monodevelop-database-2.4nb5"
+	bool "monodevelop-database-2.4nb6"
 	help
 	  IDE for C\
 
@@ -7287,7 +7469,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MONODEVELOP_DATABASE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MONOTONE
-	bool "monotone-1.0nb3"
+	bool "monotone-1.0nb5"
 	help
 	  Free distributed version control system
 
@@ -7326,7 +7508,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MONOTONE_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MONOTONE_VIZ
-	bool "monotone-viz-1.0.1nb9"
+	bool "monotone-viz-1.0.1nb11"
 	help
 	  Visualize monotone ancestry graphs
 
@@ -7362,7 +7544,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MPH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MR
-	bool "mr-1.04"
+	bool "mr-1.06"
 	help
 	  Treat multiple repositories as one combined repository
 
@@ -7389,7 +7571,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_MR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_MSCGEN
-	bool "mscgen-0.20"
+	bool "mscgen-0.20nb1"
 	help
 	  Tool for drawing call sequence graphs
 
@@ -7545,7 +7727,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_NETBEANS_IDE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_NETBSD_ISCSI_LIB
-	bool "netbsd-iscsi-lib-20110222"
+	bool "netbsd-iscsi-lib-20111006"
 	help
 	  NetBSD's iSCSI library (per iSCSI RFC 3720)
 
@@ -7602,6 +7784,16 @@ config BR2_PKGSRC_PACKAGE_DEVEL_NOWEB
 	  http://www.cs.tufts.edu/~nr/noweb/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_NPAPI_SDK
+	bool "npapi-sdk-0.27"
+	help
+	  Reusable, released NPAPI-SDK
+
+	  Headers for NPAPI (browser plugin API)
+
+	  http://github.com/mgorny/npapi-sdk/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_NQC
 	bool "nqc-2.3.1"
 	help
@@ -7645,7 +7837,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_NSIS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_NSPR
-	bool "nspr-4.8.9.2"
+	bool "nspr-4.8.9.3"
 	help
 	  Platform-neutral API for system level and libc like functions
 
@@ -7671,7 +7863,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_NSPR_REFERENCE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_NSS
-	bool "nss-3.12.10.0.2"
+	bool "nss-3.12.11.0"
 	help
 	  Libraries to support development of security-enabled applications
 
@@ -7685,7 +7877,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_NSS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_OCAML_FINDLIB
-	bool "ocaml-findlib-1.2.6"
+	bool "ocaml-findlib-1.2.6nb1"
 	help
 	  Library finder for OCaml
 
@@ -7708,7 +7900,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_OCAML_FINDLIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_OCAML_LWT
-	bool "ocaml-lwt-1.1.0nb1"
+	bool "ocaml-lwt-1.1.0nb2"
 	help
 	  Cooperative threading library for OCaml
 
@@ -7733,7 +7925,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ODE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_OGRE
-	bool "ogre-1.6.3nb3"
+	bool "ogre-1.6.3nb5"
 	help
 	  Object-Oriented Graphics Rendering Engine
 
@@ -7748,7 +7940,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_OGRE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_OMAKE
-	bool "omake-0.9.8.6.0rc1"
+	bool "omake-0.9.8.6.0rc1nb2"
 	help
 	  Build system designed for scalability and portability
 
@@ -7768,7 +7960,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_OMAKE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_OPAL
-	bool "opal-3.6.6nb1"
+	bool "opal-3.6.6nb2"
 	help
 	  Open Phone Abstraction Library
 
@@ -7798,7 +7990,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_OPENCM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_OPENGROK
-	bool "opengrok-0.8.1nb1"
+	bool "opengrok-0.8.1nb3"
 	help
 	  Fast and usable source code search and cross reference engine
 
@@ -7812,7 +8004,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_OPENGROK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_ORC
-	bool "orc-0.4.14"
+	bool "orc-0.4.16"
 	help
 	  Compiler for vector operations
 
@@ -8035,7 +8227,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_ANNOCPAN_PERLDOC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_ANY_MOOSE
-	bool "p5-Any-Moose-0.15"
+	bool "p5-Any-Moose-0.18"
 	help
 	  Perl extension to check dependencies on Moose or Mouse
 
@@ -8111,7 +8303,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_APP_CACHE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_APP_CMD
-	bool "p5-App-Cmd-0.311"
+	bool "p5-App-Cmd-0.312"
 	help
 	  Perl 5 module to write command line apps with less suffering
 
@@ -8413,7 +8605,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_B_HOOKS_OP_ANNOTATION
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_B_HOOKS_OP_CHECK
-	bool "p5-B-Hooks-OP-Check-0.18nb2"
+	bool "p5-B-Hooks-OP-Check-0.19"
 	help
 	  Perl 5 module to wrap OP check callbacks
 
@@ -8424,6 +8616,17 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_B_HOOKS_OP_CHECK
 	  modules to use.
 
 	  http://search.cpan.org/dist/B-Hooks-OP-Check/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_B_HOOKS_OP_CHECK_ENTERSUBFORCV
+	bool "p5-B-Hooks-OP-Check-EntersubForCV-0.08"
+	help
+	  Perl 5 module to invoke callbacks on construction of entersub OPs for certain CVs
+
+	  B::Hooks::OP::Check::EntersubForCV - Invoke callbacks on construction of
+	  entersub OPs for certain CVs
+
+	  http://search.cpan.org/dist/B-Hooks-OP-Check-EntersubForCV/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_B_HOOKS_OP_CHECK_STASHCHANGE
@@ -8470,7 +8673,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_B_KEYWORDS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_B_UTILS
-	bool "p5-B-Utils-0.15"
+	bool "p5-B-Utils-0.15nb1"
 	help
 	  Perl 5 module providing op tree manipulation helper functions
 
@@ -8828,6 +9031,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_ACCESSOR_GROUPED
 	  http://search.cpan.org/dist/Class-Accessor-Grouped/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_ACCESSOR_LITE
+	bool "p5-Class-Accessor-Lite-0.05"
+	help
+	  Minimalistic variant of Class::Accessor
+
+	  The module is a variant of "Class::Accessor". It is fast and requires
+	  less typing, has no dependencies to other modules, and does not mess up
+	  the @ISA.
+
+	  http://search.cpan.org/dist/Class-Accessor-Lite/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_ACCESSOR_NAMED
 	bool "p5-Class-Accessor-Named-0.009nb2"
 	help
@@ -9159,7 +9374,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_INSPECTOR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_LOAD
-	bool "p5-Class-Load-0.08"
+	bool "p5-Class-Load-0.12"
 	help
 	  
 
@@ -9177,6 +9392,17 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_LOAD
 	  to the package name. For that, we provide is_class_loaded 'Class::Name'.
 
 	  http://search.cpan.org/dist/Class-Load/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_LOAD_XS
+	bool "p5-Class-Load-XS-0.02"
+	help
+	  XS implementation of parts of Class::Load
+
+	  This module provides an XS implementation for portions of Class::Load Perl
+	  module.
+
+	  http://search.cpan.org/dist/Class-Load-XS/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_LOADER
@@ -9423,7 +9649,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_XPATH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLASS_XSACCESSOR
-	bool "p5-Class-XSAccessor-1.11"
+	bool "p5-Class-XSAccessor-1.12"
 	help
 	  Perl 5 module to generate fast XS accessors
 
@@ -9462,6 +9688,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLONE
 	  http://search.cpan.org/dist/Clone/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLONE_FAST
+	bool "p5-Clone-Fast-0.92"
+	help
+	  Natively copying Perl data structures
+
+	  This module is a very optimized version of Clone::More. By taking
+	  advantage of one of Clone::More's 'OPTIMIZATION_HACKS' as well as
+	  removing all the Pure Perl from the "More.pm"
+
+	  http://search.cpan.org/dist/Clone-Fast/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_CLONE_PP
 	bool "p5-Clone-PP-1.02nb3"
 	help
@@ -9496,7 +9734,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_COMPRESS_PPMD
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_COMPRESS_RAW_BZIP2
-	bool "p5-Compress-Raw-Bzip2-2.037"
+	bool "p5-Compress-Raw-Bzip2-2.040"
 	help
 	  Perl5 low-level interface to bzip2 compression library
 
@@ -9507,7 +9745,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_COMPRESS_RAW_BZIP2
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_COMPRESS_RAW_ZLIB
-	bool "p5-Compress-Raw-Zlib-2.037"
+	bool "p5-Compress-Raw-Zlib-2.040"
 	help
 	  Perl5 module interface to the zlib compression library
 
@@ -9660,6 +9898,16 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_CONFIG_TINY
 	  http://search.cpan.org/dist/Config-Tiny/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_CONST_FAST
+	bool "p5-Const-Fast-0.008"
+	help
+	  Perl5 facility for creating read-only scalars, arrays, and hashes
+
+	  Const::Fast - Facility for creating read-only scalars, arrays, and hashes
+
+	  http://search.cpan.org/dist/Const-Fast/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_CONTEXT_PRESERVE
 	bool "p5-Context-Preserve-0.01nb2"
 	help
@@ -9686,7 +9934,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_CONTEXTUAL_RETURN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_CORO
-	bool "p5-Coro-6.06"
+	bool "p5-Coro-6.07"
 	help
 	  Perl 5 module providing cooperative threads
 
@@ -9717,7 +9965,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_CURSES
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_CURSES_UI
-	bool "p5-Curses-UI-0.9607nb2"
+	bool "p5-Curses-UI-0.9609"
 	help
 	  Curses based user user interface framework
 
@@ -9867,6 +10115,22 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATA_HIERARCHY
 	  http://search.cpan.org/dist/Data-Hierarchy/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATA_INTEGER
+	bool "p5-Data-Integer-0.004"
+	help
+	  Details of the native integer data type
+
+	  This module is about the native integer numerical data type. A native
+	  integer is one of the types of datum that can appear in the numeric part
+	  of a Perl scalar. This module supplies constants describing the native
+	  integer type.
+	  
+	  There are actually two native integer representations: signed and
+	  unsigned. Both are handled by this module.
+
+	  http://search.cpan.org/dist/Data-Integer/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATA_OPTLIST
 	bool "p5-Data-OptList-0.107"
 	help
@@ -9929,7 +10193,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATA_PAGESET
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATA_PEEK
-	bool "p5-Data-Peek-0.33"
+	bool "p5-Data-Peek-0.36"
 	help
 	  Perl 5 collection of low-level debug functions
 
@@ -9950,6 +10214,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATA_SECTION
 	  other uses.
 
 	  http://search.cpan.org/dist/Data-Section/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATA_SECTION_SIMPLE
+	bool "p5-Data-Section-Simple-0.03"
+	help
+	  Extract data from __DATA__ section of the file
+
+	  This module is a simpler version of the excellent Data::Section. If
+	  you want more functionalities such as merging data sections or
+	  changing header patterns, use Data::Section instead.
+
+	  http://search.cpan.org/dist/Data-Section-Simple/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATA_SERIALIZER
@@ -10094,7 +10370,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATE_CALC_XS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DATE_MANIP
-	bool "p5-Date-Manip-6.24"
+	bool "p5-Date-Manip-6.25"
 	help
 	  Perl5 module for date calculations
 
@@ -10174,6 +10450,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_AUTOFLUSH
 	  http://search.cpan.org/dist/Devel-Autoflush/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_BEGINLIFT
+	bool "p5-Devel-BeginLift-0.001003"
+	help
+	  Declarator magic for perl
+
+	  Devel::BeginLift 'lifts' arbitrary sub calls to running at compile
+	  time - sort of a souped up version of "use constant". It does this
+	  via some slightly insane perlguts magic.
+
+	  http://search.cpan.org/dist/Devel-Declare/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_CALLER
 	bool "p5-Devel-Caller-2.05nb2"
 	help
@@ -10207,10 +10495,13 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_CALLER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_CHECKLIB
-	bool "p5-Devel-CheckLib-0.93"
+	bool "p5-Devel-CheckLib-0.95"
 	help
 	  Perl extension to check that a library is available
 
+	  This module provides a way of checking whether a particular library and
+	  its headers are available, by attempting to compile a simple program and
+	  link against it.
 
 	  http://search.cpan.org/dist/Devel-CheckLib/
 
@@ -10254,7 +10545,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_CYCLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_DECLARE
-	bool "p5-Devel-Declare-0.006005"
+	bool "p5-Devel-Declare-0.006008"
 	help
 	  Declarator magic for perl
 
@@ -10423,7 +10714,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_NYTPROF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_PPPORT
-	bool "p5-Devel-PPPort-3.19.03"
+	bool "p5-Devel-PPPort-3.20"
 	help
 	  Perl5 module to bring newer features to older perl
 
@@ -10467,6 +10758,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_PATCHPERL
 	  provides an interface to the source patching functionality.
 
 	  http://search.cpan.org/dist/Devel-PatchPerl/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_PRAGMA
+	bool "p5-Devel-Pragma-0.54"
+	help
+	  Perl5 helper functions for developers of lexical pragmas
+
+	  This module provides helper functions for developers of lexical pragmas.
+	  These can be used both in older versions of perl (from 5.8.1), which have
+	  limited support for lexical pragmas, and in the most recent versions,
+	  which have improved support.
+
+	  http://search.cpan.org/dist/Devel-Pragma/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_DEVEL_PROFILE
@@ -10952,7 +11256,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_EXTUTILS_INSTALL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_EXTUTILS_MAKEMAKER
-	bool "p5-ExtUtils-MakeMaker-6.59nb1"
+	bool "p5-ExtUtils-MakeMaker-6.59nb2"
 	help
 	  Write a Makefile for an extension module from a Makefile.PL
 
@@ -10973,7 +11277,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_EXTUTILS_MAKEMAKER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_EXTUTILS_MANIFEST
-	bool "p5-ExtUtils-Manifest-1.59"
+	bool "p5-ExtUtils-Manifest-1.60"
 	help
 	  Perl utilities to write and check a MANIFEST file
 
@@ -11013,7 +11317,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_EXTUTILS_MODULEMAKER_TT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_EXTUTILS_PARSEXS
-	bool "p5-ExtUtils-ParseXS-3.03"
+	bool "p5-ExtUtils-ParseXS-3.05"
 	help
 	  Perl5 module for converting Perl XS code into C code
 
@@ -11564,7 +11868,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_FILE_WHICH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_FILE_CHDIR
-	bool "p5-File-chdir-0.1004nb1"
+	bool "p5-File-chdir-0.1006"
 	help
 	  Perl module with a more sensible way to change directories
 
@@ -11574,7 +11878,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_FILE_CHDIR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_FILE_PUSHD
-	bool "p5-File-pushd-1.00nb2"
+	bool "p5-File-pushd-1.001"
 	help
 	  Perl module to change directory temporarily for a limited scope
 
@@ -11678,7 +11982,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_GETOPT_ARGVFILE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_GETOPT_EUCLID
-	bool "p5-Getopt-Euclid-0.2.7"
+	bool "p5-Getopt-Euclid-0.3.0"
 	help
 	  Perl 5 module to create command-line parser from documentation
 
@@ -11747,7 +12051,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_GETOPT_SIMPLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_GIT_CPAN_PATCH
-	bool "p5-Git-CPAN-Patch-0.6.1"
+	bool "p5-Git-CPAN-Patch-0.7.0"
 	help
 	  Patch CPAN modules using Git
 
@@ -11759,8 +12063,26 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_GIT_CPAN_PATCH
 	  http://search.cpan.org/dist/Git-CPAN-Patch/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_GIT_REPOSITORY
+	bool "p5-Git-Repository-1.22"
+	help
+	  Perl interface to Git repositories
+
+	  Git::Repository is an interface to Git for the Perl programming language,
+	  for scripted interactions with repositories. It's a low-level interface
+	  that allows calling any Git command, whether porcelain or plumbing,
+	  including bidirectional commands such as git commit-tree.
+	  
+	  A Git::Repository object simply provides context to the git commands being
+	  run. It is possible to call the command() and run() methods against the
+	  class itself, and the context (typically current working directory) will
+	  be obtained from the options and environment.
+
+	  http://search.cpan.org/dist/Git-Repository/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_GNOME2
-	bool "p5-Gnome2-1.042nb6"
+	bool "p5-Gnome2-1.042nb7"
 	help
 	  Perl bindings for libgnome and libgnomeui
 
@@ -11800,7 +12122,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_GRAPH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_GTK2_GLADEXML
-	bool "p5-Gtk2-GladeXML-1.007nb9"
+	bool "p5-Gtk2-GladeXML-1.007nb10"
 	help
 	  
 
@@ -11991,7 +12313,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_AIO
-	bool "p5-IO-AIO-3.65nb2"
+	bool "p5-IO-AIO-4.11"
 	help
 	  Perl 5 module implementing asynchronous input/output
 
@@ -12003,7 +12325,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_AIO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_ALL
-	bool "p5-IO-All-0.41nb1"
+	bool "p5-IO-All-0.44"
 	help
 	  Spiffy OO interface to Perl IO
 
@@ -12049,7 +12371,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_CAPTUREOUTPUT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_COMPRESS
-	bool "p5-IO-Compress-2.033nb2"
+	bool "p5-IO-Compress-2.040"
 	help
 	  IO Interface to compressed data files/buffers
 
@@ -12071,7 +12393,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_DIGEST
 	  file handles.  This avoids the case you need to reread the same
 	  content to compute the digests after written a file.
 
-	  
+	  http://search.cpan.org/dist/IO-Digest/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_HANDLE_UTIL
@@ -12126,7 +12448,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_LOCKEDFILE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_MULTIPLEX
-	bool "p5-IO-Multiplex-1.10nb2"
+	bool "p5-IO-Multiplex-1.13"
 	help
 	  Perl module to manage IO on many file handles
 
@@ -12307,11 +12629,11 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_IO_TTY
 
 	  IO::Tty and IO::Pty provide an interface to pseudo-ttys.
 
-	  http://www.opencm.org/
+	  http://search.cpan.org/perldoc?Class::C3::Componentised
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_IPC_CMD
-	bool "p5-IPC-Cmd-0.60nb2"
+	bool "p5-IPC-Cmd-0.72"
 	help
 	  Perl module for finding and running system commands
 
@@ -12416,7 +12738,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_IPC_SHAREABLE
 	  being tied may contain arbitrarily complex data structures -
 	  including references to arrays, hashes of hashes, etc.
 
-	  
+	  http://search.cpan.org/dist/IPC-Shareable/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_IPC_SHAREDCACHE
@@ -12427,7 +12749,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_IPC_SHAREDCACHE
 	  This module provides a shared memory cache (in SysV IPC shared
 	  memory) accessed as a tied hash.
 
-	  
+	  http://search.cpan.org/dist/IPC-SharedCache/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_IPC_SIGNAL
@@ -12637,6 +12959,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_LIST_MOREUTILS
 	  http://search.cpan.org/dist/List-MoreUtils/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_LIST_UTILSBY
+	bool "p5-List-UtilsBy-0.07"
+	help
+	  Higher-order list utility functions
+
+	  This module provides a number of list utility functions, all of which
+	  take an initial code block to control their behaviour. They are
+	  variations on similar core perl or "List::Util" functions of similar
+	  names, but which use the block to control their behaviour.
+
+	  http://search.cpan.org/dist/List-UtilsBy/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOCALE_MSGFMT
 	bool "p5-Locale-Msgfmt-0.15"
 	help
@@ -12676,7 +13011,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_AGENT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_ANY
-	bool "p5-Log-Any-0.13"
+	bool "p5-Log-Any-0.14"
 	help
 	  Perl5 module to bring loggers and listeners together
 
@@ -12729,7 +13064,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_ANY_ADAPTER_LOG4PERL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_DISPATCH
-	bool "p5-Log-Dispatch-2.28nb1"
+	bool "p5-Log-Dispatch-2.29"
 	help
 	  Perl module for logging messages to multiple outputs
 
@@ -12746,7 +13081,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_DISPATCH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_DISPATCH_CONFIG
-	bool "p5-Log-Dispatch-Config-1.03nb2"
+	bool "p5-Log-Dispatch-Config-1.04"
 	help
 	  Configure Log::Dispatch with a config file, a la Java's log4j
 
@@ -12758,7 +13093,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_DISPATCH_CONFIG
 	  "startup.pl" in mod_perl), then you can get configured dispatcher
 	  instance via "Log::Dispatch::Config->instance".
 
-	  http://search.cpan.org/~miyagawa/Log-Dispatch-Config-1.01/
+	  http://search.cpan.org/dist/Log-Dispatch-Config/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_DISPATCH_DBI
@@ -12810,7 +13145,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_LOGLITE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOG_REPORT
-	bool "p5-Log-Report-0.28nb2"
+	bool "p5-Log-Report-0.94"
 	help
 	  Perl5 module to report a problem, pluggable handlers and language support
 
@@ -12935,8 +13270,43 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MEMOIZE_MEMCACHED
 	  http://search.cpan.org/dist//Memoize-Memcached/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_METACPAN_API
+	bool "p5-MetaCPAN-API-0.34"
+	help
+	  A comprehensive, DWIM-featured API to MetaCPAN for Perl5
+
+	  This is a hopefully-complete API-compliant interface to MetaCPAN
+	  (https://metacpan.org) with DWIM capabilities.
+
+	  http://search.cpan.org/dist/MetaCPAN-API/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_METHOD_SIGNATURES
+	bool "p5-Method-Signatures-20111020"
+	help
+	  Method and function declarations with signatures and no source filter
+
+	  Method::Signatures provides two new keywords, func and method, so that you
+	  can write subroutines with signatures instead of having to spell out my
+	  $self = shift; my($thing) = @_
+	  
+	  * func is like sub but takes a signature where the prototype would normally
+	  go. This takes the place of my($foo, $bar) = @_ and does a whole lot more.
+	  
+	  * method is like func but specifically for making methods. It will
+	  automatically provide the invocant as $self. No more my $self = shift.
+	  
+	  Also allows signatures, very similar to Perl 6 signatures.
+	  
+	  Also does type checking, understanding all the types that Moose (or Mouse) would understand.
+	  
+	  And it does all this with no source filters.
+
+	  http://search.cpan.org/dist/Method-Signatures/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_METHOD_SIGNATURES_SIMPLE
-	bool "p5-Method-Signatures-Simple-0.06nb1"
+	bool "p5-Method-Signatures-Simple-1.02"
 	help
 	  Basic signatures method declarations, without source filters
 
@@ -13032,7 +13402,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_CPANTS_ANALYSE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_CORELIST
-	bool "p5-Module-CoreList-2.39nb1"
+	bool "p5-Module-CoreList-2.57"
 	help
 	  Perl 5 module inventorying modules shipped with core Perl
 
@@ -13108,7 +13478,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_INSTALL_PADREPLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_INSTALL_RTX
-	bool "p5-Module-Install-RTx-0.25nb2"
+	bool "p5-Module-Install-RTx-0.29"
 	help
 	  Perl5 module for building and installing RT extensions
 
@@ -13116,6 +13486,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_INSTALL_RTX
 	  install files into an existing RT installation.
 
 	  http://search.cpan.org/dist/Module-Install-RTx/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_INSTALL_READMEFROMPOD
+	bool "p5-Module-Install-ReadmeFromPod-0.12"
+	help
+	  Module::Install extension to automatically convert POD to a README
+
+	  Module::Install::ReadmeFromPod is a Module::Install extension that
+	  generates a "README" file automatically from an indicated file
+	  containing POD, whenever the author runs "Makefile.PL".
+
+	  http://search.cpan.org/dist/Module-Install-ReadmeFromPod/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_INSTALL_SUBSTITUTE
@@ -13131,7 +13513,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_INSTALL_SUBSTITUTE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_INSTALL_XSUTIL
-	bool "p5-Module-Install-XSUtil-0.33nb1"
+	bool "p5-Module-Install-XSUtil-0.42"
 	help
 	  Perl 5 module providing utility functions for XS modules
 
@@ -13142,7 +13524,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_INSTALL_XSUTIL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_LOAD
-	bool "p5-Module-Load-0.18nb2"
+	bool "p5-Module-Load-0.22"
 	help
 	  Perl5 module to runtime require of both modules and files
 
@@ -13193,7 +13575,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_PLUGGABLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_REFRESH
-	bool "p5-Module-Refresh-0.13nb3"
+	bool "p5-Module-Refresh-0.17"
 	help
 	  Perl5 module providing %INC files refreshing when updated on disk
 
@@ -13205,8 +13587,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_REFRESH
 	  http://search.cpan.org/dist/Module-Refresh/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_RUNTIME
+	bool "p5-Module-Runtime-0.011"
+	help
+	  Deal with runtime handling of Perl modules
+
+	  The functions exported by this module deal with runtime handling of
+	  Perl modules, which are normally handled at compile time.
+
+	  http://search.cpan.org/dist/Module-Runtime/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_SCANDEPS
-	bool "p5-Module-ScanDeps-0.98nb2"
+	bool "p5-Module-ScanDeps-1.04"
 	help
 	  Perl 5 module to recursively scan Perl code for dependencies
 
@@ -13217,7 +13610,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_SCANDEPS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_STARTER
-	bool "p5-Module-Starter-1.540nb2"
+	bool "p5-Module-Starter-1.580"
 	help
 	  Perl 5 module acting as a simple starter kit for any module
 
@@ -13289,6 +13682,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MODULE_VERSIONS_REPORT
 	  http://search.cpan.org/dist/Module-Versions-Report/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOO
+	bool "p5-Moo-0.009012"
+	help
+	  
+
+	  This module is an extremely light-weight, high-performance Moose
+	  replacement. It also avoids depending on any XS modules to allow
+	  simple deployments. The name "Moo" is based on the idea that it
+	  provides almost -but not quite- two thirds of Moose.
+
+	  http://search.cpan.org/dist/Moo/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSE
 	bool "p5-Moose-2.0202"
 	help
@@ -13338,6 +13744,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSE_POLICY
 	  http://search.cpan.org/dist/Moose-Policy/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_ALIASES
+	bool "p5-MooseX-Aliases-0.10"
+	help
+	  Easy aliasing of methods and attributes in Moose
+
+	  The MooseX::Aliases module will allow you to quickly alias methods in
+	  Moose. It provides an alias parameter for has() to generate aliased
+	  accessors as well as the standard ones. Attributes can also be
+	  initialized in the constructor via their aliased names.
+
+	  http://search.cpan.org/dist/MooseX-Aliases/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_APP_CMD
 	bool "p5-MooseX-App-Cmd-0.06nb3"
 	help
@@ -13378,8 +13797,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_ATTRIBUTES_CURRIED
 	  http://search.cpan.org/dist/MooseX-Attributes-Curried/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_CHAINEDACCESSORS
+	bool "p5-MooseX-ChainedAccessors-0.02"
+	help
+	  Accessor class for chained accessors with Moose
+
+	  MooseX::ChainedAccessors is a Moose Trait which allows for method
+	  chaining on accessors by returning $self on write/set operations.
+
+	  http://search.cpan.org/dist/MooseX-ChainedAccessors/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_CLASSATTRIBUTE
-	bool "p5-MooseX-ClassAttribute-0.16nb2"
+	bool "p5-MooseX-ClassAttribute-0.26"
 	help
 	  Perl 5 module to declare class attributes Moose-style
 
@@ -13390,8 +13820,20 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_CLASSATTRIBUTE
 	  http://search.cpan.org/dist/MooseX-ClassAttribute/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_COMPILETIME_TRAITS
+	bool "p5-MooseX-CompileTime-Traits-1.102570"
+	help
+	  Allow compile time traits for classes/roles
+
+	  MooseX::CompileTime::Traits allows role application at compile time via use
+	  statements. What this class does is provide an import method that will apply
+	  each of the roles (along with any arguments for parameterized roles).
+
+	  http://search.cpan.org/dist/MooseX-CompileTime-Traits/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_CONFIGFROMFILE
-	bool "p5-MooseX-ConfigFromFile-0.02nb3"
+	bool "p5-MooseX-ConfigFromFile-0.03"
 	help
 	  Abstract Moose role for setting attributes from a configfile
 
@@ -13409,8 +13851,20 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_CONFIGFROMFILE
 	  http://search.cpan.org/dist/MooseX-ConfigFromFile/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_DAEMONIZE
+	bool "p5-MooseX-Daemonize-0.13"
+	help
+	  Role for daemonizing your Moose based applicationoose
+
+	  Often you want to write a persistant daemon that has a pid file, and
+	  responds appropriately to Signals. This module provides a set of basic
+	  roles as an infrastructure to do that.
+
+	  http://search.cpan.org/dist/MooseX-Daemonize/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_DECLARE
-	bool "p5-MooseX-Declare-0.34nb1"
+	bool "p5-MooseX-Declare-0.35"
 	help
 	  Perl 5 module providing declarative syntax for Moose
 
@@ -13434,7 +13888,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_EMULATE_CLASS_ACCESSOR_FAST
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_FOLLOWPBP
-	bool "p5-MooseX-FollowPBP-0.04nb2"
+	bool "p5-MooseX-FollowPBP-0.05"
 	help
 	  
 
@@ -13455,7 +13909,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_FOLLOWPBP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_GETOPT
-	bool "p5-MooseX-Getopt-0.33nb1"
+	bool "p5-MooseX-Getopt-0.37"
 	help
 	  Perl 5 Moose role for processing command line options
 
@@ -13481,7 +13935,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_INSIDEOUT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_LAZYREQUIRE
-	bool "p5-MooseX-LazyRequire-0.06nb2"
+	bool "p5-MooseX-LazyRequire-0.07"
 	help
 	  Required attributes which fail only when trying to use them
 
@@ -13492,6 +13946,21 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_LAZYREQUIRE
 	  constructor parameter or through a writer method.
 
 	  http://search.cpan.org/dist/MooseX-LazyRequire/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_MARKASMETHODS
+	bool "p5-MooseX-MarkAsMethods-0.14"
+	help
+	  Mark overload code symbols as methods
+
+	  MooseX::MarkAsMethods allows one to easily mark certain functions as
+	  Moose methods. This will allow other packages such as
+	  namespace::autoclean to operate without blowing away your overloads.
+	  After using MooseX::MarkAsMethods your overloads will be recognized by
+	  Class::MOP as being methods, and class extension as well as
+	  composition from roles with overloads will "just work".
+
+	  http://search.cpan.org/dist/MooseX-MarkAsMethods/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_META_TYPECONSTRAINT_FORCECOERCION
@@ -13508,7 +13977,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_META_TYPECONSTRAINT_FORCECOERCION
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_METHOD_SIGNATURES
-	bool "p5-MooseX-Method-Signatures-0.36nb1"
+	bool "p5-MooseX-Method-Signatures-0.37"
 	help
 	  Perl 5 module for method declarations with type constraints
 
@@ -13520,7 +13989,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_METHOD_SIGNATURES
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_METHODATTRIBUTES
-	bool "p5-MooseX-MethodAttributes-0.24nb2"
+	bool "p5-MooseX-MethodAttributes-0.25"
 	help
 	  Perl5 module for code attribute introspection
 
@@ -13546,7 +14015,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_MULTIINITARG
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_NONMOOSE
-	bool "p5-MooseX-NonMoose-0.15nb1"
+	bool "p5-MooseX-NonMoose-0.22"
 	help
 	  Perl 5 module to subclass non-Moose classes with Moose
 
@@ -13585,7 +14054,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_PARAM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_PARAMS_VALIDATE
-	bool "p5-MooseX-Params-Validate-0.14nb2"
+	bool "p5-MooseX-Params-Validate-0.16"
 	help
 	  Extension of Params::Validate for using Moose's types
 
@@ -13621,7 +14090,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_ROLE_WITHOVERLOADING
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_SEMIAFFORDANCEACCESSOR
-	bool "p5-MooseX-SemiAffordanceAccessor-0.08nb3"
+	bool "p5-MooseX-SemiAffordanceAccessor-0.09"
 	help
 	  
 
@@ -13631,6 +14100,17 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_SEMIAFFORDANCEACCESSOR
 	  while set methods are prefixed with "set_".
 
 	  http://search.cpan.org/dist/MooseX-SemiAffordanceAccessor/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_SETONCE
+	bool "p5-MooseX-SetOnce-0.200001"
+	help
+	  Write-once, read-many attributes for Moose
+
+	  The 'SetOnce' attribute lets your class have attributes that are not
+	  lazy and not set, but that cannot be altered once set.
+
+	  http://search.cpan.org/dist/MooseX-SetOnce/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_SIMPLECONFIG
@@ -13652,7 +14132,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_SIMPLECONFIG
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_SINGLETON
-	bool "p5-MooseX-Singleton-0.25nb1"
+	bool "p5-MooseX-Singleton-0.27"
 	help
 	  Perl 5 module to turn Moose class into a singleton
 
@@ -13666,7 +14146,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_SINGLETON
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_STRICTCONSTRUCTOR
-	bool "p5-MooseX-StrictConstructor-0.11nb1"
+	bool "p5-MooseX-StrictConstructor-0.16"
 	help
 	  Make your object constructors blow up on unknown attributes
 
@@ -13706,7 +14186,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_TRAITS_PLUGGABLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_TYPES
-	bool "p5-MooseX-Types-0.24nb1"
+	bool "p5-MooseX-Types-0.30"
 	help
 	  Organise your Moose types in libraries
 
@@ -13727,7 +14207,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_TYPES
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_TYPES_COMMON
-	bool "p5-MooseX-Types-Common-0.001002nb2"
+	bool "p5-MooseX-Types-Common-0.001003"
 	help
 	  Commonly-used type constraints that do not ship with Moose by default
 
@@ -13791,7 +14271,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_TYPES_PATH_CLASS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_TYPES_STRUCTURED
-	bool "p5-MooseX-Types-Structured-0.23nb2"
+	bool "p5-MooseX-Types-Structured-0.28"
 	help
 	  Perl 5 module providing structured type constraints for Moose
 
@@ -13821,7 +14301,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOOSEX_TYPES_URI
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOUSE
-	bool "p5-Mouse-0.93"
+	bool "p5-Mouse-0.97"
 	help
 	  Perl module implementing an extension of the perl object system
 
@@ -13855,7 +14335,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_MOUSEX_TYPES
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_NEXT
-	bool "p5-NEXT-0.64nb2"
+	bool "p5-NEXT-0.65"
 	help
 	  
 
@@ -13976,7 +14456,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_DECLARE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_EVENT
-	bool "p5-Object-Event-1.21nb2"
+	bool "p5-Object-Event-1.23"
 	help
 	  Perl 5 class that provides an event callback interface
 
@@ -13987,7 +14467,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_EVENT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_INSIDEOUT
-	bool "p5-Object-InsideOut-3.67nb1"
+	bool "p5-Object-InsideOut-3.84"
 	help
 	  Perl 5 module providing comprehensive inside-out object support
 
@@ -14011,6 +14491,16 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_INSIDEOUT
 	  http://search.cpan.org/dist/Object-InsideOut/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_PLUGGABLE
+	bool "p5-Object-Pluggable-1.29"
+	help
+	  Base class for creating plugin-enabled objects
+
+	  Object::Pluggable is a base class for creating plugin enabled objects.
+
+	  http://search.cpan.org/dist/Object-Pluggable/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_REALIZE_LATER
 	bool "p5-Object-Realize-Later-0.18nb3"
 	help
@@ -14024,7 +14514,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_REALIZE_LATER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_SIGNATURE
-	bool "p5-Object-Signature-1.05nb3"
+	bool "p5-Object-Signature-1.07"
 	help
 	  Generate cryptographic signatures for objects
 
@@ -14040,7 +14530,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_OBJECT_SIGNATURE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PAR
-	bool "p5-PAR-1.002nb1"
+	bool "p5-PAR-1.005"
 	help
 	  Cross-Platform Packaging and Debugging Tool
 
@@ -14144,6 +14634,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_POE_COMPONENT_SCHEDULE
 	  http://search.cpan.org/dist/POE-Component-Schedule/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_POE_COMPONENT_SYNDICATOR
+	bool "p5-POE-Component-Syndicator-0.06"
+	help
+	  POE component base class which implements the Observer pattern
+
+	  POE::Component::Syndicator is a base class for POE components which
+	  need to handle a persistent resource (e.g. a connection to an IRC
+	  server) for one or more sessions in an extendable way.
+
+	  http://search.cpan.org/dist/POE-Component-Syndicator/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_POE_TEST_LOOPS
 	bool "p5-POE-Test-Loops-1.312"
 	help
@@ -14153,6 +14655,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_POE_TEST_LOOPS
 	  generate all the loop tests for one or more POE::Loop subclasses.
 
 	  http://search.cpan.org/dist/POE-Test-Loops/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_POEX_TYPES
+	bool "p5-POEx-Types-1.100910"
+	help
+	  Exported Types for use within POEx modules
+
+	  This modules exports the needed subtypes, and coercions for POEx
+	  modules and is based on Sub::Exporter, so see that module for options
+	  on importing.
+
+	  http://search.cpan.org/dist/POEx-Types/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PPI
@@ -14277,7 +14791,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PACKAGE_GENERATOR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PACKAGE_STASH
-	bool "p5-Package-Stash-0.31"
+	bool "p5-Package-Stash-0.33"
 	help
 	  Perl 5 module providing routines for manipulating stashes
 
@@ -14289,7 +14803,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PACKAGE_STASH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PACKAGE_STASH_XS
-	bool "p5-Package-Stash-XS-0.23"
+	bool "p5-Package-Stash-XS-0.25"
 	help
 	  Perl 5 module providing a better correct Package::Stash implementation
 
@@ -14334,7 +14848,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PARALLEL_FORKMANAGER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PARALLEL_PREFORK
-	bool "p5-Parallel-Prefork-0.11"
+	bool "p5-Parallel-Prefork-0.11nb1"
 	help
 	  Perl 5 simple prefork server framework
 
@@ -14346,7 +14860,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PARALLEL_PREFORK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PARAMS_CLASSIFY
-	bool "p5-Params-Classify-0.011nb1"
+	bool "p5-Params-Classify-0.013"
 	help
 	  Perl5 module for argument type classification
 
@@ -14471,7 +14985,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PARSE_EXUBERANTCTAGS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PARSE_METHOD_SIGNATURES
-	bool "p5-Parse-Method-Signatures-1.003013nb2"
+	bool "p5-Parse-Method-Signatures-1.003014"
 	help
 	  Perl 5 module providing Perl 6 like method signature parser
 
@@ -14511,7 +15025,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PARSE_YAPP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATCHREADER
-	bool "p5-PatchReader-0.9.5nb5"
+	bool "p5-PatchReader-0.9.6"
 	help
 	  Utilities to read and manipulate patches and CVS
 
@@ -14521,11 +15035,11 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATCHREADER
 	  up the patch root according to CVS, and output the patch as raw unified or
 	  through a template processor (used in some places to output a patch as HTML).
 
-	  http://search.cpan.org/~jkeiser/PatchReader-0.9.5
+	  http://search.cpan.org/dist/PatchReader/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATH_CLASS
-	bool "p5-Path-Class-0.21nb1"
+	bool "p5-Path-Class-0.24"
 	help
 	  Cross-platform path specification manipulation
 
@@ -14539,7 +15053,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATH_CLASS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATH_CLASS_FILE_STAT
-	bool "p5-Path-Class-File-Stat-0.02nb2"
+	bool "p5-Path-Class-File-Stat-0.03"
 	help
 	  
 
@@ -14552,7 +15066,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATH_CLASS_FILE_STAT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATH_DISPATCHER
-	bool "p5-Path-Dispatcher-0.15nb2"
+	bool "p5-Path-Dispatcher-1.04"
 	help
 	  Perl 5 module providing flexible and extensible dispatch
 
@@ -14569,7 +15083,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATH_DISPATCHER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PATH_DISPATCHER_DECLARATIVE
-	bool "p5-Path-Dispatcher-Declarative-0.01nb2"
+	bool "p5-Path-Dispatcher-Declarative-0.03"
 	help
 	  Perl 5 module providing a sugary dispatcher
 
@@ -14666,6 +15180,19 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PERL_VERSION
 	  formatted like the original.
 
 	  http://search.cpan.org/dist/Perl-Version/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_PERL4_CORELIBS
+	bool "p5-Perl4-CoreLibs-0.003"
+	help
+	  Libraries historically supplied with Perl 4
+
+	  This is a collection of .pl files that have historically been bundled with the
+	  Perl core but are planned not to be so distributed with core version 5.15 or
+	  later. Relying on their presence in the core distribution is deprecated; they
+	  should be acquired from this CPAN distribution instead.
+
+	  http://search.cpan.org/dist/Perl4-CoreLibs/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PERL6_EXPORT
@@ -14863,7 +15390,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PROC_PIDFILE
 	  Proc::Pidfile is a very simple OO interface which manages a pidfile
 	  for the current process.
 
-	  
+	  http://search.cpan.org/dist/Proc-Pidfile/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PROC_PROCESSTABLE
@@ -14888,7 +15415,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PROC_QUEUE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PROC_SIMPLE
-	bool "p5-Proc-Simple-1.26nb2"
+	bool "p5-Proc-Simple-1.30"
 	help
 	  Launch and control background processes
 
@@ -14925,7 +15452,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PROC_WAITSTAT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_READONLY
-	bool "p5-Readonly-1.03nb3"
+	bool "p5-Readonly-1.03nb4"
 	help
 	  Perl 5 module for creating read-only scalars, arrays and hashes
 
@@ -14953,7 +15480,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_READONLY_XS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_REGEXP_ASSEMBLE
-	bool "p5-Regexp-Assemble-0.34nb3"
+	bool "p5-Regexp-Assemble-0.35"
 	help
 	  Perl 5 module to assemble multiple regular expressions
 
@@ -14979,7 +15506,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_REGEXP_MATCHCONTEXT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_REGEXP_PARSER
-	bool "p5-Regexp-Parser-0.20nb3"
+	bool "p5-Regexp-Parser-0.21"
 	help
 	  Perl 5 base class for parsing regexes
 
@@ -15025,7 +15552,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_RETURN_VALUE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_ROSE_OBJECT
-	bool "p5-Rose-Object-0.858nb2"
+	bool "p5-Rose-Object-0.859"
 	help
 	  Very simple class base class used by Rose objects
 
@@ -15043,7 +15570,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_ROSE_OBJECT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_SDL
-	bool "p5-SDL-2.1.2nb7"
+	bool "p5-SDL-2.1.2nb8"
 	help
 	  Perl module for SDL
 
@@ -15231,7 +15758,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_SCOPE_GUARD
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_SCOPE_UPPER
-	bool "p5-Scope-Upper-0.16"
+	bool "p5-Scope-Upper-0.18"
 	help
 	  Perl5 module to act on upper scopes
 
@@ -15292,7 +15819,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_SHELL_PERL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_SHIPIT
-	bool "p5-ShipIt-0.53nb2"
+	bool "p5-ShipIt-0.55"
 	help
 	  Perl software release tool
 
@@ -15332,7 +15859,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_SMART_COMMENTS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_SOFTWARE_LICENSE
-	bool "p5-Software-License-0.102.340nb1"
+	bool "p5-Software-License-0.103.004"
 	help
 	  Perl 5 module which provide templated software licenses
 
@@ -15397,11 +15924,11 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_SPOON
 	  Spiffy.pm.  Spoon is not an application in and of itself.  You need
 	  to build your own applications from it.
 
-	  
+	  http://search.cpan.org/dist/Spoon/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_STORABLE
-	bool "p5-Storable-2.21nb2"
+	bool "p5-Storable-2.30"
 	help
 	  Perl extension module for persistent data storage
 
@@ -15551,6 +16078,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_SUB_UPLEVEL
 	  are avoided.
 
 	  http://search.cpan.org/dist/Sub-Uplevel/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_SYSTEM_COMMAND
+	bool "p5-System-Command-1.05"
+	help
+	  Object for running system commands
+
+	  System::Command is a class that launches external system commands and
+	  return an object representing them, allowing to interact with them through
+	  their STDIN, STDOUT and STDERR handles.
+
+	  http://search.cpan.org/dist/System-Command/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TAP_FORMATTER_HTML
@@ -15855,7 +16394,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TERM_SIZE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_AGGREGATE
-	bool "p5-Test-Aggregate-0.36.3nb2"
+	bool "p5-Test-Aggregate-0.364"
 	help
 	  Aggregate *.t tests to make them run faster
 
@@ -15904,7 +16443,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_ASSERTIONS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_BASE
-	bool "p5-Test-Base-0.59nb2"
+	bool "p5-Test-Base-0.60"
 	help
 	  Perl 5 module providing a data driven testing framework
 
@@ -15917,8 +16456,21 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_BASE
 	  http://search.cpan.org/dist/Test-Base/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_CPAN_META_YAML
+	bool "p5-Test-CPAN-Meta-YAML-0.17"
+	help
+	  Perl 5 module to validate the META.yml file in a distribution
+
+	  This module was written to ensure that a META.yml file, provided
+	  with a standard distribution uploaded to CPAN, meets the specifications
+	  that slowly being introduced to module uploads, via the use of
+	  ExtUtils::MakeMaker, Module::Build and Module::Install.
+
+	  http://search.cpan.org/dist/Test-CPAN-Meta-YAML/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_CHECKMANIFEST
-	bool "p5-Test-CheckManifest-1.22nb2"
+	bool "p5-Test-CheckManifest-1.24"
 	help
 	  Check if MANIFEST of perl module matches it's distro
 
@@ -16015,7 +16567,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_DEEP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_DIFFERENCES
-	bool "p5-Test-Differences-0.5000nb2"
+	bool "p5-Test-Differences-0.6100"
 	help
 	  Test strings and data structures and show differences if not ok
 
@@ -16060,7 +16612,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_DISTRIBUTION
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_EXCEPTION
-	bool "p5-Test-Exception-0.29nb3"
+	bool "p5-Test-Exception-0.31"
 	help
 	  Test exception based code
 
@@ -16086,7 +16638,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_EXPECT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_FATAL
-	bool "p5-Test-Fatal-0.006"
+	bool "p5-Test-Fatal-0.008"
 	help
 	  Incredibly simple helpers for testing code with exceptions
 
@@ -16098,14 +16650,14 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_FATAL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_FILE_CONTENTS
-	bool "p5-Test-File-Contents-0.05nb3"
+	bool "p5-Test-File-Contents-0.20"
 	help
 	  Perl5 module for test routines examining the contents of files
 
 	  This Perl 5 module prodives test routines for examining the contents
 	  of files.
 
-	  http://search.cpan.org/dist/Test-File-Contents//
+	  http://search.cpan.org/dist/Test-File-Contents/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_FIXTURE_DBIC_SCHEMA
@@ -16120,7 +16672,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_FIXTURE_DBIC_SCHEMA
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_HARNESS
-	bool "p5-Test-Harness-3.22nb2"
+	bool "p5-Test-Harness-3.23"
 	help
 	  Run Perl standard test scripts with statistics
 
@@ -16170,7 +16722,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_INLINE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_INTER
-	bool "p5-Test-Inter-1.01nb2"
+	bool "p5-Test-Inter-1.03"
 	help
 	  Perl 5 framework for more readable interactive tests
 
@@ -16235,7 +16787,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_LOG4PERL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_LONGSTRING
-	bool "p5-Test-LongString-0.13nb2"
+	bool "p5-Test-LongString-0.15"
 	help
 	  Perl5 module to test strings for equality
 
@@ -16278,7 +16830,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_MINIMUMVERSION
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_MOCK_LWP
-	bool "p5-Test-Mock-LWP-0.05nb3"
+	bool "p5-Test-Mock-LWP-0.06"
 	help
 	  Perl 5 package providing easy mocking of LWP packages
 
@@ -16322,7 +16874,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_MOCKOBJECT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_MOST
-	bool "p5-Test-Most-0.23nb1"
+	bool "p5-Test-Most-0.25"
 	help
 	  Most commonly needed test functions and features
 
@@ -16377,7 +16929,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_OBJECT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_OUTPUT
-	bool "p5-Test-Output-0.16nb2"
+	bool "p5-Test-Output-1.01"
 	help
 	  Utilities to test STDOUT and STDERR messages
 
@@ -16395,7 +16947,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_OUTPUT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_POE_CLIENT_TCP
-	bool "p5-Test-POE-Client-TCP-1.08nb2"
+	bool "p5-Test-POE-Client-TCP-1.10"
 	help
 	  POE Component providing TCP client services for test cases
 
@@ -16407,7 +16959,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_POE_CLIENT_TCP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_POE_SERVER_TCP
-	bool "p5-Test-POE-Server-TCP-1.14nb2"
+	bool "p5-Test-POE-Server-TCP-1.16"
 	help
 	  POE Component providing TCP server services for tests
 
@@ -16459,7 +17011,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_POD_COVERAGE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_POD_SPELLING_COMMONMISTAKES
-	bool "p5-Test-Pod-Spelling-CommonMistakes-0.01nb2"
+	bool "p5-Test-Pod-Spelling-CommonMistakes-1.000"
 	help
 	  Checks POD for common spelling mistake
 
@@ -16484,7 +17036,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_REPORTER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_REQUIRES
-	bool "p5-Test-Requires-0.05nb2"
+	bool "p5-Test-Requires-0.06"
 	help
 	  Perl 5 module to test if a module can be loaded
 
@@ -16528,7 +17080,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_SCRIPT_RUN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_SHAREDFORK
-	bool "p5-Test-SharedFork-0.15nb1"
+	bool "p5-Test-SharedFork-0.18"
 	help
 	  Perl 5 module to make forking test
 
@@ -16540,7 +17092,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_SHAREDFORK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_SIMPLE
-	bool "p5-Test-Simple-0.96nb2"
+	bool "p5-Test-Simple-0.98"
 	help
 	  Perl5 module with a simple framework for writing tests
 
@@ -16637,6 +17189,16 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_TESTER
 	  http://search.cpan.org/dist/Test-Tester/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_TINYMOCKER
+	bool "p5-Test-TinyMocker-0.03"
+	help
+	  Very simple Perl5 tool to mock external modules
+
+	  This is a very simply Perl5 tool to mock external modules.
+
+	  http://search.cpan.org/dist/Test-TinyMocker/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_TRAP
 	bool "p5-Test-Trap-0.2.1"
 	help
@@ -16695,7 +17257,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_WWW_SELENIUM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_WARN
-	bool "p5-Test-Warn-0.22nb1"
+	bool "p5-Test-Warn-0.23"
 	help
 	  Perl extension to test methods for warnings
 
@@ -16706,7 +17268,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_WARN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TEST_WEAKEN
-	bool "p5-Test-Weaken-3.004.000nb1"
+	bool "p5-Test-Weaken-3.006.000"
 	help
 	  Test that freed memory objects were, indeed, freed
 
@@ -16853,7 +17415,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TIE_CACHE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TIE_CACHE_LRU
-	bool "p5-Tie-Cache-LRU-20081023.2116nb2"
+	bool "p5-Tie-Cache-LRU-20110205"
 	help
 	  Least-Recently Used cache
 
@@ -17026,7 +17588,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TREE_SIMPLE_VISITORFACTORY
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_TRY_TINY
-	bool "p5-Try-Tiny-0.09"
+	bool "p5-Try-Tiny-0.11"
 	help
 	  Perl module providing minimal try/catch
 
@@ -17051,7 +17613,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_TRYCATCH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_UNIVERSAL_CAN
-	bool "p5-UNIVERSAL-can-1.16nb2"
+	bool "p5-UNIVERSAL-can-1.20110617"
 	help
 	  
 
@@ -17064,7 +17626,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_UNIVERSAL_CAN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_UNIVERSAL_ISA
-	bool "p5-UNIVERSAL-isa-1.03nb2"
+	bool "p5-UNIVERSAL-isa-1.20110614"
 	help
 	  
 
@@ -17168,7 +17730,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_VCP_DEST_SVK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_VARIABLE_MAGIC
-	bool "p5-Variable-Magic-0.43nb2"
+	bool "p5-Variable-Magic-0.46"
 	help
 	  Perl 5 module to associate user-defined magic to variables
 
@@ -17205,7 +17767,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_WEAKREF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_WX_PERL_DATAWALKER
-	bool "p5-Wx-Perl-DataWalker-0.02nb8"
+	bool "p5-Wx-Perl-DataWalker-0.02nb9"
 	help
 	  Shows a relatively simple Perl data structure browser
 
@@ -17218,7 +17780,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_WX_PERL_DATAWALKER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_XSLOADER
-	bool "p5-XSLoader-0.10nb2"
+	bool "p5-XSLoader-0.15"
 	help
 	  Dynamically load C libraries into Perl code
 
@@ -17342,7 +17904,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_AUTODIE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_BOOLEAN
-	bool "p5-boolean-0.27"
+	bool "p5-boolean-0.28"
 	help
 	  Boolean support for Perl
 
@@ -17463,7 +18025,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_GLIB2
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_LIB_ABS
-	bool "p5-lib-abs-0.91nb2"
+	bool "p5-lib-abs-0.92"
 	help
 	  Perl 5 module to add in @INC absolute paths from relative ones
 
@@ -17476,7 +18038,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_LIB_ABS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOCAL_LIB
-	bool "p5-local-lib-1.6.7nb2"
+	bool "p5-local-lib-1.8.4"
 	help
 	  Create and use a local lib/ for perl modules with PERL5LIB
 
@@ -17491,7 +18053,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_LOCAL_LIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_NAMESPACE_AUTOCLEAN
-	bool "p5-namespace-autoclean-0.12"
+	bool "p5-namespace-autoclean-0.13"
 	help
 	  Keep imports out of your namespace
 
@@ -17531,7 +18093,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_NAMESPACE_CLEAN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PANGO
-	bool "p5-pango-1.222"
+	bool "p5-pango-1.222nb1"
 	help
 	  Perl bindings to the pango library
 
@@ -17572,7 +18134,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_PERL_HEADERS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_PIP
-	bool "p5-pip-1.18nb1"
+	bool "p5-pip-1.19"
 	help
 	  Perl Installation Program, for scripted+3rd-party distribution installation
 
@@ -17626,8 +18188,31 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_SIGNATURES
 	  http://search.cpan.org/perldoc?signatures
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_P5_STRICTURES
+	bool "p5-strictures-1.002002"
+	help
+	  Turn on strict and make all warnings fatal
+
+	  p5-strictures provides "strictures" directive.
+	  
+	  use strictures 1;
+	  
+	  is equivalent to
+	  
+	  use strict;
+	  use warnings FATAL => 'all';
+	  
+	  except when called from a file where $0 matches:
+	  
+	  /^x?t\/.*(?:load|compile|coverage|use_ok).*\.t$/
+	  
+	  and when either '.git' or '.svn' is present in the current directory
+
+	  http://search.cpan.org/dist/strictures/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_SUBVERSION
-	bool "p5-subversion-1.6.17nb2"
+	bool "p5-subversion-1.6.17nb4"
 	help
 	  Perl bindings for Subversion
 
@@ -17641,7 +18226,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_P5_SUBVERSION
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_P5_VERSION
-	bool "p5-version-0.9300"
+	bool "p5-version-0.9500"
 	help
 	  Perl extension for Version Objects
 
@@ -17669,7 +18254,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PALMPOWER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PANGO
-	bool "pango-1.28.4nb1"
+	bool "pango-1.28.4nb2"
 	help
 	  Library for layout and rendering of text
 
@@ -17698,7 +18283,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PANGO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PANGOMM
-	bool "pangomm-2.28.2"
+	bool "pangomm-2.28.2nb1"
 	help
 	  C++ bindings for pangomm
 
@@ -17823,7 +18408,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PCL_CVS
 	  with it.  It provides a global view of your project and allows execution
 	  of cvs commands on several files at a time.
 
-	  http://www.perl.com/language/index.html
+	  http://www.opencm.org/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PCRE__
@@ -17840,7 +18425,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PCRE__
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PCRE
-	bool "pcre-8.13"
+	bool "pcre-8.21"
 	help
 	  Perl Compatible Regular Expressions library
 
@@ -17853,7 +18438,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PCRE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PCRE_OCAML
-	bool "pcre-ocaml-5.15.0"
+	bool "pcre-ocaml-5.15.0nb1"
 	help
 	  Perl compatible regular expressions for OCaml
 
@@ -17924,7 +18509,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PHP_GMP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PHP_LIBAWL
-	bool "php53-libawl-0.46"
+	bool "php53-libawl-0.49"
 	help
 	  PHP Andrew's Web Libraries
 
@@ -18195,7 +18780,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PMCCABE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_POCO
-	bool "poco-1.4.0"
+	bool "poco-1.4.2p1"
 	help
 	  POCO C++ Foundation libraries
 
@@ -18242,7 +18827,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_POPT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PRCS
-	bool "prcs-1.3.3nb5"
+	bool "prcs-1.3.3nb7"
 	help
 	  Project Revision Control System
 
@@ -18262,6 +18847,22 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PRCS
 	  prcs-bugs@XCF.Berkeley.EDU
 
 	  http://prcs.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_PSTREAMS
+	bool "pstreams-0.7.0"
+	help
+	  POSIX Process Control in C++
+
+	  PStreams allows you to run another program from your C++ application
+	  and to transfer data between the two programs similar to shell
+	  pipelines.
+	  
+	  In the simplest case, a PStreams class is like a C++ wrapper for
+	  the POSIX.2 functions popen(3) and pclose(3), using C++ iostreams
+	  instead of C's stdio library.
+
+	  http://pstreams.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PSVN
@@ -18321,7 +18922,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PTHREAD_STUBLIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PTLIB
-	bool "ptlib-2.6.5nb2"
+	bool "ptlib-2.6.5nb3"
 	help
 	  Portable Windows Libary
 
@@ -18369,7 +18970,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PWLIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_GOBJECT_SHARED
-	bool "py-gobject-shared-2.28.6"
+	bool "py-gobject-shared-2.28.6nb1"
 	help
 	  Python bindings for glib2 gobject
 
@@ -18380,7 +18981,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_GOBJECT_SHARED
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_PYTEMPLATE
-	bool "py-pytemplate-1.5.1"
+	bool "py-pytemplate-1.5.1nb1"
 	help
 	  Pytemplate gives python developpers a starting framework
 
@@ -18393,7 +18994,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_PYTEMPLATE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_INLINEEGG
-	bool "py26-InlineEgg-1.08nb1"
+	bool "py26-InlineEgg-1.08nb2"
 	help
 	  Python module for writing inline assembler programs
 
@@ -18421,7 +19022,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_OPTIK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_PYRO
-	bool "py26-Pyro-3.4nb2"
+	bool "py26-Pyro-3.4nb3"
 	help
 	  Distributed Object Technology system in Python
 
@@ -18472,7 +19073,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_ARGPARSE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_AT_SPI
-	bool "py26-at-spi-1.30.1nb5"
+	bool "py26-at-spi-1.30.1nb6"
 	help
 	  Assistive Technology Service Provider Interface
 
@@ -18483,7 +19084,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_AT_SPI
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_BABEL
-	bool "py26-babel-0.9.5"
+	bool "py26-babel-0.9.6"
 	help
 	  Collection of tools for internationalizing Python applications
 
@@ -18494,8 +19095,41 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_BABEL
 	  http://babel.edgewall.org/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_PY_BUILDBOT
+	bool "py26-buildbot-0.8.5"
+	help
+	  Continuous integration system
+
+	  The BuildBot is a system to automate the compile/test cycle required by
+	  most software projects to validate code changes. By automatically
+	  rebuilding and testing the tree each time something has changed, build
+	  problems are pinpointed quickly, before other developers are
+	  inconvenienced by the failure. The guilty developer can be identified
+	  and harassed without human intervention. By running the builds on a
+	  variety of platforms, developers who do not have the facilities to test
+	  their changes everywhere before checkin will at least know shortly
+	  afterwards whether they have broken the build or not. Warning counts,
+	  lint checks, image size, compile time, and other build parameters can
+	  be tracked over time, are more visible, and are therefore easier to
+	  improve.
+
+	  http://buildbot.net/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_PY_BUILDBOT_SLAVE
+	bool "py26-buildbot-slave-0.8.5"
+	help
+	  Buildbot slave
+
+	  The BuildBot is a system to automate the compile/test cycle required by
+	  most software projects to validate code changes. This package contains
+	  the buildslave.
+
+	  http://buildbot.net/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_CHECKER
-	bool "py26-checker-0.8.14nb1"
+	bool "py26-checker-0.8.14nb2"
 	help
 	  Python code checker
 
@@ -18518,7 +19152,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_CHEETAH
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_COMPIZCONFIG
-	bool "py26-compizconfig-0.8.4nb5"
+	bool "py26-compizconfig-0.8.4nb6"
 	help
 	  Python bindings for libcompizconfig
 
@@ -18545,7 +19179,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_COVERAGE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_CTYPES
-	bool "py26-ctypes-1.0.2nb1"
+	bool "py26-ctypes-1.0.2nb2"
 	help
 	  Foreign Function Interface package for Python
 
@@ -18619,6 +19253,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_DARCSVER
 	  http://pypi.python.org/packages/source/d/darcsver/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_PY_DECORATOR
+	bool "py26-decorator-3.3.2"
+	help
+	  Generic Python decorator utilities
+
+	  The ``decorator'' module aims to simplify the usage of decorators
+	  in Python code for the average programmer and to popularize decorators
+	  by showing various non-trivial examples.
+
+	  http://pypi.python.org/pypi/decorator
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_DULWICH
 	bool "py26-dulwich-0.6.0"
 	help
@@ -18642,7 +19288,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_EXPECT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_FANN
-	bool "py26-fann-2.1.0.20061012"
+	bool "py26-fann-2.1.0.20061012nb1"
 	help
 	  Fast Artificial Neural Network python interface
 
@@ -18679,7 +19325,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_FUNCPARSERLIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_GAME
-	bool "py26-game-1.8.1nb8"
+	bool "py26-game-1.8.1nb10"
 	help
 	  Set of Python modules designed for writing games
 
@@ -18692,7 +19338,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_GAME
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_GENERATE
-	bool "py26-generate-2.6nb1"
+	bool "py26-generate-2.6nb2"
 	help
 	  Python interface to Generate
 
@@ -18702,7 +19348,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_GENERATE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_GOBJECT
-	bool "py26-gobject-2.28.6"
+	bool "py26-gobject-2.28.6nb1"
 	help
 	  Python bindings for glib2 gobject
 
@@ -18749,7 +19395,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_JERSEY
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_KJBUCKETS
-	bool "py26-kjbuckets-2.2nb1"
+	bool "py26-kjbuckets-2.2nb2"
 	help
 	  Fast set, graph and mapping operations
 
@@ -18767,7 +19413,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_KJBUCKETS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_KQUEUE
-	bool "py26-kqueue-2.0nb1"
+	bool "py26-kqueue-2.0nb2"
 	help
 	  Python interface to kqueue(2) and kevent(2) system calls
 
@@ -18784,7 +19430,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_KQUEUE
 	  File pykqueue.txt (part of the module distribution) describes
 	  the Python module API, which mirrors the system interface to most extend.
 
-	  http://pychecker.sourceforge.net/
+	  http://nedbatchelder.com/code/coverage/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_LOGILAB_ASTNG
@@ -18820,7 +19466,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_LOGILAB_COMMON
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_MAKO
-	bool "py26-mako-0.3.6"
+	bool "py26-mako-0.5.0"
 	help
 	  Hyperfast and lightweight templating for the Python platform
 
@@ -18891,6 +19537,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_NOSE
 	  http://code.google.com/p/python-nose/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_PY_ORDEREDDICT
+	bool "py26-ordereddict-1.1"
+	help
+	  Drop-in substitute for Py2.7's new collections.OrderedDict
+
+	  Drop-in substitute for Py2.7's new collections.OrderedDict.  The recipe has
+	  big-oh performance that matches regular dictionaries (amortized O(1)
+	  insertion/deletion/lookup and O(n) iteration/repr/copy/equality_testing).
+
+	  http://pypi.python.org/ordereddict/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_PEXPECT
 	bool "py26-pexpect-2.3"
 	help
@@ -18934,7 +19592,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_PQUEUE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_PYSVN
-	bool "py26-pysvn-1.7.2nb3"
+	bool "py26-pysvn-1.7.2nb5"
 	help
 	  Python interface to Subversion
 
@@ -18962,7 +19620,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_PYUTIL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_QUIXOTE
-	bool "py26-quixote-2.6"
+	bool "py26-quixote-2.6nb1"
 	help
 	  Framework for writing Python web application
 
@@ -19028,7 +19686,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_SETUPTOOLS_TRIAL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_SUBVERSION
-	bool "py26-subversion-1.6.17nb1"
+	bool "py26-subversion-1.6.17nb3"
 	help
 	  Python bindings and tools for Subversion
 
@@ -19044,7 +19702,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_SUBVERSION
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_SUBVERTPY
-	bool "py26-subvertpy-0.8.2"
+	bool "py26-subvertpy-0.8.9nb2"
 	help
 	  Alternative Python bindings for Subversion
 
@@ -19065,7 +19723,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_SYSCTL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_TESTTOOLS
-	bool "py26-testtools-0.9.11"
+	bool "py26-testtools-0.9.12"
 	help
 	  Extensions to the Python standard library unit testing framework
 
@@ -19078,7 +19736,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_TESTTOOLS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_UNIT
-	bool "py26-unit-1.4.1nb1"
+	bool "py26-unit-1.4.1nb2"
 	help
 	  Unit testing framework for python
 
@@ -19091,7 +19749,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_UNIT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_UNITGUI
-	bool "py26-unitgui-1.4.1nb2"
+	bool "py26-unitgui-1.4.1nb3"
 	help
 	  Unit testing framework for python tk
 
@@ -19124,7 +19782,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_URWID
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_USB
-	bool "py26-usb-0.4.2"
+	bool "py26-usb-0.4.2nb1"
 	help
 	  Python interface to USB via libusb
 
@@ -19135,7 +19793,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PY_USB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_PY_WINDBG
-	bool "py26-winpdb-1.4.6nb6"
+	bool "py26-winpdb-1.4.6nb7"
 	help
 	  Python GUI debugger
 
@@ -19208,7 +19866,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_PYTHONTIDY
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_QBZR
-	bool "qbzr-0.16nb1"
+	bool "qbzr-0.21.1nb1"
 	help
 	  GUI front end for Bazaar
 
@@ -19222,7 +19880,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_QBZR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_QCONF
-	bool "qconf-1.4nb7"
+	bool "qconf-1.4nb8"
 	help
 	  Configure script generator for qmake
 
@@ -19265,7 +19923,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_QOF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_QTSCRIPTGENERATOR
-	bool "qtscriptgenerator-0.1.0nb10"
+	bool "qtscriptgenerator-0.1.0nb11"
 	help
 	  Tool that generates Qt bindings for Qt Script
 
@@ -19312,7 +19970,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RAGEL
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RAPIDSVN
-	bool "rapidsvn-0.10.0.1nb9"
+	bool "rapidsvn-0.12.0.1"
 	help
 	  Cross-platform Subversion GUI
 
@@ -19439,7 +20097,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_ROUNDUP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_ROX_LIB
-	bool "rox-lib-2.0.2nb13"
+	bool "rox-lib-2.0.2nb14"
 	help
 	  Shared code for ROX applications
 
@@ -19508,7 +20166,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RSLTC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RT3
-	bool "rt-3.8.10"
+	bool "rt-3.8.10nb1"
 	help
 	  Industrial-grade ticketing system
 
@@ -19556,7 +20214,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_BYACCR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_MODE
-	bool "ruby-mode-1.9.2pl290"
+	bool "ruby-mode-1.9.3p0"
 	help
 	  Ruby editing mode for Emacs
 
@@ -19575,8 +20233,115 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RD_MODE
 	  http://rubyforge.org/projects/rdtool/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEBUG
+	bool "ruby18-debug-0.10.4nb3"
+	help
+	  Command line interface for ruby-debug
+
+	  Command line interface for the Ruby debugger ruby-debug.
+
+	  http://rubyforge.org/projects/ruby-debug/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEBUG_BASE
+	bool "ruby18-debug-base-0.10.4nb1"
+	help
+	  Fast implementation of the standard Ruby debugger
+
+	  Ruby-debug is a faster implementation of the standard Ruby debugger
+	  debug.rb using a native extension with a new hook Ruby C API.
+
+	  http://rubyforge.org/projects/ruby-debug/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEBUG_EXTRA
+	bool "ruby18-debug-extra-0.10.4"
+	help
+	  Emacs support and the Reference Manual for ruby-debug
+
+	  Emacs support and the Reference Manual for ruby-debug.
+
+	  http://rubyforge.org/projects/ruby-debug/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEBUG_IDE
+	bool "ruby18-debug-ide-0.4.16"
+	help
+	  IDEs interface to ruby-debug
+
+	  Ruby-debug-ide provides an interface which glues ruby-debug to IDEs
+	  like Eclipse (RDT) and NetBeans.
+
+	  http://rubyforge.org/projects/debug-commons/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_EET
+	bool "ruby18-eet-0.1.4nb4"
+	help
+	  Ruby module to read and write EET files
+
+	  Ruby-EET allows you to read and write EET files from Ruby code.
+	  Support for Ruby object serialization to EDD (EET Data Descriptor)
+	  format is given.
+
+	  http://code-monkey.de/pages/ruby-eet
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_LINECACHE
+	bool "ruby18-linecache-0.46"
+	help
+	  Ruby module to read and cache lines of a file
+
+	  LineCache is a module for reading and caching lines.  This may be useful
+	  for example in a debugger where the same lines are shown many times.
+
+	  http://rubyforge.org/projects/rocky-hacks/linecache
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RAKE
+	bool "ruby18-rake-0.8.7nb2"
+	help
+	  Ruby Make
+
+	  Rake is a simple ruby build program with capabilities similar to make.
+	  Rake has the following features:
+	  
+	  * Rakefiles (rake's version of Makefiles) are completely defined in
+	  standard Ruby syntax.  No XML files to edit.  No quirky Makefile
+	  syntax to worry about (is that a tab or a space?)
+	  * Users can specify tasks with prerequisites.
+	  * Rake supports rule patterns to sythesize implicit tasks.
+	  * Rake is lightweight.  It can be distributed with other projects as
+	  a single file.  Projects that depend upon rake do not require that
+	  rake be installed on target systems.
+
+	  http://rubyforge.org/projects/rake/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RBX_REQUIRE_RELATIVE
+	bool "ruby18-rbx-require-relative-0.0.5"
+	help
+	  Ruby 1.9's require_relative for Rubinius and MRI 1.8
+
+	  Ruby 1.9's relative_relative for Rubinus and MRI 1.8
+	  
+	  Here we add in Module RequireRelative method: *require_relative*,
+	  and *abs_file*.
+	  
+	  Example:
+	  require 'rubygems'; require 'require_relative'
+	  require_relative './lib/foo'
+	  absolute_path = RequireRelative.abs_file
+	  
+	  But why *abs_file*? Well, recall that ==__FILE__== does not give an absolute
+	  path. So if you have chdir'd before using ==__FILE__==, you might not be
+	  able to retrieve the full path.
+
+	  https://github.com/rocky/rbx-require-relative
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_SDL
-	bool "ruby19-SDL-2.1.1nb3"
+	bool "ruby19-SDL-2.1.1nb4"
 	help
 	  Ruby extension library to use SDL library
 
@@ -19627,9 +20392,22 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_ABSTRACT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_ACTIVEMODEL
-	bool "ruby19-activemodel-3.0.10"
+	bool "ruby19-activemodel-3.0.11nb2"
 	help
 	  Toolkit for building modeling frameworks (part of Rails)
+
+	  Active Model provides a known set of interfaces for usage in model classes.
+	  They allow for Action Pack helpers to interact with non-ActiveRecord models,
+	  for example. Active Model also helps building custom ORMs for use outside of
+	  the Rails framework.
+
+	  http://www.rubyonrails.org/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_ACTIVEMODEL31
+	bool "ruby19-activemodel-3.1.3"
+	help
+	  Toolkit for building modeling frameworks (part of Rails 3.1)
 
 	  Active Model provides a known set of interfaces for usage in model classes.
 	  They allow for Action Pack helpers to interact with non-ActiveRecord models,
@@ -19653,9 +20431,21 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_ACTIVESUPPORT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_ACTIVESUPPORT3
-	bool "ruby19-activesupport-3.0.10"
+	bool "ruby19-activesupport-3.0.11"
 	help
 	  Toolkit of support libraries and Ruby core extensions
+
+	  A toolkit of support libraries and Ruby core extensions extracted from
+	  the Rails framework. Rich support for multibyte strings,
+	  internationalization, time zones, and testing.
+
+	  http://www.rubyonrails.org/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_ACTIVESUPPORT31
+	bool "ruby19-activesupport-3.1.3nb1"
+	help
+	  Toolkit of support libraries and Ruby core extensions 3.1
 
 	  A toolkit of support libraries and Ruby core extensions extracted from
 	  the Rails framework. Rich support for multibyte strings,
@@ -19735,48 +20525,6 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_CURSES
 	  http://www.ruby-lang.org/en/
 
 
-config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEBUG
-	bool "ruby19-debug-0.10.4nb2"
-	help
-	  Command line interface for ruby-debug
-
-	  Command line interface for the Ruby debugger ruby-debug.
-
-	  http://rubyforge.org/projects/ruby-debug/
-
-
-config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEBUG_BASE
-	bool "ruby19-debug-base-0.10.4nb1"
-	help
-	  Fast implementation of the standard Ruby debugger
-
-	  Ruby-debug is a faster implementation of the standard Ruby debugger
-	  debug.rb using a native extension with a new hook Ruby C API.
-
-	  http://rubyforge.org/projects/ruby-debug/
-
-
-config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEBUG_EXTRA
-	bool "ruby19-debug-extra-0.10.4"
-	help
-	  Emacs support and the Reference Manual for ruby-debug
-
-	  Emacs support and the Reference Manual for ruby-debug.
-
-	  http://rubyforge.org/projects/ruby-debug/
-
-
-config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEBUG_IDE
-	bool "ruby19-debug-ide-0.4.16"
-	help
-	  IDEs interface to ruby-debug
-
-	  Ruby-debug-ide provides an interface which glues ruby-debug to IDEs
-	  like Eclipse (RDT) and NetBeans.
-
-	  http://rubyforge.org/projects/debug-commons/
-
-
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DEPRECATED
 	bool "ruby19-deprecated-2.0.1nb1"
 	help
@@ -19800,18 +20548,6 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_DHAKA
 	  extensions and no dependencies.
 
 	  http://dhaka.rubyforge.org/
-
-
-config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_EET
-	bool "ruby19-eet-0.1.4nb4"
-	help
-	  Ruby module to read and write EET files
-
-	  Ruby-EET allows you to read and write EET files from Ruby code.
-	  Support for Ruby object serialization to EDD (EET Data Descriptor)
-	  format is given.
-
-	  http://code-monkey.de/pages/ruby-eet
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_EVENTMACHINE
@@ -19848,7 +20584,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_FACADE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_FFI
-	bool "ruby19-ffi-1.0.9"
+	bool "ruby19-ffi-1.0.11"
 	help
 	  Loading dynamic libraries, binding functions within them
 
@@ -19873,6 +20609,17 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_FFI
 	  http://wiki.github.com/ffi/ffi
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_FIDDLE
+	bool "ruby19-fiddle-1.9.2pl290"
+	help
+	  Ruby fiddle library to wrap libffi
+
+	  Fiddle is the libffi wrapper library, actually a part of the
+	  Ruby distribution.
+
+	  http://www.ruby-lang.org/en/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_FLEXMOCK
 	bool "ruby19-flexmock-0.9.0"
 	help
@@ -19886,7 +20633,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_FLEXMOCK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GEMCUTTER
-	bool "ruby19-gemcutter-0.7.0"
+	bool "ruby19-gemcutter-0.7.1"
 	help
 	  Commands to interact with RubyGems.org
 
@@ -19954,7 +20701,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GETTEXT_RAILS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GNOME2_ATK
-	bool "ruby19-gnome2-atk-1.0.0"
+	bool "ruby19-gnome2-atk-1.0.3"
 	help
 	  Ruby binding of ATK-1.0.x or later
 
@@ -19968,7 +20715,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GNOME2_ATK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GNOME2_GIO
-	bool "ruby19-gnome2-gio-1.0.0"
+	bool "ruby19-gnome2-gio-1.0.3"
 	help
 	  Ruby binding of gio-2.0.x
 
@@ -19982,7 +20729,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GNOME2_GIO
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GNOME2_GLIB
-	bool "ruby19-gnome2-glib-1.0.0"
+	bool "ruby19-gnome2-glib-1.0.3nb1"
 	help
 	  Ruby binding of GLib-2.x
 
@@ -19996,7 +20743,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GNOME2_GLIB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_GNOME2_PANGO
-	bool "ruby19-gnome2-pango-1.0.0"
+	bool "ruby19-gnome2-pango-1.0.3nb1"
 	help
 	  Ruby binding of pango-1.x
 
@@ -20027,7 +20774,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_HECKLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_HIGHLINE
-	bool "ruby19-highline-1.6.2"
+	bool "ruby19-highline-1.6.8"
 	help
 	  High-level console IO library
 
@@ -20039,8 +20786,22 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_HIGHLINE
 	  http://highline.rubyforge.org/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_HIKE
+	bool "ruby19-hike-1.2.1"
+	help
+	  Find files in a set of paths
+
+	  Hike
+	  ====
+	  
+	  Hike is a Ruby library for finding files in a set of paths. Use it to
+	  implement search paths, load paths, and the like.
+
+	  http://github.com/sstephenson/hike
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_HOE
-	bool "ruby19-hoe-2.12.3"
+	bool "ruby19-hoe-2.12.4"
 	help
 	  Rake extension to provide full project automation
 
@@ -20051,7 +20812,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_HOE
 	  http://seattlerb.rubyforge.org/hoe/
 
 
-config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_I18N
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_I18N_05
 	bool "ruby19-i18n-0.5.0"
 	help
 	  New wave Internationalization support for Ruby
@@ -20090,8 +20851,47 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_I18N
 	  http://github.com/svenfuchs/i18n
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_I18N
+	bool "ruby19-i18n-0.6.0"
+	help
+	  New wave Internationalization support for Ruby
+
+	  Ruby I18n
+	  
+	  Ruby Internationalization and localization solution.
+	  
+	  Features:
+	  
+	  * translation and localization
+	  * interpolation of values to translations (Ruby 1.9 compatible syntax)
+	  * pluralization (CLDR compatible)
+	  * customizable transliteration to ASCII
+	  * flexible defaults
+	  * bulk lookup
+	  * lambdas as translation data
+	  * custom key/scope separator
+	  * custom exception handlers
+	  * extensible architecture with a swappable backend
+	  
+	  Pluggable features:
+	  
+	  * Cache
+	  * Pluralization: lambda pluralizers stored as translation data
+	  * Locale fallbacks, RFC4647 compliant (optionally: RFC4646 locale validation)
+	  * Gettext support
+	  * Translation metadata
+	  
+	  Alternative backends:
+	  
+	  * Chain
+	  * ActiveRecord (optionally: ActiveRecord::Missing and ActiveRecord::StoreProcs)
+	  * KeyValue (uses active_support/json and cannot store procs)
+
+	  http://github.com/svenfuchs/i18n
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_INLINE
-	bool "ruby19-inline-3.10.1"
+	bool "ruby19-inline-3.11.0"
 	help
 	  Embed C/C++ code directly in Ruby
 
@@ -20104,19 +20904,8 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_INLINE
 	  http://www.zenspider.com/ZSS/Products/RubyInline/
 
 
-config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_LINECACHE
-	bool "ruby19-linecache-0.46"
-	help
-	  Ruby module to read and cache lines of a file
-
-	  LineCache is a module for reading and caching lines.  This may be useful
-	  for example in a debugger where the same lines are shown many times.
-
-	  http://rubyforge.org/projects/rocky-hacks/linecache
-
-
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_LITTLE_PLUGGER
-	bool "ruby19-little-plugger-1.1.2"
+	bool "ruby19-little-plugger-1.1.3"
 	help
 	  Module that provides Gem based plugin management
 
@@ -20162,7 +20951,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_LOCALE_RAILS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_LOCKFILE
-	bool "ruby19-lockfile-1.4.3"
+	bool "ruby19-lockfile-2.1.0"
 	help
 	  Ruby library for creating NFS safe lockfiles
 
@@ -20208,7 +20997,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_LOGGING
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_LOQUACIOUS
-	bool "ruby19-loquacious-1.9.0"
+	bool "ruby19-loquacious-1.9.1"
 	help
 	  Descriptive configuration files for Ruby written in Ruby
 
@@ -20266,7 +21055,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_METACLASS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_METAID
-	bool "ruby19-metaid-1.0"
+	bool "ruby19-metaid-1.0nb1"
 	help
 	  Ruby metaprogramming helpers
 
@@ -20274,7 +21063,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_METAID
 	  metaprogramming easier.  For the lore of metaprogramming see Seeing
 	  Metaclasses Clearly and Chapter Six of Why's (Poignant) Guide to Ruby.
 
-	  http://www.yotabanana.com/hiki/ruby-gettext.html
+	  http://rubyforge.org/projects/rdtool/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_MKRF
@@ -20372,7 +21161,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_OLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_PARSER
-	bool "ruby19-parser-2.3.0"
+	bool "ruby19-parser-2.3.1"
 	help
 	  Ruby parser written in pure ruby
 
@@ -20385,7 +21174,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_PARSER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_PARSETREE
-	bool "ruby19-parsetree-3.0.7"
+	bool "ruby19-parsetree-3.0.8"
 	help
 	  Extract and enumerate Ruby parse trees
 
@@ -20398,7 +21187,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_PARSETREE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_PATHNAME2
-	bool "ruby19-pathname2-1.6.4"
+	bool "ruby19-pathname2-1.6.5"
 	help
 	  Alternate implementation of the Pathname library
 
@@ -20419,7 +21208,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_PKG_CONFIG
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_POLYGLOT
-	bool "ruby19-polyglot-0.3.2"
+	bool "ruby19-polyglot-0.3.3"
 	help
 	  Registry of file types to load with its improved version of 'require'
 
@@ -20453,7 +21242,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_POSIX_SPAWN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_PRIORITY_QUEUE
-	bool "ruby19-priority-queue-0.1.2nb3"
+	bool "ruby19-priority-queue-0.1.2nb4"
 	help
 	  Fibonacci-heap priority-queue implementation for Ruby
 
@@ -20479,7 +21268,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RACC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RAILTIES
-	bool "ruby19-railties-3.0.10"
+	bool "ruby19-railties-3.0.11"
 	help
 	  Tools for creating, working with, and running Rails applications
 
@@ -20496,28 +21285,36 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RAILTIES
 	  http://www.rubyonrails.org/
 
 
-config BR2_PKGSRC_PACKAGE_DEVEL_RAKE
-	bool "ruby19-rake-0.8.7nb2"
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RAILTIES31
+	bool "ruby19-railties-3.1.3"
 	help
-	  Ruby Make
+	  Tools for creating, working with, and running Rails applications
 
-	  Rake is a simple ruby build program with capabilities similar to make.
-	  Rake has the following features:
+	  = Railties -- Gluing the Engine to the Rails
 	  
-	  * Rakefiles (rake's version of Makefiles) are completely defined in
-	  standard Ruby syntax.  No XML files to edit.  No quirky Makefile
-	  syntax to worry about (is that a tab or a space?)
-	  * Users can specify tasks with prerequisites.
-	  * Rake supports rule patterns to sythesize implicit tasks.
-	  * Rake is lightweight.  It can be distributed with other projects as
-	  a single file.  Projects that depend upon rake do not require that
-	  rake be installed on target systems.
+	  Railties is responsible to glue all frameworks together. Overall, it:
+	  
+	  * handles all the bootstrapping process for a Rails application;
+	  
+	  * manager rails command line interface;
+	  
+	  * provides Rails generators core;
 
-	  http://rubyforge.org/projects/rake/
+	  http://www.rubyonrails.org/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RANDEXP
+	bool "ruby19-randexp-0.1.6"
+	help
+	  Library for generating random strings
+
+	  Randexp makes it easy to generate random string from most regular expressions.
+
+	  http://github.com/benburkert/randexp
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RBTREE
-	bool "ruby19-rbtree-0.3.0nb1"
+	bool "ruby19-rbtree-0.3.0nb2"
 	help
 	  Sorted associative collection using Red-Black Trees for Ruby
 
@@ -20539,30 +21336,8 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RBTREE
 	  http://rubyforge.org/projects/rbtree/
 
 
-config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RBX_REQUIRE_RELATIVE
-	bool "ruby19-rbx-require-relative-0.0.5"
-	help
-	  Ruby 1.9's require_relative for Rubinius and MRI 1.8
-
-	  Ruby 1.9's relative_relative for Rubinus and MRI 1.8
-	  
-	  Here we add in Module RequireRelative method: *require_relative*,
-	  and *abs_file*.
-	  
-	  Example:
-	  require 'rubygems'; require 'require_relative'
-	  require_relative './lib/foo'
-	  absolute_path = RequireRelative.abs_file
-	  
-	  But why *abs_file*? Well, recall that ==__FILE__== does not give an absolute
-	  path. So if you have chdir'd before using ==__FILE__==, you might not be
-	  able to retrieve the full path.
-
-	  https://github.com/rocky/rbx-require-relative
-
-
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RCOV
-	bool "ruby19-rcov-0.9.10"
+	bool "ruby19-rcov-0.9.11"
 	help
 	  Code coverage analysis for Ruby
 
@@ -20587,7 +21362,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RCSPARSE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RDOC
-	bool "ruby19-rdoc-3.9.4"
+	bool "ruby19-rdoc-3.12"
 	help
 	  produces HTML and command-line documentation for Ruby projects
 
@@ -20647,7 +21422,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC1
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC
-	bool "ruby19-rspec-2.6.0"
+	bool "ruby19-rspec-2.7.0"
 	help
 	  Behaviour Driven Development framework for Ruby
 
@@ -20675,7 +21450,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC_CORE
-	bool "ruby19-rspec-core-2.6.4"
+	bool "ruby19-rspec-core-2.7.1"
 	help
 	  Behaviour Driven Development framework for Ruby, core part
 
@@ -20695,7 +21470,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC_CORE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC_EXPECTATIONS
-	bool "ruby19-rspec-expectations-2.6.0"
+	bool "ruby19-rspec-expectations-2.7.0"
 	help
 	  Behaviour Driven Development framework for Ruby, expectations
 
@@ -20715,7 +21490,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC_EXPECTATIONS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC_MOCKS
-	bool "ruby19-rspec-mocks-2.6.0"
+	bool "ruby19-rspec-mocks-2.7.0"
 	help
 	  This is test-double framework for rspec
 
@@ -20750,7 +21525,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC_RAILS1
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_RSPEC_RAILS
-	bool "ruby19-rspec-rails-2.6.1"
+	bool "ruby19-rspec-rails-2.7.0"
 	help
 	  A test-double framework for rspec
 
@@ -20781,7 +21556,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBIGEN
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY2RUBY
-	bool "ruby19-ruby2ruby-1.3.0"
+	bool "ruby19-ruby2ruby-1.3.1"
 	help
 	  Pure Ruby code from Ruby S-expressions
 
@@ -20793,7 +21568,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY2RUBY
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBYFORGE
-	bool "ruby19-rubyforge-2.0.4"
+	bool "ruby19-rubyforge-2.0.4nb1"
 	help
 	  Simplistic script automating RubyForge operations
 
@@ -20815,7 +21590,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_SETUP
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_SEXP_PROCESSOR
-	bool "ruby19-sexp-processor-3.0.6"
+	bool "ruby19-sexp-processor-3.0.9"
 	help
 	  Generic sexp processing tools
 
@@ -20862,7 +21637,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_STREAM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_SUBEXEC
-	bool "ruby19-subexec-0.1.0"
+	bool "ruby19-subexec-0.2.0"
 	help
 	  Subexec spawns an external command with a timeout
 
@@ -20872,7 +21647,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_SUBEXEC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_SUBVERSION
-	bool "ruby19-subversion-1.6.17nb1"
+	bool "ruby19-subversion-1.6.17nb3"
 	help
 	  Ruby bindings for Subversion
 
@@ -20930,7 +21705,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_TEST_SPEC
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_TEST_UNIT
-	bool "ruby19-test-unit-2.3.2"
+	bool "ruby19-test-unit-2.4.3"
 	help
 	  Improved version of Test::Unit
 
@@ -20977,7 +21752,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_THOR
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_THRIFT
-	bool "ruby19-thrift-0.7.0"
+	bool "ruby19-thrift-0.7.0nb1"
 	help
 	  Ruby libraries for Thrift (a language-agnostic RPC system)
 
@@ -21021,7 +21796,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_RUBY_VALIDATABLE
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_RUDIMENTS
-	bool "rudiments-0.29nb2"
+	bool "rudiments-0.34"
 	help
 	  C++ class library for client/server/daemon applications
 
@@ -21094,7 +21869,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SAPNWRFCSDK
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SCINTILLA
-	bool "scintilla-2.25nb1"
+	bool "scintilla-2.25nb2"
 	help
 	  Source code editing component
 
@@ -21113,7 +21888,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SCINTILLA
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SCMGIT
-	bool "scmgit-1.7.6.3"
+	bool "scmgit-1.7.7.2nb1"
 	help
 	  GIT version control suite meta-package
 
@@ -21125,7 +21900,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SCMGIT
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SCMGIT_BASE
-	bool "scmgit-base-1.7.6.3"
+	bool "scmgit-base-1.7.7.2nb1"
 	help
 	  
 
@@ -21143,18 +21918,18 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SCMGIT_BASE
 	  It also optionally contains a TK-based repository browser and python
 	  bindings.
 
-	  http://git.or.cz/
+	  http://git-scm.com/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SCMGIT_DOCS
-	bool "scmgit-docs-1.7.6.3"
+	bool "scmgit-docs-1.7.7.2"
 	help
 	  
 
 	  This package installs documentation for the GIT distributed version control
 	  suite.
 
-	  http://git.or.cz/
+	  http://git-scm.com/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SCONS
@@ -21376,11 +22151,11 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SML_MODE
 	  syntax highlighting and automatic indentation and comes with sml-proc
 	  which allows interaction with an inferior SML interactive loop.
 
-	  http://blog.evanweaver.com/files/doc/fauna/simple_uuid/
+	  http://relishapp.com/rspec
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SNAPPY
-	bool "snappy-1.0.1"
+	bool "snappy-1.0.1nb1"
 	help
 	  General purpose data compression library
 
@@ -21599,7 +22374,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SUBVERSION
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SUBVERSION_BASE
-	bool "subversion-base-1.6.17nb1"
+	bool "subversion-base-1.6.17nb3"
 	help
 	  Version control system, base programs and libraries
 
@@ -21678,7 +22453,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_SWIG
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_SWT
-	bool "swt-3.5.1.3555nb6"
+	bool "swt-3.5.1.3555nb7"
 	help
 	  Open source widget toolkit for Java
 
@@ -21753,6 +22528,33 @@ config BR2_PKGSRC_PACKAGE_DEVEL_TCL_TCLCL
 	  http://otcl-tclcl.sourceforge.net/tclcl/
 
 
+config BR2_PKGSRC_PACKAGE_DEVEL_TCLAP
+	bool "tclap-1.2.1"
+	help
+	  Templatized C++ Command Line Parser Library
+
+	  TCLAP is a small, flexible library that provides a simple interface for defining
+	  and accessing command line arguments. It was intially inspired by the user
+	  friendly CLAP libary. The difference is that this library is templatized, so the
+	  argument class is type independent. Type independence avoids
+	  identical-except-for-type objects, such as IntArg, FloatArg, and StringArg.
+	  While the library is not strictly compliant with the GNU or POSIX standards, it
+	  is close.
+	  
+	  TCLAP is written in ANSI C++ and is meant to be compatible with any
+	  standards-compliant C++ compiler. It is known to work on Linux, MacOS X,
+	  Windows, and Solaris platforms. The library is implemented entirely in header
+	  files making it easy to use and distribute with other software. It is licensed
+	  under the MIT License for worry free distribution.
+	  
+	  TCLAP is now a mature, stable, and feature rich package. Unless I get really
+	  bored, it probably won't see much further development aside from bug fixes and
+	  compatibility updates. Please don't let any apparent project inactivity
+	  discourage you from using the software!
+
+	  http://tclap.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_DEVEL_TCLLIB
 	bool "tcllib-1.8"
 	help
@@ -21795,7 +22597,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_TEEM
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_TET3
-	bool "tet3-3.7nb1"
+	bool "tet3-3.7nb2"
 	help
 	  The Open Group test harness
 
@@ -21812,6 +22614,92 @@ config BR2_PKGSRC_PACKAGE_DEVEL_TET3
 	  drudge out of test development and use TETware.
 
 	  http://tetworks.opengroup.org/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_TEX_ETOOLBOX
+	bool "tex-etoolbox-2.1"
+	help
+	  Tool-box for LaTeX programmers using e-TeX
+
+	  The etoolbox package is a toolbox of programming facilities geared
+	  primarily towards LaTeX class and package authors. It provides LaTeX
+	  frontends to some of the new primitives provided by e-TeX as well as
+	  some generic tools which are not strictly related to e-TeX but match the
+	  profile of this package. Note that the initial versions of this package
+	  were released under the name elatex. The package provides functions that
+	  seem to offer alternative ways of implementing some LaTeX kernel
+	  commands; nevertheless, the package will not modify any part of the
+	  LaTeX kernel.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_TEX_ETOOLBOX_DOC
+	bool "tex-etoolbox-doc-2.1"
+	help
+	  Documentation for tex-etoolbox
+
+	  This is documentation for tex-etoolbox.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_TEX_L3KERNEL
+	bool "tex-l3kernel-0.2900"
+	help
+	  LaTeX3 programming conventions
+
+	  The l3kernel bundle provides an implementation of the LaTeX3
+	  programmers' interface, as a set of packages that run under LaTeX 2e.
+	  The interface provides the foundation on which the LaTeX3 kernel and
+	  other future code are built: it is an API for TeX programmers. The
+	  packages are set up so that the LaTeX3 conventions can be used with
+	  regular LaTeX 2e packages. All the files of the bundle are also
+	  available in the Subversion (SVN) repository of the LaTeX3 Project. The
+	  bundle on CTAN is based on a snapshot of the SVN repository on
+	  2011-10-09.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_TEX_L3KERNEL_DOC
+	bool "tex-l3kernel-doc-0.2900"
+	help
+	  Documentation for tex-l3kernel
+
+	  This is documentation for tex-l3kernel.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_TEX_L3PACKAGES
+	bool "tex-l3packages-0.2900"
+	help
+	  High-level LaTeX3 concepts
+
+	  The bundle holds prototype implementations of concepts for a LaTeX
+	  designer interface, to be used with the experimental LaTeX kernel as
+	  programming tools and kernel support. Packages provided in this release
+	  are: - l3keys2e, which makes the facilities of the kernel module l3keys
+	  available for use by LaTeX 2e packages; - xfrac, which provides flexible
+	  split-level fractions; - xparse, which provides a high-level interface
+	  for declaring document commands; and - xtemplate, which provides a means
+	  of defining generic functions using a key-value syntax. All the files of
+	  the bundle are also available in the Subversion (SVN) repository of the
+	  LaTeX3 Project. The bundle on CTAN is based on a snapshot of the SVN
+	  repository on 2011- 10-09.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_TEX_L3PACKAGES_DOC
+	bool "tex-l3packages-doc-0.2900"
+	help
+	  Documentation for tex-l3packages
+
+	  This is documentation for tex-l3packages.
+
+	  http://www.tug.org/texlive/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_TEX_MULTIDO
@@ -21915,7 +22803,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_TKDIFF
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_TLA
-	bool "tla-1.3.5"
+	bool "tla-1.3.5nb1"
 	help
 	  Revision control system ideal for widely distributed development
 
@@ -22168,7 +23056,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_VALGRIND
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_VALIDE
-	bool "valide-0.4.0nb7"
+	bool "valide-0.4.0nb8"
 	help
 	  IDE for the Vala programming language
 
@@ -22221,6 +23109,27 @@ config BR2_PKGSRC_PACKAGE_DEVEL_VANESSA_SOCKET
 	  socket for clients as a server and to pipe information between sockets.
 
 	  http://www.vergenet.net/linux/vanessa/
+
+
+config BR2_PKGSRC_PACKAGE_DEVEL_VERA__
+	bool "vera++-1.1.1"
+	help
+	  Programmable verification and analysis tool for C++
+
+	  Vera++ is a programmable tool for verification, analysis and
+	  transformation of C++ source code.
+	  
+	  Vera++ is a tool designed for programmers -- not only in the sense that
+	  it helps with everyday development work, but also in the sense that all
+	  its rules are implemented as scripts that can be modified or added by
+	  the user.  Thanks to this, programmers have complete freedom and control
+	  over what the tool does and how it works.
+	  
+	  Vera++ is mainly an engine that parses C++ source files and presents the
+	  result of this parsing to scripts in the form of various collections --
+	  the scripts are actually performing the requested tasks.
+
+	  http://www.inspirel.com/vera/
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_VTCL
@@ -22312,7 +23221,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_XDELTA3
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_XFCE4_DEV_TOOLS
-	bool "xfce4-dev-tools-4.6.0nb4"
+	bool "xfce4-dev-tools-4.6.0nb5"
 	help
 	  Xfce development tools
 
@@ -22322,7 +23231,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_XFCE4_DEV_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_XFCONF
-	bool "xfconf-4.6.1nb6"
+	bool "xfconf-4.6.1nb7"
 	help
 	  Xfce client-server configuration storage and query system
 
@@ -22357,7 +23266,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_XORG_UTIL_MACROS
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_XSD
-	bool "xsd-3.2.0nb1"
+	bool "xsd-3.2.0nb2"
 	help
 	  W3C XML Schema to C++ data binding compiler
 
@@ -22370,7 +23279,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_XSD
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_XULRUNNER
-	bool "xulrunner-6.0.2"
+	bool "xulrunner-8.0nb1"
 	help
 	  XML User Interface Language runtime environment
 
@@ -22382,7 +23291,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_XULRUNNER
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_XULRUNNER192
-	bool "xulrunner192-1.9.2.22"
+	bool "xulrunner192-1.9.2.24"
 	help
 	  XML User Interface Language runtime environment
 
@@ -22408,7 +23317,7 @@ config BR2_PKGSRC_PACKAGE_DEVEL_XXGDB
 
 
 config BR2_PKGSRC_PACKAGE_DEVEL_YASM
-	bool "yasm-1.1.0nb1"
+	bool "yasm-1.2.0"
 	help
 	  Complete rewrite of the NASM assembler with BSD license
 

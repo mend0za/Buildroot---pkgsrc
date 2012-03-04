@@ -1,5 +1,19 @@
+config BR2_PKGSRC_PACKAGE_WM_BBKEYS
+	bool "bbkeys-0.8.6nb1"
+	help
+	  General X Window keygrabber
+
+	  Provide keyboard shortcuts for X11R6, specifically intended for use with the
+	  Blackbox window manager but usable with any.
+	  
+	  Can bind actions such as executing commands, altering the states of windows,
+	  switching workspaces, etc. to arbitrary keys.
+
+	  http://bbkeys.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_WM_3DDESKTOP
-	bool "3ddesktop-0.2.9nb5"
+	bool "3ddesktop-0.2.9nb6"
 	help
 	  3D Virtual Desktop Switcher
 
@@ -60,7 +74,7 @@ config BR2_PKGSRC_PACKAGE_WM_AEWM__
 
 
 config BR2_PKGSRC_PACKAGE_WM_AFTERSTEP
-	bool "afterstep-2.1.2nb15"
+	bool "afterstep-2.1.2nb16"
 	help
 	  Window manager based on the look and feel of the NeXTStep interface
 
@@ -102,7 +116,7 @@ config BR2_PKGSRC_PACKAGE_WM_AMIWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_AWESOME
-	bool "awesome-2.3.6nb7"
+	bool "awesome-2.3.6nb8"
 	help
 	  Tiling window manager based on dwm
 
@@ -122,20 +136,6 @@ config BR2_PKGSRC_PACKAGE_WM_AWESOME
 	  wish, like any other window manager.
 
 	  http://awesome.naquadah.org/
-
-
-config BR2_PKGSRC_PACKAGE_WM_BBKEYS
-	bool "bbkeys-0.8.6nb1"
-	help
-	  General X Window keygrabber
-
-	  Provide keyboard shortcuts for X11R6, specifically intended for use with the
-	  Blackbox window manager but usable with any.
-	  
-	  Can bind actions such as executing commands, altering the states of windows,
-	  switching workspaces, etc. to arbitrary keys.
-
-	  http://bbkeys.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_WM_BBKEYS09
@@ -211,9 +211,9 @@ config BR2_PKGSRC_PACKAGE_WM_BLACKBOX70
 
 
 config BR2_PKGSRC_PACKAGE_WM_BMPANEL2
-	bool "bmpanel2-2.1pre1"
+	bool "bmpanel2-2.1pre1nb2"
 	help
-	  TODO: Short description of the package
+	  NETWM-compatible panel for X11
 
 	  Nice NETWM-compatible panel for X11. Features:
 	  
@@ -259,7 +259,7 @@ config BR2_PKGSRC_PACKAGE_WM_CCSM
 
 
 config BR2_PKGSRC_PACKAGE_WM_COMPIZ
-	bool "compiz-0.8.4nb11"
+	bool "compiz-0.8.4nb12"
 	help
 	  Compositing window manager
 
@@ -271,7 +271,7 @@ config BR2_PKGSRC_PACKAGE_WM_COMPIZ
 
 
 config BR2_PKGSRC_PACKAGE_WM_COMPIZ_FUSION_PLUGINS_EXTRA
-	bool "compiz-fusion-plugins-extra-0.8.4nb6"
+	bool "compiz-fusion-plugins-extra-0.8.4nb7"
 	help
 	  Compositing window manager - extra plugins
 
@@ -285,7 +285,7 @@ config BR2_PKGSRC_PACKAGE_WM_COMPIZ_FUSION_PLUGINS_EXTRA
 
 
 config BR2_PKGSRC_PACKAGE_WM_COMPIZ_FUSION_PLUGINS_MAIN
-	bool "compiz-fusion-plugins-main-0.8.4nb6"
+	bool "compiz-fusion-plugins-main-0.8.4nb7"
 	help
 	  Compositing window manager - main plugins
 
@@ -328,7 +328,7 @@ config BR2_PKGSRC_PACKAGE_WM_CTWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_CWM
-	bool "cwm-3nb2"
+	bool "cwm-3nb3"
 	help
 	  Window manager for X11 initially inspired by evilwm
 
@@ -371,7 +371,7 @@ config BR2_PKGSRC_PACKAGE_WM_DWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_E16MENUEDIT2
-	bool "e16menuedit2-0.0.3nb8"
+	bool "e16menuedit2-0.0.3nb9"
 	help
 	  Menu editor for the Enlightenment window manager
 
@@ -384,7 +384,7 @@ config BR2_PKGSRC_PACKAGE_WM_E16MENUEDIT2
 
 
 config BR2_PKGSRC_PACKAGE_WM_ECHINUS
-	bool "echinus-0.4.3"
+	bool "echinus-0.4.3nb1"
 	help
 	  Simple and lightweight tiling window manager
 
@@ -404,7 +404,7 @@ config BR2_PKGSRC_PACKAGE_WM_ECHINUS
 
 
 config BR2_PKGSRC_PACKAGE_WM_ENLIGHTENMENT
-	bool "enlightenment-0.16.8.8nb6"
+	bool "enlightenment-0.16.8.8nb7"
 	help
 	  Highly themeable and configurable window manager
 
@@ -437,7 +437,7 @@ config BR2_PKGSRC_PACKAGE_WM_ETHEMES
 
 
 config BR2_PKGSRC_PACKAGE_WM_EVILWM
-	bool "evilwm-1.0.1"
+	bool "evilwm-1.1.0"
 	help
 	  Minimalist Window Manager for X
 
@@ -456,7 +456,7 @@ config BR2_PKGSRC_PACKAGE_WM_EVILWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_FLUXBOX
-	bool "fluxbox-1.1.1nb6"
+	bool "fluxbox-1.1.1nb7"
 	help
 	  Window Manager for X based on Blackbox
 
@@ -470,7 +470,7 @@ config BR2_PKGSRC_PACKAGE_WM_FLUXBOX
 
 
 config BR2_PKGSRC_PACKAGE_WM_FLUXCONF
-	bool "fluxconf-0.9.9nb7"
+	bool "fluxconf-0.9.9nb8"
 	help
 	  GTK based configuration tool for the fluxbox window manager
 
@@ -561,7 +561,7 @@ config BR2_PKGSRC_PACKAGE_WM_FVWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_FVWM_DEVEL
-	bool "fvwm-2.5.31nb1"
+	bool "fvwm-2.5.31nb2"
 	help
 	  Development version of X11 Virtual window manager
 
@@ -641,7 +641,7 @@ config BR2_PKGSRC_PACKAGE_WM_GOLEM
 
 
 config BR2_PKGSRC_PACKAGE_WM_ICECC
-	bool "icecc-2.9nb11"
+	bool "icecc-2.9nb12"
 	help
 	  IceWM Control Centre
 
@@ -656,7 +656,7 @@ config BR2_PKGSRC_PACKAGE_WM_ICECC
 
 
 config BR2_PKGSRC_PACKAGE_WM_ICEWM
-	bool "icewm-1.2.35nb1"
+	bool "icewm-1.2.35nb2"
 	help
 	  Small, fast and light-weight window manager
 
@@ -679,7 +679,7 @@ config BR2_PKGSRC_PACKAGE_WM_ICEWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_ICEWM_IMLIB
-	bool "icewm-imlib-1.2.35nb7"
+	bool "icewm-imlib-1.2.35nb8"
 	help
 	  
 
@@ -726,7 +726,7 @@ config BR2_PKGSRC_PACKAGE_WM_ION
 
 
 config BR2_PKGSRC_PACKAGE_WM_JWM
-	bool "jwm-2.0.1nb4"
+	bool "jwm-2.0.1nb5"
 	help
 	  Lightweight window manager with virtual desktops
 
@@ -766,7 +766,7 @@ config BR2_PKGSRC_PACKAGE_WM_LWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_MATCHBOX_WM
-	bool "matchbox-wm-1.1nb2"
+	bool "matchbox-wm-1.1nb3"
 	help
 	  Window manager designed for computers with small displays
 
@@ -785,7 +785,7 @@ config BR2_PKGSRC_PACKAGE_WM_MATCHBOX_WM
 
 
 config BR2_PKGSRC_PACKAGE_WM_METACITY
-	bool "metacity-2.34.1"
+	bool "metacity-2.34.1nb1"
 	help
 	  GNOME-compliant window manager
 
@@ -810,7 +810,7 @@ config BR2_PKGSRC_PACKAGE_WM_METACITY
 
 
 config BR2_PKGSRC_PACKAGE_WM_METISSE
-	bool "metisse-0.4.1nb8"
+	bool "metisse-0.4.1nb10"
 	help
 	  Window manager with novel features
 
@@ -903,7 +903,7 @@ config BR2_PKGSRC_PACKAGE_WM_NOVAWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_OBCONF
-	bool "obconf-2.0.3nb8"
+	bool "obconf-2.0.3nb9"
 	help
 	  Tool for configuring the Openbox window manager
 
@@ -943,7 +943,7 @@ config BR2_PKGSRC_PACKAGE_WM_OLVWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_OPENBOX
-	bool "openbox-3.5.0"
+	bool "openbox-3.5.0nb1"
 	help
 	  Standards compliant, light-weight, and extensible window manager
 
@@ -960,7 +960,7 @@ config BR2_PKGSRC_PACKAGE_WM_OPENBOX
 
 
 config BR2_PKGSRC_PACKAGE_WM_OROBOROX
-	bool "oroborox-0.9.8nb9"
+	bool "oroborox-0.9.8nb10"
 	help
 	  The lightweight Window Manager for the ROX Desktop
 
@@ -999,7 +999,7 @@ config BR2_PKGSRC_PACKAGE_WM_OROBORUS
 
 
 config BR2_PKGSRC_PACKAGE_WM_PEKWM
-	bool "pekwm-0.1.13"
+	bool "pekwm-0.1.13nb1"
 	help
 	  Window manager based on aewm++
 
@@ -1094,7 +1094,7 @@ config BR2_PKGSRC_PACKAGE_WM_PY_TYLE
 
 
 config BR2_PKGSRC_PACKAGE_WM_RATPOISON
-	bool "ratpoison-1.4.5"
+	bool "ratpoison-1.4.5nb1"
 	help
 	  Simple window manager with no fat library dependencies
 
@@ -1112,7 +1112,7 @@ config BR2_PKGSRC_PACKAGE_WM_RATPOISON
 
 
 config BR2_PKGSRC_PACKAGE_WM_SAWFISH
-	bool "sawfish-1.7.1nb2"
+	bool "sawfish-1.7.1nb3"
 	help
 	  Extensible window manager that is fully configurable in Lisp
 
@@ -1171,7 +1171,7 @@ config BR2_PKGSRC_PACKAGE_WM_SCROTWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_SELECTWM
-	bool "selectwm-0.4.1nb11"
+	bool "selectwm-0.4.1nb12"
 	help
 	  Simple GTK2 application to select window manager
 
@@ -1197,7 +1197,7 @@ config BR2_PKGSRC_PACKAGE_WM_SELECTWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_SKIPPY
-	bool "skippy-0.5.0nb9"
+	bool "skippy-0.5.0nb10"
 	help
 	  Fullscreen task switcher for X11
 
@@ -1327,7 +1327,7 @@ config BR2_PKGSRC_PACKAGE_WM_W9WM
 
 
 config BR2_PKGSRC_PACKAGE_WM_WAIMEA
-	bool "waimea-0.4.0nb17"
+	bool "waimea-0.4.0nb18"
 	help
 	  Fast and highly customizable virtual window manager
 
@@ -1356,7 +1356,7 @@ config BR2_PKGSRC_PACKAGE_WM_WAMPAGER
 
 
 config BR2_PKGSRC_PACKAGE_WM_WBAR
-	bool "wbar-2.2.2"
+	bool "wbar-2.2.2nb1"
 	help
 	  Simple and highly customizable quick-launch tool
 
@@ -1384,7 +1384,7 @@ config BR2_PKGSRC_PACKAGE_WM_WEEWM
 
 
 config BR2_PKGSRC_PACKAGE_WM_WINDOWLAB
-	bool "windowlab-1.33nb2"
+	bool "windowlab-1.33nb3"
 	help
 	  Small and simple window manager
 
@@ -1402,7 +1402,7 @@ config BR2_PKGSRC_PACKAGE_WM_WINDOWLAB
 
 
 config BR2_PKGSRC_PACKAGE_WM_WINDOWMAKER
-	bool "windowmaker-0.92.0nb16"
+	bool "windowmaker-0.92.0nb17"
 	help
 	  
 
@@ -1444,7 +1444,7 @@ config BR2_PKGSRC_PACKAGE_WM_WM2
 
 
 config BR2_PKGSRC_PACKAGE_WM_WMAKERCONF
-	bool "wmakerconf-2.11nb16"
+	bool "wmakerconf-2.11nb18"
 	help
 	  Gtk+ based configuration tool for Window Maker
 
@@ -1496,7 +1496,7 @@ config BR2_PKGSRC_PACKAGE_WM_WMEXTRA
 
 
 config BR2_PKGSRC_PACKAGE_WM_WMI
-	bool "wmi-10nb2"
+	bool "wmi-10nb3"
 	help
 	  Minimalist, flexible and highly customizable window manager
 
@@ -1514,7 +1514,7 @@ config BR2_PKGSRC_PACKAGE_WM_WMI
 	  note that WMI provides hundreds of actions) can be bind to a shortcut. So say
 	  good-bye to the rodent :)
 
-	  http://www.suckless.org/wiki/wmii/download
+	  http://wmi.suckless.org/
 
 
 config BR2_PKGSRC_PACKAGE_WM_WMII
@@ -1583,7 +1583,7 @@ config BR2_PKGSRC_PACKAGE_WM_WMX_GNOME
 
 
 config BR2_PKGSRC_PACKAGE_WM_XFCE4_WM
-	bool "xfce4-wm-4.6.1nb5"
+	bool "xfce4-wm-4.6.1nb6"
 	help
 	  Xfce window manager
 
@@ -1593,7 +1593,7 @@ config BR2_PKGSRC_PACKAGE_WM_XFCE4_WM
 
 
 config BR2_PKGSRC_PACKAGE_WM_XFCE4_WM_THEMES
-	bool "xfce4-wm-themes-4.6.0nb4"
+	bool "xfce4-wm-themes-4.6.0nb5"
 	help
 	  Xfce window manager themes
 

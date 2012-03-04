@@ -1,3 +1,54 @@
+config BR2_PKGSRC_PACKAGE_CROSS_ATASM
+	bool "atasm-1.04nb2"
+	help
+	  Cross-assembler for 6502 optimized to code for Atari 8 bit computers
+
+	  This is a 6502 cross-assembler optimized to code for the Atari 8 bit
+	  computer line.  It is meant to be compatible with the Mac/65 assembler
+	  on the native Atari 8 bit platform.
+
+	  http://sourceforge.net/projects/atasm/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVR_BINUTILS
+	bool "avr-binutils-2.19.1nb1"
+	help
+	  GNU binutils for Atmel AVR 8-bit RISC microcontrollers
+
+	  GNU binutils for Atmel AVR 8 bit RISC microcontrollers.
+	  Prerequisite for avr-gcc in a cross-compilation environment.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVR_GCC
+	bool "avr-gcc-4.4.1nb3"
+	help
+	  GNU gcc-4.4 for Atmel AVR 8-bit RISC microcontrollers
+
+	  gcc-3.0 configured as cross-compiler for Atmel AVR 8-bit RISC
+	  microcontrollers.
+	  
+	  This package includes a basic C++ compiler, although this currently
+	  is only of limited use (without a libstdc++), and is little tested.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVR_GDB
+	bool "avr-gdb-5.3nb3"
+	help
+	  GNU gdb for Atmel AVR 8-bit RISC microcontrollers
+
+	  GNU Debugger GDB, configured for Atmel AVR microcontroller targets.
+	  
+	  This debugger cannot really be used standalone, but is useful in
+	  connection with either AVaRICE (http://avarice.sourceforge.net/)
+	  or simulavr (http://www.freesoftware.fsf.org/simulavr/).
+
+	  
+
+
 config BR2_PKGSRC_PACKAGE_CROSS_AVR_LIBC
 	bool "avr-libc-1.6.7nb1"
 	help
@@ -24,59 +75,8 @@ config BR2_PKGSRC_PACKAGE_CROSS_AVR_LIBC
 	  http://savannah.nongnu.org/projects/avr-libc
 
 
-config BR2_PKGSRC_PACKAGE_CROSS_ATASM
-	bool "atasm-1.04nb2"
-	help
-	  Cross-assembler for 6502 optimized to code for Atari 8 bit computers
-
-	  This is a 6502 cross-assembler optimized to code for the Atari 8 bit
-	  computer line.  It is meant to be compatible with the Mac/65 assembler
-	  on the native Atari 8 bit platform.
-
-	  http://sourceforge.net/projects/atasm/
-
-
-config BR2_PKGSRC_PACKAGE_CROSS_AVR_BINUTILS
-	bool "avr-binutils-2.19.1"
-	help
-	  GNU binutils for Atmel AVR 8-bit RISC microcontrollers
-
-	  GNU binutils for Atmel AVR 8 bit RISC microcontrollers.
-	  Prerequisite for avr-gcc in a cross-compilation environment.
-
-	  
-
-
-config BR2_PKGSRC_PACKAGE_CROSS_AVR_GCC
-	bool "avr-gcc-4.4.1nb3"
-	help
-	  GNU gcc-4.4 for Atmel AVR 8-bit RISC microcontrollers
-
-	  gcc-3.0 configured as cross-compiler for Atmel AVR 8-bit RISC
-	  microcontrollers.
-	  
-	  This package includes a basic C++ compiler, although this currently
-	  is only of limited use (without a libstdc++), and is little tested.
-
-	  
-
-
-config BR2_PKGSRC_PACKAGE_CROSS_AVR_GDB
-	bool "avr-gdb-5.3nb2"
-	help
-	  GNU gdb for Atmel AVR 8-bit RISC microcontrollers
-
-	  GNU Debugger GDB, configured for Atmel AVR microcontroller targets.
-	  
-	  This debugger cannot really be used standalone, but is useful in
-	  connection with either AVaRICE (http://avarice.sourceforge.net/)
-	  or simulavr (http://www.freesoftware.fsf.org/simulavr/).
-
-	  
-
-
 config BR2_PKGSRC_PACKAGE_CROSS_AVRDUDE
-	bool "avrdude-5.10nb1"
+	bool "avrdude-5.10nb2"
 	help
 	  Downloader/uploader for Atmel AVR 8-bit RISC microcontrollers
 
@@ -154,7 +154,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_BINUTILS
 
 
 config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_GCC
-	bool "cross-h8300-hms-gcc-3.1nb5"
+	bool "cross-h8300-hms-gcc-3.1nb6"
 	help
 	  GCC compiler for h8300-hms
 
@@ -201,15 +201,6 @@ config BR2_PKGSRC_PACKAGE_CROSS_I386_MSDOSDJGPP
 	  http://www.delorie.com/djgpp/, for more information.
 
 	  http://www.delorie.com/djgpp/
-
-
-config BR2_PKGSRC_PACKAGE_CROSS_I386_NETBSDPE
-	bool "cross-i386-netbsdpe-3.3.6"
-	help
-	  Cross-compile environment for PEACE/i386
-
-
-	  http://chiharu.hauN.org/peace/
 
 
 config BR2_PKGSRC_PACKAGE_CROSS_DASM

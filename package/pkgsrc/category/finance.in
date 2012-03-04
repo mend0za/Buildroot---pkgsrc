@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_FINANCE_GKRELLM_STOCK
-	bool "gkrellm-stock-0.5.1nb15"
+	bool "gkrellm-stock-0.5.1nb16"
 	help
 	  GKrellM2 stock ticker plugin
 
@@ -13,7 +13,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_GKRELLM_STOCK
 
 
 config BR2_PKGSRC_PACKAGE_FINANCE_GNUCASH
-	bool "gnucash-2.4.7nb1"
+	bool "gnucash-2.4.8nb1"
 	help
 	  Personal or business finance management program
 
@@ -58,7 +58,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_GNUCASH_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_FINANCE_KMYMONEY2
-	bool "kmymoney2-1.0.5nb1"
+	bool "kmymoney2-1.0.5nb3"
 	help
 	  Personal finance manager for KDE
 
@@ -177,7 +177,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_P5_LOCALE_CURRENCY_FORMAT
 
 
 config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_ACTIVEMERCHANT
-	bool "ruby19-activemerchant-1.17.0"
+	bool "ruby19-activemerchant-1.20.0"
 	help
 	  Ruby library for credit card processing
 
@@ -190,7 +190,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_ACTIVEMERCHANT
 
 
 config BR2_PKGSRC_PACKAGE_FINANCE_RUBY_BRAINTREE
-	bool "ruby19-braintree-2.11.0"
+	bool "ruby19-braintree-2.13.1"
 	help
 	  Braintree Gateway Ruby Client Library
 
@@ -255,7 +255,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_XFINANS
 
 
 config BR2_PKGSRC_PACKAGE_FINANCE_XINVEST
-	bool "xinvest-2.6.9nb2"
+	bool "xinvest-2.6.9nb3"
 	help
 	  Personal finance tracking and performance tool
 
@@ -267,7 +267,7 @@ config BR2_PKGSRC_PACKAGE_FINANCE_XINVEST
 
 
 config BR2_PKGSRC_PACKAGE_FINANCE_XQUOTE
-	bool "xquote-2.6.10nb2"
+	bool "xquote-2.6.10nb3"
 	help
 	  WWW ticker symbol quote retrieval program
 

@@ -92,7 +92,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_ABC2PS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_ABCM2PS
-	bool "abcm2ps-6.3.4"
+	bool "abcm2ps-6.5.2nb1"
 	help
 	  Converts ABC to music sheet in PostScript format
 
@@ -134,7 +134,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_ACROREAD8
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_ACROREAD9
-	bool "acroread9-9.4.2"
+	bool "acroread9-9.4.6"
 	help
 	  View, distribute and print PDF documents
 
@@ -166,7 +166,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_ADOBEPS_WIN
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_ADVI
-	bool "advi-1.10.1"
+	bool "advi-1.10.1nb2"
 	help
 	  Active-DVI Presenter
 
@@ -315,6 +315,16 @@ config BR2_PKGSRC_PACKAGE_PRINT_CJK_LYX
 	  http://cellular.phys.pusan.ac.kr/cjk.html
 
 
+config BR2_PKGSRC_PACKAGE_PRINT_CJKUTILS
+	bool "cjkutils-4.8.2"
+	help
+	  Utilities for CJK LaTeX
+
+	  This package provides utilities for CJK LaTeX.
+
+	  http://cjk.ffii.org/
+
+
 config BR2_PKGSRC_PACKAGE_PRINT_CNPRINT
 	bool "cnprint-3.30bnb1"
 	help
@@ -347,7 +357,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_CNPRINT
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_CUPS
-	bool "cups-1.4.8nb1"
+	bool "cups-1.5.0"
 	help
 	  Common UNIX Printing System
 
@@ -378,8 +388,24 @@ config BR2_PKGSRC_PACKAGE_PRINT_CUPS_DRIVERS_MAGICOLOR5440DL
 	  http://printer.konicaminolta.com/support/current_printers/mc5440dl_sup.htm
 
 
+config BR2_PKGSRC_PACKAGE_PRINT_CUPS_PDF
+	bool "cups-pdf-2.6.1nb1"
+	help
+	  PDF backend for CUPS
+
+	  CUPS-PDF is a PDF writer backend for CUPS.
+	  
+	  It is designed to produce PDF files in a heterogeneous network by providing a
+	  PDF printer on the central fileserver. It will convert files printed to its
+	  queue in CUPS to PDF and put them in a per-user-based directory structure.
+	  It can execute post-processing scripts, e.g. to allow mailing the results
+	  to the user.
+
+	  http://www.cups-pdf.de/
+
+
 config BR2_PKGSRC_PACKAGE_PRINT_DIFFPDF
-	bool "diffpdf-1.2.2"
+	bool "diffpdf-1.5.0"
 	help
 	  PDF comparision tool
 
@@ -457,7 +483,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_DVIPSK
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_ENSCRIPT
-	bool "enscript-1.6.4nb3"
+	bool "enscript-1.6.5.2"
 	help
 	  ASCII-to-PostScript filter
 
@@ -471,7 +497,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_ENSCRIPT
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_EPDFVIEW
-	bool "epdfview-0.1.8"
+	bool "epdfview-0.1.8nb1"
 	help
 	  Lightweight PDF viewer using Poppler and GTK2
 
@@ -503,7 +529,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_EPSTOOL
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_EVINCE
-	bool "evince-2.32.0nb6"
+	bool "evince-2.32.0nb7"
 	help
 	  Document viewer
 
@@ -514,7 +540,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_EVINCE
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_EVINCE_NAUTILUS
-	bool "evince-nautilus-2.32.0nb2"
+	bool "evince-nautilus-2.32.0nb3"
 	help
 	  File properties plugin for evince files
 
@@ -594,7 +620,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_FOOMATIC_FILTERS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_FOOMATIC4_FILTERS
-	bool "foomatic-filters-4.0.6nb1"
+	bool "foomatic-filters-4.0.6nb2"
 	help
 	  Spooler-independent PostScript printing filter
 
@@ -644,7 +670,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_FOOMATIC_PPDS_CUPS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_GHOSTSCRIPT
-	bool "ghostscript-8.71nb7"
+	bool "ghostscript-8.71nb8"
 	help
 	  Postscript interpreter
 
@@ -662,7 +688,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_GHOSTSCRIPT
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_GLABELS
-	bool "glabels-2.2.8nb9"
+	bool "glabels-2.2.8nb10"
 	help
 	  Program for creating labels and business cards for GNOME
 
@@ -675,7 +701,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_GLABELS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_GTKLP
-	bool "gtklp-1.2.7nb8"
+	bool "gtklp-1.2.7nb9"
 	help
 	  CUPS frontend using GTK
 
@@ -686,7 +712,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_GTKLP
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_GUTENPRINT_LIB
-	bool "gutenprint-lib-5.2.7"
+	bool "gutenprint-lib-5.2.7nb1"
 	help
 	  Drivers for Canon, Epson, Lexmark, and PCL printers
 
@@ -734,7 +760,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_HPIJS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_HTML2PS
-	bool "html2ps-1.0b4nb5"
+	bool "html2ps-1.0b7"
 	help
 	  HTML to PostScript converter
 
@@ -794,7 +820,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_IMG2EPS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_IMPOSTER
-	bool "imposter-0.3nb9"
+	bool "imposter-0.3nb10"
 	help
 	  Standalone OpenOffice presentations viewer using GTK2
 
@@ -924,7 +950,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_JCABC2PS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_KBIBTEX
-	bool "kbibtex-0.2.1nb8"
+	bool "kbibtex-0.2.1nb9"
 	help
 	  BibTeX editor for KDE
 
@@ -938,7 +964,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_KBIBTEX
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_KPATHSEA
-	bool "kpathsea-6.0.1"
+	bool "kpathsea-6.0.1nb1"
 	help
 	  Path searching library for TeX-related files
 
@@ -972,7 +998,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_LATEX_MK
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_LGRIND
-	bool "lgrind-3.5nb8"
+	bool "lgrind-3.5nb9"
 	help
 	  Source pretty printer for LaTeX
 
@@ -994,7 +1020,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_LIBGNOMECUPS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_LIBGNOMEPRINT
-	bool "libgnomeprint-2.18.8nb3"
+	bool "libgnomeprint-2.18.8nb4"
 	help
 	  Library for the GNOME2 Printing Architecture
 
@@ -1006,7 +1032,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_LIBGNOMEPRINT
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_LIBGNOMEPRINTUI
-	bool "libgnomeprintui-2.18.6nb3"
+	bool "libgnomeprintui-2.18.6nb4"
 	help
 	  Graphical library for the GNOME2 Printing Architecture
 
@@ -1029,7 +1055,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_LIBPAPER
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_LIBSPECTRE
-	bool "libspectre-0.2.6nb1"
+	bool "libspectre-0.2.6nb2"
 	help
 	  Small library for rendering Postscript documents
 
@@ -1040,7 +1066,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_LIBSPECTRE
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_LILYPOND
-	bool "lilypond-2.14.2"
+	bool "lilypond-2.14.2nb1"
 	help
 	  GNU Music Typesetter
 
@@ -1072,7 +1098,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_LILYPOND
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_LUATEX
-	bool "luatex-0.70.1"
+	bool "luatex-0.70.1nb1"
 	help
 	  Extended version of pdfTeX using Lua
 
@@ -1143,7 +1169,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_MPAGE
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_MUPDF
-	bool "mupdf-0.8"
+	bool "mupdf-0.8nb1"
 	help
 	  Lightweight PDF viewer and toolkit
 
@@ -1169,7 +1195,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_MUPDF
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_P5_LATEX_DRIVER
-	bool "p5-LaTeX-Driver-0.08nb3"
+	bool "p5-LaTeX-Driver-0.10"
 	help
 	  Perl module encapsulates the details of invoking the Latex programs
 
@@ -1318,6 +1344,23 @@ config BR2_PKGSRC_PACKAGE_PRINT_PCPS
 	  http://www.swreg.org/soft_shop/695/shopscr3.shtml
 
 
+config BR2_PKGSRC_PACKAGE_PRINT_PDF2DJVU
+	bool "pdf2djvu-0.7.7nb1"
+	help
+	  pdf2djvu creates DjVu files from PDF files
+
+	  pdf2djvu creates DjVu files from PDF files.
+	  
+	  It's able to extract:
+	  * graphics,
+	  * text layer,
+	  * hyperlinks,
+	  * document outline (bookmarks),
+	  * metadata (including XMP metadata).
+
+	  http://code.google.com/p/pdf2djvu/
+
+
 config BR2_PKGSRC_PACKAGE_PRINT_PDFJAM
 	bool "pdfjam-1.20nb2"
 	help
@@ -1408,7 +1451,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_PNM2PPA
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_PODOFO
-	bool "podofo-0.7.0nb3"
+	bool "podofo-0.9.1nb1"
 	help
 	  Library to work with the PDF file format
 
@@ -1430,7 +1473,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_PODOFO
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_POPPLER
-	bool "poppler-0.16.7"
+	bool "poppler-0.16.7nb1"
 	help
 	  PDF rendering library
 
@@ -1450,6 +1493,16 @@ config BR2_PKGSRC_PACKAGE_PRINT_POPPLER
 	  http://poppler.freedesktop.org/
 
 
+config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_CPP
+	bool "poppler-cpp-0.16.7nb1"
+	help
+	  
+
+	  This is the GLib wrapper for poppler, a PDF rendering library.
+
+	  http://poppler.freedesktop.org/
+
+
 config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_DATA
 	bool "poppler-data-0.4.5"
 	help
@@ -1464,7 +1517,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_DATA
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_GLIB
-	bool "poppler-glib-0.16.7"
+	bool "poppler-glib-0.16.7nb1"
 	help
 	  
 
@@ -1474,7 +1527,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_GLIB
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_INCLUDES
-	bool "poppler-includes-0.16.7"
+	bool "poppler-includes-0.16.7nb1"
 	help
 	  
 
@@ -1484,7 +1537,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_INCLUDES
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_QT
-	bool "poppler-qt-0.16.7"
+	bool "poppler-qt-0.16.7nb1"
 	help
 	  
 
@@ -1502,7 +1555,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_QT
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_QT4
-	bool "poppler-qt4-0.16.7"
+	bool "poppler-qt4-0.16.7nb1"
 	help
 	  
 
@@ -1520,7 +1573,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_QT4
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_POPPLER_UTILS
-	bool "poppler-utils-0.16.7"
+	bool "poppler-utils-0.16.7nb1"
 	help
 	  
 
@@ -1693,7 +1746,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_PY_PISA
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_PY_PSLIB
-	bool "py26-pslib-0.2.0nb2"
+	bool "py26-pslib-0.2.0nb3"
 	help
 	  Python bindings for pslib
 
@@ -1703,7 +1756,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_PY_PSLIB
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_PY_REPORTLAB
-	bool "py26-reportlab-2.5"
+	bool "py26-reportlab-2.5nb1"
 	help
 	  Powerful PDF-generating toolkit for Python
 
@@ -1764,7 +1817,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_RTF2LATEX2E
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_RUBY_GNOME2_POPPLER
-	bool "ruby19-gnome2-poppler-1.0.0"
+	bool "ruby19-gnome2-poppler-1.0.3nb1"
 	help
 	  Ruby binding of poppler-glib
 
@@ -1778,7 +1831,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_RUBY_GNOME2_POPPLER
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_RUBY_PDF_READER
-	bool "ruby19-pdf-reader-0.10.0"
+	bool "ruby19-pdf-reader-0.10.1"
 	help
 	  Library for accessing the content of PDF files
 
@@ -1828,7 +1881,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_RUBY_PRAWN
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_SCRIBUS
-	bool "scribus-1.3.3.14nb3"
+	bool "scribus-1.3.3.14nb4"
 	help
 	  Publishing layout with graphical interface
 
@@ -1845,7 +1898,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_SCRIBUS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_SCRIBUS_QT4
-	bool "scribus-1.3.9nb2"
+	bool "scribus-1.3.9nb3"
 	help
 	  Publishing layout with graphical interface
 
@@ -1894,7 +1947,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TCL_PDFLIB
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TETEX
-	bool "teTeX-3.0nb9"
+	bool "teTeX-3.0nb10"
 	help
 	  Thomas Esser's TeX distribution for UNIX compatible systems
 
@@ -1910,7 +1963,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TETEX
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TETEX3_BIN
-	bool "teTeX-bin-3.0nb48"
+	bool "teTeX-bin-3.0nb49"
 	help
 	  TeX distribution for UNIX compatible systems - binaries
 
@@ -1922,7 +1975,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TETEX3_BIN
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TETEX3_TEXMF
-	bool "teTeX-texmf-3.0nb31"
+	bool "teTeX-texmf-3.0nb33"
 	help
 	  Machine-independent part of teTeX
 
@@ -2370,7 +2423,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_ANSWERS_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_ARABI
-	bool "tex-arabi-1.1nb1"
+	bool "tex-arabi-1.1nb2"
 	help
 	  
 
@@ -2397,7 +2450,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_ARABI_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_ARABTEX
-	bool "tex-arabtex-3.11s"
+	bool "tex-arabtex-3.11snb1"
 	help
 	  Macros and fonts for typesetting Arabic
 
@@ -2677,6 +2730,29 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_BOLD_EXTRA_DOC
 	  Documentation for tex-bold-extra
 
 	  This is documentation for tex-bold-extra.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_BOOKTABS
+	bool "tex-booktabs-1.61803"
+	help
+	  Publication quality tables in LaTeX
+
+	  The package enhances the quality of tables in LaTeX, providing extra
+	  commands as well as behind-the-scenes optimisation. Guidelines are given
+	  as to what constitutes a good table in this context. From version 1.61,
+	  the package offers longtable compatibility.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_BOOKTABS_DOC
+	bool "tex-booktabs-doc-1.61803"
+	help
+	  Documentation for tex-booktabs
+
+	  This is documentation for tex-booktabs.
 
 	  http://www.tug.org/texlive/
 
@@ -2991,7 +3067,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_CHBIBREF_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_CHEMARROW
-	bool "tex-chemarrow-0.9"
+	bool "tex-chemarrow-0.9nb1"
 	help
 	  Arrows for use in chemistry
 
@@ -3124,6 +3200,52 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_CITE_DOC
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_CJK
+	bool "tex-cjk-4.8.2"
+	help
+	  CJK language support
+
+	  CJK is a macro package for LaTeX, providing simultaneous support for
+	  various Asian scripts in many encodings (including Unicode): Chinese
+	  (both traditional and simplified), Japanese, Korean, and Thai. A
+	  special add-on feature is an interface to the Emacs editor
+	  (cjk-enc.el) which gives simultaneous, easy-to-use support to a bunch
+	  of other scripts in addition to the above: Cyrillic, Greek,
+	  Latin-based scripts, Russian, and Vietnamese.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_CJK_DOC
+	bool "tex-cjk-doc-4.8.2"
+	help
+	  Documentation for tex-cjk
+
+	  This is documentation for tex-cjk.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_CJKUTILS
+	bool "tex-cjkutils-4.8.2"
+	help
+	  Configuration files for cjktuils
+
+	  This package provides configuration files for cjkutils.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_CJKUTILS_DOC
+	bool "tex-cjkutils-doc-4.8.2"
+	help
+	  Documentation for tex-cjkutils
+
+	  This is documentation for tex-cjkutils.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_COLLECTION_BASIC
 	bool "tex-collection-basic-2010.20730"
 	help
@@ -3220,7 +3342,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_COLORTBL_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_CONTEXT
-	bool "tex-context-2010"
+	bool "tex-context-2010nb1"
 	help
 	  The ConTeXt macro package
 
@@ -3258,6 +3380,37 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_COOKING_DOC
 	  Documentation for tex-cooking
 
 	  This is documentation for tex-cooking.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_CSQUOTES
+	bool "tex-csquotes-5.1d"
+	help
+	  Context sensitive quotation facilities
+
+	  This package provides advanced facilities for inline and display
+	  quotations. It is designed for a wide range of tasks ranging from the
+	  most simple applications to the more complex demands of formal
+	  quotations. The facilities include commands, environments, and
+	  user-definable 'smart quotes' which dynamically adjust to their context.
+	  Quotation marks are switched automatically if quotations are nested and
+	  they can be adjusted to the current language if the babel package is
+	  available. There are additional facilities designed to cope with the
+	  more specific demands of academic writing, especially in the humanities
+	  and the social sciences. All quote styles as well as the optional active
+	  quotes are freely configurable. The package is dependent on e-TeX, and
+	  requires the author's etoolbox package.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_CSQUOTES_DOC
+	bool "tex-csquotes-doc-5.1d"
+	help
+	  Documentation for tex-csquotes
+
+	  This is documentation for tex-csquotes.
 
 	  http://www.tug.org/texlive/
 
@@ -3474,7 +3627,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_DVIPDFMX_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_DVIPS
-	bool "tex-dvips-2010.21308"
+	bool "tex-dvips-2011"
 	help
 	  Files for a DVI to PostScript driver
 
@@ -3485,7 +3638,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_DVIPS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_DVIPS_DOC
-	bool "tex-dvips-doc-2010"
+	bool "tex-dvips-doc-2011"
 	help
 	  Documentation for tex-dvips
 
@@ -3606,6 +3759,31 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_ENUMITEM_DOC
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_ENVIRON
+	bool "tex-environ-0.2"
+	help
+	  New interface for environments in LaTeX
+
+	  The package provides the \collect@body command (as in amsmath), as well
+	  as a \long version \Collect@Body, for collecting the body text of an
+	  environment. These commands are used to define a new author interface to
+	  creating new environments. For example: \NewEnviron{test} wraps the
+	  entire environment body in square brackets, doing the right thing in
+	  ignoring leading and trailing spaces.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_ENVIRON_DOC
+	bool "tex-environ-doc-0.2"
+	help
+	  Documentation for tex-environ
+
+	  This is documentation for tex-environ.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_EPSF
 	bool "tex-epsf-2.7.4"
 	help
@@ -3675,7 +3853,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_ETEX
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_ETEX_DOC
-	bool "tex-etex-doc-2.1.16381"
+	bool "tex-etex-doc-2.1.22198"
 	help
 	  Documentation for tex-etex
 
@@ -4041,7 +4219,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_FNPARA_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_FOILTEX
-	bool "tex-foiltex-2.1.4anb3"
+	bool "tex-foiltex-2.1.4anb4"
 	help
 	  LaTeX2e class for overhead transparencies
 
@@ -4247,9 +4425,9 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_GERMAN_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_GLOSSARIES
-	bool "tex-glossaries-1.02"
+	bool "tex-glossaries-3.01nb1"
 	help
-	  Macros for creation of glossaries
+	  Create glossaries and lists of acronyms
 
 	  The glossaries package supports acronyms and multiple glossaries, and
 	  has provision for operation in several languages (using the facilities
@@ -4269,7 +4447,17 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_GLOSSARIES
 	  author's glossary package (which is now obsolete), and a conversion tool
 	  is provided.
 
-	  http://www.ctan.org/tex-archive/help/Catalogue/entries/glossaries.html
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_GLOSSARIES_DOC
+	bool "tex-glossaries-doc-3.01"
+	help
+	  Documentation for tex-glossaries
+
+	  This is documentation for tex-glossaries.
+
+	  http://www.tug.org/texlive/
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_GRAPHICS
@@ -4515,7 +4703,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_HYPHEN_ARABIC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_HYPHEN_BASE
-	bool "tex-hyphen-base-2010nb1"
+	bool "tex-hyphen-base-2011"
 	help
 	  TeX hyphenation patterns for English
 
@@ -5213,7 +5401,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOMA_SCRIPT
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX
-	bool "tex-kotex-0.2nb1"
+	bool "tex-kotex-0.3"
 	help
 	  ko.TeX macros to typeset Korean with etex or pdftex
 
@@ -5224,7 +5412,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX_DEV
-	bool "tex-kotex-dev-0.2"
+	bool "tex-kotex-dev-0.3"
 	help
 	  ko.TeX macros for luatex and xetex
 
@@ -5236,7 +5424,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX_DEV
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX_DEV_DOC
-	bool "tex-kotex-dev-doc-0.2"
+	bool "tex-kotex-dev-doc-0.3"
 	help
 	  Documentation for tex-kotex-dev
 
@@ -5246,7 +5434,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX_DEV_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX_DOC
-	bool "tex-kotex-doc-0.2"
+	bool "tex-kotex-doc-0.3"
 	help
 	  Documentation for tex-kotex
 
@@ -5256,7 +5444,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX_UTILS
-	bool "tex-kotex-utils-0.2"
+	bool "tex-kotex-utils-0.3"
 	help
 	  Utilities for tex-kotex
 
@@ -5266,7 +5454,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_KOTEX_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_KPATHSEA
-	bool "tex-kpathsea-2011"
+	bool "tex-kpathsea-2011.24417"
 	help
 	  Translation tables for TeX
 
@@ -5319,7 +5507,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_LASTPAGE_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_LATEX
-	bool "tex-latex-2010"
+	bool "tex-latex-2011"
 	help
 	  TeX macro package that defines LaTeX
 
@@ -5360,7 +5548,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_LATEX_BIN_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_LATEX_DOC
-	bool "tex-latex-doc-2010"
+	bool "tex-latex-doc-2011"
 	help
 	  Documentation for tex-latex
 
@@ -5370,7 +5558,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_LATEX_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_LATEXCONFIG
-	bool "tex-latexconfig-2010.21697"
+	bool "tex-latexconfig-2011"
 	help
 	  Files used to generate LaTeX formats
 
@@ -5490,7 +5678,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_LTXMISC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_LUATEX
-	bool "tex-luatex-0.60.1nb1"
+	bool "tex-luatex-0.70.1"
 	help
 	  LuaTeX basic definition package
 
@@ -5501,7 +5689,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_LUATEX
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_LUATEX_DOC
-	bool "tex-luatex-doc-0.60.1nb1"
+	bool "tex-luatex-doc-0.70.1"
 	help
 	  Documentation for tex-luatex
 
@@ -5817,7 +6005,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_MULTIROW_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_MUSIXTEX
-	bool "tex-musixtex-1.15"
+	bool "tex-musixtex-1.15nb1"
 	help
 	  TeX macros for sophisticated music typesetting
 
@@ -6022,7 +6210,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_NTGCLASS_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_OBERDIEK
-	bool "tex-oberdiek-2009nb2"
+	bool "tex-oberdiek-2011nb1"
 	help
 	  Bundle of packages submitted by Heiko Oberdiek
 
@@ -6032,7 +6220,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_OBERDIEK
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_OBERDIEK_DOC
-	bool "tex-oberdiek-doc-2009nb1"
+	bool "tex-oberdiek-doc-2011"
 	help
 	  Documentation for tex-oberdiek
 
@@ -6227,7 +6415,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_PDFPAGES_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_PDFTEX
-	bool "tex-pdftex-1.40.11nb4"
+	bool "tex-pdftex-1.40.11nb5"
 	help
 	  TeX extension for direct creation of PDF
 
@@ -6252,11 +6440,31 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_PDFTEX_DEF
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_PDFTEX_DOC
-	bool "tex-pdftex-doc-1.40.11nb2"
+	bool "tex-pdftex-doc-1.40.11nb3"
 	help
 	  Documentation for tex-pdftex
 
 	  This is documentation for tex-pdftex.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_PDFTOOLS
+	bool "tex-pdftools-0.82"
+	help
+	  PDF-related utilities, including PostScript-to-PDF conversion
+
+	  This package provides PDF-related utilities for TeX Live.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_PDFTOOLS_DOC
+	bool "tex-pdftools-doc-0.82"
+	help
+	  Documentation for tex-pdftools
+
+	  This is documentation for tex-pdftools.
 
 	  http://www.tug.org/texlive/
 
@@ -6453,6 +6661,29 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_PREPRINT_DOC
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_PREVIEW
+	bool "tex-preview-11.86"
+	help
+	  Extract bits of a LaTeX source for output
+
+	  The package is a free-standing part of the preview-latex bundle. The
+	  package provides the support preview-latex needs, when it chooses the
+	  matter it will preview. The output may reasonably be expected to have
+	  other uses, as in html translators, etc.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_PREVIEW_DOC
+	bool "tex-preview-doc-11.86"
+	help
+	  Documentation for tex-preview
+
+	  This is documentation for tex-preview.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_PRINTLEN
 	bool "tex-printlen-1.1a"
 	help
@@ -6634,7 +6865,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_RELSIZE
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_RESUME
-	bool "tex-resume-20010823"
+	bool "tex-resume-20010823nb1"
 	help
 	  Resume document style
 
@@ -6939,7 +7170,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_SKAK_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_SKAKNEW
-	bool "tex-skaknew-2010"
+	bool "tex-skaknew-2010nb1"
 	help
 	  LaTeX skak chess fonts redone in Adobe Type 1
 
@@ -7186,6 +7417,28 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_SUBSTR_DOC
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_SUPERTABULAR
+	bool "tex-supertabular-4.1a"
+	help
+	  Multi-page tables package
+
+	  Generally longtable is a little easier to use and more flexible, but
+	  supertabular has its place, since it will work in a few situations where
+	  longtable won't.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_SUPERTABULAR_DOC
+	bool "tex-supertabular-doc-4.1a"
+	help
+	  Documentation for tex-supertabular
+
+	  This is documentation for tex-supertabular.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_T2
 	bool "tex-t2-2010"
 	help
@@ -7236,7 +7489,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_TABLS_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_TETEX
-	bool "tex-tetex-3.0.21248"
+	bool "tex-tetex-3.0.24482"
 	help
 	  Supplementary files for updmap
 
@@ -7247,7 +7500,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_TETEX
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_TETEX_DOC
-	bool "tex-tetex-doc-3.0.19695"
+	bool "tex-tetex-doc-3.0.24482"
 	help
 	  Documentation for tex-tetex
 
@@ -7293,6 +7546,17 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_TEXLIVE_SCRIPTS
 	  TeX Live infrastructure programs
 
 	  This packages contains rungs and texlua scripts for TeX Live.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_TEXLIVE.INFRA
+	bool "tex-texlive.infra-2011"
+	help
+	  Basic TeX Live infrastructure
+
+	  This package contains the files needed to get the TeX Live tools
+	  running.
 
 	  http://www.tug.org/texlive/
 
@@ -7348,6 +7612,18 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_TEXPOWER_DOC
 	  Documentation for tex-texpower
 
 	  Documentation for tex-texpower
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_THAILATEX
+	bool "tex-thailatex-0.4.5"
+	help
+	  Typeset Thai texts with standard LaTeX classes
+
+	  ThaiLaTeX enables typesetting Thai with standard LaTeX document classes.
+	  It is designed to become a part of babel, and may be used as such after
+	  a (small) patch to babel itself.
 
 	  http://www.tug.org/texlive/
 
@@ -7620,9 +7896,9 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_TYPEHTML_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_UCS
-	bool "tex-ucs-20041710nb4"
+	bool "tex-ucs-20041710nb5"
 	help
-	  LaTeX UTF-8 support
+	  Extended UTF-8 input encoding for LaTeX
 
 	  This bundle provides the ucs package, and utf8x.def, together with a
 	  large number of support files. The utf8x.def definition file for use
@@ -7630,7 +7906,17 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_UCS
 	  utf8.def in the LaTeX distribution. The ucs package provides facilities
 	  for efficient use of large sets of Unicode characters.
 
-	  http://www.unruh.de/DniQ/latex/unicode/
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_TEX_UCS_DOC
+	bool "tex-ucs-doc-20041710"
+	help
+	  Documentation for tex-ucs
+
+	  This is documentation for tex-ucs.
+
+	  http://www.tug.org/texlive/
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_UKRHYPH
@@ -7869,7 +8155,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_WALLPAPER_DOC
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_WRAPFIG
-	bool "tex-wrapfig-3.6"
+	bool "tex-wrapfig-3.6nb1"
 	help
 	  LaTeX package to produce figures which text can flow around
 
@@ -7881,7 +8167,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_WRAPFIG
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_WRAPFIG_DOC
-	bool "tex-wrapfig-doc-3.6"
+	bool "tex-wrapfig-doc-3.6nb1"
 	help
 	  Documentation for tex-wrapfig
 
@@ -7977,7 +8263,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_XDVI
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_XETEX
-	bool "tex-xetex-2010"
+	bool "tex-xetex-2011"
 	help
 	  Unicode and OpenType-enabled TeX engine
 
@@ -7989,7 +8275,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_XETEX
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_TEX_XETEX_DOC
-	bool "tex-xetex-doc-2010"
+	bool "tex-xetex-doc-2011"
 	help
 	  Documentation for tex-xetex
 
@@ -8108,17 +8394,8 @@ config BR2_PKGSRC_PACKAGE_PRINT_TEX_XUNICODE_DOC
 	  http://www.tug.org/texlive/
 
 
-config BR2_PKGSRC_PACKAGE_PRINT_TEXLIVE_PDFTOOLS
-	bool "texlive-pdftools-2008"
-	help
-	  PDF-related utilities in TeX Live
-
-
-	  http://www.tug.org/texlive/
-
-
 config BR2_PKGSRC_PACKAGE_PRINT_TEXLIVE_TETEX
-	bool "texlive-tetex-2010"
+	bool "texlive-tetex-2011"
 	help
 	  Scripts included in teTeX
 
@@ -8142,7 +8419,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_TRANSFIG
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_WEB2C
-	bool "web2c-2011"
+	bool "web2c-2011nb2"
 	help
 	  TeX implementation translating WEB to C
 
@@ -8165,7 +8442,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_XDVIK
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_XETEX
-	bool "xetex-0.9997.5"
+	bool "xetex-0.9997.5nb1"
 	help
 	  TeX system with Unicode and modern font technologies
 
@@ -8176,7 +8453,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_XETEX
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_XFCE4_PRINT
-	bool "xfce4-print-4.6.1nb5"
+	bool "xfce4-print-4.6.1nb6"
 	help
 	  Xfce print dialog
 
@@ -8189,7 +8466,7 @@ config BR2_PKGSRC_PACKAGE_PRINT_XFCE4_PRINT
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_XPDF
-	bool "xpdf-3.02pl4nb4"
+	bool "xpdf-3.03nb2"
 	help
 	  Display tool for PDF files
 
@@ -8364,6 +8641,17 @@ config BR2_PKGSRC_PACKAGE_PRINT_XPDF_TURKISH
 	  - ISO-8859-9 encoding
 
 	  http://www.foolabs.com/xpdf/
+
+
+config BR2_PKGSRC_PACKAGE_PRINT_XPDFOPEN
+	bool "xpdfopen-0.82"
+	help
+	  Commands to control Acrobat Reader, xpdf, and evince
+
+	  This package provides Fabrice Popineau's pdfclose/pdfopen commands to
+	  control Acrobat Reader, xpdf and evince.
+
+	  http://www.tug.org/texlive/
 
 
 config BR2_PKGSRC_PACKAGE_PRINT_XPP

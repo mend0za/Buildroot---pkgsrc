@@ -18,7 +18,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK16
-	bool "asterisk-1.6.2.19nb1"
+	bool "asterisk-1.6.2.21"
 	help
 	  The Asterisk Software PBX
 
@@ -41,7 +41,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK16
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK18
-	bool "asterisk-1.8.5.0nb1"
+	bool "asterisk-1.8.7.2"
 	help
 	  The Asterisk Software PBX
 
@@ -238,7 +238,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_EFAX
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_EFAX_GTK
-	bool "efax-gtk-3.2.3nb5"
+	bool "efax-gtk-3.2.3nb6"
 	help
 	  GTK frontend for efax
 
@@ -331,7 +331,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_GKERMIT
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_GNOME_PILOT
-	bool "gnome-pilot-2.0.17nb10"
+	bool "gnome-pilot-2.0.17nb11"
 	help
 	  Handheld synchronisation for GNOME
 
@@ -396,7 +396,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_HYLAFAX
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_JPILOT
-	bool "jpilot-1.6.0nb9"
+	bool "jpilot-1.6.0nb10"
 	help
 	  Desktop organizer application for the palm pilot
 
@@ -445,7 +445,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_JPILOT
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_JPILOT_SYNCMAL
-	bool "jpilot-syncmal-0.80nb7"
+	bool "jpilot-syncmal-0.80nb8"
 	help
 	  MAL synchronization plugin for J-Pilot
 
@@ -456,7 +456,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_JPILOT_SYNCMAL
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_KERMIT
-	bool "kermit-9.0.302"
+	bool "kermit-9.0.302nb1"
 	help
 	  Network and serial communication, file transfer, and scripting utility
 
@@ -544,7 +544,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_FILE
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_KDEPIM
-	bool "libopensync-plugin-kdepim-0.22nb10"
+	bool "libopensync-plugin-kdepim-0.22nb11"
 	help
 	  Platform independent synchronization framework, kdepim plugin
 
@@ -644,7 +644,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_MGETTY_SENDFAX
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_MINICOM
-	bool "minicom-2.5"
+	bool "minicom-2.5nb1"
 	help
 	  MS-DOS Telix serial communication program "workalike"
 
@@ -690,7 +690,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_MSYNCTOOL
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_MULTISYNC_GUI
-	bool "multisync-gui-0.91.0nb8"
+	bool "multisync-gui-0.91.0nb9"
 	help
 	  GUI for libopensync
 
@@ -926,7 +926,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_PLP
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_PY_GAMMU
-	bool "py26-gammu-1.26.1"
+	bool "py26-gammu-1.26.1nb1"
 	help
 	  Python bindings for gammu
 
@@ -959,7 +959,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_QPAGE
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_RUBY_TERMIOS
-	bool "ruby19-termios-0.9.6nb1"
+	bool "ruby19-termios-0.9.6nb2"
 	help
 	  Ruby extension to termios library
 
@@ -984,7 +984,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_SCMXX
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_SNOOPER
-	bool "snooper-19991202nb1"
+	bool "snooper-19991202nb3"
 	help
 	  
 
@@ -1146,7 +1146,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_XISP
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_XTEL
-	bool "xtel-3.3.0nb11"
+	bool "xtel-3.3.0nb12"
 	help
 	  
 

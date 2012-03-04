@@ -77,7 +77,7 @@ config BR2_PKGSRC_PACKAGE_HAM_FLDIGI
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GMFSK
-	bool "gmfsk-0.6nb22"
+	bool "gmfsk-0.6nb23"
 	help
 	  Multimode HF terminal program
 
@@ -98,7 +98,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GMFSK
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_JACK
-	bool "gnuradio-audio-jack-3.3.0"
+	bool "gnuradio-audio-jack-3.3.0nb1"
 	help
 	  GNU Radio module for jack low latency audio server
 
@@ -114,7 +114,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_JACK
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_OSS
-	bool "gnuradio-audio-oss-3.3.0"
+	bool "gnuradio-audio-oss-3.3.0nb1"
 	help
 	  Open Sound System support for GNU Radio
 
@@ -130,7 +130,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_OSS
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_PORTAUDIO
-	bool "gnuradio-audio-portaudio-3.3.0"
+	bool "gnuradio-audio-portaudio-3.3.0nb1"
 	help
 	  GNU Radio module adding support for portaudio
 
@@ -146,7 +146,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_PORTAUDIO
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE
-	bool "gnuradio-core-3.3.0"
+	bool "gnuradio-core-3.3.0nb1"
 	help
 	  Runtime system and DSP blocks for GNU Radio
 
@@ -163,7 +163,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE_DOCS
-	bool "gnuradio-core-docs-3.3.0nb5"
+	bool "gnuradio-core-docs-3.3.0nb6"
 	help
 	  GNU Radio core module documentation
 
@@ -179,7 +179,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_EXAMPLES
-	bool "gnuradio-examples-3.3.0nb3"
+	bool "gnuradio-examples-3.3.0nb5"
 	help
 	  Examples for GNU Radio
 
@@ -196,7 +196,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_EXAMPLES
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_GSM
-	bool "gnuradio-gsm-3.3.0"
+	bool "gnuradio-gsm-3.3.0nb1"
 	help
 	  GNU Radio GSM 06.10 13kbit/sec voice encoder/decoder
 
@@ -212,7 +212,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_GSM
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_HOWTO
-	bool "gnuradio-howto-3.3.0nb1"
+	bool "gnuradio-howto-3.3.0nb2"
 	help
 	  Documentation on creating GNU Radio signal processing blocks
 
@@ -229,7 +229,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_HOWTO
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_RADIO_ASTRONOMY
-	bool "gnuradio-radio-astronomy-3.3.0nb3"
+	bool "gnuradio-radio-astronomy-3.3.0nb5"
 	help
 	  GNU Radio module for radio astronomy
 
@@ -245,7 +245,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_RADIO_ASTRONOMY
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_TRELLIS
-	bool "gnuradio-trellis-3.3.0nb1"
+	bool "gnuradio-trellis-3.3.0nb2"
 	help
 	  Trellis-based encoding and decoding algorithms for GNU Radio
 
@@ -262,7 +262,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_TRELLIS
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_USRP
-	bool "gnuradio-usrp-3.3.0"
+	bool "gnuradio-usrp-3.3.0nb1"
 	help
 	  USRP bindings for GNU Radio
 
@@ -280,7 +280,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_USRP
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_VIDEO_SDL
-	bool "gnuradio-video-sdl-3.3.0"
+	bool "gnuradio-video-sdl-3.3.0nb1"
 	help
 	  SDL bindings for GNU Radio
 
@@ -296,7 +296,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_VIDEO_SDL
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_WXGUI
-	bool "gnuradio-wxgui-3.3.0nb3"
+	bool "gnuradio-wxgui-3.3.0nb5"
 	help
 	  GUI framework for GNU Radio based on wxPython
 
@@ -313,7 +313,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_WXGUI
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GPREDICT
-	bool "gpredict-0.8.0nb7"
+	bool "gpredict-0.8.0nb8"
 	help
 	  Gnome satellite tracking program
 
@@ -333,7 +333,7 @@ config BR2_PKGSRC_PACKAGE_HAM_GPREDICT
 
 
 config BR2_PKGSRC_PACKAGE_HAM_GRIG
-	bool "grig-0.7.2nb6"
+	bool "grig-0.7.2nb7"
 	help
 	  Graphical user interface to the Hamlib libraries
 
@@ -356,7 +356,7 @@ config BR2_PKGSRC_PACKAGE_HAM_HAMLIB
 
 
 config BR2_PKGSRC_PACKAGE_HAM_LINPSK
-	bool "linpsk-0.8.1nb7"
+	bool "linpsk-0.8.1nb8"
 	help
 	  PSK31 terminal program using QT3
 
@@ -452,7 +452,7 @@ config BR2_PKGSRC_PACKAGE_HAM_TNT
 
 
 config BR2_PKGSRC_PACKAGE_HAM_USRP
-	bool "usrp-3.3.0"
+	bool "usrp-3.3.0nb1"
 	help
 	  Non GNU Radio specific part of the USRP code base
 
@@ -470,7 +470,7 @@ config BR2_PKGSRC_PACKAGE_HAM_USRP
 
 
 config BR2_PKGSRC_PACKAGE_HAM_USRP_DOCS
-	bool "usrp-docs-3.3.0"
+	bool "usrp-docs-3.3.0nb1"
 	help
 	  Documentation for the usrp module
 
@@ -496,7 +496,7 @@ config BR2_PKGSRC_PACKAGE_HAM_WWL
 
 
 config BR2_PKGSRC_PACKAGE_HAM_XDX
-	bool "xdx-2.4.2nb7"
+	bool "xdx-2.4.2nb8"
 	help
 	  Amateur Radio tcp/ip DX-cluster client
 
@@ -512,7 +512,7 @@ config BR2_PKGSRC_PACKAGE_HAM_XDX
 
 
 config BR2_PKGSRC_PACKAGE_HAM_XLOG
-	bool "xlog-2.0.4nb2"
+	bool "xlog-2.0.4nb3"
 	help
 	  Amateur Radio logging program
 

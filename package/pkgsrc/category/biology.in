@@ -1,3 +1,13 @@
+config BR2_PKGSRC_PACKAGE_BIOLOGY_AZARA
+	bool "azara-2.7nb3"
+	help
+	  Programs to process and view NMR data
+
+	  Azara is a suite of programs to process and view NMR data.
+
+	  http://www.ccpn.ac.uk/azara/
+
+
 config BR2_PKGSRC_PACKAGE_BIOLOGY_ARKA
 	bool "arka-0.11nb2"
 	help
@@ -11,16 +21,6 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_ARKA
 	  sequences.
 
 	  http://www.bioinformatics.org/genpak/
-
-
-config BR2_PKGSRC_PACKAGE_BIOLOGY_AZARA
-	bool "azara-2.7nb2"
-	help
-	  Programs to process and view NMR data
-
-	  Azara is a suite of programs to process and view NMR data.
-
-	  http://www.ccpn.ac.uk/azara/
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_BIOPERL
@@ -41,6 +41,34 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_BIOPERL
 	  bioinformatics community.
 
 	  http://bioperl.org/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_BODR
+	bool "bodr-9"
+	help
+	  Blue Obelisk Data Repository
+
+	  The Blue Obelisk Data Repository lists many important chemoinformatics
+	  data such as element and isotope properties, atomic radii, etc.
+	  including references to original literature. Developers can use
+	  this repository to make their software interoperable.
+
+	  http://blueobelisk.org/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_CHEMICAL_MIME_DATA
+	bool "chemical-mime-data-0.1.94"
+	help
+	  Chemical mime and file type support for desktops
+
+	  The chemical-mime-data package is a collection of data files to add support
+	  for various chemical MIME types on Linux/UNIX desktops, such as KDE and GNOME.
+	  
+	  Chemical MIMEs were proposed in 1995, though it seems they have never been
+	  registered with IANA. But they are widely used and the project's aim is, to
+	  support these important, but unofficial MIME types.
+
+	  http://chemical-mime.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_CHEMTOOL
@@ -142,6 +170,30 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_GLIMMER
 	  its predictive power.
 
 	  ftp://ftp.tigr.org/pub/software/Glimmer/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_GNOME_CHEMISTRY_UTILS
+	bool "gnome-chemistry-utils-0.12.10"
+	help
+	  GChemPaint, a 2D chemical editor and other programs
+
+	  GChemPaint, a 2D chemical editor and some other programs related to chemistry
+	  suitable for the GNOME desktop.
+	  
+	  The Gnome Chemistry Utils include three utilities:
+	  - a 2D chemical editor (GChemPaint).
+	  - a chemical calculator (computes raw formule, molar weight, mass composition,
+	  etc..) and isotopic pattern).
+	  - a molecule 3d viewer using OpenGL to display molecular models.
+	  - a crystal structues viewer and editor.
+	  - a periodic table of the elements.
+	  - a spectrum viewer.
+	  
+	  These programs are based on an included C++ library which provides a few
+	  widgets and various classes, some related to chemistry and some utility
+	  classes.
+
+	  http://gchemutils.nongnu.org/
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_GP
@@ -251,6 +303,20 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_NUT
 	  http://nut.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_BIOLOGY_OPENBABEL
+	bool "openbabel-2.3.0nb1"
+	help
+	  Chemistry file translation program
+
+	  Open Babel is a chemical toolbox designed to speak the many languages
+	  of chemical data. It's an open, collaborative project allowing
+	  anyone to search, convert, analyze, or store data from molecular
+	  modeling, chemistry, solid-state materials, biochemistry, or related
+	  areas.
+
+	  http://openbabel.org/
+
+
 config BR2_PKGSRC_PACKAGE_BIOLOGY_PDBALIGN
 	bool "pdbalign-20030812"
 	help
@@ -280,6 +346,39 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_PHYLIP
 	  inferring phylogenies (evolutionary trees).
 
 	  http://evolution.genetics.washington.edu/phylip.html
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_PRIMER3
+	bool "primer3-2.2.3"
+	help
+	  Design PCR primers
+
+	  Primer3 is a widely used program for designing PCR primers (PCR =
+	  "Polymerase Chain Reaction").  PCR is an essential and ubiquitous tool
+	  in genetics and molecular biology.  Primer3 can also design
+	  hybridization probes and sequencing primers.
+	  
+	  Primer3 picks primers for PCR reactions, considering as criteria: o
+	  
+	  - oligonucleotide melting temperature, size, GC content, and
+	  primer-dimer possibilities,
+	  - PCR product size,
+	  - positional constraints within the source (template) sequence,
+	  - possibilities for ectopic priming (amplifying the wrong sequence), and
+	  - many other constraints.
+	  
+	  All of these criteria are user-specifiable as constraints, and some
+	  are specifiable as terms in an objective function that characterizes
+	  an optimal primer pair.
+	  
+	  Whitehead Institute for Biomedical Research provides a basic web-based
+	  front end to primer3 named primer3web at http://fokker.wi.mit.edu/
+	  
+	  Wageningen University Laboratory of Bioinformatics provides a enhanced
+	  web-based front end to primer3 named primer3plus at
+	  http://www.bioinformatics.nl/cgi-bin/primer3plus/primer3plus.cgi
+
+	  http://primer3.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_PROFIT
@@ -327,7 +426,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_PUZZLE
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_PY_MOL
-	bool "py25-mol-0.98nb6"
+	bool "py26-mol-1.4.1nb1"
 	help
 	  Molecular Visualization System
 
@@ -336,7 +435,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_PY_MOL
 	  trajectories. It also includes molecular editing, ray tracing, and
 	  movies.
 
-	  http://pymol.sourceforge.net/
+	  http://www.pymol.org/
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_RASMOL

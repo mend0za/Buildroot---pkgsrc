@@ -24,7 +24,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FS_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE
-	bool "fuse-2.8.4nb1"
+	bool "fuse-2.8.4nb2"
 	help
 	  Filesystem in Userspace
 
@@ -54,7 +54,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_AFPFS_NG
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_ARCHIVEMOUNT
-	bool "fuse-archivemount-0.5.3nb1"
+	bool "fuse-archivemount-0.5.3nb2"
 	help
 	  FUSE gateway to libarchive
 
@@ -315,7 +315,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_OBEXFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_POD
-	bool "fuse-pod-0.5.1nb6"
+	bool "fuse-pod-0.5.1nb7"
 	help
 	  FUSE-based filesystem for iPod
 
@@ -404,7 +404,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WIKIPEDIAFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_GLUSTERFS
-	bool "glusterfs-3.2.3nb1"
+	bool "glusterfs-3.2.5nb9"
 	help
 	  Cluster filesystem
 
@@ -424,7 +424,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_GLUSTERFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PERFUSE
-	bool "perfuse-20110909"
+	bool "perfuse-20111217"
 	help
 	  PUFFS Enabled Relay to FUSE
 
@@ -440,7 +440,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PERFUSE
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PY_FUSE_BINDINGS
-	bool "py26-fuse-bindings-0.2pre1nb2"
+	bool "py26-fuse-bindings-0.2.1"
 	help
 	  Python bindings for FUSE and refuse
 
@@ -460,11 +460,11 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PY_FUSE_BINDINGS
 	  This software is called "fuse-python" by upstream (and hence at least
 	  some Linux distributions).
 
-	  http://bsd.cenkes.org/myports/
+	  http://sourceforge.net/apps/mediawiki/fuse/index.php?title
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_SVNFS
-	bool "svnfs-0.4nb6"
+	bool "svnfs-0.4nb8"
 	help
 	  FUSE filesystem for accessing SVN repositories
 
@@ -476,7 +476,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_SVNFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_TAHOE_LAFS
-	bool "tahoe-lafs-1.8.3nb1"
+	bool "tahoe-lafs-1.9.0"
 	help
 	  Distributed fault-tolerant least-authority filesystem
 

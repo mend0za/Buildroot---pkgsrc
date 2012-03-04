@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_TEXTPROC_FLIGHTCREW
-	bool "FlightCrew-0.7.1"
+	bool "FlightCrew-0.7.2nb1"
 	help
 	  EPUB validator
 
@@ -67,7 +67,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_MARKDOWN
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_ODFCONVERTER
-	bool "OdfConverter-3.0nb7"
+	bool "OdfConverter-3.0nb8"
 	help
 	  Converter between Microsoft Office 2007 and OpenOffice formats
 
@@ -163,7 +163,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_ANTIWORD
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_ASCIIDOC
-	bool "asciidoc-8.6.5"
+	bool "asciidoc-8.6.6"
 	help
 	  ASCII to formatted document converter
 
@@ -673,7 +673,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_CHASEN
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_CHASEN_BASE
-	bool "chasen-base-2.4.4nb1"
+	bool "chasen-base-2.4.4nb2"
 	help
 	  ChaSen, Japanese Morphological Analysis System
 
@@ -682,6 +682,19 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_CHASEN_BASE
 	  This is base system without dictonary.
 
 	  http://chasen-legacy.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_TEXTPROC_COCCIGREP
+	bool "coccigrep-1.6"
+	help
+	  coccigrep is a semantic grep for the C language
+
+	  coccigrep is a semantic grep for the C language based on coccinelle.
+	  It can be used to find where a given structure is used in code
+	  files. coccigrep depends on the spatch program which comes with
+	  coccinelle.
+
+	  http://home.regit.org/software/coccigrep/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_CONVERTLIT
@@ -942,7 +955,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_DIFFSTAT
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_DIKT
-	bool "dikt-2d"
+	bool "dikt-2dnb1"
 	help
 	  Dictionary protocol client for KDE
 
@@ -1121,7 +1134,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_EBOOK_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_EBVIEW
-	bool "ebview-0.3.6nb6"
+	bool "ebview-0.3.6nb7"
 	help
 	  GTK2 based EPWING dictionary browser
 
@@ -1434,7 +1447,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_GNOME_DOC_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_GNOME_SPELL
-	bool "gnome-spell-1.0.8nb9"
+	bool "gnome-spell-1.0.8nb10"
 	help
 	  Spell checking as you type like gtkspell
 
@@ -1446,7 +1459,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_GNOME_SPELL
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_GNOME_SUBTITLES
-	bool "gnome-subtitles-1.1nb3"
+	bool "gnome-subtitles-1.1nb4"
 	help
 	  Subtitle editor for the GNOME desktop
 
@@ -1484,7 +1497,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_GROFF
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_GROONGA
-	bool "groonga-1.2.4nb1"
+	bool "groonga-1.2.9"
 	help
 	  Fulltext search engine and column store
 
@@ -1495,7 +1508,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_GROONGA
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_GSED
-	bool "gsed-4.2.1nb1"
+	bool "gsed-4.2.1nb2"
 	help
 	  GNU implementation of sed, the POSIX stream editor
 
@@ -1512,7 +1525,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_GSED
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_GTK_DOC
-	bool "gtk-doc-1.17nb1"
+	bool "gtk-doc-1.18"
 	help
 	  Tools for authors of the GTK+ reference documentation
 
@@ -1529,7 +1542,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_GTK_DOC
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_GTKSPELL
-	bool "gtkspell-2.0.16nb4"
+	bool "gtkspell-2.0.16nb6"
 	help
 	  Spell checking GtkTextView widget
 
@@ -1586,7 +1599,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_HALIBUT
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_HARMONY
-	bool "harmony-20060526"
+	bool "harmony-20060526nb1"
 	help
 	  Generic framework for reconciling disconnected updates to heterogeneous, replicated XML data
 
@@ -2379,7 +2392,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_HYPERESTRAIER
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_ICU
-	bool "icu-4.8.1"
+	bool "icu-4.8.1nb1"
 	help
 	  Robust and full-featured Unicode services
 
@@ -2401,6 +2414,19 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_ICU
 	  - Word, line & sentence breaks
 
 	  http://www.icu-project.org/
+
+
+config BR2_PKGSRC_PACKAGE_TEXTPROC_IKSEMEL
+	bool "iksemel-1.4"
+	help
+	  XML parser library mainly designed for Jabber applications
+
+	  This is an XML parser library mainly designed for Jabber applications.
+	  It provides SAX, DOM, and special Jabber stream APIs. Library is coded
+	  in ANSI C except the network code (which is POSIX compatible), thus
+	  highly portable.
+
+	  http://code.google.com/p/iksemel/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_INTLTOOL
@@ -2862,7 +2888,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_JING
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_JSON_GLIB
-	bool "json-glib-0.12.6"
+	bool "json-glib-0.14.2"
 	help
 	  JSON parser for GLib-based libraries and applications
 
@@ -2926,7 +2952,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_KDOC
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_LATEX2HTML
-	bool "latex2html-2008"
+	bool "latex2html-2008nb1"
 	help
 	  LaTeX to HTML converter
 
@@ -2975,7 +3001,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_LIBCLUCENE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_LIBCROCO
-	bool "libcroco-0.6.2nb1"
+	bool "libcroco-0.6.3"
 	help
 	  
 
@@ -3022,6 +3048,16 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_LIBNXML
 	  ucs-4 (1234, 4321, 2143, 2312).
 
 	  http://www.autistici.org/bakunin/libnxml/doc/
+
+
+config BR2_PKGSRC_PACKAGE_TEXTPROC_LIBPLIST
+	bool "libplist-1.4nb1"
+	help
+	  Handle Apple Binary and XML Property Lists
+
+	  Library for handling Apple Binary and XML Property Lists.
+
+	  http://www.libimobiledevice.org/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_LIBUNICODE
@@ -3091,7 +3127,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_LIBXML
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_LIBXML2
-	bool "libxml2-2.7.8nb3"
+	bool "libxml2-2.7.8nb4"
 	help
 	  XML parser library from the GNOME project
 
@@ -3252,7 +3288,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_MAKEZTXT
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_MARKDOWN_MODE
-	bool "markdown-mode-1.7"
+	bool "markdown-mode-1.8.1"
 	help
 	  Emacs major mode for editing Markdown-formatted text files
 
@@ -3263,7 +3299,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_MARKDOWN_MODE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_MDOCLINT
-	bool "mdoclint-1.13"
+	bool "mdoclint-1.14"
 	help
 	  Tool for verifying man pages
 
@@ -3275,7 +3311,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_MDOCLINT
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_MDOCML
-	bool "mdocml-1.11.7"
+	bool "mdocml-1.12.0"
 	help
 	  
 
@@ -3523,7 +3559,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_BIBLIO_ENDNOTESTYLE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_CAM_PDF
-	bool "p5-CAM-PDF-1.52nb2"
+	bool "p5-CAM-PDF-1.55"
 	help
 	  Perl 5 PDF manipulation library
 
@@ -3579,7 +3615,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_CONVERT_BER
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_CONVERT_PEM
-	bool "p5-Convert-PEM-0.07nb3"
+	bool "p5-Convert-PEM-0.08"
 	help
 	  Perl5 module to read/write ASN.1-encoded PEM files
 
@@ -3668,7 +3704,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_DATA_HEXDUMP
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_ENCODE
-	bool "p5-Encode-2.40nb1"
+	bool "p5-Encode-2.44"
 	help
 	  Provides interfaces between strings and the rest of the system
 
@@ -3708,7 +3744,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_ENCODE_LOCALE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_FEED_FIND
-	bool "p5-Feed-Find-0.06nb3"
+	bool "p5-Feed-Find-0.07"
 	help
 	  Perl module to perform autodiscovery of syndication feeds
 
@@ -3743,7 +3779,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_FILE_READBACKWARDS
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_FILTER
-	bool "p5-Filter-1.37nb2"
+	bool "p5-Filter-1.39"
 	help
 	  Perl5 classes representing a number of source filters
 
@@ -3821,7 +3857,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_LINGUA_EN_INFLECT_NUMBER
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_LINGUA_EN_INFLECT_PHRASE
-	bool "p5-Lingua-EN-Inflect-Phrase-0.04nb2"
+	bool "p5-Lingua-EN-Inflect-Phrase-0.10"
 	help
 	  Inflect short English Phrases
 
@@ -4013,7 +4049,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_LIST_COMPARE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_NET_DICT
-	bool "p5-Net-Dict-2.07nb3"
+	bool "p5-Net-Dict-2.08"
 	help
 	  Client API for the DICT protocol defined in RFC2229
 
@@ -4276,7 +4312,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_POD_PARSER
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_POD_README
-	bool "p5-Pod-Readme-0.10nb2"
+	bool "p5-Pod-Readme-0.11"
 	help
 	  Convert POD to README file
 
@@ -4291,7 +4327,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_POD_README
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_POD_SIMPLE
-	bool "p5-Pod-Simple-3.14nb2"
+	bool "p5-Pod-Simple-3.19"
 	help
 	  Simple framework for parsing Pod
 
@@ -4321,7 +4357,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_POD_SPELL
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_POD_SPELL_COMMONMISTAKES
-	bool "p5-Pod-Spell-CommonMistakes-0.01nb2"
+	bool "p5-Pod-Spell-CommonMistakes-1.000"
 	help
 	  Catches common typos in POD
 
@@ -4369,7 +4405,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_POD_TREE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_REGEXP_COMMON
-	bool "p5-Regexp-Common-2010010201nb2"
+	bool "p5-Regexp-Common-2011041701"
 	help
 	  Provide commonly requested regular expressions
 
@@ -4433,7 +4469,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_SEARCH_INDEXER
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_SEARCH_XAPIAN
-	bool "p5-Search-Xapian-1.0.21.0nb1"
+	bool "p5-Search-Xapian-1.0.21.0nb2"
 	help
 	  Perl XS frontend to the Xapian C++ search library
 
@@ -4510,6 +4546,18 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_STRING_CRC32
 	  http://search.cpan.org/search?module
 
 
+config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_STRING_CAMELCASE
+	bool "p5-String-CamelCase-0.02"
+	help
+	  Convert string to camelcase and vice versa
+
+	  This module exports two functions.
+	  - camelize : convert from under_score text to CamelCase one
+	  - decamelize : convert from CamelCase text to under_score one
+
+	  http://search.cpan.org/dist/String-CamelCase/
+
+
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_STRING_KOREMUTAKE
 	bool "p5-String-Koremutake-0.30nb3"
 	help
@@ -4526,7 +4574,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_STRING_KOREMUTAKE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_STRING_REWRITEPREFIX
-	bool "p5-String-RewritePrefix-0.005nb2"
+	bool "p5-String-RewritePrefix-0.006"
 	help
 	  Rewrite strings based on a set of known prefixes
 
@@ -4546,6 +4594,21 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_STRING_SHELLQUOTE
 	  http://search.cpan.org/dist/String-ShellQuote/
 
 
+config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_STRING_TOIDENTIFIER_EN
+	bool "p5-String-ToIdentifier-EN-0.05"
+	help
+	  Convert Strings to English Program Identifiers
+
+	  This module provides a utility method, "to_identifier" for converting
+	  an arbitrary string into a readable representation using the ASCII
+	  subset of "\w" for use as an identifier in a computer program. The
+	  intent is to make unique identifier names from which the content of
+	  the original string can be easily inferred by a human just by reading
+	  the identifier.
+
+	  http://search.cpan.org/dist/String-ToIdentifier-EN/
+
+
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_SYNTAX_HIGHLIGHT_ENGINE_KATE
 	bool "p5-Syntax-Highlight-Engine-Kate-0.06nb2"
 	help
@@ -4561,7 +4624,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_SYNTAX_HIGHLIGHT_ENGINE_KATE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEMPLATE_DECLARE
-	bool "p5-Template-Declare-0.43nb2"
+	bool "p5-Template-Declare-0.45"
 	help
 	  Perl 5 module to make Perlish declarative templates
 
@@ -4632,7 +4695,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEMPLATE_PLUGIN_YAML
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEMPLATE_TINY
-	bool "p5-Template-Tiny-0.11nb2"
+	bool "p5-Template-Tiny-1.12"
 	help
 	  Template Toolkit reimplemented in as little code as possible
 
@@ -4729,7 +4792,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_BREW
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_CSV
-	bool "p5-Text-CSV-1.18nb2"
+	bool "p5-Text-CSV-1.21"
 	help
 	  
 
@@ -4762,7 +4825,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_CSV_HASH
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_CSV_XS
-	bool "p5-Text-CSV_XS-0.73nb2"
+	bool "p5-Text-CSV_XS-0.85"
 	help
 	  Routines for composition and decomposition of comma-separated values
 
@@ -4877,7 +4940,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_DELIMMATCH
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_DIFF
-	bool "p5-Text-Diff-1.37nb2"
+	bool "p5-Text-Diff-1.41"
 	help
 	  High-level text diffing module for Perl
 
@@ -4888,7 +4951,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_DIFF
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_DIFF_HTML
-	bool "p5-Text-Diff-HTML-0.06nb2"
+	bool "p5-Text-Diff-HTML-0.07"
 	help
 	  HTML formatting class for Text::Diff
 
@@ -4954,7 +5017,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_EMOTICON_MSN
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_FINDINDENT
-	bool "p5-Text-FindIndent-0.09nb1"
+	bool "p5-Text-FindIndent-0.10"
 	help
 	  Heuristically determine the indent style
 
@@ -4993,7 +5056,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_GERMAN
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_GLOB
-	bool "p5-Text-Glob-0.08nb3"
+	bool "p5-Text-Glob-0.09"
 	help
 	  Match globbing patterns against text
 
@@ -5162,7 +5225,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_REWRITERULES
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_SASS
-	bool "p5-Text-Sass-0.5nb2"
+	bool "p5-Text-Sass-0.93"
 	help
 	  Perl 5 module implementing Sass
 
@@ -5202,7 +5265,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_SIMPLETABLE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_SPELLCHECKER
-	bool "p5-Text-SpellChecker-0.08nb1"
+	bool "p5-Text-SpellChecker-0.11"
 	help
 	  Perl5 OO interface for spell-checking a block of text
 
@@ -5248,7 +5311,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_TABS_WRAP
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_TABULARDISPLAY
-	bool "p5-Text-TabularDisplay-1.22nb2"
+	bool "p5-Text-TabularDisplay-1.28"
 	help
 	  Display text in formatted table output
 
@@ -5467,7 +5530,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_TEXT_VFILE_ASDATA
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_ATOM
-	bool "p5-XML-Atom-0.37nb2"
+	bool "p5-XML-Atom-0.41"
 	help
 	  Atom feed and API implementation
 
@@ -5532,7 +5595,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_CHECKER
 	  XML::DOM::ValParser  - an XML::DOM::Parser that validates at parse
 	  time
 
-	  
+	  http://search.cpan.org/dist/XML-Checker/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_CLEAN
@@ -5627,7 +5690,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_ENTITIES
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_FEED
-	bool "p5-XML-Feed-0.43nb2"
+	bool "p5-XML-Feed-0.44"
 	help
 	  Perl syndication feed parser for both RSS and Atom feeds
 
@@ -5645,7 +5708,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_FEED
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_FEEDPP
-	bool "p5-XML-FeedPP-0.41nb2"
+	bool "p5-XML-FeedPP-0.43"
 	help
 	  Perl 5 module to parse/write/merge/edit RSS/RDF/Atom syndication feeds
 
@@ -5715,7 +5778,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_FILTER_SAXT
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_GENERATOR
-	bool "p5-XML-Generator-1.03nb2"
+	bool "p5-XML-Generator-1.04"
 	help
 	  Perl 5 module for generating XML
 
@@ -5733,7 +5796,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_GROVE
 
 	  A Perl 5 module providing simple objects for parsed XML documents.
 
-	  
+	  http://search.cpan.org/dist/XML-Grove/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_HANDLER_TREES
@@ -5766,7 +5829,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_HANDLER_YAWRITER
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_LIBXML
-	bool "p5-XML-LibXML-1.70nb2"
+	bool "p5-XML-LibXML-1.88"
 	help
 	  Perl interface to the libxml2 library
 
@@ -5791,7 +5854,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_LIBXML_ITERATOR
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_LIBXML_SIMPLE
-	bool "p5-XML-LibXML-Simple-0.14nb2"
+	bool "p5-XML-LibXML-Simple-0.91"
 	help
 	  XML::LibXML clone of XML::Simple
 
@@ -5859,7 +5922,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_NODEFILTER
 	  extends that specification so this class is more easy to use for perl
 	  programmers.
 
-	  
+	  http://search.cpan.org/dist/XML-NodeFilter/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_PARSER
@@ -6214,7 +6277,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_XML_XUPDATE_LIBXML
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_YAML
-	bool "p5-YAML-0.72nb1"
+	bool "p5-YAML-0.77"
 	help
 	  YAML implementation for Perl
 
@@ -6225,7 +6288,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_YAML
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_YAML_LIBYAML
-	bool "p5-YAML-LibYAML-0.33nb2"
+	bool "p5-YAML-LibYAML-0.37"
 	help
 	  Perl XS binding to libyaml
 
@@ -6243,7 +6306,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_YAML_LIBYAML
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_YAML_SYCK
-	bool "p5-YAML-Syck-1.15nb1"
+	bool "p5-YAML-Syck-1.19"
 	help
 	  Fast, lightweight YAML loader and dumper
 
@@ -6255,7 +6318,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_YAML_SYCK
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_YAML_TINY
-	bool "p5-YAML-Tiny-1.44nb2"
+	bool "p5-YAML-Tiny-1.50"
 	help
 	  Read/Write YAML files with as little code as possible
 
@@ -6284,7 +6347,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_YAML_TINY
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_P5_ACK
-	bool "p5-ack-1.94nb4"
+	bool "p5-ack-1.96"
 	help
 	  Grep-like text finder
 
@@ -6448,6 +6511,27 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PAR
 	  all end in the same column.
 
 	  http://www.nicemice.net/par/
+
+
+config BR2_PKGSRC_PACKAGE_TEXTPROC_PDFGREP
+	bool "pdfgrep-1.2nb1"
+	help
+	  Pdfgrep is a tool to search text in PDF files
+
+	  Pdfgrep is a tool to search text in PDF files. It works similar to
+	  grep.
+	  
+	  Features
+	  ========
+	  * search for regular expressions.
+	  * support for some important grep options, including:
+	  o filename output.
+	  o page number output.
+	  o optional case insensitivity.
+	  o count occurrences.
+	  * and the most important feature: color output!
+
+	  http://pdfgrep.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PHP_DOM
@@ -6615,7 +6699,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PO_MODE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PO4A
-	bool "po4a-0.23nb7"
+	bool "po4a-0.23nb8"
 	help
 	  Tool for using gettext where it was not intended to be used
 
@@ -6670,7 +6754,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PSGML_MODE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PXP
-	bool "pxp-1.1.6"
+	bool "pxp-1.1.6nb1"
 	help
 	  
 
@@ -6714,7 +6798,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_FOURSUITE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_GDICK
-	bool "py25-gdick-0.9.1nb15"
+	bool "py25-gdick-0.9.1nb16"
 	help
 	  English-Korean Dictionary Client for GNOME2
 
@@ -6777,7 +6861,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_GNOSIS_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_HAPPYDOC
-	bool "py26-HappyDoc-2.1nb1"
+	bool "py26-HappyDoc-2.1nb2"
 	help
 	  Python tool to generate Python API documents
 
@@ -6787,6 +6871,18 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_HAPPYDOC
 	  not import the module.
 
 	  http://happydoc.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_TEMPITA
+	bool "py26-Tempita-0.4"
+	help
+	  Small Python templating language
+
+	  Tempita is a small templating language for text substitution. It is
+	  meant for projects that require a bit more power than string.Template or
+	  % substitution.
+
+	  http://pythonpaste.org/tempita/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_WHOOSH
@@ -6918,7 +7014,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_CSSUTILS
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_DOCUTILS
-	bool "py26-docutils-0.7"
+	bool "py26-docutils-0.8.1nb1"
 	help
 	  Python tool to generate documents
 
@@ -7119,7 +7215,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_MARKDOWN
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_MECAB
-	bool "py26-mecab-0.98"
+	bool "py26-mecab-0.98nb1"
 	help
 	  MeCab python module
 
@@ -7150,7 +7246,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_PYGMENTS
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_SPHINX
-	bool "py26-sphinx-1.0.7"
+	bool "py26-sphinx-1.1.2"
 	help
 	  Python documentation generator
 
@@ -7181,7 +7277,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_SPHINX
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_TEXTILE
-	bool "py26-textile-2.1.3"
+	bool "py26-textile-2.1.5"
 	help
 	  XHTML generator using a simple markup
 
@@ -7189,7 +7285,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_TEXTILE
 	  This is a Python port with support for code validation, itex to MathML
 	  translation, Python code coloring and much more.
 
-	  http://dealmeida.net/projects/textile/
+	  http://github.com/chrisdrackett/python-textile/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_VOBJECT
@@ -7255,7 +7351,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_YAMCHA
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_PY_YAML
-	bool "py26-yaml-3.08"
+	bool "py26-yaml-3.08nb1"
 	help
 	  Collection of libraries to process YAML with Python
 
@@ -7346,7 +7442,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RARIAN
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RASQAL
-	bool "rasqal-0.9.21nb1"
+	bool "rasqal-0.9.21nb3"
 	help
 	  Library that handles RDF query syntaxes
 
@@ -7359,7 +7455,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RASQAL
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_REDLAND
-	bool "redland-1.0.12nb1"
+	bool "redland-1.0.12nb2"
 	help
 	  
 
@@ -7406,7 +7502,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_REGEXX
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RFCUTIL
-	bool "rfcutil-3.2nb6"
+	bool "rfcutil-3.2nb7"
 	help
 	  Search for RFCs and do ports, services & protocol lookups
 
@@ -7447,7 +7543,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_ROBODOC
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RTF_TOOLS
-	bool "rtf-tools-1.10nb2"
+	bool "rtf-tools-1.10nb3"
 	help
 	  RTF to troff/groff/text converter
 
@@ -7488,6 +7584,41 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBBER
 	  http://www.pps.jussieu.fr/~beffara/soft/rubber/
 
 
+config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_ERUBY
+	bool "ruby18-eruby-1.0.5nb8"
+	help
+	  Interprets Ruby code embedded in a text file
+
+	  eruby interprets Ruby code embedded in a text file just like PHP,
+	  ePerl, ASP, or JSP.  For example, eruby enables you to embed a Ruby
+	  code in a HTML file.
+
+	  http://modruby.net/en/index.rbx/eruby/
+
+
+config BR2_PKGSRC_PACKAGE_TEXTPROC_MIGEMO
+	bool "ruby18-migemo-0.40nb1"
+	help
+	  Japanese text search tool/library
+
+	  Japanese incremental text search tools/library.
+
+	  http://0xcc.net/migemo/
+
+
+config BR2_PKGSRC_PACKAGE_TEXTPROC_XHTMLDIFF
+	bool "ruby18-xhtmldiff-1.2.2nb2"
+	help
+	  Tool for generating valid XHTML redline documents
+
+	  XHTMLDiff is a tool and library for taking valid XHTML documents as
+	  input, and generating redlined, valid XHTML text highlighting the
+	  changes between them as output.
+	  
+
+	  http://github.com/glejeune/ruby-xslt
+
+
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_ALBINO
 	bool "ruby19-albino-1.3.3"
 	help
@@ -7511,7 +7642,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_AMRITA
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_BLUECLOTH
-	bool "ruby19-bluecloth-2.1.0"
+	bool "ruby19-bluecloth-2.2.0"
 	help
 	  Markdown library for Ruby
 
@@ -7562,7 +7693,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_CLASSIFIER
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_CODERAY
-	bool "ruby19-coderay-0.9.8"
+	bool "ruby19-coderay-1.0.4"
 	help
 	  Syntax highlighter for Ruby and other languages
 
@@ -7583,18 +7714,6 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_DIFF_LCS
 	  differences between two sequenced enumerable containers.
 
 	  http://rubyforge.org/projects/ruwiki/
-
-
-config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_ERUBY
-	bool "ruby19-eruby-1.0.5nb8"
-	help
-	  Interprets Ruby code embedded in a text file
-
-	  eruby interprets Ruby code embedded in a text file just like PHP,
-	  ePerl, ASP, or JSP.  For example, eruby enables you to embed a Ruby
-	  code in a HTML file.
-
-	  http://modruby.net/en/index.rbx/eruby/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_ESCAPE
@@ -7657,7 +7776,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_FERRET
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_HAML
-	bool "ruby19-haml-3.1.3"
+	bool "ruby19-haml-3.1.4"
 	help
 	  XHTML & CSS markup language & template engine
 
@@ -7684,7 +7803,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_HIKIDOC
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_HPRICOT
-	bool "ruby19-hpricot-0.8.4"
+	bool "ruby19-hpricot-0.8.5"
 	help
 	  Fast, enjoyable HTML parser for Ruby
 
@@ -7738,7 +7857,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_ITEX2MML
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_JSON
-	bool "ruby19-json-1.6.0"
+	bool "ruby19-json-1.6.3"
 	help
 	  Native extension implementation of JSON for Ruby
 
@@ -7762,7 +7881,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_JSON
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_JSON_PURE
-	bool "ruby19-json-pure-1.6.0"
+	bool "ruby19-json-pure-1.6.3"
 	help
 	  Pure Ruby implementation of JSON
 
@@ -7785,7 +7904,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_JSON_PURE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_JSON_UTILS
-	bool "ruby19-json-utils-1.6.0"
+	bool "ruby19-json-utils-1.6.1"
 	help
 	  Utilities for handling JSON data
 
@@ -7800,7 +7919,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_JSON_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_KRAMDOWN
-	bool "ruby19-kramdown-0.13.3"
+	bool "ruby19-kramdown-0.13.4"
 	help
 	  Markdown-superset parser and converter
 
@@ -7867,14 +7986,18 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_MECAB
 	  http://mecab.sourceforge.net/
 
 
-config BR2_PKGSRC_PACKAGE_TEXTPROC_MIGEMO
-	bool "ruby19-migemo-0.40nb1"
+config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_MULTI_JSON
+	bool "ruby19-multi_json-1.0.4"
 	help
-	  Japanese text search tool/library
+	  general-purpose swappable JSON backend library
 
-	  Japanese incremental text search tools/library.
+	  MultiJSON
+	  
+	  Lots of Ruby libraries utilize JSON parsing in some form, and everyone has
+	  their favorite JSON library. In order to best support multiple JSON parsers
+	  and libraries, multi_json is a general-purpose swappable JSON backend library.
 
-	  http://0xcc.net/migemo/
+	  http://github.com/intridea/multi_json
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_NATIVE_HYPERESTRAIER
@@ -7925,7 +8048,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_NQXML
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_ONIGURUMA
-	bool "ruby19-oniguruma-1.1.0nb1"
+	bool "ruby19-oniguruma-1.1.0nb2"
 	help
 	  Fast regular expression library
 
@@ -7948,6 +8071,17 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_PLIST
 	  http://plist.rubyforge.org/
 
 
+config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_PSYCH
+	bool "ruby19-psych-1.9.2pl290"
+	help
+	  Ruby YAML parser and emitter
+
+	  Psych is a YAML parser and emitter, actually a part of the
+	  Ruby distribution.
+
+	  http://www.ruby-lang.org/en/
+
+
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_PURE_HYPERESTRAIER
 	bool "ruby19-pure-hyperestraier-1.0.0.1.4.13nb1"
 	help
@@ -7965,7 +8099,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_PURE_HYPERESTRAIER
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_RDTOOL
-	bool "ruby19-rdtool-0.6.22"
+	bool "ruby19-rdtool-0.6.31"
 	help
 	  RD (Ruby Document) converter to HTML/man/etc
 
@@ -7975,11 +8109,11 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_RDTOOL
 	  Ruby and output of Ruby world.  Briefly, RD is to Ruby as POD is to
 	  Perl.
 
-	  http://rubyforge.org/projects/rdtool/
+	  https://github.com/uwabami/rdtool
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_REDCLOTH
-	bool "ruby19-redcloth-4.2.8"
+	bool "ruby19-redcloth-4.2.9"
 	help
 	  Textile library for Ruby
 
@@ -8168,7 +8302,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_ULTRAVIOLET
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_WILL_PAGINATE
-	bool "ruby19-will-paginate-3.0.0"
+	bool "ruby19-will-paginate-3.0.2"
 	help
 	  Pagination for views of model queries
 
@@ -8185,19 +8319,6 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_WILL_PAGINATE
 	  <%= will_paginate @posts %>
 
 	  http://github.com/mislav/will_paginate/wikis
-
-
-config BR2_PKGSRC_PACKAGE_TEXTPROC_XHTMLDIFF
-	bool "ruby19-xhtmldiff-1.2.2nb2"
-	help
-	  Tool for generating valid XHTML redline documents
-
-	  XHTMLDiff is a tool and library for taking valid XHTML documents as
-	  input, and generating redlined, valid XHTML text highlighting the
-	  changes between them as output.
-	  
-
-	  http://taiyaki.org/suikyo/elisp/index.html
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_RUBY_XMLPARSER
@@ -8374,7 +8495,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_SHARED_DESKTOP_ONTOLOGIES
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_SOPRANO
-	bool "soprano-2.5.2nb3"
+	bool "soprano-2.5.2nb5"
 	help
 	  QT based RDF framework
 
@@ -8389,7 +8510,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_SOPRANO
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_SOURCE_HIGHLIGHT
-	bool "source-highlight-3.1.4"
+	bool "source-highlight-3.1.4nb1"
 	help
 	  Highlight syntax of various languages source into HTML document
 
@@ -8404,7 +8525,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_SOURCE_HIGHLIGHT
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_STARDIC
-	bool "stardic-1.31nb6"
+	bool "stardic-1.31nb7"
 	help
 	  English-Chinese dictionary
 
@@ -8886,7 +9007,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_WBXML2
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_WDIFF
-	bool "wdiff-0.6.5nb1"
+	bool "wdiff-1.0.1"
 	help
 	  Word-by-word diff
 
@@ -8945,7 +9066,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XALAN_J
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_XAPIAN
-	bool "xapian-1.2.2"
+	bool "xapian-1.2.2nb1"
 	help
 	  Search engine based on Probabilistic Information Retrieval
 
@@ -8968,7 +9089,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XAPIAN
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_XAPIAN_OMEGA
-	bool "xapian-omega-1.0.18"
+	bool "xapian-omega-1.0.18nb1"
 	help
 	  Search engine application for websites using Xapian
 
@@ -9015,7 +9136,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XERCES_J
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_XFCE4_DICT_PLUGIN
-	bool "xfce4-dict-plugin-0.2.1nb6"
+	bool "xfce4-dict-plugin-0.2.1nb7"
 	help
 	  Xfce dictionary server plugin
 
@@ -9083,7 +9204,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XML2DOC
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_XMLADA
-	bool "xmlada-4.1w"
+	bool "xmlada-4.2.0.0nb1"
 	help
 	  Adacore XML suite for the Ada language
 
@@ -9147,7 +9268,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XMLRPC_C
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_XMLSTARLET
-	bool "xmlstarlet-1.2.1"
+	bool "xmlstarlet-1.3.0"
 	help
 	  Command line utilities for XML manipulation
 
@@ -9179,7 +9300,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XMLTOMAN
 	  xmltoman and xmlmantohtml are two very simple scripts for converting xml
 	  to groff or html.
 
-	  http://taiyaki.org/suikyo/elisp/index.html
+	  http://www.blue.sky.or.jp/atelier/ruby/xmlscan/
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_XMLTOOLING
@@ -9238,7 +9359,7 @@ config BR2_PKGSRC_PACKAGE_TEXTPROC_XSLIDE
 
 
 config BR2_PKGSRC_PACKAGE_TEXTPROC_YAMCHA
-	bool "yamcha-0.33"
+	bool "yamcha-0.33nb1"
 	help
 	  Yet Another Multipurpose CHunk Annotator
 

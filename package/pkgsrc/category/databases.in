@@ -1,18 +1,3 @@
-config BR2_PKGSRC_PACKAGE_DATABASES_CSHARP_MYSQL
-	bool "csharp-mysql-6.3.5"
-	help
-	  Fully managed ADO.NET driver for MySQL
-
-	  Connector/NET enables developers to easily create .NET applications that
-	  require secure, high-performance data connectivity with MySQL. It implements
-	  the required ADO.NET interfaces and integrates into ADO.NET aware tools.
-	  Developers can build applications using their choice of .NET languages.
-	  
-	  Connector/NET is a fully managed ADO.NET driver written in 100% pure C#.
-
-	  http://dev.mysql.com/downloads/connector/net/
-
-
 config BR2_PKGSRC_PACKAGE_DATABASES_ABOOK
 	bool "abook-0.6.0rc2nb1"
 	help
@@ -142,7 +127,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_CLISP_PGSQL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_COUCHDB
-	bool "couchdb-1.1.0"
+	bool "couchdb-1.1.1"
 	help
 	  Document database server, accessible via a RESTful JSON API
 
@@ -159,6 +144,21 @@ config BR2_PKGSRC_PACKAGE_DATABASES_COUCHDB
 	  for a variety of programming languages and environments.
 
 	  http://couchdb.apache.org/
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_CSHARP_MYSQL
+	bool "csharp-mysql-6.3.5"
+	help
+	  Fully managed ADO.NET driver for MySQL
+
+	  Connector/NET enables developers to easily create .NET applications that
+	  require secure, high-performance data connectivity with MySQL. It implements
+	  the required ADO.NET interfaces and integrates into ADO.NET aware tools.
+	  Developers can build applications using their choice of .NET languages.
+	  
+	  Connector/NET is a fully managed ADO.NET driver written in 100% pure C#.
+
+	  http://dev.mysql.com/downloads/connector/net/
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_DATADRAW
@@ -323,7 +323,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_DB46
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_DB5
-	bool "db5-5.2.28"
+	bool "db5-5.2.36"
 	help
 	  Berkeley DB version 5 from Oracle
 
@@ -414,6 +414,19 @@ config BR2_PKGSRC_PACKAGE_DATABASES_GDBM
 	  http://www.gnu.org/software/gdbm/gdbm.html
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_GDBM_COMPAT
+	bool "gdbm_compat-1.9.1"
+	help
+	  The GNU database manager dbm and ndbm compat library
+
+	  GNU `dbm' is a library of functions implementing a hashed database
+	  on a disk file.  The software was written by Philip A. Nelson.
+	  
+	  This is the optional dbm and ndbm API compatibility library and headers.
+
+	  http://www.gnu.org/software/gdbm/gdbm.html
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_GDBM_PRIMITIVE
 	bool "gdbm_primitive-1.15nb3"
 	help
@@ -425,7 +438,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_GDBM_PRIMITIVE
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_GENEWEB
-	bool "geneweb-5.01"
+	bool "geneweb-5.01nb1"
 	help
 	  GeneWeb is a genealogy database that runs as a web server
 
@@ -492,7 +505,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_GNOME_MIME_DATA
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_GOURMET
-	bool "gourmet-0.8.5.14nb11"
+	bool "gourmet-0.8.5.14nb12"
 	help
 	  Recipe database
 
@@ -508,7 +521,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_GOURMET
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_GQ
-	bool "gq-1.2.3nb10"
+	bool "gq-1.2.3nb11"
 	help
 	  GTK-based LDAP client
 
@@ -530,7 +543,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_GQ
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_GRAMPS
-	bool "gramps-1.0.11nb20"
+	bool "gramps-1.0.11nb21"
 	help
 	  Genealogical Research and Analysis Management Programming System
 
@@ -556,7 +569,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_GRAMPS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_GRAMPS2
-	bool "gramps-2.2.10nb11"
+	bool "gramps-2.2.10nb12"
 	help
 	  Genealogical Research and Analysis Management Programming System
 
@@ -577,7 +590,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_GRAMPS2
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_GRAMPS3
-	bool "gramps-3.2.6nb1"
+	bool "gramps-3.2.6nb2"
 	help
 	  Genealogical Research and Analysis Management Programming System V3
 
@@ -840,7 +853,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_JDBC_POSTGRESQL84
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_KMYSQLADMIN
-	bool "kmysqladmin-0.7.2nb9"
+	bool "kmysqladmin-0.7.2nb10"
 	help
 	  MySQL administration GUI
 
@@ -851,7 +864,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_KMYSQLADMIN
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_KRECIPES
-	bool "krecipes-1.0beta1nb11"
+	bool "krecipes-1.0beta1nb12"
 	help
 	  Recipe manager
 
@@ -885,7 +898,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_LDAPVI
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_LIBCASSANDRA
-	bool "libcassandra-20101010nb2"
+	bool "libcassandra-20101010nb3"
 	help
 	  C++ interface to Cassandra
 
@@ -1020,7 +1033,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_LIBGDA_POSTGRES
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_LIBGNOMEDB
-	bool "libgnomedb-3.0.0nb11"
+	bool "libgnomedb-3.0.0nb12"
 	help
 	  GNOME2 database library
 
@@ -1084,7 +1097,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_LUA_TOKYOCABINET
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_LUMA
-	bool "luma-2.3nb6"
+	bool "luma-2.3nb7"
 	help
 	  LDAP browser
 
@@ -1107,7 +1120,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_MAATKIT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_MERGEANT
-	bool "mergeant-0.66nb14"
+	bool "mergeant-0.66nb15"
 	help
 	  GNOME2 GNOME-DB database front-end
 
@@ -1135,7 +1148,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_METAKIT_LIB
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_MYODBC
-	bool "myodbc-5.1.8"
+	bool "myodbc-5.1.8nb1"
 	help
 	  
 
@@ -1169,7 +1182,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL5_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL51_CLIENT
-	bool "mysql-client-5.1.58"
+	bool "mysql-client-5.1.60"
 	help
 	  
 
@@ -1193,7 +1206,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL51_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL55_CLIENT
-	bool "mysql-client-5.5.16"
+	bool "mysql-client-5.5.19"
 	help
 	  
 
@@ -1240,7 +1253,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL5_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL51_SERVER
-	bool "mysql-server-5.1.58"
+	bool "mysql-server-5.1.60"
 	help
 	  
 
@@ -1265,7 +1278,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL51_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL55_SERVER
-	bool "mysql-server-5.5.16nb1"
+	bool "mysql-server-5.5.19"
 	help
 	  
 
@@ -1289,7 +1302,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL55_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL_WORKBENCH
-	bool "mysql-workbench-5.2.33nb2"
+	bool "mysql-workbench-5.2.33nb3"
 	help
 	  Cross-platform, visual database design tool
 
@@ -1302,7 +1315,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_MYSQL_WORKBENCH
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_MYSQLCC
-	bool "mysqlcc-0.9.8nb3"
+	bool "mysqlcc-0.9.8nb4"
 	help
 	  MySQL Control Center
 
@@ -1342,7 +1355,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_NSS_LDAP
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_OCAML_MYSQL
-	bool "ocaml-mysql-1.0.4nb2"
+	bool "ocaml-mysql-1.0.4nb3"
 	help
 	  Ocaml library for MySQL database access
 
@@ -1430,7 +1443,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_OPENLDAP_NOPS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_OPENLDAP_SERVER
-	bool "openldap-server-2.4.24"
+	bool "openldap-server-2.4.24nb2"
 	help
 	  Lightweight Directory Access Protocol server suite
 
@@ -1546,7 +1559,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_CDB_FILE
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_CATALYST_MODEL_DBIC_SCHEMA
-	bool "p5-Catalyst-Model-DBIC-Schema-0.43nb1"
+	bool "p5-Catalyst-Model-DBIC-Schema-0.55"
 	help
 	  DBIx::Class::Schema Model Class
 
@@ -1573,7 +1586,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_CATALYST_MODEL_RDBO
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_CATALYSTX_CRUD
-	bool "p5-CatalystX-CRUD-0.51nb1"
+	bool "p5-CatalystX-CRUD-0.52"
 	help
 	  CRUD framework for Catalyst applications
 
@@ -1710,7 +1723,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_CLASS_DBI_PLUGIN_DEEPABSTRACTSEARCH
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBD_CSV
-	bool "p5-DBD-CSV-0.31nb1"
+	bool "p5-DBD-CSV-0.33"
 	help
 	  Access CSV files via DBI
 
@@ -1743,7 +1756,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBD_GOOGLE
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBD_MOCK
-	bool "p5-DBD-Mock-1.41"
+	bool "p5-DBD-Mock-1.43"
 	help
 	  Perl5 module with mock database driver for testing
 
@@ -1931,7 +1944,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBICX_DEPLOY
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBICX_MAPMAKER
-	bool "p5-DBICx-MapMaker-0.02nb3"
+	bool "p5-DBICx-MapMaker-0.03"
 	help
 	  Perl 5 module to automatically create a DBIx::Class mapping table
 
@@ -1942,7 +1955,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBICX_MAPMAKER
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBICX_TESTDATABASE
-	bool "p5-DBICx-TestDatabase-0.02nb3"
+	bool "p5-DBICx-TestDatabase-0.04"
 	help
 	  Perl 5 module to create temporary database from a DBIx::Class::Schema
 
@@ -2003,7 +2016,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_ABSTRACT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CLASS
-	bool "p5-DBIx-Class-0.08123nb2"
+	bool "p5-DBIx-Class-0.08195"
 	help
 	  Extensible and flexible object <-> relational mapper
 
@@ -2068,7 +2081,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CLASS_DYNAMICDEFAULT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CLASS_ENCODEDCOLUMN
-	bool "p5-DBIx-Class-EncodedColumn-0.00010nb1"
+	bool "p5-DBIx-Class-EncodedColumn-0.00011"
 	help
 	  DBIx::Class component to automatically encode columns
 
@@ -2098,7 +2111,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CLASS_ENCODEDCOLUMN
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CLASS_FIXTURES
-	bool "p5-DBIx-Class-Fixtures-1.001010nb2"
+	bool "p5-DBIx-Class-Fixtures-1.001013"
 	help
 	  Perl 5 module to handle databases fixtures using DBIx::Class schema
 
@@ -2181,7 +2194,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CLASS_RDBOHELPERS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CLASS_SCHEMA_LOADER
-	bool "p5-DBIx-Class-Schema-Loader-0.07002nb1"
+	bool "p5-DBIx-Class-Schema-Loader-0.07012"
 	help
 	  Dynamic definition of a DBIx::Class::Schema
 
@@ -2256,7 +2269,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CLASS_VALIDATION
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_CONNECTOR
-	bool "p5-DBIx-Connector-0.40nb1"
+	bool "p5-DBIx-Connector-0.47"
 	help
 	  Fast, safe DBI connection and transaction management
 
@@ -2337,7 +2350,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_SCHEMA
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_DBIX_SEARCHBUILDER
-	bool "p5-DBIx-SearchBuilder-1.56nb2"
+	bool "p5-DBIx-SearchBuilder-1.61"
 	help
 	  Extension for easy SQL SELECT Statement generation
 
@@ -2443,7 +2456,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_IMA_DBI
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_JIFTY_DBI
-	bool "p5-Jifty-DBI-0.68nb1"
+	bool "p5-Jifty-DBI-0.72"
 	help
 	  Perl 5 object-relational persistence framework
 
@@ -2478,7 +2491,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_MARC
 	  a variety of tools for searching, removing, and even creating records from
 	  scratch.
 
-	  
+	  http://marcpm.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_MARC_RECORD
@@ -2493,7 +2506,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_MARC_RECORD
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_MARC_XML
-	bool "p5-MARC-XML-0.92nb1"
+	bool "p5-MARC-XML-0.93"
 	help
 	  Work with MARC data encoded as XML, SAX handler for parsing MARCXML
 
@@ -2551,7 +2564,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_MLDBM_SYNC
 	  serialize requests logically and improve performance for bundled reads
 	  and writes.
 
-	  
+	  http://search.cpan.org/dist/MLDBM-Sync/
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_NET_CASSANDRA
@@ -2619,7 +2632,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_PALM
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_RRD_SIMPLE
-	bool "p5-RRD-Simple-1.44nb6"
+	bool "p5-RRD-Simple-1.44nb7"
 	help
 	  RRD::Simple implementation for Perl
 
@@ -2637,8 +2650,19 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_RRD_SIMPLE
 	  http://search.cpan.org/dist/RRD-Simple/
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_P5_REDIS
+	bool "p5-Redis-1.904"
+	help
+	  Perl binding for Redis database
+
+	  Perl binding for Redis database which is in-memory hash store with support for
+	  scalars, arrays and sets and disk persistence.
+
+	  http://search.cpan.org/dist/Redis/
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_ROSE_DB
-	bool "p5-Rose-DB-0.762nb1"
+	bool "p5-Rose-DB-0.764"
 	help
 	  DBI wrapper and abstraction layer
 
@@ -2655,7 +2679,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_ROSE_DB
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_ROSE_DB_OBJECT
-	bool "p5-Rose-DB-Object-0.789nb1"
+	bool "p5-Rose-DB-Object-0.796"
 	help
 	  Extensible, high performance RDBMS-OO mapper
 
@@ -2801,7 +2825,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_SQL_RESERVEDWORDS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_SQL_STATEMENT
-	bool "p5-SQL-Statement-1.31nb2"
+	bool "p5-SQL-Statement-1.33"
 	help
 	  Small, abstract SQL engine
 
@@ -2828,7 +2852,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_P5_SQL_STATEMENT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_P5_SQL_TRANSLATOR
-	bool "p5-SQL-Translator-0.11006nb3"
+	bool "p5-SQL-Translator-0.11010"
 	help
 	  
 
@@ -3092,7 +3116,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_PALM_DB_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_PGADMIN3
-	bool "pgadmin3-1.12.1nb3"
+	bool "pgadmin3-1.12.1nb4"
 	help
 	  Graphical PostgreSQL client and administration tool
 
@@ -3490,7 +3514,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_PHP_SQLITE
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_PHPLDAPADMIN
-	bool "phpldapadmin-1.2.1.1"
+	bool "phpldapadmin-1.2.2"
 	help
 	  Set of PHP-scripts to administer an LDAP directory over the WWW
 
@@ -3523,7 +3547,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_PHPLDAPADMIN
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_PHPMYADMIN
-	bool "phpmyadmin-3.4.5"
+	bool "phpmyadmin-3.4.9"
 	help
 	  Set of PHP-scripts to adminstrate MySQL over the WWW
 
@@ -3578,7 +3602,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_PHPPGADMIN
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POCO_DATA
-	bool "poco-data-1.4.0"
+	bool "poco-data-1.4.2p1"
 	help
 	  POCO C++ RDBMS Master Accessor libraries
 
@@ -3588,7 +3612,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POCO_DATA
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POCO_DATA_MYSQL
-	bool "poco-data-mysql-1.4.0"
+	bool "poco-data-mysql-1.4.2p1"
 	help
 	  POCO C++ MySQL RDBMS Accessor libraries
 
@@ -3598,7 +3622,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POCO_DATA_MYSQL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POCO_DATA_ODBC
-	bool "poco-data-odbc-1.4.0"
+	bool "poco-data-odbc-1.4.2p1"
 	help
 	  POCO C++ ODBC RDBMS Accessor libraries
 
@@ -3608,7 +3632,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POCO_DATA_ODBC
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POCO_DATA_SQLITE
-	bool "poco-data-sqlite-1.4.0nb1"
+	bool "poco-data-sqlite-1.4.2p1nb1"
 	help
 	  POCO C++ SQLite RDBMS Accessor libraries
 
@@ -3618,7 +3642,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POCO_DATA_SQLITE
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83
-	bool "postgresql83-8.3.16"
+	bool "postgresql83-8.3.17"
 	help
 	  Robust, next generation, object-relational DBMS
 
@@ -3636,7 +3660,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_ADMINPACK
-	bool "postgresql83-adminpack-8.3.16"
+	bool "postgresql83-adminpack-8.3.17"
 	help
 	  Admin pack module for pgAdmin management
 
@@ -3649,7 +3673,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_ADMINPACK
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_CLIENT
-	bool "postgresql83-client-8.3.16"
+	bool "postgresql83-client-8.3.17"
 	help
 	  PostgreSQL database client programs
 
@@ -3667,7 +3691,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_PLPERL
-	bool "postgresql83-plperl-8.3.16"
+	bool "postgresql83-plperl-8.3.17"
 	help
 	  PL/Perl procedural language for the PostgreSQL backend
 
@@ -3681,7 +3705,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_PLPERL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_PLPYTHON
-	bool "postgresql83-plpython-8.3.16"
+	bool "postgresql83-plpython-8.3.17"
 	help
 	  PL/Python procedural language for the PostgreSQL backend
 
@@ -3699,7 +3723,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_PLPYTHON
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_PLTCL
-	bool "postgresql83-pltcl-8.3.16"
+	bool "postgresql83-pltcl-8.3.17"
 	help
 	  PL/Tcl procedural language for the PostgreSQL backend
 
@@ -3712,7 +3736,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_PLTCL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_SERVER
-	bool "postgresql83-server-8.3.16"
+	bool "postgresql83-server-8.3.17"
 	help
 	  PostgreSQL database server programs
 
@@ -3739,7 +3763,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL83_UUID
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84
-	bool "postgresql84-8.4.9"
+	bool "postgresql84-8.4.10"
 	help
 	  Robust, next generation, object-relational DBMS
 
@@ -3757,7 +3781,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_ADMINPACK
-	bool "postgresql84-adminpack-8.4.9"
+	bool "postgresql84-adminpack-8.4.10"
 	help
 	  Admin pack module for pgAdmin management
 
@@ -3770,7 +3794,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_ADMINPACK
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_CLIENT
-	bool "postgresql84-client-8.4.9"
+	bool "postgresql84-client-8.4.10"
 	help
 	  PostgreSQL database client programs
 
@@ -3788,7 +3812,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_DBLINK
-	bool "postgresql84-dblink-8.4.9"
+	bool "postgresql84-dblink-8.4.10"
 	help
 	  dblink module for remote database connections
 
@@ -3799,7 +3823,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_DBLINK
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_PGCRYPTO
-	bool "postgresql84-pgcrypto-8.4.9"
+	bool "postgresql84-pgcrypto-8.4.10"
 	help
 	  Module providing cryptographic functions for PostgreSQL
 
@@ -3811,7 +3835,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_PGCRYPTO
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_PLPERL
-	bool "postgresql84-plperl-8.4.9"
+	bool "postgresql84-plperl-8.4.10"
 	help
 	  PL/Perl procedural language for the PostgreSQL backend
 
@@ -3825,7 +3849,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_PLPERL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_PLPYTHON
-	bool "postgresql84-plpython-8.4.9"
+	bool "postgresql84-plpython-8.4.10"
 	help
 	  PL/Python procedural language for the PostgreSQL backend
 
@@ -3843,7 +3867,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_PLPYTHON
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_PLTCL
-	bool "postgresql84-pltcl-8.4.9"
+	bool "postgresql84-pltcl-8.4.10"
 	help
 	  PL/Tcl procedural language for the PostgreSQL backend
 
@@ -3856,7 +3880,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_PLTCL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL_POSTGIS
-	bool "postgresql84-postgis-1.5.1nb1"
+	bool "postgresql84-postgis-1.5.1nb2"
 	help
 	  Spatial database capabilities for PostgreSQL
 
@@ -3881,7 +3905,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL_POSTGIS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_SERVER
-	bool "postgresql84-server-8.4.9"
+	bool "postgresql84-server-8.4.10"
 	help
 	  PostgreSQL database server programs
 
@@ -3908,7 +3932,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL84_UUID
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90
-	bool "postgresql90-9.0.5"
+	bool "postgresql90-9.0.6"
 	help
 	  Robust, next generation, object-relational DBMS
 
@@ -3926,7 +3950,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_ADMINPACK
-	bool "postgresql90-adminpack-9.0.5"
+	bool "postgresql90-adminpack-9.0.6"
 	help
 	  Admin pack module for pgAdmin management
 
@@ -3939,7 +3963,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_ADMINPACK
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_CLIENT
-	bool "postgresql90-client-9.0.5"
+	bool "postgresql90-client-9.0.6"
 	help
 	  PostgreSQL database client programs
 
@@ -3957,7 +3981,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_DATATYPES
-	bool "postgresql90-datatypes-9.0.5"
+	bool "postgresql90-datatypes-9.0.6"
 	help
 	  PostgreSQL data types support modules
 
@@ -4009,7 +4033,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_DATATYPES
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_DBLINK
-	bool "postgresql90-dblink-9.0.5"
+	bool "postgresql90-dblink-9.0.6"
 	help
 	  Dblink module for remote database connections
 
@@ -4020,7 +4044,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_DBLINK
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_DOCS
-	bool "postgresql90-docs-9.0.5"
+	bool "postgresql90-docs-9.0.6"
 	help
 	  PostgreSQL database documentation
 
@@ -4038,7 +4062,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_FUZZYSTRMATCH
-	bool "postgresql90-fuzzystrmatch-9.0.5"
+	bool "postgresql90-fuzzystrmatch-9.0.6"
 	help
 	  PostgreSQL fuzzystrmatch contribution
 
@@ -4056,7 +4080,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_FUZZYSTRMATCH
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_MONITORING
-	bool "postgresql90-monitoring-9.0.5"
+	bool "postgresql90-monitoring-9.0.6"
 	help
 	  PostgreSQL monitoring tools
 
@@ -4084,7 +4108,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_MONITORING
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_PGCRYPTO
-	bool "postgresql90-pgcrypto-9.0.5"
+	bool "postgresql90-pgcrypto-9.0.6"
 	help
 	  Module providing cryptographic functions for PostgreSQL
 
@@ -4096,7 +4120,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_PGCRYPTO
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_PLPERL
-	bool "postgresql90-plperl-9.0.5"
+	bool "postgresql90-plperl-9.0.6"
 	help
 	  PL/Perl procedural language for the PostgreSQL backend
 
@@ -4110,7 +4134,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_PLPERL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_PLPYTHON
-	bool "postgresql90-plpython-9.0.5"
+	bool "postgresql90-plpython-9.0.6"
 	help
 	  PL/Python procedural language for the PostgreSQL backend
 
@@ -4128,7 +4152,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_PLPYTHON
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_PLTCL
-	bool "postgresql90-pltcl-9.0.5"
+	bool "postgresql90-pltcl-9.0.6"
 	help
 	  PL/Tcl procedural language for the PostgreSQL backend
 
@@ -4141,7 +4165,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_PLTCL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_REPLICATIONTOOLS
-	bool "postgresql90-replicationtools-9.0.5"
+	bool "postgresql90-replicationtools-9.0.6"
 	help
 	  PostgreSQL replication tools
 
@@ -4162,7 +4186,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_REPLICATIONTOOLS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_SERVER
-	bool "postgresql90-server-9.0.5"
+	bool "postgresql90-server-9.0.6"
 	help
 	  PostgreSQL database server programs
 
@@ -4180,7 +4204,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_UPGRADE
-	bool "postgresql90-upgrade-9.0.5"
+	bool "postgresql90-upgrade-9.0.6"
 	help
 	  PostgreSQL binary upgrade tool
 
@@ -4212,7 +4236,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL90_UUID
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91
-	bool "postgresql91-9.1.1"
+	bool "postgresql91-9.1.2"
 	help
 	  Robust, next generation, object-relational DBMS
 
@@ -4230,7 +4254,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_ADMINPACK
-	bool "postgresql91-adminpack-9.1.1"
+	bool "postgresql91-adminpack-9.1.2"
 	help
 	  Admin pack module for pgAdmin management
 
@@ -4243,7 +4267,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_ADMINPACK
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_CLIENT
-	bool "postgresql91-client-9.1.1"
+	bool "postgresql91-client-9.1.2"
 	help
 	  PostgreSQL database client programs
 
@@ -4261,7 +4285,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_DATATYPES
-	bool "postgresql91-datatypes-9.1.1"
+	bool "postgresql91-datatypes-9.1.2"
 	help
 	  PostgreSQL data types support modules
 
@@ -4313,7 +4337,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_DATATYPES
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_DBLINK
-	bool "postgresql91-dblink-9.1.1"
+	bool "postgresql91-dblink-9.1.2"
 	help
 	  Dblink module for remote database connections
 
@@ -4324,7 +4348,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_DBLINK
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_DOCS
-	bool "postgresql91-docs-9.1.1"
+	bool "postgresql91-docs-9.1.2"
 	help
 	  PostgreSQL database documentation
 
@@ -4342,7 +4366,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_FUZZYSTRMATCH
-	bool "postgresql91-fuzzystrmatch-9.1.1"
+	bool "postgresql91-fuzzystrmatch-9.1.2"
 	help
 	  PostgreSQL fuzzystrmatch contribution
 
@@ -4360,7 +4384,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_FUZZYSTRMATCH
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_MONITORING
-	bool "postgresql91-monitoring-9.1.1"
+	bool "postgresql91-monitoring-9.1.2"
 	help
 	  PostgreSQL monitoring tools
 
@@ -4388,7 +4412,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_MONITORING
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_PGCRYPTO
-	bool "postgresql91-pgcrypto-9.1.1"
+	bool "postgresql91-pgcrypto-9.1.2"
 	help
 	  Module providing cryptographic functions for PostgreSQL
 
@@ -4400,7 +4424,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_PGCRYPTO
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_PLPERL
-	bool "postgresql91-plperl-9.1.1"
+	bool "postgresql91-plperl-9.1.2"
 	help
 	  PL/Perl procedural language for the PostgreSQL backend
 
@@ -4414,7 +4438,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_PLPERL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_PLPYTHON
-	bool "postgresql91-plpython-9.1.1"
+	bool "postgresql91-plpython-9.1.2"
 	help
 	  PL/Python procedural language for the PostgreSQL backend
 
@@ -4432,7 +4456,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_PLPYTHON
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_PLTCL
-	bool "postgresql91-pltcl-9.1.1"
+	bool "postgresql91-pltcl-9.1.2"
 	help
 	  PL/Tcl procedural language for the PostgreSQL backend
 
@@ -4445,7 +4469,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_PLTCL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_REPLICATIONTOOLS
-	bool "postgresql91-replicationtools-9.1.1"
+	bool "postgresql91-replicationtools-9.1.2"
 	help
 	  PostgreSQL replication tools
 
@@ -4466,7 +4490,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_REPLICATIONTOOLS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_SERVER
-	bool "postgresql91-server-9.1.1"
+	bool "postgresql91-server-9.1.2"
 	help
 	  PostgreSQL database server programs
 
@@ -4484,7 +4508,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_POSTGRESQL91_UPGRADE
-	bool "postgresql91-upgrade-9.1.1"
+	bool "postgresql91-upgrade-9.1.2"
 	help
 	  PostgreSQL binary upgrade tool
 
@@ -4601,6 +4625,17 @@ config BR2_PKGSRC_PACKAGE_DATABASES_PY_CDB
 	  http://pilcrow.madison.wi.us/
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_PY_CKANCLIENT
+	bool "py26-ckanclient-0.9"
+	help
+	  Open-source data portal software
+
+	  ckanclient is a Python module to read and write to a CKAN server
+	  via the API.
+
+	  http://ckan.org/
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_PY_CX_ORACLE
 	bool "py26-cx_Oracle-5.0.2"
 	help
@@ -4609,6 +4644,17 @@ config BR2_PKGSRC_PACKAGE_DATABASES_PY_CX_ORACLE
 	  Oracle binding for Python
 
 	  http://cx-oracle.sourceforge.net
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_PY_DATAPKG
+	bool "py26-datapkg-0.8"
+	help
+	  Tool for distributing, discovering, and installing data packages
+
+	  datapkg is a Python library and command line tool for working with
+	  Data Packages and interacting with data hubs like CKAN.
+
+	  http://okfn.org/projects/datapkg/
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_PY_GDBM
@@ -4622,7 +4668,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_PY_GDBM
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_PY_LDAP
-	bool "py26-ldap-2.4.3"
+	bool "py26-ldap-2.4.6"
 	help
 	  LDAP client API for Python
 
@@ -4756,6 +4802,19 @@ config BR2_PKGSRC_PACKAGE_DATABASES_PY_SQLALCHEMY
 	  adapted into a simple and Pythonic domain language.
 
 	  http://www.sqlalchemy.org/
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_PY_SQLALCHEMY_MIGRATE
+	bool "py26-sqlalchemy-migrate-0.7.2"
+	help
+	  Schema migration tool for SQLAlchemy
+
+	  sqlalchemy-migrate is a schema migration tool for SQLAlchemy. It is
+	  designed to support an agile approach to database design and make it
+	  easier to keep development and production databases in sync, as schema
+	  changes are required.
+
+	  http://code.google.com/p/sqlalchemy-migrate/
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_PY_SQLITE
@@ -4906,7 +4965,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RDB
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RRDTOOL12
-	bool "rrdtool-1.2.30nb4"
+	bool "rrdtool-1.2.30nb5"
 	help
 	  Data analysis tool generating graphical representations
 
@@ -4926,7 +4985,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RRDTOOL12
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RRDTOOL
-	bool "rrdtool-1.4.5nb4"
+	bool "rrdtool-1.4.5nb5"
 	help
 	  Data analysis tool generating graphical representations
 
@@ -4982,7 +5041,24 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ACTIVERECORD
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ACTIVERECORD3
-	bool "ruby19-activerecord-3.0.10"
+	bool "ruby19-activerecord-3.0.11nb1"
+	help
+	  Object-relational mapper framework
+
+	  = Active Record -- Object-relational mapping put on rails
+	  
+	  Active Record connects classes to relational database tables to establish an
+	  almost zero-configuration persistence layer for applications. The library
+	  provides a base class that, when subclassed, sets up a mapping between the new
+	  class and an existing table in the database. In context of an application,
+	  these classes are commonly referred to as *models*. Models can also be
+	  connected to other models; this is done by defining *associations*.
+
+	  http://www.rubyonrails.org/
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ACTIVERECORD31
+	bool "ruby19-activerecord-3.1.3"
 	help
 	  Object-relational mapper framework
 
@@ -5022,8 +5098,8 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ACTIVERECORD_ODBC
 	  http://odbc-rails.rubyforge.org/
 
 
-config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ACTS_AS_VERSIONED
-	bool "ruby19-acts-as-versioned-0.2.3nb1"
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ACTS_AS_VERSIONED02
+	bool "ruby19-acts-as-versioned-0.2.3nb2"
 	help
 	  Simple versioning for ActiveRecord
 
@@ -5032,7 +5108,17 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ACTS_AS_VERSIONED
 	  http://ar-versioned.rubyforge.org/
 
 
-config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_AREL
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ACTS_AS_VERSIONED
+	bool "ruby19-acts-as-versioned-0.6.0"
+	help
+	  Simple versioning for ActiveRecord
+
+	  This library adds simple versioning to an ActiveRecord module.
+
+	  http://ar-versioned.rubyforge.org/
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_AREL20
 	bool "ruby19-arel-2.0.10"
 	help
 	  Arel is a relational algebra engine for Ruby
@@ -5062,8 +5148,38 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_AREL
 	  http://github.com/brynary/arel/
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_AREL
+	bool "ruby19-arel-2.2.1"
+	help
+	  Arel is a relational algebra engine for Ruby
+
+	  
+	  ## Abstract ##
+	  
+	  Arel is a Relational Algebra for Ruby.
+	  
+	  1) simplifies the generation complex of SQL queries
+	  2) adapts to various RDBMS systems
+	  
+	  It is intended to be a framework framework; that is, you can build
+	  your own ORM with it, focusing on innovative object and collection
+	  modeling as opposed to database compatibility and query generation.
+	  
+	  ## Status ##
+	  
+	  For the moment, Arel uses ActiveRecord's connection adapters to
+	  connect to the various engines, connection pooling, perform quoting,
+	  and do type conversion. On the horizon is the use of DataObjects
+	  instead.
+	  
+	  The long term goal, following both LINQ and DataMapper, is to have
+	  Arel adapt to engines beyond RDBMS, including XML, IMAP, YAML, etc.
+
+	  http://github.com/brynary/arel/
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_CASSANDRA
-	bool "ruby19-cassandra-0.12.1"
+	bool "ruby19-cassandra-0.12.1nb1"
 	help
 	  Ruby extension for Cassandra
 
@@ -5073,7 +5189,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_CASSANDRA
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DATA_OBJECTS
-	bool "ruby19-data_objects-0.10.6"
+	bool "ruby19-data_objects-0.10.7"
 	help
 	  DataObjects basic API and shared driver specifications
 
@@ -5083,7 +5199,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DATA_OBJECTS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DATAMAPPER
-	bool "ruby19-datamapper-1.1.0"
+	bool "ruby19-datamapper-1.2.0"
 	help
 	  Object/Relational Mapper for Ruby
 
@@ -5172,8 +5288,29 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DBI
 	  http://rubyforge.org/projects/ruby-dbi/
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_ACTIVE_MODEL
+	bool "ruby19-dm-active_model-1.2.0"
+	help
+	  active_model compliance for datamapper
+
+	  This plugin makes datamapper compliant with active_model conventions and thus
+	  compatible with rails3.
+
+	  http://github.com/datamapper/dm-active_model
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_ADJUST
+	bool "ruby19-dm-adjust-1.2.0"
+	help
+	  DataMapper plugin to increment and decrement properties
+
+	  DataMapper plugin providing methods to increment and decrement properties.
+
+	  http://github.com/datamapper/dm-adjust
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_AGGREGATES
-	bool "ruby19-dm-aggregates-1.1.0"
+	bool "ruby19-dm-aggregates-1.2.0"
 	help
 	  DataMapper plugin for aggregates on collections
 
@@ -5183,8 +5320,29 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_AGGREGATES
 	  http://github.com/datamapper/dm-aggregates
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_AR_FINDERS
+	bool "ruby19-dm-ar-finders-1.2.0"
+	help
+	  DataMapper plugin providing ActiveRecord-style finders
+
+	  DataMapper plugin providing ActiveRecord-style finders.
+
+	  http://github.com/datamapper/dm-ar-finders
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_CLI
+	bool "ruby19-dm-cli-1.2.0"
+	help
+	  DataMapper plugin allowing interaction with models through a CLI
+
+	  DataMapper plugin allowing interaction with models through a Command-Line
+	  Interface (CLI).
+
+	  http://github.com/datamapper/dm-cli
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_CONSTRAINTS
-	bool "ruby19-dm-constraints-1.1.0"
+	bool "ruby19-dm-constraints-1.2.0"
 	help
 	  DataMapper plugin constraining relationships
 
@@ -5198,7 +5356,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_CONSTRAINTS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_CORE
-	bool "ruby19-dm-core-1.1.0"
+	bool "ruby19-dm-core-1.2.0"
 	help
 	  Object/Relational Mapper for Ruby
 
@@ -5216,8 +5374,142 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_CORE
 	  http://github.com/datamapper/dm-core
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_DO_ADAPTER
+	bool "ruby19-dm-do-adapter-1.2.0"
+	help
+	  DataObjects Adapter for DataMapper
+
+	  A DataObjects Adapter for DataMapper.
+
+	  http://github.com/datamapper/dm-do-adapter
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_FERRET_ADAPTER
+	bool "ruby19-dm-ferret-adapter-1.2.0"
+	help
+	  DataMapper plugin for Ferret
+
+	  This is a DataMapper plugin for Ferret.
+
+	  http://github.com/datamapper/dm-ferret-adapter
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_IS_LIST
+	bool "ruby19-dm-is-list-1.2.0"
+	help
+	  DataMapper plugin for creating and organizing lists
+
+	  DataMapper plugin for creating and organizing lists.
+
+	  http://github.com/datamapper/dm-is-list
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_IS_NESTED_SET
+	bool "ruby19-dm-is-nested_set-1.2.0"
+	help
+	  DataMapper plugin allowing the creation of nested sets from data models
+
+	  DataMapper plugin allowing the creation of nested sets from data models.
+	  Provides all the same functionality as dm-is-tree, plus tons more! Read on.
+	  
+	  == What is a nested set?
+	  
+	  Nested set is a clever model for storing hierarchical data in a flat table.
+	  Instead of (only) storing the id of the parent on each node, a nested set puts
+	  all nodes in a clever structure (see Example below). That is what makes it
+	  possible to get the all of the descendants (not only immediate children),
+	  ancestors, or siblings, in one single query to the database.
+	  
+	  The only downside to nested sets (compared to trees] is that the queries it
+	  takes to know these things, and to move nodes around in the tree are rather
+	  complex. That is what this plugin takes care of (+ lots of other neat stuff)!
+	  
+	  Nested sets are a good choice for most kinds of ordered trees with more than
+	  two levels of nesting. Very good for menus, categories, and threaded posts.
+
+	  http://github.com/datamapper/dm-is-nested_set
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_IS_REMIXABLE
+	bool "ruby19-dm-is-remixable-1.2.0"
+	help
+	  Allow you to create reusable data functionality
+
+	  DataMapper::Is::Remixable allows you to create re-usable chunks of relational
+	  data, its kind of like multiple inheritance for models.
+
+	  http://github.com/datamapper/dm-is-remixable
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_IS_SEARCHABLE
+	bool "ruby19-dm-is-searchable-1.2.0"
+	help
+	  DataMapper plugin for searching
+
+	  A DataMapper search plugin api to search for resources from one repository and
+	  load from another.
+	  
+	  Typically a full text search adapter that can only produce partial resources is
+	  searched and the resulting resource collection is then loaded from your default
+	  repository.
+
+	  http://github.com/datamapper/dm-is-searchable
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_IS_STATE_MACHINE
+	bool "ruby19-dm-is-state_machine-1.2.0"
+	help
+	  DataMapper plugin for creating state machines
+
+	  DataMapper plugin that adds state machine functionality to your models.
+	  
+	  == Why is this plugin useful?
+	  
+	  Your DataMapper resource might benefit from a state machine if it:
+	  
+	  * has different "modes" of operation
+	  * has discrete behaviors
+	  * especially if the behaviors are mutually exclusive
+	  
+	  And you want a clean, high-level way of describing these modes / behaviors
+	  and how the resource moves between them.  This plugin allows you to
+	  declaratively describe the states and transitions involved.
+
+	  http://github.com/datamapper/dm-is-state_machine
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_IS_TREE
+	bool "ruby19-dm-is-tree-1.2.0"
+	help
+	  DataMapper plugin allowing the creation of tree structures
+
+	  DataMapper plugin enabling easy creation of tree structures from your DM models.
+	  
+	  This requires a foreign key property for your model, which by default would be
+	  called :parent_id.
+
+	  http://github.com/datamapper/dm-is-tree
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_IS_VERSIONED
+	bool "ruby19-dm-is-versioned-1.2.0"
+	help
+	  DataMapper plugin enabling simple versioning of models
+
+	  DataMapper plugin enabling <b>simple</b> versioning of models.
+	  
+	  When a model is versioned, and updated, instead of the previous version being
+	  lost in the mists of time, it is saved in a subsidiary table, so that it can
+	  be restored later if needed.
+	  
+	  Please Note!  this gem behaves differently to how AR's :acts_as_versioned
+	  works.  There is currently no multi version storage possible.
+
+	  http://github.com/datamapper/dm-is-versioned
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_MIGRATIONS
-	bool "ruby19-dm-migrations-1.1.0"
+	bool "ruby19-dm-migrations-1.2.0"
 	help
 	  DataMapper plugin for writing and speccing migrations
 
@@ -5226,8 +5518,65 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_MIGRATIONS
 	  http://github.com/datamapper/dm-migrations
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_MYSQL_ADAPTER
+	bool "ruby19-dm-mysql-adapter-1.2.0"
+	help
+	  MySQL Adapter for DataMapper
+
+	  A MySQL Adapter for DataMapper.
+
+	  http://github.com/datamapper/dm-mysql-adapter
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_OBSERVER
+	bool "ruby19-dm-observer-1.2.0"
+	help
+	  DataMapper plugin for observing Resources
+
+	  DataMapper::Observer allows you to add callback hooks to many models. This is
+	  similar to observers in ActiveRecord.
+
+	  http://github.com/datamapper/dm-observer
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_POSTGRES_ADAPTER
+	bool "ruby19-dm-postgres-adapter-1.2.0"
+	help
+	  PostgreSQL Adapter for DataMapper
+
+	  PostgreSQL Adapter for DataMapper.
+
+	  http://github.com/datamapper/dm-postgres-adapter
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_RAILS
+	bool "ruby19-dm-rails-1.2.0"
+	help
+	  Use DataMapper with Rails 3
+
+	  Dm-rails provides the railtie that allows datamapper to hook into rails3 and
+	  thus behave like a rails framework component.  Just like activerecord does in
+	  rails, dm-rails uses the railtie API to hook into rails.  The two are actually
+	  hooked into rails almost identically.
+	  
+	  Creating new datamapper apps on rails3 from scratch is actually really easy.
+	  The following will guide you through the process.
+
+	  http://github.com/datamapper/dm-rails
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_REST_ADAPTER
+	bool "ruby19-dm-rest-adapter-1.2.0"
+	help
+	  REST Adapter for DataMapper
+
+	  A DataMapper adapter for REST Web Services.
+
+	  http://github.com/datamapper/dm-rest-adapter
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_SERIALIZER
-	bool "ruby19-dm-serializer-1.1.0nb1"
+	bool "ruby19-dm-serializer-1.2.1"
 	help
 	  DataMapper plugin for serializing Resources and Collections
 
@@ -5238,8 +5587,60 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_SERIALIZER
 	  http://github.com/datamapper/dm-serializer
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_SQLITE_ADAPTER
+	bool "ruby19-dm-sqlite-adapter-1.2.0"
+	help
+	  Sqlite3 Adapter for DataMapper
+
+	  Sqlite3 Adapter for DataMapper.
+
+	  http://github.com/datamapper/dm-sqlite-adapter
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_SWEATSHOP
+	bool "ruby19-dm-sweatshop-1.2.0"
+	help
+	  DataMapper plugin for building pseudo random models
+
+	  dm-sweatshop is a model factory for DataMapper.  It makes it easy & painless
+	  to crank out complex pseudo random models -- useful for tests and seed data.
+	  Production Goals:
+	  
+	  * Easy generation of random models with data that fits the application domain.
+	  * Simple syntax for declaring and generating model patterns.
+	  * Add context to model patterns, allowing grouping and
+	  * Effortlessly generate or fill in associations for creating complex models
+	  with few lines of code.
+
+	  http://github.com/datamapper/dm-sweatshop
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_TAGS
+	bool "ruby19-dm-tags-1.2.0"
+	help
+	  This package brings tagging to DataMapper
+
+	  This package brings tagging to DataMapper.  It is inspired by Acts As Taggable
+	  On by Michael Bleigh, github's mbleigh.  Props to him for the contextual
+	  tagging based on Acts As Taggable on Steroids.
+	  
+	  == Features and Problems
+	  
+	  === Features
+	  
+	  * Contextual tagging using Model.has_tags_on (see below for usage)
+	  * Traditional 'tags-only' tagging using Model.has_tags
+	  
+	  === Problems
+	  
+	  * None known yet, but this is very alpha software.  Sorry if it misbehaves.
+	  Please send me a github message if you find a bug.
+
+	  http://github.com/datamapper/dm-tags
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_TIMESTAMPS
-	bool "ruby19-dm-timestamps-1.1.0"
+	bool "ruby19-dm-timestamps-1.2.0"
 	help
 	  DataMapper plugin for magical timestamps
 
@@ -5250,7 +5651,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_TIMESTAMPS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_TRANSACTIONS
-	bool "ruby19-dm-transactions-1.1.0"
+	bool "ruby19-dm-transactions-1.2.0"
 	help
 	  Adds transaction support to datamapper
 
@@ -5269,7 +5670,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_TRANSACTIONS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_TYPES
-	bool "ruby19-dm-types-1.1.0nb1"
+	bool "ruby19-dm-types-1.2.1"
 	help
 	  DataMapper plugin providing extra data types
 
@@ -5281,7 +5682,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_TYPES
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_VALIDATIONS
-	bool "ruby19-dm-validations-1.1.0"
+	bool "ruby19-dm-validations-1.2.0"
 	help
 	  Library for validations on DM models and pure Ruby object
 
@@ -5291,14 +5692,49 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_VALIDATIONS
 	  http://github.com/datamapper/dm-validations
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DM_YAML_ADAPTER
+	bool "ruby19-dm-yaml-adapter-1.2.0"
+	help
+	  YAML Adapter for DataMapper
+
+	  YAML Adapter for DataMapper.
+
+	  http://github.com/datamapper/dm-yaml-adapter
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DO_MYSQL
+	bool "ruby19-do_mysql-0.10.7"
+	help
+	  MySQL driver for DataObjects
+
+	  A MySQL driver for DataObjects.
+	  
+	  This driver implements the DataObjects API for the MySQL relational database.
+
+	  http://dataobjects.info/
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DO_POSTGRES
+	bool "ruby19-do_postgres-0.10.7"
+	help
+	  PostgreSQL driver for DataObjects
+
+	  A PostgreSQL driver for DataObjects.
+	  
+	  This driver implements the DataObjects API for the PostgreSQL relational
+	  database.
+
+	  http://dataobjects.info/
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_DO_SQLITE3
-	bool "ruby19-do_sqlite3-0.10.6"
+	bool "ruby19-do_sqlite3-0.10.7"
 	help
 	  Implements the DataObjects API for Sqlite3
 
 	  Implements the DataObjects API for Sqlite3.
 
-	  http://vapor.rubyforge.org/
+	  http://sqlite-ruby.rubyforge.org/
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_GDBM
@@ -5310,17 +5746,6 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_GDBM
 	  the Ruby distribution.
 
 	  http://www.ruby-lang.org/en/
-
-
-config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_LDAP
-	bool "ruby19-ldap-0.9.11nb1"
-	help
-	  LDAP extension module for Ruby
-
-	  'Ruby/LDAP' is a Ruby extension library that provides an interface to the LDAP
-	  API as described in RFC1823.
-
-	  http://github.com/alexey-chebotar/ruby-ldap
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_MYSQL
@@ -5335,7 +5760,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_MYSQL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ODBC
-	bool "ruby19-odbc-0.99994nb1"
+	bool "ruby19-odbc-0.99994nb2"
 	help
 	  ODBC binding for Ruby
 
@@ -5345,7 +5770,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_ODBC
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_PG
-	bool "ruby19-pg-0.11.0"
+	bool "ruby19-pg-0.12.0"
 	help
 	  Ruby extension for PostgreSQL
 
@@ -5391,8 +5816,30 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_QDBM
 	  http://qdbm.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_RRDTOOL
+	bool "ruby19-rrdtool-1.4.5"
+	help
+	  Ruby binding for rrdtool
+
+	  This package contains Ruby extension module for rrdtool (Round Robin
+	  Database Tools).
+
+	  http://oss.oetiker.ch/rrdtool/
+
+
+config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_LDAP
+	bool "ruby19-ruby-ldap-0.9.12"
+	help
+	  LDAP extension module for Ruby
+
+	  'Ruby/LDAP' is a Ruby extension library that provides an interface to the LDAP
+	  API as described in RFC1823.
+
+	  http://github.com/alexey-chebotar/ruby-ldap
+
+
 config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_SEQUEL
-	bool "ruby19-sequel-3.27.0"
+	bool "ruby19-sequel-3.30.0"
 	help
 	  Model classes for the Sequel Database Toolkit
 
@@ -5501,7 +5948,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_RUBY_VAPOR
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_SDBM
-	bool "sdbm-90.12.1nb1"
+	bool "sdbm-90.12.1nb2"
 	help
 	  Substitute DBM, an implementation of the "real" ndbm library
 
@@ -5541,7 +5988,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_SHARED_MIME_INFO
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_SLONY1
-	bool "slony1-2.0.6"
+	bool "slony1-2.1.0"
 	help
 	  Replication system for PostgreSQL
 
@@ -5578,7 +6025,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_SQLITE
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_SQLITE3
-	bool "sqlite3-3.7.7.1"
+	bool "sqlite3-3.7.9"
 	help
 	  SQL Database Engine in a C Library
 
@@ -5597,7 +6044,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_SQLITE3
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_SQLITE3_DOCS
-	bool "sqlite3-docs-3.7.7.1"
+	bool "sqlite3-docs-3.7.9"
 	help
 	  
 
@@ -5618,7 +6065,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_SQLITE3_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_SQLITE3_TCL
-	bool "sqlite3-tcl-3.7.7.1"
+	bool "sqlite3-tcl-3.7.9"
 	help
 	  
 
@@ -5639,7 +6086,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_SQLITE3_TCL
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_SQLITEBROWSER
-	bool "sqlitebrowser-1.3nb4"
+	bool "sqlitebrowser-1.3nb5"
 	help
 	  QT3 lightweight GUI editor/viewer for SQLite Databases
 
@@ -5654,7 +6101,7 @@ config BR2_PKGSRC_PACKAGE_DATABASES_SQLITEBROWSER
 
 
 config BR2_PKGSRC_PACKAGE_DATABASES_SQLRELAY
-	bool "sqlrelay-0.37nb4"
+	bool "sqlrelay-0.43nb1"
 	help
 	  Enables pooling and sharing of database connections
 

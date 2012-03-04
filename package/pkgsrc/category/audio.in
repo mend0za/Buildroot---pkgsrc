@@ -56,7 +56,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_ABCDE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_ABCMIDI
-	bool "abcmidi-20110101"
+	bool "abcmidi-20111021"
 	help
 	  Music utilities for abc
 
@@ -82,7 +82,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_ADPLUG
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_AKODE
-	bool "akode-2.0.2nb2"
+	bool "akode-2.0.2nb3"
 	help
 	  
 
@@ -111,7 +111,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_AKODE_PLUGINS_ALSA
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_AKODE_PLUGINS_FFMPEG
-	bool "akode-plugins-ffmpeg-2.0.2nb1"
+	bool "akode-plugins-ffmpeg-2.0.2nb2"
 	help
 	  FFMPEG decoder plugin for akode framework
 
@@ -244,8 +244,24 @@ config BR2_PKGSRC_PACKAGE_AUDIO_AKODE_PLUGINS_XIPH
 	  http://carewolf.com/akode/
 
 
+config BR2_PKGSRC_PACKAGE_AUDIO_ALACCONVERT
+	bool "alacconvert-0.0.20111026"
+	help
+	  Apple Lossless Audio Codec converter by Apple
+
+	  The Apple Lossless Audio Codec (ALAC) is an audio codec developed
+	  by Apple and supported on iPhone, iPad, most iPods, Mac and iTunes.
+	  ALAC is a data compression method which reduces the size of audio
+	  files with no loss of information.  A decoded ALAC stream is
+	  bit-for-bit identical to the original uncompressed audio file.
+	  
+	  This is Apple Lossless Audio Codec encode and decode command.
+
+	  http://alac.macosforge.org/
+
+
 config BR2_PKGSRC_PACKAGE_AUDIO_ALBUMPLAYER
-	bool "albumplayer-0.3.1nb4"
+	bool "albumplayer-0.3.1nb5"
 	help
 	  FLAC album player
 
@@ -362,7 +378,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_AMAROC
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_AMAROK_KDE3
-	bool "amarok-1.4.10nb15"
+	bool "amarok-1.4.10nb17"
 	help
 	  KDE3 audio player
 
@@ -379,7 +395,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_AMAROK_KDE3
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_AMAROK
-	bool "amarok-2.4.0nb3"
+	bool "amarok-2.4.0nb5"
 	help
 	  KDE4 audio player
 
@@ -444,7 +460,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_APPLERECORDS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_ARIO
-	bool "ario-1.3nb9"
+	bool "ario-1.3nb10"
 	help
 	  mpd client
 
@@ -469,8 +485,37 @@ config BR2_PKGSRC_PACKAGE_AUDIO_ARTS
 	  http://multimedia.kde.org/
 
 
+config BR2_PKGSRC_PACKAGE_AUDIO_AUBIO
+	bool "aubio-0.3.2"
+	help
+	  Extracting annotations from audio signals
+
+	  aubio is a tool designed for the extraction of annotations from audio
+	  signals. Its features include segmenting a sound file before each of
+	  its attacks, performing pitch detection, tapping the beat and
+	  producing midi streams from live audio.
+	  
+	  Because these tasks are difficult, we thought it was important to
+	  gather them in a dedicated library. To increase the fun, we have made
+	  these algorithms work in a causal way, so as to be used in real time
+	  applications with as low delay as possible. Functions can be used
+	  offline in sound editors and software samplers, or online in audio
+	  effects and virtual instruments.
+	  
+	  aubio currently provides the following features:
+	  - digital filters
+	  - phase vocoder
+	  - onset detection (several methods)
+	  - pitch tracking (several methods)
+	  - beat and tempo tracking
+	  - mel frequency cepstrum coefficients (MFCC)
+	  - transient / steady-state separation
+
+	  http://aubio.org/
+
+
 config BR2_PKGSRC_PACKAGE_AUDIO_AUDACIOUS
-	bool "audacious-1.5.1nb6"
+	bool "audacious-1.5.1nb7"
 	help
 	  Media player based on BMP and XMMS
 
@@ -487,7 +532,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_AUDACIOUS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_AUDACIOUS_PLUGINS
-	bool "audacious-plugins-1.5.1nb14"
+	bool "audacious-plugins-1.5.1nb15"
 	help
 	  Plugins for Audacious media player
 
@@ -498,7 +543,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_AUDACIOUS_PLUGINS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_AUDACITY
-	bool "audacity-1.2.6nb10"
+	bool "audacity-1.2.6nb11"
 	help
 	  Audio editor
 
@@ -525,7 +570,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_AUMIX
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_AUMIX_GTK
-	bool "aumix-gtk-2.8nb9"
+	bool "aumix-gtk-2.8nb10"
 	help
 	  
 
@@ -586,7 +631,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BML
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BMP
-	bool "bmp-0.9.7.1nb12"
+	bool "bmp-0.9.7.1nb13"
 	help
 	  
 
@@ -598,7 +643,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BMP
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BMP_ESOUND
-	bool "bmp-esound-0.9.7.1nb7"
+	bool "bmp-esound-0.9.7.1nb8"
 	help
 	  BMP plugin to output sound through the esound daemon
 
@@ -610,7 +655,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BMP_ESOUND
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BMP_FLAC
-	bool "bmp-flac-1.1.3nb5"
+	bool "bmp-flac-1.1.3nb6"
 	help
 	  FLAC BMP plugin
 
@@ -620,7 +665,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BMP_FLAC
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BMP_MAC
-	bool "bmp-mac-0.1.1nb6"
+	bool "bmp-mac-0.1.1nb7"
 	help
 	  BMP plugin for Monkey's Audio files
 
@@ -630,7 +675,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BMP_MAC
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BMP_MUSEPACK
-	bool "bmp-musepack-1.2nb6"
+	bool "bmp-musepack-1.2nb7"
 	help
 	  
 
@@ -640,7 +685,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BMP_MUSEPACK
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BMP_PULSE
-	bool "bmp-pulse-0.9.4nb7"
+	bool "bmp-pulse-0.9.4nb8"
 	help
 	  BMP output plugin for the PulseAudio sound server
 
@@ -652,7 +697,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BMP_PULSE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BMP_SCROBBLER
-	bool "bmp-scrobbler-0.4.0nb7"
+	bool "bmp-scrobbler-0.4.0nb8"
 	help
 	  BMP plugin for last.fm
 
@@ -665,7 +710,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BMP_SCROBBLER
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BMPX
-	bool "bmpx-0.40.14nb9"
+	bool "bmpx-0.40.14nb11"
 	help
 	  Audio player to be used with a frontend or as a daemon
 
@@ -678,7 +723,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BMPX
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BSL
-	bool "bsl-0.5.0nb6"
+	bool "bsl-0.5.0nb7"
 	help
 	  Buzz song loader
 
@@ -690,7 +735,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_BSL
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_BUZZTARD
-	bool "buzztard-0.5.0nb7"
+	bool "buzztard-0.5.0nb8"
 	help
 	  Modular, free, open source music studio
 
@@ -725,15 +770,6 @@ config BR2_PKGSRC_PACKAGE_AUDIO_CD_DISCID
 	  any purpose requiring CDDB data.
 
 	  http://linukz.org/cd-discid.shtml
-
-
-config BR2_PKGSRC_PACKAGE_AUDIO_CDD
-	bool "cdd-1.0nb3"
-	help
-	  Program for reading CD audio from SCSI/ATAPI CD-ROM drives
-
-
-	  
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_CDDB_BUNDLE
@@ -824,7 +860,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_CMP3
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_CMUS
-	bool "cmus-2.4.2nb1"
+	bool "cmus-2.4.2nb2"
 	help
 	  Cmus is a small, fast and powerful text mode music player
 
@@ -1032,7 +1068,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_EASYH10
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_EASYTAG_CURRENT
-	bool "easytag-2.1.6nb7"
+	bool "easytag-2.1.6nb8"
 	help
 	  
 
@@ -1070,7 +1106,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_EASYTAG_CURRENT
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_EASYTAG
-	bool "easytag-2.1nb7"
+	bool "easytag-2.1nb8"
 	help
 	  GTK+ tag editor for MP3, Ogg Vorbis files, and others
 
@@ -1159,7 +1195,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_ESPEAK
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_EXAILE
-	bool "exaile-0.2.14nb12"
+	bool "exaile-0.2.14nb13"
 	help
 	  Music player
 
@@ -1221,7 +1257,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_FAAD2
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_FESTIVAL
-	bool "festival-1.95betanb1"
+	bool "festival-2.1nb1"
 	help
 	  Advanced multi-lingual speech synthesis system
 
@@ -1734,7 +1770,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_FLAC2MP3
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_FLACTAG
-	bool "flactag-1.1nb5"
+	bool "flactag-1.1nb6"
 	help
 	  Tagger for flac album files
 
@@ -1810,7 +1846,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_FREEZETAG
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GBEMOL
-	bool "gbemol-0.3.2nb7"
+	bool "gbemol-0.3.2nb8"
 	help
 	  
 
@@ -1827,7 +1863,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GBEMOL
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GIMMIX
-	bool "gimmix-0.5.7.1nb7"
+	bool "gimmix-0.5.7.1nb8"
 	help
 	  
 
@@ -1850,7 +1886,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GIMMIX
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GKRELLM_VOLUME
-	bool "gkrellm-volume-2.1.13nb11"
+	bool "gkrellm-volume-2.1.13nb12"
 	help
 	  Gkrellm2 volume mixer plugin
 
@@ -1861,7 +1897,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GKRELLM_VOLUME
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GLURP
-	bool "glurp-0.11.6nb10"
+	bool "glurp-0.11.6nb11"
 	help
 	  Graphical GTK+2-based client for musicpd
 
@@ -1880,7 +1916,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GLURP
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMP3INFO
-	bool "gmp3info-0.8.5anb6"
+	bool "gmp3info-0.8.5anb7"
 	help
 	  Utility to read and modify the ID3 tags of MP3 files
 
@@ -1893,7 +1929,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GMP3INFO
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMPC
-	bool "gmpc-0.20.0nb6"
+	bool "gmpc-0.20.0nb7"
 	help
 	  GNOME client for the Music Player Daemon
 
@@ -1905,7 +1941,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GMPC
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_ALBUMVIEW
-	bool "gmpc-albumview-0.20.0nb1"
+	bool "gmpc-albumview-0.20.0nb2"
 	help
 	  GMPC plugin showing album covers
 
@@ -1919,7 +1955,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_ALBUMVIEW
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_LASTFM
-	bool "gmpc-last-fm-0.20.0nb1"
+	bool "gmpc-last-fm-0.20.0nb2"
 	help
 	  GMPC plugin for fetching cover and artist art from last.fm
 
@@ -1929,7 +1965,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_LASTFM
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_LYRICS
-	bool "gmpc-lyrics-0.20.0nb1"
+	bool "gmpc-lyrics-0.20.0nb2"
 	help
 	  GMPC plugin fetching lyrics
 
@@ -1945,7 +1981,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_LYRICS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_LYRICWIKI
-	bool "gmpc-lyricwiki-0.20.0nb1"
+	bool "gmpc-lyricwiki-0.20.0nb2"
 	help
 	  Lyrics plugin for GMPC using Lyricwiki
 
@@ -1955,7 +1991,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_LYRICWIKI
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_MAGNATUNE
-	bool "gmpc-magnatune-0.20.0nb5"
+	bool "gmpc-magnatune-0.20.0nb6"
 	help
 	  Magnatune plugin for GMPC
 
@@ -1970,7 +2006,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_MAGNATUNE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_MDCOVER
-	bool "gmpc-mdcover-0.20.0nb1"
+	bool "gmpc-mdcover-0.20.0nb2"
 	help
 	  GMPC plugin that provides metadata from the local music collection
 
@@ -1987,7 +2023,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_MDCOVER
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GMPC_TAGEDIT
-	bool "gmpc-tagedit-0.20.0nb1"
+	bool "gmpc-tagedit-0.20.0nb2"
 	help
 	  GMPC plugin for editing song tags
 
@@ -2043,7 +2079,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GNOME_SPEECH_ESPEAK
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GNOME_VFS_CDDA
-	bool "gnome-vfs-cdda-2.24.4nb4"
+	bool "gnome-vfs-cdda-2.24.4nb5"
 	help
 	  GNOME Virtual File System (v2) - cdda plugin
 
@@ -2069,7 +2105,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GOOM
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GQMPEG_DEVEL
-	bool "gqmpeg-0.91.1nb12"
+	bool "gqmpeg-0.91.1nb13"
 	help
 	  GTK+ front end to mpg123
 
@@ -2605,7 +2641,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GST_PLUGINS0.10_WAVPACK
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GTICK
-	bool "gtick-0.3.10nb8"
+	bool "gtick-0.3.10nb9"
 	help
 	  Metronome application using GTK2+
 
@@ -2628,7 +2664,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GTKMSERV
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_GTKPOD
-	bool "gtkpod-0.99.14nb8"
+	bool "gtkpod-1.0.0"
 	help
 	  GUI for iPod using GTK2
 
@@ -2660,7 +2696,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_GUSPATCHES
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_HERRIE
-	bool "herrie-2.2nb2"
+	bool "herrie-2.2nb3"
 	help
 	  Minimalistic, ncurses-based audio player
 
@@ -2681,7 +2717,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_HERRIE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_HYDROGEN
-	bool "hydrogen-0.9.4.2"
+	bool "hydrogen-0.9.4.2nb1"
 	help
 	  Real time drum machine/sequencer
 
@@ -2817,7 +2853,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_JACK
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_JACK_RACK
-	bool "jack-rack-1.4.7nb9"
+	bool "jack-rack-1.4.7nb10"
 	help
 	  Effects "rack" for JACK
 
@@ -2841,7 +2877,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_JUKE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_KID3
-	bool "kid3-1.6nb1"
+	bool "kid3-1.6nb2"
 	help
 	  ID3 tagger for KDE 3
 
@@ -2869,7 +2905,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_KID3
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_KMP
-	bool "kmp-0.01nb8"
+	bool "kmp-0.01nb9"
 	help
 	  Qt client for the Music Player Daemon
 
@@ -2902,7 +2938,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LADSPA
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LAME
-	bool "lame-3.98.4nb2"
+	bool "lame-3.99.3"
 	help
 	  Fast, high quality MP3 encoder
 
@@ -2935,6 +2971,22 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBA52
 	  digital television and DVD. It is also known as AC-three.
 
 	  http://liba52.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_AUDIO_LIBALAC
+	bool "libalac-0.0.20111026"
+	help
+	  Apple Lossless Audio Codec is an audio codec developed by Apple
+
+	  The Apple Lossless Audio Codec (ALAC) is an audio codec developed
+	  by Apple and supported on iPhone, iPad, most iPods, Mac and iTunes.
+	  ALAC is a data compression method which reduces the size of audio
+	  files with no loss of information.  A decoded ALAC stream is
+	  bit-for-bit identical to the original uncompressed audio file.
+	  
+	  This is Apple Lossless Audio Codec library.
+
+	  http://alac.macosforge.org/
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBAO
@@ -3062,7 +3114,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBAO_SUN
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBAUDIOFILE
-	bool "libaudiofile-0.2.7"
+	bool "libaudiofile-0.3.2nb2"
 	help
 	  Sound library for SGI audio file
 
@@ -3082,7 +3134,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBAUDIOFILE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBCANBERRA
-	bool "libcanberra-0.26nb2"
+	bool "libcanberra-0.26nb3"
 	help
 	  Desktop event sound library
 
@@ -3170,13 +3222,13 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBDISCID
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBGPOD
-	bool "libgpod-0.7.2nb4"
+	bool "libgpod-0.8.0"
 	help
 	  Library for accessing iPod onboard databases, playlists, etc
 
 	  libgpod is a library for accessing iPod databases and files.
 
-	  http://www.gtkpod.org/libgpod/
+	  http://www.gtkpod.org/wiki/Libgpod
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBID3TAG
@@ -3205,7 +3257,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBIFP
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBLASTFM
-	bool "liblastfm-0.3.3nb4"
+	bool "liblastfm-0.3.3nb5"
 	help
 	  Library for accessing last.fm
 
@@ -3286,7 +3338,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBMODPLUG
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBMP3SPLT
-	bool "libmp3splt-0.6nb1"
+	bool "libmp3splt-0.7"
 	help
 	  Utility library for MP3 splitting/manipulation
 
@@ -3498,6 +3550,19 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBSIDPLAY2
 	  http://sidplay2.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_AUDIO_LIBSMF
+	bool "libsmf-1.3nb1"
+	help
+	  Standard MIDI File format library
+
+	  LibSMF is a BSD-licensed C library for handling SMF ("*.mid") files.
+	  It transparently handles conversions between time and pulses, tempo
+	  map handling etc. The only dependencies are C compiler and glib.
+	  Full API documentation and examples are included.
+
+	  http://sourceforge.net/projects/libsmf/
+
+
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBSNDFILE
 	bool "libsndfile-1.0.25"
 	help
@@ -3585,7 +3650,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBVISUAL
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBVISUAL_BMP
-	bool "libvisual-bmp-0.2.0nb13"
+	bool "libvisual-bmp-0.2.0nb14"
 	help
 	  Libvisual Beep Media Player plugin
 
@@ -3595,7 +3660,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBVISUAL_BMP
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBVISUAL_PLUGINS
-	bool "libvisual-plugins-0.4.0nb9"
+	bool "libvisual-plugins-0.4.0nb10"
 	help
 	  Plugins for libvisual
 
@@ -3632,7 +3697,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBVISUAL0.2
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIBVISUAL0.2_PLUGINS
-	bool "libvisual0.2-plugins-0.2.0nb6"
+	bool "libvisual0.2-plugins-0.2.0nb7"
 	help
 	  Plugins for libvisual
 
@@ -3666,8 +3731,28 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIBVORBIS
 	  http://www.xiph.org/vorbis/
 
 
+config BR2_PKGSRC_PACKAGE_AUDIO_LIBWILDMIDI
+	bool "libwildmidi-0.2.3.4"
+	help
+	  Midi processing library and a midi player using the GUS patch set
+
+	  WildMIDI is a simple software midi player which has a core softsynth
+	  library that can be use with other applications.
+	  
+	  The WildMIDI library uses Gravis Ultrasound patch files to convert
+	  MIDI files into audio which is them passed back to the calling
+	  application for further processing or output. The API of the library
+	  is designed so that it is easy to include WildMIDI into applications
+	  that wish to include MIDI file playback. With multiple MIDI file support
+	  you can develope applications to mix several midi files together at the
+	  same time and with the next release you will be able to use a different
+	  patch set for each MIDI file.
+
+	  http://wildmidi.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_AUDIO_LITEAMP
-	bool "liteamp-0.2.4.2nb21"
+	bool "liteamp-0.2.4.2nb22"
 	help
 	  Light-weight Music Player for GNOME2
 
@@ -3678,7 +3763,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LITEAMP
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LIVEICE
-	bool "liveice-0.20001121nb1"
+	bool "liveice-0.20001121nb2"
 	help
 	  Source client for Icecast
 
@@ -3697,7 +3782,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_LIVEICE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_LMMS
-	bool "lmms-0.2.0nb9"
+	bool "lmms-0.2.0nb10"
 	help
 	  Linux MultiMedia Studio
 
@@ -4179,7 +4264,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MP3CUT
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MP3DIAGS
-	bool "mp3diags-1.0.09.063"
+	bool "mp3diags-1.0.09.063nb2"
 	help
 	  MP3 diagnosis tool and tag editor
 
@@ -4217,7 +4302,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MP3INFO
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MP3SPLT
-	bool "mp3splt-2.2.9"
+	bool "mp3splt-2.4"
 	help
 	  
 
@@ -4236,7 +4321,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MP3SPLT
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MP3SPLT_GTK
-	bool "mp3splt-gtk-0.6nb2"
+	bool "mp3splt-gtk-0.7nb1"
 	help
 	  
 
@@ -4335,7 +4420,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MPEGAUDIO
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MPG123
-	bool "mpg123-1.12.5"
+	bool "mpg123-1.12.5nb1"
 	help
 	  MPEG layer 1, 2, and 3 audio player
 
@@ -4348,7 +4433,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MPG123
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_ARTS
-	bool "mpg123-arts-1.12.5nb1"
+	bool "mpg123-arts-1.12.5nb2"
 	help
 	  Contains the arts module for mpg123
 
@@ -4358,7 +4443,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_ARTS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_ESOUND
-	bool "mpg123-esd-1.12.5"
+	bool "mpg123-esd-1.12.5nb1"
 	help
 	  Contains the esd module for mpg123
 
@@ -4369,7 +4454,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_ESOUND
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_NAS
-	bool "mpg123-nas-1.12.5"
+	bool "mpg123-nas-1.12.5nb1"
 	help
 	  Contains the nas module for mpg123
 
@@ -4379,7 +4464,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_NAS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_OSS
-	bool "mpg123-oss-1.12.5"
+	bool "mpg123-oss-1.12.5nb1"
 	help
 	  Contains the oss module for mpg123
 
@@ -4389,7 +4474,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_OSS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_PULSE
-	bool "mpg123-pulse-1.12.5nb2"
+	bool "mpg123-pulse-1.12.5nb3"
 	help
 	  Contains the pulse module for mpg123
 
@@ -4399,7 +4484,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_PULSE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_SUN
-	bool "mpg123-sun-1.12.5"
+	bool "mpg123-sun-1.12.5nb1"
 	help
 	  Contains the sun module for mpg123
 
@@ -4409,7 +4494,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MPG123_SUN
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MPG321
-	bool "mpg321-0.2.10nb8"
+	bool "mpg321-0.2.13.4"
 	help
 	  Free replacement for mpg123
 
@@ -4526,7 +4611,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MT_DAAPD
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MUSE
-	bool "muse-0.9nb14"
+	bool "muse-0.9nb16"
 	help
 	  Multiple Streaming Engine
 
@@ -4558,7 +4643,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_MUSICBRAINZ
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_MUSICPD
-	bool "musicpd-0.16.2nb1"
+	bool "musicpd-0.16.2nb2"
 	help
 	  Remote controllable audio player
 
@@ -4593,7 +4678,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_NAS
 	  o	Small size
 	  o	Free!  No obnoxious licensing terms
 
-	  http://nas.sourceforge.net
+	  http://nas.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_NAS_AUSCOPE
@@ -4661,7 +4746,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_NSPMOD
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_OCP
-	bool "ocp-0.1.20"
+	bool "ocp-0.1.21"
 	help
 	  Open Cubic Player
 
@@ -4677,7 +4762,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_OCP
 	  Cubic Player now also supports mp3, ogg and ay files and can be compiled
 	  with libadplug support.
 
-	  http://stian.cubic.org/project-ocp.php
+	  http://sourceforge.net/p/opencubicplayer/
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_OGGASM
@@ -4735,7 +4820,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_P5_AUDIO_CD
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_P5_AUDIO_SCAN
-	bool "p5-Audio-Scan-0.90"
+	bool "p5-Audio-Scan-0.92"
 	help
 	  XS parser for MP3, MP4, Ogg Vorbis, etc
 
@@ -4882,7 +4967,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_P5_MUSICBRAINZ_QUERIES
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PADEVCHOOSER
-	bool "padevchooser-0.9.3nb7"
+	bool "padevchooser-0.9.3nb8"
 	help
 	  Tray area icon for the PulseAudio sound server
 
@@ -4900,7 +4985,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PADEVCHOOSER
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PAMAN
-	bool "paman-0.9.4nb7"
+	bool "paman-0.9.4nb8"
 	help
 	  GTK frontend for the PulseAudio sound server
 
@@ -4915,7 +5000,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PAMAN
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PAPREFS
-	bool "paprefs-0.9.7nb7"
+	bool "paprefs-0.9.7nb8"
 	help
 	  Configuration dialog for the PulseAudio sound server
 
@@ -4930,7 +5015,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PAPREFS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PAVUCONTROL
-	bool "pavucontrol-0.9.10nb1"
+	bool "pavucontrol-0.9.10nb2"
 	help
 	  
 
@@ -4943,7 +5028,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PAVUCONTROL
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PAVUMETER
-	bool "pavumeter-0.9.3nb8"
+	bool "pavumeter-0.9.3nb9"
 	help
 	  Volume meter for the PulseAudio sound server
 
@@ -4983,7 +5068,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PD
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PICARD
-	bool "picard-0.15.1"
+	bool "picard-0.16"
 	help
 	  Audio file tagger
 
@@ -5039,7 +5124,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PORTAUDIO_DEVEL
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PULSEAUDIO
-	bool "pulseaudio-0.9.21nb10"
+	bool "pulseaudio-0.9.21nb11"
 	help
 	  Sound server for POSIX and Win32 systems
 
@@ -5054,7 +5139,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PULSEAUDIO
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_DAAP
-	bool "py26-PythonDaap-0.7nb1"
+	bool "py26-PythonDaap-0.7nb2"
 	help
 	  Python binding for DAAP
 
@@ -5068,11 +5153,11 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_DAAP
 	  MD5 hasher as a python module.  This hasher is used in the DAAP
 	  authentication protocol, documented by David Hammerton.
 
-	  http://jerakeen.org/PythonDaap/
+	  http://movieos.org/code/pythondaap/
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_CDDB
-	bool "py26-cddb-1.4nb1"
+	bool "py26-cddb-1.4nb2"
 	help
 	  Python module to access the CDDB online database
 
@@ -5103,7 +5188,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_ID3
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_ID3LIB
-	bool "py26-id3lib-0.5.1nb1"
+	bool "py26-id3lib-0.5.1nb2"
 	help
 	  Python module for editing ID3v2 tags of MP3 audio files
 
@@ -5113,7 +5198,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_ID3LIB
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_KARAOKE
-	bool "py26-karaoke-0.7.2nb5"
+	bool "py26-karaoke-0.7.2nb7"
 	help
 	  Free Python-based karaoke player
 
@@ -5141,7 +5226,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_KARAOKE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_LIBMTAG
-	bool "py26-libmtag-0.3.0"
+	bool "py26-libmtag-0.3.0nb1"
 	help
 	  Python binding for libmtag
 
@@ -5151,7 +5236,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_LIBMTAG
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_MAD
-	bool "py26-mad-0.6"
+	bool "py26-mad-0.6nb1"
 	help
 	  Python bindings for libmad
 
@@ -5161,7 +5246,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_MAD
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_MPD
-	bool "py26-mpd-0.2.0"
+	bool "py26-mpd-0.2.0nb1"
 	help
 	  Python mpd client library
 
@@ -5171,7 +5256,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_MPD
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_MUSICBRAINZ
-	bool "py26-musicbrainz2-0.4.1"
+	bool "py26-musicbrainz2-0.4.1nb1"
 	help
 	  Python interface to the MusicBrainz XML web service
 
@@ -5187,7 +5272,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_MUSICBRAINZ
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_MUSIQUE
-	bool "py26-musique-0.5nb11"
+	bool "py26-musique-0.5nb12"
 	help
 	  Interface to the iTunes Music Store
 
@@ -5203,7 +5288,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_MUSIQUE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_MUTAGEN
-	bool "py26-mutagen-1.20"
+	bool "py26-mutagen-1.20nb1"
 	help
 	  Audio metadata handling for Python
 
@@ -5219,7 +5304,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_MUTAGEN
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_OGG
-	bool "py26-ogg-1.3nb2"
+	bool "py26-ogg-1.3nb3"
 	help
 	  Python bindings for OGG library
 
@@ -5229,7 +5314,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_OGG
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_PY_AO
-	bool "py26-pyao-0.82"
+	bool "py26-pyao-0.82nb1"
 	help
 	  Python bindings for libao
 
@@ -5249,7 +5334,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_PY_VORBIS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_QJACKCTL
-	bool "qjackctl-0.3.3nb8"
+	bool "qjackctl-0.3.3nb9"
 	help
 	  JACK Audio Connection Kit Qt4 GUI
 
@@ -5268,7 +5353,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_QJACKCTL
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_QSYNTH
-	bool "qsynth-0.2.4nb9"
+	bool "qsynth-0.2.4nb10"
 	help
 	  Qt GUI Interface to FluidSynth
 
@@ -5305,7 +5390,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_REXIMA
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_RHYTHMBOX
-	bool "rhythmbox-0.12.8nb8"
+	bool "rhythmbox-0.12.8nb9"
 	help
 	  Music management application for GNOME
 
@@ -5466,7 +5551,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_RUBY_MP3INFO
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SFXR
-	bool "sfxr-1.1nb5"
+	bool "sfxr-1.1nb6"
 	help
 	  Sound generator for 8-bit game sounds
 
@@ -5513,7 +5598,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_SHORTEN
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SIDPLAY
-	bool "sidplay-1.0.9nb2"
+	bool "sidplay-1.0.9nb3"
 	help
 	  Tools for playing sidtunes
 
@@ -5543,7 +5628,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_SIDPLAY2
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SND
-	bool "snd-9.9nb8"
+	bool "snd-9.9nb9"
 	help
 	  X based sound editor
 
@@ -5556,7 +5641,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_SND
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SOLFEGE
-	bool "solfege-3.14.1nb7"
+	bool "solfege-3.14.1nb8"
 	help
 	  Practice several musical ear training exercises
 
@@ -5577,7 +5662,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_SOLFEGE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SONATA
-	bool "sonata-1.6.2.1"
+	bool "sonata-1.6.2.1nb1"
 	help
 	  Elegant GTK2 client for the Music Player Daemon
 
@@ -5589,7 +5674,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_SONATA
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SOUND_JUICER
-	bool "sound-juicer-2.28.2nb7"
+	bool "sound-juicer-2.28.2nb8"
 	help
 	  CD ripping tool
 
@@ -5613,7 +5698,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_SOUND_THEME_FREEDESKTOP
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SOX
-	bool "sox-14.3.1nb1"
+	bool "sox-14.3.1nb2"
 	help
 	  SOund eXchange - universal sound sample translator
 
@@ -5653,7 +5738,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_SPEEX
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SPIRALLOOPS
-	bool "spiralloops-2.0.0nb5"
+	bool "spiralloops-2.0.0nb6"
 	help
 	  Loop based sampler
 
@@ -5672,7 +5757,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_SPIRALLOOPS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SPIRALSYNTH
-	bool "spiralsynth-2.0.0nb3"
+	bool "spiralsynth-2.0.0nb4"
 	help
 	  Polyphonic analogue softsynth
 
@@ -5762,7 +5847,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_STREAMRIPPER_CURRENT
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_STREAMTUNER
-	bool "streamtuner-0.99.99nb14"
+	bool "streamtuner-0.99.99nb15"
 	help
 	  Stream directory browser
 
@@ -5775,7 +5860,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_STREAMTUNER
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_SWEEP
-	bool "sweep-0.9.3nb8"
+	bool "sweep-0.9.3nb9"
 	help
 	  Full-featured digital sound editor
 
@@ -5837,7 +5922,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_TCL_SNACK
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_TERMINATORX
-	bool "terminatorx-3.82nb10"
+	bool "terminatorx-3.82nb11"
 	help
 	  Realtime audio synthesizer
 
@@ -5873,7 +5958,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_TFMXPLAY
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_TIMIDITY
-	bool "timidity-2.13.2nb18"
+	bool "timidity-2.13.2nb19"
 	help
 	  MIDI to WAV renderer and player
 
@@ -5896,15 +5981,6 @@ config BR2_PKGSRC_PACKAGE_AUDIO_TOOLAME
 	  - work by Michael Cheng and other contributors (see CONTRIBUTORS)
 
 	  http://sourceforge.net/projects/toolame/
-
-
-config BR2_PKGSRC_PACKAGE_AUDIO_TOSHA
-	bool "tosha-0.05nb1"
-	help
-	  Read CD digital audio data through the SCSI bus
-
-
-	  
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_TRACKER
@@ -6147,7 +6223,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_WMUSIC
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_WSOUNDPREFS
-	bool "wsoundprefs-1.1.1nb12"
+	bool "wsoundprefs-1.1.1nb13"
 	help
 	  WSoundServer configuration utility
 
@@ -6158,7 +6234,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_WSOUNDPREFS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_WSOUNDSERVER
-	bool "wsoundserver-0.4.0nb14"
+	bool "wsoundserver-0.4.0nb15"
 	help
 	  Sound server for windowmaker
 
@@ -6174,7 +6250,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_WSOUNDSERVER
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XANALYSER
-	bool "xanalyser-1.24nb2"
+	bool "xanalyser-1.24nb3"
 	help
 	  Frequency spectrum analyser for X
 
@@ -6205,7 +6281,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XCDPLAYER
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XFCE4_MIXER
-	bool "xfce4-mixer-4.6.1nb5"
+	bool "xfce4-mixer-4.6.1nb6"
 	help
 	  Xfce mixer plugin
 
@@ -6215,7 +6291,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XFCE4_MIXER
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XFCE4_XMMS_PLUGIN
-	bool "xfce4-xmms-plugin-0.5.1nb7"
+	bool "xfce4-xmms-plugin-0.5.1nb8"
 	help
 	  Xfce XMMS plugin
 
@@ -6243,7 +6319,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XHIPPO
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XINE_ALSA
-	bool "xine-alsa-1.1.19"
+	bool "xine-alsa-1.1.20"
 	help
 	  The ALSA output plugin for xine-lib
 
@@ -6259,7 +6335,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XINE_ALSA
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XINE_ARTS
-	bool "xine-arts-1.1.19nb1"
+	bool "xine-arts-1.1.20"
 	help
 	  The aRts audio output plugin for xine-lib
 
@@ -6275,7 +6351,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XINE_ARTS
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XINE_ESOUND
-	bool "xine-esound-1.1.19nb1"
+	bool "xine-esound-1.1.20"
 	help
 	  The esound audio output plugin for xine-lib
 
@@ -6291,7 +6367,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XINE_ESOUND
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XINE_PULSE
-	bool "xine-pulse-1.1.19nb2"
+	bool "xine-pulse-1.1.20"
 	help
 	  The PulseAudio output plugin for xine-lib
 
@@ -6307,7 +6383,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XINE_PULSE
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XMCD
-	bool "xmcd-3.0.2nb10"
+	bool "xmcd-3.0.2nb11"
 	help
 	  Motif CD player
 
@@ -6333,7 +6409,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XMIX
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XMMIX
-	bool "xmmix-1.2nb4"
+	bool "xmmix-1.2nb5"
 	help
 	  X interface to the audio mixer device
 
@@ -6356,7 +6432,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XMMIX
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XMMS
-	bool "xmms-1.2.11nb1"
+	bool "xmms-1.2.11nb2"
 	help
 	  X Multimedia System - an audio player with a Winamp GUI
 
@@ -6556,7 +6632,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XMMS_WMA
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XMP
-	bool "xmp-3.3.0nb2"
+	bool "xmp-3.4.1"
 	help
 	  Player for many different Amiga and PC module formats
 
@@ -6577,7 +6653,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XMP
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XMRADIO
-	bool "xmradio-1.2nb3"
+	bool "xmradio-1.2nb4"
 	help
 	  Radio application for Brooktree 848 compatible TV cards
 
@@ -6588,7 +6664,7 @@ config BR2_PKGSRC_PACKAGE_AUDIO_XMRADIO
 
 
 config BR2_PKGSRC_PACKAGE_AUDIO_XSIDPLAY
-	bool "xsidplay-1.6.5.1anb9"
+	bool "xsidplay-1.6.5.1anb10"
 	help
 	  Commodore 64 music player and SID chip emulator for X11
 

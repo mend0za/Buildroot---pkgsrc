@@ -174,7 +174,7 @@ config BR2_PKGSRC_PACKAGE_MBONE_VIC
 
 
 config BR2_PKGSRC_PACKAGE_MBONE_VIC_DEVEL
-	bool "vic-devel-2.8.1.4.0beta.4337nb2"
+	bool "vic-devel-2.8.1.4.0beta.4337nb3"
 	help
 	  MBONE video conferencing tool
 

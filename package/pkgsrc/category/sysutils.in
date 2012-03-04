@@ -26,11 +26,11 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_915RESOLUTION
 	  differs substantially. 915resolution's code base is much simpler.
 	  915resolution also allows the modification of bits per pixel.
 
-	  http://www.geocities.com/stomljen/
+	  http://915resolution.mango-lang.org/
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_9BASE
-	bool "9base-20051114nb1"
+	bool "9base-20100604"
 	help
 	  Port of various original plan9 tools
 
@@ -41,11 +41,11 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_9BASE
 	  [2] http://swtch.com/plan9port/unix/
 	  [3] http://wmii.de/index.php/WMII/9base
 
-	  http://www.suckless.org/wiki/wmii/download
+	  http://tools.suckless.org/9base
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_FSVIEWER
-	bool "FSViewer-0.2.5nb8"
+	bool "FSViewer-0.2.5nb9"
 	help
 	  NextStep-like Filemanager for WindowMaker
 
@@ -218,7 +218,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_AMANDA_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_AMTTERM
-	bool "amtterm-1.2"
+	bool "amtterm-1.2nb1"
 	help
 	  
 
@@ -247,7 +247,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_AMTTERM
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_APCUPSD
-	bool "apcupsd-3.14.9nb1"
+	bool "apcupsd-3.14.9nb2"
 	help
 	  UPS power management for APCC Products
 
@@ -377,7 +377,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BACULA_DOC
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BACULA_QT_CONSOLE
-	bool "bacula-qt-console-5.0.3nb2"
+	bool "bacula-qt-console-5.0.3nb3"
 	help
 	  Qt-based console for Bacula - The Network Backup Solution
 
@@ -387,7 +387,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BACULA_QT_CONSOLE
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BACULA_TRAY_MONITOR
-	bool "bacula-tray-monitor-5.0.3nb2"
+	bool "bacula-tray-monitor-5.0.3nb3"
 	help
 	  System tray monitor for Bacula - The Network Backup Solution
 
@@ -397,7 +397,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BACULA_TRAY_MONITOR
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BACULA_WX_CONSOLE
-	bool "bacula-wx-console-5.0.3nb2"
+	bool "bacula-wx-console-5.0.3nb3"
 	help
 	  wxWindows-based console for Bacula - The Network Backup Solution
 
@@ -493,7 +493,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BKPUPSD
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BOXBACKUP_CLIENT
-	bool "boxbackup-client-0.10nb1"
+	bool "boxbackup-client-0.11.1"
 	help
 	  Backup tool
 
@@ -503,7 +503,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BOXBACKUP_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BOXBACKUP_SERVER
-	bool "boxbackup-server-0.10nb1"
+	bool "boxbackup-server-0.11.1"
 	help
 	  Backup tool
 
@@ -513,7 +513,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BOXBACKUP_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BRASERO
-	bool "brasero-2.32.1nb5"
+	bool "brasero-2.32.1nb6"
 	help
 	  Disc-burning software for the GNOME desktop
 
@@ -525,7 +525,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BRASERO
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BRASERO_NAUTILUS
-	bool "brasero-nautilus-2.32.1nb3"
+	bool "brasero-nautilus-2.32.1nb4"
 	help
 	  Nautilus plugin for brasero
 
@@ -552,7 +552,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BSIGN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BTPIN_QT
-	bool "btpin-qt-1.4nb7"
+	bool "btpin-qt-1.4nb8"
 	help
 	  Bluetooth PIN Client
 
@@ -564,7 +564,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BTPIN_QT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BUBBLEMON
-	bool "bubblemon-1.46nb8"
+	bool "bubblemon-1.46nb9"
 	help
 	  Small windowmaker dockapp with bubbles and a duck
 
@@ -575,7 +575,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_BUBBLEMON
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_BUP
-	bool "bup-0.24bnb1"
+	bool "bup-0.24bnb2"
 	help
 	  Highly efficient file backup system based on the git packfile format
 
@@ -722,7 +722,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_CDRKIT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_CDRTOOLS
-	bool "cdrtools-3.01alpha05"
+	bool "cdrtools-3.01alpha06"
 	help
 	  Software for creating ISO9660 images and writing CD/DVD/Blu-ray
 
@@ -850,7 +850,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_CONSOLEKIT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_COREUTILS
-	bool "coreutils-6.12nb4"
+	bool "coreutils-8.13"
 	help
 	  GNU basic file, shell and text manipulation utilities
 
@@ -1051,7 +1051,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_DBUS_GLIB
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_DBUS_QT3
-	bool "dbus-qt3-0.70nb4"
+	bool "dbus-qt3-0.70nb5"
 	help
 	  D-BUS Qt bindings
 
@@ -1247,7 +1247,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_DMESG2GIF
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_DMG2IMG
-	bool "dmg2img-1.6.1nb1"
+	bool "dmg2img-1.6.1nb2"
 	help
 	  Convert Apple dmg to HFS+ img format
 
@@ -1328,7 +1328,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_DTPSTREE
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_DUPLICITY
-	bool "duplicity-0.5.20nb1"
+	bool "duplicity-0.6.16"
 	help
 	  Remote encrypting incremental backup utility
 
@@ -1357,7 +1357,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_DVD_RW_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_DVDISASTER
-	bool "dvdisaster-0.70.6nb6"
+	bool "dvdisaster-0.70.6nb7"
 	help
 	  Protects data on optical media with error correcting codes
 
@@ -1417,6 +1417,34 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_EASYDISKPASSWD
 	  
 
 
+config BR2_PKGSRC_PACKAGE_SYSUTILS_EDBUS
+	bool "edbus-1.1.0"
+	help
+	  Convenience wrappers around dbus to ease integrating dbus with E17.
+
+	  E17 library utilizing dbus.
+
+	  http://www.enlightenment.org/
+
+
+config BR2_PKGSRC_PACKAGE_SYSUTILS_EFREET
+	bool "efreet-1.1.0"
+	help
+	  Interface Abstraction Library and Toolset
+
+	  An implementation of several specifications from freedesktop.org intended for
+	  use in Enlightenment DR17 (e17) and other applications using the Enlightenment
+	  Foundation Libraries (EFL).
+	  
+	  Currently, the following specifications are included:
+	  o Base Directory
+	  o Desktop Entry
+	  o Icon Theme
+	  o Menu
+
+	  http://enlightenment.org/
+
+
 config BR2_PKGSRC_PACKAGE_SYSUTILS_EGGDBUS
 	bool "eggdbus-0.6nb1"
 	help
@@ -1456,7 +1484,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_ESTD
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_ETCMANAGE
-	bool "etcmanage-0.6.1"
+	bool "etcmanage-0.8"
 	help
 	  Automatically manage files in /etc
 
@@ -1465,7 +1493,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_ETCMANAGE
 	  installed automatically and has not been changed will be updated with
 	  new versions, and modified files will not be changed.
 
-	  http://acert.ir.bbn.com/downloads/etcmanage/
+	  http://www.ir.bbn.com/~gdt/etcmanage/
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_ETCUTILS
@@ -1532,7 +1560,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_EXTIPL
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_FABRIC
-	bool "fabric-1.2.0"
+	bool "fabric-1.2.5"
 	help
 	  Simple Pythonic remote deployment tool
 
@@ -1652,7 +1680,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_FILE
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_FILELIGHT
-	bool "filelight-1.0nb16"
+	bool "filelight-1.0nb17"
 	help
 	  Graphical filesystem usage monitor
 
@@ -1766,7 +1794,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_FS_KIT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_FTWIN
-	bool "ftwin-0.8.5nb6"
+	bool "ftwin-0.8.5nb9"
 	help
 	  Ftwin finds duplicate files according to their content
 
@@ -1798,7 +1826,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GAMIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GCDMASTER
-	bool "gcdmaster-1.2.3nb7"
+	bool "gcdmaster-1.2.3nb8"
 	help
 	  Gnome UI frontend to cdrdao
 
@@ -1878,7 +1906,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GIO_FAM
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GKRELLM
-	bool "gkrellm-2.2.10nb7"
+	bool "gkrellm-2.2.10nb8"
 	help
 	  GTK2 based system monitor
 
@@ -1911,7 +1939,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GKRELLM
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GKRELLM_EST
-	bool "gkrellm-est-20040710nb12"
+	bool "gkrellm-est-20040710nb13"
 	help
 	  GKrellM plugin that controls EST-capable processors
 
@@ -2002,7 +2030,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GKRELLM_SHARE
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_COMMANDER
-	bool "gnome-commander-1.2.8.12nb1"
+	bool "gnome-commander-1.2.8.15"
 	help
 	  GNOME Commander is a fast and powerful graphical filemanager
 
@@ -2016,7 +2044,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_COMMANDER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_DEVICE_MANAGER
-	bool "gnome-device-manager-0.2nb8"
+	bool "gnome-device-manager-0.2nb9"
 	help
 	  GNOME program to manage devices and device drivers
 
@@ -2040,7 +2068,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_MENUS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_MOUNT
-	bool "gnome-mount-0.8nb8"
+	bool "gnome-mount-0.8nb9"
 	help
 	  Programs for mounting, unmounting and ejecting storage devices
 
@@ -2059,7 +2087,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_MOUNT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_NDS_THUMBNAILER
-	bool "gnome-nds-thumbnailer-1.2.1nb6"
+	bool "gnome-nds-thumbnailer-1.2.1nb7"
 	help
 	  Thumbnailer for GNOME for Nintendo DS ROMs
 
@@ -2073,7 +2101,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_NDS_THUMBNAILER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_PKGVIEW
-	bool "gnome-pkgview-1.0.6nb21"
+	bool "gnome-pkgview-1.0.6nb22"
 	help
 	  Displays the version of GNOME components installed
 
@@ -2086,7 +2114,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_PKGVIEW
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_POWER_MANAGER
-	bool "gnome-power-manager-2.24.4nb9"
+	bool "gnome-power-manager-2.24.4nb10"
 	help
 	  GNOME desktop session daemon for managing power management
 
@@ -2097,7 +2125,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_POWER_MANAGER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_SETTINGS_DAEMON
-	bool "gnome-settings-daemon-2.32.1nb5"
+	bool "gnome-settings-daemon-2.32.1nb6"
 	help
 	  GNOME settings daemon
 
@@ -2107,7 +2135,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_SETTINGS_DAEMON
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_SYSTEM_MONITOR
-	bool "gnome-system-monitor-2.28.2nb2"
+	bool "gnome-system-monitor-2.28.2nb3"
 	help
 	  GNOME 2 system monitor program
 
@@ -2117,7 +2145,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_SYSTEM_MONITOR
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_SYSTEM_TOOLS
-	bool "gnome-system-tools-2.22.2nb6"
+	bool "gnome-system-tools-2.22.2nb7"
 	help
 	  System administraton tools for the GNOME desktop
 
@@ -2131,7 +2159,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_SYSTEM_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_VFS
-	bool "gnome-vfs-2.24.4nb6"
+	bool "gnome-vfs-2.24.4nb7"
 	help
 	  GNOME Virtual File System (v2)
 
@@ -2145,7 +2173,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_VFS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_VFS_MONIKERS
-	bool "gnome-vfs-monikers-2.15.3nb10"
+	bool "gnome-vfs-monikers-2.15.3nb11"
 	help
 	  VFS namespace moniker for Bonobo
 
@@ -2155,7 +2183,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_VFS_MONIKERS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_VFSMM
-	bool "gnome-vfsmm-2.26.0nb6"
+	bool "gnome-vfsmm-2.26.0nb7"
 	help
 	  C++ bindings for gnome-vfs
 
@@ -2168,7 +2196,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_VFSMM
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GNOME_VOLUME_MANAGER
-	bool "gnome-volume-manager-2.24.1nb8"
+	bool "gnome-volume-manager-2.24.1nb9"
 	help
 	  GNOME daemon to auto-mount and manage storage devices
 
@@ -2232,7 +2260,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GRUB
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GRUN
-	bool "grun-0.9.3nb6"
+	bool "grun-0.9.3nb7"
 	help
 	  GTK+ based Run dialog
 
@@ -2270,7 +2298,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GST_PLUGINS0.10_GIO
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GST_PLUGINS0.10_GNOMEVFS
-	bool "gst-plugins0.10-gnomevfs-0.10.35nb1"
+	bool "gst-plugins0.10-gnomevfs-0.10.35nb2"
 	help
 	  Open source multimedia framework - gnomevfs plugin
 
@@ -2293,7 +2321,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GST_PLUGINS0.10_GNOMEVFS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GTK_SEND_PR
-	bool "gtk-send-pr-0.4.9nb8"
+	bool "gtk-send-pr-0.4.9nb9"
 	help
 	  GTK+ based problem report tool
 
@@ -2308,7 +2336,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_GTK_SEND_PR
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_GVFS
-	bool "gvfs-1.6.6nb4"
+	bool "gvfs-1.6.6nb6"
 	help
 	  Userspace virtual filesystem
 
@@ -3062,7 +3090,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_IAT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_IDESK
-	bool "idesk-0.7.5nb5"
+	bool "idesk-0.7.5nb6"
 	help
 	  Lightweight desktop icons handler
 
@@ -3089,7 +3117,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_INSTALL_SH
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_IPA
-	bool "ipa-2.1"
+	bool "ipa-2.1.1"
 	help
 	  Pluggable accounting system
 
@@ -3109,7 +3137,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_IPA
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_IPMITOOL
-	bool "ipmitool-1.8.11"
+	bool "ipmitool-1.8.11nb1"
 	help
 	  Command-line utility for managing IPMI devices
 
@@ -3236,7 +3264,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_IWN_FIRMWARE
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_K3B
-	bool "k3b-1.0.5nb10"
+	bool "k3b-1.0.5nb11"
 	help
 	  DVD and CD authoring program
 
@@ -3250,7 +3278,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_K3B
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_KDIRSTAT
-	bool "kdirstat-2.4.4nb10"
+	bool "kdirstat-2.4.4nb11"
 	help
 	  Graphical disk usage utility
 
@@ -3262,7 +3290,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_KDIRSTAT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_KRUSADER
-	bool "krusader-1.90.0nb9"
+	bool "krusader-1.90.0nb10"
 	help
 	  
 
@@ -3344,7 +3372,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_LIBGAMIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_LIBGKSU
-	bool "libgksu-2.0.7nb8"
+	bool "libgksu-2.0.7nb10"
 	help
 	  Library that provides a GTK+ frontend to su and sudo
 
@@ -3358,7 +3386,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_LIBGKSU
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_LIBGTOP
-	bool "libgtop-2.28.3nb1"
+	bool "libgtop-2.28.3nb2"
 	help
 	  Library to retrieve system information, used in GNOME2
 
@@ -3388,7 +3416,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_LIBIRMAN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_LIBNOTIFY
-	bool "libnotify-0.4.5nb6"
+	bool "libnotify-0.4.5nb7"
 	help
 	  Desktop notification framework
 
@@ -3717,7 +3745,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_MKLIVECD
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_MKMEMSTICK
-	bool "mkmemstick-20090801"
+	bool "mkmemstick-20111206"
 	help
 	  Create a memory stick image from NetBSD Installation CDs
 
@@ -3792,6 +3820,19 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_MONIT
 	  http://www.tildeslash.com/monit/
 
 
+config BR2_PKGSRC_PACKAGE_SYSUTILS_MRSYNC
+	bool "mrsync-20090219"
+	help
+	  Multicast data replication and synchronisation tool
+
+	  mrsync is a tool to transfer files from a master to many remote
+	  machines in LAN using Unix multicast sockets.  It dynamically adjusts
+	  its transfer speed to ease on the network and to leave no one behind.
+	  4 hours for 140GB to 100 targets in 1Gbit LAN
+
+	  http://mrsync.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_SYSUTILS_MTOOLS
 	bool "mtools-4.0.14"
 	help
@@ -3802,7 +3843,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_MTOOLS
 	  other MS-DOS-style file / disk access tool imitates, (in general with an 'm'
 	  prepended to their name).
 
-	  http://mtools.linux.lu/
+	  http://www.gnu.org/software/mtools/
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_MTOOLSFM
@@ -3874,7 +3915,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_MUNIN_DOC
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_MUNIN_NODE
-	bool "munin-node-1.3.2nb9"
+	bool "munin-node-1.3.2nb10"
 	help
 	  System monitoring tool, client version
 
@@ -3910,7 +3951,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_MUNIN_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_NAUTILUS
-	bool "nautilus-2.32.2.1nb2"
+	bool "nautilus-2.32.2.1nb4"
 	help
 	  Nautilus file manager for GNOME2
 
@@ -3922,7 +3963,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_NAUTILUS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_NAUTILUS_SENDTO
-	bool "nautilus-sendto-2.32.0nb5"
+	bool "nautilus-sendto-2.32.0nb6"
 	help
 	  Convenience application to send a file via email or instant messenger
 
@@ -4046,7 +4087,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_NEWS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_NOTIFICATION_DAEMON
-	bool "notification-daemon-0.4.0nb6"
+	bool "notification-daemon-0.4.0nb7"
 	help
 	  Shows notification messages on the desktop
 
@@ -4069,7 +4110,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_NRG2ISO
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_NTFSPROGS
-	bool "ntfsprogs-2.0.0"
+	bool "ntfsprogs-2.0.0nb1"
 	help
 	  Linux-NTFS project utilities for the Windows NT Filesystem
 
@@ -4121,7 +4162,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_OAK
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_OPEN_VM_TOOLS
-	bool "open-vm-tools-2008.08.08.109361nb14"
+	bool "open-vm-tools-2008.08.08.109361nb15"
 	help
 	  Open source VMware tools
 
@@ -4172,7 +4213,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_FILE_COPY_RECURSIVE
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_FILE_REMOVE
-	bool "p5-File-Remove-1.42nb3"
+	bool "p5-File-Remove-1.50"
 	help
 	  Remove files and directories
 
@@ -4272,7 +4313,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_GTOP
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_GNOME2_VFS
-	bool "p5-Gnome2-VFS-1.081nb6"
+	bool "p5-Gnome2-VFS-1.081nb7"
 	help
 	  Perl bindings for the Gnome virtual file system
 
@@ -4382,7 +4423,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_PARSE_SYSLOG
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_SSH_BATCH
-	bool "p5-SSH-Batch-0.023nb2"
+	bool "p5-SSH-Batch-0.028"
 	help
 	  Cluster operations based on parallel SSH, set and interval arithmetic
 
@@ -4398,7 +4439,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_SSH_BATCH
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_SERVER_STARTER
-	bool "p5-Server-Starter-0.07nb2"
+	bool "p5-Server-Starter-0.11"
 	help
 	  Perl 5 superdaemon for hot-deploying server programs
 
@@ -4448,7 +4489,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_SYS_HOSTNAME_LONG
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_SYS_SIGACTION
-	bool "p5-Sys-SigAction-0.11nb2"
+	bool "p5-Sys-SigAction-0.15"
 	help
 	  Perl extension for Consistent Signal Handling
 
@@ -4517,7 +4558,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_P5_UNIX_SYSLOG
 	  familiar with syslog.h should be able to use this module right
 	  away.
 
-	  
+	  http://search.cpan.org/dist/Unix-Syslog/
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_PCIUTILS
@@ -4536,7 +4577,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_PCIUTILS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_PCMANFM
-	bool "pcmanfm-0.1.8.9nb9"
+	bool "pcmanfm-0.1.8.9nb10"
 	help
 	  Extremly fast and lightweight file manager
 
@@ -4590,7 +4631,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_PFLOGSUMM
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_PFSTAT
-	bool "pfstat-2.5"
+	bool "pfstat-2.5nb1"
 	help
 	  Utility to render graphical statistics for PF
 
@@ -4611,8 +4652,22 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_PFTOP
 	  http://www.eee.metu.edu.tr/~canacar/pftop/
 
 
+config BR2_PKGSRC_PACKAGE_SYSUTILS_PHP_FILEINFO
+	bool "php5-fileinfo-1.0.4"
+	help
+	  PHP extension for libmagic bindings
+
+	  Allows retrieval of information regarding a vast majority of file types.
+	  This information may include dimensions, quality, length etc.
+	  
+	  Additionally it can also be used to retrieve the mime type for a particular
+	  file and for text files proper language encoding.
+
+	  http://pecl.php.net/package/fileinfo
+
+
 config BR2_PKGSRC_PACKAGE_SYSUTILS_PEAR_LOG
-	bool "php53-pear-Log-1.12.6"
+	bool "php53-pear-Log-1.12.7"
 	help
 	  PHP Log framework provides an abstracted logging system
 
@@ -4754,7 +4809,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_PY_GNOME_MENUS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_PY_NOTIFY
-	bool "py26-notify-0.1.1nb8"
+	bool "py26-notify-0.1.1nb9"
 	help
 	  Python bindings for libnotify
 
@@ -4786,7 +4841,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_RADEONTOOL
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_RADMIND
-	bool "radmind-1.14.1"
+	bool "radmind-1.14.1nb1"
 	help
 	  Remote file administration and integrity tool
 
@@ -4891,7 +4946,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_ROLLER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_ROX
-	bool "rox-2.10nb6"
+	bool "rox-2.10nb7"
 	help
 	  RISC OS-like filer for X
 
@@ -4948,7 +5003,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_RUBY_ACTIVESAMBALDAP
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_CAPISTRANO
-	bool "ruby19-capistrano-2.8.0nb1"
+	bool "ruby19-capistrano-2.9.0"
 	help
 	  Tool for parallel execution of commands across multiple machines
 
@@ -4974,7 +5029,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_RUBY_DIRECTORY_WATCHER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_RUBY_FACTER
-	bool "ruby19-facter-1.6.0"
+	bool "ruby19-facter-1.6.4"
 	help
 	  Cross-platform Ruby library for retrieving facts from OS
 
@@ -5109,7 +5164,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_SARAH
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_SCREENTEST
-	bool "screentest-2.0nb5"
+	bool "screentest-2.0nb6"
 	help
 	  CRT/LCD screen testing utility using GTK+
 
@@ -5414,7 +5469,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_STRACE
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_STRIGI
-	bool "strigi-0.6.4nb7"
+	bool "strigi-0.6.4nb8"
 	help
 	  Small fast desktop searching program
 
@@ -5526,7 +5581,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_SYSINFO
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_SYSLOG_NG
-	bool "syslog-ng-3.2.4nb1"
+	bool "syslog-ng-3.2.4nb2"
 	help
 	  Syslog-ng tries to fill the gaps original syslogd's were lacking
 
@@ -5559,7 +5614,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_SYSTEM_TOOLS_BACKENDS
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_TARSNAP
-	bool "tarsnap-1.0.30"
+	bool "tarsnap-1.0.31"
 	help
 	  Secure online backup service
 
@@ -5785,6 +5840,17 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_TREE
 	  http://mama.indstate.edu/users/ice/tree/
 
 
+config BR2_PKGSRC_PACKAGE_SYSUTILS_TS
+	bool "ts-0.7.0"
+	help
+	  Simple handy batch system
+
+	  A simple and flexible batch system for a single machine. Each user uses a
+	  personal queue which can run several jobs in parallel.
+
+	  http://vicerveza.homeunix.net/~viric/soft/ts/
+
+
 config BR2_PKGSRC_PACKAGE_SYSUTILS_UPS_NUT
 	bool "ups-nut-2.6.1"
 	help
@@ -5800,7 +5866,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_UPS_NUT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_UPS_NUT_CGI
-	bool "ups-nut-cgi-2.6.1"
+	bool "ups-nut-cgi-2.6.1nb1"
 	help
 	  Network UPS Tools CGI scripts
 
@@ -6733,7 +6799,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XC5K_FIRMWARE
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XCDROAST
-	bool "xcdroast-0.98a16nb7"
+	bool "xcdroast-0.98a16nb8"
 	help
 	  Graphical user interface for the command-line cdrecord-tools
 
@@ -6771,6 +6837,27 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XDU
 	  information.  See the manual page for details.
 
 	  http://sd.wareonearth.com/~phil/xdu/
+
+
+config BR2_PKGSRC_PACKAGE_SYSUTILS_XE_GUEST_UTILITIES
+	bool "xe-guest-utilities-6.0.0nb1"
+	help
+	  NetBSD VM tools for Citrix XenServer
+
+	  NetBSD can run as a paravirtualised guest of Citrix XenServer using
+	  XEN3PAE_DOMU (i386) or XEN3_DOMU (amd64) kernels. To get full
+	  functionality, guest VMs must provide run-time information to the
+	  XenServer dom0. Failure to do so will give the message "XenServer
+	  Tools not installed".
+	  
+	  This package allows NetBSD to interface with XenServer to enable:
+	  - Memory usage logging
+	  - IP address reporting
+	  - Suspend/Resume
+	  - Migration
+	  - OS version reporting
+
+	  http://www.xenserver.com/
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XENKERNEL20
@@ -6814,7 +6901,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XENKERNEL3
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XENKERNEL33
-	bool "xenkernel33-3.3.2nb4"
+	bool "xenkernel33-3.3.2nb5"
 	help
 	  Xen 3.3.2 Kernel
 
@@ -6834,9 +6921,9 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XENKERNEL33
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XENKERNEL41
-	bool "xenkernel41-4.1.1"
+	bool "xenkernel41-4.1.2"
 	help
-	  Xen 4.1.1 Kernel
+	  Xen 4.1.2 Kernel
 
 	  Xen is a virtual machine monitor which supports running multiple
 	  guests operating systems on a single machine.  Guest OSes (also called "domains")
@@ -6848,6 +6935,17 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XENKERNEL41
 	  devices (disks and network) to other domains.
 	  
 	  This package contains the Xen4 kernel itself.
+
+	  http://xen.org/
+
+
+config BR2_PKGSRC_PACKAGE_SYSUTILS_XENSTORETOOLS
+	bool "xenstoretools-4.1.2"
+	help
+	  Xenstore Tools for Xen 4.1.x
+
+	  This package is a subset of the xentools41 package. It contains
+	  just the tools to manipulate xenstore from the guest VM.
 
 	  http://xen.org/
 
@@ -6908,7 +7006,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XENTOOLS33
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XENTOOLS41
-	bool "xentools41-4.1.1"
+	bool "xentools41-4.1.2nb1"
 	help
 	  Userland Tools for Xen 4.1.x
 
@@ -6933,7 +7031,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XENVSTAT
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_APPFINDER
-	bool "xfce4-appfinder-4.6.1nb6"
+	bool "xfce4-appfinder-4.6.1nb7"
 	help
 	  Xfce application finder
 
@@ -6943,7 +7041,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_APPFINDER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_BATTERY_PLUGIN
-	bool "xfce4-battery-plugin-0.5.1nb7"
+	bool "xfce4-battery-plugin-0.5.1nb8"
 	help
 	  Xfce battey monitor plugin
 
@@ -6953,7 +7051,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_BATTERY_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_CPUGRAPH_PLUGIN
-	bool "xfce4-cpugraph-plugin-0.3.0nb6"
+	bool "xfce4-cpugraph-plugin-0.3.0nb7"
 	help
 	  Xfce CPU load plugin
 
@@ -6963,7 +7061,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_CPUGRAPH_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_DISKPERF_PLUGIN
-	bool "xfce4-diskperf-plugin-2.1.0nb6"
+	bool "xfce4-diskperf-plugin-2.1.0nb7"
 	help
 	  Xfce disk performance plugin
 
@@ -6973,7 +7071,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_DISKPERF_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_FSGUARD_PLUGIN
-	bool "xfce4-fsguard-plugin-0.4.0nb6"
+	bool "xfce4-fsguard-plugin-0.4.0nb7"
 	help
 	  Xfce disk space plugin
 
@@ -6983,7 +7081,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_FSGUARD_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_GENMON_PLUGIN
-	bool "xfce4-genmon-plugin-3.1nb6"
+	bool "xfce4-genmon-plugin-3.1nb7"
 	help
 	  Xfce general purpose monitor plugin
 
@@ -6993,7 +7091,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_GENMON_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_NETLOAD_PLUGIN
-	bool "xfce4-netload-plugin-0.4.0nb6"
+	bool "xfce4-netload-plugin-0.4.0nb7"
 	help
 	  Xfce network load plugin
 
@@ -7003,7 +7101,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_NETLOAD_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_QUICKLAUNCHER_PLUGIN
-	bool "xfce4-quicklauncher-plugin-1.9.4nb6"
+	bool "xfce4-quicklauncher-plugin-1.9.4nb7"
 	help
 	  Xfce quicklaunch plugin
 
@@ -7013,7 +7111,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_QUICKLAUNCHER_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_SYSTEMLOAD_PLUGIN
-	bool "xfce4-systemload-plugin-0.4.2nb6"
+	bool "xfce4-systemload-plugin-0.4.2nb7"
 	help
 	  Xfce system load plugin
 
@@ -7023,7 +7121,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_SYSTEMLOAD_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_THUNAR
-	bool "xfce4-thunar-1.0.1nb6"
+	bool "xfce4-thunar-1.0.1nb7"
 	help
 	  Xfce file manager
 
@@ -7036,7 +7134,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_THUNAR
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_VOLMAN
-	bool "xfce4-volman-0.2.0nb8"
+	bool "xfce4-volman-0.2.0nb9"
 	help
 	  Thunar volume manager
 
@@ -7046,7 +7144,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_VOLMAN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_XARCHIVER
-	bool "xfce4-xarchiver-0.5.2nb7"
+	bool "xfce4-xarchiver-0.5.2nb8"
 	help
 	  Xfce archiver handler
 
@@ -7056,7 +7154,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_XARCHIVER
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_XKB_PLUGIN
-	bool "xfce4-xkb-plugin-0.4.3nb6"
+	bool "xfce4-xkb-plugin-0.4.3nb7"
 	help
 	  Xfce Keyboard plugin
 
@@ -7066,7 +7164,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XFCE4_XKB_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XFE
-	bool "xfe-1.04nb5"
+	bool "xfe-1.04nb6"
 	help
 	  Fast MS-Explorer like filemanager for X
 
@@ -7214,7 +7312,7 @@ config BR2_PKGSRC_PACKAGE_SYSUTILS_XOSVIEW
 
 
 config BR2_PKGSRC_PACKAGE_SYSUTILS_XPS
-	bool "xps-4.2nb2"
+	bool "xps-4.2nb3"
 	help
 	  Displays the Unix process list as a hierarchical tree
 

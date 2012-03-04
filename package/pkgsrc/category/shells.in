@@ -199,7 +199,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_LSHELL
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_MKSH
-	bool "mksh-40"
+	bool "mksh-40c"
 	help
 	  MirBSD Korn Shell
 
@@ -448,7 +448,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_ZSH
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_ZSH_CURRENT
-	bool "zsh-4.3.12"
+	bool "zsh-4.3.12nb1"
 	help
 	  The Z shell
 

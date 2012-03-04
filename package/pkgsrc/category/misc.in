@@ -124,7 +124,7 @@ config BR2_PKGSRC_PACKAGE_MISC_ASTROLOG
 
 
 config BR2_PKGSRC_PACKAGE_MISC_ATTICA
-	bool "attica-0.2.0nb3"
+	bool "attica-0.2.0nb4"
 	help
 	  Qt library that implements the Open Collaboration Services API
 
@@ -165,7 +165,7 @@ config BR2_PKGSRC_PACKAGE_MISC_AUTOCUE
 
 
 config BR2_PKGSRC_PACKAGE_MISC_BASKET
-	bool "basket-1.0.2nb11"
+	bool "basket-1.0.2nb12"
 	help
 	  Feature-rich note-taking KDE application
 
@@ -193,7 +193,7 @@ config BR2_PKGSRC_PACKAGE_MISC_BBAPPCONF
 
 
 config BR2_PKGSRC_PACKAGE_MISC_BBDB
-	bool "bbdb-2.34nb4"
+	bool "bbdb-2.35"
 	help
 	  Insidious Big Brother DataBase, a rolodex-like database Emacs program
 
@@ -219,7 +219,7 @@ config BR2_PKGSRC_PACKAGE_MISC_BBWEATHER
 
 
 config BR2_PKGSRC_PACKAGE_MISC_BLCCC
-	bool "blccc-1.99nb11"
+	bool "blccc-1.99nb12"
 	help
 	  Blinkenlights Chaos Control Center
 
@@ -346,7 +346,7 @@ config BR2_PKGSRC_PACKAGE_MISC_BUFFER
 
 
 config BR2_PKGSRC_PACKAGE_MISC_CALIBRE
-	bool "calibre-0.8.2nb1"
+	bool "calibre-0.8.29"
 	help
 	  E-book library management application
 
@@ -365,7 +365,7 @@ config BR2_PKGSRC_PACKAGE_MISC_CALIBRE
 
 
 config BR2_PKGSRC_PACKAGE_MISC_CELESTIA
-	bool "celestia-1.4.1nb15"
+	bool "celestia-1.4.1nb16"
 	help
 	  Free real-time 3D space simulator
 
@@ -422,6 +422,22 @@ config BR2_PKGSRC_PACKAGE_MISC_CKSFV
 	  integrity via a 32 bit CRC.
 
 	  http://zakalwe.fi/~shd/foss/cksfv/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_COLOR_THEME
+	bool "color-theme-6.6.0"
+	help
+	  Emacs-lisp mode for skinning your emacs
+
+	  color-theme is an emacs-lisp mode for skinning your emacs.
+	  Features are:
+	  
+	  * Huge and extensible theme library
+	  * Easy to use
+	  * Works on pretty all emacs flavours
+	  * Mature source code
+
+	  http://www.nongnu.org/color-theme/
 
 
 config BR2_PKGSRC_PACKAGE_MISC_COLORIZE
@@ -547,7 +563,7 @@ config BR2_PKGSRC_PACKAGE_MISC_CUETOOLS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_DESKBAR_APPLET
-	bool "deskbar-applet-2.32.0nb4"
+	bool "deskbar-applet-2.32.0nb5"
 	help
 	  Omnipresent, versatile search interface for the GNOME Desktop
 
@@ -594,7 +610,7 @@ config BR2_PKGSRC_PACKAGE_MISC_DGPSIP
 
 
 config BR2_PKGSRC_PACKAGE_MISC_DIALOG
-	bool "dialog-1.1.20110707"
+	bool "dialog-1.1.20111020"
 	help
 	  Display dialog boxes from shell scripts
 
@@ -876,7 +892,7 @@ config BR2_PKGSRC_PACKAGE_MISC_ESNIPER
 
 
 config BR2_PKGSRC_PACKAGE_MISC_FBREADER
-	bool "fbreader-0.10.7nb8"
+	bool "fbreader-0.10.7nb9"
 	help
 	  Ebook reader software
 
@@ -916,7 +932,7 @@ config BR2_PKGSRC_PACKAGE_MISC_FBREADER
 
 
 config BR2_PKGSRC_PACKAGE_MISC_FD
-	bool "fd-3.00j"
+	bool "fd-3.00jnb1"
 	help
 	  File and directory management tool
 
@@ -998,7 +1014,7 @@ config BR2_PKGSRC_PACKAGE_MISC_FIRELIB
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GAUPOL
-	bool "gaupol-0.19.1"
+	bool "gaupol-0.19.2"
 	help
 	  Subtitle editor
 
@@ -1018,7 +1034,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GAUPOL
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GELEMENTAL
-	bool "gelemental-1.2.0nb6"
+	bool "gelemental-1.2.0nb7"
 	help
 	  Periodic table viewer
 
@@ -1073,7 +1089,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GIT
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_FLYNN
-	bool "gkrellm-flynn-0.8nb13"
+	bool "gkrellm-flynn-0.8nb14"
 	help
 	  GKrellM2 plugin that shows system load with a DooM marine
 
@@ -1092,7 +1108,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_FLYNN
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_LAUNCH
-	bool "gkrellm-launch-0.5nb13"
+	bool "gkrellm-launch-0.5nb14"
 	help
 	  GKrellM plugin to allow quick launch of applications
 
@@ -1107,7 +1123,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_LAUNCH
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_LEDS
-	bool "gkrellm-leds-0.8.2nb11"
+	bool "gkrellm-leds-0.8.2nb12"
 	help
 	  GKrellM plugin that monitors CapsLock, NumLock and ScrollLock keys
 
@@ -1121,7 +1137,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_LEDS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_MOON
-	bool "gkrellm-moon-0.6nb13"
+	bool "gkrellm-moon-0.6nb14"
 	help
 	  GKrellM2 moonclock plugin
 
@@ -1132,7 +1148,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_MOON
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_WEATHER
-	bool "gkrellm-weather-2.0.7nb9"
+	bool "gkrellm-weather-2.0.7nb10"
 	help
 	  Gkrellm2 weather plugin
 
@@ -1179,7 +1195,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GNOME_USER_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GNOME_UTILS
-	bool "gnome-utils-2.32.0nb4"
+	bool "gnome-utils-2.32.0nb5"
 	help
 	  Set of useful GNOME2 utilities and applications
 
@@ -1200,7 +1216,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GNOME_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GNULS
-	bool "gnuls-6.12nb1"
+	bool "gnuls-8.13"
 	help
 	  GNU ls utility with color support
 
@@ -1212,7 +1228,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GNULS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GOFFICE0.6
-	bool "goffice0.6-0.6.6nb10"
+	bool "goffice0.6-0.6.6nb11"
 	help
 	  Library of document-centric objects and utilities
 
@@ -1228,7 +1244,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GOFFICE0.6
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GOFFICE0.8
-	bool "goffice0.8-0.8.17"
+	bool "goffice0.8-0.8.17nb1"
 	help
 	  Library of document-centric objects and utilities
 
@@ -1244,7 +1260,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GOFFICE0.8
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GOK
-	bool "gok-2.28.1nb6"
+	bool "gok-2.28.1nb7"
 	help
 	  GNOME On-Screen Keyboard
 
@@ -1281,7 +1297,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GONE
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GPERIODIC
-	bool "gperiodic-2.0.10nb3"
+	bool "gperiodic-2.0.10nb4"
 	help
 	  Displays a periodic table of the elements
 
@@ -1308,7 +1324,7 @@ config BR2_PKGSRC_PACKAGE_MISC_GRANULATE
 
 
 config BR2_PKGSRC_PACKAGE_MISC_GWAEI
-	bool "gwaei-3.0.2"
+	bool "gwaei-3.0.2nb1"
 	help
 	  Japanese dictionary for GNOME
 
@@ -1670,7 +1686,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KANJIDIC2
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KANJIPAD
-	bool "kanjipad-2.0.0nb10"
+	bool "kanjipad-2.0.0nb11"
 	help
 	  Japanese handwriting recognition
 
@@ -1689,7 +1705,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KANJIPAD
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KCHM
-	bool "kchm-0.6.5nb16"
+	bool "kchm-0.6.5nb17"
 	help
 	  KDE CHM file viewer
 
@@ -1701,7 +1717,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KCHM
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KCHMVIEWER
-	bool "kchmviewer-5.3nb1"
+	bool "kchmviewer-5.3nb2"
 	help
 	  
 
@@ -1722,7 +1738,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KCHMVIEWER
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEACCESSIBILITY3
-	bool "kdeaccessibility-3.5.10nb8"
+	bool "kdeaccessibility-3.5.10nb9"
 	help
 	  Accessibility support for the KDE integrated X11 desktop
 
@@ -1732,7 +1748,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEACCESSIBILITY3
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEACCESSIBILITY4
-	bool "kdeaccessibility4-4.5.5nb1"
+	bool "kdeaccessibility4-4.5.5nb2"
 	help
 	  Accessibility support for the KDE integrated X11 desktop
 
@@ -1742,7 +1758,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEACCESSIBILITY4
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEADDONS3
-	bool "kdeaddons-3.5.10nb10"
+	bool "kdeaddons-3.5.10nb11"
 	help
 	  Add ons for the KDE integrated X11 desktop
 
@@ -1752,7 +1768,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEADDONS3
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEADMIN3
-	bool "kdeadmin-3.5.10nb7"
+	bool "kdeadmin-3.5.10nb8"
 	help
 	  System administration tools for the KDE integrated X11 desktop
 
@@ -1769,7 +1785,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEADMIN3
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEADMIN4
-	bool "kdeadmin4-4.5.5nb2"
+	bool "kdeadmin4-4.5.5nb4"
 	help
 	  System administration tools for the KDE integrated X11 desktop
 
@@ -1795,7 +1811,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEADMIN4
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEARTWORK3
-	bool "kdeartwork-3.5.10nb10"
+	bool "kdeartwork-3.5.10nb11"
 	help
 	  Artwork for the KDE integrated X11 desktop
 
@@ -1806,7 +1822,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEARTWORK3
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEARTWORK4
-	bool "kdeartwork4-4.5.5nb1"
+	bool "kdeartwork4-4.5.5nb2"
 	help
 	  Artwork for the KDE integrated X11 desktop
 
@@ -1825,7 +1841,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEARTWORK4
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEEDU3
-	bool "kdeedu-3.5.10nb9"
+	bool "kdeedu-3.5.10nb10"
 	help
 	  
 
@@ -1845,7 +1861,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEEDU3
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEEDU4
-	bool "kdeedu4-4.5.5nb1"
+	bool "kdeedu4-4.5.5nb2"
 	help
 	  
 
@@ -1875,7 +1891,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEEDU4
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEPIM3
-	bool "kdepim-3.5.10nb10"
+	bool "kdepim-3.5.10nb11"
 	help
 	  Personal Information Management tools for the KDE desktop
 
@@ -1909,7 +1925,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEPIM3
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEPIM_RUNTIME4
-	bool "kdepim-runtime4-4.4.9nb1"
+	bool "kdepim-runtime4-4.4.9nb3"
 	help
 	  Runtime requirements for the KDE PIM tools
 
@@ -1919,7 +1935,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEPIM_RUNTIME4
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEPIM4
-	bool "kdepim4-4.4.9nb5"
+	bool "kdepim4-4.4.9nb7"
 	help
 	  Personal Information Management tools for the KDE desktop
 
@@ -1967,7 +1983,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEPIM4
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEPIMLIBS4
-	bool "kdepimlibs4-4.5.5nb1"
+	bool "kdepimlibs4-4.5.5nb3"
 	help
 	  Support libraries for PIM for the KDE integrated X11 desktop
 
@@ -2003,7 +2019,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEPIMLIBS4
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEPLASMA_ADDONS4
-	bool "kdeplasma-addons4-4.5.5nb1"
+	bool "kdeplasma-addons4-4.5.5nb3"
 	help
 	  Plasmoids
 
@@ -2013,7 +2029,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEPLASMA_ADDONS4
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEUTILS3
-	bool "kdeutils-3.5.10nb12"
+	bool "kdeutils-3.5.10nb13"
 	help
 	  Utilities for the KDE integrated X11 desktop
 
@@ -2048,7 +2064,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDEUTILS3
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KDEUTILS4
-	bool "kdeutils4-4.5.5nb3"
+	bool "kdeutils4-4.5.5nb7"
 	help
 	  Utilities for the KDE integrated X11 desktop
 
@@ -2091,7 +2107,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KDRILL
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KODOS
-	bool "kodos-2.4.2nb8"
+	bool "kodos-2.4.2nb9"
 	help
 	  GUI for creating, testing and debugging Python REs
 
@@ -2103,7 +2119,7 @@ config BR2_PKGSRC_PACKAGE_MISC_KODOS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_KOFFICE
-	bool "koffice-1.6.3nb25"
+	bool "koffice-1.6.3nb28"
 	help
 	  KDE Office Suite
 
@@ -2303,7 +2319,7 @@ config BR2_PKGSRC_PACKAGE_MISC_LIBQUANTUM
 
 
 config BR2_PKGSRC_PACKAGE_MISC_LIBREOFFICE3_BIN
-	bool "libreoffice3-bin-3.3.3"
+	bool "libreoffice3-bin-3.4.4"
 	help
 	  
 
@@ -2358,7 +2374,7 @@ config BR2_PKGSRC_PACKAGE_MISC_LOCO
 
 
 config BR2_PKGSRC_PACKAGE_MISC_LOGSURFER
-	bool "logsurfer-1.7"
+	bool "logsurfer-1.8"
 	help
 	  Processes logfiles and performs certain actions
 
@@ -2472,7 +2488,7 @@ config BR2_PKGSRC_PACKAGE_MISC_MMV
 
 
 config BR2_PKGSRC_PACKAGE_MISC_MNEMOSYNE
-	bool "mnemosyne-1.2.2nb5"
+	bool "mnemosyne-1.2.2nb6"
 	help
 	  Sophisticated flash-card tool which optimizes your learning process
 
@@ -2553,7 +2569,7 @@ config BR2_PKGSRC_PACKAGE_MISC_MOST
 
 
 config BR2_PKGSRC_PACKAGE_MISC_MOUSETWEAKS
-	bool "mousetweaks-2.28.1nb8"
+	bool "mousetweaks-2.28.1nb9"
 	help
 	  Mouse accessibility software
 
@@ -2662,7 +2678,7 @@ config BR2_PKGSRC_PACKAGE_MISC_OPEN2300_MYSQL
 
 
 config BR2_PKGSRC_PACKAGE_MISC_OPENOFFICE3
-	bool "openoffice3-3.1.1nb13"
+	bool "openoffice3-3.1.1nb15"
 	help
 	  
 
@@ -2708,7 +2724,7 @@ config BR2_PKGSRC_PACKAGE_MISC_OPENOFFICE3_BIN
 
 
 config BR2_PKGSRC_PACKAGE_MISC_ORCA
-	bool "orca-2.28.1nb7"
+	bool "orca-2.28.1nb8"
 	help
 	  Screen reader
 
@@ -2906,7 +2922,7 @@ config BR2_PKGSRC_PACKAGE_MISC_P5_I18N_LANGTAGS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_CODES
-	bool "p5-Locale-Codes-3.13nb1"
+	bool "p5-Locale-Codes-3.20"
 	help
 	  Perl5 module for ISO 3166, 639, 4217 and 15924 codes
 
@@ -2948,7 +2964,7 @@ config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_MAKETEXT_FUZZY
 
 
 config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_MAKETEXT_LEXICON
-	bool "p5-Locale-Maketext-Lexicon-0.82nb1"
+	bool "p5-Locale-Maketext-Lexicon-0.91"
 	help
 	  Use other catalog formats in Maketext
 
@@ -2975,7 +2991,7 @@ config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_MAKETEXT_SIMPLE
 
 
 config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_US
-	bool "p5-Locale-US-1.2nb3"
+	bool "p5-Locale-US-2.112150"
 	help
 	  Perl 5 module to maps US two-letter codes to states and vice versa
 
@@ -3034,7 +3050,7 @@ config BR2_PKGSRC_PACKAGE_MISC_P5_SEARCH
 
 
 config BR2_PKGSRC_PACKAGE_MISC_P5_VROOM
-	bool "p5-Vroom-0.23nb2"
+	bool "p5-Vroom-0.26"
 	help
 	  Slide Shows in Vim
 
@@ -3098,6 +3114,23 @@ config BR2_PKGSRC_PACKAGE_MISC_PDMENU
 	  it can just be ran at the command line as a handy menu.
 
 	  http://www.kitenet.net/~joey/code/pdmenu.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PHP_ORANGEHRM
+	bool "php53-orangehrm-2.6.11.2"
+	help
+	  Open source Human Resource Management (HRM) solution
+
+	  OrangeHRM offers a flexible and easy to use HRIS solution for small
+	  and medium sized companies free of charge. By providing modules
+	  for personnel information management, employee self service, leave,
+	  time & attendance, benefits and recruitment companies are able to
+	  manage the crucial organization asset - people. The combination of
+	  these modules into one application assures the perfect platform
+	  for re-engineering and aligning your HR processes along with the
+	  organizational goals.
+
+	  http://www.orangehrm.com/
 
 
 config BR2_PKGSRC_PACKAGE_MISC_PINFO
@@ -3181,7 +3214,7 @@ config BR2_PKGSRC_PACKAGE_MISC_PY_ANITA
 
 
 config BR2_PKGSRC_PACKAGE_MISC_QBREW
-	bool "qbrew-0.3.5nb7"
+	bool "qbrew-0.3.5nb8"
 	help
 	  Homebrewer's recipe calculator
 
@@ -3242,7 +3275,7 @@ config BR2_PKGSRC_PACKAGE_MISC_RLWRAP
 
 
 config BR2_PKGSRC_PACKAGE_MISC_ROOT
-	bool "root-5.26nb2"
+	bool "root-5.26nb4"
 	help
 	  OO framework for data analysis and visualisation
 
@@ -3317,7 +3350,7 @@ config BR2_PKGSRC_PACKAGE_MISC_RPM
 
 
 config BR2_PKGSRC_PACKAGE_MISC_RUBY_BUNDLER
-	bool "ruby19-bundler-1.0.18"
+	bool "ruby19-bundler-1.0.21"
 	help
 	  Manage your application's dependencies
 
@@ -3332,7 +3365,7 @@ config BR2_PKGSRC_PACKAGE_MISC_RUBY_BUNDLER
 
 
 config BR2_PKGSRC_PACKAGE_MISC_RUBY_COLUMNIZE
-	bool "ruby19-columnize-0.3.4"
+	bool "ruby19-columnize-0.3.5"
 	help
 	  Ruby module to print an Array in column-sorted order
 
@@ -3429,7 +3462,7 @@ config BR2_PKGSRC_PACKAGE_MISC_RUBY_PROGRESSBAR
 
 
 config BR2_PKGSRC_PACKAGE_MISC_RUBYGEMS
-	bool "ruby19-rubygems-1.8.10"
+	bool "ruby19-rubygems-1.8.12"
 	help
 	  Ruby standard for publishing and managing third party libraries
 
@@ -3441,6 +3474,21 @@ config BR2_PKGSRC_PACKAGE_MISC_RUBYGEMS
 	  RubyGems is installed.
 
 	  http://www.rubygems.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_SPROCKETS
+	bool "ruby19-sprockets-2.0.3"
+	help
+	  Rack-based asset packaging system
+
+	  Sprockets: Rack-based asset packaging
+	  
+	  Sprockets is a Ruby library for compiling and serving web assets.
+	  It features declarative dependency management for JavaScript and CSS
+	  assets, as well as a powerful preprocessor pipeline that allows you to
+	  write assets in languages like CoffeeScript, Sass, SCSS and LESS.
+
+	  http://github.com/josh/rack-mount
 
 
 config BR2_PKGSRC_PACKAGE_MISC_RUBY_TRANSACTION_SIMPLE
@@ -3484,7 +3532,7 @@ config BR2_PKGSRC_PACKAGE_MISC_SCH
 
 
 config BR2_PKGSRC_PACKAGE_MISC_SCI
-	bool "sci-0.5.6"
+	bool "sci-0.5.6nb1"
 	help
 	  Curses based data entry via templates
 
@@ -3576,7 +3624,7 @@ config BR2_PKGSRC_PACKAGE_MISC_SPLITVT
 
 
 config BR2_PKGSRC_PACKAGE_MISC_STELLARIUM
-	bool "stellarium-0.11.0"
+	bool "stellarium-0.11.1"
 	help
 	  Generate photorealistic skies with OpenGL
 
@@ -3588,7 +3636,7 @@ config BR2_PKGSRC_PACKAGE_MISC_STELLARIUM
 
 
 config BR2_PKGSRC_PACKAGE_MISC_TASKJUGGLER
-	bool "taskjuggler-2.4.3nb6"
+	bool "taskjuggler-2.4.3nb7"
 	help
 	  Project management tool
 
@@ -3654,7 +3702,7 @@ config BR2_PKGSRC_PACKAGE_MISC_TEAM
 
 
 config BR2_PKGSRC_PACKAGE_MISC_TELLICO_KDE3
-	bool "tellico-1.3.6nb12"
+	bool "tellico-1.3.6nb14"
 	help
 	  KDE application for organizing your collections
 
@@ -3675,7 +3723,7 @@ config BR2_PKGSRC_PACKAGE_MISC_TELLICO_KDE3
 
 
 config BR2_PKGSRC_PACKAGE_MISC_TELLICO
-	bool "tellico-2.3.2nb5"
+	bool "tellico-2.3.2nb8"
 	help
 	  Collection manager for KDE
 
@@ -3834,7 +3882,7 @@ config BR2_PKGSRC_PACKAGE_MISC_USBIDS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_USBPROG
-	bool "usbprog-0.2.0nb4"
+	bool "usbprog-0.2.0nb5"
 	help
 	  Firmware loader for "usbprog" programming adapter
 
@@ -3922,7 +3970,7 @@ config BR2_PKGSRC_PACKAGE_MISC_VTTEST
 
 
 config BR2_PKGSRC_PACKAGE_MISC_VYM
-	bool "vym-1.12.7nb4"
+	bool "vym-1.12.7nb5"
 	help
 	  Generate and manipulate maps which show your thoughts
 
@@ -3994,7 +4042,7 @@ config BR2_PKGSRC_PACKAGE_MISC_WINDOW
 
 
 config BR2_PKGSRC_PACKAGE_MISC_XCHM
-	bool "xchm-1.20"
+	bool "xchm-1.20nb1"
 	help
 	  CHM viewer for UNIX
 
@@ -4042,7 +4090,7 @@ config BR2_PKGSRC_PACKAGE_MISC_XDG_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_MISC_XFCE4_WEATHER_PLUGIN
-	bool "xfce4-weather-plugin-0.6.2nb7"
+	bool "xfce4-weather-plugin-0.6.2nb8"
 	help
 	  Xfce weather plugin
 
@@ -4065,7 +4113,7 @@ config BR2_PKGSRC_PACKAGE_MISC_XJDIC
 
 
 config BR2_PKGSRC_PACKAGE_MISC_XROLODEX
-	bool "xrolodex-1.5nb4"
+	bool "xrolodex-1.5nb5"
 	help
 	  Motif/X11 rolodex application
 
@@ -4121,7 +4169,7 @@ config BR2_PKGSRC_PACKAGE_MISC_XTEND
 
 
 config BR2_PKGSRC_PACKAGE_MISC_YELP
-	bool "yelp-2.30.2nb6"
+	bool "yelp-2.30.2nb7"
 	help
 	  Help browser for GNOME 2 desktop
 
@@ -4132,7 +4180,7 @@ config BR2_PKGSRC_PACKAGE_MISC_YELP
 
 
 config BR2_PKGSRC_PACKAGE_MISC_YROLO
-	bool "yrolo-1.1nb4"
+	bool "yrolo-1.1nb5"
 	help
 	  Contact management software
 
@@ -4160,7 +4208,7 @@ config BR2_PKGSRC_PACKAGE_MISC_ZORRO
 
 
 config BR2_PKGSRC_PACKAGE_MISC_ZYGRIB
-	bool "zyGrib-5.0.2"
+	bool "zyGrib-5.0.6nb2"
 	help
 	  GRIB file viewer for weather data
 

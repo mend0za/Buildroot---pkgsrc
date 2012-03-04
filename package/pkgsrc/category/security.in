@@ -55,7 +55,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_EASYPG
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_MYPASSWORDSAFE
-	bool "MyPasswordSafe-20061216nb6"
+	bool "MyPasswordSafe-20061216nb7"
 	help
 	  Easy-to-use password manager
 
@@ -343,7 +343,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_BITSTIR
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_BOTAN
-	bool "botan-1.8.7nb4"
+	bool "botan-1.8.13"
 	help
 	  Portable, easy to use, and efficient C++ crypto library
 
@@ -364,7 +364,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_BOTAN
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_CAFF
-	bool "caff-1.1.3"
+	bool "caff-1.1.4"
 	help
 	  Various GnuPG related tools
 
@@ -456,7 +456,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_CHKROOTKIT
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_CLAMAV
-	bool "clamav-0.97.2"
+	bool "clamav-0.97.3"
 	help
 	  Anti-virus toolkit
 
@@ -614,7 +614,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_CY2_DIGESTMD5
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_CY2_GSSAPI
-	bool "cy2-gssapi-2.1.25"
+	bool "cy2-gssapi-2.1.25nb1"
 	help
 	  Cyrus SASL GSSAPI authentication plugin
 
@@ -717,7 +717,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_CY2_PLAIN
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_CY2_SAML
-	bool "cy2-saml-1.1nb1"
+	bool "cy2-saml-1.2nb1"
 	help
 	  Crude SAML assertion validator for bridging WebSSO and SASL
 
@@ -1059,7 +1059,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_FLAWFINDER
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_FPRINT_DEMO
-	bool "fprint-demo-0.4nb8"
+	bool "fprint-demo-0.4nb9"
 	help
 	  Simple GTK+ application to demonstrate libfprint's capabilities
 
@@ -1108,7 +1108,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_FSH
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_FWBUILDER
-	bool "fwbuilder-4.1.3nb1"
+	bool "fwbuilder-4.1.3nb2"
 	help
 	  Firewall Builder GUI
 
@@ -1131,7 +1131,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_FWBUILDER
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_GNOME_KEYRING
-	bool "gnome-keyring-2.32.1nb2"
+	bool "gnome-keyring-2.32.1nb4"
 	help
 	  GNOME password and secret manager
 
@@ -1155,7 +1155,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_GNOME_KEYRING
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_GNOME_KEYRING_MANAGER
-	bool "gnome-keyring-manager-2.20.0nb9"
+	bool "gnome-keyring-manager-2.20.0nb10"
 	help
 	  GNOME password and secret manager
 
@@ -1187,7 +1187,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_GNU_CRYPTO
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_GNUPG
-	bool "gnupg-1.4.11nb1"
+	bool "gnupg-1.4.11nb2"
 	help
 	  GNU Privacy Guard, public-Key encryption and digital signatures
 
@@ -1225,7 +1225,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_GNUPG_PKCS11_SCD
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_GNUPG2
-	bool "gnupg2-2.0.18nb1"
+	bool "gnupg2-2.0.18nb2"
 	help
 	  GNUpg with OpenPGP and S/MIME capabilities
 
@@ -1243,7 +1243,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_GNUPG2
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_GNUTLS
-	bool "gnutls-2.12.10"
+	bool "gnutls-2.12.14nb1"
 	help
 	  GNU Transport Layer Security library
 
@@ -1267,7 +1267,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_GNUTLS
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_GPA
-	bool "gpa-0.7.0nb12"
+	bool "gpa-0.7.0nb13"
 	help
 	  GUI frontend to gnupg
 
@@ -1286,7 +1286,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_GPA
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_GPASS
-	bool "gpass-0.4.4nb22"
+	bool "gpass-0.4.4nb23"
 	help
 	  GNOME Password Manager
 
@@ -1335,7 +1335,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_GPGME
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_GSASL
-	bool "gsasl-1.6.1"
+	bool "gsasl-1.6.1nb1"
 	help
 	  GNU implementation of the Simple Authentication and Security Layer
 
@@ -1451,7 +1451,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_HASHCASH
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_HEIMDAL
-	bool "heimdal-1.4nb1"
+	bool "heimdal-1.4nb2"
 	help
 	  Kerberos 5 implementation
 
@@ -1481,7 +1481,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_HEIRLOOM_SU
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_HONEYD
-	bool "honeyd-1.5bnb15"
+	bool "honeyd-1.5bnb16"
 	help
 	  Small daemon that creates virtual hosts on a network
 
@@ -1540,7 +1540,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_HYDAN
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_HYDRA
-	bool "hydra-5.4nb9"
+	bool "hydra-5.4nb13"
 	help
 	  Login password cracker
 
@@ -1669,7 +1669,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_JOHN
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_KEEPASSX
-	bool "keepassx-0.2.2nb7"
+	bool "keepassx-0.2.2nb8"
 	help
 	  Password manager or safe
 
@@ -1712,7 +1712,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_KNC
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_KSSH
-	bool "kssh-0.7nb27"
+	bool "kssh-0.7nb28"
 	help
 	  KDE Front-end to SSH
 
@@ -1743,7 +1743,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_KSTART
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_KTH_KRB4
-	bool "kth-krb4-1.2.2nb4"
+	bool "kth-krb4-1.2.2nb5"
 	help
 	  Kerberos IV distribution from KTH
 
@@ -1858,7 +1858,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_LIBDES
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_LIBFPRINT
-	bool "libfprint-0.0.6nb10"
+	bool "libfprint-0.0.6nb13"
 	help
 	  Fingerprint reader access library
 
@@ -1870,7 +1870,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_LIBFPRINT
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_LIBFWBUILDER
-	bool "libfwbuilder-4.1.3nb1"
+	bool "libfwbuilder-4.1.3nb2"
 	help
 	  Firewall Builder API
 
@@ -2251,7 +2251,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_LIBPRELUDEDB_SQLITE3
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_LIBSSH
-	bool "libssh-0.11nb2"
+	bool "libssh-0.11nb3"
 	help
 	  Library providing working SSH implementation
 
@@ -2279,7 +2279,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_LIBSSH2
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_LIBTASN1
-	bool "libtasn1-2.9"
+	bool "libtasn1-2.11"
 	help
 	  ASN.1 structure parser library
 
@@ -2414,7 +2414,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_LOGCHECK
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_LSH
-	bool "lsh-2.0.4nb1"
+	bool "lsh-2.0.4nb2"
 	help
 	  SSH2 client/server
 
@@ -2438,7 +2438,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_LUA_SEC
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_MCRYPT
-	bool "mcrypt-2.6.8nb1"
+	bool "mcrypt-2.6.8nb2"
 	help
 	  
 
@@ -2548,7 +2548,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_MIRRORDIR
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_MIT_KRB5
-	bool "mit-krb5-1.8.4"
+	bool "mit-krb5-1.8.4nb1"
 	help
 	  MIT Kerberos 5 authentication system
 
@@ -2568,7 +2568,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_MIT_KRB5
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_MIT_KRB5_APPL
-	bool "mit-krb5-appl-1.0.1nb1"
+	bool "mit-krb5-appl-1.0.1nb3"
 	help
 	  MIT Kerberos 5 authentication system applications
 
@@ -2758,8 +2758,22 @@ config BR2_PKGSRC_PACKAGE_SECURITY_NIKTO
 	  http://www.cirt.net/code/nikto.shtml
 
 
+config BR2_PKGSRC_PACKAGE_SECURITY_OATH_TOOLKIT
+	bool "oath-toolkit-1.10.4"
+	help
+	  
+
+	  The OATH Toolkit contains a shared library, command line tool and a PAM module
+	  that makes it possible to build one-time password authentication systems.
+	  Supported technologies include the event-based HOTP algorithm and the
+	  time-based TOTP algorithm.
+	  OATH is the Open AuTHentication organization which specify the algorithms.
+
+	  http://www.nongnu.org/oath-toolkit/
+
+
 config BR2_PKGSRC_PACKAGE_SECURITY_OCAML_SSL
-	bool "ocaml-ssl-0.4.2nb1"
+	bool "ocaml-ssl-0.4.2nb2"
 	help
 	  SSL library for OCaml
 
@@ -2798,7 +2812,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_OPENCT
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_OPENDNSSEC
-	bool "opendnssec-1.3.2"
+	bool "opendnssec-1.3.4"
 	help
 	  OSS for a fast and easy DNSSEC deployment
 
@@ -2811,7 +2825,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_OPENDNSSEC
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_OPENPAM
-	bool "openpam-20071221"
+	bool "openpam-20071221nb1"
 	help
 	  Open-source PAM library
 
@@ -2851,7 +2865,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_OPENSAML
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_OPENSC
-	bool "opensc-0.11.13nb2"
+	bool "opensc-0.11.13nb3"
 	help
 	  Smart Card drivers and middleware
 
@@ -2900,7 +2914,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_OPENSSH
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_OPENSSL
-	bool "openssl-0.9.8qnb3"
+	bool "openssl-0.9.8s"
 	help
 	  Secure Socket Layer and cryptographic library
 
@@ -2917,7 +2931,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_OPENSSL
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_OPENVAS_CLIENT
-	bool "openvas-client-2.0.1nb7"
+	bool "openvas-client-2.0.1nb8"
 	help
 	  Client for the Open Vulnerability Assessment System
 
@@ -3033,7 +3047,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_AUTHEN_CAS_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_AUTHEN_HTPASSWD
-	bool "p5-Authen-Htpasswd-0.16.1nb2"
+	bool "p5-Authen-Htpasswd-0.171"
 	help
 	  Interface to read and modify Apache .htpasswd files
 
@@ -3071,7 +3085,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_AUTHEN_PLUGGABLECAPTCHA
 	  Authen::PluggableCaptcha borrows from the functionality in
 	  Apache::Session::Flex.
 
-	  
+	  http://search.cpan.org/dist/Authen-PluggableCaptcha/
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_AUTHEN_SASL
@@ -3218,7 +3232,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_DH
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_DSA
-	bool "p5-Crypt-DSA-1.16nb4"
+	bool "p5-Crypt-DSA-1.17"
 	help
 	  Perl5 module for the DSA public key algorithm
 
@@ -3251,7 +3265,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_ECB
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_EKSBLOWFISH
-	bool "p5-Crypt-Eksblowfish-0.008nb2"
+	bool "p5-Crypt-Eksblowfish-0.009"
 	help
 	  Perl5 Eksblowfish block cipher
 
@@ -3320,7 +3334,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_IDEA
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_OPENPGP
-	bool "p5-Crypt-OpenPGP-1.04nb2"
+	bool "p5-Crypt-OpenPGP-1.06"
 	help
 	  Pure-Perl OpenPGP implementation
 
@@ -3447,7 +3461,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_RC4
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_RIPEMD160
-	bool "p5-Crypt-RIPEMD160-0.04nb6"
+	bool "p5-Crypt-RIPEMD160-0.05"
 	help
 	  Perl5 module of the RIPEMD160 hash function
 
@@ -3562,7 +3576,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_CRYPT_TWOFISH
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_DATA_SIMPLEPASSWORD
-	bool "p5-Data-SimplePassword-0.06nb1"
+	bool "p5-Data-SimplePassword-0.07"
 	help
 	  Simple random password generator
 
@@ -3572,7 +3586,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_DATA_SIMPLEPASSWORD
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_DIGEST
-	bool "p5-Digest-1.16nb2"
+	bool "p5-Digest-1.17"
 	help
 	  Perl5 base class for Digest:: modules
 
@@ -3598,7 +3612,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_DIGEST_BUBBLEBABBLE
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_DIGEST_CRC
-	bool "p5-Digest-CRC-0.16nb1"
+	bool "p5-Digest-CRC-0.17"
 	help
 	  Perl5 extension interface for cyclic redundancy check algorithms
 
@@ -3726,7 +3740,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_DIGEST_SHA
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_DIGEST_SHA1
-	bool "p5-Digest-SHA1-2.13nb2"
+	bool "p5-Digest-SHA1-2.13nb3"
 	help
 	  Perl5 module for SHA1
 
@@ -3761,7 +3775,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_GSSAPI
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_GNUPG_INTERFACE
-	bool "p5-GnuPG-Interface-0.42nb2"
+	bool "p5-GnuPG-Interface-0.44"
 	help
 	  Perl interface to GnuPG
 
@@ -3787,7 +3801,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_IO_SOCKET_SSL
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_MODULE_SIGNATURE
-	bool "p5-Module-Signature-0.66nb1"
+	bool "p5-Module-Signature-0.68"
 	help
 	  Perl 5 module for module signature file manipulation
 
@@ -3844,7 +3858,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_P5_NET_DNS_SEC_MAINT_KEY
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_P5_NET_OPENSSH
-	bool "p5-Net-OpenSSH-0.50nb1"
+	bool "p5-Net-OpenSSH-0.52"
 	help
 	  Perl SSH client package implemented on top of OpenSSH
 
@@ -4020,7 +4034,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PAKEMON
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PAM_AF
-	bool "pam-af-1.0.1nb2"
+	bool "pam-af-1.0.2"
 	help
 	  Anti-bruteforce PAM module
 
@@ -4051,6 +4065,20 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PAM_FPRINT
 	  a password.
 
 	  http://reactivated.net/fprint/wiki/Pam_fprint
+
+
+config BR2_PKGSRC_PACKAGE_SECURITY_PAM_KRB5
+	bool "pam-krb5-4.4"
+	help
+	  Very flexible kerberos module for the PAM framework
+
+	  pam-krb5 is a Kerberos v5 PAM module for either MIT Kerberos or Heimdal.
+	  It supports ticket refreshing by screen savers, configurable
+	  authorization handling, authentication of non-local accounts for network
+	  services, password changing, and password expiration, as well as all the
+	  standard expected PAM features.
+
+	  http://www.eyrie.org/~eagle/software/pam-krb5/
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PAM_LDAP
@@ -4149,7 +4177,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PAM_RADIUS
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PAM_SAML
-	bool "pam-saml-1.1nb1"
+	bool "pam-saml-1.2nb1"
 	help
 	  Crude SAML assertion validator for bridging WebSSO and PAM
 
@@ -4173,7 +4201,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PAM_SAML
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PAM_TACPLUS
-	bool "pam-tacplus-1.2.11"
+	bool "pam-tacplus-1.3.5nb1"
 	help
 	  TACACS+ client library and PAM module
 
@@ -4309,7 +4337,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PGP5
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PGPDUMP
-	bool "pgpdump-0.26"
+	bool "pgpdump-0.26nb1"
 	help
 	  PGP packet visualizer
 
@@ -4381,7 +4409,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PHP_SUHOSIN
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PINENTRY
-	bool "pinentry-0.8.1nb1"
+	bool "pinentry-0.8.1nb2"
 	help
 	  Applications for entering PINs or Passphrases
 
@@ -4407,7 +4435,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PINENTRY_GTK
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PINENTRY_GTK2
-	bool "pinentry-gtk2-0.8.1nb2"
+	bool "pinentry-gtk2-0.8.1nb3"
 	help
 	  Applications for entering PINs or Passphrases
 
@@ -4420,7 +4448,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PINENTRY_GTK2
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PINENTRY_QT
-	bool "pinentry-qt-0.8.1nb2"
+	bool "pinentry-qt-0.8.1nb3"
 	help
 	  Applications for entering PINs or Passphrases
 
@@ -4433,7 +4461,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PINENTRY_QT
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PINENTRY_QT4
-	bool "pinentry-qt4-0.8.1nb2"
+	bool "pinentry-qt4-0.8.1nb3"
 	help
 	  Applications for entering PINs or Passphrases
 
@@ -4498,7 +4526,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_POLICYKIT
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_POLICYKIT_GNOME
-	bool "policykit-gnome-0.9.2nb7"
+	bool "policykit-gnome-0.9.2nb9"
 	help
 	  GNOME dialogs for PolicyKit
 
@@ -4517,7 +4545,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_POLICYKIT_GNOME
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_POLKIT_QT
-	bool "polkit-qt-0.9.4nb2"
+	bool "polkit-qt-0.9.4nb3"
 	help
 	  Qt Wrapper around PolicyKit
 
@@ -4681,7 +4709,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PSCAN
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PUTTY_DEVEL
-	bool "putty-0.60.20090906nb1"
+	bool "putty-0.60.20090906nb2"
 	help
 	  Free implementation of Telnet and SSH for Win32 and Unix platforms
 
@@ -4725,8 +4753,21 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PWSAFE
 	  http://nsd.dyndns.org/pwsafe/
 
 
+config BR2_PKGSRC_PACKAGE_SECURITY_PY_OPENSSL
+	bool "py26-OpenSSL-0.12"
+	help
+	  Python interface to the OpenSSL library
+
+	  pyOpenSSL is a Python module that is a rather thin wrapper around (a
+	  subset of) the OpenSSL library.  A lot of the object methods do
+	  nothing more than call a corresponding function in the OpenSSL
+	  library.
+
+	  https://launchpad.net/pyopenssl/
+
+
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_SSLCRYPTO
-	bool "py25-SSLCrypto-0.1.1nb3"
+	bool "py26-SSLCrypto-0.1.1nb3"
 	help
 	  Python bindings for openssl
 
@@ -4752,21 +4793,8 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PY_SSLCRYPTO
 	  http://www.freenet.org.nz/python/SSLCrypto/
 
 
-config BR2_PKGSRC_PACKAGE_SECURITY_PY_OPENSSL
-	bool "py26-OpenSSL-0.12"
-	help
-	  Python interface to the OpenSSL library
-
-	  pyOpenSSL is a Python module that is a rather thin wrapper around (a
-	  subset of) the OpenSSL library.  A lot of the object methods do
-	  nothing more than call a corresponding function in the OpenSSL
-	  library.
-
-	  https://launchpad.net/pyopenssl/
-
-
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_AMKCRYPTO
-	bool "py26-amkCrypto-2.0.1nb4"
+	bool "py26-amkCrypto-2.0.1nb5"
 	help
 	  Cryptographic and hash functions for Python
 
@@ -4808,7 +4836,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PY_ASN1
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_CRACK
-	bool "py26-crack-0.01nb1"
+	bool "py26-crack-0.01nb2"
 	help
 	  Python interface to cracklib
 
@@ -4820,7 +4848,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PY_CRACK
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_CRYPTKIT
-	bool "py26-cryptkit-0.9nb1"
+	bool "py26-cryptkit-0.9nb2"
 	help
 	  Python Cryptographic Toolkit
 
@@ -4844,7 +4872,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PY_CRYPTKIT
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_CRYPTO
-	bool "py26-crypto-2.3"
+	bool "py26-crypto-2.4.1"
 	help
 	  Cryptographic and hash functions for Python
 
@@ -4883,7 +4911,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PY_DENYHOSTS
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_GNUPG
-	bool "py26-gnupg-0.3.2nb1"
+	bool "py26-gnupg-0.3.2nb2"
 	help
 	  Python module for GnuPG interface
 
@@ -4944,13 +4972,13 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PY_M2CRYPTO
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_MCRYPT
-	bool "py26-mcrypt-1.1nb1"
+	bool "py26-mcrypt-1.1nb2"
 	help
 	  Python interface to mcrypt library
 
 	  Python interface to mcrypt library.
 
-	  http://sourceforge.net/projects/python-mcrypt/
+	  http://labix.org/python-mcrypt
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_OAUTH
@@ -5014,7 +5042,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PY_SMBPASSWD
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PY_TLSLITE
-	bool "py26-tlslite-0.3.8"
+	bool "py26-tlslite-0.3.8nb1"
 	help
 	  SSL 3.0, TLS 1.0, and TLS 1.1 in Python
 
@@ -5040,7 +5068,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PY_XMLSEC
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_PYCA
-	bool "pyca-0.6.6.20031021nb3"
+	bool "pyca-0.6.6.20031118"
 	help
 	  Administration tools for X.509/PKIX CA
 
@@ -5054,7 +5082,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_PYCA
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_QCA
-	bool "qca-1.0nb7"
+	bool "qca-1.0nb8"
 	help
 	  Cross-platform crypto API for QT
 
@@ -5079,7 +5107,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_QCA
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_QCA_TLS
-	bool "qca-tls-1.0nb9"
+	bool "qca-tls-1.0nb10"
 	help
 	  Cross-platform crypto API for QT - TLS plugin
 
@@ -5104,7 +5132,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_QCA_TLS
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_QCA2
-	bool "qca2-2.0.3nb2"
+	bool "qca2-2.0.3nb3"
 	help
 	  Cross-platform crypto API for QT
 
@@ -5128,8 +5156,34 @@ config BR2_PKGSRC_PACKAGE_SECURITY_QCA2
 	  http://delta.affinix.com/qca/
 
 
+config BR2_PKGSRC_PACKAGE_SECURITY_QCA2_GNUPG
+	bool "qca2-gnupg-2.0.0beta3nb1"
+	help
+	  Cross-platform crypto API for QT - GnuPG plugin
+
+	  Taking a hint from the similarly-named Java Cryptography Architecture,
+	  QCA aims to provide a straightforward and cross-platform crypto
+	  API, using Qt datatypes and conventions. QCA separates the API from
+	  the implementation, using plugins known as Providers. The advantage
+	  of this model is to allow applications to avoid linking to or
+	  explicitly depending on any particular cryptographic library. This
+	  allows one to easily change or upgrade crypto implementations
+	  without even needing to recompile the application. QCA should work
+	  everywhere Qt does, including Windows/Unix/MacOSX.
+	  
+	  Capabilities:
+	  TLS, CMS, X.509, RSA, DSA, Diffie-Hellman, PKCS#7, PKCS#12, SHA0,
+	  SHA1, SHA224, SHA256, SHA384, SHA512, MD2, MD4, MD5, RIPEMD160,
+	  Blowfish, DES, 3DES, AES128, AES192, AES256, CAST5, HMAC(SHA1, MD5,
+	  RIPEMD160), PBKDF1(MD2, SHA1), PBKDF2(SHA1)
+	  
+	  This is the GnuPG plugin.
+
+	  http://delta.affinix.com/qca/
+
+
 config BR2_PKGSRC_PACKAGE_SECURITY_QCA2_OSSL
-	bool "qca2-ossl-2.0.0beta3nb11"
+	bool "qca2-ossl-2.0.0beta3nb13"
 	help
 	  Cross-platform crypto API for QT - OpenSSL plugin
 
@@ -5434,11 +5488,11 @@ config BR2_PKGSRC_PACKAGE_SECURITY_RUBY_TCPWRAP
 
 	  ruby-tcpwrap -- TCP wrappers library for Ruby.
 
-	  http://rubyforge.org/projects/net-ssh/
+	  http://github.com/tofumatt/soauth
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_RUBY_TWITTER_OAUTH
-	bool "ruby19-twitter_oauth-0.4.3"
+	bool "ruby19-twitter_oauth-0.4.3nb1"
 	help
 	  Ruby client for the Twitter API using OAuth
 
@@ -5485,7 +5539,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_SCANSSH
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_SEAHORSE
-	bool "seahorse-2.32.0nb4"
+	bool "seahorse-2.32.0nb5"
 	help
 	  GnuPG front end and bonobo component for GNOME
 
@@ -5504,7 +5558,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_SEAHORSE
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_SEAHORSE_PLUGINS
-	bool "seahorse-plugins-2.30.1nb4"
+	bool "seahorse-plugins-2.30.1nb5"
 	help
 	  Plugins for the GnuPG front end and bonobo component for GNOME
 
@@ -5659,7 +5713,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_SNOW
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_SOFTHSM
-	bool "softhsm-1.3.0"
+	bool "softhsm-1.3.0nb1"
 	help
 	  Cryptographic store accessible through a PKCS\
 
@@ -5741,7 +5795,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_SSH_IP_TUNNEL
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_SSH2
-	bool "ssh2-3.2.9.1nb7"
+	bool "ssh2-3.2.9.1nb8"
 	help
 	  Secure Shell client and server for V.2 SSH protocol
 
@@ -5885,7 +5939,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_STEGTUNNEL
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_STUNNEL
-	bool "stunnel-4.42"
+	bool "stunnel-4.50"
 	help
 	  Universal SSL tunnel
 
@@ -5903,7 +5957,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_STUNNEL
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_SUDO
-	bool "sudo-1.7.7"
+	bool "sudo-1.7.8p1nb1"
 	help
 	  Allow others to run commands as root
 
@@ -6092,7 +6146,7 @@ config BR2_PKGSRC_PACKAGE_SECURITY_ZEBEDEE
 
 
 config BR2_PKGSRC_PACKAGE_SECURITY_ZKT
-	bool "zkt-1.0"
+	bool "zkt-1.0nb1"
 	help
 	  DNSSEC Zone Key Tool
 

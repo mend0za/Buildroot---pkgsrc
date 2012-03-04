@@ -249,7 +249,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_ATARI800
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_BLINKENSIM
-	bool "blinkensim-2.2nb11"
+	bool "blinkensim-2.2nb12"
 	help
 	  Blinkenlights graphics simulator
 
@@ -262,7 +262,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_BLINKENSIM
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_BOCHS
-	bool "bochs-2.4.6nb1"
+	bool "bochs-2.4.6nb2"
 	help
 	  IA32 and AMD64 PC emulator
 
@@ -290,6 +290,18 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_CKMAME
 	  files.
 
 	  http://www.nih.at/ckmame/
+
+
+config BR2_PKGSRC_PACKAGE_EMULATORS_CMDPACK
+	bool "cmdpack-1.02"
+	help
+	  Neill Corlett's command line tools for emulation
+
+	  Collection of tools written by Neill Corlett.
+	  
+	  Includes bin2iso, bincomp, cdpatch, ecm, uips, and many others.
+
+	  http://www.neillcorlett.com/cmdpack/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_COMPAT12
@@ -454,7 +466,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_CYGWIN_ESOUND
 	  ability for Interix applications to output sound via the libesd client
 	  side library (audio/esound).
 
-	  http://www.NetBSD.org/releases/formal-1.4/index.html
+	  http://www.NetBSD.org/releases/formal-1.3/index.html
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_CYGWIN_LIB
@@ -599,7 +611,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_DYNAMIPS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_E_UAE
-	bool "e-uae-0.8.28nb9"
+	bool "e-uae-0.8.28nb10"
 	help
 	  Enhanced Ubiquitous Amiga Emulator
 
@@ -681,7 +693,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_FREEBSD_LIB
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_FUSE
-	bool "fuse-1.0.0.1nb1"
+	bool "fuse-1.0.0.1a"
 	help
 	  ZX Spectrum Emulator
 
@@ -715,7 +727,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_FUSE_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GAMBATTE
-	bool "gambatte-0.4.1nb5"
+	bool "gambatte-0.4.1nb6"
 	help
 	  Game Boy Color emulator
 
@@ -771,7 +783,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GENERATOR
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GENERATOR_CBIERE
-	bool "generator-cbiere-0.35r4nb1"
+	bool "generator-cbiere-0.35r4nb2"
 	help
 	  
 
@@ -800,7 +812,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GENERATOR_CBIERE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GENS
-	bool "gens-2.12rc3nb15"
+	bool "gens-2.12rc3nb16"
 	help
 	  Sega Genesis emulator with Sega CD support
 
@@ -848,27 +860,27 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GNUBOY_SDL
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM
-	bool "gpsim-0.21.11nb7"
+	bool "gpsim-0.21.11nb8"
 	help
 	  PIC emulator with X interface
 
 	  PIC simulator that supports X, stimulii, and modules
 
-	  http://www.dattalo.com/gnupic/gpsim.html
+	  http://gpsim.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_DEVEL
-	bool "gpsim-20050905nb11"
+	bool "gpsim-20050905nb12"
 	help
 	  PIC emulator with X interface
 
 	  PIC simulator that supports X, stimulii, and modules
 
-	  http://www.dattalo.com/gnupic/gpsim.html
+	  http://gpsim.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_OSCILLOSCOPE
-	bool "gpsim-oscilloscope-0.1.2nb9"
+	bool "gpsim-oscilloscope-0.1.2nb10"
 	help
 	  Oscilloscope module for gpsim
 
@@ -881,7 +893,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_OSCILLOSCOPE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_PTYUSART
-	bool "gpsim-ptyusart-0.3.2nb9"
+	bool "gpsim-ptyusart-0.3.2nb10"
 	help
 	  Pseudo-tty module for gpsim
 
@@ -1044,7 +1056,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_KEGS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_KENIGMA
-	bool "kenigma-1.2.1nb13"
+	bool "kenigma-1.2.1nb14"
 	help
 	  Replica of the German enigma code machine used in WW2
 
@@ -1109,7 +1121,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_MAKEPPF
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_MAME
-	bool "mame-0.143"
+	bool "mame-0.144"
 	help
 	  Multiple Arcade Machine Emulator
 
@@ -1151,7 +1163,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_MEDNAFEN
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_MESS
-	bool "mess-0.143"
+	bool "mess-0.144"
 	help
 	  Multi Emulator Super System
 
@@ -1196,7 +1208,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_MMIX
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_NESTOPIA
-	bool "nestopia-1.40hnb6"
+	bool "nestopia-1.40hnb7"
 	help
 	  Portable, very accurate NES emulator with UNIF support
 
@@ -1341,7 +1353,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_OPENMSX
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_OR1KSIM
-	bool "or1ksim-0.2.0rc2"
+	bool "or1ksim-0.2.0rc2nb1"
 	help
 	  OpenRISC emulator
 
@@ -1468,7 +1480,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_PEARPC
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_QEMU
-	bool "qemu-0.15.0nb1"
+	bool "qemu-0.15.1"
 	help
 	  CPU emulator using dynamic translation
 
@@ -1501,7 +1513,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_RAINE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SIMH
-	bool "simh-3.8.1nb1"
+	bool "simh-3.8.1nb2"
 	help
 	  Bob Supnik's historical computer simulator
 
@@ -1517,7 +1529,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SIMH
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SIMULAVR
-	bool "simulavr-0.1.2.1nb3"
+	bool "simulavr-0.1.2.1nb4"
 	help
 	  Simulator for Atmel AVR microcontrollers
 
@@ -1606,7 +1618,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SNES9X
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SNES9X_GTK
-	bool "snes9x-gtk-1.53.81"
+	bool "snes9x-gtk-1.53.81nb1"
 	help
 	  SNES emulator with GTK frontend
 
@@ -1705,7 +1717,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_BASE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_BASE
-	bool "suse32_base-11.3nb5"
+	bool "suse32_base-11.3nb8"
 	help
 	  Linux 32-bit compatibility package
 
@@ -1777,7 +1789,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_FREETYPE2
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_FREETYPE2
-	bool "suse32_freetype2-11.3nb3"
+	bool "suse32_freetype2-11.3nb4"
 	help
 	  Linux 32-bit compatibility package for freetype-2.x
 
@@ -1849,7 +1861,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_KRB5
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_KRB5
-	bool "suse32_krb5-11.3nb3"
+	bool "suse32_krb5-11.3nb4"
 	help
 	  Linux 32-bit compatibility package for kerberos libraries
 
@@ -2029,7 +2041,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_OPENSSL
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_OPENSSL
-	bool "suse32_openssl-11.3nb4"
+	bool "suse32_openssl-11.3nb5"
 	help
 	  Linux 32-bit compatibility package for OpenSSL
 
@@ -2047,7 +2059,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_QT3
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_QT4
-	bool "suse32_qt4-11.3"
+	bool "suse32_qt4-11.3nb1"
 	help
 	  Linux 32-bit compatibility package for QT4
 
@@ -2194,7 +2206,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_BASE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_BASE
-	bool "suse_base-11.3nb5"
+	bool "suse_base-11.3nb8"
 	help
 	  Linux compatibility package
 
@@ -2314,7 +2326,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_FREETYPE2
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_FREETYPE2
-	bool "suse_freetype2-11.3nb3"
+	bool "suse_freetype2-11.3nb4"
 	help
 	  Linux compatibility package for freetype-2.x
 
@@ -2434,7 +2446,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_KRB5
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_KRB5
-	bool "suse_krb5-11.3nb3"
+	bool "suse_krb5-11.3nb4"
 	help
 	  Linux compatibility package for kerberos libraries
 
@@ -2732,7 +2744,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_OPENSSL
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_OPENSSL
-	bool "suse_openssl-11.3nb4"
+	bool "suse_openssl-11.3nb5"
 	help
 	  Linux compatibility package for OpenSSL
 
@@ -2762,7 +2774,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_QT3
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_QT4
-	bool "suse_qt4-11.3"
+	bool "suse_qt4-11.3nb1"
 	help
 	  Linux compatibility package for QT4
 
@@ -2908,7 +2920,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SWARM
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_TME
-	bool "tme-0.8nb5"
+	bool "tme-0.8nb6"
 	help
 	  The Machine Emulator
 
@@ -2962,7 +2974,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_TWIN
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_UAE
-	bool "uae-0.8.25nb9"
+	bool "uae-0.8.25nb10"
 	help
 	  The UAE Amiga Emulator
 
@@ -3003,15 +3015,6 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_UCON64
 	  http://ucon64.sourceforge.net/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_UIPS
-	bool "uips-1.0"
-	help
-	  IPS patcher with v2 support
-
-
-	  http://www.neillcorlett.com/uips/
-
-
 config BR2_PKGSRC_PACKAGE_EMULATORS_VBA
 	bool "vba-1.7.2nb4"
 	help
@@ -3023,7 +3026,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_VBA
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_VICE
-	bool "vice-2.3nb1"
+	bool "vice-2.3nb3"
 	help
 	  Emulator for C64, C128, CBM-II, PET, VIC20, Plus4 and C16
 
@@ -3060,7 +3063,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_VMIPS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_WINE
-	bool "wine-1.2.3"
+	bool "wine-1.2.3nb1"
 	help
 	  Free implementation of Windows on Unix
 
@@ -3075,7 +3078,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_WINE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_WINE_DEVEL
-	bool "wine-1.3.26"
+	bool "wine-1.3.26nb1"
 	help
 	  Free implementation of Windows on Unix
 
@@ -3150,7 +3153,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_XHOMER
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_XM7
-	bool "xm7-1010snb1"
+	bool "xm7-1020s"
 	help
 	  X11-based FM-7 emulator
 
@@ -3163,7 +3166,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_XM7
 	  it to run FM-7 software on it.  But it'd be rather difficult
 	  in these days.
 
-	  http://www.ipc-tokai.or.jp/~ytanaka/fm7/xm7.shtml
+	  http://yohkai.no-ip.info/fm7/XM7.htm
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_XTRS
@@ -3204,7 +3207,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_XYAME
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_YABAUSE
-	bool "yabause-0.9.10nb5"
+	bool "yabause-0.9.11.1"
 	help
 	  Sega Saturn system emulator
 

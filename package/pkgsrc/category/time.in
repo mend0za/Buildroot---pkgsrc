@@ -1,3 +1,23 @@
+config BR2_PKGSRC_PACKAGE_TIME_ABCLOCK
+	bool "abclock-1.0d"
+	help
+	  Analogue Bitmap Clock
+
+	  Digital clocks are nice for telling exactly what time it is, but, unlike an
+	  analogue clock, they don't give a spatial representation of time. They don't
+	  show where time is coming from or going to.
+	  
+	  On the other hand, a bitmap representation of a mechanical clock doesn't tell
+	  time very accurately if the bitmap is very small. And curves and oblique lines
+	  don't look very nice in a small, low-resolution bitmap.
+	  
+	  So, this is something different: an analogue clock that isn't tied to the
+	  design of the mechanical clock, but instead uses the natural properties of
+	  bitmaps: straight lines and rectangles.
+
+	  http://odur.let.rug.nl/~kleiweg/abclock/
+
+
 config BR2_PKGSRC_PACKAGE_TIME_ANACRON
 	bool "anacron-2.3nb2"
 	help
@@ -70,7 +90,7 @@ config BR2_PKGSRC_PACKAGE_TIME_BBDATE
 
 
 config BR2_PKGSRC_PACKAGE_TIME_CAIRO_CLOCK
-	bool "cairo-clock-0.3.3nb11"
+	bool "cairo-clock-0.3.3nb12"
 	help
 	  Analog clock drawn with vector-graphics
 
@@ -149,7 +169,7 @@ config BR2_PKGSRC_PACKAGE_TIME_CARDBOARD_SCHEDULE
 
 
 config BR2_PKGSRC_PACKAGE_TIME_CATCLOCK
-	bool "catclock-0.0nb5"
+	bool "catclock-0.0nb6"
 	help
 	  Variant of the MIT xclock with a "cat" mode
 
@@ -233,7 +253,7 @@ config BR2_PKGSRC_PACKAGE_TIME_ETM
 
 
 config BR2_PKGSRC_PACKAGE_TIME_EVOLUTION_WEBCAL
-	bool "evolution-webcal-2.32.0nb3"
+	bool "evolution-webcal-2.32.0nb4"
 	help
 	  GNOME URL handler for web-published iCal calendar files
 
@@ -245,7 +265,7 @@ config BR2_PKGSRC_PACKAGE_TIME_EVOLUTION_WEBCAL
 
 
 config BR2_PKGSRC_PACKAGE_TIME_GCAL
-	bool "gcal-3.6nb1"
+	bool "gcal-3.6.1"
 	help
 	  GNU version of the standard calendar utility
 
@@ -264,7 +284,7 @@ config BR2_PKGSRC_PACKAGE_TIME_GCAL
 
 
 config BR2_PKGSRC_PACKAGE_TIME_GCHORE
-	bool "gchore-1.0nb9"
+	bool "gchore-1.0nb10"
 	help
 	  Chore reminder tool with gtk UI
 
@@ -276,7 +296,7 @@ config BR2_PKGSRC_PACKAGE_TIME_GCHORE
 
 
 config BR2_PKGSRC_PACKAGE_TIME_GDESKCAL
-	bool "gdeskcal-0.57.1nb11"
+	bool "gdeskcal-0.57.1nb12"
 	help
 	  Desktop calendar
 
@@ -311,7 +331,7 @@ config BR2_PKGSRC_PACKAGE_TIME_GLOBE
 
 
 config BR2_PKGSRC_PACKAGE_TIME_GNOTIME
-	bool "gnotime-2.3.0nb12"
+	bool "gnotime-2.3.0nb13"
 	help
 	  Time tracker for GNOME2
 
@@ -364,7 +384,7 @@ config BR2_PKGSRC_PACKAGE_TIME_GRDC
 
 
 config BR2_PKGSRC_PACKAGE_TIME_GTODO
-	bool "gtodo-0.14nb20"
+	bool "gtodo-0.14nb21"
 	help
 	  To-do list manager for the GNOME desktop
 
@@ -375,7 +395,7 @@ config BR2_PKGSRC_PACKAGE_TIME_GTODO
 
 
 config BR2_PKGSRC_PACKAGE_TIME_GTODO_APPLET
-	bool "gtodo-applet-0.1nb25"
+	bool "gtodo-applet-0.1nb26"
 	help
 	  GNOME applet for the gtodo application
 
@@ -389,7 +409,7 @@ config BR2_PKGSRC_PACKAGE_TIME_GTODO_APPLET
 
 
 config BR2_PKGSRC_PACKAGE_TIME_HAMSTER_APPLET
-	bool "hamster-applet-2.28.1nb7"
+	bool "hamster-applet-2.28.1nb8"
 	help
 	  Time tracking applet for GNOME
 
@@ -541,7 +561,7 @@ config BR2_PKGSRC_PACKAGE_TIME_LOGTIME
 
 
 config BR2_PKGSRC_PACKAGE_TIME_OCAML_CALENDAR
-	bool "ocaml-calendar-2.0.4"
+	bool "ocaml-calendar-2.0.4nb1"
 	help
 	  OCaml library managing dates and times
 
@@ -915,7 +935,7 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_STRPTIME
 
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_FORMAT_W3CDTF
-	bool "p5-DateTime-Format-W3CDTF-0.05nb2"
+	bool "p5-DateTime-Format-W3CDTF-0.06"
 	help
 	  Convert between DateTime and W3CDTF date/time format
 
@@ -973,7 +993,7 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_PRECISE
 
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_DATETIME_SET
-	bool "p5-DateTime-Set-0.28nb2"
+	bool "p5-DateTime-Set-0.31"
 	help
 	  Perl module for date/time sets and ranges
 
@@ -1267,7 +1287,7 @@ config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_FORMAT_XS
 
 
 config BR2_PKGSRC_PACKAGE_TIME_P5_TIME_HIRES
-	bool "p5-Time-HiRes-1.9721nb2"
+	bool "p5-Time-HiRes-1.9724"
 	help
 	  Perl5 module for high resolution time, sleep, and alarm
 
@@ -1436,7 +1456,7 @@ config BR2_PKGSRC_PACKAGE_TIME_PCLOCK
 	  window manager (also runs fine on any other window manager which supports
 	  dock apps, such as PWM).  Any 64x64 pixmap may be used as a background.
 
-	  http://pear.php.net/package/Date
+	  http://ultraviolet.rubyforge.org/
 
 
 config BR2_PKGSRC_PACKAGE_TIME_PHOON
@@ -1489,7 +1509,7 @@ config BR2_PKGSRC_PACKAGE_TIME_PEAR_DATE
 
 
 config BR2_PKGSRC_PACKAGE_TIME_PLAN
-	bool "plan-1.9"
+	bool "plan-1.9nb1"
 	help
 	  Schedule planner based on X/Motif
 
@@ -1522,7 +1542,7 @@ config BR2_PKGSRC_PACKAGE_TIME_PLAN
 
 
 config BR2_PKGSRC_PACKAGE_TIME_PLANNER
-	bool "planner-0.14.4nb11"
+	bool "planner-0.14.4nb12"
 	help
 	  Project management tool for the GNOME desktop
 
@@ -1568,7 +1588,7 @@ config BR2_PKGSRC_PACKAGE_TIME_PROJCLOCK
 
 
 config BR2_PKGSRC_PACKAGE_TIME_PTIMETRACKER
-	bool "ptimetracker-1.7.3nb7"
+	bool "ptimetracker-1.7.3nb8"
 	help
 	  Keep track of the time spent on projects
 
@@ -1719,7 +1739,7 @@ config BR2_PKGSRC_PACKAGE_TIME_REMIND
 
 
 config BR2_PKGSRC_PACKAGE_TIME_RSIBREAK
-	bool "rsibreak-0.10nb6"
+	bool "rsibreak-0.10nb7"
 	help
 	  RSI management tool
 
@@ -1740,7 +1760,7 @@ config BR2_PKGSRC_PACKAGE_TIME_RSIBREAK
 
 
 config BR2_PKGSRC_PACKAGE_TIME_RSIBREAK_KDE3
-	bool "rsibreak-0.8.0nb10"
+	bool "rsibreak-0.8.0nb11"
 	help
 	  RSI management tool
 
@@ -1761,7 +1781,7 @@ config BR2_PKGSRC_PACKAGE_TIME_RSIBREAK_KDE3
 
 
 config BR2_PKGSRC_PACKAGE_TIME_RUBY_TZINFO
-	bool "ruby19-tzinfo-0.3.29"
+	bool "ruby19-tzinfo-0.3.31"
 	help
 	  Daylight-savings-aware timezone library
 
@@ -1844,7 +1864,7 @@ config BR2_PKGSRC_PACKAGE_TIME_TITRAX
 
 
 config BR2_PKGSRC_PACKAGE_TIME_VIXIE_CRON
-	bool "vixie-cron-4.1nb1"
+	bool "vixie-cron-4.1nb2"
 	help
 	  Execute and maintain scheduled commands
 
@@ -1956,7 +1976,7 @@ config BR2_PKGSRC_PACKAGE_TIME_WXREMIND
 
 
 config BR2_PKGSRC_PACKAGE_TIME_WYRD
-	bool "wyrd-1.4.1nb1"
+	bool "wyrd-1.4.1nb2"
 	help
 	  Text-based front-end to Remind
 
@@ -2087,7 +2107,7 @@ config BR2_PKGSRC_PACKAGE_TIME_XDKCAL
 
 
 config BR2_PKGSRC_PACKAGE_TIME_XFCE4_DATETIME_PLUGIN
-	bool "xfce4-datetime-plugin-0.6.1nb5"
+	bool "xfce4-datetime-plugin-0.6.1nb6"
 	help
 	  Xfce calendar plugin
 
@@ -2097,7 +2117,7 @@ config BR2_PKGSRC_PACKAGE_TIME_XFCE4_DATETIME_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_TIME_XFCE4_ORAGE
-	bool "xfce4-orage-4.6.1nb6"
+	bool "xfce4-orage-4.6.1nb7"
 	help
 	  Xfce time managing application
 
@@ -2110,7 +2130,7 @@ config BR2_PKGSRC_PACKAGE_TIME_XFCE4_ORAGE
 
 
 config BR2_PKGSRC_PACKAGE_TIME_XFCE4_TIMER_PLUGIN
-	bool "xfce4-timer-plugin-0.5.1nb6"
+	bool "xfce4-timer-plugin-0.5.1nb7"
 	help
 	  Xfce4 timer plugin
 
@@ -2120,7 +2140,7 @@ config BR2_PKGSRC_PACKAGE_TIME_XFCE4_TIMER_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_TIME_XONCLOCK
-	bool "xonclock-0.0.9.4"
+	bool "xonclock-0.0.9.4nb1"
 	help
 	  Analog clock
 

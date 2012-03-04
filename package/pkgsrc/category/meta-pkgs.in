@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_META_PKGS_BOOST
-	bool "boost-1.46.1"
+	bool "boost-1.47.0"
 	help
 	  Free, peer-reviewed portable C++ source libraries
 
@@ -322,7 +322,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_FONTS
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_LIBS
-	bool "modular-xorg-libs-1.0nb2"
+	bool "modular-xorg-libs-1.0nb3"
 	help
 	  Modular Xorg library meta-package
 
@@ -501,7 +501,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_PY_GNOME_BINDINGS
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_RUBY_GNOME2
-	bool "ruby19-gnome2-1.0.0"
+	bool "ruby19-gnome2-1.0.3"
 	help
 	  Set of Ruby language bindings for GNOME2
 
@@ -583,7 +583,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_WINDOWMAKER_DESKTOP
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_XFCE4
-	bool "xfce4-4.6.1nb9"
+	bool "xfce4-4.6.1nb10"
 	help
 	  Xfce
 
@@ -601,7 +601,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_XFCE4
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_XFCE4_EXTRAS
-	bool "xfce4-extras-4.6.1nb12"
+	bool "xfce4-extras-4.6.1nb13"
 	help
 	  Xfce extras
 

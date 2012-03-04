@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_MATH_R
-	bool "R-2.11.1nb3"
+	bool "R-2.14.0nb1"
 	help
 	  Statistical language for data analysis and graphics
 
@@ -19,7 +19,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_CGIWITHR
-	bool "R-CGIwithR-0.73.0"
+	bool "R-CGIwithR-0.73.0nb1"
 	help
 	  Facilities for the use of R to write CGI scripts
 
@@ -232,7 +232,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R_CLIM.PACT
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_COMBINAT
-	bool "R-combinat-0.0.7"
+	bool "R-combinat-0.0.8"
 	help
 	  Routines for combinatorics
 
@@ -289,7 +289,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R_GENETICS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_GEOR
-	bool "R-geoR-1.6.27"
+	bool "R-geoR-1.6.36"
 	help
 	  Geostatistical analysis including likelihood-based and Bayesian methods
 
@@ -447,7 +447,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R_SHAPEFILES
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_SP
-	bool "R-sp-0.9.51"
+	bool "R-sp-0.9.91"
 	help
 	  classes and methods for spatial data
 
@@ -494,7 +494,7 @@ config BR2_PKGSRC_PACKAGE_MATH_TINYSVM
 
 
 config BR2_PKGSRC_PACKAGE_MATH_AAMATH
-	bool "aamath-0.3nb1"
+	bool "aamath-0.3nb2"
 	help
 	  ASCII art mathematics
 
@@ -707,7 +707,7 @@ config BR2_PKGSRC_PACKAGE_MATH_CALC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_CALCOO
-	bool "calcoo-1.3.18nb6"
+	bool "calcoo-1.3.18nb7"
 	help
 	  Scientific calculator
 
@@ -759,7 +759,7 @@ config BR2_PKGSRC_PACKAGE_MATH_CAPC_CALC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_CLISP_PARI
-	bool "clisp-pari-2.49"
+	bool "clisp-pari-2.49nb1"
 	help
 	  CLISP pari module
 
@@ -769,7 +769,7 @@ config BR2_PKGSRC_PACKAGE_MATH_CLISP_PARI
 
 
 config BR2_PKGSRC_PACKAGE_MATH_CLN
-	bool "cln-1.3.2"
+	bool "cln-1.3.2nb1"
 	help
 	  CLN Class Library for Numbers
 
@@ -976,7 +976,7 @@ config BR2_PKGSRC_PACKAGE_MATH_EUKLEIDES
 
 
 config BR2_PKGSRC_PACKAGE_MATH_EULER
-	bool "euler-1.61nb6"
+	bool "euler-1.61nb7"
 	help
 	  Interactive numerical analysis and graphics program
 
@@ -1009,7 +1009,7 @@ config BR2_PKGSRC_PACKAGE_MATH_EULER
 
 
 config BR2_PKGSRC_PACKAGE_MATH_EXTCALC
-	bool "extcalc-0.9.3nb5"
+	bool "extcalc-0.9.3nb6"
 	help
 	  Scientific graphic calculator
 
@@ -1095,7 +1095,7 @@ config BR2_PKGSRC_PACKAGE_MATH_FGMP
 
 
 config BR2_PKGSRC_PACKAGE_MATH_FITYK
-	bool "fityk-0.9.7nb1"
+	bool "fityk-0.9.7nb3"
 	help
 	  Peak fitting software
 
@@ -1128,7 +1128,7 @@ config BR2_PKGSRC_PACKAGE_MATH_FRICAS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GALCULATOR
-	bool "galculator-1.3.4nb6"
+	bool "galculator-1.3.4nb7"
 	help
 	  Desktop calculator with scientific / RPN modes
 
@@ -1161,7 +1161,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GAP
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GCALCTOOL
-	bool "gcalctool-5.32.2nb3"
+	bool "gcalctool-5.32.2nb4"
 	help
 	  Desktop calculator for GNOME
 
@@ -1195,7 +1195,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GEG
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GENIUS
-	bool "genius-1.0.14"
+	bool "genius-1.0.14nb1"
 	help
 	  Calculator and math tool
 
@@ -1206,7 +1206,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GENIUS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GLPK
-	bool "glpk-4.45"
+	bool "glpk-4.47"
 	help
 	  Library for solving linear programming problems
 
@@ -1236,7 +1236,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GLPK
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GNUMERIC110
-	bool "gnumeric-1.10.17"
+	bool "gnumeric-1.10.17nb1"
 	help
 	  Spreadsheet program from the GNOME project
 
@@ -1252,7 +1252,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GNUMERIC110
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GNUMERIC
-	bool "gnumeric-1.8.4nb15"
+	bool "gnumeric-1.8.4nb16"
 	help
 	  
 
@@ -1393,7 +1393,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GP_LAG
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GRACE
-	bool "grace-5.1.22nb5"
+	bool "grace-5.1.22nb6"
 	help
 	  GRaphing, Advanced Computation and Exploration of data
 
@@ -1444,7 +1444,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GRAPHOPT
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GRPN
-	bool "grpn-1.3.3"
+	bool "grpn-1.3.3nb1"
 	help
 	  
 
@@ -1478,7 +1478,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GSL
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GTKLIFE
-	bool "gtklife-5.1nb6"
+	bool "gtklife-5.1nb7"
 	help
 	  The game of life
 
@@ -1527,7 +1527,7 @@ config BR2_PKGSRC_PACKAGE_MATH_ITPP
 
 
 config BR2_PKGSRC_PACKAGE_MATH_KSEG
-	bool "kseg-0.403nb2"
+	bool "kseg-0.403nb3"
 	help
 	  Interactive geometry program
 
@@ -1902,7 +1902,7 @@ config BR2_PKGSRC_PACKAGE_MATH_NICKLE
 
 
 config BR2_PKGSRC_PACKAGE_MATH_NTL
-	bool "ntl-5.3.1nb2"
+	bool "ntl-5.5.2"
 	help
 	  C++ library for doing number theory
 
@@ -1933,7 +1933,7 @@ config BR2_PKGSRC_PACKAGE_MATH_NTL
 
 
 config BR2_PKGSRC_PACKAGE_MATH_OCTAVE
-	bool "octave-3.2.4nb2"
+	bool "octave-3.4.3"
 	help
 	  High-level language, intended for numerical computations
 
@@ -2110,7 +2110,7 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BASE85
 	  This module handles numbers in base 85, via strings and Math::BigInt.
 	  For more information, read the module or rfc1924.txt.
 
-	  
+	  http://search.cpan.org/dist/Math-Base85/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BASECNV
@@ -2275,6 +2275,20 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM_MT
 	  http://search.cpan.org/dist/Math-Random-MT/
 
 
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM_MT_AUTO
+	bool "p5-Math-Random-MT-Auto-6.16"
+	help
+	  Auto-seeded Mersenne Twister PRNGs
+
+	  This module provides pseudorandom number generators (PRNGs) that are
+	  based on the Mersenne Twister algorithm.  There is a functional
+	  interface to a standalone PRNG, and an OO interface (based on the
+	  inside-out object model as implemented by the Object::InsideOut
+	  module) for generating multiple PRNG objects.
+
+	  http://search.cpan.org/dist/Math-Random-MT-Auto/
+
+
 config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM_MT_PERL
 	bool "p5-Math-Random-MT-Perl-1.06nb2"
 	help
@@ -2315,7 +2329,7 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_VECSTAT
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_NUMBER_COMPARE
-	bool "p5-Number-Compare-0.01nb4"
+	bool "p5-Number-Compare-0.03"
 	help
 	  Compiles a simple comparison to an anonymous subroutine
 
@@ -2333,7 +2347,7 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_NUMBER_LATIN
 	  A perl module for converting to a "lower-latin" / "upper-latin" numbering
 	  system, where 1-26 is a-z, 27 is aa, 53 is ba, et cetera.
 
-	  
+	  http://search.cpan.org/dist/Number-Latin
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_ROMAN
@@ -2390,7 +2404,7 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_SPREADSHEET_PARSEEXCEL
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_SPREADSHEET_READ
-	bool "p5-Spreadsheet-Read-0.43a"
+	bool "p5-Spreadsheet-Read-0.45"
 	help
 	  Perl 5 module to read the data from a spreadsheet
 
@@ -2542,7 +2556,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PRNG
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PSPP
-	bool "pspp-0.6.2nb6"
+	bool "pspp-0.6.2nb7"
 	help
 	  Program for statistical analysis of sampled data
 
@@ -2604,7 +2618,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_SCIENTIFIC_DOC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_NUMERIC
-	bool "py26-Numeric-24.2"
+	bool "py26-Numeric-24.2nb1"
 	help
 	  Adds multidimensional numeric arrays to Python
 
@@ -2739,7 +2753,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_NETWORKX
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_NUMARRAY
-	bool "py26-numarray-1.5.2"
+	bool "py26-numarray-1.5.2nb1"
 	help
 	  Array manipulation
 
@@ -2767,7 +2781,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_NUMEXPR
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_NUMPY
-	bool "py26-numpy-1.4.1nb1"
+	bool "py26-numpy-1.4.1nb2"
 	help
 	  Array processing for numbers, strings, records, and objects
 
@@ -2785,7 +2799,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_NUMPY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_PYTABLES
-	bool "py26-pytables-2.2.1"
+	bool "py26-pytables-2.2.1nb1"
 	help
 	  Database package for large amounts of data
 
@@ -2798,6 +2812,16 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_PYTABLES
 	  provides flexible indexed access on disk to anywhere in the data.
 
 	  http://www.pytables.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_ROMAN
+	bool "py26-roman-1.4.0"
+	help
+	  Integer to Roman numerals converter for Python
+
+	  This Python module provides methods for converting Integer from/to Roman.
+
+	  http://pypi.python.org/pypi/roman/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_RPY
@@ -2842,7 +2866,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_SYMPY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE
-	bool "qalculate-0.9.7nb1"
+	bool "qalculate-0.9.7nb2"
 	help
 	  
 
@@ -2855,7 +2879,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_BASES
-	bool "qalculate-bases-0.9.4nb7"
+	bool "qalculate-bases-0.9.4nb9"
 	help
 	  Utility for conversion between number bases using Qalculate
 
@@ -2869,7 +2893,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_BASES
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_CURRENCY
-	bool "qalculate-currency-0.9.4nb7"
+	bool "qalculate-currency-0.9.4nb9"
 	help
 	  Utility for conversion between currencies using Qalculate
 
@@ -2885,7 +2909,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_CURRENCY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_GTK
-	bool "qalculate-gtk-0.9.7nb6"
+	bool "qalculate-gtk-0.9.7nb8"
 	help
 	  
 
@@ -2900,7 +2924,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_GTK
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_KDE
-	bool "qalculate-kde-0.9.5nb11"
+	bool "qalculate-kde-0.9.5nb13"
 	help
 	  
 
@@ -2915,7 +2939,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_KDE
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_UNITS
-	bool "qalculate-units-0.9.4nb7"
+	bool "qalculate-units-0.9.4nb9"
 	help
 	  Utility for conversion between units using Qalculate
 
@@ -2929,7 +2953,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_UNITS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QHULL
-	bool "qhull-2003.1"
+	bool "qhull-2003.1nb1"
 	help
 	  Computing the convex hull
 
@@ -3008,7 +3032,7 @@ config BR2_PKGSRC_PACKAGE_MATH_SC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_SCILAB
-	bool "scilab-4.1nb4"
+	bool "scilab-4.1nb5"
 	help
 	  High-level scientific math programming environment with graphics
 
@@ -3067,7 +3091,7 @@ config BR2_PKGSRC_PACKAGE_MATH_SNNS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_SPEEDCRUNCH
-	bool "speedcrunch-0.10.1nb5"
+	bool "speedcrunch-0.10.1nb6"
 	help
 	  Calculator
 
@@ -3300,7 +3324,7 @@ config BR2_PKGSRC_PACKAGE_MATH_VISTA
 
 
 config BR2_PKGSRC_PACKAGE_MATH_WXMAXIMA
-	bool "wxMaxima-0.8.6nb4"
+	bool "wxMaxima-0.8.6nb5"
 	help
 	  Graphical UI for maxima
 
@@ -3433,7 +3457,7 @@ config BR2_PKGSRC_PACKAGE_MATH_XLISPSTAT
 
 
 config BR2_PKGSRC_PACKAGE_MATH_XMGR
-	bool "xmgr-4.1.2nb5"
+	bool "xmgr-4.1.2nb6"
 	help
 	  Powerful XY plotting tool for workstations or X-terminals using X
 
@@ -3455,7 +3479,7 @@ config BR2_PKGSRC_PACKAGE_MATH_XMGR
 
 
 config BR2_PKGSRC_PACKAGE_MATH_XYLIB
-	bool "xylib-0.8"
+	bool "xylib-0.8nb1"
 	help
 	  Library for reading powder diffraction data
 

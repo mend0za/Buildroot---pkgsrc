@@ -280,7 +280,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_FCRACKZIP
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_FILE_ROLLER
-	bool "file-roller-2.32.2"
+	bool "file-roller-2.32.2nb1"
 	help
 	  Front-end to archiving programs like tar and zip
 
@@ -342,7 +342,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_GCPIO
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_GSHARUTILS
-	bool "gsharutils-4.2.1nb11"
+	bool "gsharutils-4.11.1"
 	help
 	  Allow packing and unpacking of shell archives
 
@@ -356,6 +356,17 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_GSHARUTILS
 	  bringing `shar' under the terms of the GNU General Public License.
 
 	  http://www.gnu.org/software/sharutils/sharutils.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LCAB
+	bool "lcab-1.0b12"
+	help
+	  
+
+	  LCAB is a small program that creates a MS Cabinet (.CAB) file from
+	  a set of input files.
+
+	  http://ohnopub.net/~ohnobinki/lcab
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR
@@ -388,7 +399,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR_BASE
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR_INFO
-	bool "gtar-info-1.26"
+	bool "gtar-info-1.26nb1"
 	help
 	  Info format documentation for the GNU tape archiver
 
@@ -518,17 +529,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_LBRATE
 	  http://rus.members.beeb.net/lbrate.html
 
 
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LCAB
-	bool "lcab-1.0b12"
-	help
-	  
-
-	  LCAB is a small program that creates a MS Cabinet (.CAB) file from
-	  a set of input files.
-
-	  http://ohnopub.net/~ohnobinki/lcab
-
-
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_LHA
 	bool "lha-114.9nb4"
 	help
@@ -552,7 +552,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_LHA
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBARCHIVE
-	bool "libarchive-2.8.4"
+	bool "libarchive-2.8.4nb1"
 	help
 	  Library to read/create different archive formats
 
@@ -615,7 +615,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBZIP
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZIP
-	bool "lzip-1.7"
+	bool "lzip-1.12"
 	help
 	  Lossless data compressor based on the LZMA algorithm
 
@@ -760,7 +760,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_NOMARCH
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_NULIB2
-	bool "nulib2-2.0.3"
+	bool "nulib2-2.0.3nb1"
 	help
 	  
 
@@ -775,7 +775,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_NULIB2
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_OCAML_ZIP
-	bool "ocaml-zip-1.03"
+	bool "ocaml-zip-1.03nb1"
 	help
 	  OCaml library to manipulate ZIP/GZIP/JAR archives
 
@@ -798,7 +798,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_ANY
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_TAR
-	bool "p5-Archive-Tar-1.76"
+	bool "p5-Archive-Tar-1.80"
 	help
 	  Perl5 module interface to manipulate tar files
 
@@ -1056,7 +1056,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_BZ2
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_LIBARCHIVE
-	bool "ruby19-libarchive-0.1.1nb1"
+	bool "ruby19-libarchive-0.1.1nb2"
 	help
 	  Ruby bindings for Libarchive
 
@@ -1067,8 +1067,21 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_LIBARCHIVE
 	  http://libarchive.rubyforge.org
 
 
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_XZ
+	bool "ruby19-xz-0.0.1"
+	help
+	  Ruby bindings for liblzma
+
+	  ruby-xz is a basic binding for liblzma that allows you to create and
+	  extract XZ-compressed archives.  It can cope with big files as well as
+	  small ones, but doesn't offer much of the possibilities liblzma itself
+	  has.
+
+	  https://github.com/Quintus/ruby-xz
+
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_ZIP
-	bool "ruby19-zip-0.9.4nb1"
+	bool "ruby19-zip-0.9.5"
 	help
 	  Ruby module for reading and writing zip files
 
@@ -1148,7 +1161,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_STAR
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_SZIP
-	bool "szip-2.1nb1"
+	bool "szip-2.1nb3"
 	help
 	  Extended-Rice lossless compression
 
@@ -1317,7 +1330,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNZIP
 	  be extracted, unzipsfx seeks itself under the name by which it was
 	  invoked and tests or extracts the contents of the appended archive.
 
-	  http://www.info-zip.org/pub/infozip/UnZip.html
+	  http://www.info-zip.org/UnZip.html
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNZOO
@@ -1430,7 +1443,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZIP
 	  called unzip (of course) which you should be able to find the same place
 	  you got zip.
 
-	  http://www.info-zip.org/pub/infozip/Zip.html
+	  http://www.info-zip.org/Zip.html
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZOO
@@ -1447,6 +1460,29 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZOO
 	  of fiz(1).
 
 	  
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZUTILS
+	bool "zutils-0.9"
+	help
+	  Utilities able to deal with any combination of compressed and non-compressed files
+
+	  Zutils is a collection of utilities able to deal with any combination
+	  of compressed and non-compressed files transparently. If any given
+	  file, including standard input, is compressed, its decompressed
+	  content is used. Compressed files are decompressed on the fly; no
+	  temporary files are created. These utilities are not wrapper scripts
+	  but safer and more efficient C++ programs. In particular the
+	  "--recursive" option is very efficient in those utilities supporting it.
+	  
+	  The provided utilities are:
+	  Zcat - Decompresses and copies files to standard output.
+	  Zcmp - Decompresses and compares two files byte by byte.
+	  Zdiff - Decompresses and compares two files line by line.
+	  Zgrep - Decompresses and searches files for a regular expression.
+	  Ztest - Tests integrity of compressed files.
+
+	  http://www.nongnu.org/zutils/zutils.html
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ZZIPLIB

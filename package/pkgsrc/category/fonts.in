@@ -16,7 +16,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_ANONYMOUSPRO
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_XFT2
-	bool "Xft2-2.1.7nb3"
+	bool "Xft2-2.1.7nb4"
 	help
 	  Library for configuring and customizing font access
 
@@ -276,7 +276,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_BAKOMA_FONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_BDFTOPCF
-	bool "bdftopcf-1.0.2"
+	bool "bdftopcf-1.0.2nb1"
 	help
 	  BDF to PCF font converter for X11
 
@@ -504,7 +504,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_DEJAVU_TTF
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_DROID_TTF
-	bool "droid-ttf-20100923"
+	bool "droid-ttf-20111115"
 	help
 	  The Droid fonts family from Ascender Corporation
 
@@ -519,15 +519,6 @@ config BR2_PKGSRC_PACKAGE_FONTS_DROID_TTF
 	  source, and fully customizable mobile platform.
 
 	  http://android.git.kernel.org/?p
-
-
-config BR2_PKGSRC_PACKAGE_FONTS_EC_FONTS_MFTRACED
-	bool "ec-fonts-mftraced-1.0.8nb6"
-	help
-	  EC PostScript Type1 fonts with TFMs for TeX
-
-
-	  http://lilypond.org/web/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_EFONT_UNICODE
@@ -553,7 +544,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_ENCODINGS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FNTSAMPLE
-	bool "fntsample-3.2"
+	bool "fntsample-3.2nb1"
 	help
 	  Make font samples, similar to Unicode charts, showing Unicode coverage
 
@@ -1041,7 +1032,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_XFREE86_TYPE1
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONTCONFIG
-	bool "fontconfig-2.8.0nb1"
+	bool "fontconfig-2.8.0nb3"
 	help
 	  Library for configuring and customizing font access
 
@@ -1074,7 +1065,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONTCONFIG
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONTFORGE
-	bool "fontforge-20110222"
+	bool "fontforge-20110222nb1"
 	help
 	  Postscript font editor
 
@@ -1115,7 +1106,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FREEFONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_GBDFED
-	bool "gbdfed-1.5nb6"
+	bool "gbdfed-1.5nb7"
 	help
 	  GTK-based BDF font editor
 
@@ -1273,7 +1264,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_GSFTOPKK
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_GUCHARMAP
-	bool "gucharmap-2.32.1nb2"
+	bool "gucharmap-2.32.1nb3"
 	help
 	  Unicode/ISO10646 character map and font viewer
 
@@ -1683,7 +1674,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_XG
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_LIBERATION_TTF
-	bool "liberation-ttf-1.06.0.20100721"
+	bool "liberation-ttf-1.07.1nb1"
 	help
 	  TrueType fonts from RedHat
 
@@ -1709,7 +1700,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_LIBFONTENC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_LINUX_LIBERTINE_TTF
-	bool "linux-libertine-ttf-2.1.0"
+	bool "linux-libertine-ttf-5.1.3"
 	help
 	  Free TrueType font family
 
@@ -1809,7 +1800,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_MKFONTALIAS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MKFONTDIR
-	bool "mkfontdir-1.0.5"
+	bool "mkfontdir-1.0.6"
 	help
 	  X11 Font Index Generator
 
@@ -1822,7 +1813,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_MKFONTDIR
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MKFONTSCALE
-	bool "mkfontscale-1.0.7"
+	bool "mkfontscale-1.0.9nb1"
 	help
 	  X11 Scalable Font Index Generator
 
@@ -1882,13 +1873,13 @@ config BR2_PKGSRC_PACKAGE_FONTS_MOTHANNA_TTF
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MOTOYA_FONTS
-	bool "motoya-fonts-20100921"
+	bool "motoya-fonts-20111115"
 	help
 	  Motoya L Cider W3 and L Mulberry W3 fonts
 
 	  Motoya fonts for Android handset display.
 
-	  http://android.git.kernel.org/?p
+	  http://source.android.com/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MOZILLA_FONTS
@@ -1948,7 +1939,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_NANUM_TTF
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_OTF2BDF
-	bool "otf2bdf-3.1"
+	bool "otf2bdf-3.1nb1"
 	help
 	  OpenType to BDF font converter
 
@@ -2027,7 +2018,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_P5_FONT_TTFMETRICS
 	  the access required was read-only. Last, I wanted a user friendly,
 	  higher level API to access TTF file.
 
-	  
+	  http://search.cpan.org/dist/Font-TTFMetrics/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_PCF2BDF
@@ -2095,7 +2086,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_PY_TTFQUERY
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_PY_FONTTOOLS
-	bool "py26-fonttools-2.2"
+	bool "py26-fonttools-2.3"
 	help
 	  Library for manipulating fonts
 
@@ -2128,14 +2119,24 @@ config BR2_PKGSRC_PACKAGE_FONTS_RICTY_TTF
 	  http://save.sys.t.u-tokyo.ac.jp/~yusa/fonts/ricty.html
 
 
+config BR2_PKGSRC_PACKAGE_FONTS_ROBOTO_FONTS
+	bool "roboto-fonts-20111115a"
+	help
+	  Roboto font family from Google's Android 4
+
+	  Roboto is Helvetica like sans-serif font family from Android 4.
+
+	  http://source.android.com/
+
+
 config BR2_PKGSRC_PACKAGE_FONTS_RUBY_TTFUNK
-	bool "ruby19-ttfunk-1.0.2"
+	bool "ruby19-ttfunk-1.0.3"
 	help
 	  TrueType Font Metrics Parser
 
 	  TTFunk is a TrueType font parser written in pure ruby.
 
-	  http://project.ktug.or.kr/ko.TeX/
+	  http://www.braintreepaymentsolutions.com/gateway
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_SGI_FONTS
@@ -2149,7 +2150,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_SGI_FONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_T1LIB
-	bool "t1lib-5.1.2nb3"
+	bool "t1lib-5.1.2nb4"
 	help
 	  Library for generating bitmaps from Adobe Type 1 fonts
 
@@ -2266,7 +2267,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_AE_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_AMSFONTS
-	bool "tex-amsfonts-3.0"
+	bool "tex-amsfonts-3.0nb2"
 	help
 	  TeX fonts from the American Mathematical Society
 
@@ -2294,7 +2295,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_AMSFONTS_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_ARPHIC
-	bool "tex-arphic-2.11"
+	bool "tex-arphic-2.11nb1"
 	help
 	  
 
@@ -2328,7 +2329,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_AVANTGAR
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_BERA
-	bool "tex-bera-2010"
+	bool "tex-bera-2010nb1"
 	help
 	  Bera fonts
 
@@ -2388,7 +2389,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_CHARTER_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM
-	bool "tex-cm-2009.15878"
+	bool "tex-cm-2009.15878nb1"
 	help
 	  Computer Modern fonts
 
@@ -2417,7 +2418,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_SUPER
-	bool "tex-cm-super-0.3.4"
+	bool "tex-cm-super-0.3.4nb1"
 	help
 	  CM-Super family of fonts
 
@@ -2441,8 +2442,36 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_SUPER_DOC
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_UNICODE
+	bool "tex-cm-unicode-0.7.0"
+	help
+	  Computer Modern Unicode font family
+
+	  Computer Modern Unicode fonts were converted from metafont sources using
+	  mftrace with autotrace backend and fontforge. Some characters in several
+	  fonts are copied from Blue Sky type 1 fonts released by AMS. Currently
+	  the fonts contain glyphs from Latin (Metafont ec, tc, vnr), Cyrillic
+	  (lh), Greek (cbgreek when available) code sets and IPA extensions (from
+	  tipa). This font set contains 33 fonts. This archive contains AFM, PFB
+	  and OTF versions; the OTF version of the Computer Modern Unicode fonts
+	  works with TeX engines that directly support OpenType features, such as
+	  XeTeX and LuaTeX.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_UNICODE_DOC
+	bool "tex-cm-unicode-doc-0.7.0"
+	help
+	  Documentation for tex-cm-unicode
+
+	  This is documentation for tex-cm-unicode.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_CMCYR
-	bool "tex-cmcyr-2009"
+	bool "tex-cmcyr-2009nb1"
 	help
 	  Computer Modern fonts with cyrillic extensions
 
@@ -2497,6 +2526,27 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_CMSD_DOC
 	  Documentation for tex-cmsd
 
 	  This is documentation for tex-cmsd.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CNS
+	bool "tex-cns-2011"
+	help
+	  CNS fonts for CJK LaTeX
+
+	  This package contains CNS bitmap fonts planes 1-7 and a Big 5 encoded
+	  font built up from CNS bitmap fonts planes 1-3.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CNS_DOC
+	bool "tex-cns-doc-2011"
+	help
+	  Documentation for tex-cns
+
+	  This is documentation for tex-cns.
 
 	  http://www.tug.org/texlive/
 
@@ -2668,7 +2718,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_EURO_CE_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROFONT
-	bool "tex-eurofont-1.1.3"
+	bool "tex-eurofont-1.1.3nb1"
 	help
 	  Provides a command that prints a euro symbol
 
@@ -2731,7 +2781,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROSANS_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROSYM
-	bool "tex-eurosym-1.4"
+	bool "tex-eurosym-1.4nb1"
 	help
 	  MetaFont and macros for Euro sign
 
@@ -2800,7 +2850,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTSPEC_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_FOURIER
-	bool "tex-fourier-1.3"
+	bool "tex-fourier-1.3nb1"
 	help
 	  Using Utopia fonts in LaTeX documents
 
@@ -2856,6 +2906,17 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_FPL_DOC
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_GARUDA_C90
+	bool "tex-garuda-c90-2011nb1"
+	help
+	  
+
+	  This package contains files to support for the garuda font in
+	  thailatex.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_GLYPHLIST
 	bool "tex-glyphlist-2.84"
 	help
@@ -2878,7 +2939,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_HELVETIC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_KOTEX_BASE
-	bool "tex-kotex-base-0.2"
+	bool "tex-kotex-base-0.3"
 	help
 	  Type1 and TTF fonts of unbatang, undotum, untaza, and ungraphic
 
@@ -2891,7 +2952,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_KOTEX_BASE
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_KOTEX_BASE_DOC
-	bool "tex-kotex-base-doc-0.2"
+	bool "tex-kotex-base-doc-0.3"
 	help
 	  Documentation for tex-kotex-base
 
@@ -2963,7 +3024,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_LH_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_LM
-	bool "tex-lm-2.004nb1"
+	bool "tex-lm-2.004nb2"
 	help
 	  Latin modern fonts in outline formats
 
@@ -3016,7 +3077,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_LY1_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_MANFNT
-	bool "tex-manfnt-2009"
+	bool "tex-manfnt-2009nb1"
 	help
 	  LaTeX support for the TeX book symbols
 
@@ -3027,7 +3088,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_MANFNT
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_MARVOSYM
-	bool "tex-marvosym-2.1"
+	bool "tex-marvosym-2.1nb1"
 	help
 	  Martin Vogel's Symbols font
 
@@ -3106,7 +3167,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_METAFONT
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_MFLOGO
-	bool "tex-mflogo-2009"
+	bool "tex-mflogo-2009nb1"
 	help
 	  LaTeX support for MetaFont logo fonts
 
@@ -3147,6 +3208,17 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_NCNTRSBK
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_NORASI_C90
+	bool "tex-norasi-c90-2011nb1"
+	help
+	  
+
+	  This package contains files to support for the norasi font in
+	  thailatex.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_OCR_B
 	bool "tex-ocr-b-2011"
 	help
@@ -3178,7 +3250,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_PALATINO
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_PSNFSS
-	bool "tex-psnfss-9.2anb3"
+	bool "tex-psnfss-9.2anb4"
 	help
 	  Font support for common PostScript fonts
 
@@ -3205,7 +3277,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_PSNFSS_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_PXFONTS
-	bool "tex-pxfonts-2010"
+	bool "tex-pxfonts-2010nb1"
 	help
 	  Palatino-like fonts in support of mathematics
 
@@ -3234,7 +3306,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_PXFONTS_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_RSFS
-	bool "tex-rsfs-2009"
+	bool "tex-rsfs-2009nb1"
 	help
 	  Ralph Smith's Formal Script font
 
@@ -3260,7 +3332,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_RSFS_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_STMARYRD
-	bool "tex-stmaryrd-2010"
+	bool "tex-stmaryrd-2010nb1"
 	help
 	  St Mary Road symbols for theoretical computer science
 
@@ -3294,7 +3366,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_SYMBOL
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_TEX_GYRE
-	bool "tex-tex-gyre-2.004"
+	bool "tex-tex-gyre-2.004nb1"
 	help
 	  TeX Fonts extending freely available URW fonts
 
@@ -3349,7 +3421,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_TIMES
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_TIPA
-	bool "tex-tipa-1.3nb1"
+	bool "tex-tipa-1.3nb2"
 	help
 	  Fonts and macros for IPA phonetics characters
 
@@ -3372,8 +3444,29 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_TIPA_DOC
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TTFUTILS
+	bool "tex-ttfutils-2011"
+	help
+	  Data files for TeX Live TTF utilities
+
+	  This package provides data files used by TeX Live utilities for
+	  TrueType fonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TTFUTILS_DOC
+	bool "tex-ttfutils-doc-2011"
+	help
+	  Documentation for tex-ttfutils
+
+	  This is documentation for tex-ttfutils.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_TXFONTS
-	bool "tex-txfonts-2009"
+	bool "tex-txfonts-2009nb1"
 	help
 	  Times-like fonts in support of mathematics
 
@@ -3401,22 +3494,25 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_TXFONTS_DOC
 	  http://www.tug.org/texlive/
 
 
-config BR2_PKGSRC_PACKAGE_FONTS_TEX_UHC_FONTS_BASE
-	bool "tex-uhc-fonts-base-1.0nb3"
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_UHC
+	bool "tex-uhc-2011nb1"
 	help
-	  Base UHC fonts for HLaTeX
+	  Fonts for the Korean language
+
+	  Support for Korean documents written in Korean standard KSC codes for
+	  LaTeX2e.
+
+	  http://www.tug.org/texlive/
 
 
-	  http://project.ktug.or.kr/hlatex/install-fonts.html
-
-
-config BR2_PKGSRC_PACKAGE_FONTS_TEX_UHC_FONTS_EXTRA
-	bool "tex-uhc-fonts-extra-1.0nb3"
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_UHC_DOC
+	bool "tex-uhc-doc-2011"
 	help
-	  Extra UHC fonts for HLaTeX
+	  Documentation for tex-uhc
 
+	  This is documentation for tex-uhc.
 
-	  http://project.ktug.or.kr/hlatex/install-fonts.html
+	  http://www.tug.org/texlive/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_UTOPIA
@@ -3442,8 +3538,32 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_UTOPIA_DOC
 	  http://www.tug.org/texlive/
 
 
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_WADALAB
+	bool "tex-wadalab-2011nb1"
+	help
+	  
+
+	  These are font bundles for the Japanese Wadalab fonts which work with
+	  the CJK package. All subfonts now have glyph names compliant to the
+	  Adobe Glyph List, making ToUnicode CMaps in PDF documents (created
+	  automatically by dvipdfmx) work correctly. All font bundles now contain
+	  virtual Unicode subfonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_WADALAB_DOC
+	bool "tex-wadalab-doc-2011"
+	help
+	  Documentation for tex-wadalab
+
+	  This is documentation for tex-wadalab.
+
+	  http://www.tug.org/texlive/
+
+
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_WASY
-	bool "tex-wasy-2009"
+	bool "tex-wasy-2009nb1"
 	help
 	  Waldi's symbol fonts
 
@@ -3532,7 +3652,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TTF2PK
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TTF2PT1
-	bool "ttf2pt1-3.4.4nb3"
+	bool "ttf2pt1-3.4.4nb4"
 	help
 	  TrueType font converter to Postscript type 1
 
@@ -3568,7 +3688,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TTFTOT42
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TTMKFDIR2
-	bool "ttmkfdir2-20021109nb3"
+	bool "ttmkfdir2-20021109nb4"
 	help
 	  Tool that creates a fonts.scale file
 
@@ -3595,7 +3715,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TYPE1INST
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_UMEFONT_TTF
-	bool "umefont-ttf-0.431"
+	bool "umefont-ttf-0.434"
 	help
 	  
 
@@ -3642,6 +3762,17 @@ config BR2_PKGSRC_PACKAGE_FONTS_UN_EXTRA_TTF
 	  * UnJamoSora, UnJamoNovel, UnJamoDotum, UnJamoBatang
 
 	  http://kldp.net/projects/unfonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_UNI_VGA
+	bool "uni-vga-1"
+	help
+	  Monospaced Unicode font based on the original IBM VGA font
+
+	  Monospaced X11 bitmap font; Descendant of the original IBM VGA font with
+	  additional Unicode glyphs.
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/univga/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_URALIC_TTF
@@ -3708,7 +3839,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_VFONTCAP_KOCHI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_VLGOTHIC_TTF
-	bool "vlgothic-ttf-20110414"
+	bool "vlgothic-ttf-20111122"
 	help
 	  Free Japanese TrueType fonts named 'VLGothic'
 
@@ -3732,7 +3863,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_WATANABE_VFONT
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_XMBDFED
-	bool "xmbdfed-4.5nb3"
+	bool "xmbdfed-4.5nb4"
 	help
 	  Motif-based BDF font editor with lots of features
 
