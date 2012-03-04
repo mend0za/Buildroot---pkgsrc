@@ -8,17 +8,22 @@ PKGSRC_SITE = ftp://ftp.NetBSD.org/pub/pkgsrc/pkgsrc-$(PKGSRC_VERSION)
 PKGSRC_SOURCE = pkgsrc-$(PKGSRC_VERSION).tar.gz
 PKGSRC_INSTALL_STAGING = yes
 
-
 PKGSRC_HOST_WORK_DIR := $(BUILD_DIR)/pkgsrc-workdir/host
 PKGSRC_HOST_PKG_DIR := $(PKGSRC_HOST_WORK_DIR)/packages  
 
-HOST_PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses host-fakeroot 
+HOST_PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses host-fakeroot
 
-PKGSRC_PLATFORM_TOOLS=pkgtools/digest net/tnftp pkgtools/pkg_summary-utils parallel/paexec
+PKGSRC_PLATFORM_TOOLS=pkgtools/digest net/tnftp pkgtools/pkg_summary-utils parallel/paexec lang/perl5 devel/libtool
 #devel/mk-configure parallel/paexec 
 #pkgtools/digest net/tnftp archivers/pax
 
 PKGSRC_SH = /bin/bash
+
+PKGSRC_BMAKE_HOST_OPTS := \
+	CC="$(HOSTCC_NOCCACHE)" \
+	WRKOBJDIR="$(PKGSRC_HOST_WORK_DIR)" \
+	PACKAGES="$(PKGSRC_HOST_PKG_DIR)" \
+	TOOLDIR=$(PKGSRC_HOST_DIR)/bin 
 
 
 # TODO use HOSTCC with CCACHE (now broken on devel/bmake build)
@@ -40,9 +45,10 @@ endef
 define PKGSRC_SET_CROSS_COMPILE_ROOT
 	( \
 		export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/digest $(PKGSRC_BMAKE_HOST_OPTS) install ; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/net/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install ; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/pkg_summary-utils $(PKGSRC_BMAKE_HOST_OPTS) install ; \
+		for pkg in $(PKGSRC_PLATFORM_TOOLS); 
+		do \
+			$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/$$pkg $(PKGSRC_BMAKE_HOST_OPTS) install ; \
+		done; \
 	)
 	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
 		$(PKGSRC_DEST_DIR)/usr/include/stddef.h
@@ -56,12 +62,20 @@ define HOST_PKGSRC_CLEAN_CMDS
 	rm -rf $(PKGSRC_SOURCE_DIR)/
 endef
 
-pkgsrc-update-categories: $(PKGSRC_SOURCE_DIR)/../.stamp_host_installed pkgsrc-prepare
+host-pkgsrc-update-categories: $(PKGSRC_SOURCE_DIR)/../.stamp_host_installed pkgsrc-prepare
 	( export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
 		./package/pkgsrc/update-pkg-list.sh \
 			$(PKGSRC_SOURCE_DIR) \
 			$(PKGSRC_PACKAGE_DIR) \
 	)
 
+host-pkgsrc-update-platform-tools:
+	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
+	for pkg in $(PKGSRC_PLATFORM_TOOLS); \
+	do \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/$$pkg $(PKGSRC_BMAKE_HOST_OPTS) install ; \
+	done
+
+HOST_SOURCE += host-pkgsrc-source
 
 $(eval $(call GENTARGETS,host))

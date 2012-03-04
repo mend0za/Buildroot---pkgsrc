@@ -4,44 +4,47 @@
 # 
 
 PKGSRC_TARGET_WORK_DIR :=$(BUILD_DIR)/pkgsrc-workdir/target
-PKGSRC_DEST_DIR := $(TARGET_DIR)
 PKGSRC_TARGET_REAL_PATH := $(PKGSRC_DEST_DIR)/$(BR2_PKGSRC_TARGET_PREFIX)
-PKGSRC_TARGET_DB_DIR := $(BR2_PKGSRC_TARGET_PREFIX)/var/db
+PKGSRC_TARGET_DB_DIR := /var/db
 PKGSRC_TARGET_PKG_DIR :=$(PKGSRC_TARGET_WORK_DIR)/packages
 
 PKGSRC_LOCAL=$(TOPDIR)/package/pkgsrc/bmake.local.in
 
 PKGSRC_BMAKE := fakeroot bmake
 
-PKGSRC_BMAKE_HOST_OPTS := \
-	CC="$(HOSTCC_NOCCACHE)" \
-	WRKOBJDIR="$(PKGSRC_HOST_WORK_DIR)" \
-	PACKAGES="$(PKGSRC_HOST_PKG_DIR)" 
 
 
 PKGSRC_BMAKE_TARGET_OPTS := \
 			USE_CROSS_COMPILE=yes \
 			TARGET_ARCH="$(ARCH)" \
+			MACHINE_ARCH="$(ARCH)" \
 			MACHINE_PLATFORM="BuildRoot-$(ARCH)" \
 			MACHINE_GNU_PLATFORM="$(GNU_TARGET_NAME)" \
 			CC="$(TARGET_CC_NOCCACHE)" \
+			CFLAGS="$(TARGET_CFLAGS)" \
+			LDFLAGS="$(TARGET_LDFLAGS)" \
 			AR="$(TARGET_AR)" \
 			RANLIB="$(TARGET_RANLIB)" \
 			STRIP="$(TARGET_STRIP)" \
 			USE_DESTDIR=yes \
 			CROSS_DESTDIR="$(PKGSRC_DEST_DIR)" \
-			WRKOBJDIR="$(PKGSRC_TARGET_WORK_DIR)" \
 			PKG_DBDIR="$(PKGSRC_TARGET_DB_DIR)" \
-			PREFIX=$(BR2_PKGSRC_TARGET_PREFIX) \
-			INSTALL_UNSTRIPPED=yes \
-			TOOLS_DIGEST=$(PKGSRC_HOST_DIR)/bin/digest \
-			TOOLS_PAX=$(PKGSRC_HOST_DIR)/bin/pax \
-			TOOLS_FTP=$(PKGSRC_HOST_DIR)/bin/ftp \
-			LIBTOOL=$(PKGSRC_TARGET_REAL_PATH)/bin/libtool  \
 			PACKAGES="$(PKGSRC_TARGET_PKG_DIR)" \
+			WRKOBJDIR="$(PKGSRC_TARGET_WORK_DIR)" \
+			PREFIX="" \
+			INSTALL_UNSTRIPPED=yes \
+			DEPENDS_TARGET="" \
+			TOOLDIR=$(PKGSRC_HOST_DIR)/bin \
+			TOOLS_PLATFORM.digest=$(PKGSRC_HOST_DIR)/bin/digest \
+			TOOLS_PLATFORM.pax=$(PKGSRC_HOST_DIR)/bin/pax \
+			TOOLS_PLATFORM.ftp=$(PKGSRC_HOST_DIR)/bin/ftp \
+			TOOLS_PLATFORM.perl=$(PKGSRC_HOST_DIR)/bin/perl \
+			TOOLS_PLATFORM.libtool=$(PKGSRC_HOST_DIR)/bin/libtool  \
 			PKG_VERBOSE=2 \
 			PKG_DEBUG_LEVEL=0 
 
+#
+#			LOCALBASE="$(PKGSRC_TARGET_REAL_PATH)" \
 #			LIBTOOL_FLAGS="--tag=CC" \
 #			USE_NATIVE_GCC=yes \
 #			USE_PKGSRC_GCC=no \
@@ -55,6 +58,7 @@ PKGSRC_BMAKE_TARGET_OPTS := \
 #			RANLIB="$(TARGET_RANLIB)" \
 #			CFLAGS="$(TARGET_CFLAGS)" \
 #			LDFLAGS="$(TARGET_LDFLAGS)" \
+#			CPPFLAGS="$(TARGET_CPPFLAGS)" \
 #			PKGSRC_HOST_DIR="$(PKGSRC_HOST_DIR)" \
 #			PKGSRC_DEST_DIR="$(PKGSRC_DEST_DIR)" \
 #			PKG_DEBUG_LEVEL=2 
@@ -74,42 +78,68 @@ PKGSRC_BMAKE_HOST_OPTS := \
 #USE_DESTDIR=no \
 #USE_CROSS_COMPILE=no \
 
-#PKGSRC_TEST_TARGET="lang/ruby"
-PKGSRC_TEST_TARGET=shells/mksh
-
-# experimental temporary rule: quick hack to add missing stuff
-pkgsrc-prepare:
-	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
-	for pkg in $(PKGSRC_PLATFORM_TOOLS); \
-	do \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/$$pkg $(PKGSRC_BMAKE_HOST_OPTS) install; \
-	done
-
+PKGSRC_TEST_TARGET="lang/ruby193"
+#PKGSRC_TEST_TARGET=shells/mksh
+#PKGSRC_TEST_TARGET=textproc/dict-mueller7
+#PKGSRC_TEST_TARGET=x11/xdm
+#PKGSRC_TEST_TARGET="security/openssl"
 
 pkgsrc-test: 
+	echo TARGET_CFLAGS=\"$(TARGET_CFLAGS)\" : TARGET_LDLAGS=\"$(TARGET_LDLAGS)\"
 	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
 		$(PKGSRC_DEST_DIR)/usr/include/stddef.h
-	# build BOOTSTRAP_DEPENDS and BUILD_DEPENDS for host
+	# BUILD_DEPENDS for host
 	( \
 		export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
 		export AWKPATH=".:$(PKGSRC_HOST_DIR)/share/runawk"; \
-		BOOTSTRAP_DEPENDS=`pkg_src_summary -b -f BOOTSTRAP_DEPENDS,BUILD_DEPENDS $(PKGSRC_TEST_TARGET)|sed  's/  / /g; s/BUILD_DEPENDS=//g; s#[^ ]*:\.\./\.\./##g'`; \
-		for dep_pkg in $$BOOTSTRAP_DEPENDS; do \
+		export USE_CROSS_COMPILE=yes; \
+		export BUILD_DEPENDS=`pkg_src_summary -b -f 'BUILD_DEPENDS' $(PKGSRC_TEST_TARGET)|sed  's/  / /g; s/BUILD_DEPENDS=//g; s#[^ ]*:\.\./\.\./##g'`; \
+		echo BUILD_DEPENDS : "$$BUILD_DEPENDS" ; \
+		export USE_CROSS_COMPILE=no; \
+		for dep_pkg in $$BUILD_DEPENDS; do \
 			$(PKGSRC_BMAKE) $(PKGSRC_BMAKE_HOST_OPTS) \
-			-C $(PKGSRC_SOURCE_DIR)/$$dep_pkg install; \
-		done; exit 0 )
+			-C $(PKGSRC_SOURCE_DIR)/$$dep_pkg install || exit -1; \
+		done; \
+	)
+	# TARGET_BUILD_DEPENDS and DEPENDS for target
+	( \
+		export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
+		export AWKPATH=".:$(PKGSRC_HOST_DIR)/share/runawk"; \
+		export USE_CROSS_COMPILE=yes; \
+		TARGET_BUILD_DEPENDS=`pkg_src_summary -b -f 'TARGET_BUILD_DEPENDS' $(PKGSRC_TEST_TARGET)|sed  's/  / /g; s/TARGET_BUILD_DEPENDS=//g; s#[^ ]*:\.\./\.\./##g'`; \
+		for dep_pkg in $$TARGET_BUILD_DEPENDS; do \
+			$(PKGSRC_BMAKE) $(PKGSRC_BMAKE_TARGET_OPTS) \
+			-C $(PKGSRC_SOURCE_DIR)/$$dep_pkg install || exit -1; \
+		done; \
+		export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
+		export AWKPATH=".:$(PKGSRC_HOST_DIR)/share/runawk"; \
+		export USE_CROSS_COMPILE=yes; \
+		DEPENDS=`pkg_src_summary -b -f 'DEPENDS' $(PKGSRC_TEST_TARGET)|sed  's/  / /g; s/DEPENDS=//g; s#[^ ]*:\.\./\.\./##g'`; \
+		for dep_pkg in $$DEPENDS; do \
+			$(PKGSRC_BMAKE) $(PKGSRC_BMAKE_TARGET_OPTS) \
+			-C $(PKGSRC_SOURCE_DIR)/$$dep_pkg install || exit -1; \
+		done; \
+	)
+	
 
-	# build package
+	# build package itself
 	( \
 		export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
 		export CFLAGS="$(TARGET_CFLAGS)"; \
 		export LDFLAGS="$(TARGET_LDFLAGS)"; \
+		export CPPFLAGS="-I$(STAGING_DIR)/usr/include"; \
+		export USE_CROSS_COMPILE=yes; \
 		cd $(PKGSRC_SOURCE_DIR)/$(PKGSRC_TEST_TARGET) ; \
 		$(PKGSRC_BMAKE) $(PKGSRC_BMAKE_TARGET_OPTS) -f ./Makefile -f $(PKGSRC_LOCAL) install \
-		)
+	)
 
 pkgsrc-check:
-	echo '#include <fts.h>' | $(TARGET_CPP) -I$(PKGSRC_TARGET_WORK_DIR)/archivers/pax/work/libnbcompat/nbcompat -D_FILE_OFFSET_BITS=64 > /dev/null && echo ok 
+	#echo '#include <fts.h>' | $(TARGET_CPP) -I$(PKGSRC_TARGET_WORK_DIR)/archivers/pax/work/libnbcompat/nbcompat -D_FILE_OFFSET_BITS=64 > /dev/null && echo ok 
+	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
+	USE_CROSS_COMPILE=yes \
+	pkg_src_summary -b -f 'DEPENDS BUILD_DEPENDS TARGET_BUILD_DEPENDS USE_TOOLS'  $(PKGSRC_TEST_TARGET)
+	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PKGSRC_HOST_DIR)/sbin:$(PATH)"; \
+	pkg_src_summary -b -f 'DEPENDS BUILD_DEPENDS TARGET_BUILD_DEPENDS USE_TOOLS'  $(PKGSRC_TEST_TARGET)
 
 pkgsrc-clean:
 	rm -rf "$(PKGSRC_TARGET_REAL_PATH)"
