@@ -12,7 +12,7 @@ PKGSRC_INSTALL_STAGING = yes
 PKGSRC_HOST_WORK_DIR := $(BUILD_DIR)/pkgsrc-workdir/host
 PKGSRC_HOST_PKG_DIR := $(PKGSRC_HOST_WORK_DIR)/packages  
 
-PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses host-fakeroot 
+HOST_PKGSRC_DEPENDENCIES = $(BASE_TARGETS) host-flex host-bison host-ncurses host-fakeroot 
 
 PKGSRC_PLATFORM_TOOLS=pkgtools/digest net/tnftp pkgtools/pkg_summary-utils parallel/paexec
 #devel/mk-configure parallel/paexec 
@@ -55,5 +55,13 @@ define HOST_PKGSRC_CLEAN_CMDS
 	rm -rf $(PKGSRC_HOST_DIR)/
 	rm -rf $(PKGSRC_SOURCE_DIR)/
 endef
+
+pkgsrc-update-categories: $(PKGSRC_SOURCE_DIR)/../.stamp_host_installed pkgsrc-prepare
+	( export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
+		./package/pkgsrc/update-pkg-list.sh \
+			$(PKGSRC_SOURCE_DIR) \
+			$(PKGSRC_PACKAGE_DIR) \
+	)
+
 
 $(eval $(call GENTARGETS,host))

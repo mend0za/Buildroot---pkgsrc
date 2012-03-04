@@ -2,10 +2,10 @@
 
 # Copyleft by Vlad 'mend0za' Shakhov, 2011-2012
 
-KCONFIG_OUT=pkgsrc-categories.in
-PKG_SRC_PATH=/home/works/buildroot/pkgsrc-2011Q4
-CATEGORY_DIR=category
-export PATH="$PATH:/home/works/buildroot/pkg/bin"
+PKG_SRC_PATH=$1
+PKGSRC_PACKAGE_DIR=$2
+KCONFIG_OUT=$2/pkgsrc-categories.in
+CATEGORY_DIR=$2/category
 
 export LC_ALL=C
 
@@ -24,9 +24,9 @@ echo >>$KCONFIG_OUT
 for CATEGORY in `cut -d/ -f1 $PKG_LIST | uniq | sort`
 do
 	COMMENT=`awk -F'=' '/COMMENT/{print $2}' $PKG_SRC_PATH/$CATEGORY/Makefile|sed 's/^\t\+//g'`
-	IN_FILE="$CATEGORY_DIR/$CATEGORY.in"
+	IN_FILE=`basename "$CATEGORY_DIR/$CATEGORY.in"`
 	echo "menu \"$COMMENT\"" >>$KCONFIG_OUT
-	echo "source package/pkgsrc/$IN_FILE" >>$KCONFIG_OUT
+	echo "source package/pkgsrc/category/$IN_FILE" >>$KCONFIG_OUT
 	echo "endmenu" >>$KCONFIG_OUT
 	echo >>$KCONFIG_OUT
 
@@ -37,11 +37,14 @@ done
 export PSS_SLAVES=+4
 
 pkg_micro_src_summary -f PKGPATH,PKGNAME,COMMENT,HOMEPAGE <$PKG_LIST | \
-	awk -v PKG_SRC_PATH="$PKG_SRC_PATH" -F= -f parse-summary-out.awk
+	( \
+	cd $PKGSRC_PACKAGE_DIR && \
+	awk -v PKG_SRC_PATH="$PKG_SRC_PATH" -F= -f parse-summary-out.awk )
 
-for i in category/*.in 
+for i in $CATEGORY_DIR/*.in 
 do 
-	./sort-category.awk <$i >$i.new
+	echo $i
+	$PKGSRC_PACKAGE_DIR/sort-category.awk <$i >$i.new
 	mv $i.new $i
 done
 
