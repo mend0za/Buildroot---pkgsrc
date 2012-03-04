@@ -80,13 +80,11 @@ PKGSRC_TEST_TARGET=shells/mksh
 # experimental temporary rule: quick hack to add missing stuff
 pkgsrc-prepare:
 	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/digest $(PKGSRC_BMAKE_HOST_OPTS) install; \
-	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/net/tnftp $(PKGSRC_BMAKE_HOST_OPTS) install; \
-	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/pkgtools/pkg_summary-utils $(PKGSRC_BMAKE_HOST_OPTS) install; \
-	export PATH="$(HOST_DIR)/usr/bin:$(PKGSRC_HOST_DIR)/bin:$(PATH)"; \
-		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/parallel/paexec $(PKGSRC_BMAKE_HOST_OPTS) install; \
+	for pkg in $(PKGSRC_PLATFORM_TOOLS); \
+	do \
+		$(PKGSRC_BMAKE) -C $(PKGSRC_SOURCE_DIR)/$$pkg $(PKGSRC_BMAKE_HOST_OPTS) install; \
+	done
+
 
 pkgsrc-test: 
 	$(INSTALL) -D -m 0644 $(HOST_DIR)/usr/$(REAL_GNU_TARGET_NAME)/sysroot/usr/include/linux/stddef.h \
