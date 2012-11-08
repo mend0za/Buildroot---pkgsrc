@@ -1,0 +1,1503 @@
+config BR2_PKGSRC_PACKAGE_CONVERTERS_2VCARD
+	bool "2vcard-0.5"
+	help
+	  Convert an addressbook to the popular VCARD file format
+
+	  2vcard is a little perl script to convert an addressbook to the popular
+	  VCARD file format. Currently, 2vcard can convert mutt's and mh's alias as
+	  well as pine's, abook's and juno's addressbook format.
+	  
+	  The VCARD format is used by gnomecard, for example, which in turn is used
+	  by the balsa email client.
+
+	  http://www.netmeister.org/apps/2vcard/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_TECKIT
+	bool "TECkit-2.5.1"
+	help
+	  Low-level toolkit to perform encoding conversions
+
+	  TECkit is a low-level toolkit intended to be used by other
+	  applications that need to perform encoding conversions (e.g., when
+	  importing legacy data into a Unicode-based application).  The primary
+	  component of the TECkit package is therefore a library that performs
+	  conversions; this is the "TECkit engine".  The engine relies on
+	  mapping tables in a specific binary format (for which documentation is
+	  available); there is a compiler that creates such tables from a
+	  human-readable mapping description (a simple text file).
+
+	  http://scripts.sil.org/cms/scripts/page.php?site_id
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_ACK
+	bool "ack-1.39"
+	help
+	  Japanese code converter
+
+	  ack is an Japanese code converter for EUC-JP, MS-Kanji code and ISO-2022-JP.
+	  It is compatible with JIS X 0201 katakana.  It recognizes input code
+	  automatically, doesn't confuse for the katakana.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_AUTOCONVERT
+	bool "autoconvert-0.3.13nb2"
+	help
+	  Intelligent Chinese encoding converter
+
+	  AutoConvert is an intelligent Chinese Encoding converter.
+	  It uses built-in functions to judge the type of the input file's Chinese
+	  Encoding (such as GB/Big5/HZ), then converts the input file to any
+	  type of Chinese Encoding you want. You can use autoconvert to
+	  automatically convert incoming e-mail messages. It can also optionally
+	  handle the UNI/UTF7/UTF8 encoding.
+
+	  http://banyan.dlut.edu.cn/~ygh/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_BASE64
+	bool "base64-1.5"
+	help
+	  Encode and decode base64 files
+
+	  The MIME (Multipurpose Internet Mail Extensions) specification (RFC 1341
+	  and successors) defines a mechanism for encoding arbitrary binary information
+	  for transmission by electronic mail.  Triplets of 8-bit octets are encoded as
+	  groups of four characters, each representing 6 bits of the source 24 bits.
+	  Only characters present in all variants of ASCII and EBCDIC are used, avoiding
+	  incompatibilities in other forms of encoding such as uuencode/uudecode.
+	  
+	  base64 is a command line utility which encodes and decodes files in this
+	  format.  It can be used within a pipeline as an encoding or decoding filter,
+	  and is most commonly used in this manner as part of an automated mail
+	  processing system.
+
+	  http://www.fourmilab.ch/webtools/base64/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_BBCIM
+	bool "bbcim-0.95b5nb1"
+	help
+	  File and diskimage conversion utility for BBC Micro software
+
+	  file and diskimage conversion utility for BBC Micro software
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_BIB2XML
+	bool "bib2xml-20021006nb1"
+	help
+	  BibTeX to XML converter
+
+	  Bib2xml converts BibTeX to well formed xml.  The package uses Greg Ward's
+	  great btparse library.  The output is a well-formed XML file that is
+	  almost compatible with bibtexml (besides the order of elements and
+	  elements that are not supported by bibtexml). It's a flat format, however.
+
+	  http://www-plan.cs.colorado.edu/henkel/stuff/bib2xml/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_BIBTEX2HTML
+	bool "bibtex2html-1.96nb1"
+	help
+	  Collection of tools for translating from BibTeX to HTML
+
+	  bibtex2html is a collection of tools for translating from BibTeX to
+	  HTML.  They allow to produce, from a set of bibliography files in
+	  BibTeX format, a bibliography in HTML format. Here are some features:
+	  
+	  o Handle any BibTeX style (even those producing multiple bibliographies);
+	  o Use additional fields like abstract, url, ps, etc. to insert web links;
+	  o Crossrefs are also replaced by links;
+	  o Sort by dates or authors, in increasing or decreasing order;
+	  o Read simple macros in TeX or LaTeX files;
+	  o Show syntax errors in BibTeX files;
+	  o Extract from one or several BibTeX files the set of entries satisfying a
+	  given criterion.
+
+	  http://www.lri.fr/~filliatr/bibtex2html/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_CBMCONVERT
+	bool "cbmconvert-2.1.2"
+	help
+	  Converts files to and from various C64/C128/CBM formats
+
+	  There are many archiving programs for the Commodore 64, all of which
+	  are incompatible with archiving programs on other systems. This
+	  cbmconvert utility tries to address this problem. It extracts files
+	  from most known file formats and writes them to several different
+	  formats, including some formats used by some Commodore 64 emulators.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_CHEF
+	bool "chef-19920415"
+	help
+	  
+
+	  Convert from English on stdin to Mock Swedish on stdout.
+	  
+	  ...or...
+	  
+	  Cunfert frum Ingleesh oon stdeen tu Muck Svedeesh oon stduoot.
+	  Bork Bork Bork!
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_CN2JP
+	bool "cn2jp-1.4bnb3"
+	help
+	  Library for code translation between Chinese and Japanese
+
+	  cn2jp -- library for code translation between Chinese and Japanese
+	  including Chinese {GB,Big5,HZ} and Japanese (EUC-Jis/Shift-Jis/Jis)
+	  
+	  b2j	translate Big5 to Jis/EUC-Jis/Shift-Jis/Kuten
+	  g2j	translate GB to Jis/EUC-Jis/Shift-Jis/Kuten
+	  j2b	translate any Jis to Big5
+	  g2b	translate GB to Big5
+	  j2g	translate any Jis to GB
+	  b2g	translate Big5 to GB
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_CODE2HTML
+	bool "code2html-0.9.1"
+	help
+	  Convert a program source code to syntax highlighted HTML
+
+	  code2html is a perlscript which converts a program source code to syntax
+	  highlighted HTML. It may be called from the command line or as a CGI script.
+	  It can also handle include commands in HTML files. Currently supports: Ada 95,
+	  C, C++, HTML, Java, JavaScript, Makefile, Pascal, Perl, SQL, AWK, M4, and
+	  Groff.
+
+	  http://www.palfrader.org/code2html/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_CONVMV
+	bool "convmv-1.15"
+	help
+	  Converts filenames from one encoding to another
+
+	  Convmv is meant to help convert a single filename, a directory tree and
+	  the contained files or a whole filesystem into a different encoding. It
+	  just converts the filenames, not the content of the files. A special
+	  feature of convmv is that it also converts the symlink target pointer in
+	  case the symlink target is being converted, too.
+
+	  http://j3e.de/linux/convmv/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_DOC2HTML
+	bool "doc2html-3.0nb3"
+	help
+	  PERL external filter for htdig to convert numerous doc formats to HTML
+
+	  External converter script for ht://Dig (version 3.1.4 and later), that
+	  converts Microsoft Word, Excel and Powerpoint files, and PDF,
+	  PostScript, RTF, and WordPerfect files to text (in HTML form) so they
+	  can be indexed.  Uses a variety of conversion programs:
+	  
+	  wp2html		- to convert Wordperfect and Word7 & 97 documents to HTML
+	  catdoc		- to extract text from Word documents
+	  rtf2html	- to convert RTF documents to HTML
+	  pdftotext	- to extract text from Adobe PDFs
+	  ps2ascii 	- to extract text from PostScript
+	  pptHtml		- to convert Powerpoint files to HTML
+	  xlHtml		- to convert Excel spreadsheets to HTML
+	  or
+	  xls2csv		- to obtain data from Excel spreadsheets.
+	  
+	  Written by David Adams (University of Southampton), and based on the
+	  conv_doc.pl script by Gilles Detillieux.
+
+	  http://www.htdig.org/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_DVI2TTY
+	bool "dvi2tty-1.0"
+	help
+	  Program for previewing DVI files
+
+	  "dvi2tty" makes it possible to view a dvi file in an xterm, or on
+	  a text console. Original program by Svante Lindahl, ported to Unix
+	  by Marcel J.E. Mol.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_ENRICHED2HTML
+	bool "enriched2html-1.0"
+	help
+	  Converts from text/enriched to HTML
+
+	  To quote from the author, Brandon Long:
+	  
+	  This program is based on the program in Appendix A of rfc1896.
+	  It does as much as I can think of to convert text/enriched to
+	  text/html (since there are so many viewers for text/html).  It
+	  is a hack.  It is not perfect, and the html it generates is
+	  far from perfect.  I've tried to follow HTML v3.2, but its
+	  still not great.
+	  
+	  Usage:
+	  Pass it the text/enriched body of a message on stdin, and it
+	  will put the text/html version on stdout.
+	  
+	  To make mutt display text/enriched, put this in your .mailcap file:
+	  
+	  # enriched.sh converts text/enriched to text/html and then uses lynx to display
+	  text/enriched;  ${PREFIX}/bin/enriched2html | lynx -dump -stdin ; copiousoutput
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_FONDU
+	bool "fondu-060102"
+	help
+	  Utility to convert between Mac fonts and UNIX fonts
+
+	  A set of programs to interconvert between mac font formats
+	  and pfb, ttf, otf and bdf files on unix.
+	  
+	  Dealing with mac fonts is hard on other operating systems because
+	  mac fonts are stored in the resource fork, and other operating
+	  systems do not support this concept. Fondu will extract the resource
+	  fork from either a macbinary file or a binhex file. Ufond will
+	  create a resource fork inside a macbinary file.
+
+	  http://fondu.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_FRIBIDI
+	bool "fribidi-0.10.9"
+	help
+	  Free Implementation of the Unicode Bidirectional Algorithm
+
+	  Free Implementation of the Unicode Bidirectional Algorithm.
+	  
+	  The library implements all of the algorithm as described in the "Unicode
+	  Standard Annex #9, The Bidirectional Algorithm,
+	  http://www.unicode.org/unicode/reports/tr9/". FriBidi is exhautively tested
+	  against Bidi Reference Code, and due to our best knowledge, does not contain
+	  any conformance bugs.
+	  
+	  In the API, we were inspired by the document "Bi-Di languages support - BiDi
+	  API proposal" by Franck Portaneri which he wrote as a proposal for adding BiDi
+	  support to Mozilla.
+	  
+	  Internally the library uses Unicode entirely. The character property function
+	  was automatically created from the Unicode property list data file,
+	  PropList.txt, available from the Unicode Online Data site. This means that
+	  every Unicode character will be treated in strict accordance with the Unicode
+	  specification. The same is true for the mirroring of characters, which also
+	  works for all the characters listed as mirrorable in the Unicode specification.
+
+	  http://fribidi.org/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_HELP2MAN
+	bool "help2man-1.38.2nb3"
+	help
+	  Generate simple manual pages from program output
+
+	  help2man is a tool for automatically generating simple manual pages from
+	  program output.
+	  
+	  It is intended to provide an easy way for software authors to include a
+	  manual page in their distribution without having to maintain that document.
+	  
+	  Given a program which produces resonably standard --help and --version
+	  outputs, help2man will attempt to re-arrange that output into something
+	  which resembles a manual page.
+
+	  http://www.gnu.org/software/help2man/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_HZTTY
+	bool "hztty-2.0"
+	help
+	  Turns a tty session between Big5/GB/HZ/Unicode
+
+	  This program turns a tty session from one encoding to another.
+	  For example, running hztty on cxterm can allow you to read/write
+	  Chinese in HZ format, which was not supported by cxterm.
+	  If you have many applications in different encodings but your
+	  favor terminal program only supports one, hztty can make life easy.
+	  For example, hztty can convert your GB cxterm into a HZ terminal, a
+	  Unicode (16bit, or UTF8, or UTF7) terminal, or a Big5 terminal.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_ISH
+	bool "ish-1.11"
+	help
+	  Binary-to-text file-encoder
+
+	  ish is a format to encode binary files to text file, or decode text
+	  files into binary file.  ish has strong error correction/detection
+	  functionality using CRC and checksum.
+	  This format is popular in Japanese BBS'es.
+	  
+	  To non-Japanese people:
+	  To produce non-Japanese text a user should use "-s7" option.
+	  Other options such as "-ss" may produce Japanese text.
+	  To Japanese people:
+	  To use ish over NetNews newsgroups (such as fj.*), use "-s7" option.
+	  Use of "-ss" will not give you the optimal performance.
+	  "-ss" option is just for BBSes that use Shift-JIS as their native
+	  Japanese encoding.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_JA_DVI2TTY
+	bool "ja-dvi2tty-5.0"
+	help
+	  
+
+	  "dvi2tty" makes it possible to view a dvi file in an xterm, or on
+	  a text console. Original program by Svante Lindahl, ported to Unix
+	  by Marcel J.E. Mol.
+	  Added ASCII Japanese TeX support by NAKAMURA Motonori and SUGIURA Shigeki.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_JCODE_PERL
+	bool "jcode-perl-2.13nb4"
+	help
+	  Perl library for Japanese character code conversion
+
+	  jcode.pl is Perl library for Japanese character code conversion.
+	  It supports translation of each JIS, EUC, Shift JIS texts, and
+	  automatically recognizes the encode-method of the target text files.
+	  
+	  Document is in jcode.pl itself as comment.
+	  And jcode.pl-history file (in Japanese) might help you:
+	  ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/jcode.pl-history
+	  ftp://ftp.sra.co.jp/pub/lang/perl/sra-scripts/jcode.pl-history
+
+	  http://www.srekcah.org/jcode/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_KCC
+	bool "kcc-2.3"
+	help
+	  Kanji code converter with auto encoding detection
+
+	  Kcc is a kanji code converter and it's a program used to convert between
+	  various encodings used for Japanese character sets. It handles 7bit JIS,
+	  8bit JIS, Shift JIS, EUC, and DEC.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_LATEX2RTF
+	bool "latex2rtf-1.9.16a"
+	help
+	  LaTeX to RTF converter
+
+	  latex2rtf - Converts LaTeX file to RTF text-format
+	  
+	  The latex2rtf command converts a LaTeX file into RTF text format. The
+	  text and much of the formatting information is translated to RTF
+	  making the new file look very similar to the original.
+	  
+	  This package also provides latex2png for converting a LaTeX or EPS
+	  files to a PNG image. It needs latex, ImageMagick's convert,
+	  Ghostscript's eps2eps, and netpbm's pngtopnm and pnmcut.
+
+	  http://latex2rtf.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBICONV
+	bool "libiconv-1.14nb2"
+	help
+	  Character set conversion library
+
+	  libiconv is a character set conversion library that provides an iconv()
+	  implementation for use on systems which don't have one, or whose
+	  implementation cannot convert from/to Unicode.
+	  
+	  It provides support for many encodings and can convert from any of
+	  these encodings to any other, through Unicode conversion.
+	  
+	  It has also some limited support for transliteration, i.e. when a character
+	  cannot be represented in the target character set, it can be approximated
+	  through one or several similarly looking characters.  Transliteration is
+	  activated when "//TRANSLIT" is appended to the target encoding name.
+	  
+	  libiconv is for you if your application needs to support multiple character
+	  encodings, but that support lacks from your system.
+
+	  http://www.gnu.org/software/libiconv/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBWPD
+	bool "libwpd-0.9.2nb1"
+	help
+	  
+
+	  libwpd is a library for reading and writing WordPerfect(tm)
+	  documents.
+	  
+	  This package also includes utilities for converting to HTML
+	  and plain text.
+
+	  http://libwpd.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBWPG
+	bool "libwpg-0.2.0"
+	help
+	  Library for importing and converting Corel WordPerfect Graphics images
+
+	  Libwpg project is a collection of library and tools to work with
+	  graphics in WPG (WordPerfect Graphics) format. WPG is the format
+	  used among others in Corel sofware, such as WordPerfect(tm) and
+	  Presentations(tm).
+
+	  http://libwpg.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBWPS
+	bool "libwps-0.2.2"
+	help
+	  Library for importing Microsoft Works documents
+
+	  libwps is a library for reading Microsoft Works documents.
+
+	  http://libwps.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_MACFORK
+	bool "macfork-1.0nb1"
+	help
+	  Tool for extracting data from Macintosh resource forks
+
+	  A UN*X utility for extracting resources from a Macintosh resource
+	  fork. Currently macfork only directly supports icon families, pict
+	  files, and palettes, but any resource data can be extracted to a file.
+
+	  http://www.cs.cmu.edu/afs/cs/user/ajw/www/software/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_MPACK
+	bool "mpack-1.6nb2"
+	help
+	  External MIME packer/unpacker
+
+	  Mpack and munpack are utilities for encoding and decoding
+	  (respectively) binary files in MIME (Multipurpose Internet Mail
+	  Extensions) format mail messages.  For compatibility with older forms
+	  of transferring binary files, the munpack program can also decode
+	  messages in split-uuencoded format.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_NKF
+	bool "nkf-2.12"
+	help
+	  Convert between various Japanese character encodings
+
+	  nkf stands for "Network Kanji Filter," and it's a program used to
+	  convert between various encodings used for Japanese character sets. It
+	  handles ISO-2022-JP, Shift_JIS, EUC-JP, UTF-8, and some variants of the
+	  above (such as the Microsoft version of Shift_JIS). As well, it can do
+	  a limited amount of MIME decoding. It also can try to guess the input
+	  encoding so that you don't have to specify it.
+
+	  http://sourceforge.jp/projects/nkf/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_ODT2TXT
+	bool "odt2txt-0.4nb1"
+	help
+	  Simple converter from OpenDocument Text to plain text
+
+	  odt2txt is a small, command-line tool which extracts the text out
+	  of OpenDocument Texts, as produced by OpenOffice.org, KOffice,
+	  StarOffice, and others.  It supports multiple output encodings, has
+	  locale support, and is able to substitute unknown characters.
+
+	  http://stosberg.net/odt2txt/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_CONVERT_BINHEX
+	bool "p5-Convert-BinHex-1.119nb5"
+	help
+	  Read and write Macintosh BinHex streams
+
+	  BinHex is a format used by Macintosh for transporting Mac files safely
+	  through electronic mail, as short-lined, 7-bit, semi-compressed data
+	  streams. Ths module provides a means of converting those data streams
+	  back into into binary data.
+
+	  http://search.cpan.org/search?query
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_CONVERT_COLOR
+	bool "p5-Convert-Color-0.08"
+	help
+	  Color space conversions and named lookups
+
+	  This module provides conversions between commonly used ways to express
+	  colors. It provides conversions between color spaces such as RGB and
+	  HSV, and it provides ways to look up colors by a name.
+
+	  http://search.cpan.org/dist/Convert-Color/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_CONVERT_TNEF
+	bool "p5-Convert-TNEF-0.17nb5"
+	help
+	  Perl5 module interface to read TNEF files
+
+	  The Convert::TNEF module provides a Perl interface to read TNEF files.
+	  
+	  TNEF stands for Transport Neutral Encapsulation Format, and if you've
+	  ever been unfortunate enough to receive one of these files as an email
+	  attachment, you may want to use this module.
+
+	  http://search.cpan.org/dist/Convert-TNEF/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_CONVERT_UULIB
+	bool "p5-Convert-UUlib-1.40"
+	help
+	  Perl5 module interface to the uulib library
+
+	  Convert::UUlib is a versatile and powerful decoder/encoder library
+	  for a variety of encodings used in Usenet and Mail (uuencode,
+	  xxencode, b64, binhex...).
+
+	  http://search.cpan.org/dist/Convert-UUlib/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_JSON
+	bool "p5-JSON-2.53"
+	help
+	  Perl module converts between JSON and Perl data structure
+
+	  This module converts between JSON (JavaScript Object Notation) and Perl
+	  data structure into each other.
+	  For JSON, See to http://www.JSON.org/.
+	  
+	  JSON-RPC http://json-rpc.org/
+
+	  http://search.cpan.org/dist/JSON/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_JSON_ANY
+	bool "p5-JSON-Any-1.29"
+	help
+	  Wrapper Class for the various JSON classes
+
+	  This module will provide a coherent API to bring together the
+	  various JSON modules currently on CPAN. This module will allow you
+	  to code to any JSON API and have it work regardless of which JSON
+	  module is actually installed.
+
+	  http://search.cpan.org/dist/JSON-Any/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_JSON_XS
+	bool "p5-JSON-XS-2.320"
+	help
+	  JSON serialising/deserialising, done correctly and fast
+
+	  This module converts Perl data structures to JSON and vice versa.
+	  Its primary goal is to be correct and its secondary goal is to be
+	  fast. To reach the latter goal it was written in C.
+	  
+	  As this is the n-th-something JSON module on CPAN, what was the
+	  reason to write yet another JSON module? While it seems there are
+	  many JSON modules, none of them correctly handle all corner cases,
+	  and in most cases their maintainers are unresponsive, gone missing,
+	  or not listening to bug reports for other reasons.
+
+	  http://search.cpan.org/dist/JSON-XS/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_JSON_XS_VERSIONONEANDTWO
+	bool "p5-JSON-XS-VersionOneAndTwo-0.31nb3"
+	help
+	  Support versions 1 and 2 of JSON::XS
+
+	  JSON::XS changed its API at version 2.01. If you have to maintain
+	  code which may be run on systems with either version one or two
+	  then this is a bit of a pain. This module takes the pain away
+	  without sacrificing performance.
+
+	  http://search.cpan.org/dist/JSON-XS-VersionOneAndTwo/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_JCODE
+	bool "p5-Jcode-2.07nb3"
+	help
+	  Perl5 module for handling various Japanese charsets
+
+	  Jcode.pm is a Perl module that handles various Japanese charsets.
+	  It has all features available on jcode.pl-2.10 PLUS
+	  
+	  *Object-oriented approach on Japanese text handling
+	  *mime header handling
+	  *Unicode feature (UCS2 and UTF8)
+	  
+	  Detail: http://openlab.ring.gr.jp/Jcode/Jcode.html
+
+	  http://openlab.ring.gr.jp/Jcode/index.html
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_MARC_CHARSET
+	bool "p5-MARC-Charset-1.33"
+	help
+	  Convert MARC-8 encoded strings to UTF-8
+
+	  MARC::Charset allows you to turn MARC-8 encoded strings into UTF-8 strings.
+	  MARC-8 is a single byte character encoding that predates unicode, and allows
+	  you to put non-Roman scripts in MARC bibliographic records.
+
+	  http://search.cpan.org/dist/MARC-Charset/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_MARC_CROSSWALK_DUBLINCORE
+	bool "p5-MARC-Crosswalk-DublinCore-0.02nb1"
+	help
+	  Convert data between MARC and Dublin Core
+
+	  This module provides an implentation of the LOC's spec on how to convert
+	  metadata between MARC and Dublin Core format. The spec for converting MARC to
+	  Dublin Core is available at: http://www.loc.gov/marc/marc2dc.html, and from DC
+	  to MARC: http://www.loc.gov/marc/dccross.html.
+	  
+	  NB: The conversion cannot be done in a round-trip manner. i.e. Doing a
+	  conversion from MARC to DC, then trying to go back to MARC will not yield the
+	  original record.
+
+	  http://search.cpan.org/dist/MARC-Crosswalk-DublinCore/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_MIME_BASE32
+	bool "p5-MIME-Base32-1.02anb1"
+	help
+	  Perl5 module for Base32 encoding
+
+	  Encode data similar way like MIME::Base64 does.
+	  
+	  Main purpose is to create encrypted text used as id or key entry
+	  typed-or-submitted by user. It is upper/lowercase safe (not sensitive).
+
+	  http://search.cpan.org/dist/MIME-Base32/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_MIME_BASE64
+	bool "p5-MIME-Base64-3.13nb1"
+	help
+	  Perl5 module for Base64 and Quoted-Printable encodings
+
+	  This package contains a base64 encoder/decoder and a quoted-printable
+	  encoder/decoder.  These encoding methods are specified in RFC 2045 -
+	  MIME (Multipurpose Internet Mail Extensions).
+	  
+	  The base64 encoding is designed to represent arbitrary sequences of
+	  octets in a form that need not be humanly readable. A 65-character
+	  subset ([A-Za-z0-9+/=]) of US-ASCII is used, enabling 6 bits to be
+	  represented per printable character.
+	  
+	  The quoted-printable encoding is intended to represent data that
+	  largely consists of bytes that correspond to printable characters in
+	  the ASCII character set.  Non-printable characters are represented by
+	  a triplet consisting of the character "=" followed by two hexadecimal
+	  digits.
+	  
+	  The MIME::Base64 and MIME::QuotedPrint modules used to be part of
+	  libwww-perl package.  They are now distributed separately (this
+	  package).  The main improvement is that the base64 encoder/decoder is
+	  implemented by XS functions.  This makes it about 20 times faster than
+	  the old implementation in perl.
+
+	  http://search.cpan.org/dist/MIME-Base64/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_MIME_BASE64_URLSAFE
+	bool "p5-MIME-Base64-URLSafe-0.01nb3"
+	help
+	  Perl version of Python's URL-safe base64 codec
+
+	  This module is a perl version of python's URL-safe base64 encoder
+	  / decoder.
+	  
+	  When embedding binary data in URL, it is preferable to use base64
+	  encoding. However, two characters ('+' and '/') used in the standard
+	  base64 encoding have special meanings in URLs, often leading to
+	  re-encoding with URL-encoding, or worse, interoperability problems.
+	  
+	  To overcome the problem, the module provides a variation of base64
+	  codec compatible with python's urlsafe_b64encode / urlsafe_b64decode.
+	  
+	  Modification rules from base64:
+	  
+	  use '-' and '_' instead of '+' and '/'
+	  no line feeds
+	  no trailing equals (=)
+
+	  http://search.cpan.org/dist/MIME-Base64-URLSafe/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_TEXT_ICONV
+	bool "p5-Text-Iconv-1.7nb2"
+	help
+	  
+
+	  Perl interface to the iconv() function as defined by the Single
+	  UNIX Specification.  The convert() method converts the encoding of
+	  characters in the input string from the fromcode codeset to the
+	  tocode codeset, and returns the result.
+
+	  http://search.cpan.org/dist/Text-Iconv/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_IMAPUTF7
+	bool "p5-Unicode-IMAPUtf7-2.01"
+	help
+	  Perl extension to deal with IMAP UTF7
+
+	  Perl extension to deal with IMAP UTF7
+	  
+	  IMAP mailbox names are encoded in a modified UTF7 when names contains
+	  international characters outside of the printable ASCII range. The
+	  modified UTF-7 encoding is defined in RFC2060 (section 5.1.3).
+
+	  http://search.cpan.org/dist/Unicode-IMAPUtf7/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_MAP
+	bool "p5-Unicode-Map-0.112nb3"
+	help
+	  Perl5 module that maps charsets from and to utf16 unicode
+
+	  This module converts strings from and to 2-byte Unicode UCS2 format. All
+	  mappings happen via 2 byte UTF16 encodings, not via 1 byte UTF8 encoding.
+	  To transform these use Unicode::String.
+	  
+	  This module can't deal directly with utf8. Use Unicode::String to convert
+	  utf8 to utf16 and vice versa.
+	  
+	  Character mapping is according to the data of binary mapfiles in
+	  Unicode::Map hierarchy. Binary mapfiles can also be created with this module,
+	  enabling you to install own specific character sets.
+
+	  http://search.cpan.org/dist/Unicode-Map/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_MAP8
+	bool "p5-Unicode-Map8-0.13nb2"
+	help
+	  Perl5 module providing mapping tables between charsets
+
+	  The Unicode::Map8 class implement efficient mapping tables between
+	  8-bit character sets and 16 bit character sets like Unicode.  About
+	  170 different mapping tables between various known character sets and
+	  Unicode is distributed with this package.  The source of these tables
+	  is the vendor mapping tables provided by Unicode, Inc. and the code
+	  tables in RFC 1345.  New maps can easily be installed.
+
+	  http://search.cpan.org/dist/Unicode-Map8/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_MAPUTF8
+	bool "p5-Unicode-MapUTF8-1.11nb3"
+	help
+	  Provides conversions for arbitrary character sets and UTF8
+
+	  Provides an adapter layer between core routines for converting to and from
+	  UTF8 and other encodings.  In essence, a way to give multiple existing
+	  Unicode modules a single common interface so you don't have to know
+	  the underlaying implementations to do simple UTF8 to-from other character
+	  set encoding conversions.  As such, it wraps the Unicode::String,
+	  Unicode::Map8, Unicode::Map and Jcode modules in a standardized and
+	  simple API.
+	  
+	  This also provides general character set conversion operation based
+	  on UTF8 - it is possible to convert between any two compatible and
+	  supported character sets via a simple two step chaining of conversions.
+
+	  http://search.cpan.org/dist/Unicode-MapUTF8/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_STRING
+	bool "p5-Unicode-String-2.09nb3"
+	help
+	  Perl5 modules to handle various Unicode issues
+
+	  These are experimental modules to handle various Unicode issues.
+	  They were made before perl included native UTF8 support.
+	  
+	  The current set of modules are:
+	  
+	  Unicode::String   - represent strings of Unicode chars
+	  Unicode::CharName - look up character names
+	  Unicode::Map8     - mapping tables towards 8-bit char sets
+	  
+	  (the Unicode::Map8 module is distributed separately)
+
+	  http://search.cpan.org/dist/Unicode-String/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_UTF8SIMPLE
+	bool "p5-Unicode-UTF8simple-1.06nb3"
+	help
+	  Conversions to/from UTF8 from/to charactersets
+
+	  Unicode::UTF8simple - Conversions to/from UTF8 from/to charactersets
+	  
+	  This utf-8 converter is written in plain perl and works with hopefully
+	  any perl 5 version. It was mainly written because more recent modules
+	  such as Encode do not work under older Perl 5.0 installations.
+	  
+	  Supported encodings:
+	  euc-kr
+	  gb2312
+	  iso-8859-1
+	  iso-8859-2
+	  iso-8859-9
+	  koi8-r
+	  utf-8
+	  windows-1256
+
+	  http://search.cpan.org/~gus/Unicode-UTF8simple/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_CHKJIS
+	bool "p5-chkjis-0.18nb5"
+	help
+	  Filter library substituting vendor's own characters
+
+	  chkjis.pl is Perl library for Japanese character code processing.
+	  It replace vendor's own characters which isn't defined in JIS X
+	  0208:1997 to "geta" character and support ISO-2022-JP, euc-JP and
+	  Shift_JIS.
+	  
+	  It is useful to check intentional use of vendor's own characters in
+	  text or to filter out these characters.
+
+	  http://www2d.biglobe.ne.jp/~msyk/software/chkjis.html
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_NKF
+	bool "p5-nkf-2.12"
+	help
+	  Perl library for Network Kanji code conversion Filter
+
+	  Nkf is a yet another kanji code converter among networks, hosts and terminals.
+	  It converts input kanji code to desig- nated kanji code such as 7-bit
+	  JIS, MS-kanji (shifted-JIS) or EUC.
+	  
+	  One of the most unique facility of nkf is the guess of the input kanji
+	  code. It currently recognizes 7-bit JIS, MS- kanji (shifted-JIS) and EUC.
+	  So users needn't the input kanji code specification.
+
+	  http://sourceforge.jp/projects/nkf/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PHP_ICONV
+	bool "php53-iconv-5.3.8"
+	help
+	  PHP extension for character set conversion
+
+	  PHP is a programming language designed to be embedded into web pages.
+	  This module provides character set conversion facility, using iconv()
+	  programming interface.
+
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PHP_MBSTRING
+	bool "php53-mbstring-5.3.8"
+	help
+	  PHP extension for multibyte characters support
+
+	  PHP is a programming language designed to be embedded into web pages.
+	  This module provides multibyte string handling support.
+
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PEAR_I18N_UNICODENORMALIZER
+	bool "php53-pear-I18N_UnicodeNormalizer-1.0.0"
+	help
+	  PHP classes to provide Unicode Normalization
+
+	  PHP classes to provide Unicode Normalization.
+	  
+	  Performs the 4 normalizations:
+	  
+	  NFD: Canonical Decomposition
+	  NFC: Canonical Decomposition, followed by Canonical Composition
+	  NFKD: Compatibility Decomposition
+	  NFKC: Compatibility Decomposition, followed by Canonical Composition
+	  
+	  Complies with the official Unicode.org regression test.  Uses UTF8 binary
+	  strings natively but can normalize a string in any UTF format.  Fully tested
+	  with phpUnit. Code coverage test close to 100%.
+
+	  http://pear.php.net/package/I18N_UnicodeNormalizer
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PSICONV
+	bool "psiconv-0.9.7"
+	help
+	  PSION 5 file format data conversion utilities
+
+	  Psiconv can translate Psion Word files to HTML (either 3.2 or 4.0) or plain
+	  text, and it can translate Psion Sketch and MBM files to almost any graphic
+	  format. It is not yet perfect, but it can easily be extended. Psiconv-0.6.1
+	  includes the description of the Psion file formats, version 2.5.
+	  
+	  the Psion file formats description:
+	  http://huizen.dds.nl/~frodol/psiconv/html/Index.html
+
+	  http://software.frodo.looijaard.name/psiconv/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PSTOTEXT
+	bool "pstotext-1.9nb1"
+	help
+	  Postscript to text converter
+
+	  Pstotext extracts plain-text from postscript files (and somewhat less
+	  reliable from pdf files).
+
+	  http://pages.cs.wisc.edu/~ghost/doc/pstotext.htm
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_CHARDET
+	bool "py26-chardet-2.0.1"
+	help
+	  Character encoding auto-detection in Python
+
+	  Character encoding auto-detection in Python.
+
+	  http://chardet.feedparser.org/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_JPCODECS
+	bool "py26-jpCodecs-1.4.11nb1"
+	help
+	  Python Unicode codecs for Japanese charsets
+
+	  This package supports Python interfaces for conversions between
+	  Japanese and Unicode.
+
+	  http://www.asahi-net.or.jp/~rd6t-kjym/python/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_SIMPLEJSON
+	bool "py26-simplejson-2.1.1"
+	help
+	  Simplejson is a simple, fast, extensible JSON encoder/decoder
+
+	  simplejson is a simple, fast, extensible JSON encoder/decoder for Python
+	  
+	  simplejson is compatible with Python 2.3 and later with no external
+	  dependencies. It covers the full JSON specification for both encoding and
+	  decoding, with unicode support. By default, encoding is done in an encoding
+	  neutral fashion (plain ASCII with \uXXXX escapes for unicode characters).
+	  
+	  The encoder may be subclassed to provide serialization in any kind of
+	  situation, without any special support by the objects to be serialized
+	  (somewhat like pickle).
+	  
+	  The decoder can handle incoming JSON strings of any specified encoding
+	  (UTF-8 by default).
+
+	  http://undefined.org/python/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_ZBASE32
+	bool "py26-zbase32-1.1.2nb1"
+	help
+	  Alternate base32 encoder (not RFC 3548 compliant)
+
+	  An alternate base32 encoder (not RFC 3548 compliant).
+	  
+	  The rationale for base-32 encoding in RFC 3548 [1] is as written therein: "The
+	  Base 32 encoding is designed to represent arbitrary sequences of octets in a
+	  form that needs to be case insensitive but need not be humanly readable.".
+	  
+	  The rationale for our encoding is different -- it is to represent arbitrary
+	  sequences of octets in a form that is as convenient as possible for human
+	  users to manipulate.  In particular, z-base-32 was created in order to serve
+	  the Mnet project [3], where 30-octet cryptographic values are encoded into
+	  URIs for humans to manipulate.  Anticipated uses of these URIs include cut-
+	  and-paste, text editing (e.g. in HTML files), manual transcription via a
+	  keyboard, manual transcription via pen-and-paper, vocal transcription over
+	  phone or radio, etc.
+	  
+	  The desiderata for such an encoding are:
+	  
+	  * minimizing transcription errors -- e.g. the well-known problem of confusing
+	  `0' with `O'
+	  * embedding into other structures -- e.g. search engines, structured or
+	  marked-up text, file systems, command shells
+	  * brevity -- Shorter URLs are better than longer ones.
+	  * ergonomics -- Human users (especially non-technical ones) should find the
+	  URIs as easy and pleasant as possible.  The uglier the URI looks, the worse.
+
+	  http://pypi.python.org/pypi/zbase32/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_ZFEC
+	bool "py26-zfec-1.4.7nb1"
+	help
+	  Fast erasure codec
+
+	  A fast erasure codec which can be used with the command-line, C,
+	  Python, or Haskell.
+	  
+	  Fast, portable, programmable erasure coding a.k.a. "forward error
+	  correction": the generation of redundant blocks of information such
+	  that if some blocks are lost then the original data can be recovered
+	  from the remaining blocks. The zfec package includes command-line
+	  tools, C API, Python API, and Haskell API.
+
+	  http://pypi.python.org/packages/source/z/zfec/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_ZHCODECS
+	bool "py26-zhCodecs-1.2.0nb1"
+	help
+	  Python Unicode codecs for Chinese charsets
+
+	  This package supports Python interfaces for conversions between
+	  Chinese and Unicode.
+
+	  http://sourceforge.net/projects/python-codecs/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_QKC
+	bool "qkc-1.0nb1"
+	help
+	  Quick Kanji code Converter
+
+	  Qkc is a kanji code converter capable of SHIFT-JIS, EUC and JIS.
+	  Unlike nkf, qkc can handle multiple files at a time. Qkc also has
+	  functionality to change end-of-line characters, ie, from CR+LF to LF,
+	  or to CR, and vice versa.
+
+	  http://hp.vector.co.jp/authors/VA000501/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_QRENCODE
+	bool "qrencode-3.2.0"
+	help
+	  QR Code generator
+
+	  Libqrencode is a C library for encoding data in a QR Code symbol, a kind of
+	  2D symbology that can be scanned by handy terminals such as a mobile phone
+	  with CCD. The capacity of QR Code is up to 7000 digits or 4000 characters,
+	  and is highly robust.
+
+	  http://fukuchi.org/works/qrencode/index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RECODE
+	bool "recode-3.6nb6"
+	help
+	  Convert files between character sets and usages
+
+	  The `recode' library converts files between character sets and usages.
+	  It recognises or produces more than 300 different character sets and
+	  transliterates files between almost any pair.  When exact transliteration
+	  are not possible, it gets rid of offending characters or falls back
+	  on approximations.  The `recode' program is a handy front-end to
+	  the library.
+
+	  http://www.gnu.org/software/recode/recode.html
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RPM2CPIO
+	bool "rpm2cpio-1.1nb1"
+	help
+	  Convert .rpm files for extraction with cpio, needs just perl
+
+	  Convert .rpm files for extraction with /usr/bin/cpio
+	  
+	  Quoting the author:
+	  
+	  why does the world need another rpm2cpio?  because the existing one
+	  won't build unless you have half a ton of things that aren't really
+	  required for it, since it uses the same library used to extract RPM's.
+	  in particular, it won't build on the HPsUX box i'm on.
+	  
+	  (this one needs just perl)
+
+	  http://www.iagora.com/~espel/hacks.html
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RSS2HTML
+	bool "rss2html-0.8.2nb3"
+	help
+	  RSS to HTML converter
+
+	  rss2html is a simple converter from RSS/RDF/XML feeds (used for podcast,
+	  blogs, news pages, etc) into HTML or other formats useful to read news
+	  from commandline or automatized in cron.
+	  
+	  The HTML generation can be done by using user defined templates.
+	  
+	  You can also create planets joining some RSS and ordering them by date
+	  (automatically done with '-P' flag).
+	  
+	  Some examples:
+	  $ rss2html -d http://someones.blog.org/feed.rss | lynx -stdin
+	  $ rss2html http://podcasting/feed.xml | wget -c -F -i -
+	  $ rss2html -P myplanet@http://my.url/ -r 150 -d -n 2 \
+	  foo@http://foo/feed.xml bar@http://bar/feed.xml > planet.html
+
+	  http://www.nopcode.org/blog/rss2html.html
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RTF2HTML
+	bool "rtf2html-1.1"
+	help
+	  Rich Text to HTML file converter
+
+	  Simple Rich Text Format (RTF) to HTML file converter.
+
+	  http://www.45.free.net/~vitus/ice/catdoc/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RU_D1489
+	bool "ru-d1489-1.4"
+	help
+	  CP866<->KOI8-R, CP1251<->KOI8-R and font converters acc. to RFC1489
+
+	  These are useful tools for Russian users:
+	  
+	  todos/fromdos:	point-to-point cp866<->koi8-r decoder with CR/LF translation
+	  towin/fromwin:	best match cp1251<->koi8-r decoder with CR/LF translation
+	  a2kfcnv:	EGA/VGA raw screen fonts converter: cp866 font -> koi8-r font
+	  
+	  All programs written according to RFC 1489
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_UCONV
+	bool "ruby18-uconv-0.4.12nb6"
+	help
+	  Unicode conversion library with Japanese codesets support
+
+	  This is an Unicode conversion library with Japanese codesets support
+	  for Ruby.
+	  
+	  Supported character encoding schemes are UCS-4, UTF-16, UTF-8, EUC-JP,
+	  CP932 (a variant of Shift_JIS for Japanese Windows).
+
+	  http://www.yoshidam.net/Ruby.html
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_ASCII85
+	bool "ruby19-Ascii85-1.0.1"
+	help
+	  Ascii85 encoder/decoder
+
+	  Ascii85 provides methods to encode/decode Adobe's binary-to-text encoding
+	  of the same name.
+
+	  http://rubyforge.org/projects/ascii85/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_ROMKAN
+	bool "ruby19-romkan-0.4nb3"
+	help
+	  Romaji <-> Kana conversion library for Ruby
+
+	  Ruby/Romkan is a Romaji <-> Kana conversion library for Ruby.  It can
+	  convert a Japanese Romaji string to a Japanese Kana string or vice versa.
+
+	  http://0xcc.net/ruby-romkan/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_UNF
+	bool "ruby19-unf-0.0.4"
+	help
+	  Wrapper library to bring Unicode Normalization Form support
+
+	  This is a wrapper library to bring Unicode Normalization Form support
+	  to Ruby/JRuby.
+
+	  http://github.com/knu/unf
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_UNF_EXT
+	bool "ruby19-unf_ext-0.0.4"
+	help
+	  Unicode Normalization Form support library for CRuby
+
+	  Unicode Normalization Form support library for CRuby.
+
+	  http://github.com/knu/ruby-unf_ext
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_SKF
+	bool "skf-1.97.4nb2"
+	help
+	  Simple Kanji Filter - i18n kanji converter
+
+	  skf is an i18n-capable kanji filter.  It works like i18n enhanced
+	  nkf-1.6.  More specifically, skf is intended to read documents in
+	  various languages and codes using kanji or unicode capable display
+	  devices.  skf provides basic kanji code conversion features, include
+	  to/from JIS, EUC, Shift-JIS, Unicode, and Vendor specific codes.  skf
+	  also includes decoder for various code appears in the Net.  Unlike
+	  nkf, it does not provide broken jis recovery nor mime encoding, but it
+	  has support for ISO-8859's, European domestic set, JIS X-0212/X-0213
+	  code, has IBM/MS vendor specific code support and can add other code
+	  support easily.
+
+	  http://sourceforge.jp/projects/skf/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_SMBCHARTOOL
+	bool "smbchartool-2.3anb2"
+	help
+	  File name conversion tool for Samba
+
+	  Smbchartool is File name conversion tool for Samba.
+	  
+	  Samba, SMB/CIFS protocol server suite supports various file name encoding
+	  and these encoded file name needs to be converted when Samba's configuration
+	  need to be changed.  Smbchartool support these file name conversion
+	  processing mainly Japanese character encoding.
+
+	  http://www.miraclelinux.com/technet/samba30/migration.html
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_TEX2RTF
+	bool "tex2rtf-2.01nb14"
+	help
+	  LaTex-to-RTF translator
+
+	  Tex2RTF is a program written by Julian Smart (julian.smart@ukonline.co.uk)
+	  to convert from a LaTeX subset to four other formats:
+	  * Linear RTF, for importing into a wide range of word processors.
+	  * Windows Help hypertext RTF, for compilation with HC (Help Compiler).
+	  * HTML (Hypertext Markup Language), as used on the World Wide Web.
+	  * XLP wxHelp format (the wxWidgets toolkit help format).
+
+	  http://www.wxwidgets.org/tex2rtf/index.htm
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_TXT2HTML
+	bool "txt2html-2.44nb3"
+	help
+	  Plain text to HTML convertor
+
+	  HTML::TextToHTML converts plain text files to HTML. The txt2html
+	  script uses this module to do the same from the command-line.
+	  
+	  It supports headings, tables, lists, simple character markup, and
+	  hyperlinking, and is highly customizable. It recognizes some of the
+	  apparent structure of the source document (mostly whitespace and
+	  typographic layout), and attempts to mark that structure explicitly
+	  using HTML. The purpose for this tool is to provide an easier way of
+	  converting existing text documents to HTML format, giving something
+	  nicer than just whapping the text into a big PRE block.
+
+	  http://txt2html.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_TXT2MAN
+	bool "txt2man-1.5.5"
+	help
+	  Convert flat ASCII text to man page format
+
+	  txt2man  converts the input text into nroff commands using
+	  man(7) macros for man pages. Smart argument processing  is
+	  available  either  for  commands  using "-" sign for flags
+	  (including long options used in GNU tools).  If  ifile  is
+	  omitted,  standard  input  is taken as argument. Result is
+	  displayed on standard output.
+
+	  http://mvertes.free.fr/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_TXT2PDBDOC
+	bool "txt2pdbdoc-1.4.4nb1"
+	help
+	  Text to Palm DOC converter
+
+	  txt2pdbdoc is a Unix-based Text-to-Doc file conversion program.  (It
+	  also converts Doc files to plain text.)  A Doc file is a defacto
+	  standard file format for text documents for PalmOS document reader
+	  applications.  The motivation for writing txt2pdbdoc was that such
+	  software at the time was crufty and poorly documented.  In contrast,
+	  txt2pdbdoc is well written and well documented.  Unix-style "man"
+	  pages are included for the program, utility scripts, and the Doc file
+	  format itself.  The source code is also generously commented.
+
+	  http://homepage.mac.com/pauljlucas/software/txt2pdbdoc/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_UNIX2DOS
+	bool "unix2dos-1.3"
+	help
+	  
+
+	  unix2dos and dos2unix are utilities that convert ASCII files from
+	  the DOS cr/lf format to the UNIX lf format.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_UUDEVIEW
+	bool "uudeview-0.5.20nb2"
+	help
+	  Program for uu/xx/Base64/BinHex de-/encoding
+
+	  This is a powerful program at which you can throw a mess of
+	  unordered files in any of BinHex, uuencoded, xxencoded, or
+	  Base64 formats and expect them all to be properly decoded.
+	  It even handles encodings that have been garbled by some
+	  versions of Netscape/MS Explorer or that are missing some parts!
+	  
+	  It is also able to encode in all of the above formats except for
+	  BinHex.
+
+	  http://www.fpx.de/fp/Software/UUDeview/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_UULIB
+	bool "uulib-0.5.20nb4"
+	help
+	  Library for uu/xx/Base64/BinHex de-/encoding
+
+	  This library is able to decode files in the following formats:
+	  
+	  uuencode
+	  xxencode
+	  Base64
+	  BinHex
+	  
+	  It is also able to encode files in all of the above formats except
+	  for BinHex.
+
+	  http://www.fpx.de/fp/Software/UUDeview/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_WV
+	bool "wv-1.2.9nb3"
+	help
+	  Library and executables to access Microsoft Word files
+
+	  wv is a library which allows access to Microsoft Word files.
+	  It can load and parse the Word 6-9 formats (Word 6, 95, 97, 2000).
+	  
+	  And several converter executables called wvWare are also provided:
+	  wvHtml, wvLatex, wvCleanLatex, wvDVI, wvPS, wvPDF,
+	  wvText, wvAbw, wvWml, wvMime
+	  
+	  Note: wvHtml is previously known as MSWordView.
+
+	  http://wvware.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_WV2
+	bool "wv2-0.2.3nb6"
+	help
+	  Library to access Microsoft Word files
+
+	  wv2 is a library which allows access to Microsoft Word files.
+	  It can load and parse the Word 6-9 formats (Word 6, 95, 97, 2000).
+
+	  http://wvware.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_XDEVIEW
+	bool "xdeview-0.5.20nb2"
+	help
+	  X11 program for uu/xx/Base64/BinHex de-/encoding
+
+	  This is a powerful and easy-to-use tcl/tk-based program
+	  which can decode BinHex, uuencoded, xxencoded, and Base64
+	  formats, and encode in all of those except for BinHex.
+	  
+	  Xdeview uses tcl/tk 8.0, but the port can be configured to
+	  use other tcl/tk versions (see the port Makefile).
+
+	  http://www.fpx.de/fp/Software/UUDeview/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_XLHTML
+	bool "xlhtml-0.5nb1"
+	help
+	  Microsoft xls/ppt to HTML converter
+
+	  xlhtml is an Excel 95 and later file converter. Its html output
+	  can be used as a Netscape Plugin to let you view xls e-mail
+	  attachments. It can also extract regions of a spreadsheet and
+	  convert the spreadsheet to pure text rather than html.
+
+	  http://chicago.sourceforge.net/xlhtml/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_XLREADER
+	bool "xlreader-0.9.0nb1"
+	help
+	  Converts the cells in a MS Excel file to text
+
+	  Read data from Excel spread sheets without Microsoft!
+	  Provides an API to allow any application to read Excel
+	  documents. Demo interface converts data to tab
+	  delimited, CSV or SQL inserts. Written in C. Based on
+	  the Java version by Andrew Khan.
+
+	  http://www.giffin.org/xlreader.php
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_YENCODE
+	bool "yencode-0.4.6nb1"
+	help
+	  yenc format encoder and decoder
+
+	  This is yencode, an encoder/decoder package for the Usenet "yEnc"
+	  format, licensed under the GNU General Public License.
+	  
+	  * The encoder can output single part or multipart yencoded
+	  archives of any size.
+	  
+	  * Smart decoder can handle multiple files, including files
+	  specified out of order or with nonsense file names.
+	  
+	  * Easy to use Usenet posting software enables one-liner
+	  posting of individual files or groups of files, including creation
+	  of SFV/CRC checksum files if desired.
+	  
+	  * Optional scan mode: automatically locate and decode
+	  single or multipart yencoded archives in specified directories
+	  or recursively.
+	  
+	  * Fully compliant with all versions of the yEnc
+	  specification (currently v1, v2, v3).
+	  
+	  * Properly implements CRC values, including the pcrc32 on
+	  each part of multipart archives, and a crc32 for the last part
+	  of a multipart archive.
+
+	  http://www.yencode.org/
+
+

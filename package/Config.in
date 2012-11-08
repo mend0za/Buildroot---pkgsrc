@@ -744,4 +744,6 @@ source "package/vim/Config.in"
 endif
 endmenu
 
+source "package/pkgsrc/Config.in"
+
 endmenu

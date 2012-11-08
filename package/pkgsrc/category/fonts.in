@@ -1,0 +1,3895 @@
+config BR2_PKGSRC_PACKAGE_FONTS_ANONYMOUSPRO
+	bool "AnonymousPro-1.001"
+	help
+	  Fixed width Sans designed especially for Coders
+
+	  Anonymous Pro (2009) is a family of four fixed-width fonts designed
+	  especially with coding in mind. Characters that could be mistaken
+	  for one another (O, 0, I, l, 1, etc.) have distinct shapes to make
+	  them easier to tell apart in the context of source code.
+	  
+	  Anonymous Pro also features an international, Unicode-based character
+	  set, with support for most Western and European Latin-based languages,
+	  Greek, and Cyrillic. It also includes special for those who need them.
+
+	  http://www.ms-studio.com/FontSales/anonymouspro.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_XFT2
+	bool "Xft2-2.1.7nb4"
+	help
+	  Library for configuring and customizing font access
+
+	  Xft (2.0) provides a client-side font API for X applications. It uses
+	  Fontconfig to select fonts and the X protocol for rendering them. When
+	  available, Xft uses the Render extension to accelerate text drawing.
+	  When Render is not available, Xft uses the core protocol to draw
+	  client-side glyphs. This provides completely compatible support of
+	  client-side fonts for all X servers.
+	  
+	  Xft (2.0) hides most of the underlying system details so that developers
+	  can confidently use its API to access client-side fonts in any X
+	  environment.
+
+	  http://fontconfig.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD7_CHSFONT
+	bool "acroread7-chsfont-7.0nb1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 7 (Chinese Simplified)
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD7_CHTFONT
+	bool "acroread7-chtfont-7.0nb1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 7 (Chinese Traditional)
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD7_FONT_SHARE
+	bool "acroread7-font-share-7.0nb3"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 7 (common base)
+	  
+	  You shoud get the Asian Language Kit from
+	  http://www.adobe.com/products/acrobat/readstep.html
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD7_JPNFONT
+	bool "acroread7-jpnfont-7.0nb1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 7 (Japanese)
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD7_KORFONT
+	bool "acroread7-korfont-7.0nb1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 7 (Korean)
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD9_CHSFONT
+	bool "acroread9-chsfont-9.1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 9 (Chinese Simplified)
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD9_CHTFONT
+	bool "acroread9-chtfont-9.1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 7 (Chinese Traditional)
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD9_FONT_SHARE
+	bool "acroread9-font-share-9.1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 9 (common base)
+	  
+	  You should get the Asian Language Kit from
+	  http://www.adobe.com/products/acrobat/readstep.html
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD9_JPNFONT
+	bool "acroread9-jpnfont-9.1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 9 (Japanese)
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ACROREAD9_KORFONT
+	bool "acroread9-korfont-9.1"
+	help
+	  
+
+	  Asian Font Packs for Acrobat Reader 9 (Korean)
+
+	  http://www.adobe.com/products/acrobat/readstep2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ADOBE_CIDFONTS
+	bool "adobe-cidfonts-20000901"
+	help
+	  Adobe CID-keyed O'Reilly fonts for CJK
+
+	  This package contains the O'Reilly sample CID-keyed fonts provided by Adobe
+	  for Taiwanese (Traditional Chinese), Korean and Japanese.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ADOBE_CMAPS
+	bool "adobe-cmaps-20060615"
+	help
+	  Adobe CMap files for CJK
+
+	  Adobe CMap files for CJK:
+	  
+	  The essential CMap files mapping from character encodings to CID are
+	  published under freely redistributable license with no modification,
+	  available from:
+	  
+	  ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/
+	  
+	  The CMap files mapping from CID to Unicode are available from "PDF Core
+	  Font Information" at
+	  
+	  http://partners.adobe.com/asn/developer/technotes/fonts.html
+
+	  http://partners.adobe.com/public/developer/opentype/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_AE_MONO_TTF
+	bool "ae-mono-ttf-1.0"
+	help
+	  Collection of PCF fonts that include Arabic glyphs
+
+	  Collection of PCF fonts that include Arabic glyphs.
+
+	  http://www.arabeyes.org/project.php?proj
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ALEE_TTF
+	bool "alee-ttf-12"
+	help
+	  A Lee's Hangul truetype fonts
+
+	  This package contains GPL'd Hangul truetype fonts made by A Lee.
+	  
+	  Eunjin and Ongdalsam are general purpose Hangul truetype fonts that
+	  contain ascii and Korean syllable characters.  These fonts look good
+	  in 12px (9pt in 96dpi screen) size without antialiasing.
+	  
+	  09t@quark.ttf is not a real Hangul font.  It is a truetype ascii font
+	  that is specially designed with the principle of the Hangul 3-bul-sik
+	  typewriter invented by Ph.D Kong Byeong-woo.
+	  
+	  On qwerty keyboard layout, get 09t@quark.ttf font and type as typing
+	  Hangul on Hangul 3-bul-sik-final keyboard, WITHOUT HANGUL IME.  Then
+	  letters you type will appear like Hangul.
+	  
+	  09t@quark.ttf contains 16px bitmaps for screen use, therefore looks
+	  good in 16px (12pt in 96dpi screen) size without antialiasing.
+
+	  http://packages.debian.org/unstable/x11/ttf-alee
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ARPHIC_TTF
+	bool "arphic-ttf-2.11nb4"
+	help
+	  Chinese TrueType fonts from Arphic Technology
+
+	  Four high-quality Chinese TrueType fonts generously provided by Arphic
+	  Technology to the Free Software community under the "Arphic Public License".
+	  See ARPHICPL.TXT for details.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ARTWIZ_FONTS
+	bool "artwiz-fonts-1.3nb3"
+	help
+	  Set of free fonts for X11 desktops
+
+	  A collection of free fonts which are designed for use on X11 desktops,
+	  created by artwiz. These fonts have a futuristic style and are quite
+	  small, particularly at high resolutions.
+
+	  http://www.vastwaters.com/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_BAEKMUK_TTF
+	bool "baekmuk-ttf-2.2nb2"
+	help
+	  Baekmuk family Korean TrueType fonts
+
+	  Baekmuk Korean TrueType fonts are now distributed under BSD/X11 style
+	  license.
+
+	  http://kldp.net/projects/baekmuk/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_BAKOMA_FONTS
+	bool "bakoma-fonts-1.1"
+	help
+	  BaKoMa Fonts for TeX
+
+	  The package includes 88 basic fonts of the Computer Modern font family
+	  that were designed by D.E.Knuth. as well as the most usefull AMS fonts:
+	  Euler family and symbols.  Totally, 52 fonts are included into BaKoMa/AMS.
+	  The fonts are in a ATM compatible PostScript Type 1 font format (PFB+AFM+PFM)
+	  as well as in a TrueType font format (TTF).
+	  
+	  This font set can be used for typesetting most of (La)TeX documents:
+	  
+	  - printing documents on a PostScript printer
+	  by using, for example, Rokiki's DVIPS;
+	  
+	  - printing documents on a wide set of matrix printers
+	  by using DVIPS and GhostScript.
+	  
+	  - drawing slides on vector plotters by using PostScript 'plot.ps' program
+	  which is supplied with the collection.
+	  For drawing documents on HPGL plotters, the 'ps2hpgl' utility can be used.
+	  It is available in 'ftp.mathworks.com' host
+	  in the '/pub/contrib/tools' directory.
+	  
+	  - displaing documents under MS Windows by using TrueType version of
+	  those fonts or by using PostScript version with ATM.
+	  For this case, fonts have specific encoding. Please read the
+	  section about font encoding before using these fonts with MS Windows.
+
+	  http://www.ctan.org/tex-archive/fonts/cm/ps-type1/bakoma/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_BDFTOPCF
+	bool "bdftopcf-1.0.2nb1"
+	help
+	  BDF to PCF font converter for X11
+
+	  The bdftopcf tool converts X fonts from Bitmap Distribution Format
+	  to Portable Compiled Format.
+	  
+	  Fonts in the Portable Compiled Format can be read by any architecture,
+	  although  the file  is  structured  to allow one particular
+	  architecture to read them directly without reformatting.  This
+	  allows fast reading on the  appropriate machine, but the files
+	  are still portable (but read more slowly) on other machines.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_BIZNET_ISO8859_2
+	bool "biznet-iso8859_2-1.0nb4"
+	help
+	  Full set of ISO 8859-2 fonts for X Window System
+
+	  The BIZNET ISO 8859-2 (Central European) X Window System Fonts are a set of
+	  ISO 8859-2 (sometimes called also ISO Latin2) X Window System bitmap typefaces
+	  derived from the original ISO 8859-1 typefaces included into the X Window
+	  System, Version 11, Release 6.3 (X11R6.3). The set contains 395 different
+	  typefaces.
+
+	  http://web.archive.org/web/20041204153923/http://www.biz.net.pl/english/x-fonts/index.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CHKFONTPATH
+	bool "chkfontpath-1.9.7nb4"
+	help
+	  Command line tool to manage X server's font path
+
+	  This is a simple terminal mode program for configuring the directories
+	  in the X font server's path. It is mostly intended to be used
+	  `internally' by RPM when packages with fonts are added or removed, but
+	  it may be useful as a stand-alone utility in some instances.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYBERBASE_TTF
+	bool "cyberbase-ttf-2.0nb6"
+	help
+	  Cyberbit minus CJK subset, for ISO-8859-x languages
+
+	  Bitstream Cyberbit is a TrueType font. It is an international font, containing
+	  characters from many languages. Each character is encoded with its Unicode
+	  value, according to Unicode 2.0 standards.
+	  
+	  Cyberbit was developed by Bitstream to provide Unicode Consortium members with
+	  a test font. It is therefore distributed freely to customers that need advanced
+	  multilingual fonts for testing and other non-commercial uses. Customers that
+	  wish to use Cyberbit for other purposes must license the font from Bitstream.
+	  
+	  Cyberbase is an ISO-8859-X-only version of Cyberbit, the CJK parts are not
+	  included -- if you want those too, consider using the cyberbit-ttf package
+	  instead.
+
+	  http://www.bitstream.com/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYBERBIT_TTF
+	bool "cyberbit-ttf-2.0nb6"
+	help
+	  Multilingual TrueType font from Bitstream
+
+	  Bitstream Cyberbit is a TrueType font. It is an international font, containing
+	  characters from many languages. Each character is encoded with its Unicode
+	  value, according to Unicode 2.0 standards.
+	  
+	  Cyberbit was developed by Bitstream to provide Unicode Consortium members with
+	  a test font. It is therefore distributed freely to customers that need advanced
+	  multilingual fonts for testing and other non-commercial uses. Customers that
+	  wish to use Cyberbit for other purposes must license the font from Bitstream.
+
+	  http://www.bitstream.com/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_BULGARIAN_MIK
+	bool "cyr-rfx-bulgarian-mik-1.1nb3"
+	help
+	  Cyrillic X11 fonts in bulgarian-mik encoding
+
+	  X11 fonts from CYR-RFX project, in bulgarian-mik encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_IBM_CP866
+	bool "cyr-rfx-ibm-cp866-1.1nb3"
+	help
+	  Cyrillic X11 fonts in ibm-cp866 encoding
+
+	  X11 fonts from CYR-RFX project, in ibm-cp866 encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_ISO10646_0400
+	bool "cyr-rfx-iso10646_0400-1.1nb3"
+	help
+	  Cyrillic X11 fonts in iso10646-0400 encoding
+
+	  X11 fonts from CYR-RFX project, in iso10646-0400 encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_ISO8859_15
+	bool "cyr-rfx-iso8859_15-1.1nb3"
+	help
+	  Cyrillic X11 fonts in iso8859-15 encoding
+
+	  X11 fonts from CYR-RFX project, in iso8859-15 encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_ISO8859_5
+	bool "cyr-rfx-iso8859_5-1.1nb3"
+	help
+	  Cyrillic X11 fonts in iso8859-5 encoding
+
+	  X11 fonts from CYR-RFX project, in iso8859-5 encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_KOI8_O
+	bool "cyr-rfx-koi8-o-1.1nb3"
+	help
+	  Cyrillic X11 fonts in koi8-o encoding
+
+	  X11 fonts from CYR-RFX project, in koi8-o encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_KOI8_RU
+	bool "cyr-rfx-koi8-ru-1.1nb3"
+	help
+	  Cyrillic X11 fonts in koi8-ru encoding
+
+	  X11 fonts from CYR-RFX project, in koi8-ru encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_KOI8_UB
+	bool "cyr-rfx-koi8-ub-1.1nb3"
+	help
+	  Cyrillic X11 fonts in koi8-ub encoding
+
+	  X11 fonts from CYR-RFX project, in koi8-ub encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_KOI8_1
+	bool "cyr-rfx-koi8_1-1.1nb3"
+	help
+	  Cyrillic X11 fonts in koi8-1 encoding
+
+	  X11 fonts from CYR-RFX project, in koi8-1 encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_MAC_CYRILLIC
+	bool "cyr-rfx-mac-cyrillic-1.1nb3"
+	help
+	  Cyrillic X11 fonts in mac-cyrillic encoding
+
+	  X11 fonts from CYR-RFX project, in mac-cyrillic encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_WINDOWS_1251
+	bool "cyr-rfx-windows_1251-1.1nb3"
+	help
+	  Cyrillic X11 fonts in windows-1251 encoding
+
+	  X11 fonts from CYR-RFX project, in windows-1251 encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CYR_RFX_WINLATIN_1
+	bool "cyr-rfx-winlatin_1-1.1nb3"
+	help
+	  Cyrillic X11 fonts in winlatin-1 encoding
+
+	  X11 fonts from CYR-RFX project, in winlatin-1 encoding
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/cyr-rfx/00index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_DBZ_TTF
+	bool "dbz-ttf-20050114nb1"
+	help
+	  Divide By Zero TrueType fonts created by Tom Murphy 7
+
+	  This is a collection of TrueType fonts which be created for fun. You can
+	  use them for free to do anything you want, you just can't take the fonts
+	  and resell them (on a CD, for instance). Read the readme.txt if you're not
+	  sure what this means.
+
+	  http://fonts.tom7.com/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_DEJAVU_TTF
+	bool "dejavu-ttf-2.33"
+	help
+	  DejaVu family of TrueType fonts
+
+	  The DejaVu fonts are a font family based on the Bitstream Vera Fonts.
+	  Its purpose is to provide a wider range of characters while maintaining
+	  the original look and feel through the process of collaborative development,
+	  under a Free license.
+
+	  http://dejavu.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_DROID_TTF
+	bool "droid-ttf-20111115"
+	help
+	  The Droid fonts family from Ascender Corporation
+
+	  The Droid family of fonts was designed by Ascender's Steve Matteson
+	  beginning in the fall of 2006. The goal was to provide optimal
+	  quality and reading comfort on a mobile handset. The Droid fonts
+	  were optimized for use in application menus, web browsers and for
+	  other screen text.
+	  
+	  Ascender Corporation worked closely with Google and the Open Handset
+	  Alliance to develop these system fonts for Android, a free, open
+	  source, and fully customizable mobile platform.
+
+	  http://android.git.kernel.org/?p
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_EFONT_UNICODE
+	bool "efont-unicode-0.4.2nb1"
+	help
+	  Free unicode BDF font
+
+	  This is the /efont/ Unicode fonts made by /efont/ project.
+
+	  http://openlab.ring.gr.jp/efont/unicode/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ENCODINGS
+	bool "encodings-1.0.3"
+	help
+	  X11 Font Index Generator
+
+	  The package provides the X.org font encoding files, such as
+	  adobe-dingbats.enc.gz, ibm-cp866.enc, jisx0212.1990-0.enc.gz,
+	  and others. This is from the modular X.org project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FNTSAMPLE
+	bool "fntsample-3.2nb1"
+	help
+	  Make font samples, similar to Unicode charts, showing Unicode coverage
+
+	  FntSample is a tool that can be used to make font samples that show coverage
+	  of the font and are similar in appearance to Unicode Charts.
+	  # Support for various font formats using FreeType library, including
+	  TrueType, OpenType, and Type1.
+	  # Creating samples in PDF, PostScript, and SVG formats.
+	  # Adding outlines with Unicode block names for PDF samples.
+	  # Selection of code ranges to show in charts.
+	  # Comparing of two font files with highlighting of added glyphs.
+
+	  http://fntsample.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_100DPI
+	bool "font-adobe-100dpi-1.0.1"
+	help
+	  Standard 100dpi Adobe PCF fonts
+
+	  This are the PCF versions of the following Adobe fonts for 100dpi displays:
+	  - Courier
+	  - Helvetica
+	  - New Century Schoolbook
+	  - Symbol
+	  - Times
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_75DPI
+	bool "font-adobe-75dpi-1.0.1"
+	help
+	  Standard 75pi Adobe PCF fonts
+
+	  This are the PCF versions of the following Adobe fonts for 75dpi displays:
+	  - Courier
+	  - Helvetica
+	  - New Century Schoolbook
+	  - Symbol
+	  - Times
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_100DPI
+	bool "font-adobe-utopia-100dpi-1.0.2"
+	help
+	  100dpi Adobe Utopia PCF fonts
+
+	  This are the PCF versions of the following Adobe fonts for 100dpi displays:
+	  - Adobe Utopia
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_75DPI
+	bool "font-adobe-utopia-75dpi-1.0.2"
+	help
+	  75dpi Adobe Utopia PCF fonts
+
+	  This are the PCF versions of the following Adobe fonts for 75dpi displays:
+	  - Adobe Utopia
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_TYPE1
+	bool "font-adobe-utopia-type1-1.0.1"
+	help
+	  Adobe Utopia Type1 fonts
+
+	  This are the Type1 versions of the following Adobe fonts:
+	  - Adobe Utopia
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_ALIAS
+	bool "font-alias-1.0.2"
+	help
+	  Standard aliases for X11 PCF fonts
+
+	  The font-alias package contains a font.alias tables for the various PCF
+	  packages of modular Xorg. It maps common legacy names to full font
+	  descriptors. The most important alias is ``fixed'', which is needed for
+	  the X server to run.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_ARABIC_MISC
+	bool "font-arabic-misc-1.0.1"
+	help
+	  Miscellaneous Arabic PCF fonts
+
+	  This are the PCF versions of the following Arabic fonts for 100dpi display:
+	  - Newspaper-Medium
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_100DPI
+	bool "font-bh-100dpi-1.0.1"
+	help
+	  Standard 100dpi Bigelow & Holmes PCF fonts
+
+	  This are the PCF versions of the following Bigelow & Holmes fonts for
+	  100dpi displays:
+	  - Lucida
+	  - Lucida Bright
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_75DPI
+	bool "font-bh-75dpi-1.0.1"
+	help
+	  Standard 75dpi Bigelow & Holmes PCF fonts
+
+	  This are the PCF versions of the following Bigelow & Holmes fonts for
+	  75dpi displays:
+	  - Lucida
+	  - Lucida Bright
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_LUCIDATYPEWRITER_100DPI
+	bool "font-bh-lucidatypewriter-100dpi-1.0.1"
+	help
+	  100dpi Bigelow & Holmes Lucida Typewriter PCF fonts
+
+	  This are the PCF versions of the following Bigelow & Holmes fonts for
+	  100dpi displays:
+	  - Lucida Typewriter
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_LUCIDATYPEWRITER_75DPI
+	bool "font-bh-lucidatypewriter-75dpi-1.0.1"
+	help
+	  75dpi Bigelow & Holmes Lucida Typewriter PCF fonts
+
+	  This are the PCF versions of the following Bigelow & Holmes fonts for
+	  75dpi displays:
+	  - Lucida Typewriter
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_TTF
+	bool "font-bh-ttf-1.0.1"
+	help
+	  Standard Bigelow & Holmes TrueType fonts
+
+	  This are the TrueType versions of the following Bigelow & Holmes fonts:
+	  - Luxi Mono
+	  - Luxi Sans
+	  - Luxi Serif
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_TYPE1
+	bool "font-bh-type1-1.0.1"
+	help
+	  Standard Bigelow & Holmes TrueType fonts
+
+	  This are the Type1 versions of the following Bigelow & Holmes fonts:
+	  - Luxi Mono
+	  - Luxi Sans
+	  - Luxi Serif
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_100DPI
+	bool "font-bitstream-100dpi-1.0.1"
+	help
+	  Standard 100dpi Bitstream PCF fonts
+
+	  This are the PCF versions of the following Bitstream fonts for 100dpi displays:
+	  - Charter
+	  - Terminal
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_75DPI
+	bool "font-bitstream-75dpi-1.0.1"
+	help
+	  Standard 75dpi Bitstream PCF fonts
+
+	  This are the PCF versions of the following Bitstream fonts for 75dpi displays:
+	  - Charter
+	  - Terminal
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_TYPE1
+	bool "font-bitstream-type1-1.0.1"
+	help
+	  Bitstream Charter and Courier Type 1 outline fonts
+
+	  This package provides four Bitstream Charter Type 1 outline fonts
+	  and four Courier Type 1 outline fonts from the Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_CRONYX_CYRILLIC
+	bool "font-cronyx-cyrillic-1.0.1"
+	help
+	  Cronyx Cyrillic PCF fonts
+
+	  This are the PCF versions of the following Cronyx Cyrillic fonts for 100dpi
+	  displays:
+	  - Courier
+	  - Helvetica
+	  - Times
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_CURSOR_MISC
+	bool "font-cursor-misc-1.0.1"
+	help
+	  Standard X11 cursors in PCF format
+
+	  The font-cursor-misc package provides around 75 cursors in the
+	  portable PCF format. These include the X cursor, arrows, clock
+	  cursor, crosshair, fleur cursor, iron cross, sailboat cursor, and
+	  many more.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_DAEWOO_MISC
+	bool "font-daewoo-misc-1.0.1"
+	help
+	  Daewoo Gothic PCF fonts
+
+	  This are the PCF versions of the Daewoo Gothic fonts for 100dpi displays.
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_DEC_MISC
+	bool "font-dec-misc-1.0.1"
+	help
+	  DEC cursor and session PCF fonts
+
+	  This are the PCF versions of the following DEC fonts for 100dpi displays:
+	  - Cursor
+	  - Session
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_IBM_TYPE1
+	bool "font-ibm-type1-1.0.1"
+	help
+	  IBM Courier Type1 fonts
+
+	  This are the Type1 versions of the IBM Courier fonts.
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_ISAS_MISC
+	bool "font-isas-misc-1.0.1"
+	help
+	  72dpi PCF versions of the Chinese Song Ti fonts
+
+	  This are the PCF versions of the Song Si fonts for 72dpi displays.
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_JIS_MISC
+	bool "font-jis-misc-1.0.1"
+	help
+	  78dpi PCF versions of the Japanese fixed fonts
+
+	  This are the PCF versions of the JIS "fixed" fonts for 78dpi displays.
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_MICRO_MISC
+	bool "font-micro-misc-1.0.1"
+	help
+	  Miscellaneous Micro PCF fonts
+
+	  This is the PCF versions of Miscellaneous Micro fonts for 75dpi display.
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_CYRILLIC
+	bool "font-misc-cyrillic-1.0.1"
+	help
+	  Miscellaneous Cyrillic "fixed" PCF fonts
+
+	  This are the PCF versions of the Miscellaneous Cyrillic fonts.
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_ETHIOPIC
+	bool "font-misc-ethiopic-1.0.1"
+	help
+	  Miscellaneous Ethiopic OTF fonts
+
+	  This are the TTF and OTF versions of the Miscellaneous Ethiopic fonts.
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_MELTHO
+	bool "font-misc-meltho-1.0.1"
+	help
+	  Miscellaneous Meltho OTF fonts
+
+	  This are the OTF versions of the Miscellaneous Meltho fonts.
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_MISC
+	bool "font-misc-misc-1.0.0"
+	help
+	  Standard X11 "fixed" PCF font
+
+	  The standard X11 public domain "fixed" font that you can
+	  share and enjoy. It is in PCF format.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_MUTT_MISC
+	bool "font-mutt-misc-1.0.1"
+	help
+	  100dpi PCF versions of the ClearlyU fonts
+
+	  This are the PCF versions of the ClearlyU fonts for 100dpi displays.
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_SCHUMACHER_MISC
+	bool "font-schumacher-misc-1.1.2"
+	help
+	  Schumacher Miscellaneous "Crean" PCF fonts
+
+	  This are the PCF versions of the Schumacher Miscellaneous fonts for
+	  75dpi displays.
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_SCREEN_CYRILLIC
+	bool "font-screen-cyrillic-1.0.2"
+	help
+	  Screen Cyrillic PCF fonts
+
+	  This are the PCF versions of the Screen Cyrillic fonts.
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_SONY_MISC
+	bool "font-sony-misc-1.0.1"
+	help
+	  Standard X11 "sony" PCF fonts
+
+	  The standard X11 "sony" fonts that you can
+	  share and enjoy. It is in PCF format.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_SUN_MISC
+	bool "font-sun-misc-1.0.1"
+	help
+	  Sun Open Look PCF fonts
+
+	  This are the PCF versions of the Sun Open Look cursor and gryph fonts.
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_UTIL
+	bool "font-util-1.1.1"
+	help
+	  Tools for truncating and subseting of ISO10646-1 BDF fonts
+
+	  The font-util package provides ucs2any and bdftruncate tools, for
+	  generating  BDF fonts containing subsets of ISO 10646-1 code-points
+	  and generating truncated BDF font from ISO 10646-1-encoded BDF
+	  font.  It also provides mapping-files (character set tables)
+	  and the fontutil pkg-config and autoconf macro files.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_WINITZKI_CYRILLIC
+	bool "font-winitzki-cyrillic-1.0.1"
+	help
+	  Winitzki Cyrillic PCF fonts
+
+	  This are the PCF versions of the Winitzki Cyrillic fonts.
+	  
+	  This is from the modular Xorg project.
+
+	  ftp://ftp.freedesktop.org/pub/individual/font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONT_XFREE86_TYPE1
+	bool "font-xfree86-type1-1.0.2"
+	help
+	  XFree86 cursor Type1 fonts
+
+	  This are the Type1 versions of the XFree86 cursor font.
+	  
+	  This is from the modular Xorg project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONTCONFIG
+	bool "fontconfig-2.8.0nb3"
+	help
+	  Library for configuring and customizing font access
+
+	  Fontconfig is a library for configuring and customizing font access.
+	  
+	  Fontconfig can:
+	  * discover new fonts when installed automatically, removing a common
+	  source of configuration problems.
+	  * perform font name substitution, so that appropriate alternative fonts
+	  can be selected if fonts are missing.
+	  * identify the set of fonts required to completely cover a set of
+	  languages.
+	  * have GUI configuration tools built as it uses an XML-based
+	  configuration file (though with autodiscovery, we believe this need is
+	  minimized).
+	  * efficiently and quickly find the fonts you need among the set of fonts
+	  you have installed, even if you have installed thousands of fonts,
+	  while minimizing memory usage.
+	  * be used in concert with the X Render Extension and FreeType to
+	  implement high quality, anti-aliased and subpixel rendered text on a
+	  display.
+	  
+	  Fontconfig does not:
+	  * render the fonts themselves (this is left to FreeType or other
+	  rendering mechanisms).
+	  * depend on the X Window System in any fashion, so that printer only
+	  applications do not have such dependencies.
+
+	  http://www.fontconfig.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FONTFORGE
+	bool "fontforge-20110222nb1"
+	help
+	  Postscript font editor
+
+	  A postscript font editor that lets you create your own postscript,
+	  truetype, opentype, cid-keyed and bitmap (bdf) fonts, or edit
+	  existing ones. Also lets you convert one format to another.
+
+	  http://fontforge.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FREEFONT_TTF
+	bool "freefont-ttf-20100919"
+	help
+	  Free UCS Outline Fonts: FreeMono, FreeSans, and FreeSerif
+
+	  The freefont project provides a set of free, high-quality, outline
+	  (i.e. OpenType) fonts covering the ISO 10646/Unicode UCS (Universal
+	  Character Set).  This set consists of three TrueType typefaces:
+	  one monospaced and two proportional -- one with uniform and one
+	  with modulated stroke. These fonts are similar to the Helvetica,
+	  Times and Courier fonts.
+
+	  http://www.gnu.org/software/freefont/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_FREEFONTS
+	bool "freefonts-0.10nb2"
+	help
+	  Collection of 79 freely available fonts
+
+	  A collection of 79 freely available fonts (including Type 1
+	  PostScript fonts) useful for X11 and Ghostscript from the CICA
+	  archives for Windows.  Some of the fonts include: Agate,
+	  Baskerville, Bodoni, CoronetScript, Garamond, Genoa,
+	  GoudyOldStyle, ShalomScript and several others.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_GBDFED
+	bool "gbdfed-1.5nb7"
+	help
+	  GTK-based BDF font editor
+
+	  gbdfed is a GTK-based BDF font editor with the following features:
+	  
+	  o  Multiple fonts can be loaded from the command line.
+	  o  Multiple fonts can be open at the same time.
+	  o  Cutting and pasting glyphs between fonts.
+	  o  Multiple glyph bitmap editors can be open at the same time.
+	  o  Cutting and pasting between glyph bitmap editors.
+	  o  Export of XBM files from glyph bitmap editors.
+	  o  Automatic correction of certain metrics when a font is loaded.
+	  o  Generation of XLFD font names for fonts without XLFD names.
+	  o  Update an XLFD font name from the font properties and vice-versa.
+	  o  Font property & comment editor.
+	  o  Supports unencoded glyphs (ENCODING of -1).
+	  o  Display of glyph encodings in octal, decimal, or hex.
+	  o  Builtin on-line help.
+	  
+	  gbdfed imports and/or exports the following formats:
+	  
+	  o PK/GF, HBF (Han Bitmap Font)
+	  o PSF, CP, FNT (linux) and vfont (Sun) console fonts
+	  o X server built-in fonts
+	  o Windows FON/FNT
+	  o OpenType/TrueType fonts and collections
+	  o PSF/HEX fonts
+
+	  http://www.math.nmsu.edu/~mleisher/Software/gbdfed/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_GENTIUM_TTF
+	bool "gentium-ttf-1.02"
+	help
+	  Free TrueType fonts from Bitstream, useful for web viewing
+
+	  Gentium ("belonging to the nations" in Latin) is a Unicode typeface family
+	  designed to enable the many diverse ethnic groups around the world who use
+	  the Latin script to produce readable, high-quality publications. The design
+	  is intended to be highly readable, reasonably compact, and visually
+	  attractive. Gentium has won a "Certificate of Excellence in Typeface Design"
+	  in two major international typeface design competitions: bukva:raz! (2001),
+	  TDC2003 (2003).
+	  
+	  Gentium provides glyphs for a wide range of Latin and Greek characters. The
+	  additional 'extended' Latin letters are designed to naturally harmonize with
+	  the traditional 26 ones. Diacritics are treated with careful thought and
+	  attention to their use. Gentium also supports both ancient and modern Greek,
+	  including a number of alternate forms. It currently supports the following
+	  ranges of Unicode 3.0 (completely unless noted):
+	  
+	  Range           Description
+	  U+0020-U+007F   Basic Latin
+	  U+00A0-U+00FF   Latin-1 Supplement
+	  U+0100-U+017F   Latin Extended-A
+	  U+0180-U+021F   Latin Extended-B
+	  U+0222-U+0233   Latin Extended-B (continued)
+	  U+0250-U+02AD   IPA Extensions
+	  U+02B0-U+02FF   Spacing Modifier Letters
+	  U+0300-U+036F   Combining Diacritical Marks
+	  U+0370-U+03D5   Greek (not including archaic or Coptic)
+	  U+1E00-U+1EFF   Latin Extended Additional
+	  U+1F00-U+1FFF   Greek Extended
+	  U+2000-U+203A   General Punctuation (partial)
+	  U+2070-U+209F   Superscripts and Subscripts
+	  U+20A0-U+20CF   Currency Symbols (partial)
+	  U+2100-U+214F   Letterlike Symbols (only a couple)
+	  
+	  Gentium Regular also includes some Cyrillic glyphs, but they are only early
+	  drafts. A future version will include a completely revised set, including
+	  italic, and will expand the support for Latin, Greek and Cyrillic to Unicode
+	  4.1.
+
+	  http://scripts.sil.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_GEOSLAB703_TTF
+	bool "geoslab703-ttf-20010522nb4"
+	help
+	  Free TrueType fonts from Bitstream, useful for web viewing
+
+	  This package installs two free TrueType fonts, they are useful for web viewing.
+	  
+	  The typeface is Geometric Slabserif 703, which is Bitstream's version of
+	  Memphis  a typeface designed in 1930 by Rudolph Weiss. While it may seem odd
+	  that a typeface designed 65 years ago would look good on-screen today,
+	  the reason has to do with the shape of the letterforms themselves.
+	  
+	  They have a simple, geometric shape, and their serifs (the small protrusions
+	  from the ends of the letter) are in the "slab" family, which means they, too,
+	  are simple. The "x-height" (the height of the lowercase letter "x") is
+	  relatively large, but not so large that it makes reading difficult in the web
+	  where there is little real control over leading (the space between the lines).
+	  
+	  Bitstream is supplying these typefaces to help you see the importance of type
+	  on the web. Once you see how different web pages can look just by changing the
+	  typeface, and how much easier they can be to read, you'll see the importance of
+	  typographic choice on the web.
+
+	  http://www.will-harris.com/fonts/freefonts.htm
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_GHOSTSCRIPT_CIDFONTS
+	bool "ghostscript-cidfonts-20000901nb2"
+	help
+	  CIDFont resources for Ghostscript
+
+	  This package enables Ghostscript to use the CID-keyed fonts provided in
+	  the adobe-cidfonts package.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_GHOSTSCRIPT_CMAPS
+	bool "ghostscript-cmaps-20020913nb2"
+	help
+	  CMap resources for Ghostscript
+
+	  This package enables Ghostscript to use the CMap files provided in the
+	  adobe-cmaps package.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_GHOSTSCRIPT_FONTS
+	bool "ghostscript-fonts-8.11nb3"
+	help
+	  Postscript fonts for Aladdin Ghostscript
+
+	  Fonts and font metrics customarily distributed with Ghostscript.
+	  (The 35 standard fonts are not included. Ghostscript comes with its
+	  own set in its "Resource/Font" directory; for other customers the
+	  pkgsrc/fonts/urw-fonts pkg is provided which follows Ghostscript's
+	  historical naming scheme.)
+
+	  http://gs-fonts.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_GSFTOPKK
+	bool "gsftopkk-1.19.2nb2"
+	help
+	  Tool to convert bitmaps to .pk format
+
+	  gsftopk is a program that uses Ghostscript to render PostScript fonts
+	  (including mock-ups of the ``built-in'' 35; e.g., Times-Roman) and
+	  convert the bitmaps to .pk format for use with xdvi or other .dvi
+	  viewers.  Contrary to what its name may suggest, gsftopk can handle
+	  all types of fonts acceptable to Ghostscript, including .pfa, .pfb,
+	  and .ttf (TrueType) files.
+	  
+	  gsftopkk is the same basic program, modified to work with Karl Berry's
+	  Kpathsea path-searching library.
+
+	  http://math.berkeley.edu/~vojta/gsftopk.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_GUCHARMAP
+	bool "gucharmap-2.32.1nb3"
+	help
+	  Unicode/ISO10646 character map and font viewer
+
+	  gucharmap is a Unicode/ISO10646 character map and font viewer
+	  for GNOME 2 platform. It supports anti-aliased, scalable fonts
+	  and more.
+
+	  http://live.gnome.org/Gucharmap
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_INCONSOLATA_TTF
+	bool "inconsolata-ttf-20090207"
+	help
+	  Inconsolata TrueType font
+
+	  Inconsolata is a monospace, san serif font
+
+	  http://www.levien.com/type/myfonts/inconsolata.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_INTLFONTS
+	bool "intlfonts-1.2.1nb5"
+	help
+	  
+
+	  International Fonts
+	  
+	  This directory contains free X11 fonts (BDF format) for all characters
+	  that Emacs 20 can handle. They are classified into several categories.
+	  
+	  Asian -- Asian (non-CJK) fonts
+	  Chinese  -- Chinese normal size fonts excluding what distributed with X
+	  Ethiopic -- Ethiopic fonts
+	  European -- European normal size fonts (suitable with the other fonts)
+	  European-BIG -- European big fonts
+	  Japanese -- Japanese normal size fonts excluding what distributed with X
+	  Korean -- Hangul normal size fonts (X/display quality fonts only)
+	  Misc -- fonts for the other regions
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_IPAEXFONT
+	bool "ipaexfont-00103"
+	help
+	  
+
+	  This package contains IPAex Gothic font and IPAex Mincho font. IPAex
+	  fonts contains fixed-width (monospace) Kanji glyphs that is based on
+	  JIS X 0213 and proportional Western characters glyphs.
+	  IPA means Information-technology Promotion Agency, Japan.
+
+	  http://ossipedia.ipa.go.jp/ipafont/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_IPAFONT
+	bool "ipafont-00303"
+	help
+	  
+
+	  This package contains IPA Gothic font, IPA P Gothic font, IPA Mincho
+	  font, and  IPA P Mincho font. Kanji characters in these fonts are
+	  based on JIS X 0213-2004.
+	  IPA is for Information-technology Promotion Agency, Japan.
+
+	  http://ossipedia.ipa.go.jp/ipafont/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JA_ELISAT
+	bool "ja-elisat-1.0nb1"
+	help
+	  8x8 dots X11 bitmap font for JIS X 0208
+
+	  ELISA FONT is an 8x8 dots bitmap font for Japanese.  It was made in
+	  NIFTY-Serve FYHPPC `ELISA FONT PJ' for HP 100LX/200LX palmtop computers,
+	  then converted to BDF format for X Window System.
+	  
+	  This package also contains 4x8 dots for JIS X 0201 and ISO-8859-1
+	  1-byte charset fonts.
+
+	  http://www.tea.forus.or.jp/toshi/exhibition/elisat10.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JA_ELISAU
+	bool "ja-elisau-1.0nb1"
+	help
+	  10x8 dots X11 bitmap font for JIS X 0208
+
+	  ELISA FONT is an 8x8 dots bitmap font for Japanese.  It was made in
+	  NIFTY-Serve FYHPPC `ELISA FONT PJ' for HP 100LX/200LX palmtop computers,
+	  then converted to BDF format for X Window System.  Its size is modified
+	  to 8x10 dots.
+
+	  http://www.wheel.gr.jp/~dai/software/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JA_KANAME
+	bool "ja-kaname-0.0.0.20030112nb1"
+	help
+	  12x12 dots X11 bitmap font for JIS X 0208
+
+	  Kaname-cho font is an 12x12 dots bitmap font for Japanese.
+	  
+	  This font was originally designed by Yuuji Ebihara for SX shell under
+	  SHARP X68000 personal computer.  The conversion to BDF was done by tetsu
+	  at kuis.kyoto-u.ac.jp.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JA_KAPPA20
+	bool "ja-kappa20-0.394nb1"
+	help
+	  20x20 dots X11 bitmap font for Japanese with several extra fonts
+
+	  Kappa 20dot Fonts is the set of bitmap fonts for X Window System.  It
+	  contains 20x20 dots Kanji (JIS X 0208) with vertical version, Latin
+	  1/2/3/9 (ISO-8859-1/2/3/15) fonts.  All fonts have both of medium and
+	  bold weights.
+
+	  http://kappa.allnet.ne.jp/20dot.fonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JA_NAGA10
+	bool "ja-naga10-1.1nb1"
+	help
+	  10x10 dots X11 bitmap font for JIS X 0208
+
+	  naga10 font is a set of bitmap font for Japanese.  It contains 10x10
+	  dots JIS X 0208 font and 5x10 dots 1-byte charset font.
+	  
+	  This package also includes 6x12 dots Latin-1 (medium/bold) and JIS X
+	  0201 1-byte charset fonts with normal width which are missing in
+	  official X distribution.
+
+	  http://hp.vector.co.jp/authors/VA013391/fonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JA_SAZANAMI_TTF
+	bool "ja-sazanami-ttf-20040629nb1"
+	help
+	  Truly free Japanese TrueType font
+
+	  Free Japanese TrueType font based on Wada lab. font (CLWFK) and
+	  free (freely modifiable and distributable) bitmap fonts.
+
+	  http://wiki.fdiary.net/font/?sazanami
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JA_SHINONOME
+	bool "ja-shinonome-0.9.11"
+	help
+	  12, 14, 16 dots bitmap fonts for Japanese, iso8859-1
+
+	  "Shinonome Font Family" is a set of BDF bitmap fonts. The original author
+	  Yasuyuki Furukawa was pleased to hand over its maintenance to the /efont/.
+	  
+	  It includes 12, 14, 16 dots Japanese (JIS X 0201/0208) and ISO8859-1
+	  terminal fonts.  18 dots ISO8859-1 fonts are also included.  All of the
+	  above fonts have normal, bold, italic, and bold-italic faces.
+	  
+	  These fonts are in Public Domain. Share and Enjoy.
+
+	  http://openlab.ring.gr.jp/efont/shinonome/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JISX0208FONTS
+	bool "jisx0208fonts-200301316nb2"
+	help
+	  Meta-package including X11 BDF fonts for JIS X0208 standard and more
+
+	  This package installs X11 fonts for JIS X0208 standard.
+	  
+	  it includes several fonts such as:
+	  - ELISA Fonts (8x8 dots)
+	  - naga10 Fonts (10x10 dots)
+	  - Shinonome Fonts (12x12, 14x14, 16x16 dots)
+	  - Kappa20 Fonts (20x20 dots)
+	  
+	  and additionally,
+	  - ELISA Fonts (8x10 dots)
+	  if you want to use this, add USE_NON_SQUARE=YES to /etc/mk.conf.
+	  - KANAME Fonts (12x12 dots)
+	  if you want to use this, add USE_KANAME=YES to /etc/mk.conf.
+	  
+	  All of the above have thier 1-byte charset counterpart of the 2-byte one
+	  and some of them have Latin 2/3/9 as well as Latin 1.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JISX0212FONTS
+	bool "jisx0212fonts-0.0nb2"
+	help
+	  X11 bitmap fonts for JIS X 0212
+
+	  Japanese JIS X0212-1990 fonts collection.
+	  
+	  some excerpts:
+	  
+	  16x16 JIS X 0212-1990 Kanji Font, Version 0.96 (July 28, 1996)
+	  16x16 JIS X 0212-1990 Kanji Font, Version 0.97 (August 23, 1996)
+	  JISX9051-based design by
+	  Koichi Yasuoka <yasuoka@kudpc.kyoto-u.ac.jp>
+	  KANOU Hiroki <g2k032@cfi.waseda.ac.jp>
+	  ITO Takayuki <yuki@is.s.u-tokyo.ac.jp>
+	  Toshiyuki Imamura <imamura@kuamp.kyoto-u.ac.jp>
+	  Ken'ichi Nakata <nakata@kuamp.kyoto-u.ac.jp>
+	  SUNAGAWA Keiki <kei@ocean.ie.u-ryukyu.ac.jp>
+	  
+	  40x40 JIS Supplementary Kanji Font, Version 1.2 (January 8, 1996)
+	  made of Adobe-NewCenturySchoolbook, Adobe-Symbol, and CBS-CNS fonts
+	  Rearranged and modified by Koichi Yasuoka <yasuoka@kudpc.kyoto-u.ac.jp>
+	  All Kanji characters are in Taiwan-standard-glyph style,
+	  so they are far from Japanese Heisei-Mincho style.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JISX0213FONTS
+	bool "jisx0213fonts-0.0nb1"
+	help
+	  X11 bitmap fonts for JIS X 0213
+
+	  The pkgsrc installs X11 fonts for JIS X0213 standard.
+
+	  ftp://ftp.m17n.org/pub/character/fonts/imamura/jisx0213/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_JMK_FONTS
+	bool "jmk-fonts-3.0nb3"
+	help
+	  Jim Knoble's font collection for X11
+
+	  These are character-cell fonts for use with the X Window System,
+	  created by Jim Knoble.  The current list of fonts included in this
+	  package are:
+	  
+	  Neep (formerly known as NouveauGothic)
+	  
+	  A pleasantly legible variation on the standard fixed fonts that
+	  accompany most distributions of the X Window System.  Comes in both
+	  normal and bold weights in small, medium, large, extra-large, and
+	  huge sizes, as well as an extra-small size that only comes in
+	  normal weight.  Comes in the following encodings:
+	  
+	  ISO-8859-1  (Latin1, Western European + Icelandic)
+	  ISO-8859-2  (Latin2, Eastern European)
+	  ISO-8859-9  (Latin5, Western European + Turkish)
+	  ISO-8859-15 (Latin9, Western European + Euro Symbol)
+	  
+	  Modd
+	  
+	  A fixed-width font with sleek, contemporary styling.  Normal and
+	  bold weights in a 10-point (6x11) and a 12-point (6x13) size.
+	  ISO-8859-1 encoding only.
+
+	  http://www.jmknoble.net/fonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KANJISTROKEORDERS_TTF
+	bool "kanjistrokeorders-ttf-2.016"
+	help
+	  Japanese Kanji characters stroke order font
+
+	  Kanji Stroke Orders font provides an easy way to view stroke order
+	  diagrams for 6373 kanji, 183 kana symbols, the Latin characters
+	  and a few other symbols.
+
+	  http://sites.google.com/site/nihilistorguk/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KCFONTS
+	bool "kcfonts-1.05nb3"
+	help
+	  Kuo Chauo Chinese Fonts collection
+
+	  Kcfonts is a suit of chinese Ming Fanti fonts for X-window.
+	  Kcfonts' fonts are contributed by Kau Chauo Information CO. to all
+	  TANet users running on PC. Thanks Chin-Hao Tsai <c-tsai@uiuc.edu>, who
+	  converted it to the style of ETen's fonts. Now you can use kcfonts &
+	  crxvt to view Chinese by BIG5 encoding.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KILOJI_TTF
+	bool "kiloji-ttf-2.1.0"
+	help
+	  JIS X 0208 Japanese script fonts made by kilo
+
+	  The Kiloji fonts is Japanese script (written by hand) TrueType font
+	  family. This family contains 4 fonts (fixed-width, proportional,
+	  light-weight, and bold).
+
+	  http://www.ez0.net/distribution/font/kiloji/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KO_BAEKMUK
+	bool "ko-baekmuk-2.1"
+	help
+	  
+
+	  The pkgsrc installs X11 fonts for KSX 1001 Korean character set standard.
+	  
+	  Caveat: some of the font files seem to have incorrect font metric
+	  (font metric does not meet the actual font glyph).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KO_HANYANG
+	bool "ko-hanyang-20010718nb1"
+	help
+	  X11 fonts for KSC 5601 standard
+
+	  The pkgsrc installs X11 fonts for KSC 5601 Korean character set standard.
+	  
+	  Caveat: some of the font files seem to have incorrect font metric
+	  (font metric does not meet the actual font glyph).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KO_KAIST
+	bool "ko-kaist-20010718nb1"
+	help
+	  
+
+	  The pkgsrc installs X11 fonts for KSC 5601 Korean character set standard.
+	  
+	  Caveat: some of the font files seem to have incorrect font metric
+	  (font metric does not meet the actual font glyph).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KO_MIZI
+	bool "ko-mizi-20010718nb1"
+	help
+	  X11 fonts for KSC 5601 standard
+
+	  The pkgsrc installs X11 fonts for KSC 5601 Korean character set standard.
+	  
+	  Caveat: some of the font files seem to have incorrect font metric
+	  (font metric does not meet the actual font glyph).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KO_X11FONTS
+	bool "ko-x11fonts-20010722nb2"
+	help
+	  Korean X11 fonts
+
+	  Korean X11 fonts collection
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KOCHI_TTF
+	bool "kochi-ttf-20030809nb5"
+	help
+	  Free Japanese TrueType font by Yasuyuki Furukawa
+
+	  Kochi-gothic is a free Japanese TrueType font developed by Yasuyuki Furukawa.
+
+	  http://wiki.fdiary.net/font/?kochi-alternative
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_KONATU_TTF
+	bool "konatu-ttf-26"
+	help
+	  Japanese TrueType gothic (sans-serif) fonts, Konatu fonts
+
+	  This package contains sans-serif Konatu fonts, Konatu (proportional)
+	  and KonatuTohaba (monospace). The kanji characters in these fonts are
+	  based on JIS X 0208.
+
+	  http://www.masuseki.com/?u
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_XG
+	bool "libXgFonts-1.0nb2"
+	help
+	  These are the UNICODE fonts for use with 9term and sam
+
+	  Unicode fonts
+	  =============
+	  
+	  The new libXg distribution supports Unicode.  Sam and 9term built using
+	  the new UTF libXg will allow one to enter and edit files containing
+	  Unicode characters encoded using UTF-2 (UTF-FSS).
+	  To use them:
+	  
+	  o	convert the bdf files to whatever format is appropriate for
+	  your system and place the files in a suitable common directory
+	  o	set this directory up as an X font directory by running some
+	  program such as `mkfontdir' if necessary
+	  o	add the directory to your fontpath `xset fp+ fontdir'
+	  o	make sure libXg knows about the fontfile you wish to use by
+	  setting the appropriate .p9font X resource (or just *p9font) to
+	  be something like /lib/font/Xg/matty/unicode.9.font or by
+	  specifying an appropriate -p9font argument to libXg programs.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_LIBERATION_TTF
+	bool "liberation-ttf-1.07.1nb1"
+	help
+	  TrueType fonts from RedHat
+
+	  On May 9, 2007, Red Hat announced the public release of these fonts
+	  under the trademark LIBERATION at the Red Hat Summit. There are three
+	  sets: Sans (a substitute for Arial, Albany, Helvetica, Nimbus Sans L,
+	  and Bitstream Vera Sans), Serif (a substitute for Times New Roman,
+	  Thorndale, Nimbus Roman, and Bitstream Vera Serif) and Mono (a
+	  substitute for Courier New, Cumberland, Courier, Nimbus Mono L,
+	  and Bitstream Vera Sans Mono).
+
+	  http://www.redhat.com/promo/fonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_LIBFONTENC
+	bool "libfontenc-1.0.5"
+	help
+	  The fontenc Library from X.org
+
+	  This provides the fontenc Library from the modular X.org X11 project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_LINUX_LIBERTINE_TTF
+	bool "linux-libertine-ttf-5.1.3"
+	help
+	  Free TrueType font family
+
+	  A TrueType font-family: Serif and Grotesk (Sans Serif) for practical
+	  use in documents. This project aims at creating a free alternative
+	  to the standard W*ndows Fonts (T*mes and Ar*al).  PfaEdit is used
+	  as FontEditor.  The goal is to create a really good font with a
+	  real italic and bold variant, with OSF (old style figures -> old
+	  numbers) and small Caps.
+
+	  http://linuxlibertine.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_LOHIT_FONTS
+	bool "lohit-fonts-2.3.1"
+	help
+	  Free fonts for Indian languages
+
+	  In 2004, Red Hat has released five Indian language fonts as open source
+	  licensed under the GPL.  The fonts were named "Lohit" which means "Red" in
+	  Sanskrit.  Currently, the font family supports 11 Indian languages: Assamese,
+	  Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Oriya, Punjabi, Tamil,
+	  Telugu, and are available as TrueType fonts.  Now, Fedora Project and its
+	  contributors took the responsibility to consolidate the further efforts and
+	  improvements of the Lohit fonts.
+	  
+	  The project goal is to improve existing offerings of the fonts - making sure
+	  the Lohit fonts deliver the best available quality and functions to the
+	  community.
+
+	  https://fedorahosted.org/lohit
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MFTRACE
+	bool "mftrace-1.2.15nb1"
+	help
+	  Scalable Fonts for MetaFont
+
+	  mftrace is a small Python program that lets you trace a TeX bitmap font into
+	  a PFA or PFB font (A PostScript Type1 Scalable Font) or TTF (TrueType) font.
+
+	  http://lilypond.org/mftrace/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MGLFONTS
+	bool "mglfonts-0.1"
+	help
+	  MGL2 fonts and font tools
+
+	  MGL2 fontkit
+	  ============
+	  
+	  Bitmap fonts and some font tools for MGL2.
+
+	  http://www.NetBSD.org/ports/hpcmips/mgl2.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MIGU_TTF
+	bool "migu-ttf-20110610"
+	help
+	  
+
+	  Migu fonts are universal designed MigMix fonts.
+	  1. For Migu 1P/1C/1M, they have larger Handakuten.
+	  2. For Migu 1C, it has proportional 2-byte Hiragana and Katakana.
+	  3. For Migu 1M, narrow line spacing.
+	  4. For Migu 1P/1C/1M, some glyph modification.
+
+	  http://mix-mplus-ipa.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MISAKI_FONTS
+	bool "misaki-fonts-0beta11a"
+	help
+	  8x8 dots X11 bitmap font for JIS X 0208
+
+	  Misaki font is an 8*8 dots bitmap font for Japanese.
+	  
+	  This font was developed for SCRNJPN Japanese screen driver
+	  for Sharp PC-E500 pocket computer.
+	  
+	  Almost all characters is designed in 7*7 dots.
+
+	  http://www.geocities.jp/littlimi/misaki.htm
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MKFONTALIAS
+	bool "mkfontalias-20000521nb3"
+	help
+	  Creates a fonts.alias from the fonts.dir for TrueType fonts
+
+	  This is a short python utility to assist people in de-uglification of
+	  their TrueType fonts. Basically, creates a fonts.alias file from the
+	  fonts.dir file found in the directory.
+
+	  http://home.c2i.net/dark/linux.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MKFONTDIR
+	bool "mkfontdir-1.0.6"
+	help
+	  X11 Font Index Generator
+
+	  The mkfontdir tool uses mkfontscale to create an index of X font
+	  files (such as PCF, SNF, or BDF) in a directory.  The X server
+	  and font server use the generated "fonts.dir" file to find font
+	  files.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MKFONTSCALE
+	bool "mkfontscale-1.0.9nb1"
+	help
+	  X11 Scalable Font Index Generator
+
+	  This package contains the mkfontscale, a program to generate legacy X11
+	  font indices for scalable fonts. This is from the modular X.org project.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MMINSTANCE
+	bool "mminstance-1.20"
+	help
+	  Utility programs for creating instances of multiple master fonts
+
+	  Utilities for making instances of Multiple master fonts.  The first, mmpfb,
+	  creates a normal type 1 font from a given Multiple master font.  The other,
+	  mmafm, creates a standard AFM file from the given AMFM and AFM files supplied
+	  with the Multiple master font.
+
+	  http://www.lcdf.org/~eddietwo/type/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MONAFONTS
+	bool "monafonts-2.90nb1"
+	help
+	  Japanese fonts for "Mona" seen at 2ch.net
+
+	  Japanese proportional bitmap fonts developed _only_ to display "Mona". (a
+	  jargon meaning Japanese face marks or kind of ASCII art (definitely no ASCII!)
+	  used in 2ch.net, one of the biggest BBS comunities in Japan.)
+
+	  http://monafont.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MONAFONTS_TTF
+	bool "monafonts-ttf-2.90"
+	help
+	  Japanese TrueType fonts for "Mona" seen at 2ch.net
+
+	  TrueType kanji propotional fonts that have same metric and order as
+	  Japanese Windows font. This is named after ascii art 'mona' used in
+	  '2 channel' ,notrious huge Web BBS.
+
+	  http://monafont.sourceforge.net/index-e.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MOTHANNA_TTF
+	bool "mothanna-ttf-0.02"
+	help
+	  Mothanna is a sans-serif like Arabic OpenType font
+
+	  Mothanna (from Arabic; twisted, bent) is a sans-serif like Arabic
+	  OpenType font, intended mainly for use in software UIs. It is
+	  developed by Arabeyes.org as part of the Khotot project.
+
+	  http://www.arabeyes.org/project.php?proj
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MOTOYA_FONTS
+	bool "motoya-fonts-20111115"
+	help
+	  Motoya L Cider W3 and L Mulberry W3 fonts
+
+	  Motoya fonts for Android handset display.
+
+	  http://source.android.com/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MOZILLA_FONTS
+	bool "mozilla-fonts-1.0nb3"
+	help
+	  Optimized fonts for Netscape/Mozilla
+
+	  This is a complete set of three font faces (Times, Helvetica, Courier)
+	  in seven sizes and four variants each, optimized for use by the Netscape
+	  (Mozilla) WWW browser under Unix.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MPLAYER_FONTS
+	bool "mplayer-fonts-20030714nb1"
+	help
+	  Fonts for mplayer and gmplayer
+
+	  This package contains the font files for mplayer and gmplayer.
+
+	  http://www.mplayerhq.hu/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_MS_TTF
+	bool "ms-ttf-20020306nb5"
+	help
+	  TrueType fonts from Microsoft
+
+	  This packages includes TrueType fonts from Microsoft with WGL4 (Windows
+	  Glyph List 4) charset:
+	  
+	  - Andale Mono
+	  - Webdings
+	  - Trebuchet MS, with variants Bold, Italic, and Bold Italic
+	  - Georgia, with variants Bold, Italic and Bold Italic
+	  - Verdana, with variants Bold, Italic and Bold Italic
+	  - Comic Sans, Comic Sans Bold
+	  - Arial Black
+	  - Impact
+	  - Arial, with variants Bold, Italic and Bold Italic
+	  - Times New Roman, with variants Bold, Italic and Bold Italic
+	  - Courier New, with variants Bold, Italic and Bold Italic
+
+	  http://corefonts.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_NANUM_TTF
+	bool "nanum-ttf-3.0"
+	help
+	  Korean fonts distributed by Naver
+
+	  Nanum fonts are a set of TrueType fonts for Korean including gothic,
+	  myeongjo, pen script and brush script typefaces.
+
+	  http://hangeul.naver.com/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_OTF2BDF
+	bool "otf2bdf-3.1nb1"
+	help
+	  OpenType to BDF font converter
+
+	  This program converts OpenType fonts to BDF fonts using the FreeType 2
+	  renderer.  BDF fonts can be edited using the author's "gdbfed" editor,
+	  also found in the pkgsrc "fonts" category.
+
+	  http://www.math.nmsu.edu/~mleisher/Software/otf2bdf/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_OTO
+	bool "oto-0.4nb4"
+	help
+	  List and modify OpenType font files
+
+	  The Open Type Organizer project provides programs to list and modify
+	  the 'name' and 'cmap' tables of OpenType font files. It can be used to
+	  translate the 'name' and 'cmap' of an OpenType font in locale encodings
+	  to Unicode encodings, so the font file can be used in an environment
+	  which does not understand locale encodings. The translated tables are
+	  added to the font while keeping the original tables intact.
+	  
+	  Have a True Type font which is not recognized by X Window system?
+	  Chances are, the font is listed/indexed in an encoding other than
+	  Unicode!  Open Type Organizer (oTo) will help to solve the problem.
+	  It will list font file organization and even add Unicode 'name' and
+	  'cmap' tables by translating the original ones.  Your favorite ttf
+	  font can really work for you now.
+
+	  http://sourceforge.net/projects/oto/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_P5_FONT_AFM
+	bool "p5-Font-AFM-1.20nb3"
+	help
+	  Perl5 modules for parsing PostScript font metrics files
+
+	  This module implements the Font::AFM class.  Objects of this class are
+	  initialised from an AFM-file and allow you to obtain information about the
+	  font and the metrics of the various glyphs in the font.
+
+	  http://search.cpan.org/dist/Font-AFM/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_P5_FONT_TTF
+	bool "p5-Font-TTF-0.48"
+	help
+	  Perl module for TrueType font hacking
+
+	  Perl module for TrueType font hacking. Supports reading, processing
+	  and writing of the following tables: GDEF, GPOS, GSUB, LTSH, OS/2,
+	  PCLT, bsln, cmap, cvt, fdsc, feat, fpgm, glyf, hdmx, head, hhea,
+	  hmtx, kern, loca, maxp, mort, name, post, prep, prop, vhea, vmtx
+	  and the reading and writing of all other table types.
+	  
+	  In short, you can do almost anything with a standard TrueType font
+	  with this module.
+
+	  http://search.cpan.org/~mhosken/Font-TTF/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_P5_FONT_TTFMETRICS
+	bool "p5-Font-TTFMetrics-0.1nb3"
+	help
+	  
+
+	  Font::TTFMetrics encapsulates the font metrics of a true type font
+	  file. A true type font file contains several tables which need to
+	  be parsed before any useful information could be gathered about
+	  the font. There is the excellent module for parsing TTF font in
+	  CPAN by Martin Hosken, Font::TTF. But in my opinion the use of
+	  Font::TTF requires intimate knowledge of TTF font format. This
+	  module was written to support the use of TTF in Pastel 2D graphics
+	  library in Perl. Three factors prompted me to write this module:
+	  first, I required a fast module to access TTF file. Second, all
+	  the access required was read-only. Last, I wanted a user friendly,
+	  higher level API to access TTF file.
+
+	  http://search.cpan.org/dist/Font-TTFMetrics/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_PCF2BDF
+	bool "pcf2bdf-1.04nb1"
+	help
+	  Convert X font from PCF to BDF
+
+	  Pcf2bdf is a font de-compiler. It converts X fonts from Portable
+	  Compiled Format (PCF) to Bitmap Distribution Format (BDF). It can
+	  also accept a compressed/gzipped PCF file as input, but gzip must
+	  be found in your PATH.
+	  
+	  FONTBOUNDINGBOX in a BDF file is not used by bdftopcf, so pcf2bdf
+	  generates irresponsible values.
+
+	  http://www.tsg.ne.jp/GANA/S/pcf2bdf/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_PROFONT
+	bool "profont-1.0nb1"
+	help
+	  Monospaced bitmap font readable in very small sizes
+
+	  A monospaced bitmap font that is readable in very small sizes. It is
+	  very nice for doing programming work when you need to get a lot of
+	  text visible in one screen.
+
+	  http://www.tobias-jung.de/seekingprofont/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_PROGGY_FONTS
+	bool "proggy-fonts-1"
+	help
+	  Set of monospaced bitmap programming fonts
+
+	  A set of monospaced bitmap programming fonts.
+
+	  http://www.proggyfonts.com/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_PS2PKM
+	bool "ps2pkm-1.5nb3"
+	help
+	  Tool to convert PostSCript fonts into TeX PK fonts
+
+	  ps2pk is a tool that converts a PostScript type1 font into a
+	  corresponding TeX PK font.  The tool is especially interesting if you
+	  want to use fully hinted type1 fonts in your DVI previewer (instead of
+	  the unhinted type1 fonts currently used in GhostScript) or on a
+	  printer that has no PostScript interpreter.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_PY_TTFQUERY
+	bool "py26-TTFQuery-0.2.6nb1"
+	help
+	  Query TTF font files for metadata and font outlines
+
+	  Python module using FontTools to query TTF font files for metadata and
+	  font outlines in a cross-platform manner.  Includes support for
+	  scanning for installed system TTF files on common platforms.
+
+	  http://ttfquery.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_PY_FONTTOOLS
+	bool "py26-fonttools-2.3"
+	help
+	  Library for manipulating fonts
+
+	  FontTools is a library for manipulating fonts, written in Python.  It
+	  supports TrueType, OpenType, AFM and to an extent Type 1 and some
+	  Mac-specific formats.
+	  
+	  This package also includes TTX: a tool to convert OpenType and TrueType
+	  fonts to and from XML.
+
+	  http://fonttools.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_RICTY_TTF
+	bool "ricty-ttf-3.1.1"
+	help
+	  Migu 1M and Inconsolata based TrueType fonts for programming
+
+	  Ricty font is developed for research and programming use.
+	  Ricty is free TrueType font and based on Inconsolata and
+	  Migu 1M (based on M+ 1M and IPA Gothic).
+	  
+	  * Latin characters are Inconsolata.
+	  * Non-Latin characters are Migu 1M.
+	  * 2-byte characters have double width of 1-byte ones.
+	  * 2-byte white space is visible.
+	  * 2-byte comma and period are different look.
+	  * An en dash has broken-line look.
+
+	  http://save.sys.t.u-tokyo.ac.jp/~yusa/fonts/ricty.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_ROBOTO_FONTS
+	bool "roboto-fonts-20111115a"
+	help
+	  Roboto font family from Google's Android 4
+
+	  Roboto is Helvetica like sans-serif font family from Android 4.
+
+	  http://source.android.com/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_RUBY_TTFUNK
+	bool "ruby19-ttfunk-1.0.3"
+	help
+	  TrueType Font Metrics Parser
+
+	  TTFunk is a TrueType font parser written in pure ruby.
+
+	  http://www.braintreepaymentsolutions.com/gateway
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_SGI_FONTS
+	bool "sgi-fonts-1.0.457nb3"
+	help
+	  Linux compatibility package for SGI fonts
+
+	  This package provides the "SGI ProPack fonts for Linux".
+
+	  http://oss.sgi.com/projects/sgi_propack/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_T1LIB
+	bool "t1lib-5.1.2nb4"
+	help
+	  Library for generating bitmaps from Adobe Type 1 fonts
+
+	  t1lib is a library written in C which implements functions for generating
+	  bitmaps from Adobe Type 1 fonts. It uses most internal parts of the Type 1
+	  rasterizer provided with X11R5 and newer but tries avoid the disadvantages
+	  known from that rasterizer. Although most people would use the rasterizer
+	  under X11, having X11 is not necessary at all.
+	  
+	  The rasterizer is implemented as a shared or static library to be linked
+	  to the programs that want to use Type 1 fonts. In addition to this library
+	  there is a test-program called xglyph which, as the name indicates,
+	  requires X11. It can be used to show most of the features of the library.
+	  xglyph can be run out of the box without doing any X11 configuration like
+	  setting resources.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_T1UTILS
+	bool "t1utils-1.34"
+	help
+	  Utility programs for dealing with Postscript Type 1 font files
+
+	  Utilities for working with Postscript Type 1 font files.  In particular, this
+	  package includes programs for changing font files between ASCII and binary
+	  formats, and a "human readable" format, and it also includes a program for
+	  extracting the useful information from the "resource fork" of Mac OS files.
+
+	  http://www.lcdf.org/~eddietwo/type/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TAKAO_FONTS_TTF
+	bool "takao-fonts-ttf-003.02.01"
+	help
+	  
+
+	  The Takao Fonts are a font family based on the IPA Fonts and the IPAex
+	  Fonts. Its purpose is to make it possible to maintain and release the
+	  fonts by the community with changing their names.
+	  These fonts contain some modifications based on ORCA Font.
+
+	  https://launchpad.net/takao-fonts
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TAMSYN_FONT
+	bool "tamsyn-font-1.6"
+	help
+	  Monospaced programming font
+
+	  Monospaced programming font for Linux and Windows.
+	  
+	  Features:
+	  * Covers the ASCII character set
+	  * Regular and bold face are the same width for syntax highlighting
+	  * Bold characters don't run together
+	  * Aliased bitmap font
+
+	  http://www.fial.com/~scott/tamsyn-font/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TERMINUS_FONT
+	bool "terminus-font-4.28"
+	help
+	  Clean, fixed-width font
+
+	  Terminus Font is designed for long (8 and more hours per day) work with
+	  computers. Version 4.28 contains 825 characters, covers about 120 language
+	  sets and supports ISO8859-1/2/5/7/9/13/15/16, Paratype-PT154/PT254,
+	  KOI8-R/U/E/F, Esperanto, many IBM, Windows and Macintosh code pages, as
+	  well as the IBM VGA, vt100 and xterm pseudographic characters.
+	  
+	  The sizes present are 6x12, 8x14, 8x16, 10x20, 12x24, 14x28 and 16x32. The
+	  styles are normal and bold (except for 6x12), plus EGA/VGA-bold for 8x14
+	  and 8x16.
+
+	  http://www.is-vn.bg/hamster/jimmy-en.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ADOBEMAPPING
+	bool "tex-adobemapping-2010.21940"
+	help
+	  Adobe cmap and pdfmapping files
+
+	  The package comprises the collection of CMap and PDF mapping files now
+	  made available for distribution by Adobe systems incorporated.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_AE
+	bool "tex-ae-1.4"
+	help
+	  Virtual fonts for T1 encoded CMR-fonts
+
+	  A set of virtual fonts which emulates T1 coded fonts using the
+	  standard CM fonts.  The package name, AE fonts, supposedly stands for
+	  "Almost European".  The main use of the package was to produce PDF
+	  files using Adobe Type 1 versions of the CM fonts instead of bitmapped
+	  EC fonts.  Note that direct substitutes for the bitmapped fonts are
+	  now available, via the CM-super, Latin Modern, and CM-LGC font sets.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_AE_DOC
+	bool "tex-ae-doc-1.4"
+	help
+	  Documentation for tex-ae
+
+	  This is documentation for tex-ae.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_AMSFONTS
+	bool "tex-amsfonts-3.0nb2"
+	help
+	  TeX fonts from the American Mathematical Society
+
+	  This package augments the standard set normally distributed with TeX,
+	  including extra mathematical symbols, blackboard bold letters
+	  (uppercase only), fraktur letters, subscript sizes of bold math italic
+	  and bold Greek letters, subscript sizes of large symbols such as sum
+	  and product, added sizes of the Computer Modern small caps font,
+	  cyrillic fonts (from the University of Washington), and Euler
+	  mathematical fonts.  Adobe Type 1 versions of these fonts are also
+	  available, and bitmap PK font versions are available via the fonts'
+	  home page.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_AMSFONTS_DOC
+	bool "tex-amsfonts-doc-3.0"
+	help
+	  Documentation for tex-amsfonts
+
+	  This is documentation for tex-amsfonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ARPHIC
+	bool "tex-arphic-2.11nb1"
+	help
+	  
+
+	  These are font bundles for the Chinese Arphic fonts which work with the
+	  CJK package. Arphic is actually the name of the company that which
+	  created the fonts (and put them under a GPL-like licence).
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ARPHIC_DOC
+	bool "tex-arphic-doc-2.11"
+	help
+	  Documentation for tex-arphic
+
+	  This is documentation for tex-arphic.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_AVANTGAR
+	bool "tex-avantgar-2010.21993"
+	help
+	  Avantgarde font
+
+	  The Avantgarde font for TeX.  The font that is actually provided is
+	  URW Gothic (An Avantgarde clone).  An enhanced version is available
+	  with the TEX Gyre Adventor font.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_BERA
+	bool "tex-bera-2010nb1"
+	help
+	  Bera fonts
+
+	  The package contains the Bera Type 1 fonts, and a zip archive containing
+	  files to use the fonts with LaTeX. Bera is a set of three font families:
+	  Bera Serif (a slab-serif Roman), Bera Sans (a Frutiger descendant), and
+	  Bera Mono (monospaced/typewriter). Support for use in LaTeX is also
+	  provided. The Bera family is a repackaging, for use with TeX, of the
+	  Bitstream Vera family.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_BERA_DOC
+	bool "tex-bera-doc-2010"
+	help
+	  Documentation for tex-bera
+
+	  This is documentation for tex-bera.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_BOOKMAN
+	bool "tex-bookman-2010.21993"
+	help
+	  Bookman font
+
+	  A serif typeface derived from Old Style Antique designed by Alexander
+	  Phemister in 1858 for Miller and Richard foundry.  Consider to use the
+	  Kerkis font, which is an extension of Bookman with math support and
+	  support for greek characters or the enhanced version available with
+	  the TEX Gyre Bonum font.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CHARTER
+	bool "tex-charter-2010"
+	help
+	  Charter fonts
+
+	  A commercial text font donated for the common good. Support for use with
+	  LaTeX is available in freenfss, part of psnfss.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CHARTER_DOC
+	bool "tex-charter-doc-2010"
+	help
+	  Documentation for tex-charter
+
+	  This is documentation for tex-charter.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM
+	bool "tex-cm-2009.15878nb1"
+	help
+	  Computer Modern fonts
+
+	  Knuth's final iteration of his re-interpretation of a c.19
+	  Modern-style font from Monotype.  The family is comprehensive,
+	  offering both sans and roman styles, and a monospaced font, together
+	  with mathematics fonts closely integrated with the mathematical
+	  facilities of TeX itself.  The base fonts are distributed as MetaFont
+	  source, but autotraced PostScript Type 1 versions are available (one
+	  version in the AMS fonts distribution, and also the BaKoMa
+	  distribution). The Computer Modern fonts have inspired many later
+	  families, notably the European Computer Modern and the Latin Modern
+	  families.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_DOC
+	bool "tex-cm-doc-2009.15878"
+	help
+	  Documentation for tex-cm
+
+	  This is documentation for tex-cm.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_SUPER
+	bool "tex-cm-super-0.3.4nb1"
+	help
+	  CM-Super family of fonts
+
+	  CM-Super family of fonts are Adobe Type 1 fonts that replace the
+	  T1/TS1-encoded Computer Modern (EC/TC), T1/TS1-encoded Concrete,
+	  T1/TS1-encoded CM bright and LH fonts (thus supporting all European
+	  languages except Greek, and all Cyrillic-based languages), and
+	  bringing many ameliorations in typesetting quality.  The fonts exhibit
+	  the same metrics as the MetaFont-encoded originals.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_SUPER_DOC
+	bool "tex-cm-super-doc-0.3.4"
+	help
+	  Documentation for tex-cm-super
+
+	  This is documentation for tex-cm-super.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_UNICODE
+	bool "tex-cm-unicode-0.7.0"
+	help
+	  Computer Modern Unicode font family
+
+	  Computer Modern Unicode fonts were converted from metafont sources using
+	  mftrace with autotrace backend and fontforge. Some characters in several
+	  fonts are copied from Blue Sky type 1 fonts released by AMS. Currently
+	  the fonts contain glyphs from Latin (Metafont ec, tc, vnr), Cyrillic
+	  (lh), Greek (cbgreek when available) code sets and IPA extensions (from
+	  tipa). This font set contains 33 fonts. This archive contains AFM, PFB
+	  and OTF versions; the OTF version of the Computer Modern Unicode fonts
+	  works with TeX engines that directly support OpenType features, such as
+	  XeTeX and LuaTeX.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CM_UNICODE_DOC
+	bool "tex-cm-unicode-doc-0.7.0"
+	help
+	  Documentation for tex-cm-unicode
+
+	  This is documentation for tex-cm-unicode.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CMCYR
+	bool "tex-cmcyr-2009nb1"
+	help
+	  Computer Modern fonts with cyrillic extensions
+
+	  These are the Computer Modern fonts extended with Russian letters, in
+	  MetaFont sources and ATM Compatible Type 1 format.  The fonts are
+	  provided in KOI-7, but virtual fonts are available to recode them to
+	  three other Russian 8-bit encodings.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CMCYR_DOC
+	bool "tex-cmcyr-doc-2009"
+	help
+	  Documentation for tex-cmcyr
+
+	  This is documentation for tex-cmcyr.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CMEXTRA
+	bool "tex-cmextra-2010"
+	help
+	  Extra Computer Modern fonts
+
+	  This package provides extra fonts for the Computer Modern family.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CMSD
+	bool "tex-cmsd-2010"
+	help
+	  Interfaces to the CM Sans Serif Bold fonts
+
+	  Thr purpose of the package is to provide an alternative interface to the
+	  CM Sans Serif boldface fonts. The EC (T1, Cork) encoded versions of the
+	  'CM Sans Serif boldface extended' fonts differ considerably from the
+	  traditionally (OT1) encoded ones: at large sizes, >10pt, they have
+	  thinner strokes and are much wider. At 25pt they are hardly to be
+	  recognized as being 'boldface'. This package attempts to make these T1
+	  fonts look like the traditional ones did. You do not need any new fonts;
+	  the package just changes the way LaTeX makes use of the current ones.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CMSD_DOC
+	bool "tex-cmsd-doc-2010"
+	help
+	  Documentation for tex-cmsd
+
+	  This is documentation for tex-cmsd.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CNS
+	bool "tex-cns-2011"
+	help
+	  CNS fonts for CJK LaTeX
+
+	  This package contains CNS bitmap fonts planes 1-7 and a Big 5 encoded
+	  font built up from CNS bitmap fonts planes 1-3.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_CNS_DOC
+	bool "tex-cns-doc-2011"
+	help
+	  Documentation for tex-cns
+
+	  This is documentation for tex-cns.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_COLLECTION_FONTSRECOMMENDED
+	bool "tex-collection-fontsrecommended-2010"
+	help
+	  Recommended fonts for TeX
+
+	  Recommended fonts, including the base 35 PostScript fonts, Latin
+	  Modern, TeX Gyre, and T1 and other encoding support for Computer
+	  Modern, in outline form.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_COLLECTION_FONTSRECOMMENDED_DOC
+	bool "tex-collection-fontsrecommended-doc-2010"
+	help
+	  Documentation for tex-collection-fontsrecommended
+
+	  This is documentation for tex-collection-fontsrecommended.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_COURIER
+	bool "tex-courier-2010.21993"
+	help
+	  Adobe Type 1 "free" copies of Courier
+
+	  These fonts are available under the IBM/MIT X Consortium
+	  Courier Typefont agreement. The distribution contains PFA
+	  outline fonts (ASCII-encoded Type 1), and AFM files.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EC
+	bool "tex-ec-1.0"
+	help
+	  Computer modern fonts in T1 and TS1 encodings
+
+	  The EC fonts are European Computer Modern Fonts, supporting the
+	  complete LaTeX T1 encoding defined at the 1990 TUG conference hold at
+	  Cork/Ireland.  These fonts are intended to be stable with no changes
+	  being made to the tfm files.  The set also contains a Text Companion
+	  Symbol font, called tc, featuring many useful characters needed in
+	  text typesetting, for example oldstyle digits, currency symbols
+	  (including the newly created Euro symbol), the permille sign,
+	  copyright, trade mark and servicemark as well as a copyleft sign, and
+	  many others.  Recent releases of LaTeX2e support the EC fonts.  The EC
+	  fonts supersede the preliminary version released as the DC fonts.  The
+	  fonts are available in (traced) Adobe Type 1 format, as part of the
+	  cm-super bundle.  The other Computer Modern-style T1-encoded Type 1
+	  set, Latin Modern, is not actually a direct development of the EC set,
+	  and differs from the EC in a number of particulars.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EC_DOC
+	bool "tex-ec-doc-1.0"
+	help
+	  Documentation for tex-ec
+
+	  This is documentation for tex-ec.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ECO
+	bool "tex-eco-1.3"
+	help
+	  Oldstyle numerals using EC fonts
+
+	  A set of font metric files and virtual fonts for using the EC fonts with
+	  oldstyle numerals. These files can only be used together with the
+	  standard ec fonts. The style file eco.sty is sufficient to use the eco
+	  fonts but if you intend to use other font families as well, e.g.,
+	  PostScript fonts, try altfont.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ECO_DOC
+	bool "tex-eco-doc-1.3"
+	help
+	  Documentation for tex-eco
+
+	  This is documentation for tex-eco.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ESINT
+	bool "tex-esint-1.1"
+	help
+	  Extended set of integrals for Computer Modern
+
+	  The esint package permits access to alternate integral symbols when
+	  you're using the Computer Modern fonts. In the original set, several
+	  integral symbols are missing, such as \oiint. Many of these symbols are
+	  available in other font sets (pxfonts, txfonts, etc.), but there is no
+	  good solution if you want to use Computer Modern. The package provides
+	  Metafont source and LaTeX macro support.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ESINT_DOC
+	bool "tex-esint-doc-1.1"
+	help
+	  Documentation for tex-esint
+
+	  This is documentation for tex-esint.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUENC
+	bool "tex-euenc-0.1h"
+	help
+	  Unicode font encoding definitions for XeTeX
+
+	  Font encoding definitions for unicode fonts loaded by LaTeX in
+	  XeTeX or LuaTeX. The package provides two encodings: -- EU1,
+	  designed for use with XeTeX, which the fontspec uses for
+	  unicode fonts which require no macro-level processing for
+	  accents, and -- EU2, which provides the same facilities for use
+	  with LuaTeX. Neither encoding places any restriction on the
+	  glyphs provided by a font; use of EU2 causes the package
+	  euxunicode to be loaded (the package is part of this
+	  distribution). The package includes font definition files for
+	  use with the Latin Modern OpenType fonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUENC_DOC
+	bool "tex-euenc-doc-0.1h"
+	help
+	  Documentation for tex-euenc
+
+	  This is documentation for tex-euenc.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EURO_CE
+	bool "tex-euro-ce-2010"
+	help
+	  Euro and CE sign font
+
+	  MetaFont source for the symbols in several variants, designed to fit
+	  with Computer Modern-set text.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EURO_CE_DOC
+	bool "tex-euro-ce-doc-2010"
+	help
+	  Documentation for tex-euro-ce
+
+	  This is documentation for tex-euro-ce.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROFONT
+	bool "tex-eurofont-1.1.3nb1"
+	help
+	  Provides a command that prints a euro symbol
+
+	  The particular symbol printed by \euro will in general change depending
+	  on the font family, weight, and shape in use at the time. This symbol
+	  can come from any source, and the package user has complete control over
+	  which euro symbol is used in any given situation. The package is
+	  pre-configured to behave sensibly with many common text fonts and
+	  available euro symbols. The \euro command can print 'faked' euro symbols
+	  from a C with two lines across it when no suitable real euro symbol is
+	  available; the package also includes code for printing fake bold euro
+	  symbols for use when no real bold symbol exists, as well as
+	  pre-configured support for a faked italic version of the marvosym font.
+	  Eurofont comes set up to use euro symbols from Adobe's Eurofonts, the
+	  marvosym font, the Eurosym font, and any available Text Companion fonts.
+	  The selection between these can be done using options passed to the
+	  package. The eurofont package also 'knows' about the China2e font's euro
+	  symbol, and can be configured to use it.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROFONT_DOC
+	bool "tex-eurofont-doc-1.1.3"
+	help
+	  Documentation for tex-eurofont
+
+	  This is documentation for tex-eurofont.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROSANS
+	bool "tex-eurosans-2.1"
+	help
+	  Interface to Adobe's sans-serif Euro font
+
+	  Provides a convenient interface for using Adobe's freely available Type
+	  1 Euro fonts. Loading the package defines a new command \euro which
+	  typesets a Euro symbol. The symbol is always taken from the 'EuroSans'
+	  family, with the weight (medium or boldface) and shape (normal or
+	  oblique) varying according to the font currently selected. This Euro
+	  symbol meets the official design and matches most font families well
+	  enough, except for typewriter fonts. The fonts themselves are only
+	  available from Adobe (though the fonts are free of charge, the licence
+	  conditions prevent CTAN from distributing them). Metrics and maps for
+	  using the fonts (at all) are available via the adobe-euro package.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROSANS_DOC
+	bool "tex-eurosans-doc-2.1"
+	help
+	  Documentation for tex-eurosans
+
+	  This is documentation for tex-eurosans.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROSYM
+	bool "tex-eurosym-1.4nb1"
+	help
+	  MetaFont and macros for Euro sign
+
+	  The new European currency symbol for the Euro implemented in
+	  MetaFont, using the official European Commission dimensions,
+	  and providing several shapes (normal, slanted, bold, outline).
+	  The package also includes a LaTeX package which defines the
+	  macro, pre-compiled tfm files, and documentation.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_EUROSYM_DOC
+	bool "tex-eurosym-doc-1.4"
+	help
+	  Documentation for tex-eurosym
+
+	  This is documentation for tex-eurosym.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTNAME
+	bool "tex-fontname-2010"
+	help
+	  Scheme for naming fonts in TeX
+
+	  The scheme for assigning names is described (in the documentation part
+	  of the package), and map files giving the relation between foundry name
+	  and 'TeX-name' are also provided.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTNAME_DOC
+	bool "tex-fontname-doc-2010"
+	help
+	  Documentation for tex-fontname
+
+	  This is documentation for tex-fontname.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTSPEC
+	bool "tex-fontspec-2.1f"
+	help
+	  Advanced font selection in XeLaTeX and LuaLaTeX
+
+	  Fontspec is a package for XeLaTeX and LuaLaTeX. It provides an
+	  automatic and unified interface to feature-rich AAT and
+	  OpenType fonts through the NFSS in LaTeX running on XeTeX or
+	  LuaTeX engines.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTSPEC_DOC
+	bool "tex-fontspec-doc-2.1f"
+	help
+	  Documentation for tex-fontspec
+
+	  This is documentation for tex-fontspec.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_FOURIER
+	bool "tex-fourier-1.3nb1"
+	help
+	  Using Utopia fonts in LaTeX documents
+
+	  Fourier-GUTenberg is a LaTeX typesetting system which uses Adobe Utopia
+	  as its standard base font. Fourier-GUTenberg provides all complementary
+	  typefaces needed to allow Utopia based TeX typesetting, including an
+	  extensive mathematics set and several other symbols. The system is
+	  absolutely stand- alone: apart from Utopia and Fourier, no other
+	  typefaces are required. The fourier fonts will also work with Adobe
+	  Utopia Expert fonts, which are only available for purchase. Utopia is a
+	  registered trademark of Adobe Systems Incorporated
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_FOURIER_DOC
+	bool "tex-fourier-doc-1.3"
+	help
+	  Documentation for tex-fourier
+
+	  This is documentation for tex-fourier.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_FPL
+	bool "tex-fpl-1.002"
+	help
+	  SC and OsF fonts for URW Palladio L
+
+	  The FPL Fonts provide a set of SC/OsF fonts for URW Palladio L which are
+	  compatible with respect to metrics with the Palatino SC/OsF fonts from
+	  Adobe. Note that it is not the aim to exactly reproduce the outlines of
+	  the original Adobe fonts. The SC and OsF in the FPL Fonts were designed
+	  with the glyphs from URW Palladio L as starting point. For some glyphs
+	  (e.g. 'o') I got the best result by scaling and boldening. For others
+	  (e.g. 'h') shifting selected portions of the character gave more
+	  satisfying results. All this was done using the free font editor
+	  FontForge. The kerning data in these fonts comes from Walter Schmidt's
+	  improved Palatino metrics. LaTeX use is enabled by the mathpazo package,
+	  which is part of the psnfss distribution.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_FPL_DOC
+	bool "tex-fpl-doc-1.002"
+	help
+	  Documentation for tex-fpl
+
+	  This is documentation for tex-fpl.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_GARUDA_C90
+	bool "tex-garuda-c90-2011nb1"
+	help
+	  
+
+	  This package contains files to support for the garuda font in
+	  thailatex.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_GLYPHLIST
+	bool "tex-glyphlist-2.84"
+	help
+	  Adobe glyph list
+
+	  The Adobe Glyph List is a mapping of glyph names to Unicode scalar
+	  values.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_HELVETIC
+	bool "tex-helvetic-2010.21993"
+	help
+	  Adobe Helvetica fonts
+
+	  This package provides Adobe Helvetica fonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_KOTEX_BASE
+	bool "tex-kotex-base-0.3"
+	help
+	  Type1 and TTF fonts of unbatang, undotum, untaza, and ungraphic
+
+	  ko.TeX is a collection of TeX macro packages to typeset Korean
+	  documents.  It is maintained by the Korean TeX Society.
+	  
+	  This package provides fonts for ko.TeX.
+
+	  http://project.ktug.or.kr/ko.TeX/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_KOTEX_BASE_DOC
+	bool "tex-kotex-base-doc-0.3"
+	help
+	  Documentation for tex-kotex-base
+
+	  This is documentation for tex-kotex-base.
+
+	  http://project.ktug.or.kr/ko.TeX/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LATEX_FONTS
+	bool "tex-latex-fonts-2009"
+	help
+	  Collection of fonts used in LaTeX distributions
+
+	  These fonts are mostly variations of CM fonts, but the line and circle
+	  fonts used in LaTeX picture mode area also included.  The distribution
+	  is based on the MetaFont sources.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LCYW
+	bool "tex-lcyw-1.1"
+	help
+	  Make Classic Cyrillic CM fonts accessible in LaTeX
+
+	  The package makes the classic CM Cyrillic fonts accessible for use with
+	  LaTeX.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LCYW_DOC
+	bool "tex-lcyw-doc-1.1"
+	help
+	  Documentation for tex-lcyw
+
+	  This is documentation for tex-lcyw.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LH
+	bool "tex-lh-3.5g"
+	help
+	  Cyrillic fonts that support LaTeX standard encodings
+
+	  The LH fonts address the problem of the wide variety of alphabets that
+	  are written with Cyrillic-style characters.  The fonts are the
+	  original basis of the set of T2* and X2 encodings that are now used
+	  when LaTeX users need to write in Cyrillic languages.  Macro support
+	  in standard LaTeX encodings is offered through the cyrillic and t2
+	  bundles, and the package itself offers support for other (more
+	  traditional) encodings.  The fonts, in the standard T2* and X2
+	  encodings are available in Adobe Type 1 format, in the CM-Super family
+	  of fonts.  The package also offers its own LaTeX support for OT2
+	  encoded fonts, CM bright shaped fonts and Concrete shaped fonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LH_DOC
+	bool "tex-lh-doc-3.5g"
+	help
+	  Documentation for tex-lh
+
+	  This is documentation for tex-lh.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LM
+	bool "tex-lm-2.004nb2"
+	help
+	  Latin modern fonts in outline formats
+
+	  The Latin Modern family of fonts consists of 72 text fonts and 20
+	  mathematics fonts, and is based on the Computer Modern fonts released
+	  into public domain by AMS (copyright (c) 1997 AMS). The lm font set
+	  contains a lot of additional characters, mainly accented ones, but not
+	  exclusively. There is one set of fonts, available both in Adobe Type 1
+	  format (*.pfb) and in OpenType format (*.otf). There are five sets of
+	  TeX Font Metric files, corresponding to: Cork encoding (cork-*.tfm);
+	  QX encoding (qx- *.tfm); TeX'n'ANSI aka LY1 encoding (texnansi-*.tfm);
+	  T5 (Vietnamese) encoding (t5-*.tfm); and Text Companion for EC fonts
+	  aka TS1 (ts1-*.tfm).
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LM_DOC
+	bool "tex-lm-doc-2.004"
+	help
+	  Documentation for tex-lm
+
+	  This is documentation for tex-lm.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LY1
+	bool "tex-ly1-2010.21086"
+	help
+	  Support for LY1 LaTeX encoding
+
+	  The Y&Y 'texnansi' (TeX and ANSI, for Microsoft interpretations of ANSI
+	  standards) encoding lives on, even after the decease of the company; it
+	  is known in the LaTeX scheme of things as LY1 encoding. This bundle
+	  includes metrics and LaTeX macros to use the basic three (Times,
+	  Helvetica and Courier) Adobe Type 1 fonts in LaTeX using LY1 encoding.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LY1_DOC
+	bool "tex-ly1-doc-2010.21086"
+	help
+	  Documentation for tex-ly1
+
+	  This is documentation for tex-ly1.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_MANFNT
+	bool "tex-manfnt-2009nb1"
+	help
+	  LaTeX support for the TeX book symbols
+
+	  A LaTeX package for easy access to the symbols of the Knuth's
+	  `manual' font, such as the Dangerous Bend and Manual-errata Arrow.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_MARVOSYM
+	bool "tex-marvosym-2.1nb1"
+	help
+	  Martin Vogel's Symbols font
+
+	  Martin Vogel's Symbol (marvosym) font contains the Euro currency
+	  symbol as defined by the European commission, and also in shapes to
+	  blend with typefaces Times, Helvetica and Courier; symbols for
+	  structural engineering; symbols for steel cross- sections; astronomy
+	  signs (sun, moon, planets); the 12 signs of the zodiac; scissor
+	  symbols; CE sign and others.  The font is distributed here as an Adobe
+	  Type 1 font, which was converted from Vogel's original TrueType;
+	  support macros for use with LaTeX are also provided.  Separate
+	  packaging for OzTeX users is available.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_MARVOSYM_DOC
+	bool "tex-marvosym-doc-2.1"
+	help
+	  Documentation for tex-marvosym
+
+	  This is documentation for tex-marvosym.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_MATHPAZO
+	bool "tex-mathpazo-1.003"
+	help
+	  Fonts to typeset mathematics to match Palatino
+
+	  The Pazo Math fonts are a family of PostScript fonts suitable for
+	  typesetting mathematics in combination with the Palatino family of text
+	  fonts. The Pazo Math family is made up of five fonts provided in Adobe
+	  Type 1 format (PazoMath, PazoMath- Italic, PazoMath-Bold,
+	  PazoMath-BoldItalic, and PazoMathBlackboardBold). These contain, in
+	  designs that match Palatino, glyphs that are usually not available in
+	  Palatino and for which Computer Modern looks odd when combined with
+	  Palatino. These glyphs include the uppercase Greek alphabet in upright
+	  and slanted shapes in regular and bold weights, the lowercase Greek
+	  alphabet in slanted shape in regular and bold weights, several
+	  mathematical glyphs (partialdiff, summation, product, coproduct,
+	  emptyset, infinity, and proportional) in regular and bold weights, other
+	  glyphs (Euro and dotlessj) in upright and slanted shapes in regular and
+	  bold weights, and the uppercase letters commonly used to represent
+	  various number sets (C, I, N, Q, R, and Z) in blackboard bold. The set
+	  also includes a set of 'true' small-caps fonts, also suitable for use
+	  with Palatino (or one of its clones). LaTeX macro support (using package
+	  mathpazo.sty) is provided in psnfss (a required part of any LaTeX
+	  distribution).
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_MATHPAZO_DOC
+	bool "tex-mathpazo-doc-1.003"
+	help
+	  Documentation for tex-mathpazo
+
+	  This is documentation for tex-mathpazo.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_METAFONT
+	bool "tex-metafont-2009nb1"
+	help
+	  METAFONT font design system
+
+	  METAFONT is a powerful tool for font creation, which was used by
+	  Donald Knuth to create the Computer Modern fonts, used as standard by
+	  TeX and LaTeX, and now the standard fonts used for scientific
+	  publication.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_MFLOGO
+	bool "tex-mflogo-2009nb1"
+	help
+	  LaTeX support for MetaFont logo fonts
+
+	  LaTeX package and font definition file to access the Knuthian mflogo
+	  fonts described in `The MetaFontbook' and to typeset MetaFont logos
+	  in LaTeX documents.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_MFLOGO_DOC
+	bool "tex-mflogo-doc-2009nb1"
+	help
+	  Documentation for tex-mflogo
+
+	  This is documentation for tex-mflogo.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_MFWARE
+	bool "tex-mfware-2009"
+	help
+	  Supporting tools for use with MetaFont
+
+	  A collection of programs for processing the output of MetaFont.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_NCNTRSBK
+	bool "tex-ncntrsbk-2010.21993"
+	help
+	  New Century Scoolbook fonts
+
+	  This package provides the New Century Schoolbook fonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_NORASI_C90
+	bool "tex-norasi-c90-2011nb1"
+	help
+	  
+
+	  This package contains files to support for the norasi font in
+	  thailatex.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_OCR_B
+	bool "tex-ocr-b-2011"
+	help
+	  Fonts for OCR-B
+
+	  MetaFont programs for OCR-B at several sizes.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_OCR_B_DOC
+	bool "tex-ocr-b-doc-2011"
+	help
+	  Documentation for tex-ocr-b
+
+	  This is documentation for tex-ocr-b.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_PALATINO
+	bool "tex-palatino-2010.21993"
+	help
+	  Palatino font family for TeX
+
+	  This package provides the Palatino font family for TeX.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_PSNFSS
+	bool "tex-psnfss-9.2anb4"
+	help
+	  Font support for common PostScript fonts
+
+	  Font definition files, macros, and font metrics for freely-available
+	  Adobe Type 1 fonts.  The font set consists of the `LaserWriter 35' set
+	  (originally `freely available' because embedded in PostScript
+	  printers), and a variety of other free fonts such as Bitstream
+	  Charter, Adobe Utopia (both donated to the public domain by their
+	  commercial foundries), and Pazo Math (optionally extended with the fpl
+	  small-caps and old- style figures fonts).  The bundle is part of the
+	  LaTeX `required' set of packages.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_PSNFSS_DOC
+	bool "tex-psnfss-doc-9.2a"
+	help
+	  Documentation for tex-psnfss
+
+	  This is documentation for tex-psnfss.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_PXFONTS
+	bool "tex-pxfonts-2010nb1"
+	help
+	  Palatino-like fonts in support of mathematics
+
+	  Pxfonts supplies virtual text roman fonts using Adobe Palatino (or
+	  URWPalladioL) with some modified and additional text symbols in the OT1,
+	  T1, and TS1 encodings; maths alphabets using Palatino/Palladio; maths
+	  fonts providing all the symbols of the Computer Modern and AMS fonts,
+	  including all the Greek capital letters from CMR; and additional maths
+	  fonts of various other symbols. The set is complemented by a sans-serif
+	  set of text fonts, based on Helvetica/NimbusSanL, and a monospace set
+	  derived from the parallel TX font set. All the fonts are in Type 1
+	  format (AFM and PFB files), and are supported by TeX metrics (VF and TFM
+	  files) and macros for use with LaTeX.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_PXFONTS_DOC
+	bool "tex-pxfonts-doc-2010"
+	help
+	  Documentation for tex-pxfonts
+
+	  This is documentation for tex-pxfonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_RSFS
+	bool "tex-rsfs-2009nb1"
+	help
+	  Ralph Smith's Formal Script font
+
+	  The fonts provide uppercase `formal' script letters for use as symbols
+	  in scientific and mathematical typesetting (in contrast to the
+	  informal script fonts such as that used for the `calligraphic' symbols
+	  in the TeX maths symbol font).  The fonts are provided as MetaFont
+	  source, and as derived Adobe Type 1 format.  LaTeX support, for using
+	  these fonts in mathematics, is available via one of the packages
+	  calrsfs and mathrsfs.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_RSFS_DOC
+	bool "tex-rsfs-doc-2009"
+	help
+	  Documentation for tex-rsfs
+
+	  This is documentation for tex-rsfs.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_STMARYRD
+	bool "tex-stmaryrd-2010nb1"
+	help
+	  St Mary Road symbols for theoretical computer science
+
+	  The fonts were originally distributed as MetaFont sources only, but
+	  Adobe Type 1 versions are also now available. Macro support is provided
+	  for use under LaTeX; the package supports the "only" option (provided by
+	  the somedefs package) to restrict what is loaded, for those who don't
+	  need the whole font.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_STMARYRD_DOC
+	bool "tex-stmaryrd-doc-2010"
+	help
+	  Documentation for tex-stmaryrd
+
+	  This is documentation for tex-stmaryrd.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_SYMBOL
+	bool "tex-symbol-2008.7340"
+	help
+	  Symbol fonts for TeX
+
+	  This package provides the Symbol fonts for TeX.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TEX_GYRE
+	bool "tex-tex-gyre-2.004nb1"
+	help
+	  TeX Fonts extending freely available URW fonts
+
+	  The TeX-GYRE bundle consists of six font families: TeX Gyre Adventor is
+	  based on the URW Gothic L family of fonts (which is derived from ITC
+	  Avant Garde Gothic, designed by Herb Lubalin and Tom Carnase). TeX Gyre
+	  Bonum is based on the URW Bookman L family (from Bookman Old Style,
+	  designed by Alexander Phemister). TeX Gyre Chorus is based on URW
+	  Chancery L Medium Italic (from ITC Zapf Chancery, designed by Hermann
+	  Zapf in 1979). TeX-Gyre Cursor is based on URW Nimbus Mono L (based on
+	  Courier, designed by Howard G. Kettler in 1955, for IBM). TeX Gyre Heros
+	  is based on URW Nimbus Sans L (from Helvetica, prepared by Max
+	  Miedinger, with Eduard Hoffmann in 1957). TeX Gyre Pagella is based on
+	  URW Palladio L (from Palation, designed by Hermann Zapf in the 1940s).
+	  TeX Gyre Schola is based on the URW Century Schoolbook L family (which
+	  was designed by Morris Fuller Benton for the American Type Founders).
+	  TeX Gyre Termes is based on the URW Nimbus Roman No9 L family of fonts
+	  (whose original, Times, was designed by Stanley Morison together with
+	  Starling Burgess and Victor Lardent and first offered by Monotype). The
+	  constituent standard faces of each family have been greatly extended,
+	  and contain nearly 1200 glyphs each (though Chorus omits Greek support,
+	  has no small-caps family and has approximately 900 glyphs). Each family
+	  is available in Adobe Type 1 and Open Type formats, and LaTeX support
+	  (for use with a variety of encodings) is provided. Vietnamese and
+	  Cyrillic characters were added by Han The Thanh and Valek Filippov,
+	  respectively.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TEX_GYRE_DOC
+	bool "tex-tex-gyre-doc-2.004"
+	help
+	  Documentation for tex-tex-gyre
+
+	  This is documentation for tex-tex-gyre.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TIMES
+	bool "tex-times-2010.21993"
+	help
+	  
+
+	  The times package is now obsolete, replaced by the mathptmx package,
+	  which supports Times Roman text and (mostly) matching mathematics.
+	  The times package remains available, for compatibility; both it and
+	  mathptmx are part of psnfss.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TIPA
+	bool "tex-tipa-1.3nb2"
+	help
+	  Fonts and macros for IPA phonetics characters
+
+	  These fonts are considered the `ultimate answer' to IPA typesetting.
+	  The encoding of these 8-bit fonts has been registered as LaTeX
+	  standard encoding T3, and the set of addendum symbols as encoding TS3.
+	  `Times-like' Adobe Type 1 versions are provided for both the T3 and
+	  the TS3 fonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TIPA_DOC
+	bool "tex-tipa-doc-1.3"
+	help
+	  Documentation for tex-tipa
+
+	  This is documentation for tex-tipa.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TTFUTILS
+	bool "tex-ttfutils-2011"
+	help
+	  Data files for TeX Live TTF utilities
+
+	  This package provides data files used by TeX Live utilities for
+	  TrueType fonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TTFUTILS_DOC
+	bool "tex-ttfutils-doc-2011"
+	help
+	  Documentation for tex-ttfutils
+
+	  This is documentation for tex-ttfutils.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TXFONTS
+	bool "tex-txfonts-2009nb1"
+	help
+	  Times-like fonts in support of mathematics
+
+	  Txfonts supplies virtual text roman fonts using Adobe Times (or URW
+	  NimbusRomNo9L) with some modified and additional text symbols in the
+	  OT1, T1, and TS1 encodings; maths alphabets using Times/URW Nimbus;
+	  maths fonts providing all the symbols of the Computer Modern and AMS
+	  fonts, including all the Greek capital letters from CMR; and
+	  additional maths fonts of various other symbols.  The set is
+	  complemented by a sans-serif set of text fonts, based on
+	  Helvetica/NimbusSanL, and a monospace set.  All the fonts are in Type
+	  1 format (AFM and PFB files), and are supported by TeX metrics (VF and
+	  TFM files) and macros for use with LaTeX.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_TXFONTS_DOC
+	bool "tex-txfonts-doc-2009"
+	help
+	  Documentation for tex-txfonts
+
+	  This is documentation for tex-txfonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_UHC
+	bool "tex-uhc-2011nb1"
+	help
+	  Fonts for the Korean language
+
+	  Support for Korean documents written in Korean standard KSC codes for
+	  LaTeX2e.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_UHC_DOC
+	bool "tex-uhc-doc-2011"
+	help
+	  Documentation for tex-uhc
+
+	  This is documentation for tex-uhc.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_UTOPIA
+	bool "tex-utopia-2010"
+	help
+	  Adobe Utopia fonts
+
+	  The Adobe Standard Encoding set (upright and italic shapes, medium and
+	  bold weights) of the Utopia font family, which Adobe donated to the X
+	  Consortium. Macro support, and maths fonts that match the Utopia family,
+	  are provided by the Fourier and the Mathdesign Utopia font packages.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_UTOPIA_DOC
+	bool "tex-utopia-doc-2010"
+	help
+	  Documentation for tex-utopia
+
+	  This is documentation for tex-utopia.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_WADALAB
+	bool "tex-wadalab-2011nb1"
+	help
+	  
+
+	  These are font bundles for the Japanese Wadalab fonts which work with
+	  the CJK package. All subfonts now have glyph names compliant to the
+	  Adobe Glyph List, making ToUnicode CMaps in PDF documents (created
+	  automatically by dvipdfmx) work correctly. All font bundles now contain
+	  virtual Unicode subfonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_WADALAB_DOC
+	bool "tex-wadalab-doc-2011"
+	help
+	  Documentation for tex-wadalab
+
+	  This is documentation for tex-wadalab.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_WASY
+	bool "tex-wasy-2009nb1"
+	help
+	  Waldi's symbol fonts
+
+	  The wasy fonts (Waldi's symbol fonts) provide a useful range of
+	  symbols in MetaFont format: they have been extended (and converted to
+	  Adobe Type 1) under the name wasy2.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_WASY_DOC
+	bool "tex-wasy-doc-2009"
+	help
+	  Documentation for tex-wasy
+
+	  This is documentation for tex-wasy.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_WASYSYM
+	bool "tex-wasysym-2.0"
+	help
+	  LaTeX support file to use the WASY2 fonts
+
+	  The WASY2 (Waldi Symbol) font by Roland Waldi provides many glyphs like
+	  male and female symbols and astronomical symbols, as well as the
+	  complete lasy font set and other odds and ends. The wasysym package
+	  implements an easy to use interface for these symbols.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_WASYSYM_DOC
+	bool "tex-wasysym-doc-2.0"
+	help
+	  Documentation for tex-wasysym
+
+	  This is documentation for tex-wasysym.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ZAPFCHAN
+	bool "tex-zapfchan-2010.21993"
+	help
+	  Zapf Chancery fonts
+
+	  Zapf Chancery is a family of script typefaces designed by the type
+	  designer Hermann Zapf.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_ZAPFDING
+	bool "tex-zapfding-2008.7340"
+	help
+	  Dingbat typeface designed by Hermann Zapf
+
+	  Zapf Dingbats is one of the dingbat typefaces, designed by Hermann
+	  Zapf in 1978.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_THAIXFONTS
+	bool "thaixfonts-1.2.5"
+	help
+	  The collection of Thai X fonts
+
+	  Thai X fonts included here are dbthaitext, Phaisarn's fonts, Manop's fonts,
+	  Voradej's fonts, NECTEC fonts, and Poonlap's fonts. These fonts were
+	  collected from Internet and they are free.
+
+	  http://linux.thai.net/projects/thaixfonts
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TTF2PK
+	bool "ttf2pk-1.5nb5"
+	help
+	  TrueType to TeX PK font converter
+
+	  ttf2pk/ttf2tfm permit using TrueType fonts with TeX Live.
+
+	  http://www.freetype.org/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TTF2PT1
+	bool "ttf2pt1-3.4.4nb4"
+	help
+	  TrueType font converter to Postscript type 1
+
+	  TTF2PT1 is a modification of Andrew Weeks TTF2PFA True Type to Postscript
+	  Type 3 converter. Which will convert Most True Type Fonts to and Adobe
+	  Type 1 .pfa file. The files produced are in human readable form, which
+	  further needs to be encrypted with the t1utilities, to work with most
+	  software requiring type 1 fonts.
+
+	  http://ttf2pt1.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TTFTOT42
+	bool "ttftot42-0.3.1nb3"
+	help
+	  TrueType font to Type 42 converter
+
+	  TrueType fonts cannot be converted to Type 1 fonts without loss of
+	  quality, since conversion introduces rounding errors and loses hinting
+	  information.  Therefore, newer PostScript interpreters (Adobe
+	  PostScript since version 2013, ghostscript since 5.03) include a
+	  TrueType rasterizers.  To use a TrueType font with them, it has to be
+	  embedded in a PostScript font dictionary; this format is called Type 42.
+	  
+	  This program generates such Type 42 fonts from TrueType fonts.  It
+	  can also generate Adobe Font Metrics files (AFM files), including
+	  kerning information.
+	  
+	  Not yet supported are TrueType Collections and the creation of CID
+	  keyed fonts from large TrueType fonts (East Asian or Unicode fonts).
+
+	  http://www.nih.at/ttftot42/index.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TTMKFDIR2
+	bool "ttmkfdir2-20021109nb4"
+	help
+	  Tool that creates a fonts.scale file
+
+	  This program reads TrueType fonts and creates a suitable fonts.scale file for
+	  use with the xfsft X font server or XFree86-4.
+
+	  http://people.redhat.com/yshao/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TYPE1INST
+	bool "type1inst-0.6.1nb1"
+	help
+	  Automatically generate fonts.scale/fonts.dir for Type1 fonts
+
+	  type1inst is a small perl script which generates the "fonts.scale"
+	  file required by an X11 server to use any Type 1 PostScript fonts
+	  which exist in a particular directory.  It gathers this informatiom
+	  from the font files themselves, a task which previously was done
+	  by hand.  The script is also capable of generating the similar
+	  "Fontmap" file used by ghostscript.  It can also generate sample
+	  sheets for the fonts.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_UMEFONT_TTF
+	bool "umefont-ttf-0.434"
+	help
+	  
+
+	  This package contains 18 Japanese fonts of Umefont family.
+	  Ume Gothic/Ume P Gothic and O5/C4/C5/S4/S5
+	  Ume UI Gothic and O5
+	  Ume Mincho/Ume P Mincho and S3
+
+	  http://sourceforge.jp/projects/ume-font/wiki/FrontPage
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_UN_CORE_TTF
+	bool "un-core-ttf-1.0.2.20080608"
+	help
+	  Core set of Un Korean TrueType fonts
+
+	  Un fonts are GPL'd Korean fonts.  They were originally available as
+	  PostScript fonts for HLaTeX, and later converted into TrueType fonts.
+	  This package contains the following 9 core fonts.
+	  
+	  * UnBatang, UnBatangBold: serif
+	  * UnDotum, UnDotumBold: sans-serif
+	  * UnGraphic, UnGraphicBold: sans-serif style
+	  * UnPilgi, UnPilgiBold: script
+	  * UnGungseo: cursive, brush-stroke
+
+	  http://kldp.net/projects/unfonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_UN_EXTRA_TTF
+	bool "un-extra-ttf-1.0.2.20080608"
+	help
+	  Extra set of Un Korean TrueType fonts
+
+	  Un fonts are GPL'd Korean fonts.  They were originally available as
+	  PostScript fonts for HLaTeX, and later converted into TrueType fonts.
+	  This package contains the following 10 extra fonts.
+	  
+	  * UnPen, UnPenheulim: script
+	  * UnTaza: typewriter style
+	  * UnBom: decorative
+	  * UnShinmun
+	  * UnYetgul: old Korean printing style
+	  * UnJamoSora, UnJamoNovel, UnJamoDotum, UnJamoBatang
+
+	  http://kldp.net/projects/unfonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_UNI_VGA
+	bool "uni-vga-1"
+	help
+	  Monospaced Unicode font based on the original IBM VGA font
+
+	  Monospaced X11 bitmap font; Descendant of the original IBM VGA font with
+	  additional Unicode glyphs.
+
+	  http://www.inp.nsk.su/~bolkhov/files/fonts/univga/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_URALIC_TTF
+	bool "uralic-ttf-0.0.20040603"
+	help
+	  Font for Uralic languages with Russian-based writing systems
+
+	  The Uralic fonts contain additional letters used in most Uralic
+	  languages with Russian-based writing systems - Khanty (all dialects),
+	  Komi, Mansi (without marking long vowels), Mari, Nenets, Selkup
+	  and Udmurt. According to Musayev, the fonts also support Altai,
+	  Chukchi, Even, Evenki, Koryak and Nanai.
+
+	  http://peoples.org.ru/eng_uralic.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_URBANRENEWAL_TTF
+	bool "urbanrenewal-ttf-201102"
+	help
+	  Insanely great TT versions of the city-named fonts of Mac OS Classic
+
+	  Urban Renewal is a set of insanely great TrueType versions of the long-
+	  forgotten city-named fonts of Mac OS Classic, not seen since System 7.1.
+	  These TrueType versions are kare-fully constructed to be as faithful to
+	  the original designs as possible, while breaking free of the bitmap grid
+	  in subtle ways.
+
+	  http://www.kreativekorp.com/software/fonts/urbanrenewal.shtml
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_URW_FONTS
+	bool "urw-fonts-1"
+	help
+	  Standard postscript fonts
+
+	  These are newer versions of the standard Postscript fonts which used
+	  to be distributed with ghostscript. (Also see
+	  http://svn.ghostscript.com/ghostscript/tags/urw-fonts-1.0.7pre44/
+	  which was never released.)
+
+	  ftp://ftp.gimp.org/pub/gimp/fonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_VERA_TTF
+	bool "vera-ttf-1.10nb4"
+	help
+	  Bitstream Vera TrueType fonts
+
+	  Bitstream Vera is a set of high-quality TrueType fonts donated to the free
+	  software community by Bitstream, Inc.
+
+	  http://www.gnome.org/fonts/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_VFONTCAP_KOCHI
+	bool "vfontcap-kochi-0.0nb3"
+	help
+	  Configuration file for VFlib to use kochi-ttf
+
+	  vfontcap-kochi is a configuration file for VFlib to use kochi-mincho and
+	  kochi-gothic TrueType font.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_VLGOTHIC_TTF
+	bool "vlgothic-ttf-20111122"
+	help
+	  Free Japanese TrueType fonts named 'VLGothic'
+
+	  Japanese TrueType font using by Vine Linux.  Based on
+	  Sazanami Gothic and M+ font.
+
+	  http://dicey.org/vlgothic/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_WATANABE_VFONT
+	bool "watanabe-vfont-19930318"
+	help
+	  Watanabe-vector Japanese font
+
+	  Watanabe-vector font
+	  
+	  Watanabe-vector font is used by vflib by default
+	  for Japanese mincho(min) and gothic(goth).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_XMBDFED
+	bool "xmbdfed-4.5nb4"
+	help
+	  Motif-based BDF font editor with lots of features
+
+	  XmBDFEditor is a Motif-based BDF font editor with the following features:
+	  
+	  o  Multiple fonts can be loaded from the command line.
+	  o  Multiple fonts can be open at the same time.
+	  o  Cutting and pasting glyphs between fonts.
+	  o  Multiple glyph bitmap editors can be open at the same time.
+	  o  Cutting and pasting between glyph bitmap editors.
+	  o  Export of XBM files from glyph bitmap editors.
+	  o  Automatic correction of certain metrics when a font is loaded.
+	  o  Generation of XLFD font names for fonts without XLFD names.
+	  o  Update an XLFD font name from the font properties.
+	  o  Update the font properties from an XLFD font name.
+	  o  Font property and comment editors.
+	  o  Supports unencoded glyphs (ENCODING of -1).
+	  o  Display of glyph encodings in octal, decimal, or hex.
+	  o  Builtin on-line help.
+	  o  Imports PK/GF and HBF (Han Bitmap Font) fonts, Linux console fonts
+	  (PSF, CP and FNT), Sun console fonts (vfont format), Windows FON/TNT
+	  fonts and TrueType fonts and collections.
+	  o  Imports fonts from the X server.
+	  o  Exports PSF and HEX fonts.
+	  o  Edits two and four bits per pixel gray scale fonts.
+
+	  http://crl.nmsu.edu/~mleisher/xmbdfed.html
+
+

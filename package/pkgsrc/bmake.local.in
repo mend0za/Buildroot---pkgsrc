@@ -1,0 +1,5 @@
+# Override settings for problematic packages
+
+.if "${PKGPATH}" == "archivers/pax"
+CFLAGS+=      -U_FILE_OFFSET_BITS -U_LARGEFILE64_SOURCE -U_LARGEFILE_SOURCE
+.endif

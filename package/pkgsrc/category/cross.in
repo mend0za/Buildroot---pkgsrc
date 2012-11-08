@@ -1,0 +1,331 @@
+config BR2_PKGSRC_PACKAGE_CROSS_ATASM
+	bool "atasm-1.04nb2"
+	help
+	  Cross-assembler for 6502 optimized to code for Atari 8 bit computers
+
+	  This is a 6502 cross-assembler optimized to code for the Atari 8 bit
+	  computer line.  It is meant to be compatible with the Mac/65 assembler
+	  on the native Atari 8 bit platform.
+
+	  http://sourceforge.net/projects/atasm/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVR_BINUTILS
+	bool "avr-binutils-2.19.1nb1"
+	help
+	  GNU binutils for Atmel AVR 8-bit RISC microcontrollers
+
+	  GNU binutils for Atmel AVR 8 bit RISC microcontrollers.
+	  Prerequisite for avr-gcc in a cross-compilation environment.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVR_GCC
+	bool "avr-gcc-4.4.1nb3"
+	help
+	  GNU gcc-4.4 for Atmel AVR 8-bit RISC microcontrollers
+
+	  gcc-3.0 configured as cross-compiler for Atmel AVR 8-bit RISC
+	  microcontrollers.
+	  
+	  This package includes a basic C++ compiler, although this currently
+	  is only of limited use (without a libstdc++), and is little tested.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVR_GDB
+	bool "avr-gdb-5.3nb3"
+	help
+	  GNU gdb for Atmel AVR 8-bit RISC microcontrollers
+
+	  GNU Debugger GDB, configured for Atmel AVR microcontroller targets.
+	  
+	  This debugger cannot really be used standalone, but is useful in
+	  connection with either AVaRICE (http://avarice.sourceforge.net/)
+	  or simulavr (http://www.freesoftware.fsf.org/simulavr/).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVR_LIBC
+	bool "avr-libc-1.6.7nb1"
+	help
+	  C and math library for Atmel AVR 8-bit microcontrollers
+
+	  avr-libc -- a C and math library for the Atmel AVR controller family
+	  
+	  This library implements a subset of common C library functions, some
+	  Atmel AVR specific additions (like handling AVR's IO facilities,
+	  EEPROM etc.), as well as a 32-bit floating point math library (-lm).
+	  
+	  Everything is designed and implemented to cooperate with avr-gcc and
+	  avr-binutils.
+	  
+	  Please note that this is currently work-in-progress.  Documentation
+	  is becoming embedded into the source code which will hopefully get
+	  it more complete and up-to-date.  Some parts of the current library
+	  have proven to be not all that useful (e. g. timer_enable_int())
+	  so they might be removed in a future version.
+	  
+	  For the time being, some older documentation (more complete but
+	  somewhat out of date) is being installed as well.
+
+	  http://savannah.nongnu.org/projects/avr-libc
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_AVRDUDE
+	bool "avrdude-5.10nb2"
+	help
+	  Downloader/uploader for Atmel AVR 8-bit RISC microcontrollers
+
+	  AVRDUDE - AVR Downloader/UploaDEr - is a program for updating the
+	  flash, eeprom, and fuse bit memories of Atmel AVR microcontrollers.
+	  Avrdude supports a wide variety of chip programmers (including the
+	  widely used STK500) that attach to the serial port, and, if supported
+	  by the underlying OS, to the parallel port.
+
+	  http://www.bsdhome.com/avrdude/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_BFD_CRUNCHIDE
+	bool "bfd-crunchide-1.2"
+	help
+	  Crunchide using libbfd, used for cross-building distributions
+
+	  This version of crunchide has been written to make use of libbfd. This
+	  enables it to work for object file formats not normally supported on a
+	  host.
+	  
+	  This version is intended for cross-building snapshots. It is not needed
+	  to build snapshots of the host architecture type.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_BFD_MDSETIMAGE
+	bool "bfd-mdsetimage-1.15.1nb1"
+	help
+	  Mdsetimage using libbfd, used for cross-building distributions
+
+	  This version of mdsetimage has been written to make use of libbfd. This
+	  enables it to work for object file formats not normally supported on a
+	  host.
+	  
+	  This version is intended for cross-building snapshots. It is not needed
+	  to build snapshots of the host architecture type.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_CC65
+	bool "cc65-2.12.0"
+	help
+	  C cross compiler for 6502 target systems
+
+	  cc65 is a complete cross development package for 65(C)02 systems, including
+	  a powerful macro assembler, a C compiler, linker, librarian and several
+	  other tools.
+
+	  http://www.cc65.org/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_BINUTILS
+	bool "cross-binutils-2.17.0.0nb1"
+	help
+	  Unified GNU binutils for cross build environments
+
+	  The cross-binutils pkg is used only by the other `cross' pkgs.  The
+	  binutils provides various binary manipulation utilities as well as the GNU
+	  linker.  (The assembler is bundled with each individual cross pkg.)
+
+	  http://www.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_BINUTILS
+	bool "cross-h8300-hms-binutils-2.12.1nb1"
+	help
+	  h8300-hms cross utility
+
+	  binutils for hitachi h8300-hms cross compile
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_GCC
+	bool "cross-h8300-hms-gcc-3.1nb6"
+	help
+	  GCC compiler for h8300-hms
+
+	  gcc for hitachi h8300-hms cross-compile environment
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_I386_CYGWIN32
+	bool "cross-i386-cygwin32-1.0.0.0nb3"
+	help
+	  Cross-compile environment for Cywin32/i386
+
+	  This cross-compile environment for PE/COFF Cygwin32/i386.
+
+	  http://www.NetBSD.org/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_I386_LINUX
+	bool "cross-i386-linux-2.0.7.1nb2"
+	help
+	  Cross-compile environment for iX86 Linux, libc v6
+
+	  This cross-compile environment is for iX86-Linux, with ELF, and libc v6
+	  (such as RedHat 5.x).
+
+	  http://egcs.cygnus.com/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_I386_MSDOSDJGPP
+	bool "cross-i386-msdosdjgpp-2.02.0nb2"
+	help
+	  Cross-compile environment for MS-DOS on 386 and higher
+
+	  This cross-compile environment is for MS-DOS on the 386 and higher
+	  processors, with some kind of DPMI 0.9 or later layer.  The produced
+	  binaries will run on MS-DOS with a DPMI driver (one of which can be
+	  obtained from the DJGPP distribution site), Windows 3.1 with Win32s,
+	  Windows 95, and Windows NT.
+	  
+	  Additional includes and libraries put into $CROSSBASE/i386-msdosdjgpp/ can
+	  provide other services.  Available are pdcurses, winsock drivers
+	  (<sys/socket.h> based on Winsock), and more.  Look at the DJGPP web-site,
+	  http://www.delorie.com/djgpp/, for more information.
+
+	  http://www.delorie.com/djgpp/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_DASM
+	bool "dasm-2.12nb1"
+	help
+	  Multi-CPU cross-assembler for 6502, 6803 and 68HC11
+
+	  DASM is a highly evolved cross-assembler for 6502, 6803 and 68HC11
+	  processors.  It is very popular for hacking/cross-developing on old
+	  6502-based video game systems from Atari, Nintendo, etc.  DASM
+	  processes output from the Distella Atari ROM disassembler without
+	  modification.
+
+	  http://members.cox.net/rcolbert/dasm.htm
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_DFU_PROGRAMMER
+	bool "dfu-programmer-0.5.4"
+	help
+	  Programmer for Atmel USB DFU Bootloader
+
+	  dfu-programmer is a Device Firmware Update based USB programmer for
+	  Atmel chips with a USB bootloader.
+
+	  http://dfu-programmer.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_ICDPROG
+	bool "icdprog-0.3nb1"
+	help
+	  Microchip PIC programmer using ICD hardware
+
+	  ICDPROG is a simple command line programmer for Microchip PIC controllers,
+	  using the Microchip or Olimex ICD (in circuit debugger) as a programmer.
+	  It was written by Geir Thomassen.
+	  
+	  The program is written for command line usage.
+	  
+	  FEATURES
+	  * Works with PIC16F87x, x = [0,1,2,3,4,6,7] (3,7 is well tested ... )
+	  * Reads Intel hex format
+	  * Auto-detects controller type
+	  
+	  run the program with
+	  icdprog <hex file>
+	  
+	  or
+	  icdprog -p /dev/tty01 <hex file>
+	  if you connect the ICD to serial port #2
+
+	  http://icdprog.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_MINGW
+	bool "mingw-3.3.1"
+	help
+	  GCC tools for win32 cross-development
+
+	  MinGW: A collection of freely available and freely distributable Windows
+	  specific header files and import libraries combined with GNU toolsets that
+	  allow one to produce native Windows programs that do not rely on any
+	  3rd-party DLLs.
+
+	  http://mingw.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_MINGW_BINUTILS
+	bool "mingw-binutils-2.18nb1"
+	help
+	  GNU binutils for win32 cross-development
+
+	  MinGW-binutils: A part of cross-environment for MingGW, gas, ld, and binutils.
+	  This runs on any platform and generating binaries to run on MingGW, say,
+	  Windows environment.
+
+	  http://mingw.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_MINGW_GCC
+	bool "mingw-gcc-3.4.5"
+	help
+	  GNU C Compiler for win32 cross-development
+
+	  MinGW: A collection of freely available and freely distributable Windows
+	  specific header files and import libraries combined with GNU toolsets that
+	  allow one to produce native Windows programs that do not rely on any
+	  3rd-party DLLs.
+
+	  http://mingw.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_MINGW_RUNTIME_BIN
+	bool "mingw-runtime-bin-3.14"
+	help
+	  GCC runtime libraries for win32 cross-development
+
+	  MinGW: A collection of freely available and freely distributable Windows
+	  specific header files and import libraries combined with GNU toolsets that
+	  allow one to produce native Windows programs that do not rely on any
+	  3rd-party DLLs.
+
+	  http://mingw.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_MINGW_W32API_BIN
+	bool "mingw-w32api-bin-3.11"
+	help
+	  GCC libraries for win32 cross-development
+
+	  MinGW: A collection of freely available and freely distributable Windows
+	  specific header files and import libraries combined with GNU toolsets that
+	  allow one to produce native Windows programs that do not rely on any
+	  3rd-party DLLs.
+
+	  http://mingw.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_CROSS_UISP
+	bool "uisp-20040311"
+	help
+	  AVR microcontroller hardware in-system programmer
+
+	  Uisp is a tool for AVR microcontrollers which can interface to
+	  many hardware in-system programmers.
+
+	  http://savannah.nongnu.org/projects/uisp
+
+

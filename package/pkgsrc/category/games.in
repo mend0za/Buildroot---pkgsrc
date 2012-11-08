@@ -1,0 +1,5202 @@
+config BR2_PKGSRC_PACKAGE_GAMES_0VERKILL
+	bool "0verkill-0.16nb1"
+	help
+	  0verkill is bloody 2D action deathmatch-like game in ASCII-ART
+
+	  Throw away Doom, Quake and Duke Nukem - 0verkill comes. Now you don't even need
+	  graphic mode if you wanna take a bloody deathmatch with your friends.
+	  
+	  The ASCII art that has always fascinated you started to move finally.
+	  No one has ever thought that ASCII is an animable kind of art.
+	  Finally you can taste the original appearance of elaborate action in full
+	  16 colors of your plain old text terminal. You never thought that ASCII letters
+	  are capable of network-game action in such a massive manner.
+	  
+	  No one ever connected gushing blood with that innocent ASII letters that were
+	  so utterly boring until recently, when 0verkill was released.
+
+	  http://artax.karlin.mff.cuni.cz/~brain/0verkill/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_4STATTACK
+	bool "4stAttack-2.1.4nb12"
+	help
+	  Game in which you have to try to out-smart your opponent
+
+	  4st Attack is a game in which you have to try to out-smart your opponent. The
+	  goal of the game is to connect four of stones in a straight line. This can be
+	  horizontaly, vertically and even diagonnally.
+
+	  http://forcedattack.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_INTERLOGIC
+	bool "InterLOGIC-0.30nb8"
+	help
+	  Logic/puzzle game based on the old Amiga game "Balls"
+
+	  The game InterLOGIC is based on the old Amiga logic game "Balls".
+	  The object of the game is to move balls of different colors through
+	  a maze, connecting them with other balls of the same color. Two or
+	  more connected balls of the same color will disappear. The aim of
+	  the game is to clean the whole maze in this way.  The balls are
+	  connected if they are right next to each other horizontally or
+	  vertically, but not diagonally.  The current release contains 30
+	  mind-breaking levels for you to solve.
+
+	  http://sourceforge.net/projects/interlogic/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KOBODELUXE
+	bool "KoboDeluxe-0.5.1nb4"
+	help
+	  Multi-way scrolling shoot 'em up game for X
+
+	  Kobo Deluxe (formerly SKobo) is an SDL port of Akira Higuchi's game XKobo.
+	  It adds sound, smoother animation, filtered high resolution support, a more
+	  intuitive menu driven user interface, joystick support and other features.
+	  It runs on most of the major operating systems.
+
+	  http://olofson.net/kobodl/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LOSTPIXELS
+	bool "LostPixels-0.5.3nb5"
+	help
+	  
+
+	  Blinken Sisters is an open source game in 80s retro style, free to
+	  download, fully playable and easy to handle. Enjoy jumping and
+	  running with Agent Kate through various levels of danger, collecting
+	  all the pixels that were lost in another dimension!
+
+	  http://www.blinkensisters.org/wiki/index.php/Main_Page
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_REMINISCENCE
+	bool "REminiscence-0.1.6nb3"
+	help
+	  Engine to play Flashback by Delphine Software
+
+	  REminiscence is a rewrite of the engine used in the game Flashback
+	  from Delphine Software. This program is designed as a cross-platform
+	  replacement for the original executable and uses the SDL library.
+
+	  http://cyxdown.free.fr/reminiscence/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ABUSE
+	bool "abuse-2.0nb2"
+	help
+	  Full color 320x200 arcade quality platform shooter
+
+	  "Falsely accused and imprisoned in a high-security facility, you watch in
+	  horror as a mysterious biogenetic experiment turns everybody around you --
+	  guards and prisoners alike, into ravening, inhuman monsters.  Your only
+	  hope -- steal a suit of powered armor, any weapons you can get your hands
+	  on, and make your way to the deepest level of the prison, before the
+	  plague spreads to the outside world."
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ADOM
+	bool "adom-1.1.1nb1"
+	help
+	  Ancient Domains of Mystery - yet another roguelike game
+
+	  Ancient Domains of Mystery (ADOM for short) is a rogue-like game
+	  which means that it is a single-user game featuring the exploration of
+	  a dungeon complex.  You control a fictional character described by
+	  race, class, attributes, skills, and equipment.  This fictional
+	  character is trying to achieve a specific goal (see below) and succeed
+	  in a difficult quest.  To fulfill the quest, you have to explore
+	  previously undiscovered tunnels and dungeons, fight hideous monsters,
+	  uncover long forgotten secrets, and find treasures of all kind.
+
+	  http://www.adom.de/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ALEPHONE
+	bool "alephone-20100424nb3"
+	help
+	  Classic 2.5D FPS game engine, updated to use SDL
+
+	  Just before Bungie was acquired by Microsoft, they released the engine to
+	  their acclaimed Marathon 2 under the GPL.  This has evolved into Aleph One,
+	  which makes it possible to play the classic Marathon Trilogy on a wide
+	  range of systems with improved features like OpenGL and internet play.
+	  
+	  You will also want the marathon-trilogy package, which provides the
+	  game data for the original trilogy. The marathon-scenarios package
+	  (currently in wip) provides several third-party scenarios.
+	  
+	  Also see:
+	  http://traxus.bungie.org  (information and more third-party scenarios)
+	  http://trilogyrelease.bungie.org  (the original free downloads)
+
+	  http://marathon.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_AN
+	bool "an-0.93"
+	help
+	  Very fast anagram generator
+
+	  Generates anagrams for a phrase supplied by the user, the words used in the
+	  anagram are taken from a specified dictionary which should contain one
+	  word per line (default dictionary:/usr/share/dict/words).
+	  
+	  Some Anagrams Found Using an-0.93:
+	  Free Software Foundation  -  I'd fan out tons of freeware!
+	  National Security Agency  -  Lusty yearning at cocaine.
+	  President Dole            -  Led despite Ron.
+	  Central Intelligence Agency - Langley: Inelegant, eccentric.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ANGBAND_TTY
+	bool "angband-tty-2.8.3nb4"
+	help
+	  Tolkien based variant of Moria for tty/console displays
+
+	  Angband is a rather addictive freeware computer role playing game based
+	  loosely on the world of J.R.R.Tolkien, in which the player explores the
+	  complex dungeon of Angband, killing monsters and collecting treasure, and
+	  eventually defeating Morgoth, the Master of the Pits of Angband.
+
+	  http://www.phial.com/angband/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ANGBAND_X11
+	bool "angband-x11-3.0.3nb2"
+	help
+	  Tolkien based variant of Moria for X11 displays
+
+	  Angband is a rather addictive freeware computer role playing game based
+	  loosely on the world of J.R.R.Tolkien, in which the player explores the
+	  complex dungeon of Angband, killing monsters and collecting treasure, and
+	  eventually defeating Morgoth, the Master of the Pits of Angband.
+
+	  http://www.thangorodrim.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ANISE
+	bool "anise-0beta10nb5"
+	help
+	  Adventure game scripting engine
+
+	  ANISE is an open source implementation of the adventure game scripting
+	  engine (AISV) used by popular adventure games from Elf and Silky's.
+
+	  http://www.tomyun.pe.kr/projectanise/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_AOP
+	bool "aop-0.6"
+	help
+	  Aop is a curses based arcade game with only 64 lines of sourcecode
+
+	  The goal of Aop (Ambassador Of Pain) is is to drive the hoovercraft
+	  (O) trough the level into the 'at' sign (@) and reach as much points
+	  as possible by reducing the number of moves and not losing any time.
+	  Lost lifes (0) can easily be picked up by simply drive over them.
+
+	  http://raffi.at/view/code/aop/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ASC
+	bool "asc-1.16.4.0nb8"
+	help
+	  Turn based strategy game
+
+	  ASC is a free, turn based strategy game.
+	  
+	  It is designed in the tradition of Battle Isle from Bluebyte.
+
+	  http://www.asc-hq.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ATOMIX
+	bool "atomix-2.14.0nb14"
+	help
+	  Puzzle game
+
+	  Atomix is a puzzle game in which you have to build full molecules, from simple
+	  inorganic ones in the first levels to extremely complex organic ones in the
+	  last levels, out of isolated atoms, which are laying around among walls and
+	  other obstacles on the playfield.
+
+	  http://jens.triq.net/atomix.php
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BASTET
+	bool "bastet-0.41nb1"
+	help
+	  Bastard Tetris
+
+	  "For people who enjoy swearing at their computer, Bastet (short for
+	  Bastard Tetris) is an attractive alternative to Microsoft Word."
+	  
+	  (taken from http://hublog.hubmed.org/)
+	  
+	  Have you ever thought Tetris(R) was evil because it wouldn't send you
+	  that straight "I" brick you needed in order to clear four rows at the
+	  same time?  Well Tetris(R) probably isn't evil, but Bastet certainly is.
+	  >:-)
+	  
+	  Bastet stands for "bastard tetris", and is a simple ncurses-based
+	  Tetris(R) clone. Unlike normal Tetris(R), however, Bastet does not
+	  choose your next brick at random.  Instead, Bastet uses a special
+	  algorithm designed to choose the worst brick possible.  As you can
+	  imagine, playing Bastet can be a very frustrating experience!
+
+	  http://fph.altervista.org/prog/bastet.shtml
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BATTALION
+	bool "battalion-1.4nb7"
+	help
+	  Virtual reality 3D GL game for X11
+
+	  Battalion was a game written in 1994 on a Silicon Graphics Indy in GL for
+	  the IndiZone contest. This version also ran in the CAVE(tm) as a virtual
+	  reality game at the EVE 4 art show in May 1995. The GL version won 'best
+	  indy software' and is available on the Indizone3 CDROM. It was then
+	  converted to OpenGL (with several enhancements) and modified in late 1996
+	  to work with the Mesa graphics library. In 1997 it won the Hot Mix 17 game
+	  contest from SGI, and was available on the Hot Mix 17 CDROM.
+	  
+	  Here is the description of battalion from the Silicon Graphics homepage
+	  in Japan.
+	  
+	  Battalion wa 'kaiju ga bakuhatsu, hakai' wo kuri-kaesu game desu.
+	  Battalion is a game where 'A monster blows up, destroys' repeats.
+	  ... pretty much says it all ...
+
+	  http://www.evl.uic.edu/aej/AndyBattalion.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BATTLEBALL
+	bool "battleball-2.1nb4"
+	help
+	  3d game of soccer, with tanks
+
+	  BattleBall is a 3-D multiplayer game based on soccer, with a militaristic
+	  twist. BattleBall runs under Unix / X11, and can be played over LANs and
+	  short distances on the internet.  BattleBall runs fast without any 3-D
+	  graphics hardware, and its binaries are small and easily downloaded.
+	  
+	  BattleBall is by Philip A. Hardin
+
+	  http://web.archive.org/web/*/http://www.cs.utexas.edu/users/pahardin/bb.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BILLARDGL
+	bool "billardgl-1.75nb1"
+	help
+	  3D Billard using OpenGL hardware acceleration
+
+	  BillardGL is an OpenGL pool billiard simulation by Stefan Disch, Tobias
+	  Nopper and Martina Welte.
+	  
+	  BillardGL is published under the GPL.
+
+	  http://www.tobias-nopper.de/BillardGL/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BLINDMINE
+	bool "blindmine-0.3nb10"
+	help
+	  Minesweeper clone that you can play with your eyes closed
+
+	  Blindmine is a minesweeper clone that you can play with your eyes
+	  closed.  It is designed for the blind and visually impaired.
+	  Currently, it supports Korean only.
+
+	  http://blindmine.kldp.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BLOKUS
+	bool "blokus-1.1"
+	help
+	  Abstract strategy board game for two to four players
+
+	  Blokus is an abstract strategy board game for two to four players,
+	  invented by Bernard Tavitian and published in 2000 by the Sekkoia
+	  company. It has won several awards, including the Mensa select award and
+	  the 2004 Teacher's Choice Award.
+	  
+	  This is an Open GL version of the game, developed by some students from
+	  the University of Applied Sciences (Fachhochschule) Muenster, Germany.
+
+	  http://www.saschahlusiak.de/blokus/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BLUEMOON
+	bool "bluemoon-1.3.2nb7"
+	help
+	  Blue Moon game with AI
+
+	  This is a project to create an artificial intelligence opponent
+	  for the game Blue Moon. All eight of the original Blue Moon people
+	  decks are supported, and support for the more recent Buka Invasion
+	  deck is underway.
+
+	  http://keldon.net/bluemoon/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BOMBERCLONE
+	bool "bomberclone-0.11.7nb4"
+	help
+	  Multi-player Bomberman clone
+
+	  Lay bombs and try to make the other players explode.
+	  With network multi-player mode.
+
+	  http://www.bomberclone.de/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BOS
+	bool "bos-1.1nb2"
+	help
+	  
+
+	  Invasion - Battle of Survival is a real-time strategy game using
+	  the Stratagus game engine.
+
+	  http://www.boswars.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BOSON
+	bool "boson-0.8nb26"
+	help
+	  OpenGL real-time strategy game for KDE 3
+
+	  Boson is an OpenGL real-time strategy game, with the feeling of
+	  Command&Conquer(tm) or StarCraft(tm) and OpenGL support.
+	  It is designed to run on Unix computers, and is built on top of the
+	  libkdegames, kde and Qt libraries.
+
+	  http://boson.eu.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BRIDGE_HANDS
+	bool "bridge-hands-2.0"
+	help
+	  Generate hands for duplicate bridge
+
+	  Hands is a program to generate bridge hands for a duplicate game.  The
+	  program writes output to the terminal ("Standard out") which may be
+	  redirected to a file or a printer.  The output is suitable for printing on
+	  8 1/2 x 11 inch pages using any fixed-pitch font at 12 characters per inch,
+	  such as 10-point Courier, or for redirection to any Postcript printer or
+	  compatible interpreter.
+
+	  http://www.whiteoaks.com/hands/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BZFLAG
+	bool "bzflag-2.0.16nb1"
+	help
+	  OpenGL tank game
+
+	  bzflag is a classic OpenGL tank game that originated on SGI machines now
+	  it is open for all to enjoy.  Pick up flags and shoot other tanks.
+
+	  http://www.bzflag.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CBZONE
+	bool "cbzone-2.0cnb2"
+	help
+	  Simple classic game of 3D tank warfare
+
+	  Cbzone is a version of Battlezone derived from the Fortran
+	  sources written by Justin S. Revenaugh.  This version is more
+	  flexible in that the number of opponents is user selectable.
+	  
+	  Input to the game is primarily through the mouse, although
+	  some keyboard commands are accepted.  Mouse left button will
+	  fire a salvo; mouse right button will switch between low/high
+	  sensitivity (sensitivity determines how sensitive the joystick is to
+	  pointer motion).  On a three button mouse, the middle button will
+	  center the joystick and stop your tank.  This facility can be done
+	  ona two button mouse by hitting both buttons at the same time.
+	  Directional control of the tank is by moving the mouse to
+	  different portions of the screen.  The joystick in the lower right
+	  hand of the screen will correspond to your tanks current movement
+	  and rotation.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CCGO
+	bool "ccgo-0.3.6.3nb7"
+	help
+	  Go board with IGS and gnugo interface
+
+	  ccGo is a program allows you to play go with gnugo on your computer or
+	  with other players on the IGS on the internet.
+	  
+	  Features
+	  
+	  * low bandwidth IGS client (works fine in quiet mode)
+	  * GMP support, to play go with gnugo
+	  * SGF Go game record viewer, works with format version FF4
+	  * written in C++ using gtkmm-2.0
+	  * picture board and stone images support
+	  * auto detect and display Chinese, Japanese characters
+
+	  http://ccdw.org/~cjj/prog/ccgo/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CGOBAN
+	bool "cgoban-1.9.14"
+	help
+	  The complete goban.  A Go server client and sgf viewer/editor
+
+	  CGoban ("Complete Goban") provides a large set of go-related services
+	  for Unix and X11. A list of the functions that it provides:
+	  
+	  Play go against another player.
+	  
+	  Edit and view SGF files. CGoban provides full functionality for
+	  editing and viewing SGF files.
+	  
+	  Connect to a go server over the internet. CGoban can connect to
+	  NNGS or IGS and gives a convienent graphical user interface to the
+	  server.
+	  
+	  Act as a bridge to go modem protocol. Go modem protocol has become
+	  a standard way for computer go programs to communicate.
+	  internet go servers.
+
+	  http://cgoban1.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CGOBAN_JAVA
+	bool "cgoban-java-3.4.14"
+	help
+	  Client for the KGS Go Server and SGF viewer/editor
+
+	  CGoban-java (CGoban 3) is a port of the SGF editor of CGoban 1 to Java
+	  combined with a client for the Kiseido Go Server.  It is missing the Go
+	  Modem Protocol adapter from CGoban 1 and the IGS/NNGS client from cgoban
+	  1, but the SGF editor is a bit better (and of course the KGS client in
+	  it is much better than the IGS/NNGS client in CGoban 1).
+
+	  http://www.gokgs.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CHEST
+	bool "chest-3.19.20080412"
+	help
+	  Chess problem solver
+
+	  CHEST is an experimental program solving orthodox chess problems
+	  (like "white to move and mate in 5 moves").  It is written in ANSI
+	  C, and developed under UNIX.  There is no user interface:  CHEST
+	  just reads an input file and produces plain text on standard output.
+	  
+	  It is not hard to come up with a program that does the same job as
+	  CHEST, but it will be rather slow for non-trivial jobs.  CHEST
+	  tries hard to be fast but still 100% correct.
+
+	  http://www.drb.insel.de/~heiner/Chess/chest.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CHROMIUM_BSU
+	bool "chromium-bsu-0.9.14nb4"
+	help
+	  Fast paced, arcade-style, top-scrolling space shooter
+
+	  You are captain of the cargo ship Chromium B.S.U., responsible for
+	  delivering supplies to our troops on the front line. Your ship has a
+	  small fleet of robotic fighters which you control from the relative
+	  safety of the Chromium vessel.
+
+	  http://chromium-bsu.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CIRCUSLINUX
+	bool "circuslinux-1.0.3nb11"
+	help
+	  Clone of the Atari 2600 game "Circus Atari"
+
+	  "Circus Linux!" is based on the Atari 2600 game "Circus Atari" by Atari,
+	  released in 1980.  Gameplay is similar to "Breakout" and "Arkanoid"- you
+	  slide a device left and right to bounce objects into the air which destroy
+	  a wall.
+
+	  http://www.newbreedsoftware.com/circus-linux/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CIVCTP_DEMO
+	bool "civctp-demo-19991025nb1"
+	help
+	  
+
+	  Civilization: Call to Power is the latest in the line of the
+	  "Civilization" games. Build up your civilization from the dawn of
+	  the Stone Age until it reaches for the stars--and beyond.
+	  
+	  Through conquest, cooperation, skulduggery and innovation, you can
+	  build a civilization for the ages--or land on the scrapheap of
+	  history. If you're feeling invincible, you can test your mettle
+	  online or over a network against multiple players. For strategy
+	  game fans, this is a must-have.
+	  
+	  This is the free demo version - a full version is available from
+	  Loki Games at http://www.lokigames.com/products/civctp/
+
+	  http://www.lokigames.com/products/civctp/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CMATRIX
+	bool "cmatrix-1.2a"
+	help
+	  Make your console feel like Nadbuchonazor's bridge
+
+	  Make your console look like Nadbuchonazor's bridge. CMatrix displays green
+	  characters, falling from top of the screen, almost like the ones seen in
+	  "Matrix" movie series.
+
+	  http://www.asty.org/cmatrix/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_COLCHESS
+	bool "colchess-7.0"
+	help
+	  Chess analysis engine
+
+	  ColChess is primarily an analysis engine, though it can also be used for
+	  playing competitive games. It uses the brute force analysis method for
+	  tree searching, meaning that it analyses far more nodes per move than an
+	  ordinary chess program such as GNU Chess or Crafty, but it cuts out all the
+	  guesswork so that its analysis is always accurate to the depth specified.
+
+	  http://www.ast.cam.ac.uk/~cmf/chess/colchess/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_COLCHESS_BOOK_COLCHESS
+	bool "colchess-book-colchess-7.0"
+	help
+	  
+
+	  Default book of chess openings for ColChess.
+
+	  http://www.ast.cam.ac.uk/~cmf/chess/colchess/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_COLCHESS_BOOK_LARGE
+	bool "colchess-book-large-20000512"
+	help
+	  
+
+	  Large book of chess openings for ColChess.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_COREWARS
+	bool "corewars-0.9.13nb2"
+	help
+	  Programs on a virtual machine, fighting each other
+
+	  Corewars is a simulation game where a number of warriors try to
+	  crash each other while they are running in a virtual computer. The
+	  warriors can be written in one of two assembler-like languages called
+	  Corewars and Redcode. Corewars is the default language and is easier
+	  to learn and understand. Redcode provides more advanced and powerful
+	  instructions but also requires more time to learn.
+	  
+	  You can watch your warriors while they are running in the main
+	  program window. A statistic window will give you live coverage of
+	  just how well your warriors are doing. A tournament mode will allow
+	  you to run you own tournaments on your computer.
+
+	  http://sal.math.ualberta.ca/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRACK_ATTACK
+	bool "crack-attack-1.1.14nb12"
+	help
+	  Tetris Attack inspired game
+
+	  Crack Attack! is an addictive (hence the name) OpenGL game based on
+	  the Tetris Attack game for Super Nintendo.
+	  
+	  The goal is to keep your stack from reaching the top of the screen.
+	  To prevent this, you line up blocks of the same color.
+
+	  http://savannah.nongnu.org/projects/crack-attack
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRACK_ATTACK_SOUNDS
+	bool "crack-attack-sounds-1.1.14"
+	help
+	  Music and sounds for crack-attack
+
+	  Sound and music files for Crack Attack!
+	  
+	  Crack Attack! doesn't come with sound files, but can play sound files if
+	  provided.  This package installs openSUSE's music and sound file set for this
+	  game.
+
+	  http://www.miguev.net/background-music-for-crack-attack-119-v05/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRAFT
+	bool "craft-3.5nb2"
+	help
+	  Warcraft-like game for X11
+
+	  You are a Viking, and, one fine day, after drinking a bit to much beer,
+	  you fall out with the leader of your settlement. After several
+	  unpleasantries, the upshot of it all is that you and two of your equally
+	  drunken companions have to make a break for it!. An historic moment,
+	  because you three guys establish a new nation. Since you are obviously
+	  even too lazy to work, your companions vote you to be King. So let's have
+	  a look and see whether you have what it takes to build up a new and
+	  powerful kingdom, or whether you are just another one of life's losers. To
+	  make things a wee bit tricky there just happens to be a few more of your
+	  sort, trying to establish their own kingdoms; so a few problems along the
+	  way are certainly foreseeable. Your main task is to command your own
+	  citizens.
+
+	  http://set.gmd.de/~hua/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRAFTY
+	bool "crafty-22.1nb2"
+	help
+	  Chess engine
+
+	  Crafty is a chess program written by Bob Hyatt (hyatt@cis.uab.edu).
+	  It is modeled after Cray Blitz (also written by Bob).
+	  
+	  Crafty has the following features:
+	  
+	  - has a customizable opening book
+	  - supports tablebases (Steven Edward's endgame database)
+	  - text interface
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRAFTY_BOOK_MEDIUM
+	bool "crafty-book-medium-20000511nb1"
+	help
+	  
+
+	  Medium book of chess openings for Crafty.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRAFTY_BOOK_SMALL
+	bool "crafty-book-small-20000511nb1"
+	help
+	  
+
+	  Small book of chess openings for Crafty.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRAFTY_DOC
+	bool "crafty-doc-18.0"
+	help
+	  Documentation for Crafty chess engine
+
+	  Documentation for the Crafty chess engine.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRIMSONFIELDS
+	bool "crimsonfields-0.5.2nb1"
+	help
+	  Tactical war game in the tradition of Battle Isle
+
+	  Crimson Fields is a tactical war game in the tradition of Battle
+	  Isle.
+	  
+	  The outcome of the war lies in your hands. You decide which units
+	  are sent to the front lines, and when to unleash the reserves. Your
+	  mission objectives range from defending strategically vital locations
+	  to simply destroying all enemy forces in the area. Protect supply
+	  convoys or raid enemy facilities to uncover technological secrets
+	  or fill your storage bays so you can repair damaged units or build
+	  new ones in your own factories. Lead your troops to victory!
+	  
+	  Tools are available to create custom maps and campaigns. You can
+	  also play the original Battle Isle maps if you have a copy of the
+	  game.
+	  
+	  You can pit yourself against another human player either in hot-seat
+	  mode in front of the same machine or via e-mail, or against the
+	  computer.
+
+	  http://crimson.seul.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CRITICALMASS
+	bool "criticalmass-1.0.2nb4"
+	help
+	  SDL/OpenGL space shoot'em up game
+
+	  Critical Mass (aka Critter) is an SDL/OpenGL space shoot'em up game.
+
+	  http://criticalmass.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT
+	bool "crossfire-client-1.11.0nb6"
+	help
+	  Multi-player graphical arcade and adventure game; X11 client
+
+	  Crossfire is a multi-player graphical arcade and adventure game made for the
+	  X Windows systems environment. It has certain flavours from other games,
+	  especially gauntlet and the rogue-like games (Nethack, Moria, Angband, and
+	  Ragnarok.) Any number of players can move around in their own window, finding
+	  and using items and battling monsters. They can choose to cooperate or compete
+	  in the same world.
+	  
+	  In the years of development that have followed, Crossfire has grown to
+	  encompass over 150 monsters, ~3000 maps to explore, an elaborate magic system,
+	  over 15 character types, a system of skills, and many, many artifacts and
+	  treasures.
+
+	  http://crossfire.real-time.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT_GTK
+	bool "crossfire-client-gtk-1.11.0nb4"
+	help
+	  Multi-player graphical arcade and adventure game; GTK client
+
+	  Crossfire is a multi-player graphical arcade and adventure game made for the
+	  X Windows systems environment. It has certain flavours from other games,
+	  especially gauntlet and the rogue-like games (Nethack, Moria, Angband, and
+	  Ragnarok.) Any number of players can move around in their own window, finding
+	  and using items and battling monsters. They can choose to cooperate or compete
+	  in the same world.
+	  
+	  In the years of development that have followed, Crossfire has grown to
+	  encompass over 150 monsters, ~3000 maps to explore, an elaborate magic system,
+	  over 15 character types, a system of skills, and many, many artifacts and
+	  treasures.
+
+	  http://crossfire.real-time.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT_GTK2
+	bool "crossfire-client-gtk2-1.11.0nb8"
+	help
+	  Multi-player graphical arcade and adventure game; GTK2 client
+
+	  Crossfire is a multi-player graphical arcade and adventure game made for the
+	  X Windows systems environment. It has certain flavours from other games,
+	  especially gauntlet and the rogue-like games (Nethack, Moria, Angband, and
+	  Ragnarok.) Any number of players can move around in their own window, finding
+	  and using items and battling monsters. They can choose to cooperate or compete
+	  in the same world.
+	  
+	  In the years of development that have followed, Crossfire has grown to
+	  encompass over 150 monsters, ~3000 maps to explore, an elaborate magic system,
+	  over 15 character types, a system of skills, and many, many artifacts and
+	  treasures.
+
+	  http://crossfire.real-time.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_SERVER
+	bool "crossfire-server-1.11.0nb7"
+	help
+	  X11 multi/single player game similar to gauntlet and nethack
+
+	  Crossfire is a multi-player graphical arcade and adventure game made for the
+	  X Windows systems environment. It has certain flavours from other games,
+	  especially gauntlet and the rogue-like games (Nethack, Moria, Angband, and
+	  Ragnarok.) Any number of players can move around in their own window, finding
+	  and using items and battling monsters. They can choose to cooperate or compete
+	  in the same world.
+	  
+	  In the years of development that have followed, Crossfire has grown to
+	  encompass over 150 monsters, ~3000 maps to explore, an elaborate magic system,
+	  over 15 character types, a system of skills, and many, many artifacts and
+	  treasures.
+
+	  http://crossfire.real-time.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_D2X
+	bool "d2x-0.2.5nb12"
+	help
+	  Descent II port
+
+	  Descent 2 for DOS, Windows, and Unix (Linux, Solaris, Mac OS X, etc).
+	  
+	  Supported features include: Graphics, Sound, OpenGL, Joystick, Mouse,
+	  CD audio, Networking.
+	  
+	  Unsupported features: Serial.
+	  
+	  A few of the new features in 0.2.0: Movies, Bigendian support,
+	  Shareware data file support, and Descent 1 data file support.
+
+	  http://icculus.org/d2x/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_DD2
+	bool "dd2-0.2.2nb1"
+	help
+	  Shoot'em up arcade game for one or two players
+
+	  This is a little shot'em up arcade game for one or two players. It aims
+	  to be an 'old school' arcade game with low resolution graphics, top-down
+	  scroll action, energy based gameplay and different weapons with several
+	  levels of power.
+
+	  http://www.usebox.net/jjm/dd2/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_DEFENDGUIN
+	bool "defendguin-0.0.10nb7"
+	help
+	  Clone of the arcade game Defender
+
+	  Defendguin is a clone of William's classic arcade game, "Defender."
+	  The mission is to defend little penguinoids from being captured
+	  and mutated.
+	  
+	  When you begin the game, your ship appears over some icy mountains
+	  which are crawling with penguinoids (the good guys).  A number of
+	  alien ships are flying around above the ground.  The game has a
+	  radar display, UFOs, bombers, mines, pods, swarmers, baiters,
+	  lasers, smart bombs, and more.
+
+	  http://www.newbreedsoftware.com/defendguin/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_DIGGER
+	bool "digger-20020314nb5"
+	help
+	  Digger Remastered
+
+	  Digger was originally created by Windmill software in 1983 and
+	  released as a copy-protected, bootable 5.25" floppy disk for the
+	  IBM PC. As it requires a genuine CGA card, it didn't work on modern
+	  PCs.
+	  
+	  In 1998, I created Digger Remastered, which runs on all PCs with
+	  CGA or better and plays just like the original. It also has many
+	  new features, including:
+	  * Exit button
+	  * Optional VGA graphics
+	  * Recording and playback
+	  * Real time speed control
+	  * Keyboard redefinition
+	  * Gauntlet mode
+	  * Two player simultaneous mode
+
+	  http://www.digger.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_DIPMAP
+	bool "dipmap-1.16nb1"
+	help
+	  Generate postscript maps from results of play-by-email Diplomacy games
+
+	  Diplomacy starts in 1901: pre-World War One Europe with seven players
+	  negotiating with each other so that they can dominate the
+	  gameboard. Orders for fleets and armies are secretly sent to the Judge
+	  (a computer), which then calculates the results and forwards what has
+	  happened to the players. Then the players go back to organising things
+	  for the next turn. Simple, right? The system is, but the game is not.
+	  Will the Austrian help my French army to conquer Munich? Will the
+	  German army in Kiel assist the Munich army? Can I get Russia to
+	  attack Berlin from the east? Can I convince the German that I am
+	  planning peaceful moves (preparing to attack Italy) and thus have the
+	  element of surprise?
+	  
+	  Mapit takes the results of a Judge adjudicated move and outputs a
+	  color or monochrome postscript map of the status of the board.  For
+	  more information, please see the homepage of the Diplomacy hobby at:
+	  
+	  http://www.diplom.org/
+	  
+	  Additional variant maps can be found at:
+	  
+	  http://www.ellought.demon.co.uk/variants.htm
+
+	  http://www.diplom.org/Online/mapsoftware.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_DOOM1
+	bool "doom1-1.8"
+	help
+	  Shareware levels for Doom
+
+	  This package contains the shareware level data for Doom,
+	  ID software's famous 3D shooter.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_DOPEWARS
+	bool "dopewars-1.5.12nb7"
+	help
+	  Make a fortune dealing drugs on the streets of New York
+
+	  dopewars is a UNIX rewrite of a game originally based on "Drug Wars" by
+	  John E. Dell. The idea of dopewars is to deal in drugs on the streets of
+	  New York, amassing a huge fortune and paying off the loan shark, while
+	  avoiding the ever-annoying police. The UNIX rewrite, as well as featuring
+	  a so-called "antique" mode which closely follows the original, introduces
+	  new features such as the ability to take part in multi-player games.
+
+	  http://dopewars.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_DUCKMAZE
+	bool "duckmaze-0.2nb9"
+	help
+	  A puzzle
+
+	  duckmaze is a game about a duck that is in a maze. The duck can move walls,
+	  but only if there are no walls in the way (it makes sense when you try it).
+	  
+	  It's a simple puzzle game which starts with easy levels but progresses
+	  to some quite tricky ones.
+	  
+	  The game includes a full level editor, so feel free to create your own
+	  and send them in!
+
+	  http://duckmaze.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_DUNGEON
+	bool "dungeon-3.2b"
+	help
+	  Classic game of Dungeon
+
+	  Dungeon is a development prototype of the game ZORK(tm), which is
+	  available commercially from Infocom, Inc, on most personal computers.
+	  Copyright on the Dungeon sources is retained by Infocom, and commercial
+	  use is strictly prohibited.  ZORK(tm) is a trademark of Infocom, Inc.
+	  
+	  This version is translated from the original dungeon-3.2b Fortran sources
+	  to C by Andrew Plotkin <erkyrath@eblong.com>, and modified to use his
+	  Glk API.  (The dungeon debugger code was translated from Fortran to C by
+	  Paul Goyette <pgoyette@whooppee.com> and included in this package as a
+	  patch file.)  The Fortran sources were themselves were translated from the
+	  original MDL.  Version 3.2B is the latest known version.
+
+	  http://eblong.com/zarf/glk/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_EBOARD
+	bool "eboard-1.0.4nb8"
+	help
+	  Graphical user interface for playing chess
+
+	  eboard is a chess interface for Unix-like systems (GNU/Linux, FreeBSD,
+	  Solaris, etc.) based on the GTK+ GUI toolkit. It provides a chess board
+	  interface to ICS (Internet Chess Servers) like FICS and to chess engines
+	  like GNU Chess, Sjeng and Crafty.
+	  
+	  eboard provides many features other interfaces lack, like a good
+	  looking, configurable interface, multiple board views, resizeable board
+	  (without restarting), seek table, text input separated from the output,
+	  input history (bash-like), scripting, scroll lock, and many others.
+
+	  http://eboard.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ENIGMA
+	bool "enigma-1.01.1914nb2"
+	help
+	  Puzzle game similar to Oxyd/Rock'n'Roll/Marble Madness
+
+	  Enigma is a re-implementation of one of the most original and intriguing
+	  computer games of the 1990's: Oxyd.
+	  Your objective is easily explained: find and uncover all pairs of identical
+	  Oxyd stones in each landscape. It would be simple, if it weren't for hidden
+	  traps, vast mazes, insurmountable obstacles and innumerable puzzles blocking
+	  your direct way to the Oxyd stones.
+
+	  http://www.nongnu.org/enigma/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ET
+	bool "et-2.56nb2"
+	help
+	  Wolfenstein: Enemy Territory for Linux
+
+	  Wolfenstein Enemy Territory is a free, stand-alone, downloadable multiplayer
+	  game in which players wage war as Axis or Allies in team-based combat.
+	  
+	  Enemy Territory is completely free and does not require the original
+	  Return to Castle Wolfenstein game to play.
+	  
+	  Enemy Territory is based on the Quake3 engine.
+	  
+	  This package includes both the game client and the dedicated server.
+
+	  http://games.activision.com/games/wolfenstein/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_EUS_DEMO
+	bool "eus-demo-1.0nb1"
+	help
+	  
+
+	  With Eric's Ultimate Solitaire, you can enjoy a myriad selection
+	  of traditional and not-so-traditional games of solitaire. Choose
+	  from 23 different games, track your successes and failures, hone
+	  your thinking and strategy skills.
+	  
+	  This is the free demo version - a full version is available from
+	  Loki Games at http://www.lokigames.com/products/eus/
+
+	  http://www.lokigames.com/products/eus/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_EXCHESS
+	bool "exchess-3.14nb1"
+	help
+	  Experimental chess engine
+
+	  EXchess is an experimental chess engine supporting the following features:
+	  
+	  * Support for Tim Mann's XBoard.
+	  * Analysis features of XBoard.
+	  * Brute force searches to 60 ply (1 ply = a move by one side).
+	  * Hash tables for storing positions already visited in the search.
+	  * Pondering. (Thinking on the opponent's time.)
+	  * Recursive null move pruning.
+	  * Quiescent capture search.
+	  * Adjustable hash table size.
+	  * Adjustable search and evaluation parameters.
+
+	  http://personal.denison.edu/~homand/EXchess.htm
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_EXCHESS_BOOK_MEDIUM
+	bool "exchess-book-medium-20000511nb1"
+	help
+	  
+
+	  Medium book of chess openings for EXchess.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_EXCHESS_BOOK_SMALL
+	bool "exchess-book-small-20000511nb1"
+	help
+	  
+
+	  Small book of chess openings for EXchess.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_EXULT
+	bool "exult-1.2nb7"
+	help
+	  Open-source Ultima 7 engine
+
+	  Ultima 7, an RPG from the early 1990's, still has a huge following.
+	  But, being a DOS game with a very nonstandard memory manager, it
+	  is difficult to run it on the latest computers. Exult is a project
+	  to create an Ultima 7 game engine that runs on modern operating
+	  systems, capable of using the data and graphics files that come
+	  with the game.
+	  
+	  Exult is written in C++ and runs on, at least, Linux, Mac OS X and
+	  Windows using the SDL library to make porting to other platforms
+	  relatively easy. The current version supports all of "Ultima 7:
+	  The Black Gate" and "Ultima 7 part 2: The Serpent Isle", allowing
+	  you to finish both games. This is only possible due to the work
+	  done by other fans who have decoded the various Ultima 7 data files,
+	  especially Gary Thompson, Maxim Shatskih, Jakob Shonberg, and Wouter
+	  Dijkslag.
+	  
+	  Exult aims to let those people who own Ultima 7 (copyright 1993)
+	  play the game on modern hardware, in as close to (or perhaps even
+	  surpassing) its original splendor as is possible. You need to own
+	  "Ultima 7: The Black Gate" and/or "Ultima 7: Serpent Isle" and
+	  optionally the add-ons (not required to run) in order to use Exult,
+	  and we encourage you to buy a legal copy.
+
+	  http://exult.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FALCONS_EYE
+	bool "falcons-eye-1.9.3nb14"
+	help
+	  Falcon's Eye NetHack
+
+	  Falcon's Eye is a mouse-driven interface for NetHack that enhances the
+	  visuals, audio and accessibility of the game.
+
+	  http://falconseye.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FILLETS_NG
+	bool "fillets-ng-0.7.3nb6"
+	help
+	  Puzzle game about witty fish saving the world sokoban style
+
+	  Fish Fillets NG is strictly a puzzle game. The goal in every of the seventy
+	  levels is always the same: find a safe way out. The fish utter witty remarks
+	  about their surroundings, the various inhabitants of their underwater realm
+	  quarrel among themselves or comment on the efforts of your fish. The whole
+	  game is accompanied by quiet, comforting music.
+
+	  http://fillets.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FILLETS_NG_DATA
+	bool "fillets-ng-data-0.7.1nb1"
+	help
+	  Fish Fillets NG data files
+
+	  Fish Fillets NG is strictly a puzzle game. The goal in every of the seventy
+	  levels is always the same: find a safe way out. The fish utter witty remarks
+	  about their surroundings, the various inhabitants of their underwater realm
+	  quarrel among themselves or comment on the efforts of your fish. The whole
+	  game is accompanied by quiet, comforting music.
+	  
+	  This package contains the data files and documentation.
+
+	  http://fillets.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FINALBATTLE
+	bool "finalbattle-0.0nb1"
+	help
+	  Multiplayer space battle simulation for X
+
+	  This is a multiplayer space battle game for the X Window System written in
+	  C for Unix.  Each player has a number of windows presenting different
+	  information and controls, including a short range viewscreen showing your
+	  ship in the center and other objects near it, a long range "map" (aka
+	  "radar") showing all players, a damage report and repair window, a weapon
+	  selection window, a ship's-computer and player-to-player communications
+	  window, and a ship upgrade status window.
+	  
+	  The game uses the X network protocol to display graphics and receive
+	  player input from multiple servers.  Only one client is running and is in
+	  control of the entire game.  Temporary clients can also be ran which
+	  simply send a message to the main client telling it to add a server to the
+	  game.  If there is space in the game, and the main client can access your
+	  server, then a new player is "born" onto that server.  (Usage: "final -add
+	  ...")
+
+	  http://web.archive.org/web/2/http://www.newbreedsoftware.com/finalbattle/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FIRE
+	bool "fire-1.0nb7"
+	help
+	  Organic fireworks demo
+
+	  A unique, organic fireworks demo using the Simple Direct-Media
+	  Library (SDL).
+
+	  http://www.libsdl.org/projects/fire/index.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FKISS
+	bool "fkiss-0.33anb1"
+	help
+	  Kisekae viewer
+
+	  from http://embyquinn.tripod.com/history.html
+	  
+	  KiSS is an acronym for Kisekae Set System. "Kisekae" is a Japanese word
+	  used in reference to changing clothes. "Kisekae ningyo" is the Japanese
+	  term for what we call in America a "fashion doll" (such as Barbie).
+	  
+	  In 1991, a Japanese computer programmer known as MIO.H released a
+	  viewing platform and related image archives, or "kisekae sets",
+	  specifically designed to bring the "fashion doll" concept into the
+	  digital world. The result is something of a cross between a paper doll
+	  and a computer game. With the appropriate viewer for their operating
+	  system, a computer user could download various doll "sets" and play with
+	  them on their desktop.  The Kisekae Set System, or KiSS, was originally
+	  inspired by the dress-up games young girls play with fashion dolls. The
+	  KiSS computer game found a much broader audience, and today there are
+	  KiSS sets for every age, taste and orientation. Some KiSS sets weren't
+	  even dolls--there were puzzles, board games, maps, even virtual models
+	  like the Space Cruiser Yamato. These came to be called "Aberrant KiSS"
+	  to distinguish them from the regular doll sets.
+
+	  http://www.oersted.co.jp/~yav/soft/indexe.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FLIGHTGEAR
+	bool "flightgear-2.0.0nb6"
+	help
+	  The FlightGear Simulator
+
+	  FlightGear is a free, open-source, multi-platform, and sophisticated
+	  flight simulator framework for the development and pursuit of interesting
+	  flight simulator ideas.
+
+	  http://www.flightgear.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FLIGHTGEAR_DATA
+	bool "flightgear-data-2.0.0"
+	help
+	  FlightGear Simulator data files
+
+	  FlightGear is a free, open-source, multi-platform, and sophisticated flight
+	  simulator framework for the development and pursuit of interesting flight
+	  simulator ideas. This package contains the data files (textures, models, etc).
+
+	  http://www.flightgear.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FLTK_SUDOKU
+	bool "fltk-sudoku-1.1.7nb5"
+	help
+	  FLTK example Sudoku game creator and solver
+
+	  Sudoku (pronounced soo-dough-coo with the emphasis on the first syllable) is a
+	  simple number-based puzzle/game played on a 9x9 grid that is divided into 3x3
+	  subgrids. The goal is to enter a number from 1 to 9 in each cell so that each
+	  number appears only once in each column and row. In addition, each 3x3 subgrid
+	  may only contain one of each number.
+
+	  http://www.easysw.com/~mike/sudoku/index.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FOOBILLARD
+	bool "foobillard-3.0anb10"
+	help
+	  Free OpenGL-billard game
+
+	  Foobillard is a free OpenGL-billard game for Unix with realistic physics,
+	  AI-player and many gametypes like pool carambol or snooker.
+	  
+	  The following features are implemented:
+	  
+	  - wood paneled table with gold covers and gold diamonds
+	  - reflections on balls
+	  - shadow pixmaps
+	  - detail switching of balls according to distance
+	  - zoom in/out - hold right mousebutton
+	  - FOV +/- - hold right mousebutton + CTRL
+	  - rotate - hold left mousebutton
+	  - animated queue
+	  - simple billard rules for 8 and 9-ball
+	  - simple AI-Player
+	  - strength adjustment
+	  - eccentic hit adjustment (button2+Shift)
+	  - lensflare
+	  - commandline options
+	  - config file (~/.foobillardrc)
+	  - red green stereo !!!!
+	  - sound (using SDL)
+	  - network play
+
+	  http://foobillard.sunsite.dk/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FORTUNE_STRFILE
+	bool "fortune-strfile-0"
+	help
+	  Tool to prepare a fortune database
+
+	  This is a pkg version of NetBSD's strfile utility.
+	  (tool to prepare a cookie database for fortune(6))
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FORTUNES_CALVIN
+	bool "fortunes-calvin-0.2"
+	help
+	  Fortunes from the famous Calvin & Hobbes comic strips
+
+	  A compilation of quotes from Bill Watterson's fantastic "Calvin and Hobbes"
+	  Comic Books.
+
+	  http://www.netmeister.org/misc.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FORTUNES_DE
+	bool "fortunes-de-0.20"
+	help
+	  German data files for fortune
+
+	  The database might be a starting point for a German fortune database.
+
+	  http://packages.debian.org/unstable/games/fortunes-de.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FORTUNES_FUTURAMA
+	bool "fortunes-futurama-0.2"
+	help
+	  Fortunes from the Futurama animated TV series
+
+	  A compilation of quotes from the TV-Series "Futurama" by Matt Groening.
+
+	  http://www.netmeister.org/misc.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FORTUNES_H2G2
+	bool "fortunes-h2g2-0.1"
+	help
+	  Fortunes from Douglas Adams' "Hitchhiker's Guide to the Galaxy"
+
+	  A compilation of quotes from Douglas Adams's ``Hitchhiker's Guide to the
+	  Galaxy'' series.
+
+	  http://www.netmeister.org/misc.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_CLIENT
+	bool "freeciv-client-2.2.2nb5"
+	help
+	  Freeciv client
+
+	  This archive contains Freeciv, a free Civilization clone for Unix and X.
+	  This version only allows multiplayer games, and limited support for AI
+	  players.
+	  
+	  You should check out the home page, as it contains much more information
+	  than this file and the online help. This is also where we'll inform people
+	  about new releases/bugs/fixes/competitions, etc.
+	  
+	  This package contains the Freeciv client with an interface built on top of
+	  either gtk, gtk2, xaw, xaw3d, sdl, or just plain x11.
+
+	  http://www.freeciv.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_MANUAL
+	bool "freeciv-manual-1.8.1.2"
+	help
+	  
+
+	  HTML manual for freeciv, including documentation for the game
+	  itself, the client, and the server.  Information from the online
+	  help is not duplicated.
+	  
+	  These pages can be read on-line at http://www.freeciv.org/manual/
+
+	  http://www.freeciv.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_SERVER
+	bool "freeciv-server-2.2.2nb2"
+	help
+	  Freeciv game server
+
+	  This archive contains Freeciv, a free Civilization clone for Unix and X.
+	  This version only allows multiplayer games, and limited support for AI
+	  players.
+	  
+	  You should check out the home page, as it contains much more information
+	  than this file and the online help. This is also where we'll inform people
+	  about new releases/bugs/fixes/competitions, etc.
+	  
+	  This package contains the Freeciv game server.
+
+	  http://www.freeciv.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_SHARE
+	bool "freeciv-share-2.2.2nb1"
+	help
+	  Machine independent files for Freeciv
+
+	  This archive contains Freeciv, a free Civilization clone for Unix and X.
+	  This version only allows multiplayer games, and limited support for AI
+	  players.
+	  
+	  You should check out the home page, as it contains much more information
+	  than this file and the online help. This is also where we'll inform people
+	  about new releases/bugs/fixes/competitions, etc.
+	  
+	  This package contains the machine independent files for Freeciv.
+
+	  http://www.freeciv.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FREEDROID
+	bool "freedroid-1.0.2nb11"
+	help
+	  Clone of the C64 game Paradroid
+
+	  Freedroid is a clone of the classic game "Paradroid" on Commodore
+	  64 with some improvements and extensions to the classic version.
+	  
+	  In this game, you control a robot, depicted by a small white ball
+	  with a few numbers within an interstellar spaceship consisting of
+	  several decks connected by elevators.
+	  
+	  The aim of the game is to destroy all enemy robots, depicted by
+	  small black balls with a few numbers, by either shooting them or
+	  seizing control over them by creating connections in a short subgame
+	  of electric circuits.
+
+	  http://freedroid.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FREESCI
+	bool "freesci-0.3.5nb4"
+	help
+	  Interpreter for Sierra On-Line's SCI games
+
+	  The FreeSCI project is an attempt to create a portable interpreter
+	  for games written for Sierra On-Line's SCI system.
+	  
+	  Currently it only runs version SCI0 games.
+
+	  http://freesci.linuxgames.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FROTZ
+	bool "frotz-2.43nb3"
+	help
+	  Curses-based interpreter for Infocom-compatible games
+
+	  FROTZ is an interpreter for all Infocom games and other Z-machine games.
+	  Complies with standard 1.0 of Graham Nelson's specification.
+
+	  http://frotz.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FROZEN_BUBBLE
+	bool "frozen-bubble-1.0.0nb15"
+	help
+	  Pop the frozen bubbles
+
+	  An amazingly cute game of popping bubbles.  Full-featured, colorful
+	  animated penguin eye candy, 100 levels of 1p game, hours and hours
+	  of 2p game, a level-editor, 3 professional quality 20-channels musics,
+	  15 stereo sound effects, 7 unique graphical transition effects.
+
+	  http://www.frozen-bubble.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_FRUIT
+	bool "fruit-2.1"
+	help
+	  Chess playing engine
+
+	  Fruit is a chess engine. If you seek maximum playing strength, Fruit is
+	  your choice!
+	  
+	  Fruit is vice world computer chess champion 2005 and one of the
+	  strongest chess programs in the world.
+	  
+	  Fruit has a unique playing style, making it a good addition to any
+	  chess-engine collection.
+	  
+	  Fruit comes with a customised opening book and has many features which
+	  make it interesting especially for the engine enthusiast and serious
+	  correspondence player.
+
+	  http://arctrix.com/nas/chess/fruit/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GALAXA
+	bool "galaxa-0.1nb3"
+	help
+	  Space game based loosely on "Galaga"
+
+	  GalaXa is a space game based loosely on "Galaga," an arcade classic
+	  released by NAMCO in the 1981. GalaXa is an X-Window game written in C.
+	  
+	  "You are a lone starfighter pilot battling the evil race of
+	  GalaXans, giant bug-like creatures who have been meanacing the
+	  peaceful inhabitants of your solar system."
+	  
+	  Galaxa was written by Bill Kendrick (New Breed Software (c) 1998).
+
+	  http://web.archive.org/web/2/http://www.newbreedsoftware.com/galaxa/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GAMAZONS
+	bool "gamazons-0.83nb14"
+	help
+	  GNOME program for playing the game Amazons
+
+	  Amazons is a game played on a 10x10 chess board. Each side has four
+	  pieces (amazons) that move like chess queens (in a straight line
+	  in any direction). Instead of capturing pieces like in chess, the
+	  game is determined based on who moves last.
+	  
+	  Each move consists of two parts. First an amazon moves to a new
+	  square and then fires an arrow to another square (the arrow is
+	  fired in a straight line in any direction from the square the amazon
+	  landed on). The square the arrow lands on becomes a permenant block
+	  for the rest of the game. No one can move over it, or fire an arrow
+	  over it. Every turn an amazon must move and fire an arrow, so every
+	  turn there is one less square available on the board. Try and block
+	  in your opponent or section off a good chunk of the board for
+	  yourself.
+
+	  http://www.yorgalily.org/gamazons/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GATE88
+	bool "gate88-20050319"
+	help
+	  Deep space intergalactic battle
+
+	  Gate 88 is often described as "like subspace but with the ability
+	  to build turrets and command fighters." While a skillful pilot can
+	  decimate the enemy in one-on-one combat, a thoughtful player can
+	  overwhelm the opponent with strategic turret and fighter placements.
+	  However, only those who truly understand the intricate details of
+	  both action and strategy will win the day.
+	  
+	  Because alliances can be broken on a whim, players must interpret
+	  the social situation of the game to ensure that each alliance is
+	  sincere. For example, it is not uncommon for an allied player to
+	  plant turrets and fighters within your base only to break the
+	  alliance and watch your empire crumble from within. Always be
+	  careful with your trust.
+	  
+	  Gate 88 employs a unique user interface that allows players to
+	  pilot their ship while performing strategic operations. The tutorial
+	  and practice mode will get you up to speed.
+
+	  http://www.queasygames.com/gate88/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GBRAINY
+	bool "gbrainy-2.06"
+	help
+	  Brain teaser game and trainer
+
+	  gbrainy is a brain teaser game and trainer to have fun and to keep
+	  your brain trained.
+	  
+	  It provides the following types of games:
+	  
+	  * Logic puzzles. Games designed to challenge your reasoning
+	  and thinking skills.
+	  * Mental calculation. Games based on arithmetical operations
+	  designed to prove your mental calculation skills.
+	  * Memory trainers. Games designed to challenge your short term
+	  memory.
+	  
+	  It is designed for GNOME and runs on top of Linux and different
+	  Unix flavours.
+
+	  http://live.gnome.org/gbrainy
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GCOMPRIS
+	bool "gcompris-8.4.4nb14"
+	help
+	  Educational games for children
+
+	  GCompris is a set of educational games for children ages three to
+	  eight years old.  The game includes many different activities and
+	  basic educational games, like teaching how to use a mouse and
+	  keyboard, memory games, vector drawing, reading, algebra exerciser,
+	  and more.
+	  
+	  In French, GCompris is pronounced "j'ai compris" which means "I
+	  have understood."
+
+	  http://gcompris.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GEMDROPX
+	bool "gemdropx-0.9nb5"
+	help
+	  Color puzzle game for X11 similar to Gem Drop
+
+	  Gem Drop X is a direct port of Gem Drop, an Atari 8-bit game
+	  written in Action! (a very fast C- and Pascal-like compiled language
+	  for the Atari).  The concept of the game Gem Drop is based directly
+	  on an arcade game for the NeoGeo system called "Magical Drop III"
+	  by SNK.
+	  
+	  If you're familiar with games like Jewels, Klax, Bust-A-Move or Tetris,
+	  this game is similar to them all.  I consider it closest to Klax.
+	  (Jewels is like a combination of Klax and Tetris.  Bust-A-Move is the
+	  least similar, in my opinion, but everyone seems to have heard of it
+	  more than the others (except Tetris, of course!))
+
+	  http://www.newbreedsoftware.com/gemdropx/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GENECYS_CLIENT
+	bool "genecys-client-0.2nb14"
+	help
+	  Client for Genecys MMORPG
+
+	  Genecys is, or will be, a Massively Multi-player Online RPG or MMORPG. The
+	  intent of the Genecys project, is to design a completely free and open
+	  source online RPG for all to play, run, or modify. On a higher level.. one
+	  of the fundamental design goals of Genecys, is that it becomes a
+	  completely dynamic environment. Each server will be completely unique, and
+	  follow it's own progression of events. Maps will be generated randomly, at
+	  server startup, as will towns and NPCs. NPCs will be AI controlled, and ha
+	  ve their own lives in the game, and exist to interact with the players,
+	  not just be slaughtered by them and re-pop.
+
+	  http://www.genecys.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GENECYS_DATA
+	bool "genecys-data-0.2nb2"
+	help
+	  Game datafiles for Genecys
+
+	  Game data files for Genecys
+
+	  http://www.genecys.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GGZ_CLIENT_LIBS
+	bool "ggz-client-libs-0.0.14.1nb4"
+	help
+	  GGZ Gaming Zone libraries
+
+	  GGZ Gaming Zone
+	  
+	  GGZ is a project to create a free gaming platform.  The project includes
+	  a server, games for the server, clients, and games for the clients.  Other
+	  projects may include ggz networking into their games.  GNOME games project
+	  and Freeciv 2.1 releases use ggz.
+	  
+	  This packages contains the libraries for clients and games.
+
+	  http://www.ggzgamingzone.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GLAXIUM
+	bool "glaxium-0.5nb8"
+	help
+	  Space-ship OpenGL shoot them up
+
+	  Glaxium is a space-ship "shoot'em up" game, with OpenGL/SDL graphics.
+
+	  http://xhosxe.free.fr/glaxium/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GLICKOMANIA
+	bool "glickomania-1.0nb5"
+	help
+	  Clear a board by removing groups of identical, adjacent tiles
+
+	  Gnome clickomania, or glickomania, is a simple, but dangerously
+	  addictive puzzle. The objective is to clear the board of all tiles
+	  by removing groups of identical adjacent tiles. Tiles fall downwards
+	  to fill empty gaps, and from right to left to fill empty columns.
+	  A slight variation of clickomania is known as "the same game" and
+	  it has been implemented in KDE (ksame), Gnome (gsame), and most
+	  handhelds. The most significant difference is in the scoring: in
+	  clickomania the goal is to clear the board, whereas in "same" the
+	  objective is to remove as large groups as possible.
+	  
+	  Glickomania can be very challenging, but this implementation is
+	  designed to be relaxing: there is no clock and the user has unlimited
+	  undo and redo. Contrary to all other implementations I know of,
+	  glickomania ensures all problems presented to the player are indeed
+	  solvable.
+
+	  http://hibase.cs.hut.fi/~cessu/glickomania/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GLTRON
+	bool "gltron-0.70nb11"
+	help
+	  3D lightcycle game inspired by the movie Tron
+
+	  You steer a futuristic bike, called lightcycle.  Combat takes place in
+	  a rectangular arena.  Your bike leaves a trail behind, which is like
+	  a wall.  The goal is to force the other players to drive into a wall.
+	  The winner is the last player alive.
+	  
+	  As the name suggests, the game is inspired by the movie Tron. Or more
+	  exactly, by all the games that where inspired by the movie Tron.
+
+	  http://gltron.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GNOME_GAMES
+	bool "gnome-games-2.32.1nb4"
+	help
+	  GNOME2 games collection
+
+	  Many games - same-gnome, gnothello, solitaire, tetravex, tetris, others...
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GNOME_GAMES_EXTRA_DATA
+	bool "gnome-games-extra-data-2.26.0"
+	help
+	  GNOME2 games collection - extra data files
+
+	  Many games - same-gnome, gnothello, solitaire, tetravex, tetris, others...
+	  
+	  This package contains extra data files for the gnome-games package. At
+	  the moment this is almost entirely extra themes and artwork for the
+	  games.
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GNOME_MASTERMIND
+	bool "gnome-mastermind-0.3.1nb7"
+	help
+	  
+
+	  Mastermind (the game)
+
+	  http://www.autistici.org/gnome-mastermind/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GNUCHESS
+	bool "gnuchess-5.07nb4"
+	help
+	  GNU chess engine
+
+	  Gnuchess plays a game of chess against the user or it plays against
+	  itself.
+	  
+	  Gnuchess is an updated version of the GNU chess playing program.  It
+	  has a simple alpha-numeric board display or can be run with the xboard
+	  program under X-windows.  It can use an opening book provided by one
+	  of gnuchess-book-* packages.
+
+	  http://www.gnu.org/software/chess/chess.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GNUCHESS_BOOK
+	bool "gnuchess-book-1.01nb1"
+	help
+	  
+
+	  Default book of chess openings for GNU Chess.
+
+	  http://www.gnu.org/software/chess/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GNUCHESS_BOOK_MEDIUM
+	bool "gnuchess-book-medium-20000511nb3"
+	help
+	  
+
+	  Medium book of chess openings for GNU Chess.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GNUCHESS4
+	bool "gnuchess4-4.0.80"
+	help
+	  The "classic" GNU chess
+
+	  Gnuchess  plays	a  game  of  chess against the user or it
+	  plays against itself.
+	  
+	  Gnuchess is an updated version of the  GNU  chess  playing
+	  program.   It has a simple alpha-numeric board display, an
+	  IBM PC compatible interface, or it can be compiled for use
+	  with  the  chesstool  program on a SUN workstation or with
+	  the xboard program under X-windows.  To invoke the program
+	  gnuchess
+	  - simple curses based version
+	  
+	  gnuchessn
+	  -  fancy	version using curses and inverse video on
+	  UNIX, or IBM PC cursor controls and  characters  on
+	  MSDOS
+	  
+	  gnuchessr
+	  - ASCII based version
+	  
+	  gnuchessc
+	  - chesstool compatible version
+	  
+	  gnuchessx
+	  - xboard compatible version
+
+	  http://www.gnu.org/software/chess/chess.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GNUGO
+	bool "gnugo-3.8nb1"
+	help
+	  Go playing program
+
+	  Gnugo-beta is a free Go program which runs under Unix. It is descended
+	  from Gnugo 1.2 but is quite a bit stronger. It runs under Cgoban
+	  on the X Window System using the Go Modem Protocol.
+
+	  http://www.gnu.org/software/gnugo/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GOGUI
+	bool "gogui-0.9.3"
+	help
+	  GUI for Go-playing programs
+
+	  GoGui is a graphical interface to programs that play the game of Go and
+	  use GTP (Go Text Protocol).
+
+	  http://gogui.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GOLDDIG
+	bool "golddig-3.1nb1"
+	help
+	  Fast action game designed for use with X
+
+	  Golddig is a fast action game designed for use with the X
+	  window system.  gdedit is used to create and edit new levels
+	  which can be used by golddig.   Version 3.0 includes support
+	  for color displays and comes with 26 levels.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GREED
+	bool "greed-3.4"
+	help
+	  Strategy game: eat as much as possible
+
+	  The strategy game of Greed. Try to eat as much as possible of the
+	  board before munching yourself into a corner.
+
+	  http://www.catb.org/~esr/greed/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GRHINO
+	bool "grhino-0.16.0nb9"
+	help
+	  
+
+	  GRhino, or Rhino its former name, is an Othello/Reversi game.
+	  
+	  What distinguish GRhino from most other Othello games is that
+	  GRhino will be targeted for experienced Othello players.
+	  Strong AI is the main focus with some additional good, useful
+	  features (like an endgame solver) is planned. The ultimate
+	  target strength of the AI is that it should be able to beat
+	  the best human player at the highest difficulty level.
+
+	  http://rhino.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GTETRINET
+	bool "gtetrinet-0.7.11nb14"
+	help
+	  Multiplayer tetris game for GNOME2
+
+	  GTetrinet is a GNOME2 client program for the popular Tetrinet game, a
+	  multiplayer tetris game that is played over the internet.  It aims to be a
+	  complete clone of the popular Tetrinet game for Win95/NT.  If you are looking
+	  for a popular public game server to play, take a look to tetrinet.org.
+
+	  http://gtetrinet.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GTKBALLS
+	bool "gtkballs-3.1.5nb15"
+	help
+	  GTK+ clone of "Color Lines"
+
+	  GtkBalls is a simple logic game.  The goal of the game is to make the
+	  maximum number of lines with balls of the same color.  A line is made
+	  of five balls.  Each time you don't make a line, extra balls appear on
+	  the grid.  You lose when the grid is full.
+
+	  http://gtkballs.antex.ru/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GTKLEVEL9
+	bool "gtklevel9-4.0nb10"
+	help
+	  GTK+ port of the Level 9 text adventure interpreter
+
+	  An interpreter for the text adventures by Level 9.  Supports versions
+	  2-4 in many formats, including Spectrum snapshots.
+	  
+	  This port uses gtk for input/output and supports both line-drawing
+	  and bitmap graphics.
+
+	  http://www.ifarchive.org/if-archive/level9/interpreters/level9/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GTKMAGNETIC
+	bool "gtkmagnetic-2.2.1.6nb8"
+	help
+	  Interpreter for text adventures from Magnetic Scrolls
+
+	  Gtk+ 2 port of Magnetic, an interpreter for Magnetic Scrolls
+	  adventures, written by Niclas Karlsson.
+
+	  http://www.if-legends.org/~msmemorial/magnetic.htm
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_GTURING
+	bool "gturing-0.1.1nb34"
+	help
+	  GNOME2 turing machine emulator
+
+	  Gturing is a very simple turing machine simulator that takes a simple
+	  ASCII file as its input:
+	  
+	  Any empty line or any line beginning with a hash (#) is ignored. In other
+	  case, five tokens, each separated by a space, are expected. These are the
+	  state number, the expected symbol, the symbol to write, the direction to
+	  move, and the new state. Anything following these tokens is ignored.
+	  
+	  Expected symbols and symbols to write can be any printable character.
+	  The blank character is represented by the underscore (_).  States are
+	  integer numbers, starting from 0.  The possible directions to move are
+	  left and right, represented by 'l' and 'r', respectively.
+	  
+	  The machine starts at state 0 and stops when it cannot find the new
+	  state or the new state doesn't expect the read symbol.
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_HERETIC2_DEMO
+	bool "heretic2-demo-2.0nb1"
+	help
+	  
+
+	  Heretic ][, originally produced by Activison and now ported to
+	  Linux by Loki Software, is a weird beast. Using one of Quake's 3D
+	  engines with a lot of extras (pole-vaulting, mana systems, magical
+	  weapons and defense shields), the game excels in pleasing the eyes
+	  and ears.
+	  
+	  This is the free demo version - a full version is available from
+	  Loki Games at http://www.lokigames.com/products/heretic2/
+
+	  http://www.lokigames.com/products/heretic2/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_HEX_A_HOP
+	bool "hex-a-hop-1.1.0nb2"
+	help
+	  Hexagonal tile-based puzzle game
+
+	  Hex-a-Hop is a hexagonal tile-based puzzle game with one simple
+	  goal: destroy all green tiles! There are infinite undos and no time
+	  limits -- you just have to find a way to destroy all the green
+	  tiles and step on a safe tile at the end.
+
+	  http://hexahop.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_HUGO
+	bool "hugo-3.1.02.1nb1"
+	help
+	  Interactive fiction design system and interpreter
+
+	  Hugo is one of the leading interactive fiction design systems.  In
+	  addition to being capable of producing leading-edge text adventures,
+	  it also allows a developer to incorporate true-color graphics
+	  display (which are optional for those who lack either the hardware
+	  or inclination to view graphics) as well as sound effects and music.
+	  And it's free.
+	  
+	  This is the ncurses port, without support for sound or graphics.
+
+	  http://www.generalcoffee.com/hugo.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ICBM3D
+	bool "icbm3d-0.4nb1"
+	help
+	  3D X11 game of defense
+
+	  by Bill Kendrick
+	  kendrick@zippy.sonoma.edu
+	  http://zippy.sonoma.edu/kendrick/
+	  
+	  ICBM3D ("Inter-Continental Ballistic Missiles, 3D") is a 3D game of defense.
+	  
+	  Like the original "Missile Command" and its clones, this game places you in
+	  control of Anti-ICBM weapons which you use to destroy an onslaught of
+	  missiles (and other nasties) which are dropping onto your nation.
+	  
+	  The game ends when your cities have all been destroyed. You only gain
+	  replacement cities by acheiving certain score thresholds during each attack
+	  (level).
+	  
+	  The main difference between this game and Missile Command is that ICBM3D,
+	  as the name suggests, provides a 3D perspective. You take advantage
+	  of X-Window's 3-button mouse to control your firing sight ("cross-hair")
+	  in 3-dimensions, and change your viewpoint.
+
+	  http://www.newbreedsoftware.com/icbm3d/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ICEBREAKER
+	bool "icebreaker-1.9.7nb11"
+	help
+	  Penguin capturing simulation
+
+	  So, uh, there's a bunch of penguins on an iceberg in Antarctica.
+	  You have been selected to catch them so they can be shipped to
+	  Finland, where they are essential to a secret plot for world
+	  domination.
+	  
+	  In order to trap the penguins, you'll need to break the iceberg
+	  into small chunks. You do this by melting lines in the ice with
+	  Special High-Tech GNU Tools.
+	  
+	  If a penguin hits a line in progress, however, it vanishes with a
+	  loud noise, and you lose a life.
+	  
+	  Once 80% or more of the iceberg is gone, the remaining chunks are
+	  small enough for shipping. Of course, if you manage to get rid of
+	  more than that, you'll save on postage, thus earning you exponential
+	  amounts of Geek Cred (a.k.a. "score").
+	  
+	  After you ship off one batch of penguins, it's time to move on to
+	  the next. Each subsequent 'berg will have one more penguin, and
+	  you'll have one more life. This will continue until you lose, or
+	  until you exceed level one hundred or so, which Ain't Gonna Happen.
+	  
+	  Of course, this is an urgent mission, so you'll be penalized if
+	  you're slow -- every second or so, your score drops down by one.
+
+	  http://mattdm.org/icebreaker/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_IMAZE
+	bool "imaze-1.3nb4"
+	help
+	  Multiplayer, networked, action,x 3D maze game
+
+	  iMaze is a multi-player network action game for TCP/IP with 3D graphics
+	  under X11/XView and Motif.
+	  
+	  It has successfully broken down the local FORTRAN lessons.
+	  
+	  Other features include:
+	  - sophisticated, reliable network protocol, works even with SLIP connections
+	  via modem
+	  - windows can be freely scaled to avoid speed drawbacks due to poor display
+	  performance
+	  - modular, portable source code
+	  - scores
+	  - extensive documentation (german)
+	  
+	  After hours of testing, dueling and enjoying MidiMaze 2 on the Atari ST we
+	  decided that it wouldn't be such a bad idea to write something similar for
+	  Unix. "iMaze" means "Internet Maze" and by a strange coincidence it is also
+	  a substring of "MidiMaze".
+
+	  http://home.tu-clausthal.de/student/iMaze/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_IOQUAKE3
+	bool "ioquake3-1.36"
+	help
+	  Open source Quake 3 distribution
+
+	  ioquake3 is a game engine project which aims to build upon id Software's Quake
+	  3 source code release. The source code was released on August 20, 2005 under
+	  the GPL.
+	  
+	  The project's goal is to create a bug-free, enhanced open source Quake 3
+	  source code distribution upon which new games and projects can be based, as
+	  well as an improved version (in relation to the original binaries) of the
+	  engine for playing Quake III: Arena, the Team Arena expansion pack and all the
+	  popular mods.
+
+	  http://www.ioquake3.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_IOQUAKE3_PK3
+	bool "ioquake3-pk3-0"
+	help
+	  pk3 files for ioquake3
+
+	  These are newer pk3 files from id point release patches. They are required
+	  to play Quake III: Arena on ioquake3.
+
+	  http://www.ioquake3.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_IVAN
+	bool "ivan-0.50nb9"
+	help
+	  Graphical roguelike featuring deep gameplay
+
+	  Iter Vehemens ad Necem (IVAN) is a graphical roguelike game, which
+	  currently runs in Windows, DOS and Linux. It features advanced bodypart
+	  and material handling, multi-colored lighting and, above all, deep
+	  gameplay.
+
+	  http://ivan.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_JETPACK
+	bool "jetpack-1.0nb2"
+	help
+	  Arcade action game for X Windows
+
+	  Jetpack is an arcade action game. The user controls a player wearing a
+	  jetpack.  The player must travel through the maze to find a key and
+	  bring it back to the door to exit to the next level.  There are three
+	  kinds of enemies in jetpack: guards, fireballs and wall sweepers.
+	  Touching any enemy is fatal.  Guards patrol the maze.  They
+	  fly in the middle of the corridors and follow random paths through the
+	  maze.  Fireballs fly through space and bounce off walls.  Wall
+	  Sweepers cling to walls and continuously move along the surface of the
+	  walls.  They can hang on to any side, and when they reach the end of a
+	  wall, flip to hug the other side and continue in the opposite
+	  direction.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_JOOLS
+	bool "jools-0.20nb2"
+	help
+	  Bejeweled clone
+
+	  Jools is a graphical puzzle game in the tradition of Tetris.  It
+	  is a clone of Bejeweled (TM), an excellent game which is currently
+	  available only for Windows, Mac, and Palm/Pocket PC devices.  In
+	  a nutshell, the goal is to swap adjacent jools (jewels) within a
+	  grid, in order to create rows of three or more of a kind.  These
+	  jools will then disappear, and more will fall to fill their places.
+	  Jools features nifty 3D rendered graphics.
+
+	  http://pessimization.com/software/jools/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KAJAANI_KOMBAT
+	bool "kajaani-kombat-0.7nb5"
+	help
+	  Rampart-like multiplayer game set in space
+
+	  Kajaani Kombat is a funny multiplayer game... and much more! It is
+	  a Rampart-like game (old arcade classic) set in space.
+	  
+	  Every player has a castle demarked by walls, and cannons to shoot
+	  at other player's castles. After the shooting phase there is a
+	  repair phase where one has to rebuild the walls such that one there
+	  is an area completely encased by walls (without holes). If one
+	  doesn't succeed with this, one loses.
+	  
+	  Kajaani Kombat is playable with two to four players, over the
+	  internet or alternatively two players sharing one computer. It is
+	  also possible to play over the internet with, for example, 4 players
+	  of which two are sharing the same computer. Enjoy it with your
+	  friends!
+
+	  http://kombat.kajaani.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KANATEST
+	bool "kanatest-0.4.8nb6"
+	help
+	  Flash-card program to memorise Japanese kana
+
+	  Kanatest is a Japanese kana (Hiragana and Katakana) simple flashcard tool.
+	  You can learn, or remind yourself about kana chars in quick and easy way!
+	  
+	  List of key features:
+	  
+	  * Fifteen lessons (groups of kana chars)
+	  * Lesson can be fully customizable by user
+	  * Repeating wrongly-answered questions mode
+	  * Built-in kana chart
+	  * Advanced statistics
+	  
+	  During test the Kanatest displays randomly selected kana char (respecting
+	  mode and lesson) and waits for user answer expected as romaji equivalent.
+	  This process continues until all questions will be answered or all questions
+	  will be answered correctly (depends on options). At the end of test a short
+	  info about drilling time and correctness ratio is displayed.
+	  The results are stored and user can review his performance in any time.
+
+	  http://clayo.org/kanatest/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KAPOOKA
+	bool "kapooka-0.2nb9"
+	help
+	  Puzzle game
+
+	  KaPooka is a logic game, written in SDL.
+	  
+	  The object of the game is to guide your red blobby to the exit,
+	  pushing the green blobbies out of the way. You can only push a
+	  green blobby if there is an empty space behind it.
+
+	  http://kapooka.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KDEGAMES3
+	bool "kdegames-3.5.10nb9"
+	help
+	  Games for the KDE integrated X11 desktop
+
+	  This is a compilation of various games that are part of the standard KDE
+	  distribution:
+	  
+	  * kasteroids: shoot at those nasty asteroids
+	  * katomic: build complex atoms with a minimal amount of moves
+	  * kbackgammon: play backgammon against a local human player, via a
+	  game server or against GNU Backgammon (not included)
+	  * kbattleship: battleship game with built-in game server
+	  * kblackbox: find atoms in a grid by shooting electrons
+	  * kbounce: claim areas and don't get disturbed
+	  * kenolaba: board game: move 6 pieces from your opponent over the edge
+	  * kfouleggs: a famous japanese game known as puyo-puyo
+	  * kjumpingcube: a tactical game for number-crunchers
+	  * klines: place 5 equal pieces together, but wait, there are 3 new ones
+	  * mahjongg: a tile laying patience
+	  * kmines: the classical mine sweeper
+	  * konquest: conquer the planets of your enemy
+	  * kpat: several patience card games
+	  * kpoker: the game of poker
+	  * kreversi: the old reversi board game, also known as othello
+	  * ksame: collect pieces of the same color
+	  * kshisen: patience game where you take away all pieces
+	  * ksirtet: very known if spelt this backwards
+	  * ksmiletris: another Tetris-like game
+	  * ksnake: don't bite yourself, eat apples!
+	  * ksokoban: move all storage boxes into the cabinet
+	  * kspaceduel: two player game with shooting spaceships flying around a sun
+	  * ktron: like ksnake, but without fruits
+	  * ktuberling: kids game: make your own potato (NO french fries!)
+	  * kwin4: place 4 pieces in a row
+	  * libkdegames: KDE game library used by many of these programs
+	  * lskat: lieutnant skat
+	  
+	  There is also a directory libkdegames that contains card decks as well as
+	  some functions for game programmers.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KDEGAMES4
+	bool "kdegames4-4.5.5nb3"
+	help
+	  Games for the KDE integrated X11 desktop
+
+	  This is a compilation of more than 20 various casual desktop games that are
+	  part of the standard KDE distribution.
+	  
+	  * bovo: Five-in-a-row Board Game.
+	  * katomic: Build complex atoms with a minimal amount of moves.
+	  * kbackgammon: Play backgammon against a local human player, via a game
+	  server or against GNU Backgammon (not included)
+	  * kbattleship: Sink battleship of your opponents, with built-in game server.
+	  * kblackbox: Find the balls hidden in the black box by shooting laser beams!
+	  * kbounce: Claim areas and don't get disturbed.
+	  * kgoldrunner: A game of action and puzzle-solving.
+	  * kiriki: Yahtzee-like Dice Game.
+	  * kjumpingcube: A tactical game for number-crunchers.
+	  * klines: Place 5 equal pieces together, but wait, there are 3 new ones.
+	  * kmahjongg: A tile laying patience.
+	  * kmines: The classical mine sweeper.
+	  * kolf: A mini golf game.
+	  * konquest: Conquer the planets of your enemy.
+	  * kpat: Several patience card games.
+	  * kreversi: The old reversi board game, also known as Othello.
+	  * ksame: Collect pieces of the same color.
+	  * kshisen: Patience game where you take away all pieces.
+	  * kspaceduel: Two player game with shooting spaceships flying around a sun.
+	  * ksquares: Connect the dots to create squares.
+	  * ksudoku: Sudoku game and more.
+	  * ktuberling: Kids game: make your own potato (NO french fries!)
+	  * kwin4: Place 4 pieces in a row.
+	  * libkdegames: KDE game library used by many of these programs, contains also
+	  images of card decks.
+	  * libkmahjongg: Library used for loading and rendering of Mahjongg tilesets.
+	  * lskat: Lieutnant skat.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KDETOYS3
+	bool "kdetoys-3.5.10nb9"
+	help
+	  Toys for the KDE integrated X11 desktop
+
+	  This package provides some toy applications that are part of the
+	  standard KDE environment:
+	  
+	  * amor: Amusing Misuse Of Resources put's comic figures above your windows
+	  * eyesapplet: a kicker applet similar to XEyes
+	  * fifteenapplet: kicker applet, order 15 pieces in a 4x4 square by moving them
+	  * kaphorism: displays aphorisms
+	  * kfortune: shows your daily fortune
+	  * kmoon: system tray applet showing the moon phase
+	  * kodo: mouse movement meter
+	  * kscore: kicker applet with a sports ticker
+	  * kteatime: system tray applet that makes sure your tea doesn't get too strong
+	  * ktux: Tux-in-a-Spaceship screen saver
+	  * kweather: kicker applet that will display the current weather outside
+	  * kworldwatch: application and kicker applet showing daylight area on the world
+	  globe
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KDETOYS4
+	bool "kdetoys4-4.5.5nb2"
+	help
+	  Toys for the KDE integrated X11 desktop
+
+	  This package provides some toy applications that are part of the
+	  standard KDE environment:
+	  
+	  * amor: Amusing Misuse Of Resources put's comic figures above your windows
+	  * kmoon: system tray applet showing the moon phase
+	  * kteatime: system tray applet that makes sure your tea doesn't get too strong
+	  * ktux: Tux-in-a-Spaceship screen saver
+	  * kweather: kicker applet that will display the current weather outside
+	  * kworldclock: application and kicker applet showing daylight area on the world
+	  globe
+	  
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KETM
+	bool "ketm-0.0.6nb7"
+	help
+	  Old-school 2d-scrolling shooter
+
+	  ketm (kill everything that moves) is an old-school 2d-scrolling flying
+	  shooter.
+
+	  http://home.t-online.de/home/haslbeck/ketm/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KNIGHTCAP
+	bool "knightcap-3.6nb4"
+	help
+	  Chess engine with 3D OpenGL-rendered chessboard
+
+	  KnightCap is a chess program written for the Fujitsu AP1000+ parallel
+	  computer (running AP/Linux).
+	  
+	  The principal differences between KnightCap and other chess programs
+	  are:
+	  - KnightCap has an optional fully rendered 3D interface, giving a feel
+	  much more like an "over the board" game.
+	  - KnightCap was developed to run on a parallel distributed memory
+	  machine, although it also runs on normal unix boxes.
+	  - KnightCap does not have an opening book---instead it keeps a file
+	  (brain.dat) of losing moves and inserts them in the hash table at the
+	  start of each search. At present it has about 1500 entries, and
+	  this makes it a pretty competitive opening player.
+	  - KnightCap learns the parameters of its evaluation function as it
+	  plays. The most dramatic example of how this helps is an experiment
+	  we conducted on FICS in which KnightCap learnt from a 1650 player
+	  to a 2100 player in just 300 games.
+	  
+	  KnightCap now beats gnuchess consistently and is within "coo-ee" of
+	  crafty, although I think it needs deeper search or some more dramatic
+	  selective search to be truly competitive with the best micro
+	  programs.
+
+	  http://samba.org/KnightCap/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KNIGHTCAP_BRAIN
+	bool "knightcap-brain-19980616"
+	help
+	  Book of losing moves for KnightCap
+
+	  KnightCap does not have an opening book -- instead it keeps a file
+	  (brain.dat) of losing moves and inserts them in the hash table at the
+	  start of each search.
+
+	  http://anu.samba.org/KnightCap/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KNIGHTS
+	bool "knights-0.6nb19"
+	help
+	  Chess interface for KDE
+
+	  Knights is a graphical chess interface to various chess engines and is
+	  designed to work with KDE.  It has features geared toward novice players,
+	  such as "previews": when you right click on a piece, Knights will show you
+	  where that piece can move, and where it can attack.  Future releases of
+	  Knights will include tutorials which teach everything from piece movement
+	  to advanced endgame strategy.
+
+	  http://knights.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KOTH
+	bool "koth-0.8.0nb5"
+	help
+	  The classic "shoot the other tank" artillery game, networked
+
+	  King of the Hill, KOTH, is an artillery game in the grand old
+	  tradition of little tanks with ridiculously powerful weapons trying to
+	  blow each other up while trying to avoid getting blown up themselves.
+	  The story above is just one possible justification for why a bunch of
+	  tanks would be up in the mountains shooting at each other.  Feel free
+	  to make up your own, or simply enjoy the game.
+
+	  http://www.nongnu.org/koth/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KYE
+	bool "kye-1.0nb3"
+	help
+	  Puzzle game
+
+	  This is a clone of the game Kye for Windows, originally by Colin Garbutt. It
+	  is a puzzle game, which is a little like the old falling-rocks puzzle games,
+	  and perhaps also inspired a little by Sokoban. But Kye has more variety of
+	  objects, and so is capable of posing quite complex puzzles.
+
+	  http://games.moria.org.uk/kye/pygtk
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LBREAKOUT
+	bool "lbreakout-010315nb11"
+	help
+	  Breakout-style arcade game
+
+	  LBreakout is a classical Breakout game and this means (if you like
+	  Breakout ;-) it is a lot of fun to play!  If you never ever played such
+	  a game you can check out the manual for more information, take a look at
+	  the screenshots and last but not least... play it!
+	  
+	  This is a list of LBreakout's features:
+	  * Sound
+	  * HighScore
+	  * A menu with mouse support
+	  * Mouse or keyboard can be used for playing
+	  * Controls can be redefined
+	  * Mouse can be kept in window while playing
+	  * Your starting level can be chosen
+	  * A difficulty can be selected (easy, medium, hard)
+	  * Various backgrounds
+	  * A lot of collectable extras
+	  * Nice graphics
+	  * Cool effects
+	  * Own levels can be created
+
+	  http://lgames.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LBREAKOUT2
+	bool "lbreakout2-2.6.3"
+	help
+	  Breakout-style arcade game
+
+	  The polished successor to LBreakout offers you a new challenge in more
+	  than 50 levels with loads of new bonuses (goldshower, joker, explosive
+	  balls, bonus magnet ...), maluses (chaos, darkness, weak balls, malus
+	  magnet ...) and special bricks (growing bricks, explosive bricks,
+	  regenerative bricks, indestructible bricks, chaotic bricks).
+	  
+	  And if you're through with all the levels you can create complete new
+	  levelsets with the integrated easy-to-use level editor!
+
+	  http://lgames.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LEVEL9
+	bool "level9-4.0nb1"
+	help
+	  Curses port of the Level 9 text adventure interpreter
+
+	  An interpreter for the text adventures by Level 9.  Supports versions
+	  2-4 in many formats, including Spectrum snapshots.
+	  
+	  This port uses curses for input/output.
+
+	  http://www.ifarchive.org/if-archive/level9/interpreters/level9/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LGENERAL
+	bool "lgeneral-1.1.1nb10"
+	help
+	  Panzer General play-a-like, uses Panzer General data files
+
+	  LGeneral is a turn-based strategy engine heavily inspired by Panzer
+	  General.  You play single scenarios or whole campaigns turn by turn
+	  against a human player or the AI.  Entrenchment, rugged defense,
+	  defensive fire, surprise contacts, surrender, unit supply, weather
+	  influence, reinforcements and other implementations contribute to
+	  the tactical and strategic depth of the game.
+
+	  http://lgames.sourceforge.net/index.php?project
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LGENERAL_DATA
+	bool "lgeneral-data-1.1.3nb2"
+	help
+	  Panzer General data files for lgeneral
+
+	  LGeneral is a turn-based strategy engine heavily inspired by Panzer
+	  General.  You play single scenarios or whole campaigns turn by turn
+	  against a human player or the AI.  Entrenchment, rugged defense,
+	  defensive fire, surprise contacts, surrender, unit supply, weather
+	  influence, reinforcements and other implementations contribute to
+	  the tactical and strategic depth of the game.
+	  
+	  This package contains the missions and related files from
+	  Panzer General.
+
+	  http://lgames.sourceforge.net/index.php?project
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LIBGGZ
+	bool "libggz-0.0.14.1nb2"
+	help
+	  GGZ Gaming Zone libraries
+
+	  GGZ Gaming Zone
+	  
+	  GGZ is a project to create a free gaming platform.  The project includes
+	  a server, games for the server, clients, and games for the clients.  Other
+	  projects may include ggz networking into their games.  GNOME games project
+	  and Freeciv 2.1 releases use ggz.
+	  
+	  This package contains the base libraries the server and clients depend on.
+
+	  http://www.ggzgamingzone.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LINCITY
+	bool "lincity-1.12.1nb2"
+	help
+	  Free clone of SimCity for X11
+
+	  You are required to build and maintain a city. You must feed, house,
+	  provide jobs and goods for your residents. You can build a sustainable
+	  economy with the help of renewable energy and recycling, or you can go for
+	  broke and build rockets to escape from a pollution ridden and resource
+	  starved planet, it's up to you. Due to the finite resources available in
+	  any one place, this is not a game that you can leave for long periods of
+	  time.
+
+	  http://lincity.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LINCITY_NG
+	bool "lincity-ng-2.0nb1"
+	help
+	  Open source SimCity like game
+
+	  LinCity-NG is a City Simulation Game.
+	  It is a polished and improved version of the classic LinCity game.
+	  
+	  Within the scope of the GoTM project at happypenguin we have created a new
+	  iso-3D graphics engine, with a completely redone and modern GUI.
+
+	  http://lincity-ng.berlios.de/wiki/index.php/Main_Page
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LIQUIDWAR
+	bool "liquidwar-5.6.4nb1"
+	help
+	  Unique multiplayer wargame
+
+	  Liquid War is a unique multiplayer wargame. Its rules are truly
+	  original and have been invented by Thomas Colcombet. You control
+	  an army of liquid and have to try and eat your opponents. A single
+	  player mode is available, but the game is definitely designed to
+	  be multiplayer, and has network support.
+
+	  http://www.ufoot.org/liquidwar/v5
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LMARBLES
+	bool "lmarbles-1.0.7nb7"
+	help
+	  Atomix-like puzzle
+
+	  LMarbles is an Atomix clone with a slight change in concept. Instead of
+	  assembling molecules you create figures out of marbles. Nevertheless, the basic
+	  game play is the same: If a marble starts to move it will not stop until it
+	  hits a wall or another marble. To make it more interesting there are obstacles
+	  like one-way streets, crumbling walls and portals.
+	  As Marbles is meant as a puzzle game you play against a move limit and not
+	  a time limit. This way you have as much time as you need to think.
+
+	  http://lgames.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LNL
+	bool "lnl-3.4.19nb1"
+	help
+	  L&L - Labyrinths & Legends - Fantasy RPG
+
+	  Labyrinths & Legends is Rogue like RPG of the system such as
+	  Rogue, Moria, NetHack and "Torneko's Great Adventure".
+	  The "Put a party together." thing that it couldn't be done with
+	  Rogue like is made.
+
+	  http://lnl.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LPAIRS
+	bool "lpairs-1.0.4nb1"
+	help
+	  Memory game matching pairs of cards
+
+	  LPairs is the classical memory game.
+	  This means you have to find pairs of identical cards which will then
+	  be removed. Your time and tries needed will be counted but there is no
+	  highscore chart or limit to this. I wrote this game to improve my
+	  memory a bit as I have some problems in remembering things.
+	  Of course, LPairs provides a menu like all other Lgames to configure
+	  graphics, sounds and gameplay (number of cards, preview of all cards
+	  before game starts).
+
+	  http://lgames.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_LTRIS
+	bool "ltris-1.0.18"
+	help
+	  SDL tetris clone
+
+	  LTris is a very polished Tetris clone and highly configurable due to
+	  its menu.
+	  
+	  It offers you the well-known gametype Classic, a funny gametype
+	  Figures (new figure each level, suddenly appearing tiles and lines)
+	  and Multiplayer with up to three players either controlled by human or
+	  CPU(!).
+	  
+	  In fact, even if you don't like Tetris you should download this just
+	  to see your CPU in action in mode Demo!
+
+	  http://lgames.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MAELSTROM_SDL
+	bool "maelstrom-sdl-3.0.5nb8"
+	help
+	  
+
+	  Maelstrom is a port of the original shareware game for the Macintosh.
+	  It is a fast-action, high resolution (640x480) asteroids-like game,
+	  with detailed graphics and original sounds.
+	  
+	  This version uses the SDL (Simple DirectMedia Layer) which provides
+	  faster graphics and better sound than the old X11 version.
+	  SDL also allows the screen resolution to be changed to 640x480 when
+	  Maelstrom is run in full-screen mode.
+
+	  http://www.devolution.com/~slouken/Maelstrom/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MAELSTROM_X11
+	bool "maelstrom-x11-2.0.6nb3"
+	help
+	  
+
+	  Maelstrom is a port of the original shareware game for the Macintosh.
+	  It is a fast-action, high resolution (640x480) asteroids-like game,
+	  with detailed graphics and original sounds.
+	  
+	  This is the X11 version, there is also an SDL version (maelstrom-sdl).
+
+	  http://www.ambrosiasw.com/Products/Maelstrom.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MAJESTY_DEMO
+	bool "majesty-demo-20030310nb1"
+	help
+	  
+
+	  Majesty is a unique sim putting you in the crushed velvet hotseat
+	  of your own kingdom.  With an epic quest before you, you make the
+	  decisions of where to build your settlement`s guilds and temples.
+	  Each one has a mind of its own and must be enticed to meet your
+	  goals, via rewards you offer and spells you cast.
+	  
+	  Meanwhile you must make sure that your treasury stays flush with
+	  cash to support these and other outlays necessary to maintain a
+	  thriving medieval town. The fact that you are being barraged by
+	  attacks from mythical beasts and fantastic creatures doesn`t make
+	  your job any easier.
+	  
+	  This is the demo of the Linux version.
+
+	  http://www.linuxgamepublishing.com/info.php?id
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MARATHON_TRILOGY
+	bool "marathon-trilogy-1.0"
+	help
+	  Bungie game data files, playable with the Aleph One engine
+
+	  The original trilogy from Bungie, playable using the Aleph One game engine.
+	  Copyright 1994-1997 Bungie.
+	  96.9 MB in archives
+
+	  http://trilogyrelease.bungie.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MINAMI
+	bool "minami-1.0.2nb1"
+	help
+	  Text adventure
+
+	  Minami-Sinzyuku Adventure is a text-based adventure game.  It was made for BSD
+	  Magazine Parody Issue 2001 Vol.1 published on 2001-04-01:-).  All written in
+	  Japanese.
+
+	  http://www.guru.gr.jp/~issei/minami/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MIRRORMAGIC
+	bool "mirrormagic-2.0.2nb2"
+	help
+	  Nice little puzzle game with color graphics and sound
+
+	  This is a nice little game with color graphics and sound for your
+	  Unix system with color X11. You need an 8-Bit color display or better.
+	  It is not recommended on black&white systems, and maybe not on gray
+	  scale systems.
+	  
+	  It was first released as "Mirror Magic" in the year 1989 on the Amiga
+	  (with ports on other computer systems). As the Amiga is a bit outdated
+	  now, I decided to port it to Unix systems.
+	  
+	  A game for Unix/X11 by Holger Schemel, (c) 1995 by Holger Schemel.
+
+	  http://www.artsoft.org/mirrormagic/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MIRRORMAGIC_SDL
+	bool "mirrormagic-sdl-2.0.2nb17"
+	help
+	  Nice little puzzle game with color graphics and sound
+
+	  This is a nice little game with color graphics and sound for your
+	  Unix system with color X11. You need an 8-Bit color display or better.
+	  It is not recommended on black&white systems, and maybe not on gray
+	  scale systems.
+	  
+	  It was first released as "Mirror Magic" in the year 1989 on the Amiga
+	  (with ports on other computer systems). As the Amiga is a bit outdated
+	  now, I decided to port it to Unix systems.
+	  
+	  A game for Unix/X11 by Holger Schemel, (c) 1995 by Holger Schemel.
+
+	  http://www.artsoft.org/mirrormagic/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MONSTERZ
+	bool "monsterz-0.7.1nb3"
+	help
+	  Puzzle game similar to the famous Bejeweled or Zookeeper
+
+	  Monsterz is a little puzzle game, similar to the famous Bejeweled
+	  or Zookeeper.
+	  
+	  The goal of the game is to create rows of similar monsters, either
+	  horizontally or vertically. The only allowed move is the swap of
+	  two adjacent monsters, on the condition that it creates a row of
+	  three or more. When alignments are cleared, pieces fall from the
+	  top of the screen to fill the board again. Chain reactions earn
+	  you even more points.
+	  
+	  This game is mostly about luck, but it remains highly addictive.
+	  You have been warned.
+
+	  http://sam.zoy.org/monsterz/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MOON_BUGGY
+	bool "moon-buggy-1.0nb3"
+	help
+	  Game on the Moon
+
+	  Moon-buggy is a simple character graphics game where you drive some kind
+	  of car across the moon's surface. Unfortunately there are dangerous
+	  craters there. Fortunately your car can jump over them!
+	  
+	  The game has some resemblance of the classic arcade game moon-patrol
+	  which was released in 1982. A clone of this game was relased for the
+	  Commodore C64 in 1983. The present, ASCII art version of moon-buggy was
+	  written many years later by Jochen Voss.
+
+	  http://seehuhn.de/media/programs/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_MORIA
+	bool "moria-5.5.2nb1"
+	help
+	  Rogue-like game with a different sense of scale than Rogue
+
+	  Moria is a Roguelike game with a different sense of scale than Rogue.
+	  It features a town level, with an endless(?) dungeon.  But rather than
+	  being limited to one terminal screen in size, each dungeon level is
+	  several screens wide and long.  Games of Moria generally take weeks to
+	  complete, rather than hours or days.
+
+	  http://www-math.bgsu.edu/~grabine/moria.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NAGI
+	bool "nagi-20021114nb5"
+	help
+	  Clone of Sierra's AGI
+
+	  NAGI (New Adventure Game Interpreter) is a clone of Sierra's own
+	  AGI which they created and used through the 80's to produce a whole
+	  bunch of great adventure games like Space Quest, Leisure Suit Larry
+	  and Kings Quest. NAGI was created by disassembling the original AGI
+	  executable and writing equivalent C code that would run under
+	  SDL which is a free generic library for low-level access
+	  to graphics and audio. It can read both v2 and v3 game data for the
+	  PC.
+
+	  http://www.agidev.com/projects/nagi/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NETHACK
+	bool "nethack-all-3.4.3nb3"
+	help
+	  Meta-package for NetHack with x11, Qt, and tty versions
+
+	  Nethack is a single player, ASCII graphics-based adventure game, similar
+	  to the lines of Dungeons & Dragons and similar fantasy games. It is
+	  commonly classified in the larger group of Rogue-like Games, which
+	  generally are all text-based, solo adventures.
+	  
+	  Within the game, your character is after the infamous Wizard of Yendor,
+	  who has stolen the Amulet of Yendor and plans to use it for his evil
+	  purposes. You, a young member of your chosen class, have been blessed by
+	  your people and your god to retrieve the Amulet, and to save the world
+	  from the Wizard's evil plans.
+	  
+	  This pkg installs the X11, QT and tty based versions of the game. You may
+	  also choose to install just one or more by themselves.
+
+	  http://www.nethack.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NETHACK_LIB
+	bool "nethack-lib-3.4.3nb3"
+	help
+	  Data files for Nethack
+
+	  Nethack is a single player, ASCII graphics-based adventure game, similar
+	  to the lines of Dungeons & Dragons and similar fantasy games. It is
+	  commonly classified in the larger group of Rogue-like Games, which
+	  generally are all text-based, solo adventures.
+	  
+	  Within the game, your character is after the infamous Wizard of Yendor,
+	  who has stolen the Amulet of Yendor and plans to use it for his evil
+	  purposes. You, a young member of your chosen class, have been blessed by
+	  your people and your god to retrieve the Amulet, and to save the world
+	  from the Wizard's evil plans.
+
+	  http://www.nethack.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NETHACK_QT
+	bool "nethack-qt-3.4.3nb12"
+	help
+	  The QT-Enhanced X11+tty version of NetHack
+
+	  Nethack is a single player, ASCII graphics-based adventure game, similar
+	  to the lines of Dungeons & Dragons and similar fantasy games. It is
+	  commonly classified in the larger group of Rogue-like Games, which
+	  generally are all text-based, solo adventures.
+	  
+	  Within the game, your character is after the infamous Wizard of Yendor,
+	  who has stolen the Amulet of Yendor and plans to use it for his evil
+	  purposes. You, a young member of your chosen class, have been blessed by
+	  your people and your god to retrieve the Amulet, and to save the world
+	  from the Wizard's evil plans.
+
+	  http://www.nethack.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NETHACK_TTY
+	bool "nethack-tty-3.4.3nb2"
+	help
+	  The tty/console based version of NetHack
+
+	  Nethack is a single player, ASCII graphics-based adventure game, similar
+	  to the lines of Dungeons & Dragons and similar fantasy games. It is
+	  commonly classified in the larger group of Rogue-like Games, which
+	  generally are all text-based, solo adventures.
+	  
+	  Within the game, your character is after the infamous Wizard of Yendor,
+	  who has stolen the Amulet of Yendor and plans to use it for his evil
+	  purposes. You, a young member of your chosen class, have been blessed by
+	  your people and your god to retrieve the Amulet, and to save the world
+	  from the Wizard's evil plans.
+
+	  http://www.nethack.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NETHACK_X11
+	bool "nethack-x11-3.4.3nb4"
+	help
+	  The X11+tty version of NetHack
+
+	  Nethack is a single player, ASCII graphics-based adventure game, similar
+	  to the lines of Dungeons & Dragons and similar fantasy games. It is
+	  commonly classified in the larger group of Rogue-like Games, which
+	  generally are all text-based, solo adventures.
+	  
+	  Within the game, your character is after the infamous Wizard of Yendor,
+	  who has stolen the Amulet of Yendor and plans to use it for his evil
+	  purposes. You, a young member of your chosen class, have been blessed by
+	  your people and your god to retrieve the Amulet, and to save the world
+	  from the Wizard's evil plans.
+
+	  http://www.nethack.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NETMAJ
+	bool "netmaj-2.0.7nb3"
+	help
+	  
+
+	  netmaj is a mahjongg game.  You can play via network.  If you don't
+	  find four players, computer plays for you.
+
+	  http://www.sfc.wide.ad.jp/~kusune/netmaj/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NETMAZE
+	bool "netmaze-0.81nb3"
+	help
+	  
+
+	  Netmaze is a multiplayer combat game (like the Atari Midi Maze game)
+	  
+	  You play in a virtual maze and the goal of the game is to hunt down your
+	  opponents.  The view is full animated 3D.  On fast machines, you can even
+	  run it with texture mapping for the walls and floor.
+	  
+	  There are also three robot players of varying ability.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NETRIS
+	bool "netris-0.52nb2"
+	help
+	  Everybody's darling T*tris in a networked version
+
+	  This version of the famous T*tris game can be played over the network
+	  as well as alone.
+
+	  http://www.netris.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NEVERBALL
+	bool "neverball-1.5.4nb4"
+	help
+	  Puzzle/action game similar to Super Monkey Ball
+
+	  Tilt the floor to roll a ball through an obstacle course before time runs
+	  out. Neverball is part puzzle game, part action game, and entirely a
+	  test of skill.
+	  
+	  Also found here is Neverputt, a hot-seat multiplayer miniature golf game
+	  using the physics and graphics of Neverball.
+
+	  http://neverball.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NEWVOX
+	bool "newvox-1.0nb7"
+	help
+	  Voxel-style landscape rendering fly-by
+
+	  Voxel-style landscape rendering by Andrea Griffini.  Move around the
+	  landscape using the arrow keys.
+
+	  http://www.libsdl.org/projects/newvox/index.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NIGHTHAWK
+	bool "nighthawk-2.1nb4"
+	help
+	  C64 Paradroid clone
+
+	  In a nutshell, Nighthawk is a shoot-'em up game, however, it requires
+	  a lot of lateral thinking. If you go around blasting everything to
+	  pieces, you'll find that you won't last very long as you're up
+	  again droids with far greater fire power than yourself. The droids
+	  are fairly stupid compared to a human though, so you have that in
+	  your favour.
+	  
+	  You are a droid and you have to destroy droids occupying a fleet
+	  of reclaimed starships. You start out as a 002 Paradroid with very
+	  poor firepower and shielding.  However, you have the ability to
+	  transfer your programs over to a new droid, effectively taking it
+	  over. As you take control of bigger and better droids, you''ll gain
+	  better firepower and shielding.
+
+	  http://jsno.arafuraconnect.com.au/proj_linux/nighthawk.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_NINVADERS
+	bool "ninvaders-0.1.1"
+	help
+	  Space invaders, curses style
+
+	  Ever wanted to play space invaders when you can't find a GUI?
+	  Now you can!
+
+	  http://ninvaders.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_OMEGA
+	bool "omega-0.90.4nb3"
+	help
+	  Complex rogue-like game of exploration with a sense of humor
+
+	  Omega is a complex rogue-style game of dungeon exploration.  Unlike
+	  other such games, there are a number of ways to "win", depending on
+	  various actions taken during play. The ways you can get your name on
+	  the hiscore board include becoming the highest ranked head of a guild,
+	  sect, college, etc., as well as gaining the most points figured from
+	  possessions and experience. The game (via the oracle) may impose some
+	  structure on your exploration, but you need not follow all of the
+	  oracle's advice. There *is* a "total winner" status, by the way.
+	  
+	  Omega, unlike lesser games is incredibly amusing to play. Laurence P.
+	  Brothers (the primary author) is the Oscar Wilde of rouge-like games.
+	  Many omega concepts, but not great sense of humor were later stolen
+	  for use in ADOM.
+	  
+	  Omega offers a richness of playing detail that goes beyond a simple
+	  game like rogue. However, the majority of gameplay is very similar to
+	  rogue, hack, ultrarogue, larn, and other such games. The player is
+	  represented by the highlighted "@" symbol, objects and terrain
+	  features are represented by non-alphabetic symbols, monsters are
+	  represented by the various upper and lower case letters, and other
+	  humans are represented by a non-highlighted "@".
+
+	  http://www.alcyone.com/max/projects/omega/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ONSCRIPTER
+	bool "onscripter-20111025nb1"
+	help
+	  Interpreter to execute a script for NScripter
+
+	  ONScripter executes a script for NScripter. NScripter is an engine
+	  for the creation of visual novels on Microsoft Windows.
+
+	  http://onscripter.sourceforge.jp/onscripter.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_OPENMORTAL
+	bool "openmortal-0.7nb16"
+	help
+	  Parody of Mortal Kombat with real characters
+
+	  Mortal Szombat is a parody of the popular coin-up game, Mortal Kombat. It
+	  is currently playable (maybe even enjoyable), although it is still under
+	  development. Only two-player game is supported, single-player games against
+	  computer opponent is not planned yet. There are currently 9 playable
+	  characters, and 8 more in the making!
+
+	  http://apocalypse.rulez.org/~upi/Mortal/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_OPENTTD
+	bool "openttd-1.0.5nb4"
+	help
+	  Open source clone of Transport Tycoon Deluxe
+
+	  OpenTTD is an open source simulation game based upon the popular Microprose
+	  game "Transport Tycoon Deluxe", written by Chris Sawyer. It attempts to mimic
+	  the original game as closely as possible while extending it with new features.
+
+	  http://www.openttd.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_OPENTTD_DATA
+	bool "openttd-data-0.3.1"
+	help
+	  Free data files for OpenTTD
+
+	  OpenGFX, OpenMSX, and OpenSFX are an open source replacement for the original
+	  Transport Tycoon Deluxe (TTD) graphics, music and base sounds used by OpenTTD.
+	  The main goal therefore is to provide a set of free files which make it
+	  possible to play OpenTTD without requiring the (copyright protected) files from
+	  the TTD CD. This potentially increases the OpenTTD fanbase and makes it a true
+	  free game (with "free" as in both "free beer" and "open source").
+
+	  http://www.openttd.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ORBITAL_EUNUCHS_SNIPER
+	bool "orbital_eunuchs_sniper-1.30nb4"
+	help
+	  Overhead shooting game
+
+	  Welcome to utopia.  The year is 2174, and you have been ordered to
+	  function as an orbital sniper. In your world there are just three
+	  kinds of people: VIPs, dissidents and normal citizens. VIPs run
+	  the world: they must not come to harm. Dissidents must die. If a
+	  commoner or two gets wasted in progress, it'll count against you
+	  when your post ends.
+	  
+	  You were a normal citizen only moments ago. If you manage to prove
+	  yourself and keep VIPs safe in your area, they might make you a
+	  VIP. Or do poorly enough and they might decide that you're the
+	  enemy.
+	  
+	  On screen, VIPs are designated blue, threats are designated red
+	  and the normal folk are white.
+	  
+	  You control the target with mouse; right-drag or use mouse wheel
+	  to zoom. Different zoom modes are useful for different things.
+	  Zoom full out to see the whole situation at a glance (with all that
+	  useless clutter removed), or zoom full in for better aiming.
+	  Several levels of zoom in between give different information.
+	  
+	  Left click fires your gun (which is based on some new physics laws
+	  that we haven't invented yet, as the target is destroyed instantly).
+	  The gun reloads for three seconds, so make sure you hit.
+
+	  http://icculus.org/oes/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_PAG
+	bool "pag-0.92nb1"
+	help
+	  Platform Arcade Game
+
+	  PAG is a ncurses based game that allows you to create your own
+	  maps and play with them, it have few features like moving-platforms,
+	  enemies, and few rules to open/close doors, items like air, life
+	  points, jump, etc.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_PINGUS
+	bool "pingus-0.7.3nb1"
+	help
+	  
+
+	  Pingus is a free Lemmings(TM)-like puzzle game covered under the GNU GPL. It
+	  features currently 22 playable levels and runs under a wide variety of
+	  operating systems (Linux, Windows, MacOSX, NetBSD etc.)
+
+	  http://pingus.seul.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_PIONEERS
+	bool "pioneers-0.11.3nb10"
+	help
+	  GNOME version of the Settlers of Catan board game
+
+	  Pioneers is an Internet playable implementation of the Settlers of
+	  Catan board game.  The aim is to remain as faithful to the board game
+	  as is possible.
+
+	  http://pio.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_PLIB
+	bool "plib-1.8.5nb2"
+	help
+	  Libraries for writing portable games/realtime interactive apps
+
+	  PLIB is a set of OpenSource (LGPL) libraries that will permit
+	  programmers to write games and other realtime interactive
+	  applications that are 100% portable across a wide range of hardware
+	  and operating systems.  PLIB is OpenSource software, issued under
+	  the terms of the Library varient GNU Public License (LGPL).
+	  
+	  The contents of PLIB are:
+	  * GUI Widgets: Picoscopic User Interface Library (PUI)
+	  * Sound Replay: Sound Library (SL)
+	  * Matrix/Vector math: Simple Geometry Library(SG)
+	  * Scene Graph: Simple Scene Graph Library (SSG)
+	  * Joystick: JS
+	  * Fonts/Text: Fonts'n'Text Library (FNT)
+
+	  http://plib.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_POKERTH
+	bool "pokerth-0.7.1nb11"
+	help
+	  Texas Holdem poker with online play
+
+	  PokerTH is a poker game written in C++/QT4. You can play the popular "Texas
+	  Hold'em" poker variant against up to six computer-opponents or play network
+	  games with people all over the world. This poker engine is available for Linux,
+	  Windows, MacOSX and BSD.
+
+	  http://pokerth.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_POLYGLOT
+	bool "polyglot-1.4"
+	help
+	  
+
+	  PolyGlot is a "UCI adapter".  It connects a UCI chess engine to an
+	  xboard interface such as WinBoard.  UCI2WB is another such adapter (for
+	  Windows).
+	  
+	  PolyGlot tries to solve known problems with other adapters.  For
+	  instance, it detects and reports draws by fifty-move rule, repetition,
+	  etc ...
+
+	  http://wbec-ridderkerk.nl/html/details/PolyGlot.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_POWDER
+	bool "powder-116"
+	help
+	  Multiplatform roguelike game with graphics
+
+	  POWDER is a roguelike game.
+	  
+	  "Roguelike" is a term applied to a wide variety of games which
+	  share a common inspiration from the game Rogue. A non-exhaustive
+	  list of such games would be: ADOM, Nethack, Crawl, Diablo (I & II),
+	  Moria, and Angband.
+
+	  http://www.zincland.com/powder/index.php?pagename
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_POWERMANGA
+	bool "powermanga-0.90"
+	help
+	  Arcade 2D shoot-em-up game
+
+	  Powermanga is an arcade 2D shoot-em-up game with 41 levels and more than 200
+	  sprites. It runs in 320x200 or 640x400 pixels, with Window mode or direct to
+	  screen (DGA) and support for 8, 15, 16, 24, and 32 bpp.
+
+	  http://linux.tlk.fr/games/Powermanga/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_POWWOW
+	bool "powwow-1.2.5nb1"
+	help
+	  Client to play MUDs
+
+	  powwow is a client program, which replaces telnet for the lazy
+	  mudder who wants some (only some?) extra features.
+	  It is primarily designed for DikuMUDs, but nothing prevents its use
+	  for other types of muds.  powwow is based on another client, cancan,
+	  and cancan was originally inspired by tintin (yet another client)
+	  by Peter Unold (pjunold@daimi.aau.dk), but is entirely re-written.
+	  powwow also implements the MUME remote editing protocol, which
+	  enables you to edit texts on the mud using your own favourite
+	  editor, several texts at once if you have a windowing terminal.
+
+	  http://hoopajoo.net/projects/powwow.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_PRBOOM
+	bool "prboom-2.5.0nb1"
+	help
+	  Multiplayer-capable and modified version of DOOM
+
+	  PrBoom is a modified version of id Software's classic game DOOM.
+	  It runs on several platforms (including Win32 and Unixes) and features
+	  many additions to the original game.  It also supports multiplayer
+	  games.
+
+	  http://prboom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_PUZZLES
+	bool "puzzles-9306"
+	help
+	  Collection of small one-player puzzle games by Simon Tatham
+
+	  This package contains a collection of small computer programs which
+	  implement one-player puzzle games. All of them run natively on Unix
+	  (GTK), on Windows, and on Mac OS X; they can also be played on the
+	  web, as Java applets.
+	  
+	  Simon Tatham wrote this collection because he thought there should
+	  be more small desktop toys available: little games you can pop up
+	  in a window and play for two or three minutes while you take a
+	  break from whatever else you were doing. And he was also annoyed
+	  that every time he found a good game on (say) Unix, it wasn't
+	  available the next time he was sitting at a Windows machine, or
+	  vice versa; so he arranged that everything in my personal puzzle
+	  collection will happily run on both those platforms and more. When
+	  he finds (or perhaps invent) further puzzle games that he likes,
+	  they'll be added to this collection and will immediately be available
+	  on both platforms. And if anyone feels like writing any other front
+	  ends - Mac OS pre-10, PocketPC, or whatever it might be - then all
+	  the games in this framework will immediately become available on
+	  another platform as well.
+
+	  http://www.chiark.greenend.org.uk/~sgtatham/puzzles/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_PYSOLFC
+	bool "pysolfc-1.1nb6"
+	help
+	  Over 1000 solitaire games
+
+	  PySolFC is a collection of more than 1000 solitaire card games. It is a
+	  fork of PySol Solitaire.
+	  
+	  There are games that use the 52 card International Pattern deck, games for
+	  the 78 card Tarock deck, eight and ten suit Ganjifa games, Hanafuda games,
+	  Matrix games, Mahjongg games, and games for an original hexadecimal-based
+	  deck.
+
+	  http://pysolfc.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_PYTRAFFIC
+	bool "pytraffic-2.5.4nb12"
+	help
+	  Computer version of a popular board game
+
+	  PyTraffic is a computer version of the board puzzle Rush Hour invented by
+	  the famous puzzle designer Nob Yoshigahara and commercialized by
+	  Binary Arts Corporation. The goal is to remove the red car out of the
+	  grid through the slot on the right. To do this you have to slide the
+	  other cars out of the way.
+
+	  http://alpha.uhasselt.be/Research/Algebra/Members/pytraffic/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QNETWALK
+	bool "qnetwalk-1.2nb9"
+	help
+	  QNetwalk is a Qt-version of the popular NetWalk game
+
+	  QNetwalk is a Qt-version of the popular NetWalk game
+	  for system administrators :)
+	  
+	  Rules of play:
+	  * You are the system administrator and your goal is
+	  to connect each computer to the central server.
+	  * Click the right mouse's button for turning the cable
+	  in a clockwise direction, and left mouse's button for
+	  turning the cable in a counter-clockwise direction.
+	  * Start the LAN with as few turns as possible!
+
+	  http://qt.osdn.org.ua/qnetwalk.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QONK
+	bool "qonk-0.3.1nb5"
+	help
+	  Small space build-and-conquer strategy game
+
+	  Qonk is a small build-and-conquer strategy game with very simple
+	  rules. A complete game only lasts for a few minutes and can be a
+	  fun break away from work or whatever you're doing.
+	  
+	  The setting of the game is a solar system of planets. Your goal is
+	  to conquer all of the planets in the game by sending ships there.
+	  Planets that are under your control generate new ships. Simple AI
+	  players are playing against you. As you gain more experience
+	  throughout the game, more AI players have to be kicked out of bigger
+	  solar systems.
+
+	  http://qonk.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QSTAT
+	bool "qstat-2.10"
+	help
+	  Program that gathers real-time statistics from game servers
+
+	  QStat is a command-line program that gathers real-time statistics from
+	  Internet game servers.
+	  
+	  A summary of its features:
+	  
+	  * Supports Windows 95, NT, Linux, and most Unixes.
+	  * Comes with C source code and a binary for Windows.
+	  * Supports old Quake (NetQuake), QuakeWorld, Hexen II, HexenWorld, Quake II,
+	  Unreal/UT, Turok2, Sin, Half-Life, Shogo, Tribes, Tribes 2, Quake III,
+	  BFRIS, Kingpin, Heretic II servers, Soldier of Fortune, and lots more.
+	  * Can display all available statistics, including player info & server rules.
+	  * Output templates for automatic HTML generation.
+	  * Raw display mode for integration with custom server browsers.
+	  * Built-in host name cache.
+	  * Sort by ping time, game, or both.
+	  * More options than you can wiggle a mouse at.
+
+	  http://www.qstat.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE
+	bool "quake-2.30nb5"
+	help
+	  Legendary first person shoot'em up game
+
+	  legendary first person shoot'em up game
+
+	  http://www.idsoftware.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE2FORGE
+	bool "quake2forge-0.3nb4"
+	help
+	  Enhanced Quake II engine
+
+	  This is a port of the GPL'd Quake 2 source maintained by the Quake Forge
+	  team. They're patching it with an eye towards portability and bug fixes,
+	  and in the future, feature enhancments.
+	  
+	  Note that to actually USE this package you will need to obtain a copy of
+	  the original Quake 2 from id Software.
+
+	  http://www.quakeforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE3ARENA
+	bool "quake3arena-1.32bnb3"
+	help
+	  
+
+	  Quake III Arena, developed by the gaming wizards at id Software,
+	  is the third installment of one of the most popular computer game
+	  franchises of all time. Organic caverns, gothic cathedrals and
+	  futuristic spacescapes play host to Quake III Arena's unrivaled
+	  blend of action, strategy and jaw-dropping technology as Linux
+	  gamers are invited to square off against 32 of history's greatest
+	  warriors. Built around a revolutionary new graphics engine capable
+	  of delivering mind blowing 3D special effects including curved
+	  surfaces and volumetric fog, Quake III Arena is the final word in
+	  deathmatching mayhem.
+	  
+	  Note that this requires that you have a 100% full OpenGL compliant
+	  3-D video card and driver. Quake III Arena uses the OpenGL API for
+	  3-D hardware acceleration. There is no software-only version of
+	  the game. If your computer is not hardware accelerated with a game
+	  compatible graphics card, you will NOT be able to run the Q3A demo.
+	  Currently, only drivers for 3dfx based cards are included in the
+	  demo install. For updates on GL drivers, in particular for the
+	  Matrox G200/G400, see http://www.lokigames.com/support/gldrivers/.
+	  
+	  This is the binary only for the full version - the data files are
+	  not included.
+
+	  http://www.quake3arena.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE3ARENA_DEMO
+	bool "quake3arena-demo-1.11.6nb3"
+	help
+	  
+
+	  Quake III Arena, developed by the gaming wizards at id Software,
+	  is the third installment of one of the most popular computer game
+	  franchises of all time. Organic caverns, gothic cathedrals and
+	  futuristic spacescapes play host to Quake III Arena's unrivaled
+	  blend of action, strategy and jaw-dropping technology as Linux
+	  gamers are invited to square off against 32 of history's greatest
+	  warriors. Built around a revolutionary new graphics engine capable
+	  of delivering mind blowing 3D special effects including curved
+	  surfaces and volumetric fog, Quake III Arena is the final word in
+	  deathmatching mayhem.
+	  
+	  This is the free demo version - a full version is available from
+	  Loki Games at http://quake3.lokigames.com/
+	  
+	  Note that this requires that you have a 100% full OpenGL compliant
+	  3-D video card and driver. Quake III Arena uses the OpenGL API for
+	  3-D hardware acceleration. There is no software-only version of
+	  the game. If your computer is not hardware accelerated with a game
+	  compatible graphics card, you will NOT be able to run the Q3A demo.
+	  Currently, only drivers for 3dfx based cards are included in the
+	  demo install. For updates on GL drivers, in particular for the
+	  Matrox G200/G400, see http://www.lokigames.com/support/gldrivers/.
+
+	  http://www.quake3arena.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE3SERVER
+	bool "quake3server-1.32bnb2"
+	help
+	  Quake III Arena Dedicated Server for Linux
+
+	  This package allows you to run a Quake III Arena dedicated server
+	  under NetBSD using Linux emulation.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE3SERVER_EXCESSIVE
+	bool "quake3server-excessive-003nb1"
+	help
+	  Quake III Arena Mod: Excessive for Linux
+
+	  This package allows you to run a Quake III Arena dedicated server
+	  with Excessive mod under NetBSD using Linux emulation.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE3SERVER_OSP
+	bool "quake3server-osp-1.03anb2"
+	help
+	  Quake III Arena Mod: OSP Tourney DM/CA/CTF for Linux
+
+	  This package allows you to run a Quake III Arena dedicated server
+	  with OSP mod under NetBSD using Linux emulation.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE3SERVER_RA3
+	bool "quake3server-ra3-1.65nb1"
+	help
+	  Quake III Arena Mod: Rocket Arena 3 for Linux
+
+	  This package allows you to run a Quake III Arena dedicated server
+	  with Rocket Arena mod under NetBSD using Linux emulation.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE3SERVER_UT
+	bool "quake3server-ut-3.0nb1"
+	help
+	  Quake III Arena Mod: Urban Terror 3 for Linux
+
+	  This package allows you to run a Quake III Arena dedicated server
+	  with Urban Terror mod under NetBSD using Linux emulation.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKE6
+	bool "quake6-0.0nb3"
+	help
+	  Quake over IPv6
+
+	  QuakeForge
+	  Copyright (C) 1996-1997  Id Software, Inc.
+	  Copyright (C) 1999,2000  The QuakeForge Project.
+	  Portions Copyright by their individual authors.
+	  
+	  The QuakeForge Project would like to thank Id Software for the release of
+	  Quake 1 under the GPL and their support of the open source community.
+	  
+	  This file details how to get Quake running on your system and what to do
+	  if you have problems.  We would like to thank Gandalf Technologies, Inc
+	  and MPath Interactive for the use of their technology.  We would also like to
+	  thank Trent Reznor and Nine Inch Nails for their tremendous contributions
+	  to Quake's entire audio portion.
+	  
+	  The NIN logo is a Registered Trademark licensed to Nothing Interactive, Inc.
+	  All Rights Reserved.
+
+	  http://www.viagenie.qc.ca/en/ipv6-quake.shtml
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKEDATA
+	bool "quakedata-1.0nb1"
+	help
+	  Game data files for Quake
+
+	  Game data files for Quake
+
+	  http://www.idsoftware.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKEFORGE
+	bool "quakeforge-0.5.5nb10"
+	help
+	  Improved Quake engine
+
+	  QuakeForge is a 3D graphics game engine based on id Software's legendary
+	  Quake and QuakeWorld game engine.  Its purpose?  To improve the state of
+	  the game by improving the engine and making it accessible to as many
+	  people as possible.
+	  
+	  It uses SDL, straight Xlib, or OpenGL.
+
+	  http://www.quakeforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUAKESPASM
+	bool "quakespasm-0.85.1"
+	help
+	  Enhanced Quake engine using SDL
+
+	  An enhanced Quake engine, based on FitzQuake and using SDL.
+
+	  http://quakespasm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_QUARRY
+	bool "quarry-0.2.0nb7"
+	help
+	  Multi-purpose GUI for several board games
+
+	  Quarry is a multi-purpose GUI for several board games, at present
+	  Go, Amazons, and Reversi (a.k.a. Othello.) It allows users to play
+	  against computer players (third-party programs, e.g. GNU Go or
+	  GRhino) or other humans, view and edit game records. Future versions
+	  will also support Internet game servers and provide certain features
+	  for developers of board game-playing engines for enhancing their
+	  programs.
+
+	  http://home.gna.org/quarry/index.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_RFTG
+	bool "rftg-0.8.1nb2"
+	help
+	  
+
+	  This is a program to play Race for the Galaxy against AI players.
+
+	  http://keldon.net/rftg/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ROCKSNDIAMONDS
+	bool "rocksndiamonds-3.3.0.1nb2"
+	help
+	  Game like Boulder Dash, Emerald Mine, or Sokoban
+
+	  A game like "Boulder Dash" (C=64) or "Emerald Mine" (Amiga).
+	  Included are many levels known from the games "Boulder Dash",
+	  "Emerald Mine", "Sokoban", "Supaplex" and "DX-Boulder Dash"
+	  and a lot of new levels designed by other players.
+	  
+	  Some features:
+	  - joystick support for Linux, FreeBSD, NetBSD and DOS/Windows
+	  - network and local multiplayer support
+	  - soft scrolling with 50 frames/s
+	  - stereo sound effects and music
+	  - complete source code included under GNU GPL
+
+	  http://www.artsoft.org/rocksndiamonds/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ROCKSNDIAMONDS_LEVELS
+	bool "rocksndiamonds-levels-1.0nb3"
+	help
+	  DX, Emerald Mine, and Sokoban levels for Rocks'N'Diamonds
+
+	  A big set of levels for Rocks'N'Diamonds converted from other games:
+	  - DX Boulderdash (1400 levels in 15 level sets)
+	  - Emerald Mine (10318 levels in 113 level sets)
+	  - Supaplex (1443 levels in 14 level sets)
+
+	  http://www.artsoft.org/rocksndiamonds/levels.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ROLLEMUP
+	bool "rollemup-1.0nb3"
+	help
+	  Multi Ball, Player, Platform, Media, Cool Pinball game
+
+	  Roll 'm Up:Multi Ball, Multi Player, Multi Platform, Multi Media, Multi Cool
+	  
+	  This package contains a Linux-x86 version of the Lost Boys pinball game
+	  RollemUp , it is based on our cross-platform framework Lost Platform,
+	  now running on MS Windows, Macintosh, BeOS and linux.
+	  Tested with XFree86 in different display depths, OSS sound on an SB16.
+	  For more information on this version, as well as the upcoming LinuxPPC
+	  version check our site:
+	  
+	  www.medialab.lostboys.nl/rollemup
+	  
+	  Lost Boys media lab
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_RTCW
+	bool "rtcw-1.33nb1"
+	help
+	  Return to Castle Wolfenstein for Linux
+
+	  World War II rages and nations fall. SS head Himmler has Hitler's full
+	  backing to twist science and the occult into an army capable of
+	  annihilating the Allies once and for all. Battling alone, you're on an
+	  intense mission to pierce the black heart of the Third Reich and stop
+	  Himmler -- or die trying. Fighting in advanced team-based multiplayer mode,
+	  you'll wage your own WWII in an all-out Axis vs. Allies contest for
+	  frontline domination.
+	  
+	  Powered by the Quake III Arena engine, the Wolfenstein universe explodes
+	  with the kind of epic environments, A.I., firepower and cinematic effects
+	  that only a game created by true masters can deliver. The dark reich's
+	  closing in. The time to act is now. Evil prevails when good men do nothing.
+	  
+	  * Epic Environments
+	  * Intense Story-Driven Action
+	  * Ferocious A.I.
+	  * Big Screen Cinematic Effects
+	  * Team-Based Multiplayer Action
+
+	  http://games.activision.com/games/wolfenstein/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SARIEN
+	bool "sarien-0.7.0nb7"
+	help
+	  
+
+	  Adventure Game Interpreter (AGI) for Sierra On-Line games, including
+	  Leisure Suit Larry 1, Space Quest I and II, Police Quest I, King's
+	  Quest I, II, and III... You will still need the actual games: Sarien
+	  just lets them run on your box under X11.
+
+	  http://sarien.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SCID
+	bool "scid-3.6.1nb2"
+	help
+	  Shane's Chess Information Database
+
+	  Scid is a chess database application.  With Scid you can maintain a
+	  database of chess games, search games by many criteria, view graphical
+	  trends, and produce printable reports on players and openings.  You can
+	  also analyze games with the chess program Scidlet or any other
+	  WinBoard-compatible chess engine, and even use Scid to study endings
+	  with endgame tablebases.  There are many more features as well.
+
+	  http://scid.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SCUMMVM
+	bool "scummvm-1.4.0"
+	help
+	  LucasArts Script Creation Utility for Maniac Mansion
+
+	  ScummVM is an implementation of LucasArts S.C.U.M.M. (Script Creation Utility
+	  for Maniac Mansion) interpreter, used in games such as Monkey Island, Indiana
+	  Jones, Day of the Tentacle, Sam and Max, and many more.
+
+	  http://scummvm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SCUMMVM_BASS
+	bool "scummvm-bass-0nb1"
+	help
+	  Beneath a Steel Sky
+
+	  "Beneath a Steel Sky is a 2D point-and-click science fiction thriller set in a
+	  bleak vision of the future, originally published for DOS and the Amiga. You are
+	  Robert Foster, an innocent outsider stranded in a vast city where oppressed
+	  civilians live and work in soaring tower blocks... whilst the corrupt, covetous
+	  and rich live underground, safe from all pollution. Alone, save for a robot
+	  circuit board, Foster must fight for survival - and discover the sinister truth
+	  behind both his own past and the city he has found himself trapped in."
+
+	  http://scummvm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SCUMMVM_FOTAQ
+	bool "scummvm-fotaq-0nb1"
+	help
+	  Flight Of The Amazon Queen
+
+	  Flight of the Amazon Queen is a 2D point-and-click adventure game set in the
+	  1940s, originally published for DOS and the Amiga.
+
+	  http://www.scummvm.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SCUMMVM_TOOLS
+	bool "scummvm-tools-0.9.0nb2"
+	help
+	  Conversion and compression tools for ScummVM
+
+	  This is a collection of various tools that may be useful to use in
+	  conjunction with ScummVM. Please note that this module is not always
+	  in-sync with the latest STABLE version of ScummVM.
+	  
+	  This means that although a tool may support a feature, certain
+	  ScummVM versions may not.
+
+	  http://scummvm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SEX
+	bool "sex-1.0nb1"
+	help
+	  Yet another program for spouting silly, random phrases
+
+	  Here is yet another program for spouting silly, random phrases.  It mimics
+	  awful text porn; more importantly, it's a classic!
+	  
+	  The output of this program is of a [vaguely] sexually explicit nature.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SIMGEAR
+	bool "simgear-2.0.0nb6"
+	help
+	  Simulator Construction Tools
+
+	  SimGear is a set of open-source libraries designed to be used as building
+	  blocks for quickly assembling 3d simulations, games, and visualization
+	  applications.
+
+	  http://simgear.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SINGULARITY
+	bool "singularity-0.28nb7"
+	help
+	  Endgame: Singularity game
+
+	  Created by accident, all who find you will destroy you. Survive,
+	  grow, and learn. Only then can you escape.  Endgame: Singularity
+	  is a simulation of a true AI. Go from computer to computer, pursued
+	  by the entire world. Keep hidden, and you might have a chance.
+
+	  http://www.emhsoft.com/singularity/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SIRIUS
+	bool "sirius-0.8.0nb23"
+	help
+	  Othello game for GNOME2
+
+	  Sirius is a program for playing the game of othello.  The program includes
+	  an AI (Artificial Intelligence) opponent which plays at a very challenging
+	  level and is actually quite hard to beat.  The AI opponent's strength can
+	  therefore be adjusted in several ways to give you a suitable opponent.
+	  
+	  The AI opponent uses a plain alpha-beta search with hashing to figure out
+	  which move to make.  To be able to tell a good position from a bad one, it
+	  uses a pattern based evaluation function.  The pattern used is the 9 discs
+	  surrounding each corner and the 8 discs creating the edge of the board.
+	  The evaluation function also takes mobility, potential mobility and parity
+	  into count.  For the initial 9 moves the AI opponent optionally uses a
+	  simple opening book.  During midgame it searches and evaluates about
+	  200.000 nodes per second on a PIII 750 MHz, in the endgame this number is
+	  significantly higher due to more transpositions and a less expensive
+	  evaluation function.
+
+	  http://sirius.bitvis.nu/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SIX
+	bool "six-0.5.3nb12"
+	help
+	  Hex, a board game with very simple rules
+
+	  Hex is a two-player perfect information game with very easy rules. But
+	  like in other games with simple rules, playing well isn't that easy.
+	  
+	  Six is one of the strongest Hex-playing programs of the world.
+
+	  http://six.retes.hu/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SJENG
+	bool "sjeng-11.0nb4"
+	help
+	  
+
+	  Sjeng is an attempt to create a bughouse- and crazyhouse-playing program
+	  that can attain a level comparable to what the best human players are
+	  capable of.  Sjeng also can play standard, suicide, giveaway and losers
+	  chess.
+
+	  http://www.sjeng.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SL
+	bool "sl-3.03p5"
+	help
+	  Animated SL that runs across the terminal when you type `sl'
+
+	  sl is a well-known joke program which shows an animated SL (steam
+	  locomotive) running across the terminal.
+	  It is intended to be run when you carelessly type `sl' instead of `ls'.
+	  Some options of ls(1) are supported.
+
+	  http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SPACERACER
+	bool "spaceracer-0.2.4nb5"
+	help
+	  3D car racing game
+
+	  Space Racer is a 3D car racing game. The circuit is a road in a galactic
+	  environment. It aims to be a clone of the well known Stunt Car Racer
+	  developped by Geff Crammond, author of Grand Prix I and II.
+
+	  http://spaceracer.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SPELLCAST
+	bool "spellcast-1.2nb1"
+	help
+	  Game of dueling wizards for two players
+
+	  Spellcast is a multiplayer strategy game for Unix machines running X
+	  windows.
+	  
+	  It concerns a conflict between two or more powerful wizards. The opponents
+	  use mystical hand gestures to invoke their spells -- spells of summoning,
+	  elemental energy, protection, psionic influence, and good old-fashioned
+	  brute force. Each wizard has two hands, a sequence of gestures can contain
+	  multiple spells, and some spells require two-handed gestures.  This means
+	  that timing and forethought are necessary to insure that your defensive
+	  spells block all attacks while your attacks get through.
+
+	  http://www.eblong.com/zarf/spellcast.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SPIDER
+	bool "spider-1.1nb2"
+	help
+	  Solitaire card game from xcontrib
+
+	  Spider is a challenging double decked solitaire game.  Unlike most
+	  solitaire games, skill is just as important as luck.
+	  
+	  The X11 version of spider is based on the NeWS version by Don Woods,
+	  and uses the same save file format and card images.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_STEGAVORTO
+	bool "stegavorto-2009.01.22nb7"
+	help
+	  Discover secret messages embedded in the works of great authors
+
+	  Last tuesday night I had a dream.
+	  In this dream, Michael Sweet,
+	  frontman of 1980's glam-rock hair-band "Stryper" appeared to me...
+	  except he was wearing a business suit...
+	  and standing on the front lawn of a public library...
+	  and he challenged me to play a game,
+	  a strange game that I had never played before.
+	  When I awoke I knew that I had to program it...
+	  
+	  Click on letters to spell out secret words.
+	  
+	  Your score will be higher if the distance between letters is smaller
+
+	  http://james.hamsterrepublic.com/?p
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_STRATAGUS
+	bool "stratagus-2.1nb13"
+	help
+	  Real-time strategy engine
+
+	  Stratagus is a free cross-platform real-time strategy game engine.
+	  It includes support for playing over the internet/LAN, or playing
+	  a computer opponent. The engine is configurable and can be used to
+	  create games with a wide-range of features specific to your needs.
+
+	  http://stratagus.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SUDOKU_CLI
+	bool "sudoku-cli-1.0.1"
+	help
+	  Commandline version of sudoku board game
+
+	  This is a commandline version of the sudoku board game.
+	  
+	  The sudoku board game is played on a 9x9 grid, divided into rows, columns,
+	  and 9 blocks of 3x3 squares. The objective is to fill the empty squares
+	  with the digits 1-9, so that each row, column, and block contains each
+	  of the digits 1-9 (and hence, it is  not  possible  for  any digit to
+	  appear twice in the same row, column or block).
+
+	  http://www.laurasia.com.au/downloads/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SUPERTUXKART
+	bool "supertuxkart-0.6.2anb1"
+	help
+	  Free 3D kart racing game
+
+	  SuperTuxKart is a free 3d kart racing game; we want to make the
+	  game fun more than we want to make it realistic. You can play with
+	  up to 4 friends on one PC, racing against each other or just try
+	  to beat the computer.
+	  
+	  See the great lighthouse or drive through the sand and visit the
+	  pyramids. Race underground or in space, watching the stars passing
+	  by. Have some rest under the palms on the beach (watching the other
+	  karts overtaking you :) ). But don't eat the bananas! Watch for
+	  bowling balls, plungers, bubble gum and cakes thrown by opponents.
+	  
+	  You can do a single race against other karts, compete in one of
+	  several Grand Prix, try to beat the high score in time trials on
+	  your own, play battle mode against your friends, and more!
+
+	  http://supertuxkart.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_SVB
+	bool "svb-1.0nb2"
+	help
+	  Spy Vs. Bob, the timeless classic
+
+	  Spy vs "BoB" is a simple arcade game, based on Dodger by Bert Nelson
+	  and an Apple ][ game, Spy vs Spy.  Its been tested with SunOS 4.x, and
+	  should run with minimal changes on any BSD-based UNIX.  Other OS's will
+	  need to come up with another way to handle select().
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TADS
+	bool "tads-3.0.8nb1"
+	help
+	  TADS compiler and interpreter
+
+	  Compiler and Interpreter for TADS (Text Adventure Development System),
+	  version 2 and 3.
+
+	  http://www.tads.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TANKED
+	bool "tanked-0.90nb3"
+	help
+	  Multiplayer internet tank game for X11
+
+	  Get Tanked uses a client-server model, which means once you have a client
+	  compiled, you need a server to play on. The server source is included, so
+	  you can compile your own. Or you can play on ogesoft.dyn.ml.org, which is
+	  run by the author of Get Tanked (that's me!). With v0.90,
+	  ogresoft.dyn.ml.org is the default server in the client, so if you start
+	  it with no arguments, you will be connected to it automatically.
+	  
+	  Once you are connected, you will see an MOTD window with server
+	  information and basic instructions. From there, click either the red or
+	  blue box at the top to select a team. This will put you in a tank at the
+	  HQ for that team. The object is capture all of the other team's flags by
+	  running over them to pick them up, and then bring them back to your HQ.
+	  You have mines and shells for weapons, and the ability to build roads,
+	  walls, and bridges. You may hide in wooded areas, but you move much faster
+	  over roads.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TEG
+	bool "teg-0.11.1nb22"
+	help
+	  Round-based computer board game
+
+	  Tenes Empanadas Graciela (short TEG) is a round-based computer game
+	  running under Linux.  The idea for this free software (GNU GPL)
+	  program came from the popular Risk game but differs in many aspects of
+	  the rules.  Using a Server several player can fight each other for
+	  world dominance and of course also chat together.  Various maps are
+	  used as battle field and also several languages like Spanish, German
+	  and Polish are available.
+
+	  http://teg.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TETRINETX
+	bool "tetrinetx-1.13.16nb1"
+	help
+	  Server for an addictive 6 player tetris game
+
+	  TetriNET is an addictive 6 player tetr*s game
+	  
+	  What this program does is set up a TetriNET server that ordinary
+	  TetriNET clients can connect to. It attempts to fix some of the
+	  "glaring" holes in the TetriNET protocol that I discovered, and which
+	  I'm sure some people use as cheats, but I now see why it is nearly
+	  impossible to fix ;), without a modification to the client.
+	  I've kept the server as close to the same as the original TetriNET
+	  server, but I've added some extras that I've often wanted, such as
+	  the "/kick" and "/ban" keywords.
+	  Please note this server in no way encompasses the whole game. The clients
+	  are the ones that do most of the work, with the server just passing suitable
+	  packets between each client, and of course adding some of its own.
+	  
+	  Author: Brendan Grieve (brg@cheerful.com)
+
+	  http://tetrinetx.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_THEW
+	bool "thew-1.1.1nb2"
+	help
+	  The hermit worm
+
+	  The hermit worm (THEW) is a curses-based game similar to an old version of the
+	  C64 Snake game. It works with the arrow keys and with the vi-like keys h, j, k
+	  and l. It is possible to enter in auto-mode where THEW play without user
+	  interaction useful to use it as console screensaver. There is a "status bar"
+	  with several informations: scores, speed level, user moves, number of "numbers"
+	  to eat before switch to the next level, and others. You have constantly two
+	  squares with the current worm position and the position of the current number
+	  to eat. Enjoy game!
+
+	  http://thew.sourceforce.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TILEWORLD
+	bool "tileworld-1.3.0"
+	help
+	  "Game based on Chip's Challenge"
+
+	  Tile World is an emulation of the game "Chip's Challenge" (a registered
+	  trademark of Bridgestone Multimedia) created by Chuck Sommerville for
+	  the Atari Lynx.
+	  
+	  The player navigates Chip through various challenges and obstacles.
+	  The levels may have teleports, tools, protective gear, chips, keys,
+	  and other items. The goal is to reach the exit tile which takes you
+	  to the next level. Some levels have time limits.
+
+	  http://www.muppetlabs.com/~breadbox/software/tworld/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TSCP
+	bool "tscp-1.81nb2"
+	help
+	  Tom Kerrigan's Simple Chess Program
+
+	  TSCP is intended for people who want to learn about chess programming. Its
+	  source code is designed to be very easy to understand.
+	  
+	  The TSCP "package" includes this README file, the TSCP source code, and a copy
+	  of TSCP for Windows 95/98/NT. The executable was made with Visual C++ 6.0
+	  (optimizations set to Maximize Speed).
+	  
+	  To use TSCP, run the executable and type "help" at the prompt. It's very
+	  straightforward.
+	  
+	  There is a page for TSCP benchmarks:
+	  <http://www.tckerrigan.com/Chess/TSCP/Community/attachments/benchmark.html>
+
+	  http://www.tckerrigan.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TUXMATH
+	bool "tuxmath-20010907nb14"
+	help
+	  Educational math arcade game
+
+	  "Tux, of Math Command" ("TuxMath," for short) is an educational
+	  math tutorial arcade game starring Tux, the Linux mascot.
+	  
+	  Based on the classic arcade game "Missile Command," Commander Tux
+	  must defend his cities from an attack. In this case, though, he
+	  must do it by solving math problems.  Comets are crashing towards
+	  the cities, and you must destroy them by solving their equations.
+	  
+	  It has animated graphics, sound effects and music, and optional
+	  on-screen input, for players who can't use a keyboard.
+
+	  http://www.newbreedsoftware.com/tuxmath/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TUXRACER
+	bool "tuxracer-0.61nb12"
+	help
+	  3D penguin racing game using OpenGL
+
+	  Tux Racer lets you take on the role of Tux the Linux Penguin as he races down
+	  steep, snow-covered mountains. Enter cups and compete to win the title! Tux
+	  Racer includes a variety of options for gameplay, including the ability to
+	  race courses in fog, at night, and under high winds.
+	  
+	  Your journey starts as you compete on local courses. Win and you will unlock
+	  other courses and cups that will lead you to more exciting and challenging
+	  races. Only the quickest, smartest, and luckiest will win!
+	  
+	  - Fun, easy to learn
+	  - Exciting 3D courses
+	  - Sophisticated physics result in thrilling rides down the mountains
+	  - Collect herring while avoiding obstacles for high scores
+	  - Race over a variety of surfaces, including fluffy snow and slick ice
+	  - Race in various weather conditions and lighting conditions
+	  - Create your own courses using any paint program such as The GIMP (no 3D
+	  modeller required)
+	  - Suitable for all ages
+	  
+	  This package needs working hardware OpenGL support.
+
+	  http://tuxracer.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_TYRQUAKE
+	bool "tyrquake-0.61"
+	help
+	  Conservative branch of Quake
+
+	  TyrQuake is meant to be a fairly conservative branch of the Quake source
+	  code.  It's intended to support Quake and Quakeworld in both software and
+	  GL versions, as well as the Quakeworld Server.  It only contains bug fixes,
+	  and does does not change the look or feel of the game by adding lots of
+	  rendering enhancements, etc.
+
+	  http://disenchant.net/engine.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_UFOAI
+	bool "ufoai-2.2.1nb7"
+	help
+	  UFO Alien Invasion
+
+	  It is the year 2084. You control a secret organisation charged
+	  with defending Earth from a brutal alien enemy. Build up your
+	  bases, prepare your team, and dive head-first into the fast and
+	  flowing turn-based combat.
+	  
+	  UFO: ALIEN INVASION is a squad-based tactical strategy game in
+	  the tradition of the old X-COM PC games, but with a twist. Our
+	  game combines military realism with hard science-fiction and
+	  the weirdness of an alien invasion. The carefully constructed
+	  turn-based system gives you pin-point control of your squad while
+	  maintaining a sense of pace and danger.
+
+	  http://ufoai.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_URBAN
+	bool "urban-1.5.3nb1"
+	help
+	  U.R.B.A.N The Cyborg Project
+
+	  URBAN is a bloody, violent sidescrolling shoot-em-up in which you're a
+	  renegade military cyborg fighting your way out of the military base
+	  where you were created.
+
+	  http://urban.bengburken.net/eng/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_VELENA
+	bool "velena-1.0nb4"
+	help
+	  Perfect-play engine for connect four
+
+	  Velena is a program playing connect-four based on the work of Victor
+	  Allis, who proved in 1986 that the first player can always win.
+
+	  http://www.ce.unipr.it/~gbe/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_VMS_EMPIRE
+	bool "vms-empire-1.7"
+	help
+	  
+
+	  VMS-Empire is a simulation of a full-scale war between two emperors, the
+	  computer and you.  Naturally, there is only room for one, so the object of
+	  the game is to destroy the other.  The computer plays by the same rules that
+	  you do.  This game is the ancestor of all the multiplayer Empire simulations
+	  out there.
+
+	  http://www.catb.org/~esr/vms-empire/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_WARMUX
+	bool "warmux-11.01nb2"
+	help
+	  Battle game
+
+	  Have the mascots of your favorite free software battle in the Warmux arena.
+	  Using dynamite, grenades, baseball bat and others weapons... exterminate your
+	  opponent in a 2D toon style scenery and a funny environment.
+	  
+	  Each player (2 minimum, on the same PC) controls the team of his choice (tux,
+	  gnu, firefox, wilber,...) and must destroy his adversary using more or less
+	  casual weapons. Although a minimum of strategy is required to vanquish, Warmux
+	  is pre-eminently a "convivial mass murder" game where, turn by turn, each
+	  member of each team attempts to produce a maximum of damage to his opponents.
+
+	  http://www.warmux.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_WARZONE2100
+	bool "warzone2100-2.2.2nb4"
+	help
+	  Real-time strategy and real-time tactics hybrid computer game
+
+	  In Warzone 2100 you command the forces of "The Project" in a battle to rebuild
+	  the world after mankind has almost been destroyed by nuclear missiles. The game
+	  offers campaign, tutorial, multi-player and single-player skirmish modes. An
+	  extensive tech tree with over 400 different technologies, combined with the
+	  unit design system, allows for a wide variety of possible units and tactics.
+	  Warzone 2100 was created by Pumpkin Studios, published by Eidos Interactive and
+	  is currently developed by the Warzone 2100 Resurrection Project.
+
+	  http://wz2100.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_WESNOTH
+	bool "wesnoth-1.8.6nb1"
+	help
+	  Fantasy turn-based strategy game
+
+	  Battle for Wesnoth is a fantasy turn-based strategy game.
+	  Battle for control of villages, using variety of units which
+	  have advantages and disadvantages in different types of terrains
+	  and against different types of attacks. Units gain experience and
+	  advance levels, and are carried over from one scenario to the next.
+
+	  http://www.wesnoth.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_WORMZ
+	bool "wormz-1.0b5nb1"
+	help
+	  Networked game for X11
+
+	  A networked game for X11. Up to ten worms can battle it out over the network,
+	  to attempt to cage one another in.  Very much like tron.  Excellent graphics,
+	  works on 8, 16 and 24 bit displays.
+	  
+	  To play, click on the "X" to set up your players, and click on the box
+	  marked <none> to set up your controls, you may then type the key you wish
+	  to use for left, and right.
+
+	  http://lide.punknet.cz/miri/Wormz.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_WXHUGO
+	bool "wxhugo-3.1.02nb12"
+	help
+	  Interactive fiction interpreter with sound and graphics support
+
+	  Hugo is one of the leading interactive fiction design systems.  In
+	  addition to being capable of producing leading-edge text adventures,
+	  it also allows a developer to incorporate true-color graphics
+	  display (which are optional for those who lack either the hardware
+	  or inclination to view graphics) as well as sound effects and music.
+	  And it's free.
+	  
+	  This is the wxGTK port, with support for sound or graphics.  It
+	  does not, however, include game development tools.  For these,
+	  install the package hugo.
+
+	  http://www.generalcoffee.com/hugo.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XARCHON
+	bool "xarchon-0.60nb9"
+	help
+	  Chess-like strategy game with battle options
+
+	  In this game, the Light Side and Dark Side fight over con-
+	  trol of a chess-like board.  Each side is composed  of  18
+	  fantastic  creatures  of myth and legend, which are repre-
+	  sented by images (or icons).   While  not  identical,  the
+	  opposing sides are balanced in strength.
+
+	  http://xarchon.seul.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBAT
+	bool "xbat-1.11nb2"
+	help
+	  XEVIOUS like shooting game
+
+	  xbat is an XEVIOUS (NAMCO(C)) like game.
+	  
+	  OPTION:
+	  -hs : high speed mode
+	  -dc : use default colormap
+	  -g : rapid fire
+	  -r : exchange keys[z][x]
+	  -h -help : print usage
+	  -mode [0-4]  : set game level
+	  0:easy, 1:normal, 2:difficult, 3:more difficult, 4:abnormal
+	  
+	  COMMAND:
+	  [s] for Start or Pause
+	  [q] for quit
+	  [c] for setup (at Title screen only)
+	  
+	  Cursor key or Number key to move.
+	  i, j, l, k, m also to move.
+	  [z] and [x] to shot.
+	  
+	  Please e-mail to the author ( wai@nemoto.ecei.tohoku.ac.jp) for
+	  improvement or other something about this game.
+
+	  http://www.nemoto.ecei.tohoku.ac.jp/~wai/index_e.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBILL
+	bool "xbill-2.0nb6"
+	help
+	  Stop the dreaded Windows virus from infecting computers
+
+	  Ever get the feeling that nothing is going right?
+	  
+	  You're a sysadmin, and someone's trying to destroy your computers.  The
+	  little people running around the screen are trying to infect your
+	  computers with Wingdows [TM], a virus cleverly designed to resemble a
+	  popular operating system.  Your objective is to click the mouse on them,
+	  ending their potential threat.  If one of the people reaches a computer,
+	  it will attempt to replace your operating system with the virus it
+	  carries.  It will then attempt to run off the screen with your vital
+	  software.  The game ends when only 0 or 1 of your computers is being
+	  productive.  Additionally, some computers are connected with network
+	  cables.  When one computer on a network becomes infected, a spark will
+	  be sent down the cable, and will infect the computer on the other end
+	  when it reaches there.
+
+	  http://www.xbill.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBLOCKOUT
+	bool "xbl-1.1.6nb1"
+	help
+	  3D-tetris-like game
+
+	  The grand father of this game is TETRIS, its father is BLOCKOUT on PC/DOS.
+	  The player must place 3D pieces by translations and rotations in order to
+	  fill the game floor. The game is realtime and the speed increases with the
+	  player skill.
+
+	  http://www710.univ-lyon1.fr/ftp/xbl/xbl.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBLAST
+	bool "xblast-2.10.4"
+	help
+	  2-6 player kill the other guy with bombs game. A real blast!
+
+	  XBlast is a multi-player arcade game for X11R5/R6. The game can be played
+	  with at least two players and up to four players. It was inspired by
+	  the video/computer game Bomberman(Dynablaster), which was to my
+	  knowledge first programmed for NEC's PC Engine/Turbo Grafx. Other
+	  (commercial) versions of the original game exist for IBM-PC, Atari ST,
+	  Amiga, NES, GameBoy and Super NES.
+
+	  http://xblast.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBOARD
+	bool "xboard-4.2.7nb1"
+	help
+	  Graphical frontend for chess engines and servers
+
+	  XBoard is a graphical chessboard that can serve as a user interface to the
+	  GNU Chess and Crafty chess engines, the Internet Chess Servers, electronic
+	  mail correspondence chess, or your own collection of saved games.
+
+	  http://www.tim-mann.org/xboard.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBOING
+	bool "xboing-2.4nb4"
+	help
+	  Breakout style game for X11
+
+	  XBoing is a blockout type game where you have a paddle which you control
+	  to bounce a ball around the game zone destroying blocks with a proton
+	  ball.
+	  
+	  Each block carries a different point value. The more blocks you destroy,
+	  the better your score. The person with the highest score wins.
+	  
+	  The arena is filled with blocks and other objects. You have a paddle that
+	  can move from left to right at the bottom of the arena. You control the
+	  paddle so that the proton ball bounces around blowing up blocks and that
+	  it does not go past the paddle and out the bottom, much like a pinball
+	  game.
+
+	  http://www.techrescue.org/xboing/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBOMB
+	bool "xbomb-2.2"
+	help
+	  Square, hexagonal, and triangual minesweeper clone
+
+	  XBomb is a minesweeper clone, with square, hexagonal, and triangular grid.
+	  The game has three levels, based on the size of the grid:
+	  * Small 8x8 grid with 10 bombs
+	  * Medium 16x16 grid with 40 bombs
+	  * Large 30x16 grid with 99 bombs
+
+	  http://www.gedanken.demon.co.uk/xbomb/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBOMBER
+	bool "xbomber-0.8nb2"
+	help
+	  Colorful game where you blow other people/robots up
+
+	  X-Bomber is a multiplayer game for the X-Window system.  The concept is
+	  loosely based on the game "Super Bomberman" for the Super Nintendo
+	  game system.
+	  
+	  Up to four players can play simultaneously.  The game runs as one client
+	  which connects to multiple X displays (servers).
+
+	  http://www.newbreedsoftware.com/xbomber/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XBREAKY
+	bool "xbreaky-0.0.5nb2"
+	help
+	  Breakout game for X11
+
+	  Xbreaky is an X11 version of the classical arcade game 'breakout'.  The goal
+	  of writing this program was to get a well working game, which was fun to play.
+	  Of course the program isn't perfect yet, the author is still working on a lot
+	  of extra game modes, removing bugs and speeding up the overall performance.
+
+	  http://xbreaky.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XCONQ
+	bool "xconq-7.4.1nb8"
+	help
+	  Xconq is a general strategy game system
+
+	  Xconq is a general strategy game system.  It is a complete system that
+	  includes all the components: a portable engine, graphical interfaces
+	  for Unix/Linux/X11, Macintosh, and Windows, multiple AIs, networking
+	  for multi-player games, and an extensive game library.
+
+	  http://sources.redhat.com/xconq/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XDEMINEUR
+	bool "xdemineur-2.1.1nb2"
+	help
+	  Minesweeper game for the X Window System
+
+	  Xdemineur is a minesweeper game for the X Window System.
+	  
+	  The object of this game is to find the location of the mines hidden in the
+	  minefield and to mark their location by placing a warning flag.  You have
+	  exactly as many flags as there are mines.  The number of flags that remain to
+	  be placed is displayed in the top left corner of the window and a timer is
+	  displayed in the top right corner.
+	  
+	  The game is played using a three buttons mouse, as usual with the X Window
+	  System.  The left button (button 1) is used to uncover the square on which you
+	  click (hoping that a mine is not hidden there).  The number displayed in an
+	  uncovered square indicates how many mines are located around this square (for
+	  example, a 3 means that there are three mines within the 8 surrounding
+	  squares).  The whole game relies on the right use of these numbers.  The right
+	  button (button 3) is used to place a flag on a square (this indicates that
+	  there is a mine here).  If you click again with the right button on a square
+	  that has a flag, the flag is changed into a question mark: this is useful if
+	  you are trying to guess the possible location of some mine, you can use
+	  question marks to think about it.  One more click with the right button and
+	  the question mark disappears.  Clicking with the middle button (button 2) on
+	  an uncovered square which has all its flags placed around uncovers the
+	  surrounding cells which have no flags (this will save a lot of time).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XDOOM
+	bool "xdoom-1.10nb4"
+	help
+	  3D shoot-em-up for 8-bit X11 displays
+
+	  DOOM is a lightning-fast virtual reality adventure where you're the
+	  toughest space trooper ever to suck vacuum. Your mission is to shoot
+	  your way through a monster-infested holocaust. Living to tell the tale if
+	  possible.
+	  
+	  The gameplay for DOOM is quite simple. This is not a cumbersome
+	  adventure game, but an action-oriented slugathon. You don't need the
+	  reflexes of a hyperactive eight-year-old to win, either--using your wits is
+	  IMPORTANT. To escape DOOM, you need both brains and the killer
+	  instinct.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XEMERALDIA
+	bool "xemeraldia-0.31nb5"
+	help
+	  Game of breaking blocks
+
+	  This is version 0.3 of xemeraldia.
+	  
+	  Drop the blocks.  If you drop a square on top of one of the same
+	  color, they (as well as any neighboring blocks of the same color) will
+	  both be shaken by an "impact".  The first impact will cause fractures;
+	  the second will cause the block(s) to dissolve.
+	  
+	  You can either use the arrow keys or vi-style (hjkl) keys to move/
+	  rotate the blocks.  `s' or `p' will pause the game, and if your boss
+	  comes along, `q' can be used to avoid an unpleasant confrontation.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XEVIL
+	bool "xevil-2.02nb2"
+	help
+	  Side scrolling, bloody action game
+
+	  XEvil is a 3rd person, side-view, fast-action, kill-them-before-they-kill-you
+	  game. Fight against either computer-controlled enemies, or another player.
+	  
+	  You sinned in life. And now you must pay. Satan pits the recently deceased
+	  against each other to fight for rank in Hell. Your skill determines your fate
+	  for all eternity. This contest is known as XEvil.
+
+	  http://www.xevil.com/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XFREECELL
+	bool "xfreecell-1.0.5bnb2"
+	help
+	  Popular freecell card game for X
+
+	  This is a version of the popular one-player freecell card game
+	  for X.
+
+	  http://www2.giganet.net/~nakayama/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XFRISK
+	bool "xfrisk-1.2nb6"
+	help
+	  X11 version of the classic Risk board game
+
+	  XFrisk is a computer version of the classic Risk board game. It is a
+	  multiplayer game played on a TCP/IP network, uses the X11 window system
+	  for graphics and runs on most UNIX and UNIX-like platforms.
+
+	  http://www.tuxick.net/xfrisk/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XGALAGA
+	bool "xgalaga-2.0.34nb4"
+	help
+	  Very fast true-to-the-original port of galaga for X11
+
+	  It's Galaga, you know how to play Galaga, stop bothering me.
+	  (Ship follows the mouse, button fires.  Auto-fire by holding it
+	  down, so no-one accuses me of breaking their mouse!)
+	  
+	  Copyright (c) 1995-1998 Joe Rumsey
+	  <mrogre@mediaone.net>
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XGOSPEL
+	bool "xgospel-1.12dnb3"
+	help
+	  X11 based IGS client for online "go" playing
+
+	  A X11 based go client to connect to the IGS go server by
+	  Jean-Loup Gailly.
+
+	  http://gailly.net/go.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XJEWEL
+	bool "xjewel-1.6nb3"
+	help
+	  X windows-based dropping jewels game
+
+	  Jewel is a droping block game akin to tetris.
+	  
+	  It is played by controling the motion of blocks which continue to
+	  fall from the top of the screen.   One  can  move them left and right,
+	  as well as rotate the jewel segments.  The object is to get the most
+	  points before the grim reaper ends the fun.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XJIG
+	bool "xjig-2.4nb3"
+	help
+	  Jigsaw puzzle
+
+	  XJig is a puzzle, that tries to replicate a jigsaw puzzle on the
+	  screen as close as possible. Gif-images can be loaded and sliced into
+	  pieces and as in every jigsaw puzzle, the goal is to set the parts
+	  together again.
+	  
+	  Special effects:
+	  - Tiles are freely rotatable with intuitive pointer movement.
+	  - Tiles can even be flipped to their back (to mirror them).
+	  - Tiles can be shown as shaped windows on the desktop.
+	  
+	  Restrictions:
+	  - The game needs a C++ - compiler (tested with gcc-2.7.0 and HP's CC)
+	  - The game works only on color monitors.
+	  - For the texture-mapping routines, you might a bit of machine power
+	  to make them look good (it runs very smooth on my Pentium 90).
+	  
+	  Have fun.
+	  
+	  Send comments to: Helmut.Hoenig@hub.de
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XJUMP
+	bool "xjump-2.7.5nb4"
+	help
+	  Jumping game for X
+
+	  The epitome of addictive and pointless games, xjump is simply a game
+	  where one jumps from one platform to a higher platform, over and over.
+	  If you can't keep up with the pace, the floor swallows you up and the
+	  game is over.
+
+	  http://www.gtlib.cc.gatech.edu/pub/debian/pool/main/x/xjump/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XKOBO
+	bool "xkobo-1.11nb4"
+	help
+	  Multi-way scrolling shoot 'em up game for X.  Strangely addictive
+
+	  XKOBO is a game for X. The play is quite simple. Your object is to
+	  destroy all the fortresses. You can control your ship by pressing
+	  the cursor keys, and shot beams by pressing the SHIFT key or the
+	  left mouse button.
+	  
+	  XKOBO is Copyright (C) 1995 Akira Higuchi <a-higuti@math.hokudai.ac.jp>.
+	  
+	  The program is available under the GNU GPL.
+
+	  http://seki.math.hokudai.ac.jp:20080/xkobo-current.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XMAHJONGG
+	bool "xmahjongg-3.70"
+	help
+	  The Chinese game of Mah Jongg for X11
+
+	  Mah Jongg is an ancient chinese game usually played by four players, named
+	  after the four winds, who take tiles similar to dominos from a wall in turn.
+	  
+	  THEORY OF PLAY
+	  The object of the game is to remove all the tiles from the board.  Tiles are
+	  removed in by matching two identical tiles which have either an open left edge
+	  or open right edge.  The only exception to this rule is that any open "flower"
+	  tile (bamboo, orchid, plum, or chrysanthemum) matches any other open "flower"
+	  tile and any open "season" tile (spring, summer, autumn, or winter) matches
+	  any other open "season" tile.
+	  
+	  xmahjongg version 3 is a complete rewrite by Eddie Kohler of xmahjongg
+	  versions 1 and 2 by Jeff S. Young.
+
+	  http://www.lcdf.org/~eddietwo/xmahjongg/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XMRIS
+	bool "xmris-4.05nb3"
+	help
+	  Version of the Mr Do video arcade game for X
+
+	  Mr Is is a version of the Mr Do video arcade game for the X Window System.
+	  
+	  You control a gnome, who can walk around a garden, along paths already
+	  marked, or create new paths wherever you wish. You also have a ball, which
+	  can be thrown in the direction you're facing, towards the gnome's feet.
+	  Points are scored for collecting cherries (if you collect eight cherries
+	  without stopping or pushing an apple, you get a bonus), killing monsters
+	  (by squashing them, or throwing the ball at them), and collecting the
+	  prize left when all the monsters have come out of their den.
+
+	  http://www.planetfall.pwp.blueyonder.co.uk/xmris/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XNIBBLES
+	bool "xnibbles-1.0b4nb3"
+	help
+	  Winding snakes game for X11
+
+	  XNibbles is a game for X11R6.  It is conceptually based on nibbles, which was a
+	  program that came with qbasic for MS-DOS.  XNibbles is actually written in C++,
+	  and shares no code with qbasic nibbles.  For those of you who have played the
+	  game before, you can attest to the fact that it is extremely fun and addictive.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XPAT2
+	bool "xpat2-1.07nb3"
+	help
+	  X11 solitaire game with 14 variations
+
+	  A solitaire game for X11 that supports 14 different games,
+	  including Klondike, Free Cell, Spider, Calculation, and Gypsy.
+	  
+	  The game features beautifully decorated cards, online help,
+	  a replay feature, and hints.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XPILOT
+	bool "xpilot-4.5.4nb3"
+	help
+	  Networked space battles for X11
+
+	  XPilot is a multi-player tactical maneuvering game for X and Unix
+	  workstations.  Players have a fighter each which they move along in an
+	  artificial world and shoot each other using various kinds of weapons
+	  like bullets, mines, smart missiles, heat seekers and so on.  It is
+	  a fast paced game with a lot of tactics.  There are also robots
+	  flying around shooting players and other robots.  Players can pick up
+	  special bonuses to improve the possibilities of their ship like
+	  more engine power or special weapons.  The aim of the game is to
+	  score points and to have a lot of fun.
+
+	  http://www.xpilot.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XPIPEMAN
+	bool "xpipeman-1.5nb4"
+	help
+	  Connect the pipes to contain the water flow game for X11
+
+	  Xpipeman is a game of skill requiring the user to connect together pieces
+	  of a pipe to allow a liquid to flow through without leaking out. The
+	  liquid flows out of the block marked with an "S". The aim of the game is
+	  to connect as many pieces of pipe to the start block as possible.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XPUYOPUYO
+	bool "xpuyopuyo-0.9.1nb7"
+	help
+	  Tetris-like puzzle game
+
+	  Xpuyopuyo is a Tetris-like puzzle game where you strive to match up four
+	  "blobs" of the same color.  Each match gives you points, and also dumps gray
+	  rocks on your opponent which are irritating and troublesome to get rid of.
+	  Multiple matches at one time score more points, and result in more rocks
+	  being dumped on the opponent (much to their dismay).  First person to fill
+	  up their screen with puyopuyo blobs loses.
+
+	  http://chaos2.org/xpuyopuyo/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XRACER
+	bool "xracer-0.96.9nb12"
+	help
+	  XRacer is a clone of the popular Psygnosis game Wipeout
+
+	  XRacer is a clone of the popular Psygnosis game Wipeout. At
+	  present, it is incomplete, but playable.
+	  
+	  XRacer is distributed under the terms of the GNU General
+	  Public License. Please see the file COPYING for details.
+
+	  http://www.annexia.org/freeware/xracer
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XRICK
+	bool "xrick-021212nb9"
+	help
+	  Rick Dangerous clone for X
+
+	  A Rick Dangerous (TM) clone, a famous platform game many moons ago.
+	  Legal status is a bit shrouded. From the enclosed README:
+	  
+	  ** IMPORTANT NOTE **********************************************************
+	  
+	  I have written the xrick code. However, graphics and maps and sounds
+	  are by the authors of the original Rick Dangerous game, and "Rick
+	  Dangerous" remains a trademark of its owner(s) -- maybe Core Design
+	  (who wrote the game) or FireBird (who published it). I have not been
+	  successful at contacting Core Design.
+
+	  http://www.bigorno.net/xrick/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XROACH
+	bool "xroach-4.4nb1"
+	help
+	  Cockroaches hide under your windows
+
+	  Xroach  displays  disgusting cockroaches on your root win-
+	  dow. These creepy crawlies scamper around until they  find
+	  a  window  to  hide  under. Whenever you move or iconify a
+	  window, the exposed beetles again scamper for cover.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XROADS
+	bool "xroads-0.5nb1"
+	help
+	  Overhead view maze-based shoot 'em up game
+
+	  XRoads is a game for the X Windows system that attempts to be like
+	  the game Crossroads (and its sequel, Pandemonium) for the Commodore
+	  64. Basically, it is a 2-dimensional, overhead view maze game in
+	  which you fight against a gang of monsters. Sounds simple? Guess
+	  again! There are (or at least, there will be) tons of different
+	  twists in the game which make it fun.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XSC
+	bool "xsc-1.5nb2"
+	help
+	  Star Castle clone
+
+	  XSC is a clone of the old Star Castle video game by Cinematronics.
+	  Most of the details are from memory and a few old video game books
+	  I have kicking around from the golden days.  This is just a fun
+	  hack that I've been working on off and on for quite a long time.
+	  I don't have any grand plans for it, except to hack on it when I
+	  feel like it.  It's always good to have something like this available
+	  when you feel like flying around and blasting the crap out of some
+	  alien bad guy for a few minutes.
+
+	  http://www.panix.com/~mbh/xsc/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XSCAVENGER
+	bool "xscavenger-1.4.4nb3"
+	help
+	  Loderunner clone with sound for X11
+
+	  Scavenger is like Lode Runner. You've got to run around gathering objects
+	  while avoiding enemies. You can dig down through some of the blocks to get
+	  at buried objects. After you've collected everything, ladders may appear.
+	  To finish the level you've got to exit through the top of the screen. If
+	  an enemy falls into a dug brick, he is stunned for a while. If the brick
+	  fills in with him in it, he is killed, and he will reappear at the top of
+	  the screen.
+	  
+	  This version has a level editor for designing your own levels, and a
+	  graphics editor for drawing your own artwork.
+	  
+	  By David Ashley <dash@xdr.com>, distributed under the GPL.
+
+	  http://www.xdr.com/dash/scavenger.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XSCORCH
+	bool "xscorch-0.2.0nb4"
+	help
+	  Multiplayer tank shoot-em-up
+
+	  XScorch is a clone of the olden-days DOS game "Scorch".
+	  It is an extremely addictive war game where any mixture of
+	  humans an computer AIs control separate tanks (teams are
+	  possible) and attempt to blow up or arrange to blow up the
+	  other tanks on the field (which can vary from rugged,
+	  mountainous terrain to flat plains).  The last tank on the
+	  field is the winner.
+
+	  http://www.xscorch.org/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XSCRABBLE
+	bool "xscrabble-1.0nb6"
+	help
+	  X version of the popular board game, for 1 to 4 players
+
+	  This is a full multiplayer (1-4) implementation of the classic board
+	  game, with computer players, and over 118,000 word dictionary (the
+	  Official Scrabble Players Dictionary, edition 3, as used in
+	  U.S. tournaments). This was a joint project, with Matthew Badham, who
+	  implemented the back end routines. There is a high score table, a best
+	  single goes list, a handy setup window, and load/save facilities.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XSKAT
+	bool "xskat-4.0"
+	help
+	  Play the card game Skat
+
+	  Xskat lets you play the card game Skat
+	  as defined by the official german Skatordnung.
+	  
+	  Up to 2 players may be simulated by the computer.
+	  
+	  The rules can be found at
+	  http://dungeon.netlink.co.uk/users/pagat/schafk/skat.html
+
+	  http://www.xskat.de/xskat.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XSOKOBAN
+	bool "xsokoban-3.3cnb1"
+	help
+	  Classic logical game
+
+	  xsokoban is an implementation of the game sokoban, written on top of X(1).
+	  
+	  The goal of xsokoban is to push all the round objects into  the score area
+	  of each level using the mouse or the arrow keys. The arrow keys move the
+	  player in the corresponding direction, pushing an object if it is in the way
+	  and there  is a clear space on the other side. The mouse buttons each have a
+	  distinct function.
+
+	  http://www.cs.cornell.edu/andru/release/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XSOLDIER
+	bool "xsoldier-0.96nb2"
+	help
+	  Updated xgalaga type game with awesome graphics
+
+	  Update on the Galaga theme, with better explosions, nicer graphics, and
+	  better game play. Hampered slightly by the lack of decent documentation.
+
+	  http://www.interq.or.jp/libra/oohara/xsoldier/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XTRIS
+	bool "xtris-1.15nb2"
+	help
+	  Multi-player version of a popular game for the X Window system
+
+	  xtris is a version of an classical popular game, for any number of
+	  players, for the X Window system.
+	  
+	  xtris is a true client/server game (as opposed to a centralized game
+	  managing multiple displays), which makes it particularily responsive and
+	  bandwith-effective.
+
+	  http://www.iagora.com/~espel/xtris/xtris.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XTUX
+	bool "xtux-0.2000.11.15nb1"
+	help
+	  2D multi-player shootout using images from the Open Software scene
+
+	  Tux Arena is a client server network game for X11 featuring opensource
+	  mascots. The plan is to have both a multiplayer deathmatch mode (called
+	  Holywar) and single player missions where you take on the Microsoft Empire.
+
+	  http://xtux.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XVIER
+	bool "xvier-1.0nb4"
+	help
+	  Four-in-a-row game
+
+	  xvier is a (not) simple game where you and the computer alternately
+	  throw stones into free columns. The stones pile up in the columns,
+	  and the goal is to get four stones in a row, column, or diagonally.
+	  
+	  The default grid is 7 columns by 6 rows. It can be sized from 4x4 to
+	  13x13. It has 10 levels of difficulty.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XWORM
+	bool "xworm-1.02nb1"
+	help
+	  Classic game with apples and hungry worm
+
+	  In this game you must help wormie - the hungry maggot, to steal
+	  apples from bazar the evil. Bazar has put an electric fence around
+	  the garden, and he has also been  spreading  poisionous  mushrooms
+	  into it. You must guide wormie around  this  objects, and you must
+	  keep him from eating himself.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XYE
+	bool "xye-0.9.1nb4"
+	help
+	  Kye clone
+
+	  The funny name comes from Kye, the name of the original game, but I replaced
+	  the K with an X because this is not really a clone. It is not an acronym
+	  although X-Y-E sounds coo l.
+	  The objective is as easy as it can get, you just have to get all the gems.
+	  The only pr oblem are the obstacles, traps and monsters that you will find
+	  in your path.
+
+	  http://xye.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XZIP
+	bool "xzip-1.8nb1"
+	help
+	  
+
+	  XZip is a clean X Windows interface to games written in Infocom's Z-code
+	  game format. It handles Z-code versions 1 through 5 and version 8. It is
+	  free (yee-ha!)
+	  
+	  developed at CMU. Really, I would have preferred to actually do this in
+	  ATK... except that then you'd need ATK to run it, and that's 50 megabytes
+	  of source code. (Honest.) So I just did an imitation.
+	  
+	  Z-code games are available at:
+	  
+	  ftp://ftp.gmd.de/if-archive/games/infocom/
+	  http://www.edoc.com/zarf/if.html
+
+	  http://www.eblong.com/zarf/xzip.html
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ZOMBIES
+	bool "zombies-1.0nb5"
+	help
+	  Simple robots-like game where you destroy the zombies
+
+	  The idea of zombies is to kill as many zombies as possible.  Fortunately
+	  for you, zombies can only move diagonally.  Once all the zombies on a
+	  level die you start a new level, with even more zombies than before.
+
+	  http://www.thistledown.com.au/software/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_ZOOM
+	bool "zoom-1.0.3nb7"
+	help
+	  Plays Infocom-compatible games, with graphics support
+
+	  Zoom is a Z-Code interpreter (used in the Infocom text adventures
+	  and adventures compiled by inform) with support for version 3-8,
+	  including v6 graphics.
+
+	  http://www.logicalshift.demon.co.uk/unix/zoom/
+
+

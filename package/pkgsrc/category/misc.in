@@ -1,0 +1,4248 @@
+config BR2_PKGSRC_PACKAGE_MISC_9MENU
+	bool "9menu-1.8nb1"
+	help
+	  Simple menu patterned after the plan9 user interface
+
+	  This is 9menu, a simple program that allows you to create X menus from the
+	  shell, where each menu item will run a command. 9menu is intended for use
+	  with 9wm, but can be used with any other window manager.
+	  
+	  The idea of a command line menu generator is from xmenu, but xmenu was
+	  exclusively a pop-up menu, not what I wanted.
+	  
+	  Author: Arnold Robbins <arnold@gnu.ai.mit.edu>
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ADDRESSES
+	bool "Addresses-0.4.6nb8"
+	help
+	  Address book for GNUstep
+
+	  Addresses for GNUstep is a versatile address book application for
+	  managing contact information.  It stores addresses, phone numbers,
+	  pictures, instant messaging information, email, homepages and whatever.
+	  
+	  Addresses is also a framework that allows access to the addresses
+	  database in a way that is sourcecode-compatible with Apple's
+	  AddressBook.framework.  It also contains a view framework to facilitate the
+	  construction of applications that use the contact database.
+	  
+	  Addresses is currently being used by Ludovic Marcotte's GNUMail
+	  application. It uses and requires GNUstep.
+
+	  http://giesler.biz/bjoern/en/sw_addr.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_JBIDWATCHER
+	bool "JBidwatcher-2.1.5"
+	help
+	  eBay sniping, bidding and monitoring software
+
+	  A Java-based application allowing you to monitor auctions you're
+	  not part of, submit bids, snipe (bid at the last moment), and
+	  otherwise track your auction-site experience. It includes adult-auction
+	  management, MANY currencies (pound, dollar (US, Canada, Australian,
+	  and New Taiwanese) and euro, presently), drag-and-drop of auction
+	  URLs, an original, unique and powerful 'multisniping' feature, a
+	  relatively nice UI, and is known to work cleanly under Linux,
+	  Windows, Solaris, and MacOSX from the same binary.
+
+	  http://www.jbidwatcher.com/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_JMDICT
+	bool "JMdict-20061208"
+	help
+	  Japanese-Multilingual electronic dictionary
+
+	  JMdict is a Japanese-Multilingual dictionary.
+	  It is an enhanced XML-based multilingual version
+	  of EDICT, currently containing English, French,
+	  and German translations, frequency counts, and
+	  other useful information.
+
+	  http://www.csse.monash.edu.au/~jwb/edict.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ASCII
+	bool "ascii-3.8"
+	help
+	  ASCII character table program
+
+	  This is a handy little utility that recognizes many different ways of
+	  naming an ASCII character (hex, octal, binary, decimal, C escape, ISO
+	  character table pair, slang names, and others) and prints out all the
+	  equivalents.  A CGI script that can be used to enable access over the
+	  Web is included.
+
+	  http://www.catb.org/~esr/ascii/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ASR_MANPAGES
+	bool "asr-manpages-20000406"
+	help
+	  alt.sysadmin.recovery man page distribution
+
+	  You are in the presence of a System Administrator. Kneel.
+	  
+	  "On Usenet, we vent in a group called alt.sysadmin.recovery. The
+	  group has a FAQ. If you read the FAQ, you will find that you (the
+	  users) subscribe to this group at your own peril. If you want to
+	  be useful, why don't you run over to the supply cabinet and get a
+	  new box of pixels for the monitor.  As part of our venting, some
+	  of us have written a series of man pages that we'd like to see."
+	  
+	  Manpages you ever needed:
+	  bosskill.8 c.1 chastise.3 ctluser.8 guru.8 knife.8 lart.1m luser.8
+	  normality.5 nuke.8 people.2 pmsd.8 rtfm.1 slave.1 sysadmin.1 think.1
+	  whack.1
+
+	  http://web.archive.org/web/2/www.winternet.com/~eric/sysadmin/manpages.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ASTROLOG
+	bool "astrolog-5.40nb1"
+	help
+	  Astrology program for X11 and alpha-numeric terminals
+
+	  Astrolog is a many featured and customizable astrology chart
+	  calculation program for DOS, Windows, Mac, and Unix, used in 30+
+	  countries on six continents.  It is 100% freeware and requires no
+	  registration fee. :) The complete source code is available. Astrolog
+	  features: wheels, aspects, midpoints, relationship charts, transits,
+	  progressions, some interpretations, astro-graphy, local horizon,
+	  constellations, planet orbits, dispositors, various influence charts,
+	  biorhythms, different zodiacs, central planets, 14 house systems, 8400
+	  year ephemeris, asteroids, Uranians, fixed stars, Arabic parts, script
+	  files and macros, interactive PC & MS/X11 Windows graphics, smooth
+	  animation of charts, graphic files in PostScript, Windows metafile,
+	  and bitmap formats, and more!
+
+	  http://www.astrolog.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ATTICA
+	bool "attica-0.2.0nb4"
+	help
+	  Qt library that implements the Open Collaboration Services API
+
+	  Attica is a Qt library that implements the Open Collaboration Services
+	  API version 1.4. The REST API is defined here:
+	  http://www.freedesktop.org/wiki/Specifications/open-collaboration-services
+	  
+	  It grants easy access to the services such as querying information
+	  about persons and contents. The library is used in KNewStuff3 as content
+	  provider. In order to integrate with KDE's Plasma Desktop, a platform
+	  plugin exists in kdebase.
+
+	  http://projects.kde.org/projects/kdesupport/attica
+
+
+config BR2_PKGSRC_PACKAGE_MISC_AUTOCUE
+	bool "autocue-20070224"
+	help
+	  Time-based text formatter, sending output to xcb for pasting
+
+	  autocue is a program which takes a simple text file as input, and
+	  outputs its contents, broken up into paragraphs, and formatted by fmt,
+	  into xcb's cut buffers.  From there, the text can be pasted with a
+	  simple mouse click.  autocue will then wait for a period of time
+	  relative to the size of the text, before moving onto the next
+	  paragraph. Successive cut buffers will be used, and then will wrap
+	  to the beginning.
+	  
+	  The speed can be varied whilst the program is running - by sending
+	  a SIGUSR1 to the process, autocue will go faster. Sending a SIGUSR2
+	  to the process will make it go slower.
+	  
+	  This program can be used to scroll a presentation, along with timing
+	  information (a beep is sounded when the next buffer should be pasted),
+	  and the presenter can simply paste into the presentation window.
+
+	  http://www.alistaircrooks.co.uk/software.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BASKET
+	bool "basket-1.0.2nb12"
+	help
+	  Feature-rich note-taking KDE application
+
+	  BasKet is a multi-purpose note-taking KDE application that helps
+	  you to easily take all sort of notes, collect research results and
+	  share them, centralize your project data and reuse it, quickly
+	  organize your thoughts in idea boxes, keep track of your information
+	  in a smart way, make intelligent To Do lists, and a lot more...
+
+	  http://basket.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BBAPPCONF
+	bool "bbappconf-0.0.2nb1"
+	help
+	  Configure the behaviour of an application under Blackbox
+
+	  bbappconf makes it possible to set some options for the windows blackbox
+	  opens such as:
+	  - on which desktop they should open
+	  - if it should be displayed without titlebar
+	  - if it should be sticky
+
+	  http://bbtools.sourceforge.net/download.php?file
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BBDB
+	bool "bbdb-2.35"
+	help
+	  Insidious Big Brother DataBase, a rolodex-like database Emacs program
+
+	  The Insidious Big Brother DataBase is an emacs-based contact manager
+	  that integrates itself into your mail and news clients.
+
+	  http://sourceforge.net/projects/bbdb/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BBWEATHER
+	bool "bbweather-0.6.2nb1"
+	help
+	  Show current weather conditions
+
+	  bbweather is a tool which displays the current weather conditions in an
+	  decorated window, simulating the look of the Blackbox toolbar (Blackbox is a
+	  Windowmanager for X11).  This tool is heavily based on "bbdate" by John
+	  Kennis.  Furthermore, bbweather was inspired by wmWeather by Michael G.
+	  Henderson, from where the perl-script to fetch the weather-conditions from
+	  your local station originated.
+
+	  http://www.netmeister.org/apps/bbweather/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BLCCC
+	bool "blccc-1.99nb12"
+	help
+	  Blinkenlights Chaos Control Center
+
+	  This is a rewrite of the master control program for Blinkenlights.
+	  The first implementation used to be a GTK+ application that allowed
+	  previewing of movies and run-time modification of the playlist using
+	  a graphical user interface.  The need for a way to control
+	  the Blinkenlights remotely arose, so this new implementation runs as
+	  a daemon controllable via telnet connections.  This software was used
+	  for the Blinkenlights installation at the end of September 2001.
+
+	  http://www.blinkenlights.de/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BOTTLEROCKET
+	bool "bottlerocket-0.04cnb1"
+	help
+	  Home Automation Software for the X10 FireCracker kit
+
+	  What is BottleRocket?
+	  
+	  BottleRocket is a command-line interface for Unix systems to use the
+	  FireCracker kit. It is easy to use, has all of the major (non-gui)
+	  functionality of the Windows interface, is easy to call from scripts
+	  and the backend code is made to be easily linked into other programs.
+	  
+	  What is the X10 FireCracker kit?
+	  
+	  The X10 Firecracker kit is a simple wireless home automation system,
+	  consisting of a lamp module, an appliance module/radio receiver, a
+	  hand held wireless transmitter and a wireless transmitter that plugs
+	  into a standard RS-232 serial port. Using either the handheld
+	  transmitter or the serial port transmitter, a user can turn on or off
+	  any of up to 256 appliances, and brighten/dim any of those that happen
+	  to be lamps and plugged into the special lamp modules. Each appliance
+	  to be controlled must be plugged into its own module, and each module
+	  is set (by turning dials on the front) to a unique address by which it
+	  is identified.
+
+	  http://mlug.missouri.edu/~tymm/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BRS
+	bool "brs-4.0nb1"
+	help
+	  Interactive King James Version Bible
+
+	  Bible Retrieval System (BRS) consists of a textual database of the
+	  Authorized ("King James") Version of the Old and New Testaments, a set
+	  of libraries for finding and retrieving text, and a program ("bible")
+	  which uses the libraries to retrieve Bible passages given references
+	  on the command line or from standard input.
+
+	  http://bible.theverge.com/brs.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BSDIFF
+	bool "bsdiff-4.3"
+	help
+	  Size efficient binary diff and patch tools
+
+	  Bsdiff and bspatch are tools for building and applying patches to binary
+	  files. By using suffix sorting (specifically, Larsson and Sadakane's
+	  qsufsort) and taking advantage of how executable files change, bsdiff
+	  routinely produces binary patches 50-80% smaller than those produced by
+	  Xdelta, and 15% smaller than those produced by .RTPatch (a $2750/seat
+	  commercial patch tool).
+	  
+	  If n is the size of the old file and m is the size of the new file, bsdiff
+	  runs in O((n+m) log n) time; on a 200MHz Pentium Pro, building a binary
+	  patch for a 4MB file takes about 90 seconds. bspatch runs in O(n+m) time;
+	  on the same machine, applying that patch takes about two seconds.
+
+	  http://www.daemonology.net/bsdiff/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BSDSTATS
+	bool "bsdstats-5.3"
+	help
+	  BSD-Stats collector script
+
+	  BSD-Stats is collecting statistics about *BSD installations (and flavours) and
+	  the hardware used for running those, to demonstrate to hardware and software
+	  vendors out there that *BSD should be viewed as a serious operating system,
+	  not just as a hobbyist system, for support (ie. hardware drivers) purposes.
+
+	  http://www.bsdstats.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_BUFFER
+	bool "buffer-1.17"
+	help
+	  Buffer sporadic binary I/O for faster tape use
+
+	  This is a program designed to speed up writing tapes on remote tape
+	  drives.  Requirements are shared memory and locks which normally
+	  means that these are supported in your kernel.
+	  
+	  [for Free/NetBSD, this means you MUST have a kernel with
+	  options SYSVSHM
+	  compiled in - markm]
+	  
+	  Buffer has been tested under SunOS 4.0.*, SunOS 4.1.*, Solarix, HP-UX 7.0,
+	  and Gould UTX 2.1A (sv universe).
+	  
+	  The program splits itself into two processes.  The first process reads
+	  (and reblocks) from stdin into a shared memory buffer.  The second
+	  writes from the shared memory buffer to stdout.  Doing it this way
+	  means that the writing side effectly sits in a tight write loop and
+	  doesn't have to wait for input.  Similarly for the input side.  It is
+	  this waiting that slows down other reblocking processes, like dd.
+	  
+	  I run an archive and need to write large chunks out to tape regularly
+	  with an ethernet in the way.  Using 'buffer' in a command like:
+	  
+	  tar cvf - stuff | rsh somebox "buffer > /dev/rst8"
+	  
+	  is a factor of 5 faster than the best alternative, gnu tar with its
+	  remote tape option:
+	  
+	  tar cvf somebox:/dev/rst8 stuff
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_CALIBRE
+	bool "calibre-0.8.29"
+	help
+	  E-book library management application
+
+	  calibre is a ebook library management application. Its features are
+	  divided into the following categories:
+	  
+	  * Library Management
+	  * Format conversion (all major ebook formats can be converted from)
+	  * Syncing to ebook reader devices
+	  * Fetching news from the web and converting it into ebook form
+	  * Viewing many different ebook formats
+	  * Giving you access to your book collection over the internet using
+	  just a browser
+
+	  http://www.calibre-ebook.com/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_CELESTIA
+	bool "celestia-1.4.1nb16"
+	help
+	  Free real-time 3D space simulator
+
+	  Celestia is a free real-time space simulation that lets you experience our
+	  universe in three dimensions.  Unlike most planetarium software, Celestia
+	  doesn't confine you to the surface of the Earth.  You can travel throughout
+	  the solar system, to any of over 100,000 stars, or even beyond the galaxy.
+	  All travel in Celestia is seamless; the exponential zoom feature lets you
+	  explore space across a huge range of scales, from galaxy clusters down to
+	  spacecraft only a few meters across.  A 'point-and-goto' interface makes it
+	  simple to navigate through the universe to the object you want to visit.
+	  
+	  This is the base package with data and simple GLUT-driven display window.
+
+	  http://www.shatters.net/celestia/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_CHIPMUNK
+	bool "chipmunk-1.4nb2"
+	help
+	  Shell-like tool for hardware debugging
+
+	  Chipmunk is a language for writing short programs to perform
+	  application specific hardware manipulation tasks.
+	  
+	  It is specifically good at debugging hardware because you
+	  can interactively search for good ways to access your hardware, and
+	  then record it in a macro as documentation and fast repetition.
+
+	  http://www.bitwizard.nl/chipmunk/index.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_CHORD
+	bool "chord-3.6"
+	help
+	  Produce PS sheet-music from text input
+
+	  chord produces a postscript document from a lyrics file containing
+	  chord indications and chorus delimiters.  The document produced
+	  contains the lyrics of a song, with the guitar chords appearing above
+	  the right words. A representation of all chords used in the song is
+	  printed at the bottom of the last page.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_CKSFV
+	bool "cksfv-1.3.14"
+	help
+	  
+
+	  cksfv can create simple file verification (SFV) listings and test
+	  already created SFV files.  SFV files are used to verify file
+	  integrity via a 32 bit CRC.
+
+	  http://zakalwe.fi/~shd/foss/cksfv/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_COLOR_THEME
+	bool "color-theme-6.6.0"
+	help
+	  Emacs-lisp mode for skinning your emacs
+
+	  color-theme is an emacs-lisp mode for skinning your emacs.
+	  Features are:
+	  
+	  * Huge and extensible theme library
+	  * Easy to use
+	  * Works on pretty all emacs flavours
+	  * Mature source code
+
+	  http://www.nongnu.org/color-theme/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_COLORIZE
+	bool "colorize-0.3.0nb1"
+	help
+	  Log colorize perl script
+
+	  colorize is a log colorize perl script, with some ugly functions:
+	  * Many known log format (including: daemon [classic log format],
+	  squid [and oops], apache [access, error], xferlog, exim, and more)
+	  * Extreme regexp matches (email, url, size, address, version, file etc.)
+	  * Some usefull matches (user, service, protocol)
+	  * Theme support (with multiple config files)
+	  * HTML output support (with valid HTML and CSS code)
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_COLORLS
+	bool "colorls-2.2nb1"
+	help
+	  
+
+	  This is a simple hack to the FreeBSD /bin/ls to use ANSI sequences to
+	  display file attributes in color.  There is a -G flag (somewhat
+	  similar to the -F flag).  Take a look at the man page for details.
+	  
+	  Standard xterm prior to XFree86 3.1.2B doesn't know about colors, so
+	  you should use update your XFree86 or use kterm (available from the
+	  packages collection).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_COLORTAIL
+	bool "colortail-0.3.0"
+	help
+	  
+
+	  Colortail works like the standard tail but it can optionally read
+	  a color config file, where expressions are specified for coloring
+	  the results.
+	  
+	  Thus it can be used to quickly get an overview of interesting
+	  activity by colorizing relevant lines brightred or some other color
+	  of your choice.
+
+	  http://joakimandersson.se/projects/colortail/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_COWSAY
+	bool "cowsay-3.03nb1"
+	help
+	  Configurable talking cow
+
+	  cowsay is a configurable talking cow, written in Perl.  It operates
+	  much as the figlet program does, and it written in the same spirit
+	  of silliness.
+
+	  http://www.nog.net/~tony/warez/cowsay.shtml
+
+
+config BR2_PKGSRC_PACKAGE_MISC_CSTREAM
+	bool "cstream-2.7.5"
+	help
+	  General-purpose stream-handling tool with bandwidth limiting
+
+	  cstream is a general-purpose stream-handling tool like UNIX' dd,
+	  usually used in commandline-constructed pipes.
+	  
+	  Featues:
+	  Sane commandline switch syntax.
+	  Exact throughput limiting, on the incoming side. Timing variance in
+	  previous reads are counterbalanced in the following reads.
+	  Precise throughput reporting. Either at the end of the transmission
+	  or everytime SIGUSR1 is received. Quite useful to ask lengthy
+	  opertions how much data has been transferred yet, i.e. when
+	  writing tapes. Reports are done in bytes/sec and if appropriate in
+	  KB/sec or MB/sec, where 1K = 1024.
+	  SIGUSR2 causes a clean shutdown before EOF on input, timing
+	  informating is displayed.
+	  Build-in support for fifos. Example usage is a 'pseudo-device',
+	  something that sinks or delivers data at an appropriate rate, but
+	  looks like a file, i.e. if you test soundcard software. See the
+	  manpage for examples.
+	  Accepts 'k', 'm' and 'g' character after number for "kilo, mega,
+	  giga" bytes for overall data size limit.
+
+	  http://www.cons.org/cracauer/cstream.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_CUECAT
+	bool "cuecat-0.2.1nb1"
+	help
+	  Read and parse barcodes from your CueCat barcode reader
+
+	  This package contains a hacked version of the Linux program for
+	  the CueCat (a barcode reader distributed for free in the USA by
+	  e.g. Radio Shack). This package only works on a console with
+	  the wscons keyboard driver, and only supports the original CueCat
+	  (neither the serial nor the USB hack).
+
+	  http://opensource.lineo.com/cuecat/cuecat_driver/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_CUETOOLS
+	bool "cuetools-1.3.1"
+	help
+	  Set of utilities to manipulate cue and toc files
+
+	  cuetools is a set of utilities for working with cue and toc files.
+	  It includes the following programs:
+	  
+	  * cueconvert
+	  Convert between cue and toc formats.
+	  * cuebreakpoints
+	  Output track break points from a cue/toc file, in a format usable by
+	  shnsplit (part of the shntool package).
+	  * cuerename
+	  Rename files based on a template.
+
+	  http://cuetools.berlios.de/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DESKBAR_APPLET
+	bool "deskbar-applet-2.32.0nb5"
+	help
+	  Omnipresent, versatile search interface for the GNOME Desktop
+
+	  The goal of DeskbarApplet is to provide an omnipresent versatile search
+	  interface.  By typing search terms into the deskbar entry in your panel
+	  you are presented with the search results as you type.
+	  
+	  Seaches are handled by a series of plugins.  DeskbarApplet provides a
+	  simple interface to manage these plugins to provide you with the search
+	  results that fit your needs.
+
+	  http://raphael.slinckx.net/deskbar/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DGPSIP
+	bool "dgpsip-1.35"
+	help
+	  Differential GPS over IP communication device
+
+	  On a stationary GPS without a differential correction signal, you
+	  should see a 20 m average radius "drunken walk" pattern. On the same
+	  receiver with DGPS corrections and a good view of the sky, the
+	  error the same receiver with DGPS corrections and a good view of
+	  the sky, the error should be reduced to approximately 2 m average
+	  radius. If you've always wanted to know exactly where your house
+	  is located without that annoying GPS "wander," but didn't want to
+	  spend the money for a DGPS radio, here is your big chance!
+	  
+	  I'd like to announce a fun DGPS hack. I've written a small Un*x
+	  server and client for redistributing DGPS correction signals over
+	  the Net. Basically the server grabs the serial byte stream from my
+	  DGPS radio and sends it off over a TCP connection. The client does
+	  the same thing but in reverse.  The result is that you can receive
+	  the local DGPS corrections from absolutely anywhere by using the
+	  Internet as the world's largest extension cord. You'll still need
+	  to be within 1000 miles or so of San Francisco, California, USA
+	  for best results. However chances are better than not that the GPS
+	  error will still be reduced if you are 2000 to 3000 miles away.
+	  Several respondents from 2000 miles away have noted that the remote
+	  differential signals have diminished the SA induced position and
+	  velocity errors by approximately 3x.
+
+	  http://www.wsrcc.com/wolfgang/gps/dgps-ip.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DIALOG
+	bool "dialog-1.1.20111020"
+	help
+	  Display dialog boxes from shell scripts
+
+	  Dialog is a program that will let you to present a variety of questions
+	  or display messages using dialog boxes from a shell script. Currently,
+	  these types of dialog boxes are implemented:
+	  yes/no box, menu box, input box, message box, text box, info box,
+	  guage box, checklist box, and radiolist box.
+
+	  http://invisible-island.net/dialog/dialog.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DIRDIFF
+	bool "dirdiff-2.1"
+	help
+	  Displays differences between directories
+
+	  dirdiff is a graphical tool to display the differences(a la diff)
+	  between files in directories.  Given two or more directory trees,
+	  dirdiff will display the differences between them in various glorious
+	  colors.  It provides merging and the creation of patches.
+
+	  http://samba.org/ftp/paulus/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DNETC
+	bool "dnetc-2."
+	help
+	  Official distributed.net client
+
+	  distributed.net believes in the capability and potential of
+	  distributed computing. Their mission consists of three interdependent
+	  goals: development, deployment, and advocacy, to be pursued in the
+	  advancement of distributed computing.
+	  
+	  They advocate distributed computing, by encouraging global
+	  participation and contributions of processing power, bandwidth,
+	  and expertise; by providing a forum for discussion; and by raising
+	  awareness on the Internet and in the mainstream.
+	  
+	  Current Projects: RC5-72, and Optimal 25 Mark Golomb Rulers.
+
+	  http://www.distributed.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DOTFILE
+	bool "dotfile-2.4.1nb2"
+	help
+	  GUI dotfile generator program to create .config files
+
+	  This is a port of the dotfile generator program.  It creates
+	  configuration files for many popular programs.
+	  
+	  The dotfile generator provides a handy way to create user-
+	  configuration files for many programs.  Modules are used
+	  to define the configuration options.  A sample template is
+	  provided to aid in creating new modules.
+
+	  http://www.blackie.dk/dotfile/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DPKG
+	bool "dpkg-1.13.25nb1"
+	help
+	  Package maintenance system for Debian
+
+	  This package contains the programs which handle the installation and
+	  removal of Debian packages on your system.  The primary interface for
+	  the dpkg suite is the `dselect' program; a more low-level and less
+	  user-friendly interface is available in the form of the `dpkg'
+	  command.
+
+	  http://wiki.debian.org/Teams/Dpkg
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DT
+	bool "dt-1.1.7nb3"
+	help
+	  
+
+	  Provides virtual consoles for NetBSD/mac68k in a manner similar to
+	  GNU Screen, with the addition of mouse support.  The only supported
+	  platform is NetBSD/mac68k (and NetBSD/macppc, maybe).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DTACH
+	bool "dtach-0.8"
+	help
+	  Small program that emulates the detach feature of screen
+
+	  dtach is a tiny program that emulates the detach feature of screen,
+	  allowing you to run a program in an environment that is protected from
+	  the controlling terminal and attach to it later.  dtach does not keep
+	  track of the contents of the screen, and thus works best with programs
+	  that know how to redraw themselves.
+
+	  http://dtach.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DVORAKNG
+	bool "dvorakng-0.6.0rc1nb1"
+	help
+	  US English Dvorak keyboard tutor
+
+	  DvorakNG is a curses based Dvorak typing tutor.  It's heavily based on
+	  Dvorak7min, but adds many improvements like a progress information database.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DVTM
+	bool "dvtm-0.6"
+	help
+	  Dynamic virtual terminal manager
+
+	  dvtm brings the concept of tiling window management, popularized by X11-window
+	  managers like dwm, to the console. As a console window manager, it tries to make
+	  it easy to work with multiple console-based programs like vim, mutt, cmus, or
+	  irssi. dvtm is intended to be used where X11 isn't available or over SSH. In
+	  conjunction with dtach, it can be seen as a lightweight alternative to GNU
+	  screen.
+
+	  http://www.brain-dump.org/projects/dvtm/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_DYNC
+	bool "dync-1.1nb2"
+	help
+	  awk-like utility with C as language
+
+	  The dync utility is a small, but quite useful utility, which allows
+	  the use of C as a scripting language.  This can be quite useful
+	  ****SOMETIMES****, allowing access to system calls and library functions
+	  from the command line.  For example, there are occasions when I want
+	  to see the struct stat for a directory entry, and want to be able to
+	  access st_mtime values, without having to parse output from "ls -l".
+	  A simple:
+	  
+	  int main(int argc, char **argv)
+	  {
+	  struct stat	st;
+	  if (stat(argv[1], &st) == 0) {
+	  printf("%lld\n", st.st_mtime);
+	  }
+	  exit(0);
+	  }
+	  
+	  will do the job.  If I was to try this by other means, I would either
+	  have to install all of Perl, and then learn its idiosyncratic syntax,
+	  or write a custom C program, which I would then have to compile on
+	  each architecture I need.
+	  
+	  This utility relies on there being a C compiler on the target machine,
+	  and a working dlopen(3).
+
+	  http://www.alistaircrooks.co.uk/software.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_EASYMENU
+	bool "easymenu-0.7.2"
+	help
+	  Software used to generate menu systems
+
+	  Easymenu is a shell script used to generate menu systems.
+	  
+	  It can be used to generate anything from easy one-level menus to
+	  advanced multi-level menusystems. It has a set of internal commands,
+	  and can execute external applications and scripts, all to be as flexible
+	  as possible.
+
+	  http://www.mreriksson.net/dev/easymenu/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_EC2_AMI_TOOLS
+	bool "ec2-ami-tools-1.3.57676nb1"
+	help
+	  Amazon EC2 AMI Tools (bundle, create, upload AMIs to S3)
+
+	  The Amazon EC2 AMI Tools are command-line utilities to help bundle
+	  an Amazon Machine Image (AMI), create an AMI from an existing machine
+	  or installed volume, and upload a bundled AMI to Amazon S3.
+
+	  http://aws.amazon.com/developertools/368
+
+
+config BR2_PKGSRC_PACKAGE_MISC_EC2_API_TOOLS
+	bool "ec2-api-tools-1.3.62308"
+	help
+	  
+
+	  The API tools serve as the client interface to the Amazon EC2 web
+	  service. Use these tools to register and launch AMI instances, manage
+	  EBS volumes, manipulate security groups, and more.
+
+	  http://aws.amazon.com/developertools/351
+
+
+config BR2_PKGSRC_PACKAGE_MISC_EDICT
+	bool "edict-20061208"
+	help
+	  Japanese-English dictionary file
+
+	  EDICT is a Japanese->English dictionary.
+
+	  http://www.csse.monash.edu.au/~jwb/edict.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ELIZATALK
+	bool "elizatalk-0.4nb1"
+	help
+	  Eliza talkback program
+
+	  Elizatalk is a talkback program for a chat program that allows you to let
+	  your friends talk interactively to your autoresponder.  Some people may
+	  even think they are actually talking to you.. :-).
+
+	  http://elizatalk.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ELSCREEN
+	bool "elscreen-1.4.6"
+	help
+	  Window manager within Emacs
+
+	  ElScreen is a window manager in Emacs.  It's role is very similar to that
+	  of GNU Screen in terminal emulators.  This is useful if you use Emacs Lisp
+	  applications which have multiple windows.
+
+	  http://www.morishima.net/~naoto/software/elscreen/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_EMACS_WIKI
+	bool "emacs-wiki-2.72"
+	help
+	  Wiki major mode for emacs, which aims for implicit and natural markup
+
+	  Wiki is a concept, more than a thing.  It is a way of creating
+	  document pages using plain text markup and simplified hyperlinking.
+	  By typing a name in MixedCase, a hyperlink is automatically created to
+	  the document "MixedCase".  Pressing return on that name will create
+	  the file if it doesn't exist, or visit it if it does.  The markup used
+	  by emacs-wiki is intended to be very friendly to people familiar with
+	  Emacs.  Type C-h v emacs-wiki-publishing-markup after this mode is
+	  loaded for how to get started.
+
+	  http://repose.cx/emacs/wiki/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_EPM
+	bool "epm-4.2"
+	help
+	  ESP generates software packages from a list of files
+
+	  EPM is an open source UNIX software and file packaging program that
+	  generates distribution archives from a list of files. EPM provides a
+	  complete, cross-platform software distribution solution for your
+	  applications.
+	  
+	  ESP generates both native and "portable" script-based distribution packages
+	  complete with installation and removal scripts and standard
+	  install/uninstall GUIs. The installers can be customized with product logos,
+	  "readme" files, and click-wrap licenses as desired.
+
+	  http://epmhome.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ESNIPER
+	bool "esniper-2.23.0nb1"
+	help
+	  Simple, lightweight tool for sniping ebay auctions
+
+	  Esniper is a simple, lightweight command line tool for sniping ebay auctions.
+	  It runs on all flavors of Linux, Unix and Windows, and should adapt easily
+	  to other operating systems.
+
+	  http://esniper.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_FBREADER
+	bool "fbreader-0.10.7nb9"
+	help
+	  Ebook reader software
+
+	  FBReader is an e-book reader for various platforms.
+	  
+	  Main features:
+	  * Supported formats are
+	  * fb2 e-book format (style attributes are not supported yet).
+	  * HTML format (tables are not supported).
+	  * CHM format (tables are not supported).
+	  * plucker format (tables are not supported).
+	  * Palmdoc (aportis doc).
+	  * zTxt (Weasel format).
+	  * TCR (psion text) format.
+	  * RTF format (stylesheets and tables are not supported).
+	  * OEB format (css and tables are not supported).
+	  * OpenReader format (css and tables are not supported).
+	  * Non-DRM'ed mobipocket format (tables are not supported).
+	  * Plain text format.
+	  * Direct reading from tar, zip, gzip and bzip2 archives. (Multiple books
+	  in one archive are supported.)
+	  * Automatic library building.
+	  * Automatic language and character encoding detection is supported.
+	  * Automatically generated contents table.
+	  * Embedded images support.
+	  * Footnotes/hyperlinks support.
+	  * Position indicator.
+	  * Keeps the last open book and the last read positions for all opened
+	  books between runs.
+	  * List of last opened books.
+	  * Automatic hyphenations.
+	  * Text search.
+	  * Full-screen mode.
+	  * Screen rotation by 90, 180 and 270 degrees.
+
+	  http://www.fbreader.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_FD
+	bool "fd-3.00jnb1"
+	help
+	  File and directory management tool
+
+	  `FD' (FDclone) is a file and directory management tool for text
+	  terminal; browsing file list, viewing, editing, archiving/extracting
+	  management with a few touch.  FD 2.0 and later have a built-in
+	  Bourne-shell compatible shell and also runs stand-alone shell under
+	  the name of 'fdsh'.
+	  
+	  This version is a clone of original FD for DOS (AT and PC9801)
+	  designed and written by A. Idei (SDI00544@niftyserve.or.jp).
+	  
+	  Currently, the man page is available only in Japanese, but it's easy
+	  to use. Setting `FD_LANGUAGE' environment to 'english' you can use
+	  English help.
+
+	  http://hp.vector.co.jp/authors/VA012337/soft/fd/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_FEP
+	bool "fep-1.0nb3"
+	help
+	  General purpose front end for command line editing
+
+	  Fep is a general purpose front end processor applicable to
+	  most UNIX commands that features vi(1)-  or  emacs(1)-like
+	  line  editing and a command history mechanism like that of
+	  csh(1).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_FIGLET
+	bool "figlet-2.2.4"
+	help
+	  Print text banners in fancy ASCII art characters
+
+	  Figlet is a program that creates large ASCII art characters out of ordinary
+	  screen characters
+	  
+	  _ _ _          _   _     _
+	  | (_) | _____  | |_| |__ (_)___
+	  | | | |/ / _ \ | __| '_ \| / __|
+	  | | |   <  __/ | |_| | | | \__ \_
+	  |_|_|_|\_\___|  \__|_| |_|_|___(_)
+	  
+	  
+	  Figlet can print in a variety of fonts, both left-to-right and right-to-left.
+	  Figlet comes with several fonts.  Also, many other fonts are avaiable,
+	  including Hebrew, Cyrillic (Russian), and Greek.
+
+	  http://www.figlet.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_FIGLET_FONTS
+	bool "figlet-fonts-20021023nb1"
+	help
+	  Additional fonts for figlet
+
+	  This package provides all additional fonts for figlet that
+	  are available on figlet.org.
+
+	  http://www.figlet.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_FIRELIB
+	bool "firelib-1.0.1"
+	help
+	  Library for predicting fire spread rate, intensity, and more
+
+	  C language function library for predicting the spread rate, intensity,
+	  flame length, and scorch height of free-burning surface fires.  It is
+	  derived directly from the BEHAVE fire behavior algorithms for
+	  predicting fire spread in two dimensions, but is optimized for highly
+	  iterative applications such as cell- or wave- based fire growth
+	  simulation.
+
+	  http://fire.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GAUPOL
+	bool "gaupol-0.19.2"
+	help
+	  Subtitle editor
+
+	  Gaupol is an editor for text-based subtitle files. It supports
+	  multiple subtitle file formats and provides means of correcting
+	  texts and timing subtitles to match video. The user interface is
+	  designed with attention to batch processing of multiple documents
+	  and convenience of translating.
+	  
+	  Gaupol should run on all Unix-like (GNU/Linux, *BSD, etc.) operating
+	  systems and on Windows. Technically it should be able to run on
+	  Mac as well, but that has not been tested nor made convenient.
+	  Gaupol's user interface is based on the GTK+ toolkit and has been
+	  designed to best fit the GNOME desktop environment.
+
+	  http://home.gna.org/gaupol/index.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GELEMENTAL
+	bool "gelemental-1.2.0nb7"
+	help
+	  Periodic table viewer
+
+	  gElemental is a GTK+ periodic table viewer with detailed information on
+	  elements.
+
+	  http://www.kdau.com/projects/gelemental/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GETOPT
+	bool "getopt-1.1.4nb1"
+	help
+	  Program to help shell scripts parse command-line parameters
+
+	  Getopt(1) is a program to help shell scripts parse command-line
+	  parameters. It is for example included in the util-linux distribution
+	  (versions up to 2.7.1) for Linux. But, there were some problems
+	  with that getopt(1) implementation, as listed in the 'BUGS' section
+	  of its man-page:
+	  * Whatever getopt(3) has.
+	  * Arguments containing white space or imbedded shell metacharacters
+	  generally will not survive intact; this looks easy to fix but
+	  isn't.
+	  * The error message for an invalid option is identified as
+	  coming from getopt rather than from the shell procedure
+	  containing the invocation of getopt; this again is hard to
+	  fix.
+	  * The precise best way to use the set command to set the
+	  arguments without disrupting the value(s) of shell options
+	  varies from one shell version to another.
+	  Additionally, the example in the manual-page does not run correctly
+	  (at least not with any bash shell I have tried).
+	  
+	  This implementation of getopt(1) solves some of these problems,
+	  while still staying (for all practical purposes) completely compatible
+	  with other getopt(1) implementations. It has replaced the old
+	  util-linux version, but it should be useful for other Unixes too.
+
+	  http://software.frodo.looijaard.name/getopt/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GIT
+	bool "git-4.9.5nb1"
+	help
+	  GNU Interactive Tools - a file system browser for UNIX systems
+
+	  GIT is a file system browser for UNIX systems.
+	  An interactive process viewer/killer, a hex/ascii file viewer, an auto-mount
+	  shell script and a per file type action script are also available.
+
+	  http://hulubei.net/tudor/git/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_FLYNN
+	bool "gkrellm-flynn-0.8nb14"
+	help
+	  GKrellM2 plugin that shows system load with a DooM marine
+
+	  Flynn is a tiny system load meter for gkrellm. I've picked
+	  this idea from Timm Mueller's Amiga application which was
+	  derived from a WindowMaker appicon. GKrellFlynn was
+	  written by Henryk Richter.
+	  
+	  Flynn is a guy who suffers from your activity, i.e. the
+	  applications consuming precious processor time. Hurt him
+	  plenty!
+	  
+	  To make Flynn smile, just click onto his face.
+
+	  http://bax.comlab.uni-rostock.de/en/projekte/gkrellflynn.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_LAUNCH
+	bool "gkrellm-launch-0.5nb14"
+	help
+	  GKrellM plugin to allow quick launch of applications
+
+	  GKrellMLaunch plugin which allows one-click access to frequently used
+	  applications from GKrellM.
+	  Offering customisable buttons, GKrellMLaunch allows you to quickly
+	  launch a shell, Mozilla etc. with a simple click - all from GKrellM.
+	  - Unused buttons can be hidden to save screen space.
+	  - Button labels can be different from command.
+
+	  http://gkrellmlaunch.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_LEDS
+	bool "gkrellm-leds-0.8.2nb12"
+	help
+	  GKrellM plugin that monitors CapsLock, NumLock and ScrollLock keys
+
+	  gkleds is a GKrellM plugin which monitors the CapsLock, NumLock and
+	  ScrollLock keys and reports their current status via on screen LEDs.
+	  This is useful for people who have keyboards without LEDs, typically
+	  cordless keyboards.
+	  It also lets you toggle the indicator state via mouse clicks.
+
+	  http://heim.ifi.uio.no/~oyvinha/gkleds/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_MOON
+	bool "gkrellm-moon-0.6nb14"
+	help
+	  GKrellM2 moonclock plugin
+
+	  gkrellmoon is a moon clock plugin for gkrellm.  It shows the
+	  current phase of the moon.
+
+	  http://gkrellmoon.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GKRELLM_WEATHER
+	bool "gkrellm-weather-2.0.7nb10"
+	help
+	  Gkrellm2 weather plugin
+
+	  GKrellM plugin which shows weather info from the US National Weather
+	  Service
+	  
+	  Features
+	  - Choose the location nearest to you by 4-letter METAR station
+	  identifier code. (http://www.nws.noaa.gov/oso/siteloc.shtml)
+	  - Monitor temperature, dew point, pressure, relative humidity, sky
+	  condition, wind direction and speed
+	  - Display using imperial units (degrees Fareheight, inches of
+	  Mercury, miles per hour)
+	  - Display using metric units (degrees Celsius, millimeters of
+	  Mercury, kilometers per hour)
+	  - Display pressure in kPa, hPa and mmHg
+	  - Display wind speeds in kmph, mps and beaufort scale
+	  
+	  WWW: http://kmlinux.fjfi.cvut.cz/~makovick/gkrellm
+
+	  http://kmlinux.fjfi.cvut.cz/~makovick/gkrellm/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GNOME_DEVEL_DOCS
+	bool "gnome-devel-docs-2.26.2"
+	help
+	  The GNOME 2 developer's guide
+
+	  This package contains documents targeted for GNOME developers.
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GNOME_USER_DOCS
+	bool "gnome-user-docs-2.32.0"
+	help
+	  The GNOME 2 users guide
+
+	  This package provides several GNOME 2 documentation: the GNOME Access Guide,
+	  the Introduction to GNOME document, the System Administration Guide and the
+	  Users Guide.
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GNOME_UTILS
+	bool "gnome-utils-2.32.0nb5"
+	help
+	  Set of useful GNOME2 utilities and applications
+
+	  This package contains a number of useful utilities/apps that run
+	  under the GNOME2 desktop environment.
+	  
+	  From the GNOME home page:
+	  
+	  GNOME stands for GNU Network Object Model Environment.  The GNOME
+	  project intends to build a complete, user-friendly desktop based
+	  entirely on free software.  GNOME is part of the GNU project, and
+	  GNOME is part of the OpenSource(tm) movement.  The desktop will
+	  consist of small utilities and larger applications which share a
+	  consistent look and feel.  GNOME uses GTK+ as the GUI toolkit for
+	  all GNOME-compliant applications.
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GNULS
+	bool "gnuls-8.13"
+	help
+	  GNU ls utility with color support
+
+	  This package provides the GNU ls utility, from the GNU coreutils package.
+	  It also includes the dircolors program, which is intended to be used together
+	  with it.
+
+	  http://www.gnu.org/software/coreutils/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GOFFICE0.6
+	bool "goffice0.6-0.6.6nb11"
+	help
+	  Library of document-centric objects and utilities
+
+	  goffice is a GLIB/GTK set of document centric objects and utilities.
+	  
+	  There are common operations for document centric applications that are
+	  conceptually simple, but complex to implement fully.
+	  - plugins
+	  - load/save documents
+	  - undo/redo
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GOFFICE0.8
+	bool "goffice0.8-0.8.17nb1"
+	help
+	  Library of document-centric objects and utilities
+
+	  goffice is a GLIB/GTK set of document centric objects and utilities.
+	  
+	  There are common operations for document centric applications that are
+	  conceptually simple, but complex to implement fully.
+	  - plugins
+	  - load/save documents
+	  - undo/redo
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GOK
+	bool "gok-2.28.1nb7"
+	help
+	  GNOME On-Screen Keyboard
+
+	  The GNOME On-Screen Keyboard (GOK) is an accessability interface
+	  that gives you control of your system without needing a keyboard.
+	  The GOK makes available a hierarchical button system that enables
+	  keyboardless entry of common accelerators, and contains a
+	  clickable keyboard that sports suggested autocompletion of many
+	  common words, and even some commands. The GOK will provide an
+	  alternative interface to common commands and functions within
+	  applications that utilize the AT SPI.
+	  
+	  The GOK is designed to be usable by many alternative input
+	  methods, i.e. not a common keyboard and mouse combination.
+
+	  http://library.gnome.org/devel/gok/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GONE
+	bool "gone-1.3.5"
+	help
+	  
+
+	  Gone is a utility that locks a terminal  with  a  password
+	  chosen by the user.  Gone will prompt the user for a password
+	  (unless the -p option is given, then gone will use the system
+	  password), then print the gone banner, then drop into the gone
+	  shell.  From this shell, only a restricted set of commands
+	  can be run.  Gone will also disallow messages by  removing
+	  permissions  on  the parent tty.  After the timeout period
+	  (10 minutes by default), gone will automatically log the user out.
+
+	  http://jaguar.ir.miami.edu/~marcus/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GPERIODIC
+	bool "gperiodic-2.0.10nb4"
+	help
+	  Displays a periodic table of the elements
+
+	  Gperiodic displays a periodic table of the elements, allowing you to
+	  browse through the elements, and view detailed information about each
+	  element.
+
+	  http://www.frantz.fi/software/gperiodic.php
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GRANULATE
+	bool "granulate-0.1"
+	help
+	  Program for splitting files in place
+
+	  Granulate is a program for splitting files in place. The program
+	  serves a purpose similar to the standard UNIX split, but differs in
+	  one important way. For split to operate on a 40MB file, you must have
+	  more than 40MB of free space on the disk. On the other hand,
+	  granulate only needs one chunk of free space on the hard drive, where
+	  a chunk is the requested size for the output files.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_GWAEI
+	bool "gwaei-3.0.2nb1"
+	help
+	  Japanese dictionary for GNOME
+
+	  gWaei is a Japanese-English dictionary program for the GNOME desktop.
+	  It is made to be a modern drop in replacement for Gjiten with many
+	  of the same features. The dictionary files it uses are from Jim
+	  Breen's WWWJDIC project and are installed separately through the
+	  program.
+	  
+	  Features
+	  * Easy dictionary installation with a click of a button.
+	  * Support for searching using regular expressions.
+	  * Streams results so the interface is never frozen.
+	  * Click Kanji in the results pane to look information on it.
+	  * Simple interface that makes sense.
+	  * Intelligent design. Tab switches dictionaries.
+	  * Organizes relevant matches to the top of the results.
+
+	  http://gwaei.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HANZIM
+	bool "hanzim-1.3nb1"
+	help
+	  Chinese character learning-aid program
+
+	  Hanzim is a program designed to help you memorize characters by helping you
+	  internalize their various systematicities.  It displays lists of characters
+	  with the same radicals, same remaining parts, and same pronunciations.  Along
+	  with the characters it displays pin-yin pronunciations and lists of compounds.
+
+	  http://kamares.ucsd.edu/~arobert/hanzim.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_BANNER
+	bool "heirloom-banner-070715"
+	help
+	  
+
+	  This package provides 'banner' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_CAL
+	bool "heirloom-cal-070715"
+	help
+	  
+
+	  This package provides 'cal' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_CALENDAR
+	bool "heirloom-calendar-070715"
+	help
+	  
+
+	  This package provides 'calendar' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_HD
+	bool "heirloom-hd-070715"
+	help
+	  
+
+	  This package provides 'hd' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_MORE
+	bool "heirloom-more-070715"
+	help
+	  
+
+	  This package provides 'more' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_OD
+	bool "heirloom-od-070715"
+	help
+	  
+
+	  This package provides 'od' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_PRINTENV
+	bool "heirloom-printenv-070715"
+	help
+	  
+
+	  This package provides 'printenv' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_PRINTF
+	bool "heirloom-printf-070715"
+	help
+	  
+
+	  This package provides 'printf' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_RANDOM
+	bool "heirloom-random-070715"
+	help
+	  
+
+	  This package provides 'random' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_SLEEP
+	bool "heirloom-sleep-070715"
+	help
+	  
+
+	  This package provides 'sleep' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_SUM
+	bool "heirloom-sum-070715"
+	help
+	  
+
+	  This package provides 'sum' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_TCOPY
+	bool "heirloom-tcopy-070715"
+	help
+	  
+
+	  This package provides 'tcopy' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEIRLOOM_TIME
+	bool "heirloom-time-070715"
+	help
+	  
+
+	  This package provides 'time' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HEYU
+	bool "heyu-1.35nb1"
+	help
+	  Home Automation Software for the X10 CM11A
+
+	  Heyu is a program that allows your computer to control devices by
+	  transmitting information over your house's power lines.
+	  
+	  The program will work with:
+	  - The CM11A and CM12A made by the X10 corporation. The "Activehome"
+	  package (CK11) includes the CM11A.
+	  - The Home Director package marketed by IBM.
+	  - The Home Control package marketed by Radio Shack (model 61-2417).
+	  
+	  It will not work with:
+	  - CK17 Firecracker (computer controlled RF transmitter)
+	  - CP290 (older style computer - X10 interface)
+	  - CP10 - A power strip with X10 built in ???
+	  - Extend 1.1 (look for newer than 1.2beta4)
+
+	  http://www.heyu.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_HOWM
+	bool "howm-1.3.9.1"
+	help
+	  Write fragmentarily and read collectively
+
+	  howm: Write fragmentarily and read collectively.
+	  
+	  Howm is a note-taking tool on Emacs.  It is similar to emacs-wiki;
+	  you can enjoy hyperlinks and full-text search easily. It is not
+	  similar to emacs-wiki; it can be combined with any format.
+
+	  http://howm.sourceforge.jp/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_IBUTTON_PDKIT
+	bool "ibutton-pdkit-2.00nb2"
+	help
+	  1-Wire Public Domain Kit Version 2.00
+
+	  Portable C source code to support platforms not covered by
+	  iButton-TMEX. Example implementations include Linux, BeOS and
+	  Win32 for the serial port adapter DS9097U utilizing the
+	  DS2480 Serial 1-Wire Line Driver.
+
+	  http://www.maxim-ic.com/products/ibutton/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LILE
+	bool "ile-2.0"
+	help
+	  Input Line Editor that wraps itself around programs
+
+	  The ile program can be run as a simple shell around any program.
+	  It gives any program an input line editing and a history mechanism. It
+	  can also be run around your favourite shell. When run around the shell
+	  ile records the input to interactive programs launched from the
+	  shell as well as the commands to the shell in its history buffer.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_IPBT
+	bool "ipbt-8765"
+	help
+	  High-tech ttyrec player
+
+	  IPBT plays ttyrec files, like ttyplay, but provides the ability to
+	  seek forward and backward in the recorded file.  Additional features
+	  include slow motion and fast forwarding.
+	  
+	  The ttydump and ttygrep utilities provide functionality to extract
+	  part of the recorded file and to search for frames containing a
+	  search pattern, respectively.
+
+	  http://www.chiark.greenend.org.uk/~sgtatham/ipbt/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ISELECT
+	bool "iselect-1.2.0nb2"
+	help
+	  Curses based Interactive Selection Tool
+
+	  Iselect is a curses based interactive selection tool. It can be used
+	  either as a user interface frontend controlled by a
+	  Bourne-Shell/Perl/Tcl backend as its wrapper or in batch mode as a
+	  pipeline filter (usually between grep and the final executing command).
+
+	  http://www.ossp.org/pkg/tool/iselect/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_JA_LESS
+	bool "ja-less-382.262nb1"
+	help
+	  Less + zcat + ISO-2022 - a pager similar to more and pg
+
+	  Less  is  a  program similar to more (1), but which allows
+	  backward movement in the file as well as forward movement.
+	  Also,  less  does  not  have to read the entire input file
+	  before starting, so with large input files  it  starts  up
+	  faster  than  text editors like vi (1).
+	  
+	  This enhanced less support ISO 2022 code extension techniqes and
+	  Japanese codes(EUC Japanese, SJIS) and compressed(or gzipped) file
+	  viewing. The author of this patch is jam@pobox.com. See
+	  http://www.pobox.com/~jam/less/
+	  for the latest info.
+
+	  http://www25.big.jp/~jam/less/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_JA_MAN
+	bool "ja-man-19990531nb3"
+	help
+	  Japanese on-line manual pages of NetBSD
+
+	  Japanese on-line manual pages of NetBSD, and
+	  jman to format and display pages including Japanese code correctly.
+	  
+	  Translated by "NetBSD Japanese online manuals TEAM".
+	  If you have any comment, or if you will help this project,
+	  contact with <jman@spa.is.uec.ac.jp>,
+	  If you find any bug, contact with <jman-bugs@spa.is.uec.ac.jp>.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_JHD
+	bool "jhd-2.3"
+	help
+	  Japanese Hexadecimal Dump
+
+	  Jhd is a 'Japanese Hexadecimal Dump' command.  This is for EUC KANJI
+	  code, as default.
+	  
+	  Example
+	  
+	  % jhd -j EUC_FILE
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_JITTERBUG
+	bool "jitterbug-1.6.2nb2"
+	help
+	  Web-oriented bug-tracking tool
+
+	  JitterBug is a cgi-bin tool for problem reporting and tracking developed
+	  by Andrew Tridgell for the Samba Team.
+	  
+	  If you want to see some examples of what JitterBug can do then have a
+	  look at http://samba.anu.edu.au/cgi-bin/jitterbug
+
+	  http://jitterbug.samba.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_JIVE
+	bool "jive-1.1"
+	help
+	  Filter that converts English text to Jive
+
+	  Jive is a filter that converts English text to Jive.
+	  Jive reads from standard input and writes to standard output.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KANJIDIC
+	bool "kanjidic-20061208"
+	help
+	  Japanese Kanji information
+
+	  The KANJIDIC file contains comprehensive information about Japanese
+	  kanji. It is a text file currently 6,353 lines long, with one line
+	  for each kanji in the two levels of the characters specified in
+	  the JIS X 0208-1990 set.
+
+	  http://www.csse.monash.edu.au/~jwb/kanjidic.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KANJIDIC2
+	bool "kanjidic2-20061208"
+	help
+	  Japanese Kanji information
+
+	  The KANJIDIC2 file contains comprehensive information about Japanese
+	  kanji in XML format.
+	  The KANJIDIC2 file has the 6,355 kanji from JIS X 0208, the
+	  5,801 kanji from JIS X 0212 and the 3,625 kanji from JIS X 0213 (of
+	  which all but 884 are also in JIS X 0212).
+
+	  http://www.csse.monash.edu.au/~jwb/kanjidic.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KANJIPAD
+	bool "kanjipad-2.0.0nb11"
+	help
+	  Japanese handwriting recognition
+
+	  KanjiPad is a very simple program for handwriting recognition -
+	  The user draws a character into the box, then requests translation.
+	  The best candidates are displayed along the right hand side of the
+	  window and can be selected for pasting into other programs.
+	  
+	  It is meant primarily for dictionary purposes for learners of
+	  Japanese - it does not support entering kana, so it's usefulness
+	  as an input method is limited. Furthermore, if you already know
+	  the reading of a character, conventional pronunciation based methods
+	  of entering the character are probably faster.
+
+	  http://fishsoup.net/software/kanjipad/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KCHM
+	bool "kchm-0.6.5nb17"
+	help
+	  KDE CHM file viewer
+
+	  Chm is a new chm viewer for KDE. It consists of kio_chm,
+	  corresponding kpart(so you can view chm files in konqueror)
+	  and a small viewer on top of this.
+
+	  http://kchmnew.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KCHMVIEWER
+	bool "kchmviewer-5.3nb2"
+	help
+	  
+
+	  KchmViewer is a CHM (MS HTML help file format) viewer, written in
+	  C++. Unlike most existing CHM viewers for Unix, it uses Trolltech
+	  Qt widget library with optional KDE libraries. It does not require
+	  KDE, but may be compiled with full KDE support, including KDE
+	  widgets and KIO/KHTML.
+	  
+	  The main advantage of KchmViewer is extra support for non-English
+	  languages. Unlike other viewers, KchmViewer in most cases is able
+	  to detect help file encoding, correctly shows tables of context of
+	  Russian, Korean, Chinese and Japanese help files, and does correct
+	  search in non-English help files (search for MBCS languages -
+	  ja/ko/ch is still in progress).
+
+	  http://www.kchmviewer.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEACCESSIBILITY3
+	bool "kdeaccessibility-3.5.10nb9"
+	help
+	  Accessibility support for the KDE integrated X11 desktop
+
+	  Accessibility support for the KDE integrated X11 desktop
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEACCESSIBILITY4
+	bool "kdeaccessibility4-4.5.5nb2"
+	help
+	  Accessibility support for the KDE integrated X11 desktop
+
+	  Accessibility support for the KDE integrated X11 desktop
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEADDONS3
+	bool "kdeaddons-3.5.10nb11"
+	help
+	  Add ons for the KDE integrated X11 desktop
+
+	  Plugins and scripts for kate, kicker, konqueror, noatun and knewsticker.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEADMIN3
+	bool "kdeadmin-3.5.10nb8"
+	help
+	  System administration tools for the KDE integrated X11 desktop
+
+	  This package provides applications that usually only a system administrator
+	  might need that are part of the standard KDE environment:
+	  
+	  * kcron: editor for the cron command scheduler
+	  * kpackage: manager for DEB, RPM, pkgsrc and similar software packages
+	  * kuser: an user manager
+	  * kwuftpd: front end to the wu-ftpd FTP daemon
+	  * secpolicy: a program to display PAM security policies
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEADMIN4
+	bool "kdeadmin4-4.5.5nb4"
+	help
+	  System administration tools for the KDE integrated X11 desktop
+
+	  The kdeadmin package contains applications for KDE that usually only a
+	  system administrator might need:
+	  
+	  * kcron
+	  Editor for the cron command scheduler.
+	  * kdat
+	  Tape backup tool.
+	  * kpackage
+	  Manager for DEB, RPM and similar software packages.
+	  * ksysv
+	  An editor for System V startup schemes.
+	  * kuser
+	  An user manager.
+	  * lilo-config
+	  A plugin for KControl to manage the Linux boot loader LILO.
+	  * ksystemlog
+	  A system log viewer tool.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEARTWORK3
+	bool "kdeartwork-3.5.10nb11"
+	help
+	  Artwork for the KDE integrated X11 desktop
+
+	  This package contains additional themes, screensaver, sounds, wallpapers,
+	  widget styles and window styles for KDE.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEARTWORK4
+	bool "kdeartwork4-4.5.5nb2"
+	help
+	  Artwork for the KDE integrated X11 desktop
+
+	  The kdeartwork package contains additional
+	  
+	  * themes,
+	  * screensaver,
+	  * sounds,
+	  * wallpapers,
+	  * widget styles and
+	  * window styles
+	  
+	  for KDE4.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEEDU3
+	bool "kdeedu-3.5.10nb10"
+	help
+	  
+
+	  Edu{tainment,cation} tools for the KDE integrated X11 desktop:
+	  
+	  * keduca: creation and revision of form-based tests and exams.
+	  * kgeo: interactive geometry
+	  * khangman: hangman game. The child should guess a word letter by letter.
+	  * klatin: aims to help revise or learn latin
+	  * klettres: helps child to learn french alphabet and to read some syllables
+	  * kmessedwords: simple mind-training game
+	  * kstars: desktop planetarium
+	  * ktouch: program for learning touch typing
+	  * kvoctrain: vocabulary trainer
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEEDU4
+	bool "kdeedu4-4.5.5nb2"
+	help
+	  
+
+	  Edu{tainment,cation} tools for the KDE integrated X11 desktop:
+	  
+	  * blinken:     the KDE version of the well-known game Simon Says
+	  * kalgebra:    mathematics: editor and plotting
+	  * kalzium:     periodic table of elements
+	  * kanagram:    an anagram game
+	  * kbruch:      fraction excercise trainer
+	  * kgeography:  geography learning program
+	  * khangman:    hangman game. The child should guess a word letter by letter.
+	  * kig:         interactive geometry
+	  * kiten:       japanese reference tool
+	  * klettres:    helps child to learn the alphabet and to read some syllables
+	  * kmplot:      mathematical function plotter
+	  * kpercentage: math application to improve skills in calculating percentages
+	  * kstars:      desktop planetarium
+	  * ktouch:      program for learning touch typing
+	  * kturtle:     educational programming environment
+	  * kwordquiz:   a powerful way to master new vocabularies
+	  * marble:      a virtual globe
+	  * parley:      vocabulary trainer
+	  * step:        a physics simulator
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEPIM3
+	bool "kdepim-3.5.10nb11"
+	help
+	  Personal Information Management tools for the KDE desktop
+
+	  This package provides personal information management applications that are
+	  part of the standard KDE environment:
+	  
+	  * kmail: a full-featured email client
+	  * kmailcvt: converts addressbooks to kmail format
+	  * knode: online newsreader
+	  * korn: new mail notification tool
+	  * kandy: sync phone book entries between your cell phone and computer
+	  ("kandy" comes from "Handy", the german word used for a cellular)
+	  * korganizer: a calendar-of-events and todo-list manager
+	  * kpilot: to sync with your PalmPilot
+	  * kalarm: gui for setting up personal alarm/reminder messages
+	  * kalarmd: personal alarm/reminder messages daemon
+	  * knotes: yellow notes application
+	  
+	  There is also quite an amount of infrastructure in this package:
+	  
+	  * ldif: a parser for LDIF, the LDAP Information Interchange Format
+	  * libdif: dito, one of them is superfluous
+	  * libical: a basic iCalendar protocol implementation, see RFCs 2245,2246
+	  * libimap: IMAP handling
+	  * libkcal: C++ api for the iCalendar and vCalendar formats
+	  * librmm: an Internet mail message parser (RFC 822 -> Class hierarchy)
+	  * kgantt: lib to display and manage Gantt diagrams
+	  * ksync: library for syncing collections of data entries
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEPIM_RUNTIME4
+	bool "kdepim-runtime4-4.4.9nb3"
+	help
+	  Runtime requirements for the KDE PIM tools
+
+	  Runtime requirements for the KDE PIM tools
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEPIM4
+	bool "kdepim4-4.4.9nb7"
+	help
+	  Personal Information Management tools for the KDE desktop
+
+	  Anything relating to the KDE-PIM project. See also http://pim.kde.org.
+	  
+	  The KDE-PIM project aims to bring together those who wish to help design,
+	  implement, test, etc. anything that's to do with personal information
+	  management.
+	  
+	  This rather broad scope encompasses mail clients, addressbooks, usenet news,
+	  scheduling and even sticky notes.
+	  
+	  What it is
+	  ----------
+	  
+	  * kaddressbook: The KDE addressbook application.
+	  * kmail: the KDE mail client
+	  * kmailcvt: tool for importing mail related data from other programs
+	  * kmobiletools: an application specially designed to manage mobile phones
+	  * knode: news client
+	  * korganizer: a calendar-of-events and todo-list manager
+	  * kalarm: gui for setting up personal alarm messages, emails and commands
+	  * kalarmd: alarm monitoring daemon, shared by korganizer and kalarm.
+	  * kontact: Integrated PIM application
+	  * ktimetracker: Time tracker.
+	  * kfile-plugins: vCard KFIleItem plugin.
+	  * knotes: yellow notes application
+	  * konsolekalendar: Command line tool for accessing calendar files.
+	  * korn: mail checker
+	  * akregator: Feed reader
+	  * kjots: manager for several "books" with a subject and notes
+	  
+	  
+	  There is also quite an amount of infrastructure in this package:
+	  
+	  * libkdepim: Common code for different kdepim apps
+	  * mimelib: MIME messages library
+	  * kpgp: A library for pgp
+	  * libkpimexchange: connecting to Exchange2000 servers
+	  * kdgantt: alternative lib for Gantt diagrams, used by the free/busy view of
+	  KOrganizer (yes, we should decide for one of the Gantt libs)
+	  * kontactinterfaces: The glue for embedding KParts into Kontact
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEPIMLIBS4
+	bool "kdepimlibs4-4.5.5nb3"
+	help
+	  Support libraries for PIM for the KDE integrated X11 desktop
+
+	  The kdepimlibs package includes libraries that are central to the development
+	  and execution of a KDE-PIM application.
+	  
+	  The KDE-PIM project aims to bring together those who wish to help design,
+	  implement, test, etc. anything that's to do with personal information
+	  management.
+	  
+	  This rather broad scope encompasses mail clients, addressbooks, usenet news,
+	  scheduling and even sticky notes.
+	  
+	  Here is an alphabetical list:
+	  
+	  * akonadi: client access library for using the Akonadi PIM data server.
+	  * kblog: C++ API for weblogging access
+	  * kcal: C++ API for the iCalendar and vCalendar formats
+	  * kcal/libical: a basic iCalendar protocol implementation, see RFCs 2245,2246
+	  * kimap: C++ API for IMAP support
+	  * kldap: C++ API for LDAP access
+	  * kmime: C++ API for MIME handling
+	  * kpimidentities: C++ API for shared identities for mail applications
+	  * kpimutils: A library for general purpose PIM utilities
+	  * ktnef: C++ API for the handling of TNEF data
+	  * kxmlrpclient: An XML-RPC client library
+	  * mailtransport: C++ API and support code for managing mail transport
+	  * syndication: An RSS/Atom feed parser library
+	  * qgpgme: A C++ wrapper for gpgme
+	  * kioslaves/sieve: Sieve kioslave
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEPLASMA_ADDONS4
+	bool "kdeplasma-addons4-4.5.5nb3"
+	help
+	  Plasmoids
+
+	  Various standard plasmoids provided with the K Desktop Environment.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEUTILS3
+	bool "kdeutils-3.5.10nb13"
+	help
+	  Utilities for the KDE integrated X11 desktop
+
+	  This package provides utility applications that are part of the standard
+	  KDE environment:
+	  
+	  * ark: manager for compressed files and archives
+	  * kab: address book
+	  * karm: tracks time spend per task or project
+	  * kcalc: scientific calculator
+	  * kcharselect: select special characters from any fonts and put them into
+	  the clipboard
+	  * charselectapplet: dito, but as a Kicker applet
+	  * kcardtools:
+	  * kdepasswd: like 'passwd', a graphical password changer
+	  * kdessh: front end to ssh
+	  * kdf: like 'df', a graphical free disk space viewer
+	  * kedit: a simple text editor, without formatting like bold, italics etc
+	  * kfloppy: format a floppy disks with this app
+	  * khexedit: binary file editor
+	  * kjots: manages several "books" with a subject and notes
+	  * klaptopdaemon: battery and power management, including KControl plugins
+	  * kljettool: configure a HL LaserJet from KDE
+	  * klpq: front end to 'lpq', 'lprm' and 'lpc'
+	  * klprfax: send faxes by printing to a lpr device, needs efax and ghostscript
+	  * knotes: paste yellow notes all over your screen, virtually of course
+	  * kpm: combines 'ps', 'top' and 'kill' into a visual process watcher
+	  * kregexpeditor: graphical regular expression editor
+	  * ktimer: execute programs after some time
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDEUTILS4
+	bool "kdeutils4-4.5.5nb7"
+	help
+	  Utilities for the KDE integrated X11 desktop
+
+	  This is a compilation of various desktop utilities that are part of the
+	  standard KDE environment.
+	  
+	  * ark: Archiving tool
+	  * kcalc: scientific calculator
+	  * kcharselect: select special characters from any fonts and put them
+	  into the clipboard
+	  * kdessh: front end to ssh
+	  * kdf: like 'df', a graphical free disk space viewer
+	  * kfloppy: format a floppy disks with this program
+	  * kgpg: graphical GPG frontend
+	  * kwallet: KDE wallet management tool
+	  * okteta: binary file editor
+	  * printer-applet:
+	  a system tray utility that shows current print jobs, shows printer
+	  warnings and errors and shows when printers that have been plugged
+	  in for the first time are being auto-configured by hal-cups-utils.
+	  * superkaramba: version of Karamba with python scripting
+	  * sweeper: cleans unwanted traces the user leaves on the system
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KDRILL
+	bool "kdrill-5.11.6nb4"
+	help
+	  Kanji quiz and japanese dictionary
+
+	  Kdrill: the free kanji quiz and Japanese dictionary for unix and X
+	  window systems.
+	  
+	  KDrill stands for "Kanji Drill".  It's a program to help people learn
+	  kanji and kana (the Japanese character set).  It also doubles as a
+	  dictionary lookup program. Kdrill runs under the X window GUI system.
+
+	  http://www.bolthole.com/kdrill/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KODOS
+	bool "kodos-2.4.2nb9"
+	help
+	  GUI for creating, testing and debugging Python REs
+
+	  Kodos is an application to aid in the creation and debugging of regular
+	  expressions in python. The GUI for Kodos should eliminate the need for
+	  using the python interpreter for regex design in most instances.
+
+	  http://kodos.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE
+	bool "koffice-1.6.3nb28"
+	help
+	  KDE Office Suite
+
+	  KOffice is an integrated office suite for KDE which utilizes free and open
+	  standards for its document formats, component communication and component
+	  embedding.
+	  
+	  It includes:
+	  KWord      - a frame-based, full-featured word processor
+	  KSpread    - a spreadsheet application
+	  KPresenter - a presentation application
+	  Kivio      - a flowchart application
+	  Kexi       - an integrated database application
+	  Krita      - a pixel based image editing and paint application
+	  Karbon14   - a vector-drawing application
+	  KPlato     - a technology preview of a new project management application
+	  
+	  Additionally, KOffice includes robust embeddable objects:
+	  Kugar      - report generator (deprecated)
+	  KChart     - full-featured charting engine
+	  KFormula   - mathematical formula handling
+	  as well as a built-in thesaurus (KThesaurus) and support for many different
+	  file formats.
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE_L10N_DA
+	bool "koffice-l10n-da-1.6.3"
+	help
+	  Danish language pack for KOffice
+
+	  KOffice Danish language pack
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE_L10N_DE
+	bool "koffice-l10n-de-1.6.3"
+	help
+	  German language pack for KOffice
+
+	  KOffice German language pack
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE_L10N_EN_GB
+	bool "koffice-l10n-en_GB-1.6.3"
+	help
+	  
+
+	  KOffice English (Great Britain) language pack
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE_L10N_ES
+	bool "koffice-l10n-es-1.6.3"
+	help
+	  Spanish language pack for KOffice
+
+	  Koffice es language pack
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE_L10N_ET
+	bool "koffice-l10n-et-1.6.3"
+	help
+	  Estonian language pack for KOffice
+
+	  KOffice Estonian language pack
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE_L10N_FI
+	bool "koffice-l10n-fi-1.6.3"
+	help
+	  Finnish language pack for KOffice
+
+	  KOffice Finnish language pack
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE_L10N_FR
+	bool "koffice-l10n-fr-1.6.3"
+	help
+	  French language pack for KOffice
+
+	  KOffice French language pack
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KOFFICE_L10N_PL
+	bool "koffice-l10n-pl-1.6.3"
+	help
+	  Polish language pack for KOffice
+
+	  KOffice Polish language pack
+
+	  http://www.koffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_KP
+	bool "kp-0.96nb1"
+	help
+	  The Keyboard Practicer, touch-type training program
+
+	  This is kp, the Keyboard Practicer.  It's a rewrite of a Motif version
+	  of the program with the same name.  It's still very incomplete, but it
+	  at least runs so it's included here for your convenience. :)
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LATIN_WORDS_BIN
+	bool "latin-words-bin-1.97nb1"
+	help
+	  
+
+	  This Latin dictionary program takes keyboard input or a file of
+	  Latin text lines and provides an analysis/morphology (declension,
+	  conjugation, case, tense, etc.) of each word individually, the
+	  dictionary form, and the translation (meaning).
+	  
+	  am.at           V      1 1 PRES ACTIVE  IND 3 S X
+	  amo, amare, amavi, amatus
+	  love, like; fall in love with; be fond of; have a tendency to;
+	  
+	  The dictionary contains over 30000 entries and, through additional
+	  word construction with hundreds of prefixes and suffixes, may
+	  generate more, leading to many hundreds of thousands of 'words'
+	  that can be formed by declension and conjugation.  Present emphasis
+	  is on classical Latin and late Latin, but medieval Latin entries
+	  are increasing. WORDS provides a tool to help in translations for
+	  the Latin student and a memory jog for researchers.
+
+	  http://users.erols.com/whitaker/wordslux.htm
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LESS
+	bool "less-444"
+	help
+	  Pager similar to more and pg
+
+	  Less is a pager program more advanced than more(1). Its features include
+	  backward movement, searching and highlighting, multiple files, bold and
+	  underlining, key bindings (using lesskey(1)), customized tab stops,
+	  filters for different file types, custom character sets, line numbering,
+	  custom prompts, and many more.
+	  
+	  Also, less does not have to read the entire input file before starting,
+	  so with large input files it starts up faster than text editors like
+	  vi(1).
+	  
+	  This package also includes the lessecho command which can expand
+	  metacharacters, such as * and ?, in filenames.
+	  
+	  This version of less was written by and is maintained by Mark Nudelman.
+
+	  http://www.greenwoodsoftware.com/less/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LIBCDIO
+	bool "libcdio-0.82nb2"
+	help
+	  CD-ROM access library
+
+	  This library is to encapsulate CD-ROM reading and
+	  control. Applications wishing to be oblivious of the OS- and
+	  device-dependent properties of a CD-ROM can use this library.
+	  
+	  Some support for disk image types like BIN/CUE and NRG is available,
+	  so applications that use this library also have the ability to read
+	  disc images as though they were CDs.
+
+	  http://www.gnu.org/software/libcdio/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LIBQUANTUM
+	bool "libquantum-1.0.0"
+	help
+	  Quantum computing simulation library
+
+	  libquantum is a C library for the simulation of a quantum
+	  computer. Based on the principles of quantum mechanics, it provides an
+	  implementation of a quantum register. Basic operations for register
+	  manipulation such as the Hadamard gate or the Controlled-NOT gate are
+	  available through an easy-to-use interface. Measurements can be
+	  performed on either single qubits or the whole quantum register.
+
+	  http://www.libquantum.de/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LIBREOFFICE3_BIN
+	bool "libreoffice3-bin-3.4.4"
+	help
+	  
+
+	  LibreOffice is the free power-packed Open Source personal productivity
+	  suite for Windows, Macintosh and Linux, that gives you six feature-rich
+	  applications for all your document production and data processing
+	  needs: Writer, Calc, Impress, Draw, Math and Base.
+
+	  http://www.libreoffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LIBUTF
+	bool "libutf-3.0"
+	help
+	  UTF-8 character set support library, including regular expressions
+
+	  This software is a library which implements UTF-8 support routines,
+	  and uses those routines and others to implement UTF-8aware regular
+	  expresions.  Language collation sequences are specified in a text
+	  file, ${PREFIX}/etc/langcoll.utf, and feedback as to their correctness
+	  is appreciated.
+	  
+	  Alistair G. Crooks
+
+	  http://www.alistaircrooks.co.uk/software.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LINUX_WORDS
+	bool "linux-words-2"
+	help
+	  English word list
+
+	  This is a word list containing over 45000 words. This list is
+	  suitable for English language spelling checkers, libcrack, and as
+	  a target for look(1).  This is linux.words.2, compiled by Rik Faith on
+	  Oct 10, 1993.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LOCO
+	bool "loco-0.32"
+	help
+	  Colorize file or standard input and print on the standard output
+
+	  Loco is a Perl script which gives the messages file (usually /var/log/messages)
+	  some color, so the output is easier to read. It uses a Perl module called
+	  Term::ANSIColor to produce the colors. The Perl script is very readable
+	  and customizable.
+
+	  http://zjuul.net/~jules/loco/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LOGSURFER
+	bool "logsurfer-1.8"
+	help
+	  Processes logfiles and performs certain actions
+
+	  Logsurfer is a program that works on single textlines from a logfile
+	  (or from standard input). It compares each line against regular
+	  expressions of a set of "rules" and performs certain actions that are
+	  defined for this match.
+
+	  http://www.crypt.gen.nz/logsurfer/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LOOKUP
+	bool "lookup-1.4.1nb1"
+	help
+	  Electric dictionary agent for Emacs
+
+	  Lookup is an electric dictionary agent for Emacs editors. It supports many
+	  kind of dictionaries - CD-ROM, and network dictionary, which are mainly
+	  available in Japan.
+
+	  http://openlab.jp/edict/lookup/index.html.ja
+
+
+config BR2_PKGSRC_PACKAGE_MISC_LV
+	bool "lv-4.51nb1"
+	help
+	  Powerful Multilingual File Viewer
+
+	  lv is a powerful multilingual file viewer.  lv can decode and encode
+	  multilingual streams through many coding systems, for example, ISO
+	  2022 based coding systems such as iso-2022-jp, and Unicode streams
+	  encoded in UTF-7 or UTF-8. lv can be used not only as a file viewer
+	  but also as a coding-system translation filter.
+	  
+	  lv can recognize multi-bytes patterns as regular expressions, and lv
+	  also provides multilingual grep (1) functionality by giving it another
+	  name, lgrep.
+
+	  http://www.ff.iij4u.or.jp/~nrt/lv/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_M17N_CONTRIB
+	bool "m17n-contrib-1.1.12nb1"
+	help
+	  Collection of contributed works used with the m17n library
+
+	  The m17n-contrib is a collection of contributed works to be used with
+	  the m17n library.
+
+	  http://www.m17n.org/m17n-lib/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_M17N_DB
+	bool "m17n-db-1.6.2nb1"
+	help
+	  The m17n database used by the m17n library
+
+	  This file is part of the m17n database; a sub-part of the m17n library.
+
+	  http://www.m17n.org/m17n-lib-en/index.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_M17N_DOCS
+	bool "m17n-docs-1.5.5"
+	help
+	  Documents for the m17n library
+
+	  The m17n-docs is documents of the m17n library.
+
+	  http://www.m17n.org/m17n-lib/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MIRMON
+	bool "mirmon-1.36"
+	help
+	  Monitor the state of mirror servers
+
+	  Many software projects are mirrored worldwide. The mirror sites are
+	  required to update the mirror archive regularly (daily, weekly) from
+	  a root server.
+	  
+	  Mirmon helps administrators in keeping an eye on the mirror sites. In
+	  a concise graphic format, mirmon shows each site's status history of
+	  the last two weeks. It is easy to spot stale or dead mirrors.
+
+	  http://people.cs.uu.nl/henkp/mirmon/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MKCUE
+	bool "mkcue-2.1"
+	help
+	  Generates a CUE sheet from a CD
+
+	  Generates a CUE sheet from a CD
+
+	  http://packages.debian.org/source/stable/mkcue
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MMV
+	bool "mmv-1.0b"
+	help
+	  Move, copy, append or link multiple files using wildcard patterns
+
+	  mmv is a program to move, copy, append, or link multiple files
+	  according to a set of wildcard patterns.  This multiple action is
+	  performed safely, i.e.  without any unexpected deletion of files
+	  due to collisions of target names with existing filenames or with
+	  other target names.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MNEMOSYNE
+	bool "mnemosyne-1.2.2nb6"
+	help
+	  Sophisticated flash-card tool which optimizes your learning process
+
+	  The Mnemosyne Project has two aspects:
+	  
+	  * It's a sophisticated free flash-card tool which optimizes
+	  your learning process.
+	  * It's a research project into the nature of long-term memory.
+	  
+	  The Mnemosyne software resembles a traditional flash-card program
+	  to help you memorise question/answer pairs, but with an important
+	  twist: it uses a sophisticated algorithm to schedule the best time
+	  for a card to come up for review. Difficult cards that you tend to
+	  forget quickly will be scheduled more often, while Mnemosyne won't
+	  waste your time on things you remember well.
+	  
+	  While you use the software, detailed statistics can be kept on your
+	  learning process. If you want, these logs can be uploaded in a
+	  transparent and anonymous way to a central server for analysis.
+	  
+	  This data will be valuable to study the behaviour of our memory
+	  over a very long time period. As an additional benefit, the results
+	  will be used to improve the scheduling algorithms behind the software
+	  even further.
+
+	  http://mnemosyne-proj.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MOLDEN
+	bool "molden-4.6nb1"
+	help
+	  Displaying MOLecular DENsity
+
+	  MOLDEN is a package for displaying molecular density.  It is tuned to
+	  the  Ab Initio packages GAMESS* and  GAUSSIAN.   It can read all  the
+	  information it needs  from a GAMESS or GAUSSIAN outputfile.   In this
+	  form it has been  running  on a  CONVEX C-120, an  APOLLO DN10000, an
+	  IRIS 4D/70GT, a DECSTATION 5000 and a SUN, and  in  slightly  adapted
+	  versions  on a VAX  and a CRAY-YMP.   It should  run smoothly on most
+	  Unix machines.   See section  INSTALLATION GUIDE  on  how  to install
+	  MOLDEN.  (* The  GAMESS  version  referred  to  here  is the european
+	  version maintaned by M.F.   Guest  et  al not to be confused with the
+	  american version maintained by M.W.  Schmidt et al)
+	  
+	  /***************************************************************************
+	  Copyright (C) 1991  Gijs Schaftenaar
+	  
+	  Permission to use, copy this software and its documentation
+	  for private use is hereby granted to non profit organisations.
+	  
+	  This software is provided "as is" without express or implied warranty.
+	  
+	  Please cite the author in any work based on this material.
+	  
+	  ***************************************************************************
+
+	  http://www.cmbi.ru.nl/molden/molden.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MOST
+	bool "most-5.0.0anb2"
+	help
+	  
+
+	  most is a pager (like less) that displays, one windowful at a time,
+	  the contents of a file on a terminal.  It pauses after each windowful
+	  and prints the following on the window status line: the screen, the
+	  file name, current line number, and the percentage of the file so far
+	  displayed.
+	  
+	  In addition to displaying ordinary text files, most can also display
+	  binary files as well as files with arbitrary ascii characters.  As an
+	  option, autosensing of binary files can be disabled (via the -k
+	  option), thereby allowing one to browse files encoded in a different
+	  language (Japanese, Korean, Chinese, etc).
+
+	  http://www.jedsoft.org/most/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MOUSETWEAKS
+	bool "mousetweaks-2.28.1nb9"
+	help
+	  Mouse accessibility software
+
+	  The Mousetweaks package provides mouse accessibility enhancements
+	  for the GNOME desktop. These enhancements are:
+	  
+	  1. It offers a way to perform the various clicks without using any
+	  hardware button.
+	  
+	  2. It allows users to perform a right click by doing a click&hold
+	  of the left mousebutton. (For a left-handed mouse user, the termes
+	  left and right have to be inverted.)
+	  
+	  3. It provides an applet that the user can install on a panel. This
+	  applet creates an area on the panel into which the pointer can be
+	  captured until the user releases it with a predefined button and
+	  modifier combination.
+	  
+	  The options can be accessed through the Accessibility tab of the
+	  Mouse Preferences of GNOME Control Center or through command-line.
+
+	  http://live.gnome.org/Mousetweaks/Home
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MTAIL
+	bool "mtail-1.1.1nb2"
+	help
+	  Small tail workalike that performs output coloring
+
+	  mtail is a small tail workalike that performs output coloring using ansi
+	  escape sequences (although the sequences are overridable, so you could cause
+	  it to output something else, e.g. html font tags, if you really wanted to).
+	  mtail is written in python, is fairly small, and should be relatively
+	  platform-independent.
+	  
+	  It has a config file that can contain an arbitrary number of entries, each
+	  of which has a series of regular expressions to indicate which files to color
+	  according to which entry. for each entry, the config file specifies a coloring
+	  scheme using regular expressions and, optionally, filters to apply to each
+	  line before coloring (for example, to strip out extra info, etc.). the config
+	  file also may override the predefined colors and the escape sequences (or
+	  whatever) actually used to perform the coloring.
+
+	  http://matt.immute.net/src/mtail/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_MULTITAIL
+	bool "multitail-4.0.6"
+	help
+	  View one or multiple files
+
+	  MultiTail lets you view one or multiple files like the original tail
+	  program. The difference is that it creates multiple windows on your
+	  console (with ncurses). It can also monitor wildcards: if another file
+	  matching the wildcard has a more recent modification date, it will
+	  automatically switch to that file. That way you can, for example,
+	  monitor a complete directory of files. Merging of 2 or even more
+	  logfiles is possible. It can also use colors while displaying the
+	  logfiles (through regular expressions), for faster recognition of what
+	  is important and what not. It can also filter lines (again with regular
+	  expressions). It has interactive menus for editing given regular
+	  expressions and deleting and adding windows. One can also have windows
+	  with the output of shell scripts and other software. When viewing the
+	  output of external software, MultiTail can mimic the functionality of
+	  tools like 'watch' and such.
+
+	  http://www.vanheusden.com/multitail/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_NXTVEPG
+	bool "nxtvepg-2.7.6nb1"
+	help
+	  NextView EPG decoder
+
+	  nxtvepg is a decoder and browser for Nextview - a subscription-free
+	  electronic TV program guide transmittet via TeleText. Nextview
+	  currently is broadcasted in Germany, Austria, Switzerland, and France
+	  and covers the schedules of all major TV networks in these
+	  countries. It uses the bktr driver for data acquisition through a
+	  TV tuner card.
+
+	  http://sourceforge.net/projects/nxtvepg/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_OPEN2300
+	bool "open2300-1.10"
+	help
+	  WS 23xx weather station support software
+
+	  Open2300 reads data and controls a Weather Station 23xx.
+	  It contains tools to sample data and write it as XML, a MySQL
+	  database, or embed it dynamically into a web page.
+
+	  http://www.lavrsen.dk/twiki/bin/view/Open2300/WebHome
+
+
+config BR2_PKGSRC_PACKAGE_MISC_OPEN2300_MYSQL
+	bool "open2300-mysql-1.10nb1"
+	help
+	  WS 23xx weather station MySQL support
+
+	  Open2300-mysql reads data from a Weather Station 23xx and inserts
+	  it into a mysql database.
+
+	  http://www.lavrsen.dk/twiki/bin/view/Open2300/WebHome
+
+
+config BR2_PKGSRC_PACKAGE_MISC_OPENOFFICE3
+	bool "openoffice3-3.1.1nb15"
+	help
+	  
+
+	  OpenOffice.org is an Open Source, community-developed, multi-platform office
+	  productivity suite. It includes the key desktop applications, such as a
+	  word processor, spreadsheet, presentation manager, and drawing program,
+	  with a user interface and feature set similar to other office suites.
+	  
+	  Components include:
+	  * A universal word processing application for creating business
+	  letters, extensive text documents, professional layouts, and HTML
+	  documents.
+	  * A sophisticated application for performing advanced spreadsheet
+	  functions, such as analyzing figures, creating lists, and viewing data.
+	  * A tool for creating effective eye-catching presentations.
+	  * A vector-oriented draw module that enables the creation of 3D
+	  illustrations.
+
+	  http://www.openoffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_OPENOFFICE3_BIN
+	bool "openoffice3-bin-3.2.1nb1"
+	help
+	  
+
+	  OpenOffice.org is an Open Source, community-developed, multi-platform office
+	  productivity suite. It includes the key desktop applications, such as a
+	  word processor, spreadsheet, presentation manager, and drawing program,
+	  with a user interface and feature set similar to other office suites.
+	  
+	  Components include:
+	  * A universal word processing application for creating business
+	  letters, extensive text documents, professional layouts, and HTML
+	  documents.
+	  * A sophisticated application for performing advanced spreadsheet
+	  functions, such as analyzing figures, creating lists, and viewing data.
+	  * A tool for creating effective eye-catching presentations.
+	  * A vector-oriented draw module that enables the creation of 3D
+	  illustrations.
+
+	  http://www.openoffice.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ORCA
+	bool "orca-2.28.1nb8"
+	help
+	  Screen reader
+
+	  Orca is a free, open source, flexible, and extensible screen reader
+	  that provides access to the graphical desktop via user-customizable
+	  combinations of speech, braille, and/or magnification.
+
+	  http://live.gnome.org/Orca
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_APP_MRSHELL
+	bool "p5-App-MrShell-2.0207nb2"
+	help
+	  Mr. Shell runs a command on multiple hosts
+
+	  mrsh - Mr. Shell runs a command on multiple hosts and returns results
+	  meaningfully.
+
+	  http://search.cpan.org/dist/App-MrShell/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_ARRAY_PRINTCOLS
+	bool "p5-Array-PrintCols-2.1nb5"
+	help
+	  Perl5 module to print arrays of elements in sorted columns
+
+	  Array::PrintCols is a Perl 5 module which defines a subroutine to
+	  print arrays of elements in alphabetically, vertically sorted columns.
+	  Optional arguments can be given to control either the width or number of
+	  the columns, the total width of the output, and the amount of
+	  indentation.
+
+	  http://search.cpan.org/dist/Array-PrintCols/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_BUSINESS_CREDITCARD
+	bool "p5-Business-CreditCard-0.31nb2"
+	help
+	  Perl5 module to validate/generate credit card checksums/names
+
+	  These subroutines tell you whether a credit card number is
+	  self-consistent -- whether the last digit of the number is a valid
+	  checksum for the preceding digits.
+	  
+	  The validate() subroutine returns 1 if the card number provided passes
+	  the checksum test, and 0 otherwise.
+	  
+	  The cardtype() subroutine returns a string containing the type of card:
+	  "MasterCard", "VISA", and so on. My list is not complete; I welcome
+	  additions.
+	  
+	  The generate_last_digit() subroutine computes and returns the last digit
+	  of the card given the preceding digits. With a 16-digit card, you
+	  provide the first 15 digits; the subroutine returns the sixteenth.
+	  
+	  This module does not tell you whether the number is on an actual card,
+	  only whether it might conceivably be on a real card.
+	  
+	  These subroutines will also work if you provide the arguments as numbers
+	  instead of strings, e.g. validate(5276440065421319).
+
+	  http://theory.uwinnipeg.ca/CPAN/data/Business-CreditCard/CreditCard.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_BUSINESS_ISBN
+	bool "p5-Business-ISBN-2.05nb2"
+	help
+	  
+
+	  This perl module allows validation and manipulation of International
+	  Standard Book Numbers (ISBNs).
+	  
+	  It allows for the calculation/validation of the checksum, extraction
+	  of country and publisher codes, and conversion to/from European
+	  Article Numbers (EANs).
+
+	  http://search.cpan.org/dist/Business-ISBN/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_BUSINESS_ISBN_DATA
+	bool "p5-Business-ISBN-Data-20081208nb3"
+	help
+	  Data for the p5-Business-ISBN package
+
+	  This is a data pack for Business::ISBN.  You can update
+	  the ISBN data without changing the version of Business::ISBN.
+	  Most of the interesting stuff is in Business::ISBN.
+
+	  http://search.cpan.org/dist/Business-ISBN-Data/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_BUSINESS_UPS
+	bool "p5-Business-UPS-1.13nb6"
+	help
+	  Perl5 module to handle UPS rate calculation and package tracking
+
+	  Make shipping charge requests of the UPS web site or track UPS
+	  packages from within a Perl5 program.
+	  
+	  Note: UPS authorizes you to use UPS tracking systems solely to track
+	  shipments tendered by or for you to UPS for delivery and for no other
+	  purpose. Any other use of UPS tracking systems and information is
+	  strictly prohibited.
+
+	  http://theoryx5.uwinnipeg.ca/CPAN/data/Business-UPS/README.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_CONTROLX10_CM11
+	bool "p5-ControlX10-CM11-2.09nb5"
+	help
+	  Perl5 module for controlling the X10 CM11A controller
+
+	  The CM11A is a bi-directional X10 controller that connects to a serial
+	  port and transmits commands via AC power line to X10 devices. This
+	  module translates human-readable commands (eg. 'A2', 'AJ') into the
+	  Interface Communication Protocol accepted by the CM11A. Both the send
+	  (control output) and receive (monitor external events and status)
+	  operations are supported by the module. The module also handles
+	  checksums and retries failed transmissions.
+
+	  http://members.aol.com/Bbirthisel/alpha.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_CONTROLX10_CM17
+	bool "p5-ControlX10-CM17-0.07nb5"
+	help
+	  Perl5 module for controlling the X10 CM17A controller
+
+	  The FireCracker (CM17A) is a send-only X10 controller that connects
+	  to a serial port and transmits commands via RF to X10 transceivers.
+	  This module translates human-readable commands (eg. 'A2J') into the
+	  bit patterns and control signal pulses accepted by the CM17.
+
+	  http://members.aol.com/Bbirthisel/x10.d/index.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_FILE_MMAGIC
+	bool "p5-File-MMagic-1.27nb3"
+	help
+	  Perl5 module to guess file types
+
+	  File::MMagic
+	  
+	  This module is used to guess file type from its contents like file(1)
+	  command.
+
+	  http://search.cpan.org/dist/File-MMagic/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_FILE_MMAGIC_XS
+	bool "p5-File-MMagic-XS-0.09006nb1"
+	help
+	  
+
+	  This is a port of Apache2 mod_mime_magic.c in Perl,
+	  written in XS with the aim of being efficient and fast,
+	  especially for applications that need to be run for an extended amount of time.
+	  
+	  There is a compatibility layer for File::MMagic.
+	  you can specify :compat when importing the module
+
+	  http://search.cpan.org/dist/File-MMagic/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_FILE_TAIL
+	bool "p5-File-Tail-0.99.3nb3"
+	help
+	  Perl5 module for reading from continuously updated files
+
+	  The primary purpose of File::Tail is reading and analysing log files while
+	  they are being written.
+	  
+	  The module tries very hard NOT to ``busy-wait'' on a file that has little
+	  traffic.  If the file does not get altered for a while, File::Tail gets
+	  suspicious and startschecking if the file was truncated, or moved and
+	  recreated. If anything like that had happened, File::Tail will quietly
+	  reopen the file, and continue reading.
+
+	  http://search.cpan.org/dist/File-Tail/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_I18N_LANGTAGS
+	bool "p5-I18N-LangTags-0.35nb4"
+	help
+	  Perl5 functions for dealing with RFC3066-style language tags
+
+	  Language tags are a formalism, described in RFC 3066 (obsoleting 1766),
+	  for declaring what language form (language and possibly dialect) a given
+	  chunk of information is in.
+	  
+	  This library provides functions for common tasks involving language tags
+	  as they are needed in a variety of protocols and applications.
+
+	  http://search.cpan.org/dist/I18N-LangTags/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_CODES
+	bool "p5-Locale-Codes-3.20"
+	help
+	  Perl5 module for ISO 3166, 639, 4217 and 15924 codes
+
+	  The Locale::Country module provides access to the ISO two-letter codes
+	  for identifying countries, as defined in ISO 3166. You can either
+	  access the codes via the section on conversion routines, or with the
+	  two functions which return lists of all country codes or all country
+	  names.
+
+	  http://search.cpan.org/dist/Locale-Codes/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_MAKETEXT
+	bool "p5-Locale-Maketext-1.13nb3"
+	help
+	  Perl framework for localization
+
+	  It is a common feature of applications (whether run directly, or via
+	  the Web) for them to be "localized" -- i.e., for them to a present an
+	  English interface to an English-speaker, a German interface to a
+	  German-speaker, and so on for all languages it's programmed with.
+	  Locale::Maketext is a framework for software localization; it provides
+	  you with the tools for organizing and accessing the bits of text and
+	  text-processing code that you need for producing localized applications.
+
+	  http://search.cpan.org/dist/Locale-Maketext/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_MAKETEXT_FUZZY
+	bool "p5-Locale-Maketext-Fuzzy-0.10nb3"
+	help
+	  Maketext from already interpolated strings
+
+	  Locale::Maketext::Fuzzy is a subclass of Locale::Maketext with
+	  additional support for localizing messages that already contains
+	  interpolated variables.
+
+	  http://search.cpan.org/dist/Locale-Maketext-Fuzzy/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_MAKETEXT_LEXICON
+	bool "p5-Locale-Maketext-Lexicon-0.91"
+	help
+	  Use other catalog formats in Maketext
+
+	  A  perl module providing lexicon-handling backends, for "Locale::Maketext"
+	  to read from other localization formats, such as PO files, MO files,
+	  or from databases via the "Tie" interface.
+	  
+	  For extracting translatable strings from source files, a "xgettext.pl"
+	  utility is also installed by default.
+
+	  http://search.cpan.org/dist/Locale-Maketext-Lexicon/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_MAKETEXT_SIMPLE
+	bool "p5-Locale-Maketext-Simple-0.21nb2"
+	help
+	  Simple interface to Locale::Maketext::Lexicon
+
+	  This module is a simple wrapper around Locale::Maketext::Lexicon,
+	  designed to alleviate the need of creating Language Classes for
+	  module authors.
+
+	  http://search.cpan.org/~audreyt/Locale-Maketext-Simple/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_US
+	bool "p5-Locale-US-2.112150"
+	help
+	  Perl 5 module to maps US two-letter codes to states and vice versa
+
+	  The Perl 5 module Locale::US provides mapping from US two-letter
+	  codes to states and vice versa.
+
+	  http://search.cpan.org/dist/Locale-US/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_LOCALE_LIBINTL
+	bool "p5-Locale-libintl-1.20nb3"
+	help
+	  Perl internationalization library
+
+	  The package libintl-perl is an internationalization library for Perl
+	  that aims to be compatible with the Uniforum message translations
+	  system as implemented for example in GNU gettext.
+
+	  http://search.cpan.org/dist/libintl-perl/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_MAC_MACBINARY
+	bool "p5-Mac-Macbinary-0.06nb3"
+	help
+	  Perl5 module for decoding Macbinary files
+
+	  The Mac::Macbinary perl5 module provides an object-oriented way to
+	  extract various kinds of information from Macintosh Macbinary files.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_MSGCAT
+	bool "p5-Msgcat-1.03nb3"
+	help
+	  Perl5 module to use the message catalog functions
+
+	  perl5 module providing access to the message catalog functions.
+
+	  http://search.cpan.org/dist/Msgcat/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_SEARCH
+	bool "p5-Search-0.2nb5"
+	help
+	  Perl5 module to provide framework for multiple searches
+
+	  This module is a base class interfacing to search engines.  It defines
+	  an interface that can be used by any of the Search search modules,
+	  such as Search::Glimpse or Search::TextSearch, which are the standard
+	  ones included with the module.
+	  
+	  It exports no routines, just provides methods for the other classes.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_P5_VROOM
+	bool "p5-Vroom-0.26"
+	help
+	  Slide Shows in Vim
+
+	  Ever given a Slide Show and needed to switch over to Vim?
+	  Now you don't ever have to switch again. You're already there.
+	  Vroom lets you create your slides in a single file using a Wiki-like
+	  style, much like Spork and Sporx do. The difference is that your
+	  slides don't compile to HTML or JavaScript or XUL. They get turned
+	  into a set of files that begin with '0', like '03' or '07c' or
+	  '05b.pl'.
+	  The slides are named in alphabetic order. That means you can bring
+	  them all into a Vim session with the command: vim 0*. vroom --vroom
+	  does exactly that.
+
+	  http://search.cpan.org/dist/Vroom/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PARCHIVE
+	bool "parchive-1.1nb1"
+	help
+	  
+
+	  "Parchive" implements a RAID-like system for multi-part archives. Such
+	  archives are commonly posted to Usenet binary newsgroups. Typically, a
+	  poster will construct 2 to 5 parity files for a multi-part archive
+	  consisting of somewhere in the neighborhood of 15 to 50 equal sized parts.
+	  These parity files contain a Reed-Solomon encoding of the original files.
+	  He'll then post all of them along with the original parts, so if any number
+	  of those original parts are lost or corrupted in transit (up to the number
+	  of parity files), a receiver may reconstruct them from only that number
+	  of parity files.
+	  
+	  Though quickly growing in popularity for its intended application, the
+	  format of the parity files is sufficiently general to be useful for other
+	  applicatons as well. The format itself is in the public domain.
+
+	  http://parchive.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PCIIDS
+	bool "pciids-20091229"
+	help
+	  
+
+	  This package contains a public list of all known IDs used in PCI devices;
+	  that is ID's of vendors, devices, subsystems and device classes.  These ID
+	  lists (usually in form of a pci.ids file) are used in various programs (The
+	  Linux Kernel, The PCI Utilities, new version of the XFree86 etc.) to display
+	  full device names instead of the numeric IDs.
+
+	  http://pciids.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PDMENU
+	bool "pdmenu-1.2.65nb3"
+	help
+	  Simple console menu program
+
+	  Pdmenu is a menuing system for Unix. It is designed to be easy to
+	  use, and is suitable for a login shell for inexperienced users, or
+	  it can just be ran at the command line as a handy menu.
+
+	  http://www.kitenet.net/~joey/code/pdmenu.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PHP_ORANGEHRM
+	bool "php53-orangehrm-2.6.11.2"
+	help
+	  Open source Human Resource Management (HRM) solution
+
+	  OrangeHRM offers a flexible and easy to use HRIS solution for small
+	  and medium sized companies free of charge. By providing modules
+	  for personnel information management, employee self service, leave,
+	  time & attendance, benefits and recruitment companies are able to
+	  manage the crucial organization asset - people. The combination of
+	  these modules into one application assures the perfect platform
+	  for re-engineering and aligning your HR processes along with the
+	  organizational goals.
+
+	  http://www.orangehrm.com/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PINFO
+	bool "pinfo-0.6.1nb6"
+	help
+	  Przemek's Info Viewer
+
+	  Przemek's info viewer is a neat alternative to the gnu "info" program.
+	  The lynx-like key bindings are run-time configurable, as is the linux
+	  console-style color scheme. Embedded URIs become links that open into
+	  "lynx", and email addresses into "pine" (if either or both are installed).
+	  It can even give the same treatment to man pages!
+
+	  http://pinfo.alioth.debian.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_UKPOSTCODES
+	bool "postcodes-20040515nb1"
+	help
+	  UK national postcode information
+
+	  Free list of UK postcodes
+	  
+	  The list is formatted as plain text, with each record on a separate
+	  line.  Each record consists of five fields, each field being separated
+	  by a comma.  You should be able to import this data into most
+	  applications that support "comma separated variables".  The five
+	  fields are:
+	  
+	  1. First part of the UK postcode (area code)
+	  2. x-coordinate (metres)
+	  3. y-coordinate (metres)
+	  4. Latitude
+	  5. Longitude
+
+	  http://www.jibble.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PPOWER
+	bool "ppower-0.1.5nb1"
+	help
+	  X10 controller software for the CM11A interface
+
+	  Ppower, short for 'Penguin Power', is a piece of UNIX software for controlling
+	  x10 home automation equipment connected to the computer via a cm11a interface.
+	  It can be used to turn things on and off and lights dim and bright.  In
+	  addition to controlling the x10 devices, it can receive commands sent to the
+	  x10 devices from other sources such as an x10 remote transceiver and execute
+	  commands on your system in response.
+	  
+	  The virtue of ppower is that it is designed to run as a daemon at all times,
+	  keeping track of the status of the X10 system, taking action on events,
+	  queueing requests, and providing information on the events it is receiving to
+	  any interested clients.
+
+	  http://ppower.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PTY_REDIR
+	bool "pty-redir-0.1"
+	help
+	  Attach a program's stdio to a pty
+
+	  This is a very simple application which allocates a pty and redirects
+	  stdio to that pty.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_PY_ANITA
+	bool "py26-anita-1.23"
+	help
+	  Automated NetBSD Installation and Test Application
+
+	  Anita is an experimental tool for automated testing of the NetBSD
+	  installation procedure.  Using anita, you can fully automate the
+	  process of downloading a NetBSD distribution, installing it in a
+	  qemu virtual machine, and booting the installed system.
+
+	  http://www.gson.org/netbsd/anita/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_QBREW
+	bool "qbrew-0.3.5nb8"
+	help
+	  Homebrewer's recipe calculator
+
+	  QBrew is a homebrewer's recipe calculator. It can create and modify ale
+	  and lager recipes as well as calculate gravity, color, and bitterness.
+	  QBrew includes a database of styles, grains, hops, and miscellaneous
+	  ingredients, plus a brewing tutorial.
+
+	  http://www.usermode.org/code.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_QTERM
+	bool "qterm-1.0nb1"
+	help
+	  Utility to recognise terminal type automatically
+
+	  Qterm is a program that queries terminals to find out what kind of
+	  terminal is responding.  It is useful to automagically define your
+	  terminal type.  It prints the name of the terminal (compatible,
+	  hopefully, with a termcap/terminfo name) such as "vt100" to standard
+	  output.  See the manual for details.
+	  
+	  Michael A. Cooper
+	  University Computing Services
+	  University of Southern California
+	  mcooper@usc.edu
+
+	  http://www.alistaircrooks.co.uk/software.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_REED
+	bool "reed-5.4nb2"
+	help
+	  Auto-scrolling file viewer
+
+	  Reed is a program originally written to automatically scroll large
+	  text files, such as etexts from Project Gutenberg (http://promo.net/pg
+	  or http://www.gutenberg.net), but its functionality has quickly
+	  expanded to make it a decent regular text pager, as well. Anyone
+	  familiar with CSpotRun for the Palm PDA or the DOS pager Smooth will
+	  have little trouble with Reed's interface.
+
+	  http://www.sacredchao.net/software/reed/index.shtml
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RLWRAP
+	bool "rlwrap-0.30nb1"
+	help
+	  Provides command line editing and history for other commands
+
+	  rlwrap is a 'readline wrapper' that uses the GNU readline library to
+	  allow the editing of keyboard input for any other command. Input history
+	  is remembered across invocations, separately for each command; history
+	  completion and search work as in bash and completion word lists can be
+	  specified on the command line.
+
+	  http://utopia.knoware.nl/~hlub/uck/rlwrap/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ROOT
+	bool "root-5.26nb4"
+	help
+	  OO framework for data analysis and visualisation
+
+	  The ROOT system provides a set of OO frameworks with all the functionality
+	  needed to handle and analyse large amounts of data in a very efficient way.
+	  Having the data defined as a set of objects, specialised storage methods are
+	  used to get direct access to the separate attributes of the selected objects,
+	  without having to touch the bulk of the data. Included are histograming methods
+	  in 1, 2 and 3 dimensions, curve fitting, function evaluation, minimisation,
+	  graphics and visualization classes to allow the easy setup of an analysis
+	  system that can query and process the data interactively or in batch mode.
+	  
+	  Thanks to the builtin CINT C++ interpreter the command language, the scripting,
+	  or macro, language and the programming language are all C++. The interpreter
+	  allows for fast prototyping of the macros since it removes the time consuming
+	  compile/link cycle. It also provides a good environment to learn C++. If more
+	  performance is needed the interactively developed macros can be compiled using
+	  a C++ compiler.
+
+	  http://root.cern.ch/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ROOT_TAIL
+	bool "root-tail-0.0.10nb3"
+	help
+	  Allows printing of text directly to the X11 root window
+
+	  Displays a given file anywhere on your X11 root window with a transparent
+	  background.  It was made because I'm very lazy and this was easier than
+	  making a new rxvt pixmap each time I changed my background to simulate that
+	  transparent effect.  A null desc (example: "/var/log/messages,red,") will
+	  prevent the printing of a description and the []'s.
+
+	  http://www.goof.com/pcg/marc/root-tail.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ROUTEPLANNER_CLI
+	bool "routeplanner-cli-0.11nb3"
+	help
+	  Highway trip planner written in Python
+
+	  A highway trip planner based (a long, long time ago) on Jim
+	  Butterfield's RoadRoute for the Amiga computer.  If there's any
+	  original RoadRoute code still here, I'd be surprised.
+
+	  http://routeplanner.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ROX_MEMO
+	bool "rox-memo-1.9.5nb3"
+	help
+	  Reminds you about things
+
+	  Memo is a ROX application which you can use to store appointments and 'TODO'
+	  items. It displays the next few entries in a small window and can also be
+	  instructed to beep and bring up a window with a message later.
+
+	  http://rox.sourceforge.net/desktop/node/159
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RPM
+	bool "rpm-2.5.4nb7"
+	help
+	  The Red Hat Package Manager
+
+	  This is the Red Hat Package Manager.  It is used to manipulate Red Hat
+	  packages, much in the same way as the pkg_* tools are used in FreeBSD
+	  and NetBSD.  rpm's come in their own format, and are typically used in
+	  the Linux community for binary package administration.
+
+	  http://www.rpm.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_BUNDLER
+	bool "ruby19-bundler-1.0.21"
+	help
+	  Manage your application's dependencies
+
+	  Bundler is a tool that manages gem dependencies for your ruby
+	  application. It takes a gem manifest file and is able to fetch,
+	  download, and install the gems and all child dependencies specified in
+	  this manifest. It can manage any update to the gem manifest file and
+	  update the bundle's gems accordingly. It also lets you run any ruby
+	  code in context of the bundle's gem environment.
+
+	  http://gembundler.com/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_COLUMNIZE
+	bool "ruby19-columnize-0.3.5"
+	help
+	  Ruby module to print an Array in column-sorted order
+
+	  Columnize is a module for printing an Array in column-sorted order.
+
+	  http://rubyforge.org/projects/rocky-hacks/columnize
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_COMMANDER
+	bool "ruby19-commander-4.0.6"
+	help
+	  The complete solution for Ruby command-line executables
+
+	  The complete solution for Ruby command-line executables. Commander bridges the
+	  gap between other terminal related libraries you know and love (OptionParser,
+	  HighLine), while providing many new features, all packed in one simple, elegant
+	  API.
+
+	  http://ramaze.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_CONFIGURATION
+	bool "ruby19-configuration-1.3.1"
+	help
+	  Library for loading Ruby configuration files
+
+	  configuration.rb provides a mechanism for configuring Ruby programs
+	  with Ruby configuration files.
+
+	  http://github.com/ahoward/configuration
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_DAEMONS
+	bool "ruby19-daemons-1.1.4"
+	help
+	  Toolkit to convert Ruby scripts to a daemon
+
+	  Daemons provides an easy way to wrap existing ruby scripts (for example
+	  a self-written server) to be run as a daemon and to be controlled by
+	  simple start/stop/restart commands.  You can also call blocks as daemons
+	  and control them from the parent or just daemonize the current process.
+	  Besides this basic functionality, daemons offers many advanced features
+	  like exception backtracing and logging (in case your ruby script crashes)
+	  and monitoring and automatic restarting of your processes if they crash.
+
+	  http://daemons.rubyforge.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_GEM_PLUGIN
+	bool "ruby19-gem_plugin-0.2.3"
+	help
+	  Gem-based plugin system
+
+	  GemPlugin is a system that lets your users install gems and lets you
+	  load them as additional features to use in your software.  It
+	  originated from the Mongrel (mongrel.rubyforge.org) project but proved
+	  useful enough to break out into a separate project.
+	  
+	  GemPlugin works by listing the gems installed, and doing a require_gem
+	  on any that have the right dependencies.  For example, if a gem
+	  depends on "gem_plugin" and "mongrel" then it will load as a Mongrel
+	  plugin.  This makes it so that users of the plugins only need to gem
+	  install (and maybe config a bit), and plugin authors only need to make
+	  gems.
+
+	  http://mongrel.rubyforge.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_LAUNCHY
+	bool "ruby19-launchy-2.0.5"
+	help
+	  Ruby class for launching applications
+
+	  Launchy is helper class for launching cross-platform applications in
+	  a fire and forget manner.
+	  
+	  There are application concepts (browser, email client, etc.) that are
+	  common across all platforms, and they may be launched differently on
+	  each platform.  Launchy is here to make a common approach to launching
+	  external application from within Ruby programs.
+
+	  http://copiousfreetime.rubyforge.org/launchy/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_PROGRESSBAR
+	bool "ruby19-progressbar-0.9nb1"
+	help
+	  Text Progress Bar Library for Ruby
+
+	  Ruby/ProgressBar is a text progress bar library for Ruby.  It can indicate
+	  progress with percentage, a progress bar, and estimated remaining time.
+
+	  http://0xcc.net/ruby-progressbar/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBYGEMS
+	bool "ruby19-rubygems-1.8.12"
+	help
+	  Ruby standard for publishing and managing third party libraries
+
+	  RubyGems is the premier Ruby packaging system.  It provides:
+	  
+	  * A standard format for destributing Ruby programs and libraries.
+	  * An easy to use tool for managing the installation of gem packages.
+	  * A gem server utility for serving gems from any machine where
+	  RubyGems is installed.
+
+	  http://www.rubygems.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_SPROCKETS
+	bool "ruby19-sprockets-2.0.3"
+	help
+	  Rack-based asset packaging system
+
+	  Sprockets: Rack-based asset packaging
+	  
+	  Sprockets is a Ruby library for compiling and serving web assets.
+	  It features declarative dependency management for JavaScript and CSS
+	  assets, as well as a powerful preprocessor pipeline that allows you to
+	  write assets in languages like CoffeeScript, Sass, SCSS and LESS.
+
+	  http://github.com/josh/rack-mount
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUBY_TRANSACTION_SIMPLE
+	bool "ruby19-transaction-simple-1.4.0nb2"
+	help
+	  Mixin library for adding transaction support to objects
+
+	  Transaction::Simple provides a generic way to add active transaction
+	  support to objects.  The transaction methods added by this module will
+	  work with most objects, excluding those that cannot be Marshal-ed
+	  (bindings, procedure objects, IO instances, or singleton objects).
+
+	  http://rubyforge.org/projects/trans-simple/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_RUMP
+	bool "rump-20091108nb3"
+	help
+	  Virtualized NetBSD kernel components in userspace
+
+	  Rump (Runnable Userspace Meta Program) is a mechanism for running kernel code
+	  as part of a user program's address space. As opposed to executing system calls
+	  for requesting kernel services, rump programs do a library call into the kernel
+	  code for equivalent functionality. Kernel code is simply recompiled as a
+	  userspace shared library from the kernel sources instead of being rewritten,
+	  so services imitate the same services being provided by the kernel. Select
+	  architectures such as i386 and amd64 also support directly linking binary
+	  kernel modules against rump programs.
+
+	  http://www.NetBSD.org/docs/rump/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_SCH
+	bool "sch-20010224"
+	help
+	  Curses-based schedule management tool
+
+	  curses-based schedule management tool (so-called "SRA scheduler").
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_SCI
+	bool "sci-0.5.6nb1"
+	help
+	  Curses based data entry via templates
+
+	  sci builds multi-user data entry screens from a text template.
+	  The data input into a screen is saved in a tab-delimited file.
+	  The template may supply default values for a data entry field,
+	  and fields may be marked as numeric data, or alphabetic only.
+	  sci uses curses for screen control.
+
+	  http://linuxparts.com/software.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_SCREEN
+	bool "screen-4.0.3nb4"
+	help
+	  Multi-screen window manager
+
+	  Screen is a full-screen window manager that multiplexes a physical terminal
+	  between several processes (typically interactive shells).
+	  Each virtual terminal provides the functions of a DEC VT100 terminal and, in
+	  addition, several control functions from the ANSI X3.64 (ISO 6429) and ISO
+	  2022 standards (e.g. insert/delete line and support for multiple character
+	  sets). There is a scrollback history buffer for each virtual terminal and a
+	  copy-and-paste mechanism that allows moving text regions between windows.
+
+	  http://www.gnu.org/software/screen/screen.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_SEND_PR
+	bool "send-pr-3.113.1"
+	help
+	  GNATS problem reporting tool
+
+	  send-pr is a tool used to submit problem reports (PRs) to a central
+	  GNATS support site.
+
+	  http://www.gnu.org/software/gnats/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_SIAG
+	bool "siag-3.6.1nb3"
+	help
+	  Poor man's office suite with spreadsheet, word processor, etc
+
+	  Siag Office is a tightly integrated, free office package.
+	  
+	  egon:	 Egon Animator, presentation generator, similar to MS PowerPoint
+	  gvu:	 Postscript previewer
+	  pw:	 Pathetic Writer, text processor, similar to MS Word (well... :-)
+	  siag:	 Scheme In A Grid, spreadsheet, similar to MS Excel
+	  tsiag:	 Curses-based version of siag
+	  xedplus: Lightweight text editor which can easily be configured away
+	  xfiler:	 File manager
+
+	  http://siag.nu/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_SOFTMAKER_OFFICE_DEMO
+	bool "softmaker-office-demo-2006"
+	help
+	  
+
+	  Office suite from SoftMaker.  Contains PlanMaker and TextMaker, a
+	  spreadsheet program and a document editor.  Supports Excel and Word
+	  files as well as OpenDocument and OpenOffice.org files.
+	  
+	  This trial version let you evaluate SoftMaker Office for 30 days.
+	  Export to Word and Excel formats is disabled.
+
+	  http://www.softmaker.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_SPLITVT
+	bool "splitvt-1.6.6"
+	help
+	  Run two shells in a split window/terminal
+
+	  Splitvt splits the screen into two windows, each running a shell, so you
+	  can do and see two things at once.
+	  
+	  Using special keys, the focus may be changed from one window to another.
+	  Other features include cut & pasting between windows, and the ability to
+	  the terminal.
+	  
+	  Note: users may want to take a look at /usr/bin/window (see ``man window'')
+	  for a Free/NetBSD native version this type of program.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_STELLARIUM
+	bool "stellarium-0.11.1"
+	help
+	  Generate photorealistic skies with OpenGL
+
+	  Stellarium is a free software. It renders 3D photo-realistic skies in real
+	  time. With stellarium, you really see what you can see with your eyes,
+	  binoculars or a small telescope.
+
+	  http://www.stellarium.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TASKJUGGLER
+	bool "taskjuggler-2.4.3nb7"
+	help
+	  Project management tool
+
+	  TaskJuggler is a modern and powerful project management tool. Its new
+	  approach to project planning and tracking is far superior to the
+	  commonly used Gantt chart editing tools. It has already been
+	  successfully used in many projects and scales easily to projects with
+	  hundreds of resources and thousands of tasks.
+
+	  http://www.taskjuggler.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TDS
+	bool "tds-1.4.2nb2"
+	help
+	  Web diary system
+
+	  ****************************************************************
+	  TDS - Tomsoft Diary System
+	  ****************************************************************
+	  
+	  * What's TDS(Tomsoft Diary System) ?
+	  
+	  TDS supports creating web diary which payed attention as EDI.
+	  By using this system, user can concentrate only to write diary content,
+	  without confused for dull process such as adding HTML tag, creating HTML files.
+	  For this system includes some convinience command for writing diary,
+	  user can write diary without knowledge of HTML in detail, adding,
+	  output HTML is assuranced as HTML 4.0 transitional.
+	  
+	  Many function is offered, such as PIM(scheduler, todo list),
+	  categorize, searching, log analyses.
+	  
+	  *** for more info, read the README file comes with the distribution.
+
+	  http://tds.dive-in.to/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TEAM
+	bool "team-3.1nb1"
+	help
+	  Portable multi-buffered tape streaming utility
+
+	  Submitted-By: pcg@aber.ac.uk (Piercarlo Grandi)
+	  Posting-Number: Volume 27, Issue 195
+	  Archive-Name: team/part01
+	  
+	  There exist a few filters that help tapes streams by buffering IO and
+	  allowing reads to overlaps with writes under Unix. Most of these filters
+	  rely on relatively unportable features, for example SYSV like shared
+	  memory.
+	  
+	  team is a filter that runs essentially unchanged on any Unix version, as
+	  it relies only on features present in V7. A number of team processes
+	  (team members) share a common input fd and a common output fd, and they
+	  take turns at reading from the former and writing to the latter; they
+	  synchronize by using a ring of pipes between them, where a "read-enable"
+	  and a "write-enable" token circulate.
+	  
+	  The team source is GPL'ed, and it comes with no warranty.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TELLICO_KDE3
+	bool "tellico-1.3.6nb14"
+	help
+	  KDE application for organizing your collections
+
+	  Tellico is a KDE application for organizing your collections. It
+	  provides default templates for books, bibliographies, videos, music,
+	  video games, coins, stamps, trading cards, comic books, and wines.
+	  
+	  Tellico allows you to enter your collection in a catalogue database,
+	  saving many different properties like title, author, etc. Two
+	  different views of your collection are shown. On the left, your
+	  entries are grouped together by any field you like, allowing you
+	  to see how many are in each group. On the right, selected fields
+	  are shown in column format, allowing you to sort by any field. On
+	  the bottom is a customizable HTML view of the current entry. The
+	  entry editor is a dialog box where you enter the data.
+
+	  http://www.periapsis.org/tellico/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TELLICO
+	bool "tellico-2.3.2nb8"
+	help
+	  Collection manager for KDE
+
+	  Tellico is a KDE application for organizing your collections. It
+	  provides default templates for books, bibliographies, videos, music,
+	  video games, coins, stamps, trading cards, comic books, and wines.
+	  
+	  Tellico allows you to enter your collection in a catalogue database,
+	  saving many different properties like title, author, etc. Two
+	  different views of your collection are shown. On the left, your
+	  entries are grouped together by any field you like, allowing you
+	  to see how many are in each group. On the right, selected fields
+	  are shown in column format, allowing you to sort by any field. On
+	  the bottom is a customizable HTML view of the current entry. The
+	  entry editor is a dialog box where you enter the data. Check out
+	  the screenshots.
+	  
+	  Tellico keeps things simple, so no database server is needed. The
+	  data is saved in XML format, which makes for easy parsing, portability,
+	  and styling.
+
+	  http://tellico-project.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TESEQ
+	bool "teseq-1.0.0"
+	help
+	  Terminal control sequence analyzer
+
+	  GNU Teseq is a tool for translating files that contain control
+	  characters and terminal control sequences, into human-understandable
+	  text. It is intended to aid in debugging problems in terminal
+	  emulators, software that makes use of special terminal features, and
+	  interactions between the two.
+	  
+	  Teseq is primarily targeted at individuals who possess a basic
+	  understanding of terminal control sequences, especially CSI sequences;
+	  however, by default Teseq will try to identify and describe the
+	  sequences that it encounters, and the behavior they might produce in a
+	  terminal.
+	  
+	  Teseq describes control functions as they are interpreted by
+	  VT100-compatible terminals, and/or terminals compliant with the ECMA-48 /
+	  ISO/IEC 6429 standard. Teseq does _not_ support describing control
+	  functions according to terminal-specific definitions in a database such
+	  as termcap or terminfo, though future versions may include limited
+	  support for that (*note Future Enhancements::).  Therefore, the
+	  descriptions Teseq uses for control functions may not necessarily match
+	  their actual interpretation by whatever terminal device the characters
+	  were actually intended for.
+
+	  http://ftp.gnu.org/gnu/teseq/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TMUX
+	bool "tmux-1.5"
+	help
+	  
+
+	  Tmux is a "terminal multiplexer", it enables a number of terminals
+	  (or windows) to be accessed and controlled from a single terminal.
+	  Tmux is intended to be a simple, modern, BSD-licensed alternative
+	  to programs such as GNU screen.
+
+	  http://tmux.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TOPLESS
+	bool "topless-1.52"
+	help
+	  Display command output on the whole screen like ``top''
+
+	  topless reads various command output, displays it on the whole screen (like
+	  less), and periodically updates it like top.
+	  
+	  topless can be used with almost every sort of command, but is particularly
+	  useful when used with the command to monitor the system, such as ps, netstat or
+	  fstat.
+
+	  http://bloghome.lovepeers.org/daymemo2/files/2005/0613/topless.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_TTYREC
+	bool "ttyrec-1.0.8"
+	help
+	  ttyrec is a tty recorder
+
+	  ttyrec is a tty recorder. Recorded data can be played back with the
+	  included ttyplay command. ttyrec is just a derivative of script
+	  command for recording timing information with microsecond accuracy as
+	  well. It can record emacs -nw, vi, lynx, or any programs running on
+	  tty.
+
+	  http://0xcc.net/ttyrec/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_UDFCLIENT
+	bool "udfclient-0.7.1"
+	help
+	  UDF file system reader/writer for CD/CD-RW/DVD*RW/DVD-RAM and images
+
+	  UDFclient is a userland implementation of the UDF filingsystem as defined by
+	  the OSTA group. UDFclient is designed to be a study platform and a run-up to a
+	  full read and write kernel level implementation.
+	  
+	  UDFclient basically provides a user interface not unlike ftp(1) but always
+	  fetches and writes files recursively from the disc(s).
+	  
+	  See the packages homepage http://www.13thmonkey.org/udfclient for its features
+	  and history.
+
+	  http://www.13thmonkey.org/udfclient/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_UPTIMEC
+	bool "uptimec-0.2p3"
+	help
+	  Uptime Project client
+
+	  The Uptime Project consists of three parts: The first is one tiny
+	  client that runs on each host that takes part in the project and
+	  sends information about its uptime to the project. The second part
+	  is a central database-server that collects and stores updates from
+	  all participating hosts, and the third part is a website where
+	  statistics can be viewed and users can administrate their accounts
+	  and add new hosts.
+
+	  http://www.mreriksson.net/uptimes/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_URJTAG
+	bool "urjtag-0.10nb2"
+	help
+	  JTAG tool
+
+	  UrJTAG is a software package which enables working with JTAG-aware (IEEE
+	  1149.1) hardware devices (parts) and boards through a JTAG adapter.
+	  This package has an open and modular architecture with the ability to write
+	  miscellaneous extensions (like board testers, flash memory programmers, and so
+	  on).
+
+	  http://downloads.sourceforge.net/project/urjtag/urjtag/0.10/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_USBIDS
+	bool "usbids-20081118"
+	help
+	  
+
+	  This package contains a public list of all known IDs used in USB devices;
+	  that is ID's of vendors, devices, subsystems and device classes.  These ID
+	  lists (usually in form of a usb.ids file) are used in various programs
+	  to display full device names instead of the numeric IDs.
+
+	  http://www.linux-usb.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_USBPROG
+	bool "usbprog-0.2.0nb5"
+	help
+	  Firmware loader for "usbprog" programming adapter
+
+	  This is the programming tool needed to replace the firmware on the USBprog
+	  hardware. It automatically retrieves a list of available firmwares from the
+	  internet, downloads them and uploads it to the USBprog adapter.
+
+	  http://www.embedded-projects.net/index.php?page_id
+
+
+config BR2_PKGSRC_PACKAGE_MISC_UTFTOOLS
+	bool "utftools-1.6nb1"
+	help
+	  UTF-aware wc, fmt, expand, and unexpand
+
+	  This package contains implementations of UTF-aware wc, fmt,
+	  expand, and unexpand.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_VERA
+	bool "vera-1.16"
+	help
+	  Virtual Entity of Relevant Acronyms
+
+	  V.E.R.A. is a free list of acronyms all of which are used in the field of
+	  computing. It contains approximately 7592 acronyms.
+
+	  http://cgi.snafu.de/ohei/user-cgi-bin/veramain-e.cgi
+
+
+config BR2_PKGSRC_PACKAGE_MISC_VFU
+	bool "vfu-3.04nb3"
+	help
+	  Small, handy, easy-to-use file manager
+
+	  VFU is small, handy, easy-to-use file manager for UNIX/Linux.
+	  Main features are:
+	  
+	  * Console/Text mode!
+	  * Copy/Move/Erase of selected files/single file/single file while
+	  selection exists.
+	  * Overwrite prompt when copy/move (Yes/No/Always/Never/...).
+	  * Fast One-Key Commands.
+	  * Filename completion (incl. extended completion: `*some[az].zip' )
+	  * Powerful ChangeDir function (w. History, Preset favourite dirs...)
+	  * Directory(ies) size calculation (single dir/all dirs).
+	  * Run-Time dirs' sizes calculation! (with dir sizes cache as option)
+	  * Extensive user-defined external support/utils!
+	  * Interactive/octal chmod and chown (for selected files/single/...)
+	  * File-type colorization (user defined).
+	  * Incremental search/masking in all file lists.
+	  * Archives support (storage/directory) incl. view/browse/extract:
+	  TAR TGZ ZIP UC2 ARJ JAR RAR LIM LHA HA
+	  * +++more...
+
+	  http://cade.datamax.bg/vfu/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_VISUAL_REGEXP
+	bool "visual_regexp-3.0nb2"
+	help
+	  Easily design and debug regular expressions graphically
+
+	  Visual REGEXP lets you easily design and debug regular expressions
+	  by providing a graphical visualization of the expression and its
+	  matches on a sample of your choice.
+
+	  http://laurent.riesterer.free.fr/regexp/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_VTTEST
+	bool "vttest-20050107"
+	help
+	  vt100/vt220/xterm test utility
+
+	  This is a program to test the compatibility (or to demonstrate the
+	  non-compatibility) of so-called "VT100-compatible" terminals. In conformance
+	  of the good old hacker traditions, the only documentation of this program is
+	  the source code itself. To understand it, you also need a copy of the
+	  original VT100 manual from DEC.
+
+	  http://invisible-island.net/vttest/vttest.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_VYM
+	bool "vym-1.12.7nb5"
+	help
+	  Generate and manipulate maps which show your thoughts
+
+	  VYM (View Your Mind) is a tool to generate and manipulate maps
+	  which show your thoughts. Such maps can help you to improve your
+	  creativity and effectivity.  You can use them for time management,
+	  to organize tasks, to get an overview over complex contexts, to
+	  sort your ideas etc.
+
+	  http://vym.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_WATCH
+	bool "watch-3.2.6nb1"
+	help
+	  Watch a program with update intervals
+
+	  watch is a curses(3)-based program that allows you to watch a program as
+	  it changes.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_WDIC
+	bool "wdic-3.0"
+	help
+	  English dictionary for Korean
+
+	  wdic is a terminal-based English dictionary for Korean.  It fetches
+	  data from the Empas dictionary (http://engdic.emaps.com/).
+
+	  http://kldp.net/projects/wdic/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_WHOHAS
+	bool "whohas-0.22nb2"
+	help
+	  Query several packaging systems for a program
+
+	  whohas is a command line tool that allows querying several package
+	  lists at once. whohas is written in Perl and was designed to help
+	  package maintainers find ebuilds, pkgbuilds and similar package
+	  definitions from other distributions to learn from. However, it
+	  can also be used by normal users who want to know:
+	  
+	  - Which distribution has packages available for apps upon whom the
+	  user depends.
+	  
+	  - What version of a given package is in use in each distribution,
+	  or in each release of a distribution (implemented only for Debian).
+
+	  http://www.philippwesche.org/200811/whohas/intro.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_WINDOW
+	bool "window-20110309"
+	help
+	  Windowing environment for ASCII terminals
+
+	  window(1) implements a windowing environment on ASCII terminals.
+	  It is similar to tmux and GNU screen.
+	  
+	  The program provided by this package is based on the original code of
+	  window(1) shipped by NetBSD 5.x.  NetBSD is replacing window(1) with
+	  tmux, and when that happens this package will be the canonical source
+	  for window(1).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_XCHM
+	bool "xchm-1.20nb1"
+	help
+	  CHM viewer for UNIX
+
+	  xCHM is a CHM viewer for UNIX, based on Jed Wing's CHMLIB and
+	  written with wxWindows. xCHM can view your files, show the contents
+	  tree if one is available, print the current page, work with bookmarks
+	  and do the usual history stunts. It allows you to change fonts and
+	  search for text in all the pages of the archive, or in the pages'
+	  titles. What it can't do is handle Javascript by the book.
+
+	  http://xchm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_XDG_UTILS
+	bool "xdg-utils-1.0.2nb2"
+	help
+	  Tools to assist applications with various desktop integration tasks
+
+	  The xdg-utils package is a set of simple scripts that provide basic
+	  desktop integration functions for any Free Desktop, such as Linux.
+	  
+	  They are intended to provide a set of defacto standards. This means
+	  that:
+	  
+	  * Third party software developers can rely on these xdg-utils for
+	  all of their simple integration needs.
+	  
+	  * Developers of desktop environments can make sure that their
+	  environments are well supported
+	  
+	  If a desktop developer wants to be certain that their environment
+	  functions with all third party software, then can simply make sure
+	  that these utilities work properly in their environment.  This will
+	  hopefully mean that 'third tier' window managers such as XFCE and
+	  Blackbox can reach full parity with Gnome and KDE in terms of third
+	  party ISV support.
+	  
+	  * Distribution vendors can provide custom versions of these utilities
+	  
+	  If a distribution vendor wishes to have unusual systems, they can
+	  provide custom scripts, and the third party software should still
+	  continue to work.
+
+	  http://portland.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_XFCE4_WEATHER_PLUGIN
+	bool "xfce4-weather-plugin-0.6.2nb8"
+	help
+	  Xfce weather plugin
+
+	  Weather plugin for Xfce.
+
+	  http://www.xfce.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_XJDIC
+	bool "xjdic-2.4"
+	help
+	  Japanese dictionary
+
+	  XJDIC is an  electronic  Japanese-English  dictionary  program  designed  to
+	  operate  in  the  X11 window environment.  In particular,  it must run in an
+	  "xterm" environment which has Japanese language support such as provided  by
+	  "kterm" or internationalized xterm, aixterm, etc.
+
+	  http://www.csse.monash.edu.au/~jwb/xjdic/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_XROLODEX
+	bool "xrolodex-1.5nb5"
+	help
+	  Motif/X11 rolodex application
+
+	  `xrolodex' is a Rolodex(R)-style application for maintaining a set of
+	  "virtual business cards."  `xrolodex's top-level window includes four
+	  principal components:
+	  - an application-level menu bar,
+	  - a label area for displaying the name of the current rolodex file,
+	  - a control panel for entry-level rolodex manipulation, and
+	  - an edit window (with local menu bar) for editing the currently
+	  displayed rolodex entry, also providing a basic viewport facility.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_XTAIL
+	bool "xtail-2.1"
+	help
+	  Like "tail -f" on a bunch of files at once
+
+	  "xtail" watches the growth of files.  It's like running a "tail -f"
+	  on a bunch of files at once.  The syntax is:
+	  
+	  xtail name ...
+	  
+	  You can specify both filenames and directories on the command line.
+	  If you specify a directory, it watches all the files in that
+	  directory.  It will notice when new files are created (and start
+	  watching them) or when old files are deleted (and stop watching
+	  them).
+
+	  http://www.unicom.com/sw/xtail/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_XTEND
+	bool "xtend-1.2beta4"
+	help
+	  Monitors X10 commands using heyu to automate UNIX functions
+
+	  Xtend now keeps track of the state of all X10 devices. This allows
+	  you to have conditional execution of commands (e.g. "do this only
+	  if lights A1 and P7 are on"). This data is also made available to
+	  all programs run by Xtend and to any interested process running
+	  on the computer.
+	  
+	  Information made available to programs:
+	  
+	  On/Off status for all 256 devices
+	  Addressed / not addressed status for all 256 devices
+	  Appliance or light for all 256 devices
+
+	  http://www.jabberwocky.com/software/xtend/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_YELP
+	bool "yelp-2.30.2nb7"
+	help
+	  Help browser for GNOME 2 desktop
+
+	  Yelp is the help browser for GNOME2.  It lets you navigate through all
+	  installed documentation.
+
+	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_YROLO
+	bool "yrolo-1.1nb5"
+	help
+	  Contact management software
+
+	  Yrolo is a Rolodex (TM) like software for maintainting database of
+	  people's name, phone no, email etc.
+
+	  http://www.muquit.com/muquit/software/yrolo/yrolo.html
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ZORRO
+	bool "zorro-1.1.8nb1"
+	help
+	  Simple to-do list manager
+
+	  The program allows you to set up a tree of actions starting
+	  from an (invisible) root and going down to as many levels as you
+	  specify.  Associated with each action is a descriptive note, a done/
+	  not done flag, an optional priority and an optional completion date
+	  (more to come). Zorro stores your to-do list in the file ~/.zorrodb
+	  and it reads the file ~/.zorrorc on startup. There are quite a lot of
+	  configurable items - look at /usr/pkg/share/zorro/DOTzorrorc for
+	  further details.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ZYGRIB
+	bool "zyGrib-5.0.6nb2"
+	help
+	  GRIB file viewer for weather data
+
+	  Download and display Meteorological data in GRIB Format 1 files.
+	  
+	  Weather data display:
+	  - Surface Pressure
+	  - Wind 10 m above mean sea level
+	  - Wind gust
+	  - Temperature 2 m above mean sea level
+	  - Potential Temperature min - max 2 m above mean sea level
+	  - Relative Humidity 2 m above mean sea level
+	  - Total Precipitation (mm/h)
+	  - Total Cloud Cover (%)
+	  - Dew Point 2 m above mean sea level
+	  - 0C Isotherm
+	  - Snow (Depth - Risk)
+	  - CAPE (convective available potential energy) at earth level.
+	  - Data in altitude (850, 700, 500, 300, 200 hPa) : geopotential altitude,
+	  wind, temperature, theta-e, relative humidity.
+
+	  http://www.zygrib.org/
+
+
+config BR2_PKGSRC_PACKAGE_MISC_ZYGRIB_MAPS
+	bool "zyGrib-maps-2.4nb1"
+	help
+	  High resolution map files for zyGrib
+
+	  zyGrib is a program to download and display weather data in
+	  GRIB file format against a coastline and river background.
+	  
+	  This is higher resolution map data from the GSHHS project.
+
+	  http://www.zygrib.org/
+
+

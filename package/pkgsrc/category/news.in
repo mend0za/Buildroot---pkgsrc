@@ -1,0 +1,348 @@
+config BR2_PKGSRC_PACKAGE_NEWS_KNEWS
+	bool "knews-1.0nb16"
+	help
+	  X11 newsreader with support for threading and MIME
+
+	  Knews is a threaded newsreader with an X Window interface that
+	  uses NNTP to get news. It displays the threads in a graphical tree.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_CG
+	bool "cg-0.4"
+	help
+	  Semi-automatic newsgroup binary downloader
+
+	  cg is a semi-automatic newsgroup binary downloader.  It assembles
+	  parts based on subject headers and then offers them in an editor for
+	  the user to choose which files he really wants.
+	  
+	  It supports decoding data in the following formats:
+	  uuencode (both single- and multi-posting binaries)
+	  MIME (multipart/mixed, message/partial;
+	  base64, quoted printable, x-uuencode)
+	  yEnc
+
+	  http://ftp.giga.or.at/pub/nih/cg/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_CLEANSCORE
+	bool "cleanscore-0.9.8.1nb2"
+	help
+	  Clean SLRN's score file
+
+	  Cleanscore is a perl-script to remove expired score entries from the
+	  newsreader slrn's scorefile (usually $HOME/News/Score).
+	  
+	  Author: Felix Schueller <fschueller&netcologne.de>
+
+	  http://slrn.sourceforge.net/cleanscore/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_HEIRLOOM_NEWS
+	bool "heirloom-news-070715"
+	help
+	  
+
+	  This package provides 'news' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_HELLANZB
+	bool "hellanzb-0.14.1087nb2"
+	help
+	  Command line nntp file grabber
+
+	  Hellanzb is a Python application designed for UNIX-like environments that
+	  retrieves nzb files and fully processes them; the goal is getting
+	  files from USENET as convenient and painless as possible. All that's
+	  required is moving an nzb file to the queue directory. The rest, i.e.
+	  fetching, par-checking, un-raring, etc. is handled by hellanzb.
+
+	  http://www.hellanzb.com/trac
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_INN
+	bool "inn-2.5.2nb4"
+	help
+	  
+
+	  This is the public release of InterNet News (INN). This work is
+	  sponsored by the Internet Software Consortium.
+	  
+	  InterNetNews is a complete Usenet system.  The cornerstone of the
+	  package is innd, an NNTP server that multiplexes all I/O. Newsreading
+	  is handled by a separate server, nnrpd, that is spawned for each
+	  client.  Both innd and nnrpd have some slight variances from the
+	  NNTP protocol.
+	  
+	  You can set the environment variable INN_SPOOL to whatever you like
+	  to change the default spool directory when building this pkg.
+
+	  http://www.isc.org/software/inn/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_LEAFNODE
+	bool "leafnode-1.11.7"
+	help
+	  
+
+	  Leafnode is a USENET software package designed for small sites, with a
+	  few tens of readers and only a slow link to the net.
+	  
+	  Only groups that someone has been reading in the past week are fetched
+	  from the upstream NNTP server.  When someone stops reading a group,
+	  fetchnews will stop reading that group a week later (this is the default
+	  which can be configured), and when someone starts reading a group, fetchnews
+	  will grab all the articles it can in that group the next time it runs.
+
+	  http://leafnode.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_LOTTANZB
+	bool "lottanzb-0.4.0nb11"
+	help
+	  GNOME front-end for HellaNZB
+
+	  LottaNZB aims to simplify and automate the download of binary news from the
+	  Usenet, a world-wide internet discussion system. Users can tell LottaNZB what
+	  to download using so-called NZB files, which are created by many Usenet search
+	  engines. LottaNZB integrates nicely with GNOME desktops, but is not limited to
+	  them and uses the mature HellaNZB software as its foundation.
+
+	  http://www.lottanzb.org/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_NEWSFETCH
+	bool "newsfetch-1.3nb2"
+	help
+	  Downloads newsgroup messages in mail file format
+
+	  NEWSFETCH downloads network news into mail-format files.
+	  It can also pass the fetched news articles to programs like
+	  procmail to process them further into different folders,
+	  forward or deliver them.
+
+	  http://www.systhread.net/coding
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_NEWSX
+	bool "newsx-1.6nb3"
+	help
+	  NNTP news exchange program
+
+	  Newsx is an NNTP client for Unix. It will connect to a remote NNTP server and
+	  post outgoing articles batched by the news system, as well as fetch incoming
+	  articles.
+	  
+	  It provides the NNTP capabilities required for small local news spools on
+	  installations with NNTP access only through limited ISP accounts. It works well
+	  via a dialup SLIP/PPP connection.
+	  
+	  Newsx is also well suited for large spools with normal feeds, being used for
+	  pulling newsgroups from specific NNTP servers that are not distributed in the
+	  usual manner. Since newsx obeys the normal news spool configuration file and
+	  requires little or no specific configuration, the administrative burden should
+	  be minimized.
+
+	  http://www.kvaleberg.com/newsx.html
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_NGET
+	bool "nget-0.27.1nb2"
+	help
+	  Command line nntp file grabber
+
+	  nget is a command line nntp file grabber.
+	  It automatically pieces together multipart postings for easy
+	  retrieval, even substituting parts from multiple servers and
+	  newsgroups. Handles disconnects gracefully, resuming after the
+	  last part succesfully downloaded.
+	  
+	  features:
+	  * Automatic multi-part post joining
+	  * Automatic binary decoding (using uulib)
+	  * Caches header data for quick access
+	  * Full multi-server support, transparently joining parts
+	  from different servers
+	  * Full multi-group support, transparently joining parts from
+	  multiple newsgroups
+	  * Automatic retries on network errors
+	  * Resumes after the last part successfully downloaded
+	  * Dupe file detection to avoid unneeded downloads
+	  * Select what to retrieve based upon a regular expresson (-r),
+	  or even a more complex expression (-R) based upon any of the
+	  file's subject, author, lines, bytes, # of parts we have,
+	  # of parts req, date, age, messageid, and references.
+	  * Search for newsgroups based on their names and/or descriptions
+	  * Automatic handling of PAR and PAR2 files retrieves only as many
+	  recovery files as necessary to repair any missing/damaged files.
+
+	  http://nget.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_NN
+	bool "nn-6.7.3"
+	help
+	  NN newsreader
+
+	  No News is good news. This version of nn has NNTP and NOV support.
+
+	  http://www.nndev.org/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_NNTPCACHE
+	bool "nntpcache-3.0.2nb1"
+	help
+	  NNTP multi-server caching daemon
+
+	  NNTPCache is Squid for news (plus lots more).
+	  
+	  NNTPCache can take reader loads off major news-servers. Besides its
+	  super efficient execution, a single or multi-layer concentric ring of
+	  NNTPCaches can be arranged about one or more central news-servers on a
+	  DNS round-robin basis. Such a wall of NNTPCaches provides drop-in
+	  scalability, redundancy, authentication & security for even the
+	  largest news-server heart. NNTPCache can transparently stitch multiple
+	  split news-servers (e.g, one news-server carrying alt.binaries.*,
+	  another carrying alt.*, and another carrying everything else) back
+	  together, allowing news-server administrators to spread their news
+	  feeds over multiple machines, or to out-source selected components.
+	  
+	  NNTPCache minimizes the effects of news-server down time, by continuing
+	  to provide cached news-data in the face of news-server fall-over.
+	  
+	  NNTPCache natively supports a variety of AUTHINFO methods, including
+	  /etc/passwd, generic unix pipes, LDAP and radius.
+
+	  http://iq.org/~proff/nntpcache.org/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_NNTPCLNT
+	bool "nntpclnt-1.6.1nb6"
+	help
+	  NNTP client library and inews client posting program
+
+	  `nntpclnt' is the reference implementation of the NNTP client routines.
+	  Included in this package is the commonly-used `inews' posting program and
+	  a library useful to link to programs that simplifies NNTP implementation
+	  throughout a system.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_PAN
+	bool "pan-0.135nb1"
+	help
+	  Newsreader for GTK2
+
+	  Pan is a Newsreader for Gnome whose goal is to be easy to use and
+	  functional enough for beginners and advanced users alike.  It has the
+	  basic features of threading, reading, filtering, posting, and offline
+	  reading, and also has a number of features for power users and
+	  alt.binaries fans.
+	  
+	  It's the only Unix newsreader to get a perfect score on the Good
+	  Net-Keeping Seal of Approval evalutions.
+
+	  http://pan.rebelbase.com/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_SLRN
+	bool "slrn-0.9.9p1nb4"
+	help
+	  Highly customizable threaded newsreader
+
+	  Slrn is a terminal based newsreader by John E. Davis <davis@space.mit.edu>.
+	  It supports threads and is highly customizable through S-Lang functions.
+	  
+	  In this package, there is only support for NNTP, not for local spool.
+
+	  http://slrn.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_SUCK
+	bool "suck-4.3.2nb6"
+	help
+	  Feed a local news server without a dedicated newsfeed
+
+	  The primary use for suck is to feed a local INN or CNEWS server, without
+	  the remote NNTP feeding you articles.  It is designed for a small, partial
+	  news feed.  It is NOT designed to feed 10,000 groups and 3 Gigs of articles
+	  a day.
+	  
+	  This package contains software for copying news from an NNTP server to your
+	  local machine, and copying replies back up to an NNTP server.
+	  
+	  The suck/rpost combination allows you to run your own INN/CNEWS site,
+	  controlling where you get your news, and where you post outgoing articles.
+	  Suck/rpost use only standard NNTP commands that are used by your favorite
+	  news reader (tin, xvnews, strn) such as POST and ARTICLE.  If you can use tin
+	  or xvnews against a NNTP site, than you can use Suck/Rpost.
+
+	  http://home.comcast.net/~bobyetman/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_TIN
+	bool "tin-2.0.0"
+	help
+	  
+
+	  TIN:  Easy to use threaded newsreader with NOV/NNTP support.
+
+	  http://www.tin.org/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_TRN
+	bool "trn-4.76nb3"
+	help
+	  Threaded version of rn, the classic news reader
+
+	  Trn is Threaded RN -- a newsreader that uses an article's references to
+	  order the discussions in a very natural, reply-ordered sequence called
+	  threads.  Having the replies associated with their parent articles not
+	  only makes following the discussion easier, but also makes it easy to back-
+	  track and (re-)read a specific discussion from the beginning.  Trn also
+	  has a visual representation of the current thread in the upper right corner
+	  of the header, which will give you a feel for how the discussion is going
+	  and how the current article is related to the last one you read.
+	  
+	  In addition, a thread selector makes it easy to browse through a large
+	  group looking for interesting articles.  You can even browse through the
+	  articles you've already read and select the one(s) you wish to read again.
+	  Other nice features include the extract commands for the source and binary
+	  groups, thread-oriented kill directives, a better newgroup finding strategy,
+	  and lots more.
+	  
+	  Trn includes a program named "rn", which is backwards-compatible and
+	  starts up trn in "non-threaded" mode.
+
+	  http://trn.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_NEWS_XRN
+	bool "xrn-9.01nb3"
+	help
+	  Usenet News reader for the X window system
+
+	  XRN is a Usenet News reader for the X window system.  It requires an
+	  NNTP server to talk to (i.e., it cannot read news from local disk
+	  files), and the NNTP server must support the XHDR command (most
+	  servers nowadays do; if yours doesn't, XRN will complain when you try
+	  to run it).
+	  
+	  XRN is currently maintained by Jonathan Kamens.  Bug reports or
+	  comments about it should be sent to bug-xrn@kamens.brookline.ma.us.
+	  Please do *not* write to that address with basic questions about
+	  compiling the program; if you are unfamiliar with compiling X
+	  applications and the instructions below are not sufficient, you should
+	  seek help at your site.
+	  
+	  Versions of XRN prior to 7.00 were maintained by Ellen Santovich and
+	  Rick Spickelmier.
+
+	  http://www.mit.edu/people/jik/software/xrn.html
+
+

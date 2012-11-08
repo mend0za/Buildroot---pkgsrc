@@ -1,0 +1,52 @@
+diff --git a/mk/bsd.utils.mk b/mk/bsd.utils.mk
+index 55b494d..52327ac 100644
+--- a/pkgsrc/mk/bsd.utils.mk
++++ b/pkgsrc/mk/bsd.utils.mk
+@@ -10,7 +10,7 @@
+ #
+ DEPENDS_TYPE?=  all
+ .if !empty(DEPENDS_TYPE:Mbuild) || !empty(DEPENDS_TYPE:Mall)
+-_ALL_DEPENDS+=	${BOOTSTRAP_DEPENDS} ${BUILD_DEPENDS}
++_ALL_DEPENDS+=	${BOOTSTRAP_DEPENDS} ${_REAL_BUILD_DEPENDS}
+ .endif
+ .if !empty(DEPENDS_TYPE:Minstall) || !empty(DEPENDS_TYPE:Mpackage) || \
+     !empty(DEPENDS_TYPE:Mall)
+diff --git a/mk/buildlink3/bsd.buildlink3.mk b/mk/buildlink3/bsd.buildlink3.mk
+index 9c0e9a2..70158d0 100644
+--- a/pkgsrc/mk/buildlink3/bsd.buildlink3.mk
++++ b/pkgsrc/mk/buildlink3/bsd.buildlink3.mk
+@@ -222,7 +222,11 @@ ${_BLNK_ABIMETHOD.${_pkg_}}+=	${_abi_}:${BUILDLINK_PKGSRCDIR.${_pkg_}}
+ .endfor
+ .for _depmethod_ in DEPENDS BUILD_DEPENDS ABI_DEPENDS BUILD_ABI_DEPENDS
+ .  if !empty(_BLNK_ADD_TO.${_depmethod_})
++.if !empty(USE_CROSS_COMPILE:M[Yy][Ee][Ss]) && ${_depmethod_} == "BUILD_DEPENDS"
++TARGET_${_depmethod_}+=	${_BLNK_ADD_TO.${_depmethod_}}
++.else
+ ${_depmethod_}+=	${_BLNK_ADD_TO.${_depmethod_}}
++.endif
+ .  endif
+ .endfor	# _BLNK_DEPENDS
+ 
+diff --git a/mk/pkgformat/pkg/depends.mk b/mk/pkgformat/pkg/depends.mk
+index 2867385..8471ce6 100644
+--- a/pkgsrc/mk/pkgformat/pkg/depends.mk
++++ b/pkgsrc/mk/pkgformat/pkg/depends.mk
+@@ -38,12 +38,17 @@ _pkgformat-show-depends: .PHONY
+ 	DEPENDS|*)	${_REDUCE_DEPENDS_CMD} ${DEPENDS:Q} ;;		\
+ 	esac
+ 
++.if !empty(USE_CROSS_COMPILE:M[Yy][Ee][Ss])
++_REAL_BUILD_DEPENDS=${TARGET_BUILD_DEPENDS}
++.else
++_REAL_BUILD_DEPENDS=${BUILD_DEPENDS}
++.endif
+ _LIST_DEPENDS_CMD=	\
+ 	${PKGSRC_SETENV} AWK=${AWK:Q} PKG_ADMIN=${PKG_ADMIN:Q} \
+ 		PKGSRCDIR=${PKGSRCDIR:Q} PWD_CMD=${PWD_CMD:Q} SED=${SED:Q} \
+ 		${SH} ${PKGSRCDIR}/mk/pkgformat/pkg/list-dependencies \
+ 			" "${BOOTSTRAP_DEPENDS:Q} \
+-			" "${BUILD_DEPENDS:Q} \
++			" "${_REAL_BUILD_DEPENDS:Q} \
+ 			" "${DEPENDS:Q}
+ 
+ _LIST_DEPENDS_CMD.bootstrap=	\

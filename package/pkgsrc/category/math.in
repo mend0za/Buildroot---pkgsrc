@@ -1,0 +1,3564 @@
+config BR2_PKGSRC_PACKAGE_MATH_R
+	bool "R-2.14.0nb1"
+	help
+	  Statistical language for data analysis and graphics
+
+	  R is a language which bears a passing resemblance to the S language
+	  developed at AT&T Bell Laboratories.  It provides support for a
+	  variety of statistical and graphical analyses.  R is a true
+	  computer language which contains a number of control-flow
+	  constructions for iteration and alternation.  It allows users to
+	  add additional functionality by defining new functions.  On
+	  platforms which support the dlopen (3) interface, Fortran and C
+	  code can be linked and called at run time.
+	  
+	  R is very close to S in both syntax and semantics, but is not identical.
+	  Whether this is a bug or feature is an open question.
+
+	  http://www.R-project.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_CGIWITHR
+	bool "R-CGIwithR-0.73.0nb1"
+	help
+	  Facilities for the use of R to write CGI scripts
+
+	  Facilities for the use of R to write CGI scripts.
+
+	  http://cran.r-project.org/web/packages/CGIwithR/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_DAAG
+	bool "R-DAAG-1.01nb1"
+	help
+	  Example data sets and functions implemented in R
+
+	  consists of data sets and functions with our (John Maindonald
+	  and John Braun's) book,  Data Analysis and Graphics Using
+	  R, published by Cambridge University Press.
+
+	  http://cran.r-project.org/web/packages/DAAG/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_GRASS
+	bool "R-GRASS-0.3.8"
+	help
+	  Interface between GRASS 5.0 geographical information system and R
+
+	  Interface between GRASS 5.0 geographical information system
+	  and R, based on starting R from within the GRASS environment
+	  using values of environment variables set in the GISRC file.
+	  Interface examples should be run outside GRASS, others may
+	  be run within. Wrapper and helper functions are provided for
+	  a range of R functions to match the interface metadata
+	  structures.
+
+	  http://cran.r-project.org/web/packages/GRASS/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_ISWR
+	bool "R-ISwR-2.0.4"
+	help
+	  Data sets and scripts for 'Introductory Statistics with R'
+
+	  Data sets and scripts for text examples and exercises in
+	  P. Dalgaard (2002), 'Introductory Statistics with R',
+	  Springer Verlag.
+
+	  http://cran.r-project.org/web/packages/ISwR/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_PHYLOGR
+	bool "R-PHYLOGR-1.0.6"
+	help
+	  Manipulation of phylogenetically simulated data sets using GLS
+
+	  Manipulation and analysis of phylogenetically simulated data sets and
+	  phylogenetically based analyses using GLS.
+
+	  http://cran.r-project.org/web/packages/PHYLOGR/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_R2HTML
+	bool "R-R2HTML-1.59.1"
+	help
+	  Includes HTML function and methods to write in an HTML output
+
+	  Includes HTML function and methods to write in an HTML output.
+	  Thus, making HTML reports is easy. Includes a function that allows
+	  redirection on the fly, which appears to be very usefull for
+	  teaching purpose, as the student can keep a copy of the produced
+	  output to keep all that he/she did during the course
+	  Package comes with a vignette describing how to write HTML reports
+	  for statistical analysis. Finally, a driver for Sweave allows to parse
+	  HTML flat files containing R code and to automatically write the
+	  corresponding outputs (tables and graphs).
+
+	  http://cran.r-project.org/web/packages/R2HTML/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_RARCINFO
+	bool "R-RArcInfo-0.4.7"
+	help
+	  Package uses the functions to read geographical information in Arc/Info
+
+	  RArcInfo is a package for the R statistical program  to import
+	  Arc/Info V7.x binary coverages. It is based on the library Avcelib
+	  written by Daniel Morissette.
+	  
+	  Currently, RArcInfo supports most of the file formats stored by these
+	  type of coverages. The geographical information (arcs, polygons,
+	  topological relationships, etc.) are stored using lists, but all the
+	  tables containing related information are imported into a data frame.
+	  
+	  Once the desired data are imported, the user can draw maps, even filling
+	  the polygons according to the value of a given covariate. Although R is
+	  not designed for heavy G.I.S. work, this package is very helpful to work
+	  with binary coverages inside R.
+
+	  http://cran.r-project.org/web/packages/RArcInfo/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_RCMDR
+	bool "R-Rcmdr-1.5.3"
+	help
+	  Platform-independent basic-statistics GUI for R
+
+	  A platform-independent basic-statistics GUI (graphical user interface)
+	  for R, based on the tcltk package.
+
+	  http://cran.r-project.org/web/packages/Rcmdr/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_XML
+	bool "R-XML-3.4.0"
+	help
+	  Tools for parsing and generating XML within R
+
+	  This package provides many approaches for both reading and creating
+	  XML (and HTML) documents (including DTDs), both local and accessible
+	  via HTTP or FTP. It also offers access to an XPath "interpreter".
+
+	  http://cran.r-project.org/web/packages/XML/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_ABIND
+	bool "R-abind-1.1.0nb1"
+	help
+	  Combine multi-dimensional arrays
+
+	  Combine multi-dimensional arrays. This is a generalization of cbind
+	  and rbind. Takes a sequence of vectors, matrices, or arrays and
+	  produces a single array of the same or higher dimension.
+
+	  http://cran.r-project.org/web/packages/abind/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_AKIMA
+	bool "R-akima-0.5.4"
+	help
+	  Linear or cubic spline interpolation for irregular gridded data
+
+	  Linear or cubic spline interpolation for irregular gridded data
+
+	  http://cran.r-project.org/web/packages/akima/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_BITOPS
+	bool "R-bitops-1.0.4.1"
+	help
+	  Functions for Bitwise operations on integer vectors
+
+	  Functions for Bitwise operations on integer vectors.
+
+	  http://cran.r-project.org/web/packages/bitops/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_CAR
+	bool "R-car-2.0.11"
+	help
+	  Accompanies An R Companion to Applied Regression, 2nd Edition
+
+	  This package accompanies J. Fox and S. Weisberg, An R Companion to
+	  Applied Regression, Second Edition, Sage, 2011.
+
+	  http://cran.r-project.org/web/packages/car/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_CHRON
+	bool "R-chron-2.3.33"
+	help
+	  Chronological objects which can handle dates and times
+
+	  Chronological objects which can handle dates and times.
+
+	  http://cran.r-project.org/web/packages/chron/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_CIRCULAR
+	bool "R-circular-0.3.8nb1"
+	help
+	  Circular Statistics, from "Topics in circular Statistics"
+
+	  Circular Statistics, from "Topics in circular Statistics" (2001) S. Rao Jammalamadaka
+	  and A. SenGupta, World Scientific.
+
+	  http://cran.r-project.org/web/packages/circular/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_CLASSINT
+	bool "R-classInt-0.1.14"
+	help
+	  Package for choosing univariate class intervals for graphics
+
+	  A package for choosing univariate class intervals for mapping or other graphics
+	  purposes.
+
+	  http://cran.r-project.org/web/packages/genetics/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_CLIM.PACT
+	bool "R-clim.pact-2.2.39"
+	help
+	  Climate analysis and downscaling package for monthly and daily data
+
+	  Climate analysis and downscaling package for monthly and daily data.
+	  
+	  The package contains R functions for retrieving data, making climate
+	  analysis and downscaling of monthly mean and daily mean global climate
+	  scenarios.
+
+	  http://cran.r-project.org/web/packages/clim.pact/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_COMBINAT
+	bool "R-combinat-0.0.8"
+	help
+	  Routines for combinatorics
+
+	  Routines for combinatorics
+
+	  http://cran.r-project.org/web/packages/combinat/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_DATE
+	bool "R-date-1.2.29"
+	help
+	  Functions for handling dates
+
+	  Functions for handling dates.
+
+	  http://cran.r-project.org/web/packages/date/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_E1071
+	bool "R-e1071-1.5.24"
+	help
+	  Functions for latent class analysis
+
+	  Functions for latent class analysis, short time Fourier transform, fuzzy
+	  clustering, support vector machines, shortest path computation, bagged
+	  clustering, naive Bayes classifier, ...
+
+	  http://cran.r-project.org/web/packages/genetics/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_GDATA
+	bool "R-gdata-2.6.1"
+	help
+	  Various R programming tools for data manipulation
+
+	  Various R programming tools for data manipulation
+
+	  http://cran.r-project.org/web/packages/gdata/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_GENETICS
+	bool "R-genetics-1.3.4"
+	help
+	  Classes and methods for handling genetic data
+
+	  Classes and methods for handling genetic data. Includes classes to
+	  represent genotypes and haplotypes at single markers up to multiple
+	  markers on multiple chromosomes. Function include allele frequencies,
+	  flagging homo/heterozygotes, flagging carriers of certain alleles,
+	  estimating and testing for Hardy-Weinberg disequilibrium, estimating
+	  and testing for linkage disequilibrium, ...
+
+	  http://cran.r-project.org/web/packages/genetics/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_GEOR
+	bool "R-geoR-1.6.36"
+	help
+	  Geostatistical analysis including likelihood-based and Bayesian methods
+
+	  Geostatistical analysis including likelihood-based and Bayesian methods.
+
+	  http://cran.r-project.org/web/packages/geoR/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_GSTAT
+	bool "R-gstat-0.9.65"
+	help
+	  Uni/multivariable geostatistical modelling, prediction and simulation
+
+	  uni- and multivariable geostatistical modelling, prediction and
+	  simulation
+	  
+	  variogram modelling; simple, ordinary and universal point or block
+	  (co)kriging, sequential Gaussian or indicator (co)simulation;
+	  variogram and map plotting utility functions.
+
+	  http://cran.r-project.org/web/packages/gstat/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_GTOOLS
+	bool "R-gtools-2.6.1"
+	help
+	  Various R programming tools
+
+	  Various R programming tools
+
+	  http://cran.r-project.org/web/packages/gtools/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_HTTPREQUEST
+	bool "R-httpRequest-0.0.8"
+	help
+	  Implements the GET, POST and multipart POST request
+
+	  Implements the GET, POST and multipart POST request.
+
+	  http://cran.r-project.org/web/packages/httpRequest/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_HWDE
+	bool "R-hwde-0.61"
+	help
+	  Models and tests for departure from Hardy-Weinberg equilibrium
+
+	  Models and tests for departure from Hardy-Weinberg equilibrium and
+	  independence between loci.
+	  
+	  Fits models for genotypic disequilibria, as described in Huttley and
+	  Wilson (2000), Weir (1996) and Weir and Wilson (1986). Contrast terms
+	  are available that account for first order interactions between loci.
+
+	  http://cran.r-project.org/web/packages/hwde/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_LMM
+	bool "R-lmm-0.3.5nb1"
+	help
+	  Improved procedures for linear mixed models with R
+
+	  Improved procedures for linear mixed models with R.
+
+	  http://cran.r-project.org/web/packages/lmm/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_MAPPROJ
+	bool "R-mapproj-1.1.8.2"
+	help
+	  Converts latitude/longitude into projected coordinates
+
+	  Converts latitude/longitude into projected coordinates.
+
+	  http://cran.r-project.org/web/packages/mapproj/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_MAPS
+	bool "R-maps-2.1.0"
+	help
+	  Display of maps. Includes Projection code
+
+	  Display of maps. Projection code and larger maps are in separate
+	  packages (mapproj and mapdata).
+
+	  http://cran.r-project.org/web/packages/maps/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_MVTNORM
+	bool "R-mvtnorm-0.9.8"
+	help
+	  Computes the multivariate normal and t distribution
+
+	  Computes the multivariate normal and t distribution
+
+	  http://cran.r-project.org/web/packages/mvtnorm/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_NCDF
+	bool "R-ncdf-1.6"
+	help
+	  High-level R interface to Unidata's netCDF data files
+
+	  This package provides a high-level R interface to Unidata's netCDF data files,
+	  which are portable across platforms and include metadata information in
+	  addition to the data sets. Using this package netCDF files can be opened and
+	  data sets read in easily. It is also easy to create new netCDF dimensions,
+	  variables, and files, or manipulate existing netCDF files. This interface
+	  provides considerably more functionality than the old "netCDF" package for R,
+	  and is not compatible with the old "netCDF" package for R.
+
+	  http://cran.r-project.org/web/packages/ncdf/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_PIXMAP
+	bool "R-pixmap-0.4.10"
+	help
+	  Functions for manipulations of bitmaps with R
+
+	  Functions for import, export, plotting and other manipulations of
+	  bitmapped images.
+
+	  http://cran.r-project.org/web/packages/pixmap/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_RANDOMFOREST
+	bool "R-randomForest-4.5.34"
+	help
+	  Classification and regression based on a forest of trees
+
+	  Classification and regression based on a forest of trees using random inputs.
+
+	  http://cran.r-project.org/web/packages/genetics/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_SGEOSTAT
+	bool "R-sgeostat-1.0.23"
+	help
+	  Object-oriented Framework for Geostatistical Modeling in S+
+
+	  An Object-oriented Framework for Geostatistical Modeling in S+.
+
+	  http://cran.r-project.org/web/packages/sgeostat/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_SHAPEFILES
+	bool "R-shapefiles-0.6"
+	help
+	  Functions to read and write ESRI shapefiles
+
+	  Functions to read and write ESRI shapefiles.
+
+	  http://cran.r-project.org/web/packages/shapefiles/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_SP
+	bool "R-sp-0.9.91"
+	help
+	  classes and methods for spatial data
+
+	  A package that provides classes and methods for spatial data. The classes document
+	  where the spatial location information resides, for 2D or 3D data. Utility functions
+	  are provided, e.g. for plotting data as maps, spatial selection, as well as methods
+	  for retrieving coordinates, for subsetting, print, summary, etc.
+
+	  http://cran.r-project.org/web/packages/sp/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_STATMOD
+	bool "R-statmod-1.4.1"
+	help
+	  Miscellaneous biostatistical modeling functions
+
+	  Miscellaneous biostatistical modeling functions.
+
+	  http://cran.r-project.org/web/packages/statmod/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_WLE
+	bool "R-wle-0.9.3nb1"
+	help
+	  Provides approach to robustness via Weighted Likelihood Estimation
+
+	  Provides approach to robustness via Weighted Likelihood Estimation.
+
+	  http://cran.r-project.org/web/packages/wle/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TINYSVM
+	bool "TinySVM-0.09"
+	help
+	  Tiny Support Vector Machines
+
+	  TinySVM is an implementation of Support Vector Machines (SVMs) [Vapnik 95],
+	  [Vapnik 98] for the problem of pattern recognition. Support Vector Machines is a
+	  new generation learning algorithms based on recent advances in statistical
+	  learning theory, and applied to large number of real-world applications, such as
+	  text categorization, hand-written character recognition.
+
+	  http://www.chasen.org/~taku/software/TinySVM/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_AAMATH
+	bool "aamath-0.3nb2"
+	help
+	  ASCII art mathematics
+
+	  aamath is a program that reads mathematical expressions in infix
+	  notation and renders them as ASCII art. It may be useful to send
+	  mathematics through text-only media, such as e-mail or newsgroups.
+	  
+	  As a simple example, the output for an expression such as
+	  
+	  A_OPR = x*sqrt(x^2-1)/2 - int(sqrt(t^2-1), t = 1 .. x)
+	  
+	  will look like
+	  
+	  x
+	  ______     /
+	  / 2        |    ______
+	  x \/ x  - 1    |   / 2
+	  A    = ----------- -  | \/ t  - 1 dt
+	  OPR        2         |
+	  |
+	  /
+	  1
+	  
+	  Other than the usual operations (addition, subtraction,
+	  multiplication, division, and exponentiation), aamath can also handle
+	  functions, integrals, limits, sums, products, matrices and
+	  vectors.
+
+	  http://fuse.superglue.se/aamath/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ABS
+	bool "abs-0.8nb2"
+	help
+	  Free spreadsheet with graphical user interface
+
+	  Abs is a free spreadsheet with graphical user interface running
+	  under NetBSD, Linux, and Aix.  Basic functions are:
+	  
+	  * a  clear and easy to use graphical user interface
+	  
+	  * macro language a la Visual Basic
+	  Programming language with the same syntax as Microsoft Visual Basic.
+	  
+	  * XY, pie and bar charts
+	  
+	  * Printing of selected areas to files
+	  The file format used is Fig.
+	  This file format can be sent to printer through the fig2dev
+	  and gs programs or edited and printed with the Xfig drawing tool.
+	  
+	  * multi-documents management
+	  20 documents open simultaneously.
+	  Copy, Cut and Paste between documents
+	  
+	  * Excel exportable file format through VBA macro file.
+	  The file format used to save abs worksheets is directly importable
+	  to Excel with the Excel macro editor.
+
+	  http://home.scarlet.be/~pin01858/abs.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ADMESH
+	bool "admesh-0.95"
+	help
+	  Program for processing triangulated solid meshes
+
+	  ADMesh is a program for processing triangulated solid
+	  meshes. Currently, ADMesh only reads the STL file format that is used
+	  for rapid prototyping applications, although it can write STL, VRML,
+	  OFF, and DXF files.
+
+	  http://www.varlog.com/index.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ALGAE
+	bool "algae-4.3.6nb2"
+	help
+	  Interpreted language for numerical analysis
+
+	  Algae is an interpreted language for numerical analysis.  Algae
+	  borrows ideas from languages like MATLAB, APL, and C, but it was
+	  developed in response to a need for a free, efficient, and versatile
+	  high-level language with large problem capability.
+
+	  http://algae.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ANTIXLS
+	bool "antixls-0.2bnb1"
+	help
+	  Print XLS file with minimal formatting, or as CSV
+
+	  antixls is a small Perl wrapper for Kawai Takanori's
+	  Spreadsheet::ParseExcel module. It prints out an XLS file with
+	  minimal formatting, or extracts the data into CSV format.
+	  
+	  It is to Excel files what antiword is to Word documents.
+
+	  http://www.af0.net/~dan/?antixls
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ARIBAS
+	bool "aribas-1.63"
+	help
+	  Multi-precision floating point and big integer arithmetic calculator
+
+	  ARIBAS is an interactive interpreter for big integer arithmetic
+	  and multi-precision floating point arithmetic with a Pascal/Modula
+	  like syntax. It has several builtin functions for algorithmic number
+	  theory like gcd, Jacobi symbol, Rabin probabilistic prime test,
+	  factorization algorithms (Pollard rho, continued fraction,
+	  quadratic sieve), etc.
+	  
+	  ARIBAS is used for the examples of number theoretic algorithms in the book
+	  Algorithmische Zahlentheorie by O. Forster.
+	  
+	  A GNU Emacs mode is also included.
+	  
+	  ARIBAS is distributed under the terms of the GNU General Public License.
+
+	  http://www.mathematik.uni-muenchen.de/~forster/sw/aribas.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_BC
+	bool "bc-1.06nb3"
+	help
+	  Arbitrary precision calculator language
+
+	  Bc is an arbitrary precision calculator language.  Syntax is similar
+	  to C, but differs in many substantial areas.  It supports interactive
+	  execution of statements
+	  
+	  It can also be used as a simple console-based calculator.
+	  
+	  This GNU version of bc contains several extensions beyond traditional
+	  bc implementations and the POSIX draft standard.
+	  
+	  This package also includes dc, another arbitrary precision calculator.
+	  Dc is a reverse-polish desk calculator which supports unlimited
+	  precision arithmetic.  It also allows you to define and call macros.
+
+	  http://www.gnu.org/software/bc/bc.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_BLAS
+	bool "blas-1.1nb2"
+	help
+	  
+
+	  The BLAS (Basic Linear Algebra Subprograms) are high quality "building
+	  block" routines for performing basic vector and matrix
+	  operations. Level 1 BLAS do vector-vector operations, Level 2 BLAS do
+	  matrix-vector operations, and Level 3 BLAS do matrix-matrix
+	  operations. Because the BLAS are efficient, portable, and widely
+	  available, they're commonly used in the development of high quality
+	  linear algebra software, LINPACK and LAPACK for example.
+	  
+	  This package contains the Fortran 77 reference implementation of BLAS.
+
+	  http://www.netlib.org/blas/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_BLITZ__
+	bool "blitz++-0.8nb2"
+	help
+	  C++ template class library providing array objects
+
+	  Blitz++ is a C++ class library for scientific computing which provides
+	  performance on par with Fortran 77/90. It uses template techniques to
+	  achieve high performance. The current versions provide dense arrays
+	  and vectors, random number generators, and small vectors and matrices.
+	  Blitz++ is distributed freely under an open source license, and
+	  contributions to the library are welcomed.
+
+	  http://www.oonumerics.org/blitz/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_CALC
+	bool "calc-2.02fnb2"
+	help
+	  Advanced Calculator for GNU Emacs
+
+	  "Calc" is an advanced calculator and mathematical tool that runs as
+	  part of the GNU Emacs environment.  Very roughly based on the HP-28/48
+	  series of calculators, its many features include:
+	  
+	  * Choice of algebraic or RPN (stack-based) entry of calculations.
+	  * Arbitrary precision integers and floating-point numbers.
+	  * Arithmetic on rational numbers, complex numbers (rectangular and
+	  polar), error forms with standard deviations, open and closed
+	  intervals, vectors and matrices, dates and times, infinities,
+	  sets, quantities with units, and algebraic formulas.
+	  * Mathematical operations such as logarithms and trigonometric
+	  functions.
+	  * Programmer's features (bitwise operations, non-decimal numbers).
+	  * Financial functions such as future value and internal rate of
+	  return.
+	  * Number theoretical features such as prime factorization and
+	  arithmetic modulo M for any M.
+	  * Algebraic manipulation features, including symbolic calculus.
+	  * Moving data to and from regular editing buffers.
+	  * "Embedded mode" for manipulating Calc formulas and data directly
+	  inside any editing buffer.
+	  * Graphics using GNUPLOT, a versatile (and free) plotting program.
+	  * Easy programming using keyboard macros, algebraic formulas,
+	  algebraic rewrite rules, or extended Emacs Lisp.
+
+	  http://directory.fsf.org/project/calc/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_CALCOO
+	bool "calcoo-1.3.18nb7"
+	help
+	  Scientific calculator
+
+	  Calcoo is a scientific calculator designed to provide maximum
+	  usability.  The features that make Calcoo better than (at least some)
+	  other calculator programs are:
+	  * Bitmapped button labels and display digits to improve readability.
+	  * No double-function buttons. As the result, you need to click only one
+	  button for any operation (except for arc-hyp trigonometric
+	  functions).
+	  * Undo/redo buttons.
+	  * Copy/paste interaction with X the clipboard.
+	  * Both RPN (reverse Polish notation) and algebraic modes are available
+	  * Tick marks to separate thousands.
+	  * Two memory registers with displays.
+	  * Displays for Y, Z, and T registers.
+	  * It is a purely scientific calculator. There are no buttons for the
+	  hexadecimal digits (ABCDEF) and logical operations, which take space
+	  and distract from "scientific" buttons.
+
+	  http://calcoo.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_CAPC_CALC
+	bool "capc-calc-2.12.4.1"
+	help
+	  C arbitrary precision calculator
+
+	  Calc is an interactive calculator which provides for easy large
+	  numeric caluclations, but which also can be easily programmed for
+	  difficult or long calculations. It can accept a command line
+	  argument, in which case it executes that single command and exits.
+	  Otherwise it enters interactive mode. In this mode, it accepts
+	  commands one at a time, processes them, and displays the answers.
+	  In the simplest case, commands are simply expressions which are
+	  evaluated. For example, he following line can be input:
+	  > 3 * (4 + 1)
+	  and the calculator will print 15.
+	  
+	  Commands are statements in a C-like language, where each input line
+	  is treated as the body of a procedure. Thus he copmmand line can
+	  contain variable declarations, expressions, labels, conditional
+	  tests, and loops. Assignments to any variable name will automatically
+	  define that name as a global variable.
+	  
+	  For more information on the program, run 'calc help help'.
+
+	  http://www.isthe.com/chongo/tech/comp/calc/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_CLISP_PARI
+	bool "clisp-pari-2.49nb1"
+	help
+	  CLISP pari module
+
+	  CLISP pari module
+
+	  http://clisp.cons.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_CLN
+	bool "cln-1.3.2nb1"
+	help
+	  CLN Class Library for Numbers
+
+	  CLN - Class Library for Numbers is a C++ library providing the following
+	  features:
+	  * Rich set of number classes
+	  * Elementary, logical, transcendental functions
+	  * C++ as implementation language brings efficiency, type safety,
+	  and algebraic syntax
+	  * Memory efficiency
+	  * Speed efficiency
+	  * Interoperability
+
+	  http://www.ginac.de/CLN/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_DCDFLIB.C
+	bool "dcdflib.c-1.1nb1"
+	help
+	  Library of C Routines for Cumulative Distribution Functions
+
+	  This library contains routines to compute cumulative distribution
+	  functions, inverses, and parameters of the distribution for the
+	  following set of statistical distributions:
+	  
+	  (1) Beta
+	  (2) Binomial
+	  (3) Chi-square
+	  (4) Noncentral Chi-square
+	  (5) F
+	  (6) Noncentral F
+	  (7) Gamma
+	  (8) Negative Binomial
+	  (9) Normal
+	  (10) Poisson
+	  (11) Student's t
+	  (12) Noncentral t
+	  
+	  Given values of all but one parameter of a distribution, the other is
+	  computed.  These calculations are done with double precision C
+	  variables.
+
+	  http://odin.mdacc.tmc.edu/anonftp/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_DCDFLIB.F
+	bool "dcdflib.f-1.1nb3"
+	help
+	  Library of Fortran Routines for Cumulative Distribution Functions
+
+	  This library contains routines to compute cumulative distribution
+	  functions, inverses, and parameters of the distribution for the
+	  following set of statistical distributions:
+	  
+	  (1) Beta
+	  (2) Binomial
+	  (3) Chi-square
+	  (4) Noncentral Chi-square
+	  (5) F
+	  (6) Noncentral F
+	  (7) Gamma
+	  (8) Negative Binomial
+	  (9) Normal
+	  (10) Poisson
+	  (11) Student's t
+	  (12) Noncentral t
+	  
+	  Given values of all but one parameter of a distribution, the other is
+	  computed.  These calculations are done with FORTRAN Double Precision
+	  variables.
+
+	  http://odin.mdacc.tmc.edu/anonftp/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_DFFTPACK
+	bool "dfftpack-20001209nb2"
+	help
+	  Double precision version of FFTPACK
+
+	  FFTPACK is a collection of FORTRAN 77 subroutines for the computation
+	  of the Fast Fourier Transform of both real and complex periodic
+	  sequences.
+	  
+	  This version of FFTPACK was converted to double precision by
+	  Hugh C. Pumphrey.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_DIEHARDER
+	bool "dieharder-2.24.4"
+	help
+	  Random number generator test suite
+
+	  DieHarder is a test suite for random number generators.  It includes a
+	  reimplementation in C of the well-known Diehard test suite as well as
+	  additional tests.
+
+	  http://www.phy.duke.edu/~rgb/General/dieharder.php
+
+
+config BR2_PKGSRC_PACKAGE_MATH_DJBFFT
+	bool "djbfft-0.76"
+	help
+	  Extremely fast library for floating-point convolution
+
+	  djbfft is an extremely fast library for floating-point convolution.
+	  The current version holds most of the speed records for double-precision
+	  FFTs on general-purpose computers.
+	  
+	  djbfft provides power-of-2 complex FFTs, real FFTs at twice the
+	  speed, and fast multiplication of complex arrays. Single precision
+	  and double precision are equally supported.
+
+	  http://cr.yp.to/djbfft.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_EIGEN2
+	bool "eigen-2.0.15"
+	help
+	  C++ template library for linear algebra
+
+	  Eigen 2 is a C++ template library for linear algebra: vectors, matrices, and
+	  related algorithms. It is:
+	  * Versatile. Eigen handles, without code duplication, and in a completely
+	  integrated way:
+	  o both fixed-size and dynamic-size matrices and vectors.
+	  o both dense and sparse (the latter is still experimental) matrices and
+	  vectors.
+	  o both plain matrices/vectors and abstract expressions.
+	  o both column-major (the default) and row-major matrix storage.
+	  o both basic matrix/vector manipulation and many more advanced, specialized
+	  modules providing algorithms for linear algebra, geometry, quaternions,
+	  or advanced array manipulation.
+	  * Fast.
+	  o Expression templates allow to intelligently remove temporaries and enable
+	  lazy evaluation, when that is appropriate -- Eigen takes care of this
+	  automatically and handles aliasing too in most cases.
+	  o Explicit vectorization is performed for the SSE (2 and later) and AltiVec
+	  instruction sets, with graceful fallback to non-vectorized code.
+	  Expression templates allow to perform these optimizations globally for
+	  whole expressions.
+	  o With fixed-size objects, dynamic memory allocation is avoided, and the
+	  loops are unrolled when that makes sense.
+	  o For large matrices, special attention is paid to cache-friendliness.
+	  * Elegant. The API is extremely clean and expressive, thanks to expression
+	  templates. Implementing an algorithm on top of Eigen feels like just copying
+	  pseudocode. You can use complex expressions and still rely on Eigen to
+	  produce optimized code: there is no need for you to manually decompose
+	  expressions into small steps.
+	  * Compiler-friendy. Eigen has very reasonable compilation times at least with
+	  GCC, compared to other C++ libraries based on expression templates and heavy
+	  metaprogramming. Eigen is also standard C++ and supports various compilers.
+
+	  http://eigen.tuxfamily.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_EISPACK
+	bool "eispack-20001130nb2"
+	help
+	  Fortran routines for the solution of eigenvalue problems
+
+	  EISPACK is a collection of double-precision Fortran subroutines that
+	  compute the eigenvalues and eigenvectors of nine classes of matrices:
+	  complex general, complex Hermitian, real general, real symmetric, real
+	  symmetric banded, real symmetric tridiagonal, special real
+	  tridiagonal, generalized real, and generalized real symmetric matices.
+	  In addition, two routines are included that use singular value
+	  decomposition to solve certain least-squares problems.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ESS
+	bool "ess-5.11"
+	help
+	  Emacs Speaks Statistics
+
+	  Emacs Speaks Statistics (ESS) provides an intelligent, consistent
+	  interface between the user and the software.  ESS interfaces with
+	  S-PLUS, R, SAS, BUGS and other statistical analysis packages under the
+	  Unix, Microsoft Windows, and Apple Mac OS operating systems.  ESS is a
+	  package for the GNU Emacs and XEmacs text editors whose features ESS
+	  uses to streamline the creation and use of statistical software.  ESS
+	  knows the syntax and grammar of statistical analysis packages and
+	  provides consistent display and editing features based on that
+	  knowledge.  ESS assists in interactive and batch execution of
+	  statements written in these statistical analysis languages.
+
+	  http://ess.r-project.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_EUKLEIDES
+	bool "eukleides-1.0.3"
+	help
+	  Euclidean geometry drawing language
+
+	  A Euclidean drawing language compiler which allows one to typeset
+	  geometry figures within a (La)TeX document. This program is also useful
+	  to convert such figures into EPS format or into various other vector
+	  graphic formats.
+
+	  http://www.eukleides.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_EULER
+	bool "euler-1.61nb7"
+	help
+	  Interactive numerical analysis and graphics program
+
+	  EULER  is  a program for quickly and interactively computing with real
+	  and  complex  numbers and matrices, or with intervals, in the style of
+	  MatLab,  Octave,...  It can draw and animate your functions in two and
+	  three dimensions.
+	  
+	  Euler features :
+	  * real, complex and interval scalars and matrices,
+	  * a  programming  language, with local variables, default values for
+	  parameters, variable parameter number, passing of functions,
+	  * two and three dimensional graphs,
+	  * marker plots,
+	  * density and contour plots,
+	  * animations,
+	  * numerical integration and differentiation,
+	  * statistical functions and tests,
+	  * differential equations,
+	  * interval methods with guaranteed inclusions,
+	  * function minimizers (Brent, Nelder-Mean),
+	  * Simplex algorithm,
+	  * interpolation and approximation,
+	  * finding roots of polynomials,
+	  * Fast Fourier transform (FFT),
+	  * an exact scalar product using a long accumulator,
+	  * Postscript graphics export
+
+	  http://euler.sourceforge.net/index.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_EXTCALC
+	bool "extcalc-0.9.3nb6"
+	help
+	  Scientific graphic calculator
+
+	  Extcalc is a scientific graphic calculator. It can process difficult
+	  mathmatical functions, draw graphs and work with functions. You can also
+	  calculate tables from functions. A Script-Interpreter for programs, written
+	  in a C-like language, is also included in Extcalc.
+
+	  http://extcalc-linux.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_FFTPACK
+	bool "fftpack-20001130nb2"
+	help
+	  Single precision Fortran FFT subroutines
+
+	  Fast Fourier Transform routines in FORTRAN 77 from Netlib. These are
+	  single precision routines for both real and complex periodic
+	  sequences. Double precision versions are in the dfftpack package.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_FFTW
+	bool "fftw-3.3"
+	help
+	  Collection of fast C routines to compute DFTs
+
+	  FFTW is a free collection of fast C routines for computing the
+	  Discrete Fourier Transform in one or more dimensions.  It includes
+	  complex, real, symmetric, and parallel transforms, and can handle
+	  arbitrary array sizes efficiently.  FFTW is typically faster than
+	  other publically-available FFT implementations, and is even
+	  competitive with vendor-tuned libraries.  (See our web page for
+	  extensive benchmarks.)  To achieve this performance, FFTW uses novel
+	  code-generation and runtime self-optimization techniques (along with
+	  many other tricks).
+
+	  http://www.fftw.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_FFTW2
+	bool "fftw2-2.1.5nb3"
+	help
+	  Collection of fast C routines to compute DFTs
+
+	  This is FFTW, v. 2.1.3.  FFTW is a collection of fast C routines to
+	  compute the Discrete Fourier Transform in one or more dimensions.
+
+	  http://www.fftw.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_FFTWF
+	bool "fftwf-3.3"
+	help
+	  Collection of fast C routines to compute DFTs
+
+	  FFTW is a free collection of fast C routines for computing the
+	  Discrete Fourier Transform in one or more dimensions.  It includes
+	  complex, real, symmetric, and parallel transforms, and can handle
+	  arbitrary array sizes efficiently.  FFTW is typically faster than
+	  other publically-available FFT implementations, and is even
+	  competitive with vendor-tuned libraries.  (See our web page for
+	  extensive benchmarks.)  To achieve this performance, FFTW uses novel
+	  code-generation and runtime self-optimization techniques (along with
+	  many other tricks).
+	  
+	  This package provides the single precision library.
+
+	  http://www.fftw.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_FGMP
+	bool "fgmp-1.0b5"
+	help
+	  Minimalist free re-implementation of GNU multi-precision routines
+
+	  FGMP is Mark Henderson's public domain implementation of a subset of
+	  the GNU gmp library with the same API.  The fgmp library also includes
+	  a couple of extra routines.
+
+	  http://hpux.cs.utah.edu/hppd/hpux/Maths/Misc/fgmp-1.0b5/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_FITYK
+	bool "fityk-0.9.7nb3"
+	help
+	  Peak fitting software
+
+	  fityk is a program for nonlinear fitting of analytical functions
+	  (especially peak-shaped) to data (usually experimental data).
+	  There are also people using it to remove the baseline from data, or
+	  to display data only.
+
+	  http://fityk.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_FRICAS
+	bool "fricas-1.1.3"
+	help
+	  FriCAS is a fork of the Axiom computer algebra system
+
+	  FriCAS is a fork of Axiom.
+	  
+	  FriCAS algebra library is written in a high level strongly typed
+	  language (Spad), which allows natural expression of mathematical
+	  algorithms.
+	  
+	  FriCAS uses lightweight developement methodology.  Compared to Axiom
+	  FriCAS is significantly restructured -- it is more portable and fixed
+	  several defects.  FriCAS removed rather large unused parts (without
+	  removing functionality).  It is expected that FriCAS will be much
+	  easier to maintain than original Axiom.
+
+	  http://fricas.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GALCULATOR
+	bool "galculator-1.3.4nb7"
+	help
+	  Desktop calculator with scientific / RPN modes
+
+	  galculator is a GTK 2 based calculator with ordinary notation/reverse polish
+	  notation, a formula entry mode, different number bases (DEC, HEX, OCT, BIN)
+	  and different units of angular measure (DEG, RAD, GRAD).
+
+	  http://galculator.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GAP
+	bool "gap-4.3.5nb1"
+	help
+	  Computational group theory and discrete algebra language
+
+	  GAP (Groups, Algorithms and Programs) is a free system for computational
+	  discrete algebra. Its capabilities include computation involving
+	  cyclotomic and finite fields, residue class rings, p-adic numbers,
+	  multivariate polynomials and rational functions, vectors, matrices
+	  and finite groups.
+	  
+	  GAP can be copied and distributed freely for any non-commercial purpose.
+	  
+	  If you use GAP in your research papers, please inform gap@dcs.st-and.ac.uk
+	  and cite GAP in your publication. Please see
+	  http://www.gap-system.org/Bib/cite.html
+	  for more details.
+
+	  http://www.gap-system.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GCALCTOOL
+	bool "gcalctool-5.32.2nb4"
+	help
+	  Desktop calculator for GNOME
+
+	  This is the calculator application that was previously in the OpenWindows
+	  Deskset of the Solaris 8 operating system.
+	  Sun Microsystems Inc. have kindly given me permission to release it.
+	  
+	  It incorporates a multiple precision arithmetic packages based on the work
+	  of Professor Richard Brent, who has also kindly given me permission to make
+	  it available.
+	  
+	  There is a single graphics driver for Gtk2 included with this release.
+
+	  http://live.gnome.org/Gcalctool
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GEG
+	bool "geg-1.0.2nb2"
+	help
+	  Program for drawing 2D math functions within a nice GUI
+
+	  Geg is capable of drawing 2-dimensional mathematical functions
+	  within a nice user interface. e.g., f(x) = 3 + sin(x/2). geg
+	  allows you to view multiple functions simultaneously, with each
+	  function drawn in a different color. Functions can be selectively
+	  erased and are easily identifiable by colour matching. The
+	  viewport can be zoomed in and out, and can xoom in on selected
+	  regions. geg is easy to use, good looking, compact and customisable.
+
+	  http://www.infolaunch.com/~daveb/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GENIUS
+	bool "genius-1.0.14nb1"
+	help
+	  Calculator and math tool
+
+	  Genius calculator is a general purpose calculator and math tool with
+	  many features.
+
+	  http://www.jirka.org/genius.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GLPK
+	bool "glpk-4.47"
+	help
+	  Library for solving linear programming problems
+
+	  GLPK is a set of routines written in ANSI C and organized in the form
+	  of a callable library. This package is intended for solving large-scale
+	  linear programming (LP), mixed integer linear programming (MIP), and
+	  other related problems.
+	  
+	  GLPK includes the following main components:
+	  
+	  * implementation of the primal/dual simplex method;
+	  
+	  * implementation of the primal-dual interior point method;
+	  
+	  * implementation of the branch-and-bound procedure (based on the dual
+	  simplex method);
+	  
+	  * application program interface (API);
+	  
+	  * GLPK/L, a modeling language intended for writing LP/MIP models;
+	  
+	  * GLPSOL, a stand-alone program intended for solving LP/MIP problems
+	  either prepared in the MPS format or written in the GLPK/L modeling
+	  language.
+
+	  http://www.gnu.org/software/glpk/glpk.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GNUMERIC110
+	bool "gnumeric-1.10.17nb1"
+	help
+	  Spreadsheet program from the GNOME project
+
+	  Gnumeric is a powerful and easy to use spreadsheet program from
+	  the GNOME project.  The goal for this spreadsheet is to compete
+	  with the commercial offerings.  Users of Excel should be already
+	  familiar with Gnumeric advanced features.  A plugin system lets
+	  you extend Gnumeric with GPL extensions, and an optional
+	  Python and Perl plugins let you define complex functions in those
+	  popular languages.
+
+	  http://www.gnome.org/projects/gnumeric/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GNUMERIC
+	bool "gnumeric-1.8.4nb16"
+	help
+	  
+
+	  Gnumeric is a powerful and easy to use spreadsheet program from
+	  the GNOME project.  The goal for this spreadsheet is to compete
+	  with the commercial offerings.  Users of Excel should be already
+	  familiar with Gnumeric advanced features.  A plugin system lets
+	  you extend Gnumeric with GPL extensions, and an optional
+	  Python and Perl plugins let you define complex functions in those
+	  popular languages.
+
+	  http://www.gnome.org/projects/gnumeric/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GP_AUTPGRP
+	bool "gp-autpgrp-1.1nb1"
+	help
+	  GAP package for finding automorphism groups of finite p-groups
+
+	  AutPGrp is a GAP 4 package for computing automorphism groups of p-groups.
+	  
+	  In the AutPGrp package we introduce a new function to compute the
+	  automorphism group of a finite p-group. The underlying algorithm is a
+	  refinement of the methods described in O'Brien (1995). In particular,
+	  this implementation is more efficient in both time and space requirements
+	  and hence has a wider range of applications than the ANU pq method. Our
+	  package is written in GAP code and it makes use of a number of methods
+	  from the GAP library such as the MeatAxe for matrix groups and
+	  permutation group functions.
+
+	  http://www.gap-system.org/Share/autpgrp.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GP_FACTINT
+	bool "gp-factint-1.3nb1"
+	help
+	  Integer factorization routines for GAP
+
+	  This package for GAP 4 provides routines for
+	  integer factorization, in particular:
+	  
+	  - Pollard's p-1
+	  - Williams' p+1
+	  - The Elliptic Curves Method (ECM)
+	  - The Continued Fraction Algorithm (CFRAC)
+	  - The Multiple Polynomial Quadratic Sieve (MPQS)
+
+	  http://www.gap-system.org/Share/factint.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GP_FPLSA
+	bool "gp-fplsa-1.0nb2"
+	help
+	  GAP interface to FPLSA
+
+	  This package is a GAP interface to a C program called fplsa for
+	  dealing with finitely presented Lie super-algebras.
+	  
+	  When K is a finitely-presented Lie algebra, the GAP Operation
+	  `IsomorphismSCTableAlgebra' can be used to make the structure of K
+	  explicit, in the form of an isomorphic algebra given by structure
+	  constants, which is much more amenable to further computations.
+	  
+	  This GAP package installs an alternative method for this Operation,
+	  which calls fplsa to do the hard part of the computation. This speeds
+	  up the calculation and permits larger problems to be attempted. The
+	  external program has much additional functionality which is not used
+	  by the present version of the package.
+
+	  http://www.gap-system.org/Share/fplsa.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GP_GRAPE
+	bool "gp-grape-4.1nb2"
+	help
+	  
+
+	  GRAPE is a GAP package for computing with graphs and groups. It was
+	  written by Leonard H. Soicher of Queen Mary, University of London.
+	  
+	  If you use GRAPE to solve a problem, then please email
+	  L.H.Soicher@qmul.ac.uk, and reference:
+	  
+	  Leonard H. Soicher, GRAPE: a system for computing with graphs and groups,
+	  In Larry Finkelstein and William M. Kantor, editors, Groups and
+	  Computation, volume 11 of DIMACS Series in Discrete Mathematics and
+	  Theoretical Computer Science, pages 287-291, American Mathematical Society,
+	  1993. GRAPE homepage: http://www.gap-system.org/Share/grape.html.
+
+	  http://www.gap-system.org/Share/grape.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GP_GRPCONST
+	bool "gp-grpconst-2.0nb1"
+	help
+	  GAP package for finding isomorphism classes of finite groups
+
+	  GrpConst is a GAP 4 package for constructing all groups of a given
+	  finite order (up to isomorphism).
+	  
+	  FrattiniExtensionMethod constructs all soluble groups of a given
+	  order.
+	  
+	  CyclicSplitExtensionMethod constructs all (necessarily soluble) groups
+	  whose given orders are of the form pn .q for different primes p and q
+	  and which have at least one normal Sylow subgroup.
+	  
+	  UpwardsExtensions takes as its input a permutation group G and
+	  positive integer s and returns a list of permutation groups, one for
+	  each extension of G by a soluble group of order a divisor of s.
+	  
+	  The programs in this package have been used to construct a large part
+	  of the Small Groups library.
+
+	  http://www.gap-system.org/Share/grpconst.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GP_LAG
+	bool "gp-lag-2.1nb1"
+	help
+	  GAP Bracket Lie Algebra functions
+
+	  This GAP package contains a variety of functions for working with Lie
+	  algebras obtained from associative algebras by using the "bracket"
+	  operation ab-ba.
+	  
+	  In case the associative algebra has been constructed using the
+	  GroupRing function, the package uses fast methods that take advantage
+	  of known special properties of group algebras. Some of the functions
+	  provided are LieCentre, LieDerivedSubalgebra, IsLieAbelian,
+	  IsLieSolvable, IsLieNilpotent and variations on these.
+	  
+	  There are also functions for maintaining contact with the original
+	  associative ring and with the underlying group in case the algebra is
+	  a group algebra.
+
+	  http://www.gap-system.org/Share/lag.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GRACE
+	bool "grace-5.1.22nb6"
+	help
+	  GRaphing, Advanced Computation and Exploration of data
+
+	  Grace is a tool to make two-dimensional plots of scientific data. It runs
+	  under various (if not all) flavours of UNIX with X11 and Motif. Its
+	  capabilities are roughly similar to GUI-based programs like Sigmaplot or
+	  Microcal Origin plus script-based tools like gnuplot or Genplot.  Its
+	  strength lies in the fact that it combines the convenience of a graphical
+	  user interface with the power of a scripting language which enables it to do
+	  sophisticated calculations or perform automated tasks.
+	  
+	  Grace is derived from Xmgr (a.k.a. ACE/gr), originally written by Paul Turner.
+
+	  http://plasma-gate.weizmann.ac.il/Grace/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GRAPHOPT
+	bool "graphopt-0.4.1nb5"
+	help
+	  Optimize graph layouts
+
+	  In contrast to Graphviz and other graph optimizers, graphopt does
+	  not use a heuristic approach to layout optimization.  Instead, it
+	  uses basic principles of physics to iteratively determine optimal
+	  layout.  Each node is given mass and an electric charge, and each
+	  edge is represented as a spring.  Node mass, electric charge,
+	  optimal spring length, and the spring constant are tweakable in
+	  the gui in realtime.
+	  
+	  For most graphs, this is all that is needed - hit 'go' and the
+	  graph organizes itself much as the analagous real-life system would
+	  if constrained to two dimensions.  For more complex graphs, some
+	  fiddling with the physical parameters at different stages of
+	  optimization usually does the trick.
+	  
+	  To accomodate very large graphs, an additional mechanism called
+	  layering was added.  When a graph is loaded, nodes are assigned to
+	  layers based on their relative positions.  During optimization,
+	  you can choose to hide any number of layers.  Any nodes assigned
+	  to a layer lower than the selected layer are not only hidden, but
+	  neither their electric charges nor the forces of the springs attached
+	  to them are figured into the forces acting on the visible nodes.
+	  In effect, those nodes cease to exist, and a smaller graph is
+	  allowed to lay itself out without being constrained by an excessive
+	  number of nodes.
+
+	  http://sourceforge.net/projects/graphopt/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GRPN
+	bool "grpn-1.3.3nb1"
+	help
+	  
+
+	  GRPN is a RPN calculator for the X Window system built using
+	  the GIMP Toolkit (GTK).
+	  
+	  GRPN works with real numbers, complex numbers, matrices, and
+	  complex matrices.  Numbers can be displayed in 4 different
+	  radix modes, and complex numbers can be displayed in either
+	  Cartesian or polar form.
+	  
+	  GRPN is copyrighted under the terms of the GNU General Public
+	  License.  See the file LICENSE for more details.
+
+	  http://www.getreu.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GSL
+	bool "gsl-1.15"
+	help
+	  The GNU Scientific Library
+
+	  The GNU Scientific Library (GSL) is a collection of routines for
+	  numerical computing.  The routines have been written from scratch in
+	  C, and present a modern Applications Programming Interface (API) for C
+	  programmers, allowing wrappers to be written for very high level
+	  languages.  The source code is distributed under the GNU General
+	  Public License.
+
+	  http://www.gnu.org/software/gsl/gsl.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GTKLIFE
+	bool "gtklife-5.1nb7"
+	help
+	  The game of life
+
+	  Conway's Life program for *nix.
+	  Speed is comparable to the venerable XLife, and in some cases faster.
+	  However, GtkLife also has a modern and friendly user interface.
+
+	  http://ironphoenix.org/tril/gtklife/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_HEIRLOOM_FACTOR
+	bool "heirloom-factor-070715"
+	help
+	  
+
+	  This package provides 'factor' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_HEIRLOOM_UNITS
+	bool "heirloom-units-070715"
+	help
+	  
+
+	  This package provides 'units' utility.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ITPP
+	bool "itpp-4.0.7"
+	help
+	  Library of mathematical, signal processing and communication routines
+
+	  C++ library of mathematical, signal processing and communication
+	  routines
+	  
+	  Its main use is in simulation of communication systems and for
+	  performing research in the area of communications.  The kernel of the
+	  library consists of generic vector and matrix classes, and a set of
+	  accompanying routines.  Such a kernel makes IT++ similar to MATLAB or
+	  GNU Octave.
+
+	  http://sourceforge.net/apps/wordpress/itpp/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_KSEG
+	bool "kseg-0.403nb3"
+	help
+	  Interactive geometry program
+
+	  KSEG is a Free (GPL) interactive geometry program for exploring
+	  Euclidean geometry. It runs on Unix-based platforms (according to users,
+	  it also compiles and runs on Mac OS X and should run on anything that Qt
+	  supports). You create a construction, such as a triangle with a circumcenter,
+	  and then, as you drag verteces of the triangle, you can see the circumcenter
+	  moving in real time.
+
+	  http://www.mit.edu/~ibaran/kseg.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_LAPACK
+	bool "lapack-3.1.1nb4"
+	help
+	  Linear Algebra PACKage
+
+	  LAPACK is a highly portable Fortran 77 library which provides routines
+	  for solving systems of simultaneous linear equations, least-squares
+	  solutions of linear systems of equations, eigenvalue problems, and
+	  singular value problems. The associated matrix factorizations (LU,
+	  Cholesky, QR, SVD, Schur, generalized Schur) are also provided, as are
+	  related computations such as reordering of the Schur factorizations
+	  and estimating condition numbers. Dense and banded matrices are
+	  handled, but not general sparse matrices. In all areas, similar
+	  functionality is provided for real and complex matrices, in both
+	  single and double precision.
+
+	  http://www.netlib.org/lapack/index.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_LIBFFM
+	bool "libffm-0.28nb1"
+	help
+	  Fast alpha-optimized replacement for some libm routines
+
+	  libffm  - Free, pretty fast replacement for some math (libm) routines
+	  on Linux/AXP, optimized for the 21164
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_LIBMATHEVAL
+	bool "libmatheval-1.1.4nb3"
+	help
+	  Library for evaluating mathematical expressions
+
+	  GNU libmatheval is a library which contains several procedures that make
+	  it possible to create an in-memory tree from the string representation
+	  of a mathematical function over single or multiple variables. This tree
+	  can be used later to evaluate a function for specified variable values,
+	  to create a corresponding tree for the function derivative over a
+	  specified variable, or to write a textual tree representation to a
+	  specified string. The library exposes C and Fortran 77 interfaces.
+
+	  http://www.gnu.org/software/libmatheval/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_LINPACK
+	bool "linpack-20010510nb2"
+	help
+	  Library of linear algebra Fortran routines
+
+	  LINPACK is a collection of Fortran subroutines that analyze and solve
+	  linear equations and linear least-squares probles.  The package solves
+	  linear systems whose matrices are general, banded, symmetric
+	  indefinite, symmetric positive definite, triangular, and tridiagonal
+	  square.  In addition, the package computes the QR and singular value
+	  decompositions of rectangular matrices and applies them to
+	  least-squares problems.  LINPACK uses column-oriented algorithms to
+	  increase efficiency by preserving locality of reference.
+	  
+	  LINPACK was designed for supercomputers in use in the 1970s and early
+	  1980s.  LINPACK has been largely superceded by LAPACK which has been
+	  designed to run efficiently on shared-memory, vector supercomputers.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_LP_SOLVE
+	bool "lp_solve-5.5.2.0"
+	help
+	  Mixed Integer Linear Programming (MILP) solver
+
+	  lp_solve is a Mixed Integer Linear Programming (MILP) solver.
+	  
+	  It is a free linear (integer) programming solver based on the
+	  revised simplex method and the Branch-and-bound method for the
+	  integers.  lp_solve solves pure linear, (mixed) integer/binary,
+	  semi-continuous and special ordered sets (SOS) models.
+
+	  http://lpsolve.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_LTM
+	bool "ltm-0.42.0nb1"
+	help
+	  Number theoretic multiple-precision integer library
+
+	  LibTomMath provides highly optimized and portable routines for a
+	  vast majority of integer based number theoretic applications
+	  (including public key cryptography). LibTomMath is not a cryptographic
+	  toolkit itself but it can be used to write one [Used in LibTomCrypt
+	  for RSA, DH and ECC public key routines].
+
+	  http://libtom.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MAPM
+	bool "mapm-4.9.5a"
+	help
+	  Arbitrary Precision Math library
+
+	  Mike's Arbitrary Precision Math Library is a set of functions that
+	  allow the user to perform math to any level of accuracy that is
+	  desired.
+	  This library
+	  will perform the following functions to any desired precision level :
+	  SQRT, CBRT, SIN, COS, TAN, ARC-SIN, ARC-COS, ARC-TAN, ARC-TAN2, LOG,
+	  LOG10, EXP, POW, SINH, COSH, TANH, ARC-SINH, ARC-COSH, ARC-TANH, and
+	  also FACTORIAL.
+
+	  http://www.tc.umn.edu/~ringx004/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MATHOMATIC
+	bool "mathomatic-15.6.0"
+	help
+	  Small portable symbolic math program
+
+	  Mathomatic is an automatic algebraic manipulator that is self-testing
+	  and strictly follows the rules of algebra.
+	  
+	  Mathomatic is an interpreter that can:
+	  - Solve, simplify, and compare algebraic equations.
+	  - Combine simultaneous equations.
+	  - Perform basic calculus operations.
+	  - Act like a double precision floating point programmable calculator.
+	  - Perform complex number and polynomial arithmetic.
+	  - Compute the Greatest Common Divisor of numbers or polynomials.
+	  - Generate "C" code from equations.
+
+	  http://www.mathomatic.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MAXIMA
+	bool "maxima-5.24.0"
+	help
+	  Computer algebra system
+
+	  Maxima is a symbolic computation program.  It is full featured,
+	  doing symbolic manipulation of polynomials, matrices, rational
+	  functions, integration, Todd-coxeter, graphing, bigfloats.  It has a
+	  symbolic debugger source level debugger for maxima code.  Maxima is
+	  based on the original Macsyma developed at MIT in the 1970's.  It is
+	  quite reliable, and has good garbage collection, and no memory leaks.
+	  It comes with hundreds of self tests.
+
+	  http://maxima.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MCSIM
+	bool "mcsim-5.4.0"
+	help
+	  Monte Carlo Simulation software
+
+	  MCSim is a general purpose modeling and simulation program which also
+	  performs standard or Markov chain Monte Carlo simulations. It allows
+	  you to specify a set of linear or nonlinear equations (eventually
+	  differential), and solve them using parameter values you choose or
+	  parameter values sampled from specified statistical distributions.
+	  Simulation outputs can be compared to experimental data for parameter
+	  estimation.
+
+	  http://www.gnu.org/software/mcsim
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MESCHACH
+	bool "meschach-1.2b"
+	help
+	  Library of C Routines for Matrix Computations
+
+	  The Meschach Library is a numerical library of C routines for performing
+	  calculations on matrices and vectors. It is intended for solving systems of
+	  linear equations (dense and sparse), solve least squares problems,
+	  computing eigenvalues and eigenvectors, etc. We do not claim that it
+	  contains every useful algorithm in numerical linear algebra, but it does
+	  provide a basis on which more advanced algorithms can be built. The library
+	  is for people who know something about the C programming language,
+	  something of how to solve the numerical problem they are faced with but do
+	  not want to have the hassle of building all the necessary routines from the
+	  scratch. The library is not a loose collection of numerical routines but it
+	  comprises a coherent system. The current version is enhanced with many
+	  features comparing with previous versions. Since the memory requirements
+	  are nontrivial for large problems we have paid more attention to
+	  allocation/deallocation of memory.
+	  
+	  The source code is available to be perused, used and passed on without
+	  cost, while ensuring that the quality of the software is not compromised.
+	  The software is copyrighted; however, the copyright agreement follows in
+	  the footsteps of the Free Software Foundation in preventing abuse that
+	  occurs with totally public domain software.
+
+	  http://www.math.uiowa.edu/~dstewart/meschach/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_METIS
+	bool "metis-4.0"
+	help
+	  Unstructured graph partitioning and sparse matrix ordering system
+
+	  METIS is a family of programs for partitioning unstructured graphs and
+	  hypergraphs and computing fill-reducing orderings of sparse matrices.
+	  The underlying algorithms used by METIS are based on the
+	  state-of-the-art multilevel paradigm that has been shown to produce
+	  high quality results and scale to very large problems.  It is
+	  available both as a set of stand-alone programs and as a library.
+
+	  http://glaros.dtc.umn.edu/gkhome/views/metis/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MINPACK
+	bool "minpack-20001130nb2"
+	help
+	  FORTRAN 77 library for the solution of nonlinear equations
+
+	  Minpack includes software for solving nonlinear equations and
+	  nonlinear least squares problems.  Five algorithmic paths each include
+	  a core subroutine and an easy-to-use driver.  The algorithms proceed
+	  either from an analytic specification of the Jacobian matrix or
+	  directly from the problem functions.  The paths include facilities for
+	  systems of equations with a banded Jacobian matrix, for least squares
+	  problems with a large amount of data, and for checking the consistency
+	  of the Jacobian matrix with the functions.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MPCOMPLEX
+	bool "mpcomplex-0.9"
+	help
+	  Multiprecision complex arithmetic library
+
+	  MPC is a C library for the arithmetic of complex numbers with
+	  arbitrarily high precision and correct rounding of the result.
+	  It is built upon and follows the same principles as MPFR.
+
+	  http://www.multiprecision.org/mpc/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MPFR
+	bool "mpfr-3.0.1.3"
+	help
+	  GMP-based library for multiple-precision floating-point computations
+
+	  The MPFR library is a C library for multiple-precision floating-point
+	  computations with exact rounding (also called correct rounding).  It is
+	  based on the GMP multiple-precision library and should replace the MPF
+	  class in further releases of GMP.
+	  
+	  The main goal of MPFR is to provide a library for multiple-precision
+	  floating-point computation which is both efficient and has a well-defined
+	  semantics.  It copies the good ideas from the ANSI/IEEE-754 standard for
+	  double-precision floating-point arithmetic (53-bit mantissa).
+
+	  http://www.mpfr.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MPRIME_BIN
+	bool "mprime-bin-24.14"
+	help
+	  
+
+	  This program is used to find Mersenne Prime numbers.  See
+	  http://www.utm.edu/research/primes/mersenne.shtml for a good
+	  description of Mersenne primes.  Mersenne numbers can be proved
+	  composite (not prime) by either finding a factor or by running
+	  a Lucas-Lehmer primality test.
+
+	  http://www.mersenne.org/freesoft.htm
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MTL
+	bool "mtl-2.1.2.21"
+	help
+	  Matrix Template Library
+
+	  The Matrix Template Library is a C++ class library for basic linear
+	  algebra. The MTL is designed for high-performance while at the same
+	  time taking advantage of the generic programming paradigm (ala the
+	  STL) to allow much greater flexibility and breadth of
+	  functionality. Many new and advanced programming techniques were used
+	  in the construction of this library.
+	  
+	  The MTL is a low level library in the sense that the user must be
+	  conscious of the matrix type being used, and that all computationally
+	  expensive operations are explicit. The MTL is not a C++
+	  Matlab. Nevertheless, the interface is designed to be simple and easy
+	  to use.
+	  
+	  The matrix types provided include compressed sparse row/column,
+	  banded, packed, diagonal (and tridiagonal), envelope, array of
+	  pointers, and of course dense matrices. All matrix types share a
+	  common and easy to use interface.
+	  
+	  The algorithms consist of the traditional basic linear algebra
+	  routines (from the BLAS level-1 to 3) which includes matrix and vector
+	  arithmetic as well as operations such as backward substitution and
+	  norm calculations.
+
+	  http://www.osl.iu.edu/research/mtl/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_MUPARSER
+	bool "muparser-134"
+	help
+	  Parser for mathematical expressions
+
+	  Many applications require the parsing of mathematical expressions.
+	  The main objective of this library is to provide a fast and easy way
+	  of doing this. muParser is an extensible high performance math parser
+	  library written in C++. It works by transforming a mathematical
+	  expression into bytecode and precalculating constant parts of the expression.
+
+	  http://muparser.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_NEWMAT
+	bool "newmat-11"
+	help
+	  Newmat C++ Matrix Library
+
+	  This C++ library is intended for scientists and engineers who need to
+	  manipulate a variety of types of matrices using standard matrix operations.
+	  Emphasis is on the kind of operations needed in statistical calculations such
+	  as least squares, linear equation solve and eigenvalues.
+	  
+	  It supports matrix types: Matrix (rectangular matrix); UpperTriangularMatrix;
+	  LowerTriangularMatrix; DiagonalMatrix; SymmetricMatrix; BandMatrix;
+	  UpperBandMatrix; LowerBandMatrix; SymmetricBandMatrix; IdentityMatrix;
+	  RowVector; ColumnVector.
+	  
+	  The library includes the operations *, +, -, *=, +=, -=, Kronecker product,
+	  Schur product, concatenation, inverse, transpose, conversion between types,
+	  submatrix, determinant, Cholesky decomposition, QR triangularisation, singular
+	  value decomposition, eigenvalues of a symmetric matrix, sorting, fast Fourier
+	  and trig. transforms, printing and an interface with Numerical Recipes in C.
+	  
+	  It is intended for matrices in the range 10 x 10 to the maximum size your
+	  machine will accommodate in a single array. The package works for very small
+	  matrices but becomes rather inefficient.  A lazy evaluation approach to
+	  evaluating matrix expressions is used to improve efficiency and reduce use of
+	  temporary storage.
+
+	  http://www.robertnz.net/ol_doc.htm
+
+
+config BR2_PKGSRC_PACKAGE_MATH_NICKLE
+	bool "nickle-2.70"
+	help
+	  Desk calculator language
+
+	  Nickle is a desk calculator  language  with  powerful  programming  and
+	  scripting  capabilities.  Nickle supports a variety of datatypes, espe-
+	  cially arbitrary precision integers, rationals,  and  imprecise  reals.
+	  The  input language vaguely resembles C.  Some things in C which do not
+	  translate easily are different, some design choices have been made dif-
+	  ferently, and a very few features are simply missing.
+
+	  http://nickle.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_NTL
+	bool "ntl-5.5.2"
+	help
+	  C++ library for doing number theory
+
+	  NTL is a high-performance, portable C++ library providing data
+	  structures and algorithms for arbitrary length integers; for vectors,
+	  matrices, and polynomials over the integers and over finite fields;
+	  and for arbitrary precision floating point arithmetic.
+	  
+	  NTL provides high quality implementations of state-of-the-art algorithms for:
+	  
+	  o arbitrary length integer arithmetic and arbitrary precision
+	  floating point arithmetic;
+	  o polynomial arithmetic over the integers and finite fields
+	  including basic arithmetic, polynomial factorization,
+	  irreducibility testing, computation of minimal polynomials,
+	  traces, norms, and more;
+	  o lattice basis reduction, including very robust and fast
+	  implementations of Schnorr-Euchner, block Korkin-Zolotarev
+	  reduction, and the new Schnorr-Horner pruning heuristic for block
+	  Korkin-Zolotarev;
+	  o basic linear algebra over the integers, finite fields, and
+	  arbitrary precision floating point numbers.
+	  
+	  NTL is free software, and may be used according to the terms of the
+	  GNU General Public License.
+
+	  http://www.shoup.net/ntl/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_OCTAVE
+	bool "octave-3.4.3"
+	help
+	  High-level language, intended for numerical computations
+
+	  GNU Octave is a high-level language, primarily intended for numerical
+	  computations.  It provides a convenient command line interface for
+	  solving linear and nonlinear problems numerically, and for performing
+	  other numerical experiments using a language that is mostly compatible
+	  with Matlab.  It may also be used as a batch-oriented language.
+	  
+	  Octave has extensive tools for solving common numerical linear algebra
+	  problems, finding the roots of nonlinear equations, integrating
+	  ordinary functions, manipulating polynomials, and integrating ordinary
+	  differential and differential-algebraic equations.  It is easily extensible
+	  and customizable via user-defined functions written in Octave's own
+	  language, or using dynamically loaded modules written in C++, C, Fortran,
+	  or other languages.
+
+	  http://www.octave.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_OCTAVE_FORGE
+	bool "octave-forge-2006.03.17nb7"
+	help
+	  Extensions to Octave
+
+	  The octave-forge project contains functions for Octave which are not in
+	  the main distribution.  While the main Octave distribution is
+	  conservative about accepting new functions and changes, octave-forge is
+	  very open.  As a result, be prepared for some lower quality code and
+	  more rapidly changing interfaces to the functions in octave-forge.
+
+	  http://www.octave.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ODEPACK
+	bool "odepack-20001130nb2"
+	help
+	  Systematized Collection of ODE Solvers
+
+	  ODEPACK is a collection of Fortran solvers for the initial value
+	  problem for ordinary differential equation (ODE) systems.  It
+	  currently includes six solvers, suitable for both stiff and nonstiff
+	  systems, and includes solvers for systems given in linearly implicit
+	  form as well as solvers for systems given in explicit form.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_OPENAXIOM
+	bool "openaxiom-1.3.0"
+	help
+	  Platform for symbolic, algebraic, and numerical computations
+
+	  OpenAxiom is an open source platform for symbolic, algebraic,
+	  and numerical computations. It offers an interactive environment,
+	  an expressive programming language, a compiler, a large set of
+	  mathematical libraries of interest to researchers and practitioners
+	  of computational sciences.
+	  
+	  OpenAxiom strives to support ubiquitous, advanced, high quality
+	  open source computer algebra on major operating systems,
+	  in particular major Unix variants, GNU/Linux variants, Windows,
+	  and handheld devices. It aims at being the open source computer
+	  algebra system of choice for research, teaching, engineering, etc.
+
+	  http://www.open-axiom.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_OPENFST
+	bool "openfst-1.1"
+	help
+	  OpenFst is a library for manipulating transducers
+
+	  OpenFst is a library for constructing, combining, optimizing, and
+	  searching weighted finite-state transducers (FSTs). Weighted
+	  finite-state transducers are automata where each transition has an
+	  input label, an output label, and a weight. The more familiar
+	  finite-state acceptor is represented as a transducer with each
+	  transition's input and output label equal. Finite-state acceptors
+	  are used to represent sets of strings (specifically, regular or
+	  rational sets); finite-state transducers are used to represent
+	  binary relations between pairs of strings (specifically, rational
+	  transductions). The weights can be used to represent the cost of
+	  taking a particular transition.
+	  
+	  This library was developed by contributors from Google Research
+	  and NYU's Courant Institute. It is intended to be comprehensive,
+	  flexible, efficient and scale well to large problems. it has been
+	  extensively tested. It is an open source project distributed under
+	  the Apache license.
+
+	  http://www.openfst.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ORDCALC
+	bool "ordCalc-0.2nb3"
+	help
+	  Ordinal arithmetic calculator and research tool
+
+	  OrdCalc
+	  An interactive tool to understand the recursive ordinals
+	  
+	  'ord' is a program for understanding the recursive ordinals.
+	  It has a command line interpreter resembling command line calculators.
+	  
+	  See 'ordCalc.pdf' for a brief description of how to use the interpreter.
+	  See 'ordinal.pdf' for a description of the structure of the program and the
+	  theory on which it is based.
+
+	  http://mtnmath.com/ord/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_OTTER
+	bool "otter-3.0.6"
+	help
+	  Automated Deduction System
+
+	  Otter (Organized Techniques for Theorem-proving and Effective
+	  Research) is a resolution-style theorem-proving program for
+	  first-order logic with equality.  Otter includes the inference rules
+	  binary resolution, hyperresolution, UR-resolution, and binary
+	  paramodulation.  Some of its other abilities and features are
+	  conversion from first-order formulas to clauses, forward and back
+	  subsumption, factoring, weighting, answer literals, term ordering,
+	  forward and back demodulation, evaluable functions and predicates, and
+	  Knuth-Bendix completion.  Otter is coded in C, is free, and is
+	  portable to many different kinds of computer.
+
+	  http://www-unix.mcs.anl.gov/AR/otter/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_EXCEL_TEMPLATE
+	bool "p5-Excel-Template-0.33"
+	help
+	  Perl module for templating Excel files
+
+	  This is a module used for templating Excel files. Its genesis came
+	  from the need to use the same datastructure as HTML::Template, but
+	  provide Excel files instead. The existing modules don't do the
+	  trick, as they require replication of logic that's already been
+	  done within HTML::Template.
+
+	  http://search.cpan.org/dist/Excel-Template/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_EXCEL_TEMPLATE_PLUS
+	bool "p5-Excel-Template-Plus-0.05nb2"
+	help
+	  An extension to the Excel::Template module
+
+	  This module is an extension of the Excel::Template module, which
+	  allows the user to use various "engines" from which you can create
+	  Excel files through Excel::Template.
+
+	  http://search.cpan.org/dist/Excel-Template-Plus/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BASE36
+	bool "p5-Math-Base36-0.09"
+	help
+	  Perl 5 module to encode and decode base36 strings
+
+	  The Perl 5 module Math::Base36 converts to and from Base36 numbers
+	  (0..9 - A..Z).
+
+	  http://search.cpan.org/dist/Math-Base36/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BASE85
+	bool "p5-Math-Base85-0.2nb3"
+	help
+	  Perl extension for base 85 numbers, as referenced by RFC 1924
+
+	  This module handles numbers in base 85, via strings and Math::BigInt.
+	  For more information, read the module or rfc1924.txt.
+
+	  http://search.cpan.org/dist/Math-Base85/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BASECNV
+	bool "p5-Math-BaseCnv-1.8"
+	help
+	  Fast functions to CoNVert between number Bases
+
+	  BaseCnv provides a few simple functions for converting between
+	  arbitrary number bases. It is as fast as I currently know how to
+	  make it (of course relying only on the lovely Perl). If you would
+	  rather utilize an object syntax for number-base conversion, please
+	  see Ken Williams's <Ken@Forum.Swarthmore.Edu> fine Math::BaseCalc
+	  module.
+
+	  http://search.cpan.org/dist/Math-BaseCnv/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BEZIER
+	bool "p5-Math-Bezier-0.01nb5"
+	help
+	  Perl module for the solution of Bezier curves
+
+	  This perl module implements the algorithm for the solution of Bezier curves as
+	  presented by Robert D. Miller in Graphics Gems V, "Quick and Simple Bezier
+	  Curve Drawing"
+
+	  http://search.cpan.org/dist/Math-Bezier/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BIGINT_GMP
+	bool "p5-Math-BigInt-GMP-1.36"
+	help
+	  Perl 5 module for arbitrary size integer math via the GMP library
+
+	  The Perl 5 module Math::GMP gives you access to the fast GMP library
+	  for fast big integer math.
+
+	  http://search.cpan.org/dist/Math-BigInt-GMP/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BIGINT_PARI
+	bool "p5-Math-BigInt-Pari-1.16"
+	help
+	  Perl5 library to use Math::Pari for Math::BigInt routines
+
+	  Provides support for big integer in BigInt et al. calculations via means of
+	  Math::Pari, an XS layer on top of the very fast PARI library.
+
+	  http://search.cpan.org/dist/Math-BigInt-Pari/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BIGINTEGER
+	bool "p5-Math-BigInteger-1.0nb5"
+	help
+	  Arbitrary length integer extension module for Perl
+
+	  The BigInteger extension module gives access to Eric Young's bignum
+	  library. This provides a faster alternative to the Math::BigInt
+	  library. The basic object in this library is a BigInteger. It is used
+	  to hold a single large integer.
+
+	  http://search.cpan.org/dist/Math-BigInteger/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_FFT
+	bool "p5-Math-FFT-1.28nb3"
+	help
+	  Perl module to calculate Fast Fourier Transforms
+
+	  Math::FFT is a Perl module for calculating Fast Fourier Transforms.
+
+	  http://search.cpan.org/dist/Math-FFT/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_GMP
+	bool "p5-Math-GMP-2.06nb3"
+	help
+	  Perl 5 module for high speed arbitrary size integer math
+
+	  The Perl 5 module Math::GMP gives you access to the fast GMP library
+	  for fast big integer math.
+
+	  http://search.cpan.org/dist/Math-GMP/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_INTERPOLATE
+	bool "p5-Math-Interpolate-1.05nb5"
+	help
+	  Perl module for interpolating data
+
+	  Math::Interpolate
+	  
+	  This module contains several useful routines for interpolating data
+	  sets and finding where a given value lies in a sorted list.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_MATRIXREAL
+	bool "p5-Math-MatrixReal-2.08"
+	help
+	  Perl module for performing operations on real matrices
+
+	  Math::MatrixReal - Matrix of Reals
+	  
+	  This module includes many important matrix operations and methods:
+	  matrix norm, matrix transposition, matrix inverse, determinant of a
+	  matrix, order and numerical condition of a matrix, scalar product of
+	  vectors, vector product of vectors, vector length, projection of row
+	  and column vectors, a comfortable way for reading in a matrix from a
+	  file, the keyboard or your code, and many more.
+	  
+	  Systems of linear equations may be solved using an efficient algorithm
+	  known as "L-R-decomposition" and several approximative (iterative)
+	  methods. The Householder transformation and QL decomposition for the
+	  determination of the eigensystem of a real symmetric matrix are also
+	  implemented.
+	  
+	  The module also features an implementation of Kleene's algorithm to
+	  compute the minimal costs for all paths in a graph with weighted edges
+	  (the "weights" being the costs associated with each edge).
+
+	  http://search.cpan.org/dist/Math-MatrixReal/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_PARI
+	bool "p5-Math-Pari-2.010806.05"
+	help
+	  Perl5 interface to the pari math library
+
+	  This package is a Perl interface to famous library PARI for
+	  numerical/scientific/number-theoretic calculations.  It allows use of most
+	  PARI functions as Perl functions, and (almost) seamless merging of PARI and
+	  Perl data.
+
+	  http://search.cpan.org/dist/Math-Pari/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM
+	bool "p5-Math-Random-0.71nb2"
+	help
+	  Random number generators
+
+	  This module generates a variety of random numbers. Capabilities of wide
+	  interest include the generation of:
+	  . uniform numbers between 0 and 1 (or user chosen boundaries)
+	  . random integers between user specified bounds
+	  . random permutations of a list (shuffle a deck of cards)
+
+	  http://search.cpan.org/dist/Math-Random/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM_MT
+	bool "p5-Math-Random-MT-1.12"
+	help
+	  The Mersenne Twister PRNG
+
+	  The Mersenne Twister is a pseudorandom number generator developed by
+	  Makoto Matsumoto and Takuji Nishimura. It is described in their paper at
+	  <URL:http://www.math.keio.ac.jp/~nisimura/random/doc/mt.ps>.
+
+	  http://search.cpan.org/dist/Math-Random-MT/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM_MT_AUTO
+	bool "p5-Math-Random-MT-Auto-6.16"
+	help
+	  Auto-seeded Mersenne Twister PRNGs
+
+	  This module provides pseudorandom number generators (PRNGs) that are
+	  based on the Mersenne Twister algorithm.  There is a functional
+	  interface to a standalone PRNG, and an OO interface (based on the
+	  inside-out object model as implemented by the Object::InsideOut
+	  module) for generating multiple PRNG objects.
+
+	  http://search.cpan.org/dist/Math-Random-MT-Auto/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM_MT_PERL
+	bool "p5-Math-Random-MT-Perl-1.06nb2"
+	help
+	  Pure Perl Mersenne Twister Random Number Generator
+
+	  Pure Perl implementation of the Mersenne Twister algorithm as
+	  implemented in C/XS in Math::Random::MT. The output is identical
+	  to the C/XS version. The Mersenne Twister is a 32 bit pseudorandom
+	  number generator developed by Makoto Matsumoto and Takuji Nishimura.
+	  The algorithm is characterised by a very uniform distribution but
+	  is not cryptographically secure. What this means in real terms is
+	  that it is fine for modeling but no good for crypto.
+
+	  http://search.cpan.org/dist/Math-Random-MT-Perl/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_ROUND
+	bool "p5-Math-Round-0.06nb2"
+	help
+	  Perl extension for rounding numbers
+
+	  Math::Round is a Perl module.  It supplies functions to round numbers,
+	  both positive and negative, in various ways.  This may seem like an
+	  odd thing to write a whole module for, but rounding can sometimes be
+	  a little tricky, so I thought some people might find this useful.
+
+	  http://search.cpan.org/dist/Math-Round/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_VECSTAT
+	bool "p5-Math-VecStat-0.08nb2"
+	help
+	  Some basic numeric stats on vectors
+
+	  Some basic statistics on vectors (min,max,average,....).
+
+	  http://search.cpan.org/dist/Math-VecStat/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_NUMBER_COMPARE
+	bool "p5-Number-Compare-0.03"
+	help
+	  Compiles a simple comparison to an anonymous subroutine
+
+	  Number::Compare compiles a simple comparison to an anonymous
+	  subroutine, which you can call with a value to be tested again.
+
+	  http://search.cpan.org/dist/Number-Compare/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_NUMBER_LATIN
+	bool "p5-Number-Latin-1.01nb5"
+	help
+	  Perl module for "lower/upper-latin" numbering system
+
+	  A perl module for converting to a "lower-latin" / "upper-latin" numbering
+	  system, where 1-26 is a-z, 27 is aa, 53 is ba, et cetera.
+
+	  http://search.cpan.org/dist/Number-Latin
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_ROMAN
+	bool "p5-Roman-1.23nb2"
+	help
+	  Conversion of numeric notation between Roman and Arabic
+
+	  This module provides some functions which help conversion of numeric notation
+	  between Roman and Arabic.
+
+	  http://search.cpan.org/dist/Roman/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_SET_CRONTAB
+	bool "p5-Set-Crontab-1.03nb1"
+	help
+	  
+
+	  Set::Crontab parses crontab-style lists of integers and defines
+	  some utility functions to make it easier to deal with them.
+
+	  http://search.cpan.org/dist/Set-Crontab/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_SET_INFINITE
+	bool "p5-Set-Infinite-0.65nb2"
+	help
+	  Perl module for sets of integers and objects
+
+	  Set::Infinite is a Set Theory module for infinite sets.
+	  
+	  It works with reals, integers, and objects.
+	  
+	  When it is used with dates, this module provides schedule checks
+	  (intersections), unions, and infinite recurrences.
+
+	  http://search.cpan.org/dist/Set-Infinite/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_SPREADSHEET_PARSEEXCEL
+	bool "p5-Spreadsheet-ParseExcel-0.5900"
+	help
+	  Perl module to get information from an Excel file
+
+	  This module allows you to get information from Excel file.
+	  
+	  This module can handle files of Excel95, 97 and 2000. (and now
+	  supports Excel4)
+	  
+	  The module will work on the majority of Windows, UNIX and Macintosh
+	  platforms.
+
+	  http://search.cpan.org/dist/Spreadsheet-ParseExcel/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_SPREADSHEET_READ
+	bool "p5-Spreadsheet-Read-0.45"
+	help
+	  Perl 5 module to read the data from a spreadsheet
+
+	  The Perl 5 module Spreadsheet::Read tries to transparently read
+	  *any* spreadsheet and return its content in a universal manner
+	  independent of the parsing module that does the actual spreadsheet
+	  scanning.
+
+	  http://search.cpan.org/dist/Spreadsheet-Read/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_SPREADSHEET_READSXC
+	bool "p5-Spreadsheet-ReadSXC-0.20nb2"
+	help
+	  Perl 5 module to extract OpenOffice 1.x spreadsheet data
+
+	  The Perl 5 module Spreadsheet::ReadSXC extracts data from OpenOffice
+	  1.x spreadsheet files (.sxc).
+
+	  http://search.cpan.org/dist/Spreadsheet-ReadSXC/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_SPREADSHEET_WRITEEXCEL
+	bool "p5-Spreadsheet-WriteExcel-2.37nb2"
+	help
+	  Create Excel data files
+
+	  The Spreadsheet::WriteExcel module can be used to create a cross-
+	  platform Excel binary file. Multiple worksheets can be added to a
+	  workbook and formatting can be applied to cells. Text, numbers,
+	  formulas, hyperlinks and images can be written to the cells.
+	  
+	  The Excel file produced by this module is compatible with Excel 5,
+	  95, 97, 2000 and 2002.
+	  
+	  The module will work on the majority of Windows, UNIX and
+	  Macintosh platforms. Generated files are also compatible with the
+	  Linux/UNIX spreadsheet applications Gnumeric and OpenOffice.
+	  The generated files are not compatible with MS Access.
+
+	  http://search.cpan.org/dist/Spreadsheet-WriteExcel/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_SPREADSHEET_XLSX
+	bool "p5-Spreadsheet-XLSX-0.13nb2"
+	help
+	  Perl 5 module to read MS Excel 2007 files
+
+	  The Perl 5 module Spreadsheet::XLSX is a (quick and dirty) emulation
+	  of Spreadsheet::ParseExcel for Excel 2007 (.xlsx) file format. It
+	  supports styles and many of Excel's quirks, but not all. It populates
+	  the classes from Spreadsheet::ParseExcel for interoperability;
+	  including Workbook, Worksheet, and Cell.
+
+	  http://search.cpan.org/dist/Spreadsheet-XLSX/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_STATISTICS_DESCRIPTIVE
+	bool "p5-Statistics-Descriptive-3.0202"
+	help
+	  Perl module of basic descriptive statistical functions
+
+	  Statistics::Descriptive is a perl module of basic descriptive statistical
+	  functions (mean, median, mode, sum, variance, standard_deviation, etc.)
+
+	  http://search.cpan.org/dist/Statistics-Descriptive/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PARI
+	bool "pari-2.3.5nb7"
+	help
+	  Software package for computer-aided number theory
+
+	  PARI-GP is a package which is aimed at efficient computations in
+	  number theory, but also contains a large number of other useful
+	  functions.  It is somewhat related to a Computer Algebra System, but
+	  is not really one since it treats symbolic expressions as mathematical
+	  entities such as matrices, polynomials, series, etc..., and not as
+	  expressions per se.  However it is often much faster than other CAS,
+	  and contains a large number of specific functions not found elsewhere,
+	  essentially for use in number theory.
+	  
+	  This package can be used in an interactive shell (GP) or as a C/C++
+	  library (PARI). It is free software, in the sense of freedom AND 'free
+	  of charge'.
+
+	  http://pari.math.u-bordeaux.fr/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PARI_GALDATA
+	bool "pari-galdata-2.1nb2"
+	help
+	  Galois group data for pari
+
+	  Galois group data for the Pari computer-aided number theory system.
+
+	  http://www.parigp-home.de/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PHP_BCMATH
+	bool "php53-bcmath-5.3.8"
+	help
+	  PHP extension for bc-style arbitrary precision math
+
+	  PHP is a programming language designed to be embedded into web pages.
+	  This module provides support for bc-style arbitrary precision math.
+
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PEAR_NUMBERS_ROMAN
+	bool "php53-pear-Numbers_Roman-1.0.2"
+	help
+	  Provides methods for converting to and from Roman Numerals
+
+	  Numbers_Roman provides static methods for converting to and from Roman
+	  numerals. It supports Roman numerals in both uppercase and lowercase
+	  styles and conversion for and to numbers up to 5 999 999
+
+	  http://pear.php.net/package/Numbers_Roman/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PEAR_NUMBERS_WORDS
+	bool "php53-pear-Numbers_Words-0.16.2"
+	help
+	  Provides methods for spelling numerals in words
+
+	  With Numbers_Words class you can convert numbers
+	  written in arabic digits to words in several languages.
+	  You can convert an integer between -infinity and infinity.
+	  If your system does not support such long numbers you can
+	  call Numbers_Words::toWords() with just a string.
+
+	  http://pear.php.net/package/Numbers_Words/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PRNG
+	bool "prng-3.0.2"
+	help
+	  Portable, high-performance ANSI-C pseudorandom number generators
+
+	  PRNG is a collection of portable, high-performance ANSI-C
+	  implementations of pseudorandom number generators such as linear
+	  congruential, inversive congruential, and explicit inversive
+	  congruential random number generators (LCG, ICG and EICG, respectively)
+	  created by Otmar Lendl and Josef Leydold.
+
+	  http://statistik.wu-wien.ac.at/software/prng/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PSPP
+	bool "pspp-0.6.2nb7"
+	help
+	  Program for statistical analysis of sampled data
+
+	  PSPP is a program for statistical analysis of sampled data.  It interprets
+	  commands in the SPSS language and produces tabular output in ASCII, HTML,
+	  or PostScript format.  In previous releases, PSPP was known as Fiasco.
+	  
+	  A main goal of the PSPP project is compatibility with the SPSS language.
+	  PSPP also aims to be written better than the program it replaces.  Right
+	  now this includes:
+	  
+	  * High-quality output formatting:
+	  - Presentation-quality tables on devices that can handle it, such
+	  as laser printers and raster displays.  This is currently implemented
+	  through a PostScript driver and a simple HTML tables driver.
+	  - Other devices, such as terminals and dot-matrix printers, are
+	  supported through an ASCII driver.  IBM PC box-drawing
+	  characters can also be used.  Bold and italics are supported
+	  if the underlying device supports them.
+	  - Output can be directed to multiple devices at once and
+	  retain the unique output properties of each device.
+	  - All this can be done on any operating system that PSPP supports.
+	  Though the latest versions of what PSPP replaces support similar
+	  functionality, they do so only under non-free Microsoft
+	  operating systems.
+	  * Portability: PSPP is easy to port. It should be simple to port it
+	  to any operating system having an ANSI C compiler.
+
+	  http://www.gnu.org/software/pspp/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_SCIENTIFIC_DOC
+	bool "py-Scientific-doc-2.4.5"
+	help
+	  Python modules for scientific computing
+
+	  ScientificPython is a collection of Python modules that are useful for
+	  scientific computing. In this collection you will find modules that
+	  cover basic geometry (vectors, tensors, transformations, vector and
+	  tensor fields), quaternions, automatic derivatives, (linear)
+	  interpolation, polynomials, elementary statistics, nonlinear
+	  least-squares fits, unit calculations, Fortran-compatible text
+	  formatting, 3D visualization via VRML, and two Tk widgets for simple
+	  line plots and 3D wireframe models.
+	  
+	  The netCDF interface module, until now distributed separately, has
+	  been integrated into this package as well. It is now called
+	  Scientific.IO.NetCDF.
+	  
+	  The module Scientific.MPI provides an object-oriented interface to the
+	  Message Passing Interface, an industry standard library for
+	  interprocess communication on parallel computers.
+	  
+	  All of these modules are in the public domain; do with them whatever
+	  you wish. However, there is no warranty of any kind; you use the code
+	  at your own risk.
+
+	  http://starship.python.net/crew/hinsen/scientific.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_NUMERIC
+	bool "py26-Numeric-24.2nb1"
+	help
+	  Adds multidimensional numeric arrays to Python
+
+	  The Numeric Extensions to Python (NumPy) give Python the number crunching
+	  power of numeric languages like Matlab and IDL while maintaining all of the
+	  advantages of the general-purpose programming language Python.
+	  
+	  These extensions add two new object types to Python, and then include a
+	  number of extensions that take advantage of these two new objects.
+	  
+	  * Multidimensional Array Objects
+	  + Efficient arrays of homogeneous machine types
+	  + Arbitrary number of dimensions
+	  + Sophisticated structural operations
+	  * Universal Function Objects
+	  + Supports mathematical functions on all python objects
+	  + Very efficient for Array Objects
+	  * Simple interfaces to existing numerical libraries:
+	  + Linear Algebra (LAPACK)
+	  + Fourier Transforms (FFTPACK)
+	  + Random Numbers (RANLIB)
+
+	  http://numeric.scipy.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_SCIENTIFIC
+	bool "py26-Scientific-2.8"
+	help
+	  Python modules for scientific computing
+
+	  ScientificPython is a collection of Python modules that are useful for
+	  scientific computing. In this collection you will find modules that
+	  cover basic geometry (vectors, tensors, transformations, vector and
+	  tensor fields), quaternions, automatic derivatives, (linear)
+	  interpolation, polynomials, elementary statistics, nonlinear
+	  least-squares fits, unit calculations, Fortran-compatible text
+	  formatting, 3D visualization via VRML, and two Tk widgets for simple
+	  line plots and 3D wireframe models.
+	  
+	  The netCDF interface module, until now distributed separately, has
+	  been integrated into this package as well. It is now called
+	  Scientific.IO.NetCDF.
+	  
+	  The module Scientific.MPI provides an object-oriented interface to the
+	  Message Passing Interface, an industry standard library for
+	  interprocess communication on parallel computers.
+	  
+	  All of these modules are in the public domain; do with them whatever
+	  you wish. However, there is no warranty of any kind; you use the code
+	  at your own risk.
+
+	  http://dirac.cnrs-orleans.fr/ScientificPython/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_EPHEM
+	bool "py26-ephem-3.7.3.4"
+	help
+	  Scientific-grade astronomical computations for Python
+
+	  PyEphem provides scientific-grade astronomical computations for the Python
+	  programming language. Given a date and location on the Earth's surface, it can
+	  compute the positions of the Sun and Moon, of the planets and their moons, and
+	  of any asteroids, comets, or earth satellites whose orbital elements the user
+	  can provide. Additional functions are provided to compute the angular
+	  separation between two objects in the sky, to determine the constellation in
+	  which an object lies, and to find the times at which an object rises, transits,
+	  and sets on a particular day.
+
+	  http://www.rhodesmill.org/brandon/projects/pyephem.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_FPCONST
+	bool "py26-fpconst-0.7.2"
+	help
+	  IEEE 754 floating point special handling for Python
+
+	  This python module implements constants and functions for working with IEEE754
+	  double-precision special values. It provides constants for Not-a-Number (NaN),
+	  Positive Infinity (Inf), and Negative Infinity (-Inf), as well as functions to
+	  test for these values.
+	  
+	  The code is implemented in pure python by taking advantage of the 'struct'
+	  standard module. Care has been taken to generate proper results on both
+	  big-endian and little-endian machines. Some efficiency could be gained by
+	  translating the core routines into C.
+
+	  http://research.warnes.net/projects/RStatServer/fpconst/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_GMPY
+	bool "py26-gmpy-1.12"
+	help
+	  Library for arbitrary precision arithmetic wirtten by Python
+
+	  Library for arbitrary precision arithmetic wirtten by Python
+
+	  http://code.google.com/p/gmpy
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_MPMATH
+	bool "py26-mpmath-0.15"
+	help
+	  Python library for arbitrary-precision FP arithmetic
+
+	  A Python library for arbitrary-precision floating-point arithmetic.
+
+	  http://code.google.com/p/mpmath/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_NETWORKX
+	bool "py26-networkx-1.2"
+	help
+	  Python package for creating and manipulating graphs and networks
+
+	  NetworkX (NX) is a Python package for the creation, manipulation, and
+	  study of the structure, dynamics, and functions of complex networks.
+	  
+	  Features:
+	  
+	  - Includes standard graph-theoretic and statistical physics functions
+	  - Easy exchange of network algorithms between applications,
+	  disciplines, and platforms
+	  - Includes many classic graphs and synthetic networks
+	  - Nodes and edges can be "anything"
+	  (e.g. time-series, text, images, XML records)
+	  - Exploits existing code from high-quality legacy software in C,
+	  C++, Fortran, etc.
+	  - Open source (encourages community input)
+	  - Unit-tested
+
+	  http://networkx.lanl.gov/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_NUMARRAY
+	bool "py26-numarray-1.5.2nb1"
+	help
+	  Array manipulation
+
+	  Numarray is an array processing package designed to efficiently
+	  manipulate large multi-dimensional arrays.  Numarray is modelled after
+	  Numeric and features c-code generated from python template scripts,
+	  the capacity to operate directly on arrays in files, and improved type
+	  promotions.  Numarray provides support for manipulating arrays
+	  consisting of numbers, strings, records, or objects using the same
+	  basic infrastructure and syntax.
+
+	  http://www.stsci.edu/resources/software_hardware/numarray
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_NUMEXPR
+	bool "py26-numexpr-1.4.1"
+	help
+	  Numerical expression evaluator for NumPy
+
+	  Numexpr is a fast numerical expression evaluator for NumPy.  With it,
+	  expressions that operate on arrays (like "3*a+4*b") are accelerated
+	  and use less memory than doing the same calculation in Python.
+
+	  http://numexpr.googlecode.com/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_NUMPY
+	bool "py26-numpy-1.4.1nb2"
+	help
+	  Array processing for numbers, strings, records, and objects
+
+	  NumPy is a general-purpose array-processing package designed to
+	  efficiently manipulate large multi-dimensional arrays of arbitrary
+	  records without sacrificing too much speed for small multi-dimensional
+	  arrays.  NumPy is built on the Numeric code base and adds features
+	  introduced by numarray as well as an extended C-API and the ability to
+	  create arrays of arbitrary type.
+	  
+	  There are also basic facilities for discrete fourier transform,
+	  basic linear algebra and random number generation.
+
+	  http://numpy.scipy.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_PYTABLES
+	bool "py26-pytables-2.2.1nb1"
+	help
+	  Database package for large amounts of data
+
+	  PyTables is a hierarchical database package designed to efficiently
+	  manage very large amounts of data. PyTables is built on top of the
+	  HDF5 library and the numarray package. It features an object-oriented
+	  interface that, combined with natural naming and C-code generated from
+	  Pyrex sources, makes it a fast, yet extremely easy-to-use tool for
+	  interactively saving and retrieving very large amounts of data.  It also
+	  provides flexible indexed access on disk to anywhere in the data.
+
+	  http://www.pytables.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_ROMAN
+	bool "py26-roman-1.4.0"
+	help
+	  Integer to Roman numerals converter for Python
+
+	  This Python module provides methods for converting Integer from/to Roman.
+
+	  http://pypi.python.org/pypi/roman/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_RPY
+	bool "py26-rpy-2.1.3"
+	help
+	  R interface for Python
+
+	  RPy is a very simple, yet robust, Python interface to the R
+	  Programming Language. It can manage all kinds of R objects and can
+	  execute arbitrary R functions (including the graphic functions).
+	  All the errors from the R language are converted to Python exceptions.
+	  Any modules that later were installed on the R system, can easily
+	  be used from within Python, without introducing any changes.
+
+	  http://rpy.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_SCIPY
+	bool "py26-scipy-0.7.2"
+	help
+	  Scientific Algorithms Library for Python
+
+	  SciPy is an open source library of scientific tools for Python. SciPy
+	  supplements the popular Numeric module, gathering a variety of high level
+	  science and engineering modules together as a single package.
+	  
+	  SciPy includes modules for graphics and plotting, optimization, integration,
+	  special functions, signal and image processing, genetic algorithms, ODE
+	  solvers, and others.
+
+	  http://www.scipy.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PY_SYMPY
+	bool "py26-sympy-0.6.7"
+	help
+	  Python library for symbolic mathematics
+
+	  A Python library for symbolic mathematics.
+
+	  http://code.google.com/p/sympy/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_QALCULATE
+	bool "qalculate-0.9.7nb2"
+	help
+	  
+
+	  Qalculate! is a modern multi-purpose desktop calculator.
+	  It is small and simple to use but with much power and versatility underneath.
+	  Features include customizable functions, units, arbitrary precision, and
+	  plotting. This package provides libraries and a console-based calculator.
+
+	  http://qalculate.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_BASES
+	bool "qalculate-bases-0.9.4nb9"
+	help
+	  Utility for conversion between number bases using Qalculate
+
+	  Qalculate! Bases is a utility for conversion between number bases using the
+	  Qalculate! library. It presents the user with a small dialog with entries for
+	  binary, octal, decimal and hexadecimal numbers. When a number or mathematical
+	  expression (using the full capabilities of Qalculate!) is typed in any of the
+	  entries the others are updated as-you-type.
+
+	  http://qalculate.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_CURRENCY
+	bool "qalculate-currency-0.9.4nb9"
+	help
+	  Utility for conversion between currencies using Qalculate
+
+	  Qalculate! Currency is a new utility for conversion between currencies using
+	  the Qalculate! library. It presents the user with a small dialog with two menus
+	  for currencies to convert between and two entries for the value to convert to
+	  or from. When a number or mathematical expression (using the full capabilities
+	  of Qalculate!) is typed in one of the entries conversion between the two
+	  currencies are done as-you-type. Current exchange rates can be fetched from the
+	  Internet with a simple button click.
+
+	  http://qalculate.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_GTK
+	bool "qalculate-gtk-0.9.7nb8"
+	help
+	  
+
+	  Qalculate! is a modern multi-purpose desktop calculator.
+	  It is small and simple to use but with much power and versatility underneath.
+	  Features include customizable functions, units, arbitrary precision, plotting,
+	  and a graphical interface that uses a one-line fault-tolerant expression
+	  entry (although it supports optional traditional buttons).
+	  This is the GNOME version.
+
+	  http://qalculate.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_KDE
+	bool "qalculate-kde-0.9.5nb13"
+	help
+	  
+
+	  Qalculate! is a modern multi-purpose desktop calculator.
+	  It is small and simple to use but with much power and versatility underneath.
+	  Features include customizable functions, units, arbitrary precision, plotting,
+	  and a graphical interface that uses a one-line fault-tolerant expression
+	  entry (although it supports optional traditional buttons).
+	  This is the KDE version.
+
+	  http://qalculate.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_UNITS
+	bool "qalculate-units-0.9.4nb9"
+	help
+	  Utility for conversion between units using Qalculate
+
+	  Qalculate! Units is a new utility for conversion between units using the
+	  Qalculate! library. A large number of units can be selected from a list or be
+	  entered directly, allowing any combination of different units and prefixes.
+	  Qalculate! Units supports full mathematical expressions, with a large number
+	  of functions, constants and fault-tolerant parsing.
+
+	  http://qalculate.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_QHULL
+	bool "qhull-2003.1nb1"
+	help
+	  Computing the convex hull
+
+	  Qhull is a general dimension convex hull program that reads a set
+	  of points from stdin, and outputs the smallest convex set that contains
+	  the points to stdout.  It also generates Delaunay triangulations, Voronoi
+	  diagrams, furthest-site Voronoi diagrams, and halfspace intersections
+	  about a point.
+
+	  http://www.qhull.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_QUADPACK
+	bool "quadpack-20001130nb2"
+	help
+	  Fortran subroutines for the solution of definite univariate integrals
+
+	  QUADPACK is a FORTRAN subroutine package for the numerical
+	  computation of definite one-dimensional integrals.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_RANDLIB
+	bool "randlib-1.3"
+	help
+	  Library of C Routines for Random Number Generation
+
+	  This is the C version of the RANDLIB library. It includes numerous
+	  routines for the generation of pseudo-random numbers of different
+	  distributions including beta, chi-square, exponential, F, gamma,
+	  multivariate, univariate, binomial, Poisson, etc.
+
+	  http://biostatistics.mdanderson.org/SoftwareDownload/SingleSoftware.aspx?Software_Id
+
+
+config BR2_PKGSRC_PACKAGE_MATH_RUBY_RB_GSL
+	bool "ruby19-rb-gsl-1.14.7"
+	help
+	  Ruby interface to the GNU Scientific Library
+
+	  Ruby/GSL is a ruby interface to the GSL (GNU Scientific Library), for
+	  numerical computing with Ruby.
+
+	  http://rb-gsl.rubyforge.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_RUBY_SPREADSHEET
+	bool "ruby19-spreadsheet-0.6.5.9"
+	help
+	  Ruby Spreadsheet Library to read and write Spreadsheet Documents
+
+	  The Spreadsheet Library is designed to read and write Spreadsheet Documents.
+	  As of version 0.6.0, only Microsoft Excel compatible spreadsheets are
+	  supported.  Spreadsheet is a combination/complete rewrite of the
+	  Spreadsheet::Excel Library by Daniel J. Berger and the ParseExcel Library by
+	  Hannes Wyss. Spreadsheet can read, write and modify Spreadsheet Documents.
+
+	  http://spreadsheet.rubyforge.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_SC
+	bool "sc-6.21nb2"
+	help
+	  Curses-based spreadsheet program
+
+	  The spreadsheet calculator sc is based on rectangular tables much like
+	  a financial spreadsheet.  When invoked it presents you with a table
+	  organized as rows and columns of cells.  If invoked without a file
+	  argument, the table is initially empty.  Each cell may have associated
+	  with it a numeric value, a label string, and/or an expression (formula)
+	  which evaluates to a numeric value or label string, often based on other
+	  cell values.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_SCILAB
+	bool "scilab-4.1nb5"
+	help
+	  High-level scientific math programming environment with graphics
+
+	  Scilab is a scientific software package for numerical computations including:
+	  * Elaborate data structures (polynomial, rational and string matrices, lists,
+	  multivariable linear systems,...).
+	  * Sophisticated interpreter and programming language with Matlab-like syntax.
+	  * Hundreds of built-in math functions (new primitives can easily be added).
+	  * Stunning graphics (2d, 3d, animation).
+	  * Open structure (easy interfacing with Fortran and C via online dynamic
+	  link).
+	  * Many built-in libraries:
+	  + Linear Algebra (including sparse matrices, Kronecker form,
+	  ordered Schur,...).
+	  + Control (Classical, LQG, H-infinity,...).
+	  + Package for LMI (Linear Matrix Inequalities) optimization.
+	  + Signal processing.
+	  + Simulation (various ode's, dassl,...).
+	  + Optimization (differentiable and non-differentiable, LQ solver).
+	  + Scicos, an interactive environment for modeling and simulation of
+	  hybrid systems.
+	  + Metanet (network analysis and optimization).
+	  * Symbolic capabilities through Maple interface.
+	  * Parallel Scilab.
+	  For more information about Scilab, send an e-mail to Doctor Scilab:
+	  Scilab@inria.fr
+
+	  http://www.scilab.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_SLATEC
+	bool "slatec-4.1nb3"
+	help
+	  Library of mathematical and statistical Fortran 77 subroutines
+
+	  SLATEC Common Mathematical Library, Version 4.1, July 1993.  A
+	  comprehensive software library containing over 1400 general purpose
+	  mathematical and statistical routines written in Fortran 77.
+
+	  http://www.netlib.org/slatec/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_SNNS
+	bool "snns-4.2nb2"
+	help
+	  Software simulator for neural networks
+
+	  SNNS (Stuttgart Neural Network Simulator) is a software simulator for
+	  neural networks on Unix workstations developed at the Institute for
+	  Parallel and Distributed High Performance Systems (IPVR) at the
+	  University of Stuttgart. The goal of the SNNS project is to create
+	  an efficient and flexible simulation environment for research on
+	  and application of neural nets.
+
+	  http://www-ra.informatik.uni-tuebingen.de/SNNS/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_SPEEDCRUNCH
+	bool "speedcrunch-0.10.1nb6"
+	help
+	  Calculator
+
+	  SpeedCrunch is a simple but powerful calculator.
+	  Among its features are:
+	  - high precision, up to 50 decimal digits
+	  - to be enjoyed using keyboard
+	  - result shown in scrollable window
+	  - history of last expressions (use up and down arrow)
+	  - built-in functions: abs, sqrt, pi, log, exp, ln, sin, cos, tan, sinh,
+	  cosh, tanh, asin, acos, atan, arsinh, arcosh, artanh
+	  - postfix operator ! lets you compute factorials
+	  - support for variables, e.g try x=pi/3 and then sin(x)
+	  - special variable ans holds the last calculation result
+	  - percent operator, try e.g. 45%*75 or price/80%
+	  - angle mode: Alt+D for degrees, Alt+R for radians
+	  - automatic parentheses closing, e.g. cos(pi/4 becomes cos(pi/4)
+
+	  http://www.speedcrunch.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_STATIST
+	bool "statist-1.0.1nb2"
+	help
+	  Small and portable statistics program
+
+	  Statist is a small and portable statistics program written in C.  It is
+	  terminal-based, but can utilise GNUplot for plotting purposes.  It is
+	  simple to use and can be run in scripts. Big datasets are handled
+	  reasonably well on small machines.
+	  
+	  In spite of its low overhead, statist can do quite a bunch of regression
+	  functions and tests in a comprehensible way. It is quite powerful.
+
+	  http://www.usf.uni-osnabrueck.de/~breiter/tools/statist/index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_SUPERLU
+	bool "superlu-3.0.1"
+	help
+	  ANSI C routine library for the solution of sparse linear systems
+
+	  SuperLU contains a set of subroutines to solve a sparse linear system
+	  A*X=B. It uses Gaussian elimination with partial pivoting (GEPP).  The
+	  columns of A may be preordered before factorization; the preordering
+	  for sparsity is completely separate from the factorization.
+	  
+	  SuperLU is implemented in ANSI C, and must be compiled with standard
+	  ANSI C compilers. It provides functionality for both real and complex
+	  matrices, in both single and double precision.
+
+	  http://crd.lbl.gov/~xiaoye/SuperLU/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TASP_VSIPL
+	bool "tasp-vsipl-20030710nb1"
+	help
+	  Vector Signal Image Processing Library
+
+	  This is an implementation of a VSIP Library (Vector/Signal/Image
+	  Processing Library) as defined by the VSIPL Forum for a CORE profile.
+	  
+	  The TASP_VSIPL library is an effort to produce a VSIPL library
+	  suitable for demonstration and early development and testing of VSIPL
+	  code and ideas.
+	  
+	  The Tactical Advanced Signal Processing Common Operating Environment
+	  (TASP COE) effort is striving to produce a common operating
+	  environment for signal processing throughout the Navy and DOD for the
+	  COTS environment. VSIPL is thought by TASP to have a good chance of
+	  becoming a standard signal processing library for many vendors who
+	  supply DOD high performance computing products.  For this reason TASP
+	  is supporting the VSIPL effort.
+	  
+	  This is the TASP VSIPL Core Plus implementation of VSIPL. Core Plus
+	  includes all the functionality of the core profile plus most floating
+	  point Vector and Elementwise Operations not required by the VSIPL Core
+	  profile.  The additional functions include such things as matrix
+	  elementwise add and multiply.
+	  
+	  The TASP VSIPL code is required to be freely available for any
+	  use.
+
+	  http://www.vsipl.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TEAPOT
+	bool "teapot-1.09"
+	help
+	  Curses based spread sheet program
+
+	  teapot is a spread sheet program for UNIX, which uses modern concepts
+	  besides being portable and extensible, for instance three dimensional
+	  tables and iterative expressions.
+	  
+	  The most important feature is the funktional addressing of cells,
+	  unlike the traditional approach like A0, C5, etc. which is probably
+	  inherited from VisiCalc.
+
+	  http://www.moria.de/~michael/teapot/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TEX_FP
+	bool "tex-fp-2010"
+	help
+	  Fixed point arithmetic
+
+	  An extensive collection of arithmetic operations for fixed point real
+	  numbers of high precision.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TEX_FP_DOC
+	bool "tex-fp-doc-2010"
+	help
+	  Documentation for tex-fp
+
+	  This is documentation for tex-fp.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TEX_KASTRUP
+	bool "tex-kastrup-2010"
+	help
+	  Expansible conversion into binary-based number systems
+
+	  This packages is for expandably converting numbers into binary, octal,
+	  and hexadecimal. All constructs TeX accepts as an argument to its
+	  \number primitive are valid.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TEX_KASTRUP_DOC
+	bool "tex-kastrup-doc-2010"
+	help
+	  Documentation for tex-kastrup
+
+	  This is documentation for tex-kastrup.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TEXDRIVE
+	bool "texdrive-0.0.20081126.171834nb1"
+	help
+	  Emacs mode for creating inline formulae for HTML
+
+	  texdrive is an emacs minor-mode for adding mathematical equations
+	  to html-pages; things like Euler's identity, Pythagoras theorem
+	  and so on.
+
+	  http://www.djcbsoftware.nl/code/texdrive/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_TOCHNOG
+	bool "tochnog-20010429"
+	help
+	  Finite Element Analysis Program
+
+	  TOCHNOG is a free finite element program with many features. TOCHNOG
+	  accepts free format input. Boundary conditions can be imposed at
+	  geometrical entities, as well as nodes and elements.
+	  
+	  Among the FE models supported are: differential equations (materials),
+	  convection-diffusion equations, Stokes and Navier-Stokes (fluids),
+	  elasticity (isotropy and transverse isotropy), plasticity (Von-Mises,
+	  Mohr-Coulomb, etc.; plastic surfaces can be arbitrarily
+	  combined). Residues in equations and error estimates for all data can
+	  be printed or plotted using gnuplot/plotmtv
+	  
+	  TOCHNOG supports a choice of description frames including Lagrangian,
+	  Eulerian and arbitrary Eulerian-Lagrangian (AEL).
+
+	  http://tochnog.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_UDUNITS
+	bool "udunits-1.12.1nb5"
+	help
+	  Library and program for manipulating units of physical quantities
+
+	  The Unidata units library, udunits, supports conversion of unit
+	  specifications between formatted and binary forms, arithmetic
+	  manipulation of unit specifications, and conversion of values between
+	  compatible scales of measurement.
+	  
+	  The udunits package consists of the library, a unit conversion
+	  program, and a Perl module which provides an interface to the udunits
+	  library.
+
+	  http://www.unidata.ucar.edu/software/udunits/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_UNITS
+	bool "units-1.86nb1"
+	help
+	  GNU Units - a calculator capable of performing unit conversions
+
+	  GNU Units can convert quantities expressed in one unit to an equivalent in a
+	  difference scale.  Compared to traditional BSD implementations, it offers more
+	  units, non-linear conversions (e.g. between degrees Celsius and Fahrenheit), a
+	  more lenient input parser, and tab completion.  It can also be used to perform
+	  calculations taking physical units into account, and provide the definitions of
+	  units (e.g. "joule = N m = 1 kg m^2 / s^2").
+
+	  http://www.gnu.org/software/units/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_VISTA
+	bool "vista-5.05nb1"
+	help
+	  Visual statistics system
+
+	  ViSta is designed for students and teachers in introductory
+	  and multivariate statistics, for researchers who have data to
+	  analyze but are new to statistical data analysis, and for
+	  researchers, graduate students and programmers doing research
+	  and development in visual and computational statistics. ViSta
+	  features state-of-the art visualization techniques to guide
+	  novice data analysts, to portray the overall structure of a
+	  data analysis session, to communicate the results of analyses,
+	  and to re-estimate model parameters.
+	  
+	  ViSta is available for free and can be freely redistributed.
+
+	  http://forrest.psych.unc.edu/research/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_WXMAXIMA
+	bool "wxMaxima-0.8.6nb5"
+	help
+	  Graphical UI for maxima
+
+	  This is a graphical UI for the computer algebra system maxima.
+
+	  http://wxmaxima.sourceforge.net/wiki/index.php/Main_Page
+
+
+config BR2_PKGSRC_PACKAGE_MATH_XEUKLEIDES
+	bool "xeukleides-1.0.1nb1"
+	help
+	  X-Frontend for A Euclidean geometry drawing language
+
+	  This is a graphical frontend for eukleides.
+
+	  http://www.eukleides.or/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_XFRACTINT
+	bool "xfractint-3.10nb1"
+	help
+	  Fractint for X11
+
+	  Xfractint draws a wide variety of fractals.  Xfractint is a port of the
+	  IBM PC program fractint.  Xfractint has online documentation which
+	  should be referenced for most operation information.  Note that the
+	  online documentation is from fractint, and does not always accurately
+	  describe xfractint.
+
+	  http://spanky.triumf.ca/pub/fractals/programs/unix/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_XGAP
+	bool "xgap-4.16nb3"
+	help
+	  GUI for GAP
+
+	  XGAP is a graphical user interface for GAP, it extends the GAP library
+	  with functions dealing with graphic sheets and objects. Using these
+	  functions it also supplies a graphical interface for investigating the
+	  subgroup lattice of a group, giving you easy access to the low index
+	  subgroups, prime quotient and Reidemeister-Schreier algorithms and
+	  many other GAP functions for groups and subgroups.
+	  
+	  At the moment the only supported window system is X-Windows X11R5,
+	  however, programs using the XGAP library functions will run on other
+	  platforms as soon as XGAP is available on these.
+
+	  http://www.gap-system.org/Share/xgap.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_XLDLAS
+	bool "xldlas-0.85nb7"
+	help
+	  XForms-based statistics package
+
+	  What is it?
+	  ===========
+	  It's for doing statistics.
+	  
+	  Highlights
+	  ==========
+	  * Based on the xforms library (ie. looks pretty slick)
+	  * Point and click interface to statistical summaries, OLS
+	  regression, plotting, correlation analysis, etc.
+	  * Neural network and Genetic Algorithm data fitting
+	  with some nice visual feedback.
+	  * Very handy automatic generating of .tex format and html
+	  log files, including tables and plots.
+	  * Online help
+	  
+	  Feedback
+	  ========
+	  The author (Thor Sigvaldason) is happy to receive feedback
+	  at: thor@netcom.ca
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_MATH_XLIFE
+	bool "xlife-5.0nb5"
+	help
+	  John Horton Conway's "Game of Life"
+
+	  Apparently first published in Martin Gardner's column in Scientific
+	  American magazine in the early 1970's, John Horton Conway's "Game of
+	  Life" launched great interest in the nascent field of cellular automata.
+	  The model (for it's not really a "game") manifests surprisingly complex
+	  behavior with only a few simple rules. Many of the technical papers,
+	  articles, and books inspired by the simulation are only now finding
+	  their way onto the World Wide Web.
+	  
+	  Many of the folks who were captivated by the original article would
+	  have done their explorations with pencil and paper. Now with "xlife",
+	  whether you hope to gain profound insight into the nature of life,
+	  the universe, and everything, or whether you just enjoy watching the
+	  "puffer trains" crash into each other, you can explore the simulation
+	  easily, on your workstation. The program supports a nearly infinite
+	  playfield, and allows you to zoom in and zoom out, speed up and slow
+	  down, so you can see all the action. Moreover, it can save and load
+	  patterns, and the package even includes a couple of programs to convert
+	  between popular formats.
+	  
+	  A sample of significant and interesting starting patterns is included,
+	  and a few minutes spent with a search engine will likely turn up lots
+	  and lots more.
+
+	  http://www.catb.org/~esr/software.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_XLISPSTAT
+	bool "xlispstat-3.52.20"
+	help
+	  Statistics/X11-based LISP interpreter
+
+	  XLISP-STAT is a statistical environment based on a dialect of the Lisp
+	  language called XLISP.  To facilitate statistical computations, standard Lisp
+	  functions for addition, logarithms, etc., have been modified to operate on
+	  lists and arrays of numbers, and a number of basic statistical functions have
+	  been added.
+	  
+	  A tutorial introduction to the system is available. It is written
+	  primarily for the Macintosh version, but the differences to the UNIX
+	  version are minor; see below. The tutorial is available as a set of
+	  LaTeX files in xlispstat.doc.tar.Z at the ftp address above.
+	  
+	  For further information contact: luke@umnstat.stat.umn.edu
+
+	  http://www.stat.uiowa.edu/~luke/xls/xlsinfo/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_XMGR
+	bool "xmgr-4.1.2nb6"
+	help
+	  Powerful XY plotting tool for workstations or X-terminals using X
+
+	  xmgr is an XY plotting tool for scientific data using X. A few of
+	  its features are:
+	  
+	  * User defined scaling, tick marks, labels, symbols, line styles, colors.
+	  * Batch mode for unattended plotting.
+	  * Read and write parameters used during a session.
+	  * Polynomial regression, splines, running averages, DFT/FFT,
+	  cross/auto-correlation.
+	  * Hardcopy support for PostScript, HP-GL, and FrameMaker .mif format.
+	  
+	  While xmgr has a convenient point-and-click interface, most parameter settings
+	  and operations are available through a command line interface (found in
+	  Data/Commands).
+
+	  http://plasma-gate.weizmann.ac.il/Xmgr/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_XYLIB
+	bool "xylib-0.8nb1"
+	help
+	  Library for reading powder diffraction data
+
+	  xylib is a portable C++ library for reading files that contain x-y data from
+	  powder diffraction, spectroscopy or other experimental methods.
+	  
+	  Supported formats:
+	  
+	  -  plain text (CSV or TSV or space-separated-values)
+	  -  Crystallographic Information File for Powder Diffraction (pdCIF)
+	  -  Siemens/Bruker UXD
+	  -  Siemens/Bruker RAW ver. 1/2/3/4
+	  -  Philips UDF
+	  -  Philips RD (raw scan) V3
+	  -  Rigaku DAT
+	  -  Sietronics Sieray CPI
+	  -  DBWS/DMPLOT data file
+	  -  Canberra MCA *(only one of Canberra MCA formats?)*
+	  -  XFIT/Koalariet XDD
+	  -  RIET7/LHPM/CSRIET/ILL\_D1A5/PSI\_DMC DAT
+	  -  Vamas ISO14976
+	  *(only experiment modes: SEM or MAPSV or MAPSVDP are supported;
+	  only REGULAR scan_mode is supported)*
+	  -  Princeton Instruments WinSpec SPE
+	  *(only 1-D data is supported)*
+
+	  http://xylib.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_YACAS
+	bool "yacas-1.2.2"
+	help
+	  Yet Another Computer Algebra System
+
+	  Yacas (Yet Another Computer Algebra System) is a small and highly flexible
+	  computer algebra language. The syntax uses a infix-operator grammar
+	  parser. The distribution contains a small library of mathematical functions,
+	  but its real strength is in the language in which you can easily write your
+	  own symbolic manipulation algorithms. It supports arbitrary precision
+	  arithmetic.
+	  
+	  The current version is 1.0.28 (the first release was 1.0.0). The language is
+	  very much in a finished state. Any code written for it should be usable in
+	  future versions. Also, the language should prove very easy to learn.
+	  
+	  Yacas is written in very clean c++ code, and is very portable . It can compile
+	  stand-alone, and is easily embeddable. Yacas contains a native arbitrary
+	  precision arithmetic module, but can also be used with GMP.
+	  
+	  Things implemented include: arbitrary precision, rational numeric, vector,
+	  complex, and matrix computations (including inverses and determinants and
+	  solving matrix equations), derivatives, solving, Taylor series, numerical
+	  solving (Newtons method), and a lot more non-mathematical algorithms. The
+	  language natively supports variables and user-defined functions. There is
+	  basic support for polynomials.
+
+	  http://yacas.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_YORICK
+	bool "yorick-1.6.02nb2"
+	help
+	  
+
+	  Yorick is an interpreted language and is useful for scientific
+	  computing and numerical analysis.  It is similar to Matlab.
+	  
+	  It can also do interactive graphics package via the X window system,
+	  including x-y plots, quadrilateral meshes, and cell arrays, and
+	  includes tools to assist making animated and simple 3D graphs.
+	  
+	  Yorick's binary file package can read or write floating point formats
+	  foreign to the machine where Yorick is running.
+	  
+	  A library of functions written in the Yorick language, including
+	  Bessel, gamma, and related functions, multiple key sorting, spline,
+	  rational function, and least squares fitting, and routines to read and
+	  write netCDF files.
+
+	  http://yorick.sourceforge.net/
+
+

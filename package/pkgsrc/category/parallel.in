@@ -1,0 +1,222 @@
+config BR2_PKGSRC_PACKAGE_PARALLEL_CLUSTERIT
+	bool "clusterit-2.5nb1"
+	help
+	  Clustering package for unix
+
+	  This is a collection of clustering tools, to turn your ordinary
+	  everyday pile of UNIX workstations into a speedy parallel beast.
+	  
+	  Initially this work was based on the work of IBM's PSSP, and copied
+	  heavily from the ideas there.  Its also lightly based on the work
+	  pioneered in GLUnix.
+
+	  http://clusterit.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_DQS
+	bool "dqs-3.3.2nb2"
+	help
+	  Distributed queueing system
+
+	  The Distributed Queueing System is designed as a management tool to
+	  aid in computational resource distribution across a network.  DQS
+	  provides architecture transparency for both users and administration
+	  across a heterogeneous environment, allowing for seamless interaction
+	  for multiple architectures.  Highly mutable custom site configurations
+	  are possible under DQS.  This ability to customize DQS leads to
+	  effective resource distribution and increased network throughput.
+
+	  http://web.archive.org/web/20050305104643/http://www.scri.fsu.edu/~pasko/dqs.html
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_GANGLIA_MONITOR_CORE
+	bool "ganglia-monitor-core-3.1.2nb8"
+	help
+	  Ganglia cluster monitor, monitoring daemon
+
+	  Ganglia is a scalable distributed monitoring system for high-performance
+	  computing systems such as clusters and Grids. It is based on a hierarchical
+	  design targeted at federations of clusters. It relies on a multicast-based
+	  listen/announce protocol to monitor state within clusters and uses a tree of
+	  point-to-point connections amongst representative cluster nodes to federate
+	  clusters and aggregate their state. It leverages widely used technologies such
+	  as XML for data representation, XDR for compact, portable data transport, and
+	  RRDtool for data storage and visualization. It uses carefully engineered data
+	  structures and algorithms to achieve very low per-node overheads and high
+	  concurrency. The implementation is robust, has been ported to an extensive set
+	  of operating systems and processor architectures, and is currently in use on
+	  over 500 clusters around the world. It has been used to link clusters across
+	  university campuses and around the world and can scale to handle clusters with
+	  2000 nodes.
+	  
+	  You may wish to install www/ganglia-webfrontend to monitor your systems via
+	  the web.
+
+	  http://ganglia.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_LINDA
+	bool "linda-0.1.1nb7"
+	help
+	  Parallel distributed database environment
+
+	  linda is an simple library implementation of Linda parallel
+	  programming system (http://www.cs.yale.edu/Linda/linda.html).  To
+	  write a parallel program with linda, you have to know only 6
+	  functions:  spawn, out, in, inp, rd and rdp with linda.
+
+	  http://sourceforge.net/projects/linda/
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_MPI_CH
+	bool "mpich2-1.3.1"
+	help
+	  Open source MPI and MPI-2 implementation from Univ. of Chicago
+
+	  MPICH is a freely available, portable implementation of MPI and MPI-2
+	  standard message-passing interface.
+	  
+	  Documentation on installing and using MPICH is available, as well as
+	  manual pages for the routines and commands.
+
+	  http://www.mcs.anl.gov/research/projects/mpich2/
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_OPENMPI
+	bool "openmpi-1.5.4nb1"
+	help
+	  Open source MPI-2 implementation
+
+	  The Open MPI Project is an open source MPI-2 implementation
+	  that is developed and maintained by a consortium of academic,
+	  research, and industry partners. Open MPI is therefore able to
+	  combine the expertise, technologies, and resources from all
+	  across the High Performance Computing community in order to
+	  build the best MPI library available. Open MPI offers advantages
+	  for system and software vendors, application developers and
+	  computer science researchers.
+	  
+	  Features implemented or in short-term development for Open MPI
+	  include:
+	  
+	  - Full MPI-2 standards conformance
+	  - Thread safety and concurrency
+	  - Dynamic process spawning
+	  - Network and process fault tolerance
+	  - Support network heterogeneity
+	  - Single library supports all networks
+	  - Run-time instrumentation
+	  - Many job schedulers supported
+	  - Many OS's supported (32 and 64 bit)
+	  - Production quality software
+	  - High performance on all platforms
+	  - Portable and maintainable
+	  - Tunable by installers and end-users
+	  - Component-based design, documented APIs
+	  - Active, responsive mailing list
+	  - Open source license based on the BSD license
+
+	  http://www.open-mpi.org/
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_OPENPA
+	bool "openpa-1.0.2"
+	help
+	  Atomic primitives for high performance software
+
+	  OpenPA is open source, highly-portable library that provides
+	  atomic primitives (and related constructs) for high performance,
+	  concurrent software.
+
+	  http://trac.mcs.anl.gov/projects/openpa/
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_P5_PARALLEL_PVM
+	bool "p5-Parallel-Pvm-1.4.0nb3"
+	help
+	  
+
+	  Parallel::Pvm is a perl extension for the parallel virtual machine
+	  (PVM) message-passing system.
+
+	  http://www.csm.ornl.gov/pvm/pvm_home.html
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_PAEXEC
+	bool "paexec-0.16.1nb1"
+	help
+	  Distributes tasks over network or CPUs
+
+	  paexec distributes performing the given tasks across several CPUs or
+	  machines on a network and collects the results from those
+	  CPUs/machines.
+
+	  http://sourceforge.net/projects/paexec
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_PARALLEL
+	bool "parallel-20110522"
+	help
+	  Build and execute shell commands in parallel
+
+	  GNU Parallel is a shell tool for executing jobs in parallel using one or
+	  more machines.  A job is typically a single command or a small script that
+	  has to be run for each of the lines in the input.  The typical input is a
+	  list of files, a list of hosts, a list of users, or a list of tables.
+
+	  http://savannah.gnu.org/projects/parallel/
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_PVM3
+	bool "pvm-3.4.6nb1"
+	help
+	  Parallel Virtual Machine libraries and environment
+
+	  PVM (Parallel Virtual Machine) is a portable message-passing programming
+	  system, designed to link separate host machines to form a ``virtual
+	  machine'' which is a single, manageable computing resource.
+	  
+	  The virtual machine can be composed of hosts of varying types, in
+	  physically remote locations. PVM applications can be composed of any
+	  number of separate processes, or components, written in a mixture of C,
+	  C++ and Fortran. The system is portable to a wide variety of
+	  architectures, including workstations, multiprocessors, supercomputers and
+	  PCs.
+	  
+	  PVM is a byproduct of ongoing research at several institutions, and is
+	  made available to the public free of charge.
+
+	  http://www.csm.ornl.gov/pvm/pvm_home.html
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_SGE
+	bool "sge-6.2.2.1nb5"
+	help
+	  Sun Grid Engine distributed resource management system
+
+	  The Grid Engine project is an open source community effort
+	  to facilitate the adoption of distributed computing solutions.
+	  Sponsored by Sun Microsystems and hosted by CollabNet, the
+	  Grid Engine project provides enabling distributed resource
+	  management software for wide ranging requirements from compute
+	  farms to grid computing.
+
+	  http://gridengine.sunsource.net/
+
+
+config BR2_PKGSRC_PACKAGE_PARALLEL_THREADINGBUILDINGBLOCKS
+	bool "threadingbuildingblocks-3.0.6"
+	help
+	  Threading Buildling Blocks
+
+	  Intel(r) Threading Building Blocks (Intel TBB) offers a rich and
+	  complete approach to expressing parallelism in a C++ program.
+	  It is a library that helps you take advantage of multi-core
+	  processor performance without having to be a threading expert.
+	  Intel TBB is not just a threads-replacement library. It represents
+	  a higher-level, task-based parallelism that abstracts platform
+	  details and threading mechanisms for scalability and performance.
+
+	  http://www.threadingbuildingblocks.org/
+
+

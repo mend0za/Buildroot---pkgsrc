@@ -1,0 +1,464 @@
+config BR2_PKGSRC_PACKAGE_SHELLS_AST_KSH
+	bool "ast-ksh-20060214nb1"
+	help
+	  Official AT&T release of KornShell 93
+
+	  KSH-93 is the most recent version of the KornShell Language described
+	  in "The KornShell Command and Programming Language," by Morris
+	  Bolsky and David Korn of AT&T Bell Laboratories.  The KornShell is
+	  a shell programming language, which is upward compatible with "sh"
+	  (the Bourne Shell), and is intended to conform to the IEEE P1003.2/ISO
+	  9945.2 Shell and Utilities standard.  KSH-93 provides an enhanced
+	  programming environment in addition to the major command-entry
+	  features of the BSD shell "csh".  With KSH-93, medium-sized programming
+	  tasks can be performed at shell-level without a significant loss
+	  in performance.  In addition, "sh" scripts can be run on KSH-93
+	  without modification.
+
+	  http://www.kornshell.com/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_BASH2
+	bool "bash-2.05.2.7nb11"
+	help
+	  
+
+	  Bash is an sh-compatible shell that incorporates useful features from
+	  the Korn shell (ksh) and C shell (csh). It is intended to conform to
+	  the IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard.
+	  
+	  It offers functional improvements over sh for both programming and
+	  interactive use; these include command line editing, unlimited size
+	  command history, job control, shell functions and aliases, indexed
+	  arrays of unlimited size, and integer arithmetic in any base from two
+	  to sixty-four. In addition, most sh scripts can be run by Bash without
+	  modification.
+	  
+	  This package contains the outdated version 2 of bash.
+
+	  http://www.gnu.org/software/bash/bash.html
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_BASH
+	bool "bash-4.2nb1"
+	help
+	  The GNU Bourne Again Shell
+
+	  Bash is an sh-compatible shell that incorporates useful features from
+	  the Korn shell (ksh) and C shell (csh). It is intended to conform to
+	  the IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard.
+	  
+	  It offers functional improvements over sh for both programming and
+	  interactive use; these include command line editing, unlimited size
+	  command history, job control, shell functions and aliases, indexed
+	  arrays of unlimited size, and integer arithmetic in any base from two
+	  to sixty-four. In addition, most sh scripts can be run by Bash without
+	  modification.
+
+	  http://www.gnu.org/software/bash/bash.html
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_BASH_COMPLETION
+	bool "bash-completion-1.0nb1"
+	help
+	  Programmable completion specifications for bash
+
+	  A relatively new feature in bash is programmable completion, which
+	  has been available since the beta version of 2.04. Programmable
+	  completion will be familiar to you if you are a zsh user. It also
+	  exists, albeit in a much less usable form, in tcsh.
+	  
+	  Standard completion
+	  
+	  bash has offered many forms of completion since its inception,
+	  including path, file, user, host and variable completion.
+	  
+	  * Path-name completion
+	  * File-name completion
+	  * User-name completion
+	  * Host-name completion
+	  * Variable-name completion
+	  
+	  Programmable completion indefinitely extends the type of completion
+	  you can perform.
+	  
+	  This package contains a variety of completions for various programs.
+
+	  http://bash-completion.alioth.debian.org/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_BASH2_DOC
+	bool "bash-doc-2.05.2"
+	help
+	  Documentation for the GNU Bourne Again Shell
+
+	  Bash is an sh-compatible shell that incorporates useful features from
+	  the Korn shell (ksh) and C shell (csh). It is intended to conform to
+	  the IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard.
+	  
+	  It offers functional improvements over sh for both programming and
+	  interactive use; these include command line editing, unlimited size
+	  command history, job control, shell functions and aliases, indexed
+	  arrays of unlimited size, and integer arithmetic in any base from two
+	  to sixty-four. In addition, most sh scripts can be run by Bash without
+	  modification.
+	  
+	  This package contains the documentation for GNU Bash.
+
+	  http://www.gnu.org/software/bash/bash.html
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_DASH
+	bool "dash-0.5.5.1nb2"
+	help
+	  Debian Almquist shell, POSIX-compliant shell faster than bash
+
+	  Debian Almquist shell.  A small POSIX-compliant shell that is faster than bash.
+
+	  http://gondor.apana.org.au/~herbert/dash/files/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_ELTCLSH
+	bool "eltclsh-1.9"
+	help
+	  Interactive TCL shell with editline facilities
+
+	  eltclsh (editline tcl shell) is an interactive shell for the TCL
+	  programming language. It provides command line editing, history browsing
+	  as well as variables and command completion thanks to editline
+	  features. The completion engine is programmable in a way similar to tcsh,
+	  and comes with an programmed completion for the whole TCL language by
+	  default.
+	  
+	  The package also provides elwish, an interactive interpreter for the Tk
+	  toolkit.
+
+	  https://softs.laas.fr/openrobots/wiki/eltclsh
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_ES
+	bool "es-0.9a1nb4"
+	help
+	  Extensible shell, derived from plan9's rc
+
+	  Es is an extensible shell.  The language was derived from the Plan 9
+	  shell, rc, and was influenced by functional programming languages,
+	  such as Scheme, and the Tcl embeddable programming language.  This
+	  implementation is derived from Byron Rakitzis's public domain
+	  implementation of rc.
+	  
+	  Es is in the public domain.  We hold no copyrights or patents on
+	  the source code, and do not place any restrictions on its distribution.
+	  We would appreciate it if any distributions do credit the authors.
+	  
+	  Enjoy!
+	  
+	  -- Paul Haahr & Byron Rakitzis
+
+	  http://hawkwind.cs.toronto.edu:8001/mlists/es.html
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_ESH
+	bool "esh-0.8nb3"
+	help
+	  Unix shell with Lisp-like syntax
+
+	  `esh' was primarily written out of a need for a simple and
+	  lightweight shell for Unix. As such, it deviates completely from all of
+	  the traditional shells, opting instead for a Lisp-like syntax. This
+	  allows exceptionally small size, both in terms of lines of code and
+	  memory consumption, while retaining remarkable flexibility and
+	  programmability.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_HEIRLOOM_SH
+	bool "heirloom-sh-050706nb2"
+	help
+	  Traditional Unix shell derived from OpenSolaris code
+
+	  The Heirloom Bourne Shell is a portable variant of the traditional Unix
+	  shell. It has been derived from OpenSolaris code and thus implements
+	  the SVR4/SVID3 level of the shell.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_LSHELL
+	bool "lshell-0.9.12"
+	help
+	  Lshell restricts user's environment to specified commands
+
+	  Limited Shell (lshell) provides a configurable shell per user. This is done
+	  quite simply using a configuration file. It becomes easy to restrict user's
+	  access to a limited set of commands, choosing to allow any command over SSH
+	  (e.g. SCP,SFTP,rsync,etc.).
+
+	  http://ghantoos.org/limited-shell-lshell/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_MKSH
+	bool "mksh-40c"
+	help
+	  MirBSD Korn Shell
+
+	  mksh is the MirBSD enhanced version of the Public Domain Korn shell (pdksh),
+	  a Bourne-compatible shell which is largely si. milar to the original AT&T
+	  Korn shell; mksh is the only pdksh derivate currently being actively developed.
+	  It includes bug fixes and feature improvements, in order to produce a modern,
+	  robust shell good for interactive and especially script use.
+	  
+	  The code has throughoutly been cleaned up and simplified, bugs fixed, standards
+	  compliance added, and several enhancements (for extended compatibility to other
+	  modern shells, as well as a couple of its own) have been placed. mksh has UTF-8
+	  support (e.g. in the emacs editing mode).
+
+	  http://mirbsd.de/mksh
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_MUDSH
+	bool "mudsh-20010311"
+	help
+	  M.U.D. game-like shell
+
+	  Is there any reason why a shell (or command line) cannot be as
+	  tolerant or as intelligent as a text adventure game like Zork, or a
+	  MUD (Multi User Dungeon)? Is there any reason why a shell cannot work
+	  like such a game? ("Go North", etc.)
+	  
+	  Actually, the answer is no and this is a perl implementation to prove it.
+	  Have fun, and don't get eaten by a Grue!
+
+	  http://www.xirium.com/tech/mud-shell/index.html
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_NOLOGINMSG
+	bool "nologinmsg-1.0nb2"
+	help
+	  More functional native binary replacement for /sbin/nologin
+
+	  Slightly more functional replacement for /sbin/nologin. Adds per-user
+	  messages, and group messages (of a form).
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_OSH
+	bool "osh-20100430nb1"
+	help
+	  Port of the Sixth Edition UNIX shell
+
+	  Osh is an enhanced, backward-compatible port of the original sh(1)
+	  that was used as the standard command interpreter through Sixth
+	  Edition UNIX.  It was also distributed with Seventh Edition UNIX
+	  as osh.  Its command language is a predecessor and subset of that
+	  found in the Bourne shell and C shell.
+
+	  http://v6shell.org/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_PDKSH
+	bool "pdksh-5.2.14nb5"
+	help
+	  Free clone of the AT&T Korn shell
+
+	  PD-ksh is a mostly complete AT&T ksh look-alike.  Work is mostly
+	  finished to make it fully compatible with both POSIX and AT&T ksh
+	  (when the two don't conflict). Since pdksh is free and compiles
+	  and runs on most common unix systems, it is very useful in creating
+	  a consistent user interface across multiple machines.
+
+	  http://web.cs.mun.ca/~michael/pdksh/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_PERLSH
+	bool "perlsh-1.8nb7"
+	help
+	  The Perl Shell
+
+	  The Perl Shell is a shell that combines the interactive nature of a Unix
+	  shell with the power of Perl. The goal is to eventually have a full
+	  featured shell that behaves as expected for normal shell activity.
+
+	  http://www.focusresearch.com/gregor/sw/psh/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_POSH
+	bool "posh-0.3.14nb2"
+	help
+	  Debian Policy-compliant Ordinary SHell
+
+	  posh is a stripped-down version of pdksh that aims for compliance with
+	  Debian's policy, and also has a few extra features.
+
+	  http://packages.debian.org/posh
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_RC
+	bool "rc-1.7nb1"
+	help
+	  Unix incarnation of the plan9 shell
+
+	  rc - a unix version of the Plan-9 Shell.
+	  
+	  FEEPING CREATURISM
+	  
+	  See the end of the man page, under "INCOMPATIBILITIES" for (known?)
+	  differences from the "real" rc. Most of these changes were necessary
+	  to get rc to work in a reasonable fashion on a real (i.e., commercial,
+	  non-Labs) UNIX system; a few were changes motivated by concern
+	  about some inadequacies in the original design.
+	  
+	  CREDITS
+	  
+	  This shell was written by Byron Rakitzis, but kudos go to Paul
+	  Haahr for letting me know what a shell should do and for contributing
+	  certain bits and pieces to rc (notably the limits code, print.c,
+	  most of which.c and the backquote redirection code).
+
+	  http://plan9.bell-labs.com/sys/doc/rc.html
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_RSSH
+	bool "rssh-2.3.3"
+	help
+	  Restricted shell allowing only scp and/or sftp
+
+	  Rssh is a restricted shell for use with OpenSSH, allowing only scp
+	  and/or sftp. For example, if you have a server which you only want
+	  to allow users to copy files off of via scp, without providing
+	  shell access, you can use rssh to do that.
+
+	  http://www.pizzashack.org/rssh/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_SCPONLY
+	bool "scponly-4.8nb1"
+	help
+	  Shell that only permits sftp
+
+	  scponly is an alternative shell for system administrators who would like to
+	  allow remote users to both read and write local files without providing any
+	  remote execution privileges.
+	  
+	  The only commands allowed are "scp" (for ssh1), "sftp-server" (for ssh2") and
+	  "ls".  Arguments to these commands are passed along unmolested.
+
+	  http://sublimation.org/scponly/wiki/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_SCSH
+	bool "scsh-0.6.7nb1"
+	help
+	  Unix shell embedded into Scheme, with access to all Posix calls
+
+	  Scsh is a Unix shell in that is has significant syntax extensions to
+	  make writing Unix shell scripts easy (constructing pipelines, setting
+	  I/O redirection, conditional execution etc.). It also offers access to
+	  lower-level functionality like all Posix system calls, TCP/IP sockets
+	  and a full-featured regular expression library. This is embedded into
+	  a general-purpose programming language with real data types,
+	  extensive, syntactically clean control constructs and "real" quoting
+	  rules.
+	  
+	  Scsh is also a full implementation of R4RS Scheme with some
+	  non-standard behavior (required for scripting). As a result, a wide
+	  variety of existing Scheme code can be used.
+	  
+	  The underlying Scheme implementation is a virtual machine for compact
+	  byte code.
+
+	  http://www.scsh.net/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_STANDALONE_TCSH
+	bool "standalone-tcsh-6.17.00nb1"
+	help
+	  Standalone version of the Extended C-shell
+
+	  TCSH is an extended C-shell with many useful features like
+	  filename completion, history editing, etc.
+	  
+	  This version installs a statically-linked version of tcsh into
+	  /bin, for use as a standalone shell.
+
+	  http://www.tcsh.org/Welcome
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_STATIC_AST_KSH
+	bool "static-ast-ksh-20060214nb1"
+	help
+	  Statically-linked version of the Official AT&T release of KornShell 93
+
+
+	  http://www.kornshell.com/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_STATIC_TCSH
+	bool "static-tcsh-6.17.00nb1"
+	help
+	  Statically-linked version of the Extended C-shell with many useful features
+
+
+	  http://www.tcsh.org/Welcome
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_TCSH
+	bool "tcsh-6.17.00nb1"
+	help
+	  Extended C-shell with many useful features
+
+	  TCSH is an extended C-shell with many useful features like
+	  filename completion, history editing, etc.
+
+	  http://www.tcsh.org/Welcome
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_XSH
+	bool "xsh-1.8.2nb9"
+	help
+	  XML Editing Shell
+
+	  XSH is a fast and powerful command-line XML editor. It may be used to
+	  query and modify XML documents. XSH may be used either interactivelly or
+	  for off-line processing (like bash). XPath expressions are used to
+	  select parts of XML document to be processed.
+	  
+	  Both system shell and perl are accessible from XSH in a very natural
+	  way. XSH itself is written in Perl and uses XML::LibXML bindings of
+	  gnome-xml2 library in the background level.
+
+	  http://xsh.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_ZSH
+	bool "zsh-4.2.7nb2"
+	help
+	  The Z shell
+
+	  Zsh is a UNIX command interpreter (shell) which of the standard shells
+	  most resembles the Korn shell (ksh), although it is not completely
+	  compatible.  It includes enhancements of many types, notably in the
+	  command-line editor, options for customising its behaviour, filename
+	  globbing, features to make C-shell (csh) users feel more at home and
+	  extra features drawn from tcsh (another `custom' shell).
+
+	  http://zsh.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_SHELLS_ZSH_CURRENT
+	bool "zsh-4.3.12nb1"
+	help
+	  The Z shell
+
+	  Zsh is a UNIX command interpreter (shell) which of the standard shells
+	  most resembles the Korn shell (ksh), although it is not completely
+	  compatible.  It includes enhancements of many types, notably in the
+	  command-line editor, options for customising its behaviour, filename
+	  globbing, features to make C-shell (csh) users feel more at home and
+	  extra features drawn from tcsh (another `custom' shell).
+
+	  http://zsh.sourceforge.net/
+
+

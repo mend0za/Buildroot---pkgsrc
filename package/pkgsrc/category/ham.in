@@ -1,0 +1,536 @@
+config BR2_PKGSRC_PACKAGE_HAM_7PLUS
+	bool "7plus-225nb1"
+	help
+	  Uuencode-like file coder for AMPR BBS S&F of binary files
+
+	  7plus is an uuencoder-like file coder for use in Amateur Packet Radio
+	  BBS S&F of binary data files. The Packet Radio protocol (AX.25) utilizes
+	  8 bits for data transfer whereas most standard terminal programs only
+	  use a 7 bits alogarithm. The result is that only 87.5% of the available
+	  bandwidth is utilized.
+	  
+	  7plus fully exploits the capacity of the network by using all 8 bits
+	  and hence increasing data throughput. Furthermore, it uses alogarithms
+	  which checks for data integrity, detecting, reporting and, whenever
+	  possible, correcting data transmission errors that may have occurred due
+	  to noise or loss of signal with minimal overheads.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_HAM_CWTEXT
+	bool "cwtext-0.96"
+	help
+	  Morse Code Generator
+
+	  Convert text to International Morse Code. Input is ASCII text.
+	  Output can be: - . -..- - on the console, raw 8bit PCM suitable
+	  for piping to /dev/audio, .wav files or even (mp3|ogg).
+	  Good for headlines on your MP3 player or code practice.
+
+	  http://cwtext.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_DPBOX
+	bool "dpbox-6.00.00nb3"
+	help
+	  Multi-Protocol Amateur Packet Radio BBS
+
+	  DPBOX is a multi protocol and multi user packet radio BBS. It can
+	  handle up to 200 simultaneous users and has the capacity of storing
+	  a maximum of 32767*32767 messages.
+
+	  http://home.snafu.de/wahlm/dl8hbs/dpbox.html
+
+
+config BR2_PKGSRC_PACKAGE_HAM_FL_LOGBOOK
+	bool "fl_logbook-1.21nb2"
+	help
+	  FLTK-based amateur radio log book
+
+	  FlLogbook is a amateur radio operator log book written using the Fast
+	  Light Toolkit.
+
+	  http://www.w1hkj.com/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_FLDIGI
+	bool "fldigi-3.03nb5"
+	help
+	  Digital radio modem
+
+	  A digital radio modem program with support for the following modes:
+	  
+	  * CW
+	  * DominoEX
+	  * Feld-Hell
+	  * MFSK-4, MFSK-8, MFSK-16, MFSK-22, MFSK-31, MFSK-32, MFSK-64
+	  * PSK-31, QPSK-31, PSK-63, QPSK-63, PSK-125, QPSK-125, PSK-250, QPSK-250
+	  * Olivia various tones and bandwidths
+	  * RTTY various baudrates, shifts and bandwidths
+	  * Thor-4, Thor-5, Thor-8, Thor-11, Thor-16, Thor-22
+	  * Throb-1, Throb-2, Throb-4, ThrobX-1, ThrobX-2, ThrobX-4
+	  * WWV, receive only
+	  * Freq. Analysis, receive only
+
+	  http://www.w1hkj.com/Fldigi.html
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GMFSK
+	bool "gmfsk-0.6nb23"
+	help
+	  Multimode HF terminal program
+
+	  gMFSK is a multimode HF terminal program for Linux and other unix-like
+	  operating systems. Despite the name, gMFSK can send and receive many digital
+	  conversational modes typically used by radio amateurs on HF. Supported
+	  modes are:
+	  
+	  * MFSK (MFSK16 and MFSK8)
+	  * RTTY
+	  * THROB (1, 2 and 4 throbs/sec)
+	  * PSK31 (BPSK and QPSK)
+	  * PSK63
+	  * MT63
+	  * Feldhell
+
+	  http://gmfsk.connect.fi/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_JACK
+	bool "gnuradio-audio-jack-3.3.0nb1"
+	help
+	  GNU Radio module for jack low latency audio server
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains support for JACK, a low latency audio server.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_OSS
+	bool "gnuradio-audio-oss-3.3.0nb1"
+	help
+	  Open Sound System support for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module provides Open Sound System (OSS) support for GNU Radio.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_AUDIO_PORTAUDIO
+	bool "gnuradio-audio-portaudio-3.3.0nb1"
+	help
+	  GNU Radio module adding support for portaudio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module provides portaudio support for GNU Radio
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE
+	bool "gnuradio-core-3.3.0nb1"
+	help
+	  Runtime system and DSP blocks for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module provides the main library containing the underlying runtime
+	  system and most of the hardware independent signal processing blocks.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_CORE_DOCS
+	bool "gnuradio-core-docs-3.3.0nb6"
+	help
+	  GNU Radio core module documentation
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This package contains the documentation for the GNU Radio core module.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_EXAMPLES
+	bool "gnuradio-examples-3.3.0nb5"
+	help
+	  Examples for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains example code that may be used to exercise GNU Radio or
+	  as a starting point for a new project.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_GSM
+	bool "gnuradio-gsm-3.3.0nb1"
+	help
+	  GNU Radio GSM 06.10 13kbit/sec voice encoder/decoder
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This package contains the GNU Radio GSM 06.10 13kbit/sec voice encoder/decoder.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_HOWTO
+	bool "gnuradio-howto-3.3.0nb2"
+	help
+	  Documentation on creating GNU Radio signal processing blocks
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains the documentation and examples on how to write a new
+	  signal processing block in GNU Radio.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_RADIO_ASTRONOMY
+	bool "gnuradio-radio-astronomy-3.3.0nb5"
+	help
+	  GNU Radio module for radio astronomy
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains GNU Radio code specific to radio astronomy.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_TRELLIS
+	bool "gnuradio-trellis-3.3.0nb2"
+	help
+	  Trellis-based encoding and decoding algorithms for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains trellis-based encoding and decoding algorithms for
+	  GNU Radio.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_USRP
+	bool "gnuradio-usrp-3.3.0nb1"
+	help
+	  USRP bindings for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module provides support for the GNU Radio specific part of the
+	  Universal Software Radio Peripheral (USPR) hardware. It is the glue that
+	  ties up the USRP library into GNU Radio.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_VIDEO_SDL
+	bool "gnuradio-video-sdl-3.3.0nb1"
+	help
+	  SDL bindings for GNU Radio
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains SDL bindings for GNU Radio.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GNURADIO_WXGUI
+	bool "gnuradio-wxgui-3.3.0nb5"
+	help
+	  GUI framework for GNU Radio based on wxPython
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains the graphical user interface framework based on wxPython.
+	  It includes blocks for displaying realtime FFT and oscilloscope.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GPREDICT
+	bool "gpredict-0.8.0nb8"
+	help
+	  Gnome satellite tracking program
+
+	  Gpredict is a satellite tracking program for Unix-like operating systems.
+	  Whilst still in its infancy it already sports some very useful features:
+	  
+	  * Realtime satellite tracking
+	  - using a world map displaying its footprints
+	  - using a list showing current position and elevation
+	  - AOS/LOS Time
+	  - detailed satellite orbit data
+	  - display of track plot
+	  * Realtime antenna tracking control
+	  * Control over radio equipment control by means of hamlib library
+
+	  http://groundstation.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_GRIG
+	bool "grig-0.7.2nb7"
+	help
+	  Graphical user interface to the Hamlib libraries
+
+	  Gnome Rig is a graphical interface to the Ham Radio Control Libraries
+	  written using the Gtk+ and Gnome widgets.
+
+	  http://groundstation.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_HAMLIB
+	bool "hamlib-1.2.12"
+	help
+	  API for digital communications equipment
+
+	  The Ham Radio Control Library, Hamlib for short, provides a standardized
+	  API layer enabling access and control to a wide variety of digital
+	  communications equipment.
+
+	  http://hamlib.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_LINPSK
+	bool "linpsk-0.8.1nb8"
+	help
+	  PSK31 terminal program using QT3
+
+	  LinPSK is a PSK31 program based on WinPSK 1.0
+	  
+	  Main features are:
+	  
+	  * support for BPSK, QPSK, MFSK16 and RTTY
+	  * simultaneuos decoding of up to four channels.
+	  * mixed digital signal reception
+	  * trigger channels on receiving a predefined ASCII string patterns
+	  * log each channel to a file
+	  * support for user defined macros
+	  * scalable display of signal as frequency spectrum or waterfall
+
+	  http://linpsk.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_LOCATOR
+	bool "locator-0.1"
+	help
+	  Longitudes, latitudes to HAM locator converter
+
+	  locator converts HAM locators in longitudes and latitudes and vica versa
+
+	  http://www.stauss.purespace.de/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_TFKISS
+	bool "tfkiss-1.2.4nb1"
+	help
+	  Software implementation of TheFirmware for use with TNT
+
+	  TNT, the hostmode terminal program needs a TNC with TheFirmware connected
+	  on a serial interface. There are some applications, where other
+	  configurations are needed:
+	  - The TNC or PR-controller software is not compatible to TheFirmware and
+	  its hostmode, but does support KISS mode
+	  - The interface is not on a HF-frequency, but a TCP/IP-based network
+	  (local net or internet)
+	  - TNT together with DPBox shall be used directly connected to a digipeater
+	  using KISS mode (hopefully with CRC) as interface
+	  
+	  To handle these applications, TFKISS was written. It is in fact a port
+	  of the original TheFirmware by NORD><LINK, written for TNC2-hardware.
+	  The low level interfaces were changed and adapted to Linux. On the
+	  radio side a KISS- and an AXIP-interface take the place of the HDLC/modem
+	  interface. The host connection is changed to a direct console interface (for
+	  terminal mode) and a socket interface (for TNT).
+
+	  http://www.bfl.at/mayer/ham/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_TLF
+	bool "tlf-0.9.30"
+	help
+	  Advanced hamradio logging and contest program
+
+	  An advanced logging and contest program for hamradio using the ncurses
+	  library.
+
+	  http://home.iae.nl/users/reinc/TLF-0.2.html
+
+
+config BR2_PKGSRC_PACKAGE_HAM_TNT
+	bool "tnt-1.9.2nb1"
+	help
+	  Amateur packet radio terminal program for TNC2, AEA PK232 and PK88
+
+	  About Packet Radio and TNT
+	  
+	  Packet-Radio is a special mode used by Radio Amateurs to transfer text and
+	  data over a radio link. Packet-Radio, as the name suggests, is packet
+	  orientated and uses the AX.25-protocol, a special version of X.25
+	  to fit Ham Radio needs.
+	  
+	  The interface between the radio transceiver and terminal/PC is called
+	  a Terminal Node Controller (TNC). It implements the AX.25 Protocol and
+	  consists of a micro-controller, a radio modem and RS232 interface.
+	  
+	  Special firmware such as WA8DED-Software and 'The Firmware' by NORD><LINK,
+	  which is available for most TNC's, make use of the hostmode protocol via
+	  the RS232-interface. The advantage of the hostmode is that it gives a
+	  PC control over the TNC. It allows applications to implement features
+	  which are not available in terminal mode.
+	  
+	  TNT (TNc Terminalprogram) is a terminal program which takes advantage
+	  of the hostmode protocol implementing features such as virtual screens
+	  for multiple traffic channels and various interfaces to other software
+	  packages such as tfkiss, dpbox and much more.
+
+	  http://wspse.de/WSPse/Packet.php3
+
+
+config BR2_PKGSRC_PACKAGE_HAM_USRP
+	bool "usrp-3.3.0nb1"
+	help
+	  Non GNU Radio specific part of the USRP code base
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This module contains the non GNU Radio specific libraries, firmware and FPGA
+	  code for the Universal Software Radio Peripheral (USRP), a low-cost and
+	  high-speed implementation of the GNU Radio hardware.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_USRP_DOCS
+	bool "usrp-docs-3.3.0nb1"
+	help
+	  Documentation for the usrp module
+
+	  GNU Radio is a collection of software that when combined with minimal hardware,
+	  allows the construction of radios where the actual waveforms transmitted and
+	  received are defined by software. What this means is that it turns the digital
+	  modulation schemes used in today's high performance wireless devices into
+	  software problems.
+	  
+	  This package contains the documentation for the GNU Radio usrp module.
+
+	  http://www.gnu.org/software/gnuradio/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_WWL
+	bool "wwl-1.2"
+	help
+	  
+
+	  Given two Maidenhead locators, calculates distance (qrb) and azimuth.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_HAM_XDX
+	bool "xdx-2.4.2nb8"
+	help
+	  Amateur Radio tcp/ip DX-cluster client
+
+	  Amateur Radio TCP/IP DX-cluster client. A DX Cluster is a means for
+	  Amateur (Ham) Radio operators to tell each other, in realtime, about
+	  DX stations (other interesting or rare Amateur Radio stations all over
+	  the world). Users who are connected to a DX Cluster are capable of
+	  announcing DX spots and related announcements, send personal talk messages,
+	  send and receive mail messages, search and retrieve archived data, and
+	  access data from information databases.
+
+	  http://www.qsl.net/pg4i/linux/xdx.html
+
+
+config BR2_PKGSRC_PACKAGE_HAM_XLOG
+	bool "xlog-2.0.4nb3"
+	help
+	  Amateur Radio logging program
+
+	  Amateur Radio logging program with support for cabrillo, ADIF, twlog and
+	  editest.
+
+	  http://www.nongnu.org/xlog/
+
+
+config BR2_PKGSRC_PACKAGE_HAM_YAESU
+	bool "yaesu-0.13"
+	help
+	  Control interface for Yaesu FT-890 HF transceiver
+
+	  Archaic program to control a Yaesu FT-890 HF transceiver off of a serial port.
+	  (This is of interest to a ham radio operator or SWL.)
+	  Author: kg0cq@amsat.org (Emarit Ranu)
+
+	  
+
+

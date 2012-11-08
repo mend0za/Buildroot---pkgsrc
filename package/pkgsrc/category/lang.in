@@ -1,0 +1,3618 @@
+config BR2_PKGSRC_PACKAGE_LANG_CG_COMPILER
+	bool "Cg-compiler-1.3beta2nb3"
+	help
+	  NVIDIA Cg Compiler for Linux
+
+	  This is the NVIDIA Cg compiler/toolkit for Linux that includes:
+	  
+	  o NVIDIA Cg toolkit documentation
+	  o NVIDIA Cg compiler
+	  o NVIDIA Cg runtime libraries for OpenGL
+	  o Example shaders written in the Cg language
+	  o Example applications that use the Cg runtime to manage Cg programs
+
+	  http://developer.nvidia.com/object/cg_toolkit.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GAUCHE
+	bool "Gauche-0.9.2"
+	help
+	  R5RS Scheme implementation aimed to be a handy tool for daily works
+
+	  Gauche is an R5RS Scheme implementation developed to be a handy script
+	  interpreter, which allows programmers and system administrators to write small
+	  to large scripts for their daily chores. Quick startup, built-in system
+	  interface, native multilingual support are some of my goals.
+
+	  http://practical-scheme.net/gauche/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_LUAJIT
+	bool "LuaJIT-1.1.5"
+	help
+	  Just-In-Time Compiler for the Lua programming language
+
+	  LuaJIT is a Just-In-Time Compiler for the Lua programming language.
+	  
+	  Lua is a powerful, light-weight programming language designed for extending
+	  applications. Lua is also frequently used as a general-purpose, stand-alone
+	  language. More information about Lua can be found at: http://www.lua.org/
+	  
+	  LuaJIT is based on the Lua 5.1.x virtual machine and bytecode interpreter from
+	  lua.org. It compiles bytecode to native x86 (i386+) machine code to speed up the
+	  execution of Lua programs.
+
+	  http://luajit.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_STK
+	bool "STk-4.0.1nb2"
+	help
+	  Scheme interpreter with full access to the Tk graphical package
+
+	  STk is a Scheme interpreter which can access to the Tk graphical package.
+	  Concretely it can be seen as the John Ousterhout's Tk package where
+	  the Tcl language has been replaced by Scheme.
+	  
+	  The Scheme interpreter is now R4RS conformant.
+	  
+	  This release provides an efficient object oriented system called STklos.
+	  STklos is a full OO system with multi-inheritance, generic functions,
+	  multi-methods and a true meta object protocol.
+
+	  http://kaolin.unice.fr/STk/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SMARTEIFFEL
+	bool "SmartEiffel-2.0"
+	help
+	  The GNU Eiffel Compiler
+
+	  It is intended to be a complete, though small and very fast, free Eiffel
+	  compiler. It is available for a very wide range of platforms: GNU/Linux,
+	  GNU/Hurd, FreeBSD, BSD/OS, NetBSD, OpenBSD, HP-UX, IRIX, XENIX, Solaris,
+	  DOS, OS2, WINDOWS NT/95/2000, Macintosh, NeXT, Amiga, AmigaDE/Elate, BeOS,
+	  QNX, VMS, etc. Actually, SmartEiffel should run on any platform for which
+	  an ANSI C compiler exists.
+	  
+	  The current distribution includes an Eiffel to C compiler, an Eiffel to
+	  Java bytecode compiler, a debugger, a documentation tool, a pretty printer
+	  and various other tools.
+
+	  http://smarteiffel.loria.fr/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_A60
+	bool "a60-0.20a"
+	help
+	  Algol 60 interpreter
+
+	  From the documentation:
+	  
+	  This Algol 60 interpreter is based upon the "Revised Report on the
+	  Algorithmic Language Algol 60" [RRA60].
+	  
+	  At school, a long time ago, I learned Algol 60 in a completely
+	  theoretical manner.  Later I learned Algol 68 and C (and more ...).
+	  
+	  The concept of call-by-name never left my mind, and so I started to
+	  write this Algol 60 interpreter:  Made for fun and a call-by-name.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ALGOL68G
+	bool "algol68g-2.3.1nb1"
+	help
+	  Algol 68genie compiler
+
+	  The development of Algol played an important role in establishing
+	  computer science as an academic discipline. The Algol 68 Genie
+	  project preserves Algol 68 out of educational as well as
+	  scientific-historical interest, by making available Algol 68 Genie;
+	  a recent, well-featured implementation written from scratch. Algol
+	  68 Genie is a practically full implementation of the language
+	  defined by the Revised Report. The implementation is a hybrid
+	  compiler-interpreter; units with considerable interpreter-overhead
+	  can optionally be compiled.
+
+	  http://jmvdveer.home.xs4all.nl/algol.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_AWKA
+	bool "awka-0.7.5nb2"
+	help
+	  AWK to ANSI C compiler
+
+	  Awka is an open-source implementation of the AWK programming language.  Awka
+	  is not an interpreter like Gawk, Mawk or Nawk, but instead it converts the
+	  program to ANSI-C, then compiles this using gcc or a native C compiler to
+	  create a binary executable.
+	  
+	  As of version 0.7.0, you can write C functions and compile them into a
+	  library, then have these functions available for use in AWK scripts as if they
+	  were builtin.  From now on, using Awka you are no longer bound to the limited
+	  AWK universe plus a few extras. You are free to extend functionality in
+	  whatever direction C allows you, and have this available within the concise,
+	  elegant AWK language framework.
+	  
+	  You may distribute the executable, without having to provide the source code
+	  for your AWK program.  Please note, however, that executables using Awka must
+	  be distributed free of charge.  Note that using the optional dfa library that
+	  accompanies awka, or compiling awka under cygwin, will subject translated C
+	  source code to the GPL, but not the AWK source.
+	  
+	  Translating AWK programs to C means you can link them with C & C++ code, thus
+	  extending functionality way beyond what is possible in interpretive AWK.
+	  
+	  Awka-generated executables perform comparatively with, and in many cases
+	  faster than, the quickest freely-available AWK interpreter.
+
+	  http://awka.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_BACI
+	bool "baci-20000725"
+	help
+	  Ben-Ari Concurrent Interpreter
+
+	  BACI stands for Ben-Ari Concurrent Interpreter. The compiler and interpreter
+	  originally were procedures in a program written by M. Ben-Ari, based on the
+	  original Pascal compiler by Niklaus Wirth. The original version of the BACI
+	  compiler and interpreter was created from that source code and was hosted on
+	  a PRIME mainframe.  After several modifications and additions, this version
+	  was ported to a PC version in Turbo Pascal, to Sun Pascal, and to C. Finally,
+	  the compiler and interpreter were split into two separate programs.
+	  
+	  Recently, a C-- compiler has been added to the BACI suite of programs to
+	  compile source programs written in a restricted dialect of C++ into PCODE
+	  object code executable by the interpreter. Compared with other concurrent
+	  languages, BACI offers a variety of synchronization techniques with a
+	  syntax that is usually familiar. Any experienced C or Pascal programmer could
+	  use BACI within hours.
+
+	  http://www.mines.edu/fs_home/tcamp/baci/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_BASIC256
+	bool "basic256-0.9.6.66nb1"
+	help
+	  BASIC language with traditional control structures
+
+	  BASIC-256 is an easy to use version of BASIC designed to teach
+	  anybody (especially middle and high-school students) the basics of
+	  computer programming. It uses traditional control structures like
+	  gosub, for/next, and goto, which helps kids easily see how program
+	  flow-control works. It has a built-in graphics mode which lets them
+	  draw pictures on screen in minutes, and a set of detailed,
+	  easy-to-follow tutorials that introduce programming concepts through
+	  fun exercises.
+
+	  http://www.basic256.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_BOOMERANG
+	bool "boomerang-0.2nb1"
+	help
+	  Bidirectional programming language for ad-hoc, textual data
+
+	  Boomerang is a programming language for writing lenses--well-behaved
+	  bidirectional transformations--that operate on ad-hoc, textual data
+	  formats. Every lens program, when read from left to right, describes
+	  a function that maps an input to an output; when read from right
+	  to left, the very same program describes a "backwards" function
+	  that maps a modified output, together with the original input, back
+	  to a modified input.
+	  
+	  Lenses have been used to solve problems across a wide range of
+	  areas in computing including: in data converters and synchronizers,
+	  in parsers and pretty printers, in picklers and unpicklers, in
+	  structure editors, in constraint maintainers for user interfaces,
+	  in software model transformations, in schema evolution, in tools
+	  for managing system configuration files, and in databases where
+	  they provide updatable views.
+
+	  http://www.seas.upenn.edu/~harmony/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_BRANDYBASIC
+	bool "brandybasic-1.0.16nb1"
+	help
+	  Brandy Basic V interpreter - Acorn ARM Computers BASIC dialect
+
+	  Brandy implements Basic V, the dialect of Basic that Acorn Computers
+	  supplied with their ranges of desktop computers that use the ARM
+	  processor such as the Archimedes and RiscPC. Basic V is an extended
+	  version of BBC Basic. This was the Basic used on the BBC Micro that
+	  Acorn made during the early 1980s.
+
+	  http://jaguar.orpheusweb.co.uk/branpage.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_BWBASIC
+	bool "bwbasic-2.20pl2"
+	help
+	  The Bywater Basic interpreter
+
+	  The Bywater BASIC Interpreter (bwBASIC) implements a large superset
+	  of the ANSI Standard for Minimal BASIC (X3.60-1978) and a significant
+	  subset of the ANSI Standard for Full BASIC (X3.113-1987) in C. It also
+	  offers shell programming facilities as an extension of BASIC. bwBASIC
+	  seeks to be as portable as possible.
+	  
+	  Originally written by Ted A. Campbell, and released under the GPL. It
+	  was posted to comp.sources.misc, volume 40. It was hosted for a while at
+	  ftp.eng.umd.edu.
+	  
+	  Patched by Jon B. Volkoff.
+	  Version 2.20 was released 25 November 1995
+	  Patch 1: 15 March 1996
+	  Patch 2: 11 October 1997
+	  
+	  Patch 2 includes new files for UNIX ncurses interface, compliments of
+	  L.C. Benschop, Eindhoven, The Netherlands.
+
+	  http://bwbasic.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CAML_LIGHT
+	bool "caml-light-0.74nb2"
+	help
+	  Another implementation of Caml
+
+	  The Caml Light system comprises the following parts:
+	  
+	  - An interactive system, based on a read-eval-print loop: the user enters
+	  a phrase, the system compiles it and executes it on the fly, then print the
+	  outcome of evaluation. The interactive system is great for learning the
+	  language and testing programs.
+	  - A batch compiler and linker, camlc, with a command-line interface similar to
+	  the one of C compilers. The compiler produces standalone executable programs
+	  that can later be invoked just as any other command on the system. It
+	  integrates smoothly within the Unix programming environment
+	  (make, Emacs, ...).
+	  - A medium-sized standard library, providing a number of general-purpose
+	  functions and implementations of a few essential data structures
+	  (lists, arrays, hash tables, sets, ...).
+	  - A tool to build libraries of frequently-used program modules.
+	  - A parser generator and a lexical analyzer generator, in the style of lex and
+	  yacc.
+	  - Various programming tools and several interface libraries.
+
+	  http://caml.inria.fr/caml-light/index.en.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CAMLP5
+	bool "camlp5-5.15nb1"
+	help
+	  Camlp5 is a preprocessor-pretty-printer of ocaml
+
+	  Camlp5 is a preprocessor and pretty-printer for OCaml programs. It also
+	  provides parsing and printing tools.
+	  
+	  As a preprocessor, it allows to:
+	  - extend the syntax of OCaml,
+	  - redefine the whole syntax of the language.
+	  As a pretty printer, it allows to:
+	  - display OCaml programs in an elegant way,
+	  - convert from one syntax to another,
+	  - check the results of syntax extensions.
+	  Camlp5 also provides some parsing and pretty printing tools:
+	  - extensible grammars
+	  - extensible printers
+	  - stream parsers and lexers
+	  - pretty print module
+	  It works as a shell command and can also be used in the OCaml toplevel.
+
+	  http://pauillac.inria.fr/~ddr/camlp5/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CCSH
+	bool "ccsh-0.0.4nb1"
+	help
+	  C-like syntax scripting
+
+	  CCSH is a scripting language that is intended to be powerful and easy
+	  to use for people already familiar with the C language.
+
+	  http://ccsh.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CDL3
+	bool "cdl3-1.2.8"
+	help
+	  Programming language for the development of compilers
+
+	  CDL3 is a programming language, based on Affix Grammars, intended for
+	  the development of compilers and other complicated pieces of software
+	  that can be implemented as syntax-directed transducers.
+
+	  http://www.cs.ru.nl/~kees/cdl3/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CHICKEN
+	bool "chicken-4.7.0"
+	help
+	  Scheme to C compiler, handling R5RS
+
+	  CHICKEN is a Scheme-to-C compiler supporting most of the language
+	  features as defined in the Revised^5 Report on Scheme.  CHICKEN
+	  generates quite portable C code, and files compiled by it (including
+	  itself) should work without any changes on most platforms.
+	  
+	  The whole package is distributed under a BSD license and as such free
+	  to use and modify as long as you adhere to its terms (see the manual).
+	  Linkage to C modules and C-library functions is straightforward, so
+	  it's easy to access C from Scheme.  Compiled code can be embedded into
+	  existing C programs without problems.  The generated code supports
+	  full tail-recursion, first-class continuations, multiple values and
+	  dynamic-wind.
+
+	  http://www.call-cc.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CIM
+	bool "cim-3.30nb1"
+	help
+	  Simula compiler based on the C programming language
+
+	  GNU Cim is a compiler for the programming language Simula.  It offers
+	  a class concept, separate compilation with full type checking,
+	  interface to external C routines, an application package for process
+	  simulation and a coroutine concept.
+	  
+	  The portability of GNU Cim is based on the C programming language.
+	  The compiler and the run-time system is written in C, and the compiler
+	  produces C code, that is passed to a C compiler for further processing
+	  towards machine code.
+
+	  http://www.gnu.org/software/cim/cim.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CINT
+	bool "cint-5.15.174nb2"
+	help
+	  C/C++ interpreter
+
+	  "cint"  is  a  C/C++ interpreter. About 95% of ANSI C and
+	  90% of C++ features are covered. (Data abstraction,  class
+	  inheritance, virtual function, function and operator over-
+	  loading, default parameter, template,  etc...)   Cint  has
+	  source  code  debugger  which has sufficient capability to
+	  debug complicated C++ program.
+
+	  http://root.cern.ch/root/Cint.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CLANG
+	bool "clang-3.0"
+	help
+	  Low Level Virtual Machine compiler infrastructure
+
+	  Low Level Virtual Machine (LLVM) is:
+	  
+	  A compilation strategy designed to enable effective program optimization across
+	  the entire lifetime of a program. LLVM supports effective optimization at
+	  compile time, link-time (particularly interprocedural), run-time and offline
+	  (i.e., after software is installed), while remaining transparent to developers
+	  and maintaining compatibility with existing build scripts.
+	  
+	  A virtual instruction set - LLVM is a low-level object code representation that
+	  uses simple RISC-like instructions, but provides rich, language-independent,
+	  type information and dataflow (SSA) information about operands. This combination
+	  enables sophisticated transformations on object code, while remaining
+	  light-weight enough to be attached to the executable. This combination is key to
+	  allowing link-time, run-time, and offline transformations.
+	  
+	  A compiler infrastructure - LLVM is also a collection of source code that
+	  implements the language and compilation strategy. The primary components of the
+	  LLVM infrastructure are a GCC-based C & C++ front-end, a link-time optimization
+	  framework with a growing set of global and interprocedural analyses and
+	  transformations, static back-ends for the X86, X86-64, PowerPC 32/64, ARM,
+	  Thumb, IA-64, Alpha and SPARC architectures, a back-end which emits portable C
+	  code, and a Just-In-Time compiler for X86, X86-64, PowerPC 32/64 processors.
+
+	  http://llvm.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH
+	bool "classpath-0.93nb2"
+	help
+	  Class libraries for Java VM
+
+	  Classpath is a free (open source) implementation of the Java runtime
+	  libraries.
+
+	  http://www.gnu.org/software/classpath/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH_GUI
+	bool "classpath-gui-0.93nb9"
+	help
+	  
+
+	  Classpath is a free (open source) implementation of the Java runtime
+	  libraries.  This package provides the GTK+ peer required to use the
+	  AWT and Swing libraries that come with classpath.
+
+	  http://www.gnu.org/software/classpath/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CLISP
+	bool "clisp-2.49nb6"
+	help
+	  CLISP, a Common Lisp implementation
+
+	  Common Lisp is a high-level, general-purpose programming language. GNU
+	  CLISP is a Common Lisp implementation by Bruno Haible of Karlsruhe
+	  University and Michael Stoll of Munich University, both in Germany.
+	  
+	  It mostly supports the Lisp described in the ANSI Common Lisp standard.
+	  It runs on microcomputers (Windows NT/2000/XP, Windows 95/98/ME) as well
+	  as on Unix workstations (Linux, SVR4, Sun4, DEC Alpha OSF, HP-UX, BeOS,
+	  NeXTstep, SGI, AIX and others) and needs only 2 MB of RAM.
+	  
+	  The user interface comes in German, English, French, Spanish, Dutch and
+	  Russian. GNU CLISP includes an interpreter, a compiler, a debugger,
+	  CLOS, a foreign language interface, sockets, i18n, fast bignums and
+	  more. An X11 interface is available through CLX, Garnet, CLUE/CLIO. GNU
+	  CLISP runs Maxima, ACL2 and many other Common Lisp packages.
+
+	  http://clisp.cons.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_COQ
+	bool "coq-8.3pl1nb3"
+	help
+	  Theorem prover which extracts programs from proofs
+
+	  From http://coq.inria.fr/doc/tutorial.html:
+	  
+	  Coq is a Proof Assistant for a Logical Framework known as the
+	  Calculus of Inductive Constructions. It allows the interactive
+	  construction of formal proofs, and also the manipulation of
+	  functional programs consistently with their specifications.
+
+	  http://coq.inria.fr/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CPARSER
+	bool "cparser-0.9.9"
+	help
+	  Recursive descent C99 parser
+
+	  Cparser is a recursive descent C99 parser written in C99. It contains
+	  a lexer, a parser, and the appropriate constructs; it does AST and
+	  semantic analysis. It is currently used as a frontend to the
+	  libFirm intermediate representation.  However, it can be used
+	  independently, and also is able to bootstrap itself.  Currently, cparser
+	  uses an external preprocessor.
+
+	  http://cparser.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_CU_PROLOG
+	bool "cu-prolog-3.94"
+	help
+	  Experimental constraint logic programming language
+
+	  cu-Prolog is an experimental constraint logic programming language.
+	  Unlike most conventional CLP systems, cu-Prolog allows user-defined
+	  predicates as constraints and is suitable for implementing a natural
+	  language processing system based on the unification-based
+	  grammar. As an application of cu-Prolog, we developed
+	  a JPSG (Japanese Phrase Structure Grammar) parser
+	  with the JPSG Working Group (the chairman is Prof. GUNJI, Takao of
+	  Osaka University) at ICOT.
+	  
+	  cu-Prolog is also the complete implementation of the constraint
+	  unification and its name (cu) comes from the technique.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_LANG_EAG
+	bool "eag-2.3nb3"
+	help
+	  Transducer generator using affix grammars
+
+	  Extended Affix Grammars (EAG) are an attempt to implement a very
+	  general form of Affix Grammars, with very few restrictions.  EAG can
+	  be used as a specification formalism, specifying in general relations
+	  rather than functions, or as a relational programming language similar
+	  in many respects to PROLOG.
+
+	  http://www.cs.ru.nl/~kees/eag/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ECL
+	bool "ecl-11.1.1"
+	help
+	  Embeddable Common Lisp
+
+	  ECL stands for Embeddable Common-Lisp. The ECL project is an effort to
+	  modernize Giuseppe Attardi's ECL environment to produce an implementation of
+	  the Common-Lisp language which complies to the ANSI X3J13 definition of the
+	  language.
+	  
+	  The current ECL implementation features:
+	  * A bytecodes compiler and interpreter.
+	  * A translator to C.
+	  * An interface to foreign functions.
+	  * A dynamic loader.
+	  * The possibility to build standalone executables.
+	  * The Common-Lisp Object System (CLOS).
+	  * Conditions and restarts for handling errors.
+	  * Sockets as ordinary streams.
+	  * The Gnu Multiprecision library for fast bignum operations.
+	  * A simple conservative mark & sweep garbage collector.
+	  * The Boehm-Weiser garbage collector.
+	  * Threads using the POSIX threads library.
+	  * CLX, an X11 client not needing extra X11 libraries.
+	  * Unicode.
+
+	  http://ecls.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_EIEIO
+	bool "eieio-0.17nb3"
+	help
+	  Enhanced Integration of Emacs Interpreted Objects
+
+	  EIEIO is a CLOS (Common Lisp Object System) compatibility layer. Due
+	  to restrictions in the Emacs Lisp language, CLOS cannot be completely
+	  supported, and a few functions have been added in place of setf.
+	  
+	  What EIEIO supports
+	  
+	  1.A structured framework for the creation of basic classes with
+	  attributes and methods using singular inheritance similar to CLOS.
+	  2.Type checking, and slot unbinding.
+	  3.Method definitions similar to CLOS.
+	  4.Simple and complex class browsers.
+	  5.Edebug support for methods.
+	  6.Imenu updates.
+	  7.Byte compilation support of methods.
+	  8.Help system extensions for classes and methods.
+	  9.Automatic texinfo documentation generator.
+	  10.Several base classes for interesting tasks.
+	  11.Simple test suite.
+	  12.Public and private classifications for slots (extensions to CLOS)
+	  13.Customization support in a class (extension to CLOS)
+
+	  http://cedet.sourceforge.net/eieio.shtml
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ELISP_MANUAL
+	bool "elisp-manual-21.2.8"
+	help
+	  The Emacs Lisp Reference Manual for GNU Emacs Version 21.2
+
+	  Most of the GNU Emacs text editor is written in the programming
+	  language called Emacs Lisp.  You can write new code in Emacs Lisp and
+	  install it as an extension to the editor.  However, Emacs Lisp is more
+	  than a mere ``extension language''; it is a full computer programming
+	  language in its own right.  You can use it as you would any other
+	  programming language.
+	  
+	  Because Emacs Lisp is designed for use in an editor, it has special
+	  features for scanning and parsing text as well as features for handling
+	  files, buffers, displays, subprocesses, and so on.  Emacs Lisp is
+	  closely integrated with the editing facilities; thus, editing commands
+	  are functions that can also conveniently be called from Lisp programs,
+	  and parameters for customization are ordinary Lisp variables.
+	  
+	  This manual attempts to be a full description of Emacs Lisp.  For a
+	  beginner's introduction to Emacs Lisp, see ``An Introduction to
+	  Emacs Lisp Programming,'' by Bob Chassell, also published by the Free
+	  Software Foundation.  This manual presumes considerable familiarity with
+	  the use of Emacs for editing; see ``The GNU Emacs Manual'' for this
+	  basic information.
+	  
+	  Generally speaking, the earlier chapters describe features of Emacs
+	  Lisp that have counterparts in many programming languages, and later
+	  chapters describe features that are peculiar to Emacs Lisp or relate
+	  specifically to editing.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ELK
+	bool "elk-3.99.7nb1"
+	help
+	  Embeddable Scheme interpreter
+
+	  Elk is a Scheme interpreter intended to be used as a general, reusable
+	  extension language subsystem for integration into existing and future
+	  applications.  Elk can also be used as a stand-alone implementation of
+	  the Scheme programming language.
+	  
+	  One purpose of the Elk project is to end the recent proliferation of
+	  mutually incompatible Lisp-like extension languages.  Instead of
+	  inventing and implementing yet another extension language, application
+	  programmers can integrate Elk into their application to make it
+	  extensible and highly customizable.
+
+	  http://sam.zoy.org/elk/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_EMBRYO
+	bool "embryo-1.1.0"
+	help
+	  Embeddable Scripting Language
+
+	  Embryo implements a C like scripting language used in various parts of
+	  the Enlightenment project, namely Edje.  Embryo allows scripting
+	  capabilities in places that otherwise wouldn't support basic
+	  programming structures such as in Edje EDCs.
+
+	  http://enlightenment.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ERLANG
+	bool "erlang-14.1.3"
+	help
+	  Concurrent functional programming language
+
+	  Erlang is a programming language which has many features more commonly
+	  associated with an operating system than with a programming language:
+	  concurrent processes, scheduling, memory management, distribution,
+	  networking, etc.
+	  
+	  The initial open-source Erlang release contains the implementation of
+	  Erlang, as well as a large part of Ericsson's middleware for building
+	  distributed high-availability systems.
+
+	  http://www.erlang.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ERLANG_DOC
+	bool "erlang-doc-14.1.3"
+	help
+	  Documentation for Erlang, a concurrent functional programming language
+
+	  Erlang is a programming language which has many features more commonly
+	  associated with an operating system than with a programming language:
+	  concurrent processes, scheduling, memory management, distribution,
+	  networking, etc.
+	  
+	  This package provides the documentation for Erlang and its components.
+
+	  http://www.erlang.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ERLANG_MAN
+	bool "erlang-man-14.1.3"
+	help
+	  Documentation for Erlang, a concurrent functional programming language
+
+	  Erlang is a programming language which has many features more commonly
+	  associated with an operating system than with a programming language:
+	  concurrent processes, scheduling, memory management, distribution,
+	  networking, etc.
+	  
+	  This package provides the manpages for Erlang.
+
+	  http://www.erlang.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_EZM3
+	bool "ezm3-1.2nb2"
+	help
+	  Easier, more portable Modula-3 distribution for building CVSup
+
+	  Ezm3 is a smaller, more portable distribution of the Modula-3 compiler
+	  and runtime system for people whose only need for Modula-3 is to build
+	  CVSup.  It supports all features of CVSup, but has smaller distfiles
+	  and installs more quickly than other versions of Modula-3.  Ezm3
+	  provides full X11 GUI support even when compiled on systems which
+	  do not have X11 installed.  It links programs statically with the
+	  Modula-3 libraries but dynamically with the system libraries, so that
+	  programs built with Ezm3 can run on systems which do not have
+	  Modula-3 installed on them.
+
+	  http://www.cvsup.org/ezm3/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_F2C
+	bool "f2c-20100903"
+	help
+	  Fortran to C compiler including a script to emulate f77
+
+	  f2c is a Fortran 77 to C compiler (translates fortran to C).
+	  
+	  A script, f2c-f77, is included  which works with f2c and the C compiler
+	  to emulate a f77 fortran compiler.
+	  
+	  f2c is distributed by netlib.
+	  
+	  There do not appear to be released versions of f2c with an assigned
+	  version number.  When updates are made, the "changes" file is updated,
+	  but there is no associated version number.  I don't have any suggestions
+	  for keeping track of the version except to consult the "changes" file
+	  which will be installed as ${PREFIX}/share/doc/f2c/changes for reference.
+
+	  http://www.netlib.org/f2c/index.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_FICL
+	bool "ficl-4.1.0"
+	help
+	  Forth Inspired Command Language
+
+	  Ficl is a complete programming language interpreter designed to be
+	  embedded into other systems (including firmware based ones) as
+	  a command, macro, and development prototype language.
+	  Ficl stands for "Forth Inspired Command Language".
+
+	  http://ficl.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_FOCAL
+	bool "focal81-0"
+	help
+	  Interpreted programming language
+
+	  FOCAL (FOrmula CALculator) is an interpreted programming language developped
+	  by DEC (Rick Merrill) for the PDP-8 in 1969.
+
+	  http://home.scarlet.be/~be042720/44/focal.htm
+
+
+config BR2_PKGSRC_PACKAGE_LANG_FORT77
+	bool "fort77-1.18nb2"
+	help
+	  The driver for f2c, a fortran to C translator
+
+	  Fort77 is a Perl driver script for the f2c Fortran to
+	  C converter, which makes it possible to use it like
+	  a compiler.  It's a replacement for the f77 script,
+	  and includes support for debugging.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_LANG_G95
+	bool "g95-0.92"
+	help
+	  Fortran 95 compiler from g95.org
+
+	  G95 is a stable, production Fortran 95 compiler available for multiple
+	  CPU architectures and operating systems. Innovations and optimizations
+	  continue to be worked on. Parts of the F2003 standard have been
+	  implemented in g95.
+
+	  http://www.g95.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GAMBC
+	bool "gambc-4.6.0"
+	help
+	  GambitC Scheme System
+
+	  This package  the Gambit-C Scheme programming system.  Gambit-C
+	  includes a Scheme interpreter and a Scheme compiler which can be used
+	  to build standalone executables.  Because the compiler generates
+	  portable C code it is fairly easy to port to any platform with a
+	  decent C compiler.
+	  
+	  The Gambit-C system conforms to the R4RS, R5RS and IEEE Scheme standards.
+	  The full numeric tower is implemented, including: infinite precision
+	  integers (bignums), rationals, inexact reals (floating point numbers),
+	  and complex numbers.  Gambit-C supports a number of extensions to the
+	  standards.  Please see the <http://gambit.uri.umontreal.ca/~gambit/wiki>
+	  for more information:  there is simply not enough room here to elaborate!
+
+	  http://www.iro.umontreal.ca/~gambit/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GAWK
+	bool "gawk-3.1.8nb1"
+	help
+	  GNU awk
+
+	  The GNU AWK utility, a pattern scanning and processing tool
+
+	  http://www.gnu.org/software/gawk/gawk.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC
+	bool "gcc-2.95.3nb7"
+	help
+	  GNU Compiler Collection, version 2
+
+	  This directory contains the GNU Compiler Collection (GCC) version 2.95.
+	  It includes all of the support for compiling C, C++, Objective C, Fortran,
+	  Java, and Chill.
+	  
+	  The GNU Compiler Collection is free software.  See the file COPYING for copying
+	  permission.
+	  
+	  See the file gcc.texi (together with other files that it includes) for
+	  installation and porting information.  The file INSTALL contains a
+	  copy of the installation information, as plain ASCII.
+	  
+	  See the Bugs chapter of the GCC Manual for how to report bugs
+	  usefully.  An online readable version of the manual is in the files
+	  gcc.info*.
+
+	  http://gcc.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC3
+	bool "gcc3-3.3.6"
+	help
+	  GNU Compiler Collection, v3
+
+	  The GNU Compiler Collection (GCC) version 3.x.
+	  
+	  This is a meta package for the C, C++, Objective C, Fortran, and Java
+	  compilers.
+
+	  http://gcc.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC3_ADA
+	bool "gcc3-ada-3.3.6"
+	help
+	  GNU Compiler Collection, v3 - Ada compiler
+
+	  The GNU Compiler Collection (GCC) version 3.x.
+	  
+	  This package includes support for compiling the Ada language.
+
+	  http://www.gnu.org/software/gcc/gcc.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC3_C__
+	bool "gcc3-c++-3.3.6"
+	help
+	  GNU Compiler Collection, v3 - C++ compiler
+
+	  The GNU Compiler Collection (GCC) version 3.x.
+	  
+	  This package includes support for compiling the C++ language.
+
+	  http://www.gnu.org/software/gcc/gcc.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC3_C
+	bool "gcc3-c-3.3.6nb1"
+	help
+	  GNU Compiler Collection, v3 - C compiler
+
+	  The GNU Compiler Collection (GCC) version 3.x.
+	  
+	  This package includes support for compiling the C language.
+
+	  http://www.gnu.org/software/gcc/gcc.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC3_F77
+	bool "gcc3-f77-3.3.6"
+	help
+	  GNU Compiler Collection, v3 - F77 compiler
+
+	  The GNU Compiler Collection (GCC) version 3.x.
+	  
+	  This package includes support for compiling the Fortran language.
+
+	  http://www.gnu.org/software/gcc/gcc.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC3_JAVA
+	bool "gcc3-java-3.3.6"
+	help
+	  GNU Compiler Collection, v3 - Java compiler
+
+	  The GNU Compiler Collection (GCC) version 3.x.
+	  
+	  This package includes support for compiling the Java language.
+
+	  http://www.gnu.org/software/gcc/gcc.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC3_OBJC
+	bool "gcc3-objc-3.3.6nb1"
+	help
+	  GNU Compiler Collection, v3 - Objective C compiler
+
+	  The GNU Compiler Collection (GCC) version 3.x.
+	  
+	  This package includes support for compiling the Objective C language.
+
+	  http://www.gnu.org/software/gcc/gcc.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC34
+	bool "gcc34-3.4.6nb5"
+	help
+	  This is the gcc 3.4 compiler
+
+	  This is the gcc 3.4 compiler suite.
+	  
+	  This package has a test target. For testing (only), this
+	  package requires dejagnu.
+
+	  http://www.gnu.org/software/gcc/gcc.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC34_ADA
+	bool "gcc34-ada-3.4.6nb1"
+	help
+	  This is the gcc 3.4 Ada compiler
+
+	  This is the Ada compiler from the gcc 3.4 compiler suite.
+	  
+	  This package has a test target. For testing (only), this
+	  package requires dejagnu. As part of the tests, acats
+	  (the Ada compiler validation suite) is run.
+
+	  http://gcc.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC44
+	bool "gcc44-4.4.6nb1"
+	help
+	  GNU Compiler Collection 4.4
+
+	  This is the gcc 4.4.0 compiler suite.
+	  
+	  This package has a test target. For testing (only), this
+	  package requires dejagnu.
+
+	  http://gcc.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC45
+	bool "gcc45-4.5.3nb1"
+	help
+	  GNU Compiler Collection 4.5
+
+	  This is the gcc 4.5 compiler suite.
+	  
+	  This package has a test target. For testing (only), this
+	  package requires devel/dejagnu and devel/autogen.
+
+	  http://gcc.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC46
+	bool "gcc46-4.6.2"
+	help
+	  GNU Compiler Collection 4.6
+
+	  This is the gcc 4.6 compiler suite.
+	  
+	  This package has a test target. For testing (only), this
+	  package requires devel/dejagnu and devel/autogen.
+
+	  http://gcc.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GFORTH
+	bool "gforth-0.7.0nb2"
+	help
+	  Fast interpreter for the Forth language
+
+	  Gforth is a fast and portable implementation of the ANS Forth
+	  language. It works nicely with the Emacs editor, offers some nice
+	  features such as input completion and history and a powerful locals
+	  facility, and it even has (the beginnings of) a manual. Gforth employs
+	  traditional implementation techniques: its inner interpreter is
+	  indirect or direct threaded.
+
+	  http://www.complang.tuwien.ac.at/forth/gforth/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GHC
+	bool "ghc-6.8.3nb2"
+	help
+	  Compiler for the functional language Haskell
+
+	  GHC: The Glasgow Haskell Compiler.
+	  
+	  The Glasgow Haskell Compiler is a robust, fully-featured, optimising
+	  compiler for the functional programming language Haskell 98
+	  (http://www.haskell.org). GHC compiles Haskell to either native code
+	  or C. It implements numerous experimental language extensions to
+	  Haskell, including concurrency, a foreign language interface, several
+	  type-system extensions, exceptions, and so on. GHC comes with a
+	  generational garbage collector, a space and time profiler, and a
+	  comprehensive set of libraries.
+
+	  http://www.haskell.org/ghc/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GNAT_AUX
+	bool "gnat-aux-20110627nb2"
+	help
+	  GNAT Ada compiler based on GCC 4.6
+
+	  The GNAT AUX Ada compiler targeted at *BSD and *Solaris platforms
+	  
+	  GNAT AUX is based on the trunk version of Free Software Foundation's GNU
+	  Compiler Collection.  It carries with it the GMGPL license, the modified
+	  version of the GPL that exempts generic instantiation from resulting in
+	  a GPL-licensed executable.  This version of GNAT also carries with it the
+	  GCC Runtime Library Exception, so the resulting binaries have no licensing
+	  requirements.  Binaries produced by GNAT AUX should be handled the same as
+	  binaries produced by any FSF GNAT compiler.
+	  
+	  GNAT AUX implements the full Ada-83, Ada-95, and Ada-2005 language standards.
+	  It also implements some features of the draft Ada-2012 standard, which are
+	  optionally accessible via the -gnat2012 switch or Ada_2012 pragma.
+
+	  http://www.dragonlace.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GPC
+	bool "gpc-2.1nb5"
+	help
+	  GNU Pascal Compiler
+
+	  GNU Pascal is the free 32/64-bit Pascal compiler of the GNU Compiler
+	  Collection (GNU CC or GCC). It combines a Pascal front-end with the
+	  proven GCC back-end for code generation and optimization.  Unlike
+	  utilities such as p2c, this is a true compiler, not just a converter.
+	  
+	  The purpose of the GNU Pascal project is to produce a Pascal compiler
+	  (called GNU Pascal or GPC) which
+	  
+	  * combines the clarity of Pascal with powerful tools suitable for
+	  real-life programming,
+	  * supports both the Pascal standard and the Extended Pascal standard
+	  as defined by ISO, ANSI and IEEE (ISO 7185:1990, ISO/IEC
+	  10206:1991, ANSI/IEEE 770X3.160-1989),
+	  * supports other Pascal standards (UCSD Pascal, Borland Pascal,
+	  parts of Borland Delphi and Pascal-SC) in so far as this serves the
+	  goal of clarity and usability,
+	  * may be distributed under GNU license conditions, and
+	  * can generate code for and run on any computer for which the GNU C
+	  compiler can generate code and run on.
+	  
+	  The current release implements Standard Pascal (ISO 7185, levels 0 and
+	  1), a large subset of Extended Pascal (ISO 10206, aiming for full
+	  compliance), is highly compatible to Borland Pascal (version 7.0) with
+	  some Delphi extensions, and provides a lot of useful GNU extensions.
+
+	  http://www.gnu-pascal.de/gpc/h-index.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GPROLOG
+	bool "gprolog-1.3.1"
+	help
+	  GNU prolog compiler and interpreter
+
+	  GNU Prolog is a native Prolog compiler with constraint solving over
+	  finite domains (FD) developed by Daniel Diaz. A lot of work has been
+	  devoted to the ISO compatibility. GNU Prolog is very close to the ISO
+	  standard (http://www.logic-programming.org/prolog_std.html).
+
+	  http://www.gprolog.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GUILE
+	bool "guile-1.8.8nb1"
+	help
+	  GNU's Ubiquitous Intelligent Language for Extension
+
+	  GUILE, GNU's Ubiquitous Intelligent Language for Extension, is a library
+	  that implements the Scheme language plus various convenient facilities.
+	  It's designed so that you can link it into an application or utility to
+	  make it extensible. Our plan is to link this library into all GNU programs
+	  that call for extensibility.
+
+	  http://www.gnu.org/software/guile/guile.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GUILE16
+	bool "guile16-1.6.8nb4"
+	help
+	  
+
+	  GUILE, GNU's Ubiquitous Intelligent Language for Extension, is a library
+	  that implements the Scheme language plus various convenient facilities.
+	  It's designed so that you can link it into an application or utility to
+	  make it extensible. Our plan is to link this library into all GNU programs
+	  that call for extensibility.
+
+	  http://www.gnu.org/software/guile/guile.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GWYDION_DYLAN
+	bool "gwydion-dylan-2.4.0nb1"
+	help
+	  Functional language
+
+	  Dylan is an object-oriented, dynamic, infix, garbage-collected
+	  programming language with support for multiple inheritence, multiple
+	  dispatch (an advanced form of polymorphism), typed and untyped
+	  variables, closures and exceptions.  Dylan also supports pattern-based
+	  hygenic macros.  These allow you to define new control constructs and
+	  fully integrate them with the language.
+	  
+	  Dylan (theoretically) combines the performance of C or C++ with the
+	  rapid development of Perl and the expressiveness of LISP.  It looks
+	  similar to C or Pascal, so experienced programmers can learn to write
+	  simple programs quickly.
+	  
+	  Gwydion Dylan provides two implementations of the Dylan programming
+	  language:  Mindy and d2c.  Mindy is bytecode compiler and interpreter,
+	  and d2c is a Dylan-to-C compiler.  Mindy compiles programs quickly,
+	  but the resulting executables run slowly.  On the other hand, d2c
+	  compiles programs slowly, but they run quickly.
+	  
+	  Gwydion Dylan was originally written by the Gwydion Group at CMU as
+	  part of a research project studying advanced hypercode development
+	  environments.  It is now maintained by a group of volunteers.
+
+	  http://www.opendylan.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_HEIRLOOM_AWK
+	bool "heirloom-awk-070715"
+	help
+	  
+
+	  This package provides AWK language implementations.
+
+	  http://heirloom.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_HUGS
+	bool "hugs98-200609nb1"
+	help
+	  Functional programming system based on Haskell 98
+
+	  Hugs 98 is a functional programming system based on Haskell 98, the de
+	  facto standard for non-strict functional programming languages.  Hugs 98
+	  provides an almost complete implementation of Haskell 98, including:
+	  
+	  * Lazy evaluation, higher order functions, and pattern matching.
+	  * A wide range of built-in types, from characters to bignums, and lists
+	  to functions, with comprehensive facilities for defining new datatypes
+	  and type synonyms.
+	  * An advanced polymorphic type system with type and constructor class
+	  overloading.
+	  * All of the features of the Haskell 98 expression and pattern syntax
+	  including lambda, case, conditional and let expressions, list
+	  comprehensions, do-notation, operator sections, and wildcard,
+	  irrefutable and `as' patterns.
+	  * An implementation of the Haskell 98 primitives for monadic I/O, with
+	  support for simple interactive programs, access to text files,
+	  handle-based I/O, and exception handling.
+	  * An almost complete implementation of the Haskell module system.
+	  Hugs 98 also supports a number of advanced and experimental extensions
+	  including multi-parameter classes, extensible records, rank-2
+	  polymorphism, existentials, scoped type variables, and restricted
+	  type synonyms.
+
+	  http://www.haskell.org/hugs/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ICC11
+	bool "icc11-11.1.080"
+	help
+	  Intel C++ Compiler for Linux
+
+	  Intel C++ Compiler for Linux.
+
+	  http://software.intel.com/en-us/articles/non-commercial-software-development/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ICON
+	bool "icon-9.4.3nb1"
+	help
+	  The Icon programming language
+
+	  Icon is a high-level programming language with extensive
+	  facilities for processing strings and structures. Icon has
+	  several novel features, including expressions that may produce
+	  sequences of results, goal-directed evaluation that automatically
+	  searches for a successful result, and string scanning that allows
+	  operations on strings to be formulated at a high conceptual
+	  level.
+	  
+	  Icon emphasizes high-level string processing and a design phi-
+	  losophy that allows ease of programming and short, concise pro-
+	  grams. Storage allocation and garbage collection are automatic in
+	  Icon, and there are few restrictions on the sizes of objects.
+	  Strings, lists, and other structures are created during program
+	  execution and their size does not need to be known when a program
+	  is written.  Values are converted to expected types automati-
+	  cally; for example, numeral strings read in as input can be used
+	  in numerical computations without explicit conversion.  Icon has
+	  an expression-based syntax with reserved words; in appearance,
+	  Icon programs resemble those of Pascal and C.
+	  
+	  The language is described in R. E. Griswold and M. T. Griswold, The
+	  Icon Programming Language, Prentice-Hall, Inc., Englewood Cliffs,
+	  NJ, second edition, 1990.
+
+	  http://www.cs.arizona.edu/icon/index.htm
+
+
+config BR2_PKGSRC_PACKAGE_LANG_INFORM
+	bool "inform-6.31.1nb1"
+	help
+	  
+
+	  Inform is an Interactive Fiction (text adventure) game compiler -- it takes
+	  source code you write and turns it into a game data file which is then
+	  played using an 'interpreter'.  There are several interpreters available
+	  which can play Inform games on different machines (e.g. frotz, jzip) -- you
+	  can probably obtain one from the same place you got this package.
+	  
+	  Inform is written by Graham Nelson <graham@gnelson.demon.co.uk>, and you
+	  are free to redistribute it under certain conditions -- see the file
+	  COPYING for details.
+
+	  http://www.inform-fiction.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_INTERCAL
+	bool "intercal-0.29"
+	help
+	  The ultimate language for obfuscation and job security
+
+	  INTERCAL. The language designed to be Turing-complete but as
+	  fundamentally unlike any existing language as possible. Expressions
+	  that look like line noise. Control constracts that will make you gasp,
+	  make you laugh, and possibly make you hurl. Data structures? We don't
+	  need no steenking data structures!
+	  
+	  INTERCAL. Designed very early one May morning in 1972 by two hackers
+	  who are still trying to live it down. Initially implemented on an IBM
+	  360 running batch SPITBOL. Described by a manual that circulated for
+	  years after the short life of the first implementation, reducing
+	  strong men to tears (of laughter). Revived in 1990 by the C-INTERCAL
+	  compiler, and now the center of an international community of
+	  technomasochists.
+	  
+	  INTERCAL. Now you, too, can be a part of the madness.
+
+	  http://www.catb.org/~esr/intercal/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JA_GAWK
+	bool "ja-gawk-3.0.6"
+	help
+	  GNU awk + multi-byte extension
+
+	  This package is multi-byte extented GNU AWK.
+	  Supported multi-byte codes are EUC/Shift-JIS/UTF8 code.
+	  
+	  Multi-byte code by WILLs(Katsuyuki Okabe, hgc02147@nifty.ne.jp)
+	  and t^2(Takahiro Tanimoto, NBC02362@niftyserve.or.jp).
+
+	  http://www.gnu.org/software/gawk/gawk.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JAMVM
+	bool "jamvm-1.5.1"
+	help
+	  Compact Java Virtual Machine
+
+	  JamVM is a new Java Virtual Machine which conforms to the JVM specification
+	  version 2 (blue book). In comparison to most other VM's (free and commercial)
+	  it is extremely small, with a stripped executable on PowerPC of only ~135K,
+	  and Intel 100K. However, unlike other small VMs (e.g. KVM) it is designed to
+	  support the full specification, and includes support for object finalisation,
+	  the Java Native Interface (JNI) and the Reflection API.
+
+	  http://jamvm.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JAPHAR
+	bool "japhar-0.08nb6"
+	help
+	  Java Virtual Machine, currently JDK 1.1.5-level
+
+	  Japhar is the Hungry Programmers' Java VM.  It has been built from the
+	  ground up without consulting Sun's sources.  It is currently at JDK
+	  1.1.5-level.
+	  
+	  Japhar is released under the LGPL, which should make it much more
+	  attractive for companies interested in embedding an open source JVM in
+	  their proprietary/commercial products.  For example, the LGPL is
+	  compatible with Netscape's NPL license, and allows Japhar to be
+	  included into Mozilla.
+
+	  http://www.hungry.com/old-hungry/products/japhar/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JASMIN
+	bool "jasmin-1.06nb1"
+	help
+	  Java "assembler" interface
+
+	  Jasmin is a Java Assembler Interface. It takes ASCII descriptions for Java
+	  classes, written in a simple assembler-like syntax and using the Java
+	  Virtual Machine instruction set. It converts them into binary Java class
+	  files suitable for loading into a JVM implementation.
+
+	  http://mrl.nyu.edu/~meyer/jasmin/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JAVA_LANG_SPEC
+	bool "java-lang-spec-2.0nb2"
+	help
+	  
+
+	  Written by the inventors of the technology, The Java(TM) Language
+	  Specification is the definitive technical reference for the Java(TM)
+	  programming language. If you want to know the premise meaning of the
+	  language's constructs, this is the source for you.
+	  
+	  The book provides complete, accurate, and detailed coverage of the syntax
+	  and semantics of the Java programming language. It describes all aspects of
+	  the language, including the semantics of all types, statements, and
+	  expressions, as well as threads and binary compatibility.
+
+	  http://java.sun.com/docs/books/jls/index.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JAVA_VM_SPEC
+	bool "java-vm-spec-2.0"
+	help
+	  
+
+	  In The Java(TM) Virtual Machine Specification, Sun's designers of the Java
+	  virtual machine provide comprehensive coverage of the Java virtual machine
+	  class file format and instruction set. In addition, the book contains
+	  directions for compiling the virtual machine with numerous practical
+	  examples to clarify how it operates in practice. The book also demonstrates
+	  the Java virtual machine's powerful verification techniques. In all, the
+	  book provides sufficient detail to enable you to implement your own
+	  fully-compatible Java virtual machine, or on the other hand, to just really
+	  understand what makes the Java technology work.
+
+	  http://java.sun.com/docs/books/vmspec/index.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JIKES
+	bool "jikes-1.22nb3"
+	help
+	  Java source to byte-code compiler
+
+	  The Jikes project is a collaborative software development project
+	  dedicated to providing a compiler from Java source code to bytecode
+	  that is conformant, robust, full-featured, commercial-quality, and
+	  freely available.  This project is jointly managed by a group of
+	  companies and individual volunteers throughout the world, using the
+	  Internet and the Web to communicate, plan, and develop the compiler
+	  and its related software and documentation.
+	  
+	  The Jikes project is licensed under the IBM Public License, which has
+	  been approved by the Open Source Initiative.
+	  
+	  The project currently includes the Jikes compiler, the Jikes Parser
+	  Generator, and the Jikes Test Suite.
+
+	  http://jikes.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JINI
+	bool "jini-1.2.1nb2"
+	help
+	  
+
+	  This is a package of Sun's Jini Technology Starter Kit, consisting of the
+	  Jini Technology Core Platform (JCP), the Jini Technology Extended Platform
+	  (JXP) and the Jini Software Kit (JSK).
+	  
+	  Jini[tm] network technology provides a simple infrastructure for delivering
+	  services in a network and for creating spontaneous interaction between
+	  programs that use these services regardless of their hardware/software
+	  implementation.
+
+	  http://www.sun.com/software/jini/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JOOS
+	bool "joos-0.2"
+	help
+	  Java Object Oriented Subset
+
+	  Joos is an acronym for Java's Object-Oriented Subset. JOOS is a
+	  proper subset of Java, defined as follows:
+	  * its context-free syntax is restricted to the following grammar;
+	  * subclassing must not change the signature of a method;
+	  * declarations of locals must all be in the beginning of the statement
+	  sequence in a block;
+	  * protected fields cannot be accessed from without the class or its
+	  subclasses; and
+	  * every path through a non-void method must return a value.
+	  
+	  In addition, JOOS defines a concept of extern classes, which provide
+	  a convenient interface to the Java libraries without requiring the
+	  compiler to parse Java class files.
+	  
+	  It defines a class name and some method signatures, along with a file
+	  name that is guaranteed to provide the implementation. The JOOS compiler
+	  will implicitly trust this specification. If it is incorrect,
+	  then the compiled JOOS class file may fail at class loading time.
+	  
+	  JOOS is used for teaching students about compilers.
+
+	  http://www.brics.dk/~mis/dOvs/index.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_JS
+	bool "js-0.2.5nb1"
+	help
+	  JavaScript virtual machine
+
+	  NGS JavaScript is an interpreter for the JavaScript language.
+	  The JavaScript language is an interpreted C-like language, developed by
+	  Netscape et al.
+
+	  http://www.njs-javascript.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_KAFFE
+	bool "kaffe-1.1.7nb8"
+	help
+	  
+
+	  Kaffe is a clean room implementation of Java virtual machine plus associated
+	  class libraries needed to provide a Java runtime environment.
+
+	  http://www.kaffe.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_KAFFE_ESOUND
+	bool "kaffe-esound-1.1.7nb1"
+	help
+	  
+
+	  Kaffe is a clean room implementation of Java virtual machine plus associated
+	  class libraries needed to provide a Java runtime environment.
+	  
+	  This package provides a plugin which enables sound support through the
+	  Enlightened Sound Daemon (esd, for short).
+
+	  http://www.kaffe.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_KAFFE_X11
+	bool "kaffe-x11-1.1.7nb13"
+	help
+	  
+
+	  Kaffe is a clean room implementation of Java virtual machine plus associated
+	  class libraries needed to provide a Java runtime environment.
+	  
+	  This package provides a plugin which enables AWT support through the
+	  standard X11 libraries.
+
+	  http://www.kaffe.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_KALI
+	bool "kali-0.52.2"
+	help
+	  Distributed implementation of Scheme
+
+	  Kali Scheme is a distributed implementation of Scheme that permits
+	  efficient transmission of higher-order objects such as closures
+	  and continuations. The integration of distributed communication
+	  facilities within a higher-order programming language engenders a
+	  number of new abstractions and paradigms for distributed computing.
+	  Among these are user-specified load-balancing and migration policies
+	  for threads, incrementally-linked distributed computations, and
+	  parameterized client-server applications. Kali Scheme supports
+	  concurrency and communication using first-class procedures and
+	  continuations. It integrates procedures and continuations into a
+	  message-based distributed framework that allows any Scheme object
+	  (including code vectors) to be sent and received in a message. Some
+	  of the applications and implementation techniques we have looked
+	  at using Kali Scheme include:
+	  
+	  User-level load balancing and migration.
+	  Incremental distributed linking of code objects.
+	  Parameterized client-server applications.
+	  Long-lived parallel computations.
+	  Distributed data mining.
+	  Executable content in messages over wide-area networks
+	  (e.g. the World-Wide Web)
+
+	  http://community.schemewiki.org/kali-scheme/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_KSI
+	bool "ksi-3.9.0"
+	help
+	  Portable, embeddable Scheme implementation written in C
+
+	  This is a Ksi (Ksi Scheme Interpreter), a portable,
+	  embeddable Scheme implementation written in C.
+	  
+	  Ksi provides a machine independent execution platform that
+	  can be linked in as a library when building extensible programs.
+	  And what is more important it is not a Guile. :-)
+
+	  http://ksi.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_LIBREP
+	bool "librep-0.91.0nb2"
+	help
+	  Emacs Lisp-like runtime library, interpreter, compiler and VM
+
+	  librep is an Emacs Lisp-like runtime library for UNIX.  It contains a
+	  LISP interpreter, byte-code compiler and virtual machine. Applications
+	  may use the LISP interpreter as an extension language, or it may be used
+	  for standalone scripts.
+
+	  http://librep.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_LIBTCL_NOTHREAD
+	bool "libtcl-nothread-8.4.6nb1"
+	help
+	  TCL library for embedding
+
+	  This package contains Tcl, John Osterhout's Tool Command Language, an
+	  exceedingly simple language great for general scripting and for
+	  embedding in other programs.
+	  
+	  The best way to get started with Tcl is to read ``Tcl and the Tk
+	  Toolkit'' by John K. Ousterhout, Addison-Wesley, ISBN 0-201-63337-X
+	  or ``Practical Programming in Tcl and Tk'' by Brent B. Welch,
+	  Prentice Hall PTR, ISBN 0-13-616830-X.
+
+	  http://www.tcl.tk/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_LIKEPYTHON
+	bool "likepython-0.1"
+	help
+	  OMG! It's like Python, but like, you know, casual!
+
+	  OMG! It's like Python, but like, you know, casual!
+	  
+	  Now you can toootally do just about everything you can do in that
+	  old, uptight language Python, but be like, so cool about it, bro!
+
+	  http://www.staringispolite.com/likepython/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_LUA
+	bool "lua-5.1.4nb3"
+	help
+	  Powerful light-weight language for extending applications
+
+	  Lua is a powerful, light-weight programming language designed for
+	  extending applications. Lua is also frequently used as a
+	  general-purpose, stand-alone language.
+	  
+	  Lua combines simple procedural syntax (similar to Pascal) with
+	  powerful data description constructs based on associative arrays and
+	  extensible semantics. Lua is dynamically typed, interpreted from
+	  bytecodes, and has automatic memory management, making it ideal for
+	  configuration, scripting, and rapid prototyping.
+	  
+	  Lua is a language engine that you can embed into your application.
+	  This means that, besides syntax and semantics, Lua has an API that
+	  allows the application to exchange data with Lua programs and also to
+	  extend Lua with C functions. In this sense, Lua can be regarded as a
+	  language framework for building domain-specific languages.
+	  
+	  Lua is implemented as a small library of C functions, written in ANSI
+	  C, and compiles unmodified in all known platforms. The implementation
+	  goals are simplicity, efficiency, portability, and low embedding cost.
+	  The result is a fast language engine with small footprint, making it
+	  ideal in embedded systems too.
+
+	  http://www.lua.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_LUSH
+	bool "lush-1.2.1nb1"
+	help
+	  Lisp interpreter/compiler with a seamless interface to C
+
+	  Lush is an object-oriented Lisp interpreter/compiler with features
+	  designed to please people who want to prototype large numerical
+	  applications. Lush includes an extensive library of
+	  vector/matrix/tensor manipulation, numerous numerical libraries
+	  (including GSL, LAPACK, and BLAS), a set of graphic functions, a
+	  simple GUI toolkit, and interfaces to various graphic and multimedia
+	  libraries such as OpenGL, SDL, Video4Linux, and ALSA (video/audio
+	  grabbing), and others. Lush is an ideal frontend script language for
+	  programming projects written in C or other languages.  Lush also has
+	  libraries for Machine Learning, Neural Nets and statistical estimation
+	  (which are the main interests of the authors).
+
+	  http://lush.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MAUDE
+	bool "maude-2.6"
+	help
+	  System for equational and rewriting logic specification/programming
+
+	  Maude is a high-performance reflective language and system supporting both
+	  equational and rewriting logic specification and programming for a wide
+	  range of applications.
+	  Maude has been influenced in important ways by the OBJ3 language, which can
+	  be regarded as an equational logic sublanguage.
+	  Besides supporting equational specification and programming, Maude also
+	  supports rewriting logic computation.
+
+	  http://maude.cs.uiuc.edu/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MAWK
+	bool "mawk-1.3.4.20100625"
+	help
+	  AWK clone by Mike Brennan
+
+	  Mike Brennan's awk clone.
+	  It's fast (faster than gawk), and relatively small.
+
+	  http://www.invisible-island.net/mawk/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MERCURY
+	bool "mercury-0.13.1"
+	help
+	  Modern logic/functional programming language
+
+	  Mercury is a modern logic/functional programming language, which
+	  combines the clarity and expressiveness of declarative programming
+	  with advanced static analysis and error detection features.  Its
+	  highly optimized execution algorithm delivers efficiency far in excess
+	  of existing logic programming systems, and close to conventional
+	  programming systems. Mercury addresses the problems of large-scale
+	  program development, allowing modularity, separate compilation, and
+	  numerous optimization/time trade-offs.
+	  
+	  This package includes the compiler, profiler, debugger, documentation,
+	  etc.  It does NOT include the "extras" distribution; that is available
+	  from <http://www.cs.mu.oz.au/mercury/download/release.html>.
+
+	  http://www.cs.mu.oz.au/research/mercury/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MINISCHEME
+	bool "minischeme-0.85"
+	help
+	  Very tiny scheme interpreter
+
+	  This Mini-Scheme Interpreter is based on "SCHEME Interpreter in
+	  Common Lisp" in Appendix of T.Matsuda & K.Saigo, Programming of LISP,
+	  archive No5 (1987) p6 - p42 (published in Japan).
+	  
+	  Supported features (or, NOT supported features :-)
+	  1) Lists, symbols, strings.
+	  However, strings have very limited capability.
+	  For instance, there is *NO* string-ref, string-set!, ... etc.
+	  2) Numbers are limited to FIXNUM only.
+	  There is *NO* complex, real, rational and even bignum.
+	  3) Macro feature is supported, though not the one defined in R4RS.
+	  
+	  Known problems:
+	  1) Poor error recovery from illegal use of syntax and procedure.
+	  2) Certain procedures do not check its argument type.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MIT_SCHEME_BIN
+	bool "mit-scheme-bin-7.7.1"
+	help
+	  
+
+	  MIT/GNU Scheme is an extension of standard Scheme, which is the
+	  language defined by the document Revised^4 Report on the Algorithmic
+	  Language Scheme, by William Clinger, Jonathan Rees, et al., or by
+	  IEEE Std. 1178-1990, IEEE Standard for the Scheme Programming
+	  Language.
+	  
+	  This package contains the pre-compiled Linux binary.
+
+	  http://www.gnu.org/software/mit-scheme/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MONO
+	bool "mono-2.10.6"
+	help
+	  Open source implementation of the .NET Development Framework
+
+	  The Mono Project is an open development initiative sponsored by Ximian
+	  that is working to develop an open source, Unix version of the Microsoft
+	  .NET development platform.  Its objective is to enable Unix developers to
+	  build and deploy cross-platform .NET Applications.  The project will
+	  implement various technologies developed by Microsoft that have now been
+	  submitted to the ECMA for standardization.
+
+	  http://www.mono-project.com/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MONO_BASIC
+	bool "mono-basic-2.10nb1"
+	help
+	  Visual Basic .NET support for mono
+
+	  The Mono Project is an open development initiative sponsored by Ximian
+	  that is working to develop an open source, Unix version of the Microsoft
+	  .NET development platform.  Its objective is to enable Unix developers to
+	  build and deploy cross-platform .NET Applications.  The project will
+	  implement various technologies developed by Microsoft that have now been
+	  submitted to the ECMA for standardization.
+	  
+	  This package contains VB.NET framework and VB.NET compiler
+
+	  http://www.mono-project.com/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MOSCOW_ML
+	bool "moscow_ml-2.01nb1"
+	help
+	  Moscow ML, a version of Standard ML
+
+	  This is Moscow ML, a version of Standard ML:
+	  
+	  The current version 1.43 of Moscow ML
+	  * implements the Core language of Standard ML, as revised 1996
+	  * implements large parts of the new SML Basis Library
+	  * implements separate compilation and a limited version of the
+	  Standard ML Modules language, with signatures and structures
+	  but no functors
+	  * can produce compact stand-alone executables (a la Caml Light)
+	  * supports quotations and antiquotations, useful for metaprogramming
+	  * includes several new libraries and a new type `char'
+
+	  http://www.dina.kvl.dk/~sestoft/mosml.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_MPD
+	bool "mpd-1.0.1nb7"
+	help
+	  The MPD language compiler and run time system
+
+	  This the MPD language for Multithreaded, Parallel, and Distributed
+	  Programming.  Installation instructions are in the file doc/install.html.
+	  
+	  Language documentation can be found at the MPD home on the web,
+	  http://www.cs.arizona.edu/mpd
+	  
+	  MPD was inspired by the book:
+	  Foundations of Multithreaded, Parallel, and Distributed Programming
+	  Gregory R. Andrews
+	  Addison-Wesley, 2000  (ISBN 0-201-35752-6)
+	  
+	  The MPD implementation is based on version 2.3.2 of the SR programming
+	  language.  The syntax has changed, but the internals are essentially
+	  the same except for a massive renaming.  Accordingly MPD is limited by
+	  the features of SR and does not correspond exactly to the MPD book.
+	  
+	  Much of the SR implementation documentation is still valid.  It can be
+	  found at:
+	  http://www.cs.arizona.edu/sr/doc.html
+
+	  http://www.cs.arizona.edu/mpd/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_NAWK
+	bool "nawk-20050424nb3"
+	help
+	  Brian Kernighan's pattern-directed scanning and processing language
+
+	  The one, true implementation of the AWK pattern-directed scanning and
+	  processing language, by one of the language's creators, Brian Kernighan.
+	  This is the version of awk described in "The AWK Programming Language",
+	  by Al Aho, Brian Kernighan, and Peter Weinberger (Addison-Wesley,
+	  1988, ISBN 0-201-07981-X).  It is also known as new awk, or nawk.
+
+	  http://cm.bell-labs.com/who/bwk/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_NEWLISP
+	bool "newlisp-10.3.3"
+	help
+	  Lisp-like, general-purpose scripting language
+
+	  newLISP is a Lisp-like, general-purpose scripting language. It is
+	  especially well-suited for applications in AI, web search, natural
+	  language processing, and machine learning. Because of its small
+	  resource requirements, newLISP is also excellent for embedded
+	  systems applications. Most of the functions you will ever need are
+	  already built in. This includes networking functions, support for
+	  distributed and parallel processing, and Bayesian statistics.
+
+	  http://www.newlisp.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_NHC98
+	bool "nhc98-1.18nb2"
+	help
+	  Portable Haskell 98 compiler
+
+	  nhc98 is a fully-fledged compiler for Haskell 98, the standard lazy
+	  functional programming language. It based on Niklas Rojemo's nhc13, a
+	  compiler for an earlier version of the language. Written in Haskell,
+	  it is small and very portable, and aims to produce small executables
+	  that run in small amounts of memory. It also comes with extensive tool
+	  support.
+	  
+	  With hmake, a replacement for the other makes used in Haskell
+	  development, the big advantage is that you don't have to write a
+	  Makefile - the tools extract dependencies automatically from your
+	  source files, and issue appropriate commands to rebuild your target.
+	  
+	  Greencard is a foreign-language interface. It is a preprocessor for
+	  Haskell which allows Haskell functions to call C. This allows access
+	  to operating system services and other libraries.
+	  
+	  Hat is a source-level tracer for Haskell which gives the user access
+	  to otherwise invisible information about a computation and helps the
+	  programmer to understand how a program works or why it does not.
+
+	  http://www.cs.york.ac.uk/fp/nhc98/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_OBJC
+	bool "objc-3.2.6"
+	help
+	  Portable Object Compiler
+
+	  The Portable Object Compiler consists of a set of Objective-C class
+	  libraries and a precompiler (translator) that generates plain C code.
+
+	  http://users.pandora.be/stes/compiler.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_OCAML
+	bool "ocaml-3.12.0nb5"
+	help
+	  The latest implementation of the Caml dialect of ML
+
+	  Objective Caml is the latest implementation of the Caml dialect of ML. The main
+	  novelties compared with its ancestor, Caml Light, are:
+	  
+	  * Full support for objects and classes -- here combined for the first time
+	  with ML-style type reconstruction.
+	  * A powerful module calculus in the style of Standard ML (but retaining
+	  separate compilation).
+	  * A high-performance native code compiler (in addition to a Caml
+	  Light-style bytecode compiler).
+
+	  http://caml.inria.fr/ocaml/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_OCAMLDUCE
+	bool "ocamlduce-3.11.1.0nb1"
+	help
+	  Library to integrate XML features into OCaml
+
+	  OCamlDuce is an enhancement to OCaml that allows one to use XML features,
+	  such as types and values, natively in OCaml programs.
+	  
+	  WWW: http://www.cduce.org/ocaml
+
+	  http://ocamlduce.forge.ocamlcore.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_ONYX
+	bool "onyx-5.1.2"
+	help
+	  Embeddable stack-based threaded interpreted language
+
+	  Onyx is an embeddable stack-based threaded interpreted language.  This package
+	  contains both a stand alone interpreter and a library that can be used to embed
+	  Onyx in an application.  Extensive documentation is included.
+
+	  http://www.canonware.com/onyx/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_OO2C
+	bool "oo2c-2.0.11nb8"
+	help
+	  Optimizing Oberon-2 Compiler
+
+	  In short, OOC is an Internet based project providing an Oberon-2
+	  development platform. It consists of
+	  
+	  * an optimizing compiler,
+	  * a number of source code and compiler related tools,
+	  * a set of standard library modules, and
+	  * a reference manual.
+	  
+	  oo2c is the first complete working compiler of the OOC project.
+	  Instead of translating Oberon-2 modules to machine code, it generates
+	  code for the most portable assembler in existence: ANSI-C. The
+	  compiler was initially intended as a prototype backend for OOC, which
+	  could then be used to evaluate and debug the frontend and the
+	  optimization modules.  However, it is now a full-fledged development
+	  system, and among other things, it is being used to develop native
+	  code OOC backends.
+
+	  http://ooc.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_OPENCOBOL
+	bool "opencobol-1.0nb2"
+	help
+	  Open-source COBOL compiler
+
+	  OpenCOBOL is an open-source COBOL compiler, which translates COBOL
+	  programs to C code and compiles it using GCC.
+
+	  http://www.opencobol.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_OPENJDK7
+	bool "openjdk7-1.7.0.147.20110811nb1"
+	help
+	  Open-source implementation of the Java Platform, Standard Edition
+
+	  Open-source implementation of the Java Platform, Standard Edition.
+	  
+	  This package is NOT certified to be compatible with any Java standard.
+	  Use at own risk.
+	  
+	  Mandatory trademark notice:
+	  "OpenJDK is a trademark or registered trademark of Sun Microsystems,
+	  Inc. in the United States and other countries."
+
+	  http://openjdk.java.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_OPENJDK7_BIN
+	bool "openjdk7-bin-20090502"
+	help
+	  Binary OpenJDK package
+
+	  This is a package for the NetBSD binaries of the OpenJDK 7 kit.
+
+	  http://openjdk.java.net/projects/bsd-port/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_OSSP_JS
+	bool "ossp-js-1.6.20070208nb3"
+	help
+	  Sanitized distribution of Mozilla's JavaScript implementation
+
+	  OSSP js is a stand-alone distribution of the JavaScript (JS)
+	  programming language reference implementation from Mozilla -- aka
+	  "JSRef" or "SpiderMonkey". This distribution provides a smart,
+	  stand-alone and portable distribution of Mozilla JavaScript through a
+	  GNU autotools-based build environment.  Additionally,
+	  the C API in "libjs" contains both the JavaScript engine and the
+	  required Sun math library ("fdlibm") and with all internal symbols
+	  carefully protected under the "js" namespace. Finally, a js-config(1)
+	  utility and a pkg-config(1) specification is provided to allow
+	  applications to easily build with the JavaScript C API.
+	  
+	  OSSP js was created because for OSSP and similar pedantic C coding
+	  projects a smart, stand-alone, portable, clean, powerful and
+	  robust scripting language engine is required. JavaScript is a
+	  great programming language and Mozilla JavaScript "SpiderMonkey"
+	  definitely is an acceptable clean, powerful and robust implementation.
+	  Unfortunately there is just a stand-alone distribution released from
+	  time to time by Mozilla and it is far away from really being smart,
+	  stand-alone and portable. OSSP js combines the best from two worlds:
+	  the 1:1 repackaged JavaScript code base from Mozilla with the GNU
+	  autotools-based build environment as always used by OSSP.  Additionally,
+	  this package provides stdio-based file object support and does not depend
+	  upon the Mozilla NSPR library.
+
+	  http://www.ossp.org/pkg/lib/js/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_P2C
+	bool "p2c-1.20nb1"
+	help
+	  
+
+	  p2c is a Pascal to C compiler (translates Pascal to C).
+	  
+	  p2c includes limited support for translating Borland TurboPascal
+	  and modula-2 programs
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_LANG_P5_SWITCH
+	bool "p5-Switch-2.16"
+	help
+	  Switch statement for Perl
+
+	  Switch.pm provides the syntax and semantics for an explicit case mechanism for
+	  Perl.  The syntax is minimal, introducing only the keywords C<switch> and
+	  C<case> and conforming to the general pattern of existing Perl control
+	  structures.  The semantics are particularly rich, allowing any one (or more) of
+	  early 30 forms of matching to be used when comparing a switch value with its
+	  various cases.
+
+	  http://search.cpan.org/dist/Switch/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PARROT
+	bool "parrot-3.8.0nb1"
+	help
+	  Virtual machine made to run Perl 6 and other languages
+
+	  Parrot is the new interpreter being designed from scratch to support the
+	  upcoming Perl6 language.  It is being designed as a standalone virtual
+	  machine that can be used to execute bytecode compiled dynamic languages
+	  such as Perl6, but also Perl5.  Ideally, Parrot can be used to support
+	  other dynamic, bytecode-compiled languages such as Python, Ruby and Tcl.
+
+	  http://www.parrotcode.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PCC
+	bool "pcc-1.0.0"
+	help
+	  Portable C compiler
+
+	  The compiler is based on the original Portable C Compiler by S. C.
+	  Johnson, written in the late 70's.  Even though much of the compiler
+	  has been rewritten, some of the basics still remain.
+	  
+	  The intention is to write a C99 compiler while still keeping it
+	  small, simple, fast and understandable.  Think of it as if it shall
+	  be able to compile and run on PDP11 (even if it may not happen in
+	  reality).  But with this in mind it becomes important to think
+	  twice about what algorithms are used.
+	  
+	  The compiler is conceptually structured in two parts; pass1 which
+	  is language-dependent, does parsing, typechecking and build trees,
+	  and pass2 which is mostly language-independent.
+	  
+	  About 50% of the frontend code and 80% of the backend code has been
+	  rewritten.  Most stuff is written by Anders Magnusson, with the
+	  exception of the data-flow analysis part and the SSA conversion
+	  code which is written by Peter A Jonsson, and the Mips port that
+	  were written as part of a project by undergraduate students at LTU.
+
+	  http://pcc.ludd.ltu.se/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PCC_CURRENT
+	bool "pcc-current-1.0.0.BETA.20110228"
+	help
+	  Portable C compiler
+
+	  The compiler is based on the original Portable C Compiler by S. C.
+	  Johnson, written in the late 70's.  Even though much of the compiler
+	  has been rewritten, some of the basics still remain.
+	  
+	  The intention is to write a C99 compiler while still keeping it
+	  small, simple, fast and understandable.  Think of it as if it shall
+	  be able to compile and run on PDP11 (even if it may not happen in
+	  reality).  But with this in mind it becomes important to think
+	  twice about what algorithms are used.
+	  
+	  The compiler is conceptually structured in two parts; pass1 which
+	  is language-dependent, does parsing, typechecking and build trees,
+	  and pass2 which is mostly language-independent.
+	  
+	  About 50% of the frontend code and 80% of the backend code has been
+	  rewritten.  Most stuff is written by Anders Magnusson, with the
+	  exception of the data-flow analysis part and the SSA conversion
+	  code which is written by Peter A Jonsson, and the Mips port that
+	  were written as part of a project by undergraduate students at LTU.
+
+	  http://pcc.ludd.ltu.se/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PERL5
+	bool "perl-5.14.2nb3"
+	help
+	  Practical Extraction and Report Language
+
+	  Perl is a general-purpose programming language originally developed
+	  for text manipulation and now used for a wide range of tasks including
+	  system administration, web development, network programming, GUI
+	  development, and more.  The language is intended to be practical (easy
+	  to use, efficient, complete) rather than beautiful (tiny, elegant,
+	  minimal).  Its major features are that it's easy to use, supports both
+	  procedural and object-oriented (OO) programming, has powerful built-in
+	  support for text processing, and has one of the world's most impressive
+	  collections of third-party modules.
+
+	  http://www.perl.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PFE
+	bool "pfe-0.33.71nb2"
+	help
+	  Portable FORTH Environment
+
+	  The Portable Forth Environment (PFE) is portable, modular, and
+	  extensible in run time Forth programming environment, based on
+	  the ANSI Standard for Forth.
+
+	  http://pfe.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PFORTH
+	bool "pforth-27"
+	help
+	  Portable ANS-like Forth
+
+	  PForth is an ANSI style Forth designed to be portable across many
+	  platforms.  The 'P' in pForth stands for "Portable". PForth is based
+	  on a Forth kernel written in ANSI standard 'C'.
+	  
+	  PForth has been designed with portability as the primary design goal.
+	  As a result, pForth avoids any fancy Unix calls. pForth also avoids
+	  using any clever and original ways of constructing the Forth
+	  dictionary. It just compiles its kernel from ANSI compatible 'C' code
+	  then loads ANS compatible Forth code to build the dictionary.
+	  Very boring but very likely to work on almost any platform.
+	  
+	  The pForth software code is distributed under MIT licence with parts
+	  dedicated to the public domain.
+
+	  http://www.softsynth.com/pforth/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PHP5
+	bool "php-5.2.17nb4"
+	help
+	  PHP Hypertext Preprocessor version 5
+
+	  PHP is an HTML-embedded scripting language. It is modular, with
+	  some object-oriented features. Much of its syntax is borrowed from
+	  C, Java and Perl with a couple of unique PHP-specific features
+	  thrown in.  The language is designed to allow web developers to
+	  write dynamically generated pages quickly.
+
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PHP53
+	bool "php-5.3.8nb2"
+	help
+	  PHP Hypertext Preprocessor version 5
+
+	  PHP is an HTML-embedded scripting language. It is modular, with
+	  some object-oriented features. Much of its syntax is borrowed from
+	  C, Java and Perl with a couple of unique PHP-specific features
+	  thrown in.  The language is designed to allow web developers to
+	  write dynamically generated pages quickly.
+
+	  http://www.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PHP5_PERL
+	bool "php5-perl-1.0.0nb2"
+	help
+	  PHP extension embedding Perl in PHP
+
+	  PHP is a programming language designed to be embedded into web pages.
+	  This extension embeds Perl Interpreter into PHP.
+
+	  http://pecl.php.net/package/perl
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PEAR
+	bool "php53-pear-1.9.4nb1"
+	help
+	  PEAR Base System for PHP
+
+	  The PEAR package contains:
+	  * the PEAR installer, for creating, distributing and installing packages
+	  * the PEAR_Exception PHP5 error handling mechanism
+	  * the PEAR_ErrorStack advanced error handling mechanism
+	  * the PEAR_Error error handling mechanism
+	  * the OS_Guess class for retrieving info about the OS where PHP is running on
+	  * the System class for quick handling of common operations with files and
+	  directories
+	  * the PEAR base class
+
+	  http://pear.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PICT
+	bool "pict-4.1nb1"
+	help
+	  Concurrent language based on Milner's pi calculus
+
+	  Pict is a language in the ML tradition, formed by adding a layer of
+	  convenient syntactic sugar and a static type system to a tiny
+	  core. The current release includes a Pict-to-C compiler, reference
+	  manual, language tutorial, numerous libraries, and example programs.
+	  
+	  The core language - an asynchronous variant of Milner, Parrow, and
+	  Walker's pi-calculus - has been used as a theoretical foundation for a
+	  broad class of concurrent computations. The goal in Pict is to
+	  identify high-level idioms that arise naturally when these primitives
+	  are used to build working programs - idioms such as basic data
+	  structures, protocols for returning results, higher-order programming,
+	  selective communication, and concurrent objects. The type system
+	  integrates a number of features found in recent work on theoretical
+	  foundations for typed object-oriented languages: higher-order
+	  polymorphism, simple recursive types, subtyping, and a powerful
+	  partial type inference algorithm.
+
+	  http://www.cis.upenn.edu/~bcpierce/papers/pict/Html/Pict.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PNET
+	bool "pnet-0.8.0"
+	help
+	  
+
+	  The goal of this project is to build a suite of Free Software tools
+	  to build and execute .NET applications, including a C# compiler,
+	  assembler, disassembler, and runtime engine.
+
+	  http://www.dotgnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PNETC
+	bool "pnetC-0.6.6nb2"
+	help
+	  C language binding for DotGNU Portable .NET
+
+	  This is the "pnetC" project.  The goal of the project is to create
+	  an ANSI-compatible C library, that can be compiled down to IL using
+	  DotGNU Portable.NET's "cscc" compiler.
+
+	  http://www.dotgnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PNETLIB
+	bool "pnetlib-0.8.0nb1"
+	help
+	  DotGNU Portable .NET C SHARP class libraries
+
+	  This distribution contains an implementation of the C# library, for use
+	  with .NET-capable runtime engines and applications.  Originally designed
+	  for DotGNU Portable.NET, this library can be used by other .NET development
+	  effort also.
+
+	  http://www.dotgnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PNETLIB_NOX11
+	bool "pnetlib-nox11-0.8.0"
+	help
+	  DotGNU Portable .NET C SHARP class libraries
+
+
+	  http://www.dotgnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_POLYML
+	bool "polyml-5.3"
+	help
+	  Poly/ML is an implementation of Standard ML
+
+	  Poly/ML is Standard ML implementation fully conforming to the 1997
+	  "Definition of Standard ML (Revised)", generally known as ML97.
+
+	  http://polyml.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY_HTML_DOCS
+	bool "py-html-docs-2.0"
+	help
+	  HTML Documentation for Python
+
+	  HTML Documentation for Python
+
+	  http://www.python.org/doc/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY24_HTML_DOCS
+	bool "py24-html-docs-2.4.4"
+	help
+	  HTML Documentation for Python
+
+	  HTML Documentation for Python 2.4
+
+	  http://www.python.org/doc/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY25_HTML_DOCS
+	bool "py25-html-docs-2.5.4"
+	help
+	  HTML Documentation for Python
+
+	  HTML Documentation for Python 2.5
+
+	  http://www.python.org/doc/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY_BASICPROPERTY
+	bool "py26-basicproperty-0.6.3anb3"
+	help
+	  Python RDBMS wrapper for various databases
+
+	  The BasicProperty/BasicTypes system provides a mechanism for intelligent
+	  property-based modeling of problem domains in Python 2.2+.  The idea behind
+	  property-based domain modeling is to simplify the definition of objects/data
+	  structures so that concerns such as initialization, data-type checking and
+	  coercion, run-time introspection, and domain specific storage/retrieval
+	  operations can be abstracted out from the modeling operations.
+
+	  http://basicproperty.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY_CXFREEZE
+	bool "py26-cxfreeze-4.2.2"
+	help
+	  Freezing python scripts into executables
+
+	  cx_Freeze is a set of scripts and modules for freezing Python scripts into
+	  executables in much the same way that py2exe and py2app do. Unlike these
+	  two tools, cx_Freeze is cross platform and should work on any platform that
+	  Python itself works on.
+
+	  http://cx-freeze.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY26_HTML_DOCS
+	bool "py26-html-docs-2.6.7"
+	help
+	  HTML Documentation for Python
+
+	  HTML Documentation for Python 2.6
+
+	  http://www.python.org/doc/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY_PSYCO
+	bool "py26-psyco-1.6nb1"
+	help
+	  Python JIT and execution accelerator
+
+	  Psyco is a specializing compiler. In a few words let us first see:
+	  
+	  What you can do with it
+	  
+	  In short: run your existing Python software much faster, with no change in
+	  your source.
+	  Think of Psyco as a kind of just-in-time (JIT) compiler, a little bit like
+	  Java's, that emit machine code on the fly instead of interpreting your Python
+	  program step by step. The result is that your unmodified Python programs run
+	  faster.
+	  
+	  Benefits
+	  2x to 100x speed-ups, typically 4x, with an unmodified Python interpreter and
+	  unmodified source code, just a dynamically loadable C extension module.
+	  
+	  Drawbacks
+	  Psyco currently uses quite a lot of memory. It only runs on Intel
+	  386-compatible processors (under any OS) right now. There are some subtle
+	  semantic differences (i.e. bugs) with the way Python works; they should not be
+	  apparent in most programs.
+
+	  http://psyco.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY_PYREX
+	bool "py26-pyrex-0.9.9"
+	help
+	  Language for Writing Python Extension Modules
+
+	  Pyrex lets you write Python-like code that mixes Python and C data types
+	  any way you want, and compiles it into a C extension for Python.
+
+	  http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY27_HTML_DOCS
+	bool "py27-html-docs-2.7.2"
+	help
+	  HTML Documentation for Python
+
+	  HTML Documentation for Python 2.7
+
+	  http://www.python.org/doc/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PYTHON24
+	bool "python24-2.4.6"
+	help
+	  Interpreted, interactive, object-oriented programming language
+
+	  Python is an interpreted, interactive, object-oriented
+	  programming language that combines remarkable power with
+	  very clear syntax. For an introduction to programming in
+	  Python you are referred to the Python Tutorial. The
+	  Python Library Reference documents built-in and standard
+	  types, constants, functions and modules. Finally, the
+	  Python Reference Manual describes the syntax and semantics
+	  of the core language in (perhaps too) much detail.
+	  
+	  Python's basic power can be extended with your own modules
+	  written in C or C++. On most systems such modules may be
+	  dynamically loaded. Python is also adaptable as an exten-
+	  sion language for existing applications. See the internal
+	  documentation for hints.
+
+	  http://www.python.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PYTHON25
+	bool "python25-2.5.6"
+	help
+	  Interpreted, interactive, object-oriented programming language
+
+	  Python is an interpreted, interactive, object-oriented
+	  programming language that combines remarkable power with
+	  very clear syntax. For an introduction to programming in
+	  Python you are referred to the Python Tutorial. The
+	  Python Library Reference documents built-in and standard
+	  types, constants, functions and modules. Finally, the
+	  Python Reference Manual describes the syntax and semantics
+	  of the core language in (perhaps too) much detail.
+	  
+	  Python's basic power can be extended with your own modules
+	  written in C or C++. On most systems such modules may be
+	  dynamically loaded. Python is also adaptable as an exten-
+	  sion language for existing applications. See the internal
+	  documentation for hints.
+
+	  http://www.python.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PYTHON26
+	bool "python26-2.6.7"
+	help
+	  Interpreted, interactive, object-oriented programming language
+
+	  Python is an interpreted, interactive, object-oriented
+	  programming language that combines remarkable power with
+	  very clear syntax. For an introduction to programming in
+	  Python you are referred to the Python Tutorial. The
+	  Python Library Reference documents built-in and standard
+	  types, constants, functions and modules. Finally, the
+	  Python Reference Manual describes the syntax and semantics
+	  of the core language in (perhaps too) much detail.
+	  
+	  Python's basic power can be extended with your own modules
+	  written in C or C++. On most systems such modules may be
+	  dynamically loaded. Python is also adaptable as an exten-
+	  sion language for existing applications. See the internal
+	  documentation for hints.
+
+	  http://www.python.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PYTHON27
+	bool "python27-2.7.2"
+	help
+	  Interpreted, interactive, object-oriented programming language
+
+	  Python is an interpreted, interactive, object-oriented
+	  programming language that combines remarkable power with
+	  very clear syntax. For an introduction to programming in
+	  Python you are referred to the Python Tutorial. The
+	  Python Library Reference documents built-in and standard
+	  types, constants, functions and modules. Finally, the
+	  Python Reference Manual describes the syntax and semantics
+	  of the core language in (perhaps too) much detail.
+	  
+	  Python's basic power can be extended with your own modules
+	  written in C or C++. On most systems such modules may be
+	  dynamically loaded. Python is also adaptable as an exten-
+	  sion language for existing applications. See the internal
+	  documentation for hints.
+
+	  http://www.python.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PYTHON31
+	bool "python31-3.1.4nb1"
+	help
+	  Interpreted, interactive, object-oriented programming language
+
+	  Python is an interpreted, interactive, object-oriented
+	  programming language that combines remarkable power with
+	  very clear syntax. For an introduction to programming in
+	  Python you are referred to the Python Tutorial. The
+	  Python Library Reference documents built-in and standard
+	  types, constants, functions and modules. Finally, the
+	  Python Reference Manual describes the syntax and semantics
+	  of the core language in (perhaps too) much detail.
+	  
+	  Python's basic power can be extended with your own modules
+	  written in C or C++. On most systems such modules may be
+	  dynamically loaded. Python is also adaptable as an exten-
+	  sion language for existing applications. See the internal
+	  documentation for hints.
+	  
+	  This package provides Python version 3.1.x.
+
+	  http://www.python.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RACKET
+	bool "racket-5.2"
+	help
+	  Scheme-based dialect of Lisp
+
+	  Racket (formerly PLT Scheme) is a specific dialect of the Lisp
+	  language based on the Scheme branch of the Lisp family.
+	  
+	  It is suitable for implementation tasks ranging from scripting
+	  to application development, including GUIs, web services, etc.
+	  It includes programming environment, a virtual machine with
+	  a just-in-time compiler, tools for creating stand-alone
+	  executables, web server, extensive libraries, documentation
+	  for both beginners and experts, and more. It supports the
+	  creation of new programming languages through a rich, expressive
+	  syntax system.
+
+	  http://racket-lang.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RACKET_TEXTUAL
+	bool "racket-textual-5.2"
+	help
+	  Scheme-based dialect of Lisp
+
+	  Racket (formerly PLT Scheme) is a specific dialect of the Lisp
+	  language based on the Scheme branch of the Lisp family.
+	  
+	  It is suitable for implementation tasks ranging from scripting
+	  to application development, including GUIs, web services, etc.
+	  It includes programming environment, a virtual machine with
+	  a just-in-time compiler, tools for creating stand-alone
+	  executables, web server, extensive libraries, documentation
+	  for both beginners and experts, and more. It supports the
+	  creation of new programming languages through a rich, expressive
+	  syntax system.
+
+	  http://racket-lang.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RCFUNGE
+	bool "rcfunge-2.02"
+	help
+	  Funge interpreter
+
+	  RC/Funge-98 is a funge interpreter based upon the Funge-98 specification
+	  by Cats-Eye Technologies.  The full language specification (including the
+	  'i', 'o', '=', and 't' commands) are supported.  Unefunge, befunge, and trefunge
+	  all supported by RC/Funge-98, with befunge being the default mode.  Several
+	  extensions are also provided, including minimal windows support (currently
+	  only on unix version).
+
+	  http://www.rcfunge98.com/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_REXX_IMC
+	bool "rexx-imc-1.76nb2"
+	help
+	  Implementation of IBM's REXX scripting language
+
+	  REXX/imc is a Rexx interpreter for Unix.  It supports all the standard
+	  instructions and built-in functions, plus a small number of
+	  extensions, and has a partial implementation of the SAA API allowing
+	  applications to call Rexx programs and to register addressing
+	  environments, Rexx functions, and exit handlers.
+
+	  http://users.comlab.ox.ac.uk/ian.collier/Rexx/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_REXX_REGINA
+	bool "rexx-regina-3.0.1nb1"
+	help
+	  Implementation of the REXX language
+
+	  Regina is a Rexx interpreter that has been ported to most Unix
+	  platforms and also to OS/2, eCS, DOS, Win9x/Me/NT/2k/XP, Amiga, QNX,
+	  BeOS, MacOS X, EPOC32, AtheOS, OpenVMS and OpenEdition.  Rexx is a
+	  programming language that was designed to be easy to use for
+	  inexperienced programmers yet powerful enough for experienced users.
+	  It is also a language ideally suited as a macro language for other
+	  applications.
+
+	  http://regina-rexx.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY
+	bool "ruby-1.9.2pl290nb1"
+	help
+	  Wrapper package for Ruby programming language
+
+	  This package is a wrapper for specific releases of the Ruby
+	  programming language, providing commands (ruby, irb, ...) without
+	  any release number information.
+	  
+	  The actual Ruby programming language is provided by packages with
+	  release numbers, like ruby16 or ruby18.
+	  
+	  No package should depend on this package directly.
+
+	  http://www.ruby-lang.org/en/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY_DOC_STDLIB
+	bool "ruby-doc-stdlib-0.10.1"
+	help
+	  Ruby Standard Library Documentation
+
+	  The Ruby Standard Library Documentation collection, brought by the
+	  ruby-doc project.
+
+	  http://www.ruby-doc.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY18
+	bool "ruby18-1.8.7.357nb1"
+	help
+	  Ruby programming language 1.8.7 meta package
+
+	  This a meta package including Ruby 1.8.5 full release.
+	  
+	  It includes ruby18-base, ruby18-gdbm, ruby18-curses, ruby18-readline
+	  and ruby18-tk package.
+	  
+	  No package should depend on this package directly.
+
+	  http://www.ruby-lang.org/en/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY18_BASE
+	bool "ruby18-base-1.8.7.357"
+	help
+	  Ruby 1.8 based release minimum package
+
+	  Ruby is the interpreted scripting language for quick and
+	  easy object-oriented programming.  It has many features to
+	  process text files and to do system management tasks (as in
+	  Perl).  It is simple, straight-forward, and extensible.
+	  
+	  Features of Ruby are shown below.
+	  
+	  + Simple Syntax
+	  + *Normal* Object-Oriented features (ex. class, method calls)
+	  + *Advanced* Object-Oriented features (ex. Mix-in, Singleton-method)
+	  + Operator Overloading
+	  + Exception Handling
+	  + Iterators and Closures
+	  + Garbage Collection
+	  + Dynamic Loading of Object files (on some architecture)
+	  + Highly Portable (works on many UNIX machines, and on DOS,
+	  Windows, Mac, BeOS etc.)
+	  
+	  This package is Ruby 1.8.7 release minimum base package.
+
+	  http://www.ruby-lang.org/en/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY19
+	bool "ruby19-1.9.2pl290nb2"
+	help
+	  Ruby programming language 1.9.2 meta package
+
+	  This a meta package including Ruby 1.9.2 full release.
+	  
+	  It includes ruby19-base, ruby19-gdbm, ruby19-curses, ruby19-fiddle,
+	  ruby19-readline, ruby19-psych and ruby19-tk package.
+	  
+	  No package should depend on this package directly.
+
+	  http://www.ruby-lang.org/en/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY19_BASE
+	bool "ruby19-base-1.9.2pl290nb5"
+	help
+	  Ruby  1.9.2 release minimum package
+
+	  Ruby is the interpreted scripting language for quick and
+	  easy object-oriented programming.  It has many features to
+	  process text files and to do system management tasks (as in
+	  Perl).  It is simple, straight-forward, and extensible.
+	  
+	  Features of Ruby are shown below.
+	  
+	  + Simple Syntax
+	  + *Normal* Object-Oriented features (ex. class, method calls)
+	  + *Advanced* Object-Oriented features (ex. Mix-in, Singleton-method)
+	  + Operator Overloading
+	  + Exception Handling
+	  + Iterators and Closures
+	  + Garbage Collection
+	  + Dynamic Loading of Object files (on some architecture)
+	  + Highly Portable (works on many UNIX machines, and on DOS,
+	  Windows, Mac, BeOS etc.)
+	  
+	  This package is Ruby 1.9.2 release minimum base package.
+
+	  http://www.ruby-lang.org/en/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY193
+	bool "ruby193-1.9.3p0"
+	help
+	  Ruby programming language 1.9.3 meta package
+
+	  This a meta package including Ruby 1.9.3 full release.
+	  
+	  It includes ruby193-base, ruby193-gdbm, ruby193-curses, ruby193-fiddle,
+	  ruby193-readline and ruby193-tk package.
+	  
+	  No package should depend on this package directly.
+
+	  http://www.ruby-lang.org/en/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY193_BASE
+	bool "ruby193-base-1.9.3p0nb2"
+	help
+	  Ruby 1.9.3 release minimum base package
+
+	  Ruby is the interpreted scripting language for quick and
+	  easy object-oriented programming.  It has many features to
+	  process text files and to do system management tasks (as in
+	  Perl).  It is simple, straight-forward, and extensible.
+	  
+	  Features of Ruby are shown below.
+	  
+	  + Simple Syntax
+	  + *Normal* Object-Oriented features (ex. class, method calls)
+	  + *Advanced* Object-Oriented features (ex. Mix-in, Singleton-method)
+	  + Operator Overloading
+	  + Exception Handling
+	  + Iterators and Closures
+	  + Garbage Collection
+	  + Dynamic Loading of Object files (on some architecture)
+	  + Highly Portable (works on many UNIX machines, and on DOS,
+	  Windows, Mac, BeOS etc.)
+	  
+	  This package is Ruby 1.9.3 release minimum base package.
+
+	  http://www.ruby-lang.org/en/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUNAWK
+	bool "runawk-1.4.0"
+	help
+	  AWK wrapper that provides support for modules
+
+	  RUNAWK is a small wrapper for AWK interpreter that impements module system
+	  (similar to Perl's "use" command) and helps to write the standalone AWK
+	  programs. Dozens of modules are also provided.
+
+	  http://sourceforge.net/projects/runawk
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SABLEVM
+	bool "sablevm-1.13nb4"
+	help
+	  SableVM free Java virtual machine
+
+	  SableVM is a portable bytecode interpreter written in C, and implementing
+	  the Java virtual machine specification, second edition.  Its goals are to
+	  be reasonably small, fast and efficient, as well as providing a well
+	  designed and robust platform for conducting research.
+	  
+	  SableVM implements many innovative techniques, including:
+	  * 3 flavors of threaded interpretation (switched, threaded and inlined).
+	  * Bidirectional object layout.
+	  * Spinlock-free thin locks.
+	  * Sparse interface vtables.
+	  * Low-cost maps for precise garbage collection.
+
+	  http://sablevm.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SABLEVM_CLASSPATH
+	bool "sablevm-classpath-1.13nb1"
+	help
+	  Class libraries for the SableVM Java virtual machine
+
+	  SableVM is a portable bytecode interpreter written in C, and implementing
+	  the Java virtual machine specification, second edition.  Its goals are to
+	  be reasonably small, fast and efficient, as well as providing a well
+	  designed and robust platform for conducting research.
+	  
+	  This package contains the class library for SableVM, based on GNU classpath.
+	  For GUI support, install sablevm-classpath-gui too.
+
+	  http://sablevm.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SABLEVM_CLASSPATH_GUI
+	bool "sablevm-classpath-gui-1.13nb9"
+	help
+	  
+
+	  SableVM is a portable bytecode interpreter written in C, and implementing
+	  the Java virtual machine specification, second edition.  Its goals are to
+	  be reasonably small, fast and efficient, as well as providing a well
+	  designed and robust platform for conducting research.
+	  
+	  This package contains the GTK binding required to run AWT and Swing
+	  applications with sablevm-classpath and sablevm.
+
+	  http://sablevm.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SATHER
+	bool "sather-1.2.3"
+	help
+	  Compiler for the Sather object oriented programming language
+
+	  Sather is an object oriented language which designed to be simple,
+	  efficient, safe, and non-proprietary. It aims to meet the needs of
+	  modern research groups and to foster the development of a large,
+	  freely available, high-quality library of efficient well-written
+	  classes for a wide variety of computational tasks. It was originally
+	  based on Eiffel but now incorporates ideas and approaches from several
+	  languages. One way of placing it in the "space of languages" is to say
+	  that it attempts to be as efficient as C, C++, or Fortran, as elegant
+	  and safe as Eiffel or CLU, and to support higher-order functions as
+	  well as Common Lisp, Scheme, or Smalltalk.
+	  
+	  Sather has garbage collection, statically-checked strong typing,
+	  multiple inheritance, separate implementation and type inheritance,
+	  parameterized classes, dynamic dispatch, iteration abstraction,
+	  higher-order routines and iters, exception handling, assertions,
+	  preconditions, postconditions, and class invariants. Sather code can
+	  be compiled into C code and can efficiently link with C object files.
+
+	  http://www.gnu.org/software/sather/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SBCL
+	bool "sbcl-1.0.54"
+	help
+	  SBCL, a Common Lisp implementation
+
+	  Steel Bank Common Lisp (SBCL) is an Open Source complier and runtime
+	  system for ANSI Common Lisp.  It provides an interactive environment
+	  including an integrated native compiler, a debugger, and many
+	  extensions.
+
+	  http://www.sbcl.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SCALA
+	bool "scala-2.9.1"
+	help
+	  Scala is a multi-paradigm programming language
+
+	  Scala is a general purpose programming language designed to express common 
+	  programming patterns in a concise, elegant, and type-safe way. It smoothly 
+	  integrates features of object-oriented and functional languages, enabling 
+	  Java and other programmers to be more productive.
+
+	  http://www.scala-lang.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SCHEME48
+	bool "scheme48-1.8"
+	help
+	  The Scheme Underground implementation of R5RS
+
+	  Scheme 48 is an implementation of the Scheme programming language as
+	  described in the Revised^4 Report on the Algorithmic Language Scheme.
+	  It is based on a compiler and interpreter for a virtual Scheme
+	  machine.  The name derives from our desire to have an implementation
+	  that is simple and lucid enough that it looks as if it were written in
+	  just 48 hours.  We don't claim to have reached that stage yet; much
+	  more simplification is necessary.
+	  
+	  Scheme 48 tries to be faithful to the upcoming Revised^5 Scheme
+	  Report, providing neither more nor less in the initial user
+	  environment.  (This is not to say that more isn't available in other
+	  environments; see below.)  Support for numbers is weak: bignums are
+	  slow and floating point is almost nonexistent (see description of
+	  floatnums, below).  DEFINE-SYNTAX, LET-SYNTAX, LETREC-SYNTAX, and
+	  SYNTAX-RULES are supported, but not the rest of the Revised^4 Scheme
+	  macro proposal.
+
+	  http://s48.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SCM
+	bool "scm-5.5.3nb1"
+	help
+	  Portable scheme interpreter
+
+	  Scm is a portable R5RS Scheme implementation written in C.
+	  * Support for SICP, R2RS, R3RS, and R5RS scheme code.
+	  * Is fully documented in TeXinfo form, allowing documentation to be
+	  generated in info, TeX, html, nroff, and troff formats.
+	  * Supports inexact real and complex numbers, 30 bit immediate integers
+	  and large precision integers.
+	  * Many Common Lisp functions: logand, logor, logxor, lognot, ash,
+	  logcount, integer-length, bit-extract, defmacro, macroexpand,
+	  macroexpand1, gentemp, defvar, force-output, software-type,
+	  get-decoded-time, get-internal-run-time, get-internal-real-time,
+	  delete-file, rename-file, copy-tree, acons, and eval.
+	  * Char-code-limit, most-positive-fixnum, most-negative-fixnum, and
+	  internal-time-units-per-second constants. *Features* and
+	  *load-pathname* variables.
+	  * Arrays and bit-vectors. String ports and software emulation ports.
+	  I/O extensions providing ANSI C and POSIX.1 facilities.
+	  * Interfaces to standard libraries
+	  * Available add-on packages including an interactive debugger, database,
+	  X-window graphics, BGI graphics, Motif, and Open-Windows packages.
+	  * A compiler (HOBBIT) and dynamic linking of compiled modules.
+	  * User definable responses to interrupts and errors,
+	  Process-syncronization primitives. Setable levels of monitoring
+	  and timing information printed interactively (the verbose function).
+
+	  http://www.swiss.ai.mit.edu/~jaffer/SCM
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SEE
+	bool "see-3.0.1376nb3"
+	help
+	  JavaScript interpreter and runtime library in C
+
+	  ECMAScript is a standardized language also known variously as JavaScript,
+	  JScript, and LiveScript. SEE is a library that provides a parser and runtime
+	  environment for this language. It conforms to ECMAScript Edition 3, and to
+	  JavaScript 1.5, with some compatibility switches for earlier versions of
+	  JavaScript and Microsoft's JScript.
+
+	  http://www.adaptive-enterprises.com.au/~d/software/see/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SIGSCHEME
+	bool "sigscheme-0.8.5"
+	help
+	  R5RS Scheme interpreter for embedded use
+
+	  SigScheme is a R5RS Scheme interpreter for embedded use.
+	  
+	  It features small footprint (64KB in library form on the 'small' configuration)
+	  like SIOD and TinyScheme, low memory consumption (2-words per cons cell),
+	  multibyte characters handling (UTF-8, EUCs and Shift_JIS) and more.
+	  
+	  It is mainly developed to be the Scheme interpreter of uim.
+
+	  http://code.google.com/p/sigscheme/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SIOD
+	bool "siod-3.0nb1"
+	help
+	  Small-footprint implementation of the Scheme programming language
+
+	  SIOD is a small-footprint implementation of the Scheme programming
+	  language that is provided with some database, unix programming and cgi
+	  scripting extensions.
+	  
+	  The motivation behind SIOD remains a small footprint, in every sense
+	  of the word, at runtime, at compile time, and in cognitive attention
+	  required to understand how the system works enough to be able to
+	  extend it as well as the author would have done the work himself.
+	  
+	  About eight years have passed since that initial release.  It has been
+	  possible to add a feature or two without contributing to the cause of
+	  software bloat, with the code segment of the libsiod shared library
+	  remaining under 75K bytes on a prototypical comparison machine like a
+	  VAX.  Furthermore, as the richness of the C runtime library available
+	  on most systems has improved over time, SIOD remains a useful kind of
+	  glue to have in a software engineers toolbox.
+
+	  http://people.delphi.com/gjc/siod.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SMALLTALK
+	bool "smalltalk-3.2.4nb2"
+	help
+	  GNU Smalltalk: A smalltalk-80 implementation
+
+	  Smalltalk is a Free (or Open Source) implementation that closely
+	  follows the Smalltalk-80 language as described in the book
+	  Smalltalk-80: the Language and its Implementation by Adele
+	  Goldberg and David Robson.
+
+	  http://www.smalltalk.org/versions/GNUSmalltalk.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SMLNJ
+	bool "smlnj-110.72"
+	help
+	  Popular functional language from Bell Labs
+
+	  A Standard ML implementation from Bell-Labs.  Implements the SML '97
+	  definition including the new Basis library with a few minor omissions
+	  and discrepancies.
+	  
+	  If you are interested in a lighter weight implementation of ML, the
+	  Moscow-ML port is recommended.
+
+	  http://www.smlnj.org/index.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SNOBOL
+	bool "snobol-1.3"
+	help
+	  Macro implementation of SNOBOL4 in C
+
+	  This is a C implementation of the original Macro SIL (SNOBOL4 Implementation
+	  Language) version of SNOBOL4, originally developed at ATT Bell Labs.
+	  
+	  SNOBOL4, primarily known as a string processing language, excels at any task
+	  involving symbolic manipulations.  The interpreter provides run-time typing,
+	  garbage collection, user defined data types, and on-the-fly sub-interpretation
+	  within a running program.  Its primary weakness is a simple syntax, and a lack
+	  of "structured" constructs, although many would consider these to be strengths
+	  when compared to some "modern" and ever-changing agglomerations such as Perl.
+	  
+	  While not computationally speedy, it is handy for minimizing development time
+	  and effort when creating data conversion tools.  This is because of its data
+	  manipulation functions, associative memory data structures, and an extensive
+	  set of sophisticated built-in string pattern matching primatives.
+	  
+	  SNOBOL4 consists of one relatively small executable file, without the scads
+	  of associated libraries and modules that make package management difficult.
+	  
+	  Although developed in the early 1960s (the SNOBOL3 primer was published by the
+	  MIT press in 1967), some feel that it is still ahead of its time today.  While
+	  it is fully functional and extensively tested, it is no longer evolving, having
+	  reached the desirable stable plateau in any programming language's life cycle.
+
+	  http://www.snobol4.org/csnobol4/curr/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SPIDERMONKEY
+	bool "spidermonkey-1.8.0rc1nb2"
+	help
+	  Standalone JavaScript implementation in C
+
+	  SpiderMonkey is the code-name for the Mozilla's C implementation of
+	  JavaScript.
+
+	  http://www.mozilla.org/js/spidermonkey/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SPL
+	bool "spl-1.0pre3nb1"
+	help
+	  The SPL Programming Language
+
+	  SPL is a powerful scripting language. It is very feature-rich (hashes, regular
+	  expressions, objects, exceptions, built-in template language, etc. pp.) and has
+	  a c-style syntax. The Name "SPL" is a left-recursive acronym and expands to "SPL
+	  Programming Language". The name was meant to be pronounced as an acronym, but
+	  I've already heard people pronouncing it "spell", which is also fine with me.
+	  
+	  The SPL VM is a pure bytecode interpeter. Support for JIT compilation or
+	  generating machine code for the host CPU is not planed and doesn't make much
+	  sense for various technical reasons. The entire SPL toolchain (compiler,
+	  assembler, virtual machine, etc) is pretty small (about 100k on x86
+	  architectures). The additional memory usage by the applications is rather small
+	  too. One of the more advanced VM features is the capability to dump the entire
+	  VM state to a file and resume later. It is even possible to resume on another
+	  machine with a different architecture.
+	  
+	  SPL has support for loadable modules. The spl package contains already modules
+	  for stuff such as accessing SQL databases (SQLite, Postgres, MySQL), XML (incl.
+	  XPATH and XSLT), Terminal and File IO, Web Application development (the CGI, WSF
+	  and W2T (Web 2.0 Toolkit) modules), SDL, Qt and much more.
+	  
+	  SPL currently supports Linux,BSD Systems, other POSIX environments, MacOS-X
+	  (Darwin), SGI IRIX, Cygwin and native Win32 (using MinGW).
+
+	  http://www.clifford.at/spl/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SQUEAK
+	bool "squeak-4.0"
+	help
+	  Full Smalltalk 80 with portability to UN*X, Mac, and Windows
+
+	  Squeak is a new implementation of the Smalltalk programming environment;
+	  it includes among other things:
+	  * a rapid-turn-around Smalltalk-80 compiler,
+	  * a caching-JIT run-time virtual machine (with full source in
+	  Smalltalk),
+	  * large class libraries with portable data and GUI models, and
+	  * an integrated development environment with coding tools, GUI
+	  construction.
+	  
+	  Squeak was developed at Apple Labs and Walt Disney and has been ported
+	  to a variety of computers (including most flavors of UNIX and Windows).
+	  Compared to other Smalltalk systems, Squeak has four important features:
+	  * Portability (to Mac, Windows, WinCE, and many flavors of UNIX);
+	  * Speed (it uses native C for compute-intensive code);
+	  * Price (free, including all source code and the right to distribute
+	  applications!); and
+	  * Sophistication (full Smalltalk-80 language, libraries, and tools).
+
+	  http://squeak.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SQUEAK_VM
+	bool "squeak-vm-3.11.3.2135nb6"
+	help
+	  Full Smalltalk 80 with portability to UN*X, Mac, and Windows
+
+	  Squeak is a new implementation of the Smalltalk programming environment;
+	  it includes among other things:
+	  * a rapid-turn-around Smalltalk-80 compiler,
+	  * a caching-JIT run-time virtual machine (with full source in
+	  Smalltalk),
+	  * large class libraries with portable data and GUI models, and
+	  * an integrated development environment with coding tools, GUI
+	  construction.
+	  
+	  Squeak was developed at Apple Labs and Walt Disney and has been ported
+	  to a variety of computers (including most flavors of UNIX and Windows).
+	  Compared to other Smalltalk systems, Squeak has four important features:
+	  * Portability (to Mac, Windows, WinCE, and many flavors of UNIX);
+	  * Speed (it uses native C for compute-intensive code);
+	  * Price (free, including all source code and the right to distribute
+	  applications!); and
+	  * Sophistication (full Smalltalk-80 language, libraries, and tools).
+
+	  http://squeakvm.org/unix/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SR
+	bool "sr-2.3.3nb7"
+	help
+	  The SR language compiler and run time system
+
+	  This is the language SR from the University of Arizona.
+	  
+	  SR is described in "The SR Programming Language: Concurrency in Practice"
+	  by Gregory R. Andrews and Ronald A. Olsson (Benjamin/Cummings, 1993, ISBN
+	  0-8053-0088-0).  Information about concurrent programming in general can be
+	  found in "Concurrent Programming: Principles and Practice" by Gregory R.
+	  Andrews (Benjamin/Cummings, 1991, ISBN 0-8053-0086-4).
+
+	  http://www.cs.arizona.edu/sr/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SR_EXAMPLES
+	bool "sr-examples-2.3.3nb1"
+	help
+	  The SR language compiler and run time system
+
+	  These are the example files for SR, Version 2.3.2, from the University
+	  of Arizona.
+	  
+	  SR is described in "The SR Programming Language: Concurrency in Practice"
+	  by Gregory R. Andrews and Ronald A. Olsson (Benjamin/Cummings, 1993, ISBN
+	  0-8053-0088-0).  Information about concurrent programming in general can be
+	  found in "Concurrent Programming: Principles and Practice" by Gregory R.
+	  Andrews (Benjamin/Cummings, 1991, ISBN 0-8053-0086-4).
+
+	  http://www.cs.arizona.edu/sr/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_STALIN
+	bool "stalin-0.9nb5"
+	help
+	  Aggressively optimizing Scheme compiler
+
+	  Stalin is an aggressively optimizing whole-program compiler for Scheme
+	  that does polyvariant interprocedural flow analysis, flow-directed
+	  interprocedural escape analysis, flow-directed lightweight CPS
+	  conversion, flow-directed lightweight closure conversion,
+	  flow-directed interprocedural lifetime analysis, automatic in-lining,
+	  unboxing, and flow-directed program-specific and
+	  program-point-specific low-level representation selection and code
+	  generation.
+	  
+	  Stalin is now self hosting (ie. can compile itself).  The distributed
+	  code is self-compiled.  Scheme->C is no longer used or needed to build
+	  Stalin.
+	  
+	  Stalin uses the Boehm conservative garbage collector and comes with a
+	  foreign-procedure interface for Xlib and OpenGL, and a version of
+	  QobiScheme, an extensive library of Scheme code.
+	  
+	  Stalin is now released under the GNU Public License, version 2.
+
+	  http://cobweb.ecn.purdue.edu/~qobi/software.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SUN_JDK6
+	bool "sun-jdk6-6.0.29"
+	help
+	  
+
+	  This is the Linux port of the Sun Java(tm) Development Kit (J2SE 6.0).
+
+	  http://www.oracle.com/technetwork/java/index.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SUN_JRE6
+	bool "sun-jre6-6.0.29nb1"
+	help
+	  
+
+	  This is the Linux port of the Sun Java(tm) Runtime Environment (J2SE 6.0).
+
+	  http://www.oracle.com/technetwork/java/index.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SWI_PROLOG
+	bool "swi-prolog-5.11.18"
+	help
+	  ISO/Edinburgh-style Prolog compiler suite
+
+	  ISO/Edinburgh-style Prolog compiler.  Compliant with Part 1 of the ISO
+	  standard for Prolog.  Covers all traditional Edinburgh Prolog features
+	  and shares many features with Quintus and SICStus Prolog, including a
+	  compatible module system. Very fast compiler, garbage collection (also
+	  on atoms), fast and powerful C/C++ interface, autoloading,
+	  GNU-readline interface.  SWI-Prolog supports architectures with 32-bit
+	  or greater (64-bit) word-length.
+	  
+	  This is a meta-package that pulls in the interpreter and packages.
+
+	  http://www.swi-prolog.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SWI_PROLOG_LITE
+	bool "swi-prolog-lite-5.11.18"
+	help
+	  ISO/Edinburgh-style Prolog compiler
+
+	  ISO/Edinburgh-style Prolog compiler.  Compliant with Part 1 of the ISO
+	  standard for Prolog.  Covers all traditional Edinburgh Prolog features
+	  and shares many features with Quintus and SICStus Prolog, including a
+	  compatible module system. Very fast compiler, garbage collection (also
+	  on atoms), fast and powerful C/C++ interface, autoloading,
+	  GNU-readline interface.  SWI-Prolog supports architectures with 32-bit
+	  or greater (64-bit) word-length.
+	  
+	  This is the core package, packages are available in the
+	  swi-prolog-packages package.
+
+	  http://www.swi-prolog.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_SWI_PROLOG_PACKAGES
+	bool "swi-prolog-packages-5.11.18nb2"
+	help
+	  Packages for SWI Prolog
+
+	  Packages for TCP/IP, XML/SGML, RDF, and the GUI toolkit XPCE for
+	  swi-prolog, an ISO/Edinburgh-style Prolog compiler.
+
+	  http://www.swi-prolog.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TCL
+	bool "tcl-8.4.18nb1"
+	help
+	  Ousterhout's Tool Command Language, a scripting language
+
+	  This package contains Tcl, John Osterhout's Tool Command Language, an
+	  exceedingly simple language great for general scripting and for
+	  embedding in other programs.
+	  
+	  The best way to get started with Tcl is to read ``Tcl and the Tk
+	  Toolkit'' by John K. Ousterhout, Addison-Wesley, ISBN 0-201-63337-X
+	  or ``Practical Programming in Tcl and Tk'' by Brent B. Welch,
+	  Prentice Hall PTR, ISBN 0-13-616830-X.
+
+	  http://www.tcl.tk/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TCL_EXPECT
+	bool "tcl-expect-5.43.0nb1"
+	help
+	  Extensions to Tcl to support scripting of interactive programs
+
+	  Expect is a program that performs programmed dialogue with other
+	  interactive programs.  It is briefly described by its man page, expect(1).
+	  
+	  It uses pseudo-tty's to control the child processes, so it is not affected
+	  by programs that refuse to read from stdin or pipes. (eg: passwd(1) etc).
+
+	  http://expect.nist.gov/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TCL_ITCL
+	bool "tcl-itcl-3.2.1nb1"
+	help
+	  [incr Tcl] object-oriented extension to Tcl/Tk
+
+	  [incr Tcl] provides the extra language support needed to build large Tcl/Tk
+	  applications. It introduces the notion of objects, which act as building
+	  blocks for an application. Each object is a bag of data with a set of
+	  procedures or "methods" that are used to manipulate it. Objects are organized
+	  into "classes" with identical characteristics, and classes can inherit
+	  functionality from one another. This object-oriented paradigm adds another
+	  level of organization on top of the basic variable/procedure elements, and
+	  the resulting code is easier to understand and maintain.
+
+	  http://incrtcl.sourceforge.net/itcl/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TCL_ITCL_CURRENT
+	bool "tcl-itcl-current-20040920nb4"
+	help
+	  [incr Tcl] object-oriented extension to Tcl/Tk.  CVS snapshot
+
+	  [incr Tcl] provides the extra language support needed to build large Tcl/Tk
+	  applications. It introduces the notion of objects, which act as building
+	  blocks for an application. Each object is a bag of data with a set of
+	  procedures or "methods" that are used to manipulate it. Objects are organized
+	  into "classes" with identical characteristics, and classes can inherit
+	  functionality from one another. This object-oriented paradigm adds another
+	  level of organization on top of the basic variable/procedure elements, and
+	  the resulting code is easier to understand and maintain.
+	  
+	  This package is based on CVS sources for [incr Tcl].
+
+	  http://incrtcl.sourceforge.net/itcl/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TCL_OTCL
+	bool "tcl-otcl-1.13"
+	help
+	  MIT Object Tcl
+
+	  OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for
+	  object-oriented programming. It shouldn't be confused with the IXI
+	  Object Tcl extension by Dean Sheenan.
+	  
+	  Some of OTcl's features as compared to alternatives are:
+	  * designed to be dynamically extensible, like Tcl, from the ground
+	  up
+	  * builds on Tcl syntax and concepts rather than importing another
+	  language
+	  * compact yet powerful object programming system (draws on CLOS,
+	  Smalltalk, and Self)
+	  * fairly portable implementation (2000 lines of C, without core
+	  hacks)
+
+	  http://otcl-tclcl.sourceforge.net/otcl/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TCL_TCLX
+	bool "tcl-tclX-8.3.5nb3"
+	help
+	  
+
+	  Extended Tcl (TclX), is a set of extensions to Tcl, the Tool Command
+	  Language invented by Dr. John Ousterhout.  Tcl is a powerful, yet simple
+	  embeddable programming language.  Extended Tcl is oriented towards system
+	  programming tasks and large application development.  TclX provides additional
+	  interfaces to the operating system, and adds many new programming constructs,
+	  text manipulation tools, and debugging tools.
+
+	  http://tclx.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TINYSCHEME
+	bool "tinyscheme-1.40"
+	help
+	  R5RS small embeddable scheme implementation
+
+	  TinyScheme is a lightweight Scheme interpreter that implements as
+	  large a subset of R5RS as was possible without getting very large and
+	  complicated.  It is meant to be used as an embedded scripting
+	  interpreter for other programs.  As such, it does not offer IDEs or
+	  extensive toolkits although it does sport a small top-level loop,
+	  included conditionally.  A lot of functionality in TinyScheme is
+	  included conditionally, to allow developers freedom in balancing
+	  features and footprint.
+	  
+	  As an embedded interpreter, it allows multiple interpreter states to
+	  coexist in the same program, without any interference between them.
+	  Programmatically, foreign functions in C can be added and values can
+	  be defined in the Scheme environment.  Being quite a small program, it
+	  is easy to comprehend, get to grips with, and use.
+
+	  http://tinyscheme.sourceforge.net/home.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TK_EXPECT
+	bool "tk-expect-5.43.0nb1"
+	help
+	  Tcl interpreter with both the expect and tk extensions built in
+
+	  Expect is a program that performs programmed dialogue with other
+	  interactive programs.  It is briefly described by its man page, expect(1).
+	  
+	  It uses pseudo-tty's to control the child processes, so it is not affected
+	  by programs that refuse to read from stdin or pipes. (eg: passwd(1) etc).
+	  
+	  This package installs expectk, a version of the wish(1) interpreter for
+	  tcl/tk with the expect extensions always present.
+
+	  http://expect.nist.gov/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TK_TCLX
+	bool "tk-tclX-8.3.5nb3"
+	help
+	  
+
+	  Extended Tcl (TclX), is a set of extensions to Tcl, the Tool Command
+	  Language invented by Dr. John Ousterhout.  Tcl is a powerful, yet simple
+	  embeddable programming language.  Extended Tcl is oriented towards system
+	  programming tasks and large application development.  TclX provides additional
+	  interfaces to the operating system, and adds many new programming constructs,
+	  text manipulation tools, and debugging tools.
+
+	  http://tclx.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_TWELF
+	bool "twelf-1.4nb1"
+	help
+	  Meta-language for proving properties of languages and logics
+
+	  From http://www.twelf.org, heavily edited:
+	  
+	  Twelf is a research project concerned with the design,
+	  implementation, and application of logical frameworks.  It
+	  provides a uniform meta-language for specifying, implementing, and
+	  proving properties of programming languages and logics.
+	  
+	  Example suites include Cartesian Closed Categories and
+	  lambda-calculus, the Church-Rosser theorem for the untyped
+	  lambda-calculus, Mini-ML including type preservation and
+	  compilation, cut elimination, theory of logic programming, and
+	  Hilbert's deduction theorem.
+	  
+	  The principal authors of Twelf are Frank Pfenning and Carsten
+	  Schuermann, with major contrubtions by Brigitte Pientka, Roberto
+	  Virga, and Kevin Watkins.
+
+	  http://www.cs.cmu.edu/~twelf/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_UCBLOGO
+	bool "ucblogo-5.3nb2"
+	help
+	  Brian Harvey's logo language interpreter
+
+	  [This package is GPL'd - please see README in sources for license information]
+	  
+	  This version of Logo is designed for a machine with adequate memory.  It is
+	  not likely to be usable as the basis for a 64K microcomputer implementation.
+	  
+	  The interpreter was written primarily by Daniel Van Blerkom, Brian Harvey,
+	  Michael Katz, and Douglas Orleans.  Thanks to Fred Gilham for the X11 code.
+	  Send comments by e-mail to bh@cs.berkeley.edu.
+
+	  http://http.cs.berkeley.edu/~bh/logo.html
+
+
+config BR2_PKGSRC_PACKAGE_LANG_UMB_SCHEME
+	bool "umb-scheme-3.2"
+	help
+	  UMB Scheme interpreter
+
+	  UMB Scheme is an implementation of the language described in the
+	  "IEEE Standard for the Scheme Programming Language" (December,
+	  1990).
+	  
+	  All syntax, variables and procedures are implemented.  Integers
+	  are implemented as fixnums and bignums, rationals as pairs of
+	  integers, (inexact) reals as double-precision floats, and (inexact)
+	  complex numbers as pairs of double-precision floats.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_LANG_UTILISP
+	bool "utilisp-1.13"
+	help
+	  UTI Lisp
+
+	  The UtiLisp32 is a new implementation of UtiLisp for Unix system.
+	  The original UtiLisp  (University of Tokyo Interactive LISt Processor)
+	  system  was  designed  for  highly  interactive programming and
+	  debugging of sophisticated programs on mainframes.
+	  
+	  The new UtiLisp system is a transportation of the original UtiLisp.
+	  UtiLisp32 is for Unix 4.2 bsd machines whose CPU's have 32 bit address bus.
+	  It is now available on MC68010, MC68020 and Vaxen.
+	  This new UtiLisp is called "Unix UtiLisp" or simply "UtiLisp".
+
+	  http://gps.tanaka.ecc.u-tokyo.ac.jp/wadalabfont/pukiwiki.php?%5B%5BUtiLisp%2FC%5D%5D
+
+
+config BR2_PKGSRC_PACKAGE_LANG_VALA
+	bool "vala-0.12.1"
+	help
+	  Compiler for the GObject type system
+
+	  Vala is a new programming language that aims to bring modern programming
+	  language features to GNOME developers without imposing any additional
+	  runtime requirements and without using a different ABI compared to
+	  applications and libraries written in C.
+	  
+	  valac, the Vala compiler, is a self-hosting compiler that translates
+	  Vala source code into C source and header files. It uses the GObject
+	  type system to create classes and interfaces declared in the Vala source
+	  code. It's also planned to generate GIDL files when gobject-
+	  introspection is ready.
+
+	  http://live.gnome.org/Vala
+
+
+config BR2_PKGSRC_PACKAGE_LANG_VSCM
+	bool "vscm-1.4"
+	help
+	  Portable scheme implementation
+
+	  VSCM -- A portable Scheme implementation
+	  
+	  This is VSCM, a complete and portable implementation of Scheme
+	  according to R4RS (The ``Revised revised revised revised Report of the
+	  Algorithmic Language Scheme'').
+	  
+	  VSCM is based on a virtual machine written in ANSI C and on a
+	  bytecode-compiler written in Scheme itself.
+
+	  
+
+
+config BR2_PKGSRC_PACKAGE_LANG_VSLISP
+	bool "vslisp-4.0.1nb2"
+	help
+	  Embeddable Lisp library and standalone interpreter
+
+	  VSLisp is an embedded Lisp library and standalone interpreter. It's
+	  very small, and runs on many platforms. It was developed as a graphics
+	  scripting language for VMS, but now its development goes under Unix,
+	  and old Graph library is not supported now.
+	  
+	  VSLisp is not Scheme or Common Lisp compatible. Surely, you can
+	  customize it to look like one of them, but by default VSLisp is a yet
+	  another Lisp dialect, and to work with it you'll need to understand
+	  the difference.
+	  
+	  VSLisp is distributed under the terms of the GNU General Public License
+	  version 2.
+
+	  http://vslisp.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_WSBASIC
+	bool "wsbasic-1.2.7"
+	help
+	  Simple BASIC interpreter
+
+	  WSBasic is a BASIC interpreter written entirely in C++ without the use
+	  of lex or yacc.  It shows how one can create a compiler or interpreter
+	  using some simple classes to parse and/or execute script code.  It is
+	  a good way to fully understand how a parser/compiler actually works,
+	  at least that was the original purpose of this project.  Later the
+	  ability to run shell commands was added just like in bash scripting
+	  and this gives the project also some nice practical use.
+
+	  http://wsbasic.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_YABASIC
+	bool "yabasic-2.722nb3"
+	help
+	  Yet another Basic for Unix and Windows
+
+	  Yabasic implements the most common and simple elements of the basic language;
+	  It comes with goto/gosub, with various loops, with user defined subroutines
+	  and Libraries. Yabasic does monochrome line graphics and printing.
+	  Yabasic runs under Unix and Windows; it is small (around 200KB) and free.
+
+	  http://www.yabasic.de/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_YAP
+	bool "yap-6.2.1"
+	help
+	  ISO-compliant Prolog
+
+	  YAP is a high-performance Prolog compiler developed at
+	  LIACC/Universidade do Porto and at COPPE Sistemas/UFRJ. Its Prolog
+	  engine is based in the WAM (Warren Abstract Machine), with several
+	  optimizations for better performance. YAP follows the Edinburgh
+	  tradition, and is largely compatible with the ISO-Prolog standard and
+	  with Quintus and SICStus Prolog.
+
+	  http://www.ncc.up.pt/~vsc/Yap/
+
+
