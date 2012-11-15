@@ -15,7 +15,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CG_COMPILER
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GAUCHE
-	bool "Gauche-0.9.2"
+	bool "Gauche-0.9.3.3"
 	help
 	  R5RS Scheme implementation aimed to be a handy tool for daily works
 
@@ -46,7 +46,7 @@ config BR2_PKGSRC_PACKAGE_LANG_LUAJIT
 
 
 config BR2_PKGSRC_PACKAGE_LANG_STK
-	bool "STk-4.0.1nb2"
+	bool "STk-4.0.1nb3"
 	help
 	  Scheme interpreter with full access to the Tk graphical package
 
@@ -64,7 +64,7 @@ config BR2_PKGSRC_PACKAGE_LANG_STK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SMARTEIFFEL
-	bool "SmartEiffel-2.0"
+	bool "SmartEiffel-2.0nb1"
 	help
 	  The GNU Eiffel Compiler
 
@@ -101,8 +101,24 @@ config BR2_PKGSRC_PACKAGE_LANG_A60
 	  
 
 
+config BR2_PKGSRC_PACKAGE_LANG_ABCL
+	bool "abcl-1.0.1"
+	help
+	  Armed Bear Common Lisp
+
+	  Armed Bear Common Lisp (ABCL) is a full implementation of
+	  the Common Lisp language featuring both an interpreter and
+	  a compiler, running in the JVM. Originally started to be
+	  a scripting language for the J editor, it now supports JSR-223
+	  (Java scripting API): it can be a scripting engine in any Java
+	  application. Additionally, it can be used to implement (parts of)
+	  the application using Java to Lisp integration APIs.
+
+	  http://common-lisp.net/project/armedbear/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_ALGOL68G
-	bool "algol68g-2.3.1nb1"
+	bool "algol68g-2.4.1"
 	help
 	  Algol 68genie compiler
 
@@ -120,7 +136,7 @@ config BR2_PKGSRC_PACKAGE_LANG_ALGOL68G
 
 
 config BR2_PKGSRC_PACKAGE_LANG_AWKA
-	bool "awka-0.7.5nb2"
+	bool "awka-0.7.5nb3"
 	help
 	  AWK to ANSI C compiler
 
@@ -175,7 +191,7 @@ config BR2_PKGSRC_PACKAGE_LANG_BACI
 
 
 config BR2_PKGSRC_PACKAGE_LANG_BASIC256
-	bool "basic256-0.9.6.66nb1"
+	bool "basic256-0.9.6.71nb3"
 	help
 	  BASIC language with traditional control structures
 
@@ -230,7 +246,7 @@ config BR2_PKGSRC_PACKAGE_LANG_BRANDYBASIC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_BWBASIC
-	bool "bwbasic-2.20pl2"
+	bool "bwbasic-2.50"
 	help
 	  The Bywater Basic interpreter
 
@@ -252,7 +268,7 @@ config BR2_PKGSRC_PACKAGE_LANG_BWBASIC
 	  Patch 2 includes new files for UNIX ncurses interface, compliments of
 	  L.C. Benschop, Eindhoven, The Netherlands.
 
-	  http://bwbasic.sourceforge.net/
+	  http://sourceforge.net/projects/bwbasic/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CAML_LIGHT
@@ -331,7 +347,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CDL3
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CHICKEN
-	bool "chicken-4.7.0"
+	bool "chicken-4.7.0.6"
 	help
 	  Scheme to C compiler, handling R5RS
 
@@ -385,7 +401,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CINT
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CLANG
-	bool "clang-3.0"
+	bool "clang-3.1"
 	help
 	  Low Level Virtual Machine compiler infrastructure
 
@@ -416,7 +432,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CLANG
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH
-	bool "classpath-0.93nb2"
+	bool "classpath-0.93nb5"
 	help
 	  Class libraries for Java VM
 
@@ -427,7 +443,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH_GUI
-	bool "classpath-gui-0.93nb9"
+	bool "classpath-gui-0.93nb14"
 	help
 	  
 
@@ -439,7 +455,7 @@ config BR2_PKGSRC_PACKAGE_LANG_CLASSPATH_GUI
 
 
 config BR2_PKGSRC_PACKAGE_LANG_CLISP
-	bool "clisp-2.49nb6"
+	bool "clisp-2.49nb12"
 	help
 	  CLISP, a Common Lisp implementation
 
@@ -461,8 +477,37 @@ config BR2_PKGSRC_PACKAGE_LANG_CLISP
 	  http://clisp.cons.org/
 
 
+config BR2_PKGSRC_PACKAGE_LANG_CLOJURE
+	bool "clojure-1.4.0"
+	help
+	  Dynamic programming language that targets the Java VM
+
+	  Clojure is a dynamic programming language that targets the Java
+	  Virtual Machine (and the CLR, and JavaScript). It is designed to
+	  be a general-purpose language, combining the approachability and
+	  interactive development of a scripting language with an efficient
+	  and robust infrastructure for multithreaded programming. Clojure
+	  is a compiled language - it compiles directly to JVM bytecode, yet
+	  remains completely dynamic. Every feature supported by Clojure is
+	  supported at runtime. Clojure provides easy access to the Java
+	  frameworks, with optional type hints and type inference, to ensure
+	  that calls to Java can avoid reflection.
+	  
+	  Clojure is a dialect of Lisp, and shares with Lisp the code-as-data
+	  philosophy and a powerful macro system. Clojure is predominantly
+	  a functional programming language, and features a rich set of
+	  immutable, persistent data structures. When mutable state is needed,
+	  Clojure offers a software transactional memory system and reactive
+	  Agent system that ensure clean, correct, multithreaded designs.
+	  
+	  I hope you find Clojure's combination of facilities elegant,
+	  powerful, practical and fun to use.
+
+	  http://clojure.org/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_COQ
-	bool "coq-8.3pl1nb3"
+	bool "coq-8.3pl1nb14"
 	help
 	  Theorem prover which extracts programs from proofs
 
@@ -526,7 +571,7 @@ config BR2_PKGSRC_PACKAGE_LANG_EAG
 
 
 config BR2_PKGSRC_PACKAGE_LANG_ECL
-	bool "ecl-11.1.1"
+	bool "ecl-12.7.1nb1"
 	help
 	  Embeddable Common Lisp
 
@@ -618,7 +663,7 @@ config BR2_PKGSRC_PACKAGE_LANG_ELISP_MANUAL
 
 
 config BR2_PKGSRC_PACKAGE_LANG_ELK
-	bool "elk-3.99.7nb1"
+	bool "elk-3.99.8nb1"
 	help
 	  Embeddable Scheme interpreter
 
@@ -650,7 +695,7 @@ config BR2_PKGSRC_PACKAGE_LANG_EMBRYO
 
 
 config BR2_PKGSRC_PACKAGE_LANG_ERLANG
-	bool "erlang-14.1.3"
+	bool "erlang-15.1.2"
 	help
 	  Concurrent functional programming language
 
@@ -667,7 +712,7 @@ config BR2_PKGSRC_PACKAGE_LANG_ERLANG
 
 
 config BR2_PKGSRC_PACKAGE_LANG_ERLANG_DOC
-	bool "erlang-doc-14.1.3"
+	bool "erlang-doc-15.1.2"
 	help
 	  Documentation for Erlang, a concurrent functional programming language
 
@@ -682,7 +727,7 @@ config BR2_PKGSRC_PACKAGE_LANG_ERLANG_DOC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_ERLANG_MAN
-	bool "erlang-man-14.1.3"
+	bool "erlang-man-15.1.2"
 	help
 	  Documentation for Erlang, a concurrent functional programming language
 
@@ -749,7 +794,7 @@ config BR2_PKGSRC_PACKAGE_LANG_FICL
 
 
 config BR2_PKGSRC_PACKAGE_LANG_FOCAL
-	bool "focal81-0"
+	bool "focal81-0nb1"
 	help
 	  Interpreted programming language
 
@@ -773,7 +818,7 @@ config BR2_PKGSRC_PACKAGE_LANG_FORT77
 
 
 config BR2_PKGSRC_PACKAGE_LANG_G95
-	bool "g95-0.92"
+	bool "g95-0.92nb1"
 	help
 	  Fortran 95 compiler from g95.org
 
@@ -786,7 +831,7 @@ config BR2_PKGSRC_PACKAGE_LANG_G95
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GAMBC
-	bool "gambc-4.6.0"
+	bool "gambc-4.6.5"
 	help
 	  GambitC Scheme System
 
@@ -807,7 +852,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GAMBC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GAWK
-	bool "gawk-3.1.8nb1"
+	bool "gawk-4.0.1nb2"
 	help
 	  GNU awk
 
@@ -837,6 +882,32 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC
 	  gcc.info*.
 
 	  http://gcc.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC_AUX
+	bool "gcc-aux-20120614nb2"
+	help
+	  GNAT Ada compiler based on GCC 4.7
+
+	  The AUX compiler supports several languages: Ada, C, C++, Fortran and
+	  Objective-C.  Since Ada support must be built by an Ada-capable compiler,
+	  only platforms for which a bootstrap compiler is available can build the
+	  AUX compiler.
+	  
+	  The AUX compiler is based on release versions of the Free Software
+	  Foundation's GNU Compiler Collection.  It carries with it the GMGPL license,
+	  the modified version of the GPL that exempts generic instantiation from
+	  resulting in a GPL-licensed executable.  It also carries the GCC Runtime
+	  Library Exception, so the resulting binaries have no licensing requirements.
+	  Binaries produced by the AUX compiler should be legally handled the same as
+	  binaries produced by any FSF compiler.
+	  
+	  The AUX GNAT compiler the full Ada-83, Ada-95, Ada-2005 standard and
+	  provides a partial implementation of Ada-2012.  The Ada-2012 reference manual
+	  was submitted to the International Organization for Standardization (ISO)
+	  in June 2012.
+
+	  http://www.dragonlace.net/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GCC3
@@ -900,18 +971,6 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC3_F77
 	  http://www.gnu.org/software/gcc/gcc.html
 
 
-config BR2_PKGSRC_PACKAGE_LANG_GCC3_JAVA
-	bool "gcc3-java-3.3.6"
-	help
-	  GNU Compiler Collection, v3 - Java compiler
-
-	  The GNU Compiler Collection (GCC) version 3.x.
-	  
-	  This package includes support for compiling the Java language.
-
-	  http://www.gnu.org/software/gcc/gcc.html
-
-
 config BR2_PKGSRC_PACKAGE_LANG_GCC3_OBJC
 	bool "gcc3-objc-3.3.6nb1"
 	help
@@ -925,7 +984,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC3_OBJC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GCC34
-	bool "gcc34-3.4.6nb5"
+	bool "gcc34-3.4.6nb8"
 	help
 	  This is the gcc 3.4 compiler
 
@@ -952,7 +1011,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC34_ADA
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GCC44
-	bool "gcc44-4.4.6nb1"
+	bool "gcc44-4.4.7nb2"
 	help
 	  GNU Compiler Collection 4.4
 
@@ -965,7 +1024,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC44
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GCC45
-	bool "gcc45-4.5.3nb1"
+	bool "gcc45-4.5.3nb3"
 	help
 	  GNU Compiler Collection 4.5
 
@@ -978,7 +1037,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC45
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GCC46
-	bool "gcc46-4.6.2"
+	bool "gcc46-4.6.3nb3"
 	help
 	  GNU Compiler Collection 4.6
 
@@ -990,8 +1049,32 @@ config BR2_PKGSRC_PACKAGE_LANG_GCC46
 	  http://gcc.gnu.org/
 
 
+config BR2_PKGSRC_PACKAGE_LANG_GCC47
+	bool "gcc47-4.7.0nb4"
+	help
+	  
+
+	  The GNU Compiler Collection (GCC) includes front ends for C, C++, Objective-C,
+	  Fortran, Java, and Go, as well as libraries for these languages (libstdc++,
+	  libgcj,...).
+
+	  http://gcc.gnu.org/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_GCC47_LIBS
+	bool "gcc47-libs-4.7.0nb5"
+	help
+	  The GNU Compiler Collection (GCC) support shared libraries.
+
+	  The GNU Compiler Collection (GCC) includes front ends for C, C++, Objective-C,
+	  Fortran, and Go, as well as libraries for these languages (libstdc++,
+	  libgfortran, ...).
+
+	  http://gcc.gnu.org/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_GFORTH
-	bool "gforth-0.7.0nb2"
+	bool "gforth-0.7.0nb4"
 	help
 	  Fast interpreter for the Forth language
 
@@ -1025,7 +1108,7 @@ config BR2_PKGSRC_PACKAGE_LANG_GHC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_GNAT_AUX
-	bool "gnat-aux-20110627nb2"
+	bool "gnat-aux-20120301"
 	help
 	  GNAT Ada compiler based on GCC 4.6
 
@@ -1042,6 +1125,9 @@ config BR2_PKGSRC_PACKAGE_LANG_GNAT_AUX
 	  GNAT AUX implements the full Ada-83, Ada-95, and Ada-2005 language standards.
 	  It also implements some features of the draft Ada-2012 standard, which are
 	  optionally accessible via the -gnat2012 switch or Ada_2012 pragma.
+	  
+	  GNAT AUX always builds C, and builds Ada, Fortran, C++, and Objective-C by
+	  default.  The last four languages can be disabled by the options framework.
 
 	  http://www.dragonlace.net/
 
@@ -1290,7 +1376,7 @@ config BR2_PKGSRC_PACKAGE_LANG_JA_GAWK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_JAMVM
-	bool "jamvm-1.5.1"
+	bool "jamvm-1.5.1nb1"
 	help
 	  Compact Java Virtual Machine
 
@@ -1305,7 +1391,7 @@ config BR2_PKGSRC_PACKAGE_LANG_JAMVM
 
 
 config BR2_PKGSRC_PACKAGE_LANG_JAPHAR
-	bool "japhar-0.08nb6"
+	bool "japhar-0.08nb7"
 	help
 	  Java Virtual Machine, currently JDK 1.1.5-level
 
@@ -1323,7 +1409,7 @@ config BR2_PKGSRC_PACKAGE_LANG_JAPHAR
 
 
 config BR2_PKGSRC_PACKAGE_LANG_JASMIN
-	bool "jasmin-1.06nb1"
+	bool "jasmin-1.06nb2"
 	help
 	  Java "assembler" interface
 
@@ -1336,7 +1422,7 @@ config BR2_PKGSRC_PACKAGE_LANG_JASMIN
 
 
 config BR2_PKGSRC_PACKAGE_LANG_JAVA_LANG_SPEC
-	bool "java-lang-spec-2.0nb2"
+	bool "java-lang-spec-3.0"
 	help
 	  
 
@@ -1411,7 +1497,7 @@ config BR2_PKGSRC_PACKAGE_LANG_JINI
 
 
 config BR2_PKGSRC_PACKAGE_LANG_JOOS
-	bool "joos-0.2"
+	bool "joos-0.2nb1"
 	help
 	  Java Object Oriented Subset
 
@@ -1463,7 +1549,7 @@ config BR2_PKGSRC_PACKAGE_LANG_KAFFE
 
 
 config BR2_PKGSRC_PACKAGE_LANG_KAFFE_ESOUND
-	bool "kaffe-esound-1.1.7nb1"
+	bool "kaffe-esound-1.1.7nb2"
 	help
 	  
 
@@ -1477,7 +1563,7 @@ config BR2_PKGSRC_PACKAGE_LANG_KAFFE_ESOUND
 
 
 config BR2_PKGSRC_PACKAGE_LANG_KAFFE_X11
-	bool "kaffe-x11-1.1.7nb13"
+	bool "kaffe-x11-1.1.7nb18"
 	help
 	  
 
@@ -1521,6 +1607,17 @@ config BR2_PKGSRC_PACKAGE_LANG_KALI
 	  http://community.schemewiki.org/kali-scheme/
 
 
+config BR2_PKGSRC_PACKAGE_LANG_KONOHA
+	bool "konoha-1.0.0.952nb1"
+	help
+	  Statically-typed scripting langauge
+
+	  Konoha is a new scripting language that offers flexible scripting
+	  and static programming features.
+
+	  http://konohascript.org/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_KSI
 	bool "ksi-3.9.0"
 	help
@@ -1537,7 +1634,7 @@ config BR2_PKGSRC_PACKAGE_LANG_KSI
 
 
 config BR2_PKGSRC_PACKAGE_LANG_LIBREP
-	bool "librep-0.91.0nb2"
+	bool "librep-0.91.0nb4"
 	help
 	  Emacs Lisp-like runtime library, interpreter, compiler and VM
 
@@ -1550,7 +1647,7 @@ config BR2_PKGSRC_PACKAGE_LANG_LIBREP
 
 
 config BR2_PKGSRC_PACKAGE_LANG_LIBTCL_NOTHREAD
-	bool "libtcl-nothread-8.4.6nb1"
+	bool "libtcl-nothread-8.4.6nb2"
 	help
 	  TCL library for embedding
 
@@ -1567,7 +1664,7 @@ config BR2_PKGSRC_PACKAGE_LANG_LIBTCL_NOTHREAD
 
 
 config BR2_PKGSRC_PACKAGE_LANG_LIKEPYTHON
-	bool "likepython-0.1"
+	bool "likepython-0.1nb1"
 	help
 	  OMG! It's like Python, but like, you know, casual!
 
@@ -1580,7 +1677,7 @@ config BR2_PKGSRC_PACKAGE_LANG_LIKEPYTHON
 
 
 config BR2_PKGSRC_PACKAGE_LANG_LUA
-	bool "lua-5.1.4nb3"
+	bool "lua-5.1.5"
 	help
 	  Powerful light-weight language for extending applications
 
@@ -1610,7 +1707,7 @@ config BR2_PKGSRC_PACKAGE_LANG_LUA
 
 
 config BR2_PKGSRC_PACKAGE_LANG_LUSH
-	bool "lush-1.2.1nb1"
+	bool "lush-1.2.1nb2"
 	help
 	  Lisp interpreter/compiler with a seamless interface to C
 
@@ -1657,7 +1754,7 @@ config BR2_PKGSRC_PACKAGE_LANG_MAWK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_MERCURY
-	bool "mercury-0.13.1"
+	bool "mercury-11.07"
 	help
 	  Modern logic/functional programming language
 
@@ -1718,7 +1815,7 @@ config BR2_PKGSRC_PACKAGE_LANG_MIT_SCHEME_BIN
 
 
 config BR2_PKGSRC_PACKAGE_LANG_MONO
-	bool "mono-2.10.6"
+	bool "mono-2.10.6nb5"
 	help
 	  Open source implementation of the .NET Development Framework
 
@@ -1733,7 +1830,7 @@ config BR2_PKGSRC_PACKAGE_LANG_MONO
 
 
 config BR2_PKGSRC_PACKAGE_LANG_MONO_BASIC
-	bool "mono-basic-2.10nb1"
+	bool "mono-basic-2.10nb2"
 	help
 	  Visual Basic .NET support for mono
 
@@ -1812,7 +1909,7 @@ config BR2_PKGSRC_PACKAGE_LANG_NAWK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_NEWLISP
-	bool "newlisp-10.3.3"
+	bool "newlisp-10.4.0"
 	help
 	  Lisp-like, general-purpose scripting language
 
@@ -1856,7 +1953,7 @@ config BR2_PKGSRC_PACKAGE_LANG_NHC98
 
 
 config BR2_PKGSRC_PACKAGE_LANG_OBJC
-	bool "objc-3.2.6"
+	bool "objc-3.2.10"
 	help
 	  Portable Object Compiler
 
@@ -1867,7 +1964,7 @@ config BR2_PKGSRC_PACKAGE_LANG_OBJC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_OCAML
-	bool "ocaml-3.12.0nb5"
+	bool "ocaml-3.12.1nb1"
 	help
 	  The latest implementation of the Caml dialect of ML
 
@@ -1885,20 +1982,18 @@ config BR2_PKGSRC_PACKAGE_LANG_OCAML
 
 
 config BR2_PKGSRC_PACKAGE_LANG_OCAMLDUCE
-	bool "ocamlduce-3.11.1.0nb1"
+	bool "ocamlduce-3.12.1.0"
 	help
 	  Library to integrate XML features into OCaml
 
 	  OCamlDuce is an enhancement to OCaml that allows one to use XML features,
 	  such as types and values, natively in OCaml programs.
-	  
-	  WWW: http://www.cduce.org/ocaml
 
 	  http://ocamlduce.forge.ocamlcore.org/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_ONYX
-	bool "onyx-5.1.2"
+	bool "onyx-5.1.2nb1"
 	help
 	  Embeddable stack-based threaded interpreted language
 
@@ -1935,18 +2030,18 @@ config BR2_PKGSRC_PACKAGE_LANG_OO2C
 
 
 config BR2_PKGSRC_PACKAGE_LANG_OPENCOBOL
-	bool "opencobol-1.0nb2"
+	bool "opencobol-1.1"
 	help
 	  Open-source COBOL compiler
 
 	  OpenCOBOL is an open-source COBOL compiler, which translates COBOL
 	  programs to C code and compiles it using GCC.
 
-	  http://www.opencobol.org/
+	  http://www.sim-basis.de/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_OPENJDK7
-	bool "openjdk7-1.7.0.147.20110811nb1"
+	bool "openjdk7-1.7.0.147.20110811nb5"
 	help
 	  Open-source implementation of the Java Platform, Standard Edition
 
@@ -2033,7 +2128,7 @@ config BR2_PKGSRC_PACKAGE_LANG_P5_SWITCH
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PARROT
-	bool "parrot-3.8.0nb1"
+	bool "parrot-4.7.0"
 	help
 	  Virtual machine made to run Perl 6 and other languages
 
@@ -2075,7 +2170,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PCC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PCC_CURRENT
-	bool "pcc-current-1.0.0.BETA.20110228"
+	bool "pcc-current-20120326"
 	help
 	  Portable C compiler
 
@@ -2103,7 +2198,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PCC_CURRENT
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PERL5
-	bool "perl-5.14.2nb3"
+	bool "perl-5.14.2nb5"
 	help
 	  Practical Extraction and Report Language
 
@@ -2121,7 +2216,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PERL5
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PFE
-	bool "pfe-0.33.71nb2"
+	bool "pfe-0.33.71nb3"
 	help
 	  Portable FORTH Environment
 
@@ -2154,22 +2249,8 @@ config BR2_PKGSRC_PACKAGE_LANG_PFORTH
 	  http://www.softsynth.com/pforth/
 
 
-config BR2_PKGSRC_PACKAGE_LANG_PHP5
-	bool "php-5.2.17nb4"
-	help
-	  PHP Hypertext Preprocessor version 5
-
-	  PHP is an HTML-embedded scripting language. It is modular, with
-	  some object-oriented features. Much of its syntax is borrowed from
-	  C, Java and Perl with a couple of unique PHP-specific features
-	  thrown in.  The language is designed to allow web developers to
-	  write dynamically generated pages quickly.
-
-	  http://www.php.net/
-
-
 config BR2_PKGSRC_PACKAGE_LANG_PHP53
-	bool "php-5.3.8nb2"
+	bool "php-5.3.17"
 	help
 	  PHP Hypertext Preprocessor version 5
 
@@ -2182,19 +2263,22 @@ config BR2_PKGSRC_PACKAGE_LANG_PHP53
 	  http://www.php.net/
 
 
-config BR2_PKGSRC_PACKAGE_LANG_PHP5_PERL
-	bool "php5-perl-1.0.0nb2"
+config BR2_PKGSRC_PACKAGE_LANG_PHP54
+	bool "php-5.4.7"
 	help
-	  PHP extension embedding Perl in PHP
+	  PHP Hypertext Preprocessor version 5
 
-	  PHP is a programming language designed to be embedded into web pages.
-	  This extension embeds Perl Interpreter into PHP.
+	  PHP is an HTML-embedded scripting language. It is modular, with
+	  some object-oriented features. Much of its syntax is borrowed from
+	  C, Java and Perl with a couple of unique PHP-specific features
+	  thrown in.  The language is designed to allow web developers to
+	  write dynamically generated pages quickly.
 
-	  http://pecl.php.net/package/perl
+	  http://www.php.net/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PEAR
-	bool "php53-pear-1.9.4nb1"
+	bool "php53-pear-1.9.4nb3"
 	help
 	  PEAR Base System for PHP
 
@@ -2209,6 +2293,40 @@ config BR2_PKGSRC_PACKAGE_LANG_PEAR
 	  * the PEAR base class
 
 	  http://pear.php.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PHP5_PERL
+	bool "php53-perl-1.0.0nb2"
+	help
+	  PHP extension embedding Perl in PHP
+
+	  PHP is a programming language designed to be embedded into web pages.
+	  This extension embeds Perl Interpreter into PHP.
+
+	  http://pecl.php.net/package/perl
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PICOC
+	bool "picoc-2.1"
+	help
+	  C interpreter
+
+	  PicoC is a very small C interpreter for scripting.  It was originally
+	  written as the script language for a UAV's on-board flight system.
+	  It's also very suitable for other robotic, embedded and non-embedded
+	  applications.
+	  
+	  The core C source code is around 4000 lines of code.  It's not
+	  intended to be a complete implementation of ISO C but it has all the
+	  essentials.  When compiled it only takes a few k of code space and is
+	  also very sparing of data space.  This means it can work well in small
+	  embedded devices.  It's also a fun example of how to create a very
+	  small language implementation while still keeping the code readable.
+	  
+	  picoc has been tested on x86-32, x86-64, powerpc, arm, ultrasparc,
+	  HP-PA and blackfin processors and is easy to port to new targets.
+
+	  http://code.google.com/p/picoc/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PICT
@@ -2237,7 +2355,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PICT
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PNET
-	bool "pnet-0.8.0"
+	bool "pnet-0.8.0nb1"
 	help
 	  
 
@@ -2283,7 +2401,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PNETLIB_NOX11
 
 
 config BR2_PKGSRC_PACKAGE_LANG_POLYML
-	bool "polyml-5.3"
+	bool "polyml-5.4.1nb2"
 	help
 	  Poly/ML is an implementation of Standard ML
 
@@ -2291,16 +2409,6 @@ config BR2_PKGSRC_PACKAGE_LANG_POLYML
 	  "Definition of Standard ML (Revised)", generally known as ML97.
 
 	  http://polyml.org/
-
-
-config BR2_PKGSRC_PACKAGE_LANG_PY_HTML_DOCS
-	bool "py-html-docs-2.0"
-	help
-	  HTML Documentation for Python
-
-	  HTML Documentation for Python
-
-	  http://www.python.org/doc/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PY24_HTML_DOCS
@@ -2321,34 +2429,6 @@ config BR2_PKGSRC_PACKAGE_LANG_PY25_HTML_DOCS
 	  HTML Documentation for Python 2.5
 
 	  http://www.python.org/doc/
-
-
-config BR2_PKGSRC_PACKAGE_LANG_PY_BASICPROPERTY
-	bool "py26-basicproperty-0.6.3anb3"
-	help
-	  Python RDBMS wrapper for various databases
-
-	  The BasicProperty/BasicTypes system provides a mechanism for intelligent
-	  property-based modeling of problem domains in Python 2.2+.  The idea behind
-	  property-based domain modeling is to simplify the definition of objects/data
-	  structures so that concerns such as initialization, data-type checking and
-	  coercion, run-time introspection, and domain specific storage/retrieval
-	  operations can be abstracted out from the modeling operations.
-
-	  http://basicproperty.sourceforge.net/
-
-
-config BR2_PKGSRC_PACKAGE_LANG_PY_CXFREEZE
-	bool "py26-cxfreeze-4.2.2"
-	help
-	  Freezing python scripts into executables
-
-	  cx_Freeze is a set of scripts and modules for freezing Python scripts into
-	  executables in much the same way that py2exe and py2app do. Unlike these
-	  two tools, cx_Freeze is cross platform and should work on any platform that
-	  Python itself works on.
-
-	  http://cx-freeze.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PY26_HTML_DOCS
@@ -2390,15 +2470,32 @@ config BR2_PKGSRC_PACKAGE_LANG_PY_PSYCO
 	  http://psyco.sourceforge.net/
 
 
-config BR2_PKGSRC_PACKAGE_LANG_PY_PYREX
-	bool "py26-pyrex-0.9.9"
+config BR2_PKGSRC_PACKAGE_LANG_PY_BASICPROPERTY
+	bool "py27-basicproperty-0.6.3anb3"
 	help
-	  Language for Writing Python Extension Modules
+	  Python RDBMS wrapper for various databases
 
-	  Pyrex lets you write Python-like code that mixes Python and C data types
-	  any way you want, and compiles it into a C extension for Python.
+	  The BasicProperty/BasicTypes system provides a mechanism for intelligent
+	  property-based modeling of problem domains in Python 2.2+.  The idea behind
+	  property-based domain modeling is to simplify the definition of objects/data
+	  structures so that concerns such as initialization, data-type checking and
+	  coercion, run-time introspection, and domain specific storage/retrieval
+	  operations can be abstracted out from the modeling operations.
 
-	  http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
+	  http://basicproperty.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_PY_CXFREEZE
+	bool "py27-cxfreeze-4.2.3"
+	help
+	  Freezing python scripts into executables
+
+	  cx_Freeze is a set of scripts and modules for freezing Python scripts into
+	  executables in much the same way that py2exe and py2app do. Unlike these
+	  two tools, cx_Freeze is cross platform and should work on any platform that
+	  Python itself works on.
+
+	  http://cx-freeze.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PY27_HTML_DOCS
@@ -2411,31 +2508,19 @@ config BR2_PKGSRC_PACKAGE_LANG_PY27_HTML_DOCS
 	  http://www.python.org/doc/
 
 
-config BR2_PKGSRC_PACKAGE_LANG_PYTHON24
-	bool "python24-2.4.6"
+config BR2_PKGSRC_PACKAGE_LANG_PY_PYREX
+	bool "py27-pyrex-0.9.9"
 	help
-	  Interpreted, interactive, object-oriented programming language
+	  Language for Writing Python Extension Modules
 
-	  Python is an interpreted, interactive, object-oriented
-	  programming language that combines remarkable power with
-	  very clear syntax. For an introduction to programming in
-	  Python you are referred to the Python Tutorial. The
-	  Python Library Reference documents built-in and standard
-	  types, constants, functions and modules. Finally, the
-	  Python Reference Manual describes the syntax and semantics
-	  of the core language in (perhaps too) much detail.
-	  
-	  Python's basic power can be extended with your own modules
-	  written in C or C++. On most systems such modules may be
-	  dynamically loaded. Python is also adaptable as an exten-
-	  sion language for existing applications. See the internal
-	  documentation for hints.
+	  Pyrex lets you write Python-like code that mixes Python and C data types
+	  any way you want, and compiles it into a C extension for Python.
 
-	  http://www.python.org/
+	  http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PYTHON25
-	bool "python25-2.5.6"
+	bool "python25-2.5.6nb3"
 	help
 	  Interpreted, interactive, object-oriented programming language
 
@@ -2458,7 +2543,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PYTHON25
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PYTHON26
-	bool "python26-2.6.7"
+	bool "python26-2.6.8nb2"
 	help
 	  Interpreted, interactive, object-oriented programming language
 
@@ -2481,7 +2566,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PYTHON26
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PYTHON27
-	bool "python27-2.7.2"
+	bool "python27-2.7.3nb2"
 	help
 	  Interpreted, interactive, object-oriented programming language
 
@@ -2504,7 +2589,7 @@ config BR2_PKGSRC_PACKAGE_LANG_PYTHON27
 
 
 config BR2_PKGSRC_PACKAGE_LANG_PYTHON31
-	bool "python31-3.1.4nb1"
+	bool "python31-3.1.5nb1"
 	help
 	  Interpreted, interactive, object-oriented programming language
 
@@ -2528,8 +2613,33 @@ config BR2_PKGSRC_PACKAGE_LANG_PYTHON31
 	  http://www.python.org/
 
 
+config BR2_PKGSRC_PACKAGE_LANG_PYTHON32
+	bool "python32-3.2.3nb1"
+	help
+	  Interpreted, interactive, object-oriented programming language
+
+	  Python is an interpreted, interactive, object-oriented
+	  programming language that combines remarkable power with
+	  very clear syntax. For an introduction to programming in
+	  Python you are referred to the Python Tutorial. The
+	  Python Library Reference documents built-in and standard
+	  types, constants, functions and modules. Finally, the
+	  Python Reference Manual describes the syntax and semantics
+	  of the core language in (perhaps too) much detail.
+	  
+	  Python's basic power can be extended with your own modules
+	  written in C or C++. On most systems such modules may be
+	  dynamically loaded. Python is also adaptable as an exten-
+	  sion language for existing applications. See the internal
+	  documentation for hints.
+	  
+	  This package provides Python version 3.2.x.
+
+	  http://www.python.org/
+
+
 config BR2_PKGSRC_PACKAGE_LANG_RACKET
-	bool "racket-5.2"
+	bool "racket-5.3nb4"
 	help
 	  Scheme-based dialect of Lisp
 
@@ -2549,7 +2659,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RACKET
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RACKET_TEXTUAL
-	bool "racket-textual-5.2"
+	bool "racket-textual-5.3nb1"
 	help
 	  Scheme-based dialect of Lisp
 
@@ -2614,7 +2724,7 @@ config BR2_PKGSRC_PACKAGE_LANG_REXX_REGINA
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RUBY
-	bool "ruby-1.9.2pl290nb1"
+	bool "ruby-1.9.3p286nb1"
 	help
 	  Wrapper package for Ruby programming language
 
@@ -2642,7 +2752,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY_DOC_STDLIB
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RUBY18
-	bool "ruby18-1.8.7.357nb1"
+	bool "ruby18-1.8.7.370"
 	help
 	  Ruby programming language 1.8.7 meta package
 
@@ -2657,7 +2767,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY18
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RUBY18_BASE
-	bool "ruby18-base-1.8.7.357"
+	bool "ruby18-base-1.8.7.370nb2"
 	help
 	  Ruby 1.8 based release minimum package
 
@@ -2684,51 +2794,8 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY18_BASE
 	  http://www.ruby-lang.org/en/
 
 
-config BR2_PKGSRC_PACKAGE_LANG_RUBY19
-	bool "ruby19-1.9.2pl290nb2"
-	help
-	  Ruby programming language 1.9.2 meta package
-
-	  This a meta package including Ruby 1.9.2 full release.
-	  
-	  It includes ruby19-base, ruby19-gdbm, ruby19-curses, ruby19-fiddle,
-	  ruby19-readline, ruby19-psych and ruby19-tk package.
-	  
-	  No package should depend on this package directly.
-
-	  http://www.ruby-lang.org/en/
-
-
-config BR2_PKGSRC_PACKAGE_LANG_RUBY19_BASE
-	bool "ruby19-base-1.9.2pl290nb5"
-	help
-	  Ruby  1.9.2 release minimum package
-
-	  Ruby is the interpreted scripting language for quick and
-	  easy object-oriented programming.  It has many features to
-	  process text files and to do system management tasks (as in
-	  Perl).  It is simple, straight-forward, and extensible.
-	  
-	  Features of Ruby are shown below.
-	  
-	  + Simple Syntax
-	  + *Normal* Object-Oriented features (ex. class, method calls)
-	  + *Advanced* Object-Oriented features (ex. Mix-in, Singleton-method)
-	  + Operator Overloading
-	  + Exception Handling
-	  + Iterators and Closures
-	  + Garbage Collection
-	  + Dynamic Loading of Object files (on some architecture)
-	  + Highly Portable (works on many UNIX machines, and on DOS,
-	  Windows, Mac, BeOS etc.)
-	  
-	  This package is Ruby 1.9.2 release minimum base package.
-
-	  http://www.ruby-lang.org/en/
-
-
 config BR2_PKGSRC_PACKAGE_LANG_RUBY193
-	bool "ruby193-1.9.3p0"
+	bool "ruby193-1.9.3p286"
 	help
 	  Ruby programming language 1.9.3 meta package
 
@@ -2743,7 +2810,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY193
 
 
 config BR2_PKGSRC_PACKAGE_LANG_RUBY193_BASE
-	bool "ruby193-base-1.9.3p0nb2"
+	bool "ruby193-base-1.9.3p286"
 	help
 	  Ruby 1.9.3 release minimum base package
 
@@ -2770,8 +2837,44 @@ config BR2_PKGSRC_PACKAGE_LANG_RUBY193_BASE
 	  http://www.ruby-lang.org/en/
 
 
+config BR2_PKGSRC_PACKAGE_LANG_RUBY_COFFEE_SCRIPT
+	bool "ruby193-coffee-script-2.2.0"
+	help
+	  Ruby CoffeeScript Compiler
+
+	  Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler.
+
+	  http://github.com/josh/ruby-coffee-script/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY_COFFEE_SCRIPT_SOURCE
+	bool "ruby193-coffee-script-source-1.3.3"
+	help
+	  Little language that compiles into JavaScript
+
+	  CoffeeScript is a little language that compiles into JavaScript.
+	  Underneath all of those embarrassing braces and semicolons,
+	  
+	  JavaScript has always had a gorgeous object model at its heart.
+	  
+	  CoffeeScript is an attempt to expose the good parts of JavaScript
+	  in a simple way.
+
+	  http://jashkenas.github.com/coffee-script/
+
+
+config BR2_PKGSRC_PACKAGE_LANG_RUBY_EXECJS
+	bool "ruby193-execjs-1.4.0"
+	help
+	  Run JavaScript code from Ruby
+
+	  ExecJS lets you run JavaScript code from Ruby.
+
+	  https://github.com/sstephenson/execjs
+
+
 config BR2_PKGSRC_PACKAGE_LANG_RUNAWK
-	bool "runawk-1.4.0"
+	bool "runawk-1.4.3"
 	help
 	  AWK wrapper that provides support for modules
 
@@ -2783,7 +2886,7 @@ config BR2_PKGSRC_PACKAGE_LANG_RUNAWK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SABLEVM
-	bool "sablevm-1.13nb4"
+	bool "sablevm-1.13nb5"
 	help
 	  SableVM free Java virtual machine
 
@@ -2819,7 +2922,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SABLEVM_CLASSPATH
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SABLEVM_CLASSPATH_GUI
-	bool "sablevm-classpath-gui-1.13nb9"
+	bool "sablevm-classpath-gui-1.13nb14"
 	help
 	  
 
@@ -2835,7 +2938,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SABLEVM_CLASSPATH_GUI
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SATHER
-	bool "sather-1.2.3"
+	bool "sather-1.2.3nb1"
 	help
 	  Compiler for the Sather object oriented programming language
 
@@ -2861,7 +2964,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SATHER
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SBCL
-	bool "sbcl-1.0.54"
+	bool "sbcl-1.0.58"
 	help
 	  SBCL, a Common Lisp implementation
 
@@ -2874,7 +2977,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SBCL
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SCALA
-	bool "scala-2.9.1"
+	bool "scala-2.9.2"
 	help
 	  Scala is a multi-paradigm programming language
 
@@ -2912,7 +3015,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SCHEME48
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SCM
-	bool "scm-5.5.3nb1"
+	bool "scm-5.5.3nb2"
 	help
 	  Portable scheme interpreter
 
@@ -2999,7 +3102,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SIOD
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SMALLTALK
-	bool "smalltalk-3.2.4nb2"
+	bool "smalltalk-3.2.4nb9"
 	help
 	  GNU Smalltalk: A smalltalk-80 implementation
 
@@ -3012,7 +3115,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SMALLTALK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SMLNJ
-	bool "smlnj-110.72"
+	bool "smlnj-110.73"
 	help
 	  Popular functional language from Bell Labs
 
@@ -3058,7 +3161,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SNOBOL
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SPIDERMONKEY
-	bool "spidermonkey-1.8.0rc1nb2"
+	bool "spidermonkey-1.8.0rc1nb3"
 	help
 	  Standalone JavaScript implementation in C
 
@@ -3069,7 +3172,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SPIDERMONKEY
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SPL
-	bool "spl-1.0pre3nb1"
+	bool "spl-1.0pre3nb4"
 	help
 	  The SPL Programming Language
 
@@ -3126,7 +3229,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SQUEAK
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SQUEAK_VM
-	bool "squeak-vm-3.11.3.2135nb6"
+	bool "squeak-vm-3.11.3.2135nb12"
 	help
 	  Full Smalltalk 80 with portability to UN*X, Mac, and Windows
 
@@ -3212,7 +3315,7 @@ config BR2_PKGSRC_PACKAGE_LANG_STALIN
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SUN_JDK6
-	bool "sun-jdk6-6.0.29"
+	bool "sun-jdk6-6.0.35"
 	help
 	  
 
@@ -3222,7 +3325,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SUN_JDK6
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SUN_JRE6
-	bool "sun-jre6-6.0.29nb1"
+	bool "sun-jre6-6.0.35"
 	help
 	  
 
@@ -3250,7 +3353,7 @@ config BR2_PKGSRC_PACKAGE_LANG_SWI_PROLOG
 
 
 config BR2_PKGSRC_PACKAGE_LANG_SWI_PROLOG_LITE
-	bool "swi-prolog-lite-5.11.18"
+	bool "swi-prolog-lite-5.11.18nb1"
 	help
 	  ISO/Edinburgh-style Prolog compiler
 
@@ -3280,24 +3383,31 @@ config BR2_PKGSRC_PACKAGE_LANG_SWI_PROLOG_PACKAGES
 
 
 config BR2_PKGSRC_PACKAGE_LANG_TCL
-	bool "tcl-8.4.18nb1"
+	bool "tcl-8.5.12nb1"
 	help
-	  Ousterhout's Tool Command Language, a scripting language
+	  Tool Command Language, a dynamic language
 
-	  This package contains Tcl, John Osterhout's Tool Command Language, an
-	  exceedingly simple language great for general scripting and for
-	  embedding in other programs.
+	  Tcl (Tool Command Language) is a very powerful but easy to learn dynamic
+	  programming language, suitable for a very wide range of uses, including
+	  web and desktop applications, networking, administration, testing and
+	  many more. Open source and business-friendly, Tcl is a mature yet
+	  evolving language that is truly cross platform, easily deployed and
+	  highly extensible.
 	  
-	  The best way to get started with Tcl is to read ``Tcl and the Tk
-	  Toolkit'' by John K. Ousterhout, Addison-Wesley, ISBN 0-201-63337-X
-	  or ``Practical Programming in Tcl and Tk'' by Brent B. Welch,
-	  Prentice Hall PTR, ISBN 0-13-616830-X.
+	  Tcl/Tk resources:
+	  Newsgroup: comp.lang.tcl
+	  Wiki: http://wiki.tcl.tk
+	  Books:
+	  * Practical Programming in Tcl and Tk, 4th Edition
+	  ISBN: 0-13-038560-3
+	  * Tcl and the Tk Toolkit, 2nd Edition
+	  ISBN: 978-0-321-33633-0
 
 	  http://www.tcl.tk/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_TCL_EXPECT
-	bool "tcl-expect-5.43.0nb1"
+	bool "tcl-expect-5.45.0"
 	help
 	  Extensions to Tcl to support scripting of interactive programs
 
@@ -3307,11 +3417,11 @@ config BR2_PKGSRC_PACKAGE_LANG_TCL_EXPECT
 	  It uses pseudo-tty's to control the child processes, so it is not affected
 	  by programs that refuse to read from stdin or pipes. (eg: passwd(1) etc).
 
-	  http://expect.nist.gov/
+	  http://expect.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_TCL_ITCL
-	bool "tcl-itcl-3.2.1nb1"
+	bool "tcl-itcl-3.2.1nb2"
 	help
 	  [incr Tcl] object-oriented extension to Tcl/Tk
 
@@ -3328,7 +3438,7 @@ config BR2_PKGSRC_PACKAGE_LANG_TCL_ITCL
 
 
 config BR2_PKGSRC_PACKAGE_LANG_TCL_ITCL_CURRENT
-	bool "tcl-itcl-current-20040920nb4"
+	bool "tcl-itcl-current-20040920nb5"
 	help
 	  [incr Tcl] object-oriented extension to Tcl/Tk.  CVS snapshot
 
@@ -3347,7 +3457,7 @@ config BR2_PKGSRC_PACKAGE_LANG_TCL_ITCL_CURRENT
 
 
 config BR2_PKGSRC_PACKAGE_LANG_TCL_OTCL
-	bool "tcl-otcl-1.13"
+	bool "tcl-otcl-1.14"
 	help
 	  MIT Object Tcl
 
@@ -3366,21 +3476,6 @@ config BR2_PKGSRC_PACKAGE_LANG_TCL_OTCL
 	  hacks)
 
 	  http://otcl-tclcl.sourceforge.net/otcl/
-
-
-config BR2_PKGSRC_PACKAGE_LANG_TCL_TCLX
-	bool "tcl-tclX-8.3.5nb3"
-	help
-	  
-
-	  Extended Tcl (TclX), is a set of extensions to Tcl, the Tool Command
-	  Language invented by Dr. John Ousterhout.  Tcl is a powerful, yet simple
-	  embeddable programming language.  Extended Tcl is oriented towards system
-	  programming tasks and large application development.  TclX provides additional
-	  interfaces to the operating system, and adds many new programming constructs,
-	  text manipulation tools, and debugging tools.
-
-	  http://tclx.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_TINYSCHEME
@@ -3404,38 +3499,6 @@ config BR2_PKGSRC_PACKAGE_LANG_TINYSCHEME
 	  is easy to comprehend, get to grips with, and use.
 
 	  http://tinyscheme.sourceforge.net/home.html
-
-
-config BR2_PKGSRC_PACKAGE_LANG_TK_EXPECT
-	bool "tk-expect-5.43.0nb1"
-	help
-	  Tcl interpreter with both the expect and tk extensions built in
-
-	  Expect is a program that performs programmed dialogue with other
-	  interactive programs.  It is briefly described by its man page, expect(1).
-	  
-	  It uses pseudo-tty's to control the child processes, so it is not affected
-	  by programs that refuse to read from stdin or pipes. (eg: passwd(1) etc).
-	  
-	  This package installs expectk, a version of the wish(1) interpreter for
-	  tcl/tk with the expect extensions always present.
-
-	  http://expect.nist.gov/
-
-
-config BR2_PKGSRC_PACKAGE_LANG_TK_TCLX
-	bool "tk-tclX-8.3.5nb3"
-	help
-	  
-
-	  Extended Tcl (TclX), is a set of extensions to Tcl, the Tool Command
-	  Language invented by Dr. John Ousterhout.  Tcl is a powerful, yet simple
-	  embeddable programming language.  Extended Tcl is oriented towards system
-	  programming tasks and large application development.  TclX provides additional
-	  interfaces to the operating system, and adds many new programming constructs,
-	  text manipulation tools, and debugging tools.
-
-	  http://tclx.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_LANG_TWELF
@@ -3481,7 +3544,7 @@ config BR2_PKGSRC_PACKAGE_LANG_UCBLOGO
 
 
 config BR2_PKGSRC_PACKAGE_LANG_UMB_SCHEME
-	bool "umb-scheme-3.2"
+	bool "umb-scheme-3.2nb1"
 	help
 	  UMB Scheme interpreter
 
@@ -3516,11 +3579,11 @@ config BR2_PKGSRC_PACKAGE_LANG_UTILISP
 
 
 config BR2_PKGSRC_PACKAGE_LANG_VALA
-	bool "vala-0.12.1"
+	bool "vala-0.12.1nb4"
 	help
-	  Compiler for the GObject type system
+	  
 
-	  Vala is a new programming language that aims to bring modern programming
+	  Vala is a programming language that aims to bring modern programming
 	  language features to GNOME developers without imposing any additional
 	  runtime requirements and without using a different ABI compared to
 	  applications and libraries written in C.
@@ -3528,8 +3591,49 @@ config BR2_PKGSRC_PACKAGE_LANG_VALA
 	  valac, the Vala compiler, is a self-hosting compiler that translates
 	  Vala source code into C source and header files. It uses the GObject
 	  type system to create classes and interfaces declared in the Vala source
-	  code. It's also planned to generate GIDL files when gobject-
-	  introspection is ready.
+	  code.
+	  
+	  This package contains the old 0.12 release.
+
+	  http://live.gnome.org/Vala
+
+
+config BR2_PKGSRC_PACKAGE_LANG_VALA014
+	bool "vala014-0.14.2nb3"
+	help
+	  
+
+	  Vala is a programming language that aims to bring modern programming
+	  language features to GNOME developers without imposing any additional
+	  runtime requirements and without using a different ABI compared to
+	  applications and libraries written in C.
+	  
+	  valac, the Vala compiler, is a self-hosting compiler that translates
+	  Vala source code into C source and header files. It uses the GObject
+	  type system to create classes and interfaces declared in the Vala source
+	  code.
+	  
+	  This package contains the 0.14 release.
+
+	  http://live.gnome.org/Vala
+
+
+config BR2_PKGSRC_PACKAGE_LANG_VALA016
+	bool "vala016-0.16.1nb1"
+	help
+	  Compiler for the GObject type system
+
+	  Vala is a programming language that aims to bring modern programming
+	  language features to GNOME developers without imposing any additional
+	  runtime requirements and without using a different ABI compared to
+	  applications and libraries written in C.
+	  
+	  valac, the Vala compiler, is a self-hosting compiler that translates
+	  Vala source code into C source and header files. It uses the GObject
+	  type system to create classes and interfaces declared in the Vala source
+	  code.
+	  
+	  This package contains the 0.16 release.
 
 	  http://live.gnome.org/Vala
 
@@ -3589,7 +3693,7 @@ config BR2_PKGSRC_PACKAGE_LANG_WSBASIC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_YABASIC
-	bool "yabasic-2.722nb3"
+	bool "yabasic-2.763"
 	help
 	  Yet another Basic for Unix and Windows
 
@@ -3602,7 +3706,7 @@ config BR2_PKGSRC_PACKAGE_LANG_YABASIC
 
 
 config BR2_PKGSRC_PACKAGE_LANG_YAP
-	bool "yap-6.2.1"
+	bool "yap-6.2.2"
 	help
 	  ISO-compliant Prolog
 

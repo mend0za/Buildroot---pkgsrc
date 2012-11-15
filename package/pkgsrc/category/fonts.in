@@ -15,6 +15,56 @@ config BR2_PKGSRC_PACKAGE_FONTS_ANONYMOUSPRO
 	  http://www.ms-studio.com/FontSales/anonymouspro.html
 
 
+config BR2_PKGSRC_PACKAGE_FONTS_EB_GARAMOND
+	bool "EB-Garamond-0.012"
+	help
+	  Egenolff-Berner Garamond font
+
+	  Garamont's fonts have set a milestone, on which font designers have
+	  been recurring ever since. EB Garamond is an open source project
+	  to create a revival of Claude Garamont's famous humanist typeface
+	  from the mid-16th century. Its design reproduces the original design
+	  by Claude Garamont: The source for the letterforms is a scan of a
+	  specimen known as the "Berner specimen", which, composed in 1592
+	  by Conrad Berner, son-in-law of Christian Egenolff and his successor
+	  at the Egenolff print office, shows Garamont's roman and Granjon
+	  italic fonts at different sizes. Hence the name of this project:
+	  Egenolff-Berner Garamond.
+	  
+	  The Garamonds are probably the most copied typefaces in the world.
+	  There are indeed lots of excellent Garamond fonts, also such that
+	  try to approach the original in the same way as EB Garamond does.
+	  In the world of free software, however, only few Garamond-inspired
+	  fonts exist, and as far as I know, none with the scope of EB
+	  Garamond. I know that competition is hard in this field, and these
+	  fonts won't be able to stand up to their commercial counterparts
+	  for quite some time. Nevertheless, it's time for the opensource
+	  community to have a classical Garamond and I promise, I'll try hard
+	  to learn and give my best.
+
+	  http://www.georgduffner.at/ebgaramond/index.html
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_SYMBOLA_TTF
+	bool "Symbola-ttf-702"
+	help
+	  Unicode font for symbols
+
+	  Many symbolic characters from Unicode.
+
+	  http://users.teilar.gr/~g1951d/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEXTFONTS_TTF
+	bool "TextFonts-ttf-20111217"
+	help
+	  Various Unicode fonts by George Duros
+
+	  Many uncommon language glyphs from Unicode.
+
+	  http://users.teilar.gr/~g1951d/
+
+
 config BR2_PKGSRC_PACKAGE_FONTS_XFT2
 	bool "Xft2-2.1.7nb4"
 	help
@@ -276,7 +326,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_BAKOMA_FONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_BDFTOPCF
-	bool "bdftopcf-1.0.2nb1"
+	bool "bdftopcf-1.0.3"
 	help
 	  BDF to PCF font converter for X11
 
@@ -317,6 +367,20 @@ config BR2_PKGSRC_PACKAGE_FONTS_CHKFONTPATH
 	  it may be useful as a stand-alone utility in some instances.
 
 	  
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_CROSCOREFONTS
+	bool "croscorefonts-1.21.0"
+	help
+	  Google Croscore fonts
+
+	  Google Croscore fonts package contains a collections of fonts that
+	  offers improved on-screen readability characteristics and the
+	  pan-European WGL character set and solves the needs of developers
+	  looking for width-compatible fonts to address document portability
+	  across platforms.
+
+	  http://gsdview.appspot.com/chromeos-localmirror/distfiles/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_CYBERBASE_TTF
@@ -532,7 +596,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_EFONT_UNICODE
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_ENCODINGS
-	bool "encodings-1.0.3"
+	bool "encodings-1.0.4"
 	help
 	  X11 Font Index Generator
 
@@ -544,7 +608,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_ENCODINGS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FNTSAMPLE
-	bool "fntsample-3.2nb1"
+	bool "fntsample-3.2nb6"
 	help
 	  Make font samples, similar to Unicode charts, showing Unicode coverage
 
@@ -561,7 +625,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FNTSAMPLE
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_100DPI
-	bool "font-adobe-100dpi-1.0.1"
+	bool "font-adobe-100dpi-1.0.3"
 	help
 	  Standard 100dpi Adobe PCF fonts
 
@@ -578,7 +642,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_100DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_75DPI
-	bool "font-adobe-75dpi-1.0.1"
+	bool "font-adobe-75dpi-1.0.3"
 	help
 	  Standard 75pi Adobe PCF fonts
 
@@ -595,7 +659,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_75DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_100DPI
-	bool "font-adobe-utopia-100dpi-1.0.2"
+	bool "font-adobe-utopia-100dpi-1.0.4"
 	help
 	  100dpi Adobe Utopia PCF fonts
 
@@ -608,7 +672,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_100DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_75DPI
-	bool "font-adobe-utopia-75dpi-1.0.2"
+	bool "font-adobe-utopia-75dpi-1.0.4"
 	help
 	  75dpi Adobe Utopia PCF fonts
 
@@ -621,7 +685,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_75DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_TYPE1
-	bool "font-adobe-utopia-type1-1.0.1"
+	bool "font-adobe-utopia-type1-1.0.4"
 	help
 	  Adobe Utopia Type1 fonts
 
@@ -634,7 +698,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_ADOBE_UTOPIA_TYPE1
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_ALIAS
-	bool "font-alias-1.0.2"
+	bool "font-alias-1.0.3"
 	help
 	  Standard aliases for X11 PCF fonts
 
@@ -647,7 +711,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_ALIAS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_ARABIC_MISC
-	bool "font-arabic-misc-1.0.1"
+	bool "font-arabic-misc-1.0.3"
 	help
 	  Miscellaneous Arabic PCF fonts
 
@@ -660,7 +724,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_ARABIC_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_100DPI
-	bool "font-bh-100dpi-1.0.1"
+	bool "font-bh-100dpi-1.0.3"
 	help
 	  Standard 100dpi Bigelow & Holmes PCF fonts
 
@@ -675,7 +739,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_100DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_75DPI
-	bool "font-bh-75dpi-1.0.1"
+	bool "font-bh-75dpi-1.0.3"
 	help
 	  Standard 75dpi Bigelow & Holmes PCF fonts
 
@@ -690,7 +754,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_75DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_LUCIDATYPEWRITER_100DPI
-	bool "font-bh-lucidatypewriter-100dpi-1.0.1"
+	bool "font-bh-lucidatypewriter-100dpi-1.0.3"
 	help
 	  100dpi Bigelow & Holmes Lucida Typewriter PCF fonts
 
@@ -704,7 +768,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_LUCIDATYPEWRITER_100DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_LUCIDATYPEWRITER_75DPI
-	bool "font-bh-lucidatypewriter-75dpi-1.0.1"
+	bool "font-bh-lucidatypewriter-75dpi-1.0.3"
 	help
 	  75dpi Bigelow & Holmes Lucida Typewriter PCF fonts
 
@@ -718,7 +782,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_LUCIDATYPEWRITER_75DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_TTF
-	bool "font-bh-ttf-1.0.1"
+	bool "font-bh-ttf-1.0.3nb1"
 	help
 	  Standard Bigelow & Holmes TrueType fonts
 
@@ -733,7 +797,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_TTF
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_TYPE1
-	bool "font-bh-type1-1.0.1"
+	bool "font-bh-type1-1.0.3"
 	help
 	  Standard Bigelow & Holmes TrueType fonts
 
@@ -748,7 +812,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BH_TYPE1
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_100DPI
-	bool "font-bitstream-100dpi-1.0.1"
+	bool "font-bitstream-100dpi-1.0.3"
 	help
 	  Standard 100dpi Bitstream PCF fonts
 
@@ -762,7 +826,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_100DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_75DPI
-	bool "font-bitstream-75dpi-1.0.1"
+	bool "font-bitstream-75dpi-1.0.3"
 	help
 	  Standard 75dpi Bitstream PCF fonts
 
@@ -776,7 +840,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_75DPI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_TYPE1
-	bool "font-bitstream-type1-1.0.1"
+	bool "font-bitstream-type1-1.0.3"
 	help
 	  Bitstream Charter and Courier Type 1 outline fonts
 
@@ -787,7 +851,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_BITSTREAM_TYPE1
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_CRONYX_CYRILLIC
-	bool "font-cronyx-cyrillic-1.0.1"
+	bool "font-cronyx-cyrillic-1.0.3"
 	help
 	  Cronyx Cyrillic PCF fonts
 
@@ -803,7 +867,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_CRONYX_CYRILLIC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_CURSOR_MISC
-	bool "font-cursor-misc-1.0.1"
+	bool "font-cursor-misc-1.0.3"
 	help
 	  Standard X11 cursors in PCF format
 
@@ -816,7 +880,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_CURSOR_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_DAEWOO_MISC
-	bool "font-daewoo-misc-1.0.1"
+	bool "font-daewoo-misc-1.0.3"
 	help
 	  Daewoo Gothic PCF fonts
 
@@ -828,7 +892,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_DAEWOO_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_DEC_MISC
-	bool "font-dec-misc-1.0.1"
+	bool "font-dec-misc-1.0.3"
 	help
 	  DEC cursor and session PCF fonts
 
@@ -842,7 +906,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_DEC_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_IBM_TYPE1
-	bool "font-ibm-type1-1.0.1"
+	bool "font-ibm-type1-1.0.3"
 	help
 	  IBM Courier Type1 fonts
 
@@ -854,7 +918,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_IBM_TYPE1
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_ISAS_MISC
-	bool "font-isas-misc-1.0.1"
+	bool "font-isas-misc-1.0.3"
 	help
 	  72dpi PCF versions of the Chinese Song Ti fonts
 
@@ -865,7 +929,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_ISAS_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_JIS_MISC
-	bool "font-jis-misc-1.0.1"
+	bool "font-jis-misc-1.0.3"
 	help
 	  78dpi PCF versions of the Japanese fixed fonts
 
@@ -876,7 +940,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_JIS_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_MICRO_MISC
-	bool "font-micro-misc-1.0.1"
+	bool "font-micro-misc-1.0.3"
 	help
 	  Miscellaneous Micro PCF fonts
 
@@ -888,7 +952,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_MICRO_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_CYRILLIC
-	bool "font-misc-cyrillic-1.0.1"
+	bool "font-misc-cyrillic-1.0.3"
 	help
 	  Miscellaneous Cyrillic "fixed" PCF fonts
 
@@ -900,7 +964,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_CYRILLIC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_ETHIOPIC
-	bool "font-misc-ethiopic-1.0.1"
+	bool "font-misc-ethiopic-1.0.3"
 	help
 	  Miscellaneous Ethiopic OTF fonts
 
@@ -912,7 +976,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_ETHIOPIC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_MELTHO
-	bool "font-misc-meltho-1.0.1"
+	bool "font-misc-meltho-1.0.3"
 	help
 	  Miscellaneous Meltho OTF fonts
 
@@ -924,7 +988,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_MELTHO
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_MISC
-	bool "font-misc-misc-1.0.0"
+	bool "font-misc-misc-1.1.2"
 	help
 	  Standard X11 "fixed" PCF font
 
@@ -935,7 +999,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_MISC_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_MUTT_MISC
-	bool "font-mutt-misc-1.0.1"
+	bool "font-mutt-misc-1.0.3"
 	help
 	  100dpi PCF versions of the ClearlyU fonts
 
@@ -959,7 +1023,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_SCHUMACHER_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_SCREEN_CYRILLIC
-	bool "font-screen-cyrillic-1.0.2"
+	bool "font-screen-cyrillic-1.0.4"
 	help
 	  Screen Cyrillic PCF fonts
 
@@ -971,7 +1035,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_SCREEN_CYRILLIC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_SONY_MISC
-	bool "font-sony-misc-1.0.1"
+	bool "font-sony-misc-1.0.3"
 	help
 	  Standard X11 "sony" PCF fonts
 
@@ -982,7 +1046,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_SONY_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_SUN_MISC
-	bool "font-sun-misc-1.0.1"
+	bool "font-sun-misc-1.0.3"
 	help
 	  Sun Open Look PCF fonts
 
@@ -994,7 +1058,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_SUN_MISC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_UTIL
-	bool "font-util-1.1.1"
+	bool "font-util-1.3.0"
 	help
 	  Tools for truncating and subseting of ISO10646-1 BDF fonts
 
@@ -1008,7 +1072,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_UTIL
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_WINITZKI_CYRILLIC
-	bool "font-winitzki-cyrillic-1.0.1"
+	bool "font-winitzki-cyrillic-1.0.3"
 	help
 	  Winitzki Cyrillic PCF fonts
 
@@ -1020,7 +1084,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_WINITZKI_CYRILLIC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONT_XFREE86_TYPE1
-	bool "font-xfree86-type1-1.0.2"
+	bool "font-xfree86-type1-1.0.4"
 	help
 	  XFree86 cursor Type1 fonts
 
@@ -1032,7 +1096,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONT_XFREE86_TYPE1
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONTCONFIG
-	bool "fontconfig-2.8.0nb3"
+	bool "fontconfig-2.10.1"
 	help
 	  Library for configuring and customizing font access
 
@@ -1065,7 +1129,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FONTCONFIG
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_FONTFORGE
-	bool "fontforge-20110222nb1"
+	bool "fontforge-20110222nb7"
 	help
 	  Postscript font editor
 
@@ -1106,7 +1170,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_FREEFONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_GBDFED
-	bool "gbdfed-1.5nb7"
+	bool "gbdfed-1.5nb12"
 	help
 	  GTK-based BDF font editor
 
@@ -1264,7 +1328,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_GSFTOPKK
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_GUCHARMAP
-	bool "gucharmap-2.32.1nb3"
+	bool "gucharmap-2.32.1nb9"
 	help
 	  Unicode/ISO10646 character map and font viewer
 
@@ -1648,7 +1712,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_KONATU_TTF
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_XG
-	bool "libXgFonts-1.0nb2"
+	bool "libXgFonts-1.0nb3"
 	help
 	  These are the UNICODE fonts for use with 9term and sam
 
@@ -1690,7 +1754,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_LIBERATION_TTF
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_LIBFONTENC
-	bool "libfontenc-1.0.5"
+	bool "libfontenc-1.1.1"
 	help
 	  The fontenc Library from X.org
 
@@ -1735,7 +1799,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_LOHIT_FONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MFTRACE
-	bool "mftrace-1.2.15nb1"
+	bool "mftrace-1.2.15nb2"
 	help
 	  Scalable Fonts for MetaFont
 
@@ -1759,7 +1823,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_MGLFONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MIGU_TTF
-	bool "migu-ttf-20110610"
+	bool "migu-ttf-20111002"
 	help
 	  
 
@@ -1788,7 +1852,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_MISAKI_FONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MKFONTALIAS
-	bool "mkfontalias-20000521nb3"
+	bool "mkfontalias-20000521nb4"
 	help
 	  Creates a fonts.alias from the fonts.dir for TrueType fonts
 
@@ -1800,7 +1864,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_MKFONTALIAS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MKFONTDIR
-	bool "mkfontdir-1.0.6"
+	bool "mkfontdir-1.0.7"
 	help
 	  X11 Font Index Generator
 
@@ -1813,7 +1877,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_MKFONTDIR
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_MKFONTSCALE
-	bool "mkfontscale-1.0.9nb1"
+	bool "mkfontscale-1.1.0"
 	help
 	  X11 Scalable Font Index Generator
 
@@ -1909,7 +1973,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_MS_TTF
 	help
 	  TrueType fonts from Microsoft
 
-	  This packages includes TrueType fonts from Microsoft with WGL4 (Windows
+	  This package includes TrueType fonts from Microsoft with WGL4 (Windows
 	  Glyph List 4) charset:
 	  
 	  - Andale Mono
@@ -1985,7 +2049,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_P5_FONT_AFM
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_P5_FONT_TTF
-	bool "p5-Font-TTF-0.48"
+	bool "p5-Font-TTF-1.02"
 	help
 	  Perl module for TrueType font hacking
 
@@ -2074,7 +2138,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_PS2PKM
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_PY_TTFQUERY
-	bool "py26-TTFQuery-0.2.6nb1"
+	bool "py27-TTFQuery-1.0.5"
 	help
 	  Query TTF font files for metadata and font outlines
 
@@ -2086,7 +2150,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_PY_TTFQUERY
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_PY_FONTTOOLS
-	bool "py26-fonttools-2.3"
+	bool "py27-fonttools-2.3"
 	help
 	  Library for manipulating fonts
 
@@ -2101,7 +2165,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_PY_FONTTOOLS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_RICTY_TTF
-	bool "ricty-ttf-3.1.1"
+	bool "ricty-ttf-3.2.0"
 	help
 	  Migu 1M and Inconsolata based TrueType fonts for programming
 
@@ -2130,13 +2194,13 @@ config BR2_PKGSRC_PACKAGE_FONTS_ROBOTO_FONTS
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_RUBY_TTFUNK
-	bool "ruby19-ttfunk-1.0.3"
+	bool "ruby193-ttfunk-1.0.3"
 	help
 	  TrueType Font Metrics Parser
 
 	  TTFunk is a TrueType font parser written in pure ruby.
 
-	  http://www.braintreepaymentsolutions.com/gateway
+	  http://project.ktug.or.kr/ko.TeX/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_SGI_FONTS
@@ -2149,8 +2213,23 @@ config BR2_PKGSRC_PACKAGE_FONTS_SGI_FONTS
 	  http://oss.sgi.com/projects/sgi_propack/
 
 
+config BR2_PKGSRC_PACKAGE_FONTS_SOURCESANS_FONTS
+	bool "sourcesans-fonts-1.033"
+	help
+	  Set of OpenType fonts designed for user interfaces from Adobe
+
+	  The family currently includes six weights, from ExtraLight to Black,
+	  in upright and italic styles. The fonts offer wide language support
+	  for Latin script, including Western and Eastern European languages,
+	  Vietnamese, pinyin Romanization of Chinese, and Navajo.
+	  
+	  This package provides OpenType fonts only.
+
+	  http://sourceforge.net/projects/sourcesans.adobe/
+
+
 config BR2_PKGSRC_PACKAGE_FONTS_T1LIB
-	bool "t1lib-5.1.2nb4"
+	bool "t1lib-5.1.2nb6"
 	help
 	  Library for generating bitmaps from Adobe Type 1 fonts
 
@@ -2197,7 +2276,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TAKAO_FONTS_TTF
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TAMSYN_FONT
-	bool "tamsyn-font-1.6"
+	bool "tamsyn-font-1.9"
 	help
 	  Monospaced programming font
 
@@ -2213,21 +2292,21 @@ config BR2_PKGSRC_PACKAGE_FONTS_TAMSYN_FONT
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TERMINUS_FONT
-	bool "terminus-font-4.28"
+	bool "terminus-font-4.36"
 	help
 	  Clean, fixed-width font
 
-	  Terminus Font is designed for long (8 and more hours per day) work with
-	  computers. Version 4.28 contains 825 characters, covers about 120 language
-	  sets and supports ISO8859-1/2/5/7/9/13/15/16, Paratype-PT154/PT254,
-	  KOI8-R/U/E/F, Esperanto, many IBM, Windows and Macintosh code pages, as
-	  well as the IBM VGA, vt100 and xterm pseudographic characters.
+	  Terminus Font is a clean, fixed width bitmap font, designed for long (8 and
+	  more hours per day) work with computers. Version 4.36 contains 856 characters,
+	  covers about 120 language sets and supports ISO8859-1/2/5/7/9/13/15/16,
+	  Paratype-PT154/PT254, KOI8-R/U/E/F, Esperanto, many IBM, Windows and Macintosh
+	  code pages, as well as the IBM VGA, vt100 and xterm pseudographic characters.
 	  
-	  The sizes present are 6x12, 8x14, 8x16, 10x20, 12x24, 14x28 and 16x32. The
-	  styles are normal and bold (except for 6x12), plus EGA/VGA-bold for 8x14
-	  and 8x16.
+	  The sizes present are 6x12, 8x14, 8x16, 10x18, 10x20, 11x22, 12x24, 14x28
+	  and 16x32. The styles are normal and bold (except for 6x12), plus EGA/VGA-bold
+	  for 8x14 and 8x16.
 
-	  http://www.is-vn.bg/hamster/jimmy-en.html
+	  http://terminus-font.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_ADOBEMAPPING
@@ -2324,6 +2403,59 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_AVANTGAR
 	  The Avantgarde font for TeX.  The font that is actually provided is
 	  URW Gothic (An Avantgarde clone).  An enhanced version is available
 	  with the TEX Gyre Adventor font.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_BBOLD
+	bool "tex-bbold-1.01"
+	help
+	  Sans serif blackboard bold
+
+	  A geometric sans serif blackboard bold font, for use in
+	  mathematics; MetaFont sources are provided, as well as macros
+	  for use with LaTeX. The Sauter font package has MetaFont
+	  parameter source files for building the fonts at more sizes
+	  than you could reasonably imagine. See the blackboard sampler
+	  for a feel for the font's appearance.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_BBOLD_DOC
+	bool "tex-bbold-doc-1.01"
+	help
+	  Documentation for tex-bbold
+
+	  This is documentation for tex-bbold.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_BBOLD_TYPE1
+	bool "tex-bbold-type1-2011nb1"
+	help
+	  Adobe Type 1 format version of the bbold font
+
+	  The files offer an Adobe Type 1 format version of the 5pt, 7pt
+	  and 10pt versions of the bbold fonts. The distribution also
+	  includes a map file, for use when incorporating the fonts into
+	  TeX documents, but no macro sets are provided (the fonts will
+	  not provide the correct results using macros designed for use
+	  with the MetaFont versions of the fonts. The fonts were
+	  produced to be part of the TeX distribution from Y&Y; they were
+	  generously donated to the TeX Users' Group when Y&Y closed its
+	  doors as a business.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_BBOLD_TYPE1_DOC
+	bool "tex-bbold-type1-doc-2011"
+	help
+	  Documentation for tex-bbold-type1
+
+	  This is documentation for tex-bbold-type1.
 
 	  http://www.tug.org/texlive/
 
@@ -2827,7 +2959,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTNAME_DOC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTSPEC
-	bool "tex-fontspec-2.1f"
+	bool "tex-fontspec-2.2b"
 	help
 	  Advanced font selection in XeLaTeX and LuaLaTeX
 
@@ -2840,7 +2972,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTSPEC
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_TEX_FONTSPEC_DOC
-	bool "tex-fontspec-doc-2.1f"
+	bool "tex-fontspec-doc-2.2b"
 	help
 	  Documentation for tex-fontspec
 
@@ -2934,6 +3066,49 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_HELVETIC
 	  Adobe Helvetica fonts
 
 	  This package provides Adobe Helvetica fonts.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_IPAEX
+	bool "tex-ipaex-2011"
+	help
+	  IPA and IPAex fonts for Kana and Kanji
+
+	  The fonts provide fixed-width glyphs for Kana and Kanji
+	  characters, proportional width glyphs for Western characters.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_IPAEX_DOC
+	bool "tex-ipaex-doc-2011"
+	help
+	  Documentation for tex-ipaex
+
+	  This is documentation for tex-ipaex.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_JAPANESE_OTF
+	bool "tex-japanese-otf-1.7b4"
+	help
+	  Advanced font selection for platex and its friends
+
+	  The package contains pLaTeX support files and virtual fonts for
+	  supporting a wide variety of fonts in LaTeX using the pTeX
+	  engine.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_JAPANESE_OTF_DOC
+	bool "tex-japanese-otf-doc-1.7b4"
+	help
+	  Documentation for tex-japanese-otf
+
+	  This is documentation for tex-japanese-otf.
 
 	  http://www.tug.org/texlive/
 
@@ -3048,6 +3223,28 @@ config BR2_PKGSRC_PACKAGE_FONTS_TEX_LM_DOC
 	  Documentation for tex-lm
 
 	  This is documentation for tex-lm.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LUAOTFLOAD
+	bool "tex-luaotfload-1.26"
+	help
+	  OpenType layout system for Plain TeX and LaTeX
+
+	  The package adopts the TrueType/OpenType Font loader code
+	  provided in ConTeXt, and adapts it to use in Plain TeX and
+	  LaTeX.
+
+	  http://www.tug.org/texlive/
+
+
+config BR2_PKGSRC_PACKAGE_FONTS_TEX_LUAOTFLOAD_DOC
+	bool "tex-luaotfload-doc-1.26"
+	help
+	  Documentation for tex-luaotfload
+
+	  This is documentation for tex-luaotfload.
 
 	  http://www.tug.org/texlive/
 
@@ -3715,7 +3912,7 @@ config BR2_PKGSRC_PACKAGE_FONTS_TYPE1INST
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_UMEFONT_TTF
-	bool "umefont-ttf-0.434"
+	bool "umefont-ttf-0.443"
 	help
 	  
 
@@ -3839,14 +4036,14 @@ config BR2_PKGSRC_PACKAGE_FONTS_VFONTCAP_KOCHI
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_VLGOTHIC_TTF
-	bool "vlgothic-ttf-20111122"
+	bool "vlgothic-ttf-20120905"
 	help
 	  Free Japanese TrueType fonts named 'VLGothic'
 
 	  Japanese TrueType font using by Vine Linux.  Based on
 	  Sazanami Gothic and M+ font.
 
-	  http://dicey.org/vlgothic/
+	  http://vlgothic.dicey.org/
 
 
 config BR2_PKGSRC_PACKAGE_FONTS_WATANABE_VFONT

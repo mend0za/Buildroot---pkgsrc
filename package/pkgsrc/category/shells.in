@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_SHELLS_AST_KSH
-	bool "ast-ksh-20060214nb1"
+	bool "ast-ksh-20120229"
 	help
 	  Official AT&T release of KornShell 93
 
@@ -40,7 +40,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_BASH2
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_BASH
-	bool "bash-4.2nb1"
+	bool "bash-4.2nb2"
 	help
 	  The GNU Bourne Again Shell
 
@@ -109,7 +109,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_BASH2_DOC
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_DASH
-	bool "dash-0.5.5.1nb2"
+	bool "dash-0.5.7"
 	help
 	  Debian Almquist shell, POSIX-compliant shell faster than bash
 
@@ -119,7 +119,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_DASH
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_ELTCLSH
-	bool "eltclsh-1.9"
+	bool "eltclsh-1.9nb1"
 	help
 	  Interactive TCL shell with editline facilities
 
@@ -186,7 +186,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_HEIRLOOM_SH
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_LSHELL
-	bool "lshell-0.9.12"
+	bool "lshell-0.9.15.1"
 	help
 	  Lshell restricts user's environment to specified commands
 
@@ -199,7 +199,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_LSHELL
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_MKSH
-	bool "mksh-40c"
+	bool "mksh-40f"
 	help
 	  MirBSD Korn Shell
 
@@ -373,7 +373,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_SCSH
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_STANDALONE_TCSH
-	bool "standalone-tcsh-6.17.00nb1"
+	bool "standalone-tcsh-6.18.01nb2"
 	help
 	  Standalone version of the Extended C-shell
 
@@ -387,7 +387,7 @@ config BR2_PKGSRC_PACKAGE_SHELLS_STANDALONE_TCSH
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_STATIC_AST_KSH
-	bool "static-ast-ksh-20060214nb1"
+	bool "static-ast-ksh-20120229"
 	help
 	  Statically-linked version of the Official AT&T release of KornShell 93
 
@@ -396,16 +396,18 @@ config BR2_PKGSRC_PACKAGE_SHELLS_STATIC_AST_KSH
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_STATIC_TCSH
-	bool "static-tcsh-6.17.00nb1"
+	bool "static-tcsh-6.18.01nb2"
 	help
 	  Statically-linked version of the Extended C-shell with many useful features
 
+	  
+	  This package provides a statically-linked version of tcsh.
 
 	  http://www.tcsh.org/Welcome
 
 
 config BR2_PKGSRC_PACKAGE_SHELLS_TCSH
-	bool "tcsh-6.17.00nb1"
+	bool "tcsh-6.18.01nb2"
 	help
 	  Extended C-shell with many useful features
 
@@ -432,8 +434,8 @@ config BR2_PKGSRC_PACKAGE_SHELLS_XSH
 	  http://xsh.sourceforge.net/
 
 
-config BR2_PKGSRC_PACKAGE_SHELLS_ZSH
-	bool "zsh-4.2.7nb2"
+config BR2_PKGSRC_PACKAGE_SHELLS_ZSH_CURRENT
+	bool "zsh-4.3.17"
 	help
 	  The Z shell
 
@@ -447,8 +449,8 @@ config BR2_PKGSRC_PACKAGE_SHELLS_ZSH
 	  http://zsh.sourceforge.net/
 
 
-config BR2_PKGSRC_PACKAGE_SHELLS_ZSH_CURRENT
-	bool "zsh-4.3.12nb1"
+config BR2_PKGSRC_PACKAGE_SHELLS_ZSH
+	bool "zsh-5.0.0nb2"
 	help
 	  The Z shell
 

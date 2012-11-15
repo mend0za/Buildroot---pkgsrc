@@ -13,7 +13,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_AIM
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_AMSN
-	bool "amsn-0.98.3nb3"
+	bool "amsn-0.98.3nb5"
 	help
 	  Alvaro\'s MSN messenger client
 
@@ -104,7 +104,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_BITCHX
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_BITLBEE
-	bool "bitlbee-3.0.3nb2"
+	bool "bitlbee-3.0.3nb6"
 	help
 	  IRC to other chat networks gateway
 
@@ -118,7 +118,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_BITLBEE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_BLACKENED
-	bool "blackened-1.7.1"
+	bool "blackened-1.7.1nb1"
 	help
 	  The Blackened IRC client
 
@@ -188,25 +188,8 @@ config BR2_PKGSRC_PACKAGE_CHAT_BSFLITE
 	  http://bsflite.sourceforge.net/
 
 
-config BR2_PKGSRC_PACKAGE_CHAT_CENTERICQ
-	bool "centericq-4.21.0nb8"
-	help
-	  Instant Messenger interface supporting many protocols
-
-	  Text mode menu- and window-driven IM interface that supports the
-	  ICQ2000, Yahoo!, AIM, IRC, MSN, Gadu-Gadu and Jabber protocols. It
-	  allows you to send, receive, and forward messages, URLs, SMSes
-	  (both through the ICQ server and e-mail gateways supported by
-	  Mirabilis), contacts, and email express messages. It also lets you
-	  set your own and fetch others' away messages, and define external
-	  handlers for incoming events. Apart from IM it supports LiveJournal
-	  management and receiving RSS feeds.
-
-	  http://thekonst.net/eng/software/centericq/info.html
-
-
 config BR2_PKGSRC_PACKAGE_CHAT_CENTERIM
-	bool "centerim-4.22.9nb5"
+	bool "centerim-4.22.9nb6"
 	help
 	  Instant Messenger interface supporting many protocols
 
@@ -252,7 +235,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_CLIMM
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_CTRLPROXY
-	bool "ctrlproxy-3.0.8nb1"
+	bool "ctrlproxy-3.0.8nb4"
 	help
 	  Detachable internet relay chat proxy server
 
@@ -267,7 +250,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_CTRLPROXY
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_DCCSERVER
-	bool "dccserver-0.4"
+	bool "dccserver-0.5"
 	help
 	  Standalone replacement for the mIRC /dccserver command
 
@@ -309,7 +292,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_DIRCPROXY
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_EGGDROP
-	bool "eggdrop-1.6.19nb1"
+	bool "eggdrop-1.6.21nb1"
 	help
 	  IRC robot with TCL scripting and multi-channel ability
 
@@ -329,7 +312,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_EGGDROP
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_EJABBERD
-	bool "ejabberd-2.1.10"
+	bool "ejabberd-2.1.10nb1"
 	help
 	  Free and Open Source distributed fault-tolerant Jabber server
 
@@ -353,8 +336,6 @@ config BR2_PKGSRC_PACKAGE_CHAT_EJABBERD
 	  - Support for JEP-0030 (Service Discovery).
 	  - Support for JEP-0039 (Statistics Gathering).
 	  - Support for xml:lang attribute in many XML elements
-	  
-	  WWW: http://www.ejabberd.im/
 
 	  http://www.ejabberd.im/
 
@@ -371,6 +352,18 @@ config BR2_PKGSRC_PACKAGE_CHAT_EKG
 	  http://ekg.chmurka.net/
 
 
+config BR2_PKGSRC_PACKAGE_CHAT_EMACS_JABBER
+	bool "emacs-jabber-0.8.0"
+	help
+	  Jabber client for Emacs
+
+	  jabber.el is a Jabber client for Emacs. It may seem strange to have a chat
+	  client in an editor, but consider that chatting is, after all, just a special
+	  case of text editing.
+
+	  http://emacs-jabber.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_CHAT_EMECH
 	bool "emech-3.0.2"
 	help
@@ -385,7 +378,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_EMECH
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_EMPATHY
-	bool "empathy-2.34.0nb5"
+	bool "empathy-2.34.0nb18"
 	help
 	  Gnome instant messenger client
 
@@ -416,7 +409,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_EMPATHY
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_EPIC4
-	bool "epic4-2.2nb2"
+	bool "epic4-2.2nb3"
 	help
 	  
 
@@ -442,7 +435,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_EPIC4_DOC
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_FINCH
-	bool "finch-2.10.0nb1"
+	bool "finch-2.10.6nb2"
 	help
 	  Multi-protocol Instant Messaging client console frontend
 
@@ -467,7 +460,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_FISG
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_GAJIM
-	bool "gajim-0.14.1nb4"
+	bool "gajim-0.15nb4"
 	help
 	  Jabber client written in PyGTK
 
@@ -493,7 +486,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_GAJIM
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_GALE
-	bool "gale-0.99fnb5"
+	bool "gale-0.99fnb6"
 	help
 	  Secure instant messaging system
 
@@ -506,7 +499,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_GALE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_GG2
-	bool "gg2-2.3.0nb12"
+	bool "gg2-2.3.0nb18"
 	help
 	  Instant messenger software for Poland; Jabber plugin included
 
@@ -519,7 +512,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_GG2
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_GLOOX
-	bool "gloox-1.0nb1"
+	bool "gloox-1.0nb2"
 	help
 	  Jabber/XMPP client library
 
@@ -532,7 +525,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_GLOOX
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_GNOMEICU
-	bool "gnomeicu-0.99.12nb17"
+	bool "gnomeicu-0.99.12nb29"
 	help
 	  GNOME ICQ client
 
@@ -579,7 +572,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_GOOFEY
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_GOSSIP
-	bool "gossip-0.10.2nb16"
+	bool "gossip-0.10.2nb25"
 	help
 	  GTK2 Jabber Instant Messaging client
 
@@ -613,7 +606,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_GTMESS
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_I2CB
-	bool "i2cb-6.0_ALPHAnb5"
+	bool "i2cb-6.0_ALPHAnb6"
 	help
 	  Next generation Internet Citicen's Band chat client
 
@@ -712,7 +705,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_IIP
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_INSPIRCD
-	bool "inspircd-1.1.23nb2"
+	bool "inspircd-1.1.23nb4"
 	help
 	  Modular C++ IRC Daemon
 
@@ -727,7 +720,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_INSPIRCD
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_INSPIRCD12
-	bool "inspircd-1.2.0nb3"
+	bool "inspircd-1.2.0nb5"
 	help
 	  Modular C++ IRC Daemon
 
@@ -744,7 +737,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_INSPIRCD12
 config BR2_PKGSRC_PACKAGE_CHAT_IRCII
 	bool "ircII-20111115nb3"
 	help
-	  The 'Internet Relay Chat' and 'Internet Citizens Band' Client
+	  'Internet Relay Chat' and 'Internet Citizens Band' Client
 
 	  The ircII program is a full screen, termcap based interface to Internet Relay
 	  Chat. It gives full access to all of the normal IRC functions, plus a variety
@@ -821,7 +814,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_IROFFER
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_IRSSI
-	bool "irssi-0.8.15nb2"
+	bool "irssi-0.8.15nb5"
 	help
 	  Secure and modular IRC client with text mode user interface
 
@@ -835,7 +828,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_IRSSI
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_IRSSI_ICB
-	bool "irssi-icb-0.14nb19"
+	bool "irssi-icb-0.14nb22"
 	help
 	  Irssi plugin to access ICB networks
 
@@ -845,6 +838,30 @@ config BR2_PKGSRC_PACKAGE_CHAT_IRSSI_ICB
 	  use it.
 
 	  http://www.irssi.org/
+
+
+config BR2_PKGSRC_PACKAGE_CHAT_IRSSI_XMPP
+	bool "irssi-xmpp-0.52nb1"
+	help
+	  Irssi plugin to connect to the Jabber network
+
+	  irssi-xmpp is an irssi plugin to connect to the Jabber network.
+	  Its aim is to provide a good integration in this text-based irc client
+	  and a good support of XMPP (the Jabber protocol).
+	  
+	  Its main features are:
+	  * Sending and receiving messages in irssi's query windows
+	  * A roster with contact & resource tracking (contact list)
+	  * Contact management (add, remove, manage subscriptions)
+	  * Tab completion of commands, JIDs and resources
+	  * Many extensions supported (XEP) including Multi-User Chat (MUC)
+	  * Support for multiple accounts
+	  * Unicode support (UTF-8)
+	  * SSL and STARTTLS support
+	  
+	  To deal with the XMPP protocol, it uses of the Loudmouth library.
+
+	  http://cybione.org/~irssi-xmpp/
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_JABBERD
@@ -862,7 +879,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_JABBERD
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_JABBERD2
-	bool "jabberd-2.2.14nb1"
+	bool "jabberd-2.2.17"
 	help
 	  
 
@@ -895,7 +912,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_KADU
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_KMESS
-	bool "kmess-1.4.3nb14"
+	bool "kmess-1.4.3nb20"
 	help
 	  MSN Messenger Client for KDE3
 
@@ -907,7 +924,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_KMESS
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_KONVERSATION_KDE3
-	bool "konversation-1.1nb10"
+	bool "konversation-1.1nb17"
 	help
 	  KDE IRC Client
 
@@ -933,7 +950,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_KONVERSATION_KDE3
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_KONVERSATION
-	bool "konversation-1.3.1nb5"
+	bool "konversation-1.4nb8"
 	help
 	  KDE IRC Client
 
@@ -959,7 +976,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_KONVERSATION
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBFOLKS
-	bool "libfolks-0.4.2nb1"
+	bool "libfolks-0.4.2nb4"
 	help
 	  Library to manage contacts
 
@@ -999,7 +1016,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBMSN
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBOTR
-	bool "libotr-3.2.0nb1"
+	bool "libotr-4.0.0"
 	help
 	  Library for Off-The-Record encrypted messaging
 
@@ -1027,7 +1044,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBOTR
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBPURPLE
-	bool "libpurple-2.10.0nb1"
+	bool "libpurple-2.10.6nb2"
 	help
 	  Multi-protocol Instant Messaging client backend
 
@@ -1043,7 +1060,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBPURPLE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_LIBTELEPATHY
-	bool "libtelepathy-0.3.3nb3"
+	bool "libtelepathy-0.3.3nb8"
 	help
 	  Unified framework for many different kinds of real-time communications
 
@@ -1077,7 +1094,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_LIBTLEN
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_LICQ_CORE
-	bool "licq-core-1.3.5nb1"
+	bool "licq-core-1.3.5nb2"
 	help
 	  ICQ client with plugin support
 
@@ -1113,7 +1130,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_LICQ_GUI_CONSOLE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_LICQ_GUI_QT
-	bool "licq-gui-qt-1.3.5nb6"
+	bool "licq-gui-qt-1.3.5nb7"
 	help
 	  Qt GUI for licq
 
@@ -1140,7 +1157,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_LICQ_GUI_QT
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_LOUDMOUTH
-	bool "loudmouth-1.4.3nb3"
+	bool "loudmouth-1.4.3nb6"
 	help
 	  Lightweight Jabber client library
 
@@ -1152,7 +1169,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_LOUDMOUTH
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_MEANWHILE
-	bool "meanwhile-1.0.2nb1"
+	bool "meanwhile-1.0.2nb5"
 	help
 	  Lotus SameTime compatible chat protocol
 
@@ -1174,7 +1191,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_MEANWHILE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_MSN_PECAN
-	bool "msn-pecan-0.0.18nb9"
+	bool "msn-pecan-0.0.18nb18"
 	help
 	  Alternate MSN protocol plugin for libpurple
 
@@ -1214,7 +1231,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_MSNRE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_MU_CONFERENCE
-	bool "mu-conference-0.8nb1"
+	bool "mu-conference-0.8nb4"
 	help
 	  Implementation of the XEP-0045 Multi-User Chat protocol
 
@@ -1225,7 +1242,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_MU_CONFERENCE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_NAIM
-	bool "naim-0.11.8.3.1"
+	bool "naim-0.11.8.3.2"
 	help
 	  Ncurses-based AIM, ICQ, IRC, and Lily client
 
@@ -1347,7 +1364,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_P5_NET_JABBER
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_P5_POE_COMPONENT_IRC
-	bool "p5-POE-Component-IRC-6.75"
+	bool "p5-POE-Component-IRC-6.78"
 	help
 	  Fully event-driven IRC client module
 
@@ -1372,7 +1389,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_P5_POE_FILTER_IRCD
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN
-	bool "pidgin-2.10.0nb1"
+	bool "pidgin-2.10.6nb2"
 	help
 	  Multi-protocol Instant Messaging client GTK frontend
 
@@ -1385,7 +1402,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_FACEBOOKCHAT
-	bool "pidgin-facebookchat-1.69nb1"
+	bool "pidgin-facebookchat-1.69nb11"
 	help
 	  Plugin for pidgin to support Facebook IM
 
@@ -1400,7 +1417,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_FACEBOOKCHAT
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_ICB
-	bool "pidgin-icb-20070505nb13"
+	bool "pidgin-icb-20070505nb22"
 	help
 	  ICB protocol plugin for the Pidgin instant messenger
 
@@ -1410,7 +1427,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_ICB
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_LATEX
-	bool "pidgin-latex-1.2.1nb12"
+	bool "pidgin-latex-1.2.1nb22"
 	help
 	  Plugin for pidgin to render LaTeX as images
 
@@ -1421,7 +1438,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_LATEX
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_LIBNOTIFY
-	bool "pidgin-libnotify-0.14nb10"
+	bool "pidgin-libnotify-0.14nb19"
 	help
 	  Pidgin plugin that adds popup support
 
@@ -1435,7 +1452,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_LIBNOTIFY
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_OTR
-	bool "pidgin-otr-3.2.0nb12"
+	bool "pidgin-otr-4.0.0nb3"
 	help
 	  
 
@@ -1462,7 +1479,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_OTR
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_SAMETIME
-	bool "pidgin-sametime-2.10.0nb1"
+	bool "pidgin-sametime-2.10.6nb2"
 	help
 	  Lotus Sametime plugin for the Pidgin instant messenger
 
@@ -1472,7 +1489,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_SAMETIME
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PIDGIN_SILC
-	bool "pidgin-silc-2.10.0nb1"
+	bool "pidgin-silc-2.10.6nb2"
 	help
 	  SILC plugin for the Pidgin instant messenger
 
@@ -1512,7 +1529,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PROSODY
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PSI
-	bool "psi-0.14nb3"
+	bool "psi-0.14nb9"
 	help
 	  Psi XMPP/Jabber Client
 
@@ -1545,7 +1562,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PSI
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_PY_XMPPPY
-	bool "py26-xmpppy-0.5.0rc1nb2"
+	bool "py27-xmpppy-0.5.0rc1nb2"
 	help
 	  XMPP (Jabber) library for Python
 
@@ -1559,7 +1576,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_PY_XMPPPY
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_QUIRC
-	bool "quirc-0.9.84nb3"
+	bool "quirc-0.9.84nb4"
 	help
 	  Stable and powerful graphical IRC client
 
@@ -1617,7 +1634,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_ROXIRC
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_RUBY_NET_IRC
-	bool "ruby19-net-irc-0.0.9"
+	bool "ruby193-net-irc-0.0.9"
 	help
 	  Ruby IRC library
 
@@ -1774,7 +1791,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_SMIRK
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_SPECTRUM
-	bool "spectrum-1.4.8nb2"
+	bool "spectrum-1.4.8nb12"
 	help
 	  XMPP transport/gateway based on libpurple
 
@@ -1787,7 +1804,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_SPECTRUM
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_FARSIGHT
-	bool "telepathy-farsight-0.0.16nb3"
+	bool "telepathy-farsight-0.0.16nb11"
 	help
 	  Library for the telepathy part of a voice/video call
 
@@ -1799,7 +1816,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_FARSIGHT
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_GABBLE
-	bool "telepathy-gabble-0.11.10nb2"
+	bool "telepathy-gabble-0.11.10nb8"
 	help
 	  Jabber/XMPP connection manager for Telepathy
 
@@ -1810,7 +1827,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_GABBLE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_GLIB
-	bool "telepathy-glib-0.14.3nb1"
+	bool "telepathy-glib-0.14.3nb7"
 	help
 	  GObject-based C binding for the Telepathy D-Bus API
 
@@ -1825,7 +1842,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_GLIB
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_IDLE
-	bool "telepathy-idle-0.1.8nb1"
+	bool "telepathy-idle-0.1.8nb6"
 	help
 	  Full-featured IRC connection manager for Telepathy
 
@@ -1835,7 +1852,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_IDLE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_LOGGER
-	bool "telepathy-logger-0.2.7nb3"
+	bool "telepathy-logger-0.2.7nb9"
 	help
 	  telepathy logger module
 
@@ -1847,7 +1864,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_LOGGER
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_MISSION_CONTROL
-	bool "telepathy-mission-control-4.67nb9"
+	bool "telepathy-mission-control-4.67nb17"
 	help
 	  Telepathy component providing abstractions for "end-user" applications
 
@@ -1872,7 +1889,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_MISSION_CONTROL
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_TELEPATHY_MISSION_CONTROL5
-	bool "telepathy-mission-control5-5.7.9nb1"
+	bool "telepathy-mission-control5-5.7.9nb6"
 	help
 	  Telepathy component providing abstractions for "end-user" applications
 
@@ -1920,7 +1937,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TIRC
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_TKABBER
-	bool "tkabber-0.11.1"
+	bool "tkabber-0.11.1nb1"
 	help
 	  Free and Open Source TCL/TK jabber client
 
@@ -1985,7 +2002,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_TZC
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_UNREALIRCD
-	bool "unrealircd-3.2.8.1nb1"
+	bool "unrealircd-3.2.9"
 	help
 	  Advanced IRC server with IPv6 and SSL support
 
@@ -2022,7 +2039,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_VICQ
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_WEECHAT
-	bool "weechat-0.3.4nb1"
+	bool "weechat-0.3.8nb1"
 	help
 	  Lightweight and user friendly curses based IRC client
 
@@ -2048,7 +2065,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_XARIC
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_XCHAT
-	bool "xchat-2.8.8nb3"
+	bool "xchat-2.8.8nb9"
 	help
 	  
 
@@ -2059,7 +2076,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_XCHAT
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_PERL
-	bool "xchat-perl-2.8.8nb2"
+	bool "xchat-perl-2.8.8nb5"
 	help
 	  Perl scripting plugin for XChat
 
@@ -2070,7 +2087,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_PERL
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_PYTHON
-	bool "xchat-python-2.8.8nb1"
+	bool "xchat-python-2.8.8nb5"
 	help
 	  Python scripting plugin for XChat
 
@@ -2081,7 +2098,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_PYTHON
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_XCHAT_SYSTRAY_INTEGRATION
-	bool "xchat-systray-integration-2.4.5nb11"
+	bool "xchat-systray-integration-2.4.5nb16"
 	help
 	  Systray icon plugin for XChat
 
@@ -2123,7 +2140,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_ZENICB
 	  ZenICB is an ICB client for Emacs.  It allows the user to waste
 	  unspeakable amounts of time.
 
-	  http://lowreal.rubyforge.org/net-irc/
+	  http://www.cs.cmu.edu/People/dkindred/zephyr/zephyr.html
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_ZENIRC
@@ -2164,7 +2181,7 @@ config BR2_PKGSRC_PACKAGE_CHAT_ZEPHYR_MODE
 
 
 config BR2_PKGSRC_PACKAGE_CHAT_ZIRCON
-	bool "zircon-1.18.245nb1"
+	bool "zircon-1.18.245nb2"
 	help
 	  X11 interface to Internet Relay Chat
 

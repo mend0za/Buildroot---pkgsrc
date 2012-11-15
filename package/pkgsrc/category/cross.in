@@ -50,7 +50,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_AVR_GDB
 
 
 config BR2_PKGSRC_PACKAGE_CROSS_AVR_LIBC
-	bool "avr-libc-1.6.7nb1"
+	bool "avr-libc-1.6.7nb2"
 	help
 	  C and math library for Atmel AVR 8-bit microcontrollers
 
@@ -76,7 +76,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_AVR_LIBC
 
 
 config BR2_PKGSRC_PACKAGE_CROSS_AVRDUDE
-	bool "avrdude-5.10nb2"
+	bool "avrdude-5.11nb1"
 	help
 	  Downloader/uploader for Atmel AVR 8-bit RISC microcontrollers
 
@@ -86,7 +86,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_AVRDUDE
 	  widely used STK500) that attach to the serial port, and, if supported
 	  by the underlying OS, to the parallel port.
 
-	  http://www.bsdhome.com/avrdude/
+	  http://www.nongnu.org/avrdude/
 
 
 config BR2_PKGSRC_PACKAGE_CROSS_BFD_CRUNCHIDE
@@ -166,9 +166,10 @@ config BR2_PKGSRC_PACKAGE_CROSS_H8300_HMS_GCC
 config BR2_PKGSRC_PACKAGE_CROSS_I386_CYGWIN32
 	bool "cross-i386-cygwin32-1.0.0.0nb3"
 	help
-	  Cross-compile environment for Cywin32/i386
+	  Cross-compile environment for Cygwin32/i386
 
-	  This cross-compile environment for PE/COFF Cygwin32/i386.
+	  This package provides the cross-compile environment for PE/COFF
+	  Cygwin32/i386.
 
 	  http://www.NetBSD.org/
 
@@ -214,7 +215,7 @@ config BR2_PKGSRC_PACKAGE_CROSS_DASM
 	  processes output from the Distella Atari ROM disassembler without
 	  modification.
 
-	  http://members.cox.net/rcolbert/dasm.htm
+	  http://dasm-dillon.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_CROSS_DFU_PROGRAMMER

@@ -18,7 +18,7 @@ config BR2_PKGSRC_PACKAGE_X11_9TERM
 
 
 config BR2_PKGSRC_PACKAGE_X11_MOWITZ
-	bool "Mowitz-0.3.1nb1"
+	bool "Mowitz-0.3.1nb2"
 	help
 	  "More widgets" library providing X11 widgets
 
@@ -31,25 +31,8 @@ config BR2_PKGSRC_PACKAGE_X11_MOWITZ
 	  http://siag.nu/mowitz/
 
 
-config BR2_PKGSRC_PACKAGE_X11_XAOS
-	bool "XaoS-3.4nb3"
-	help
-	  Zoomable fractal rendering doodad
-
-	  From the home page:
-	  
-	  XaoS is a fast portable real-time interactive fractal zoomer. It
-	  displays the Mandelbrot set (among other escape time fractals) and
-	  allows you zoom smoothly into the fractal. Various coloring modes
-	  are provided for both the points inside and outside the selected
-	  set. In addition, switching between Julia and Mandelbrot fractal
-	  types and on-the-fly plane switching is provided.
-
-	  http://xaos.sourceforge.net/
-
-
 config BR2_PKGSRC_PACKAGE_X11_XAW_XPM
-	bool "Xaw-Xpm-1.1nb3"
+	bool "Xaw-Xpm-1.1nb4"
 	help
 	  Enhanced 3-D widgets based on the Athena Widget set and Xaw3d
 
@@ -197,7 +180,7 @@ config BR2_PKGSRC_PACKAGE_X11_XRENDER
 
 
 config BR2_PKGSRC_PACKAGE_X11_ALACARTE
-	bool "alacarte-0.13.1nb6"
+	bool "alacarte-0.13.1nb14"
 	help
 	  Menu editor for the GNOME desktop
 
@@ -208,7 +191,7 @@ config BR2_PKGSRC_PACKAGE_X11_ALACARTE
 
 
 config BR2_PKGSRC_PACKAGE_X11_ANTIRIGHT
-	bool "antiright-3.4nb10"
+	bool "antiright-3.4nb15"
 	help
 	  The gtkshell GUI creator, gshterm, and ACE desktop implementation
 
@@ -229,7 +212,7 @@ config BR2_PKGSRC_PACKAGE_X11_ANTIRIGHT
 
 
 config BR2_PKGSRC_PACKAGE_X11_APPLEWMPROTO
-	bool "applewmproto-1.4.1"
+	bool "applewmproto-1.4.2"
 	help
 	  AppleWM extension headers from X.org
 
@@ -240,7 +223,7 @@ config BR2_PKGSRC_PACKAGE_X11_APPLEWMPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_APPRES
-	bool "appres-1.0.2"
+	bool "appres-1.0.3"
 	help
 	  Print resources seen by an application
 
@@ -268,7 +251,7 @@ config BR2_PKGSRC_PACKAGE_X11_ASNAP
 
 
 config BR2_PKGSRC_PACKAGE_X11_ATERM
-	bool "aterm-1.0.0nb9"
+	bool "aterm-1.0.0nb10"
 	help
 	  
 
@@ -285,6 +268,17 @@ config BR2_PKGSRC_PACKAGE_X11_ATERM
 	  http://www.afterstep.org/aterm.php
 
 
+config BR2_PKGSRC_PACKAGE_X11_AVANT_WINDOW_NAVIGATOR
+	bool "avant-window-navigator-0.4.0nb8"
+	help
+	  Dock-like navigation bar
+
+	  Avant Window Navigator (Awn) is a dock-like bar which sits at the bottom of
+	  the screen. It has support for launchers, task lists, and third party applets.
+
+	  https://launchpad.net/awn
+
+
 config BR2_PKGSRC_PACKAGE_X11_BBAPM
 	bool "bbapm-0.0.1nb2"
 	help
@@ -298,7 +292,7 @@ config BR2_PKGSRC_PACKAGE_X11_BBAPM
 
 
 config BR2_PKGSRC_PACKAGE_X11_BEFORELIGHT
-	bool "beforelight-1.0.3nb1"
+	bool "beforelight-1.0.4"
 	help
 	  Simple screen saver
 
@@ -311,7 +305,7 @@ config BR2_PKGSRC_PACKAGE_X11_BEFORELIGHT
 
 
 config BR2_PKGSRC_PACKAGE_X11_BIGREQSPROTO
-	bool "bigreqsproto-1.1.0"
+	bool "bigreqsproto-1.1.2"
 	help
 	  BigReqs extension headers from modular Xorg X11
 
@@ -321,7 +315,7 @@ config BR2_PKGSRC_PACKAGE_X11_BIGREQSPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_BITMAP
-	bool "bitmap-1.0.4"
+	bool "bitmap-1.0.6"
 	help
 	  Bitmap editor and conversion utilities
 
@@ -340,7 +334,7 @@ config BR2_PKGSRC_PACKAGE_X11_BITMAP
 
 
 config BR2_PKGSRC_PACKAGE_X11_BLT
-	bool "blt-2.4znb2"
+	bool "blt-2.4znb3"
 	help
 	  Extension to Tcl/Tk
 
@@ -364,9 +358,9 @@ config BR2_PKGSRC_PACKAGE_X11_BLT
 
 
 config BR2_PKGSRC_PACKAGE_X11_CLISP_GTK2
-	bool "clisp-gtk2-2.49nb5"
+	bool "clisp-gtk2-2.49nb11"
 	help
-	  CLISP GIMP Toolkit v2 (GTK2) module
+	  
 
 	  CLISP GIMP Toolkit v2 (GTK2) module
 
@@ -394,7 +388,7 @@ config BR2_PKGSRC_PACKAGE_X11_CLISP_NEW_CLX
 
 
 config BR2_PKGSRC_PACKAGE_X11_COMPOSITEPROTO
-	bool "compositeproto-0.4.1"
+	bool "compositeproto-0.4.2"
 	help
 	  Composite extension headers from modular X.org
 
@@ -405,7 +399,7 @@ config BR2_PKGSRC_PACKAGE_X11_COMPOSITEPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_DAMAGEPROTO
-	bool "damageproto-1.2.0"
+	bool "damageproto-1.2.1"
 	help
 	  Damage extension headers from modular X.org
 
@@ -427,7 +421,7 @@ config BR2_PKGSRC_PACKAGE_X11_DESKLAUNCH
 
 
 config BR2_PKGSRC_PACKAGE_X11_DESKMENU
-	bool "deskmenu-1.4.2nb7"
+	bool "deskmenu-1.4.2nb12"
 	help
 	  X utility for providing root menus
 
@@ -440,7 +434,7 @@ config BR2_PKGSRC_PACKAGE_X11_DESKMENU
 
 
 config BR2_PKGSRC_PACKAGE_X11_DEVILSPIE
-	bool "devilspie-0.22nb7"
+	bool "devilspie-0.22nb14"
 	help
 	  Window-matching utility to customize window behavior
 
@@ -459,19 +453,18 @@ config BR2_PKGSRC_PACKAGE_X11_DEVILSPIE
 
 
 config BR2_PKGSRC_PACKAGE_X11_DMENU
-	bool "dmenu-4.1.1"
+	bool "dmenu-4.5"
 	help
 	  Dynamic menu for X
 
-	  dynamic menu is a generic menu for X, originally designed for dwm (wm/dwm).
-	  It manages huge amounts (up to 10.000 and more) of user defined menu items
-	  efficiently.
+	  dmenu is a dynamic menu for X, originally designed for dwm (wm/dwm).
+	  It manages large numbers of user-defined menu items efficiently.
 
 	  http://tools.suckless.org/dmenu
 
 
 config BR2_PKGSRC_PACKAGE_X11_DOCKER
-	bool "docker-1.5nb2"
+	bool "docker-1.5nb5"
 	help
 	  WindowMaker dock app which acts as a system tray
 
@@ -490,7 +483,7 @@ config BR2_PKGSRC_PACKAGE_X11_DOCKER
 
 
 config BR2_PKGSRC_PACKAGE_X11_DRI2PROTO
-	bool "dri2proto-2.3"
+	bool "dri2proto-2.8"
 	help
 	  DRI2 extension headers from modular X.org
 
@@ -505,7 +498,7 @@ config BR2_PKGSRC_PACKAGE_X11_DRI2PROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_DRICONF
-	bool "driconf-0.9.1nb8"
+	bool "driconf-0.9.1nb9"
 	help
 	  Configuration applet for DRI drivers
 
@@ -563,7 +556,7 @@ config BR2_PKGSRC_PACKAGE_X11_EDE
 
 
 config BR2_PKGSRC_PACKAGE_X11_EDITRES
-	bool "editres-1.0.4"
+	bool "editres-1.0.5"
 	help
 	  Dynamic resource editor for libXt applications
 
@@ -577,7 +570,7 @@ config BR2_PKGSRC_PACKAGE_X11_EDITRES
 
 
 config BR2_PKGSRC_PACKAGE_X11_EEKBOARD
-	bool "eekboard-0.0.7nb3"
+	bool "eekboard-1.0.5nb4"
 	help
 	  Virtual keyboard for GNOME
 
@@ -612,7 +605,7 @@ config BR2_PKGSRC_PACKAGE_X11_EGTK
 
 
 config BR2_PKGSRC_PACKAGE_X11_ETERM
-	bool "eterm-0.9.5nb5"
+	bool "eterm-0.9.5nb7"
 	help
 	  Enlightened terminal emulator for the X Window System
 
@@ -624,7 +617,7 @@ config BR2_PKGSRC_PACKAGE_X11_ETERM
 
 
 config BR2_PKGSRC_PACKAGE_X11_EVIEEXT
-	bool "evieext-1.1.0"
+	bool "evieext-1.1.1"
 	help
 	  EvIE extension headers
 
@@ -635,7 +628,7 @@ config BR2_PKGSRC_PACKAGE_X11_EVIEEXT
 
 
 config BR2_PKGSRC_PACKAGE_X11_FAST_USER_SWITCH_APPLET
-	bool "fast-user-switch-applet-2.24.0nb10"
+	bool "fast-user-switch-applet-2.24.0nb21"
 	help
 	  Switch between users from the GNOME Panel
 
@@ -654,7 +647,7 @@ config BR2_PKGSRC_PACKAGE_X11_FAST_USER_SWITCH_APPLET
 
 
 config BR2_PKGSRC_PACKAGE_X11_FBDESK
-	bool "fbdesk-1.4.1nb6"
+	bool "fbdesk-1.4.1nb7"
 	help
 	  Application that creates and manage icons on your desktop
 
@@ -674,7 +667,7 @@ config BR2_PKGSRC_PACKAGE_X11_FBDESK
 
 
 config BR2_PKGSRC_PACKAGE_X11_FILERUNNER
-	bool "filerunner-2.5.1nb2"
+	bool "filerunner-2.5.1nb3"
 	help
 	  Filemanager with FTP capabilities. Uses Tcl/Tk
 
@@ -724,7 +717,7 @@ config BR2_PKGSRC_PACKAGE_X11_FLTK
 
 
 config BR2_PKGSRC_PACKAGE_X11_FLTK13
-	bool "fltk-1.3.0nb5"
+	bool "fltk-1.3.0nb7"
 	help
 	  Fast Light Tool Kit for graphical user interfaces
 
@@ -765,7 +758,7 @@ config BR2_PKGSRC_PACKAGE_X11_FONTCACHEPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_FONTSPROTO
-	bool "fontsproto-2.1.0"
+	bool "fontsproto-2.1.2"
 	help
 	  Fonts extension headers from X.org
 
@@ -776,7 +769,7 @@ config BR2_PKGSRC_PACKAGE_X11_FONTSPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_FOX
-	bool "fox-1.6.33nb5"
+	bool "fox-1.6.33nb6"
 	help
 	  Fast and extensive C++ GUI toolkit
 
@@ -809,7 +802,7 @@ config BR2_PKGSRC_PACKAGE_X11_FSPANEL
 
 
 config BR2_PKGSRC_PACKAGE_X11_FTMENU
-	bool "ftmenu-0.3nb7"
+	bool "ftmenu-0.3nb12"
 	help
 	  Fluxbox Tray Menu
 
@@ -843,7 +836,7 @@ config BR2_PKGSRC_PACKAGE_X11_FVWM_WHARF
 
 
 config BR2_PKGSRC_PACKAGE_X11_GDM
-	bool "gdm-2.20.11nb4"
+	bool "gdm-2.20.11nb11"
 	help
 	  Gnome Display Manager - a re-implementation of the xdm program
 
@@ -878,7 +871,7 @@ config BR2_PKGSRC_PACKAGE_X11_GGITERM
 
 
 config BR2_PKGSRC_PACKAGE_X11_GLPROTO
-	bool "glproto-1.4.14"
+	bool "glproto-1.4.16"
 	help
 	  GL extension headers
 
@@ -888,7 +881,7 @@ config BR2_PKGSRC_PACKAGE_X11_GLPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_APPLETS
-	bool "gnome-applets-2.32.1.1nb6"
+	bool "gnome-applets-2.32.1.1nb18"
 	help
 	  GNOME2 panel applets
 
@@ -899,7 +892,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_APPLETS
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_CONTROL_CENTER
-	bool "gnome-control-center-2.32.1nb5"
+	bool "gnome-control-center-2.32.1nb17"
 	help
 	  GNOME2 configuration utility
 
@@ -913,7 +906,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_CONTROL_CENTER
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_DESKTOP
-	bool "gnome-desktop-2.32.1nb3"
+	bool "gnome-desktop-2.32.1nb11"
 	help
 	  Common GNOME2 desktop files and libgnome-desktop library
 
@@ -931,7 +924,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_DESKTOP
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_DESKTOP_SHARP
-	bool "gnome-desktop-sharp-2.26.0nb20"
+	bool "gnome-desktop-sharp-2.26.0nb32"
 	help
 	  C\
 
@@ -940,8 +933,19 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_DESKTOP_SHARP
 	  http://www.mono-project.com/GtkSharp
 
 
+config BR2_PKGSRC_PACKAGE_X11_GNOME_DESKTOP3
+	bool "gnome-desktop3-3.4.2nb3"
+	help
+	  GNOME3 desktop-wide documents and libgnome-desktop library
+
+	  gnome-desktop contains the libgnome-desktop library, the gnome-about
+	  program as well as some desktop-wide documents for GNOME 3.
+
+	  http://www.gnome.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_GNOME_MAG
-	bool "gnome-mag-0.16.1nb6"
+	bool "gnome-mag-0.16.3nb8"
 	help
 	  GNOME screen magnifier
 
@@ -953,7 +957,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_MAG
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_PANEL
-	bool "gnome-panel-2.32.1nb5"
+	bool "gnome-panel-2.32.1nb18"
 	help
 	  GNOME2 panel application
 
@@ -973,7 +977,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_PANEL
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_SCREENSAVER
-	bool "gnome-screensaver-2.30.2nb4"
+	bool "gnome-screensaver-2.30.2nb11"
 	help
 	  Screen saver and locker for the GNOME desktop
 
@@ -1000,7 +1004,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_SCREENSAVER
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_SESSION
-	bool "gnome-session-2.26.2nb11"
+	bool "gnome-session-2.26.2nb23"
 	help
 	  GNOME2 session management utilities
 
@@ -1015,7 +1019,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_SESSION
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_SHARP
-	bool "gnome-sharp-2.24.2nb6"
+	bool "gnome-sharp-2.24.2nb15"
 	help
 	  C\
 
@@ -1025,7 +1029,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_SHARP
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_TERMINAL
-	bool "gnome-terminal-2.32.1nb3"
+	bool "gnome-terminal-2.32.1nb10"
 	help
 	  Xterm like terminal program for GNOME 2
 
@@ -1050,7 +1054,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_TERMINAL
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_THEMES
-	bool "gnome-themes-2.32.1nb3"
+	bool "gnome-themes-2.32.1nb8"
 	help
 	  Collection of themes and icons for GNOME 2
 
@@ -1063,7 +1067,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_THEMES
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOME_THEMES_EXTRAS
-	bool "gnome-themes-extras-2.22.0nb10"
+	bool "gnome-themes-extras-2.22.0nb19"
 	help
 	  Collection of metathemes for the GNOME desktop environment
 
@@ -1073,7 +1077,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNOME_THEMES_EXTRAS
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNOPERNICUS
-	bool "gnopernicus-1.1.1nb16"
+	bool "gnopernicus-1.1.1nb25"
 	help
 	  Collection of accessibility apps for GNOME 2
 
@@ -1094,7 +1098,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNUSTEP_BACK
 
 
 config BR2_PKGSRC_PACKAGE_X11_GNUSTEP_GUI
-	bool "gnustep-gui-0.18.0"
+	bool "gnustep-gui-0.18.0nb2"
 	help
 	  GNUstep AppKit Implementation
 
@@ -1121,7 +1125,7 @@ config BR2_PKGSRC_PACKAGE_X11_GNUSTEP_PREFERENCES
 
 
 config BR2_PKGSRC_PACKAGE_X11_GRANDR_APPLET
-	bool "grandr_applet-0.4nb12"
+	bool "grandr_applet-0.4nb23"
 	help
 	  gnome-panel front end to the xrandr extension
 
@@ -1132,7 +1136,7 @@ config BR2_PKGSRC_PACKAGE_X11_GRANDR_APPLET
 
 
 config BR2_PKGSRC_PACKAGE_X11_GROMIT
-	bool "gromit-20041213nb10"
+	bool "gromit-20041213nb15"
 	help
 	  Text marker tool for the X11 screen
 
@@ -1143,7 +1147,7 @@ config BR2_PKGSRC_PACKAGE_X11_GROMIT
 
 
 config BR2_PKGSRC_PACKAGE_X11_GSELT
-	bool "gselt-1.2nb6"
+	bool "gselt-1.2nb11"
 	help
 	  Display a menu of actions that can be done with an X selection
 
@@ -1155,7 +1159,7 @@ config BR2_PKGSRC_PACKAGE_X11_GSELT
 
 
 config BR2_PKGSRC_PACKAGE_X11_GST_PLUGINS0.10_X11
-	bool "gst-plugins0.10-x11-0.10.35"
+	bool "gst-plugins0.10-x11-0.10.36nb2"
 	help
 	  Open source multimedia framework - x11 plugin
 
@@ -1224,7 +1228,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTK_EXTRA
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK_SHARP
-	bool "gtk-sharp-2.12.10nb7"
+	bool "gtk-sharp-2.12.10nb14"
 	help
 	  C\
 
@@ -1235,7 +1239,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTK_SHARP
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK2
-	bool "gtk2+-2.24.8"
+	bool "gtk2+-2.24.12nb3"
 	help
 	  GIMP Toolkit v2 - libraries for building X11 user interfaces
 
@@ -1253,7 +1257,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTK2
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK2_EXTRA
-	bool "gtk2+extra-2.1.2nb6"
+	bool "gtk2+extra-2.1.2nb11"
 	help
 	  Useful set of GTK+ widgets for creating GUIs
 
@@ -1283,7 +1287,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTK2_EXTRA
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK2_CHTHEME
-	bool "gtk2-chtheme-0.3.1nb10"
+	bool "gtk2-chtheme-0.3.1nb15"
 	help
 	  GTK+2 theme changer with preview
 
@@ -1297,26 +1301,20 @@ config BR2_PKGSRC_PACKAGE_X11_GTK2_CHTHEME
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK2_ENGINES
-	bool "gtk2-engines-2.20.2nb4"
+	bool "gtk2-engines-2.20.2nb9"
 	help
 	  Theme engines for GTK+ version 2
 
-	  This package provides four sample theme engines for GTK version 2:
+	  This package provides sample theme engines for GTK version 2:
+	  Clearlooks, Crux, Industrial, Mist, Redmond95 (looks a bit like
+	  Microsoft Windows95), and ThinIce.
 	  
-	  * Pixmap: A generic engine that renders using pixmaps. One theme
-	  using this theme engine is included.
-	  
-	  * Metal: A fairly complete theme engine that looks like the
-	  Java-Metal look of Swing.
-	  
-	  * Redmond95: A simple theme engine that looks a bit like
-	  Microsoft Windows95.
 
 	  http://www.gnome.org/
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK2_ENGINES_BLUECURVE
-	bool "gtk2-engines-bluecurve-1.0nb13"
+	bool "gtk2-engines-bluecurve-1.0nb18"
 	help
 	  Port of the famous Bluecurve theme for GTK2+
 
@@ -1326,7 +1324,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTK2_ENGINES_BLUECURVE
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK2_ENGINES_MURRINE
-	bool "gtk2-engines-murrine-0.90.3nb6"
+	bool "gtk2-engines-murrine-0.90.3nb11"
 	help
 	  GTK2+ engine featuring a modern glassy look
 
@@ -1338,7 +1336,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTK2_ENGINES_MURRINE
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK2_THEME_SWITCH
-	bool "gtk2-theme-switch-2.0.0rc2nb13"
+	bool "gtk2-theme-switch-2.0.0rc2nb18"
 	help
 	  Allows quick & easy switching of GTK+ 2.x themes
 
@@ -1348,7 +1346,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTK2_THEME_SWITCH
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTK3
-	bool "gtk3+-3.0.12nb2"
+	bool "gtk3+-3.4.4nb3"
 	help
 	  GIMP Toolkit v3 - libraries for building X11 user interfaces
 
@@ -1366,7 +1364,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTK3
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKADA
-	bool "gtkada-2.22nb2"
+	bool "gtkada-2.22nb8"
 	help
 	  Ada graphical toolkit based on Gtk+
 
@@ -1396,7 +1394,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTKGLAREA
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKGLAREA2
-	bool "gtkglarea2-2.0.1nb3"
+	bool "gtkglarea2-2.0.1nb8"
 	help
 	  OpenGL widget for the GTK+2 GUI toolkit
 
@@ -1411,7 +1409,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTKGLAREA2
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKMM
-	bool "gtkmm-2.24.2nb1"
+	bool "gtkmm-2.24.2nb6"
 	help
 	  C++ interface to Gtk+ v2
 
@@ -1429,7 +1427,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTKMM
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKMM_UTILS
-	bool "gtkmm-utils-0.4.1nb6"
+	bool "gtkmm-utils-0.4.1nb11"
 	help
 	  C++ utility and widget library based on glibmm and gtkmm
 
@@ -1445,7 +1443,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTKMM_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKSOURCEVIEW
-	bool "gtksourceview-1.8.5nb9"
+	bool "gtksourceview-1.8.5nb15"
 	help
 	  Text widget that extends GTK2's GtkTextView widget
 
@@ -1457,7 +1455,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTKSOURCEVIEW
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKSOURCEVIEW_SHARP2
-	bool "gtksourceview-sharp2-0.12nb18"
+	bool "gtksourceview-sharp2-0.12nb27"
 	help
 	  C\
 
@@ -1468,7 +1466,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTKSOURCEVIEW_SHARP2
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKSOURCEVIEW2
-	bool "gtksourceview2-2.10.5nb5"
+	bool "gtksourceview2-2.10.5nb11"
 	help
 	  Text widget that extends GTK2's GtkTextView widget
 
@@ -1479,6 +1477,18 @@ config BR2_PKGSRC_PACKAGE_X11_GTKSOURCEVIEW2
 	  This provides the 2.x API of this package.
 
 	  http://gtksourceview.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_X11_GTKSOURCEVIEW3
+	bool "gtksourceview3-3.4.2nb3"
+	help
+	  Text widget that extends GTK3's GtkTextView widget
+
+	  GtkSourceView is a text widget that extends the standard gtk+ 3.x text
+	  widget GtkTextView.  It improves GtkTextView by implementing syntax
+	  highlighting and other features typical of a source code editor.
+
+	  http://projects.gnome.org/gtksourceview/
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKSTEP
@@ -1493,7 +1503,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTKSTEP
 
 
 config BR2_PKGSRC_PACKAGE_X11_GTKTERM2
-	bool "gtkterm2-0.2.3nb13"
+	bool "gtkterm2-0.2.3nb18"
 	help
 	  Simple GTK-2 terminal with tabs
 
@@ -1504,7 +1514,7 @@ config BR2_PKGSRC_PACKAGE_X11_GTKTERM2
 
 
 config BR2_PKGSRC_PACKAGE_X11_HANTERM
-	bool "hanterm-3.1.6nb4"
+	bool "hanterm-3.1.6nb5"
 	help
 	  X11R6-based xterm hacked for managing Korean languages
 
@@ -1517,7 +1527,7 @@ config BR2_PKGSRC_PACKAGE_X11_HANTERM
 
 
 config BR2_PKGSRC_PACKAGE_X11_HOT_BABE
-	bool "hot-babe-0.2.2nb8"
+	bool "hot-babe-0.2.2nb13"
 	help
 	  System load monitor
 
@@ -1532,7 +1542,7 @@ config BR2_PKGSRC_PACKAGE_X11_HOT_BABE
 
 
 config BR2_PKGSRC_PACKAGE_X11_HSETROOT
-	bool "hsetroot-1.0.2nb8"
+	bool "hsetroot-1.0.2nb9"
 	help
 	  Allows you to compose wallpapers for X
 
@@ -1554,7 +1564,7 @@ config BR2_PKGSRC_PACKAGE_X11_HSETROOT
 
 
 config BR2_PKGSRC_PACKAGE_X11_ICEAUTH
-	bool "iceauth-1.0.3"
+	bool "iceauth-1.0.5"
 	help
 	  ICE protocol utility
 
@@ -1567,7 +1577,7 @@ config BR2_PKGSRC_PACKAGE_X11_ICEAUTH
 
 
 config BR2_PKGSRC_PACKAGE_X11_ICO
-	bool "ico-1.0.2"
+	bool "ico-1.0.3"
 	help
 	  Animate icosahedron or other polyhedrons
 
@@ -1603,7 +1613,7 @@ config BR2_PKGSRC_PACKAGE_X11_IMWHEEL
 
 
 config BR2_PKGSRC_PACKAGE_X11_INPUTPROTO
-	bool "inputproto-2.0"
+	bool "inputproto-2.2"
 	help
 	  Input extension headers from X.org
 
@@ -1613,8 +1623,18 @@ config BR2_PKGSRC_PACKAGE_X11_INPUTPROTO
 	  http://xorg.freedesktop.org/
 
 
+config BR2_PKGSRC_PACKAGE_X11_KACTIVITIES
+	bool "kactivities-4.8.4nb3"
+	help
+	  KDE Activity Manager
+
+	  KDE Activity Manager
+
+	  http://www.kde.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_KBPROTO
-	bool "kbproto-1.0.5"
+	bool "kbproto-1.0.6"
 	help
 	  KB extension headers from X.org
 
@@ -1624,752 +1644,8 @@ config BR2_PKGSRC_PACKAGE_X11_KBPROTO
 	  http://xorg.freedesktop.org/
 
 
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_AF
-	bool "kde-i18n-af-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 af locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_AR
-	bool "kde-i18n-ar-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ar locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_AZ
-	bool "kde-i18n-az-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 az locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_BG
-	bool "kde-i18n-bg-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 bg locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_BN
-	bool "kde-i18n-bn-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 bn locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_BR
-	bool "kde-i18n-br-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 br locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_BS
-	bool "kde-i18n-bs-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 bs locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_CA
-	bool "kde-i18n-ca-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ca locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_CS
-	bool "kde-i18n-cs-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 cs locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_CY
-	bool "kde-i18n-cy-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 cy locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_DA
-	bool "kde-i18n-da-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 da locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_DE
-	bool "kde-i18n-de-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 de locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_EL
-	bool "kde-i18n-el-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 el locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_EN_GB
-	bool "kde-i18n-en_GB-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 en_GB locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_EO
-	bool "kde-i18n-eo-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 eo locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_ES
-	bool "kde-i18n-es-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 es locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_ET
-	bool "kde-i18n-et-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 et locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_EU
-	bool "kde-i18n-eu-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 eu locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_FA
-	bool "kde-i18n-fa-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 fa locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_FI
-	bool "kde-i18n-fi-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 fi locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_FR
-	bool "kde-i18n-fr-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 fr locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_FY
-	bool "kde-i18n-fy-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 fy locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_GA
-	bool "kde-i18n-ga-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ga locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_GL
-	bool "kde-i18n-gl-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 gl locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_HE
-	bool "kde-i18n-he-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 he locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_HI
-	bool "kde-i18n-hi-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 hi locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_HR
-	bool "kde-i18n-hr-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 hr locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_HU
-	bool "kde-i18n-hu-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 hu locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_IS
-	bool "kde-i18n-is-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 is locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_IT
-	bool "kde-i18n-it-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 it locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_JA
-	bool "kde-i18n-ja-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ja locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_KK
-	bool "kde-i18n-kk-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 kk locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_KM
-	bool "kde-i18n-km-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 km locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_KO
-	bool "kde-i18n-ko-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ko locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_LT
-	bool "kde-i18n-lt-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 lt locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_LV
-	bool "kde-i18n-lv-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 lv locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_MK
-	bool "kde-i18n-mk-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 mk locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_MN
-	bool "kde-i18n-mn-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 mn locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_MS
-	bool "kde-i18n-ms-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ms locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_NB
-	bool "kde-i18n-nb-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 nb locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_NDS
-	bool "kde-i18n-nds-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 nds locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_NL
-	bool "kde-i18n-nl-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 nl locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_NN
-	bool "kde-i18n-nn-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 nn locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_PA
-	bool "kde-i18n-pa-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 pa locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_PL
-	bool "kde-i18n-pl-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 pl locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_PT
-	bool "kde-i18n-pt-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 pt locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_PT_BR
-	bool "kde-i18n-pt_BR-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 pt_BR locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_RO
-	bool "kde-i18n-ro-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ro locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_RU
-	bool "kde-i18n-ru-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ru locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_RW
-	bool "kde-i18n-rw-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 rw locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SE
-	bool "kde-i18n-se-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 se locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SK
-	bool "kde-i18n-sk-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 sk locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SL
-	bool "kde-i18n-sl-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 sl locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SR
-	bool "kde-i18n-sr-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 sr locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SR_LATN
-	bool "kde-i18n-sr_Latn-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 sr@Latn locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SS
-	bool "kde-i18n-ss-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ss locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SV
-	bool "kde-i18n-sv-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 sv locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_TA
-	bool "kde-i18n-ta-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 ta locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_TG
-	bool "kde-i18n-tg-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 tg locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_TR
-	bool "kde-i18n-tr-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 tr locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_UK
-	bool "kde-i18n-uk-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 uk locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_UZ
-	bool "kde-i18n-uz-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 uz locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_VI
-	bool "kde-i18n-vi-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 vi locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_ZH_CN
-	bool "kde-i18n-zh_CN-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 zh_CN locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_ZH_TW
-	bool "kde-i18n-zh_TW-3.5.10nb8"
-	help
-	  Language bindings for the KDE desktop
-
-	  KDE3 zh_TW locale
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE4_L10N_DE
-	bool "kde4-l10n-de-4.5.5"
-	help
-	  language pack for KDE4
-
-	  KDE4 German language pack
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE4_L10N_EN_GB
-	bool "kde4-l10n-en_GB-4.5.5"
-	help
-	  language pack for KDE4
-
-	  KDE4 English (Great Britain) language pack
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDE4_L10N_NL
-	bool "kde4-l10n-nl-4.5.5"
-	help
-	  language pack for KDE4
-
-	  KDE4 Netherlands language pack
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDEBASE3
-	bool "kdebase-3.5.10nb17"
-	help
-	  Base modules for the KDE 3 integrated X11 desktop
-
-	  This package provides various applications and infrastructure files and
-	  libraries for KDE 3.x.
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDEBASE_RUNTIME4
-	bool "kdebase-runtime4-4.5.5nb4"
-	help
-	  Runtime requirements for the KDE integrated X11 desktop
-
-	  The kdebase-runtime package is the second mandatory package (besides kdelibs)
-	  for the K Desktop Environment. Here we have various applications and
-	  infrastructure files and libraries. Here is an overview of the directories:
-	  
-	  * drkonqi
-	  If ever an app crashes (heaven forbid!) then Dr.Konqi will be so kind
-	  and make a stack trace. This is a great help for the developers to fix
-	  the bug.
-	  * kcontrol
-	  The KDE Control Center allows you to tweak the KDE settings.
-	  * kdebugdialog
-	  Allows you to specify which debug messages you want to see.
-	  * kdesktop
-	  You guessed it: the desktop above the panel.
-	  * kdesu
-	  A graphical front end to "su".
-	  * kfind
-	  File find utility (standalone and in Konqueror's file manager).
-	  * khelpcenter
-	  Used to to read all great documentation about KDE, unix man pages,
-	  info pages etc.
-	  * kioslave
-	  Infrastructure that helps make every application internet enabled
-	  e.g. to directly save a file to ftp://place.org/dir/file.txt
-	  * kreadconfig
-	  A tool for shell scripts to get info from KDE's config files.
-	  * kstart
-	  Launches applications with special window properties such as iconified,
-	  etc.
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDEBASE_WORKSPACE4
-	bool "kdebase-workspace4-4.5.5nb4"
-	help
-	  base workspace for the KDE 4 integrated X11 desktop
-
-	  The kdebase-workspace package consists of what is the desktop for KDE4.  The
-	  applications and libraries included aren't required to be portable and probably
-	  will only work with X11.  On other desktops such as OS X and Windows, users
-	  wouldn't run these applications, but use the native ones instead.  The typical
-	  application shouldn't have dependencies in workspace unless they are a component
-	  such as a screen-saver or panel applet.
-
-	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_X11_KDEBASE4
-	bool "kdebase4-4.5.5nb4"
+config BR2_PKGSRC_PACKAGE_X11_KDE_BASEAPPS4
+	bool "kde-baseapps4-4.8.4nb3"
 	help
 	  Base modules for the KDE 4 integrated X11 desktop
 
@@ -2390,8 +1666,6 @@ config BR2_PKGSRC_PACKAGE_X11_KDEBASE4
 	  File find utility (standalone and in Konqueror's file manager).
 	  * konqueror
 	  The file manager and web browser you get easily used to.
-	  * konsole
-	  A shell program similar to xterm.
 	  * kdepasswd
 	  A KDE frontend for passwd. Also contains the "Password & User
 	  Information" KCM.
@@ -2399,8 +1673,747 @@ config BR2_PKGSRC_PACKAGE_X11_KDEBASE4
 	  http://www.kde.org/
 
 
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_AF
+	bool "kde-i18n-af-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 af locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_AR
+	bool "kde-i18n-ar-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ar locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_AZ
+	bool "kde-i18n-az-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 az locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_BG
+	bool "kde-i18n-bg-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 bg locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_BN
+	bool "kde-i18n-bn-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 bn locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_BR
+	bool "kde-i18n-br-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 br locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_BS
+	bool "kde-i18n-bs-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 bs locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_CA
+	bool "kde-i18n-ca-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ca locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_CS
+	bool "kde-i18n-cs-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 cs locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_CY
+	bool "kde-i18n-cy-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 cy locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_DA
+	bool "kde-i18n-da-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 da locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_DE
+	bool "kde-i18n-de-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 de locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_EL
+	bool "kde-i18n-el-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 el locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_EN_GB
+	bool "kde-i18n-en_GB-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 en_GB locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_EO
+	bool "kde-i18n-eo-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 eo locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_ES
+	bool "kde-i18n-es-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 es locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_ET
+	bool "kde-i18n-et-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 et locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_EU
+	bool "kde-i18n-eu-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 eu locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_FA
+	bool "kde-i18n-fa-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 fa locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_FI
+	bool "kde-i18n-fi-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 fi locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_FR
+	bool "kde-i18n-fr-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 fr locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_FY
+	bool "kde-i18n-fy-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 fy locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_GA
+	bool "kde-i18n-ga-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ga locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_GL
+	bool "kde-i18n-gl-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 gl locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_HE
+	bool "kde-i18n-he-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 he locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_HI
+	bool "kde-i18n-hi-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 hi locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_HR
+	bool "kde-i18n-hr-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 hr locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_HU
+	bool "kde-i18n-hu-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 hu locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_IS
+	bool "kde-i18n-is-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 is locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_IT
+	bool "kde-i18n-it-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 it locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_JA
+	bool "kde-i18n-ja-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ja locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_KK
+	bool "kde-i18n-kk-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 kk locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_KM
+	bool "kde-i18n-km-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 km locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_KO
+	bool "kde-i18n-ko-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ko locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_LT
+	bool "kde-i18n-lt-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 lt locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_LV
+	bool "kde-i18n-lv-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 lv locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_MK
+	bool "kde-i18n-mk-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 mk locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_MN
+	bool "kde-i18n-mn-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 mn locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_MS
+	bool "kde-i18n-ms-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ms locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_NB
+	bool "kde-i18n-nb-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 nb locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_NDS
+	bool "kde-i18n-nds-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 nds locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_NL
+	bool "kde-i18n-nl-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 nl locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_NN
+	bool "kde-i18n-nn-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 nn locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_PA
+	bool "kde-i18n-pa-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 pa locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_PL
+	bool "kde-i18n-pl-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 pl locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_PT
+	bool "kde-i18n-pt-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 pt locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_PT_BR
+	bool "kde-i18n-pt_BR-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 pt_BR locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_RO
+	bool "kde-i18n-ro-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ro locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_RU
+	bool "kde-i18n-ru-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ru locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_RW
+	bool "kde-i18n-rw-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 rw locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SE
+	bool "kde-i18n-se-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 se locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SK
+	bool "kde-i18n-sk-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 sk locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SL
+	bool "kde-i18n-sl-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 sl locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SR
+	bool "kde-i18n-sr-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 sr locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SR_LATN
+	bool "kde-i18n-sr_Latn-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 sr@Latn locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SS
+	bool "kde-i18n-ss-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ss locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_SV
+	bool "kde-i18n-sv-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 sv locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_TA
+	bool "kde-i18n-ta-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 ta locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_TG
+	bool "kde-i18n-tg-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 tg locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_TR
+	bool "kde-i18n-tr-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 tr locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_UK
+	bool "kde-i18n-uk-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 uk locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_UZ
+	bool "kde-i18n-uz-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 uz locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_VI
+	bool "kde-i18n-vi-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 vi locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_ZH_CN
+	bool "kde-i18n-zh_CN-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 zh_CN locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE3_I18N_ZH_TW
+	bool "kde-i18n-zh_TW-3.5.10nb13"
+	help
+	  Language bindings for the KDE desktop
+
+	  KDE3 zh_TW locale
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE_RUNTIME4
+	bool "kde-runtime4-4.8.4nb4"
+	help
+	  Runtime requirements for the KDE integrated X11 desktop
+
+	  The kde-runtime package is the second mandatory package (besides kdelibs)
+	  for the K Desktop Environment. Here we have various applications and
+	  infrastructure files and libraries. Here is an overview of the directories:
+	  
+	  * drkonqi
+	  Produces a stack trace for developers if an app crashes.
+	  * kcontrol
+	  The KDE Control Center allows you to tweak the KDE settings.
+	  * kdebugdialog
+	  Allows you to specify which debug messages you want to see.
+	  * kdesktop
+	  You guessed it: the desktop above the panel.
+	  * kdesu
+	  A graphical front end to "su".
+	  * kfind
+	  File find utility (standalone and in Konqueror's file manager).
+	  * khelpcenter
+	  Used to to read all great documentation about KDE, unix man pages, etc
+	  * kioslave
+	  Infrastructure that helps make every application internet enabled
+	  * kreadconfig
+	  A tool for shell scripts to get info from KDE's config files.
+	  * kstart
+	  Launches applications with special window properties such as iconified, etc.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE_WORKSPACE4
+	bool "kde-workspace4-4.8.4nb5"
+	help
+	  Base workspace for the KDE 4 integrated X11 desktop
+
+	  The kdebase-workspace package consists of what is the desktop for KDE4.  The
+	  applications and libraries included aren't required to be portable and probably
+	  will only work with X11.  On other desktops such as OS X and Windows, users
+	  wouldn't run these applications, but use the native ones instead.  The typical
+	  application shouldn't have dependencies in workspace unless they are a component
+	  such as a screen-saver or panel applet.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE4_L10N_DE
+	bool "kde4-l10n-de-4.8.4"
+	help
+	  
+
+	  KDE4 German language pack
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE4_L10N_EN_GB
+	bool "kde4-l10n-en_GB-4.8.4"
+	help
+	  
+
+	  KDE4 English (Great Britain) language pack
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDE4_L10N_NL
+	bool "kde4-l10n-nl-4.8.4"
+	help
+	  
+
+	  KDE4 Netherlands language pack
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_KDEBASE3
+	bool "kdebase-3.5.10nb22"
+	help
+	  Base modules for the KDE 3 integrated X11 desktop
+
+	  This package provides various applications and infrastructure files and
+	  libraries for KDE 3.x.
+
+	  http://www.kde.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_KDEBINDINGS_RUBY
-	bool "kdebindings-ruby-3.5.10nb11"
+	bool "kdebindings-ruby-3.5.10nb18"
 	help
 	  Ruby bindings for the KDE integrated X11 desktop
 
@@ -2409,18 +2422,8 @@ config BR2_PKGSRC_PACKAGE_X11_KDEBINDINGS_RUBY
 	  http://www.kde.org/
 
 
-config BR2_PKGSRC_PACKAGE_X11_KDEBINDINGS4_PYTHON
-	bool "kdebindings4-python-4.5.5nb3"
-	help
-	  Python bindings for the KDE integrated X11 desktop
-
-	  Python bindings for the KDE integrated X11 desktop
-
-	  http://www.kde.org/
-
-
 config BR2_PKGSRC_PACKAGE_X11_KDELIBDOCS3
-	bool "kdelibdocs-3.5.10nb8"
+	bool "kdelibdocs-3.5.10nb14"
 	help
 	  KDE library documentation
 
@@ -2432,7 +2435,7 @@ config BR2_PKGSRC_PACKAGE_X11_KDELIBDOCS3
 
 
 config BR2_PKGSRC_PACKAGE_X11_KDELIBS3
-	bool "kdelibs-3.5.10nb12"
+	bool "kdelibs-3.5.10nb18"
 	help
 	  Support libraries for the KDE integrated X11 desktop
 
@@ -2444,7 +2447,7 @@ config BR2_PKGSRC_PACKAGE_X11_KDELIBS3
 
 
 config BR2_PKGSRC_PACKAGE_X11_KDELIBS4
-	bool "kdelibs4-4.5.5nb8"
+	bool "kdelibs4-4.8.4nb4"
 	help
 	  Support libraries for the KDE integrated X11 desktop
 
@@ -2464,8 +2467,7 @@ config BR2_PKGSRC_PACKAGE_X11_KDELIBS4
 	  * kconf_update
 	  Auto-Updater for config files.
 	  * kde3support
-	  This contains libraries that were part of KDE3, but have been
-	  replaced for KDE4
+	  Libraries that were part of KDE3, but have been replaced for KDE4
 	  * kdecore
 	  This is the core collection of KDE stuff. Non GUI classes reside here.
 	  * kded
@@ -2527,7 +2529,7 @@ config BR2_PKGSRC_PACKAGE_X11_KEYLAUNCH
 
 
 config BR2_PKGSRC_PACKAGE_X11_KKBSWITCH
-	bool "kkbswitch-1.4.3nb15"
+	bool "kkbswitch-1.4.3nb20"
 	help
 	  Keyboard layout indicator for KDE 2 or 3
 
@@ -2544,7 +2546,7 @@ config BR2_PKGSRC_PACKAGE_X11_KKBSWITCH
 
 
 config BR2_PKGSRC_PACKAGE_X11_KMESSAGE
-	bool "kmessage-0.1nb21"
+	bool "kmessage-0.1nb26"
 	help
 	  KMessage is an xmessage clone for KDE
 
@@ -2562,8 +2564,18 @@ config BR2_PKGSRC_PACKAGE_X11_KMESSAGE
 	  http://soliton.wins.uva.nl/~wijnhout/kmessage/
 
 
+config BR2_PKGSRC_PACKAGE_X11_KONSOLE
+	bool "konsole-4.8.4nb3"
+	help
+	  a terminal emulator for the K Desktop Environment
+
+	  a terminal emulator for the K Desktop Environment
+
+	  http://www.kde.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_KTERM
-	bool "kterm-6.2.0nb17"
+	bool "kterm-6.2.0nb23"
 	help
 	  Multi-lingual terminal emulator for X
 
@@ -2575,7 +2587,7 @@ config BR2_PKGSRC_PACKAGE_X11_KTERM
 
 
 config BR2_PKGSRC_PACKAGE_X11_LABLGTK
-	bool "lablgtk-2.14.2nb10"
+	bool "lablgtk-2.16.0nb2"
 	help
 	  GTK+ 2.x bindings for Objective Caml
 
@@ -2587,7 +2599,7 @@ config BR2_PKGSRC_PACKAGE_X11_LABLGTK
 	  GTK+.  This is not that easy if you know the dynamic typing approach
 	  taken by GTK+.
 
-	  http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
+	  http://lablgtk.forge.ocamlcore.org/
 
 
 config BR2_PKGSRC_PACKAGE_X11_LABLGTK1
@@ -2606,7 +2618,7 @@ config BR2_PKGSRC_PACKAGE_X11_LABLGTK1
 
 
 config BR2_PKGSRC_PACKAGE_X11_LABLTK
-	bool "labltk-3.12.0nb4"
+	bool "labltk-3.12.1nb5"
 	help
 	  Tk bindings for ocaml
 
@@ -2659,7 +2671,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBAPPLEWM
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBFS
-	bool "libFS-1.0.3"
+	bool "libFS-1.0.4"
 	help
 	  X Font Server Interface Library
 
@@ -2670,7 +2682,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBFS
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBICE
-	bool "libICE-1.0.6"
+	bool "libICE-1.0.8"
 	help
 	  
 
@@ -2684,7 +2696,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBICE
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBSM
-	bool "libSM-1.1.1nb1"
+	bool "libSM-1.2.1"
 	help
 	  X Session Management Library
 
@@ -2695,7 +2707,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBSM
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBX11
-	bool "libX11-1.3.5"
+	bool "libX11-1.5.0nb1"
 	help
 	  Base X libraries from modular Xorg X11
 
@@ -2708,7 +2720,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBX11
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXSCRNSAVER
-	bool "libXScrnSaver-1.2.0"
+	bool "libXScrnSaver-1.2.2"
 	help
 	  X11 Screen Saver Library
 
@@ -2730,7 +2742,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXTRAP
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXAU
-	bool "libXau-1.0.6"
+	bool "libXau-1.0.7"
 	help
 	  Authorization Protocol for X from X.org
 
@@ -2741,7 +2753,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXAU
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXAW
-	bool "libXaw-1.0.7"
+	bool "libXaw-1.0.11"
 	help
 	  X Athena Widgets Library from modular Xorg X11
 
@@ -2754,7 +2766,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXAW
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXCOMPOSITE
-	bool "libXcomposite-0.4.2"
+	bool "libXcomposite-0.4.3"
 	help
 	  X Composite Library
 
@@ -2765,7 +2777,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXCOMPOSITE
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXCURSOR
-	bool "libXcursor-1.1.10"
+	bool "libXcursor-1.1.13"
 	help
 	  Client-side cursor loading library for X
 
@@ -2789,7 +2801,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXDAMAGE
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXDMCP
-	bool "libXdmcp-1.0.3"
+	bool "libXdmcp-1.1.1"
 	help
 	  X Display Manager Control Protocol library from X.org
 
@@ -2800,7 +2812,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXDMCP
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXEVIE
-	bool "libXevie-1.0.2"
+	bool "libXevie-1.0.3"
 	help
 	  X Event Interceptor Library
 
@@ -2811,18 +2823,23 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXEVIE
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXEXT
-	bool "libXext-1.1.1"
+	bool "libXext-1.3.1"
 	help
 	  X Extension library
 
 	  This package contains the X Extension library from the modular
-	  X.org X11 project.
+	  X.org X11 project.  LibXext provides functions for: Double Buffer
+	  Extension (DBE), Display Power Management Signaling (DPMS), X11
+	  Nonrectangular Window Shape Extension (XShape), shared memory
+	  extensions (XShm), TOG-CUP (Xcup), X11 Extended Visual Information
+	  extension (EVI), X11 Double-Buffering, Multi-Buffering, and Stereo
+	  Extension (Xmbuf).
 
 	  http://xorg.freedesktop.org/
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXFIXES
-	bool "libXfixes-4.0.5"
+	bool "libXfixes-5.0"
 	help
 	  Xfixes library and extension of X RandR from modular X.org
 
@@ -2838,7 +2855,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXFIXES
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXFONT
-	bool "libXfont-1.4.4"
+	bool "libXfont-1.4.5"
 	help
 	  X font Library
 
@@ -2849,7 +2866,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXFONT
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXFT
-	bool "libXft-2.1.14nb1"
+	bool "libXft-2.3.1"
 	help
 	  Library for configuring and customizing font access
 
@@ -2868,7 +2885,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXFT
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXI
-	bool "libXi-1.4.3"
+	bool "libXi-1.6.1"
 	help
 	  X Input extension library
 
@@ -2882,7 +2899,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXI
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXINERAMA
-	bool "libXinerama-1.1"
+	bool "libXinerama-1.1.2"
 	help
 	  X PanoramiX extension library
 
@@ -2892,7 +2909,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXINERAMA
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXMU
-	bool "libXmu-1.0.5"
+	bool "libXmu-1.1.1"
 	help
 	  X Miscellaneous Utilities library
 
@@ -2923,7 +2940,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXP
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXPM
-	bool "libXpm-3.5.8nb1"
+	bool "libXpm-3.5.10"
 	help
 	  X PixMap Library from modular Xorg X11
 
@@ -2952,7 +2969,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXPRINTUTIL
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXRANDR
-	bool "libXrandr-1.3.0"
+	bool "libXrandr-1.4.0"
 	help
 	  X RandR Library from X.org
 
@@ -2968,7 +2985,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXRANDR
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXRENDER
-	bool "libXrender-0.9.6"
+	bool "libXrender-0.9.7"
 	help
 	  X Render Library
 
@@ -2987,7 +3004,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXRENDER
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXRES
-	bool "libXres-1.0.4"
+	bool "libXres-1.0.6"
 	help
 	  X Resource Information Extension Library
 
@@ -3001,7 +3018,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXRES
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXT
-	bool "libXt-1.0.8"
+	bool "libXt-1.1.3"
 	help
 	  X Toolkit Intrinsics library
 
@@ -3016,7 +3033,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXT
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXTST
-	bool "libXtst-1.1.0"
+	bool "libXtst-1.2.1"
 	help
 	  X Tst Library
 
@@ -3026,7 +3043,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXTST
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXV
-	bool "libXv-1.0.5"
+	bool "libXv-1.0.7"
 	help
 	  Xv Extension library
 
@@ -3037,7 +3054,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXV
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXVMC
-	bool "libXvMC-1.0.6"
+	bool "libXvMC-1.0.7"
 	help
 	  XVideo Motion Compensation Library
 
@@ -3049,7 +3066,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXVMC
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXXF86DGA
-	bool "libXxf86dga-1.1.1"
+	bool "libXxf86dga-1.1.3"
 	help
 	  Library for the XFree86-DGA X extension
 
@@ -3063,7 +3080,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXXF86DGA
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXXF86MISC
-	bool "libXxf86misc-1.0.2"
+	bool "libXxf86misc-1.0.3"
 	help
 	  Library for the XFree86-Misc X extension
 
@@ -3075,7 +3092,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXXF86MISC
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXXF86VM
-	bool "libXxf86vm-1.1.0"
+	bool "libXxf86vm-1.1.2"
 	help
 	  Library for the XFree86-VidMode X extension
 
@@ -3088,8 +3105,21 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXXF86VM
 	  http://xorg.freedesktop.org/
 
 
+config BR2_PKGSRC_PACKAGE_X11_LIBDESKTOP_AGNOSTIC
+	bool "libdesktop-agnostic-0.3.92nb6"
+	help
+	  Desktop-agnostic library, apis and tools
+
+	  This library provides an extensible configuration API, a unified
+	  virtual file system API, and a desktop item editor (all with
+	  pluggable backends) for GLib-based projects. It is not tied to any one
+	  desktop environment, although there are desktop-specific modules.
+
+	  https://launchpad.net/libdesktop-agnostic
+
+
 config BR2_PKGSRC_PACKAGE_X11_LIBDRM
-	bool "libdrm-2.4.20"
+	bool "libdrm-2.4.39"
 	help
 	  Userspace interface to kernel DRM services
 
@@ -3111,7 +3141,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBFAKEKEY
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBGNOMEKBD
-	bool "libgnomekbd-2.32.0nb3"
+	bool "libgnomekbd-2.32.0nb9"
 	help
 	  Gnome keyboard configuration library
 
@@ -3135,7 +3165,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBLBXUTIL
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBUNIQUE
-	bool "libunique-1.1.6nb6"
+	bool "libunique-1.1.6nb12"
 	help
 	  Library for writing single instance applications
 
@@ -3154,7 +3184,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBUNIQUE
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBUNIQUE3
-	bool "libunique3-3.0.2nb1"
+	bool "libunique3-3.0.2nb6"
 	help
 	  Library for writing single instance applications
 
@@ -3174,7 +3204,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBUNIQUE3
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXCB
-	bool "libxcb-1.7"
+	bool "libxcb-1.8.1"
 	help
 	  X protocol C-language Binding
 
@@ -3208,7 +3238,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXDG_BASEDIR
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXFCE4GUI
-	bool "libxfce4gui-4.6.1nb6"
+	bool "libxfce4gui-4.6.1nb13"
 	help
 	  Xfce widget library
 
@@ -3218,7 +3248,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXFCE4GUI
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXFCE4MENU
-	bool "libxfce4menu-4.6.1nb5"
+	bool "libxfce4menu-4.6.1nb10"
 	help
 	  Xfce menu library
 
@@ -3228,7 +3258,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXFCE4MENU
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXFCE4UTIL
-	bool "libxfce4util-4.6.1nb5"
+	bool "libxfce4util-4.6.1nb10"
 	help
 	  Xfce basic library
 
@@ -3238,7 +3268,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXFCE4UTIL
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXKBFILE
-	bool "libxkbfile-1.0.6"
+	bool "libxkbfile-1.0.8"
 	help
 	  The xkbfile Library from modular X.org
 
@@ -3258,7 +3288,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXKBUI
 
 
 config BR2_PKGSRC_PACKAGE_X11_LIBXKLAVIER
-	bool "libxklavier-5.0nb1"
+	bool "libxklavier-5.0nb5"
 	help
 	  
 
@@ -3277,7 +3307,7 @@ config BR2_PKGSRC_PACKAGE_X11_LIBXKLAVIER
 
 
 config BR2_PKGSRC_PACKAGE_X11_LISTRES
-	bool "listres-1.0.2"
+	bool "listres-1.0.3"
 	help
 	  List resources in widgets
 
@@ -3293,7 +3323,7 @@ config BR2_PKGSRC_PACKAGE_X11_LISTRES
 
 
 config BR2_PKGSRC_PACKAGE_X11_LUIT
-	bool "luit-1.0.5"
+	bool "luit-1.1.1"
 	help
 	  Locale and ISO 2022 support for Unicode terminals
 
@@ -3317,7 +3347,7 @@ config BR2_PKGSRC_PACKAGE_X11_MATCHBOX_COMMON
 
 
 config BR2_PKGSRC_PACKAGE_X11_MATCHBOX_DESKTOP
-	bool "matchbox-desktop-0.9.1nb6"
+	bool "matchbox-desktop-0.9.1nb8"
 	help
 	  Desktop manager for Matchbox
 
@@ -3339,7 +3369,7 @@ config BR2_PKGSRC_PACKAGE_X11_MATCHBOX_NEST
 
 
 config BR2_PKGSRC_PACKAGE_X11_MATCHBOX_PANEL
-	bool "matchbox-panel-0.9.2nb7"
+	bool "matchbox-panel-0.9.2nb8"
 	help
 	  Panel for Matchbox
 
@@ -3351,7 +3381,7 @@ config BR2_PKGSRC_PACKAGE_X11_MATCHBOX_PANEL
 
 
 config BR2_PKGSRC_PACKAGE_X11_MATCHBOX_PANEL_MANAGER
-	bool "matchbox-panel-manager-0.1nb10"
+	bool "matchbox-panel-manager-0.1nb16"
 	help
 	  Manager panel for the Matchbox desktop
 
@@ -3371,7 +3401,7 @@ config BR2_PKGSRC_PACKAGE_X11_MATCHBOX_THEMES_EXTRA
 
 
 config BR2_PKGSRC_PACKAGE_X11_MLTERM
-	bool "mlterm-3.0.6nb1"
+	bool "mlterm-3.1.2nb4"
 	help
 	  Multilingual terminal emulator
 
@@ -3398,7 +3428,7 @@ config BR2_PKGSRC_PACKAGE_X11_MODELINE
 
 
 config BR2_PKGSRC_PACKAGE_X11_MODULAR_XORG_SERVER
-	bool "modular-xorg-server-1.6.5nb11"
+	bool "modular-xorg-server-1.6.5nb12"
 	help
 	  Modular X11 server from modular X.org
 
@@ -3457,7 +3487,7 @@ config BR2_PKGSRC_PACKAGE_X11_NEXTAW
 
 
 config BR2_PKGSRC_PACKAGE_X11_NUCLEO
-	bool "nucleo-0.7.5nb11"
+	bool "nucleo-0.7.5nb19"
 	help
 	  Toolkit to explore new uses of video and HCI techniques
 
@@ -3480,7 +3510,7 @@ config BR2_PKGSRC_PACKAGE_X11_NUMLOCKX
 
 
 config BR2_PKGSRC_PACKAGE_X11_OCAML_GRAPHICS
-	bool "ocaml-graphics-3.12.0nb5"
+	bool "ocaml-graphics-3.12.1nb6"
 	help
 	  
 
@@ -3526,7 +3556,7 @@ config BR2_PKGSRC_PACKAGE_X11_OPENMOTIF
 
 
 config BR2_PKGSRC_PACKAGE_X11_P5_ALIEN_WXWIDGETS
-	bool "p5-Alien-wxWidgets-0.52nb1"
+	bool "p5-Alien-wxWidgets-0.60nb2"
 	help
 	  Building, finding and using wxWidgets binaries
 
@@ -3552,7 +3582,7 @@ config BR2_PKGSRC_PACKAGE_X11_P5_CLIPBOARD
 
 
 config BR2_PKGSRC_PACKAGE_X11_P5_GTK2_EX_FORMFACTORY
-	bool "p5-Gtk2-Ex-FormFactory-0.65nb3"
+	bool "p5-Gtk2-Ex-FormFactory-0.67"
 	help
 	  Introduction into the FormFactory framework
 
@@ -3584,7 +3614,7 @@ config BR2_PKGSRC_PACKAGE_X11_P5_GTK2_EX_FORMFACTORY
 
 
 config BR2_PKGSRC_PACKAGE_X11_P5_TK
-	bool "p5-Tk-804.029nb2"
+	bool "p5-Tk-804.030"
 	help
 	  Perl5 interface to Tk
 
@@ -3599,7 +3629,7 @@ config BR2_PKGSRC_PACKAGE_X11_P5_TK
 
 
 config BR2_PKGSRC_PACKAGE_X11_P5_WX
-	bool "p5-Wx-0.98nb6"
+	bool "p5-Wx-0.9911nb2"
 	help
 	  Perl5 interface to the wxWidgets cross-platform GUI toolkit
 
@@ -3609,7 +3639,7 @@ config BR2_PKGSRC_PACKAGE_X11_P5_WX
 
 
 config BR2_PKGSRC_PACKAGE_X11_P5_WX_PERL_PROCESSSTREAM
-	bool "p5-Wx-Perl-ProcessStream-0.28nb5"
+	bool "p5-Wx-Perl-ProcessStream-0.32nb2"
 	help
 	  Access IO of external processes via events from WxWidgets
 
@@ -3649,7 +3679,7 @@ config BR2_PKGSRC_PACKAGE_X11_P5_GTK
 
 
 config BR2_PKGSRC_PACKAGE_X11_P5_GTK2
-	bool "p5-gtk2-1.224nb1"
+	bool "p5-gtk2-1.243nb3"
 	help
 	  Perl bindings for GTK+ 2.0
 
@@ -3663,7 +3693,7 @@ config BR2_PKGSRC_PACKAGE_X11_P5_GTK2
 
 
 config BR2_PKGSRC_PACKAGE_X11_PARAGUI
-	bool "paragui-1.0.4nb18"
+	bool "paragui-1.0.4nb19"
 	help
 	  Cross-platform high-level application framework and GUI library
 
@@ -3674,7 +3704,7 @@ config BR2_PKGSRC_PACKAGE_X11_PARAGUI
 
 
 config BR2_PKGSRC_PACKAGE_X11_PIXMAN
-	bool "pixman-0.22.2nb2"
+	bool "pixman-0.26.2"
 	help
 	  Library of low-level pixel manipulation routines
 
@@ -3684,7 +3714,7 @@ config BR2_PKGSRC_PACKAGE_X11_PIXMAN
 
 
 config BR2_PKGSRC_PACKAGE_X11_PRINTPROTO
-	bool "printproto-1.0.4"
+	bool "printproto-1.0.5"
 	help
 	  Print extension headers from X.org
 
@@ -3696,7 +3726,7 @@ config BR2_PKGSRC_PACKAGE_X11_PRINTPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_PMW
-	bool "py26-Pmw-1.3.2"
+	bool "py27-Pmw-1.3.2"
 	help
 	  Python meta widgets
 
@@ -3712,19 +3742,19 @@ config BR2_PKGSRC_PACKAGE_X11_PY_PMW
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_TK
-	bool "py26-Tk-0nb5"
+	bool "py27-Tk-0nb6"
 	help
 	  Tkinter -- Python interface to Tcl/Tk
 
 	  This package provides C binding to libtk and libtcl, necessary for
-	  Tkinter to work. All other needed files (Tkinter.py and frineds)
+	  Tkinter to work. All other needed files (Tkinter.py and friends)
 	  are part of standard Python installation.
 
 	  http://wiki.python.org/moin/TkInter
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_XLIB
-	bool "py26-Xlib-0.14"
+	bool "py27-Xlib-0.14"
 	help
 	  Functional X client library for Python
 
@@ -3737,7 +3767,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_XLIB
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_GNOME2
-	bool "py26-gnome2-2.28.1nb7"
+	bool "py27-gnome2-2.28.1nb15"
 	help
 	  Python binding for GNOME2
 
@@ -3752,7 +3782,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_GNOME2
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_GNOME2_DESKTOP
-	bool "py26-gnome2-desktop-2.32.0nb5"
+	bool "py27-gnome2-desktop-2.32.0nb18"
 	help
 	  Python modules for the GNOME desktop
 
@@ -3773,7 +3803,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_GNOME2_DESKTOP
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_GNOME2_EXTRAS
-	bool "py26-gnome2-extras-2.25.3nb4"
+	bool "py27-gnome2-extras-2.25.3nb13"
 	help
 	  Python binding for GNOME2
 
@@ -3788,7 +3818,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_GNOME2_EXTRAS
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_GTK2
-	bool "py26-gtk2-2.24.0nb2"
+	bool "py27-gtk2-2.24.0nb8"
 	help
 	  Python bindings for GTK+2
 
@@ -3803,7 +3833,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_GTK2
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_GTKSOURCEVIEW
-	bool "py26-gtksourceview-2.10.1nb4"
+	bool "py27-gtksourceview-2.10.1nb10"
 	help
 	  Python bindings for gtksourceview2
 
@@ -3812,8 +3842,18 @@ config BR2_PKGSRC_PACKAGE_X11_PY_GTKSOURCEVIEW
 	  http://www.gnome.org/
 
 
+config BR2_PKGSRC_PACKAGE_X11_PY_KDE4
+	bool "py27-kde4-4.8.4nb5"
+	help
+	  Python bindings for the KDE integrated X11 desktop
+
+	  Python bindings for the KDE integrated X11 desktop
+
+	  http://www.kde.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_PY_KIWI
-	bool "py26-kiwi-1.9.22nb7"
+	bool "py27-kiwi-1.9.29nb6"
 	help
 	  Framework and a set of enhanced PyGTK widgets
 
@@ -3833,7 +3873,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_KIWI
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_QT3_BASE
-	bool "py26-qt3-base-3.18.1nb8"
+	bool "py27-qt3-base-3.18.1nb8"
 	help
 	  Python binding for Qt3
 
@@ -3855,7 +3895,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_QT3_BASE
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_QT3_MODULES
-	bool "py26-qt3-modules-3.18.1nb8"
+	bool "py27-qt3-modules-3.18.1nb9"
 	help
 	  Various Python modules for Qt3
 
@@ -3867,7 +3907,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_QT3_MODULES
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_QT3_QSCINTILLA
-	bool "py26-qt3-qscintilla-3.18.1nb8"
+	bool "py27-qt3-qscintilla-3.18.1nb8"
 	help
 	  Python binding for QScintilla
 
@@ -3879,7 +3919,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_QT3_QSCINTILLA
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_QT4
-	bool "py26-qt4-4.8.6"
+	bool "py27-qt4-4.9.4nb3"
 	help
 	  Python binding for Qt4
 
@@ -3898,7 +3938,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_QT4
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_QT4_QSCINTILLA
-	bool "py26-qt4-qscintilla-2.5.1nb1"
+	bool "py27-qt4-qscintilla-2.6.2nb3"
 	help
 	  QScintilla -- Python bindings --
 
@@ -3922,7 +3962,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_QT4_QSCINTILLA
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_SIP
-	bool "py26-sip-4.13"
+	bool "py27-sip-4.13.3"
 	help
 	  Tool to create Python bindings for C++ libraries
 
@@ -3935,7 +3975,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_SIP
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_VTE
-	bool "py26-vte-0.28.1nb2"
+	bool "py27-vte-0.28.1nb8"
 	help
 	  Python bindings for the Vte terminal widget
 
@@ -3948,7 +3988,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_VTE
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_WXWIDGETS
-	bool "py26-wxWidgets-2.8.10.1nb9"
+	bool "py27-wxWidgets-2.8.10.1nb14"
 	help
 	  Python bindings for wxWidgets
 
@@ -3959,7 +3999,7 @@ config BR2_PKGSRC_PACKAGE_X11_PY_WXWIDGETS
 
 
 config BR2_PKGSRC_PACKAGE_X11_PY_XCBGEN
-	bool "py26-xcbgen-1.6nb2"
+	bool "py27-xcbgen-1.7.1"
 	help
 	  XCB protocol descriptions (in XML)
 
@@ -4005,7 +4045,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT3
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT3_DOCS
-	bool "qt3-docs-3.3.8nb5"
+	bool "qt3-docs-3.3.8nb6"
 	help
 	  Documentation for the QT C++ X GUI toolkit
 
@@ -4019,7 +4059,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT3_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT3_LIBS
-	bool "qt3-libs-3.3.8nb18"
+	bool "qt3-libs-3.3.8nb19"
 	help
 	  C++ X GUI toolkit
 
@@ -4038,7 +4078,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT3_LIBS
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT3_MYSQL
-	bool "qt3-mysql-3.3.8nb7"
+	bool "qt3-mysql-3.3.8nb8"
 	help
 	  QT mysql driver
 
@@ -4048,7 +4088,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT3_MYSQL
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT3_PGSQL
-	bool "qt3-psql-3.3.8nb9"
+	bool "qt3-psql-3.3.8nb10"
 	help
 	  QT postgresql driver
 
@@ -4079,7 +4119,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT3_QSCINTILLA
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT3_TOOLS
-	bool "qt3-tools-3.3.8nb8"
+	bool "qt3-tools-3.3.8nb9"
 	help
 	  
 
@@ -4101,7 +4141,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT3_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4
-	bool "qt4-4.7.4"
+	bool "qt4-4.8.3"
 	help
 	  "meta-package" for the QT GUI C++ toolkit
 
@@ -4118,7 +4158,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_CREATOR
-	bool "qt4-creator-2.0.1nb3"
+	bool "qt4-creator-2.0.1nb9"
 	help
 	  Cross-platform IDE for Qt and C++
 
@@ -4137,7 +4177,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_CREATOR
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_DOCS
-	bool "qt4-docs-4.7.4nb2"
+	bool "qt4-docs-4.8.3nb1"
 	help
 	  Documentation for the QT C++ X GUI toolkit
 
@@ -4151,7 +4191,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_LIBS
-	bool "qt4-libs-4.7.4nb2"
+	bool "qt4-libs-4.8.3nb1"
 	help
 	  C++ X GUI toolkit
 
@@ -4173,7 +4213,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_LIBS
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_MNG
-	bool "qt4-mng-4.7.4nb2"
+	bool "qt4-mng-4.8.3nb1"
 	help
 	  QT MNG image format plugin
 
@@ -4183,7 +4223,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_MNG
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_MYSQL
-	bool "qt4-mysql-4.7.4nb2"
+	bool "qt4-mysql-4.8.3nb2"
 	help
 	  QT mysql driver
 
@@ -4193,7 +4233,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_MYSQL
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_PGSQL
-	bool "qt4-pgsql-4.7.4nb2"
+	bool "qt4-pgsql-4.8.3nb1"
 	help
 	  QT postgresql driver
 
@@ -4203,7 +4243,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_PGSQL
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_QDBUS
-	bool "qt4-qdbus-4.7.4nb2"
+	bool "qt4-qdbus-4.8.3nb1"
 	help
 	  QT DBus support
 
@@ -4213,7 +4253,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_QDBUS
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_QSCINTILLA
-	bool "qt4-qscintilla-2.5.1nb1"
+	bool "qt4-qscintilla-2.6.2nb3"
 	help
 	  Scintilla C++ editor class for Qt
 
@@ -4235,7 +4275,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_QSCINTILLA
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_SQLITE3
-	bool "qt4-sqlite3-4.7.4nb2"
+	bool "qt4-sqlite3-4.8.3nb1"
 	help
 	  QT sqlite3 driver
 
@@ -4245,7 +4285,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_SQLITE3
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_TIFF
-	bool "qt4-tiff-4.7.4nb2"
+	bool "qt4-tiff-4.8.3nb1"
 	help
 	  QT TIFF image format plugin
 
@@ -4255,7 +4295,7 @@ config BR2_PKGSRC_PACKAGE_X11_QT4_TIFF
 
 
 config BR2_PKGSRC_PACKAGE_X11_QT4_TOOLS
-	bool "qt4-tools-4.7.4nb2"
+	bool "qt4-tools-4.8.3nb1"
 	help
 	  
 
@@ -4291,7 +4331,21 @@ config BR2_PKGSRC_PACKAGE_X11_QWT
 
 
 config BR2_PKGSRC_PACKAGE_X11_QWT_QT4
-	bool "qwt-5.2.2"
+	bool "qwt-5.2.2nb7"
+	help
+	  Qt widget library for technical purposes
+
+	  Qwt is an extension to the Qt GUI library from Troll Tech AS.
+	  The Qwt library contains widgets and components which are
+	  primarily useful for technical and scientific purposes.
+	  It includes a 2-D plotting widget, different kinds of sliders,
+	  and much more.
+
+	  http://sourceforge.net/projects/qwt/
+
+
+config BR2_PKGSRC_PACKAGE_X11_QWT6_QT4
+	bool "qwt-6.0.1nb4"
 	help
 	  Qt widget library for technical purposes
 
@@ -4305,7 +4359,7 @@ config BR2_PKGSRC_PACKAGE_X11_QWT_QT4
 
 
 config BR2_PKGSRC_PACKAGE_X11_QWTPLOT3D_QT4
-	bool "qwtplot3d-0.2.7nb7"
+	bool "qwtplot3d-0.2.7nb13"
 	help
 	  3D-widgets for qt4
 
@@ -4317,7 +4371,7 @@ config BR2_PKGSRC_PACKAGE_X11_QWTPLOT3D_QT4
 
 
 config BR2_PKGSRC_PACKAGE_X11_RANDRPROTO
-	bool "randrproto-1.3.1"
+	bool "randrproto-1.4.0"
 	help
 	  Randr extension headers from modular X.org
 
@@ -4342,7 +4396,7 @@ config BR2_PKGSRC_PACKAGE_X11_RATMEN
 
 
 config BR2_PKGSRC_PACKAGE_X11_RECORDPROTO
-	bool "recordproto-1.14"
+	bool "recordproto-1.14.2"
 	help
 	  Record extension headers from X.org
 
@@ -4353,7 +4407,7 @@ config BR2_PKGSRC_PACKAGE_X11_RECORDPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_RENDERCHECK
-	bool "rendercheck-1.3"
+	bool "rendercheck-1.4"
 	help
 	  XRender test application
 
@@ -4374,7 +4428,7 @@ config BR2_PKGSRC_PACKAGE_X11_RENDERCHECK
 
 
 config BR2_PKGSRC_PACKAGE_X11_RENDERPROTO
-	bool "renderproto-0.11"
+	bool "renderproto-0.11.1"
 	help
 	  Render extension headers from modular X.org
 
@@ -4396,7 +4450,7 @@ config BR2_PKGSRC_PACKAGE_X11_RENDERPROTO9
 
 
 config BR2_PKGSRC_PACKAGE_X11_REP_GTK2
-	bool "rep-gtk2-0.90.4nb2"
+	bool "rep-gtk2-0.90.4nb7"
 	help
 	  
 
@@ -4406,7 +4460,7 @@ config BR2_PKGSRC_PACKAGE_X11_REP_GTK2
 
 
 config BR2_PKGSRC_PACKAGE_X11_RESOURCEPROTO
-	bool "resourceproto-1.1.0"
+	bool "resourceproto-1.2.0"
 	help
 	  Resource extension headers from X.org
 
@@ -4417,7 +4471,7 @@ config BR2_PKGSRC_PACKAGE_X11_RESOURCEPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_RGB
-	bool "rgb-1.0.3"
+	bool "rgb-1.0.4"
 	help
 	  RGB color database
 
@@ -4429,7 +4483,7 @@ config BR2_PKGSRC_PACKAGE_X11_RGB
 
 
 config BR2_PKGSRC_PACKAGE_X11_ROX_SESSION
-	bool "rox-session-0.28nb12"
+	bool "rox-session-0.28nb19"
 	help
 	  Very simple session manager
 
@@ -4442,7 +4496,7 @@ config BR2_PKGSRC_PACKAGE_X11_ROX_SESSION
 
 
 config BR2_PKGSRC_PACKAGE_X11_ROX_WALLPAPER
-	bool "rox-wallpaper-2.0nb3"
+	bool "rox-wallpaper-2.0nb4"
 	help
 	  For setting the backdrop
 
@@ -4455,7 +4509,7 @@ config BR2_PKGSRC_PACKAGE_X11_ROX_WALLPAPER
 
 
 config BR2_PKGSRC_PACKAGE_X11_RUBY_GNOME2_GTK
-	bool "ruby19-gnome2-gtk-1.0.3nb1"
+	bool "ruby193-gnome2-gtk-1.1.5nb3"
 	help
 	  Ruby binding of GTK+-2.x
 
@@ -4469,7 +4523,7 @@ config BR2_PKGSRC_PACKAGE_X11_RUBY_GNOME2_GTK
 
 
 config BR2_PKGSRC_PACKAGE_X11_RUBY_GNOME2_GTKSOURCEVIEW2
-	bool "ruby19-gnome2-gtksourceview2-1.0.3nb1"
+	bool "ruby193-gnome2-gtksourceview2-1.1.5nb3"
 	help
 	  Ruby binding of gtksourceview2
 
@@ -4483,7 +4537,7 @@ config BR2_PKGSRC_PACKAGE_X11_RUBY_GNOME2_GTKSOURCEVIEW2
 
 
 config BR2_PKGSRC_PACKAGE_X11_RUBY_GNOME2_VTE
-	bool "ruby19-gnome2-vte-1.0.3nb1"
+	bool "ruby193-gnome2-vte-1.1.5nb3"
 	help
 	  Ruby binding of vte
 
@@ -4497,7 +4551,7 @@ config BR2_PKGSRC_PACKAGE_X11_RUBY_GNOME2_VTE
 
 
 config BR2_PKGSRC_PACKAGE_X11_RUBY_TK
-	bool "ruby19-tk-1.9.2pl290"
+	bool "ruby193-tk-1.9.3p286nb1"
 	help
 	  Ruby interface to the Tk widget set
 
@@ -4508,7 +4562,7 @@ config BR2_PKGSRC_PACKAGE_X11_RUBY_TK
 
 
 config BR2_PKGSRC_PACKAGE_X11_RUBY_WXRUBY
-	bool "ruby19-wxruby-2.0.1nb1"
+	bool "ruby193-wxruby-2.0.1nb7"
 	help
 	  Cross-platform GUI library for creating desktop applications
 
@@ -4536,7 +4590,7 @@ config BR2_PKGSRC_PACKAGE_X11_RXVT
 
 
 config BR2_PKGSRC_PACKAGE_X11_RXVT_UNICODE
-	bool "rxvt-unicode-9.06nb5"
+	bool "rxvt-unicode-9.15nb3"
 	help
 	  rxvt clone supporting Xft fonts and Unicode
 
@@ -4549,7 +4603,7 @@ config BR2_PKGSRC_PACKAGE_X11_RXVT_UNICODE
 
 
 config BR2_PKGSRC_PACKAGE_X11_SAKURA
-	bool "sakura-2.4.2nb1"
+	bool "sakura-3.0.4nb3"
 	help
 	  Sakura is a terminal emulator based on GTK and VTE that supports tab
 
@@ -4562,7 +4616,7 @@ config BR2_PKGSRC_PACKAGE_X11_SAKURA
 
 
 config BR2_PKGSRC_PACKAGE_X11_SCRNSAVERPROTO
-	bool "scrnsaverproto-1.2.0"
+	bool "scrnsaverproto-1.2.2"
 	help
 	  ScrnSaver extension headers from X.org
 
@@ -4573,7 +4627,7 @@ config BR2_PKGSRC_PACKAGE_X11_SCRNSAVERPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_SESSREG
-	bool "sessreg-1.0.3"
+	bool "sessreg-1.0.7nb1"
 	help
 	  Manage utmp/wtmp entries for xdm
 
@@ -4584,7 +4638,7 @@ config BR2_PKGSRC_PACKAGE_X11_SESSREG
 
 
 config BR2_PKGSRC_PACKAGE_X11_SETXKBMAP
-	bool "setxkbmap-1.1.0"
+	bool "setxkbmap-1.3.0"
 	help
 	  Set the keyboard map using the X Keyboard Extension
 
@@ -4595,7 +4649,7 @@ config BR2_PKGSRC_PACKAGE_X11_SETXKBMAP
 
 
 config BR2_PKGSRC_PACKAGE_X11_SLOCK
-	bool "slock-0.7"
+	bool "slock-1.0"
 	help
 	  Simple X11 screen locker
 
@@ -4605,7 +4659,7 @@ config BR2_PKGSRC_PACKAGE_X11_SLOCK
 	  your password and press Enter.  The Escape key resets input and it
 	  beeps on wrong password.
 
-	  http://www.suckless.org/wiki/tools/xlib
+	  http://tools.suckless.org/slock
 
 
 config BR2_PKGSRC_PACKAGE_X11_SPACE_DAPP
@@ -4657,8 +4711,22 @@ config BR2_PKGSRC_PACKAGE_X11_STALONETRAY
 	  http://stalonetray.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_X11_STARTUP_NOTIFICATION010
+	bool "startup-notification-0.10nb3"
+	help
+	  X11 application startup notification library
+
+	  startup-notification provides mechanisms allowing a desktop environment to
+	  track application startup, to provide user feedback and other features.
+	  
+	  This is an older version to allow compatibility with native X11 in
+	  NetBSD 5 and earlier (pre-xcb).
+
+	  http://www.freedesktop.org/wiki/Software/startup-notification
+
+
 config BR2_PKGSRC_PACKAGE_X11_STARTUP_NOTIFICATION
-	bool "startup-notification-0.12"
+	bool "startup-notification-0.12nb3"
 	help
 	  X11 application startup notification library
 
@@ -4669,7 +4737,7 @@ config BR2_PKGSRC_PACKAGE_X11_STARTUP_NOTIFICATION
 
 
 config BR2_PKGSRC_PACKAGE_X11_TILE
-	bool "tile-0.7.3nb1"
+	bool "tile-0.7.3nb2"
 	help
 	  X11 Window Tiler
 
@@ -4691,7 +4759,7 @@ config BR2_PKGSRC_PACKAGE_X11_TILE
 
 
 config BR2_PKGSRC_PACKAGE_X11_TINT2
-	bool "tint2-0.11nb5"
+	bool "tint2-0.11nb12"
 	help
 	  Tint2 is a simple panel/taskbar
 
@@ -4716,22 +4784,22 @@ config BR2_PKGSRC_PACKAGE_X11_TINT2
 
 
 config BR2_PKGSRC_PACKAGE_X11_TK
-	bool "tk-8.4.18nb2"
+	bool "tk-8.5.12nb1"
 	help
 	  Graphical toolkit for TCL
 
 	  This package contains the binary release of Tk, a GUI toolkit for Tcl.
 	  
-	  The best way to get started with Tcl is to read ``Tcl and the Tk
-	  Toolkit'' by John K. Ousterhout, Addison-Wesley, ISBN 0-201-63337-X
-	  or ``Practical Programming in Tcl and Tk'' by Brent B. Welch,
-	  Prentice Hall PTR, ISBN 0-13-616830-X.
+	  The best way to get started with Tcl is to read ``Practical Programming in
+	  TCL and Tk, 4th Edition'' by Brent Welch and Ken Jones, Prentice Hall PTR,
+	  ISBN 0-13-038560-3.  There's also the collectible ``Tcl and the Tk
+	  Toolkit'' by John K. Ousterhout, Addison-Wesley, ISBN 0-20-163337-X.
 
 	  http://www.tcl.tk/
 
 
 config BR2_PKGSRC_PACKAGE_X11_TK_BWIDGET
-	bool "tk-BWidget-1.9.0"
+	bool "tk-BWidget-1.9.0nb1"
 	help
 	  High-level Widget Set for Tcl/Tk
 
@@ -4753,13 +4821,13 @@ config BR2_PKGSRC_PACKAGE_X11_TK_BWIDGET
 
 
 config BR2_PKGSRC_PACKAGE_X11_TK_TIX
-	bool "tk-Tix-8.2.0b1nb3"
+	bool "tk-Tix-8.4.3"
 	help
 	  Powerful widget library for Tcl/Tk
 
 	  Tix is a library of useful widgets for Tcl/Tk.
 
-	  http://tixlibrary.sourceforge.net/
+	  http://tix.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_X11_TKINFO
@@ -4788,21 +4856,23 @@ config BR2_PKGSRC_PACKAGE_X11_TKINFO
 	  http://math-www.uni-paderborn.de/~axel/tkinfo/
 
 
-config BR2_PKGSRC_PACKAGE_X11_TRANSSET_DF
-	bool "transset-df-5"
+config BR2_PKGSRC_PACKAGE_X11_TRANSSET
+	bool "transset-1.0.0"
 	help
-	  Patched version of xorg's transset
+	  Utility for setting opacity property
 
-	  This is a patched version of xorg's transset
-	  I wanted to integrate transset into my windowmanager and to
-	  be able to set and unset transparency by just pressing a key.
-	  To make that possible I added several different 'select methods'.
-	  The first one was 'select by point' and lets the user run transset
-	  directly on the window curently under the cursor without bringing
-	  up the crosshair. Later select by name and id was added after insperation
-	  from other transset patches.
+	  transset is an utility for setting opacity property.
+	  
+	  Features:
+	  
+	  * select window by clicking (as transset)
+	  * select actual focused X11 window
+	  * select window by pointing
+	  * select by window name or id
+	  * force toggle
+	  * increase or decrease opacity
 
-	  http://forchheimer.se/transset-df/
+	  http://xorg.freedesktop.org/
 
 
 config BR2_PKGSRC_PACKAGE_X11_TRAPPROTO
@@ -4865,8 +4935,19 @@ config BR2_PKGSRC_PACKAGE_X11_VIDEOPROTO
 	  http://xorg.freedesktop.org/
 
 
+config BR2_PKGSRC_PACKAGE_X11_VIEWRES
+	bool "viewres-1.0.3nb1"
+	help
+	  Display widget class hierarchy of the Athena Widget Set
+
+	  viewres displays a tree showing the widget class hierarchy of the
+	  Athena Widget Set (libXaw).
+
+	  http://xorg.freedesktop.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_VTE
-	bool "vte-0.28.1nb1"
+	bool "vte-0.28.1nb6"
 	help
 	  Terminal widget with improved accessibility and I18N support
 
@@ -4876,8 +4957,19 @@ config BR2_PKGSRC_PACKAGE_X11_VTE
 	  http://www.gnome.org/
 
 
+config BR2_PKGSRC_PACKAGE_X11_VTE029
+	bool "vte029-0.32.2nb3"
+	help
+	  Terminal widget with improved accessibility and I18N support
+
+	  Terminal widget with improved font, internationalization and
+	  accessibility support for the GNOME 3 desktop.
+
+	  http://www.gnome.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_WDM
-	bool "wdm-1.28nb8"
+	bool "wdm-1.28nb9"
 	help
 	  WINGs display manager
 
@@ -4959,7 +5051,7 @@ config BR2_PKGSRC_PACKAGE_X11_WORKER
 
 
 config BR2_PKGSRC_PACKAGE_X11_WTERM
-	bool "wterm-6.2.9nb15"
+	bool "wterm-6.2.9nb16"
 	help
 	  
 
@@ -4973,7 +5065,7 @@ config BR2_PKGSRC_PACKAGE_X11_WTERM
 
 
 config BR2_PKGSRC_PACKAGE_X11_WXGTK26
-	bool "wxGTK-2.6.3nb12"
+	bool "wxGTK-2.6.3nb17"
 	help
 	  GTK-based implementation of the wxWidgets GUI library
 
@@ -5005,7 +5097,7 @@ config BR2_PKGSRC_PACKAGE_X11_WXGTK26
 
 
 config BR2_PKGSRC_PACKAGE_X11_WXGTK26_CONTRIB
-	bool "wxGTK-contrib-2.6.3nb11"
+	bool "wxGTK-contrib-2.6.3nb16"
 	help
 	  
 
@@ -5016,7 +5108,7 @@ config BR2_PKGSRC_PACKAGE_X11_WXGTK26_CONTRIB
 
 
 config BR2_PKGSRC_PACKAGE_X11_WXGTK24
-	bool "wxGTK24-2.4.2nb22"
+	bool "wxGTK24-2.4.2nb27"
 	help
 	  GTK-based implementation of the wxWidgets GUI library
 
@@ -5050,7 +5142,7 @@ config BR2_PKGSRC_PACKAGE_X11_WXGTK24
 
 
 config BR2_PKGSRC_PACKAGE_X11_WXGTK28
-	bool "wxGTK28-2.8.10nb13"
+	bool "wxGTK28-2.8.10nb20"
 	help
 	  GTK-based implementation of the wxWidgets GUI library
 
@@ -5082,7 +5174,7 @@ config BR2_PKGSRC_PACKAGE_X11_WXGTK28
 
 
 config BR2_PKGSRC_PACKAGE_X11_WXGTK28_CONTRIB
-	bool "wxGTK28-contrib-2.8.10nb10"
+	bool "wxGTK28-contrib-2.8.10nb16"
 	help
 	  
 
@@ -5105,7 +5197,7 @@ config BR2_PKGSRC_PACKAGE_X11_WXWINDOWS_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_X11_WXHASKELL
-	bool "wxhaskell-0.9.4nb17"
+	bool "wxhaskell-0.9.4nb22"
 	help
 	  wxGTK binding for Haskell
 
@@ -5131,7 +5223,7 @@ config BR2_PKGSRC_PACKAGE_X11_WXHASKELL
 
 
 config BR2_PKGSRC_PACKAGE_X11_X11PERF
-	bool "x11perf-1.5.1nb1"
+	bool "x11perf-1.5.4"
 	help
 	  X11 server benchmark suite
 
@@ -5143,7 +5235,7 @@ config BR2_PKGSRC_PACKAGE_X11_X11PERF
 
 
 config BR2_PKGSRC_PACKAGE_X11_X11VNC
-	bool "x11vnc-0.9.13nb1"
+	bool "x11vnc-0.9.13nb8"
 	help
 	  VNC server for real X displays
 
@@ -5167,7 +5259,7 @@ config BR2_PKGSRC_PACKAGE_X11_X2X
 
 
 config BR2_PKGSRC_PACKAGE_X11_X3270
-	bool "x3270-3.3.12ga7nb1"
+	bool "x3270-3.3.12ga11"
 	help
 	  3270 Terminal emulator
 
@@ -5177,7 +5269,7 @@ config BR2_PKGSRC_PACKAGE_X11_X3270
 
 
 config BR2_PKGSRC_PACKAGE_X11_XANIROC
-	bool "xaniroc-1.02nb3"
+	bool "xaniroc-1.02nb4"
 	help
 	  Animate your root-cursor
 
@@ -5186,8 +5278,25 @@ config BR2_PKGSRC_PACKAGE_X11_XANIROC
 	  
 
 
+config BR2_PKGSRC_PACKAGE_X11_XAOS
+	bool "xaos-3.5"
+	help
+	  Zoomable fractal rendering doodad
+
+	  From the home page:
+	  
+	  XaoS is a fast portable real-time interactive fractal zoomer. It
+	  displays the Mandelbrot set (among other escape time fractals) and
+	  allows you zoom smoothly into the fractal. Various coloring modes
+	  are provided for both the points inside and outside the selected
+	  set. In addition, switching between Julia and Mandelbrot fractal
+	  types and on-the-fly plane switching is provided.
+
+	  http://xaos.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_X11_XAUTH
-	bool "xauth-1.0.4"
+	bool "xauth-1.0.7"
 	help
 	  X authentication utility
 
@@ -5214,7 +5323,7 @@ config BR2_PKGSRC_PACKAGE_X11_XAUTOLOCK
 
 
 config BR2_PKGSRC_PACKAGE_X11_XBACKLIGHT
-	bool "xbacklight-1.1.1"
+	bool "xbacklight-1.2.0"
 	help
 	  Adjust backlight brightness using RandR extension
 
@@ -5270,7 +5379,7 @@ config BR2_PKGSRC_PACKAGE_X11_XBINDKEYS_TK
 
 
 config BR2_PKGSRC_PACKAGE_X11_XBITMAPS
-	bool "xbitmaps-1.1.0"
+	bool "xbitmaps-1.1.1"
 	help
 	  Common X11 bitmaps
 
@@ -5281,7 +5390,7 @@ config BR2_PKGSRC_PACKAGE_X11_XBITMAPS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCALC
-	bool "xcalc-1.0.3"
+	bool "xcalc-1.0.4.1"
 	help
 	  Scientific calculator for X
 
@@ -5293,9 +5402,9 @@ config BR2_PKGSRC_PACKAGE_X11_XCALC
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCALIB
-	bool "xcalib-0.8"
+	bool "xcalib-0.8nb1"
 	help
-	  TODO: Short description of the package
+	  Loads VCGT tag of monitor ICC profile into X server LUT
 
 	  Loads VCGT tag of monitor ICC profile into X server LUT.
 
@@ -5328,7 +5437,7 @@ config BR2_PKGSRC_PACKAGE_X11_XCB
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCB_PROTO
-	bool "xcb-proto-1.6"
+	bool "xcb-proto-1.7.1nb1"
 	help
 	  
 
@@ -5357,7 +5466,7 @@ config BR2_PKGSRC_PACKAGE_X11_XCB_PROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCB_UTIL
-	bool "xcb-util-0.3.6"
+	bool "xcb-util-0.3.9nb1"
 	help
 	  XCB Utilities
 
@@ -5383,6 +5492,91 @@ config BR2_PKGSRC_PACKAGE_X11_XCB_UTIL
 	  http://xcb.freedesktop.org/
 
 
+config BR2_PKGSRC_PACKAGE_X11_XCB_UTIL_IMAGE
+	bool "xcb-util-image-0.3.9nb1"
+	help
+	  XCB port of Xlib's XImage and XShmImage
+
+	  XCB util-image module provides the following library:
+	  
+	  - image: Port of Xlib's XImage and XShmImage functions.
+
+	  http://xcb.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_XCB_UTIL_KEYSYMS
+	bool "xcb-util-keysyms-0.3.9nb1"
+	help
+	  XCB Utilities
+
+	  The xcb-util module provides a number of libraries which sit on top of
+	  libxcb, the core X protocol library, and some of the extension
+	  libraries. These experimental libraries provide convenience functions
+	  and interfaces which make the raw X protocol more usable. Some of the
+	  libraries also provide client-side code which is not strictly part of
+	  the X protocol but which have traditionally been provided by Xlib.
+	  
+	  These libraries are currently included, roughly ordered by maturity:
+	  
+	  keysyms: Standard X key constants and conversion to/from keycodes.
+
+	  http://xcb.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_XCB_UTIL_RENDERUTIL
+	bool "xcb-util-renderutil-0.3.8nb1"
+	help
+	  Convenience functions for the Render extension
+
+	  XCB util-renderutil module provides the following library:
+	  
+	  - renderutil: Convenience functions for the Render extension.
+
+	  http://xcb.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_XCB_UTIL_WM
+	bool "xcb-util-wm-0.3.9nb1"
+	help
+	  Client and window-manager helpers for ICCCM and EWMH
+
+	  XCB util-wm module provides the following libraries:
+	  
+	  - ewmh: Both client and window-manager helpers for EWMH.
+	  - icccm: Both client and window-manager helpers for ICCCM.
+
+	  http://xcb.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_XCB_UTIL036
+	bool "xcb-util036-0.3.6nb1"
+	help
+	  
+
+	  The xcb-util module provides a number of libraries which sit on top of
+	  libxcb, the core X protocol library, and some of the extension
+	  libraries. These experimental libraries provide convenience functions
+	  and interfaces which make the raw X protocol more usable. Some of the
+	  libraries also provide client-side code which is not strictly part of
+	  the X protocol but which have traditionally been provided by Xlib.
+	  
+	  These libraries are currently included, roughly ordered by maturity:
+	  
+	  render-util: Convenience functions for the Render extension.
+	  aux: Convenient access to connection setup and some core requests.
+	  atom: Standard core X atom constants and atom caching.
+	  property: Callback X property-change handling.
+	  icccm: Both client and window-manager helpers for ICCCM.
+	  keysyms: Standard X key constants and conversion to/from keycodes.
+	  event: Callback X event handling.
+	  image: Port of Xlib's XImage and XShmImage functions.
+	  wm: Framework for window manager implementation.
+	  
+	  This package contains the old 0.3.6 release.
+
+	  http://xcb.freedesktop.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_XCLIP
 	bool "xclip-0.11"
 	help
@@ -5398,7 +5592,7 @@ config BR2_PKGSRC_PACKAGE_X11_XCLIP
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCLOCK
-	bool "xclock-1.0.4nb1"
+	bool "xclock-1.0.6"
 	help
 	  Analog / digital clock for X
 
@@ -5410,7 +5604,7 @@ config BR2_PKGSRC_PACKAGE_X11_XCLOCK
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCMISCPROTO
-	bool "xcmiscproto-1.2.0"
+	bool "xcmiscproto-1.2.2"
 	help
 	  XCMisc extension headers from X.org
 
@@ -5421,7 +5615,7 @@ config BR2_PKGSRC_PACKAGE_X11_XCMISCPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCOLORS
-	bool "xcolors-1.3nb4"
+	bool "xcolors-1.3nb5"
 	help
 	  
 
@@ -5470,7 +5664,7 @@ config BR2_PKGSRC_PACKAGE_X11_XCOMPMGR
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCONSOLE
-	bool "xconsole-1.0.3nb1"
+	bool "xconsole-1.0.4"
 	help
 	  X11 client to display console messages
 
@@ -5509,18 +5703,15 @@ config BR2_PKGSRC_PACKAGE_X11_XCURSOR
 
 
 config BR2_PKGSRC_PACKAGE_X11_XCURSORGEN
-	bool "xcursorgen-4.3.0nb6"
+	bool "xcursorgen-1.0.5"
 	help
-	  Create an X cursor file from a collection of PNG images
+	  Prepare X11 cursor sets for use with libXcursor
 
-	  xcursorgen  - create an X cursor file from a collection of PNG images
+	  xcursorgen prepares X11 cursor sets for use with libXcursor.
 	  
-	  Xcursorgen reads the config-file to find the list of cursor images
-	  along with their hotspot and nominal size information.  Xcursorgen
-	  converts all of the images to Xcursor format and writes them to the
-	  output-file.
+	  This is from the modular X.org project.
 
-	  http://www.xfree86.org/
+	  http://cgit.freedesktop.org/xorg/app/xcursorgen/
 
 
 config BR2_PKGSRC_PACKAGE_X11_XDAEMON
@@ -5579,7 +5770,7 @@ config BR2_PKGSRC_PACKAGE_X11_XDG_USER_DIRS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XDIALOG
-	bool "xdialog-2.3.1nb6"
+	bool "xdialog-2.3.1nb12"
 	help
 	  X11 drop-in replacement for the curses dialog program
 
@@ -5590,11 +5781,11 @@ config BR2_PKGSRC_PACKAGE_X11_XDIALOG
 	  the range box, the help button/box).  Because Xdialog uses GTK+, it will also
 	  match your desktop themes.
 
-	  http://xdialog.dyns.net/
+	  http://xdialog.free.fr/
 
 
 config BR2_PKGSRC_PACKAGE_X11_XDM
-	bool "xdm-1.1.11"
+	bool "xdm-1.1.11nb1"
 	help
 	  X Display Manager from modular X.org
 
@@ -5623,7 +5814,7 @@ config BR2_PKGSRC_PACKAGE_X11_XDM3D
 
 
 config BR2_PKGSRC_PACKAGE_X11_XDPYINFO
-	bool "xdpyinfo-1.1.0"
+	bool "xdpyinfo-1.3.0"
 	help
 	  Display information utility for X
 
@@ -5689,7 +5880,7 @@ config BR2_PKGSRC_PACKAGE_X11_XEPHEM
 
 
 config BR2_PKGSRC_PACKAGE_X11_XEV
-	bool "xev-1.0.4"
+	bool "xev-1.2.0"
 	help
 	  Display X events
 
@@ -5704,7 +5895,7 @@ config BR2_PKGSRC_PACKAGE_X11_XEV
 
 
 config BR2_PKGSRC_PACKAGE_X11_XEXTPROTO
-	bool "xextproto-7.2.0"
+	bool "xextproto-7.2.1"
 	help
 	  XExt extension headers from X.org
 
@@ -5714,7 +5905,7 @@ config BR2_PKGSRC_PACKAGE_X11_XEXTPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XEYES
-	bool "xeyes-1.1.0"
+	bool "xeyes-1.1.1"
 	help
 	  Follow the mouse demo
 
@@ -5726,7 +5917,7 @@ config BR2_PKGSRC_PACKAGE_X11_XEYES
 
 
 config BR2_PKGSRC_PACKAGE_X11_XF86_INPUT_KEYBOARD
-	bool "xf86-input-keyboard-1.3.2nb3"
+	bool "xf86-input-keyboard-1.6.1"
 	help
 	  Modular Xorg keyboard driver
 
@@ -5736,7 +5927,7 @@ config BR2_PKGSRC_PACKAGE_X11_XF86_INPUT_KEYBOARD
 
 
 config BR2_PKGSRC_PACKAGE_X11_XF86_INPUT_MOUSE
-	bool "xf86-input-mouse-1.4.0nb2"
+	bool "xf86-input-mouse-1.7.2nb2"
 	help
 	  Modular Xorg mouse driver
 
@@ -5879,7 +6070,7 @@ config BR2_PKGSRC_PACKAGE_X11_XF86_VIDEO_IMSTT
 
 
 config BR2_PKGSRC_PACKAGE_X11_XF86_VIDEO_INTEL
-	bool "xf86-video-intel-2.7.1nb5"
+	bool "xf86-video-intel-2.7.1nb6"
 	help
 	  Modular Xorg Intel video driver
 
@@ -6160,7 +6351,7 @@ config BR2_PKGSRC_PACKAGE_X11_XF86DGAPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XF86DRIPROTO
-	bool "xf86driproto-2.1.0"
+	bool "xf86driproto-2.1.1"
 	help
 	  XF86DRI extension headers from modular X.org
 
@@ -6186,7 +6377,7 @@ config BR2_PKGSRC_PACKAGE_X11_XF86MISCPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XF86VIDMODEPROTO
-	bool "xf86vidmodeproto-2.3"
+	bool "xf86vidmodeproto-2.3.1"
 	help
 	  XF86VidMode extension headers from modular X.org
 
@@ -6197,7 +6388,7 @@ config BR2_PKGSRC_PACKAGE_X11_XF86VIDMODEPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_CLIPMAN_PLUGIN
-	bool "xfce4-clipman-plugin-0.8.0nb7"
+	bool "xfce4-clipman-plugin-0.8.0nb13"
 	help
 	  Xfce clipboard plugin
 
@@ -6207,7 +6398,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_CLIPMAN_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_DESKTOP
-	bool "xfce4-desktop-4.6.1nb7"
+	bool "xfce4-desktop-4.6.1nb14"
 	help
 	  Xfce desktop background manager
 
@@ -6217,7 +6408,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_DESKTOP
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_EXO
-	bool "xfce4-exo-0.3.101nb8"
+	bool "xfce4-exo-0.3.101nb13"
 	help
 	  Xfce extension library
 
@@ -6227,7 +6418,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_EXO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_EYES_PLUGIN
-	bool "xfce4-eyes-plugin-4.4.0nb7"
+	bool "xfce4-eyes-plugin-4.4.0nb13"
 	help
 	  Xfce eyes plugin
 
@@ -6237,7 +6428,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_EYES_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_GTK2_ENGINE
-	bool "xfce4-gtk2-engine-2.6.0nb6"
+	bool "xfce4-gtk2-engine-2.6.0nb11"
 	help
 	  Xfce GTK2 themes
 
@@ -6247,7 +6438,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_GTK2_ENGINE
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_NOTES_PLUGIN
-	bool "xfce4-notes-plugin-1.6.0nb7"
+	bool "xfce4-notes-plugin-1.6.0nb13"
 	help
 	  Xfce notes plugin
 
@@ -6257,7 +6448,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_NOTES_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_PANEL
-	bool "xfce4-panel-4.6.2nb7"
+	bool "xfce4-panel-4.6.2nb14"
 	help
 	  Xfce panel
 
@@ -6267,7 +6458,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_PANEL
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_PLACES_PLUGIN
-	bool "xfce4-places-plugin-1.0.0nb8"
+	bool "xfce4-places-plugin-1.0.0nb15"
 	help
 	  Xfce Places plugin
 
@@ -6277,7 +6468,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_PLACES_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_SCREENSHOOTER_PLUGIN
-	bool "xfce4-screenshooter-plugin-1.0.0nb7"
+	bool "xfce4-screenshooter-plugin-1.0.0nb13"
 	help
 	  Xfce screenshot plugin
 
@@ -6287,7 +6478,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_SCREENSHOOTER_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_SESSION
-	bool "xfce4-session-4.6.1nb6"
+	bool "xfce4-session-4.6.1nb13"
 	help
 	  Xfce session manager
 
@@ -6300,7 +6491,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_SESSION
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_SETTINGS
-	bool "xfce4-settings-4.6.5nb6"
+	bool "xfce4-settings-4.6.5nb13"
 	help
 	  Xfce settings manager
 
@@ -6314,7 +6505,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_SETTINGS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_TERMINAL
-	bool "xfce4-terminal-0.4.2nb6"
+	bool "xfce4-terminal-0.4.2nb12"
 	help
 	  Xfce terminal emulator
 
@@ -6326,7 +6517,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFCE4_TERMINAL
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFCE4_UTILS
-	bool "xfce4-utils-4.6.1nb6"
+	bool "xfce4-utils-4.6.1nb12"
 	help
 	  Xfce utilities
 
@@ -6392,7 +6583,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFLAME
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFONTSEL
-	bool "xfontsel-1.0.2nb2"
+	bool "xfontsel-1.0.4"
 	help
 	  X font selector
 
@@ -6405,7 +6596,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFONTSEL
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFORMS
-	bool "xforms-1.0nb7"
+	bool "xforms-1.0nb8"
 	help
 	  Graphical user interface toolkit for X Window System
 
@@ -6423,7 +6614,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFORMS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XFSTT
-	bool "xfstt-1.6nb5"
+	bool "xfstt-1.9"
 	help
 	  TrueType font server for X11
 
@@ -6439,7 +6630,7 @@ config BR2_PKGSRC_PACKAGE_X11_XFSTT
 
 
 config BR2_PKGSRC_PACKAGE_X11_XGAMMA
-	bool "xgamma-1.0.3nb1"
+	bool "xgamma-1.0.5"
 	help
 	  Alter gamma correction
 
@@ -6538,7 +6729,7 @@ config BR2_PKGSRC_PACKAGE_X11_XHANGGLIDER
 
 
 config BR2_PKGSRC_PACKAGE_X11_XHOST
-	bool "xhost-1.0.3"
+	bool "xhost-1.0.5"
 	help
 	  Server access control program for X
 
@@ -6550,7 +6741,7 @@ config BR2_PKGSRC_PACKAGE_X11_XHOST
 
 
 config BR2_PKGSRC_PACKAGE_X11_XICC
-	bool "xicc-0.1"
+	bool "xicc-0.1nb4"
 	help
 	  Load ICC profile into X server
 
@@ -6560,7 +6751,7 @@ config BR2_PKGSRC_PACKAGE_X11_XICC
 
 
 config BR2_PKGSRC_PACKAGE_X11_XINERAMAPROTO
-	bool "xineramaproto-1.2"
+	bool "xineramaproto-1.2.1"
 	help
 	  Xinerama extension headers from X.org
 
@@ -6571,7 +6762,7 @@ config BR2_PKGSRC_PACKAGE_X11_XINERAMAPROTO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XINIT
-	bool "xinit-1.2.1"
+	bool "xinit-1.3.2"
 	help
 	  X init program
 
@@ -6615,7 +6806,7 @@ config BR2_PKGSRC_PACKAGE_X11_XJMAN
 
 
 config BR2_PKGSRC_PACKAGE_X11_XKBCOMP
-	bool "xkbcomp-1.1.1"
+	bool "xkbcomp-1.2.4"
 	help
 	  XKBD keymap compiler
 
@@ -6651,6 +6842,34 @@ config BR2_PKGSRC_PACKAGE_X11_XKBDATA
 	  http://xorg.freedesktop.org/
 
 
+config BR2_PKGSRC_PACKAGE_X11_XKBEVD
+	bool "xkbevd-1.1.3"
+	help
+	  
+
+	  This command is very raw and is therefore only partially implemented;
+	  we present it here as a rough prototype for developers, not as a
+	  general purpose tool for end users.
+	  
+	  The xkbevd event daemon listens for specified XKB events and executes
+	  requested commands if they occur.   The configuration file consists
+	  of a list of event specification/action pairs and/or variable
+	  definitions.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_X11_XKBPRINT
+	bool "xkbprint-1.0.3"
+	help
+	  Generate printable description of a XKB keyboard description
+
+	  xkbprint generates a printable or encapsulated PostScript description
+	  of an XKB keyboard description.
+
+	  http://xorg.freedesktop.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_XKBSET
 	bool "xkbset-0.3nb2"
 	help
@@ -6677,8 +6896,24 @@ config BR2_PKGSRC_PACKAGE_X11_XKBSET
 	  http://www.math.missouri.edu/~stephen/software/
 
 
+config BR2_PKGSRC_PACKAGE_X11_XKBUTILS
+	bool "xkbutils-1.0.3"
+	help
+	  
+
+	  xkbutils is a collection of small utilities utilizing the XKeyboard (XKB)
+	  extension to the X11 protocol.
+	  
+	  It includes:
+	  xkbbell  - generate XKB bell events
+	  xkbvleds - display the state of LEDs on an XKB keyboard in a window
+	  xkbwatch - reports changes in the XKB keyboard state
+
+	  http://xorg.freedesktop.org/
+
+
 config BR2_PKGSRC_PACKAGE_X11_XKEYBOARD_CONFIG
-	bool "xkeyboard-config-2.0nb1"
+	bool "xkeyboard-config-2.6"
 	help
 	  X Keyboard Configuration Database
 
@@ -6712,7 +6947,7 @@ config BR2_PKGSRC_PACKAGE_X11_XKEYCAPS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XKILL
-	bool "xkill-1.0.2"
+	bool "xkill-1.0.3"
 	help
 	  Kill X clients
 
@@ -6725,7 +6960,7 @@ config BR2_PKGSRC_PACKAGE_X11_XKILL
 
 
 config BR2_PKGSRC_PACKAGE_X11_XLESS
-	bool "xless-1.7nb3"
+	bool "xless-1.7nb4"
 	help
 	  X11 text viewer; useful as an add-on tool for other apps
 
@@ -6752,7 +6987,7 @@ config BR2_PKGSRC_PACKAGE_X11_XLESS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XLOAD
-	bool "xload-1.0.2nb1"
+	bool "xload-1.1.1"
 	help
 	  System load average display for X
 
@@ -6764,7 +6999,7 @@ config BR2_PKGSRC_PACKAGE_X11_XLOAD
 
 
 config BR2_PKGSRC_PACKAGE_X11_XLOCKMORE
-	bool "xlockmore-5.34nb1"
+	bool "xlockmore-5.38nb6"
 	help
 	  Like the XLock session-locker/screensaver, but with more
 
@@ -6785,7 +7020,7 @@ config BR2_PKGSRC_PACKAGE_X11_XLOCKMORE
 
 
 config BR2_PKGSRC_PACKAGE_X11_XLOCKMORE_LITE
-	bool "xlockmore-lite-5.34"
+	bool "xlockmore-lite-5.38nb2"
 	help
 	  "lite" version of xlockmore
 
@@ -6809,7 +7044,7 @@ config BR2_PKGSRC_PACKAGE_X11_XLOCKMORE_LITE
 
 
 config BR2_PKGSRC_PACKAGE_X11_XLOGO
-	bool "xlogo-1.0.2nb1"
+	bool "xlogo-1.0.4"
 	help
 	  X Window System logo
 
@@ -6835,7 +7070,7 @@ config BR2_PKGSRC_PACKAGE_X11_XLOGOUT
 
 
 config BR2_PKGSRC_PACKAGE_X11_XLSCLIENTS
-	bool "xlsclients-1.1.0"
+	bool "xlsclients-1.1.2nb1"
 	help
 	  X client listing utility
 
@@ -6848,7 +7083,7 @@ config BR2_PKGSRC_PACKAGE_X11_XLSCLIENTS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XLSFONTS
-	bool "xlsfonts-1.0.3"
+	bool "xlsfonts-1.0.4"
 	help
 	  Lists available fonts
 
@@ -6870,7 +7105,7 @@ config BR2_PKGSRC_PACKAGE_X11_XLT
 
 
 config BR2_PKGSRC_PACKAGE_X11_XLUPE
-	bool "xlupe-1.1nb2"
+	bool "xlupe-1.1nb3"
 	help
 	  Magnifier for X
 
@@ -6882,7 +7117,7 @@ config BR2_PKGSRC_PACKAGE_X11_XLUPE
 
 
 config BR2_PKGSRC_PACKAGE_X11_XMAG
-	bool "xmag-1.0.3"
+	bool "xmag-1.0.4"
 	help
 	  Magnify parts of the screen
 
@@ -6895,7 +7130,7 @@ config BR2_PKGSRC_PACKAGE_X11_XMAG
 
 
 config BR2_PKGSRC_PACKAGE_X11_XMAN
-	bool "xman-1.1.0nb1"
+	bool "xman-1.1.2nb1"
 	help
 	  Manual page browser
 
@@ -6908,7 +7143,7 @@ config BR2_PKGSRC_PACKAGE_X11_XMAN
 
 
 config BR2_PKGSRC_PACKAGE_X11_XMASCOT
-	bool "xmascot-2.6anb1"
+	bool "xmascot-2.6anb2"
 	help
 	  Moving mascot on your X-Window screen
 
@@ -6964,7 +7199,7 @@ config BR2_PKGSRC_PACKAGE_X11_XMINDPATH
 
 
 config BR2_PKGSRC_PACKAGE_X11_XMMS_OSD
-	bool "xmms-osd-2.2.14nb5"
+	bool "xmms-osd-2.2.14nb8"
 	help
 	  XMMS plugin that shows current status on your desktop
 
@@ -6972,11 +7207,11 @@ config BR2_PKGSRC_PACKAGE_X11_XMMS_OSD
 	  distribution file.  This plugin shows XMMS status directly on your
 	  X desktop, like song, volume and balance changes, etc.
 
-	  http://www.ignavus.net/software.html
+	  http://sourceforge.net/projects/libxosd/
 
 
 config BR2_PKGSRC_PACKAGE_X11_XMODMAP
-	bool "xmodmap-1.0.4"
+	bool "xmodmap-1.0.7"
 	help
 	  X modmap program
 
@@ -7021,7 +7256,7 @@ config BR2_PKGSRC_PACKAGE_X11_XMORE
 
 
 config BR2_PKGSRC_PACKAGE_X11_XMOUNTAINS
-	bool "xmountains-2.7nb1"
+	bool "xmountains-2.7nb2"
 	help
 	  Fractal terrain generator for X11
 
@@ -7050,7 +7285,7 @@ config BR2_PKGSRC_PACKAGE_X11_XMOVE
 
 
 config BR2_PKGSRC_PACKAGE_X11_XMX
-	bool "xmx-2.1a7nb4"
+	bool "xmx-2.1a7nb6"
 	help
 	  X11 Protocol Multiplexor
 
@@ -7117,7 +7352,7 @@ config BR2_PKGSRC_PACKAGE_X11_XNODECOR
 
 
 config BR2_PKGSRC_PACKAGE_X11_XORG_CF_FILES
-	bool "xorg-cf-files-1.0.4"
+	bool "xorg-cf-files-1.0.4nb5"
 	help
 	  Xorg imake rules
 
@@ -7139,11 +7374,11 @@ config BR2_PKGSRC_PACKAGE_X11_XOSD
 	  The XOSD library requires an X Window System compiled with threading
 	  support to work properly, particularly the Xlib library.
 
-	  http://www.ignavus.net/software.html
+	  http://sourceforge.net/projects/libxosd/
 
 
 config BR2_PKGSRC_PACKAGE_X11_XP
-	bool "xp-1.2b10nb3"
+	bool "xp-1.2b10nb4"
 	help
 	  Fast X11 text file viewer using Athena widgets
 
@@ -7170,7 +7405,7 @@ config BR2_PKGSRC_PACKAGE_X11_XP
 
 
 config BR2_PKGSRC_PACKAGE_X11_XPAD
-	bool "xpad-4.0nb2"
+	bool "xpad-4.0nb7"
 	help
 	  Sticky notes application for GTK+ 2.0
 
@@ -7234,7 +7469,7 @@ config BR2_PKGSRC_PACKAGE_X11_XPHOON
 
 
 config BR2_PKGSRC_PACKAGE_X11_XPLANET
-	bool "xplanet-1.2.2nb2"
+	bool "xplanet-1.2.2nb7"
 	help
 	  Rotating rendered map of the Earth in X11 root window
 
@@ -7288,7 +7523,7 @@ config BR2_PKGSRC_PACKAGE_X11_XPMROOT
 
 
 config BR2_PKGSRC_PACKAGE_X11_XPNS
-	bool "xpns-1.0nb2"
+	bool "xpns-1.0nb4"
 	help
 	  Petri-Net Simulator for Xwindows
 
@@ -7316,7 +7551,7 @@ config BR2_PKGSRC_PACKAGE_X11_XPNS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XPOSTIT
-	bool "xpostit-3.3.1nb3"
+	bool "xpostit-3.3.1nb4"
 	help
 	  Post notes to yourself on the screen
 
@@ -7359,7 +7594,7 @@ config BR2_PKGSRC_PACKAGE_X11_XPREHASHPRINTERLIST
 
 
 config BR2_PKGSRC_PACKAGE_X11_XPROP
-	bool "xprop-1.1.0"
+	bool "xprop-1.2.1"
 	help
 	  Property displayer for X
 
@@ -7371,7 +7606,7 @@ config BR2_PKGSRC_PACKAGE_X11_XPROP
 
 
 config BR2_PKGSRC_PACKAGE_X11_XPROTO
-	bool "xproto-7.0.18"
+	bool "xproto-7.0.23nb1"
 	help
 	  X protocol and ancillary headers from Xorg X11
 
@@ -7391,7 +7626,7 @@ config BR2_PKGSRC_PACKAGE_X11_XPROXYMANAGEMENTPROTOCOL
 
 
 config BR2_PKGSRC_PACKAGE_X11_XRANDR
-	bool "xrandr-1.3.3"
+	bool "xrandr-1.3.5"
 	help
 	  Primitive command line interface to RandR extension
 
@@ -7413,7 +7648,7 @@ config BR2_PKGSRC_PACKAGE_X11_XRDB
 
 
 config BR2_PKGSRC_PACKAGE_X11_XREFRESH
-	bool "xrefresh-1.0.3"
+	bool "xrefresh-1.0.4"
 	help
 	  X Refresher
 
@@ -7438,7 +7673,7 @@ config BR2_PKGSRC_PACKAGE_X11_XRESTOP
 
 
 config BR2_PKGSRC_PACKAGE_X11_XSCREENSAVER
-	bool "xscreensaver-5.15"
+	bool "xscreensaver-5.19"
 	help
 	  Screen saver and locker for the X window system
 
@@ -7458,7 +7693,7 @@ config BR2_PKGSRC_PACKAGE_X11_XSCREENSAVER
 
 
 config BR2_PKGSRC_PACKAGE_X11_XSCREENSAVER_DEMO
-	bool "xscreensaver-demo-5.15nb1"
+	bool "xscreensaver-demo-5.19nb2"
 	help
 	  Demo viewer and configuration tool for xscreensaver
 
@@ -7470,7 +7705,7 @@ config BR2_PKGSRC_PACKAGE_X11_XSCREENSAVER_DEMO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XSCRIBBLE
-	bool "xscribble-20000616nb2"
+	bool "xscribble-20000616nb3"
 	help
 	  
 
@@ -7539,7 +7774,7 @@ config BR2_PKGSRC_PACKAGE_X11_XSERVERS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XSET
-	bool "xset-1.2.0"
+	bool "xset-1.2.2"
 	help
 	  X11 user preferences utility
 
@@ -7576,7 +7811,7 @@ config BR2_PKGSRC_PACKAGE_X11_XSETPOINTER
 
 
 config BR2_PKGSRC_PACKAGE_X11_XSETROOT
-	bool "xsetroot-1.0.3"
+	bool "xsetroot-1.1.0"
 	help
 	  X root window parameter setting program
 
@@ -7587,7 +7822,7 @@ config BR2_PKGSRC_PACKAGE_X11_XSETROOT
 
 
 config BR2_PKGSRC_PACKAGE_X11_XSM
-	bool "xsm-1.0.1nb1"
+	bool "xsm-1.0.2"
 	help
 	  X Session Manager
 
@@ -7625,7 +7860,7 @@ config BR2_PKGSRC_PACKAGE_X11_XTEDDY
 
 
 config BR2_PKGSRC_PACKAGE_X11_XTEDDY2
-	bool "xteddy-2.0.1nb16"
+	bool "xteddy-2.0.1nb17"
 	help
 	  Teddy bear for your desktop
 
@@ -7643,7 +7878,7 @@ config BR2_PKGSRC_PACKAGE_X11_XTEDDY2
 
 
 config BR2_PKGSRC_PACKAGE_X11_XTERM
-	bool "xterm-259nb1"
+	bool "xterm-281"
 	help
 	  Latest terminal emulator for the X Window System
 
@@ -7684,7 +7919,7 @@ config BR2_PKGSRC_PACKAGE_X11_XTOOLWAIT
 
 
 config BR2_PKGSRC_PACKAGE_X11_XTRANS
-	bool "xtrans-1.2.5"
+	bool "xtrans-1.2.7"
 	help
 	  Network API translation layer to insulate X
 
@@ -7707,7 +7942,7 @@ config BR2_PKGSRC_PACKAGE_X11_XVATTR
 
 
 config BR2_PKGSRC_PACKAGE_X11_XVIDCAP
-	bool "xvidcap-1.1.3nb13"
+	bool "xvidcap-1.1.3nb14"
 	help
 	  Capture X display to individual frames or MPEG video
 
@@ -7721,7 +7956,7 @@ config BR2_PKGSRC_PACKAGE_X11_XVIDCAP
 
 
 config BR2_PKGSRC_PACKAGE_X11_XVIDCAP_GTK2
-	bool "xvidcap-gtk2-1.1.3nb13"
+	bool "xvidcap-gtk2-1.1.3nb19"
 	help
 	  
 
@@ -7858,7 +8093,7 @@ config BR2_PKGSRC_PACKAGE_X11_XVIEW_LIB
 
 
 config BR2_PKGSRC_PACKAGE_X11_XVINFO
-	bool "xvinfo-1.1.0"
+	bool "xvinfo-1.1.1"
 	help
 	  Query X-Video capabilities
 
@@ -7871,7 +8106,7 @@ config BR2_PKGSRC_PACKAGE_X11_XVINFO
 
 
 config BR2_PKGSRC_PACKAGE_X11_XVKBD
-	bool "xvkbd-3.2"
+	bool "xvkbd-3.3"
 	help
 	  
 
@@ -7919,7 +8154,7 @@ config BR2_PKGSRC_PACKAGE_X11_XWATCHWIN
 
 
 config BR2_PKGSRC_PACKAGE_X11_XWD
-	bool "xwd-1.0.3"
+	bool "xwd-1.0.5"
 	help
 	  Dump X11 display or window to XWD X Window Dump image file
 
@@ -7932,7 +8167,7 @@ config BR2_PKGSRC_PACKAGE_X11_XWD
 
 
 config BR2_PKGSRC_PACKAGE_X11_XWININFO
-	bool "xwininfo-1.0.5"
+	bool "xwininfo-1.1.2nb1"
 	help
 	  Query information about X windows
 
@@ -7996,7 +8231,7 @@ config BR2_PKGSRC_PACKAGE_X11_XWRITS
 
 
 config BR2_PKGSRC_PACKAGE_X11_XWUD
-	bool "xwud-1.0.2"
+	bool "xwud-1.0.4"
 	help
 	  Display XWD X Window Dump image file
 
@@ -8022,7 +8257,7 @@ config BR2_PKGSRC_PACKAGE_X11_XXKB
 
 
 config BR2_PKGSRC_PACKAGE_X11_ZENITY
-	bool "zenity-2.32.1nb3"
+	bool "zenity-2.32.1nb8"
 	help
 	  Display GNOME dialogs from the command line
 

@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_META_PKGS_BOOST
-	bool "boost-1.47.0"
+	bool "boost-1.51.0"
 	help
 	  Free, peer-reviewed portable C++ source libraries
 
@@ -97,7 +97,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_GIMP_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_GNOME
-	bool "gnome-2.26.2nb3"
+	bool "gnome-2.26.2nb4"
 	help
 	  Meta-package for the GNOME desktop
 
@@ -244,7 +244,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_KDE3
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_KDE4
-	bool "kde4-4.5.5"
+	bool "kde4-4.8.4"
 	help
 	  "meta-package" for the KDE4 integrated X11 desktop
 
@@ -278,7 +278,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_MATCHBOX
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG
-	bool "modular-xorg-1.0"
+	bool "modular-xorg-1.1"
 	help
 	  Modular Xorg meta-package
 
@@ -289,7 +289,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_APPS
-	bool "modular-xorg-apps-1.5"
+	bool "modular-xorg-apps-1.8"
 	help
 	  Modular Xorg application meta-package
 
@@ -331,6 +331,18 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_LIBS
 	  
 	  For pkgsrc usage, you generally don't want to install this as all
 	  packages have explicit dependencies on the libraries they need.
+
+	  http://xorg.freedesktop.org/
+
+
+config BR2_PKGSRC_PACKAGE_META_PKGS_MODULAR_XORG_PROTOS
+	bool "modular-xorg-protos-1.0"
+	help
+	  Modular Xorg application meta-package for prototypes
+
+	  This is the modular Xorg application meta-package for installing the
+	  various header prototypes for compiling programs against modular
+	  Xorg libraries.
 
 	  http://xorg.freedesktop.org/
 
@@ -387,7 +399,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_NETBSD_DOC_PRINT
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_NETBSD_WWW
-	bool "netbsd-www-1.5"
+	bool "netbsd-www-1.7"
 	help
 	  Packages required to build the NetBSD.org web site
 
@@ -414,12 +426,12 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_P5_GNOME_BINDINGS
 	  http://www.gnome.org/
 
 
-config BR2_PKGSRC_PACKAGE_META_PKGS_PHP5_EXTENSIONS
-	bool "php-extensions-5.2.17nb2"
+config BR2_PKGSRC_PACKAGE_META_PKGS_PHP53_EXTENSIONS
+	bool "php53-extensions-5.3.17"
 	help
-	  "meta-package" for the PHP 5.2 HTML-embedded scripting language
+	  "meta-package" for the PHP 5.3 HTML-embedded scripting language
 
-	  PHP 5.2.x is HTML-embedded scripting language.
+	  PHP 5.3.x is HTML-embedded scripting language.
 	  
 	  This package does not contain anything by itself -- it is a
 	  "meta-package" that depends on other PHP packages.  Its sole purpose is
@@ -429,12 +441,12 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_PHP5_EXTENSIONS
 	  http://www.php.net/
 
 
-config BR2_PKGSRC_PACKAGE_META_PKGS_PHP53_EXTENSIONS
-	bool "php-extensions-5.3.8nb1"
+config BR2_PKGSRC_PACKAGE_META_PKGS_PHP54_EXTENSIONS
+	bool "php54-extensions-5.4.7"
 	help
-	  "meta-package" for the PHP 5.3 HTML-embedded scripting language
+	  "meta-package" for the PHP 5.4 HTML-embedded scripting language
 
-	  PHP 5.3.x is HTML-embedded scripting language.
+	  PHP 5.4.x is HTML-embedded scripting language.
 	  
 	  This package does not contain anything by itself -- it is a
 	  "meta-package" that depends on other PHP packages.  Its sole purpose is
@@ -484,7 +496,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_PULSEAUDIO_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_PY_GNOME_BINDINGS
-	bool "py26-gnome-bindings-2.26.2"
+	bool "py27-gnome-bindings-2.26.2"
 	help
 	  Meta-package for Python bindings for the GNOME desktop
 
@@ -501,7 +513,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_PY_GNOME_BINDINGS
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_RUBY_GNOME2
-	bool "ruby19-gnome2-1.0.3"
+	bool "ruby193-gnome2-1.1.5"
 	help
 	  Set of Ruby language bindings for GNOME2
 
@@ -513,7 +525,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_RUBY_GNOME2
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_SUSE100
-	bool "suse-10.0nb4"
+	bool "suse-10.0nb5"
 	help
 	  SUSE-based Linux binary emulation environment
 
@@ -529,13 +541,13 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_SUSE100
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_META_PKGS_SUSE113
-	bool "suse-11.3"
+config BR2_PKGSRC_PACKAGE_META_PKGS_SUSE121
+	bool "suse-12.1"
 	help
 	  SUSE-based Linux binary emulation environment
 
-	  The SUSE 11.3 meta-package provides a number of components for a
-	  SUSE-based Linux binary emulation environment.
+	  The openSUSE 12.1 meta-package provides a number of components for a
+	  openSUSE-based Linux binary emulation environment.
 	  
 	  This package does not contain anything by itself -- it is a "meta-package"
 	  that depends on other packages.  Its sole purpose is to require
@@ -543,7 +555,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_SUSE113
 	  other packages pulled in automatically by the pkgsrc dependency
 	  mechanism.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_WEB_SERVER
@@ -583,7 +595,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_WINDOWMAKER_DESKTOP
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_XFCE4
-	bool "xfce4-4.6.1nb10"
+	bool "xfce4-4.6.1nb17"
 	help
 	  Xfce
 
@@ -601,7 +613,7 @@ config BR2_PKGSRC_PACKAGE_META_PKGS_XFCE4
 
 
 config BR2_PKGSRC_PACKAGE_META_PKGS_XFCE4_EXTRAS
-	bool "xfce4-extras-4.6.1nb13"
+	bool "xfce4-extras-4.6.1nb20"
 	help
 	  Xfce extras
 

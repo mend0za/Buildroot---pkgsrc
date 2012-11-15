@@ -1,3 +1,22 @@
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_CLOUDFUSE
+	bool "cloudfuse-20120124nb1"
+	help
+	  
+
+	  Filesystem (fuse) implemented on Mosso's Cloud Files
+	  
+	  Cloudfuse is a FUSE application which provides access to Rackspace's
+	  Cloud Files (or any installation of Swift).
+	  
+	  Cloud Files is a remote storage system which is similar in principle to
+	  Amazon S3.  It provides a simple RESTful interface to storing and retrieving
+	  objects.
+	  
+	  http://www.rackspacecloud.com/cloud_hosting_products/files
+
+	  https://redbo.github.com/cloudfuse/
+
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FS_UTILS
 	bool "fs-utils-20091116nb1"
 	help
@@ -103,7 +122,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CHIRONFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CRYPTOFS
-	bool "fuse-cryptofs-0.6.0nb1"
+	bool "fuse-cryptofs-0.6.0nb4"
 	help
 	  FUSE encrypted filesystem
 
@@ -120,7 +139,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CRYPTOFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CURLFTPFS
-	bool "fuse-curlftpfs-0.9.1nb2"
+	bool "fuse-curlftpfs-0.9.1nb5"
 	help
 	  FUSE filesystem for acessing FTP hosts
 
@@ -138,7 +157,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_CURLFTPFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_DJMOUNT
-	bool "fuse-djmount-0.71nb1"
+	bool "fuse-djmount-0.71nb2"
 	help
 	  FUSE filesystem for accessing Media Server content via UPnP
 
@@ -180,7 +199,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_EXT2
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GMAILFS
-	bool "fuse-gmailfs-0.7.2nb2"
+	bool "fuse-gmailfs-0.7.2nb3"
 	help
 	  FUSE filesystem which uses Google mail for free space
 
@@ -192,7 +211,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GMAILFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GPHOTOFS
-	bool "fuse-gphotofs-0.4.0nb2"
+	bool "fuse-gphotofs-0.4.0nb5"
 	help
 	  FUSE filesystem for accessing digital cameras
 
@@ -207,7 +226,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GPHOTOFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_GSTFS
-	bool "fuse-gstfs-0.1nb1"
+	bool "fuse-gstfs-0.1nb5"
 	help
 	  
 
@@ -234,7 +253,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_HTTPFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_LOGGEDFS
-	bool "fuse-loggedfs-0.4"
+	bool "fuse-loggedfs-0.4nb2"
 	help
 	  FUSE file system which logs all operations
 
@@ -315,7 +334,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_OBEXFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_POD
-	bool "fuse-pod-0.5.1nb7"
+	bool "fuse-pod-0.5.1nb12"
 	help
 	  FUSE-based filesystem for iPod
 
@@ -354,7 +373,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_UNIONFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WDFS
-	bool "fuse-wdfs-1.4.2nb4"
+	bool "fuse-wdfs-1.4.2nb7"
 	help
 	  FUSE-based webdav filesystem
 
@@ -373,7 +392,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WDFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WIKIPEDIAFS
-	bool "fuse-wikipediafs-0.3nb3"
+	bool "fuse-wikipediafs-0.3nb4"
 	help
 	  FUSE filesystem for accessing the wikipedia
 
@@ -404,7 +423,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_WIKIPEDIAFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_GLUSTERFS
-	bool "glusterfs-3.2.5nb9"
+	bool "glusterfs-3.2.7"
 	help
 	  Cluster filesystem
 
@@ -423,8 +442,50 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_GLUSTERFS
 	  http://www.gluster.org/
 
 
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_OPENAFS
+	bool "openafs-1.4.14"
+	help
+	  File system for sharing, scalability and transparent data migration
+
+	  AFS is a distributed filesystem product, pioneered at Carnegie Mellon
+	  University and supported and developed as a product by Transarc
+	  Corporation (now IBM Pittsburgh Labs).  It offers a client-server
+	  architecture for file sharing, providing location independence,
+	  scalability and transparent migration capabilities for data.  IBM
+	  branched the source of the AFS product, and made a copy of the source
+	  available for community development and maintenance.  They called the
+	  release OpenAFS.
+
+	  http://www.openafs.org/
+
+
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_OPENAFS_DEVEL
+	bool "openafs-1.7.11"
+	help
+	  File system for sharing, scalability and transparent data migration
+
+	  AFS is a distributed filesystem product, pioneered at Carnegie Mellon
+	  University and supported and developed as a product by Transarc
+	  Corporation (now IBM Pittsburgh Labs).  It offers a client-server
+	  architecture for file sharing, providing location independence,
+	  scalability and transparent migration capabilities for data.  IBM
+	  branched the source of the AFS product, and made a copy of the source
+	  available for community development and maintenance.  They called the
+	  release OpenAFS.
+	  
+	  To build the kernel module
+	  $ cd src/libafs
+	  $ cp MakefileProto.NBSD Makefile
+	  $ make obj && make && make install
+	  
+	  For instructions how to create a cell:
+	  http://wiki.openafs.org/AFSLore/FedoraAFSInstall/
+
+	  http://www.openafs.org/
+
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PERFUSE
-	bool "perfuse-20111217"
+	bool "perfuse-20120206"
 	help
 	  PUFFS Enabled Relay to FUSE
 
@@ -439,8 +500,29 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PERFUSE
 	  
 
 
+config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PY_FILESYSTEM
+	bool "py27-filesystem-0.4.0"
+	help
+	  Python filesystem access library
+
+	  Pyfilesystem is a Python module that provides a simplified common
+	  interface to many types of filesystem. Filesystems exposed via
+	  Pyfilesystem can also be served over the network, or 'mounted' on the
+	  native filesystem.
+	  
+	  Pyfilesystem simplifies working directories and paths, even if you
+	  only intend to work with local files. Differences in path formats
+	  between platforms are abstracted away, and you can write code that
+	  sand-boxes any changes to a given directory.
+	  
+	  Pyfilesystem works with Linux, Windows and Mac.
+	  (And of course, NetBSD.)
+
+	  http://code.google.com/p/pyfilesystem/
+
+
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PY_FUSE_BINDINGS
-	bool "py26-fuse-bindings-0.2.1"
+	bool "py27-fuse-bindings-0.2.1"
 	help
 	  Python bindings for FUSE and refuse
 
@@ -464,7 +546,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_PY_FUSE_BINDINGS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_SVNFS
-	bool "svnfs-0.4nb8"
+	bool "svnfs-0.4nb9"
 	help
 	  FUSE filesystem for accessing SVN repositories
 
@@ -476,7 +558,7 @@ config BR2_PKGSRC_PACKAGE_FILESYSTEMS_FUSE_SVNFS
 
 
 config BR2_PKGSRC_PACKAGE_FILESYSTEMS_TAHOE_LAFS
-	bool "tahoe-lafs-1.9.0"
+	bool "tahoe-lafs-1.9.2"
 	help
 	  Distributed fault-tolerant least-authority filesystem
 

@@ -19,7 +19,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_0VERKILL
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_4STATTACK
-	bool "4stAttack-2.1.4nb12"
+	bool "4stAttack-2.1.4nb14"
 	help
 	  Game in which you have to try to out-smart your opponent
 
@@ -31,7 +31,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_4STATTACK
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_INTERLOGIC
-	bool "InterLOGIC-0.30nb8"
+	bool "InterLOGIC-0.30nb9"
 	help
 	  Logic/puzzle game based on the old Amiga game "Balls"
 
@@ -48,7 +48,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_INTERLOGIC
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KOBODELUXE
-	bool "KoboDeluxe-0.5.1nb4"
+	bool "KoboDeluxe-0.5.1nb5"
 	help
 	  Multi-way scrolling shoot 'em up game for X
 
@@ -61,7 +61,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_KOBODELUXE
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_LOSTPIXELS
-	bool "LostPixels-0.5.3nb5"
+	bool "LostPixels-0.5.3nb6"
 	help
 	  
 
@@ -118,7 +118,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_ADOM
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_ALEPHONE
-	bool "alephone-20100424nb3"
+	bool "alephone-20100424nb6"
 	help
 	  Classic 2.5D FPS game engine, updated to use SDL
 
@@ -127,15 +127,23 @@ config BR2_PKGSRC_PACKAGE_GAMES_ALEPHONE
 	  which makes it possible to play the classic Marathon Trilogy on a wide
 	  range of systems with improved features like OpenGL and internet play.
 	  
-	  You will also want the marathon-trilogy package, which provides the
-	  game data for the original trilogy. The marathon-scenarios package
-	  (currently in wip) provides several third-party scenarios.
-	  
 	  Also see:
-	  http://traxus.bungie.org  (information and more third-party scenarios)
 	  http://trilogyrelease.bungie.org  (the original free downloads)
+	  http://traxus.bungie.org  (information and more third-party scenarios)
 
 	  http://marathon.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_AMAZE
+	bool "amaze-0pre0"
+	help
+	  Curses-based maze game
+
+	  A 3D maze game based on a similar game I read the source to in an
+	  Australian PC magazine in the mid 1980s. Implemented using curses,
+	  so that you can play it on a VT100 should you so desire.
+
+	  http://adaptive-enterprises.com/~d/software/amaze/
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_AN
@@ -170,7 +178,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_ANGBAND_TTY
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_ANGBAND_X11
-	bool "angband-x11-3.0.3nb2"
+	bool "angband-x11-3.0.3nb3"
 	help
 	  Tolkien based variant of Moria for X11 displays
 
@@ -207,7 +215,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_AOP
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_ASC
-	bool "asc-1.16.4.0nb8"
+	bool "asc-1.16.4.0nb9"
 	help
 	  Turn based strategy game
 
@@ -218,8 +226,18 @@ config BR2_PKGSRC_PACKAGE_GAMES_ASC
 	  http://www.asc-hq.org/
 
 
+config BR2_PKGSRC_PACKAGE_GAMES_ASCIIQUARIUM
+	bool "asciiquarium-1.0"
+	help
+	  ASCII art aquarium
+
+	  Asciiquarium is an aquarium/sea animation in ASCII art.
+
+	  http://robobunny.com/projects/asciiquarium/html/
+
+
 config BR2_PKGSRC_PACKAGE_GAMES_ATOMIX
-	bool "atomix-2.14.0nb14"
+	bool "atomix-2.14.0nb23"
 	help
 	  Puzzle game
 
@@ -307,7 +325,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_BILLARDGL
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_BLINDMINE
-	bool "blindmine-0.3nb10"
+	bool "blindmine-0.3nb12"
 	help
 	  Minesweeper clone that you can play with your eyes closed
 
@@ -316,6 +334,20 @@ config BR2_PKGSRC_PACKAGE_GAMES_BLINDMINE
 	  Currently, it supports Korean only.
 
 	  http://blindmine.kldp.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_BLINKEN
+	bool "blinken-4.8.4nb3"
+	help
+	  memory enhancement game
+
+	  Blinken is the KDE version of the well-known game Simon Says.
+	  Follow the pattern of sounds and lights as long as you can! Press the start
+	  game button to begin. Watch the computer and copy the pattern it makes.
+	  Complete the sequence in the right order to win.
+	  
+
+	  http://www.kde.org/
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_BLOKUS
@@ -335,7 +367,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_BLOKUS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_BLUEMOON
-	bool "bluemoon-1.3.2nb7"
+	bool "bluemoon-1.3.2nb12"
 	help
 	  Blue Moon game with AI
 
@@ -348,7 +380,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_BLUEMOON
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_BOMBERCLONE
-	bool "bomberclone-0.11.7nb4"
+	bool "bomberclone-0.11.7nb5"
 	help
 	  Multi-player Bomberman clone
 
@@ -370,7 +402,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_BOS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_BOSON
-	bool "boson-0.8nb26"
+	bool "boson-0.8nb31"
 	help
 	  OpenGL real-time strategy game for KDE 3
 
@@ -433,7 +465,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CBZONE
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CCGO
-	bool "ccgo-0.3.6.3nb7"
+	bool "ccgo-0.3.6.3nb14"
 	help
 	  Go board with IGS and gnugo interface
 
@@ -508,7 +540,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CHEST
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CHROMIUM_BSU
-	bool "chromium-bsu-0.9.14nb4"
+	bool "chromium-bsu-0.9.14nb5"
 	help
 	  Fast paced, arcade-style, top-scrolling space shooter
 
@@ -521,7 +553,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CHROMIUM_BSU
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CIRCUSLINUX
-	bool "circuslinux-1.0.3nb11"
+	bool "circuslinux-1.0.3nb12"
 	help
 	  Clone of the Atari 2600 game "Circus Atari"
 
@@ -621,7 +653,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_COREWARS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CRACK_ATTACK
-	bool "crack-attack-1.1.14nb12"
+	bool "crack-attack-1.1.14nb17"
 	help
 	  Tetris Attack inspired game
 
@@ -717,7 +749,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CRAFTY_DOC
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CRIMSONFIELDS
-	bool "crimsonfields-0.5.2nb1"
+	bool "crimsonfields-0.5.2nb2"
 	help
 	  Tactical war game in the tradition of Battle Isle
 
@@ -744,7 +776,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CRIMSONFIELDS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CRITICALMASS
-	bool "criticalmass-1.0.2nb4"
+	bool "criticalmass-1.0.2nb5"
 	help
 	  SDL/OpenGL space shoot'em up game
 
@@ -754,7 +786,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CRITICALMASS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT
-	bool "crossfire-client-1.11.0nb6"
+	bool "crossfire-client-1.11.0nb7"
 	help
 	  Multi-player graphical arcade and adventure game; X11 client
 
@@ -774,7 +806,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT_GTK
-	bool "crossfire-client-gtk-1.11.0nb4"
+	bool "crossfire-client-gtk-1.11.0nb5"
 	help
 	  Multi-player graphical arcade and adventure game; GTK client
 
@@ -794,7 +826,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT_GTK
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT_GTK2
-	bool "crossfire-client-gtk2-1.11.0nb8"
+	bool "crossfire-client-gtk2-1.11.0nb14"
 	help
 	  Multi-player graphical arcade and adventure game; GTK2 client
 
@@ -814,7 +846,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_CLIENT_GTK2
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_SERVER
-	bool "crossfire-server-1.11.0nb7"
+	bool "crossfire-server-1.11.0nb10"
 	help
 	  X11 multi/single player game similar to gauntlet and nethack
 
@@ -834,7 +866,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_CROSSFIRE_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_D2X
-	bool "d2x-0.2.5nb12"
+	bool "d2x-0.2.5nb13"
 	help
 	  Descent II port
 
@@ -948,7 +980,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_DOOM1
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_DOPEWARS
-	bool "dopewars-1.5.12nb7"
+	bool "dopewars-1.5.12nb12"
 	help
 	  Make a fortune dealing drugs on the streets of New York
 
@@ -963,9 +995,9 @@ config BR2_PKGSRC_PACKAGE_GAMES_DOPEWARS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_DUCKMAZE
-	bool "duckmaze-0.2nb9"
+	bool "duckmaze-0.2nb11"
 	help
-	  A puzzle
+	  Puzzle game
 
 	  duckmaze is a game about a duck that is in a maze. The duck can move walls,
 	  but only if there are no walls in the way (it makes sense when you try it).
@@ -1000,7 +1032,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_DUNGEON
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_EBOARD
-	bool "eboard-1.0.4nb8"
+	bool "eboard-1.0.4nb13"
 	help
 	  Graphical user interface for playing chess
 
@@ -1014,11 +1046,11 @@ config BR2_PKGSRC_PACKAGE_GAMES_EBOARD
 	  (without restarting), seek table, text input separated from the output,
 	  input history (bash-like), scripting, scroll lock, and many others.
 
-	  http://eboard.sourceforge.net/
+	  http://www.bergo.eng.br/eboard/
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_ENIGMA
-	bool "enigma-1.01.1914nb2"
+	bool "enigma-1.01.1914nb3"
 	help
 	  Puzzle game similar to Oxyd/Rock'n'Roll/Marble Madness
 
@@ -1087,7 +1119,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_EXCHESS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_EXCHESS_BOOK_MEDIUM
-	bool "exchess-book-medium-20000511nb1"
+	bool "exchess-book-medium-20000511nb2"
 	help
 	  
 
@@ -1097,7 +1129,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_EXCHESS_BOOK_MEDIUM
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_EXCHESS_BOOK_SMALL
-	bool "exchess-book-small-20000511nb1"
+	bool "exchess-book-small-20000511nb2"
 	help
 	  
 
@@ -1107,7 +1139,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_EXCHESS_BOOK_SMALL
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_EXULT
-	bool "exult-1.2nb7"
+	bool "exult-1.2nb8"
 	help
 	  Open-source Ultima 7 engine
 
@@ -1149,7 +1181,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_FALCONS_EYE
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_FILLETS_NG
-	bool "fillets-ng-0.7.3nb6"
+	bool "fillets-ng-0.7.3nb7"
 	help
 	  Puzzle game about witty fish saving the world sokoban style
 
@@ -1242,7 +1274,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_FKISS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_FLIGHTGEAR
-	bool "flightgear-2.0.0nb6"
+	bool "flightgear-2.8.0nb1"
 	help
 	  The FlightGear Simulator
 
@@ -1254,7 +1286,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_FLIGHTGEAR
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_FLIGHTGEAR_DATA
-	bool "flightgear-data-2.0.0"
+	bool "flightgear-data-2.8.0"
 	help
 	  FlightGear Simulator data files
 
@@ -1365,7 +1397,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_FORTUNES_H2G2
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_CLIENT
-	bool "freeciv-client-2.2.2nb5"
+	bool "freeciv-client-2.3.2nb2"
 	help
 	  Freeciv client
 
@@ -1398,7 +1430,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_MANUAL
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_SERVER
-	bool "freeciv-server-2.2.2nb2"
+	bool "freeciv-server-2.3.2nb1"
 	help
 	  Freeciv game server
 
@@ -1416,7 +1448,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_SHARE
-	bool "freeciv-share-2.2.2nb1"
+	bool "freeciv-share-2.3.2nb1"
 	help
 	  Machine independent files for Freeciv
 
@@ -1434,7 +1466,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_FREECIV_SHARE
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_FREEDROID
-	bool "freedroid-1.0.2nb11"
+	bool "freedroid-1.0.2nb12"
 	help
 	  Clone of the C64 game Paradroid
 
@@ -1478,7 +1510,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_FROTZ
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_FROZEN_BUBBLE
-	bool "frozen-bubble-1.0.0nb15"
+	bool "frozen-bubble-2.2.0nb4"
 	help
 	  Pop the frozen bubbles
 
@@ -1529,7 +1561,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GALAXA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GAMAZONS
-	bool "gamazons-0.83nb14"
+	bool "gamazons-0.83nb23"
 	help
 	  GNOME program for playing the game Amazons
 
@@ -1578,7 +1610,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GATE88
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GBRAINY
-	bool "gbrainy-2.06"
+	bool "gbrainy-2.14nb4"
 	help
 	  Brain teaser game and trainer
 
@@ -1601,7 +1633,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GBRAINY
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GCOMPRIS
-	bool "gcompris-8.4.4nb14"
+	bool "gcompris-12.01nb7"
 	help
 	  Educational games for children
 
@@ -1638,7 +1670,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GEMDROPX
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GENECYS_CLIENT
-	bool "genecys-client-0.2nb14"
+	bool "genecys-client-0.2nb20"
 	help
 	  Client for Genecys MMORPG
 
@@ -1666,7 +1698,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GENECYS_DATA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GGZ_CLIENT_LIBS
-	bool "ggz-client-libs-0.0.14.1nb4"
+	bool "ggz-client-libs-0.0.14.1nb5"
 	help
 	  GGZ Gaming Zone libraries
 
@@ -1717,7 +1749,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GLICKOMANIA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GLTRON
-	bool "gltron-0.70nb11"
+	bool "gltron-0.70nb13"
 	help
 	  3D lightcycle game inspired by the movie Tron
 
@@ -1733,7 +1765,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GLTRON
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GNOME_GAMES
-	bool "gnome-games-2.32.1nb4"
+	bool "gnome-games-2.32.1nb13"
 	help
 	  GNOME2 games collection
 
@@ -1757,7 +1789,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GNOME_GAMES_EXTRA_DATA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GNOME_MASTERMIND
-	bool "gnome-mastermind-0.3.1nb7"
+	bool "gnome-mastermind-0.3.1nb13"
 	help
 	  
 
@@ -1872,7 +1904,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GOLDDIG
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GREED
-	bool "greed-3.4"
+	bool "greed-3.4nb1"
 	help
 	  Strategy game: eat as much as possible
 
@@ -1883,7 +1915,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GREED
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GRHINO
-	bool "grhino-0.16.0nb9"
+	bool "grhino-0.16.0nb17"
 	help
 	  
 
@@ -1900,7 +1932,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GRHINO
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GTETRINET
-	bool "gtetrinet-0.7.11nb14"
+	bool "gtetrinet-0.7.11nb23"
 	help
 	  Multiplayer tetris game for GNOME2
 
@@ -1913,7 +1945,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GTETRINET
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GTKBALLS
-	bool "gtkballs-3.1.5nb15"
+	bool "gtkballs-3.1.5nb20"
 	help
 	  GTK+ clone of "Color Lines"
 
@@ -1926,7 +1958,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GTKBALLS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GTKLEVEL9
-	bool "gtklevel9-4.0nb10"
+	bool "gtklevel9-4.0nb15"
 	help
 	  GTK+ port of the Level 9 text adventure interpreter
 
@@ -1940,7 +1972,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GTKLEVEL9
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GTKMAGNETIC
-	bool "gtkmagnetic-2.2.1.6nb8"
+	bool "gtkmagnetic-2.2.1.6nb13"
 	help
 	  Interpreter for text adventures from Magnetic Scrolls
 
@@ -1951,7 +1983,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_GTKMAGNETIC
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_GTURING
-	bool "gturing-0.1.1nb34"
+	bool "gturing-0.1.1nb42"
 	help
 	  GNOME2 turing machine emulator
 
@@ -2002,6 +2034,22 @@ config BR2_PKGSRC_PACKAGE_GAMES_HEX_A_HOP
 	  tiles and step on a safe tile at the end.
 
 	  http://hexahop.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_HOLTZ
+	bool "holtz-1.3.1nb4"
+	help
+	  Engine for the abstract strategy games Zèrtz and Dvonn
+
+	  With Holtz, you can play the abstract strategy games Zèrtz and
+	  Dvonn. Both of them are board games invented by Kris Burm, and are
+	  part of the GIPF project.
+	  
+	  Recently a third game called Relax was added. It is based on the
+	  board game "Take It Easy" and can be played alone as well as with
+	  up to ten players.
+
+	  http://holtz.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_HUGO
@@ -2171,7 +2219,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_JETPACK
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_JOOLS
-	bool "jools-0.20nb2"
+	bool "jools-0.20nb3"
 	help
 	  Bejeweled clone
 
@@ -2187,7 +2235,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_JOOLS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KAJAANI_KOMBAT
-	bool "kajaani-kombat-0.7nb5"
+	bool "kajaani-kombat-0.7nb6"
 	help
 	  Rampart-like multiplayer game set in space
 
@@ -2209,8 +2257,21 @@ config BR2_PKGSRC_PACKAGE_GAMES_KAJAANI_KOMBAT
 	  http://kombat.kajaani.net/
 
 
+config BR2_PKGSRC_PACKAGE_GAMES_KANAGRAM
+	bool "kanagram-4.8.4nb3"
+	help
+	  KDE letter order game
+
+	  Kanagram is a game based on anagrams of words: the puzzle is solved when
+	  the letters of the scrambled word are put back in the correct order.
+	  There is no limit on either time taken, or the amount of attempts to
+	  solve the word.
+
+	  http://www.kde.org/
+
+
 config BR2_PKGSRC_PACKAGE_GAMES_KANATEST
-	bool "kanatest-0.4.8nb6"
+	bool "kanatest-0.4.8nb12"
 	help
 	  Flash-card program to memorise Japanese kana
 
@@ -2236,7 +2297,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_KANATEST
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KAPOOKA
-	bool "kapooka-0.2nb9"
+	bool "kapooka-0.2nb12"
 	help
 	  Puzzle game
 
@@ -2250,7 +2311,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_KAPOOKA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KDEGAMES3
-	bool "kdegames-3.5.10nb9"
+	bool "kdegames-3.5.10nb15"
 	help
 	  Games for the KDE integrated X11 desktop
 
@@ -2294,7 +2355,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_KDEGAMES3
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KDEGAMES4
-	bool "kdegames4-4.5.5nb3"
+	bool "kdegames4-4.8.4nb4"
 	help
 	  Games for the KDE integrated X11 desktop
 
@@ -2334,7 +2395,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_KDEGAMES4
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KDETOYS3
-	bool "kdetoys-3.5.10nb9"
+	bool "kdetoys-3.5.10nb15"
 	help
 	  Toys for the KDE integrated X11 desktop
 
@@ -2359,7 +2420,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_KDETOYS3
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KDETOYS4
-	bool "kdetoys4-4.5.5nb2"
+	bool "kdetoys4-4.8.4nb3"
 	help
 	  Toys for the KDE integrated X11 desktop
 
@@ -2387,6 +2448,22 @@ config BR2_PKGSRC_PACKAGE_GAMES_KETM
 	  shooter.
 
 	  http://home.t-online.de/home/haslbeck/ketm/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_KHANGMAN
+	bool "khangman-4.8.4nb3"
+	help
+	  KDE hangman game
+
+	  KHangMan is a game based on the well-known hangman game. It is aimed at
+	  children aged six and over. The game has several categories of words to
+	  play with, for example: Animals (animals words) and three difficulty
+	  categories: Easy, Medium and Hard. A word is picked at random, the letters
+	  are hidden, and you must guess the word by trying one letter after another.
+	  Each time you guess a wrong letter, part of a picture of a hangman is drawn.
+	  You must guess the word before being hanged! You have 10 tries.
+
+	  http://www.kde.org/
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KNIGHTCAP
@@ -2433,7 +2510,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_KNIGHTCAP_BRAIN
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KNIGHTS
-	bool "knights-0.6nb19"
+	bool "knights-0.6nb24"
 	help
 	  Chess interface for KDE
 
@@ -2463,7 +2540,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_KOTH
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_KYE
-	bool "kye-1.0nb3"
+	bool "kye-1.0nb11"
 	help
 	  Puzzle game
 
@@ -2567,7 +2644,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_LGENERAL_DATA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_LIBGGZ
-	bool "libggz-0.0.14.1nb2"
+	bool "libggz-0.0.14.1nb3"
 	help
 	  GGZ Gaming Zone libraries
 
@@ -2600,7 +2677,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_LINCITY
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_LINCITY_NG
-	bool "lincity-ng-2.0nb1"
+	bool "lincity-ng-2.0nb3"
 	help
 	  Open source SimCity like game
 
@@ -2710,7 +2787,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_MAELSTROM_SDL
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_MAELSTROM_X11
-	bool "maelstrom-x11-2.0.6nb3"
+	bool "maelstrom-x11-2.0.6nb4"
 	help
 	  
 
@@ -2789,7 +2866,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_MIRRORMAGIC
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_MIRRORMAGIC_SDL
-	bool "mirrormagic-sdl-2.0.2nb17"
+	bool "mirrormagic-sdl-2.0.2nb18"
 	help
 	  Nice little puzzle game with color graphics and sound
 
@@ -2808,7 +2885,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_MIRRORMAGIC_SDL
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_MONSTERZ
-	bool "monsterz-0.7.1nb3"
+	bool "monsterz-0.7.1nb4"
 	help
 	  Puzzle game similar to the famous Bejeweled or Zookeeper
 
@@ -2846,7 +2923,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_MOON_BUGGY
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_MORIA
-	bool "moria-5.5.2nb1"
+	bool "moria-5.5.2nb3"
 	help
 	  Rogue-like game with a different sense of scale than Rogue
 
@@ -3102,7 +3179,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_OMEGA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_ONSCRIPTER
-	bool "onscripter-20111025nb1"
+	bool "onscripter-20120901"
 	help
 	  Interpreter to execute a script for NScripter
 
@@ -3113,7 +3190,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_ONSCRIPTER
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_OPENMORTAL
-	bool "openmortal-0.7nb16"
+	bool "openmortal-0.7nb17"
 	help
 	  Parody of Mortal Kombat with real characters
 
@@ -3127,7 +3204,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_OPENMORTAL
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_OPENTTD
-	bool "openttd-1.0.5nb4"
+	bool "openttd-1.2.0"
 	help
 	  Open source clone of Transport Tycoon Deluxe
 
@@ -3139,7 +3216,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_OPENTTD
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_OPENTTD_DATA
-	bool "openttd-data-0.3.1"
+	bool "openttd-data-0.4.4"
 	help
 	  Free data files for OpenTTD
 
@@ -3154,7 +3231,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_OPENTTD_DATA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_ORBITAL_EUNUCHS_SNIPER
-	bool "orbital_eunuchs_sniper-1.30nb4"
+	bool "orbital_eunuchs_sniper-1.30nb5"
 	help
 	  Overhead shooting game
 
@@ -3200,7 +3277,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_PAG
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_PINGUS
-	bool "pingus-0.7.3nb1"
+	bool "pingus-0.7.3nb6"
 	help
 	  
 
@@ -3212,7 +3289,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_PINGUS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_PIONEERS
-	bool "pioneers-0.11.3nb10"
+	bool "pioneers-0.11.3nb20"
 	help
 	  GNOME version of the Settlers of Catan board game
 
@@ -3224,7 +3301,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_PIONEERS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_PLIB
-	bool "plib-1.8.5nb2"
+	bool "plib-1.8.5nb3"
 	help
 	  Libraries for writing portable games/realtime interactive apps
 
@@ -3246,7 +3323,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_PLIB
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_POKERTH
-	bool "pokerth-0.7.1nb11"
+	bool "pokerth-0.7.1nb21"
 	help
 	  Texas Holdem poker with online play
 
@@ -3275,7 +3352,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_POLYGLOT
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_POWDER
-	bool "powder-116"
+	bool "powder-117"
 	help
 	  Multiplatform roguelike game with graphics
 
@@ -3333,7 +3410,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_PRBOOM
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_PUZZLES
-	bool "puzzles-9306"
+	bool "puzzles-9455nb3"
 	help
 	  Collection of small one-player puzzle games by Simon Tatham
 
@@ -3360,8 +3437,23 @@ config BR2_PKGSRC_PACKAGE_GAMES_PUZZLES
 	  http://www.chiark.greenend.org.uk/~sgtatham/puzzles/
 
 
+config BR2_PKGSRC_PACKAGE_GAMES_PY_TRUESKILL
+	bool "py27-trueskill-0.1.3"
+	help
+	  Python module implementing the TrueSkill rating system
+
+	  TrueSkill(tm) is a rating system among game players. It has been
+	  used on Xbox Live to rank and match players. TrueSkill system
+	  quantizes `TRUE' skill points by a Bayesian inference algorithm.
+	  
+	  This project is a Python package which implements TrueSkill(tm)
+	  rating system.
+
+	  http://packages.python.org/trueskill/
+
+
 config BR2_PKGSRC_PACKAGE_GAMES_PYSOLFC
-	bool "pysolfc-1.1nb6"
+	bool "pysolfc-2.0"
 	help
 	  Over 1000 solitaire games
 
@@ -3377,7 +3469,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_PYSOLFC
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_PYTRAFFIC
-	bool "pytraffic-2.5.4nb12"
+	bool "pytraffic-2.5.4nb19"
 	help
 	  Computer version of a popular board game
 
@@ -3410,7 +3502,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_QNETWALK
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_QONK
-	bool "qonk-0.3.1nb5"
+	bool "qonk-0.3.1nb6"
 	help
 	  Small space build-and-conquer strategy game
 
@@ -3631,7 +3723,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_QUAKEDATA
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_QUAKEFORGE
-	bool "quakeforge-0.5.5nb10"
+	bool "quakeforge-0.5.5nb11"
 	help
 	  Improved Quake engine
 
@@ -3656,7 +3748,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_QUAKESPASM
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_QUARRY
-	bool "quarry-0.2.0nb7"
+	bool "quarry-0.2.0nb15"
 	help
 	  Multi-purpose GUI for several board games
 
@@ -3672,7 +3764,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_QUARRY
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_RFTG
-	bool "rftg-0.8.1nb2"
+	bool "rftg-0.8.1nb7"
 	help
 	  
 
@@ -3681,8 +3773,21 @@ config BR2_PKGSRC_PACKAGE_GAMES_RFTG
 	  http://keldon.net/rftg/
 
 
+config BR2_PKGSRC_PACKAGE_GAMES_ROBOTFINDSKITTEN
+	bool "robotfindskitten-1.7320508.406"
+	help
+	  Yet another zen simulation
+
+	  In this game, you are robot (#). Your job is to find kitten. This task
+	  is complicated by the existence of various things which are not kitten.
+	  Robot must touch items to determine if they are kitten or not. The game
+	  ends when robotfindskitten.
+
+	  http://robotfindskitten.org/
+
+
 config BR2_PKGSRC_PACKAGE_GAMES_ROCKSNDIAMONDS
-	bool "rocksndiamonds-3.3.0.1nb2"
+	bool "rocksndiamonds-3.3.0.1nb3"
 	help
 	  Game like Boulder Dash, Emerald Mine, or Sokoban
 
@@ -3736,7 +3841,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_ROLLEMUP
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_RTCW
-	bool "rtcw-1.33nb1"
+	bool "rtcw-1.33nb2"
 	help
 	  Return to Castle Wolfenstein for Linux
 
@@ -3776,7 +3881,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SARIEN
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SCID
-	bool "scid-3.6.1nb2"
+	bool "scid-3.6.1nb4"
 	help
 	  Shane's Chess Information Database
 
@@ -3791,7 +3896,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SCID
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SCUMMVM
-	bool "scummvm-1.4.0"
+	bool "scummvm-1.5.0nb1"
 	help
 	  LucasArts Script Creation Utility for Maniac Mansion
 
@@ -3830,7 +3935,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SCUMMVM_FOTAQ
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SCUMMVM_TOOLS
-	bool "scummvm-tools-0.9.0nb2"
+	bool "scummvm-tools-1.4.0nb4"
 	help
 	  Conversion and compression tools for ScummVM
 
@@ -3858,7 +3963,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SEX
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SIMGEAR
-	bool "simgear-2.0.0nb6"
+	bool "simgear-2.8.0nb1"
 	help
 	  Simulator Construction Tools
 
@@ -3870,7 +3975,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SIMGEAR
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SINGULARITY
-	bool "singularity-0.28nb7"
+	bool "singularity-0.28nb9"
 	help
 	  Endgame: Singularity game
 
@@ -3883,7 +3988,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SINGULARITY
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SIRIUS
-	bool "sirius-0.8.0nb23"
+	bool "sirius-0.8.0nb32"
 	help
 	  Othello game for GNOME2
 
@@ -3907,7 +4012,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SIRIUS
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SIX
-	bool "six-0.5.3nb12"
+	bool "six-0.5.3nb17"
 	help
 	  Hex, a board game with very simple rules
 
@@ -3920,7 +4025,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SIX
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SJENG
-	bool "sjeng-11.0nb4"
+	bool "sjeng-11.0nb5"
 	help
 	  
 
@@ -3977,7 +4082,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SPELLCAST
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_SPIDER
-	bool "spider-1.1nb2"
+	bool "spider-1.1nb3"
 	help
 	  Solitaire card game from xcontrib
 
@@ -3991,7 +4096,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_SPIDER
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_STEGAVORTO
-	bool "stegavorto-2009.01.22nb7"
+	bool "stegavorto-2009.01.22nb9"
 	help
 	  Discover secret messages embedded in the works of great authors
 
@@ -4012,7 +4117,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_STEGAVORTO
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_STRATAGUS
-	bool "stratagus-2.1nb13"
+	bool "stratagus-2.1nb15"
 	help
 	  Real-time strategy engine
 
@@ -4112,7 +4217,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_TANKED
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_TEG
-	bool "teg-0.11.1nb22"
+	bool "teg-0.11.1nb30"
 	help
 	  Round-based computer board game
 
@@ -4186,7 +4291,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_TILEWORLD
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_TSCP
-	bool "tscp-1.81nb2"
+	bool "tscp-1.81nb3"
 	help
 	  Tom Kerrigan's Simple Chess Program
 
@@ -4207,7 +4312,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_TSCP
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_TUXMATH
-	bool "tuxmath-20010907nb14"
+	bool "tuxmath-20010907nb15"
 	help
 	  Educational math arcade game
 
@@ -4226,7 +4331,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_TUXMATH
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_TUXRACER
-	bool "tuxracer-0.61nb12"
+	bool "tuxracer-0.61nb13"
 	help
 	  3D penguin racing game using OpenGL
 
@@ -4289,7 +4394,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_UFOAI
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_URBAN
-	bool "urban-1.5.3nb1"
+	bool "urban-1.5.3nb3"
 	help
 	  U.R.B.A.N The Cyborg Project
 
@@ -4325,8 +4430,20 @@ config BR2_PKGSRC_PACKAGE_GAMES_VMS_EMPIRE
 	  http://www.catb.org/~esr/vms-empire/
 
 
+config BR2_PKGSRC_PACKAGE_GAMES_WARGAMES
+	bool "wargames-1.02"
+	help
+	  Simulated interaction with the W.O.P.R. computer from War Games
+
+	  The wargames shell script (and associated helper wopr binary)
+	  simulates the interaction with the W.O.P.R. computer from the film
+	  War Games.
+
+	  https://github.com/abs0/wargames/tarball/
+
+
 config BR2_PKGSRC_PACKAGE_GAMES_WARMUX
-	bool "warmux-11.01nb2"
+	bool "warmux-11.01nb7"
 	help
 	  Battle game
 
@@ -4360,7 +4477,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_WARZONE2100
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_WESNOTH
-	bool "wesnoth-1.8.6nb1"
+	bool "wesnoth-1.10.4nb3"
 	help
 	  Fantasy turn-based strategy game
 
@@ -4390,7 +4507,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_WORMZ
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_WXHUGO
-	bool "wxhugo-3.1.02nb12"
+	bool "wxhugo-3.1.02nb19"
 	help
 	  Interactive fiction interpreter with sound and graphics support
 
@@ -4409,7 +4526,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_WXHUGO
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XARCHON
-	bool "xarchon-0.60nb9"
+	bool "xarchon-0.60nb11"
 	help
 	  Chess-like strategy game with battle options
 
@@ -4490,7 +4607,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XBLOCKOUT
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XBLAST
-	bool "xblast-2.10.4"
+	bool "xblast-2.10.4nb1"
 	help
 	  2-6 player kill the other guy with bombs game. A real blast!
 
@@ -4580,7 +4697,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XBREAKY
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XCONQ
-	bool "xconq-7.4.1nb8"
+	bool "xconq-7.4.1nb9"
 	help
 	  Xconq is a general strategy game system
 
@@ -4590,6 +4707,17 @@ config BR2_PKGSRC_PACKAGE_GAMES_XCONQ
 	  for multi-player games, and an extensive game library.
 
 	  http://sources.redhat.com/xconq/
+
+
+config BR2_PKGSRC_PACKAGE_GAMES_XCOWSAY
+	bool "xcowsay-1.3nb3"
+	help
+	  Display a cow and message on your desktop
+
+	  xcowsay displays a cute cow and message on your desktop. Inspired by the
+	  original cowsay.
+
+	  http://www.doof.me.uk/xcowsay/
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XDEMINEUR
@@ -4643,7 +4771,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XDOOM
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XEMERALDIA
-	bool "xemeraldia-0.31nb5"
+	bool "xemeraldia-0.31nb6"
 	help
 	  Game of breaking blocks
 
@@ -4688,7 +4816,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XFREECELL
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XFRISK
-	bool "xfrisk-1.2nb6"
+	bool "xfrisk-1.2nb7"
 	help
 	  X11 version of the classic Risk board game
 
@@ -4782,7 +4910,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XJUMP
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XKOBO
-	bool "xkobo-1.11nb4"
+	bool "xkobo-1.11nb5"
 	help
 	  Multi-way scrolling shoot 'em up game for X.  Strangely addictive
 
@@ -4897,7 +5025,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XPIPEMAN
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XPUYOPUYO
-	bool "xpuyopuyo-0.9.1nb7"
+	bool "xpuyopuyo-0.9.1nb9"
 	help
 	  Tetris-like puzzle game
 
@@ -4922,7 +5050,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XRACER
 	  XRacer is distributed under the terms of the GNU General
 	  Public License. Please see the file COPYING for details.
 
-	  http://www.annexia.org/freeware/xracer
+	  
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XRICK
@@ -5011,7 +5139,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XSCAVENGER
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XSCORCH
-	bool "xscorch-0.2.0nb4"
+	bool "xscorch-0.2.0nb6"
 	help
 	  Multiplayer tank shoot-em-up
 
@@ -5027,7 +5155,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XSCORCH
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XSCRABBLE
-	bool "xscrabble-1.0nb6"
+	bool "xscrabble-1.0nb7"
 	help
 	  X version of the popular board game, for 1 to 4 players
 
@@ -5111,6 +5239,29 @@ config BR2_PKGSRC_PACKAGE_GAMES_XTUX
 	  http://xtux.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_GAMES_XU4
+	bool "xu4-1.0beta3nb1"
+	help
+	  Remake of Ultima IV
+
+	  XU4 is a remake of the computer game Ultima IV.  The goal is to make
+	  it easy and convenient to play this classic on modern operating
+	  systems.  XU4 is primarily inspired by the much more ambitious project
+	  Exult.
+	  
+	  XU4 isn't a new game based on the Ultima IV story -- it is a faithful
+	  recreation of the old game, right up to the crappy graphics.  If you
+	  are looking for a game with modern gameplay and graphics, this is not
+	  it -- yet.  New features that improve the gameplay and keep with the
+	  spirit of the original game will be added.
+	  
+	  XU4 also tries to maintain strict compatibility with the original for
+	  its savegame files.  You can use a game saved in XU4 with the original
+	  and vice versa, at least in theory.
+
+	  http://xu4.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_GAMES_XVIER
 	bool "xvier-1.0nb4"
 	help
@@ -5141,7 +5292,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_XWORM
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_XYE
-	bool "xye-0.9.1nb4"
+	bool "xye-0.9.1nb5"
 	help
 	  Kye clone
 
@@ -5189,7 +5340,7 @@ config BR2_PKGSRC_PACKAGE_GAMES_ZOMBIES
 
 
 config BR2_PKGSRC_PACKAGE_GAMES_ZOOM
-	bool "zoom-1.0.3nb7"
+	bool "zoom-1.0.3nb8"
 	help
 	  Plays Infocom-compatible games, with graphics support
 

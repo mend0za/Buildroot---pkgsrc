@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_MATH_R
-	bool "R-2.14.0nb1"
+	bool "R-2.14.2nb3"
 	help
 	  Statistical language for data analysis and graphics
 
@@ -19,7 +19,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_CGIWITHR
-	bool "R-CGIwithR-0.73.0nb1"
+	bool "R-CGIwithR-0.73.0nb2"
 	help
 	  Facilities for the use of R to write CGI scripts
 
@@ -29,15 +29,28 @@ config BR2_PKGSRC_PACKAGE_MATH_R_CGIWITHR
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_DAAG
-	bool "R-DAAG-1.01nb1"
+	bool "R-DAAG-1.12"
 	help
 	  Example data sets and functions implemented in R
 
-	  consists of data sets and functions with our (John Maindonald
-	  and John Braun's) book,  Data Analysis and Graphics Using
-	  R, published by Cambridge University Press.
+	  Various data sets used in examples and exercises in the book
+	  Maindonald, J.H. and Braun, W.J. (2003, 2007, 2010) "Data Analysis and
+	  Graphics Using R".
 
 	  http://cran.r-project.org/web/packages/DAAG/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_DBI
+	bool "R-DBI-0.2.5"
+	help
+	  R Database Interface
+
+	  A database interface (DBI) definition for communication between R and
+	  relational database management systems.  All classes in this package
+	  are virtual and need to be extended by the various R/DBMS
+	  implementations.
+
+	  http://cran.r-project.org/web/packages/DBI/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_GRASS
@@ -57,19 +70,19 @@ config BR2_PKGSRC_PACKAGE_MATH_R_GRASS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_ISWR
-	bool "R-ISwR-2.0.4"
+	bool "R-ISwR-2.0.6"
 	help
 	  Data sets and scripts for 'Introductory Statistics with R'
 
-	  Data sets and scripts for text examples and exercises in
-	  P. Dalgaard (2002), 'Introductory Statistics with R',
-	  Springer Verlag.
+	  Data sets and scripts for text examples and exercises in P. Dalgaard
+	  (2008), `Introductory Statistics with R', 2nd ed., Springer Verlag,
+	  ISBN 978-0387790534.
 
 	  http://cran.r-project.org/web/packages/ISwR/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_PHYLOGR
-	bool "R-PHYLOGR-1.0.6"
+	bool "R-PHYLOGR-1.0.7"
 	help
 	  Manipulation of phylogenetically simulated data sets using GLS
 
@@ -80,47 +93,82 @@ config BR2_PKGSRC_PACKAGE_MATH_R_PHYLOGR
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_R2HTML
-	bool "R-R2HTML-1.59.1"
+	bool "R-R2HTML-2.2"
 	help
-	  Includes HTML function and methods to write in an HTML output
+	  R functions to write an HTML file
 
-	  Includes HTML function and methods to write in an HTML output.
-	  Thus, making HTML reports is easy. Includes a function that allows
-	  redirection on the fly, which appears to be very usefull for
-	  teaching purpose, as the student can keep a copy of the produced
-	  output to keep all that he/she did during the course
-	  Package comes with a vignette describing how to write HTML reports
-	  for statistical analysis. Finally, a driver for Sweave allows to parse
-	  HTML flat files containing R code and to automatically write the
-	  corresponding outputs (tables and graphs).
+	  Includes HTML function and methods to write an HTML file.  Thus,
+	  making HTML reports is easy.  Includes a function that allows
+	  redirection on the fly, which appears to be very usefull for teaching
+	  purposes, as the student can keep a copy of the produced output to
+	  keep all that he did during the course.  Package comes with a vignette
+	  describing how to write HTML reports for statistical analysis.
+	  Finally, a driver for Sweave allows to parse HTML flat files
+	  containing R code and to automatically write the corresponding outputs
+	  (tables and graphs).
 
 	  http://cran.r-project.org/web/packages/R2HTML/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_RARCINFO
-	bool "R-RArcInfo-0.4.7"
+	bool "R-RArcInfo-0.4.12"
 	help
-	  Package uses the functions to read geographical information in Arc/Info
+	  Read geographical information from Arc/Info
 
-	  RArcInfo is a package for the R statistical program  to import
-	  Arc/Info V7.x binary coverages. It is based on the library Avcelib
-	  written by Daniel Morissette.
+	  RArcInfo is a package for the R statistical program to import Arc/Info
+	  V7.x binary coverages. It is based on the library Avcelib written by
+	  Daniel Morissette.
 	  
 	  Currently, RArcInfo supports most of the file formats stored by these
 	  type of coverages. The geographical information (arcs, polygons,
 	  topological relationships, etc.) are stored using lists, but all the
 	  tables containing related information are imported into a data frame.
 	  
-	  Once the desired data are imported, the user can draw maps, even filling
-	  the polygons according to the value of a given covariate. Although R is
-	  not designed for heavy G.I.S. work, this package is very helpful to work
-	  with binary coverages inside R.
+	  Once the desired data are imported, the user can draw maps, even
+	  filling the polygons according to the value of a given
+	  covariate. Although R is not designed for heavy G.I.S. work, this
+	  package is very helpful to work with binary coverages inside R.
 
 	  http://cran.r-project.org/web/packages/RArcInfo/
 
 
+config BR2_PKGSRC_PACKAGE_MATH_R_RCOLORBREWER
+	bool "R-RColorBrewer-1.0.5"
+	help
+	  ColorBrewer palettes
+
+	  The packages provides palettes for drawing nice maps shaded according
+	  to a variable.
+
+	  http://cran.r-project.org/web/packages/RColorBrewer/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_RPOSTGRESQL
+	bool "R-RPostgreSQL-0.3.2nb1"
+	help
+	  R interface to the PostgreSQL database system
+
+	  Database interface and PostgreSQL driver for R.  This package provides
+	  a Database Interface (DBI) compliant driver for R to access PostgreSQL
+	  database systems.  A wiki and issue tracking system for the package
+	  are available at Google Code at https://code.google.com/p/rpostgresql/.
+
+	  http://cran.r-project.org/web/packages/RPostgreSQL/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_RANDOMFIELDS
+	bool "R-RandomFields-2.0.54"
+	help
+	  Simulation and analysis of random fields
+
+	  Simulation of Gaussian and extreme value random fields; conditional
+	  simulation; kriging.
+
+	  http://cran.r-project.org/web/packages/RandomFields/
+
+
 config BR2_PKGSRC_PACKAGE_MATH_R_RCMDR
-	bool "R-Rcmdr-1.5.3"
+	bool "R-Rcmdr-1.8.4"
 	help
 	  Platform-independent basic-statistics GUI for R
 
@@ -131,7 +179,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R_RCMDR
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_XML
-	bool "R-XML-3.4.0"
+	bool "R-XML-3.9.4nb1"
 	help
 	  Tools for parsing and generating XML within R
 
@@ -143,23 +191,24 @@ config BR2_PKGSRC_PACKAGE_MATH_R_XML
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_ABIND
-	bool "R-abind-1.1.0nb1"
+	bool "R-abind-1.4.0"
 	help
 	  Combine multi-dimensional arrays
 
-	  Combine multi-dimensional arrays. This is a generalization of cbind
-	  and rbind. Takes a sequence of vectors, matrices, or arrays and
-	  produces a single array of the same or higher dimension.
+	  Combine multi-dimensional arrays into a single array.  This is a
+	  generalization of cbind and rbind.  Works with vectors, matrices, and
+	  higher-dimensional arrays.  Also provides functions adrop, asub, and
+	  afill for manipulating, extracting and replacing data in arrays.
 
 	  http://cran.r-project.org/web/packages/abind/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_AKIMA
-	bool "R-akima-0.5.4"
+	bool "R-akima-0.5.7"
 	help
 	  Linear or cubic spline interpolation for irregular gridded data
 
-	  Linear or cubic spline interpolation for irregular gridded data
+	  Linear or cubic spline interpolation for irregular gridded data.
 
 	  http://cran.r-project.org/web/packages/akima/
 
@@ -175,7 +224,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R_BITOPS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_CAR
-	bool "R-car-2.0.11"
+	bool "R-car-2.0.12"
 	help
 	  Accompanies An R Companion to Applied Regression, 2nd Edition
 
@@ -186,7 +235,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R_CAR
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_CHRON
-	bool "R-chron-2.3.33"
+	bool "R-chron-2.3.42"
 	help
 	  Chronological objects which can handle dates and times
 
@@ -196,37 +245,37 @@ config BR2_PKGSRC_PACKAGE_MATH_R_CHRON
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_CIRCULAR
-	bool "R-circular-0.3.8nb1"
+	bool "R-circular-0.4.3nb1"
 	help
 	  Circular Statistics, from "Topics in circular Statistics"
 
-	  Circular Statistics, from "Topics in circular Statistics" (2001) S. Rao Jammalamadaka
-	  and A. SenGupta, World Scientific.
+	  Circular Statistics, from "Topics in circular Statistics" (2001)
+	  S. Rao Jammalamadaka and A. SenGupta, World Scientific.
 
 	  http://cran.r-project.org/web/packages/circular/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_CLASSINT
-	bool "R-classInt-0.1.14"
+	bool "R-classInt-0.1.17"
 	help
 	  Package for choosing univariate class intervals for graphics
 
-	  A package for choosing univariate class intervals for mapping or other graphics
-	  purposes.
+	  A package for choosing univariate class intervals for mapping or other
+	  graphics purposes.
 
 	  http://cran.r-project.org/web/packages/genetics/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_CLIM.PACT
-	bool "R-clim.pact-2.2.39"
+	bool "R-clim.pact-2.3.10"
 	help
-	  Climate analysis and downscaling package for monthly and daily data
+	  Climate analysis and downscaling for monthly and daily data
 
-	  Climate analysis and downscaling package for monthly and daily data.
-	  
 	  The package contains R functions for retrieving data, making climate
 	  analysis and downscaling of monthly mean and daily mean global climate
-	  scenarios.
+	  scenarios.  The package is also described in the book
+	  'Empirical-Statistical Downscaling
+	  (http://www.worldscibooks.com/environsci/6908.html)
 
 	  http://cran.r-project.org/web/packages/clim.pact/
 
@@ -236,15 +285,15 @@ config BR2_PKGSRC_PACKAGE_MATH_R_COMBINAT
 	help
 	  Routines for combinatorics
 
-	  Routines for combinatorics
+	  Routines for combinatorics.
 
 	  http://cran.r-project.org/web/packages/combinat/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_DATE
-	bool "R-date-1.2.29"
+	bool "R-date-1.2.32"
 	help
-	  Functions for handling dates
+	  R functions for handling dates
 
 	  Functions for handling dates.
 
@@ -252,29 +301,29 @@ config BR2_PKGSRC_PACKAGE_MATH_R_DATE
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_E1071
-	bool "R-e1071-1.5.24"
+	bool "R-e1071-1.6"
 	help
-	  Functions for latent class analysis
+	  Misc Functions of the Department of Statistics (e1071), TU Wien
 
-	  Functions for latent class analysis, short time Fourier transform, fuzzy
-	  clustering, support vector machines, shortest path computation, bagged
-	  clustering, naive Bayes classifier, ...
+	  Functions for latent class analysis, short time Fourier transform,
+	  fuzzy clustering, support vector machines, shortest path computation,
+	  bagged clustering, naive Bayes classifier, ...
 
-	  http://cran.r-project.org/web/packages/genetics/
+	  http://cran.r-project.org/web/packages/e1701/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_GDATA
-	bool "R-gdata-2.6.1"
+	bool "R-gdata-2.8.2"
 	help
 	  Various R programming tools for data manipulation
 
-	  Various R programming tools for data manipulation
+	  Various R programming tools for data manipulation.
 
 	  http://cran.r-project.org/web/packages/gdata/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_GENETICS
-	bool "R-genetics-1.3.4"
+	bool "R-genetics-1.3.6"
 	help
 	  Classes and methods for handling genetic data
 
@@ -289,36 +338,47 @@ config BR2_PKGSRC_PACKAGE_MATH_R_GENETICS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_GEOR
-	bool "R-geoR-1.6.36"
+	bool "R-geoR-1.7.2"
 	help
 	  Geostatistical analysis including likelihood-based and Bayesian methods
 
-	  Geostatistical analysis including likelihood-based and Bayesian methods.
+	  Geostatistical analysis including likelihood-based and Bayesian
+	  methods.
 
 	  http://cran.r-project.org/web/packages/geoR/
 
 
+config BR2_PKGSRC_PACKAGE_MATH_R_GEORGLM
+	bool "R-geoRglm-0.9.2"
+	help
+	  Generalised linear spatial models in R
+
+	  Functions for inference in generalised linear spatial models.  The
+	  posterior and predictive inference is based on Markov chain Monte
+	  Carlo methods.  Package geoRglm is an extension to the package geoR,
+	  which must be installed first.
+
+	  http://cran.r-project.org/web/packages/geoRglm/
+
+
 config BR2_PKGSRC_PACKAGE_MATH_R_GSTAT
-	bool "R-gstat-0.9.65"
+	bool "R-gstat-1.0.10"
 	help
 	  Uni/multivariable geostatistical modelling, prediction and simulation
 
-	  uni- and multivariable geostatistical modelling, prediction and
-	  simulation
-	  
-	  variogram modelling; simple, ordinary and universal point or block
+	  Variogram modelling; simple, ordinary and universal point or block
 	  (co)kriging, sequential Gaussian or indicator (co)simulation;
-	  variogram and map plotting utility functions.
+	  variogram and variogram map plotting utility functions.
 
 	  http://cran.r-project.org/web/packages/gstat/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_GTOOLS
-	bool "R-gtools-2.6.1"
+	bool "R-gtools-2.6.2"
 	help
 	  Various R programming tools
 
-	  Various R programming tools
+	  Various R programming tools.
 
 	  http://cran.r-project.org/web/packages/gtools/
 
@@ -334,22 +394,21 @@ config BR2_PKGSRC_PACKAGE_MATH_R_HTTPREQUEST
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_HWDE
-	bool "R-hwde-0.61"
+	bool "R-hwde-0.62"
 	help
 	  Models and tests for departure from Hardy-Weinberg equilibrium
 
-	  Models and tests for departure from Hardy-Weinberg equilibrium and
-	  independence between loci.
-	  
 	  Fits models for genotypic disequilibria, as described in Huttley and
-	  Wilson (2000), Weir (1996) and Weir and Wilson (1986). Contrast terms
+	  Wilson (2000), Weir (1996) and Weir and Wilson (1986).  Contrast terms
 	  are available that account for first order interactions between loci.
+	  Also implements, for a single locus in a single population, a
+	  conditional exact test for Hardy-Weinberg equilibrium
 
 	  http://cran.r-project.org/web/packages/hwde/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_LMM
-	bool "R-lmm-0.3.5nb1"
+	bool "R-lmm-0.5"
 	help
 	  Improved procedures for linear mixed models with R
 
@@ -359,7 +418,7 @@ config BR2_PKGSRC_PACKAGE_MATH_R_LMM
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_MAPPROJ
-	bool "R-mapproj-1.1.8.2"
+	bool "R-mapproj-1.1.8.3"
 	help
 	  Converts latitude/longitude into projected coordinates
 
@@ -369,9 +428,9 @@ config BR2_PKGSRC_PACKAGE_MATH_R_MAPPROJ
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_MAPS
-	bool "R-maps-2.1.0"
+	bool "R-maps-2.2.5"
 	help
-	  Display of maps. Includes Projection code
+	  Display maps in R
 
 	  Display of maps. Projection code and larger maps are in separate
 	  packages (mapproj and mapdata).
@@ -380,33 +439,35 @@ config BR2_PKGSRC_PACKAGE_MATH_R_MAPS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_MVTNORM
-	bool "R-mvtnorm-0.9.8"
+	bool "R-mvtnorm-0.9.9992"
 	help
 	  Computes the multivariate normal and t distribution
 
-	  Computes the multivariate normal and t distribution
+	  Computes multivariate normal and t probabilities, quantiles, random
+	  deviates and densities.
 
 	  http://cran.r-project.org/web/packages/mvtnorm/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_NCDF
-	bool "R-ncdf-1.6"
+	bool "R-ncdf-1.6.6"
 	help
 	  High-level R interface to Unidata's netCDF data files
 
-	  This package provides a high-level R interface to Unidata's netCDF data files,
-	  which are portable across platforms and include metadata information in
-	  addition to the data sets. Using this package netCDF files can be opened and
-	  data sets read in easily. It is also easy to create new netCDF dimensions,
-	  variables, and files, or manipulate existing netCDF files. This interface
-	  provides considerably more functionality than the old "netCDF" package for R,
-	  and is not compatible with the old "netCDF" package for R.
+	  This package provides a high-level R interface to Unidata's netCDF
+	  data files, which are portable across platforms and include metadata
+	  information in addition to the data sets.  Using this package netCDF
+	  files can be opened and data sets read in easily.  It is also easy to
+	  create new netCDF dimensions, variables, and files, or manipulate
+	  existing netCDF files.  This interface provides considerably more
+	  functionality than the old "netCDF" package for R, and is not
+	  compatible with the old "netCDF" package for R.  
 
 	  http://cran.r-project.org/web/packages/ncdf/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_PIXMAP
-	bool "R-pixmap-0.4.10"
+	bool "R-pixmap-0.4.11"
 	help
 	  Functions for manipulations of bitmaps with R
 
@@ -417,21 +478,22 @@ config BR2_PKGSRC_PACKAGE_MATH_R_PIXMAP
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_RANDOMFOREST
-	bool "R-randomForest-4.5.34"
+	bool "R-randomForest-4.6.6"
 	help
 	  Classification and regression based on a forest of trees
 
-	  Classification and regression based on a forest of trees using random inputs.
+	  Classification and regression based on a forest of trees using random
+	  inputs.
 
 	  http://cran.r-project.org/web/packages/genetics/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_SGEOSTAT
-	bool "R-sgeostat-1.0.23"
+	bool "R-sgeostat-1.0.24"
 	help
-	  Object-oriented Framework for Geostatistical Modeling in S+
+	  Object-oriented framework for geostatistical modeling in S+
 
-	  An Object-oriented Framework for Geostatistical Modeling in S+.
+	  An object-oriented framework for geostatistical modeling in S+.
 
 	  http://cran.r-project.org/web/packages/sgeostat/
 
@@ -447,36 +509,94 @@ config BR2_PKGSRC_PACKAGE_MATH_R_SHAPEFILES
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_SP
-	bool "R-sp-0.9.91"
+	bool "R-sp-0.9.98"
 	help
-	  classes and methods for spatial data
+	  Classes and methods for spatial data
 
-	  A package that provides classes and methods for spatial data. The classes document
-	  where the spatial location information resides, for 2D or 3D data. Utility functions
-	  are provided, e.g. for plotting data as maps, spatial selection, as well as methods
-	  for retrieving coordinates, for subsetting, print, summary, etc.
+	  A package that provides classes and methods for spatial data. The
+	  classes document where the spatial location information resides, for
+	  2D or 3D data. Utility functions are provided, e.g. for plotting data
+	  as maps, spatial selection, as well as methods for retrieving
+	  coordinates, for subsetting, print, summary, etc.
 
 	  http://cran.r-project.org/web/packages/sp/
 
 
+config BR2_PKGSRC_PACKAGE_MATH_R_SPACETIME
+	bool "R-spacetime-0.6.2"
+	help
+	  Classes and methods for spatio-temporal data
+
+	  A package with classes and methods for spatio-temporal data.  In
+	  particular, space-time regular lattices, sparse lattices, and
+	  irregular data are supported, with limited support for trajectories,
+	  but not for topologies with S/T interactions such as space-time
+	  prisms.  Utility functions are provided for plotting data as map
+	  sequences (lattice or animation) or multiple time series; for spatial
+	  and temporal selection, as well as methods for retrieving coordinates,
+	  for subsetting, print, summary, etc.
+
+	  http://cran.r-project.org/web/packages/spacetime/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_SPLANCS
+	bool "R-splancs-2.01.31"
+	help
+	  Spatial and space-time point pattern analysis
+
+	  Spatial and space-time point pattern analysis functions.
+
+	  http://cran.r-project.org/web/packages/splancs/
+
+
 config BR2_PKGSRC_PACKAGE_MATH_R_STATMOD
-	bool "R-statmod-1.4.1"
+	bool "R-statmod-1.4.14"
 	help
 	  Miscellaneous biostatistical modeling functions
 
-	  Miscellaneous biostatistical modeling functions.
+	  Various statistical modeling functions including growth curve
+	  comparisons, limiting dilution analysis, mixed linear models,
+	  heteroscedastic regression, Tweedie family generalized linear models,
+	  the inverse-Gaussian distribution and Gauss quadrature.
 
 	  http://cran.r-project.org/web/packages/statmod/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_R_WLE
-	bool "R-wle-0.9.3nb1"
+	bool "R-wle-0.9.4"
 	help
-	  Provides approach to robustness via Weighted Likelihood Estimation
+	  Weighted Likelihood Estimation
 
-	  Provides approach to robustness via Weighted Likelihood Estimation.
+	  Approach to robustness via Weighted Likelihood Estimation.
 
 	  http://cran.r-project.org/web/packages/wle/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_XTS
+	bool "R-xts-0.8.6"
+	help
+	  eXtensible Time Series
+
+	  Provide for uniform handling of R's different time-based data classes
+	  by extending zoo, maximizing native format information preservation
+	  and allowing for user level customization and extension, while
+	  simplifying cross-class interoperability.
+
+	  http://cran.r-project.org/web/packages/xts/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_R_ZOO
+	bool "R-zoo-1.7.7"
+	help
+	  S3 Infrastructure for Regular and Irregular Time Series
+
+	  An S3 class with methods for totally ordered indexed observations.  It
+	  is particularly aimed at irregular time series of numeric
+	  vectors/matrices and factors.  Zoo's key design goals are independence
+	  of a particular index/date/time class and consistency with ts and base
+	  R by providing methods to extend standard generics.
+
+	  http://cran.r-project.org/web/packages/zoo/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_TINYSVM
@@ -583,6 +703,16 @@ config BR2_PKGSRC_PACKAGE_MATH_ALGAE
 	  http://algae.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_MATH_ANALITZA
+	bool "analitza-4.8.4nb3"
+	help
+	  KDE library for mathematical features
+
+	  KDE library for mathematical features
+
+	  http://www.kde.org/
+
+
 config BR2_PKGSRC_PACKAGE_MATH_ANTIXLS
 	bool "antixls-0.2bnb1"
 	help
@@ -617,6 +747,50 @@ config BR2_PKGSRC_PACKAGE_MATH_ARIBAS
 	  ARIBAS is distributed under the terms of the GNU General Public License.
 
 	  http://www.mathematik.uni-muenchen.de/~forster/sw/aribas.html
+
+
+config BR2_PKGSRC_PACKAGE_MATH_ARPACK
+	bool "arpack-96"
+	help
+	  Library of subroutines to solve eigenvalue problems
+
+	  ARPACK is a collection of Fortran77 subroutines designed to solve large
+	  scale eigenvalue problems.
+	  
+	  The package is designed to compute a few eigenvalues and corresponding
+	  eigenvectors of a general n by n matrix A. It is most appropriate for large
+	  sparse or structured matrices A where structured means that a matrix-vector
+	  product w <- Av requires order n rather than the usual order n**2 floating
+	  point operations. This software is based upon an algorithmic variant of the
+	  Arnoldi process called the Implicitly Restarted Arnoldi Method (IRAM). When
+	  the matrix A is symmetric it reduces to a variant of the Lanczos process
+	  called the Implicitly Restarted Lanczos Method (IRLM). These variants may be
+	  viewed as a synthesis of the Arnoldi/Lanczos process with the Implicitly
+	  Shifted QR technique that is suitable for large scale problems. For many
+	  standard problems, a matrix factorization is not required. Only the action
+	  of the matrix on a vector is needed.  ARPACK software is capable of solving
+	  large scale symmetric, nonsymmetric, and generalized eigenproblems from
+	  significant application areas. The software is designed to compute a few (k)
+	  eigenvalues with user specified features such as those of largest real part
+	  or largest magnitude.  Storage requirements are on the order of n*k locations.
+	  No auxiliary storage is required. A set of Schur basis vectors for the desired
+	  k-dimensional eigen-space is computed which is numerically orthogonal to working
+	  precision. Numerically accurate eigenvectors are available on request.
+	  
+	  Important Features:
+	  
+	  o  Reverse Communication Interface.
+	  o  Single and Double Precision Real Arithmetic Versions for Symmetric,
+	  Non-symmetric, Standard or Generalized Problems.
+	  o  Single and Double Precision Complex Arithmetic Versions for Standard
+	  or Generalized Problems.
+	  o  Routines for Banded Matrices - Standard or Generalized Problems.
+	  o  Routines for The Singular Value Decomposition.
+	  o  Example driver routines that may be used as templates to implement
+	  numerous Shift-Invert strategies for all problem types, data types
+	  and precision.
+
+	  http://www.caam.rice.edu/software/ARPACK/SRC/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_BC
@@ -707,7 +881,7 @@ config BR2_PKGSRC_PACKAGE_MATH_CALC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_CALCOO
-	bool "calcoo-1.3.18nb7"
+	bool "calcoo-1.3.18nb12"
 	help
 	  Scientific calculator
 
@@ -729,6 +903,19 @@ config BR2_PKGSRC_PACKAGE_MATH_CALCOO
 	  and distract from "scientific" buttons.
 
 	  http://calcoo.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_CANTOR
+	bool "cantor-4.8.4nb3"
+	help
+	  KDE frontend to mathematical software
+
+	  Cantor is a front-end to powerful mathematics and statistics packages.
+	  Cantor integrates them into the KDE Platform and provides a nice,
+	  worksheet-based, graphical user interface.
+	  Support for four different environments (Maxima, R, SAGE, KAlgebra)
+
+	  http://www.kde.org/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_CAPC_CALC
@@ -758,6 +945,39 @@ config BR2_PKGSRC_PACKAGE_MATH_CAPC_CALC
 	  http://www.isthe.com/chongo/tech/comp/calc/
 
 
+config BR2_PKGSRC_PACKAGE_MATH_CGAL
+	bool "cgal-3.9nb9"
+	help
+	  Computational Geometry Algorithms Library
+
+	  The goal of the CGAL Open Source Project is to provide easy access to
+	  efficient and reliable geometric algorithms in the form of a C++ library. CGAL
+	  is used in various areas needing geometric computation, such as: computer
+	  graphics, scientific visualization, computer aided design and modeling,
+	  geographic information systems, molecular biology, medical imaging, robotics
+	  and motion planning, mesh generation, numerical methods... More on the
+	  projects using CGAL web page.
+	  
+	  The Computational Geometry Algorithms Library (CGAL), offers data structures
+	  and algorithms like triangulations (2D constrained triangulations and Delaunay
+	  triangulations in 2D and 3D, periodic triangulations in 3D), Voronoi diagrams
+	  (for 2D and 3D points, 2D additively weighted Voronoi diagrams, and segment
+	  Voronoi diagrams), polygons (Boolean operations, offsets, straight skeleton),
+	  polyhedra (Boolean operations), arrangements of curves and their applications
+	  (2D and 3D envelopes, Minkowski sums), mesh generation (2D Delaunay mesh
+	  generation and 3D surface and volume mesh generation, skin surfaces), geometry
+	  processing (surface mesh simplification, subdivision and parameterization, as
+	  well as estimation of local differential properties, and approximation of
+	  ridges and umbilics), alpha shapes, convex hull algorithms (in 2D, 3D and dD),
+	  search structures (kd trees for nearest neighbor search, and range and segment
+	  trees), interpolation (natural neighbor interpolation and placement of
+	  streamlines), shape analysis, fitting, and distances (smallest enclosing
+	  sphere of points or spheres, smallest enclosing ellipsoid of points, principal
+	  component analysis), and kinetic data structures.
+
+	  http://www.cgal.org/
+
+
 config BR2_PKGSRC_PACKAGE_MATH_CLISP_PARI
 	bool "clisp-pari-2.49nb1"
 	help
@@ -784,6 +1004,17 @@ config BR2_PKGSRC_PACKAGE_MATH_CLN
 	  * Interoperability
 
 	  http://www.ginac.de/CLN/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_CLOOG
+	bool "cloog-0.16.2nb1"
+	help
+	  
+
+	  CLooG is a code generator for scanning Z-polyhedra and is used by
+	  gcc >= 4.4 for loop optimization.
+
+	  http://www.cloog.org/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_DCDFLIB.C
@@ -888,7 +1119,7 @@ config BR2_PKGSRC_PACKAGE_MATH_DJBFFT
 
 
 config BR2_PKGSRC_PACKAGE_MATH_EIGEN2
-	bool "eigen-2.0.15"
+	bool "eigen-2.0.17"
 	help
 	  C++ template library for linear algebra
 
@@ -976,7 +1207,7 @@ config BR2_PKGSRC_PACKAGE_MATH_EUKLEIDES
 
 
 config BR2_PKGSRC_PACKAGE_MATH_EULER
-	bool "euler-1.61nb7"
+	bool "euler-1.61nb12"
 	help
 	  Interactive numerical analysis and graphics program
 
@@ -1009,7 +1240,7 @@ config BR2_PKGSRC_PACKAGE_MATH_EULER
 
 
 config BR2_PKGSRC_PACKAGE_MATH_EXTCALC
-	bool "extcalc-0.9.3nb6"
+	bool "extcalc-0.9.3nb12"
 	help
 	  Scientific graphic calculator
 
@@ -1034,7 +1265,7 @@ config BR2_PKGSRC_PACKAGE_MATH_FFTPACK
 
 
 config BR2_PKGSRC_PACKAGE_MATH_FFTW
-	bool "fftw-3.3"
+	bool "fftw-3.3.2"
 	help
 	  Collection of fast C routines to compute DFTs
 
@@ -1063,7 +1294,7 @@ config BR2_PKGSRC_PACKAGE_MATH_FFTW2
 
 
 config BR2_PKGSRC_PACKAGE_MATH_FFTWF
-	bool "fftwf-3.3"
+	bool "fftwf-3.3.2"
 	help
 	  Collection of fast C routines to compute DFTs
 
@@ -1095,7 +1326,7 @@ config BR2_PKGSRC_PACKAGE_MATH_FGMP
 
 
 config BR2_PKGSRC_PACKAGE_MATH_FITYK
-	bool "fityk-0.9.7nb3"
+	bool "fityk-0.9.7nb8"
 	help
 	  Peak fitting software
 
@@ -1108,7 +1339,7 @@ config BR2_PKGSRC_PACKAGE_MATH_FITYK
 
 
 config BR2_PKGSRC_PACKAGE_MATH_FRICAS
-	bool "fricas-1.1.3"
+	bool "fricas-1.1.6nb1"
 	help
 	  FriCAS is a fork of the Axiom computer algebra system
 
@@ -1128,7 +1359,7 @@ config BR2_PKGSRC_PACKAGE_MATH_FRICAS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GALCULATOR
-	bool "galculator-1.3.4nb7"
+	bool "galculator-1.3.4nb13"
 	help
 	  Desktop calculator with scientific / RPN modes
 
@@ -1161,7 +1392,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GAP
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GCALCTOOL
-	bool "gcalctool-5.32.2nb4"
+	bool "gcalctool-5.32.2nb10"
 	help
 	  Desktop calculator for GNOME
 
@@ -1174,6 +1405,24 @@ config BR2_PKGSRC_PACKAGE_MATH_GCALCTOOL
 	  it available.
 	  
 	  There is a single graphics driver for Gtk2 included with this release.
+
+	  http://live.gnome.org/Gcalctool
+
+
+config BR2_PKGSRC_PACKAGE_MATH_GCALCTOOL_GTK3
+	bool "gcalctool-6.4.2.1nb3"
+	help
+	  Desktop calculator for GNOME
+
+	  This is the calculator application that was previously in the OpenWindows
+	  Deskset of the Solaris 8 operating system.
+	  Sun Microsystems Inc. have kindly given me permission to release it.
+	  
+	  It incorporates a multiple precision arithmetic packages based on the work
+	  of Professor Richard Brent, who has also kindly given me permission to make
+	  it available.
+	  
+	  There is a single graphics driver for Gtk3 included with this release.
 
 	  http://live.gnome.org/Gcalctool
 
@@ -1195,7 +1444,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GEG
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GENIUS
-	bool "genius-1.0.14nb1"
+	bool "genius-1.0.15nb4"
 	help
 	  Calculator and math tool
 
@@ -1236,7 +1485,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GLPK
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GNUMERIC110
-	bool "gnumeric-1.10.17nb1"
+	bool "gnumeric-1.10.17nb8"
 	help
 	  Spreadsheet program from the GNOME project
 
@@ -1252,7 +1501,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GNUMERIC110
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GNUMERIC
-	bool "gnumeric-1.8.4nb16"
+	bool "gnumeric-1.8.4nb25"
 	help
 	  
 
@@ -1393,7 +1642,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GP_LAG
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GRACE
-	bool "grace-5.1.22nb6"
+	bool "grace-5.1.22nb7"
 	help
 	  GRaphing, Advanced Computation and Exploration of data
 
@@ -1444,7 +1693,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GRAPHOPT
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GRPN
-	bool "grpn-1.3.3nb1"
+	bool "grpn-1.3.3nb6"
 	help
 	  
 
@@ -1478,7 +1727,7 @@ config BR2_PKGSRC_PACKAGE_MATH_GSL
 
 
 config BR2_PKGSRC_PACKAGE_MATH_GTKLIFE
-	bool "gtklife-5.1nb7"
+	bool "gtklife-5.1nb12"
 	help
 	  The game of life
 
@@ -1523,7 +1772,37 @@ config BR2_PKGSRC_PACKAGE_MATH_ITPP
 	  accompanying routines.  Such a kernel makes IT++ similar to MATLAB or
 	  GNU Octave.
 
-	  http://sourceforge.net/apps/wordpress/itpp/
+	  http://sourceforge.net/projects/itpp/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_KALGEBRA
+	bool "kalgebra-4.8.4nb3"
+	help
+	  KDE graph calculator
+
+	  KAlgebra is a fully featured calculator that lets you plot different
+	  types of 2D and 3D functions and to calculate easy and not so easy
+	  calculations, such as addition, trigonometric functions or derivatives.
+	  
+	  The application has been thought to be easily understandable for students,
+	  so that they don't need to read a boring manual. The language is deeply
+	  integrated in the UI, providing a dictionary with representations for all
+	  the available operations, code highlighting and code completion.
+
+	  http://www.kde.org/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_KCALC
+	bool "kcalc-4.8.4nb3"
+	help
+	  KDE scientific calculator
+
+	  KCalc is a calculator which offers many more mathematical functions than
+	  meet the eye on a first glance. Please study the section on keyboard
+	  accelerators and modes in the handbook to learn more about the many
+	  functions available.
+
+	  http://www.kde.org/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_KSEG
@@ -1572,7 +1851,7 @@ config BR2_PKGSRC_PACKAGE_MATH_LIBFFM
 
 
 config BR2_PKGSRC_PACKAGE_MATH_LIBMATHEVAL
-	bool "libmatheval-1.1.4nb3"
+	bool "libmatheval-1.1.8"
 	help
 	  Library for evaluating mathematical expressions
 
@@ -1651,11 +1930,11 @@ config BR2_PKGSRC_PACKAGE_MATH_MAPM
 	  LOG10, EXP, POW, SINH, COSH, TANH, ARC-SINH, ARC-COSH, ARC-TANH, and
 	  also FACTORIAL.
 
-	  http://www.tc.umn.edu/~ringx004/
+	  http://www.tc.umn.edu/~ringx004/mapm-main.html
 
 
 config BR2_PKGSRC_PACKAGE_MATH_MATHOMATIC
-	bool "mathomatic-15.6.0"
+	bool "mathomatic-16.0.4"
 	help
 	  Small portable symbolic math program
 
@@ -1675,7 +1954,7 @@ config BR2_PKGSRC_PACKAGE_MATH_MATHOMATIC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_MAXIMA
-	bool "maxima-5.24.0"
+	bool "maxima-5.28.0nb1"
 	help
 	  Computer algebra system
 
@@ -1691,7 +1970,7 @@ config BR2_PKGSRC_PACKAGE_MATH_MAXIMA
 
 
 config BR2_PKGSRC_PACKAGE_MATH_MCSIM
-	bool "mcsim-5.4.0"
+	bool "mcsim-5.4.0nb1"
 	help
 	  Monte Carlo Simulation software
 
@@ -1768,7 +2047,7 @@ config BR2_PKGSRC_PACKAGE_MATH_MINPACK
 
 
 config BR2_PKGSRC_PACKAGE_MATH_MPCOMPLEX
-	bool "mpcomplex-0.9"
+	bool "mpcomplex-1.0.1"
 	help
 	  Multiprecision complex arithmetic library
 
@@ -1780,7 +2059,7 @@ config BR2_PKGSRC_PACKAGE_MATH_MPCOMPLEX
 
 
 config BR2_PKGSRC_PACKAGE_MATH_MPFR
-	bool "mpfr-3.0.1.3"
+	bool "mpfr-3.1.1p2"
 	help
 	  GMP-based library for multiple-precision floating-point computations
 
@@ -1812,7 +2091,7 @@ config BR2_PKGSRC_PACKAGE_MATH_MPRIME_BIN
 
 
 config BR2_PKGSRC_PACKAGE_MATH_MTL
-	bool "mtl-2.1.2.21"
+	bool "mtl-2.1.2.22"
 	help
 	  Matrix Template Library
 
@@ -1843,7 +2122,7 @@ config BR2_PKGSRC_PACKAGE_MATH_MTL
 
 
 config BR2_PKGSRC_PACKAGE_MATH_MUPARSER
-	bool "muparser-134"
+	bool "muparser-200.2.2.2"
 	help
 	  Parser for mathematical expressions
 
@@ -1933,7 +2212,7 @@ config BR2_PKGSRC_PACKAGE_MATH_NTL
 
 
 config BR2_PKGSRC_PACKAGE_MATH_OCTAVE
-	bool "octave-3.4.3"
+	bool "octave-3.6.3"
 	help
 	  High-level language, intended for numerical computations
 
@@ -1983,7 +2262,7 @@ config BR2_PKGSRC_PACKAGE_MATH_ODEPACK
 
 
 config BR2_PKGSRC_PACKAGE_MATH_OPENAXIOM
-	bool "openaxiom-1.3.0"
+	bool "openaxiom-1.4.1nb1"
 	help
 	  Platform for symbolic, algebraic, and numerical computations
 
@@ -2092,7 +2371,7 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_EXCEL_TEMPLATE_PLUS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BASE36
-	bool "p5-Math-Base36-0.09"
+	bool "p5-Math-Base36-0.10"
 	help
 	  Perl 5 module to encode and decode base36 strings
 
@@ -2141,9 +2420,9 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BEZIER
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BIGINT_GMP
-	bool "p5-Math-BigInt-GMP-1.36"
+	bool "p5-Math-BigInt-GMP-1.37"
 	help
-	  Perl 5 module for arbitrary size integer math via the GMP library
+	  Perl module for arbitrary size integer math via the GMP library
 
 	  The Perl 5 module Math::GMP gives you access to the fast GMP library
 	  for fast big integer math.
@@ -2152,7 +2431,7 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BIGINT_GMP
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_BIGINT_PARI
-	bool "p5-Math-BigInt-Pari-1.16"
+	bool "p5-Math-BigInt-Pari-1.16nb1"
 	help
 	  Perl5 library to use Math::Pari for Math::BigInt routines
 
@@ -2249,6 +2528,17 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_PARI
 	  http://search.cpan.org/dist/Math-Pari/
 
 
+config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_PERMUTE_LIST
+	bool "p5-Math-Permute-List-1.004"
+	help
+	  Permute a list
+
+	  Generate and process all the all the permutations of a list using
+	  the standard Perl metaphor.
+
+	  http://search.cpan.org/dist/Math-Permute-List/
+
+
 config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM
 	bool "p5-Math-Random-0.71nb2"
 	help
@@ -2264,7 +2554,7 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_MATH_RANDOM_MT
-	bool "p5-Math-Random-MT-1.12"
+	bool "p5-Math-Random-MT-1.16"
 	help
 	  The Mersenne Twister PRNG
 
@@ -2463,7 +2753,7 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_SPREADSHEET_XLSX
 
 
 config BR2_PKGSRC_PACKAGE_MATH_P5_STATISTICS_DESCRIPTIVE
-	bool "p5-Statistics-Descriptive-3.0202"
+	bool "p5-Statistics-Descriptive-3.0604"
 	help
 	  Perl module of basic descriptive statistical functions
 
@@ -2471,6 +2761,17 @@ config BR2_PKGSRC_PACKAGE_MATH_P5_STATISTICS_DESCRIPTIVE
 	  functions (mean, median, mode, sum, variance, standard_deviation, etc.)
 
 	  http://search.cpan.org/dist/Statistics-Descriptive/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_P5_TEST_NUMBER_DELTA
+	bool "p5-Test-Number-Delta-1.03"
+	help
+	  Compare the difference between numbers against a given tolerance
+
+	  A perl module for compare if the difference between two numbers is within
+	  a specified amount.
+
+	  http://search.cpan.org/dist/Test-Number-Delta
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PARI
@@ -2505,7 +2806,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PARI_GALDATA
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PHP_BCMATH
-	bool "php53-bcmath-5.3.8"
+	bool "php53-bcmath-5.3.17"
 	help
 	  PHP extension for bc-style arbitrary precision math
 
@@ -2528,7 +2829,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PEAR_NUMBERS_ROMAN
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PEAR_NUMBERS_WORDS
-	bool "php53-pear-Numbers_Words-0.16.2"
+	bool "php53-pear-Numbers_Words-0.16.4"
 	help
 	  Provides methods for spelling numerals in words
 
@@ -2539,6 +2840,16 @@ config BR2_PKGSRC_PACKAGE_MATH_PEAR_NUMBERS_WORDS
 	  call Numbers_Words::toWords() with just a string.
 
 	  http://pear.php.net/package/Numbers_Words/
+
+
+config BR2_PKGSRC_PACKAGE_MATH_PPL
+	bool "ppl-0.11.2"
+	help
+	  The Parma Polyhedra Library. Used by gcc for loop optimization
+
+	  The Parma Polyhedra Library. Used by gcc for loop optimization.
+
+	  http://www.cs.unipr.it/ppl/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PRNG
@@ -2556,7 +2867,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PRNG
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PSPP
-	bool "pspp-0.6.2nb7"
+	bool "pspp-0.6.2nb13"
 	help
 	  Program for statistical analysis of sampled data
 
@@ -2618,7 +2929,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_SCIENTIFIC_DOC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_NUMERIC
-	bool "py26-Numeric-24.2nb1"
+	bool "py27-Numeric-24.2nb1"
 	help
 	  Adds multidimensional numeric arrays to Python
 
@@ -2645,7 +2956,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_NUMERIC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_SCIENTIFIC
-	bool "py26-Scientific-2.8"
+	bool "py27-Scientific-2.8"
 	help
 	  Python modules for scientific computing
 
@@ -2674,7 +2985,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_SCIENTIFIC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_EPHEM
-	bool "py26-ephem-3.7.3.4"
+	bool "py27-ephem-3.7.3.4"
 	help
 	  Scientific-grade astronomical computations for Python
 
@@ -2691,7 +3002,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_EPHEM
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_FPCONST
-	bool "py26-fpconst-0.7.2"
+	bool "py27-fpconst-0.7.2"
 	help
 	  IEEE 754 floating point special handling for Python
 
@@ -2709,7 +3020,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_FPCONST
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_GMPY
-	bool "py26-gmpy-1.12"
+	bool "py27-gmpy-1.15"
 	help
 	  Library for arbitrary precision arithmetic wirtten by Python
 
@@ -2719,7 +3030,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_GMPY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_MPMATH
-	bool "py26-mpmath-0.15"
+	bool "py27-mpmath-0.17"
 	help
 	  Python library for arbitrary-precision FP arithmetic
 
@@ -2728,8 +3039,27 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_MPMATH
 	  http://code.google.com/p/mpmath/
 
 
+config BR2_PKGSRC_PACKAGE_MATH_PY_MUNKRES
+	bool "py27-munkres-1.0.5.4"
+	help
+	  Munkres algorithm for the Assignment Problem
+
+	  The Munkres module provides an implementation of the Munkres
+	  algorithm (also called the Hungarian algorithm or the Kuhn-Munkres
+	  algorithm), useful for solving the Assignment Problem.
+	  
+	  Assignment Problem: Let C be an nxn matrix representing the costs
+	  of each of n workers to perform any of n jobs. The assignment
+	  problem is to assign jobs to workers in a way that minimizes the
+	  total cost. Since each worker can perform only one job and each
+	  job can be assigned to only one worker the assignments represent
+	  an independent set of the matrix C.
+
+	  http://pypi.python.org/pypi/munkres/
+
+
 config BR2_PKGSRC_PACKAGE_MATH_PY_NETWORKX
-	bool "py26-networkx-1.2"
+	bool "py27-networkx-1.7"
 	help
 	  Python package for creating and manipulating graphs and networks
 
@@ -2753,7 +3083,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_NETWORKX
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_NUMARRAY
-	bool "py26-numarray-1.5.2nb1"
+	bool "py27-numarray-1.5.2nb1"
 	help
 	  Array manipulation
 
@@ -2769,7 +3099,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_NUMARRAY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_NUMEXPR
-	bool "py26-numexpr-1.4.1"
+	bool "py27-numexpr-1.4.1"
 	help
 	  Numerical expression evaluator for NumPy
 
@@ -2781,7 +3111,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_NUMEXPR
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_NUMPY
-	bool "py26-numpy-1.4.1nb2"
+	bool "py27-numpy-1.6.2"
 	help
 	  Array processing for numbers, strings, records, and objects
 
@@ -2799,7 +3129,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_NUMPY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_PYTABLES
-	bool "py26-pytables-2.2.1nb1"
+	bool "py27-pytables-2.2.1nb1"
 	help
 	  Database package for large amounts of data
 
@@ -2815,7 +3145,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_PYTABLES
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_ROMAN
-	bool "py26-roman-1.4.0"
+	bool "py27-roman-1.4.0"
 	help
 	  Integer to Roman numerals converter for Python
 
@@ -2825,7 +3155,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_ROMAN
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_RPY
-	bool "py26-rpy-2.1.3"
+	bool "py27-rpy-2.1.3"
 	help
 	  R interface for Python
 
@@ -2840,7 +3170,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_RPY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_SCIPY
-	bool "py26-scipy-0.7.2"
+	bool "py27-scipy-0.7.2"
 	help
 	  Scientific Algorithms Library for Python
 
@@ -2856,7 +3186,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_SCIPY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_PY_SYMPY
-	bool "py26-sympy-0.6.7"
+	bool "py27-sympy-0.7.1"
 	help
 	  Python library for symbolic mathematics
 
@@ -2866,7 +3196,7 @@ config BR2_PKGSRC_PACKAGE_MATH_PY_SYMPY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE
-	bool "qalculate-0.9.7nb2"
+	bool "qalculate-0.9.7nb6"
 	help
 	  
 
@@ -2879,7 +3209,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_BASES
-	bool "qalculate-bases-0.9.4nb9"
+	bool "qalculate-bases-0.9.4nb16"
 	help
 	  Utility for conversion between number bases using Qalculate
 
@@ -2893,7 +3223,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_BASES
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_CURRENCY
-	bool "qalculate-currency-0.9.4nb9"
+	bool "qalculate-currency-0.9.4nb16"
 	help
 	  Utility for conversion between currencies using Qalculate
 
@@ -2909,7 +3239,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_CURRENCY
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_GTK
-	bool "qalculate-gtk-0.9.7nb8"
+	bool "qalculate-gtk-0.9.7nb16"
 	help
 	  
 
@@ -2924,7 +3254,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_GTK
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_KDE
-	bool "qalculate-kde-0.9.5nb13"
+	bool "qalculate-kde-0.9.5nb19"
 	help
 	  
 
@@ -2939,7 +3269,7 @@ config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_KDE
 
 
 config BR2_PKGSRC_PACKAGE_MATH_QALCULATE_UNITS
-	bool "qalculate-units-0.9.4nb9"
+	bool "qalculate-units-0.9.4nb16"
 	help
 	  Utility for conversion between units using Qalculate
 
@@ -2991,7 +3321,7 @@ config BR2_PKGSRC_PACKAGE_MATH_RANDLIB
 
 
 config BR2_PKGSRC_PACKAGE_MATH_RUBY_RB_GSL
-	bool "ruby19-rb-gsl-1.14.7"
+	bool "ruby193-rb-gsl-1.14.7"
 	help
 	  Ruby interface to the GNU Scientific Library
 
@@ -3002,7 +3332,7 @@ config BR2_PKGSRC_PACKAGE_MATH_RUBY_RB_GSL
 
 
 config BR2_PKGSRC_PACKAGE_MATH_RUBY_SPREADSHEET
-	bool "ruby19-spreadsheet-0.6.5.9"
+	bool "ruby193-spreadsheet-0.7.3"
 	help
 	  Ruby Spreadsheet Library to read and write Spreadsheet Documents
 
@@ -3032,7 +3362,7 @@ config BR2_PKGSRC_PACKAGE_MATH_SC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_SCILAB
-	bool "scilab-4.1nb5"
+	bool "scilab-4.1nb6"
 	help
 	  High-level scientific math programming environment with graphics
 
@@ -3076,7 +3406,7 @@ config BR2_PKGSRC_PACKAGE_MATH_SLATEC
 
 
 config BR2_PKGSRC_PACKAGE_MATH_SNNS
-	bool "snns-4.2nb2"
+	bool "snns-4.3"
 	help
 	  Software simulator for neural networks
 
@@ -3091,7 +3421,7 @@ config BR2_PKGSRC_PACKAGE_MATH_SNNS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_SPEEDCRUNCH
-	bool "speedcrunch-0.10.1nb6"
+	bool "speedcrunch-0.10.1nb12"
 	help
 	  Calculator
 
@@ -3114,7 +3444,7 @@ config BR2_PKGSRC_PACKAGE_MATH_SPEEDCRUNCH
 
 
 config BR2_PKGSRC_PACKAGE_MATH_STATIST
-	bool "statist-1.0.1nb2"
+	bool "statist-1.0.1nb3"
 	help
 	  Small and portable statistics program
 
@@ -3179,7 +3509,7 @@ config BR2_PKGSRC_PACKAGE_MATH_TASP_VSIPL
 
 
 config BR2_PKGSRC_PACKAGE_MATH_TEAPOT
-	bool "teapot-1.09"
+	bool "teapot-2.3.0"
 	help
 	  Curses based spread sheet program
 
@@ -3191,7 +3521,7 @@ config BR2_PKGSRC_PACKAGE_MATH_TEAPOT
 	  unlike the traditional approach like A0, C5, etc. which is probably
 	  inherited from VisiCalc.
 
-	  http://www.moria.de/~michael/teapot/
+	  http://www.syntax-k.de/projekte/teapot/
 
 
 config BR2_PKGSRC_PACKAGE_MATH_TEX_FP
@@ -3289,7 +3619,7 @@ config BR2_PKGSRC_PACKAGE_MATH_UDUNITS
 
 
 config BR2_PKGSRC_PACKAGE_MATH_UNITS
-	bool "units-1.86nb1"
+	bool "units-2.00"
 	help
 	  GNU Units - a calculator capable of performing unit conversions
 
@@ -3324,7 +3654,7 @@ config BR2_PKGSRC_PACKAGE_MATH_VISTA
 
 
 config BR2_PKGSRC_PACKAGE_MATH_WXMAXIMA
-	bool "wxMaxima-0.8.6nb5"
+	bool "wxMaxima-12.09.0nb2"
 	help
 	  Graphical UI for maxima
 
@@ -3377,7 +3707,7 @@ config BR2_PKGSRC_PACKAGE_MATH_XGAP
 
 
 config BR2_PKGSRC_PACKAGE_MATH_XLDLAS
-	bool "xldlas-0.85nb7"
+	bool "xldlas-0.85nb8"
 	help
 	  XForms-based statistics package
 
@@ -3479,7 +3809,7 @@ config BR2_PKGSRC_PACKAGE_MATH_XMGR
 
 
 config BR2_PKGSRC_PACKAGE_MATH_XYLIB
-	bool "xylib-0.8nb1"
+	bool "xylib-1.0"
 	help
 	  Library for reading powder diffraction data
 

@@ -73,6 +73,29 @@ config BR2_PKGSRC_PACKAGE_MBONE_MDD
 	  
 
 
+config BR2_PKGSRC_PACKAGE_MBONE_SAPSERVER
+	bool "miniSAPserver-0.2.4"
+	help
+	  Mini SAP server from the VideoLan project
+
+	  sapserver is a SAP announcement server. Use it to advertise your sessions
+	  on the MBone. It was originally developped by the VideoLan Project to
+	  be used with the VLS streaming server.
+
+	  http://www.videolan.org/
+
+
+config BR2_PKGSRC_PACKAGE_MBONE_RAT
+	bool "rat-3.0.28nb4"
+	help
+	  Robust Audio Tool - multicast audioconferencing
+
+	  Rat allows users to conduct host-to-host or multihost audio
+	  teleconferences over an internet.
+
+	  http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/
+
+
 config BR2_PKGSRC_PACKAGE_MBONE_RTPTOOLS
 	bool "rtptools-1.18"
 	help
@@ -92,29 +115,6 @@ config BR2_PKGSRC_PACKAGE_MBONE_RTPTOOLS
 	  rtptrans: RTP translator between unicast and multicast networks.
 
 	  http://www.cs.columbia.edu/IRT/software/rtptools/
-
-
-config BR2_PKGSRC_PACKAGE_MBONE_SAPSERVER
-	bool "miniSAPserver-0.2.4"
-	help
-	  Mini SAP server from the VideoLan project
-
-	  sapserver is a SAP announcement server. Use it to advertise your sessions
-	  on the MBone. It was originally developped by the VideoLan Project to
-	  be used with the VLS streaming server.
-
-	  http://www.videolan.org/
-
-
-config BR2_PKGSRC_PACKAGE_MBONE_RAT
-	bool "rat-3.0.28nb3"
-	help
-	  Robust Audio Tool - multicast audioconferencing
-
-	  Rat allows users to conduct host-to-host or multihost audio
-	  teleconferences over an internet.
-
-	  http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/
 
 
 config BR2_PKGSRC_PACKAGE_MBONE_MDP
@@ -145,7 +145,7 @@ config BR2_PKGSRC_PACKAGE_MBONE_MDP
 
 
 config BR2_PKGSRC_PACKAGE_MBONE_VAT
-	bool "vat-4.0b2nb3"
+	bool "vat-4.0b2nb4"
 	help
 	  The Visual Audio Tool - multicast audioconferencing
 
@@ -156,7 +156,7 @@ config BR2_PKGSRC_PACKAGE_MBONE_VAT
 
 
 config BR2_PKGSRC_PACKAGE_MBONE_VIC
-	bool "vic-2.8nb3"
+	bool "vic-2.8nb4"
 	help
 	  MBONE video conferencing tool
 
@@ -174,7 +174,7 @@ config BR2_PKGSRC_PACKAGE_MBONE_VIC
 
 
 config BR2_PKGSRC_PACKAGE_MBONE_VIC_DEVEL
-	bool "vic-devel-2.8.1.4.0beta.4337nb3"
+	bool "vic-devel-2.8.1.4.0beta.4337nb5"
 	help
 	  MBONE video conferencing tool
 
@@ -195,7 +195,7 @@ config BR2_PKGSRC_PACKAGE_MBONE_VIC_DEVEL
 
 
 config BR2_PKGSRC_PACKAGE_MBONE_WBD
-	bool "wbd-1.0p4nb1"
+	bool "wbd-1.0p4nb2"
 	help
 	  Multicast WhiteBoarD
 

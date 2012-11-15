@@ -1,13 +1,3 @@
-config BR2_PKGSRC_PACKAGE_BIOLOGY_AZARA
-	bool "azara-2.7nb3"
-	help
-	  Programs to process and view NMR data
-
-	  Azara is a suite of programs to process and view NMR data.
-
-	  http://www.ccpn.ac.uk/azara/
-
-
 config BR2_PKGSRC_PACKAGE_BIOLOGY_ARKA
 	bool "arka-0.11nb2"
 	help
@@ -21,6 +11,16 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_ARKA
 	  sequences.
 
 	  http://www.bioinformatics.org/genpak/
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_AZARA
+	bool "azara-2.7nb3"
+	help
+	  Programs to process and view NMR data
+
+	  Azara is a suite of programs to process and view NMR data.
+
+	  http://www.ccpn.ac.uk/azara/
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_BIOPERL
@@ -44,7 +44,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_BIOPERL
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_BODR
-	bool "bodr-9"
+	bool "bodr-9nb1"
 	help
 	  Blue Obelisk Data Repository
 
@@ -72,7 +72,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_CHEMICAL_MIME_DATA
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_CHEMTOOL
-	bool "chemtool-1.6.12nb1"
+	bool "chemtool-1.6.13nb5"
 	help
 	  Program for drawing organic molecules
 
@@ -158,7 +158,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_GENESPLICER
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_GLIMMER
-	bool "glimmer-2.13"
+	bool "glimmer-2.13nb1"
 	help
 	  System for finding genes in microbial DNA
 
@@ -173,7 +173,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_GLIMMER
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_GNOME_CHEMISTRY_UTILS
-	bool "gnome-chemistry-utils-0.12.10"
+	bool "gnome-chemistry-utils-0.12.13nb3"
 	help
 	  GChemPaint, a 2D chemical editor and other programs
 
@@ -209,7 +209,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_GP
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_GROMACS
-	bool "gromacs-4.5.4"
+	bool "gromacs-4.5.5nb1"
 	help
 	  Molecular dynamics package
 
@@ -304,7 +304,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_NUT
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_OPENBABEL
-	bool "openbabel-2.3.0nb1"
+	bool "openbabel-2.3.0nb7"
 	help
 	  Chemistry file translation program
 
@@ -346,6 +346,25 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_PHYLIP
 	  inferring phylogenies (evolutionary trees).
 
 	  http://evolution.genetics.washington.edu/phylip.html
+
+
+config BR2_PKGSRC_PACKAGE_BIOLOGY_PLINK
+	bool "plink-1.07"
+	help
+	  Whole-genome association analysis toolset
+
+	  PLINK is a free, open-source whole genome association analysis
+	  toolset, designed to perform a range of basic, large-scale
+	  analyses in a computationally efficient manner.
+	  
+	  The focus of PLINK is purely on analysis of genotype/phenotype
+	  data, so there is no support for steps prior to this (e.g. study
+	  design and planning, generating genotype or CNV calls from raw
+	  data). Through integration with gPLINK and Haploview, there is
+	  some support for the subsequent visualization, annotation and
+	  storage of results.
+
+	  http://pngu.mgh.harvard.edu/~purcell/plink/
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_PRIMER3
@@ -426,7 +445,7 @@ config BR2_PKGSRC_PACKAGE_BIOLOGY_PUZZLE
 
 
 config BR2_PKGSRC_PACKAGE_BIOLOGY_PY_MOL
-	bool "py26-mol-1.4.1nb1"
+	bool "py27-mol-1.4.1nb2"
 	help
 	  Molecular Visualization System
 

@@ -17,31 +17,8 @@ config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK
 	  http://www.asterisk.org/
 
 
-config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK16
-	bool "asterisk-1.6.2.21"
-	help
-	  The Asterisk Software PBX
-
-	  Asterisk is a complete PBX in software.  It provides all of the
-	  features you would expect from a PBX and more. Asterisk does voice
-	  over IP in three protocols, and can interoperate with almost all
-	  standards-based telephony equipment using relatively inexpensive
-	  hardware.
-	  
-	  Asterisk provides Voicemail services with Directory, Call Conferencing,
-	  Interactive Voice Response, Call Queuing. It has support for
-	  three-way calling, caller ID services, ADSI, SIP and H.323 (as both
-	  client and gateway).
-	  
-	  NOTE:  This version does not work with the zaptel drivers.  It
-	  requires the newer DAHDI drivers which are still being ported.
-	  So, there is no hardware support available at this moment.
-
-	  http://www.asterisk.org/
-
-
 config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK18
-	bool "asterisk-1.8.7.2"
+	bool "asterisk-1.8.16.0nb2"
 	help
 	  The Asterisk Software PBX
 
@@ -69,6 +46,29 @@ config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK18
 	  http://www.asterisk.org/
 
 
+config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK10
+	bool "asterisk-10.8.0nb2"
+	help
+	  The Asterisk Software PBX
+
+	  Asterisk is a complete PBX in software.  It provides all of the
+	  features you would expect from a PBX and more. Asterisk does voice
+	  over IP in three protocols, and can interoperate with almost all
+	  standards-based telephony equipment using relatively inexpensive
+	  hardware.
+	  
+	  Asterisk provides Voicemail services with Directory, Call Conferencing,
+	  Interactive Voice Response, Call Queuing. It has support for
+	  three-way calling, caller ID services, ADSI, SIP and H.323 (as both
+	  client and gateway).
+	  
+	  NOTE:  This version does not work with the zaptel drivers.  It
+	  requires the newer DAHDI drivers which are still being ported.
+	  So, there is no hardware support available at this moment.
+
+	  http://www.asterisk.org/
+
+
 config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_DE_X9MEDIA
 	bool "asterisk-sounds-de-x9media-20060714nb1"
 	help
@@ -78,16 +78,6 @@ config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_DE_X9MEDIA
 	  communication.
 
 	  http://www.x9media.com/
-
-
-config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_EXTRA
-	bool "asterisk-sounds-extra-1.2.1"
-	help
-	  Asterisk IVR and miscellaneous sound files
-
-	  Additional sound files for asterisk.
-
-	  http://www.asterisk.org/
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_ASTERISK_SOUNDS_NATIVE
@@ -238,7 +228,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_EFAX
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_EFAX_GTK
-	bool "efax-gtk-3.2.3nb6"
+	bool "efax-gtk-3.2.3nb11"
 	help
 	  GTK frontend for efax
 
@@ -331,7 +321,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_GKERMIT
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_GNOME_PILOT
-	bool "gnome-pilot-2.0.17nb11"
+	bool "gnome-pilot-2.0.17nb23"
 	help
 	  Handheld synchronisation for GNOME
 
@@ -371,7 +361,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_GSMLIB
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_HYLAFAX
-	bool "hylafax-4.2.5nb5"
+	bool "hylafax-4.2.5nb7"
 	help
 	  Telecommunication and fax server system
 
@@ -396,7 +386,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_HYLAFAX
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_JPILOT
-	bool "jpilot-1.6.0nb10"
+	bool "jpilot-1.6.0nb16"
 	help
 	  Desktop organizer application for the palm pilot
 
@@ -445,7 +435,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_JPILOT
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_JPILOT_SYNCMAL
-	bool "jpilot-syncmal-0.80nb8"
+	bool "jpilot-syncmal-0.80nb13"
 	help
 	  MAL synchronization plugin for J-Pilot
 
@@ -456,7 +446,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_JPILOT_SYNCMAL
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_KERMIT
-	bool "kermit-9.0.302nb1"
+	bool "kermit-9.0.302nb2"
 	help
 	  Network and serial communication, file transfer, and scripting utility
 
@@ -495,7 +485,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_LIBMAL
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC
-	bool "libopensync-0.22nb3"
+	bool "libopensync-0.22nb8"
 	help
 	  Platform independent synchronization framework
 
@@ -510,7 +500,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_EVOLUTION2
-	bool "libopensync-plugin-evolution2-0.22nb5"
+	bool "libopensync-plugin-evolution2-0.22nb11"
 	help
 	  Platform independent synchronization framework, evo plugin
 
@@ -527,7 +517,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_EVOLUTION2
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_FILE
-	bool "libopensync-plugin-file-0.22nb2"
+	bool "libopensync-plugin-file-0.22nb7"
 	help
 	  Platform independent synchronization framework, backup to file
 
@@ -544,7 +534,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_FILE
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_KDEPIM
-	bool "libopensync-plugin-kdepim-0.22nb11"
+	bool "libopensync-plugin-kdepim-0.22nb17"
 	help
 	  Platform independent synchronization framework, kdepim plugin
 
@@ -561,7 +551,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_KDEPIM
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_SYNCML
-	bool "libopensync-plugin-syncml-0.22nb2"
+	bool "libopensync-plugin-syncml-0.22nb7"
 	help
 	  Platform independent synchronization framework, SyncML plugin
 
@@ -579,7 +569,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_LIBOPENSYNC_PLUGIN_SYNCML
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_LIBSYNCML
-	bool "libsyncml-0.4.5nb1"
+	bool "libsyncml-0.4.5nb5"
 	help
 	  C library implementation of the SyncML protocol
 
@@ -621,7 +611,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_MALSYNC
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_MGETTY_SENDFAX
-	bool "mgetty-1.1.37"
+	bool "mgetty-1.1.37nb2"
 	help
 	  Handle external logins, send and receive faxes
 
@@ -673,7 +663,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_MODEMD
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_MSYNCTOOL
-	bool "msynctool-0.22nb2"
+	bool "msynctool-0.22nb7"
 	help
 	  Command line tool for opensync framework
 
@@ -690,7 +680,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_MSYNCTOOL
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_MULTISYNC_GUI
-	bool "multisync-gui-0.91.0nb9"
+	bool "multisync-gui-0.91.0nb17"
 	help
 	  GUI for libopensync
 
@@ -700,7 +690,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_MULTISYNC_GUI
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_OBEXAPP
-	bool "obexapp-1.4.15"
+	bool "obexapp-1.4.15nb1"
 	help
 	  Obex application to transfer objects to mobile equipment
 
@@ -780,7 +770,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_OPENOBEX
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_P5_ASTERISK
-	bool "p5-Asterisk-1.01nb2"
+	bool "p5-Asterisk-1.03"
 	help
 	  Collection of perl modules to be used with Asterisk
 
@@ -790,7 +780,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_P5_ASTERISK
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_GSM
-	bool "p5-Device-Gsm-1.58"
+	bool "p5-Device-Gsm-1.60"
 	help
 	  Perl module to interface GSM cellular / modems
 
@@ -804,7 +794,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_GSM
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_MODEM
-	bool "p5-Device-Modem-1.54"
+	bool "p5-Device-Modem-1.56"
 	help
 	  Perl module to talk to modem devices connected via serial port
 
@@ -843,7 +833,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_P5_DEVICE_XBEE_API
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_P5_SMS_SEND
-	bool "p5-SMS-Send-0.05nb1"
+	bool "p5-SMS-Send-1.06"
 	help
 	  Driver-based API for sending SMS messages
 
@@ -926,7 +916,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_PLP
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_PY_GAMMU
-	bool "py26-gammu-1.26.1nb1"
+	bool "py27-gammu-1.26.1nb1"
 	help
 	  Python bindings for gammu
 
@@ -959,7 +949,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_QPAGE
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_RUBY_TERMIOS
-	bool "ruby19-termios-0.9.6nb2"
+	bool "ruby193-termios-0.9.6nb2"
 	help
 	  Ruby extension to termios library
 
@@ -1010,7 +1000,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_SNOOPER
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_SPANDSP
-	bool "spandsp-0.0.6pre18"
+	bool "spandsp-0.0.6pre18nb1"
 	help
 	  Library of DSP functions for telephony
 
@@ -1130,7 +1120,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_TN3270
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_XISP
-	bool "xisp-2.7p4nb1"
+	bool "xisp-2.7p4nb2"
 	help
 	  User-friendly X11 interface to pppd/chat
 
@@ -1146,7 +1136,7 @@ config BR2_PKGSRC_PACKAGE_COMMS_XISP
 
 
 config BR2_PKGSRC_PACKAGE_COMMS_XTEL
-	bool "xtel-3.3.0nb12"
+	bool "xtel-3.3.0nb13"
 	help
 	  
 

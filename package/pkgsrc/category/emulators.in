@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_EMULATORS_BASILISKII
-	bool "BasiliskII-1.0.20060501nb2"
+	bool "BasiliskII-1.0.20060501nb3"
 	help
 	  Open Source 68k Macintosh emulator
 
@@ -146,7 +146,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_ZIPIDENT
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_ALIADOS
-	bool "aliados-0.1.1"
+	bool "aliados-0.1.1nb1"
 	help
 	  CP/M 80 emulator
 
@@ -154,7 +154,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_ALIADOS
 	  run some variant of CP/M on it, emulates only the microprocessor and
 	  captures all CP/M system calls to execute it natively.  Actually only
 	  emulates a small part of CP/M, but with that already can execute many
-	  programs, such as WordStar, Micrsoft Basic, Mallard Basic, Hi-Tech C,
+	  programs, such as WordStar, Microsoft Basic, Mallard Basic, Hi-Tech C,
 	  Turbo Pascal and many others.  Aliados does not need to create disk
 	  images, it reads and writes in the native filesystem all files that
 	  match the CP/M name conventions.
@@ -179,7 +179,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_APPLYPPF
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_ARANYM
-	bool "aranym-0.9.10"
+	bool "aranym-0.9.13nb2"
 	help
 	  Atari Running on Any Machine
 
@@ -216,7 +216,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_ARNOLD
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_ATARI800
-	bool "atari800-2.1.0nb2"
+	bool "atari800-2.2.1"
 	help
 	  Atari 800, 800XL, 130XE and 5200 emulator
 
@@ -248,8 +248,29 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_ATARI800
 	  http://atari800.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_EMULATORS_B_EM
+	bool "b-em-2.2"
+	help
+	  Freeware Acorn BBC Micro Emulator with 2nd processors
+
+	  B-em: A Freeware BBC Micro Emulator
+	  
+	  Emulating Acorn BBC-A, BBC-B and the BBC Master series including discdrives,
+	  tape and the tube!
+	  
+	  Tube processors supported:
+	  6502
+	  65810
+	  Z80
+	  ARM1	(!)
+	  
+	  ROMS, tapes and example discs are provided.
+
+	  http://b-em.bbcmicro.com/
+
+
 config BR2_PKGSRC_PACKAGE_EMULATORS_BLINKENSIM
-	bool "blinkensim-2.2nb12"
+	bool "blinkensim-2.2nb17"
 	help
 	  Blinkenlights graphics simulator
 
@@ -262,7 +283,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_BLINKENSIM
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_BOCHS
-	bool "bochs-2.4.6nb2"
+	bool "bochs-2.5.1nb5"
 	help
 	  IA32 and AMD64 PC emulator
 
@@ -279,7 +300,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_BOCHS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_CKMAME
-	bool "ckmame-0.11nb2"
+	bool "ckmame-0.11nb4"
 	help
 	  Check ROM sets for MAME
 
@@ -293,7 +314,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_CKMAME
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_CMDPACK
-	bool "cmdpack-1.02"
+	bool "cmdpack-1.03"
 	help
 	  Neill Corlett's command line tools for emulation
 
@@ -466,7 +487,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_CYGWIN_ESOUND
 	  ability for Interix applications to output sound via the libesd client
 	  side library (audio/esound).
 
-	  http://www.NetBSD.org/releases/formal-1.3/index.html
+	  http://www.NetBSD.org/releases/formal-4/index.html
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_CYGWIN_LIB
@@ -530,7 +551,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_DEGA
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_DGEN
-	bool "dgen-sdl-1.23nb5"
+	bool "dgen-sdl-1.28"
 	help
 	  Genesis/Megadrive emulator for Unix platforms
 
@@ -539,11 +560,11 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_DGEN
 	  environment in which Sega Genesis (MegaDrive outside the US) games may run
 	  with fairly accurate audio and video.
 
-	  http://www.pknet.com/~joe/dgen-sdl.html
+	  http://dgen.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_DOSBOX
-	bool "dosbox-0.74nb1"
+	bool "dosbox-0.74nb3"
 	help
 	  Multi-platform DOS emulator using SDL
 
@@ -564,7 +585,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_DOSBOX
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_DYNAGEN
-	bool "dynagen-0.11.0nb2"
+	bool "dynagen-0.11.0nb3"
 	help
 	  Network configuration generator for Dynamips
 
@@ -611,7 +632,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_DYNAMIPS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_E_UAE
-	bool "e-uae-0.8.28nb10"
+	bool "e-uae-0.8.28nb15"
 	help
 	  Enhanced Ubiquitous Amiga Emulator
 
@@ -657,7 +678,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_FCEU
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_FMSX
-	bool "fmsx-3.5.1"
+	bool "fmsx-3.5.1nb1"
 	help
 	  
 
@@ -693,7 +714,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_FREEBSD_LIB
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_FUSE
-	bool "fuse-1.0.0.1a"
+	bool "fuse-1.0.0.1anb7"
 	help
 	  ZX Spectrum Emulator
 
@@ -703,14 +724,14 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_FUSE
 	  * Support for loading from .tzx files.
 	  * Sound (on system supporting the Open Sound System or BSD/Solaris).
 	  * Kempston joystick emulation.
-	  * Emulation of the various printer you could attach to the Spectrum.
+	  * Emulation of the various printers you could attach to the Spectrum.
 	  * Very basic support for RZX files.
 
 	  http://fuse-emulator.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_FUSE_UTILS
-	bool "fuse-utils-1.0.0nb1"
+	bool "fuse-utils-1.0.0nb5"
 	help
 	  ZX Spectrum Emulator utilities
 
@@ -727,7 +748,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_FUSE_UTILS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GAMBATTE
-	bool "gambatte-0.4.1nb6"
+	bool "gambatte-0.4.1nb12"
 	help
 	  Game Boy Color emulator
 
@@ -812,7 +833,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GENERATOR_CBIERE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GENS
-	bool "gens-2.12rc3nb16"
+	bool "gens-2.12rc3nb21"
 	help
 	  Sega Genesis emulator with Sega CD support
 
@@ -824,7 +845,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GENS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GNS3
-	bool "gns3-0.7"
+	bool "gns3-0.7nb1"
 	help
 	  Graphical network simulator
 
@@ -860,7 +881,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GNUBOY_SDL
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM
-	bool "gpsim-0.21.11nb8"
+	bool "gpsim-0.21.11nb14"
 	help
 	  PIC emulator with X interface
 
@@ -870,7 +891,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_DEVEL
-	bool "gpsim-20050905nb12"
+	bool "gpsim-20050905nb18"
 	help
 	  PIC emulator with X interface
 
@@ -880,7 +901,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_DEVEL
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_OSCILLOSCOPE
-	bool "gpsim-oscilloscope-0.1.2nb10"
+	bool "gpsim-oscilloscope-0.1.2nb15"
 	help
 	  Oscilloscope module for gpsim
 
@@ -893,7 +914,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_OSCILLOSCOPE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_PTYUSART
-	bool "gpsim-ptyusart-0.3.2nb10"
+	bool "gpsim-ptyusart-0.3.2nb15"
 	help
 	  Pseudo-tty module for gpsim
 
@@ -921,7 +942,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_GPSIM_PTYUSART
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_GXEMUL
-	bool "gxemul-0.6.0nb1"
+	bool "gxemul-0.6.0nb3"
 	help
 	  Framework for full-system computer architecture emulation
 
@@ -961,7 +982,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_HANDY_SDL
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_HATARI
-	bool "hatari-1.4.0nb1"
+	bool "hatari-1.6.2"
 	help
 	  Atari ST emulator
 
@@ -975,7 +996,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_HATARI
 	  You need a copy of an Atari ST TOS ROM to use this program. Then run
 	  the program as follows:	hatari --tos tos.image
 
-	  http://hatari.berlios.de/
+	  http://hatari.tuxfamily.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_HERCULES
@@ -1056,7 +1077,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_KEGS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_KENIGMA
-	bool "kenigma-1.2.1nb14"
+	bool "kenigma-1.2.1nb21"
 	help
 	  Replica of the German enigma code machine used in WW2
 
@@ -1068,7 +1089,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_KENIGMA
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_LIBSPECTRUM
-	bool "libspectrum-1.0.0nb1"
+	bool "libspectrum-1.0.0nb5"
 	help
 	  ZX Spectrum emulator file format library
 
@@ -1121,7 +1142,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_MAKEPPF
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_MAME
-	bool "mame-0.144"
+	bool "mame-0.146nb4"
 	help
 	  Multiple Arcade Machine Emulator
 
@@ -1139,7 +1160,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_MAME
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_MEDNAFEN
-	bool "mednafen-0.8.13.3nb1"
+	bool "mednafen-0.8.13.3nb3"
 	help
 	  Portable multi-system emulator
 
@@ -1163,7 +1184,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_MEDNAFEN
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_MESS
-	bool "mess-0.144"
+	bool "mess-0.146nb4"
 	help
 	  Multi Emulator Super System
 
@@ -1191,7 +1212,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_MINIVMAC
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_MMIX
-	bool "mmix-20060918"
+	bool "mmix-20060918nb1"
 	help
 	  Simulators for Knuth's MMIX RISC architecture
 
@@ -1208,7 +1229,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_MMIX
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_NESTOPIA
-	bool "nestopia-1.40hnb7"
+	bool "nestopia-1.40hnb12"
 	help
 	  Portable, very accurate NES emulator with UNIF support
 
@@ -1328,26 +1349,17 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_NETBSD32_COMPAT40_EXTRAS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_OPENMSX
-	bool "openmsx-0.6.2nb5"
+	bool "openmsx-0.9.0"
 	help
 	  MSX emulator that aims for perfection
 
-	  openMSX, the open source MSX emulator that tries to achieve near-perfect
-	  emulation by using a novel emulation model.
+	  MSX emulator that aims for perfection
 	  
-	  Hardware emulated:
-	  
-	  o almost all MSX systems, except for some details.
-	  o Different CPU clock speeds, including those for the Panasonic
-	  MSX2+ machines.
-	  o Almost all known cartridge mapper types via autodetection or the
-	  included ROM database.
-	  o Many MSX storage (disk/SRAM) systems.
-	  o kanji JIS ROM 1 and 2.
-	  o Mouse and joystick (with option to use the keyboard as joystick).
-	  o rensha turbo auto fire support.
-	  
-	  And more!
+	  openMSX is an open source MSX emulator that uses a unique emulation model
+	  which tries to achieve the highest level of accuracy possible.  It allows
+	  emulating a large number of different MSX machines.  Using the included
+	  C-BIOS ROM files, you can run game ROMs without the need to acquire the
+	  non-free original MSX-BIOS ROM.
 
 	  http://openmsx.sourceforge.net/
 
@@ -1479,8 +1491,28 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_PEARPC
 	  http://pearpc.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_EMULATORS_QEMU0
+	bool "qemu-0.15.1nb6"
+	help
+	  CPU emulator using dynamic translation
+
+	  QEMU is a FAST! processor emulator using dynamic translation to achieve
+	  good emulation speed, QEMU has two operating modes:
+	  
+	  * Full system emulation. In this mode, QEMU emulates a full system
+	  (for example a PC), including a processor and various peripherals.
+	  It can be used to launch different Operating Systems without rebooting
+	  the PC or to debug system code.
+	  * User mode emulation (Linux host only). In this mode, QEMU can launch
+	  Linux processes compiled for one CPU on another CPU. It can be used
+	  to launch the Wine Windows API emulator or to ease cross-compilation
+	  and cross-debugging.
+
+	  http://www.qemu.org/
+
+
 config BR2_PKGSRC_PACKAGE_EMULATORS_QEMU
-	bool "qemu-0.15.1"
+	bool "qemu-1.2.0nb2"
 	help
 	  CPU emulator using dynamic translation
 
@@ -1513,9 +1545,9 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_RAINE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SIMH
-	bool "simh-3.8.1nb2"
+	bool "simh-3.9.0nb2"
 	help
-	  Bob Supnik's historical computer simulator
+	  Bob Supniks historical computer simulator
 
 	  Bob Supnik's historical computer simulator, including:
 	  
@@ -1618,7 +1650,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SNES9X
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SNES9X_GTK
-	bool "snes9x-gtk-1.53.81nb1"
+	bool "snes9x-gtk-1.53.81nb7"
 	help
 	  SNES emulator with GTK frontend
 
@@ -1634,7 +1666,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SNES9X_GTK
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SPIM
-	bool "spim-8.0"
+	bool "spim-8.0nb1"
 	help
 	  MIPS R2000 Simulator
 
@@ -1656,7 +1688,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SPIM
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_STELLA
-	bool "stella-3.4.1"
+	bool "stella-3.7.2"
 	help
 	  Multi-platform Atari 2600 VCS emulator
 
@@ -1680,13 +1712,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_ALSA
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_ALSA
-	bool "suse32_alsa-11.3nb3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_ALSA
+	bool "suse32_alsa-12.1"
 	help
 	  Linux 32-bit compatibility package for ALSA
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_ASPELL
@@ -1698,13 +1730,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_ASPELL
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_ASPELL
-	bool "suse32_aspell-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_ASPELL
+	bool "suse32_aspell-12.1"
 	help
 	  Linux 32-bit compatibility package for aspell
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_BASE
@@ -1716,13 +1748,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_BASE
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_BASE
-	bool "suse32_base-11.3nb8"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_BASE
+	bool "suse32_base-12.1nb3"
 	help
 	  Linux 32-bit compatibility package
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_COMPAT
@@ -1734,13 +1766,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_COMPAT
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_COMPAT
-	bool "suse32_compat-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_COMPAT
+	bool "suse32_compat-12.1"
 	help
 	  Linux 32-bit compatibility package with old shared libraries
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_EXPAT
@@ -1752,13 +1784,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_EXPAT
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_EXPAT
-	bool "suse32_expat-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_EXPAT
+	bool "suse32_expat-12.1nb2"
 	help
 	  Linux 32-bit compatibility package for expat
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_FONTCONFIG
@@ -1770,13 +1802,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_FONTCONFIG
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_FONTCONFIG
-	bool "suse32_fontconfig-11.3nb1"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_FONTCONFIG
+	bool "suse32_fontconfig-12.1"
 	help
 	  Linux 32-bit compatibility package for fontconfig
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_FREETYPE2
@@ -1788,22 +1820,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_FREETYPE2
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_FREETYPE2
-	bool "suse32_freetype2-11.3nb4"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_FREETYPE2
+	bool "suse32_freetype2-12.1nb1"
 	help
 	  Linux 32-bit compatibility package for freetype-2.x
 
 
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GDK_PIXBUF
-	bool "suse32_gdk-pixbuf-10.0nb3"
-	help
-	  Linux 32-bit compatibility package for gdk-pixbuf
-
-
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GLX
@@ -1815,22 +1838,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GLX
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_GLX
-	bool "suse32_glx-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_GLX
+	bool "suse32_glx-12.1nb1"
 	help
 	  Linux 32-bit compatibility package for OpenGL/Mesa
 
 
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GTK
-	bool "suse32_gtk-10.0nb2"
-	help
-	  Linux 32-bit compatibility package for GTK+-1.x
-
-
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GTK2
@@ -1842,13 +1856,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_GTK2
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_GTK2
-	bool "suse32_gtk2-11.3nb5"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_GTK2
+	bool "suse32_gtk2-12.1nb3"
 	help
 	  Linux 32-bit compatibility package for GTK+-2.x
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_KRB5
@@ -1860,13 +1874,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_KRB5
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_KRB5
-	bool "suse32_krb5-11.3nb4"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_KRB5
+	bool "suse32_krb5-12.1"
 	help
 	  Linux 32-bit compatibility package for kerberos libraries
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBCUPS
@@ -1878,31 +1892,31 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBCUPS
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBCUPS
-	bool "suse32_libcups-11.3nb1"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LIBCUPS
+	bool "suse32_libcups-12.1"
 	help
 	  Linux 32-bit compatibility package for CUPS
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBCURL
-	bool "suse32_libcurl-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LIBCURL
+	bool "suse32_libcurl-12.1"
 	help
 	  Linux 32-bit compatibility package for libcurl
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBDRM
-	bool "suse32_libdrm-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LIBDRM
+	bool "suse32_libdrm-12.1"
 	help
 	  Linux 32-bit compatibility package for libdrm
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBJPEG
@@ -1914,13 +1928,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBJPEG
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBJPEG
-	bool "suse32_libjpeg-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LIBJPEG
+	bool "suse32_libjpeg-12.1nb1"
 	help
 	  Linux 32-bit compatibility package for JPEG
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBPNG
@@ -1932,13 +1946,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBPNG
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBPNG
-	bool "suse32_libpng-11.3nb2"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LIBPNG
+	bool "suse32_libpng-12.1nb3"
 	help
 	  Linux 32-bit compatibility package for PNG
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBSIGC__2
@@ -1950,13 +1964,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBSIGC__2
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBSIGC__2
-	bool "suse32_libsigc++2-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LIBSIGC__2
+	bool "suse32_libsigc++2-12.1"
 	help
 	  Linux 32-bit compatibility package for libsigc++2
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBTIFF
@@ -1968,13 +1982,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBTIFF
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBTIFF
-	bool "suse32_libtiff-11.3nb2"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LIBTIFF
+	bool "suse32_libtiff-12.1nb2"
 	help
 	  Linux 32-bit compatibility package for TIFF
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBXML2
@@ -1986,13 +2000,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LIBXML2
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LIBXML2
-	bool "suse32_libxml2-11.3nb3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LIBXML2
+	bool "suse32_libxml2-12.1nb3"
 	help
 	  Linux 32-bit compatibility package for libxml2
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LOCALE
@@ -2004,13 +2018,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_LOCALE
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_LOCALE
-	bool "suse32_locale-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_LOCALE
+	bool "suse32_locale-12.1"
 	help
 	  Linux 32-bit compatibility package with locale files
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_OPENMOTIF
@@ -2022,13 +2036,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_OPENMOTIF
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_OPENMOTIF
-	bool "suse32_openmotif-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_OPENMOTIF
+	bool "suse32_openmotif-12.1"
 	help
 	  Linux 32-bit compatibility package for OpenMotif
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_OPENSSL
@@ -2040,31 +2054,22 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_OPENSSL
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_OPENSSL
-	bool "suse32_openssl-11.3nb5"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_OPENSSL
+	bool "suse32_openssl-12.1nb3"
 	help
 	  Linux 32-bit compatibility package for OpenSSL
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_QT3
-	bool "suse32_qt3-10.0"
-	help
-	  Linux 32-bit compatibility package for QT3
-
-
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_QT4
-	bool "suse32_qt4-11.3nb1"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_QT4
+	bool "suse32_qt4-12.1"
 	help
 	  Linux 32-bit compatibility package for QT4
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_RESMGR
@@ -2085,31 +2090,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_SLANG
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_SLANG
-	bool "suse32_slang-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_SLANG
+	bool "suse32_slang-12.1"
 	help
 	  Linux 32-bit compatibility package for S-Lang
 
 
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_VMWARE
-	bool "suse32_vmware-10.0nb2"
-	help
-	  Linux 32-bit compatibility package to help run VMware
-
-
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_VMWARE
-	bool "suse32_vmware-11.3"
-	help
-	  Linux 32-bit compatibility package to help run VMware
-
-
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_X11
@@ -2121,13 +2108,13 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_32_X11
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_32_X11
-	bool "suse32_x11-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_32_X11
+	bool "suse32_x11-12.1"
 	help
 	  Linux 32-bit compatibility package for X11
 
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_ALSA
@@ -2145,19 +2132,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_ALSA
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_ALSA
-	bool "suse_alsa-11.3nb3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_ALSA
+	bool "suse_alsa-12.1"
 	help
 	  Linux compatibility package for ALSA
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require alsa shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_ASPELL
@@ -2175,19 +2162,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_ASPELL
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_ASPELL
-	bool "suse_aspell-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_ASPELL
+	bool "suse_aspell-12.1"
 	help
 	  Linux compatibility package for aspell
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require aspell shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_BASE
@@ -2205,19 +2192,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_BASE
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_BASE
-	bool "suse_base-11.3nb8"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_BASE
+	bool "suse_base-12.1nb3"
 	help
 	  Linux compatibility package
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  don't require X11 shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_COMPAT
@@ -2235,19 +2222,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_COMPAT
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_COMPAT
-	bool "suse_compat-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_COMPAT
+	bool "suse_compat-12.1"
 	help
 	  Linux compatibility package with old shared libraries
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package contains some old shared libraries required by older
 	  Linux binaries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_EXPAT
@@ -2265,19 +2252,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_EXPAT
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_EXPAT
-	bool "suse_expat-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_EXPAT
+	bool "suse_expat-12.1nb2"
 	help
 	  Linux compatibility package for expat
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require expat shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_FONTCONFIG
@@ -2295,19 +2282,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_FONTCONFIG
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_FONTCONFIG
-	bool "suse_fontconfig-11.3nb1"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_FONTCONFIG
+	bool "suse_fontconfig-12.1"
 	help
 	  Linux compatibility package for fontconfig
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require fontconfig shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_FREETYPE2
@@ -2325,34 +2312,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_FREETYPE2
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_FREETYPE2
-	bool "suse_freetype2-11.3nb4"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_FREETYPE2
+	bool "suse_freetype2-12.1nb1"
 	help
 	  Linux compatibility package for freetype-2.x
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require freetype2 shared libraries.
 
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GDK_PIXBUF
-	bool "suse_gdk-pixbuf-10.0nb3"
-	help
-	  Linux compatibility package for gdk-pixbuf
-
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
-	  Linux.
-	  
-	  This package supports running ELF binaries linked with glibc2 that
-	  require gdk-pixbuf shared libraries.
-
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GLX
@@ -2370,34 +2342,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GLX
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_GLX
-	bool "suse_glx-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_GLX
+	bool "suse_glx-12.1nb1"
 	help
 	  Linux compatibility package for OpenGL/Mesa
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require OpenGL/Mesa shared libraries.
 
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GTK
-	bool "suse_gtk-10.0nb2"
-	help
-	  Linux compatibility package for GTK+-1.x
-
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
-	  Linux.
-	  
-	  This package supports running ELF binaries linked with glibc2 that
-	  require GTK+-1.x shared libraries.
-
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GTK2
@@ -2415,19 +2372,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_GTK2
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_GTK2
-	bool "suse_gtk2-11.3nb5"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_GTK2
+	bool "suse_gtk2-12.1nb3"
 	help
 	  Linux compatibility package for GTK+-2.x
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require GTK+-2.x shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_KRB5
@@ -2445,19 +2402,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_KRB5
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_KRB5
-	bool "suse_krb5-11.3nb4"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_KRB5
+	bool "suse_krb5-12.1"
 	help
 	  Linux compatibility package for kerberos libraries
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require kerberos shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBCUPS
@@ -2475,49 +2432,49 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBCUPS
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBCUPS
-	bool "suse_libcups-11.3nb1"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LIBCUPS
+	bool "suse_libcups-12.1"
 	help
 	  Linux compatibility package for CUPS
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require CUPS shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBCURL
-	bool "suse_libcurl-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LIBCURL
+	bool "suse_libcurl-12.1"
 	help
 	  Linux compatibility package for libcurl
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require cURL shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBDRM
-	bool "suse_libdrm-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LIBDRM
+	bool "suse_libdrm-12.1"
 	help
 	  Linux compatibility package for libdrm
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require libdrm (for X acceleration).
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBJPEG
@@ -2535,19 +2492,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBJPEG
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBJPEG
-	bool "suse_libjpeg-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LIBJPEG
+	bool "suse_libjpeg-12.1nb1"
 	help
 	  Linux compatibility package for JPEG
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require JPEG shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBPNG
@@ -2565,19 +2522,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBPNG
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBPNG
-	bool "suse_libpng-11.3nb2"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LIBPNG
+	bool "suse_libpng-12.1nb3"
 	help
 	  Linux compatibility package for PNG
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require PNG shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBSIGC__2
@@ -2595,19 +2552,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBSIGC__2
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBSIGC__2
-	bool "suse_libsigc++2-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LIBSIGC__2
+	bool "suse_libsigc++2-12.1"
 	help
 	  Linux compatibility package for libsigc++2
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require libsigc++2 shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBTIFF
@@ -2625,19 +2582,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBTIFF
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBTIFF
-	bool "suse_libtiff-11.3nb2"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LIBTIFF
+	bool "suse_libtiff-12.1nb2"
 	help
 	  Linux compatibility package for TIFF
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require TIFF shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBXML2
@@ -2655,19 +2612,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LIBXML2
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LIBXML2
-	bool "suse_libxml2-11.3nb3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LIBXML2
+	bool "suse_libxml2-12.1nb3"
 	help
 	  Linux compatibility package for libxml2
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require libxml2 shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LOCALE
@@ -2684,18 +2641,18 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_LOCALE
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_LOCALE
-	bool "suse_locale-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_LOCALE
+	bool "suse_locale-12.1"
 	help
 	  Linux compatibility package with locale files
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package contains the glibc2 locale files.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_OPENMOTIF
@@ -2713,19 +2670,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_OPENMOTIF
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_OPENMOTIF
-	bool "suse_openmotif-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_OPENMOTIF
+	bool "suse_openmotif-12.1"
 	help
 	  Linux compatibility package for OpenMotif
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require OpenMotif shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_OPENSSL
@@ -2743,49 +2700,34 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_OPENSSL
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_OPENSSL
-	bool "suse_openssl-11.3nb5"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_OPENSSL
+	bool "suse_openssl-12.1nb3"
 	help
 	  Linux compatibility package for OpenSSL
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require OpenSSL shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_QT3
-	bool "suse_qt3-10.0"
-	help
-	  Linux compatibility package for QT3
-
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
-	  Linux.
-	  
-	  This package supports running ELF binaries linked with glibc2 that
-	  require QT3 shared libraries.
-
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_QT4
-	bool "suse_qt4-11.3nb1"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_QT4
+	bool "suse_qt4-12.1"
 	help
 	  Linux compatibility package for QT4
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
-	  require QT3 shared libraries.
+	  require QT4 shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_RESMGR
@@ -2818,47 +2760,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_SLANG
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_SLANG
-	bool "suse_slang-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_SLANG
+	bool "suse_slang-12.1"
 	help
 	  Linux compatibility package for S-Lang
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require S-Lang shared libraries.
 
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_VMWARE
-	bool "suse_vmware-10.0nb2"
-	help
-	  Linux compatibility package to help run VMware
-
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
-	  Linux.
-	  
-	  This package is a helper package for running VMware.
-
-	  http://www.suse.com/
-
-
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_VMWARE
-	bool "suse_vmware-11.3"
-	help
-	  Linux compatibility package to help run VMware
-
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
-	  Linux.
-	  
-	  This package is a helper package for running VMware.
-
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_X11
@@ -2876,19 +2790,19 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE100_X11
 	  http://www.suse.com/
 
 
-config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE113_X11
-	bool "suse_x11-11.3"
+config BR2_PKGSRC_PACKAGE_EMULATORS_SUSE121_X11
+	bool "suse_x11-12.1"
 	help
 	  Linux compatibility package for X11
 
-	  Linux compatibility package based on the SuSE Linux distribution.
-	  Please visit http://www.suse.com/ for more information about SuSE
+	  Linux compatibility package based on the openSUSE Linux distribution.
+	  Please visit http://www.opensuse.org/ for more information about openSUSE
 	  Linux.
 	  
 	  This package supports running ELF binaries linked with glibc2 that
 	  require X11 shared libraries.
 
-	  http://www.suse.com/
+	  http://www.opensuse.org/
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_SWARM
@@ -2920,7 +2834,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_SWARM
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_TME
-	bool "tme-0.8nb6"
+	bool "tme-0.8nb12"
 	help
 	  The Machine Emulator
 
@@ -2933,7 +2847,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_TME
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_TUXNES
-	bool "tuxnes-0.75nb2"
+	bool "tuxnes-0.75nb3"
 	help
 	  NES emulator
 
@@ -2974,7 +2888,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_TWIN
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_UAE
-	bool "uae-0.8.25nb10"
+	bool "uae-0.8.25nb15"
 	help
 	  The UAE Amiga Emulator
 
@@ -2989,7 +2903,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_UAE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_UCON64
-	bool "ucon64-2.0.0nb1"
+	bool "ucon64-2.0.0nb2"
 	help
 	  Emulator ROM and disk image converter and inspector
 
@@ -3016,7 +2930,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_UCON64
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_VBA
-	bool "vba-1.7.2nb4"
+	bool "vba-1.7.2nb5"
 	help
 	  Gameboy advance emulator
 
@@ -3026,7 +2940,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_VBA
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_VICE
-	bool "vice-2.3nb3"
+	bool "vice-2.3nb10"
 	help
 	  Emulator for C64, C128, CBM-II, PET, VIC20, Plus4 and C16
 
@@ -3063,7 +2977,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_VMIPS
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_WINE
-	bool "wine-1.2.3nb1"
+	bool "wine-1.2.3nb7"
 	help
 	  Free implementation of Windows on Unix
 
@@ -3078,7 +2992,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_WINE
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_WINE_DEVEL
-	bool "wine-1.3.26nb1"
+	bool "wine-1.3.26nb8"
 	help
 	  Free implementation of Windows on Unix
 
@@ -3169,6 +3083,16 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_XM7
 	  http://yohkai.no-ip.info/fm7/XM7.htm
 
 
+config BR2_PKGSRC_PACKAGE_EMULATORS_XNP2
+	bool "xnp2-0.83pl20120618nb3"
+	help
+	  Neko Project II PC-9801 emulator
+
+	  Xnp2 is a port for UNIX with X11 of "Neko Project II" PC-9801 emulator.
+
+	  http://www.asahi-net.or.jp/~aw9k-nnk/np2/
+
+
 config BR2_PKGSRC_PACKAGE_EMULATORS_XTRS
 	bool "xtrs-4.9nb3"
 	help
@@ -3207,7 +3131,7 @@ config BR2_PKGSRC_PACKAGE_EMULATORS_XYAME
 
 
 config BR2_PKGSRC_PACKAGE_EMULATORS_YABAUSE
-	bool "yabause-0.9.11.1"
+	bool "yabause-0.9.11.1nb6"
 	help
 	  Sega Saturn system emulator
 

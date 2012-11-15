@@ -7,11 +7,11 @@ config BR2_PKGSRC_PACKAGE_EDITORS_MULE_UCS
 	  encoding mechanism to Emacs. As the name suggests, it supports Unicode, which
 	  the original Emacs doesn't support.
 
-	  http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId
+	  http://www.gnu.org/software/emacs/emacs.html
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_OMEGAT
-	bool "OmegaT-2.5.0.04"
+	bool "OmegaT-2.5.5.01"
 	help
 	  The translation memory (TM) application written in Java
 
@@ -43,7 +43,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_OMEGAT
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_SIGIL
-	bool "Sigil-0.4.2nb1"
+	bool "Sigil-0.5.3nb6"
 	help
 	  
 
@@ -74,7 +74,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_SIGIL
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_TEXMACS
-	bool "TeXmacs-1.0.6.15nb10"
+	bool "TeXmacs-1.0.6.15nb12"
 	help
 	  
 
@@ -102,7 +102,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_TEXMACS
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_TEXMACS_DEVEL
-	bool "TeXmacs-1.0.7.14"
+	bool "TeXmacs-1.0.7.16nb3"
 	help
 	  
 
@@ -130,7 +130,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_TEXMACS_DEVEL
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_ABIWORD
-	bool "abiword-2.8.6nb4"
+	bool "abiword-2.8.6nb12"
 	help
 	  Open Source cross-platform word processor
 
@@ -159,7 +159,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_ABIWORD
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_ABIWORD_PLUGINS
-	bool "abiword-plugins-2.8.6nb4"
+	bool "abiword-plugins-2.8.6nb11"
 	help
 	  Plugins enhancing Abiword's capabilities
 
@@ -190,7 +190,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_BEAV
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_BEAVER
-	bool "beaver-0.3.0.1nb7"
+	bool "beaver-0.3.0.1nb12"
 	help
 	  Lightweight GTK+ text editor with syntax highlighting
 
@@ -276,7 +276,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_CE_X11
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_CONGLOMERATE
-	bool "conglomerate-0.9.1nb18"
+	bool "conglomerate-0.9.1nb27"
 	help
 	  XML editor for GNOME2
 
@@ -291,7 +291,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_CONGLOMERATE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_COOLEDIT
-	bool "cooledit-3.17.17nb5"
+	bool "cooledit-3.17.17nb6"
 	help
 	  Full-featured text editor
 
@@ -308,7 +308,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_COOLEDIT
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_DASHER
-	bool "dasher-4.10.1nb9"
+	bool "dasher-4.10.1nb18"
 	help
 	  Easy typing without using keyboard
 
@@ -337,7 +337,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EASYEDIT
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_ED
-	bool "ed-1.1"
+	bool "ed-1.1nb2"
 	help
 	  GNU version of line-oriented text editor
 
@@ -350,6 +350,18 @@ config BR2_PKGSRC_PACKAGE_EDITORS_ED
 	  current directory and cannot execute shell commands.
 
 	  http://www.gnu.org/software/ed/ed.html
+
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EDT
+	bool "edt-1.9"
+	help
+	  Text editor which emulates the VAX VMS EDT editor
+
+	  Edt text editor emulator.  This text-editor emulates the VAX VMS
+	  text editor known as Edt, and to some extent, later versions called
+	  TPU/Eve.
+
+	  http://edt-text-editor.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_ELVIS
@@ -378,7 +390,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_ELVIS_X11
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EMACS20
-	bool "emacs-20.7nb14"
+	bool "emacs-20.7nb15"
 	help
 	  
 
@@ -400,7 +412,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EMACS20
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EMACS21
-	bool "emacs-21.4anb21"
+	bool "emacs-21.4anb23"
 	help
 	  
 
@@ -422,7 +434,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EMACS21
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EMACS22
-	bool "emacs-22.3nb15"
+	bool "emacs-22.3nb21"
 	help
 	  
 
@@ -444,7 +456,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EMACS22
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EMACS
-	bool "emacs-23.3b"
+	bool "emacs-23.4nb8"
 	help
 	  
 
@@ -471,9 +483,36 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EMACS
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EMACS_SNAPSHOT
-	bool "emacs-24.0.92.20111213"
+	bool "emacs-24.0.94.20120319nb5"
 	help
 	  GNU editing macros (development version)
+
+	  GNU Emacs is an extensible, customizable editor textand more.  At its
+	  core is an interpreter for Emacs Lisp, a dialect of the Lisp
+	  programming language with extensions to support text editing.  The
+	  features of GNU Emacs include:
+	  
+	  - Content-sensitive editing modes, including syntax coloring, for a
+	  wide variety of file types including plain text, source code, and
+	  HTML.
+	  - Complete built-in documentation, including a tutorial for new users.
+	  - Support for many languages and their scripts, including all scripts,
+	  Russian, Greek, Japanese, Chinese, Korean, Thai, Vietnamese, Lao,
+	  Ethiopian, and some Indian scripts.
+	  - Highly customizable, using Emacs Lisp code or a graphical
+	  customization interface.
+	  - A large number of extensions that add other functionality, including
+	  a project planner, mail and news reader, debugger interface,
+	  calendar, and more.  Many of these extensions are distributed with
+	  GNU Emacs; others are available separately.
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS24
+	bool "emacs-24.2nb2"
+	help
+	  
 
 	  GNU Emacs is an extensible, customizable editor textand more.  At its
 	  core is an interpreter for Emacs Lisp, a dialect of the Lisp
@@ -520,7 +559,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EMACS21_NOX11
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EMACS22_NOX11
-	bool "emacs-nox11-22.3nb15"
+	bool "emacs-nox11-22.3nb21"
 	help
 	  GNU editing macros (editor)
 
@@ -529,7 +568,16 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EMACS22_NOX11
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EMACS_NOX11
-	bool "emacs-nox11-23.3b"
+	bool "emacs-nox11-23.4nb1"
+	help
+	  
+
+
+	  http://www.gnu.org/software/emacs/emacs.html
+
+
+config BR2_PKGSRC_PACKAGE_EDITORS_EMACS24_NOX11
+	bool "emacs-nox11-24.2"
 	help
 	  
 
@@ -545,7 +593,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_EMACS_PACKAGES
 	  This is our equivalent to XEmacs's ``sumo'' package - Emacs lisp
 	  package collection for FSF Emacs 20 / 21.
 
-	  http://elvis.vi-editor.org/
+	  http://www.gnu.org/software/emacs/emacs.html
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_EX
@@ -634,7 +682,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_GATE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_GCONF_EDITOR
-	bool "gconf-editor-2.32.0nb3"
+	bool "gconf-editor-2.32.0nb9"
 	help
 	  Editor for the GConf configuration system
 
@@ -644,7 +692,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_GCONF_EDITOR
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_GEDIT
-	bool "gedit-2.30.4nb4"
+	bool "gedit-2.30.4nb10"
 	help
 	  Lightweight GNOME2 text editor
 
@@ -660,10 +708,31 @@ config BR2_PKGSRC_PACKAGE_EDITORS_GEDIT
 	  editor (plugins being the most notable of these).
 
 	  http://www.gnome.org/projects/gedit/
+
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GEDIT3
+	bool "gedit-3.4.2nb2"
+	help
+	  Lightweight GNOME UTF-8 text editor
+
+	  gedit is a small and lightweight UTF-8 text editor.  It is part of
+	  GNOME and uses the latest GTK+ and GNOME libraries.  Complete GNOME
+	  integration is featured, with support for Drag and Drop (DnD) from
+	  Nautilus (the GNOME file manager), the use of the GNOME help system,
+	  the GNOME Virtual File System and the GNOME print framework.
+	  
+	  gedit uses a Multiple Document Interface (MDI), which lets you edit
+	  more than one document at the same time.  It supports most standard
+	  editing features, plus several not found in your average text editor
+	  (plugins being the most notable of these).  Plugins may also be
+	  written in the python scripting language: to enable python support
+	  you need the pygtk and gnome-python-desktop bindings.
+
+	  http://www.gedit.org/
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_GEDIT_PYTHON
-	bool "gedit-python-2.30.4nb4"
+	bool "gedit-python-2.30.4nb11"
 	help
 	  Lightweight GNOME2 text editor
 
@@ -681,8 +750,18 @@ config BR2_PKGSRC_PACKAGE_EDITORS_GEDIT_PYTHON
 	  http://www.gnome.org/projects/gedit/
 
 
+config BR2_PKGSRC_PACKAGE_EDITORS_GEDIT3_SPELL
+	bool "gedit3-spell-3.4.2nb2"
+	help
+	  Spell-check plugin for gedit
+
+	  Spell-check plugin for gedit, the GNOME 3 editor.
+
+	  http://www.gedit.org/
+
+
 config BR2_PKGSRC_PACKAGE_EDITORS_GHEX
-	bool "ghex-2.24.0nb10"
+	bool "ghex-2.24.0nb18"
 	help
 	  Hex editor
 
@@ -695,7 +774,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_GHEX
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_GICE
-	bool "gice-0.6.2nb10"
+	bool "gice-0.6.2nb15"
 	help
 	  Powerful C text editor with advanced features
 
@@ -723,7 +802,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_GNUSERV
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_GOBBY
-	bool "gobby-0.4.12nb2"
+	bool "gobby-0.4.12nb10"
 	help
 	  Collaborative Editor
 
@@ -739,7 +818,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_GOBBY
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_GTRANSLATOR
-	bool "gtranslator-1.1.7nb13"
+	bool "gtranslator-1.1.7nb22"
 	help
 	  Gettext po file editor for the GNOME2 desktop environment
 
@@ -755,6 +834,19 @@ config BR2_PKGSRC_PACKAGE_EDITORS_GTRANSLATOR
 	  test it and be happy with it!
 
 	  http://gtranslator.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_EDITORS_GUMMI
+	bool "gummi-0.6.4nb5"
+	help
+	  Gummi is a LaTeX editor, written in C/GTK+
+
+	  Gummi is a LaTeX editor for the Linux platform, written in C/GTK+.
+	  It was designed with simplicity in mind, but hopes to appeal to both
+	  novice and more advanced LaTeX writers. Gummi was released as free
+	  opensource software under the MIT license.
+
+	  http://dev.midnightcoding.org/projects/gummi
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_HEME
@@ -901,8 +993,21 @@ config BR2_PKGSRC_PACKAGE_EDITORS_JOVE
 	  
 
 
+config BR2_PKGSRC_PACKAGE_EDITORS_KATE
+	bool "kate-4.8.4nb3"
+	help
+	  KDE advanced text editor
+
+	  Kate is a multi-document, multi-view text editor for KDE. It features
+	  stuff like codefolding, syntaxhighlighting, dynamic word wrap, an
+	  embedded console, an extensive plugin interface and some prelimentary
+	  scripting support.
+
+	  http://www.kde.org/
+
+
 config BR2_PKGSRC_PACKAGE_EDITORS_KDISSERT
-	bool "kdissert-1.0.7nb9"
+	bool "kdissert-1.0.7nb16"
 	help
 	  Mindmapping-like tool to generate text templates
 
@@ -911,8 +1016,40 @@ config BR2_PKGSRC_PACKAGE_EDITORS_KDISSERT
 	  http://freehackers.org/~tnagy/kdissert/
 
 
+config BR2_PKGSRC_PACKAGE_EDITORS_KILE_KDE3
+	bool "kile-2.0.2nb16"
+	help
+	  LaTeX source editor - TeX shell - Gnuplot front end
+
+	  Kile is a LaTeX source editor, TeX shell and GnuPlot frontend. It simplifies
+	  the creation and modification of LaTeX source code documents as well as the
+	  use of LaTeX-related programs for users who want to retain control over their
+	  LaTeX documents.
+	  
+	  Features include:
+	  + syntax highlighting, help menus and spell checking;
+	  + integrated DVI, PS, PDF and HTML viewers;
+	  + wizards for generating LaTeX code (Quick document, Quick letter, tabular and
+	  array environments);
+	  + direct insertion of the principal LaTeX tags via the LaTeX, Math and Greek
+	  menus;
+	  + one-click insertion of 370 different mathematical symbols;
+	  + insertion of standard Bibtex entry types in the .bib file;
+	  + "inverse" and "forward" search with KDVI;
+	  + automatic launching of LaTeX-related programs via the Tools menu;
+	  + a "Messages / Log File" frame which provides process information and LaTeX
+	  compilation log files;
+	  + Next Latex Error and Previous Latex Error commands for browsing LaTeX errors;
+	  + clicking line numbers in the log file for jumping to the corresponding line
+	  in the editor;
+	  + a "structure view" with links for jumping directly to different parts of the
+	  document in the "Structure" frame;
+
+	  http://kile.sourceforge.net/
+
+
 config BR2_PKGSRC_PACKAGE_EDITORS_KILE
-	bool "kile-2.0.2nb10"
+	bool "kile-2.1.1nb5"
 	help
 	  LaTeX source editor - TeX shell - Gnuplot front end
 
@@ -944,7 +1081,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_KILE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_LEAFPAD
-	bool "leafpad-0.8.17nb7"
+	bool "leafpad-0.8.17nb12"
 	help
 	  Simple and light text editor using GTK+
 
@@ -1007,7 +1144,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_LPE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_LYX
-	bool "lyx-1.6.9nb3"
+	bool "lyx-1.6.10nb3"
 	help
 	  Document processor and graphical frontend for LaTeX
 
@@ -1049,6 +1186,18 @@ config BR2_PKGSRC_PACKAGE_EDITORS_MATLAB_MODE
 	  XEmacs.
 
 	  http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId
+
+
+config BR2_PKGSRC_PACKAGE_EDITORS_MEDIT
+	bool "medit-1.1.1nb3"
+	help
+	  Programming and around-programming text editor
+
+	  medit is a GTK text editor. Started as an editor component of GGAP
+	  (http://ggap.sourceforge.net/), it grew up to a real full-featured
+	  text editor.
+
+	  http://medit.bitbucket.org/
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_MFLTECO
@@ -1094,7 +1243,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_MG
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_MG2A
-	bool "mg2a-1.11"
+	bool "mg2a-1.11nb1"
 	help
 	  Small, fast, public domain EMACS style editor
 
@@ -1151,7 +1300,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_MINED
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_MLVIEW
-	bool "mlview-0.9.0nb14"
+	bool "mlview-0.9.0nb22"
 	help
 	  XML editor for the GNOME environment
 
@@ -1201,7 +1350,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_MULE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_NANO
-	bool "nano-2.2.4nb1"
+	bool "nano-2.2.6nb1"
 	help
 	  
 
@@ -1256,7 +1405,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_NEDIT
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_NG
-	bool "ng-1.4.3nb1"
+	bool "ng-1.4.3nb2"
 	help
 	  Very light Emacs-clone with japanese support
 
@@ -1276,7 +1425,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_NG
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_NOTECASE
-	bool "notecase-1.8.8nb8"
+	bool "notecase-1.8.8nb15"
 	help
 	  Hierarchical note manager
 
@@ -1291,7 +1440,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_NOTECASE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_NTS
-	bool "nts-78"
+	bool "nts-78nb1"
 	help
 	  Simple GUI note taking application
 
@@ -1306,7 +1455,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_NTS
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_NVI
-	bool "nvi-1.81.6nb6"
+	bool "nvi-1.81.6nb7"
 	help
 	  Berkeley nvi with additional features
 
@@ -1352,7 +1501,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_NVI_M17N
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_OBBY
-	bool "obby-0.4.7nb1"
+	bool "obby-0.4.7nb2"
 	help
 	  Library for distributed editing
 
@@ -1375,7 +1524,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_P5_ACME_PADRE_PLAYCODE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_P5_PPIX_EDITORTOOLS
-	bool "p5-PPIx-EditorTools-0.09nb2"
+	bool "p5-PPIx-EditorTools-0.17"
 	help
 	  Utility methods and base class for manipulating Perl via PPI
 
@@ -1385,7 +1534,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_P5_PPIX_EDITORTOOLS
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE
-	bool "p5-Padre-0.90nb1"
+	bool "p5-Padre-0.96nb2"
 	help
 	  Perl Application Development and Refactoring Environment
 
@@ -1523,7 +1672,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_NOPASTE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_PERLCRITIC
-	bool "p5-Padre-Plugin-PerlCritic-0.08nb1"
+	bool "p5-Padre-Plugin-PerlCritic-0.12"
 	help
 	  Analyze perl files in Padre with Perl::Critic
 
@@ -1534,7 +1683,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_PERLCRITIC
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_PERLTIDY
-	bool "p5-Padre-Plugin-PerlTidy-0.10nb2"
+	bool "p5-Padre-Plugin-PerlTidy-0.22"
 	help
 	  Format perl files in Padre using Perl::Tidy
 
@@ -1591,6 +1740,23 @@ config BR2_PKGSRC_PACKAGE_EDITORS_P5_PADRE_PLUGIN_XS
 	  http://search.cpan.org/dist/Padre-Plugin-XS/
 
 
+config BR2_PKGSRC_PACKAGE_EDITORS_P5_WX_SCINTILLA
+	bool "p5-Wx-Scintilla-0.39nb2"
+	help
+	  Scintilla source code editing component for wxWidgets
+
+	  Scintilla is a contributed project which means it will not be the latest
+	  by the time a new wxWidgets distribution is released. And on the scintilla
+	  front, the Perl 5 lexer is not 100% bug free even and we do not have any
+	  kind of Perl 6 support in Scintilla.
+	  
+	  The ambitious goal of this project is to provide fresh Perl 5 and maybe 6
+	  support in Wx while preserving compatibility with Wx::StyledTextCtrl and
+	  continually contribute it back to Scintilla project.
+
+	  http://search.cpan.org/dist/Wx-Scintilla/
+
+
 config BR2_PKGSRC_PACKAGE_EDITORS_PICO
 	bool "pico-4.10nb2"
 	help
@@ -1610,7 +1776,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_PICO
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_POEDIT
-	bool "poedit-1.4.6.1nb7"
+	bool "poedit-1.4.6.1nb13"
 	help
 	  
 
@@ -1639,7 +1805,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_POEDIT
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_ZIM
-	bool "py26-zim-0.53"
+	bool "py27-zim-0.56"
 	help
 	  Zim brings the concept of a wiki to your desktop
 
@@ -1655,7 +1821,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_ZIM
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_QGOOGLETRANSLATOR
-	bool "qgoogletranslator-1.2.1nb2"
+	bool "qgoogletranslator-1.2.1nb8"
 	help
 	  Qt gui for google translate based on ajax api
 
@@ -1665,7 +1831,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_QGOOGLETRANSLATOR
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_ROX_EDIT
-	bool "rox-edit-2.0nb3"
+	bool "rox-edit-2.0nb4"
 	help
 	  Simple text editor for ROX
 
@@ -1707,7 +1873,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_SAM
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_SCITE
-	bool "scite-2.25nb3"
+	bool "scite-2.29nb5"
 	help
 	  Source code editor
 
@@ -1783,7 +1949,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_TAMAGO
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_TEA
-	bool "tea-16.0.5nb10"
+	bool "tea-16.0.5nb17"
 	help
 	  Powerful, easy-to-use text editor for Gtk2
 
@@ -1798,7 +1964,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_TEA
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_TED
-	bool "ted-2.21nb3"
+	bool "ted-2.21nb5"
 	help
 	  X11 based WordPad-like word processor
 
@@ -1961,7 +2127,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_TED_SV
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_TEXMAKER
-	bool "texmaker-1.8nb8"
+	bool "texmaker-1.8nb14"
 	help
 	  LaTeX editor and front end
 
@@ -1995,8 +2161,37 @@ config BR2_PKGSRC_PACKAGE_EDITORS_TEXMAKER
 	  http://www.xm1math.net/texmaker/
 
 
+config BR2_PKGSRC_PACKAGE_EDITORS_TEXWORKS
+	bool "texworks-0.4.3nb7"
+	help
+	  Simple TeX front-end program
+
+	  The TeXworks project is an effort to build a simple TeX front-end program
+	  (working environment) that will be available for all todays major desktop
+	  operating systems-in particular, MS Windows (XP/Vista/7), typical GNU/Linux
+	  distros and other X11-based systems, as well as Mac OS X. It is deliberately
+	  modeled on Dick Koch's award-winning TeXShop for Mac OS X, which is credited
+	  with a resurgence of TeX usage on the Mac platform.
+	  
+	  To provide a similar experience across all systems, TeXworks is based on
+	  cross-platform, open source tools and libraries. The Qt toolkit was chosen
+	  for the quality of its cross-platform user interface capabilities, with
+	  native "look and feel" on each platform being a realistic target. Qt also
+	  provides a rich application framework, facilitating the relatively rapid
+	  development of a usable product.
+	  
+	  The normal TeXworks workflow is PDF-centric, using pdfTeX and XeTeX as
+	  typesetting engines and generating PDF documents as the default formatted
+	  output. Although it is possible to configure a processing path based on DVI,
+	  newcomers to the TeX world need not be concerned with DVI at all, but can
+	  generally treat TeX as a system that goes directly from marked-up text files
+	  to ready-to-use PDF documents.
+
+	  http://www.tug.org/texworks/
+
+
 config BR2_PKGSRC_PACKAGE_EDITORS_TOMBOY
-	bool "tomboy-1.2.1nb7"
+	bool "tomboy-1.2.1nb19"
 	help
 	  Gnome desktop note application
 
@@ -2008,7 +2203,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_TOMBOY
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_UEMACS
-	bool "uemacs-4.0nb1"
+	bool "uemacs-4.0nb2"
 	help
 	  "emacs" key sequences compatible full screen editor
 
@@ -2057,7 +2252,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VIGOR
-	bool "vigor-0.016nb3"
+	bool "vigor-0.016nb6"
 	help
 	  nvi with excessive online "help"
 
@@ -2071,7 +2266,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VIGOR
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VILE
-	bool "vile-9.7nb3"
+	bool "vile-9.8"
 	help
 	  VI Like Emacs.  a vi "workalike", with many additional features
 
@@ -2113,7 +2308,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VILEARN
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VIM
-	bool "vim-7.2.446nb1"
+	bool "vim-7.3.653"
 	help
 	  
 
@@ -2132,7 +2327,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VIM
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VIM_GTK
-	bool "vim-gtk-7.2.446nb1"
+	bool "vim-gtk-7.3.653"
 	help
 	  
 
@@ -2151,7 +2346,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VIM_GTK
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VIM_GTK2
-	bool "vim-gtk2-7.2.446nb5"
+	bool "vim-gtk2-7.3.653nb2"
 	help
 	  
 
@@ -2170,7 +2365,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VIM_GTK2
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VIM_LANG
-	bool "vim-lang-7.2.446nb1"
+	bool "vim-lang-7.3.653"
 	help
 	  
 
@@ -2186,7 +2381,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VIM_LANG
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VIM_MOTIF
-	bool "vim-motif-7.2.446nb2"
+	bool "vim-motif-7.3.653"
 	help
 	  
 
@@ -2205,7 +2400,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VIM_MOTIF
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VIM_SHARE
-	bool "vim-share-7.2.446"
+	bool "vim-share-7.3.653"
 	help
 	  
 
@@ -2221,7 +2416,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_VIM_SHARE
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_VIM_XAW
-	bool "vim-xaw-7.2.446nb1"
+	bool "vim-xaw-7.3.653"
 	help
 	  
 
@@ -2277,7 +2472,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_XCORAL
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS
-	bool "xemacs-21.4.22nb3"
+	bool "xemacs-21.4.22nb7"
 	help
 	  XEmacs text editor version 21
 
@@ -2305,7 +2500,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_CURRENT
-	bool "xemacs-21.5.27nb9"
+	bool "xemacs-21.5.27nb13"
 	help
 	  
 
@@ -2335,7 +2530,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_CURRENT
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_NOX11
-	bool "xemacs-nox11-21.4.22nb3"
+	bool "xemacs-nox11-21.4.22nb7"
 	help
 	  XEmacs text editor version 21
 
@@ -2344,7 +2539,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_NOX11
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_CURRENT_NOX11
-	bool "xemacs-nox11-21.5.27nb9"
+	bool "xemacs-nox11-21.5.27nb13"
 	help
 	  *BETA* XEmacs text editor version 21.5.27
 
@@ -2353,7 +2548,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_CURRENT_NOX11
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_PACKAGES
-	bool "xemacs-packages-1.16nb1"
+	bool "xemacs-packages-1.16nb2"
 	help
 	  Common elisp packages for xemacs 21
 
@@ -2371,7 +2566,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_XEMACS_PACKAGES
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_XFCE4_MOUSEPAD
-	bool "xfce4-mousepad-0.2.16nb6"
+	bool "xfce4-mousepad-0.2.16nb12"
 	help
 	  Xfce text editor
 
@@ -2402,7 +2597,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_XJED
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_XOURNAL
-	bool "xournal-0.4.5nb4"
+	bool "xournal-0.4.7nb5"
 	help
 	  Take notes, sketch and annotate PDFs
 
@@ -2420,7 +2615,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_XOURNAL
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_XVILE
-	bool "xvile-9.7nb4"
+	bool "xvile-9.8"
 	help
 	  VI Like Emacs, X11 version -- a fully "X aware" vi work-alike
 
@@ -2475,7 +2670,7 @@ config BR2_PKGSRC_PACKAGE_EDITORS_YUDIT
 
 
 config BR2_PKGSRC_PACKAGE_EDITORS_ZILE
-	bool "zile-2.3.17"
+	bool "zile-2.4.5"
 	help
 	  Emacs-like text editor
 

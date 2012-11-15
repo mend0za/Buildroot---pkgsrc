@@ -31,7 +31,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_DICT
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_CANNA_LIB
-	bool "Canna-lib-3.6pl4nb2"
+	bool "Canna-lib-3.6pl4nb3"
 	help
 	  
 
@@ -107,7 +107,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_FCITX
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_GCIN
-	bool "gcin-1.1.7nb3"
+	bool "gcin-1.1.7nb8"
 	help
 	  Gtk Chinese INput application in X
 
@@ -118,7 +118,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_GCIN
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_GTK_IM_LIBTHAI
-	bool "gtk-im-libthai-0.2.1"
+	bool "gtk-im-libthai-0.2.1nb4"
 	help
 	  GTK+-2.0 Thai Input Module
 
@@ -128,7 +128,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_GTK_IM_LIBTHAI
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS
-	bool "ibus-1.3.9nb3"
+	bool "ibus-1.4.2nb3"
 	help
 	  Intelligent Input Bus
 
@@ -140,7 +140,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_ANTHY
-	bool "ibus-anthy-1.2.6"
+	bool "ibus-anthy-1.2.7"
 	help
 	  Anthy engine for IBus input platform
 
@@ -151,7 +151,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_ANTHY
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_ARRAY
-	bool "ibus-array-0.0.2nb1"
+	bool "ibus-array-0.0.2nb6"
 	help
 	  Array 30 Input Method for iBus
 
@@ -162,7 +162,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_ARRAY
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_CHEWING
-	bool "ibus-chewing-1.3.10"
+	bool "ibus-chewing-1.4.2nb3"
 	help
 	  Chewing engine for IBus input platform
 
@@ -177,7 +177,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_CHEWING
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_EL
-	bool "ibus-el-0.2.1"
+	bool "ibus-el-0.3.2"
 	help
 	  IBus client for GNU Emacs
 
@@ -190,7 +190,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_EL
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_HANDWRITE
-	bool "ibus-handwrite-2.1.4nb2"
+	bool "ibus-handwrite-2.1.4nb8"
 	help
 	  Handwrite recognizer for ibus
 
@@ -200,7 +200,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_HANDWRITE
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_HANGUL
-	bool "ibus-hangul-1.3.2"
+	bool "ibus-hangul-1.4.1nb1"
 	help
 	  Hangul engine for IBus input platform
 
@@ -211,7 +211,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_HANGUL
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_INPUT_PAD
-	bool "ibus-input-pad-0.1.4nb3"
+	bool "ibus-input-pad-1.4.0nb4"
 	help
 	  Input Pad for IBus
 
@@ -221,7 +221,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_INPUT_PAD
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_M17N
-	bool "ibus-m17n-1.3.3nb1"
+	bool "ibus-m17n-1.3.4nb4"
 	help
 	  M17N engine for IBus platform
 
@@ -232,7 +232,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_M17N
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_PINYIN
-	bool "ibus-pinyin-1.3.11nb2"
+	bool "ibus-pinyin-1.4.0nb2"
 	help
 	  Chinese Pinyin and Bopomofo engines for IBus input platform
 
@@ -242,7 +242,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_PINYIN
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_QT
-	bool "ibus-qt-1.3.1nb7"
+	bool "ibus-qt-1.3.1nb15"
 	help
 	  Qt IBus library and Qt input method plugin
 
@@ -253,7 +253,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_QT
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_SKK
-	bool "ibus-skk-1.3.9"
+	bool "ibus-skk-1.4.1nb3"
 	help
 	  Japanese SKK input engine for IBus
 
@@ -263,7 +263,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_SKK
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_T9
-	bool "ibus-t9-2.1.0.20100601nb6"
+	bool "ibus-t9-2.1.0.20100601nb12"
 	help
 	  IBus T9 Input Method
 
@@ -275,7 +275,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_T9
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE
-	bool "ibus-table-1.3.0.20100621nb1"
+	bool "ibus-table-1.3.0.20100621nb5"
 	help
 	  The Table engine for IBus platform
 
@@ -285,7 +285,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE_CHINESE
-	bool "ibus-table-chinese-1.3.5"
+	bool "ibus-table-chinese-1.4.0"
 	help
 	  Chinese tables for IBus-Table
 
@@ -319,7 +319,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TABLE_OTHERS
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TEGAKI
-	bool "ibus-tegaki-0.3.1"
+	bool "ibus-tegaki-0.3.1nb1"
 	help
 	  Tegaki integration in ibus
 
@@ -329,7 +329,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_TEGAKI
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IBUS_UNIKEY
-	bool "ibus-unikey-0.6.0"
+	bool "ibus-unikey-0.6.1nb3"
 	help
 	  Vietnamese Input Method Engine for IBUS using Unikey IME
 
@@ -348,11 +348,11 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IIIMECF
 	  and consists of a library to create IIIM awared applications and a simple
 	  input method library controlled by IIIM server(s).
 
-	  http://ruby-gnome2.sourceforge.jp/
+	  http://rubyforge.org/projects/ruby-pdf
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IM_JA
-	bool "im-ja-1.5nb8"
+	bool "im-ja-1.5nb19"
 	help
 	  Japanese input module for GTK2 and XIM server
 
@@ -367,7 +367,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IM_JA
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IMHANGUL
-	bool "imhangul-2.0.0"
+	bool "imhangul-2.0.0nb4"
 	help
 	  GTK+-2.0 Hangul Input Module
 
@@ -378,7 +378,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IMHANGUL
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IMHANGUL_STATUS_APPLET
-	bool "imhangul_status_applet-0.3nb24"
+	bool "imhangul_status_applet-0.3nb35"
 	help
 	  GNOME2 applet to show imhangul status
 
@@ -389,7 +389,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_IMHANGUL_STATUS_APPLET
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_INPUT_PAD
-	bool "input-pad-1.0.0nb3"
+	bool "input-pad-1.0.1nb4"
 	help
 	  On-screen Input Pad to Send Characters with Mouse
 
@@ -430,7 +430,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_JA_FREEWNN_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KASUMI
-	bool "kasumi-2.5nb6"
+	bool "kasumi-2.5nb11"
 	help
 	  Dictionary management tool for anthy
 
@@ -440,7 +440,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KASUMI
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KIMERA
-	bool "kimera-2.11nb6"
+	bool "kimera-2.11nb12"
 	help
 	  Kanji Input MEthod for RAgamuffins
 
@@ -454,7 +454,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KIMERA
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KIMERA_TOMOE_GTK
-	bool "kimera-tomoe-gtk-0.5nb6"
+	bool "kimera-tomoe-gtk-0.5nb12"
 	help
 	  Kimera helper program for Tomoe
 
@@ -464,7 +464,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KIMERA_TOMOE_GTK
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_KINPUT2
-	bool "kinput2-3.1nb2"
+	bool "kinput2-3.1nb3"
 	help
 	  Input server of Japanese text
 
@@ -519,8 +519,37 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBHANGUL
 	  http://code.google.com/p/libhangul/
 
 
+config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBSKK
+	bool "libskk-0.0.13nb1"
+	help
+	  Library to deal with Japnese kana-to-kanji conversion method
+
+	  libskk -- a library to deal with Japanese kana-to-kanji conversion method
+	  
+	  Features:
+	  
+	  * Support basic features of SKK including new word registration into
+	  dictionary, completion, numeric conversion, abbrev mode, kuten
+	  input, hankaku-katakana input, Lisp expression evaluation (concat
+	  only), and re-conversion.
+	  
+	  * Support various typing rules including romaji-to-kana, AZIK,
+	  TUT-Code, and NICOLA.
+	  
+	  * Support various dictionary types including file dictionary (such as
+	  SKK-JISYO.[SML]), user dictionary, skkserv, and CDB format
+	  dictionary.
+	  
+	  * GObject based API with gobject-introspection support.
+	  
+	  * Experimental support for intelligent kana-to-kanji conversion based
+	  on Viterbi algorithm.
+
+	  http://github.com/ueno/libskk/
+
+
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBTABE
-	bool "libtabe-0.2.6nb2"
+	bool "libtabe-0.2.6nb3"
 	help
 	  Library for Chinese language processing
 
@@ -537,7 +566,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_LIBTABE
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_M17N_IM_CONFIG
-	bool "m17n-im-config-0.9.0nb8"
+	bool "m17n-im-config-0.9.0nb14"
 	help
 	  Configuration input methods of the m17n library
 
@@ -564,7 +593,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_MULTISKKSERV
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_NABI
-	bool "nabi-0.99.9"
+	bool "nabi-0.99.9nb5"
 	help
 	  X Input Method for Korean
 
@@ -577,7 +606,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_NABI
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_NOVEL_PINYIN
-	bool "novel-pinyin-0.2.5nb9"
+	bool "novel-pinyin-0.2.5nb15"
 	help
 	  HMM-based sentence pinyin input method for Chinese
 
@@ -624,7 +653,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME_EL
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PY_INPUT_PAD
-	bool "py26-input-pad-1.0.0nb3"
+	bool "py27-input-pad-1.0.1nb4"
 	help
 	  Python wrapper for Input Pad
 
@@ -635,7 +664,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PY_INPUT_PAD
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PY_ZINNIA
-	bool "py26-zinnia-0.06"
+	bool "py27-zinnia-0.06"
 	help
 	  Zinnia python module
 
@@ -665,7 +694,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME_DICT
-	bool "ruby19-prime-dict-1.0.0"
+	bool "ruby193-prime-dict-1.0.0"
 	help
 	  Japanese PRedictive Input Method Editor (dictionary)
 
@@ -683,7 +712,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_PRIME_DICT
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_RUBY_ZINNIA
-	bool "ruby19-zinnia-0.06nb1"
+	bool "ruby193-zinnia-0.06nb1"
 	help
 	  Zinnia ruby module
 
@@ -696,7 +725,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_RUBY_ZINNIA
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM
-	bool "scim-1.4.11"
+	bool "scim-1.4.14nb3"
 	help
 	  Smart Common Input Method
 
@@ -711,7 +740,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_ANTHY
-	bool "scim-anthy-1.2.7nb8"
+	bool "scim-anthy-1.2.7nb13"
 	help
 	  SCIM IMEngine module for anthy
 
@@ -730,7 +759,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_ANTHY
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_ARRAY
-	bool "scim-array-1.0.1nb7"
+	bool "scim-array-1.0.1nb12"
 	help
 	  Array 30 Input Method Engine for SCIM
 
@@ -742,21 +771,8 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_ARRAY
 	  http://scimarray.openfoundry.org/index_en.html
 
 
-config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_BRIDGE
-	bool "scim-bridge-0.4.16nb8"
-	help
-	  C wrapper library for SCIM
-
-	  Scim-bridge is wrapper library for SCIM, written in C. It is firstly written to
-	  solve problems occured by the ABI transition of GNU libstdc++ between 3.* branch
-	  and 4.* branch. That's not the problem in the most of cases because you usually
-	  used the same compiler for SCIM and GUI apps.
-
-	  http://www.scim-im.org/projects/scim_bridge
-
-
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CANNA
-	bool "scim-canna-1.0.1nb7"
+	bool "scim-canna-1.0.1nb12"
 	help
 	  SCIM IMEngine module for Canna
 
@@ -766,7 +782,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CANNA
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CCINPUT
-	bool "scim-ccinput-0.3.1nb7"
+	bool "scim-ccinput-0.3.1nb12"
 	help
 	  SCIM IMEngine module for CCInput
 
@@ -776,7 +792,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CCINPUT
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CHEWING
-	bool "scim-chewing-0.3.4nb2"
+	bool "scim-chewing-0.3.4nb7"
 	help
 	  SCIM IMEngine module for Chewing input method
 
@@ -786,7 +802,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_CHEWING
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_FCITX
-	bool "scim-fcitx-3.1.1nb7"
+	bool "scim-fcitx-3.1.1nb12"
 	help
 	  Fcitx ported to SCIM
 
@@ -796,7 +812,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_FCITX
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_HANGUL
-	bool "scim-hangul-0.3.2nb8"
+	bool "scim-hangul-0.4.0nb3"
 	help
 	  SCIM IMEngine module for inputing korean scripts
 
@@ -819,7 +835,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_HANGUL
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_INPUT_PAD
-	bool "scim-input-pad-0.1.3nb2"
+	bool "scim-input-pad-0.1.3nb7"
 	help
 	  SCIM onscreen input pad
 
@@ -829,7 +845,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_INPUT_PAD
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_M17N
-	bool "scim-m17n-0.2.3nb8"
+	bool "scim-m17n-0.2.3nb14"
 	help
 	  SCIM IMEngine module for m17n-lib
 
@@ -839,7 +855,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_M17N
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PINYIN
-	bool "scim-pinyin-0.5.91nb7"
+	bool "scim-pinyin-0.5.92nb3"
 	help
 	  SCIM IMEngine module for smart pinyin
 
@@ -849,7 +865,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PINYIN
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PRIME
-	bool "scim-prime-1.0.1nb7"
+	bool "scim-prime-1.0.1nb12"
 	help
 	  SCIM IMEngine module for PRIME
 
@@ -859,7 +875,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PRIME
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PYTHON
-	bool "scim-python-0.1.13rc1nb7"
+	bool "scim-python-0.1.13rc1nb14"
 	help
 	  Python wrapper for Smart Common Input Method platform
 
@@ -869,7 +885,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_PYTHON
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_SINHALA
-	bool "scim-sinhala-0.1.0nb7"
+	bool "scim-sinhala-0.1.0nb12"
 	help
 	  SCIM IMEngine module for Sinhala
 
@@ -879,7 +895,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_SINHALA
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_SKK
-	bool "scim-skk-0.5.2nb7"
+	bool "scim-skk-0.5.2nb12"
 	help
 	  SCIM IMEngine module for skk
 
@@ -889,7 +905,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_SKK
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TABLES
-	bool "scim-tables-0.5.10nb2"
+	bool "scim-tables-0.5.11nb3"
 	help
 	  Data files for SCIM Generic Table Input Method module
 
@@ -915,7 +931,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TABLES_VIETNAMESE_EXT
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TEGAKI
-	bool "scim-tegaki-0.1"
+	bool "scim-tegaki-0.1nb1"
 	help
 	  Tegaki integration in SCIM
 
@@ -925,7 +941,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TEGAKI
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_THAI
-	bool "scim-thai-0.1.2nb2"
+	bool "scim-thai-0.1.2nb7"
 	help
 	  SCIM IMEngine module for Thai
 
@@ -949,7 +965,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_THAI
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TOMOE
-	bool "scim-tomoe-0.6.0nb9"
+	bool "scim-tomoe-0.6.0nb15"
 	help
 	  SCIM IMEngine module for Tomoe
 
@@ -959,7 +975,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_TOMOE
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_UIM
-	bool "scim-uim-0.2.0nb8"
+	bool "scim-uim-0.2.0nb14"
 	help
 	  SCIM IMEngine module for UIM
 
@@ -969,7 +985,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_UIM
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SCIM_UNIKEY
-	bool "scim-unikey-0.3.1nb7"
+	bool "scim-unikey-0.3.1nb12"
 	help
 	  Vietnamese Input Method Engine for SCIM using Unikey IME
 
@@ -994,7 +1010,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3_CLIENT
-	bool "sj3-client-2.0.1.23p1"
+	bool "sj3-client-2.0.1.23p1nb1"
 	help
 	  SJ3 Japanese input method client & library
 
@@ -1018,7 +1034,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SJ3_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKK
-	bool "skk-14.3"
+	bool "skk-14.4"
 	help
 	  Japanese input methods for Emacs
 
@@ -1099,7 +1115,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKSERV
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_SKKTOOLS
-	bool "skktools-1.3.1nb2"
+	bool "skktools-1.3.1nb6"
 	help
 	  SKK dictionary manipulation tools
 
@@ -1126,7 +1142,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TC
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_PYGTK
-	bool "tegaki-pygtk-0.3.1nb1"
+	bool "tegaki-pygtk-0.3.1nb2"
 	help
 	  Base user interface library for the Tegaki project
 
@@ -1136,7 +1152,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_PYGTK
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_PYTHON
-	bool "tegaki-python-0.3.1"
+	bool "tegaki-python-0.3.1nb1"
 	help
 	  Base Python library for the Tegaki project
 
@@ -1146,7 +1162,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_PYTHON
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_RECOGNIZE
-	bool "tegaki-recognize-0.3.1.2"
+	bool "tegaki-recognize-0.3.1.2nb1"
 	help
 	  Tegaki project integration in the desktop
 
@@ -1156,7 +1172,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_RECOGNIZE
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_TOOLS
-	bool "tegaki-tools-0.3.1"
+	bool "tegaki-tools-0.3.1nb1"
 	help
 	  Set of command-line tools for Tegaki
 
@@ -1166,7 +1182,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_TOOLS
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_TRAIN
-	bool "tegaki-train-0.3.1"
+	bool "tegaki-train-0.3.1nb1"
 	help
 	  Train Tegaki with your own handwriting
 
@@ -1176,7 +1192,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_TRAIN
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_WAGOMU
-	bool "tegaki-wagomu-0.3.1nb1"
+	bool "tegaki-wagomu-0.3.1nb5"
 	help
 	  Simple handwriting recognition engine based on DTW
 
@@ -1313,7 +1329,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TEGAKI_ZINNIA_TRADITIONAL_CHINESE_LIGHT
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TOMOE
-	bool "tomoe-0.6.0nb2"
+	bool "tomoe-0.6.0nb5"
 	help
 	  Handwriting recognition engine
 
@@ -1327,7 +1343,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TOMOE
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TOMOE_GTK
-	bool "tomoe-gtk-0.6.0nb10"
+	bool "tomoe-gtk-0.6.0nb16"
 	help
 	  GUI library for tomoe's GTK+ GUI parts
 
@@ -1339,7 +1355,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_TOMOE_GTK
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM
-	bool "uim-1.7.0nb3"
+	bool "uim-1.8.2nb1"
 	help
 	  Multilingual input method library
 
@@ -1353,7 +1369,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM_ELISP
-	bool "uim-elisp-1.7.0"
+	bool "uim-elisp-1.8.2"
 	help
 	  Emacs LISP for inputmethod/uim
 
@@ -1363,7 +1379,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM_ELISP
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UIM_TOMOE_GTK
-	bool "uim-tomoe-gtk-0.6.0nb9"
+	bool "uim-tomoe-gtk-0.6.0nb16"
 	help
 	  UIM helper program for Tomoe
 
@@ -1389,7 +1405,7 @@ config BR2_PKGSRC_PACKAGE_INPUTMETHOD_UNICON_IM
 
 
 config BR2_PKGSRC_PACKAGE_INPUTMETHOD_XCIN
-	bool "xcin-2.5.3rc2nb10"
+	bool "xcin-2.5.3rc2nb11"
 	help
 	  Chinese XIM server
 

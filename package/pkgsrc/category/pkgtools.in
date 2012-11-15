@@ -33,7 +33,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_BOOTSTRAP_EXTRAS
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_BOOTSTRAP_MK_FILES
-	bool "bootstrap-mk-files-20111205"
+	bool "bootstrap-mk-files-20120415"
 	help
 	  *.mk files for the bootstrap bmake utility
 
@@ -148,7 +148,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_DIGEST
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_DISTBB
-	bool "distbb-0.41.2"
+	bool "distbb-0.45.1nb2"
 	help
 	  DISTributed Bulk Build tool for pkgsrc
 
@@ -168,7 +168,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_DISTBB
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_GENRPM
-	bool "genrpm-1.1"
+	bool "genrpm-1.2"
 	help
 	  Generate an RPM package from an installed pkgsrc package
 
@@ -202,7 +202,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_GENSOLPKG
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_GNOME_PACKAGEKIT
-	bool "gnome-packagekit-0.4.0nb9"
+	bool "gnome-packagekit-0.4.0nb18"
 	help
 	  GNOME frontend for PackageKit
 
@@ -247,7 +247,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_LIBKVER
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_LIBNBCOMPAT
-	bool "libnbcompat-20111228"
+	bool "libnbcompat-20120702"
 	help
 	  Portable NetBSD compatibility library
 
@@ -261,7 +261,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_LIBNBCOMPAT
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_LINTPKGSRC
-	bool "lintpkgsrc-4.82"
+	bool "lintpkgsrc-4.85"
 	help
 	  Sanity checks on the complete pkgsrc tree
 
@@ -270,8 +270,19 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_LINTPKGSRC
 	  http://www.NetBSD.org/Documentation/pkgsrc/
 
 
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_MKSANDBOX
+	bool "mksandbox-1.0"
+	help
+	  Tool for creating sandboxes
+
+	  A small shell script to set up a sandbox (usually for a pkgsrc bulk
+	  build), using null mounts.
+
+	  http://www.NetBSD.org/docs/pkgsrc/bulk.html
+
+
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_MTREE
-	bool "mtree-20081105"
+	bool "mtree-20120308"
 	help
 	  Utility for mapping and checking directory hierarchies
 
@@ -286,7 +297,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_MTREE
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_NIH
-	bool "nih-0.10.0nb2"
+	bool "nih-0.10.1nb1"
 	help
 	  Package manager for pkgsrc
 
@@ -339,7 +350,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_P5_PKGSRC_DEWEY
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PACKAGEKIT
-	bool "packagekit-0.4.0nb12"
+	bool "packagekit-0.4.0nb20"
 	help
 	  System activated daemon for managing software updates
 
@@ -363,7 +374,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PACKAGEKIT
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PBULK
-	bool "pbulk-0.48"
+	bool "pbulk-0.50"
 	help
 	  Modular bulk build framework
 
@@ -376,7 +387,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PBULK
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PBULK_BASE
-	bool "pbulk-base-0.44"
+	bool "pbulk-base-0.45"
 	help
 	  Core components of the modular bulk build framework
 
@@ -401,7 +412,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PBULK_BASE
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ALTERNATIVES
-	bool "pkg_alternatives-1.5"
+	bool "pkg_alternatives-1.6"
 	help
 	  Generic wrappers for programs with similar interfaces
 
@@ -413,7 +424,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ALTERNATIVES
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_CHK
-	bool "pkg_chk-2.0nb1"
+	bool "pkg_chk-2.0.6"
 	help
 	  Check installed package versions against pkgsrc
 
@@ -427,7 +438,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_CHK
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_COMP
-	bool "pkg_comp-1.35"
+	bool "pkg_comp-1.37"
 	help
 	  Build packages inside a chroot jail
 
@@ -485,7 +496,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_FILECHECK
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_INSTALL
-	bool "pkg_install-20110805"
+	bool "pkg_install-20120221"
 	help
 	  Package management and administration tools for pkgsrc
 
@@ -550,7 +561,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_NOTIFY
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ONLINE_CLIENT
-	bool "pkg_online-client-0.12.1nb1"
+	bool "pkg_online-client-0.13.0nb1"
 	help
 	  Client/Server package searcher for pkgsrc (client tools)
 
@@ -579,7 +590,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ONLINE_CLIENT
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ONLINE_SERVER
-	bool "pkg_online-server-0.12.1"
+	bool "pkg_online-server-0.13.0"
 	help
 	  Client/Server package searcher for pkgsrc (server tools)
 
@@ -607,6 +618,17 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ONLINE_SERVER
 	  http://mova.org/~cheusov/pub/pkg_online/
 
 
+config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_P5UP2DATE
+	bool "pkg_p5up2date-0.04"
+	help
+	  check p5-* pkgsrc packages requiring updates
+
+	  pkg_p5up2date checks for outdated Perl5 modules in pkgsrc against
+	  the database from Comprehensive Perl Archive Network.
+
+	  
+
+
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_REGRESS
 	bool "pkg_regress-0.2"
 	help
@@ -618,7 +640,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_REGRESS
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_ROLLING_REPLACE
-	bool "pkg_rolling-replace-0.24"
+	bool "pkg_rolling-replace-0.24.1"
 	help
 	  Replace/upgrade packages in-place
 
@@ -655,7 +677,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_SELECT
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKG_SUMMARY_UTILS
-	bool "pkg_summary-utils-0.56.4"
+	bool "pkg_summary-utils-0.58.4"
 	help
 	  
 
@@ -768,7 +790,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGDEPGRAPH
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGDIFF
-	bool "pkgdiff-1.3"
+	bool "pkgdiff-1.4"
 	help
 	  Tools to create, maintain, and send back patches for pkgsrc
 
@@ -802,7 +824,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGFIND
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGIN
-	bool "pkgin-0.5.2.1nb1"
+	bool "pkgin-0.6.2.2nb1"
 	help
 	  Apt / yum like tool for managing pkgsrc binary packages
 
@@ -815,7 +837,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGIN
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGLINT
-	bool "pkglint-4.106"
+	bool "pkglint-4.125"
 	help
 	  Verifier for NetBSD packages
 
@@ -887,7 +909,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_PKGSURVEY
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_PORT2PKG
-	bool "port2pkg-1.12"
+	bool "port2pkg-1.13"
 	help
 	  Convert from a FreeBSD port to a NetBSD package
 
@@ -920,7 +942,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_RC.SUBR
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_RCORDER
-	bool "rcorder-20031013"
+	bool "rcorder-20120310"
 	help
 	  Print a dependency ordering of interdependent files
 
@@ -958,7 +980,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_RDIGEST
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_REVBUMP
-	bool "revbump-2.1"
+	bool "revbump-2.2"
 	help
 	  
 
@@ -972,7 +994,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_REVBUMP
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_RPM2PKG
-	bool "rpm2pkg-3.2.2"
+	bool "rpm2pkg-3.2.3"
 	help
 	  Convert RPM archives to NetBSD packages
 
@@ -1008,7 +1030,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_SHLOCK
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_TINDERBOX_DRAGONFLY
-	bool "tinderbox-dragonfly-3.4.1nb2"
+	bool "tinderbox-dragonfly-3.4.1nb3"
 	help
 	  
 
@@ -1031,11 +1053,11 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_TINDERBOX_DRAGONFLY
 	  
 	  Tinderbox/pkgsrc site: http://github.com/jrmarino/pkgsrc-tinderbox
 
-	  http://tinderbox/marcuscom.com
+	  http://tinderbox.marcuscom.com/
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_URL2PKG
-	bool "url2pkg-2.13"
+	bool "url2pkg-2.15"
 	help
 	  Tool to automate initial steps in building a package
 
@@ -1064,7 +1086,7 @@ config BR2_PKGSRC_PACKAGE_PKGTOOLS_VERIFYPC
 
 
 config BR2_PKGSRC_PACKAGE_PKGTOOLS_X11_LINKS
-	bool "x11-links-0.68"
+	bool "x11-links-0.71"
 	help
 	  Shadow tree of links to native X11 headers and libraries
 

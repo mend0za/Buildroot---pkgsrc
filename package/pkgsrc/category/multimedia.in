@@ -1,5 +1,5 @@
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDSTYLER
-	bool "DVDStyler-1.8.2.1nb4"
+	bool "DVDStyler-2.1nb6"
 	help
 	  Crossplatform DVD Authoring System
 
@@ -62,7 +62,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ADOBE_FLASH_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ADOBE_FLASH_PLUGIN10.1
-	bool "adobe-flash-plugin-10.3.183.11"
+	bool "adobe-flash-plugin-10.3.183.23"
 	help
 	  Adobe Flash Player Browser plugin
 
@@ -82,7 +82,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ADOBE_FLASH_PLUGIN10.1
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ADOBE_FLASH_PLUGIN11
-	bool "adobe-flash-plugin-11.1.102.55"
+	bool "adobe-flash-plugin-11.2.202.238"
 	help
 	  Adobe Flash Player Browser plugin
 
@@ -116,7 +116,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_ALEVT
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_AVIDEMUX
-	bool "avidemux-2.5.4nb4"
+	bool "avidemux-2.5.4nb13"
 	help
 	  Graphical video editing program
 
@@ -180,7 +180,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_CFOURCC
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_CLUTTER_GST
-	bool "clutter-gst-1.2.0nb4"
+	bool "clutter-gst-1.2.0nb10"
 	help
 	  Clutter GStreamer integration
 
@@ -203,7 +203,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_CLUTTER_GST
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_CLUTTER08_GST
-	bool "clutter08-gst-0.8.0nb6"
+	bool "clutter08-gst-0.8.0nb12"
 	help
 	  Clutter GStreamer integration
 
@@ -285,15 +285,12 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVD_SLIDESHOW
 	  Script that creates a slideshow-style DVD with some simple menus
 
 	  Script that creates a slideshow-style dvd with some simple menus
-	  
-	  Author:	Scott Dylewski <scott @ dylewski . com>
-	  WWW:	http://dvd-slideshow.sourceforge.net/
 
 	  http://dvd-slideshow.sourceforge.net/
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDAUTHOR
-	bool "dvdauthor-0.7.0nb3"
+	bool "dvdauthor-0.7.0nb6"
 	help
 	  Tools to assist DVD authoring
 
@@ -305,7 +302,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDAUTHOR
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDBACKUP
-	bool "dvdbackup-0.4.1"
+	bool "dvdbackup-0.4.1nb1"
 	help
 	  DVD backup utility
 
@@ -345,7 +342,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_DVDVIEW
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FARSIGHT2
-	bool "farsight2-0.0.26nb3"
+	bool "farsight2-0.0.26nb11"
 	help
 	  Audio/video communications framework
 
@@ -371,27 +368,46 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FARSIGHT2
 	  http://farsight.freedesktop.org/wiki/
 
 
-config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFMPEG
-	bool "ffmpeg-20111121.0.7.8nb1"
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFMPEG010
+	bool "ffmpeg-20120609.0.10.4"
 	help
 	  Decoding, encoding and streaming software
 
-	  FFmpeg is the first complete and free Internet Live Audio and Video
-	  Broadcasting solution. FFMpeg aims at being the command line tool to
-	  handle audio and video. It is a "three-in-one" solution.
-	  
-	  FFmpeg includes a soft VCR capable of encoding in many different
-	  formats simultaneously, a streaming server for Netcasting multimedia
-	  and is available under the GNU General Public License.
-	  
-	  FFmpeg generates streaming files, in many popular formats
-	  simultaneously, faster than any other solution.
+	  FFmpeg is a complete, cross-platform solution to record, convert
+	  and stream audio and video.  It includes libavcodec - the leading
+	  audio/video codec library.
 
 	  http://ffmpeg.mplayerhq.hu/
 
 
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFMPEG
+	bool "ffmpeg-20120609.0.7.13nb1"
+	help
+	  Decoding, encoding and streaming software
+
+	  FFmpeg is a complete, cross-platform solution to record, convert
+	  and stream audio and video.  It includes libavcodec - the leading
+	  audio/video codec library.
+
+	  http://ffmpeg.mplayerhq.hu/
+
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFMPEG2THEORA
+	bool "ffmpeg2theora-0.28nb1"
+	help
+	  Simple converter to create Ogg Theora files
+
+	  With "ffmpeg2theora" you can convert any file that "ffmpeg" can decode into
+	  the Theora format. Right now the settings are hardcoded into the binary.
+	  The idea is to provide "ffmpeg2theora" as a binary along sites like
+	  "v2v.cc" to enable as many people as possible to encode video clips with
+	  the same settings.
+
+	  http://v2v.cc/~j/ffmpeg2theora/
+
+
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFMPEGTHUMBNAILER
-	bool "ffmpegthumbnailer-2.0.6nb1"
+	bool "ffmpegthumbnailer-2.0.6nb2"
 	help
 	  Lightweight video thumbnailer that can be used by file managers
 
@@ -406,12 +422,13 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFMPEGTHUMBNAILER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FFPLAY
-	bool "ffplay-0.7.8"
+	bool "ffplay-0.7.13nb1"
 	help
-	  Simple SDL frontend for ffmpeg
+	  Simple SDL frontend for FFmpeg
 
-	  The ffplay package provides the very simple, interactive media
-	  player for FFmpeg.  It uses the SDL toolkit.
+	  FFplay is a very simple and portable media player using the FFmpeg
+	  libraries and the SDL library.  It is mostly used as a testbed for
+	  the various FFmpeg APIs.
 
 	  http://ffmpeg.mplayerhq.hu/
 
@@ -429,7 +446,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FLASHPLAYER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FUPPES
-	bool "fuppes-0.640nb13"
+	bool "fuppes-0.660"
 	help
 	  Free UPnP Entertainment Service
 
@@ -443,7 +460,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FUPPES
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FXTV
-	bool "fxtv-1.03nb18"
+	bool "fxtv-1.03nb19"
 	help
 	  TV display application for Brooktree 848 compatible TV cards
 
@@ -456,7 +473,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_FXTV
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GECKO_MEDIAPLAYER
-	bool "gecko-mediaplayer-1.0.4nb2"
+	bool "gecko-mediaplayer-1.0.6nb4"
 	help
 	  Multimedia browser plugin for Gecko based browsers
 
@@ -481,7 +498,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GGRAB
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMEDIASERVER
-	bool "gmediaserver-0.13.0nb2"
+	bool "gmediaserver-0.13.0nb3"
 	help
 	  UPnP compatible media server for the GNU system
 
@@ -512,7 +529,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMEDIASERVER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMENCODER
-	bool "gmencoder-0.1.0nb33"
+	bool "gmencoder-0.1.0nb41"
 	help
 	  GNOME2 frontend to mencoder
 
@@ -524,7 +541,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMENCODER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMPLAYER
-	bool "gmplayer-1.0rc20100913nb10"
+	bool "gmplayer-1.1nb4"
 	help
 	  Fast, cross-platform movie player with GTK2+ interface
 
@@ -546,7 +563,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GMPLAYER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNASH
-	bool "gnash-0.8.9nb5"
+	bool "gnash-0.8.10nb9"
 	help
 	  GPL SWF player
 
@@ -571,7 +588,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNASH
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNOME_MEDIA
-	bool "gnome-media-2.28.5nb9"
+	bool "gnome-media-2.28.5nb16"
 	help
 	  Set of audio/multimedia applications for GNOME2
 
@@ -592,7 +609,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNOME_MEDIA
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNOME_MPLAYER
-	bool "gnome-mplayer-1.0.4nb2"
+	bool "gnome-mplayer-1.0.6nb6"
 	help
 	  GNOME Frontend for MPlayer
 
@@ -603,7 +620,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GNOME_MPLAYER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GOGGLES
-	bool "goggles-0.9.1nb6"
+	bool "goggles-0.9.1nb8"
 	help
 	  Easy to use frontend for Ogle DVD Player
 
@@ -621,7 +638,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GOGGLES
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GOPCHOP
-	bool "gopchop-1.1.8nb7"
+	bool "gopchop-1.1.8nb14"
 	help
 	  MPEG2 GOP-accurate editor
 
@@ -637,7 +654,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GOPCHOP
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GPAC
-	bool "gpac-0.4.5nb11"
+	bool "gpac-0.4.5nb18"
 	help
 	  Open source multimedia framework
 
@@ -650,7 +667,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GPAC
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_FFMPEG
-	bool "gst-ffmpeg-0.10.13"
+	bool "gst-ffmpeg-0.10.13nb5"
 	help
 	  ffmpeg plugin for gstreamer
 
@@ -660,7 +677,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_FFMPEG
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_GNONLIN
-	bool "gst-gnonlin-0.10.17nb1"
+	bool "gst-gnonlin-0.10.17nb5"
 	help
 	  Non-linear editing components for gstreamer
 
@@ -672,7 +689,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_GNONLIN
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_BAD
-	bool "gst-plugins0.10-bad-0.10.22nb2"
+	bool "gst-plugins0.10-bad-0.10.23nb3"
 	help
 	  Open source multimedia framework - bad plugins
 
@@ -693,7 +710,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_BAD
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_BASE
-	bool "gst-plugins0.10-base-0.10.35"
+	bool "gst-plugins0.10-base-0.10.36nb3"
 	help
 	  Open source multimedia framework - base plugins
 
@@ -714,7 +731,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_BASE
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_DVDREAD
-	bool "gst-plugins0.10-dvdread-0.10.18"
+	bool "gst-plugins0.10-dvdread-0.10.19nb2"
 	help
 	  Open source multimedia framework - dvdread plugin
 
@@ -734,7 +751,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_DVDREAD
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_GOOD
-	bool "gst-plugins0.10-good-0.10.30nb1"
+	bool "gst-plugins0.10-good-0.10.31nb3"
 	help
 	  Open source multimedia framework - good plugins
 
@@ -755,7 +772,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_GOOD
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_HAL
-	bool "gst-plugins0.10-hal-0.10.30"
+	bool "gst-plugins0.10-hal-0.10.31nb2"
 	help
 	  Open source multimedia framework - hal plugin
 
@@ -776,7 +793,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_HAL
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_MPEG2DEC
-	bool "gst-plugins0.10-mpeg2dec-0.10.18"
+	bool "gst-plugins0.10-mpeg2dec-0.10.19nb2"
 	help
 	  Open source multimedia framework - mpeg2dec plugin
 
@@ -795,7 +812,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_MPEG2DEC
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_OGG
-	bool "gst-plugins0.10-ogg-0.10.35"
+	bool "gst-plugins0.10-ogg-0.10.36nb2"
 	help
 	  Open source multimedia framework - ogg plugin
 
@@ -816,7 +833,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_OGG
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_RESINDVD
-	bool "gst-plugins0.10-resindvd-0.10.22"
+	bool "gst-plugins0.10-resindvd-0.10.23nb2"
 	help
 	  Open source multimedia framework - resindvd plugin
 
@@ -835,7 +852,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_RESINDVD
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_THEORA
-	bool "gst-plugins0.10-theora-0.10.35"
+	bool "gst-plugins0.10-theora-0.10.36nb2"
 	help
 	  Open source multimedia framework - theora plugin
 
@@ -854,7 +871,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_THEORA
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_UGLY
-	bool "gst-plugins0.10-ugly-0.10.18"
+	bool "gst-plugins0.10-ugly-0.10.19nb3"
 	help
 	  Open source multimedia framework - ugly plugins
 
@@ -875,7 +892,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_UGLY
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_V4L2
-	bool "gst-plugins0.10-v4l2-0.10.30nb1"
+	bool "gst-plugins0.10-v4l2-0.10.31nb2"
 	help
 	  Open source multimedia framework - v4l2 plugin
 
@@ -896,7 +913,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_V4L2
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_VP8
-	bool "gst-plugins0.10-vp8-0.10.22"
+	bool "gst-plugins0.10-vp8-0.10.23nb3"
 	help
 	  Open source multimedia framework - vp8 plugin
 
@@ -915,7 +932,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_VP8
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_X264
-	bool "gst-plugins0.10-x264-0.10.18"
+	bool "gst-plugins0.10-x264-0.10.19nb2"
 	help
 	  Open source multimedia framework - x264 plugin
 
@@ -934,7 +951,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_X264
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_XVID
-	bool "gst-plugins0.10-xvid-0.10.22"
+	bool "gst-plugins0.10-xvid-0.10.23nb2"
 	help
 	  Open source multimedia framework - xvid plugin
 
@@ -953,7 +970,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST_PLUGINS0.10_XVID
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST123
-	bool "gst123-0.2.1nb1"
+	bool "gst123-0.3.1nb3"
 	help
 	  The gst123 is designed to be a more flexible command line player
 
@@ -970,7 +987,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GST123
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GSTREAMER0.10
-	bool "gstreamer0.10-0.10.35"
+	bool "gstreamer0.10-0.10.36nb3"
 	help
 	  Open source multimedia framework
 
@@ -1005,7 +1022,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GTRANSCODE
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GXINE
-	bool "gxine-0.5.905nb7"
+	bool "gxine-0.5.905nb17"
 	help
 	  Gtk-based media player
 
@@ -1016,7 +1033,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_GXINE
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_HANDBRAKE
-	bool "handbrake-0.9.3nb8"
+	bool "handbrake-0.9.3nb15"
 	help
 	  Multiplatform, multithreaded video transcoder
 
@@ -1049,7 +1066,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_HANDBRAKE
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_HWDECODE_DEMOS
-	bool "hwdecode-demos-0.9.4nb1"
+	bool "hwdecode-demos-0.9.4nb3"
 	help
 	  Standalone programs showing off various HW acceleration APIs
 
@@ -1060,7 +1077,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_HWDECODE_DEMOS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KAFFEINE
-	bool "kaffeine-0.8.3nb16"
+	bool "kaffeine-0.8.3nb23"
 	help
 	  Full featured Multimedia-Player for KDE
 
@@ -1078,7 +1095,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KAFFEINE
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDEMULTIMEDIA3
-	bool "kdemultimedia-3.5.10nb13"
+	bool "kdemultimedia-3.5.10nb21"
 	help
 	  Multimedia tools for the KDE integrated X11 desktop
 
@@ -1111,7 +1128,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDEMULTIMEDIA3
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDEMULTIMEDIA4
-	bool "kdemultimedia4-4.5.5nb6"
+	bool "kdemultimedia4-4.8.4nb4"
 	help
 	  Multimedia tools for the KDE integrated X11 desktop
 
@@ -1132,7 +1149,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDEMULTIMEDIA4
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDENLIVE
-	bool "kdenlive-0.7.8nb4"
+	bool "kdenlive-0.7.8nb11"
 	help
 	  KDE video editor
 
@@ -1144,7 +1161,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KDENLIVE
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KMPLAYER_KDE3
-	bool "kmplayer-0.10.0cnb9"
+	bool "kmplayer-0.10.0cnb18"
 	help
 	  KDE frontend to mplayer
 
@@ -1171,7 +1188,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KMPLAYER_KDE3
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_KMPLAYER
-	bool "kmplayer-0.11.2cnb4"
+	bool "kmplayer-0.11.3bnb6"
 	help
 	  KDE frontend to mplayer
 
@@ -1210,7 +1227,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBASS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBASSETML
-	bool "libassetml-1.2.1nb2"
+	bool "libassetml-1.2.1nb6"
 	help
 	  Library for sharing image and audio files between projects
 
@@ -1284,7 +1301,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVBPSI
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDCSS
-	bool "libdvdcss-1.2.11"
+	bool "libdvdcss-1.2.12"
 	help
 	  Simple library designed for accessing DVDs
 
@@ -1297,7 +1314,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDCSS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDNAV
-	bool "libdvdnav-4.1.3"
+	bool "libdvdnav-4.2.0"
 	help
 	  Library to navigate DVDs
 
@@ -1311,7 +1328,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDNAV
 	  The whole DVD virtual machine and internal playback states are completely
 	  encapsulated.
 
-	  http://www.mplayerhq.hu/
+	  http://dvdnav.mplayerhq.hu/
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDPLAY
@@ -1332,14 +1349,14 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDPLAY
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBDVDREAD
-	bool "libdvdread-4.1.3nb1"
+	bool "libdvdread-4.2.0"
 	help
 	  DVD access library
 
 	  libdvdread is a library that provides an interface to make life
 	  for programs that access DVDs a little easier.
 
-	  http://www.mplayerhq.hu/
+	  http://dvdnav.mplayerhq.hu/
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASH
@@ -1351,6 +1368,19 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASH
 	  that is capable of playing Flash(tm) movies.
 
 	  http://gplflash.sourceforge.net/
+
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASHSUPPORT10
+	bool "libflashsupport-1.0.2098nb1"
+	help
+	  Additional Interface Support for Linux Flash Player
+
+	  This is an shared library built from source provided by Adobe which
+	  enables the use of OSS audio in the multimedia/ns-flash package
+	  
+	  Non Linux platforms will probably also need www/nspluginwrapper
+
+	  http://labs.adobe.com/wiki/index.php/Flash_Player:Additional_Interface_Support_for_Linux
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASHSUPPORT
@@ -1367,7 +1397,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASHSUPPORT
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBFLASHSUPPORT_PULSE
-	bool "libflashsupport-pulse-20081219"
+	bool "libflashsupport-pulse-20081219nb2"
 	help
 	  PulseAudio support for Adobe Flash
 
@@ -1407,9 +1437,9 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMATROSKA
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMP4V2
-	bool "libmp4v2-1.6.1nb1"
+	bool "libmp4v2-1.6.1nb3"
 	help
-	  libmp4v2 from mpeg4ip
+	  Library for reading and modifying mp4 files
 
 	  The MPEG4IP project provides a standards-based system for encoding,
 	  streaming, and playing encoded audio, video and text. To achieve
@@ -1437,7 +1467,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMPEG2
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMPEG3
 	bool "libmpeg3-1.8"
 	help
-	  MPEG decoding library
+	  MPEG decoding library and tools
 
 	  Libmpeg3 decodes
 	  MPEG-1 Layer II Audio
@@ -1451,6 +1481,11 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBMPEG3
 	  MPEG-1 Video
 	  IFO files
 	  VOB files
+	  
+	  This package provides tools to concatenate video files, split
+	  elementary streams into chunks of bytes, dump information or extract
+	  audio to a 24 bit pcm file, and create a table of contents for a
+	  DVD or mpeg stream.
 
 	  http://heroines.sourceforge.net/libmpeg3.php3
 
@@ -1475,7 +1510,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBNMS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBOGG
-	bool "libogg-1.2.1nb1"
+	bool "libogg-1.3.0"
 	help
 	  Ogg project codecs library
 
@@ -1508,7 +1543,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBTHEORA
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBTHEORA_DOCS
-	bool "libtheora-docs-1.1.1"
+	bool "libtheora-docs-1.1.1nb1"
 	help
 	  Video codec for Ogg multimedia streaming (API documentation)
 
@@ -1555,7 +1590,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBVDPAU
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_LIBVPX
-	bool "libvpx-0.9.7.1"
+	bool "libvpx-1.1.0"
 	help
 	  On2 VP8 library from Google
 
@@ -1615,7 +1650,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MEDIAINFO
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MEDIATOMB
-	bool "mediatomb-0.12.1nb7"
+	bool "mediatomb-0.12.1nb10"
 	help
 	  UPnP MediaServer with a web user interface
 
@@ -1639,7 +1674,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MEDIATOMB
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MENCODER
-	bool "mencoder-1.0rc20100913nb4"
+	bool "mencoder-1.1"
 	help
 	  Simple movie encoder for MPlayer-playable movies
 
@@ -1654,7 +1689,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MENCODER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MING
-	bool "ming-0.4.3nb4"
+	bool "ming-0.4.4"
 	help
 	  SWF output library
 
@@ -1665,7 +1700,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MING
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MJPEGTOOLS
-	bool "mjpegtools-1.9.0nb6"
+	bool "mjpegtools-2.0.0"
 	help
 	  Programs for compressing video streams
 
@@ -1676,7 +1711,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MJPEGTOOLS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MKVTOOLNIX_OLD
-	bool "mkvtoolnix-2.9.8nb11"
+	bool "mkvtoolnix-2.9.8nb20"
 	help
 	  Matroska tools, old version for build with g++-4.1
 
@@ -1692,7 +1727,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MKVTOOLNIX_OLD
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MKVTOOLNIX
-	bool "mkvtoolnix-5.0.0nb2"
+	bool "mkvtoolnix-5.0.1nb5"
 	help
 	  Set of tools to create, alter and inspect Matroska files
 
@@ -1706,7 +1741,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MKVTOOLNIX
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MLT
-	bool "mlt-0.5.10nb5"
+	bool "mlt-0.5.10nb13"
 	help
 	  Open source multimedia framework
 
@@ -1740,7 +1775,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPEG_LIB
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPEG4IP
-	bool "mpeg4ip-1.5.0.1"
+	bool "mpeg4ip-1.5.0.1nb1"
 	help
 	  Tools for streaming video and audio
 
@@ -1791,7 +1826,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPEG_PLAY
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPLAYER
-	bool "mplayer-1.0rc20100913nb10"
+	bool "mplayer-1.1"
 	help
 	  Fast, cross-platform movie player
 
@@ -1814,7 +1849,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPLAYER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPLAYER_PLUGIN
-	bool "mplayer-plugin-3.55nb9"
+	bool "mplayer-plugin-3.55nb18"
 	help
 	  Mplayer plug-in for Gecko-based browsers
 
@@ -1825,7 +1860,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPLAYER_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MPLAYER_SHARE
-	bool "mplayer-share-1.0rc20100913nb4"
+	bool "mplayer-share-1.1nb1"
 	help
 	  Documentation used by mplayer and gmplayer
 
@@ -1870,7 +1905,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_NS_FLASH
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OGLE
-	bool "ogle-0.9.2nb6"
+	bool "ogle-0.9.2nb8"
 	help
 	  DVD player with menus
 
@@ -1883,7 +1918,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OGLE
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OGLE_GUI
-	bool "ogle_gui-0.9.2nb15"
+	bool "ogle_gui-0.9.2nb21"
 	help
 	  GUI for the Ogle DVD player
 
@@ -1918,7 +1953,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OGMTOOLS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OPENQUICKTIME
-	bool "openquicktime-1.0nb8"
+	bool "openquicktime-1.0nb11"
 	help
 	  
 
@@ -1941,7 +1976,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_OPENQUICKTIME
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_P5_GSTREAMER
-	bool "p5-GStreamer-0.16"
+	bool "p5-GStreamer-0.17nb1"
 	help
 	  Perl interface to the GStreamer library
 
@@ -1966,7 +2001,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_P5_XMLTV
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PHONON
-	bool "phonon-4.4.2nb4"
+	bool "phonon-4.5.1nb4"
 	help
 	  Multimedia API for KDE and QT
 
@@ -1980,18 +2015,33 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PHONON
 	  http://phonon.kde.org
 
 
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PHONON_BACKEND_GSTREAMER
+	bool "phonon-backend-gstreamer-4.5.1nb4"
+	help
+	  Multimedia API for KDE and QT - GStreamer backend
+
+	  Phonon is the Multimedia API for KDE and QT.
+	  
+	  In Phonon there are three main concepts: MediaObjects, Paths and Outputs.
+	  The MediaObjects control the playback/capture and provide the media data.
+	  MediaObjects can be connected to Outputs using Path objects which also
+	  allow the insertion of Effect objects between MediaObject and Output.
+
+	  http://phonon.kde.org
+
+
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PHP_MING
-	bool "php5-ming-5.2.17nb2"
+	bool "php53-ming-0.4.4"
 	help
 	  PHP extension for Ming library
 
 	  PHP extension for ming library; see multimedia/ming for details.
 
-	  http://www.php.net/
+	  http://www.libming.org/
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PITIVI
-	bool "pitivi-0.13.4nb6"
+	bool "pitivi-0.15.0nb7"
 	help
 	  Video editor
 
@@ -2001,7 +2051,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PITIVI
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PSPVC
-	bool "pspvc-0.3nb10"
+	bool "pspvc-0.3nb17"
 	help
 	  PSP video converter
 
@@ -2018,7 +2068,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PSPVC
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PY_CLUTTER_GST
-	bool "py26-clutter-gst-1.0.0nb7"
+	bool "py27-clutter-gst-1.0.0nb13"
 	help
 	  Python modules for Clutter-Gstreamer
 
@@ -2029,7 +2079,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PY_CLUTTER_GST
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PY_GSTREAMER0.10
-	bool "py26-gstreamer0.10-0.10.22"
+	bool "py27-gstreamer0.10-0.10.22nb4"
 	help
 	  Python bindings for gstreamer0.10
 
@@ -2043,17 +2093,17 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PY_GSTREAMER0.10
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_PY_MING
-	bool "py26-ming-0.4.3nb4"
+	bool "py27-ming-0.4.4"
 	help
 	  Python bindings for Ming library
 
 	  Python bindings for ming library; see multimedia/ming for details.
 
-	  http://ming.sourceforge.net/
+	  http://www.libming.org/
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_MKV2MP4
-	bool "py26-mkv2mp4-0.0alpha11nb2"
+	bool "py27-mkv2mp4-0.0alpha11nb4"
 	help
 	  Remux mkv files to mp4 files compatible with standalone players
 
@@ -2110,7 +2160,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_REPLEX
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_CLUTTER_GST
-	bool "ruby18-clutter-gst-0.8.0nb10"
+	bool "ruby18-clutter-gst-0.8.0nb16"
 	help
 	  Ruby binding for Clutter GStreamer library
 
@@ -2120,7 +2170,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_CLUTTER_GST
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_GNOME2_GSTREAMER
-	bool "ruby19-gnome2-gstreamer-1.0.3"
+	bool "ruby193-gnome2-gstreamer-1.1.5nb1"
 	help
 	  Ruby binding of GStreamer 0.10.x or later
 
@@ -2134,7 +2184,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_GNOME2_GSTREAMER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_MING
-	bool "ruby19-ming-0.2.1nb5"
+	bool "ruby193-ming-0.2.1nb5"
 	help
 	  Ruby extension to drive the Ming SWF library
 
@@ -2142,6 +2192,19 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_RUBY_MING
 	  generating SWF format movie (a.k.a. "Macromedia Flash").
 
 	  http://mingruby.rubyforge.org/
+
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SCHROEDINGER
+	bool "schroedinger-1.0.11"
+	help
+	  Dirac video compression library
+
+	  Schroedinger (or "schro" for short) is an implementation of the
+	  Dirac and SMPTE VC-2 video compression specification.  Dirac was
+	  developed by BBC Research & Development (http://www.bbc.co.uk/rd/)
+	  as an open technology with open licensing.
+
+	  http://diracvideo.org/
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SMPEG
@@ -2158,7 +2221,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SMPEG
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SUBTITLEEDITOR
-	bool "subtitleeditor-0.30.0nb7"
+	bool "subtitleeditor-0.30.0nb13"
 	help
 	  GTK+2 tool to edit movie subtitles
 
@@ -2174,7 +2237,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SUBTITLEEDITOR
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC
-	bool "swfdec-0.8.4nb10"
+	bool "swfdec-0.8.4nb18"
 	help
 	  
 
@@ -2200,7 +2263,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC_GNOME
-	bool "swfdec-gnome-2.28.0nb8"
+	bool "swfdec-gnome-2.28.0nb17"
 	help
 	  Gnome flash player and thumbnailer using swfdec
 
@@ -2218,7 +2281,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC_GNOME
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC_MOZILLA
-	bool "swfdec-mozilla-0.8.2nb10"
+	bool "swfdec-mozilla-0.8.2nb20"
 	help
 	  Mozilla plugin for swfdec
 
@@ -2233,7 +2296,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_SWFDEC_MOZILLA
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM
-	bool "totem-2.32.0nb5"
+	bool "totem-2.32.0nb13"
 	help
 	  
 
@@ -2247,7 +2310,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_BROWSER_PLUGIN
-	bool "totem-browser-plugin-2.32.0nb10"
+	bool "totem-browser-plugin-2.32.0nb19"
 	help
 	  
 
@@ -2262,7 +2325,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_BROWSER_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_NAUTILUS
-	bool "totem-nautilus-2.32.0nb4"
+	bool "totem-nautilus-2.32.0nb14"
 	help
 	  
 
@@ -2277,7 +2340,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_NAUTILUS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_PL_PARSER
-	bool "totem-pl-parser-2.32.6nb1"
+	bool "totem-pl-parser-2.32.6nb8"
 	help
 	  totem playlist parser
 
@@ -2288,7 +2351,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TOTEM_PL_PARSER
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TRANSCODE
-	bool "transcode-1.1.5nb11"
+	bool "transcode-1.1.5nb15"
 	help
 	  Command line video-stream processing tool
 
@@ -2333,7 +2396,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TSTOOLS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TVTIME
-	bool "tvtime-1.0.2nb5"
+	bool "tvtime-1.0.2nb6"
 	help
 	  High quality television application
 
@@ -2345,7 +2408,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_TVTIME
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_USHARE
-	bool "ushare-1.1anb2"
+	bool "ushare-1.1anb4"
 	help
 	  UPnP AV Mediaserver
 
@@ -2370,7 +2433,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_USHARE
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC10
-	bool "vlc-1.0.6nb13"
+	bool "vlc-1.0.6nb26"
 	help
 	  VLC media player and streaming server
 
@@ -2389,7 +2452,26 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC10
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC
-	bool "vlc-1.1.12nb4"
+	bool "vlc-1.1.13nb16"
+	help
+	  VLC media player and streaming server
+
+	  VideoLAN is a project of French students from the Ecole Centrale Paris
+	  and developers from all over the world. Its main goals is MPEG streaming
+	  on a network, but it also features a standalone multimedia player. The
+	  VideoLAN Server can stream video read from a hard disk, a DVD player,
+	  a satellite card or an MPEG 2 compression card, and unicast or multicast
+	  it on a network. The VideoLAN Client can read the stream from the network
+	  and display it. It can also be used to display video read locally on
+	  the computer : DVDs, VCDs, MPEG and DivX files and from a satellite
+	  card. It is multi-plaform : Linux, Windows, Mac OS X, BeOS, BSD, Solaris,
+	  QNX, iPaq... The VideoLAN Client and Server now have a full IPv6 support.
+
+	  http://www.videolan.org/
+
+
+config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC2
+	bool "vlc-2.0.3nb7"
 	help
 	  VLC media player and streaming server
 
@@ -2408,7 +2490,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_VLC08
-	bool "vlc08-0.8.6inb16"
+	bool "vlc08-0.8.6inb27"
 	help
 	  VideoLAN Client
 
@@ -2471,7 +2553,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_WIN32_CODECS
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_X264_DEVEL
-	bool "x264-devel-20110707"
+	bool "x264-devel-20111207"
 	help
 	  GPL licensed H.264 encoder
 
@@ -2535,7 +2617,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XAWTV
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XFCE4_MPC_PLUGIN
-	bool "xfce4-mpc-plugin-0.3.2nb7"
+	bool "xfce4-mpc-plugin-0.3.2nb13"
 	help
 	  Xfce Music Player Client plugin
 
@@ -2545,7 +2627,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XFCE4_MPC_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XFMEDIA
-	bool "xfmedia-0.9.2nb7"
+	bool "xfmedia-0.9.2nb15"
 	help
 	  Xfce media player based on xine
 
@@ -2557,7 +2639,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XFMEDIA
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_LIB
-	bool "xine-lib-1.1.20nb2"
+	bool "xine-lib-1.2.2nb3"
 	help
 	  Multimedia player library
 
@@ -2571,7 +2653,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_LIB
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_UI
-	bool "xine-ui-0.99.6nb4"
+	bool "xine-ui-0.99.7nb1"
 	help
 	  Skinned xlib-based xine GUI
 
@@ -2586,7 +2668,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_UI
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_V4L
-	bool "xine-v4l-1.1.20"
+	bool "xine-v4l-1.2.2nb1"
 	help
 	  The v4l input plugin for xine-lib
 
@@ -2602,7 +2684,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_V4L
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_V4L2
-	bool "xine-v4l2-1.1.20"
+	bool "xine-v4l2-1.2.2nb1"
 	help
 	  The v4l2 input plugin for xine-lib
 
@@ -2618,7 +2700,7 @@ config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XINE_V4L2
 
 
 config BR2_PKGSRC_PACKAGE_MULTIMEDIA_XVID4CONF
-	bool "xvid4conf-1.12nb11"
+	bool "xvid4conf-1.12nb16"
 	help
 	  XviD Configuration Panel
 

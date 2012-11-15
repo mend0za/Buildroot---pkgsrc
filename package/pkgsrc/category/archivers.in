@@ -43,7 +43,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ADVANCECOMP
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_AFIO
-	bool "afio-2.5nb1"
+	bool "afio-2.5nb2"
 	help
 	  cpio-format archive creator with data corruption handling
 
@@ -52,6 +52,9 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_AFIO
 	  interactive operation.  Afio can make compressed archives that are
 	  much safer than compressed tar or cpio archives.  Afio is best used as
 	  an `archive engine' in a backup script.
+	  
+	  The package's license may require formal disclosure that the software
+	  has been patched.
 
 	  http://freshmeat.net/projects/afio/
 
@@ -113,6 +116,21 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ARJ
 	  http://arj.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_ARK
+	bool "ark-4.8.4nb4"
+	help
+	  for managing various archive formats within the KDE environment
+
+	  Ark is a program for managing various archive formats within the KDE
+	  environment. 
+	  
+	  Archives can be viewed, extracted, created and modified from within Ark.
+	  The program can handle various formats such as tar, gzip, bzip2, zip, rar
+	  and lha (if appropriate command-line programs are installed).
+
+	  http://www.kde.org/
+
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_BICOM
 	bool "bicom-1.01nb2"
 	help
@@ -146,6 +164,23 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_BSDTAR
 	  to any pkgsrc-provided libraries.
 
 	  http://code.google.com/p/libarchive/
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_GSHARUTILS
+	bool "gsharutils-4.11.1nb2"
+	help
+	  Allow packing and unpacking of shell archives
+
+	  This is the set of GNU shar utilities.
+	  
+	  `shar' makes so-called shell archives out of many files, preparing
+	  them for transmission by electronic mail services.  `unshar' helps
+	  unpacking shell archives after reception.  The core of both programs
+	  is initially derived from public domain.  Some modules and other
+	  code sections are freely borrowed from other GNU distributions,
+	  bringing `shar' under the terms of the GNU General Public License.
+
+	  http://www.gnu.org/software/sharutils/sharutils.html
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_BUNZIP
@@ -280,7 +315,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_FCRACKZIP
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_FILE_ROLLER
-	bool "file-roller-2.32.2nb1"
+	bool "file-roller-2.32.2nb9"
 	help
 	  Front-end to archiving programs like tar and zip
 
@@ -298,7 +333,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_FILE_ROLLER
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_FREEZE
-	bool "freeze-2.5nb2"
+	bool "freeze-2.5nb3"
 	help
 	  FREEZE / MELT compression program - often used in QNX
 
@@ -327,7 +362,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_FREEZE
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_GCPIO
-	bool "gcpio-2.6nb8"
+	bool "gcpio-2.6nb10"
 	help
 	  
 
@@ -339,34 +374,6 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_GCPIO
 	  operation) or rmt commands.
 
 	  http://www.gnu.org/software/cpio/cpio.html
-
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_GSHARUTILS
-	bool "gsharutils-4.11.1"
-	help
-	  Allow packing and unpacking of shell archives
-
-	  This is the set of GNU shar utilities.
-	  
-	  `shar' makes so-called shell archives out of many files, preparing
-	  them for transmission by electronic mail services.  `unshar' helps
-	  unpacking shell archives after reception.  The core of both programs
-	  is initially derived from public domain.  Some modules and other
-	  code sections are freely borrowed from other GNU distributions,
-	  bringing `shar' under the terms of the GNU General Public License.
-
-	  http://www.gnu.org/software/sharutils/sharutils.html
-
-
-config BR2_PKGSRC_PACKAGE_ARCHIVERS_LCAB
-	bool "lcab-1.0b12"
-	help
-	  
-
-	  LCAB is a small program that creates a MS Cabinet (.CAB) file from
-	  a set of input files.
-
-	  http://ohnopub.net/~ohnobinki/lcab
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR
@@ -385,7 +392,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_GTAR_BASE
-	bool "gtar-base-1.26"
+	bool "gtar-base-1.26nb2"
 	help
 	  The GNU tape archiver with remote magnetic tape support
 
@@ -529,6 +536,17 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_LBRATE
 	  http://rus.members.beeb.net/lbrate.html
 
 
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LCAB
+	bool "lcab-1.0b12"
+	help
+	  
+
+	  LCAB is a small program that creates a MS Cabinet (.CAB) file from
+	  a set of input files.
+
+	  http://ohnopub.net/~ohnobinki/lcab
+
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_LHA
 	bool "lha-114.9nb4"
 	help
@@ -549,6 +567,27 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_LHA
 	  advance.  Redistribution over networks is not restricted.
 
 	  http://www2m.biglobe.ne.jp/~dolphin/lha/lha-unix.htm
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LHASA
+	bool "lhasa-0.0.7"
+	help
+	  
+
+	  Lhasa is a library for parsing LHA (.lzh) archives and a free
+	  replacement for the Unix LHA tool.
+	  
+	  Currently it is only possible to read from (i.e., decompress)
+	  archives; generating (compressing) LHA archives may be an enhancement
+	  for future versions. The aim is to be compatible with as many
+	  different variants of the LHA file format as possible, including
+	  LArc (.lzs) and PMarc (.pma).
+	  
+	  The command line tool aims to be interface-compatible with the
+	  non-free Unix LHA tool (command line syntax and output), for
+	  backwards compatibility with tools that expect particular output.
+
+	  http://fragglet.github.com/lhasa/
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBARCHIVE
@@ -601,7 +640,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBLZO
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBZIP
-	bool "libzip-0.10"
+	bool "libzip-0.10.1"
 	help
 	  C library to manipulate zip archives
 
@@ -615,7 +654,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_LIBZIP
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZIP
-	bool "lzip-1.12"
+	bool "lzip-1.13"
 	help
 	  Lossless data compressor based on the LZMA algorithm
 
@@ -626,6 +665,29 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZIP
 	  and data archiving.
 
 	  http://www.nongnu.org/lzip/lzip.html
+
+
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZIPRECOVER
+	bool "lziprecover-1.13"
+	help
+	  Recovery tool for lossless data compressor based on the LZMA algorithm
+
+	  Lziprecover is a data recovery tool and decompressor for files in the
+	  lzip compressed data format (.lz) able to repair slightly damaged files,
+	  recover badly damaged files from two or more copies, extract undamaged
+	  members from multi-member files, decompress files and test integrity of
+	  files.
+	  
+	  Lziprecover is able to recover or decompress files produced by any of
+	  the compressors in the lzip family; lzip, plzip, minilzip/lzlib, clzip
+	  and pdlzip. This recovery capability contributes to make the lzip format
+	  one of the best options for long-term data archiving.
+	  
+	  Lziprecover is able to efficiently extract a range of bytes from a
+	  multi-member file, because it only decompresses the members containing
+	  the desired data.
+
+	  http://www.nongnu.org/lzip/lziprecover.html
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_LZMA
@@ -713,7 +775,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_MAKESELF
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_MOUSETAR
-	bool "mousetar-20021217"
+	bool "mousetar-20021217nb1"
 	help
 	  der Mouse's version of tar program
 
@@ -774,8 +836,20 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_NULIB2
 	  http://www.nulib.com/
 
 
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_OCAML_BZ2
+	bool "ocaml-bz2-0.6.0"
+	help
+	  OCaml library to manipulate bz2 archives
+
+	  This Objective Caml library provides easy access to compressed files in
+	  bzip2 format. It provides functions for reading from and writing to compressed
+	  files in these formats.
+
+	  http://camlbz2.forge.ocamlcore.org/
+
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_OCAML_ZIP
-	bool "ocaml-zip-1.03nb1"
+	bool "ocaml-zip-1.04"
 	help
 	  OCaml library to manipulate ZIP/GZIP/JAR archives
 
@@ -783,7 +857,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_OCAML_ZIP
 	  and GZIP format, as well as to Java JAR files.  It provides functions
 	  for reading from and writing to compressed files in these formats.
 
-	  http://cristal.inria.fr/~xleroy/software.html
+	  http://forge.ocamlcore.org/projects/camlzip/
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_ANY
@@ -797,8 +871,18 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_ANY
 	  http://search.cpan.org/dist/Archive-Any/
 
 
+config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_PEEK
+	bool "p5-Archive-Peek-0.35"
+	help
+	  Perl5 module to peek into archives without extracting them
+
+	  This module lets you peek into archives without extracting them.
+
+	  http://search.cpan.org/dist/Archive-Peek/
+
+
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_P5_ARCHIVE_TAR
-	bool "p5-Archive-Tar-1.80"
+	bool "p5-Archive-Tar-1.90"
 	help
 	  Perl5 module interface to manipulate tar files
 
@@ -854,9 +938,10 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_P7ZIP
 	help
 	  File archiver with high compression
 
-	  p7zip is a port of the Windows program 7za.exe.
+	  p7zip is an archiver to create and extract 7zip archives (.7z).
 	  
-	  7za.exe is a file archiver with the highest compression ratio.
+	  It uses the lzma compression method (see also the xz library/utils),
+	  which provides the highest (non content specific) compression ratio.
 
 	  http://p7zip.sourceforge.net/
 
@@ -881,7 +966,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_PAR2
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_PAX
-	bool "pax-20080110"
+	bool "pax-20080110nb2"
 	help
 	  POSIX standard archiver with many extensions
 
@@ -925,7 +1010,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_PDBAR
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_BZ2
-	bool "php53-bz2-5.3.8"
+	bool "php53-bz2-5.3.17"
 	help
 	  PHP extension for bzip2 compression
 
@@ -936,7 +1021,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_BZ2
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_ZIP
-	bool "php53-zip-5.3.8nb2"
+	bool "php53-zip-5.3.17"
 	help
 	  PHP extension for ZIP archive handling
 
@@ -947,7 +1032,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_ZIP
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_ZLIB
-	bool "php53-zlib-5.3.8"
+	bool "php53-zlib-5.3.17"
 	help
 	  PHP extension for zlib compression
 
@@ -958,7 +1043,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_PHP_ZLIB
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_PIGZ
-	bool "pigz-2.1.6"
+	bool "pigz-2.2.5"
 	help
 	  Parallel implementation of gzip
 
@@ -1002,7 +1087,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_PPUNPACK
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RAR
-	bool "rar-2.02nb1"
+	bool "rar-4.1.1"
 	help
 	  
 
@@ -1020,11 +1105,11 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_RAR
 	  *  Ability to recover physically damaged archives
 	  *  Locking, password, file order list, file security & more ...
 
-	  http://www.rarsoft.com/
+	  http://www.rarlabs.com/rar/
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_ROX_ARCHIVE
-	bool "rox-archive-2.0nb3"
+	bool "rox-archive-2.0nb4"
 	help
 	  Simple archiver
 
@@ -1035,7 +1120,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_ROX_ARCHIVE
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_ARCHIVE_TAR_MINITAR
-	bool "ruby19-archive-tar-minitar-0.5.2nb2"
+	bool "ruby193-archive-tar-minitar-0.5.2nb2"
 	help
 	  Pure Ruby library for handling POSIX tar archives
 
@@ -1046,7 +1131,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_ARCHIVE_TAR_MINITAR
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_BZ2
-	bool "ruby19-bz2-0.2.2nb1"
+	bool "ruby193-bz2-0.2.2nb1"
 	help
 	  Ruby interface to the library libbzip2
 
@@ -1056,7 +1141,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_BZ2
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_LIBARCHIVE
-	bool "ruby19-libarchive-0.1.1nb2"
+	bool "ruby193-libarchive-0.1.1nb2"
 	help
 	  Ruby bindings for Libarchive
 
@@ -1068,7 +1153,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_LIBARCHIVE
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_XZ
-	bool "ruby19-xz-0.0.1"
+	bool "ruby193-xz-0.1.1"
 	help
 	  Ruby bindings for liblzma
 
@@ -1081,13 +1166,13 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_XZ
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RUBY_ZIP
-	bool "ruby19-zip-0.9.5"
+	bool "ruby193-zip-0.9.9"
 	help
 	  Ruby module for reading and writing zip files
 
 	  rubyzip is a ruby module for reading and writing zip files.
 
-	  http://rubyzip.sourceforge.net/
+	  https://github.com/aussiegeek/rubyzip
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_RZIP
@@ -1151,7 +1236,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_STAR
 	  Star is the first POSIX.1-2001 compliant tar implementation. It includes
 	  a FIFO for speed, a pattern matcher, multi-volume support, the ability to
 	  archive sparse files and ACLs and the ability to archive extended file flags.
-	  It supports utomatic archive format detection, automatic byte order
+	  It supports automatic archive format detection, automatic byte order
 	  recognition, automatic archivecompression/decompression. It includes the
 	  only known platform independent "rmt" server program that implements all
 	  Sun/GNU/Schily/BSD enhancements and allows any "rmt" client from any OS to
@@ -1276,7 +1361,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNLZX
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNRAR
-	bool "unrar-4.0.7"
+	bool "unrar-4.2.4"
 	help
 	  Extract, view & test RAR archives
 
@@ -1303,7 +1388,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNSHIELD
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNZIP
-	bool "unzip-6.0"
+	bool "unzip-6.0nb1"
 	help
 	  List, test and extract compressed files in a ZIP archive
 
@@ -1344,7 +1429,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UNZOO
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_UPX
-	bool "upx-1.25nb1"
+	bool "upx-3.08"
 	help
 	  Ultimate packer for executables
 
@@ -1357,7 +1442,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_UPX
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_XBIN
-	bool "xbin-2.3"
+	bool "xbin-2.3nb1"
 	help
 	  Convert mailable BinHex format into binary
 
@@ -1403,7 +1488,7 @@ config BR2_PKGSRC_PACKAGE_ARCHIVERS_XPK
 
 
 config BR2_PKGSRC_PACKAGE_ARCHIVERS_XZ
-	bool "xz-5.0.3"
+	bool "xz-5.0.4"
 	help
 	  XZ utilities
 

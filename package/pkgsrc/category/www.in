@@ -1,5 +1,19 @@
+config BR2_PKGSRC_PACKAGE_WWW_ANALOG
+	bool "analog-6.0nb2"
+	help
+	  Extremely fast program for analysing WWW logfiles
+
+	  This program analyses logfiles in both the common log format and NCSA
+	  old format from WWW servers. It is designed to be fast on long
+	  logfiles and to produce attractive statistics.
+	  
+	  It was written by Stephen Turner (sret1@cam.ac.uk).
+
+	  http://www.analog.cx/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_SOGO
-	bool "SOGo-2.0.0b3"
+	bool "SOGo-2.0.0b3nb1"
 	help
 	  Groupware server supporting CalDAV, CardDAV and GroupDAV
 
@@ -59,7 +73,7 @@ config BR2_PKGSRC_PACKAGE_WWW_ADZAP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AIPO
-	bool "aipo-6.02nb2"
+	bool "aipo-6.03nb1"
 	help
 	  Web-based groupware that supports Japanese interface
 
@@ -96,7 +110,7 @@ config BR2_PKGSRC_PACKAGE_WWW_ALBUM_THEMES
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AMAYA
-	bool "amaya-11.3.1nb2"
+	bool "amaya-11.3.1nb8"
 	help
 	  
 
@@ -108,20 +122,6 @@ config BR2_PKGSRC_PACKAGE_WWW_AMAYA
 	  Amaya supports XHTML, MathML, SVG, and RDF.
 
 	  http://www.w3.org/Amaya/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_ANALOG
-	bool "analog-6.0nb2"
-	help
-	  Extremely fast program for analysing WWW logfiles
-
-	  This program analyses logfiles in both the common log format and NCSA
-	  old format from WWW servers. It is designed to be fast on long
-	  logfiles and to produce attractive statistics.
-	  
-	  It was written by Stephen Turner (sret1@cam.ac.uk).
-
-	  http://www.analog.cx/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_EMBPERL
@@ -243,7 +243,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_AUTH_PAM
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_AUTH_PGSQL
-	bool "ap13-auth-pgsql-0.9.12nb3"
+	bool "ap13-auth-pgsql-0.9.12nb4"
 	help
 	  Apache module for user authentication/logging against a PostgreSQL DB
 
@@ -270,7 +270,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_AUTH_PGSQL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_AUTH_POSTGRESQL
-	bool "ap13-auth-postgresql-1.4"
+	bool "ap13-auth-postgresql-1.4nb1"
 	help
 	  Module to allow apache authentication against a Postgresql database
 
@@ -340,7 +340,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_DAV
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_DTCL
-	bool "ap13-dtcl-0.11.2"
+	bool "ap13-dtcl-0.11.2nb2"
 	help
 	  Simple, fast Tcl server side scripting for apache
 
@@ -462,7 +462,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_PERL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_PYTHON
-	bool "ap13-py26-python-2.7.11"
+	bool "ap13-py27-python-2.7.11"
 	help
 	  Python interpreter embedded into Apache
 
@@ -477,7 +477,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_PYTHON
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_RIVET
-	bool "ap13-rivet-0.5.0"
+	bool "ap13-rivet-0.5.0nb1"
 	help
 	  System for creating dynamic web content via Tcl
 
@@ -573,7 +573,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_CHROOT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_XSLT2
-	bool "ap2-xslt2-2004112100nb2"
+	bool "ap2-xslt2-2004112100nb4"
 	help
 	  Apache module able to apply stylesheets to XML data on the fly
 
@@ -650,7 +650,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_AUTH_KERB
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTH_MELLON
-	bool "ap22-auth-mellon-0.4.0nb1"
+	bool "ap22-auth-mellon-0.4.0nb5"
 	help
 	  SAML 2.0 authentication for Apache
 
@@ -662,7 +662,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTH_MELLON
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTH_MYSQL
-	bool "ap22-auth-mysql-1.11.12nb8"
+	bool "ap22-auth-mysql-1.11.12nb9"
 	help
 	  Module to allow Apache 2 authentication against a MySQL database
 
@@ -673,7 +673,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTH_MYSQL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_AUTH_MYSQL
-	bool "ap22-auth-mysql-4.3.9nb1"
+	bool "ap22-auth-mysql-4.3.9nb2"
 	help
 	  Module to allow apache authentication against a MySQL database
 
@@ -701,7 +701,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTH_NTLM
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTH_PGSQL
-	bool "ap22-auth-pgsql-2.0.3nb6"
+	bool "ap22-auth-pgsql-2.0.3nb7"
 	help
 	  Allows users to use PostgreSQL databases for user authentication
 
@@ -709,8 +709,6 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTH_PGSQL
 	  database for user and/or group authentication. For large user lists this
 	  can  offer a  significate  speed  up over  apache's  standard flat  file
 	  format.
-	  
-	  WWW: http://www.giuseppetanzilli.it/mod_auth_pgsql2/
 
 	  http://www.giuseppetanzilli.it/mod_auth_pgsql2/
 
@@ -748,7 +746,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTH_XRADIUS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_AUTHN_OTP
-	bool "ap22-authn-otp-1.1.3"
+	bool "ap22-authn-otp-1.1.4"
 	help
 	  Apache module for one-time password authentication
 
@@ -838,7 +836,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_CBAND
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP22_DNSSD
-	bool "ap22-dnssd-0.5nb8"
+	bool "ap22-dnssd-0.5nb14"
 	help
 	  Apache module which adds Zeroconf support via DNS-SD using Avahi
 
@@ -867,7 +865,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_FASTCGI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_FCGID
-	bool "ap22-fcgid-2.3.6"
+	bool "ap22-fcgid-2.3.7"
 	help
 	  High performance alternative to mod_cgi or mod_cgid
 
@@ -922,7 +920,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP22_LIMITIPCONN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_MONO
-	bool "ap22-mono-2.10nb2"
+	bool "ap22-mono-2.10nb3"
 	help
 	  Apache module that provides ASP.NET support
 
@@ -956,7 +954,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_PERL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_PHP
-	bool "ap22-php53-5.3.8nb1"
+	bool "ap22-php53-5.3.17"
 	help
 	  Apache (apache22) module for PHP5.3
 
@@ -972,7 +970,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_PHP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_PYTHON
-	bool "ap22-py26-python-3.3.1"
+	bool "ap22-py27-python-3.3.1"
 	help
 	  Apache module that embeds the Python interpreter
 
@@ -987,7 +985,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_PYTHON
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_WSGI
-	bool "ap22-py26-wsgi-3.3"
+	bool "ap22-py27-wsgi-3.3"
 	help
 	  WSGI module for apache
 
@@ -1031,7 +1029,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_RUBY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP_SCGI
-	bool "ap22-scgi-1.13nb1"
+	bool "ap22-scgi-1.13nb2"
 	help
 	  Simple Common Gateway Interface for Apache
 
@@ -1046,7 +1044,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP_SCGI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_SUBVERSION
-	bool "ap22-subversion-1.6.17nb3"
+	bool "ap22-subversion-1.6.17nb4"
 	help
 	  WebDAV server (Apache module) for Subversion
 
@@ -1083,7 +1081,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP2_SUPHP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AP2_TRANSFORM
-	bool "ap22-transform-0.4.0nb5"
+	bool "ap22-transform-0.4.0nb6"
 	help
 	  Filter module for Apache 2.0 to do dynamic XSL transformations
 
@@ -1109,7 +1107,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AP22_VHOST_LDAP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_APACHE
-	bool "apache-1.3.42"
+	bool "apache-1.3.42nb2"
 	help
 	  
 
@@ -1135,7 +1133,7 @@ config BR2_PKGSRC_PACKAGE_WWW_APACHE2
 
 
 config BR2_PKGSRC_PACKAGE_WWW_APACHE22
-	bool "apache-2.2.21nb5"
+	bool "apache-2.2.23"
 	help
 	  
 
@@ -1148,8 +1146,24 @@ config BR2_PKGSRC_PACKAGE_WWW_APACHE22
 	  http://httpd.apache.org/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_APACHE24
+	bool "apache-2.4.3"
+	help
+	  
+
+	  The Apache HTTP Server Project is an effort to develop and maintain an
+	  open-source HTTP server for various modern desktop and server operating
+	  systems, such as UNIX and Windows NT.  The goal of this project is to
+	  provide a secure, efficient and extensible server which provides HTTP
+	  services in sync with the current HTTP standards.
+	  
+	  This package tracks 2.4.x release.
+
+	  http://httpd.apache.org/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_APACHE_ROLLER
-	bool "apache-roller-4.0.1nb2"
+	bool "apache-roller-4.0.1nb3"
 	help
 	  Full-featured, multi-user and group-blog server
 
@@ -1177,7 +1191,7 @@ config BR2_PKGSRC_PACKAGE_WWW_APACHE_ROLLER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_APACHE_TOMCAT55
-	bool "apache-tomcat-5.5.34"
+	bool "apache-tomcat-5.5.35"
 	help
 	  The Apache Project's Java Servlet 2.4 and JSP 2.0 server
 
@@ -1221,7 +1235,7 @@ config BR2_PKGSRC_PACKAGE_WWW_APACHE_TOMCAT6
 
 
 config BR2_PKGSRC_PACKAGE_WWW_APACHE_TOMCAT7
-	bool "apache-tomcat-7.0.22"
+	bool "apache-tomcat-7.0.26nb1"
 	help
 	  Implementation of Java Servlet and JavaServer Pages technologies
 
@@ -1281,7 +1295,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AUGUST
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AWS
-	bool "aws-2.10.0.1nb1"
+	bool "aws-2.10.0.1nb3"
 	help
 	  Adacore Ada Web Server and framework
 
@@ -1311,37 +1325,19 @@ config BR2_PKGSRC_PACKAGE_WWW_AWS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AWS_DEMOS
-	bool "aws-demos-2.10.0.1"
+	bool "aws-demos-2.10.0.1nb1"
 	help
-	  Adacore Ada Web Server and framework
+	  Adacore Ada Web Server demonstration programs
 
-	  AWS stands for Ada Web Server, but it is more than just another webserver...
+	  This package demonstrates the capability of the Ada Web Server.  More than
+	  25 small programs built with AWS are installed for educational purposes.
 	  
-	  AWS is a complete framework to develop web based applications.  The main
-	  part of the framework is the embedded web server.  This small yet powerful
-	  web server can be embedded into your application so your application will be
-	  able to talk with a standard web browser such as Microsoft Internet Explorer
-	  or Netscape Communicator.  Around this web server, a lot of services have
-	  been developed.
-	  
-	  The framework includes:
-	  * seb parameters module         * session server
-	  * SOAP support                  * WSDL generation from Ada
-	  * template parser               * AJAX support
-	  * HTTPS/SSL support             * large server support
-	  * virtual hosting support       * server push
-	  * directory browser             * status page
-	  * log module                    * hotplug module
-	  * light communications API      * configuration API
-	  * client API                    * web page service
-	  * SMTP support                  * LDAP support
-	  * Jabber support
 
 	  http://libre.adacore.com/libre/tools/aws/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_AWSTATS
-	bool "awstats-7.0nb2"
+	bool "awstats-7.1"
 	help
 	  Free real-time logfile analyzer to get advanced web statistics
 
@@ -1357,7 +1353,7 @@ config BR2_PKGSRC_PACKAGE_WWW_AWSTATS
 	  (NCSA combined/XLF/ELF log format or common/CLF log format), WebStar
 	  and some other web, proxy or WAP servers (and even some FTP servers).
 
-	  http://awstats.sourceforge.net/
+	  http://www.awstats.org/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_BANNERFILTER
@@ -1407,7 +1403,7 @@ config BR2_PKGSRC_PACKAGE_WWW_BINS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_BKEDIT
-	bool "bkedit-0.6.23nb3"
+	bool "bkedit-0.6.23nb4"
 	help
 	  Bookmark manager and editor
 
@@ -1421,7 +1417,7 @@ config BR2_PKGSRC_PACKAGE_WWW_BKEDIT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_BLUEFISH
-	bool "bluefish-2.0.3nb2"
+	bool "bluefish-2.2.3nb3"
 	help
 	  GTK HTML editor for the experienced web designer
 
@@ -1464,7 +1460,7 @@ config BR2_PKGSRC_PACKAGE_WWW_BOZOHTTPD
 
 
 config BR2_PKGSRC_PACKAGE_WWW_BROWSER_BOOKMARKS_MENU
-	bool "browser-bookmarks-menu-0.6nb11"
+	bool "browser-bookmarks-menu-0.6nb19"
 	help
 	  Easy access to web bookmarks through a GNOME Panel Applet
 
@@ -1476,7 +1472,7 @@ config BR2_PKGSRC_PACKAGE_WWW_BROWSER_BOOKMARKS_MENU
 
 
 config BR2_PKGSRC_PACKAGE_WWW_C_ICAP
-	bool "c-icap-0.1.6"
+	bool "c-icap-0.2.1"
 	help
 	  Implementation of an ICAP server
 
@@ -1491,7 +1487,7 @@ config BR2_PKGSRC_PACKAGE_WWW_C_ICAP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_C_ICAP_MODULES
-	bool "c-icap-modules-0.1.6"
+	bool "c-icap-modules-0.2.1"
 	help
 	  C-ICAP server modules
 
@@ -1598,7 +1594,7 @@ config BR2_PKGSRC_PACKAGE_WWW_CHECKBOT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_CHEROKEE
-	bool "cherokee-1.0.5nb1"
+	bool "cherokee-1.2.101nb1"
 	help
 	  Flexible and fast web server
 
@@ -1611,7 +1607,7 @@ config BR2_PKGSRC_PACKAGE_WWW_CHEROKEE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_CLEARSILVER
-	bool "clearsilver-0.10.5nb2"
+	bool "clearsilver-0.10.5nb3"
 	help
 	  Fast, powerful, language-neutral HTML template system
 
@@ -1653,8 +1649,8 @@ config BR2_PKGSRC_PACKAGE_WWW_CLISP_FASTCGI
 	  http://clisp.cons.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_CONTAO210
-	bool "contao210-2.10.4"
+config BR2_PKGSRC_PACKAGE_WWW_CONTAO211
+	bool "contao211-2.11.5nb1"
 	help
 	  Contao Open Source CMS
 
@@ -1668,8 +1664,8 @@ config BR2_PKGSRC_PACKAGE_WWW_CONTAO210
 	  http://www.contao.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_CONTAO210_EXAMPLE
-	bool "contao210-example-2.10.4"
+config BR2_PKGSRC_PACKAGE_WWW_CONTAO211_EXAMPLE
+	bool "contao211-example-2.11.5"
 	help
 	  Sample site data for Contao Open Source CMS
 
@@ -1678,47 +1674,12 @@ config BR2_PKGSRC_PACKAGE_WWW_CONTAO210_EXAMPLE
 	  http://www.contao.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_CONTAO210_TRANSLATIONS
-	bool "contao210-translations-20120103"
+config BR2_PKGSRC_PACKAGE_WWW_CONTAO211_TRANSLATIONS
+	bool "contao211-translations-201209250"
 	help
 	  Language files for Contao CMS
 
-	  Language translation files for Contao Open Source CMS version 2.10.x.
-
-	  http://www.contao.org/download.html
-
-
-config BR2_PKGSRC_PACKAGE_WWW_CONTAO29
-	bool "contao29-2.9.5nb5"
-	help
-	  Contao Open Source CMS
-
-	  Contao is an Open Source Content Management Framework developed by Leo Feyer
-	  and distributed under the LGPL license (see GPL.txt and LGPL.txt for more
-	  information). It was formerly known as TYPOlight Open Source CMS. Its open
-	  architecture allows everybody to extend the system to fit his needs. Contao
-	  specializes in accessible websites and is accessbile itself (front end and
-	  back end), rendering valid XHTML pages.
-
-	  http://www.contao.org/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_CONTAO29_EXAMPLE
-	bool "contao29-example-2.9.5"
-	help
-	  Sample site data for Contao Open Source CMS
-
-	  This is example site data of Contao Open Source CMS.
-
-	  http://www.contao.org/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_CONTAO29_TRANSLATIONS
-	bool "contao29-translations-20110629"
-	help
-	  Language files for Contao CMS
-
-	  Language translation files for Contao Open Source CMS version 2.9.x.
+	  Language translation files for Contao Open Source CMS version 2.11.x.
 
 	  http://www.contao.org/download.html
 
@@ -1766,7 +1727,7 @@ config BR2_PKGSRC_PACKAGE_WWW_CRONOLOG
 
 
 config BR2_PKGSRC_PACKAGE_WWW_CURL
-	bool "curl-7.23.1"
+	bool "curl-7.27.0"
 	help
 	  Client that groks URLs
 
@@ -1821,7 +1782,7 @@ config BR2_PKGSRC_PACKAGE_WWW_DANSGUARDIAN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_DAVICAL
-	bool "davical-0.9.9.7"
+	bool "davical-1.1.1"
 	help
 	  Simple CalDAV server using a PostgreSQL backend
 
@@ -1842,17 +1803,31 @@ config BR2_PKGSRC_PACKAGE_WWW_DAVICAL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_DILLO
-	bool "dillo-3.0.1"
+	bool "dillo-3.0.2"
 	help
 	  Very small and fast graphical web-browser
 
-	  A very small and fast graphical web browser using FLTK2.
+	  A very small and fast graphical web browser using FLTK-1.3.
 
 	  http://www.dillo.org/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_DOJO
+	bool "dojo-1.7.2"
+	help
+	  Open-source DHTML toolkit written in JavaScript
+
+	  Dojo is an Open Source DHTML toolkit written in JavaScript. It
+	  builds on several contributed code bases (nWidgets, Burstlib, f(m)),
+	  which is why we refer to it sometimes as a "unified" toolkit. Dojo
+	  aims to solve some long-standing historical problems with DHTML
+	  which prevented mass adoption of dynamic web application development.
+
+	  http://dojotoolkit.org/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_DRIVEL
-	bool "drivel-2.0.3nb19"
+	bool "drivel-2.0.3nb27"
 	help
 	  LiveJournal client for the GNOME Desktop
 
@@ -1880,38 +1855,8 @@ config BR2_PKGSRC_PACKAGE_WWW_DRRAW
 	  http://web.taranis.org/drraw/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_DRUPAL
-	bool "drupal-5.22nb2"
-	help
-	  Open source content management system
-
-	  Drupal is software that allows an individual or a community of users to easily
-	  publish, manage and organize a great variety of content on a website. Tens of
-	  thousands of people and organizations have used Drupal to set up scores of
-	  different kinds of web sites, including
-	  
-	  * community web portals and discussion sites
-	  * corporate web sites/intranet portals
-	  * personal web sites
-	  * aficionado sites
-	  * e-commerce applications
-	  * resource directories
-	  
-	  Drupal includes features to enable:
-	  
-	  * content management systems
-	  * blogs
-	  * collaborative authoring environments
-	  * forums
-	  * newsletters
-	  * picture galleries
-	  * file uploads and download
-
-	  http://drupal.org/
-
-
 config BR2_PKGSRC_PACKAGE_WWW_DRUPAL6
-	bool "drupal-6.22nb1"
+	bool "drupal-6.26"
 	help
 	  Open source content management system
 
@@ -1941,7 +1886,7 @@ config BR2_PKGSRC_PACKAGE_WWW_DRUPAL6
 
 
 config BR2_PKGSRC_PACKAGE_WWW_DRUPAL7
-	bool "drupal-7.10"
+	bool "drupal-7.16"
 	help
 	  Open source content management system
 
@@ -1984,6 +1929,19 @@ config BR2_PKGSRC_PACKAGE_WWW_ELINKS
 	  http://elinks.or.cz/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_ELIOM
+	bool "eliom-2.2.2"
+	help
+	  Dynamic webpage generation library
+
+	  Eliom is an OCaml library for the webserver Ocsigen that allows
+	  for the creation of dynamic webpages. In this way, a website is
+	  not written as a separate set of pages, but as one integral OCaml
+	  module.
+
+	  http://ocsigen.org/download/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_EMACS_W3M_SNAPSHOT
 	bool "emacs-w3m-1.4.442.20110729nb1"
 	help
@@ -2013,7 +1971,7 @@ config BR2_PKGSRC_PACKAGE_WWW_EMACS_W3M
 
 
 config BR2_PKGSRC_PACKAGE_WWW_EPIPHANY
-	bool "epiphany-2.30.6nb8"
+	bool "epiphany-2.30.6nb18"
 	help
 	  The web browser for the GNOME Desktop
 
@@ -2025,7 +1983,7 @@ config BR2_PKGSRC_PACKAGE_WWW_EPIPHANY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_EPIPHANY_EXTENSIONS
-	bool "epiphany-extensions-2.32.0nb5"
+	bool "epiphany-extensions-2.32.0nb13"
 	help
 	  Extensions for the Epiphany web browser
 
@@ -2065,7 +2023,7 @@ config BR2_PKGSRC_PACKAGE_WWW_FCGI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_FENGOFFICE
-	bool "fengoffice-1.7.5nb2"
+	bool "fengoffice-2.1.0"
 	help
 	  Easy to use Open Source Web Office
 
@@ -2098,7 +2056,7 @@ config BR2_PKGSRC_PACKAGE_WWW_FFPROXY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_FIREFOX
-	bool "firefox-8.0"
+	bool "firefox-15.0.1nb2"
 	help
 	  Web browser with support for extensions
 
@@ -2117,7 +2075,7 @@ config BR2_PKGSRC_PACKAGE_WWW_FIREFOX
 
 
 config BR2_PKGSRC_PACKAGE_WWW_FIREFOX_L10N
-	bool "firefox-l10n-8.0"
+	bool "firefox-l10n-15.0.1"
 	help
 	  Language packs for www/firefox
 
@@ -2126,8 +2084,37 @@ config BR2_PKGSRC_PACKAGE_WWW_FIREFOX_L10N
 	  http://www.mozilla.com/en-US/firefox/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_FIREFOX10
+	bool "firefox10-10.0.7nb3"
+	help
+	  Web browser with support for extensions
+
+	  Mozilla Firefox is a free, open-source and cross-platform web browser
+	  for Windows, Linux, MacOS X and many other operating systems.
+	  
+	  It is fast and easy to use, and offers many advantages over other web
+	  browsers, such as tabbed browsing and the ability to block pop-up
+	  windows.
+	  
+	  Firefox also offers excellent bookmark and history management, and it
+	  can be extended by developers using industry standards such as XML,
+	  CSS, JavaScript, C++, etc. Many extensions are available.
+
+	  http://www.mozilla.org/en-US/firefox/organizations/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_FIREFOX10_L10N
+	bool "firefox10-l10n-10.0.6"
+	help
+	  Language packs for www/firefox
+
+	  This package contains language packs for www/firefox.
+
+	  http://www.mozilla.org/en-US/firefox/organizations/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_FIREFOX36
-	bool "firefox36-3.6.24"
+	bool "firefox36-3.6.28nb4"
 	help
 	  Web browser with support for extensions
 
@@ -2146,7 +2133,7 @@ config BR2_PKGSRC_PACKAGE_WWW_FIREFOX36
 
 
 config BR2_PKGSRC_PACKAGE_WWW_FIREFOX36_L10N
-	bool "firefox36-l10n-3.6.24"
+	bool "firefox36-l10n-3.6.28"
 	help
 	  Language packs for www/firefox36
 
@@ -2171,7 +2158,7 @@ config BR2_PKGSRC_PACKAGE_WWW_GALLERY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_GALLERY2
-	bool "gallery-2.3.1nb2"
+	bool "gallery-2.3.2"
 	help
 	  Web-based photo gallery written in PHP
 
@@ -2217,7 +2204,7 @@ config BR2_PKGSRC_PACKAGE_WWW_GEEKLOG
 
 
 config BR2_PKGSRC_PACKAGE_WWW_GITWEB
-	bool "gitweb-1.7.3.4"
+	bool "gitweb-1.7.12"
 	help
 	  Web interface for GIT repositories
 
@@ -2241,7 +2228,7 @@ config BR2_PKGSRC_PACKAGE_WWW_GTKASP2PHP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_GTKHTML314
-	bool "gtkhtml314-3.32.2nb3"
+	bool "gtkhtml314-3.32.2nb10"
 	help
 	  Lightweight HTML rendering/printing/editing engine
 
@@ -2252,6 +2239,20 @@ config BR2_PKGSRC_PACKAGE_WWW_GTKHTML314
 	  This package contains the "3.14" API version of GtkHTML.
 
 	  http://www.gnome.org/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_GWT
+	bool "gwt-2.4.0"
+	help
+	  Google Web Toolkit
+
+	  Google Web Toolkit (GWT) is a development toolkit for building and
+	  optimizing complex browser-based applications. GWT is used by many
+	  products at Google, including Google AdWords and Orkut. It's open
+	  source, completely free, and used by thousands of developers around
+	  the world.
+
+	  https://developers.google.com/web-toolkit/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_HASKELL_CGI
@@ -2279,7 +2280,7 @@ config BR2_PKGSRC_PACKAGE_WWW_HIAWATHA
 
 
 config BR2_PKGSRC_PACKAGE_WWW_HORDE
-	bool "horde-3.3.11nb1"
+	bool "horde-3.3.13"
 	help
 	  PHP application framework
 
@@ -2377,7 +2378,7 @@ config BR2_PKGSRC_PACKAGE_WWW_HTTP_LOAD
 
 
 config BR2_PKGSRC_PACKAGE_WWW_ICEDTEA_WEB
-	bool "icedtea-web-1.2prenb1"
+	bool "icedtea-web-1.2prenb10"
 	help
 	  Java browser plugin and Web Start launcher
 
@@ -2387,7 +2388,7 @@ config BR2_PKGSRC_PACKAGE_WWW_ICEDTEA_WEB
 
 
 config BR2_PKGSRC_PACKAGE_WWW_IES4LINUX
-	bool "ies4linux-2.99.0.1nb2"
+	bool "ies4linux-2.99.0.1nb5"
 	help
 	  Microsoft Internet Explorer installer
 
@@ -2414,7 +2415,7 @@ config BR2_PKGSRC_PACKAGE_WWW_IJB
 
 
 config BR2_PKGSRC_PACKAGE_WWW_IKIWIKI
-	bool "ikiwiki-3.20111229"
+	bool "ikiwiki-3.20120725"
 	help
 	  Wiki compiler
 
@@ -2430,7 +2431,7 @@ config BR2_PKGSRC_PACKAGE_WWW_IKIWIKI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_JA_TRAC
-	bool "ja-trac-0.12.2pl1"
+	bool "ja-trac-0.12.3pl2nb1"
 	help
 	  Trac issue tracking system with Japanese localization
 
@@ -2498,7 +2499,7 @@ config BR2_PKGSRC_PACKAGE_WWW_KAHUA
 
 
 config BR2_PKGSRC_PACKAGE_WWW_KANNEL
-	bool "kannel-1.4.0nb2"
+	bool "kannel-1.4.0nb3"
 	help
 	  Open source WAP and SMS gateway
 
@@ -2516,7 +2517,7 @@ config BR2_PKGSRC_PACKAGE_WWW_KANNEL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_KAZEHAKASE
-	bool "kazehakase-0.5.8nb10"
+	bool "kazehakase-0.5.8nb18"
 	help
 	  Web browser with multiple layout engines support
 
@@ -2533,7 +2534,7 @@ config BR2_PKGSRC_PACKAGE_WWW_KAZEHAKASE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_KDEWEBDEV3
-	bool "kdewebdev-3.5.10nb9"
+	bool "kdewebdev-3.5.10nb15"
 	help
 	  HTML editor and tools suitable for experienced web developers
 
@@ -2549,7 +2550,7 @@ config BR2_PKGSRC_PACKAGE_WWW_KDEWEBDEV3
 
 
 config BR2_PKGSRC_PACKAGE_WWW_KDEWEBDEV4
-	bool "kdewebdev4-4.5.5nb3"
+	bool "kdewebdev4-4.8.4nb5"
 	help
 	  HTML editor and tools suitable for experienced web developers
 
@@ -2569,47 +2570,6 @@ config BR2_PKGSRC_PACKAGE_WWW_KDEWEBDEV4
 	  KLinkStatus: link checker
 
 	  http://www.kde.org/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_KONQ_PLUGINS
-	bool "konq-plugins-4.4.0nb8"
-	help
-	  
-
-	  This module contains plugins that interact with Konqueror.
-	  
-	  babelfish - It uses AltaVista's BabelFish site to
-	  translate the current page to whatever language you want
-	  
-	  dirfilter - This allows you to filter the current
-	  directory in a variety of ways.
-	  
-	  domtreeviewer - Displays the document object modelin a dialog box.
-	  
-	  htmlvalidator - It uses the w3c HTML validator to validate
-	  the current page.
-	  
-	  cssvalidator - It uses the w3c HTML validator to validate
-	  the current page.
-	  
-	  khtmlsettingsplugin - This allows you to enable or disable a bunch
-	  of HTML settings without going through the settings dialog.
-	  
-	  kimgalleryplugin - It creates an HTML page with thumbnails of
-	  all the images in the current directory.
-	  
-	  uachanger - It allows you to change the user agent
-	  without going through the settings dialog.
-	  
-	  autorefresh - It lets you tell konqueror to refresh a page
-	  automatically after a specific period.
-	  
-	  fsview - Graphical Disk Usage as konqueror plugin for
-	  inode/directory, for local files.
-	  
-	  akregator - add feeds to Akregator directly from Konqueror.
-
-	  http://extragear.kde.org/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LHS
@@ -2640,7 +2600,7 @@ config BR2_PKGSRC_PACKAGE_WWW_LIBGHTTP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LIBGTKHTML
-	bool "libgtkhtml-2.6.3nb18"
+	bool "libgtkhtml-2.6.3nb24"
 	help
 	  Lightweight HTML rendering GTK2 widget
 
@@ -2652,8 +2612,21 @@ config BR2_PKGSRC_PACKAGE_WWW_LIBGTKHTML
 	  http://www.gnome.org/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_LIBMEDIAWIKI
+	bool "libmediawiki-2.5.0nb4"
+	help
+	  Mediawiki C++ interface for KDE
+
+	  libmediawiki is a KDE C++ interface for MediaWiki based web service as
+	  wikipedia.org
+	  
+	  This library is used by kipi-plugins and digiKam.
+
+	  http://www.digikam.org/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_LIBMICROHTTPD
-	bool "libmicrohttpd-0.9.17"
+	bool "libmicrohttpd-0.9.22"
 	help
 	  Small C library to run an HTTP server as part of another app
 
@@ -2701,7 +2674,21 @@ config BR2_PKGSRC_PACKAGE_WWW_LIBPROXY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LIBREST
-	bool "librest-0.6nb2"
+	bool "librest-0.6nb7"
+	help
+	  Library for "RESTful" web services
+
+	  This library has been designed to make it easier to access web services that
+	  claim to be "RESTful". A reasonable definition of what this means can be found
+	  on Wikipedia [1]. However a reasonable description is that a RESTful service
+	  should have urls that represent remote objects which methods can then be
+	  called on.
+
+	  http://moblin.org/projects/librest
+
+
+config BR2_PKGSRC_PACKAGE_WWW_LIBREST07
+	bool "librest07-0.7.12nb3"
 	help
 	  Library for "RESTful" web services
 
@@ -2733,7 +2720,7 @@ config BR2_PKGSRC_PACKAGE_WWW_LIBWWW
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LIFEREA
-	bool "liferea-1.4.28nb13"
+	bool "liferea-1.4.28nb23"
 	help
 	  Simple FeedReader clone for reading RSS/RDF feeds
 
@@ -2749,7 +2736,7 @@ config BR2_PKGSRC_PACKAGE_WWW_LIFEREA
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LIFEREA_CURRENT
-	bool "liferea-1.6.7"
+	bool "liferea-1.6.8nb5"
 	help
 	  Simple FeedReader clone for reading RSS/RDF feeds
 
@@ -2765,7 +2752,7 @@ config BR2_PKGSRC_PACKAGE_WWW_LIFEREA_CURRENT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LIGHTTPD
-	bool "lighttpd-1.4.29nb2"
+	bool "lighttpd-1.4.31"
 	help
 	  Fast, light-footprint HTTP server
 
@@ -2780,7 +2767,7 @@ config BR2_PKGSRC_PACKAGE_WWW_LIGHTTPD
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LINKS
-	bool "links-2.4"
+	bool "links-2.7"
 	help
 	  Lynx-like text WWW browser
 
@@ -2791,7 +2778,7 @@ config BR2_PKGSRC_PACKAGE_WWW_LINKS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LINKS_GUI
-	bool "links-gui-2.4"
+	bool "links-gui-2.7"
 	help
 	  Lynx-like text and graphics WWW browser
 
@@ -2819,7 +2806,7 @@ config BR2_PKGSRC_PACKAGE_WWW_LLGAL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_LOGGERHEAD
-	bool "loggerhead-1.18.1"
+	bool "loggerhead-1.18.1nb1"
 	help
 	  Web viewer for Bazaar branches
 
@@ -2896,7 +2883,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MAKE_ALBUM
 
 
 config BR2_PKGSRC_PACKAGE_WWW_MEDIAWIKI
-	bool "mediawiki-1.17.0nb2"
+	bool "mediawiki-1.19.2"
 	help
 	  Free software wiki package originally written for Wikipedia
 
@@ -2930,7 +2917,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MICRO_HTTPD
 
 
 config BR2_PKGSRC_PACKAGE_WWW_MIDORI
-	bool "midori-0.4.2"
+	bool "midori-0.4.6nb4"
 	help
 	  Lightweight web browser using WebKit
 
@@ -3004,7 +2991,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MKNMZ_WWWOFFLE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_MONO_XSP
-	bool "mono-xsp-2.10.2nb2"
+	bool "mono-xsp-2.10.2nb3"
 	help
 	  Standalone web server written in C\
 
@@ -3016,7 +3003,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MONO_XSP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_MOODLE
-	bool "moodle-2.1.3"
+	bool "moodle-2.1.7"
 	help
 	  Course management system based on social constructionism
 
@@ -3067,7 +3054,7 @@ config BR2_PKGSRC_PACKAGE_WWW_NANOBLOGGER_EXTRA
 
 
 config BR2_PKGSRC_PACKAGE_WWW_NEON
-	bool "neon-0.29.6"
+	bool "neon-0.29.6nb1"
 	help
 	  HTTP and WebDAV client library
 
@@ -3092,7 +3079,7 @@ config BR2_PKGSRC_PACKAGE_WWW_NETSCAPE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_NETSURF
-	bool "netsurf-1.2nb9"
+	bool "netsurf-1.2nb16"
 	help
 	  Web browser for RISC OS and UNIX-like platforms
 
@@ -3107,7 +3094,7 @@ config BR2_PKGSRC_PACKAGE_WWW_NETSURF
 
 
 config BR2_PKGSRC_PACKAGE_WWW_NGINX
-	bool "nginx-1.0.10"
+	bool "nginx-1.2.3"
 	help
 	  Lightweight HTTP server and mail proxy server
 
@@ -3156,7 +3143,7 @@ config BR2_PKGSRC_PACKAGE_WWW_NS_REMOTE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_NSPLUGINWRAPPER
-	bool "nspluginwrapper-1.2.2nb10"
+	bool "nspluginwrapper-1.2.2nb15"
 	help
 	  Use Netscape compatible plugins from other platforms
 
@@ -3181,7 +3168,7 @@ config BR2_PKGSRC_PACKAGE_WWW_NSPLUGINWRAPPER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_NVU
-	bool "nvu-1.0nb2"
+	bool "nvu-1.0nb5"
 	help
 	  Web Authoring System
 
@@ -3204,51 +3191,71 @@ config BR2_PKGSRC_PACKAGE_WWW_NVU
 	  http://www.nvu.com/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_OCAML_CURL
+	bool "ocaml-curl-0.5.3"
+	help
+	  OCaml bindings to the CURL library
+
+	  This package provides OCaml bindings to the CURL HTTP-client library.
+
+	  http://sourceforge.net/projects/ocurl/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_OCSIGEN
-	bool "ocsigen-0.6.0nb3"
+	bool "ocsigen-2.1"
 	help
 	  Web programming framework for OCaml
 
 	  Ocsigen is a web programming framework for OCaml. It can be used as a web
 	  server, serving static pages, but it is also possible to implement entire
 	  web sites as OCaml modules.
-	  
-	  WWW: http://www.ocsigen.org
 
 	  http://www.ocsigen.org/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_OPERA
-	bool "opera-11.01"
+	bool "opera-12.02"
 	help
-	  Opera web browser
+	  Standards-compliant graphical Web browser
 
-	  Opera started in 1994 as a research project inside Norway’s largest telecom
-	  company, Telenor. Within a year, it branched out into an independent
-	  development company named Opera Software ASA.
-	  
-	  Today, Opera Software develops the Opera Web browser, a high-quality,
-	  multi-platform product for a wide range of platforms, operating systems and
-	  embedded Internet products – including Mac, PC and Linux computers, mobile
-	  phones and PDAs, game consoles, and other devices like the Nintendo Wii, DS,
-	  Sony Mylo, and more.
-	  
+	  Opera is powerful web browser both for work or for entertainment.
+	  It features:
+	  * HTML 3.2, 4.0, 4.01; XHTML 1.0; WML 1.3 & 2.0; XML; CSS 1.0, 2.0, 2.1, 3.0;
+	  EcmaScript ECMA-262 2ed, 3ed (JavaScript 1.3/1.5 Core); DOM 1, 2
+	  * BiDi support, Small Screen Rendering (TM)
+	  * Browses FTP Sites, support for browsing local files
+	  * Proxy server support
+	  * File transfer, File upload support
+	  * Built-in M2 mail client
+	  * IRC-compatible chat client, Newsreader, and RSS newsfeeds
+	  * Hot list, bookmarks and bookmark bar
+	  * Unique mouse gestures for easier browsing
+	  * Pop-up defense features
+	  * Imports Netscape, Konqueror and IE bookmarks/favorites
+	  * Communication through SSL and TLS
+	  * HTTP Authorization
+	  * Asynchronous DNS with threading
+	  * Customizable toolbar icons
+	  * Keyboard link navigation
+	  * Printing (PostScript)
+	  * Handles cookies
+	  * Fraud Protection
 
 	  http://www.opera.com/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_OPERA_ACROREAD7
-	bool "opera-acroread7-1.0nb3"
+	bool "opera-acroread7-1.0nb4"
 	help
 	  Acrobat Reader 7 plugin for opera
 
 	  This package provides the Adobe Acrobat Reader 7 plugin for the Opera package.
 
-	  http://www.opera.com/
+	  http://fredrik.hubbe.net/plugger.html
 
 
 config BR2_PKGSRC_PACKAGE_WWW_OPERA_PLUGINS
-	bool "opera-plugins-1.0nb1"
+	bool "opera-plugins-1.0nb3"
 	help
 	  Plugins for the Opera browser
 
@@ -3319,7 +3326,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_ANYEVENT_REVERSEHTTP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_ANYEVENT_SCGI
-	bool "p5-AnyEvent-SCGI-1.1nb2"
+	bool "p5-AnyEvent-SCGI-1.1nb3"
 	help
 	  Perl 5 module providing a event based SCGI server
 
@@ -3429,7 +3436,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_APACHE_FILTER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_APACHE_GALLERY
-	bool "p5-Apache-Gallery-0.9.1nb15"
+	bool "p5-Apache-Gallery-0.9.1nb16"
 	help
 	  Perl5/Apache module for handling image directories
 
@@ -3507,7 +3514,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_APACHE_TEST
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_APACHE2_AUTHCASSIMPLE
-	bool "p5-Apache2-AuthCASSimple-0.10nb2"
+	bool "p5-Apache2-AuthCASSimple-0.10nb3"
 	help
 	  Apache2 module to authenticate through a CAS server
 
@@ -3574,7 +3581,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_APP_NOPASTE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CGI
-	bool "p5-CGI-3.58"
+	bool "p5-CGI-3.60"
 	help
 	  Perl5 module for writing forms-based CGI programs
 
@@ -4027,7 +4034,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_AUTHENTICATION_CREDENTIAL_HTTP_PROXY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_AUTHENTICATION_STORE_DBIX_CLASS
-	bool "p5-Catalyst-Authentication-Store-DBIx-Class-0.1503"
+	bool "p5-Catalyst-Authentication-Store-DBIx-Class-0.1503nb1"
 	help
 	  Storage class for Catalyst Authentication using DBIx::Class
 
@@ -4039,7 +4046,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_AUTHENTICATION_STORE_DBIX_CLASS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_AUTHENTICATION_STORE_HTPASSWD
-	bool "p5-Catalyst-Authentication-Store-Htpasswd-1.003nb2"
+	bool "p5-Catalyst-Authentication-Store-Htpasswd-1.003nb3"
 	help
 	  Authen::Htpasswd based user storage/authentication
 
@@ -4050,7 +4057,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_AUTHENTICATION_STORE_HTPASSWD
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_COMPONENT_ACCEPT_CONTEXT
-	bool "p5-Catalyst-Component-ACCEPT_CONTEXT-0.07nb3"
+	bool "p5-Catalyst-Component-ACCEPT_CONTEXT-0.07nb4"
 	help
 	  Make current Catalyst request context available in Models and Views
 
@@ -4119,7 +4126,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_CONTROLLER_BINDLEX
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_CONTROLLER_FORMBUILDER
-	bool "p5-Catalyst-Controller-FormBuilder-0.06"
+	bool "p5-Catalyst-Controller-FormBuilder-0.06nb1"
 	help
 	  Catalyst FormBuilder Base Controller
 
@@ -4147,7 +4154,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_CONTROLLER_HTML_FORMFU
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_DEVEL
-	bool "p5-Catalyst-Devel-1.34"
+	bool "p5-Catalyst-Devel-1.36"
 	help
 	  Development tool kit for Catalyst
 
@@ -4248,8 +4255,6 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_AUTHENTICATION
 	  for both authentication (checking the user is who they claim to be), and
 	  authorization (allowing the user to do what the system authorises them
 	  to do).
-	  
-	  WWW: http://search.cpan.org/dist/Catalyst-Plugin-Authentication/
 
 	  http://search.cpan.org/dist/Catalyst-Plugin-Authentication/
 
@@ -4318,8 +4323,6 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_AUTHORIZATION_ROLES
 	  
 	  If the user is a member in all of the required roles access is granted.
 	  Otherwise, access is denied.
-	  
-	  WWW: http://search.cpan.org/dist/Catalyst-Plugin-Authorization-Roles/
 
 	  http://search.cpan.org/dist/Catalyst-Plugin-Authorization-Roles/
 
@@ -4402,7 +4405,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SERVER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION
-	bool "p5-Catalyst-Plugin-Session-0.30nb2"
+	bool "p5-Catalyst-Plugin-Session-0.32nb1"
 	help
 	  Generic Catalyst Session plugin
 
@@ -4423,7 +4426,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION_STATE_COOKIE
-	bool "p5-Catalyst-Plugin-Session-State-Cookie-0.17nb2"
+	bool "p5-Catalyst-Plugin-Session-State-Cookie-0.17nb3"
 	help
 	  Maintain session IDs using cookies
 
@@ -4452,7 +4455,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION_STORE_DBIC
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION_STORE_DELEGATE
-	bool "p5-Catalyst-Plugin-Session-Store-Delegate-0.06nb1"
+	bool "p5-Catalyst-Plugin-Session-Store-Delegate-0.06nb2"
 	help
 	  Delegate session storage to an application model object
 
@@ -4463,7 +4466,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION_STORE_DELEGATE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION_STORE_FASTMMAP
-	bool "p5-Catalyst-Plugin-Session-Store-FastMmap-0.13nb3"
+	bool "p5-Catalyst-Plugin-Session-Store-FastMmap-0.16"
 	help
 	  FastMmap session storage backend
 
@@ -4475,7 +4478,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION_STORE_FASTMMAP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_SESSION_STORE_FILE
-	bool "p5-Catalyst-Plugin-Session-Store-File-0.18nb2"
+	bool "p5-Catalyst-Plugin-Session-Store-File-0.18nb3"
 	help
 	  File storage backend for session data
 
@@ -4495,8 +4498,6 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_STACKTRACE
 	  a stack trace of your appliation up to the point where the error
 	  occurred. Each stack frame is displayed along with the package name,
 	  line number, file name, and code context surrounding the line number.
-	  
-	  WWW: http://search.cpan.org/dist/Catalyst-Plugin-StackTrace/
 
 	  http://search.cpan.org/dist/Catalyst-Plugin-StackTrace/
 
@@ -4539,7 +4540,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_PLUGIN_STATUSMESSAGE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_RUNTIME
-	bool "p5-Catalyst-Runtime-5.90002"
+	bool "p5-Catalyst-Runtime-5.90007"
 	help
 	  The Elegant MVC Web Application Framework
 
@@ -4606,8 +4607,6 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYST_VIEW_TT
 	  Template Toolkit view class for Catalyst
 
 	  A view base class for Catalyst using Template Toolkit.
-	  
-	  WWW: http://search.cpan.org/dist/Catalyst-View-TT
 
 	  http://search.cpan.org/dist/Catalyst-View-TT/
 
@@ -4650,7 +4649,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYSTX_CRUD_YUI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_CATALYSTX_COMPONENT_TRAITS
-	bool "p5-CatalystX-Component-Traits-0.16nb1"
+	bool "p5-CatalystX-Component-Traits-0.16nb2"
 	help
 	  Automatic Trait Loading and Resolution for Catalyst Components
 
@@ -4709,7 +4708,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_CORONA
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_DANCER
-	bool "p5-Dancer-1.3090"
+	bool "p5-Dancer-1.3100"
 	help
 	  Perl 5 lightweight yet powerful web application framework
 
@@ -4833,6 +4832,16 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_EMAIL_OBFUSCATE
 	  http://search.cpan.org/dist/HTML-Email-Obfuscate/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_ENTITIES_INTERPOLATE
+	bool "p5-HTML-Entities-Interpolate-1.04"
+	help
+	  Call HTML::Entities::encode_entities, via a hash, within a string
+
+	  Call HTML::Entities::encode_entities, via a hash, within a string.
+
+	  http://search.cpan.org/dist/HTML-Entities-Interpolate/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_FILLINFORM
 	bool "p5-HTML-FillInForm-2.1"
 	help
@@ -4860,7 +4869,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_FIXENTITIES
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_FORM
-	bool "p5-HTML-Form-6.00nb2"
+	bool "p5-HTML-Form-6.03"
 	help
 	  HTML Form Class that represents an HTML form element
 
@@ -4922,7 +4931,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_LINKEXTRACTOR
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_LINT
-	bool "p5-HTML-Lint-2.06nb2"
+	bool "p5-HTML-Lint-2.10"
 	help
 	  Perl 5 module to check for HTML errors in a string or file
 
@@ -4934,7 +4943,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_LINT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_MASON
-	bool "p5-HTML-Mason-1.45nb2"
+	bool "p5-HTML-Mason-1.47"
 	help
 	  Perl-based web site development and delivery system
 
@@ -4950,7 +4959,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_MASON
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_PARSER
-	bool "p5-HTML-Parser-3.68nb1"
+	bool "p5-HTML-Parser-3.69"
 	help
 	  Perl5 module to parse HTML text documents
 
@@ -5026,7 +5035,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_REWRITEATTRIBUTES
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_SCRUBBER
-	bool "p5-HTML-Scrubber-0.08nb5"
+	bool "p5-HTML-Scrubber-0.09"
 	help
 	  Extension for scrubbing/sanitizing html
 
@@ -5038,7 +5047,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_SCRUBBER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_SELECTOR_XPATH
-	bool "p5-HTML-Selector-XPath-0.11"
+	bool "p5-HTML-Selector-XPath-0.14"
 	help
 	  Perl 5 CSS Selector to XPath compiler
 
@@ -5193,7 +5202,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_TAGSET
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_TEMPLATE
-	bool "p5-HTML-Template-2.9nb3"
+	bool "p5-HTML-Template-2.9.1"
 	help
 	  Perl5 module to create HTML templates with simple tags
 
@@ -5211,7 +5220,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_TEMPLATE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_TEMPLATE_PRO
-	bool "p5-HTML-Template-Pro-0.9506"
+	bool "p5-HTML-Template-Pro-0.9509"
 	help
 	  Perl/XS module to use HTML Templates from CGI scripts
 
@@ -5259,7 +5268,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_TOKEPARSER_SIMPLE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_TREE
-	bool "p5-HTML-Tree-4.2"
+	bool "p5-HTML-Tree-5.02"
 	help
 	  Perl5 modules for manipulating HTML syntax trees
 
@@ -5272,7 +5281,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_TREE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTML_TREEBUILDER_LIBXML
-	bool "p5-HTML-TreeBuilder-LibXML-0.13"
+	bool "p5-HTML-TreeBuilder-LibXML-0.15"
 	help
 	  Perl 5 HTML::TreeBuilder and XPath compatible interface with libxml
 
@@ -5373,7 +5382,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_ASYNC
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_BODY
-	bool "p5-HTTP-Body-1.14"
+	bool "p5-HTTP-Body-1.15"
 	help
 	  HTTP Body Parser
 
@@ -5405,7 +5414,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_CACHE_TRANSPARENT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_COOKIES
-	bool "p5-HTTP-Cookies-6.00nb3"
+	bool "p5-HTTP-Cookies-6.01"
 	help
 	  HTTP cookie jars
 
@@ -5417,7 +5426,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_COOKIES
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_DAV
-	bool "p5-HTTP-DAV-0.41nb2"
+	bool "p5-HTTP-DAV-0.46"
 	help
 	  HTTP::DAV interface and 'dave'
 
@@ -5429,9 +5438,9 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_DAV
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_DAEMON
-	bool "p5-HTTP-Daemon-6.00nb3"
+	bool "p5-HTTP-Daemon-6.01"
 	help
-	  a simple http server class
+	  Simple http server class
 
 	  perl5 module HTTP::Daemon instances are HTTP/1.1 servers that listen
 	  on a socket for incoming requests.
@@ -5440,7 +5449,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_DAEMON
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_DATE
-	bool "p5-HTTP-Date-6.00nb3"
+	bool "p5-HTTP-Date-6.02"
 	help
 	  Perl 5 module providing date conversion routines
 
@@ -5469,7 +5478,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_GHTTP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_LITE
-	bool "p5-HTTP-Lite-2.3"
+	bool "p5-HTTP-Lite-2.4"
 	help
 	  Lightweight HTTP client implementation
 
@@ -5485,9 +5494,9 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_LITE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_MESSAGE
-	bool "p5-HTTP-Message-6.02nb3"
+	bool "p5-HTTP-Message-6.03"
 	help
-	  construct HTTP style messages
+	  Construct HTTP style messages
 
 	  perl5 module HTTP::Message - HTTP style message (base class)
 
@@ -5495,9 +5504,9 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_MESSAGE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_NEGOTIATE
-	bool "p5-HTTP-Negotiate-6.00nb3"
+	bool "p5-HTTP-Negotiate-6.01"
 	help
-	  negotiate HTTP service parameters
+	  Negotiate HTTP service parameters
 
 	  perl5 module HTTP::Negotiate provides a complete implementation of the
 	  HTTP content negotiation algorithm specified in
@@ -5630,7 +5639,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_SERVER_EV
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_SERVER_SIMPLE
-	bool "p5-HTTP-Server-Simple-0.43nb2"
+	bool "p5-HTTP-Server-Simple-0.44"
 	help
 	  Perl5 module providing a simple standalone HTTP daemon
 
@@ -5700,7 +5709,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_SERVER_SIMPLE_STATIC
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_HTTP_TINY
-	bool "p5-HTTP-Tiny-0.016"
+	bool "p5-HTTP-Tiny-0.022"
 	help
 	  Perl5 module providing a small, simple, correct HTTP/1.1 client
 
@@ -6120,9 +6129,9 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_LWP_AUTHEN_WSSE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_LWP_MEDIATYPES
-	bool "p5-LWP-MediaTypes-6.01nb3"
+	bool "p5-LWP-MediaTypes-6.02"
 	help
-	  guess media type for a file or a URL
+	  Guess media type for a file or a URL
 
 	  perl5 module LWP::MediaTypes - guess media type for a file or a URL
 
@@ -6196,6 +6205,18 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_LWPX_PARANOIDAGENT
 	  http://search.cpan.org/dist/LWPx-ParanoidAgent/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_P5_LWPX_TIMEDHTTP
+	bool "p5-LWPx-TimedHTTP-1.8"
+	help
+	  Perl 5 module to time the different stages of an HTTP request
+
+	  This module performs an HTTP request exactly the same as LWP does normally
+	  except for the fact that it times each stage of the request and then inserts
+	  the results as header.
+
+	  http://search.cpan.org/dist/LWPx-TimedHTTP/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_P5_MASONX_REQUEST_WITHAPACHESESSION
 	bool "p5-MasonX-Request-WithApacheSession-0.31nb3"
 	help
@@ -6209,7 +6230,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_MASONX_REQUEST_WITHAPACHESESSION
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_MOJOLICIOUS
-	bool "p5-Mojolicious-2.37"
+	bool "p5-Mojolicious-3.41"
 	help
 	  Perl web framework: The Web In A Box!
 
@@ -6257,7 +6278,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_NET_FASTCGI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_NET_HTTP
-	bool "p5-Net-HTTP-6.01nb3"
+	bool "p5-Net-HTTP-6.03"
 	help
 	  
 
@@ -6325,7 +6346,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_PARALLELUSERAGENT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_PLACK
-	bool "p5-Plack-0.9984"
+	bool "p5-Plack-1.0003"
 	help
 	  PSGI toolkit and servers
 
@@ -6739,7 +6760,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_SQUATTING_ON_PSGI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_STARLET
-	bool "p5-Starlet-0.13"
+	bool "p5-Starlet-0.14"
 	help
 	  Perl 5 Plack based standalone HTTP/1.0 server
 
@@ -6789,7 +6810,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_TASK_CATALYST_TUTORIAL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_TASK_PLACK
-	bool "p5-Task-Plack-0.24nb2"
+	bool "p5-Task-Plack-0.25"
 	help
 	  Perl 5 Plack bundle
 
@@ -6815,7 +6836,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_TATSUMAKI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_TEMPLATE_EXTRACT
-	bool "p5-Template-Extract-0.41nb4"
+	bool "p5-Template-Extract-0.41nb5"
 	help
 	  Perl5 module for extracting data structure from TT2-rendered documents
 
@@ -6832,7 +6853,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_TEMPLATE_EXTRACT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_TEMPLATE_GENERATE
-	bool "p5-Template-Generate-0.04nb10"
+	bool "p5-Template-Generate-0.04nb11"
 	help
 	  Perl5 module for generating TT2 templates from TT2-rendered documents
 
@@ -6950,7 +6971,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_TEMPLATE_TIMER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_TEMPLATE_TOOLKIT
-	bool "p5-Template-Toolkit-2.22nb3"
+	bool "p5-Template-Toolkit-2.24"
 	help
 	  Perl5 text template and dynamic web page integration toolkit
 
@@ -6964,7 +6985,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_TEMPLATE_TOOLKIT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_TEMPLATE_TOOLKIT_SIMPLE
-	bool "p5-Template-Toolkit-Simple-0.13"
+	bool "p5-Template-Toolkit-Simple-0.16"
 	help
 	  Perl 5 module providing a simple Interface to Template Toolkit
 
@@ -7002,7 +7023,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_TEST_WWW_DECLARE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_TEST_WWW_MECHANIZE
-	bool "p5-Test-WWW-Mechanize-1.34"
+	bool "p5-Test-WWW-Mechanize-1.38"
 	help
 	  Perl5 module providing testing-specific WWW::Mechanize subclass
 
@@ -7061,7 +7082,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_TWIGGY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_URI
-	bool "p5-URI-1.59"
+	bool "p5-URI-1.60"
 	help
 	  
 
@@ -7115,7 +7136,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_URI_FETCH
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_URI_FIND
-	bool "p5-URI-Find-20100505nb2"
+	bool "p5-URI-Find-20111103"
 	help
 	  Perl5 module to find URIs in arbitrary text
 
@@ -7179,7 +7200,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_VRML
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_AMAZON_WISHLIST
-	bool "p5-WWW-Amazon-Wishlist-2.006nb2"
+	bool "p5-WWW-Amazon-Wishlist-2.006nb3"
 	help
 	  Perl5 module to get details from your Amazon wishlist
 
@@ -7191,7 +7212,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_AMAZON_WISHLIST
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_CURL
-	bool "p5-WWW-Curl-4.15nb2"
+	bool "p5-WWW-Curl-4.15nb3"
 	help
 	  Perl binding interface for curl
 
@@ -7221,7 +7242,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_FACEBOOK_API
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_MECHANIZE
-	bool "p5-WWW-Mechanize-1.70"
+	bool "p5-WWW-Mechanize-1.72nb1"
 	help
 	  Automates web page form & link interaction
 
@@ -7249,8 +7270,19 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_MECHANIZE_GZIP
 	  http://search.cpan.org/dist/WWW-Mechanize-GZip/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_MECHANIZE_TIMED
+	bool "p5-WWW-Mechanize-Timed-0.44"
+	help
+	  Perl 5 module for timing Mechanize requests
+
+	  This module is a subclass of WWW::Mechanize that times each stage of the
+	  HTTP request.
+
+	  http://search.cpan.org/dist/WWW-Mechanize-Timed/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_PASTEBIN_PASTEBINCOM_CREATE
-	bool "p5-WWW-Pastebin-PastebinCom-Create-0.003nb2"
+	bool "p5-WWW-Pastebin-PastebinCom-Create-0.004"
 	help
 	  Paste to <http://pastebin.com> from Perl
 
@@ -7272,7 +7304,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_PASTEBIN_RAFBNET_CREATE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_ROBOTRULES
-	bool "p5-WWW-RobotRules-6.01nb4"
+	bool "p5-WWW-RobotRules-6.02"
 	help
 	  Perl 5 module database of robots.txt-derived permissions
 
@@ -7305,7 +7337,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_WWW_SHORTEN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_WEB_SCRAPER
-	bool "p5-Web-Scraper-0.35"
+	bool "p5-Web-Scraper-0.36"
 	help
 	  Perl 5 Web Scraping Toolkit inspired by Scrapi
 
@@ -7359,7 +7391,7 @@ config BR2_PKGSRC_PACKAGE_WWW_P5_LIBAPREQ2
 
 
 config BR2_PKGSRC_PACKAGE_WWW_P5_LIBWWW
-	bool "p5-libwww-6.02"
+	bool "p5-libwww-6.04"
 	help
 	  Perl5 library for WWW access
 
@@ -7395,7 +7427,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PAROS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PHP_APC
-	bool "php53-apc-5.3.8.3.1.9nb1"
+	bool "php53-apc-5.3.9.3.1.13"
 	help
 	  Alternative PHP Cache
 
@@ -7408,7 +7440,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PHP_APC
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PHP_CONCRETE5
-	bool "php53-concrete5-5.4.2.2"
+	bool "php53-concrete5-5.6.0.1"
 	help
 	  Open sourece Content Management System
 
@@ -7425,7 +7457,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PHP_CONCRETE5
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PHP_CURL
-	bool "php53-curl-5.3.8nb1"
+	bool "php53-curl-5.3.17"
 	help
 	  PHP extension for curl functions
 
@@ -7436,7 +7468,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PHP_CURL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PHP_EACCELERATOR
-	bool "php53-eaccelerator-5.3.8.0.9.6.1"
+	bool "php53-eaccelerator-5.3.9.0.9.6.1"
 	help
 	  PHP accelerator, optimizer, encoder and dynamic content cache
 
@@ -7460,8 +7492,40 @@ config BR2_PKGSRC_PACKAGE_WWW_PHP_EACCELERATOR
 	  http://sourceforge.net/projects/eaccelerator/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_PHP_FPM
+	bool "php53-fpm-5.3.17"
+	help
+	  FPM interface for PHP5.3
+
+	  PHP-FPM (FastCGI Process Manager) is an alternative PHP FastCGI
+	  implementation with some additional features useful for sites
+	  of any size, especially busier sites.
+	  
+	  These features include:
+	  
+	  * Adaptive process spawning (NEW!)
+	  * Basic statistics (ala Apache's mod_status) (NEW!)
+	  * Advanced process management with graceful stop/start
+	  * Ability to start workers with different uid/gid/chroot/environment
+	  and different php.ini (replaces safe_mode)
+	  * Stdout & stderr logging
+	  * Emergency restart in case of accidental opcode cache destruction
+	  * Accelerated upload support
+	  * Support for a "slowlog"
+	  * Enhancements to FastCGI, such as fastcgi_finish_request() - a special
+	  function to finish request & flush all data while continuing to do
+	  something time-consuming (video converting, stats processing, etc.)
+	  
+	  ... and much more.
+	  
+	  It was not designed with virtual hosting in mind (large amounts of pools)
+	  however it can be adapted for any usage model.
+
+	  http://php-fpm.org/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_PHP_OWNCLOUD
-	bool "php53-owncloud-2.0.1nb2"
+	bool "php53-owncloud-4.0.7"
 	help
 	  Web services under your control
 
@@ -7488,7 +7552,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PEAR_HTML_COMMON
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PEAR_HTML_SELECT
-	bool "php53-pear-HTML_Select-1.3.0"
+	bool "php53-pear-HTML_Select-1.3.1"
 	help
 	  PHP class for generating HTML form select elements
 
@@ -7538,7 +7602,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PEAR_HTTP_REQUEST
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PHP_PHRASEA2
-	bool "php53-phrasea2-5.3.8.3.1.4"
+	bool "php53-phrasea2-5.3.9.3.1.4nb1"
 	help
 	  Digital asset management
 
@@ -7547,8 +7611,19 @@ config BR2_PKGSRC_PACKAGE_WWW_PHP_PHRASEA2
 	  http://www.phraseanet.com/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_SENCHA_SNS
+	bool "php53-sencha-sns-1.0.3"
+	help
+	  Social Networking Service software that supports Timeline
+
+	  Sencha SNS is Social Networking Service (SNS) software for intranet
+	  and the Internet SNS.  This software has Japanese UI only.
+
+	  http://oss.icz.co.jp/sns/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_PHP_TIDY
-	bool "php53-tidy-5.3.8"
+	bool "php53-tidy-5.3.17"
 	help
 	  PHP extension for tidy functions
 
@@ -7561,7 +7636,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PHP_TIDY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PHP_TIKI6
-	bool "php53-tiki6-6.5nb1"
+	bool "php53-tiki6-6.7"
 	help
 	  Tiki Wiki CMS Groupware web-based application
 
@@ -7608,7 +7683,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PHRASEANET
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PHRASEANET_INDEXER
-	bool "phraseanet-indexer-3.1.4"
+	bool "phraseanet-indexer-3.1.4nb2"
 	help
 	  Digital asset management
 
@@ -7617,36 +7692,8 @@ config BR2_PKGSRC_PACKAGE_WWW_PHRASEANET_INDEXER
 	  http://www.phraseanet.com/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_PLONE25
-	bool "plone25-2.5.5nb4"
-	help
-	  User friendly CMS written on top of ZOPE
-
-	  Plone is a ready-to-run content management system that is built on the
-	  powerful and free Zope application server. Plone is easy to set up,
-	  extremely flexible, and provides you with a system for managing web
-	  content that is ideal for project groups, communities, web sites,
-	  extranets and intranets.
-
-	  http://plone.org/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_PLONE3
-	bool "plone3-3.1.7nb3"
-	help
-	  User friendly CMS written on top of ZOPE
-
-	  Plone is a ready-to-run content management system that is built on the
-	  powerful and free Zope application server. Plone is easy to set up,
-	  extremely flexible, and provides you with a system for managing web
-	  content that is ideal for project groups, communities, web sites,
-	  extranets and intranets.
-
-	  http://plone.org/
-
-
 config BR2_PKGSRC_PACKAGE_WWW_POUND
-	bool "pound-2.4.5nb1"
+	bool "pound-2.4.5nb2"
 	help
 	  Reverse proxy, load balancer and HTTPS front-end
 
@@ -7663,7 +7710,7 @@ config BR2_PKGSRC_PACKAGE_WWW_POUND
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PRIVOXY
-	bool "privoxy-3.0.18"
+	bool "privoxy-3.0.19nb1"
 	help
 	  Web proxy with advanced filtering capabilities
 
@@ -7678,7 +7725,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PRIVOXY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_CLIENTFORM
-	bool "py26-ClientForm-0.2.10"
+	bool "py27-ClientForm-0.2.10"
 	help
 	  Python module for handling HTML forms on the client side
 
@@ -7692,7 +7739,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_CLIENTFORM
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_HTMLGEN
-	bool "py26-HTMLgen-2.2.2nb1"
+	bool "py27-HTMLgen-2.2.2nb1"
 	help
 	  Class library for the generation of HTML documents
 
@@ -7710,7 +7757,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_HTMLGEN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_PASTE
-	bool "py26-Paste-1.7.4"
+	bool "py27-Paste-1.7.4"
 	help
 	  Middleware for Python WSGI applications
 
@@ -7723,7 +7770,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_PASTE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_PASTEDEPLOY
-	bool "py26-PasteDeploy-1.3.3"
+	bool "py27-PasteDeploy-1.3.3"
 	help
 	  Load, configure, and compose WSGI applications and servers
 
@@ -7735,7 +7782,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_PASTEDEPLOY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_SIMPLETAL
-	bool "py26-SimpleTAL-4.1nb1"
+	bool "py27-SimpleTAL-4.1nb1"
 	help
 	  Stand alone implementation of the Zope TAL
 
@@ -7748,7 +7795,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_SIMPLETAL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_BEAUTIFULSOUP
-	bool "py26-beautifulsoup-3.2.0"
+	bool "py27-beautifulsoup-3.2.1"
 	help
 	  HTML/XML Parser for Python
 
@@ -7766,8 +7813,42 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_BEAUTIFULSOUP
 	  http://www.crummy.com/software/BeautifulSoup/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_PY_BEAUTIFULSOUP4
+	bool "py27-beautifulsoup4-4.1.0"
+	help
+	  HTML/XML Parser for Python, version 4
+
+	  Beautiful Soup is a Python library designed for quick turnaround
+	  projects like screen-scraping. Three features make it powerful:
+	  
+	  * Beautiful Soup provides a few simple methods and Pythonic idioms
+	  for navigating, searching, and modifying a parse tree: a toolkit
+	  for dissecting a document and extracting what you need. It doesn't
+	  take much code to write an application
+	  * Beautiful Soup automatically converts incoming documents to
+	  Unicode and outgoing documents to UTF-8. You don't have to think
+	  about encodings, unless the document doesn't specify an encoding
+	  and Beautiful Soup can't autodetect one. Then you just have to
+	  specify the original encoding.
+	  * Beautiful Soup sits on top of popular Python parsers like lxml
+	  and html5lib, allowing you to try out different parsing strategies
+	  or trade speed for flexibility.
+	  
+	  Beautiful Soup parses anything you give it, and does the tree
+	  traversal stuff for you. You can tell it "Find all the links", or
+	  "Find all the links of class externalLink", or "Find all the links
+	  whose urls match "foo.com", or "Find the table heading that's got
+	  bold text, then give me that text."
+	  
+	  Valuable data that was once locked up in poorly-designed websites
+	  is now within your reach. Projects that would have taken hours take
+	  only minutes with Beautiful Soup.
+
+	  http://www.crummy.com/software/BeautifulSoup/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_PY_BLOSXOM
-	bool "py26-blosxom-1.5nb2"
+	bool "py27-blosxom-1.5.2nb1"
 	help
 	  PyBlosxom is a lightweight file-based weblog system
 
@@ -7793,11 +7874,11 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_BLOSXOM
 	  PyBlosxom can run in CGI environments, under Paste, and as a WSGI
 	  application.
 
-	  http://pyblosxom.bluesock.org/
+	  http://pyblosxom.github.com/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_CHERRYPY
-	bool "py26-cherrypy-3.2.2"
+	bool "py27-cherrypy-3.2.2"
 	help
 	  CherryPy is a pythonic, object-oriented HTTP framework
 
@@ -7813,7 +7894,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_CHERRYPY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_CLEARSILVER
-	bool "py26-clearsilver-0.10.5nb1"
+	bool "py27-clearsilver-0.10.5nb1"
 	help
 	  Fast, powerful, language-neutral HTML template system
 
@@ -7828,7 +7909,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_CLEARSILVER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_CURL
-	bool "py26-curl-7.16.4nb3"
+	bool "py27-curl-7.19.0"
 	help
 	  Python module interface to the cURL library
 
@@ -7840,7 +7921,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_CURL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO
-	bool "py26-django-1.3.1"
+	bool "py27-django-1.4.1"
 	help
 	  Django, a high-level Python Web framework
 
@@ -7852,7 +7933,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_APPMEDIA
-	bool "py26-django-appmedia-1.0.1"
+	bool "py27-django-appmedia-1.0.1"
 	help
 	  Handling django app media
 
@@ -7881,7 +7962,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_APPMEDIA
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_CLASSY_TAGS
-	bool "py26-django-classy-tags-0.3.3"
+	bool "py27-django-classy-tags-0.3.4.1"
 	help
 	  Class based template tags for Django
 
@@ -7901,7 +7982,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_CLASSY_TAGS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_CMS
-	bool "py26-django-cms-2.1.3"
+	bool "py27-django-cms-2.3.1"
 	help
 	  Django content management system
 
@@ -7914,8 +7995,26 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_CMS
 	  http://www.django-cms.org/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_MPTT
+	bool "py27-django-mptt-0.5.4"
+	help
+	  Utilities for implementing Modified Preorder Tree Traversal
+
+	  Utilities for implementing Modified Preorder Tree Traversal with your
+	  Django Models and working with trees of Model instances.
+	  
+	  MPTT is a technique for storing hierarchical data in a database. The aim is to
+	  make retrieval operations very efficient.
+	  
+	  The trade-off for this efficiency is that performing inserts and moving
+	  items around the tree is more involved, as there's some extra work
+	  required to keep the tree structure in a good state at all times.
+
+	  http://github.com/django-mptt/django-mptt
+
+
 config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_REGISTRATION
-	bool "py26-django-registration-0.8a1"
+	bool "py27-django-registration-0.8a1nb1"
 	help
 	  User-registration application for Django
 
@@ -7931,8 +8030,48 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_REGISTRATION
 	  http://bitbucket.org/ubernostrum/django-registration/wiki/Home
 
 
+config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_REVERSION
+	bool "py27-django-reversion-1.6.2"
+	help
+	  Version control facilities for Django
+
+	  django-reversion is an extension to the Django web framework that provides
+	  comprehensive version control facilities.
+	  
+	  Features
+	  * Roll back to any point in a model's history - an unlimited undo facility!
+	  * Recover deleted models - never lose data again!
+	  * Admin integration for maximum usability.
+	  * Group related changes into revisions that can be rolled back in a single
+	  transaction.
+	  * Automatically save a new version whenever your model changes using Django's
+	  flexible signalling framework.
+	  * Automate your revision management with easy-to-use middleware.
+	  
+	  django-reversion can be easily added to your existing Django project with
+	  an absolute minimum of code changes.
+
+	  https://github.com/etianen/django-reversion/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_SEKIZAI
+	bool "py27-django-sekizai-0.6.1"
+	help
+	  Django Template Blocks with extra functionality
+
+	  Sekizai means "blocks" in Japanese, and that's what this app provides. A fresh
+	  look at blocks. With django-sekizai you can define placeholders where your
+	  blocks get rendered and at different places in your templates append to those
+	  blocks. This is especially useful for css and javascript. Your subtemplates can
+	  now define css and javscript files to be included, and the css will be nicely
+	  put at the top and the javascript to the bottom, just like you should. Also
+	  sekizai will ignore any duplicate content in a single block.
+
+	  https://github.com/ojii/django-sekizai
+
+
 config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_SOUTH
-	bool "py26-django-south-0.7.3"
+	bool "py27-django-south-0.7.6"
 	help
 	  Intelligent schema and data migrations for Django projects
 
@@ -7947,7 +8086,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGO_SOUTH
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGORESTFRAMEWORK
-	bool "py26-djangorestframework-0.2.3"
+	bool "py27-djangorestframework-0.2.3"
 	help
 	  Lightweight REST framework for Django
 
@@ -7971,7 +8110,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_DJANGORESTFRAMEWORK
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_FLUP
-	bool "py26-flup-1.0.2"
+	bool "py27-flup-1.0.2"
 	help
 	  WSGI support modules
 
@@ -7983,7 +8122,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_FLUP
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_GDATA
-	bool "py26-gdata-2.0.14nb1"
+	bool "py27-gdata-2.0.17"
 	help
 	  Google Data API Python client library
 
@@ -7997,7 +8136,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_GDATA
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_GENSHI
-	bool "py26-genshi-0.6"
+	bool "py27-genshi-0.6"
 	help
 	  Python toolkit for generation of output for the web
 
@@ -8010,7 +8149,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_GENSHI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_JONPY
-	bool "py26-jonpy-0.06nb1"
+	bool "py27-jonpy-0.06nb1"
 	help
 	  Tools for FastCGI/CGI Python programs
 
@@ -8022,7 +8161,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_JONPY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_MECHANIZE
-	bool "py26-mechanize-0.2.5"
+	bool "py27-mechanize-0.2.5"
 	help
 	  Stateful programmatic web browsing in Python
 
@@ -8042,7 +8181,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_MECHANIZE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_MOIN
-	bool "py26-moin-1.9.3nb1"
+	bool "py27-moin-1.9.4"
 	help
 	  MoinMoin, a Python clone of WikiWiki
 
@@ -8055,7 +8194,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_MOIN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_NEVOW
-	bool "py26-nevow-0.10.0nb1"
+	bool "py27-nevow-0.10.0nb1"
 	help
 	  Next-generation web application templating system
 
@@ -8088,7 +8227,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_NEVOW
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_PENDRELL
-	bool "py26-pendrell-0.2.3"
+	bool "py27-pendrell-0.2.3"
 	help
 	  HTTP/1.1 User Agent for the Programmable Web
 
@@ -8110,7 +8249,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_PENDRELL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_RSS2GEN
-	bool "py26-rss2gen-1.0.0nb1"
+	bool "py27-rss2gen-1.0.0nb1"
 	help
 	  Python module to generate RSS feeds
 
@@ -8120,7 +8259,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_RSS2GEN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_SCGI
-	bool "py26-scgi-1.13"
+	bool "py27-scgi-1.13nb1"
 	help
 	  Simple Common Gateway Interface
 
@@ -8133,7 +8272,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_SCGI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_SWISH_E
-	bool "py26-swish-e-0.5"
+	bool "py27-swish-e-0.5nb2"
 	help
 	  Simple Python binding for Swish-E
 
@@ -8144,7 +8283,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_SWISH_E
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_UWSGI
-	bool "py26-uwsgi-0.9.8.6"
+	bool "py27-uwsgi-1.2.4"
 	help
 	  Feature-rich WSGI server
 
@@ -8164,7 +8303,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_UWSGI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_WEBPY
-	bool "py26-web.py-0.36"
+	bool "py27-web.py-0.36nb1"
 	help
 	  Simple, public domain web publishing system
 
@@ -8176,7 +8315,7 @@ config BR2_PKGSRC_PACKAGE_WWW_PY_WEBPY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_PY_WEBCOLORS
-	bool "py26-webcolors-1.3.1"
+	bool "py27-webcolors-1.4"
 	help
 	  Library for working with color specifications for HTML and CSS
 
@@ -8213,40 +8352,10 @@ config BR2_PKGSRC_PACKAGE_WWW_QDECODER
 	  http://www.qDecoder.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIONPACK
-	bool "ruby19-actionpack-2.3.14"
-	help
-	  Two-step approach to web response generation
-
-	  Action Pack splits the response to a web request into a controller
-	  part (performing the logic) and a view part (rendering a template).
-	  This two-step approach is known as an action, which will normally
-	  create, read, update, or delete (CRUD for short) some sort of model
-	  part (often backed by a database) before choosing either to render a
-	  template or redirecting to another action.
-	  
-	  Action Pack implements these actions as public methods on Action
-	  Controllers and uses Action Views to implement the template rendering.
-	  Action Controllers are then responsible for handling all the actions
-	  relating to a certain part of an application.  This grouping usually
-	  consists of actions for lists and for CRUDs revolving around a single
-	  (or a few) model objects.  So ContactController would be responsible
-	  for listing contacts, creating, deleting, and updating contacts.  A
-	  WeblogController could be responsible for both posts and comments.
-	  
-	  Action View templates are written using embedded Ruby in tags mingled
-	  in with the HTML.  To avoid cluttering the templates with code, a
-	  bunch of helper classes provide common behavior for forms, dates, and
-	  strings.  And it's easy to add specific helpers to keep the separation
-	  as the application evolves.
-
-	  http://rubyforge.org/projects/actionpack/
-
-
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIONPACK3
-	bool "ruby19-actionpack-3.0.11nb2"
+	bool "ruby193-actionpack-3.0.17"
 	help
-	  Toolkit for building modeling frameworks (part of Rails)
+	  Toolkit for building modeling frameworks (part of Rails 3.0)
 
 	  Action Pack is a framework for handling and responding to web requests. It
 	  provides mechanisms for *routing* (mapping request URLs to actions), defining
@@ -8258,9 +8367,9 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIONPACK3
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIONPACK31
-	bool "ruby19-actionpack-3.1.3"
+	bool "ruby193-actionpack-3.1.8"
 	help
-	  Toolkit for building modeling frameworks (part of Rails)
+	  Toolkit for building modeling frameworks (part of Rails 3.1)
 
 	  Action Pack is a framework for handling and responding to web requests. It
 	  provides mechanisms for *routing* (mapping request URLs to actions), defining
@@ -8271,23 +8380,24 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIONPACK31
 	  http://www.rubyonrails.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIVERESOURCE
-	bool "ruby19-activeresource-2.3.14"
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIONPACK32
+	bool "ruby193-actionpack-3.2.8"
 	help
-	  Object-relational mapping for REST webservices
+	  Toolkit for building modeling frameworks (part of Rails 3.2)
 
-	  Active Resource (ARes) connects business objects and Representational
-	  State Transfer (REST) web services.  It implements object-relational
-	  mapping for REST webservices to provide transparent proxying
-	  capabilities between a client (ActiveResource) and a RESTful service.
+	  Action Pack is a framework for handling and responding to web requests. It
+	  provides mechanisms for *routing* (mapping request URLs to actions), defining
+	  *controllers* that implement actions, and generating responses by rendering
+	  *views*, which are templates of various formats. In short, Action Pack
+	  provides the view and controller layers in the MVC paradigm.
 
-	  http://rubyforge.org/projects/activeresource/
+	  http://www.rubyonrails.org/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIVERESOURCE3
-	bool "ruby19-activeresource-3.0.11"
+	bool "ruby193-activeresource-3.0.17"
 	help
-	  REST modeling framework (part of Rails)
+	  REST modeling framework (part of Rails 3.0)
 
 	  Active Resource (ARes) connects business objects and Representational
 	  State Transfer (REST) web services.
@@ -8301,9 +8411,25 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIVERESOURCE3
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIVERESOURCE31
-	bool "ruby19-activeresource-3.1.3"
+	bool "ruby193-activeresource-3.1.8"
 	help
-	  REST modeling framework (part of Rails)
+	  REST modeling framework (part of Rails 3.1)
+
+	  Active Resource (ARes) connects business objects and Representational
+	  State Transfer (REST) web services.
+	  
+	  It implements object-relational mapping for REST web services to
+	  provide transparent proxying capabilities between a client
+	  (ActiveResource) and a RESTful service (which is provided by Simply
+	  RESTful routing in ActionController::Resources).
+
+	  http://www.rubyonrails.org/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIVERESOURCE32
+	bool "ruby193-activeresource-3.2.8"
+	help
+	  REST modeling framework (part of Rails 3.2)
 
 	  Active Resource (ARes) connects business objects and Representational
 	  State Transfer (REST) web services.
@@ -8317,7 +8443,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_ACTIVERESOURCE31
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_BORGES
-	bool "ruby19-borges-1.1.0nb2"
+	bool "ruby193-borges-1.1.0nb2"
 	help
 	  Ruby web application framework
 
@@ -8329,7 +8455,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_BORGES
 
 
 config BR2_PKGSRC_PACKAGE_WWW_CAMPING
-	bool "ruby19-camping-2.1.467"
+	bool "ruby193-camping-2.1.523"
 	help
 	  Ruby micro-framework for web applications
 
@@ -8347,7 +8473,7 @@ config BR2_PKGSRC_PACKAGE_WWW_CAMPING
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_CLEARSILVER
-	bool "ruby19-clearsilver-0.10.5nb1"
+	bool "ruby193-clearsilver-0.10.5nb1"
 	help
 	  Fast, powerful, language-neutral HTML template system
 
@@ -8361,8 +8487,28 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_CLEARSILVER
 	  http://www.clearsilver.net/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_COFFEE_RAILS31
+	bool "ruby193-coffee-rails-3.1.1"
+	help
+	  Coffee Script adapter for the Rails 3.1 asset pipeline
+
+	  Coffee Script adapter for the Rails asset pipeline.
+
+	  https://github.com/rails/coffee-rails/tree/3-1-stable/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_COFFEE_RAILS32
+	bool "ruby193-coffee-rails-3.2.2"
+	help
+	  Coffee Script adapter for the Rails 3.2 asset pipeline
+
+	  Coffee Script adapter for the Rails asset pipeline.
+
+	  https://github.com/rails/coffee-rails/tree/3-1-stable/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_COMPASS
-	bool "ruby19-compass-0.11.5"
+	bool "ruby193-compass-0.12.2"
 	help
 	  Stylesheet authoring framework based on Sass
 
@@ -8376,7 +8522,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_COMPASS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_COMPASS_SUSY_PLUGIN
-	bool "ruby19-compass-susy-plugin-0.9"
+	bool "ruby193-compass-susy-plugin-0.9"
 	help
 	  Compass plugin grid system
 
@@ -8397,7 +8543,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_COMPASS_SUSY_PLUGIN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_CSS_PARSER
-	bool "ruby19-css-parser-1.2.5"
+	bool "ruby193-css-parser-1.2.6"
 	help
 	  Ruby CSS parser
 
@@ -8407,7 +8553,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_CSS_PARSER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_CSSMIN
-	bool "ruby19-cssmin-1.0.2"
+	bool "ruby193-cssmin-1.0.2"
 	help
 	  Ruby library for minifying CSS
 
@@ -8418,7 +8564,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_CSSMIN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_CSSPOOL
-	bool "ruby19-csspool-2.0.0"
+	bool "ruby193-csspool-3.0.1"
 	help
 	  CSSPool is a CSS parser
 
@@ -8429,7 +8575,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_CSSPOOL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_DIV
-	bool "ruby19-div-1.3.2"
+	bool "ruby193-div-1.3.2"
 	help
 	  Simple Web Application framework with dRuby and ERB
 
@@ -8440,7 +8586,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_DIV
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_ERUBIS26
-	bool "ruby19-erubis-2.6.6"
+	bool "ruby193-erubis-2.6.6"
 	help
 	  Fast, secure, and extensible implementation of eRuby
 
@@ -8450,7 +8596,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_ERUBIS26
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_ERUBIS
-	bool "ruby19-erubis-2.7.0"
+	bool "ruby193-erubis-2.7.0"
 	help
 	  Fast and extensible eRuby implementation which supports multi-language
 
@@ -8474,7 +8620,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_ERUBIS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_FCGI
-	bool "ruby19-fcgi-0.8.8nb1"
+	bool "ruby193-fcgi-0.8.8nb1"
 	help
 	  FastCGI interface for Ruby
 
@@ -8486,7 +8632,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_FCGI
 
 
 config BR2_PKGSRC_PACKAGE_WWW_HEEL
-	bool "ruby19-heel-2.0.0nb2"
+	bool "ruby193-heel-2.0.0nb2"
 	help
 	  Static file web server based on Rack and Thin
 
@@ -8527,7 +8673,7 @@ config BR2_PKGSRC_PACKAGE_WWW_HEEL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_HTMLSPLIT
-	bool "ruby19-htmlsplit-1.0.2nb3"
+	bool "ruby193-htmlsplit-1.0.2nb3"
 	help
 	  Ruby HTML split/join library
 
@@ -8540,7 +8686,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_HTMLSPLIT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_HTTP_PARSER.RB
-	bool "ruby19-http_parser.rb-0.5.3"
+	bool "ruby193-http_parser.rb-0.5.3"
 	help
 	  Simple callback-based HTTP request/response parser
 
@@ -8551,7 +8697,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_HTTP_PARSER.RB
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_HTTPCLIENT
-	bool "ruby19-httpclient-2.2.4"
+	bool "ruby193-httpclient-2.2.7"
 	help
 	  HTTP accessing library for Ruby
 
@@ -8562,7 +8708,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_HTTPCLIENT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_INNATE
-	bool "ruby19-innate-2011.10"
+	bool "ruby193-innate-2012.03"
 	help
 	  Powerful web-framework wrapper for Rack
 
@@ -8581,7 +8727,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_INNATE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_JEKYLL
-	bool "ruby19-jekyll-0.11.0nb1"
+	bool "ruby193-jekyll-0.11.2nb1"
 	help
 	  Blog-aware, static site generator in Ruby
 
@@ -8596,8 +8742,40 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_JEKYLL
 	  https://github.com/mojombo/jekyll
 
 
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_JOURNEY
+	bool "ruby193-journey-1.0.4"
+	help
+	  Journey is a router
+
+	  Journey is a router.  It routes requests.
+
+	  http://github.com/rails/journey
+
+
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_JQUERY_RAILS10
+	bool "ruby193-jquery-rails-1.0.19"
+	help
+	  jQuery support for Rails 3.0
+
+	  jquery-rails provides jQuery and the jQuery-ujs driver for your Rails 3
+	  applications.
+
+	  http://rubygems.org/gems/jquery-rails
+
+
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_JQUERY_RAILS20
+	bool "ruby193-jquery-rails-2.1.2"
+	help
+	  jQuery support for Rails
+
+	  jquery-rails provides jQuery and the jQuery-ujs driver for your Rails 3
+	  applications.
+
+	  http://rubygems.org/gems/jquery-rails
+
+
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_JSMIN
-	bool "ruby19-jsmin-1.0.1"
+	bool "ruby193-jsmin-1.0.1"
 	help
 	  Ruby library for minifying JavaScript
 
@@ -8608,7 +8786,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_JSMIN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_LIQUID
-	bool "ruby19-liquid-2.3.0"
+	bool "ruby193-liquid-2.4.1"
 	help
 	  Ruby library for rendering safe templates
 
@@ -8619,7 +8797,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_LIQUID
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_MECHANIZE
-	bool "ruby19-mechanize-2.0.1nb1"
+	bool "ruby193-mechanize-2.5.1"
 	help
 	  Library to automate interaction with websites
 
@@ -8632,357 +8810,8 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_MECHANIZE
 	  http://mechanize.rubyforge.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_MERB
-	bool "ruby19-merb-1.1.3nb1"
-	help
-	  Mongrel + Erb -- pocket rocket web framework
-
-	  Like Ruby on Rails, Merb is an MVC framework.  Unlike Rails, Merb is
-	  ORM-agnostic, JavaScript library agnostic, and template language
-	  agnostic, preferring plugins that add in support for a particular
-	  feature rather than trying to produce a monolithic library with
-	  everything in the core.  In fact, this is a guiding principle of the
-	  project, which has led to third-party support for the ActiveRecord,
-	  DataMapper, and Sequel ORMs.
-	  
-	  In addition, it means that the core code in Merb is kept simple and
-	  well organised.  This has multiple benefits.  It means it's faster
-	  for one thing.  It's also easier to understand, maintain and extend.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_ACTION_ARGS
-	bool "ruby19-merb-action-args-1.1.3nb1"
-	help
-	  Merb plugin to map query parameters to controller method arguments
-
-	  This package contains a plugin for the Merb framework that provides
-	  support for arguments to actions that come in from the query.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_ACTIVERECORD
-	bool "ruby19-merb-activerecord-1.0.0.1nb1"
-	help
-	  Merb plugin for the ActiveRecord ORM
-
-	  This package contains a plugin for the Merb framework that provides
-	  access to the ActiveRecord ORM.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_ADMIN
-	bool "ruby19-merb-admin-0.8.8nb1"
-	help
-	  Plugin provides easy-to-use interface for managing your data
-
-	  MerbAdmin is a Merb plugin that provides an easy-to-use interface for
-	  managing your data.  It currently offers the features listed
-	  here: http://sferik.tadalist.com/lists/1352791/public.
-
-	  http://rubygems.org/gems/merb-admin
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_ASSETS
-	bool "ruby19-merb-assets-1.1.3"
-	help
-	  Merb plugin that provides helpers for assets and asset bundling
-
-	  This package contains a plugin for the Merb framework that provides
-	  support for handling assets and asset bundling.
-	  
-	  The key to making a fast web application is to reduce both the amount
-	  of data transfered and the number of client-server interactions.  While
-	  having many small, module Javascript or stylesheet files aids in the
-	  development process, your web application will benefit from bundling
-	  those assets in the production environment.
-	  
-	  An asset bundle is a set of asset files which are combined into a single
-	  file.  This reduces the number of requests required to render a page,
-	  and can reduce the amount of data transfer required if you're using gzip
-	  encoding.
-	  
-	  
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_AUTH
-	bool "ruby19-merb-auth-1.1.1nb1"
-	help
-	  Merb plugin that provides authentication support
-
-	  The official authentication plugin for merb.  Setup for the default stack.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_AUTH_CORE
-	bool "ruby19-merb-auth-core-1.1.1nb1"
-	help
-	  MerbAuth is an authentication framework core
-
-	  MerbAuth is an authentication framework for use with the
-	  Merb web framework.
-	  
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_AUTH_MORE
-	bool "ruby19-merb-auth-more-1.1.1nb1"
-	help
-	  Addons for merb-auth-core
-
-	  Additional resources for use with the merb-auth-core authentication
-	  framework.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_AUTH_SLICE_PASSWORD
-	bool "ruby19-merb-auth-slice-password-1.1.1nb1"
-	help
-	  Merb Slice with password UI support
-
-	  Merb Slice that provides UI for password strategy of merb-auth.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_AUTH_SLICE_PASSWORD_RESET
-	bool "ruby19-merb-auth-slice-password-reset-1.1.0nb1"
-	help
-	  Merb Slice for password-reset functionality
-
-	  Merb Slice that adds basic password-reset functionality to
-	  merb-auth-based merb applications.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_BUILDER
-	bool "ruby19-merb-builder-0.9.13"
-	help
-	  Merb plugin for ruby-builder XML generation
-
-	  This package contains a plugin for the Merb framework that provides
-	  support for using ruby-builder classes to generate XML output.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_CACHE
-	bool "ruby19-merb-cache-1.1.3nb1"
-	help
-	  Merb plugin that provides caching (page, action, fragment, object)
-
-	  This package contains a plugin for the Merb framework that provides
-	  caching of pages, actions, fragments and objects.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_CORE
-	bool "ruby19-merb-core-1.1.3"
-	help
-	  Merb core classes and framework
-
-	  merb-core is the heart of the merb MVC framwork.  It has the rack
-	  abstraction along with the dispatcher, router, controller and view
-	  layers.  You can make very fast, small footprint services and apps with
-	  just merb-core.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_DATAMAPPER
-	bool "ruby19-merb-datamapper-1.1.3"
-	help
-	  Merb plugin for the DataMapper ORM
-
-	  This package contains a plugin for the Merb framework that provides
-	  access to the Sequel ORM.
-
-	  http://github.com/merb/merb_datamapper
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_EXCEPTIONS
-	bool "ruby19-merb-exceptions-1.1.3nb1"
-	help
-	  Merb plugin that supports exception notification
-
-	  merb-exceptions
-	  ===============
-	  A simple Merb plugin to ease exception notifications.
-	  
-	  The notifier currently supports two interfaces, Email Alerts and Web
-	  Hooks. Emails are formatted as plain text and sent using your Merb
-	  environment's mail settings. Web hooks as sent as post requests.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_GEN
-	bool "ruby19-merb-gen-1.1.3nb1"
-	help
-	  Merb application and plugin generator scripts
-
-	  This package provides application and plugin generator scripts for Merb.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_HAML
-	bool "ruby19-merb-haml-1.1.3nb1"
-	help
-	  Merb plugin that provides HAML template support
-
-	  This package contains a plugin for the Merb framework that provides
-	  support for HAML XHTML & CSS templates.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_HAS_FLASH
-	bool "ruby19-merb-has-flash-1.0"
-	help
-	  Rails-style flash for Merb
-
-	  Merb_has_flash is a plugin for the Merb framework that provides Rails-style
-	  flash.
-	  
-	  The ``flash'' provides a way to pass temporary objects between actions.
-	  Anything you place in the flash will be exposed to the very next action
-	  and then cleared out.  This is a great way of doing notices and alerts,
-	  such as a create action that sets
-	  
-	  flash[:notice] = "Successfully created"
-	  
-	  before redirecting to a display action that can then expose the flash
-	  to its template.
-
-	  http://github.com/eltiare/merb_has_flash
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_HELPERS
-	bool "ruby19-merb-helpers-1.1.3nb1"
-	help
-	  Merb plugin that provides various view helpers
-
-	  This package contains a plugin for the Merb framework that provides
-	  various view helpers, similar to the Rails form helpers.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_MAILER
-	bool "ruby19-merb-mailer-1.1.3nb1"
-	help
-	  Merb plugin that provides mailer functionality
-
-	  This package contains a plugin for the Merb framework that provides
-	  mailer functionality.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_MORE
-	bool "ruby19-merb-more-1.0.15"
-	help
-	  Merb classes and framework for "full stack" functionality
-
-	  This package contains merb-more, which provides the the full set of
-	  functionally for Merb outside of the merb-core classes.  Adding merb-more
-	  gives you the Full Stack -- take what you need; leave what you don't.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_PARAM_PROTECTION
-	bool "ruby19-merb-param-protection-1.1.3nb1"
-	help
-	  Merb plugin supplying methods to filter parameters
-
-	  This package contains a plugin for the Merb framework that exposes two
-	  new controller methods which allow one to simply and flexibly filter
-	  the parameters available within the controller.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_SEQUEL
-	bool "ruby19-merb-sequel-1.1.1"
-	help
-	  Merb plugin for the Sequel ORM
-
-	  This package contains a plugin for the Merb framework that provides
-	  access to the Sequel ORM.
-
-	  http://github.com/pk/merb_sequel
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_SLICES
-	bool "ruby19-merb-slices-1.1.3nb2"
-	help
-	  Merb plugin that supports reusable application 'slices'
-
-	  Merb plugin for using and creating application 'slices' which help you
-	  modularize your application.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_STORIES
-	bool "ruby19-merb-stories-0.9.13nb1"
-	help
-	  Merb plugin that provides helpers for using RSpec
-
-	  This package contains a plugin for the Merb framework that provides
-	  helper functionality for using the RSpec testing framework.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_TEST_UNIT
-	bool "ruby19-merb-test-unit-0.9.13"
-	help
-	  Merb plugin that provides support for Test::Unit
-
-	  This package contains a plugin for the Merb framework that provides
-	  helper functionality for using the Test::Unit testing framework.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERB_PARTS
-	bool "ruby19-merb_parts-0.9.14"
-	help
-	  Merb plugin that provides Part Controllers
-
-	  This package contains a plugin for the Merb framework that provides
-	  Merb::PartController, which is a lightweight way to share logic and
-	  templates amongst controllers.
-
-	  http://www.merbivore.com/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_MERBFUL_AUTHENTICATION
-	bool "ruby19-merbful-authentication-0.9.3nb1"
-	help
-	  RESTful authentication plugin for Merb
-
-	  Merbful-authentiation is a RESTful authentication plugin for the Merb
-	  application framework.
-
-	  http://rubyforge.org/projects/merbful-auth/
-
-
 config BR2_PKGSRC_PACKAGE_WWW_MONGREL
-	bool "ruby19-mongrel-1.1.5nb3"
+	bool "ruby193-mongrel-1.1.5nb3"
 	help
 	  Fast HTTP library and server for Ruby
 
@@ -8995,7 +8824,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MONGREL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_MONGREL_CLUSTER
-	bool "ruby19-mongrel-cluster-1.0.5nb1"
+	bool "ruby193-mongrel-cluster-1.0.5nb1"
 	help
 	  Mongrel plugin to manage a mongrel cluster
 
@@ -9009,7 +8838,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MONGREL_CLUSTER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_MONGREL_CONFIG
-	bool "ruby19-mongrel-config-0.3.1nb1"
+	bool "ruby193-mongrel-config-0.3.1nb1"
 	help
 	  Mongrel web-based configuration tool
 
@@ -9020,7 +8849,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MONGREL_CONFIG
 
 
 config BR2_PKGSRC_PACKAGE_WWW_MONGREL_CONSOLE
-	bool "ruby19-mongrel-console-0.2.1nb1"
+	bool "ruby193-mongrel-console-0.2.1nb1"
 	help
 	  Mongrel & Rails IRB console
 
@@ -9030,7 +8859,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MONGREL_CONSOLE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_MONGREL_UPLOAD_PROGRESS
-	bool "ruby19-mongrel-upload-progress-0.2.2nb1"
+	bool "ruby193-mongrel-upload-progress-0.2.2nb1"
 	help
 	  Mongrel plugin to track file upload status
 
@@ -9041,7 +8870,7 @@ config BR2_PKGSRC_PACKAGE_WWW_MONGREL_UPLOAD_PROGRESS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_NET_FLICKR
-	bool "ruby19-net-flickr-0.0.1"
+	bool "ruby193-net-flickr-0.0.1"
 	help
 	  Flickr REST client
 
@@ -9052,7 +8881,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_NET_FLICKR
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_NET_HTTP_DIGEST_AUTH
-	bool "ruby19-net-http-digest_auth-1.2"
+	bool "ruby193-net-http-digest_auth-1.2.1"
 	help
 	  Implementation of RFC 2617 - Digest Access Authentication
 
@@ -9064,7 +8893,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_NET_HTTP_DIGEST_AUTH
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_NET_HTTP_PERSISTENT
-	bool "ruby19-net-http-persistent-2.3.2"
+	bool "ruby193-net-http-persistent-2.7"
 	help
 	  Manages persistent connections using Net::HTTP
 
@@ -9083,8 +8912,19 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_NET_HTTP_PERSISTENT
 	  http://seattlerb.rubyforge.org/net-http-persistent
 
 
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_NTLM_HTTP
+	bool "ruby193-ntlm-http-0.1.1"
+	help
+	  NTLM authentication over HTTP
+
+	  Ruby/NTLM provides message creator and parser for the NTLM
+	  authentication.
+
+	  http://www.mindflowsolutions.net/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_PATRON
-	bool "ruby19-patron-0.4.16nb1"
+	bool "ruby193-patron-0.4.18"
 	help
 	  Ruby HTTP client library based on libcurl
 
@@ -9096,8 +8936,8 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_PATRON
 	  http://toland.github.com/patron/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK11
-	bool "ruby19-rack-1.1.2"
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK12
+	bool "ruby193-rack-1.2.5"
 	help
 	  Ruby webserver interface
 
@@ -9110,8 +8950,8 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK11
 	  http://rack.rubyforge.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK12
-	bool "ruby19-rack-1.2.4"
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK13
+	bool "ruby193-rack-1.3.6"
 	help
 	  Ruby webserver interface
 
@@ -9125,9 +8965,9 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK12
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK
-	bool "ruby19-rack-1.3.5"
+	bool "ruby193-rack-1.4.1"
 	help
-	  Ruby webserver interface
+	  Modular Ruby webserver interface
 
 	  Rack provides a minimal, modular and adaptable interface for developing
 	  web applications in Ruby.  By wrapping HTTP requests and responses in
@@ -9139,16 +8979,17 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_CACHE
-	bool "ruby19-rack-cache-1.1"
+	bool "ruby193-rack-cache-1.2"
 	help
 	  HTTP Caching for Rack
 
 	  HTTP Caching for Rack.
+
 	  http://rack.rubyforge.org/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_MOUNT06
-	bool "ruby19-rack-mount-0.6.14"
+	bool "ruby193-rack-mount-0.6.14nb1"
 	help
 	  Stackable dynamic tree based Rack router
 
@@ -9166,7 +9007,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_MOUNT06
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_MOUNT
-	bool "ruby19-rack-mount-0.8.3"
+	bool "ruby193-rack-mount-0.8.3"
 	help
 	  Stackable dynamic tree based Rack router
 
@@ -9184,7 +9025,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_MOUNT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_PROTECTION
-	bool "ruby19-rack-protection-1.1.4"
+	bool "ruby193-rack-protection-1.2.0"
 	help
 	  Protection for against typical web attacks for Rack application
 
@@ -9199,7 +9040,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_PROTECTION
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_SSL
-	bool "ruby19-rack-ssl-1.3.2"
+	bool "ruby193-rack-ssl-1.3.2"
 	help
 	  Rack middleware to force SSL/TLS
 
@@ -9216,7 +9057,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_SSL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_TEST05
-	bool "ruby19-rack-test-0.5.7"
+	bool "ruby193-rack-test-0.5.7nb1"
 	help
 	  Simple testing API built on Rack
 
@@ -9229,7 +9070,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_TEST05
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_TEST
-	bool "ruby19-rack-test-0.6.1"
+	bool "ruby193-rack-test-0.6.1"
 	help
 	  Simple testing API built on Rack
 
@@ -9242,7 +9083,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RACK_TEST
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RAGGLE
-	bool "ruby19-raggle-0.4.4nb4"
+	bool "ruby193-raggle-0.4.4nb4"
 	help
 	  Console-based screen(1)-aware RSS reader written in Ruby
 
@@ -9255,25 +9096,10 @@ config BR2_PKGSRC_PACKAGE_WWW_RAGGLE
 	  http://www.raggle.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_RUBY_RAILS
-	bool "ruby19-rails-2.3.14"
-	help
-	  Framework for developing database-backed web applications
-
-	  Rails is a full-stack framework for developing database-backed web
-	  applications according to the Model-View-Control pattern.  From the
-	  Ajax in the view, to the request and response in the controller, to
-	  the domain model wrapping the database, Rails gives you a pure-Ruby
-	  development environment.  To go live, all you need to add is a
-	  database and a web server.
-
-	  http://www.rubyonrails.org/
-
-
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RAILS3
-	bool "ruby19-rails-3.0.11"
+	bool "ruby193-rails-3.0.17"
 	help
-	  Full-stack web application framework
+	  Full-stack web application framework, Rails 3.0
 
 	  Ruby on Rails is a full-stack web framework optimized for programmer
 	  happiness and sustainable productivity.  It encourages beautiful code
@@ -9283,9 +9109,9 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RAILS3
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_RAILS31
-	bool "ruby19-rails-3.1.3"
+	bool "ruby193-rails-3.1.8"
 	help
-	  Full-stack web application framework
+	  Full-stack web application framework, Rails 3.1
 
 	  Ruby on Rails is a full-stack web framework optimized for programmer
 	  happiness and sustainable productivity.  It encourages beautiful code
@@ -9294,8 +9120,35 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_RAILS31
 	  http://www.rubyonrails.org/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_RAILS32
+	bool "ruby193-rails-3.2.8"
+	help
+	  Full-stack web application framework, Rails 3.2
+
+	  Ruby on Rails is a full-stack web framework optimized for programmer
+	  happiness and sustainable productivity.  It encourages beautiful code
+	  by favoring convention over configuration.
+
+	  http://www.rubyonrails.org/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_RAINDROPS
+	bool "ruby193-raindrops-0.10.0"
+	help
+	  Real-time statistics for Rack HTTP servers
+
+	  Raindrops is a real-time stats toolkit to show statistics for Rack HTTP
+	  servers. It is designed for preforking servers such as Rainbows! and
+	  Unicorn, but should support any Rack HTTP server under Ruby 1.9, 1.8
+	  and Rubinius on platforms supporting POSIX shared memory. It may also
+	  be used as a generic scoreboard for sharing atomic counters across
+	  multiple processes.
+
+	  http://raindrops.bogomips.org/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_RAMAZE
-	bool "ruby19-ramaze-2011.10.23"
+	bool "ruby193-ramaze-2012.04.14"
 	help
 	  Ruby lightweight, modular, web application framework
 
@@ -9307,7 +9160,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RAMAZE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_SASS
-	bool "ruby19-sass-3.1.12"
+	bool "ruby193-sass-3.2.1"
 	help
 	  powerful but elegant CSS compiler that makes CSS fun again
 
@@ -9336,8 +9189,28 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_SASS
 	  http://sass-lang.com/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_SASS_RAILS31
+	bool "ruby193-sass-rails-3.1.6"
+	help
+	  Sass adapter for the Rails asset pipeline
+
+	  Sass adapter for the Rails asset pipeline.
+
+	  https://github.com/rails/sass-rails/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_SASS_RAILS32
+	bool "ruby193-sass-rails-3.2.5"
+	help
+	  Sass adapter for the Rails asset pipeline
+
+	  Sass adapter for the Rails asset pipeline.
+
+	  https://github.com/rails/sass-rails/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_SINATRA
-	bool "ruby19-sinatra-1.3.1"
+	bool "ruby193-sinatra-1.3.3"
 	help
 	  Classy web-development dressed in a DSL
 
@@ -9347,7 +9220,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_SINATRA
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_STATICMATIC
-	bool "ruby19-staticmatic-0.11.1"
+	bool "ruby193-staticmatic-0.11.1"
 	help
 	  Lightweight static site framework
 
@@ -9360,7 +9233,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_STATICMATIC
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_TAG
-	bool "ruby19-tag-1.0.4nb3"
+	bool "ruby193-tag-1.0.4nb3"
 	help
 	  Ruby Simple HTML Tag library for CGI
 
@@ -9370,17 +9243,17 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_TAG
 
 
 config BR2_PKGSRC_PACKAGE_WWW_TERMTTER
-	bool "ruby19-termtter-1.10.0nb1"
+	bool "ruby193-termtter-1.11.0"
 	help
 	  Terminal based Twitter client
 
 	  Termtter is a Terminal based Twitter client.
 
-	  https://github.com/jugyo/termtter
+	  http://termtter.github.com/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_THIN
-	bool "ruby19-thin-1.3.1"
+	bool "ruby193-thin-1.4.1"
 	help
 	  Fast and very simple Ruby web server
 
@@ -9393,7 +9266,7 @@ config BR2_PKGSRC_PACKAGE_WWW_THIN
 
 
 config BR2_PKGSRC_PACKAGE_WWW_THOTH
-	bool "ruby19-thoth-0.2.1nb2"
+	bool "ruby193-thoth-0.2.1nb2"
 	help
 	  Minimalistic blog engine
 
@@ -9405,7 +9278,7 @@ config BR2_PKGSRC_PACKAGE_WWW_THOTH
 
 
 config BR2_PKGSRC_PACKAGE_WWW_THOTH_DELICIOUS
-	bool "ruby19-thoth-delicious-0.1.0nb3"
+	bool "ruby193-thoth-delicious-0.1.0nb3"
 	help
 	  del.icio.us plugin for the Thoth blog engine
 
@@ -9415,7 +9288,7 @@ config BR2_PKGSRC_PACKAGE_WWW_THOTH_DELICIOUS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_THOTH_FLICKR
-	bool "ruby19-thoth-flickr-0.1.0nb2"
+	bool "ruby193-thoth-flickr-0.1.0nb2"
 	help
 	  Flickr plugin for the Thoth blog engine
 
@@ -9424,8 +9297,22 @@ config BR2_PKGSRC_PACKAGE_WWW_THOTH_FLICKR
 	  http://thothblog.org/
 
 
+config BR2_PKGSRC_PACKAGE_WWW_RUBY_UNICORN
+	bool "ruby193-unicorn-4.3.1"
+	help
+	  Rack HTTP server for fast clients and Unix
+
+	  Unicorn is an HTTP server for Rack applications designed to only serve
+	  fast clients on low-latency, high-bandwidth connections and take
+	  advantage of features in Unix/Unix-like kernels.  Slow clients should
+	  only be served by placing a reverse proxy capable of fully buffering
+	  both the the request and response in between Unicorn and slow clients.
+
+	  http://unicorn.bogomips.org/
+
+
 config BR2_PKGSRC_PACKAGE_WWW_WEBBY
-	bool "ruby19-webby-0.9.4nb1"
+	bool "ruby193-webby-0.9.4nb1"
 	help
 	  Static web page generator
 
@@ -9437,7 +9324,7 @@ config BR2_PKGSRC_PACKAGE_WWW_WEBBY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_WEBROBOTS
-	bool "ruby19-webrobots-0.0.12"
+	bool "ruby193-webrobots-0.0.13"
 	help
 	  Ruby library to help write robots.txt compliant web robots
 
@@ -9447,7 +9334,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_WEBROBOTS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_RUBY_WEBUNIT
-	bool "ruby19-webunit-20040429++nb3"
+	bool "ruby193-webunit-20040429++nb3"
 	help
 	  HTTP unit testing framework for Ruby
 
@@ -9459,7 +9346,7 @@ config BR2_PKGSRC_PACKAGE_WWW_RUBY_WEBUNIT
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SCREWS
-	bool "screws-0.56nb6"
+	bool "screws-0.56nb8"
 	help
 	  SCRipt Enhanced Web Server
 
@@ -9481,7 +9368,7 @@ config BR2_PKGSRC_PACKAGE_WWW_SCREWS
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SEAMONKEY
-	bool "seamonkey-2.5b4"
+	bool "seamonkey-2.12nb3"
 	help
 	  Full-featured gecko-based browser
 
@@ -9497,7 +9384,7 @@ config BR2_PKGSRC_PACKAGE_WWW_SEAMONKEY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SEAMONKEY_L10N
-	bool "seamonkey-l10n-2.5b4"
+	bool "seamonkey-l10n-2.12"
 	help
 	  Language packs for www/seamonkey
 
@@ -9565,7 +9452,7 @@ config BR2_PKGSRC_PACKAGE_WWW_SNARF
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SNOWNEWS
-	bool "snownews-1.5.12"
+	bool "snownews-1.5.12nb1"
 	help
 	  Small, curses based RSS feed reader
 
@@ -9574,25 +9461,6 @@ config BR2_PKGSRC_PACKAGE_WWW_SNOWNEWS
 	  userland's 0.91 and 2.0 versions.
 
 	  http://kiza.kcore.de/software/snownews/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_SOPE
-	bool "sope-4.5.4nb9"
-	help
-	  Set of frameworks for a complete web application server environment
-
-	  The SOPE package is an extensive set of frameworks (16 frameworks,
-	  ~1500 classes) which form a complete Web application server environment.
-	  Besides the Apple WebObjects compatible appserver extended with Zope
-	  concepts, it contains a large set of reusable classes: XML processing
-	  (SAX2, DOM, XML-RPC), MIME/IMAP4 processing, LDAP connectivity, RDBMS
-	  connectivity, and iCalendar parsing.
-	  
-	  The individual frameworks of the package can be used standalone (for
-	  example in Cocoa or GNUstep applications) and do not require the
-	  application server itself.
-
-	  http://sope.opengroupware.org/
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SPAWN_FCGI
@@ -9627,7 +9495,7 @@ config BR2_PKGSRC_PACKAGE_WWW_SQUID27
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SQUID31
-	bool "squid-3.1.16nb1"
+	bool "squid-3.1.20"
 	help
 	  Post-Harvest_cached WWW proxy cache and accelerator
 
@@ -9657,7 +9525,7 @@ config BR2_PKGSRC_PACKAGE_WWW_SQUID31
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SQUIDGUARD
-	bool "squidGuard-1.4nb4"
+	bool "squidGuard-1.4nb5"
 	help
 	  Ultrafast and free filter, redirector and access controller for Squid
 
@@ -9683,7 +9551,7 @@ config BR2_PKGSRC_PACKAGE_WWW_SQUIDGUARD
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SQUIDCLAMAV
-	bool "squidclamav-6.4"
+	bool "squidclamav-6.8"
 	help
 	  Clamav ICAP service and redirector for Squid
 
@@ -9802,7 +9670,7 @@ config BR2_PKGSRC_PACKAGE_WWW_SWILL
 
 
 config BR2_PKGSRC_PACKAGE_WWW_SWISH_E
-	bool "swish-e-2.4.5nb2"
+	bool "swish-e-2.4.5nb4"
 	help
 	  Simple web indexing for humans - enhanced
 
@@ -9860,25 +9728,8 @@ config BR2_PKGSRC_PACKAGE_WWW_THTTPD
 	  http://www.acme.com/software/thttpd/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_THY
-	bool "thy-0.9.4nb7"
-	help
-	  Tiny and fast HTTP daemon
-
-	  Thy was designed to be as fast and lightweight as possible. For
-	  speed, she uses sendfile(), and does not fork.
-	  
-	  Among the features are name-based virtual hosts, userdir and
-	  directory index support; Range, If-Modified-Since, keep-alive,
-	  on-the-fly compression and of course, CGI, IPv6 and TLS support.
-	  
-	  Thy does not require (but can use) a configuration file to run.
-
-	  http://bonehunter.rulez.org/software/thy/
-
-
 config BR2_PKGSRC_PACKAGE_WWW_TIDY
-	bool "tidy-20091027"
+	bool "tidy-20091027nb3"
 	help
 	  Fixes and tidies up HTML files
 
@@ -9916,7 +9767,7 @@ config BR2_PKGSRC_PACKAGE_WWW_TINYPROXY
 
 
 config BR2_PKGSRC_PACKAGE_WWW_TRAC
-	bool "trac-0.12.2nb1"
+	bool "trac-0.12.3nb1"
 	help
 	  Subversion repository browser, wiki, and issue tracking system
 
@@ -9934,9 +9785,9 @@ config BR2_PKGSRC_PACKAGE_WWW_TRAC
 
 
 config BR2_PKGSRC_PACKAGE_WWW_TYPO3_45
-	bool "typo3-4.5.10"
+	bool "typo3-4.5.19"
 	help
-	  The TYPO3 content management system LTS release.
+	  The TYPO3 content management system LTS release
 
 	  TYPO3 is a free Open Source content management system for enterprise
 	  purposes on the web and in intranets. It offers full flexibility and
@@ -9950,7 +9801,7 @@ config BR2_PKGSRC_PACKAGE_WWW_TYPO3_45
 
 
 config BR2_PKGSRC_PACKAGE_WWW_TYPO3_46
-	bool "typo3-4.6.3"
+	bool "typo3-4.6.12"
 	help
 	  The TYPO3 content management system, 4.6 based release
 
@@ -9960,6 +9811,21 @@ config BR2_PKGSRC_PACKAGE_WWW_TYPO3_46
 	  interfaces, functions and modules.
 	  
 	  This is TPYO3 4.6 based stable release.
+
+	  http://typo3.com/
+
+
+config BR2_PKGSRC_PACKAGE_WWW_TYPO3_47
+	bool "typo3-4.7.4"
+	help
+	  The TYPO3 content management system, 4.7 based release
+
+	  TYPO3 is a free Open Source content management system for enterprise
+	  purposes on the web and in intranets. It offers full flexibility and
+	  extendability while featuring an accomplished set of ready-made
+	  interfaces, functions and modules.
+	  
+	  This is TPYO3 4.7 based stable release.
 
 	  http://typo3.com/
 
@@ -9977,7 +9843,7 @@ config BR2_PKGSRC_PACKAGE_WWW_URLGET
 
 
 config BR2_PKGSRC_PACKAGE_WWW_URLGRABBER
-	bool "urlgrabber-3.1.0nb2"
+	bool "urlgrabber-3.1.0nb3"
 	help
 	  Python package that drastically simplifies the fetching of files
 
@@ -9994,7 +9860,7 @@ config BR2_PKGSRC_PACKAGE_WWW_URLGRABBER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_VARNISH
-	bool "varnish-3.0.2nb1"
+	bool "varnish-3.0.2nb4"
 	help
 	  High-performace HTTP accelerator
 
@@ -10012,7 +9878,7 @@ config BR2_PKGSRC_PACKAGE_WWW_VARNISH
 
 
 config BR2_PKGSRC_PACKAGE_WWW_VIEWVC
-	bool "viewvc-1.1.11"
+	bool "viewvc-1.1.11nb1"
 	help
 	  Viewing the content of CVS/SVN repositories with a Webbrowser
 
@@ -10096,7 +9962,7 @@ config BR2_PKGSRC_PACKAGE_WWW_W3C_HTTPD
 
 
 config BR2_PKGSRC_PACKAGE_WWW_W3M
-	bool "w3m-0.5.3nb2"
+	bool "w3m-0.5.3nb5"
 	help
 	  Multilingualized version of a pager/text-based browser w3m
 
@@ -10155,7 +10021,7 @@ config BR2_PKGSRC_PACKAGE_WWW_WDG_VALIDATE
 
 
 config BR2_PKGSRC_PACKAGE_WWW_WEBALIZER
-	bool "webalizer-2.21.2nb4"
+	bool "webalizer-2.21.2nb5"
 	help
 	  Web server log file analysis program
 
@@ -10167,7 +10033,7 @@ config BR2_PKGSRC_PACKAGE_WWW_WEBALIZER
 
 
 config BR2_PKGSRC_PACKAGE_WWW_WEBKIT_GTK
-	bool "webkit-gtk-1.6.1nb3"
+	bool "webkit-gtk-1.8.3nb2"
 	help
 	  GTK2 port of the WebKit browser engine
 
@@ -10183,7 +10049,7 @@ config BR2_PKGSRC_PACKAGE_WWW_WEBKIT_GTK
 
 
 config BR2_PKGSRC_PACKAGE_WWW_WEBKIT_GTK3
-	bool "webkit-gtk3-1.6.1nb2"
+	bool "webkit-gtk3-1.8.3nb2"
 	help
 	  GTK3 port of the WebKit browser engine
 
@@ -10308,7 +10174,7 @@ config BR2_PKGSRC_PACKAGE_WWW_WMD
 
 
 config BR2_PKGSRC_PACKAGE_WWW_WML
-	bool "wml-2.0.9nb6"
+	bool "wml-2.0.9nb7"
 	help
 	  Web Meta Language
 
@@ -10325,7 +10191,7 @@ config BR2_PKGSRC_PACKAGE_WWW_WML
 
 
 config BR2_PKGSRC_PACKAGE_WWW_WORDPRESS
-	bool "wordpress-3.3.1"
+	bool "wordpress-3.4.2"
 	help
 	  Blogging tool written in php
 
@@ -10409,121 +10275,8 @@ config BR2_PKGSRC_PACKAGE_WWW_YAWS
 	  http://yaws.hyber.org/
 
 
-config BR2_PKGSRC_PACKAGE_WWW_ZOPE210
-	bool "zope210-2.10.13nb1"
-	help
-	  Zope 2.10.13, the Z Object Publishing Environment
-
-	  Zope is an exciting new object-based, open source web application
-	  platform. It allows you to build powerful and dynamic web applications
-	  easily. Zope comes with source code and is friendly to developers as
-	  well as users.
-	  Zope is distinguished by its integrated object database which, when
-	  combined with a revolutionary object model, provides a completely unique
-	  facility for servicing content managers and web application developers.
-	  
-	  Here are some of the "headlines" mentioned in the features list.
-	  
-	  Database Integration 			Content Management
-	  SQL and HTML in Harmony 		Builtin Objects
-	  Multiple Data Sources 			Document Templates
-	  Publish Databases 		Web to Objects
-	  Application Development 			Integrated Object Database
-	  DTML Scripting 				Managed Through the Web
-	  External Methods 			Direct URL Access to Objects
-
-	  http://www.zope.org/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_ZOPE211
-	bool "zope211-2.11.8"
-	help
-	  Zope, the Z Object Publishing Environment
-
-	  Zope is an exciting new object-based, open source web application
-	  platform. It allows you to build powerful and dynamic web applications
-	  easily. Zope comes with source code and is friendly to developers as
-	  well as users.
-	  Zope is distinguished by its integrated object database which, when
-	  combined with a revolutionary object model, provides a completely unique
-	  facility for servicing content managers and web application developers.
-	  
-	  Here are some of the "headlines" mentioned in the features list.
-	  
-	  Database Integration 			Content Management
-	  SQL and HTML in Harmony 		Builtin Objects
-	  Multiple Data Sources 			Document Templates
-	  Publish Databases 		Web to Objects
-	  Application Development 			Integrated Object Database
-	  DTML Scripting 				Managed Through the Web
-	  External Methods 			Direct URL Access to Objects
-
-	  http://www.zope.org/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_ZOPE29
-	bool "zope29-2.9.12"
-	help
-	  Zope 2.9.12, the Z Object Publishing Environment
-
-	  Zope is an exciting new object-based, open source web application
-	  platform. It allows you to build powerful and dynamic web applications
-	  easily. Zope comes with source code and is friendly to developers as
-	  well as users.
-	  Zope is distinguished by its integrated object database which, when
-	  combined with a revolutionary object model, provides a completely unique
-	  facility for servicing content managers and web application developers.
-	  
-	  Here are some of the "headlines" mentioned in the features list.
-	  
-	  Database Integration 			Content Management
-	  SQL and HTML in Harmony 		Builtin Objects
-	  Multiple Data Sources 			Document Templates
-	  Publish Databases 		Web to Objects
-	  Application Development 			Integrated Object Database
-	  DTML Scripting 				Managed Through the Web
-	  External Methods 			Direct URL Access to Objects
-
-	  http://www.zope.org/
-
-
-config BR2_PKGSRC_PACKAGE_WWW_ZOPE_EJSPLITTER
-	bool "zope29-ejSplitter-0.5.1nb1"
-	help
-	  Japanese word splitter for searching text in Zope Products
-
-	  Zope needs a word splitter to search in text with ZCTextIndex.
-	  This ejSplitter is one of Japanese splitters and can be used with
-	  other Zope products.
-
-	  http://www005.upp.so-net.ne.jp/nakagami/tips/ZCTextIndex.html
-
-
-config BR2_PKGSRC_PACKAGE_WWW_ZOPE_JAMAILHOST
-	bool "zope29-jaMailHost-0.4.4nb1"
-	help
-	  Zope hotfix Product to send mail in Japanese
-
-	  MailHost is Zope-integrated feature to send mail from Web applications,
-	  but can not send Japanese mail correctly.
-	  This "jaMailHost" product will solve this problem.
-
-	  http://www005.upp.so-net.ne.jp/nakagami/tips/jaMailHost.html
-
-
-config BR2_PKGSRC_PACKAGE_WWW_ZOPE3
-	bool "zope3-3.3.1nb1"
-	help
-	  Zope 3 Application Server
-
-	  Zope is an open source application server for building content
-	  management systems, intranets, portals, and custom applications.
-
-	  http://www.zope.org/DevHome/Zope3/
-
-
 config BR2_PKGSRC_PACKAGE_WWW_ZOPEEDIT
-	bool "zopeedit-0.7nb3"
+	bool "zopeedit-0.7nb5"
 	help
 	  Helper client application for Zope's ExternalEditor
 

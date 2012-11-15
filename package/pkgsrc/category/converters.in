@@ -14,7 +14,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_2VCARD
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_TECKIT
-	bool "TECkit-2.5.1"
+	bool "TECkit-2.5.1nb1"
 	help
 	  Low-level toolkit to perform encoding conversions
 
@@ -101,7 +101,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_BIB2XML
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_BIBTEX2HTML
-	bool "bibtex2html-1.96nb1"
+	bool "bibtex2html-1.97"
 	help
 	  Collection of tools for translating from BibTeX to HTML
 
@@ -222,6 +222,18 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_DOC2HTML
 	  http://www.htdig.org/
 
 
+config BR2_PKGSRC_PACKAGE_CONVERTERS_DOS2UNIX
+	bool "dos2unix-6.0.1"
+	help
+	  DOS/Mac to Unix and vice versa text file format converter
+
+	  dos2unix includes utilities to convert text files with DOS or MAC
+	  line endings to Unix line endings and vice versa. It is an update
+	  of Benjamin Lin's implementations.
+
+	  http://waterlan.home.xs4all.nl/dos2unix.html
+
+
 config BR2_PKGSRC_PACKAGE_CONVERTERS_DVI2TTY
 	bool "dvi2tty-1.0"
 	help
@@ -305,7 +317,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_FRIBIDI
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_HELP2MAN
-	bool "help2man-1.38.2nb3"
+	bool "help2man-1.38.2nb4"
 	help
 	  Generate simple manual pages from program output
 
@@ -420,6 +432,18 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_LATEX2RTF
 	  http://latex2rtf.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBCDR
+	bool "libcdr-0.0.6nb2"
+	help
+	  Corel Draw file format importer library
+
+	  Libcdr is a library providing the ability to interpret and import
+	  Corel Draw drawings into various applications. You can find it being
+	  used in libreoffice.
+
+	  http://www.freedesktop.org/wiki/Software/libcdr/
+
+
 config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBICONV
 	bool "libiconv-1.14nb2"
 	help
@@ -441,6 +465,17 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBICONV
 	  encodings, but that support lacks from your system.
 
 	  http://www.gnu.org/software/libiconv/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBVISIO
+	bool "libvisio-0.0.19nb2"
+	help
+	  Library and tools for parsing the visio file format
+
+	  Libvisio is library providing ability to interpret and import visio
+	  diagrams into various applications.
+
+	  http://www.freedesktop.org/wiki/Software/libvisio/
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBWPD
@@ -471,7 +506,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBWPG
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_LIBWPS
-	bool "libwps-0.2.2"
+	bool "libwps-0.2.4"
 	help
 	  Library for importing Microsoft Works documents
 
@@ -493,7 +528,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_MACFORK
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_MPACK
-	bool "mpack-1.6nb2"
+	bool "mpack-1.6nb4"
 	help
 	  External MIME packer/unpacker
 
@@ -612,8 +647,23 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_JSON_ANY
 	  http://search.cpan.org/dist/JSON-Any/
 
 
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_JSON_PP
+	bool "p5-JSON-PP-2.27200"
+	help
+	  JSON::XS compatible pure-Perl module
+
+	  This module is JSON::XS compatible pure Perl module. (Perl 5.8 or later
+	  is recommended).  JSON::XS is the fastest and most proper JSON module on
+	  CPAN. It is written by Marc Lehmann in C, so must be compiled and
+	  installed in the used environment.
+	  
+	  JSON::PP is a pure-Perl module and has compatibility to JSON::XS.
+
+	  http://search.cpan.org/dist/JSON-PP/
+
+
 config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_JSON_XS
-	bool "p5-JSON-XS-2.320"
+	bool "p5-JSON-XS-2.330"
 	help
 	  JSON serialising/deserialising, done correctly and fast
 
@@ -769,6 +819,20 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_TEXT_ICONV
 	  http://search.cpan.org/dist/Text-Iconv/
 
 
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_COLLATE
+	bool "p5-Unicode-Collate-0.89"
+	help
+	  Perl5 implementation of Unicode Collation Algorithm
+
+	  Unicode::Collate implements Unicode Collation Algorithm (UCA). The UCA
+	  provides a specification for how to compare two Unicode strings while
+	  remaining conformant to the requirements of The Unicode Standard. The UCA
+	  also supplies the Default Unicode Collation Element Table (DUCET), which
+	  is data specifying the default collation order for all Unicode characters.
+
+	  http://search.cpan.org/dist/Unicode-Collate/
+
+
 config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_IMAPUTF7
 	bool "p5-Unicode-IMAPUtf7-2.01"
 	help
@@ -835,6 +899,16 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_MAPUTF8
 	  supported character sets via a simple two step chaining of conversions.
 
 	  http://search.cpan.org/dist/Unicode-MapUTF8/
+
+
+config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_NORMALIZE
+	bool "p5-Unicode-Normalize-1.14"
+	help
+	  Unicode Normalization Froms
+
+	  Unicode::Normalize - Unicode Normalization Forms
+
+	  http://search.cpan.org/~sadahiro/Unicode-Normalize
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_UNICODE_STRING
@@ -913,7 +987,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_P5_NKF
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_PHP_ICONV
-	bool "php53-iconv-5.3.8"
+	bool "php53-iconv-5.3.17"
 	help
 	  PHP extension for character set conversion
 
@@ -925,7 +999,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_PHP_ICONV
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_PHP_MBSTRING
-	bool "php53-mbstring-5.3.8"
+	bool "php53-mbstring-5.3.17"
 	help
 	  PHP extension for multibyte characters support
 
@@ -984,7 +1058,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_PSTOTEXT
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_CHARDET
-	bool "py26-chardet-2.0.1"
+	bool "py27-chardet-2.0.1nb1"
 	help
 	  Character encoding auto-detection in Python
 
@@ -994,7 +1068,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_CHARDET
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_JPCODECS
-	bool "py26-jpCodecs-1.4.11nb1"
+	bool "py27-jpCodecs-1.4.11nb2"
 	help
 	  Python Unicode codecs for Japanese charsets
 
@@ -1005,7 +1079,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_JPCODECS
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_SIMPLEJSON
-	bool "py26-simplejson-2.1.1"
+	bool "py27-simplejson-2.6.1"
 	help
 	  Simplejson is a simple, fast, extensible JSON encoder/decoder
 
@@ -1027,7 +1101,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_SIMPLEJSON
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_ZBASE32
-	bool "py26-zbase32-1.1.2nb1"
+	bool "py27-zbase32-1.1.3"
 	help
 	  Alternate base32 encoder (not RFC 3548 compliant)
 
@@ -1060,7 +1134,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_ZBASE32
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_ZFEC
-	bool "py26-zfec-1.4.7nb1"
+	bool "py27-zfec-1.4.22"
 	help
 	  Fast erasure codec
 
@@ -1073,11 +1147,11 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_ZFEC
 	  from the remaining blocks. The zfec package includes command-line
 	  tools, C API, Python API, and Haskell API.
 
-	  http://pypi.python.org/packages/source/z/zfec/
+	  http://pypi.python.org/pypi/zfec/
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_PY_ZHCODECS
-	bool "py26-zhCodecs-1.2.0nb1"
+	bool "py27-zhCodecs-1.2.0nb1"
 	help
 	  Python Unicode codecs for Chinese charsets
 
@@ -1181,7 +1255,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_RTF2HTML
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_RU_D1489
-	bool "ru-d1489-1.4"
+	bool "ru-d1489-1.5.1"
 	help
 	  CP866<->KOI8-R, CP1251<->KOI8-R and font converters acc. to RFC1489
 
@@ -1193,7 +1267,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_RU_D1489
 	  
 	  All programs written according to RFC 1489
 
-	  
+	  http://koi8.pp.ru/unix.html
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_UCONV
@@ -1211,7 +1285,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_UCONV
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_ASCII85
-	bool "ruby19-Ascii85-1.0.1"
+	bool "ruby193-Ascii85-1.0.2"
 	help
 	  Ascii85 encoder/decoder
 
@@ -1222,7 +1296,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_ASCII85
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_ROMKAN
-	bool "ruby19-romkan-0.4nb3"
+	bool "ruby193-romkan-0.4nb3"
 	help
 	  Romaji <-> Kana conversion library for Ruby
 
@@ -1233,18 +1307,18 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_ROMKAN
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_UNF
-	bool "ruby19-unf-0.0.4"
+	bool "ruby193-unf-0.0.5"
 	help
 	  Wrapper library to bring Unicode Normalization Form support
 
 	  This is a wrapper library to bring Unicode Normalization Form support
 	  to Ruby/JRuby.
 
-	  http://github.com/knu/unf
+	  http://github.com/knu/ruby-unf
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_UNF_EXT
-	bool "ruby19-unf_ext-0.0.4"
+	bool "ruby193-unf_ext-0.0.5"
 	help
 	  Unicode Normalization Form support library for CRuby
 
@@ -1254,7 +1328,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_RUBY_UNF_EXT
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_SKF
-	bool "skf-1.97.4nb2"
+	bool "skf-1.99.0"
 	help
 	  Simple Kanji Filter - i18n kanji converter
 
@@ -1288,7 +1362,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_SMBCHARTOOL
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_TEX2RTF
-	bool "tex2rtf-2.01nb14"
+	bool "tex2rtf-2.01nb19"
 	help
 	  LaTex-to-RTF translator
 
@@ -1303,7 +1377,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_TEX2RTF
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_TXT2HTML
-	bool "txt2html-2.44nb3"
+	bool "txt2html-2.45"
 	help
 	  Plain text to HTML convertor
 
@@ -1322,7 +1396,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_TXT2HTML
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_TXT2MAN
-	bool "txt2man-1.5.5"
+	bool "txt2man-1.5.6"
 	help
 	  Convert flat ASCII text to man page format
 
@@ -1382,7 +1456,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_UUDEVIEW
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_UULIB
-	bool "uulib-0.5.20nb4"
+	bool "uulib-0.5.20nb5"
 	help
 	  Library for uu/xx/Base64/BinHex de-/encoding
 
@@ -1400,7 +1474,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_UULIB
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_WV
-	bool "wv-1.2.9nb3"
+	bool "wv-1.2.9nb7"
 	help
 	  Library and executables to access Microsoft Word files
 
@@ -1417,7 +1491,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_WV
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_WV2
-	bool "wv2-0.2.3nb6"
+	bool "wv2-0.2.3nb11"
 	help
 	  Library to access Microsoft Word files
 
@@ -1428,7 +1502,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_WV2
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_XDEVIEW
-	bool "xdeview-0.5.20nb2"
+	bool "xdeview-0.5.20nb3"
 	help
 	  X11 program for uu/xx/Base64/BinHex de-/encoding
 
@@ -1443,7 +1517,7 @@ config BR2_PKGSRC_PACKAGE_CONVERTERS_XDEVIEW
 
 
 config BR2_PKGSRC_PACKAGE_CONVERTERS_XLHTML
-	bool "xlhtml-0.5nb1"
+	bool "xlhtml-0.5nb2"
 	help
 	  Microsoft xls/ppt to HTML converter
 

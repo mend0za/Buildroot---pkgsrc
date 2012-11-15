@@ -46,7 +46,7 @@ config BR2_PKGSRC_PACKAGE_CAD_VIPEC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_ADMS
-	bool "adms-2.2.5nb1"
+	bool "adms-2.2.5nb4"
 	help
 	  Compact device model code generator for SPICE
 
@@ -82,7 +82,7 @@ config BR2_PKGSRC_PACKAGE_CAD_ATLC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_BOOLEAN
-	bool "boolean-6.99nb9"
+	bool "boolean-6.99nb14"
 	help
 	  
 
@@ -147,7 +147,7 @@ config BR2_PKGSRC_PACKAGE_CAD_CGI_WCALC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_COVERED
-	bool "covered-0.4.7"
+	bool "covered-0.4.7nb1"
 	help
 	  
 
@@ -173,7 +173,7 @@ config BR2_PKGSRC_PACKAGE_CAD_COVERED
 
 
 config BR2_PKGSRC_PACKAGE_CAD_COVERED_CURRENT
-	bool "covered-current-20060904"
+	bool "covered-current-20060904nb1"
 	help
 	  
 
@@ -380,7 +380,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GDSREADER
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GEDA
-	bool "geda-1.6.2nb2"
+	bool "geda-1.6.2nb9"
 	help
 	  Toolset for automating electronic design
 
@@ -394,7 +394,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GEDA
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GERBV
-	bool "gerbv-2.5.0nb1"
+	bool "gerbv-2.5.0nb6"
 	help
 	  Gerber file viewer
 
@@ -407,7 +407,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GERBV
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GNETMAN
-	bool "gnetman-20050211nb1"
+	bool "gnetman-20050211nb2"
 	help
 	  Advanced Netlister and Netlist Manipulation Database for gEDA
 
@@ -475,7 +475,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GPLCVER
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GSMC
-	bool "gsmc-1.1nb11"
+	bool "gsmc-1.1nb16"
 	help
 	  Smith charting program
 
@@ -516,7 +516,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GTK1_WCALC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GTK2_WCALC
-	bool "gtk2-wcalc-1.0nb10"
+	bool "gtk2-wcalc-1.0nb15"
 	help
 	  GTK2 Based Transmission Line Analysis/Synthesis Calculator
 
@@ -527,7 +527,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GTK2_WCALC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GTKWAVE
-	bool "gtkwave-3.3.28"
+	bool "gtkwave-3.3.28nb6"
 	help
 	  Electronic waveform viewer
 
@@ -542,7 +542,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GTKWAVE
 
 
 config BR2_PKGSRC_PACKAGE_CAD_GWAVE
-	bool "gwave-20090213nb1"
+	bool "gwave-20090213nb6"
 	help
 	  Viewer for spice-like simulator output and other analog data
 
@@ -568,7 +568,7 @@ config BR2_PKGSRC_PACKAGE_CAD_GWAVE
 
 
 config BR2_PKGSRC_PACKAGE_CAD_LC
-	bool "lc-2.10nb2"
+	bool "lc-2.10nb4"
 	help
 	  
 
@@ -600,6 +600,17 @@ config BR2_PKGSRC_PACKAGE_CAD_LC
 	  http://lc.cray.com/
 
 
+config BR2_PKGSRC_PACKAGE_CAD_LIBRECAD
+	bool "librecad-1.0.2nb4"
+	help
+	  Free Open Source personal CAD application
+
+	  LibreCAD is a free Open Source personal CAD application for Windows,
+	  Macintosh and Linux.
+
+	  http://librecad.org/
+
+
 config BR2_PKGSRC_PACKAGE_CAD_LIBWCALC
 	bool "libwcalc-1.0nb2"
 	help
@@ -621,7 +632,7 @@ config BR2_PKGSRC_PACKAGE_CAD_LIBWCALC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_MAGIC
-	bool "magic-7.5.188nb2"
+	bool "magic-7.5.188nb3"
 	help
 	  Integrated circuit layout system
 
@@ -772,8 +783,40 @@ config BR2_PKGSRC_PACKAGE_CAD_OCT_WCALC
 	  http://wcalc.sourceforge.net/
 
 
+config BR2_PKGSRC_PACKAGE_CAD_OPENSCAD
+	bool "openscad-2011.12nb8"
+	help
+	  OpenSCAD - The Programmers Solid 3D CAD Modeller
+
+	  OpenSCAD is a software for creating solid 3D CAD objects. It is free software
+	  and available for Linux/UNIX, MS Windows and Mac OS X.
+	  
+	  Unlike most free software for creating 3D models (such as the famous
+	  application Blender) it does not focus on the artistic aspects of 3D modelling
+	  but instead on the CAD aspects. Thus it might be the application you are
+	  looking for when you are planning to create 3D models of machine parts but
+	  pretty sure is not what you are looking for when you are more interested in
+	  creating computer-animated movies.
+	  
+	  OpenSCAD is not an interactive modeller. Instead it is something like a
+	  3D-compiler that reads in a script file that describes the object and renders
+	  the 3D model from this script file (see examples below). This gives you (the
+	  designer) full control over the modelling process and enables you to easily
+	  change any step in the modelling process or make designes that are defined by
+	  configurable parameters.
+	  
+	  OpenSCAD provides two main modelling techniques: First there is constructive
+	  solid geometry (aka CSG) and second there is extrusion of 2D outlines. As data
+	  exchange format format for this 2D outlines Autocad DXF files are used. In
+	  addition to 2D paths for extrusion it is also possible to read design
+	  parametes from DXF files. Besides DXF files OpenSCAD can read and create 3D
+	  models in the STL and OFF file formats.
+
+	  http://www.openscad.org/
+
+
 config BR2_PKGSRC_PACKAGE_CAD_PCB
-	bool "pcb-20110918"
+	bool "pcb-20110918nb5"
 	help
 	  Printed circuit board layout system
 
@@ -785,7 +828,7 @@ config BR2_PKGSRC_PACKAGE_CAD_PCB
 
 
 config BR2_PKGSRC_PACKAGE_CAD_PY_MYHDL
-	bool "py26-MyHDL-0.7"
+	bool "py27-MyHDL-0.7"
 	help
 	  Hardware description in Python
 
@@ -801,7 +844,7 @@ config BR2_PKGSRC_PACKAGE_CAD_PY_MYHDL
 
 
 config BR2_PKGSRC_PACKAGE_CAD_PY_SIMPY
-	bool "py26-simpy-2.1.0"
+	bool "py27-simpy-2.1.0"
 	help
 	  Discrete event simulation framework
 
@@ -903,35 +946,6 @@ config BR2_PKGSRC_PACKAGE_CAD_SCI_WCALC
 	  http://wcalc.sourceforge.net/
 
 
-config BR2_PKGSRC_PACKAGE_CAD_SIMIAN
-	bool "simian-2.1"
-	help
-	  2-dimensional interconnect and transmission line simulator
-
-	  Surface Impedance Method for Interconnect Analysis.
-	  
-	  SIMIAN is a two dimensional frequency dependent series
-	  impedance extraction tool for inerconnects and transmission
-	  lines using conductors of rectangular or circular cross section.
-	  
-	  The use of the surface ribbon method (SRM) greatly enhances
-	  the speed of computation relative to the volume filament
-	  method (VFM).
-
-	  http://weewave.mer.utexas.edu/MED_files/MED_research/Intrcncts/SIMIAN_stuff/simian_links.html
-
-
-config BR2_PKGSRC_PACKAGE_CAD_SIMIAN_DOCS
-	bool "simian-docs-2.1"
-	help
-	  PDF manual for SIMIAN
-
-	  User's guide for SIMIAN (Surface Impedance Method for Interconnect
-	  Analysis).  The guide is in PDF format.
-
-	  http://weewave.mer.utexas.edu/MED_files/MED_research/Intrcncts/SIMIAN_stuff/simian_links.html
-
-
 config BR2_PKGSRC_PACKAGE_CAD_SPICE
 	bool "spice-3f5.1nb6"
 	help
@@ -981,7 +995,7 @@ config BR2_PKGSRC_PACKAGE_CAD_STDIO_WCALC
 
 
 config BR2_PKGSRC_PACKAGE_CAD_TKGATE
-	bool "tkgate-1.6inb4"
+	bool "tkgate-1.6inb5"
 	help
 	  Tcl/Tk based digital circuit editor and simulator
 
@@ -1007,7 +1021,7 @@ config BR2_PKGSRC_PACKAGE_CAD_TKGATE
 
 
 config BR2_PKGSRC_PACKAGE_CAD_TNT_MMTL
-	bool "tnt-mmtl-1.2.2nb5"
+	bool "tnt-mmtl-1.2.2nb6"
 	help
 	  Multilayer Multiconductor Transmission Line 2-D and 2.5-D simulator
 
@@ -1039,7 +1053,7 @@ config BR2_PKGSRC_PACKAGE_CAD_TNT_MMTL
 
 
 config BR2_PKGSRC_PACKAGE_CAD_TRANSCALC
-	bool "transcalc-0.14nb11"
+	bool "transcalc-0.14nb16"
 	help
 	  Transmission line analysis/synthesis
 
@@ -1166,7 +1180,7 @@ config BR2_PKGSRC_PACKAGE_CAD_WCALC_DOCS
 
 
 config BR2_PKGSRC_PACKAGE_CAD_XCHIPLOGO
-	bool "xchiplogo-19991222nb7"
+	bool "xchiplogo-19991222nb8"
 	help
 	  Program for generating pretty logos on VLSI chips
 
@@ -1185,7 +1199,7 @@ config BR2_PKGSRC_PACKAGE_CAD_XCHIPLOGO
 
 
 config BR2_PKGSRC_PACKAGE_CAD_XCIRCUIT
-	bool "xcircuit-3.4.26"
+	bool "xcircuit-3.4.26nb1"
 	help
 	  
 

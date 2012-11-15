@@ -1,11 +1,22 @@
 #!/bin/sh
 
-# Copyleft by Vlad 'mend0za' Shakhov, 2011-2012
+# Copyleft by Vlad 'mend0za' Shakhov <v.shakhov@sam-solutions.net> 2011-2012
+
+if [ $# -ne 2 ]
+then
+	echo "PKGSRC update tool for Buildroot.\nGenerate pkgsrc packages list in Kconfig\n"
+	echo "Usage:"
+	echo "\t$0 [PKGSRC_DIR] [BUILDROOT_PACKAGE_PKGSRC_DIR]"
+	echo
+	exit 0
+fi
 
 PKG_SRC_PATH=$1
 PKGSRC_PACKAGE_DIR=$2
 KCONFIG_OUT=$2/pkgsrc-categories.in
 CATEGORY_DIR=$2/category
+
+
 
 export LC_ALL=C
 
