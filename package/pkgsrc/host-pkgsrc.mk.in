@@ -78,4 +78,4 @@ host-pkgsrc-update-platform-tools:
 
 HOST_SOURCE += host-pkgsrc-source
 
-$(eval $(call GENTARGETS,host))
+$(eval $(host-generic-package))
